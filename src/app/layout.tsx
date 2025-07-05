@@ -53,9 +53,6 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  alternates: {
-    canonical: "https://laurentserre.com",
-  },
 };
 
 export default function RootLayout({
@@ -68,6 +65,64 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" />
         <AnalyticsConsent />
+        
+        {/* Scripts JSON-LD pour le SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Laurent Serre Développement",
+              "url": "https://laurentserre.com",
+              "logo": "https://laurentserre.com/laurent.jpg",
+              "description": "Accompagnement commercial pour PME : structuration des équipes, formation à la vente, méthodes éprouvées.",
+              "foundingDate": "2020",
+              "areaServed": "France",
+              "serviceType": "Formation commerciale, accompagnement vente, structuration équipe commerciale",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "FR",
+                "addressLocality": "France"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "availableLanguage": "French"
+              }
+            })
+          }}
+        />
+        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Laurent Serre",
+              "jobTitle": "Expert Commercial & Formateur",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Laurent Serre Développement"
+              },
+              "url": "https://laurentserre.com",
+              "image": "https://laurentserre.com/laurent.jpg",
+              "description": "Expert en développement commercial avec 20 ans d'expérience terrain. Spécialisé dans la structuration des équipes commerciales et la formation à la vente.",
+              "knowsAbout": [
+                "Formation commerciale",
+                "Accompagnement vente",
+                "Structuration équipe commerciale",
+                "Développement commercial",
+                "Management commercial"
+              ],
+              "sameAs": [
+                "https://www.linkedin.com/in/laurent-serre-developpement",
+                "https://www.youtube.com/@laurentserre"
+              ]
+            })
+          }}
+        />
       </head>
       <body
         className={`${inter.variable} ${openSans.variable} ${nunito.variable} ${robotoSlab.variable} antialiased`}
