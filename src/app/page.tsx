@@ -64,7 +64,7 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Nouveaux CTAs vers les pages */}
+            {/* CTAs vers les pages existantes */}
             <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row justify-center items-center pt-6 sm:pt-8 pb-12 sm:pb-16 px-4">
               <Link href="/bootcamp">
                 <Button 
@@ -85,17 +85,6 @@ export default function Home() {
                   className="w-full sm:w-auto"
                 >
                   Faire le diagnostic gratuit
-                </Button>
-              </Link>
-              
-              <Link href="/cas-clients">
-                <Button 
-                  variant="outline"
-                  size="lg"
-                  icon="👥"
-                  className="w-full sm:w-auto"
-                >
-                  Voir les cas clients
                 </Button>
               </Link>
             </div>
