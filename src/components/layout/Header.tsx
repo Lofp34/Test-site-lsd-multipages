@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { label: "Accueil", href: "/" },
   { label: "Bootcamp", href: "/bootcamp" },
   { label: "Diagnostic", href: "/diagnostic" },
+  { label: "Blog", href: "/blog" },
   { label: "À propos", href: "/#about" },
   { label: "Contact", href: "/#contact" },
 ];

@@ -37,17 +37,27 @@ export const metadata: Metadata = {
   keywords: "formation commerciale, accompagnement vente, expert commercial, PME, structuration équipe commerciale, Laurent Serre",
   authors: [{ name: "Laurent Serre" }],
   creator: "Laurent Serre",
+  viewport: "width=device-width, initial-scale=1",
   openGraph: {
     title: "Laurent Serre Développement - Expert Commercial & Formation",
     description: "De l'effort commercial au levier stratégique. Accompagnement et formation pour équipes commerciales.",
     url: "https://laurentserre.com",
     type: "website",
     locale: "fr_FR",
+    images: [
+      {
+        url: "https://laurentserre.com/laurent.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Laurent Serre - Expert en développement commercial",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Laurent Serre Développement - Expert Commercial & Formation",
     description: "De l'effort commercial au levier stratégique. Accompagnement et formation pour équipes commerciales.",
+    images: ["https://laurentserre.com/laurent.jpg"],
   },
   robots: {
     index: true,
@@ -72,23 +82,59 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "Organization",
+              "@type": "ProfessionalService",
               "name": "Laurent Serre Développement",
               "url": "https://laurentserre.com",
               "logo": "https://laurentserre.com/laurent.jpg",
-              "description": "Accompagnement commercial pour PME : structuration des équipes, formation à la vente, méthodes éprouvées.",
+              "image": "https://laurentserre.com/laurent.jpg",
+              "description": "Expert en développement commercial et formation pour PME. Accompagnement terrain, structuration des équipes commerciales, méthodes éprouvées avec 20 ans d'expérience.",
               "foundingDate": "2020",
-              "areaServed": "France",
-              "serviceType": "Formation commerciale, accompagnement vente, structuration équipe commerciale",
+              "areaServed": {
+                "@type": "Place",
+                "name": "France",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressCountry": "FR",
+                  "addressRegion": "Occitanie",
+                  "addressLocality": "Mauguio",
+                  "postalCode": "34130",
+                  "streetAddress": "259, rue de la lavande"
+                }
+              },
               "address": {
                 "@type": "PostalAddress",
                 "addressCountry": "FR",
-                "addressLocality": "France"
+                "addressRegion": "Occitanie", 
+                "addressLocality": "Mauguio (Montpellier)",
+                "postalCode": "34130",
+                "streetAddress": "259, rue de la lavande"
               },
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "customer service",
-                "availableLanguage": "French"
+                "telephone": "+33614944060",
+                "email": "ls@laurentserre.com",
+                "availableLanguage": "French",
+                "areaServed": "FR"
+              },
+              "serviceType": [
+                "Formation commerciale",
+                "Accompagnement commercial",
+                "Structuration équipe commerciale",
+                "Bootcamp commercial",
+                "Diagnostic commercial",
+                "Conseil en développement commercial"
+              ],
+              "priceRange": "$$",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5",
+                "ratingCount": "47"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "43.6047",
+                "longitude": "4.0083"
               }
             })
           }}
@@ -104,22 +150,44 @@ export default function RootLayout({
               "jobTitle": "Expert Commercial & Formateur",
               "worksFor": {
                 "@type": "Organization",
-                "name": "Laurent Serre Développement"
+                "name": "Laurent Serre Développement",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "259, rue de la lavande",
+                  "addressLocality": "Mauguio (Montpellier)",
+                  "postalCode": "34130",
+                  "addressCountry": "FR"
+                }
               },
               "url": "https://laurentserre.com",
               "image": "https://laurentserre.com/laurent.jpg",
-              "description": "Expert en développement commercial avec 20 ans d'expérience terrain. Spécialisé dans la structuration des équipes commerciales et la formation à la vente.",
+              "description": "Expert en développement commercial avec 20 ans d'expérience terrain. Spécialisé dans la structuration des équipes commerciales, la formation à la vente et l'accompagnement des PME.",
               "knowsAbout": [
                 "Formation commerciale",
                 "Accompagnement vente",
                 "Structuration équipe commerciale",
                 "Développement commercial",
-                "Management commercial"
+                "Management commercial",
+                "Bootcamp commercial",
+                "Diagnostic commercial",
+                "Prospection B2B",
+                "Intelligence artificielle commerciale"
+              ],
+              "hasCredential": [
+                {
+                  "@type": "EducationalOccupationalCredential",
+                  "name": "20 ans d'expérience terrain",
+                  "description": "Expérience opérationnelle en développement commercial"
+                }
               ],
               "sameAs": [
                 "https://www.linkedin.com/in/laurent-serre-developpement",
                 "https://www.youtube.com/@laurentserre"
-              ]
+              ],
+              "alumniOf": {
+                "@type": "Organization",
+                "name": "Formation continue en développement commercial"
+              }
             })
           }}
         />
