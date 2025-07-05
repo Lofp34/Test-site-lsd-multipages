@@ -6,10 +6,32 @@ import Link from "next/link";
 const DiagnosticSection = dynamic(() => import('@/components/sections/DiagnosticSection'));
 
 export const metadata: Metadata = {
-  title: 'Diagnostic commercial gratuit – Laurent Serre',
-  description: 'Évaluez gratuitement la performance de votre équipe commerciale avec notre diagnostic complet. Audit commercial personnalisé pour PME.',
+  title: 'Diagnostic Commercial Gratuit - Évaluez votre Équipe | Laurent Serre',
+  description: 'Diagnostic commercial gratuit pour PME : évaluez la performance de votre équipe commerciale, identifiez les axes d\'amélioration. Audit personnalisé sans engagement.',
+  keywords: 'diagnostic commercial gratuit, audit équipe commerciale, PME, évaluation performance vente, Montpellier',
   alternates: {
     canonical: 'https://laurentserre.com/diagnostic',
+  },
+  openGraph: {
+    title: 'Diagnostic Commercial Gratuit - Évaluez votre Équipe',
+    description: 'Diagnostic commercial gratuit pour PME : évaluez la performance de votre équipe commerciale, identifiez les axes d\'amélioration.',
+    url: 'https://laurentserre.com/diagnostic',
+    type: 'website',
+    locale: 'fr_FR',
+    images: [
+      {
+        url: 'https://laurentserre.com/tableau-de-bord.jpeg',
+        width: 1200,
+        height: 630,
+        alt: 'Diagnostic commercial gratuit Laurent Serre - Tableau de bord performance',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Diagnostic Commercial Gratuit - Évaluez votre Équipe',
+    description: 'Diagnostic commercial gratuit pour PME : évaluez la performance de votre équipe commerciale, identifiez les axes d\'amélioration.',
+    images: ['https://laurentserre.com/tableau-de-bord.jpeg'],
   },
 };
 
