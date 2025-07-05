@@ -1,28 +1,23 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 const NAV_ITEMS = [
-  { label: "Accueil", target: "top" },
-  { label: "Offre", target: "offre" },
-  // { label: "Ressources", target: "ressources" },
-  { label: "Diagnostic", target: "diagnostic" },
-  { label: "Cas clients", target: "cas-clients" },
-  { label: "Contact", target: "contact" },
+  { label: "Accueil", href: "/" },
+  { label: "Bootcamp", href: "/bootcamp" },
+  { label: "Diagnostic", href: "/diagnostic" },
+  { label: "Cas clients", href: "/cas-clients" },
+  { label: "À propos", href: "/a-propos" },
+  { label: "Contact", href: "/contact" },
 ];
-
-function scrollToSection(id: string) {
-  if (id === "top") {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  } else {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-}
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => {
@@ -36,8 +31,7 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleNavClick = (target: string) => {
-    scrollToSection(target);
+  const handleNavClick = () => {
     setIsMenuOpen(false);
   };
 
@@ -53,9 +47,9 @@ export default function Header() {
       <nav className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo/Titre */}
-          <span className="font-title font-bold text-base sm:text-lg text-primary-bg tracking-tight select-none drop-shadow-sm">
+          <Link href="/" className="font-title font-bold text-base sm:text-lg text-primary-bg tracking-tight select-none drop-shadow-sm hover:text-mint-green transition-colors">
             Laurent Serre<span className="hidden sm:inline"> Développement</span>
-          </span>
+          </Link>
 
           {/* Menu Burger pour Mobile */}
           <button
@@ -69,15 +63,18 @@ export default function Header() {
           {/* Menu Desktop */}
           <ul className="hidden md:flex gap-2 sm:gap-4 md:gap-8">
             {NAV_ITEMS.map((item) => (
-              <li key={item.target}>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={() => handleNavClick(item.target)}
-                  className="px-3 py-2 text-primary-bg/90 hover:text-mint-green hover:bg-mint-green/10"
-                >
-                  {item.label}
-                </Button>
+              <li key={item.href}>
+                <Link href={item.href} onClick={handleNavClick}>
+                  <Button
+                    variant="ghost"
+                    size="sm"
+                    className={`px-3 py-2 text-primary-bg/90 hover:text-mint-green hover:bg-mint-green/10 ${
+                      pathname === item.href ? 'text-mint-green bg-mint-green/10' : ''
+                    }`}
+                  >
+                    {item.label}
+                  </Button>
+                </Link>
               </li>
             ))}
           </ul>
@@ -88,15 +85,18 @@ export default function Header() {
           <div className="md:hidden absolute top-full left-0 w-full bg-blue-ink/95 backdrop-blur-lg border-b border-blue-ink/30 shadow-lg py-4">
             <ul className="flex flex-col items-center gap-2">
               {NAV_ITEMS.map((item) => (
-                <li key={item.target} className="w-full">
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => handleNavClick(item.target)}
-                    className="w-full px-6 py-3 text-primary-bg/90 hover:text-mint-green hover:bg-mint-green/10"
-                  >
-                    {item.label}
-                  </Button>
+                <li key={item.href} className="w-full">
+                  <Link href={item.href} onClick={handleNavClick}>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className={`w-full px-6 py-3 text-primary-bg/90 hover:text-mint-green hover:bg-mint-green/10 ${
+                        pathname === item.href ? 'text-mint-green bg-mint-green/10' : ''
+                      }`}
+                    >
+                      {item.label}
+                    </Button>
+                  </Link>
                 </li>
               ))}
             </ul>
