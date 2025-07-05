@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://laurentserre.com
+
+# Sitemaps
+Sitemap: https://laurentserre.com/sitemap.xml
