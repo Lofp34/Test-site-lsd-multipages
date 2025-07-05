@@ -9,9 +9,8 @@ const NAV_ITEMS = [
   { label: "Accueil", href: "/" },
   { label: "Bootcamp", href: "/bootcamp" },
   { label: "Diagnostic", href: "/diagnostic" },
-  { label: "Cas clients", href: "/cas-clients" },
-  { label: "À propos", href: "/a-propos" },
-  { label: "Contact", href: "/contact" },
+  { label: "À propos", href: "/#about" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Header() {
@@ -31,8 +30,13 @@ export default function Header() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleNavClick = () => {
+  const handleNavClick = (href: string) => {
     setIsMenuOpen(false);
+    
+    // Si c'est une ancre et qu'on est sur une page différente, on navigue vers l'accueil
+    if (href.startsWith('/#') && pathname !== '/') {
+      window.location.href = href;
+    }
   };
 
   return (
@@ -64,7 +68,7 @@ export default function Header() {
           <ul className="hidden md:flex gap-2 sm:gap-4 md:gap-8">
             {NAV_ITEMS.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} onClick={handleNavClick}>
+                <Link href={item.href} onClick={() => handleNavClick(item.href)}>
                   <Button
                     variant="ghost"
                     size="sm"
@@ -86,7 +90,7 @@ export default function Header() {
             <ul className="flex flex-col items-center gap-2">
               {NAV_ITEMS.map((item) => (
                 <li key={item.href} className="w-full">
-                  <Link href={item.href} onClick={handleNavClick}>
+                  <Link href={item.href} onClick={() => handleNavClick(item.href)}>
                     <Button
                       variant="ghost"
                       size="sm"
