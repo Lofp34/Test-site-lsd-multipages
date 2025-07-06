@@ -12,6 +12,12 @@ const nextConfig: NextConfig = {
   experimental: {
     inlineCss: true,
   },
+  // Optimisations JavaScript - Éviter les polyfills inutiles
+  swcMinify: true,
+  compiler: {
+    // Supprimer les console.log en production
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
   // Optimisations d'images
   images: {
     formats: ['image/webp', 'image/avif'],
@@ -22,6 +28,35 @@ const nextConfig: NextConfig = {
   // Optimisations de performance
   poweredByHeader: false,
   compress: true,
+  // Configuration Webpack pour optimiser le JavaScript
+  webpack: (config, { dev, isServer }) => {
+    // Optimisations pour la production
+    if (!dev && !isServer) {
+      // Éviter les polyfills inutiles en ciblant les navigateurs modernes
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+        net: false,
+        tls: false,
+      };
+      
+      // Optimiser la taille des chunks
+      config.optimization.splitChunks = {
+        ...config.optimization.splitChunks,
+        cacheGroups: {
+          ...config.optimization.splitChunks.cacheGroups,
+          commons: {
+            name: 'commons',
+            chunks: 'all',
+            minChunks: 2,
+            enforce: true,
+          },
+        },
+      };
+    }
+    
+    return config;
+  },
   // Headers de performance
   async headers() {
     return [
@@ -44,6 +79,15 @@ const nextConfig: NextConfig = {
       },
       {
         source: '/images/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/_next/static/(.*)',
         headers: [
           {
             key: 'Cache-Control',
