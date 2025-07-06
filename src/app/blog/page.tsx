@@ -200,7 +200,7 @@ export default function BlogPage() {
       </section>
 
       {/* Tous les articles */}
-      <section className="py-16">
+      <section className="py-16 bg-primary-bg dark:bg-gray-dark">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mb-12">
             Tous les articles

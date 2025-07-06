@@ -83,7 +83,7 @@ export default function Article1() {
 
       {/* Article Content */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="prose prose-lg max-w-none">
+        <div className="prose prose-lg max-w-none prose-headings:text-blue-ink prose-headings:dark:text-white prose-p:text-gray-700 prose-p:dark:text-gray-300 prose-strong:text-blue-ink prose-strong:dark:text-white prose-li:text-gray-700 prose-li:dark:text-gray-300">
           <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
             Vous ressentez que votre équipe commerciale atteint ses limites ? Que les résultats stagnent malgré les efforts ? 
             Il est peut-être temps de passer à l'étape supérieure et de structurer véritablement votre force de vente. 

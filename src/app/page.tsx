@@ -67,14 +67,14 @@ export default function Home() {
 
             {/* CTAs vers les pages existantes */}
             <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row justify-center items-center pt-6 sm:pt-8 pb-12 sm:pb-16 px-4">
-              <Link href="/bootcamp">
+              <Link href="/cas-clients">
                 <Button 
                   variant="primary"
                   size="lg"
-                  icon="🚀"
+                  icon="�"
                   className="w-full sm:w-auto"
                 >
-                  Découvrir le Bootcamp
+                  Découvrir les témoignages
                 </Button>
               </Link>
               
