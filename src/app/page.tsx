@@ -3,8 +3,6 @@ import type { Metadata } from 'next';
 import Button from "@/components/ui/Button";
 import Link from "next/link";
 import Image from 'next/image';
-import ProblemSection from '@/components/sections/ProblemSection';
-import HubSpotForm from '@/components/HubSpotForm';
 import AccueilClient from '@/components/AccueilClient';
 
 const LogoBanner = dynamic(() => import('@/components/LogoBanner'));

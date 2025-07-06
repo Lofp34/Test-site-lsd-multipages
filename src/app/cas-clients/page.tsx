@@ -1,10 +1,15 @@
 import dynamic from 'next/dynamic';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import Button from "@/components/ui/Button";
 import Link from "next/link";
 
 const TestimonialVideoSection = dynamic(() => import('@/components/sections/TestimonialVideoSection'));
 const FinalCtaSection = dynamic(() => import('@/components/sections/FinalCtaSection'));
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: 'Cas clients & Témoignages – Laurent Serre',
