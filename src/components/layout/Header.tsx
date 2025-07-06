@@ -10,8 +10,8 @@ const NAV_ITEMS = [
   { label: "Bootcamp", href: "/bootcamp" },
   { label: "Diagnostic", href: "/diagnostic" },
   { label: "Blog", href: "/blog" },
-  { label: "À propos", href: "/#about" },
-  { label: "Contact", href: "/#contact" },
+  { label: "À propos", href: "/a-propos" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Header() {

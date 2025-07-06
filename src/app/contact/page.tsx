@@ -47,27 +47,26 @@ export default function ContactPage() {
             </div>
 
             <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row justify-center items-center pt-6 sm:pt-8 pb-12 sm:pb-16 px-4">
-              <Link href="/diagnostic">
+              <a href="tel:+33614944060" target="_blank" rel="noopener noreferrer">
                 <Button 
                   variant="primary"
                   size="lg"
-                  icon="🎯"
+                  icon="📞"
                   className="w-full sm:w-auto"
                 >
-                  Commencer par le diagnostic
+                  Appeler Laurent Serre
                 </Button>
-              </Link>
-              
-              <Link href="/bootcamp">
+              </a>
+              <a href="https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone" target="_blank" rel="noopener noreferrer">
                 <Button 
                   variant="outline"
                   size="lg"
-                  icon="🚀"
+                  icon="📅"
                   className="w-full sm:w-auto"
                 >
-                  Découvrir le bootcamp
+                  Prendre rendez-vous
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

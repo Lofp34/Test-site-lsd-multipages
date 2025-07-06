@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Button from "@/components/ui/Button";
 import Link from "next/link";
 import Image from 'next/image';
+import ProblemSection from '@/components/sections/ProblemSection';
 
 const LogoBanner = dynamic(() => import('@/components/LogoBanner'));
 
@@ -99,6 +100,7 @@ export default function Home() {
       </section>
 
       <LogoBanner />
+      <ProblemSection />
     </main>
   );
 }

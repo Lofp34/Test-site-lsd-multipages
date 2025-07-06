@@ -53,27 +53,27 @@ export default function Footer() {
             <nav>
               <ul className="space-y-3">
                 <li>
-                  <a href="#" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                  <a href="/" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
                     Accueil
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                  <a href="/bootcamp" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
                     Offre
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                  <a href="/diagnostic" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
                     Diagnostic
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                  <a href="/cas-clients" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
                     Cas clients
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                  <a href="/contact" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
                     Contact
                   </a>
                 </li>

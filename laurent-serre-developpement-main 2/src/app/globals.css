@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    /* Charte graphique - Mode clair */
+    --accent: #00BDA4;          /* Accents visuels - Vert menthe doux */
+    --secondary: #414141;       /* Éléments secondaires - Gris anthracite */
+    --emotion: #FFAA5C;         /* Icônes/Émotions - Orange doux */
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Adaptation pour le mode sombre */
+    --background: #1B365D;      /* Bleu encre comme fond sombre */
+    --foreground: #F2F5F7;      /* Gris clair bleuté pour le texte */
+    --accent: #00BDA4;          /* Vert menthe reste identique */
+    --secondary: #414141;       /* Gris anthracite reste identique */
+    --emotion: #FFAA5C;         /* Orange doux reste identique */
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Classes utilitaires pour la typographie - SUPPRIMÉES CAR GÉRÉES PAR TAILWIND */
+
+/* Animation pour le bandeau de logos */
+@keyframes logoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.hover\:pause:hover {
+  animation-play-state: paused !important;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    box-shadow: 0 0 20px 5px var(--accent);
+    transform: scale(1.05);
+    animation-play-state: paused !important;
+  }
+  50% {
+    box-shadow: 0 0 20px 5px var(--accent);
+    transform: scale(1.05);
+    animation-play-state: paused !important;
+  }
+}
