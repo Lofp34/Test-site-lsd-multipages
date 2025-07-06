@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/equipedeface.jpg',
+        url: 'https://laurentserre.com/erreurs-fatales.png',
         width: 1200,
         height: 630,
         alt: 'Blog développement commercial Laurent Serre',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Blog Développement Commercial - Conseils d\'Expert',
     description: 'Découvrez nos articles d\'expert sur le développement commercial, la formation des équipes de vente et les stratégies B2B.',
-    images: ['https://laurentserre.com/equipedeface.jpg'],
+    images: ['https://laurentserre.com/erreurs-fatales.png'],
   },
 };
 
@@ -62,7 +62,7 @@ const blogPosts = [
     date: '2025-01-05',
     readTime: '12 min',
     category: 'Prospection',
-    image: '/equipedeface.jpg',
+    image: '/erreurs-fatales.png',
     featured: false,
   },
   {
@@ -72,7 +72,7 @@ const blogPosts = [
     date: '2024-12-28',
     readTime: '9 min',
     category: 'Formation',
-    image: '/equipe_bureau.jpg',
+    image: '/photo-formation.png',
     featured: false,
   },
   {
@@ -107,7 +107,7 @@ export default function BlogPage() {
               </span>
             </div>
             <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-title font-extrabold text-white leading-tight drop-shadow-lg">
-              <span className="text-blue-ink dark:text-white">Blog</span> <span className="text-mint-green">Développement Commercial</span>
+              <span className="text-white">Blog</span> <span className="text-mint-green">Développement Commercial</span>
             </h1>
             <div className="max-w-5xl mx-auto space-y-4 sm:space-y-6">
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-body text-white/95 leading-relaxed drop-shadow-md px-2">
@@ -161,7 +161,7 @@ export default function BlogPage() {
                       alt={post.title}
                       width={600}
                       height={400}
-                      className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-64 object-cover object-top transition-transform duration-300 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="absolute top-4 left-4">
@@ -216,7 +216,7 @@ export default function BlogPage() {
                       alt={post.title}
                       width={400}
                       height={250}
-                      className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="w-full h-48 object-cover object-top transition-transform duration-300 group-hover:scale-105"
                     />
                     <div className="absolute top-3 left-3">
                       <span className="inline-flex items-center px-2 py-1 rounded-full text-xs font-semibold bg-blue-ink text-white">

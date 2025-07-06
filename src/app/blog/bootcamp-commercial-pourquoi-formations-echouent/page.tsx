@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/equipe_bureau.jpg',
+        url: 'https://laurentserre.com/photo-formation.png',
         width: 1200,
         height: 630,
-        alt: 'Formation commerciale bootcamp - équipe en formation',
+        alt: 'Formation commerciale bootcamp - session d\'accompagnement terrain',
       },
     ],
   },
@@ -51,6 +51,17 @@ export default function Article4() {
               <span>•</span>
               <span>9 min de lecture</span>
             </div>
+          </div>
+          
+          <div className="relative mb-12">
+            <Image
+              src="/photo-formation.png"
+              alt="Formation commerciale bootcamp - session d'accompagnement terrain"
+              width={1200}
+              height={600}
+              className="w-full h-80 object-cover object-top rounded-2xl shadow-lg"
+              priority
+            />
           </div>
         </div>
       </section>

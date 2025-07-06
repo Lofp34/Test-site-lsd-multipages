@@ -18,10 +18,10 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/equipedeface.jpg',
+        url: 'https://laurentserre.com/erreurs-fatales.png',
         width: 1200,
         height: 630,
-        alt: 'Erreurs prospection B2B - équipe commerciale',
+        alt: 'Erreurs fatales dans la prospection B2B - Guide expert',
       },
     ],
   },
@@ -55,11 +55,11 @@ export default function Article3() {
           
           <div className="relative mb-12">
             <Image
-              src="/equipedeface.jpg"
-              alt="Équipe commerciale analysant les erreurs de prospection"
+              src="/erreurs-fatales.png"
+              alt="Erreurs fatales dans la prospection B2B - Guide expert"
               width={1200}
               height={600}
-              className="w-full h-80 object-cover rounded-2xl shadow-lg"
+              className="w-full h-80 object-cover object-top rounded-2xl shadow-lg"
               priority
             />
           </div>
