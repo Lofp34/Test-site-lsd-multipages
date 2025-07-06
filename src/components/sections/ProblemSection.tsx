@@ -2,8 +2,9 @@
 
 import Button from "@/components/ui/Button";
 import AnimatedSection from "@/components/ui/AnimatedSection";
+import Link from 'next/link';
 
-export default function ProblemSection({ onContactClick }: { onContactClick?: () => void }) {
+export default function ProblemSection() {
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({
       behavior: 'smooth',
@@ -104,20 +105,18 @@ export default function ProblemSection({ onContactClick }: { onContactClick?: ()
               </p>
             </div>
 
-            {/* CTA incitatif */}
-            <div>
-              <Button
-                variant="primary"
-                size="lg"
-                icon="🚀"
-                onClick={() => onContactClick ? onContactClick() : scrollToSection('contact')}
-                className="px-12 py-5 text-xl"
-              >
-                Parlons-en maintenant !
-              </Button>
-              <p className="mt-4 font-italic text-white/80">
-                Échange gratuit • Sans engagement • Solution sur mesure
-              </p>
+            {/* CTA avec les deux nouveaux boutons */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
+              <Link href="/diagnostic">
+                <Button variant="primary" size="lg" icon="🔍">
+                  Envie d'un vrai diagnostic (sans langue de bois) ?
+                </Button>
+              </Link>
+              <Link href="/cas-clients">
+                <Button variant="outline" size="lg" icon="🚣" className="border-white text-white hover:bg-white hover:text-blue-ink">
+                  Voir comment d'autres ont arrêté de ramer !
+                </Button>
+              </Link>
             </div>
           </div>
         </AnimatedSection>
