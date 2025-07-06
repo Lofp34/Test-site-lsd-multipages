@@ -115,6 +115,17 @@ export default function HubSpotForm({
           font-size: 16px !important;
           transition: border-color 0.3s ease !important;
           background-color: white !important;
+          color: #374151 !important;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+          .hubspot-form-wrapper input,
+          .hubspot-form-wrapper textarea,
+          .hubspot-form-wrapper select {
+            background-color: #f9fafb !important;
+            border-color: #d1d5db !important;
+            color: #374151 !important;
+          }
         }
         
         .hubspot-form-wrapper input:focus,
@@ -160,6 +171,17 @@ export default function HubSpotForm({
           margin-bottom: 8px !important;
           display: block !important;
           font-family: 'Inter', sans-serif !important;
+        }
+        
+        @media (prefers-color-scheme: dark) {
+          .hubspot-form-wrapper label {
+            color: #1B365D !important;
+          }
+        }
+        
+        .hubspot-form-wrapper input::placeholder,
+        .hubspot-form-wrapper textarea::placeholder {
+          color: #6b7280 !important;
         }
         
         .hubspot-form-wrapper .hs-richtext {
