@@ -97,7 +97,10 @@ export default function FinalCtaSection() {
               <Button 
                 variant="secondary"
                 size="sm"
-                onClick={() => handleCtaClick('ressources_gratuites')}
+                onClick={() => {
+                  handleCtaClick('ressources_gratuites');
+                  window.location.href = '/ressources';
+                }}
                 className="bg-mint-green text-white hover:bg-mint-green/90 shadow-lg"
               >
                 Télécharger les ressources
