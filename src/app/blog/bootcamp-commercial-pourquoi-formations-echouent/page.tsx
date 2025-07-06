@@ -43,7 +43,7 @@ export default function Article4() {
             
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8">
               <div className="flex items-center gap-2">
-                <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" />
+                <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" loading="lazy" />
                 <span>Laurent Serre</span>
               </div>
               <span>•</span>
@@ -60,7 +60,9 @@ export default function Article4() {
               width={1200}
               height={600}
               className="w-full h-80 object-cover object-top rounded-2xl shadow-lg"
+              quality={50}
               priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
             />
           </div>
         </div>
