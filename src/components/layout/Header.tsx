@@ -19,6 +19,8 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
+  const isBlogArticle = pathname.startsWith('/blog/') && pathname !== '/blog';
+
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 60);
@@ -43,11 +45,11 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-700
-        ${scrolled
+        ${scrolled || isBlogArticle
           ? "bg-blue-ink/70 backdrop-blur-lg border-b border-blue-ink/30 shadow-lg"
           : "bg-transparent border-none shadow-none"}
       `}
-      style={{ WebkitBackdropFilter: scrolled ? "blur(16px)" : undefined }}
+      style={{ WebkitBackdropFilter: scrolled || isBlogArticle ? "blur(16px)" : undefined }}
     >
       <nav className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
@@ -73,7 +75,11 @@ export default function Header() {
                   <Button
                     variant="ghost"
                     size="sm"
-                    className={`px-3 py-2 text-primary-bg/90 hover:text-mint-green hover:bg-mint-green/10 ${
+                    className={`px-3 py-2 ${
+                      (scrolled || isBlogArticle)
+                        ? 'text-white hover:text-mint-green'
+                        : 'text-primary-bg/90 hover:text-mint-green'
+                    } hover:bg-mint-green/10 ${
                       pathname === item.href ? 'text-mint-green bg-mint-green/10' : ''
                     }`}
                   >
