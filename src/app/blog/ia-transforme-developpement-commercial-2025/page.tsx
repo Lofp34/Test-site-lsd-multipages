@@ -68,8 +68,10 @@ export default function Article2() {
               alt="Tableau de bord avec intelligence artificielle pour le développement commercial"
               width={1200}
               height={600}
-              className="w-full h-80 object-cover rounded-2xl shadow-lg"
+              className="w-full h-80 object-cover object-top rounded-2xl shadow-lg"
+              quality={50}
               priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
             />
           </div>
         </div>

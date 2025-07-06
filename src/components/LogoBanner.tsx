@@ -65,6 +65,9 @@ export default function LogoBanner() {
                     width={96}
                     height={64}
                     className="object-contain"
+                    quality={45}
+                    sizes="96px"
+                    loading="lazy"
                   />
                 </div>
               ))}
@@ -83,6 +86,9 @@ export default function LogoBanner() {
                     width={96}
                     height={64}
                     className="object-contain"
+                    quality={45}
+                    sizes="96px"
+                    loading="lazy"
                   />
                 </div>
               ))}

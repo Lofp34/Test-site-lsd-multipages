@@ -3,22 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "postbuild": "next-sitemap"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead",
-    "not ie 11",
-    "Chrome >= 94",
-    "Firefox >= 93",
-    "Safari >= 15",
-    "Edge >= 94"
-  ],
   "dependencies": {
     "framer-motion": "^12.18.1",
     "js-cookie": "^3.0.5",

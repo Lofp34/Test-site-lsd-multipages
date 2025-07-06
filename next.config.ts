@@ -13,17 +13,26 @@ const nextConfig: NextConfig = {
     inlineCss: true,
   },
   // Optimisations JavaScript - Éviter les polyfills inutiles
-  swcMinify: true,
   compiler: {
     // Supprimer les console.log en production
     removeConsole: process.env.NODE_ENV === 'production',
   },
-  // Optimisations d'images
+  // Optimisations d'images agressives
   images: {
-    formats: ['image/webp', 'image/avif'],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-    minimumCacheTTL: 60 * 60 * 24 * 30, // 30 jours
+    minimumCacheTTL: 60 * 60 * 24 * 365, // 1 an
+    // Optimisations supplémentaires
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    // Domaines autorisés pour optimisation
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'laurentserre.com',
+      },
+    ],
   },
   // Optimisations de performance
   poweredByHeader: false,
@@ -57,7 +66,7 @@ const nextConfig: NextConfig = {
     
     return config;
   },
-  // Headers de performance
+  // Headers de performance optimisés
   async headers() {
     return [
       {
@@ -83,6 +92,23 @@ const nextConfig: NextConfig = {
           {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
+          },
+          {
+            key: 'Vary',
+            value: 'Accept',
+          },
+        ],
+      },
+      {
+        source: '/_next/image(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+          {
+            key: 'Vary',
+            value: 'Accept',
           },
         ],
       },

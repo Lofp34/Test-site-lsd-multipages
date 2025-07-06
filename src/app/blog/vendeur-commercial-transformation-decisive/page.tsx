@@ -43,7 +43,7 @@ export default function Article5() {
             
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8">
               <div className="flex items-center gap-2">
-                <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" />
+                <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" loading="lazy" />
                 <span>Laurent Serre</span>
               </div>
               <span>•</span>

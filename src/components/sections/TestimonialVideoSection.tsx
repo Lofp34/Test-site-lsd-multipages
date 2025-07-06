@@ -94,7 +94,7 @@ export default function TestimonialVideoSection() {
               <AnimatedSection animation="slide-up" delay={200 + i * 100}>
                 <div className="bg-white/95 dark:bg-gray-anthracite/90 backdrop-blur-sm rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col items-center h-full">
                   <div className="w-20 h-20 mb-4 relative rounded-full overflow-hidden border-4 border-mint-green shadow-lg">
-                    <Image src={t.photo} alt={`Portrait professionnel de ${t.name}, ${t.role}, client satisfait de l'accompagnement commercial de Laurent Serre.`} fill style={{objectFit:'cover'}} sizes="80px" />
+                    <Image src={t.photo} alt={`Portrait professionnel de ${t.name}, ${t.role}, client satisfait de l'accompagnement commercial de Laurent Serre.`} fill style={{objectFit:'cover'}} sizes="80px" quality={60} loading="lazy" />
                   </div>
                   <blockquote className="text-gray-anthracite dark:text-primary-bg/90 font-italic text-lg leading-relaxed mb-4 text-center">"{t.quote}"</blockquote>
                   <div className="font-title font-bold text-blue-ink dark:text-primary-bg text-base text-center">
