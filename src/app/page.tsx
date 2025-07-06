@@ -1,4 +1,3 @@
-'use client';
 import dynamic from 'next/dynamic';
 import type { Metadata } from 'next';
 import Button from "@/components/ui/Button";
@@ -6,7 +5,7 @@ import Link from "next/link";
 import Image from 'next/image';
 import ProblemSection from '@/components/sections/ProblemSection';
 import HubSpotForm from '@/components/HubSpotForm';
-import { useState } from 'react';
+import AccueilClient from '@/components/AccueilClient';
 
 const LogoBanner = dynamic(() => import('@/components/LogoBanner'));
 
@@ -19,8 +18,6 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const [showContactForm, setShowContactForm] = useState(false);
-
   return (
     <main className="flex flex-col min-h-screen">
       {/* Hero Section Nouvelle Version */}
@@ -105,17 +102,7 @@ export default function Home() {
       </section>
 
       <LogoBanner />
-      <ProblemSection onContactClick={() => setShowContactForm(true)} />
-      {showContactForm && (
-        <section className="py-16 bg-white dark:bg-gray-anthracite/10">
-          <div className="max-w-2xl mx-auto px-4 sm:px-6">
-            <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 text-center">
-              Prendre contact avec Laurent Serre
-            </h2>
-            <HubSpotForm />
-          </div>
-        </section>
-      )}
+      <AccueilClient />
     </main>
   );
 }
