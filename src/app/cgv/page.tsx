@@ -1,3 +1,17 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Conditions Générales de Vente – Laurent Serre Développement",
+  description: "Consultez les conditions générales de vente pour les services de formation et consulting en développement commercial de Laurent Serre.",
+  alternates: {
+    canonical: "https://laurentserre.com/cgv"
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
 export default function CGV() {
   return (
     <>
