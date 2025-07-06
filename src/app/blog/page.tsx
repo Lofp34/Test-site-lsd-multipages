@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import Button from '@/components/ui/Button';
 
 export const metadata: Metadata = {
   title: 'Blog Développement Commercial - Conseils d\'Expert | Laurent Serre',
@@ -91,25 +92,53 @@ export default function BlogPage() {
 
   return (
     <main className="bg-primary-bg dark:bg-gray-dark text-gray-dark dark:text-primary-bg">
-      {/* Hero Section */}
-      <section className="py-24 sm:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-6 py-3 rounded-full mb-8">
+      {/* Hero Section conforme */}
+      <section className="min-h-screen relative overflow-hidden flex items-center justify-center pt-20">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-ink via-blue-ink/95 to-mint-green/20"></div>
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
+          <div className="space-y-6 sm:space-y-8 animate-fade-in-up">
+            <div className="inline-flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-6 py-3 rounded-full">
               <span className="w-3 h-3 bg-mint-green rounded-full animate-pulse"></span>
               <span className="font-title font-semibold text-mint-green text-sm md:text-base">
                 Expertise & Conseils
               </span>
             </div>
-            
-            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink dark:text-white sm:text-6xl">
-              Blog Développement Commercial
+            <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-title font-extrabold text-white leading-tight drop-shadow-lg">
+              <span className="text-blue-ink dark:text-white">Blog</span> <span className="text-mint-green">Développement Commercial</span>
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Découvrez nos conseils d'expert pour développer votre activité commerciale, 
-              structurer vos équipes et optimiser vos performances de vente.
-            </p>
-            <div className="mt-4 w-24 h-1.5 bg-mint-green rounded-full mx-auto"></div>
+            <div className="max-w-5xl mx-auto space-y-4 sm:space-y-6">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-body text-white/95 leading-relaxed drop-shadow-md px-2">
+                Découvrez nos conseils d'expert pour développer votre activité commerciale, structurer vos équipes et optimiser vos performances de vente.
+              </p>
+              <p className="text-base sm:text-lg md:text-xl font-italic text-white/90 leading-relaxed drop-shadow-sm px-2">
+                Analyses, méthodes, retours terrain et innovations pour booster votre business B2B.
+              </p>
+            </div>
+            {/* Boutons d'appel à l'action */}
+            <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row justify-center items-center pt-6 sm:pt-8 pb-12 sm:pb-16 px-4">
+              <Link href="/diagnostic">
+                <Button 
+                  variant="primary"
+                  size="lg"
+                  icon="🎯"
+                  className="w-full sm:w-auto"
+                >
+                  Diagnostic gratuit
+                </Button>
+              </Link>
+              <Link href="/bootcamp">
+                <Button 
+                  variant="outline"
+                  size="lg"
+                  icon="🚀"
+                  className="w-full sm:w-auto"
+                >
+                  Découvrir le bootcamp
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

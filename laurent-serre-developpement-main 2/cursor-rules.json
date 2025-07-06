@@ -1,0 +1,242 @@
+[
+  {
+    "category": "qualite-technique",
+    "rules": [
+      {
+        "id": "tech-semantic-html",
+        "title": "Utilisation du HTML Sémantique",
+        "description": "Structurer le contenu avec des balises HTML5 sémantiques pour améliorer l'accessibilité et le SEO.",
+        "criteria": "La page doit utiliser <header>, <footer>, <main>, <nav>, <section>, <article>, et <aside> de manière appropriée. Les titres doivent suivre une hiérarchie logique (un seul <h1>, puis <h2>, <h3>...)",
+        "example": "<main><section><h1>Titre Principal</h1><article><h2>Sous-titre</h2>...</article></section></main>"
+      },
+      {
+        "id": "tech-component-structure",
+        "title": "Structure en Composants Réutilisables",
+        "description": "Développer l'interface en utilisant une approche de composants modulaires et réutilisables pour améliorer la maintenabilité.",
+        "criteria": "Les éléments d'interface répétés (boutons, cartes, bannières) doivent être encapsulés dans leurs propres composants React/Vue/etc. avec des props bien définies.",
+        "example": "Composant Button.tsx: `const Button = ({ label, onClick }) => <button onClick={onClick}>{label}</button>;`"
+      },
+      {
+        "id": "tech-separation-of-concerns",
+        "title": "Séparation des Responsabilités",
+        "description": "Séparer la logique métier (ex: appels API, gestion d'état) de la logique de présentation pour faciliter les tests et la réutilisation.",
+        "criteria": "Utiliser des hooks personnalisés (React) ou des services dédiés pour extraire la logique complexe des composants d'interface. Les composants doivent être aussi 'purs' que possible.",
+        "example": "hook useUserData.ts: `const useUserData = (userId) => { ...fetch logic...; return { user, loading }; }`"
+      },
+      {
+        "id": "tech-linter-formatter",
+        "title": "Configuration d'un Linter et d'un Formatter",
+        "description": "Assurer une qualité de code et un style consistants sur l'ensemble du projet.",
+        "criteria": "Un fichier de configuration pour ESLint et Prettier doit être présent à la racine du projet. Aucune erreur de linting ne doit être présente avant un commit.",
+        "example": "Fichiers `.eslintrc.json` et `.prettierrc` configurés et fonctionnels."
+      },
+      {
+        "id": "tech-nextjs-features",
+        "title": "Utilisation des Fonctionnalités de Next.js",
+        "description": "Tirer parti des optimisations natives de Next.js pour la performance et le SEO.",
+        "criteria": "Utiliser `next/image` pour les images, `next/font` for les polices, et `next/link` pour la navigation interne. Le rendu côté serveur (SSR) ou la génération statique (SSG) doit être utilisé de manière appropriée.",
+        "example": "`import Image from 'next/image'; <Image src='/logo.png' width={100} height={50} alt='Logo' />`"
+      }
+    ]
+  },
+  {
+    "category": "seo-on-page",
+    "rules": [
+      {
+        "id": "seo-title-tag",
+        "title": "Balise <title> Optimisée",
+        "description": "Chaque page doit inclure une balise <title> unique, descriptive et comportant les mots-clés principaux de la page.",
+        "criteria": "Entre 50 et 60 caractères, incluant le mot-clé principal et un branding si possible.",
+        "example": "<title>Solutions de CRM pour PME | EntrepriseX</title>"
+      },
+      {
+        "id": "seo-meta-description",
+        "title": "Balise Meta Description Persuasive",
+        "description": "Chaque page doit avoir une meta description unique qui incite au clic dans les résultats de recherche.",
+        "criteria": "Entre 150 et 160 caractères. Doit contenir le mot-clé principal et un appel à l'action implicite ou explicite.",
+        "example": "<meta name=\"description\" content=\"Découvrez comment notre CRM aide les PME à optimiser leur relation client. Essai gratuit de 14 jours.\">"
+      },
+      {
+        "id": "seo-single-h1",
+        "title": "Usage d'un unique <h1>",
+        "description": "Chaque page doit contenir une et une seule balise <h1> qui représente le sujet principal de la page.",
+        "criteria": "La balise <h1> doit être présente et unique sur la page. Elle doit contenir le mot-clé principal.",
+        "example": "<h1>Le Logiciel CRM Leader pour les Petites et Moyennes Entreprises</h1>"
+      },
+      {
+        "id": "seo-sitemap-robots",
+        "title": "Présence de sitemap.xml et robots.txt",
+        "description": "Faciliter l'exploration et l'indexation du site par les moteurs de recherche.",
+        "criteria": "Un fichier `sitemap.xml` valide et un fichier `robots.txt` doivent être accessibles à la racine du site. Le sitemap doit être référencé dans le robots.txt.",
+        "example": "robots.txt: `User-agent: * \\nAllow: / \\nSitemap: https://www.example.com/sitemap.xml`"
+      },
+      {
+        "id": "seo-open-graph",
+        "title": "Implémentation des balises Open Graph",
+        "description": "Contrôler l'apparence des partages de pages sur les réseaux sociaux.",
+        "criteria": "Les balises `og:title`, `og:description`, `og:image`, et `og:url` doivent être présentes sur toutes les pages partageables.",
+        "example": "<meta property=\"og:title\" content=\"Titre pour les réseaux sociaux\" />"
+      }
+    ]
+  },
+  {
+    "category": "ux-copywriting",
+    "rules": [
+      {
+        "id": "ux-hero-section",
+        "title": "Hero Section Claire et Impactante",
+        "description": "La section au-dessus de la ligne de flottaison doit communiquer la proposition de valeur unique et inciter à l'action en moins de 5 secondes.",
+        "criteria": "Doit contenir un titre principal (USP), un sous-titre qui clarifie, et un Appel à l'Action (CTA) principal bien visible.",
+        "example": "Titre: 'Automatisez votre comptabilité.' Sous-titre: 'Gagnez 10h par semaine avec notre solution IA.' CTA: '[Démarrer mon essai gratuit]'"
+      },
+      {
+        "id": "ux-social-proof",
+        "title": "Intégration de la Preuve Sociale",
+        "description": "Renforcer la crédibilité et la confiance en montrant que d'autres entreprises utilisent et apprécient le produit/service.",
+        "criteria": "La page d'accueil doit inclure une section avec des logos de clients, des témoignages chiffrés, ou des études de cas.",
+        "example": "Section 'Ils nous font confiance' avec les logos de 5 clients connus. Témoignage: '\"Nous avons augmenté nos leads de 40% en 6 mois.\" - CEO de ...'"
+      },
+      {
+        "id": "ux-clear-cta",
+        "title": "Appels à l'Action (CTA) clairs et consistants",
+        "description": "Guider l'utilisateur vers l'objectif de conversion principal de la page.",
+        "criteria": "Les boutons de CTA doivent utiliser des verbes d'action et avoir un design contrasté. Le CTA principal doit être répété sur la page.",
+        "example": "Boutons avec les textes: 'Obtenir une démo', 'Télécharger le livre blanc', 'Contacter un expert'."
+      },
+      {
+        "id": "ux-value-over-features",
+        "title": "Mettre en avant les bénéfices, pas les fonctionnalités",
+        "description": "Le copywriting doit se concentrer sur la résolution des problèmes du client et les bénéfices obtenus, plutôt que de lister des caractéristiques techniques.",
+        "criteria": "Pour chaque fonctionnalité, le texte doit répondre à la question 'Qu'est-ce que j'y gagne ?'.",
+        "example": "Au lieu de 'Synchronisation multi-plateformes', écrire 'Accédez à vos données, où que vous soyez, sur tous vos appareils.'"
+      },
+      {
+        "id": "ux-visual-hierarchy",
+        "title": "Hiérarchie Visuelle et Espace Blanc",
+        "description": "Organiser le contenu de manière à guider l'œil de l'utilisateur vers les informations les plus importantes.",
+        "criteria": "Utiliser des tailles de police, des graisses et des couleurs différentes pour créer une hiérarchie claire. Utiliser généreusement l'espace blanc pour éviter la surcharge cognitive.",
+        "example": "Le titre principal est en 48px, les titres de section en 32px, le texte courant en 16px. Marge d'au moins 64px entre les sections."
+      }
+    ]
+  },
+  {
+    "category": "performance",
+    "rules": [
+      {
+        "id": "perf-lcp",
+        "title": "Optimisation du LCP (Largest Contentful Paint)",
+        "description": "Améliorer le temps de chargement de l'élément principal visible à l'écran.",
+        "criteria": "LCP < 2.5s mesuré via Lighthouse ou PageSpeed Insights.",
+        "example": "Utiliser un composant <Image> de Next.js avec la prop `priority` pour l'image principale de la hero section."
+      },
+      {
+        "id": "perf-cls",
+        "title": "Minimisation du CLS (Cumulative Layout Shift)",
+        "description": "Assurer une stabilité visuelle en évitant les décalages inattendus de la mise en page.",
+        "criteria": "CLS < 0.1. Toutes les images, iframes et publicités doivent avoir des dimensions (width, height) spécifiées.",
+        "example": "<img src='image.jpg' width='1200' height='800' alt='description'> ou utiliser `aspect-ratio` en CSS."
+      },
+      {
+        "id": "perf-image-formats",
+        "title": "Utilisation de Formats d'Image Modernes",
+        "description": "Servir les images dans des formats nouvelle génération pour réduire leur poids sans perte de qualité perceptible.",
+        "criteria": "Les images doivent être servies aux formats WebP ou AVIF pour les navigateurs compatibles. L'utilisation de `next/image` gère cela automatiquement.",
+        "example": "Configuration de `next.config.js` pour autoriser les formats d'images modernes : `images: { formats: ['image/avif', 'image/webp'] }`."
+      },
+      {
+        "id": "perf-lazy-loading",
+        "title": "Lazy Loading des Images et iframes",
+        "description": "Différer le chargement des images et iframes situées en dehors de la fenêtre visible initiale.",
+        "criteria": "Toutes les images et iframes sous la ligne de flottaison doivent utiliser l'attribut `loading=\"lazy\"`. `next/image` le fait par défaut.",
+        "example": "<img src='...' loading='lazy' alt='...'>"
+      },
+      {
+        "id": "perf-code-splitting",
+        "title": "Chargement dynamique des composants non critiques",
+        "description": "Réduire la taille du bundle JavaScript initial en ne chargeant que le code nécessaire pour le premier rendu.",
+        "criteria": "Les composants lourds et non essentiels au premier affichage (ex: modales, sections de pied de page complexes) doivent être chargés dynamiquement.",
+        "example": "`const HeavyComponent = dynamic(() => import('../components/HeavyComponent'))` en Next.js."
+      }
+    ]
+  },
+  {
+    "category": "accessibilite",
+    "rules": [
+      {
+        "id": "a11y-color-contrast",
+        "title": "Contraste des Couleurs Suffisant",
+        "description": "Garantir que le texte est lisible pour tous les utilisateurs, y compris ceux ayant une déficience visuelle.",
+        "criteria": "Le contraste entre la couleur du texte et son arrière-plan doit être d'au moins 4.5:1 pour le texte normal et 3:1 pour le grand texte (WCAG AA).",
+        "example": "Texte gris foncé (#333333) sur fond blanc (#FFFFFF). Utiliser un outil de vérification de contraste."
+      },
+      {
+        "id": "a11y-keyboard-navigation",
+        "title": "Navigation au Clavier Complète",
+        "description": "Permettre aux utilisateurs qui ne peuvent pas utiliser de souris de naviguer sur l'ensemble du site.",
+        "criteria": "Tous les éléments interactifs (liens, boutons, champs de formulaire) doivent être atteignables et activables en utilisant uniquement la touche 'Tab' et 'Entrée'.",
+        "example": "L'ordre de tabulation doit être logique et suivre l'ordre visuel de la page."
+      },
+      {
+        "id": "a11y-focus-visible",
+        "title": "Indicateurs de Focus Visibles",
+        "description": "Indiquer clairement quel élément a le focus lors de la navigation au clavier.",
+        "criteria": "Ne jamais supprimer l'outline du focus sans fournir une alternative stylisée claire (ex: `:focus-visible { outline: 2px solid blue; }`).",
+        "example": "`.button:focus-visible { box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.6); }`"
+      },
+      {
+        "id": "a11y-alt-text",
+        "title": "Texte Alternatif pour les Images",
+        "description": "Fournir une description textuelle pour les images informatives.",
+        "criteria": "Toutes les balises <img> qui transmettent une information doivent avoir un attribut `alt` descriptif. Les images purement décoratives doivent avoir un `alt=\"\"` vide.",
+        "example": "<img src='graphique.png' alt='Graphique montrant une augmentation de 50% des ventes au T3'>"
+      },
+      {
+        "id": "a11y-form-labels",
+        "title": "Étiquettes pour les Champs de Formulaire",
+        "description": "Associer explicitement une étiquette à chaque champ de formulaire pour les lecteurs d'écran.",
+        "criteria": "Chaque <input>, <textarea>, et <select> doit être associé à une balise <label> en utilisant l'attribut `for` qui correspond à l'`id` du champ.",
+        "example": "`<label for=\"email\">Adresse e-mail</label><input type=\"email\" id=\"email\" name=\"email\">`"
+      }
+    ]
+  },
+  {
+    "category": "maintenabilite",
+    "rules": [
+      {
+        "id": "maint-naming-convention",
+        "title": "Conventions de Nommage Claires",
+        "description": "Utiliser des conventions de nommage cohérentes pour les fichiers, variables, fonctions et composants.",
+        "criteria": "Les composants en PascalCase (`UserProfile.tsx`), les variables et fonctions en camelCase (`getUserData`), les fichiers CSS/SCSS en kebab-case (`user-profile.scss`).",
+        "example": "Fichier `components/UserProfile.tsx`, fonction `const calculateTotal = (...) => {}`."
+      },
+      {
+        "id": "maint-file-structure",
+        "title": "Structure de Fichiers Logique",
+        "description": "Organiser les fichiers du projet de manière prévisible et logique.",
+        "criteria": "Dans un projet Next.js, suivre la structure de l'App Router. Créer des dossiers dédiés pour les composants (`/components`), les hooks (`/hooks`), les utilitaires (`/lib` ou `/utils`), etc.",
+        "example": "`src/app/page.tsx`, `src/components/ui/Button.tsx`, `src/lib/api.ts`."
+      },
+      {
+        "id": "maint-no-magic-numbers",
+        "title": "Éviter les Nombres Magiques et les Chaînes de Caractères",
+        "description": "Utiliser des constantes nommées plutôt que des valeurs codées en dur pour améliorer la lisibilité et la maintenabilité.",
+        "criteria": "Les valeurs qui ont une signification métier ou de configuration (seuils, clés d'API, etc.) doivent être définies comme des constantes.",
+        "example": "Au lieu de `if (user.role === 3)`, utiliser `const ADMIN_ROLE = 3; if (user.role === ADMIN_ROLE)`."
+      },
+      {
+        "id": "maint-single-responsibility",
+        "title": "Principe de Responsabilité Unique",
+        "description": "Chaque fonction ou composant ne doit avoir qu'une seule raison de changer.",
+        "criteria": "Une fonction ne doit faire qu'une seule chose. Un composant ne doit gérer qu'une seule partie de l'interface. Si un composant devient trop grand, il doit être décomposé.",
+        "example": "Un composant `UserProfile` ne doit pas contenir la logique de mise à jour du mot de passe. Il doit appeler un autre composant `UpdatePasswordForm`."
+      },
+      {
+        "id": "maint-dry-principle",
+        "title": "Ne Pas se Répéter (DRY - Don't Repeat Yourself)",
+        "description": "Éviter la duplication de code en l'extrayant dans des fonctions ou des composants réutilisables.",
+        "criteria": "Si le même bloc de code (ou une logique très similaire) apparaît à plusieurs endroits, il doit être refactorisé en une fonction ou un composant partagé.",
+        "example": "Créer une fonction `formatDate(date)` dans `utils/date.ts` au lieu de formater les dates manuellement dans chaque composant."
+      }
+    ]
+  }
+] 
