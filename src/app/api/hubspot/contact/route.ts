@@ -1,9 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { HubSpotContact } from '@/utils/hubspot';
+import { HubSpotContact, HubSpotError, HubSpotResponse, HubSpotSearchResponse } from '@/utils/hubspot';
+
+interface ContactFormData {
+  firstName: string;
+  lastName?: string;
+  email: string;
+  company?: string;
+  message?: string;
+}
 
 export async function POST(request: NextRequest) {
   try {
-    const { firstName, lastName, email, company, message } = await request.json();
+    const formData = await request.json() as ContactFormData;
+    const { firstName, lastName, email, company, message } = formData;
 
     // Validation des données
     if (!firstName || !email) {
@@ -48,7 +57,7 @@ export async function POST(request: NextRequest) {
     });
 
     if (!hubspotResponse.ok) {
-      const errorData = await hubspotResponse.json();
+      const errorData = await hubspotResponse.json() as HubSpotError;
       console.error('Erreur HubSpot:', errorData);
       
       // Si le contact existe déjà, on update
@@ -59,7 +68,7 @@ export async function POST(request: NextRequest) {
       throw new Error(`HubSpot API Error: ${hubspotResponse.status}`);
     }
 
-    const hubspotData = await hubspotResponse.json();
+    const hubspotData = await hubspotResponse.json() as HubSpotResponse;
     
     return NextResponse.json({
       success: true,
@@ -100,7 +109,7 @@ async function updateExistingContact(email: string, contactData: HubSpotContact,
       }
     );
 
-    const searchData = await searchResponse.json();
+    const searchData = await searchResponse.json() as HubSpotSearchResponse;
     
     if (searchData.results && searchData.results.length > 0) {
       const contactId = searchData.results[0].id;

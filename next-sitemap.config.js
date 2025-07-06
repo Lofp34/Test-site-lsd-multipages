@@ -1,6 +1,8 @@
 /** @type {import('next-sitemap').IConfig} */
-module.exports = {
-    siteUrl: 'https://laurentserre.com',
+export default {
+    siteUrl: process.env.SITE_URL || 'https://laurentserre.com',
     generateRobotsTxt: true,
+    changefreq: 'daily',
+    priority: 0.7,
     // Ajoute d'autres options si besoin
   }
