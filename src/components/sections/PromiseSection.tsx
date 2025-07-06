@@ -164,7 +164,7 @@ export default function PromiseSection() {
               <Button 
                 variant="secondary"
                 icon="🔍"
-                onClick={() => scrollToSection('diagnostic')}
+                onClick={() => window.location.href = '/diagnostic'}
                 className="bg-mint-green text-white border-2 border-mint-green hover:bg-mint-green/90 hover:text-white shadow-lg"
               >
                 Faire le diagnostic

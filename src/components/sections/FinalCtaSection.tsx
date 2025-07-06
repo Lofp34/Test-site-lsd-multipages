@@ -115,7 +115,7 @@ export default function FinalCtaSection() {
               <Button 
                 variant="primary"
                 size="sm"
-                onClick={() => handleCtaClick('lancer_diagnostic', 'diagnostic')}
+                onClick={() => window.location.href = '/diagnostic'}
               >
                 Lancer le test gratuit
               </Button>

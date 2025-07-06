@@ -3,7 +3,7 @@
 import Button from "@/components/ui/Button";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
-export default function ProblemSection() {
+export default function ProblemSection({ onContactClick }: { onContactClick?: () => void }) {
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({
       behavior: 'smooth',
@@ -110,7 +110,7 @@ export default function ProblemSection() {
                 variant="primary"
                 size="lg"
                 icon="🚀"
-                onClick={() => scrollToSection('contact')}
+                onClick={() => onContactClick ? onContactClick() : scrollToSection('contact')}
                 className="px-12 py-5 text-xl"
               >
                 Parlons-en maintenant !
