@@ -1,11 +1,12 @@
 import React from "react";
-import type { Metadata, Viewport } from "next";
+import type { Metadata } from "next";
 import { Inter, Open_Sans, Nunito, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
 import AnalyticsConsent from "@/components/AnalyticsConsent";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -31,17 +32,13 @@ const robotoSlab = Roboto_Slab({
   display: "swap",
 });
 
-export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1,
-};
-
 export const metadata: Metadata = {
   title: "Laurent Serre Développement - Expert Commercial & Formation",
   description: "Accompagnement commercial pour PME : structuration des équipes, formation à la vente, méthodes éprouvées. 20 ans d'expérience terrain + outils IA.",
   keywords: "formation commerciale, accompagnement vente, expert commercial, PME, structuration équipe commerciale, Laurent Serre",
   authors: [{ name: "Laurent Serre" }],
   creator: "Laurent Serre",
+  viewport: "width=device-width, initial-scale=1",
   openGraph: {
     title: "Laurent Serre Développement - Expert Commercial & Formation",
     description: "De l'effort commercial au levier stratégique. Accompagnement et formation pour équipes commerciales.",
@@ -75,19 +72,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" suppressHydrationWarning>
+    <html lang="fr">
       <head>
         <link rel="icon" href="/favicon.ico" />
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1YMSHSSQKJ"></script>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-1YMSHSSQKJ');
-          `
-        }} />
         <AnalyticsConsent />
         
         {/* Scripts JSON-LD pour le SEO */}
@@ -209,6 +196,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${openSans.variable} ${nunito.variable} ${robotoSlab.variable} antialiased`}
       >
+        <GoogleAnalytics />
         <Header />
         {children}
         <Footer />

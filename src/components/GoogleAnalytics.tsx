@@ -1,57 +1,100 @@
 'use client';
 
-import Script from 'next/script';
 import { useEffect } from 'react';
-
-interface GoogleAnalyticsProps {
-  measurementId: string;
-}
 
 declare global {
   interface Window {
-    gtag: (...args: (string | Date | Record<string, unknown>)[]) => void;
-    dataLayer: (string | Date | Record<string, unknown>)[][];
+    gtag: (...args: any[]) => void;
+    dataLayer: any[];
   }
 }
 
-export default function GoogleAnalytics({ measurementId }: GoogleAnalyticsProps) {
+const GA_TRACKING_ID = 'G-1YMSHSSQKJ';
+
+export default function GoogleAnalytics() {
   useEffect(() => {
-    // Initialiser dataLayer si pas déjà fait
-    if (typeof window !== 'undefined') {
+    // Éviter le chargement si Google Analytics est déjà initialisé
+    if (typeof window.gtag === 'function') {
+      return;
+    }
+
+    // Charger Google Analytics de manière optimisée
+    const loadGA = () => {
+      // Initialiser dataLayer
       window.dataLayer = window.dataLayer || [];
-      
-      // Fonction gtag
-      window.gtag = function(...args: (string | Date | Record<string, unknown>)[]) {
-        window.dataLayer.push(args);
+      window.gtag = function() {
+        window.dataLayer.push(arguments);
       };
-      
+
       // Configuration initiale
       window.gtag('js', new Date());
-      window.gtag('config', measurementId, {
+      window.gtag('config', GA_TRACKING_ID, {
+        // Optimisations pour éviter le layout thrashing
+        page_title: document.title,
+        page_location: window.location.href,
+        // Désactiver les mesures automatiques qui causent des recalculs
+        send_page_view: false,
+        // Optimiser les performances
+        transport_type: 'beacon',
+        // Réduire l'impact sur les performances
+        custom_map: {},
+      });
+
+      // Envoyer la page view manuellement pour plus de contrôle
+      window.gtag('event', 'page_view', {
         page_title: document.title,
         page_location: window.location.href,
       });
-    }
-  }, [measurementId]);
 
-  return (
-    <>
-      {/* Script Google Analytics */}
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}
-        strategy="afterInteractive"
-      />
-    </>
-  );
+      // Charger le script de manière asynchrone après l'initialisation
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`;
+      
+      // Ajouter le script au head de manière non-bloquante
+      script.onload = () => {
+        // Script chargé avec succès
+        console.log('Google Analytics chargé');
+      };
+      
+      script.onerror = () => {
+        // Gestion d'erreur silencieuse
+        console.warn('Erreur de chargement Google Analytics');
+      };
+
+      document.head.appendChild(script);
+    };
+
+    // Utiliser requestIdleCallback pour charger GA quand le navigateur est libre
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(loadGA, { timeout: 2000 });
+    } else {
+      // Fallback pour les navigateurs qui ne supportent pas requestIdleCallback
+      setTimeout(loadGA, 1000);
+    }
+
+  }, []);
+
+  return null;
 }
 
-// Hook pour tracker des événements personnalisés
-export const trackEvent = (eventName: string, parameters?: Record<string, string | number | undefined>) => {
-  if (typeof window !== 'undefined' && window.gtag) {
-    window.gtag('event', eventName, {
-      event_category: 'engagement',
-      event_label: eventName,
-      ...parameters,
+// Fonction utilitaire pour tracker des événements
+export const trackEvent = (action: string, category: string, label?: string, value?: number) => {
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', action, {
+      event_category: category,
+      event_label: label,
+      value: value,
+    });
+  }
+};
+
+// Fonction pour tracker les pages vues (pour les SPA)
+export const trackPageView = (url: string, title?: string) => {
+  if (typeof window.gtag === 'function') {
+    window.gtag('config', GA_TRACKING_ID, {
+      page_path: url,
+      page_title: title || document.title,
     });
   }
 };
@@ -60,44 +103,26 @@ export const trackEvent = (eventName: string, parameters?: Record<string, string
 export const trackBusinessEvents = {
   // Diagnostic complété
   diagnosticCompleted: (score: string) => {
-    trackEvent('diagnostic_completed', {
-      event_category: 'lead_generation',
-      diagnostic_score: score,
-      value: 1,
-    });
+    trackEvent('diagnostic_completed', 'lead_generation', undefined, 1);
   },
 
   // Formulaire de contact soumis
   contactFormSubmitted: (source: string) => {
-    trackEvent('contact_form_submitted', {
-      event_category: 'conversion',
-      form_source: source,
-      value: 5, // Valeur estimée d'un lead
-    });
+    trackEvent('contact_form_submitted', 'conversion', source, 5);
   },
 
   // Section visitée
   sectionViewed: (sectionName: string) => {
-    trackEvent('section_viewed', {
-      event_category: 'engagement',
-      section_name: sectionName,
-    });
+    trackEvent('section_viewed', 'engagement', sectionName);
   },
 
   // CTA cliqué
   ctaClicked: (ctaName: string, location: string) => {
-    trackEvent('cta_clicked', {
-      event_category: 'engagement',
-      cta_name: ctaName,
-      cta_location: location,
-    });
+    trackEvent('cta_clicked', 'engagement', ctaName, undefined);
   },
 
   // Cas client consulté
   caseStudyViewed: (clientName: string) => {
-    trackEvent('case_study_viewed', {
-      event_category: 'engagement',
-      client_name: clientName,
-    });
+    trackEvent('case_study_viewed', 'engagement', clientName);
   },
 }; 
