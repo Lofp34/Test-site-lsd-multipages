@@ -1,0 +1,19 @@
+# Navigateurs modernes - Évite les polyfills inutiles
+# Supporte nativement ES6+, Array.prototype.at, Object.hasOwn, etc.
+
+# Production: navigateurs modernes uniquement
+> 1%
+last 2 versions
+not dead
+not ie 11
+not op_mini all
+
+# Navigateurs spécifiques supportant ES2022
+Chrome >= 94
+Firefox >= 93
+Safari >= 15
+Edge >= 94
+
+# Mobile moderne
+iOS >= 15
+Android >= 94 
