@@ -35,7 +35,7 @@ function DiagnosticPage() {
     company: '',
     email: '',
     phone: '',
-    mainChallenge: ''
+    principal_defi_commercial: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -61,7 +61,7 @@ function DiagnosticPage() {
         email: formData.email,
         company: formData.company,
         phone: formData.phone,
-        message: `Principal défi: ${formData.mainChallenge}`,
+        principal_defi_commercial: formData.principal_defi_commercial
       };
 
       console.log('📤 Envoi des données vers HubSpot:', hubspotData);
@@ -83,7 +83,7 @@ function DiagnosticPage() {
           company: '',
           email: '',
           phone: '',
-          mainChallenge: ''
+          principal_defi_commercial: ''
         });
       } else {
         throw new Error('Erreur lors de l\'envoi');
@@ -259,25 +259,25 @@ function DiagnosticPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="mainChallenge" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="principal_defi_commercial" className="block text-sm font-medium text-gray-700 mb-2">
                     Principal défi commercial *
                   </label>
                   <select
-                    id="mainChallenge"
-                    name="mainChallenge"
+                    id="principal_defi_commercial"
+                    name="principal_defi_commercial"
                     required
-                    value={formData.mainChallenge}
+                    value={formData.principal_defi_commercial}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
                     <option value="">Sélectionnez votre principal défi</option>
-                    <option value="prospection">Difficultés de prospection</option>
-                    <option value="closing">Problèmes de closing</option>
-                    <option value="team">Gestion d'équipe commerciale</option>
-                    <option value="strategy">Stratégie commerciale</option>
-                    <option value="performance">Performance commerciale</option>
-                    <option value="transformation">Transformation digitale</option>
-                    <option value="other">Autre</option>
+                    <option value="Difficultés de prospect">Difficultés de prospection</option>
+                    <option value="Problèmes de closing">Problèmes de closing</option>
+                    <option value="Gestion d'équipe comr">Gestion d'équipe commerciale</option>
+                    <option value="Stratégie commerciale">Stratégie commerciale</option>
+                    <option value="Performance commer">Performance commerciale</option>
+                    <option value="Transformation digital">Transformation digitale</option>
+                    <option value="Autre">Autre</option>
                   </select>
                 </div>
 
