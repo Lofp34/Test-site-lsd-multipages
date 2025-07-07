@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
         hs_lead_status: 'NEW',
         lifecyclestage: 'lead',
         ...(body.message && { hs_content_membership_notes: body.message }),
-        ...(body.principal_defi_commercial && { principal_defi_commercial: body.principal_defi_commercial })
+        // ...(body.principal_defi_commercial && { principal_defi_commercial: body.principal_defi_commercial })
       }
     };
     
@@ -75,29 +75,29 @@ export async function POST(request: NextRequest) {
       'Authorization': `Bearer ${hubspotToken}`
     };
     
-    // 7. Envoi vers HubSpot
-    console.log(`${logPrefix} 🚀 Envoi des données à HubSpot...`);
-    const hubspotResponse = await fetch(hubspotUrl, {
-      method: 'POST',
-      headers: headers,
-      body: JSON.stringify(hubspotData),
-    });
-    
-    // 8. Lecture de la réponse
-    let responseData;
-    const responseText = await hubspotResponse.text();
+    // 7. Envoi à HubSpot
+    let hubspotResponse, hubspotResponseData;
     try {
-      responseData = JSON.parse(responseText);
-    } catch (parseError) {
-      responseData = { rawResponse: responseText };
+      hubspotResponse = await fetch(hubspotUrl, {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${hubspotToken}`,
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(hubspotData),
+      });
+      hubspotResponseData = await hubspotResponse.json();
+    } catch (error) {
+      console.error(`${logPrefix} ❌ Erreur réseau ou parsing HubSpot:`, error);
+      return NextResponse.json({ error: 'Erreur lors de la communication avec HubSpot', details: String(error) }, { status: 502 });
     }
     
-    // 9. Vérification du succès
+    // 8. Vérification du succès
     if (hubspotResponse.ok) {
       return NextResponse.json({
         success: true,
         message: 'Contact créé avec succès dans HubSpot',
-        hubspotResponse: responseData,
+        hubspotResponse: hubspotResponseData,
         debug: {
           status: hubspotResponse.status,
           statusText: hubspotResponse.statusText,
@@ -109,7 +109,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         { 
           error: 'Erreur lors de la création du contact dans HubSpot',
-          hubspotError: responseData,
+          hubspotError: hubspotResponseData,
           debug: {
             status: hubspotResponse.status,
             statusText: hubspotResponse.statusText,
