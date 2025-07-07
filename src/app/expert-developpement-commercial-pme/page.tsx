@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { ArrowRight, Target, Users, TrendingUp, Award, CheckCircle, Star, Crown, Zap, Phone, Mail, Calendar, BarChart } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
   title: 'Expert Développement Commercial PME | Laurent Serre - 20 ans d\'Expérience Terrain',
@@ -44,7 +46,26 @@ export const metadata: Metadata = {
 
 export default function ExpertDeveloppementCommercialPMEPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <>
+      <StructuredData type="person" />
+      <StructuredData type="organization" />
+      <StructuredData 
+        type="service" 
+        data={{
+          name: "Expert Développement Commercial PME",
+          description: "Accompagnement complet pour transformer la performance commerciale des PME avec formation, coaching et stratégies sur-mesure",
+          price: "Sur devis"
+        }}
+      />
+      <StructuredData 
+        type="breadcrumb" 
+        data={[
+          { name: "Accueil", url: "/" },
+          { name: "Expert Développement Commercial PME", url: "/expert-developpement-commercial-pme" }
+        ]}
+      />
+      
+      <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
       {/* Hero Section */}
       <section className="min-h-[80vh] relative overflow-hidden flex items-center justify-center pt-20">
         <div className="absolute inset-0 z-0">
@@ -111,11 +132,11 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                     <div className="text-white/80">PME Accompagnées</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-mint-green">+150%</div>
+                    <div className="text-3xl font-bold text-mint-green">+17%</div>
                     <div className="text-white/80">CA Moyen Client</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-mint-green">95%</div>
+                    <div className="text-3xl font-bold text-mint-green">98%</div>
                     <div className="text-white/80">Taux Satisfaction</div>
                   </div>
                 </div>
@@ -148,7 +169,7 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 Formation & Développement
               </h3>
               <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
-                Découvrez notre <Link href="/bootcamp-commercial-intensif" className="text-mint-green hover:underline">bootcamp commercial intensif</Link> 
+                Découvrez notre <Link href="/bootcamp" className="text-mint-green hover:underline">bootcamp commercial intensif</Link> 
                 et nos <Link href="/ressources/guide-prospection" className="text-mint-green hover:underline">guides pratiques</Link> pour transformer vos équipes.
               </p>
               <div className="space-y-2 text-sm">
@@ -162,7 +183,7 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/management-equipe-commerciale" className="hover:text-mint-green">Management commercial</Link>
+                  <Link href="/formation-commerciale-pme#management-details" className="hover:text-mint-green">Management commercial</Link>
                 </div>
               </div>
             </div>
@@ -187,7 +208,7 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/accompagnement-transformation" className="hover:text-mint-green">Transformation processus</Link>
+                  <Link href="/transformation-commerciale" className="hover:text-mint-green">Transformation processus</Link>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
@@ -206,8 +227,8 @@ export default function ExpertDeveloppementCommercialPMEPage() {
               </h3>
               <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
                 Expertise <Link href="/ressources/kit-gestion-grands-comptes" className="text-mint-green hover:underline">grands comptes</Link>, 
-                <Link href="/prospection-lead-generation" className="text-mint-green hover:underline"> génération de leads</Link> et 
-                <Link href="/closing-negociation" className="text-mint-green hover:underline"> techniques de closing</Link> avancées.
+                <Link href="/ressources/guide-prospection" className="text-mint-green hover:underline"> génération de leads</Link> et 
+                <Link href="/ressources/guide-closing" className="text-mint-green hover:underline"> techniques de closing</Link> avancées.
               </p>
               <div className="space-y-2 text-sm">
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
@@ -234,8 +255,8 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 Innovation & Technologies
               </h3>
               <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
-                Intégration de l'<Link href="/ia-developpement-commercial" className="text-mint-green hover:underline">IA dans la vente</Link> et 
-                <Link href="/data-driven-sales" className="text-mint-green hover:underline"> approches data-driven</Link> pour 
+                Intégration de l'<Link href="/blog/ia-transforme-developpement-commercial-2025" className="text-mint-green hover:underline">IA dans la vente</Link> et 
+                <Link href="/suivi-performance" className="text-mint-green hover:underline"> approches data-driven</Link> pour 
                 optimiser vos performances commerciales.
               </p>
               <div className="space-y-2 text-sm">
@@ -245,11 +266,11 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/crm-intelligent-pme" className="hover:text-mint-green">CRM intelligent</Link>
+                  <Link href="/ressources/outil-strategie-commerciale" className="hover:text-mint-green">CRM intelligent</Link>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/automation-prospection" className="hover:text-mint-green">Automation prospection</Link>
+                  <Link href="/ressources/guide-prospection" className="hover:text-mint-green">Automation prospection</Link>
                 </div>
               </div>
             </div>
@@ -328,20 +349,20 @@ export default function ExpertDeveloppementCommercialPMEPage() {
               
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">+150%</div>
+                  <div className="text-4xl font-bold text-mint-green mb-2">+26%</div>
                   <div className="text-gray-anthracite dark:text-primary-bg/80">Chiffre d'Affaires</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">+75%</div>
-                  <div className="text-gray-anthracite dark:text-primary-bg/80">Taux Conversion</div>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-bold text-mint-green mb-2">-40%</div>
                   <div className="text-gray-anthracite dark:text-primary-bg/80">Cycle Vente</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">+200%</div>
+                  <div className="text-4xl font-bold text-mint-green mb-2">+32%</div>
                   <div className="text-gray-anthracite dark:text-primary-bg/80">Leads Qualifiés</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-mint-green mb-2">98%</div>
+                  <div className="text-gray-anthracite dark:text-primary-bg/80">Satisfaction</div>
                 </div>
               </div>
 
@@ -368,50 +389,102 @@ export default function ExpertDeveloppementCommercialPMEPage() {
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Link href="/consultant-commercial-montpellier" className="group">
-              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
+            <Link href="/consultant-commercial-montpellier" className="group cursor-pointer">
+              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-xl hover:bg-mint-green/5 border-2 border-transparent hover:border-mint-green/20 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02]">
                 <div className="flex items-center mb-4">
-                  <Phone className="w-6 h-6 text-mint-green mr-3" />
-                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green">
+                  <Phone className="w-6 h-6 text-mint-green mr-3 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green transition-colors">
                     Consultant Commercial Montpellier
                   </h3>
+                  <ArrowRight className="w-5 h-5 text-mint-green ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <p className="text-gray-anthracite dark:text-primary-bg/80">
+                <p className="text-gray-anthracite dark:text-primary-bg/80 group-hover:text-gray-800 dark:group-hover:text-primary-bg">
                   Intervention locale sur Montpellier et région Occitanie pour un accompagnement de proximité.
                 </p>
+                <div className="mt-4 text-mint-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  → Découvrir l'expertise locale
+                </div>
               </div>
             </Link>
 
-            <Link href="/formateur-vente-pme" className="group">
-              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
+            <Link href="/formateur-vente-pme" className="group cursor-pointer">
+              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-xl hover:bg-mint-green/5 border-2 border-transparent hover:border-mint-green/20 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02]">
                 <div className="flex items-center mb-4">
-                  <Users className="w-6 h-6 text-mint-green mr-3" />
-                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green">
+                  <Users className="w-6 h-6 text-mint-green mr-3 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green transition-colors">
                     Formateur Vente PME
                   </h3>
+                  <ArrowRight className="w-5 h-5 text-mint-green ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <p className="text-gray-anthracite dark:text-primary-bg/80">
+                <p className="text-gray-anthracite dark:text-primary-bg/80 group-hover:text-gray-800 dark:group-hover:text-primary-bg">
                   Formations spécialisées adaptées aux spécificités et contraintes des PME.
                 </p>
+                <div className="mt-4 text-mint-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  → Voir les formations disponibles
+                </div>
               </div>
             </Link>
 
-            <Link href="/coach-commercial-entreprise" className="group">
-              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
+            <Link href="/coach-commercial-entreprise" className="group cursor-pointer">
+              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-xl hover:bg-mint-green/5 border-2 border-transparent hover:border-mint-green/20 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02]">
                 <div className="flex items-center mb-4">
-                  <Target className="w-6 h-6 text-mint-green mr-3" />
-                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green">
+                  <Target className="w-6 h-6 text-mint-green mr-3 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green transition-colors">
                     Coach Commercial Entreprise
                   </h3>
+                  <ArrowRight className="w-5 h-5 text-mint-green ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <p className="text-gray-anthracite dark:text-primary-bg/80">
+                <p className="text-gray-anthracite dark:text-primary-bg/80 group-hover:text-gray-800 dark:group-hover:text-primary-bg">
                   Coaching individuel et collectif pour développer les performances de vos commerciaux.
                 </p>
+                <div className="mt-4 text-mint-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  → Découvrir le coaching commercial
+                </div>
               </div>
             </Link>
           </div>
         </div>
       </section>
+
+      {/* FAQ */}
+      <FAQ 
+        title="Questions Fréquentes sur l'Expert Développement Commercial PME"
+        description="Trouvez toutes les réponses à vos questions sur notre accompagnement en développement commercial spécialisé PME"
+        items={[
+          {
+            question: "Qu'est-ce qui différencie un expert développement commercial PME d'un consultant généraliste ?",
+            answer: "Un expert développement commercial PME maîtrise spécifiquement les enjeux, contraintes et opportunités des PME : budgets limités, équipes restreintes, besoin de résultats rapides. Laurent Serre développe des méthodes adaptées aux ressources PME, avec un ROI mesurable et une approche terrain pragmatique, contrairement aux consultants généralistes qui appliquent souvent des méthodes standardisées."
+          },
+          {
+            question: "Combien de temps faut-il pour voir les premiers résultats en développement commercial PME ?",
+            answer: "Les premiers résultats apparaissent généralement sous 2-3 mois avec l'augmentation du nombre de prospects qualifiés et l'amélioration du taux de conversion. Les résultats significatifs sur le chiffre d'affaires se concrétisent entre 6 et 12 mois. La formation des équipes et l'optimisation des processus permettent des gains immédiats en efficacité commerciale."
+          },
+          {
+            question: "Quelle est la différence entre formation commerciale et accompagnement en développement commercial ?",
+            answer: "La formation commerciale transmet des compétences et techniques de vente. L'accompagnement en développement commercial est plus global : diagnostic, stratégie, structuration des processus, formation, coaching terrain et suivi des résultats. C'est une transformation complète de votre approche commerciale, pas seulement un transfert de compétences."
+          },
+          {
+            question: "Comment mesurer le ROI d'un accompagnement en développement commercial PME ?",
+            answer: "Le ROI se mesure sur plusieurs indicateurs : augmentation du chiffre d'affaires, amélioration du taux de conversion, réduction du cycle de vente, augmentation du panier moyen, amélioration de la fidélisation client. En moyenne, nos clients PME observent un ROI de 300-500% sur 18 mois avec un retour sur investissement dès les 6 premiers mois."
+          },
+          {
+            question: "L'expert développement commercial peut-il intervenir dans tous les secteurs d'activité PME ?",
+            answer: "Laurent Serre a accompagné des PME dans plus de 50 secteurs différents : industrie, services B2B, nouvelles technologies, commerce, artisanat. La méthodologie de développement commercial s'adapte à chaque secteur avec des spécificités techniques et commerciales. L'expertise PME transcende les secteurs d'activité."
+          },
+          {
+            question: "Quelle est la taille d'équipe idéale pour faire appel à un expert développement commercial PME ?",
+            answer: "L'accompagnement est pertinent dès 1 commercial et jusqu'à 50 commerciaux. Pour les équipes de 1-5 commerciaux, l'accent est mis sur l'efficacité individuelle et les processus. Pour 5-20 commerciaux, on ajoute le management et la structuration. Au-delà de 20, on intègre la stratégie organisationnelle et le pilotage de la performance."
+          },
+          {
+            question: "Comment se déroule concrètement un accompagnement avec l'expert développement commercial PME ?",
+            answer: "L'accompagnement débute par un diagnostic gratuit de 30 minutes, suivi d'un audit approfondi sur 2-3 jours. Puis conception d'un plan d'action sur-mesure avec phases de formation, coaching terrain, mise en place d'outils et suivi des résultats. Intervention mensuelle avec points réguliers et ajustements selon les résultats obtenus."
+          },
+          {
+            question: "Quels outils et méthodes utilise l'expert développement commercial pour les PME ?",
+            answer: "Utilisation d'outils adaptés aux PME : CRM simplifié, tableaux de bord visuels, scripts de prospection, grilles de qualification, méthodes de closing éprouvées, outils de préparation RDV, kits grands comptes. Tous les outils sont pensés pour être facilement appropriables par les équipes PME sans formation technique complexe."
+          }
+        ]}
+      />
 
       {/* CTA Final */}
       <section className="py-20 bg-blue-ink">
@@ -440,5 +513,6 @@ export default function ExpertDeveloppementCommercialPMEPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }
