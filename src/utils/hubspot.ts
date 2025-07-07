@@ -8,9 +8,6 @@ export interface HubSpotContact {
     phone?: string;
     lifecyclestage?: string;
     lead_source?: string;
-    diagnostic_score?: string;
-    diagnostic_level?: string;
-    form_type?: string;
   };
 }
 
@@ -34,7 +31,14 @@ export const createHubSpotContact = async (
   contactData: HubSpotContact,
   apiToken: string
 ): Promise<HubSpotResponse> => {
-  const response = await fetch(`${HUBSPOT_CONFIG.BASE_URL}${HUBSPOT_CONFIG.ENDPOINTS.CONTACTS}`, {
+  const url = `${HUBSPOT_CONFIG.BASE_URL}${HUBSPOT_CONFIG.ENDPOINTS.CONTACTS}`;
+  
+  console.log('🔗 HubSpot createContact - Début');
+  console.log('🌐 URL:', url);
+  console.log('📄 Payload:', JSON.stringify(contactData, null, 2));
+  console.log('🔑 Token (premiers chars):', apiToken.substring(0, 8) + '...');
+  
+  const response = await fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -43,12 +47,18 @@ export const createHubSpotContact = async (
     body: JSON.stringify(contactData),
   });
 
+  console.log('📊 Statut de la réponse:', response.status);
+  console.log('📋 Headers de la réponse:', Object.fromEntries(response.headers.entries()));
+
   if (!response.ok) {
-    const errorData = await response.json();
+    const errorData = await response.json().catch(() => response.text());
+    console.error('❌ Erreur API HubSpot createContact:', errorData);
     throw new Error(`HubSpot API Error: ${response.status} - ${JSON.stringify(errorData)}`);
   }
 
-  return response.json();
+  const result = await response.json();
+  console.log('✅ Contact créé avec succès:', result);
+  return result;
 };
 
 export const updateHubSpotContact = async (
