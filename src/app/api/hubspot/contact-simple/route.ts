@@ -70,16 +70,64 @@ export async function POST(request: NextRequest) {
     
     console.log(`${logPrefix} 📋 Données pour HubSpot:`, JSON.stringify(hubspotData, null, 2));
     
-    // 6. Envoi des données à HubSpot
-    console.log(`${logPrefix} 🚀 Envoi des données à HubSpot...`);
+    // 6. Préparation des headers
+    const headers = {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${hubspotToken}`
+    };
     
-    // ... rest of the function ...
+    // 7. Envoi vers HubSpot
+    console.log(`${logPrefix} 🚀 Envoi des données à HubSpot...`);
+    const hubspotResponse = await fetch(hubspotUrl, {
+      method: 'POST',
+      headers: headers,
+      body: JSON.stringify(hubspotData),
+    });
+    
+    // 8. Lecture de la réponse
+    let responseData;
+    const responseText = await hubspotResponse.text();
+    try {
+      responseData = JSON.parse(responseText);
+    } catch (parseError) {
+      responseData = { rawResponse: responseText };
+    }
+    
+    // 9. Vérification du succès
+    if (hubspotResponse.ok) {
+      return NextResponse.json({
+        success: true,
+        message: 'Contact créé avec succès dans HubSpot',
+        hubspotResponse: responseData,
+        debug: {
+          status: hubspotResponse.status,
+          statusText: hubspotResponse.statusText,
+          receivedData: body,
+          sentData: hubspotData
+        }
+      });
+    } else {
+      return NextResponse.json(
+        { 
+          error: 'Erreur lors de la création du contact dans HubSpot',
+          hubspotError: responseData,
+          debug: {
+            status: hubspotResponse.status,
+            statusText: hubspotResponse.statusText,
+            receivedData: body,
+            sentData: hubspotData
+          }
+        },
+        { status: 500 }
+      );
+    }
   } catch (error) {
     console.error(`${logPrefix} ❌ Erreur lors de la requête:`, error);
     return NextResponse.json(
       { 
-        error: 'Erreur lors de la requête',
-        details: error instanceof Error ? error.message : String(error)
+        error: 'Erreur interne du serveur',
+        details: error instanceof Error ? error.message : String(error),
+        stack: error instanceof Error ? error.stack : undefined
       },
       { status: 500 }
     );
