@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
     const hubspotToken = process.env.HUBSPOT_API_TOKEN;
     const hubspotPortalId = process.env.HUBSPOT_PORTAL_ID;
     
-    console.log(`${logPrefix} � État des variables:`);
+    console.log(`${logPrefix} 🔍 État des variables:`);
     console.log(`${logPrefix}   - HUBSPOT_API_TOKEN: ${hubspotToken ? 'PRÉSENT' : 'MANQUANT'} (${hubspotToken ? hubspotToken.substring(0, 10) + '...' : 'N/A'})`);
     console.log(`${logPrefix}   - HUBSPOT_PORTAL_ID: ${hubspotPortalId ? 'PRÉSENT' : 'MANQUANT'} (${hubspotPortalId || 'N/A'})`);
     
@@ -57,11 +57,17 @@ export async function POST(request: NextRequest) {
       properties: {
         firstname: body.firstName,
         lastname: body.lastName,
-        email: body.email
+        email: body.email,
+        company: body.company || '',
+        phone: body.phone || '',
+        hs_lead_status: 'NEW',
+        lifecyclestage: 'lead',
+        lead_source: 'Site web Laurent Serre - Diagnostic Commercial',
+        ...(body.message && { hs_content_membership_notes: body.message })
       }
     };
     
-    console.log(`${logPrefix} � Données pour HubSpot:`, JSON.stringify(hubspotData, null, 2));
+    console.log(`${logPrefix} 📋 Données pour HubSpot:`, JSON.stringify(hubspotData, null, 2));
     
     // 6. Préparation des headers
     const headers = {
