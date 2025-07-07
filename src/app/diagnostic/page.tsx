@@ -1,8 +1,11 @@
-import type { Metadata } from 'next';
-import { Target, CheckCircle, Calendar, ArrowRight, Award, Phone, Mail } from 'lucide-react';
-import Link from 'next/link';
+'use client';
 
-export const metadata: Metadata = {
+import type { Metadata } from 'next';
+import { Target, CheckCircle, Calendar, ArrowRight, Award, Phone, Mail, Zap } from 'lucide-react';
+import Link from 'next/link';
+import TestExpress from '@/components/TestExpress';
+
+const metadata: Metadata = {
   title: 'Diagnostic Commercial Gratuit PME | Laurent Serre - 30 min',
   description: 'Diagnostic commercial gratuit 30 minutes avec Laurent Serre, expert développement commercial PME. Analyse personnalisée de votre organisation commerciale.',
   keywords: 'diagnostic commercial gratuit, audit commercial PME, diagnostic gratuit équipe commerciale, évaluation commerciale PME, Laurent Serre diagnostic',
@@ -24,7 +27,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function DiagnosticPage() {
+function DiagnosticPage() {
   return (
     <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
       {/* Hero Section */}
@@ -182,7 +185,72 @@ export default function DiagnosticPage() {
                   Vos données sont confidentielles et ne seront jamais transmises à des tiers.
                 </p>
               </form>
+
+              {/* Séparateur */}
+              <div className="my-8 text-center">
+                <div className="relative">
+                  <div className="absolute inset-0 flex items-center">
+                    <div className="w-full border-t border-gray-300"></div>
+                  </div>
+                  <div className="relative flex justify-center text-sm">
+                    <span className="px-4 bg-white dark:bg-gray-anthracite/40 text-gray-500">ou</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bouton Test Express */}
+              <div className="text-center">
+                <button 
+                  id="test-express-btn"
+                  className="inline-flex items-center bg-orange-soft hover:bg-orange-soft/90 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+                  onClick={() => {
+                    const testSection = document.getElementById('test-express-section');
+                    if (testSection) {
+                      testSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                >
+                  <Zap className="w-5 h-5 mr-2" />
+                  Test Express 5 Minutes
+                </button>
+                <p className="text-xs text-gray-500 mt-2">
+                  Évaluation rapide de votre situation commerciale
+                </p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section Test Express */}
+      <section id="test-express-section" className="py-20 bg-slate-50 dark:bg-gray-anthracite/20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              Test Express Commercial
+            </h2>
+            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80">
+              Évaluez rapidement votre situation commerciale en 5 questions
+            </p>
+          </div>
+          
+          <TestExpress />
+          
+          <div className="text-center mt-8">
+            <p className="text-gray-600 dark:text-gray-400">
+              Ce test express vous donne un premier aperçu. Pour une analyse complète et personnalisée, 
+              <button 
+                className="text-mint-green hover:underline font-medium"
+                onClick={() => {
+                  const form = document.querySelector('form');
+                  if (form) {
+                    form.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }}
+              >
+                réservez votre diagnostic gratuit de 30 minutes
+              </button>.
+            </p>
           </div>
         </div>
       </section>
@@ -374,4 +442,6 @@ export default function DiagnosticPage() {
       </section>
     </main>
   );
-} 
+}
+
+export default DiagnosticPage; 

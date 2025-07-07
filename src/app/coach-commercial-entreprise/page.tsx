@@ -245,19 +245,19 @@ export default function CoachCommercialEntreprisePage() {
               
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">+85%</div>
+                  <div className="text-4xl font-bold text-mint-green mb-2">+22%</div>
                   <div className="text-gray-anthracite dark:text-primary-bg/80">Performance Individuelle</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">+120%</div>
+                  <div className="text-4xl font-bold text-mint-green mb-2">+100%</div>
                   <div className="text-gray-anthracite dark:text-primary-bg/80">Motivation Équipe</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">-50%</div>
+                  <div className="text-4xl font-bold text-mint-green mb-2">-37%</div>
                   <div className="text-gray-anthracite dark:text-primary-bg/80">Turn-over Commercial</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">+200%</div>
+                  <div className="text-4xl font-bold text-mint-green mb-2">+100%</div>
                   <div className="text-gray-anthracite dark:text-primary-bg/80">Confiance en Soi</div>
                 </div>
               </div>

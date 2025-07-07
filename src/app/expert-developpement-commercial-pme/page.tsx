@@ -132,11 +132,11 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                     <div className="text-white/80">PME Accompagnées</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-mint-green">+150%</div>
+                    <div className="text-3xl font-bold text-mint-green">+17%</div>
                     <div className="text-white/80">CA Moyen Client</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-mint-green">95%</div>
+                    <div className="text-3xl font-bold text-mint-green">98%</div>
                     <div className="text-white/80">Taux Satisfaction</div>
                   </div>
                 </div>
@@ -349,20 +349,20 @@ export default function ExpertDeveloppementCommercialPMEPage() {
               
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">+150%</div>
+                  <div className="text-4xl font-bold text-mint-green mb-2">+26%</div>
                   <div className="text-gray-anthracite dark:text-primary-bg/80">Chiffre d'Affaires</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">+75%</div>
-                  <div className="text-gray-anthracite dark:text-primary-bg/80">Taux Conversion</div>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-bold text-mint-green mb-2">-40%</div>
                   <div className="text-gray-anthracite dark:text-primary-bg/80">Cycle Vente</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">+200%</div>
+                  <div className="text-4xl font-bold text-mint-green mb-2">+32%</div>
                   <div className="text-gray-anthracite dark:text-primary-bg/80">Leads Qualifiés</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-mint-green mb-2">98%</div>
+                  <div className="text-gray-anthracite dark:text-primary-bg/80">Satisfaction</div>
                 </div>
               </div>
 
@@ -389,45 +389,57 @@ export default function ExpertDeveloppementCommercialPMEPage() {
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Link href="/consultant-commercial-montpellier" className="group">
-              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
+            <Link href="/consultant-commercial-montpellier" className="group cursor-pointer">
+              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-xl hover:bg-mint-green/5 border-2 border-transparent hover:border-mint-green/20 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02]">
                 <div className="flex items-center mb-4">
-                  <Phone className="w-6 h-6 text-mint-green mr-3" />
-                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green">
+                  <Phone className="w-6 h-6 text-mint-green mr-3 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green transition-colors">
                     Consultant Commercial Montpellier
                   </h3>
+                  <ArrowRight className="w-5 h-5 text-mint-green ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <p className="text-gray-anthracite dark:text-primary-bg/80">
+                <p className="text-gray-anthracite dark:text-primary-bg/80 group-hover:text-gray-800 dark:group-hover:text-primary-bg">
                   Intervention locale sur Montpellier et région Occitanie pour un accompagnement de proximité.
                 </p>
+                <div className="mt-4 text-mint-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  → Découvrir l'expertise locale
+                </div>
               </div>
             </Link>
 
-            <Link href="/formateur-vente-pme" className="group">
-              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
+            <Link href="/formateur-vente-pme" className="group cursor-pointer">
+              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-xl hover:bg-mint-green/5 border-2 border-transparent hover:border-mint-green/20 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02]">
                 <div className="flex items-center mb-4">
-                  <Users className="w-6 h-6 text-mint-green mr-3" />
-                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green">
+                  <Users className="w-6 h-6 text-mint-green mr-3 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green transition-colors">
                     Formateur Vente PME
                   </h3>
+                  <ArrowRight className="w-5 h-5 text-mint-green ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <p className="text-gray-anthracite dark:text-primary-bg/80">
+                <p className="text-gray-anthracite dark:text-primary-bg/80 group-hover:text-gray-800 dark:group-hover:text-primary-bg">
                   Formations spécialisées adaptées aux spécificités et contraintes des PME.
                 </p>
+                <div className="mt-4 text-mint-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  → Voir les formations disponibles
+                </div>
               </div>
             </Link>
 
-            <Link href="/coach-commercial-entreprise" className="group">
-              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
+            <Link href="/coach-commercial-entreprise" className="group cursor-pointer">
+              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-xl hover:bg-mint-green/5 border-2 border-transparent hover:border-mint-green/20 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02]">
                 <div className="flex items-center mb-4">
-                  <Target className="w-6 h-6 text-mint-green mr-3" />
-                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green">
+                  <Target className="w-6 h-6 text-mint-green mr-3 group-hover:scale-110 transition-transform" />
+                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green transition-colors">
                     Coach Commercial Entreprise
                   </h3>
+                  <ArrowRight className="w-5 h-5 text-mint-green ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <p className="text-gray-anthracite dark:text-primary-bg/80">
+                <p className="text-gray-anthracite dark:text-primary-bg/80 group-hover:text-gray-800 dark:group-hover:text-primary-bg">
                   Coaching individuel et collectif pour développer les performances de vos commerciaux.
                 </p>
+                <div className="mt-4 text-mint-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+                  → Découvrir le coaching commercial
+                </div>
               </div>
             </Link>
           </div>

@@ -103,7 +103,7 @@ export default function FormationCommercialePMEPage() {
                   <Link href="/ressources/outil-preparation-rdv" className="hover:text-mint-green">Préparation RDV</Link>
                 </div>
               </div>
-              <Link href="/bootcamp-commercial-intensif" className="inline-flex items-center text-mint-green hover:underline font-semibold">
+              <Link href="/formation-commerciale-pme#bootcamp-details" className="inline-flex items-center text-mint-green hover:underline font-semibold">
                 En savoir plus <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
@@ -122,15 +122,15 @@ export default function FormationCommercialePMEPage() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  Scripts IMPACT et AIDA+
+                  <Link href="/ressources/scripts-prospection" className="hover:text-mint-green cursor-pointer">Scripts IMPACT et AIDA+</Link>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  LinkedIn et réseaux sociaux
+                  <Link href="/ressources/linkedin-prospection" className="hover:text-mint-green cursor-pointer">LinkedIn et réseaux sociaux</Link>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  Système de suivi efficace
+                  <Link href="/ressources/systeme-suivi-prospects" className="hover:text-mint-green cursor-pointer">Système de suivi efficace</Link>
                 </div>
               </div>
               <Link href="/ressources/guide-prospection" className="inline-flex items-center text-mint-green hover:underline font-semibold">
@@ -152,18 +152,18 @@ export default function FormationCommercialePMEPage() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  Motivation et coaching
+                  <Link href="/ressources/techniques-motivation-equipe" className="hover:text-mint-green cursor-pointer">Motivation et coaching</Link>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  Pilotage performance
+                  <Link href="/suivi-performance" className="hover:text-mint-green cursor-pointer">Pilotage performance</Link>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  Recrutement commercial
+                  <Link href="/ressources/guide-recrutement-commercial" className="hover:text-mint-green cursor-pointer">Recrutement commercial</Link>
                 </div>
               </div>
-              <Link href="/management-equipe-commerciale" className="inline-flex items-center text-mint-green hover:underline font-semibold">
+              <Link href="/formation-commerciale-pme#management-details" className="inline-flex items-center text-mint-green hover:underline font-semibold">
                 Découvrir <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </div>
