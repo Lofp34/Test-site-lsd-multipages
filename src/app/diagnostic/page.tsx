@@ -1,108 +1,375 @@
-import dynamic from 'next/dynamic';
 import type { Metadata } from 'next';
-import Button from "@/components/ui/Button";
-import Link from "next/link";
-import HubSpotForm from '@/components/HubSpotForm';
-
-const DiagnosticSection = dynamic(() => import('@/components/sections/DiagnosticSection'));
+import { Target, CheckCircle, Calendar, ArrowRight, Award, Phone, Mail } from 'lucide-react';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Diagnostic Commercial Gratuit - Évaluez votre Équipe | Laurent Serre',
-  description: 'Diagnostic commercial gratuit pour PME : évaluez la performance de votre équipe commerciale, identifiez les axes d\'amélioration. Audit personnalisé sans engagement.',
-  keywords: 'diagnostic commercial gratuit, audit équipe commerciale, PME, évaluation performance vente, Montpellier',
+  title: 'Diagnostic Commercial Gratuit PME | Laurent Serre - 30 min',
+  description: 'Diagnostic commercial gratuit 30 minutes avec Laurent Serre, expert développement commercial PME. Analyse personnalisée de votre organisation commerciale.',
+  keywords: 'diagnostic commercial gratuit, audit commercial PME, diagnostic gratuit équipe commerciale, évaluation commerciale PME, Laurent Serre diagnostic',
+  authors: [{ name: 'Laurent Serre' }],
   alternates: {
     canonical: 'https://laurentserre.com/diagnostic',
   },
   openGraph: {
-    title: 'Diagnostic Commercial Gratuit - Évaluez votre Équipe',
-    description: 'Diagnostic commercial gratuit pour PME : évaluez la performance de votre équipe commerciale, identifiez les axes d\'amélioration.',
+    title: 'Diagnostic Commercial Gratuit PME | Laurent Serre - 30 min',
+    description: 'Diagnostic commercial gratuit avec expert PME. Analyse personnalisée en 30 minutes.',
     url: 'https://laurentserre.com/diagnostic',
     type: 'website',
     locale: 'fr_FR',
-    images: [
-      {
-        url: 'https://laurentserre.com/tableau-de-bord.jpeg',
-        width: 1200,
-        height: 630,
-        alt: 'Diagnostic commercial gratuit Laurent Serre - Tableau de bord performance',
-      },
-    ],
+    siteName: 'Laurent Serre Développement',
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Diagnostic Commercial Gratuit - Évaluez votre Équipe',
-    description: 'Diagnostic commercial gratuit pour PME : évaluez la performance de votre équipe commerciale, identifiez les axes d\'amélioration.',
-    images: ['https://laurentserre.com/tableau-de-bord.jpeg'],
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
 export default function DiagnosticPage() {
   return (
-    <main className="flex flex-col min-h-screen">
-      {/* Hero Section pour Diagnostic */}
-      <section className="min-h-screen relative overflow-hidden flex items-center justify-center pt-20">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-ink via-blue-ink/95 to-orange-soft/20"></div>
-        </div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <div className="space-y-6 sm:space-y-8 animate-fade-in-up">
-            <div className="inline-flex items-center gap-3 bg-orange-soft/10 backdrop-blur-sm border border-orange-soft/30 px-6 py-3 rounded-full">
-              <span className="w-3 h-3 bg-orange-soft rounded-full animate-pulse"></span>
-              <span className="font-title font-semibold text-orange-soft text-sm md:text-base">
-                Diagnostic Commercial Gratuit
-              </span>
-            </div>
-
-            <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-title font-extrabold text-white leading-tight drop-shadow-lg">
-              <span className="block">Diagnostic</span>
-              <span className="block text-orange-soft">Gratuit</span>
-            </h1>
-
-            <div className="max-w-5xl mx-auto space-y-4 sm:space-y-6">
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-body text-white/95 leading-relaxed drop-shadow-md px-2">
-                Évaluez la performance de votre équipe commerciale et identifiez les axes d'amélioration prioritaires.
+    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 px-6 py-3 rounded-full mb-6">
+                <Award className="w-5 h-5 text-mint-green" />
+                <span className="font-title font-semibold text-white">
+                  Diagnostic Commercial Gratuit
+                </span>
+              </div>
+              
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-title font-extrabold text-white leading-tight mb-6">
+                Diagnostic Commercial
+                <span className="block text-mint-green">Gratuit 30min</span>
+              </h1>
+              
+              <p className="text-xl text-white/95 leading-relaxed mb-8">
+                <Link href="/expert-developpement-commercial-pme" className="text-mint-green hover:underline">Laurent Serre, expert développement commercial PME</Link>, 
+                analyse gratuitement votre organisation commerciale. Identifiez vos leviers de croissance prioritaires et découvrez comment 
+                <Link href="/transformation-commerciale" className="text-mint-green hover:underline"> transformer votre performance</Link> rapidement.
               </p>
               
-              <p className="text-base sm:text-lg md:text-xl font-italic text-white/90 leading-relaxed drop-shadow-sm px-2">
-                Audit personnalisé, recommandations concrètes, sans engagement.
-              </p>
+              <div className="space-y-4">
+                <div className="flex items-center text-white">
+                  <CheckCircle className="w-5 h-5 text-mint-green mr-3" />
+                  <span>Audit complet de votre organisation commerciale</span>
+                </div>
+                <div className="flex items-center text-white">
+                  <CheckCircle className="w-5 h-5 text-mint-green mr-3" />
+                  <span>Identification des leviers de performance prioritaires</span>
+                </div>
+                <div className="flex items-center text-white">
+                  <CheckCircle className="w-5 h-5 text-mint-green mr-3" />
+                  <span>Plan d'action personnalisé immédiat</span>
+                </div>
+                <div className="flex items-center text-white">
+                  <CheckCircle className="w-5 h-5 text-mint-green mr-3" />
+                  <span>Sans engagement • 100% confidentiel</span>
+                </div>
+              </div>
             </div>
 
-            <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row justify-center items-center pt-6 sm:pt-8 pb-12 sm:pb-16 px-4">
-              <Link href="/bootcamp">
-                <Button 
-                  variant="primary"
-                  size="lg"
-                  icon="🚀"
-                  className="w-full sm:w-auto"
+            {/* Formulaire de Diagnostic */}
+            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 shadow-2xl">
+              <div className="text-center mb-6">
+                <h2 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-2">
+                  Réservez Votre Diagnostic
+                </h2>
+                <p className="text-gray-anthracite dark:text-primary-bg/80">
+                  30 minutes qui peuvent transformer votre business
+                </p>
+              </div>
+
+              <form className="space-y-4">
+                <div>
+                  <label htmlFor="nom" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Nom Prénom *
+                  </label>
+                  <input
+                    type="text"
+                    id="nom"
+                    name="nom"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
+                    placeholder="Votre nom complet"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="entreprise" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Entreprise *
+                  </label>
+                  <input
+                    type="text"
+                    id="entreprise"
+                    name="entreprise"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
+                    placeholder="Nom de votre entreprise"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Email professionnel *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
+                    placeholder="votre@email.com"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="telephone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Téléphone *
+                  </label>
+                  <input
+                    type="tel"
+                    id="telephone"
+                    name="telephone"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
+                    placeholder="06 XX XX XX XX"
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="effectif" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Effectif équipe commerciale
+                  </label>
+                  <select
+                    id="effectif"
+                    name="effectif"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
+                  >
+                    <option value="">Sélectionner</option>
+                    <option value="1">1 commercial</option>
+                    <option value="2-5">2 à 5 commerciaux</option>
+                    <option value="6-10">6 à 10 commerciaux</option>
+                    <option value="10+">Plus de 10 commerciaux</option>
+                    <option value="aucun">Aucune équipe commerciale</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="defi" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    Principal défi commercial actuel
+                  </label>
+                  <textarea
+                    id="defi"
+                    name="defi"
+                    rows={3}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
+                    placeholder="Décrivez votre principal enjeu commercial..."
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-mint-green hover:bg-mint-green/90 text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center"
                 >
-                  Découvrir le bootcamp
-                </Button>
-              </Link>
-              
-              <Link href="/cas-clients">
-                <Button 
-                  variant="outline"
-                  size="lg"
-                  icon="👥"
-                  className="w-full sm:w-auto"
-                >
-                  Témoignages clients
-                </Button>
-              </Link>
+                  <Calendar className="w-5 h-5 mr-2" />
+                  Réserver Mon Diagnostic Gratuit
+                </button>
+
+                <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
+                  En soumettant ce formulaire, vous acceptez d'être contacté par Laurent Serre Développement. 
+                  Vos données sont confidentielles et ne seront jamais transmises à des tiers.
+                </p>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      <DiagnosticSection />
-      <section className="py-16 bg-white dark:bg-gray-anthracite/10">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 text-center">
-            Prendre contact avec Laurent Serre
+      {/* Processus Diagnostic */}
+      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+              Comment Se Déroule Votre Diagnostic ?
+            </h2>
+            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-3xl mx-auto">
+              Un processus structuré pour identifier précisément vos leviers de croissance
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-mint-green/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-mint-green">1</span>
+              </div>
+              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+                Analyse Situation Actuelle
+              </h3>
+              <p className="text-gray-anthracite dark:text-primary-bg/80">
+                Évaluation de votre organisation, processus commerciaux, équipes et résultats actuels. 
+                Identification des forces et axes d'amélioration prioritaires.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-mint-green/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-mint-green">2</span>
+              </div>
+              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+                Identification Opportunités
+              </h3>
+              <p className="text-gray-anthracite dark:text-primary-bg/80">
+                Détection des leviers de performance à court et moyen terme. 
+                Priorisation selon l'impact potentiel et la facilité de mise en œuvre.
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="w-16 h-16 bg-mint-green/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-mint-green">3</span>
+              </div>
+              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+                Plan d'Action Immédiat
+              </h3>
+              <p className="text-gray-anthracite dark:text-primary-bg/80">
+                Recommandations concrètes et applicables immédiatement. 
+                Roadmap personnalisée pour transformer votre performance commerciale.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Domaines Analysés */}
+      <section className="py-20 bg-slate-50 dark:bg-gray-anthracite/20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+              Domaines Analysés Lors Du Diagnostic
+            </h2>
+            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-2xl mx-auto">
+              Un audit complet pour identifier toutes vos opportunités d'amélioration
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 text-center">
+              <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg mb-3">
+                Organisation & Processus
+              </h3>
+              <ul className="text-sm text-gray-anthracite dark:text-primary-bg/80 space-y-2">
+                <li>• Structure équipe commerciale</li>
+                <li>• Processus de vente existant</li>
+                <li>• Outils et systèmes CRM</li>
+                <li>• Management commercial</li>
+              </ul>
+            </div>
+
+            <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 text-center">
+              <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg mb-3">
+                Prospection & Lead Gen
+              </h3>
+              <ul className="text-sm text-gray-anthracite dark:text-primary-bg/80 space-y-2">
+                <li>• Canaux de prospection utilisés</li>
+                <li>• Qualité et volume des leads</li>
+                <li>• <Link href="/ressources/guide-prospection" className="text-mint-green hover:underline">Scripts et méthodes</Link></li>
+                <li>• Suivi et relance prospects</li>
+              </ul>
+            </div>
+
+            <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 text-center">
+              <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg mb-3">
+                Négociation & Closing
+              </h3>
+              <ul className="text-sm text-gray-anthracite dark:text-primary-bg/80 space-y-2">
+                <li>• <Link href="/ressources/outil-preparation-rdv" className="text-mint-green hover:underline">Préparation des RDV</Link></li>
+                <li>• <Link href="/ressources/guide-closing" className="text-mint-green hover:underline">Techniques de closing</Link></li>
+                <li>• Traitement des objections</li>
+                <li>• Taux de conversion actuel</li>
+              </ul>
+            </div>
+
+            <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 text-center">
+              <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg mb-3">
+                Suivi & Performance
+              </h3>
+              <ul className="text-sm text-gray-anthracite dark:text-primary-bg/80 space-y-2">
+                <li>• <Link href="/ressources/kit-gestion-grands-comptes" className="text-mint-green hover:underline">Gestion portefeuille clients</Link></li>
+                <li>• Indicateurs de performance</li>
+                <li>• Cycle de vente moyen</li>
+                <li>• Fidélisation et upselling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Témoignages */}
+      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-12">
+            Retours Après Diagnostic
           </h2>
-          <HubSpotForm />
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-xl p-6">
+              <blockquote className="text-lg text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                "Le diagnostic de Laurent a été révélateur. En 30 minutes, il a identifié précisément 
+                nos blocages et nous a donné un plan d'action concret. Résultat : +40% de CA en 6 mois !"
+              </blockquote>
+              <div className="text-mint-green font-semibold">
+                Directrice PME Services • 12 collaborateurs
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-xl p-6">
+              <blockquote className="text-lg text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                "Diagnostic gratuit qui vaut de l'or ! Laurent nous a aidés à restructurer notre approche 
+                commerciale. Nos équipes sont maintenant beaucoup plus efficaces."
+              </blockquote>
+              <div className="text-mint-green font-semibold">
+                CEO PME Industrie • 25 collaborateurs
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Final */}
+      <section className="py-20 bg-blue-ink">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="text-3xl sm:text-4xl font-title font-bold text-white mb-6">
+            Transformez Votre Performance Commerciale
+          </h2>
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Rejoignez les centaines de PME qui ont déjà bénéficié de l'expertise de 
+            <Link href="/expert-developpement-commercial-pme" className="text-mint-green hover:underline"> Laurent Serre</Link> 
+            pour développer leur chiffre d'affaires.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+            <a href="#diagnostic-form" className="inline-flex items-center bg-mint-green hover:bg-mint-green/90 text-white px-8 py-4 rounded-full font-semibold transition-colors">
+              <Calendar className="w-5 h-5 mr-2" />
+              Réserver Maintenant
+            </a>
+            <Link href="/formation-commerciale-pme" className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-blue-ink px-8 py-4 rounded-full font-semibold transition-colors">
+              <ArrowRight className="w-5 h-5 mr-2" />
+              Découvrir Nos Formations
+            </Link>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-4 text-sm text-white/70">
+            <div className="flex items-center justify-center">
+              <Phone className="w-4 h-4 mr-2" />
+              <span>Disponible aussi sur Montpellier</span>
+            </div>
+            <div className="flex items-center justify-center">
+              <Mail className="w-4 h-4 mr-2" />
+              <span>Réponse garantie sous 24h</span>
+            </div>
+          </div>
         </div>
       </section>
     </main>
