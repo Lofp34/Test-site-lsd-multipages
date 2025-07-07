@@ -88,12 +88,14 @@ export async function POST(request: NextRequest) {
         message: 'Contact créé avec succès dans HubSpot'
       });
 
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.log('⚠️ Erreur lors de la création, tentative de mise à jour...');
       console.error('Détails de l\'erreur:', error);
       
+      const errorMessage = error instanceof Error ? error.message : String(error);
+      
       // Si le contact existe déjà (conflit), on le met à jour
-      if (error.message.includes('CONFLICT') || error.message.includes('409')) {
+      if (errorMessage.includes('CONFLICT') || errorMessage.includes('409')) {
         try {
           console.log('🔍 Recherche du contact existant par email...');
           const existingContacts = await searchHubSpotContactByEmail(email, hubspotApiToken);
@@ -119,14 +121,15 @@ export async function POST(request: NextRequest) {
       throw error;
     }
 
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('❌ Erreur API HubSpot globale:', error);
-    console.error('Stack trace:', error.stack);
+    const errorObj = error instanceof Error ? error : new Error(String(error));
+    console.error('Stack trace:', errorObj.stack);
     
     return NextResponse.json(
       { 
         error: 'Erreur lors de l\'envoi vers HubSpot',
-        details: process.env.NODE_ENV === 'development' ? error.message : undefined
+        details: process.env.NODE_ENV === 'development' ? errorObj.message : undefined
       },
       { status: 500 }
     );

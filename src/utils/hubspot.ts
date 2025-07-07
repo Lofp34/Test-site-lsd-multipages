@@ -13,7 +13,7 @@ export interface HubSpotContact {
 
 export interface HubSpotResponse {
   id: string;
-  properties: Record<string, any>;
+  properties: Record<string, string | number | boolean>;
   createdAt: string;
   updatedAt: string;
 }
