@@ -61,12 +61,13 @@ function DiagnosticPage() {
         email: formData.email,
         company: formData.company,
         phone: formData.phone,
-        principal_defi_commercial: formData.principal_defi_commercial
+        principal_defi_commercial: formData.principal_defi_commercial,
+        formId: 'e4741a23-ddaf-4cb5-8774-9e36f7937c79'
       };
 
       console.log('📤 Envoi des données vers HubSpot:', hubspotData);
 
-      const response = await fetch('/api/hubspot/contact-simple', {
+      const response = await fetch('/api/hubspot/submit-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
