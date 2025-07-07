@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { ArrowRight, Target, Users, TrendingUp, Award, CheckCircle, Star, Crown, Zap, Phone, Mail, Calendar, BarChart } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import StructuredData from '@/components/StructuredData';
+import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
   title: 'Expert Développement Commercial PME | Laurent Serre - 20 ans d\'Expérience Terrain',
@@ -44,7 +46,26 @@ export const metadata: Metadata = {
 
 export default function ExpertDeveloppementCommercialPMEPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <>
+      <StructuredData type="person" />
+      <StructuredData type="organization" />
+      <StructuredData 
+        type="service" 
+        data={{
+          name: "Expert Développement Commercial PME",
+          description: "Accompagnement complet pour transformer la performance commerciale des PME avec formation, coaching et stratégies sur-mesure",
+          price: "Sur devis"
+        }}
+      />
+      <StructuredData 
+        type="breadcrumb" 
+        data={[
+          { name: "Accueil", url: "/" },
+          { name: "Expert Développement Commercial PME", url: "/expert-developpement-commercial-pme" }
+        ]}
+      />
+      
+      <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
       {/* Hero Section */}
       <section className="min-h-[80vh] relative overflow-hidden flex items-center justify-center pt-20">
         <div className="absolute inset-0 z-0">
@@ -413,6 +434,46 @@ export default function ExpertDeveloppementCommercialPMEPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <FAQ 
+        title="Questions Fréquentes sur l'Expert Développement Commercial PME"
+        description="Trouvez toutes les réponses à vos questions sur notre accompagnement en développement commercial spécialisé PME"
+        items={[
+          {
+            question: "Qu'est-ce qui différencie un expert développement commercial PME d'un consultant généraliste ?",
+            answer: "Un expert développement commercial PME maîtrise spécifiquement les enjeux, contraintes et opportunités des PME : budgets limités, équipes restreintes, besoin de résultats rapides. Laurent Serre développe des méthodes adaptées aux ressources PME, avec un ROI mesurable et une approche terrain pragmatique, contrairement aux consultants généralistes qui appliquent souvent des méthodes standardisées."
+          },
+          {
+            question: "Combien de temps faut-il pour voir les premiers résultats en développement commercial PME ?",
+            answer: "Les premiers résultats apparaissent généralement sous 2-3 mois avec l'augmentation du nombre de prospects qualifiés et l'amélioration du taux de conversion. Les résultats significatifs sur le chiffre d'affaires se concrétisent entre 6 et 12 mois. La formation des équipes et l'optimisation des processus permettent des gains immédiats en efficacité commerciale."
+          },
+          {
+            question: "Quelle est la différence entre formation commerciale et accompagnement en développement commercial ?",
+            answer: "La formation commerciale transmet des compétences et techniques de vente. L'accompagnement en développement commercial est plus global : diagnostic, stratégie, structuration des processus, formation, coaching terrain et suivi des résultats. C'est une transformation complète de votre approche commerciale, pas seulement un transfert de compétences."
+          },
+          {
+            question: "Comment mesurer le ROI d'un accompagnement en développement commercial PME ?",
+            answer: "Le ROI se mesure sur plusieurs indicateurs : augmentation du chiffre d'affaires, amélioration du taux de conversion, réduction du cycle de vente, augmentation du panier moyen, amélioration de la fidélisation client. En moyenne, nos clients PME observent un ROI de 300-500% sur 18 mois avec un retour sur investissement dès les 6 premiers mois."
+          },
+          {
+            question: "L'expert développement commercial peut-il intervenir dans tous les secteurs d'activité PME ?",
+            answer: "Laurent Serre a accompagné des PME dans plus de 50 secteurs différents : industrie, services B2B, nouvelles technologies, commerce, artisanat. La méthodologie de développement commercial s'adapte à chaque secteur avec des spécificités techniques et commerciales. L'expertise PME transcende les secteurs d'activité."
+          },
+          {
+            question: "Quelle est la taille d'équipe idéale pour faire appel à un expert développement commercial PME ?",
+            answer: "L'accompagnement est pertinent dès 1 commercial et jusqu'à 50 commerciaux. Pour les équipes de 1-5 commerciaux, l'accent est mis sur l'efficacité individuelle et les processus. Pour 5-20 commerciaux, on ajoute le management et la structuration. Au-delà de 20, on intègre la stratégie organisationnelle et le pilotage de la performance."
+          },
+          {
+            question: "Comment se déroule concrètement un accompagnement avec l'expert développement commercial PME ?",
+            answer: "L'accompagnement débute par un diagnostic gratuit de 30 minutes, suivi d'un audit approfondi sur 2-3 jours. Puis conception d'un plan d'action sur-mesure avec phases de formation, coaching terrain, mise en place d'outils et suivi des résultats. Intervention mensuelle avec points réguliers et ajustements selon les résultats obtenus."
+          },
+          {
+            question: "Quels outils et méthodes utilise l'expert développement commercial pour les PME ?",
+            answer: "Utilisation d'outils adaptés aux PME : CRM simplifié, tableaux de bord visuels, scripts de prospection, grilles de qualification, méthodes de closing éprouvées, outils de préparation RDV, kits grands comptes. Tous les outils sont pensés pour être facilement appropriables par les équipes PME sans formation technique complexe."
+          }
+        ]}
+      />
+
       {/* CTA Final */}
       <section className="py-20 bg-blue-ink">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
@@ -440,5 +501,6 @@ export default function ExpertDeveloppementCommercialPMEPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }
