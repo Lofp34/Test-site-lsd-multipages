@@ -63,7 +63,6 @@ export async function POST(request: NextRequest) {
         hs_lead_status: 'NEW',
         lifecyclestage: 'lead',
         ...(body.message && { hs_content_membership_notes: body.message }),
-        // ...(body.principal_defi_commercial && { principal_defi_commercial: body.principal_defi_commercial })
       }
     };
     
