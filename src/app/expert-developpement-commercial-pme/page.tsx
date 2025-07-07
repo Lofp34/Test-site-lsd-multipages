@@ -169,7 +169,7 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 Formation & Développement
               </h3>
               <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
-                Découvrez notre <Link href="/bootcamp-commercial-intensif" className="text-mint-green hover:underline">bootcamp commercial intensif</Link> 
+                Découvrez notre <Link href="/formation-commerciale-pme#bootcamp-details" className="text-mint-green hover:underline">bootcamp commercial intensif</Link> 
                 et nos <Link href="/ressources/guide-prospection" className="text-mint-green hover:underline">guides pratiques</Link> pour transformer vos équipes.
               </p>
               <div className="space-y-2 text-sm">
@@ -183,7 +183,7 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/management-equipe-commerciale" className="hover:text-mint-green">Management commercial</Link>
+                  <Link href="/formation-commerciale-pme#management-details" className="hover:text-mint-green">Management commercial</Link>
                 </div>
               </div>
             </div>
@@ -208,7 +208,7 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/accompagnement-transformation" className="hover:text-mint-green">Transformation processus</Link>
+                  <Link href="/transformation-commerciale" className="hover:text-mint-green">Transformation processus</Link>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
@@ -227,8 +227,8 @@ export default function ExpertDeveloppementCommercialPMEPage() {
               </h3>
               <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
                 Expertise <Link href="/ressources/kit-gestion-grands-comptes" className="text-mint-green hover:underline">grands comptes</Link>, 
-                <Link href="/prospection-lead-generation" className="text-mint-green hover:underline"> génération de leads</Link> et 
-                <Link href="/closing-negociation" className="text-mint-green hover:underline"> techniques de closing</Link> avancées.
+                <Link href="/ressources/guide-prospection" className="text-mint-green hover:underline"> génération de leads</Link> et 
+                <Link href="/ressources/guide-closing" className="text-mint-green hover:underline"> techniques de closing</Link> avancées.
               </p>
               <div className="space-y-2 text-sm">
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
@@ -255,8 +255,8 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 Innovation & Technologies
               </h3>
               <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
-                Intégration de l'<Link href="/ia-developpement-commercial" className="text-mint-green hover:underline">IA dans la vente</Link> et 
-                <Link href="/data-driven-sales" className="text-mint-green hover:underline"> approches data-driven</Link> pour 
+                Intégration de l'<Link href="/blog/ia-transforme-developpement-commercial-2025" className="text-mint-green hover:underline">IA dans la vente</Link> et 
+                <Link href="/suivi-performance" className="text-mint-green hover:underline"> approches data-driven</Link> pour 
                 optimiser vos performances commerciales.
               </p>
               <div className="space-y-2 text-sm">
@@ -266,11 +266,11 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/crm-intelligent-pme" className="hover:text-mint-green">CRM intelligent</Link>
+                  <Link href="/ressources/outil-strategie-commerciale" className="hover:text-mint-green">CRM intelligent</Link>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/automation-prospection" className="hover:text-mint-green">Automation prospection</Link>
+                  <Link href="/ressources/guide-prospection" className="hover:text-mint-green">Automation prospection</Link>
                 </div>
               </div>
             </div>
