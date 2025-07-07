@@ -62,7 +62,6 @@ export async function POST(request: NextRequest) {
         phone: body.phone || '',
         hs_lead_status: 'NEW',
         lifecyclestage: 'lead',
-        lead_source: 'Site web Laurent Serre - Diagnostic Commercial',
         ...(body.message && { hs_content_membership_notes: body.message }),
         ...(body.principal_defi_commercial && { principal_defi_commercial: body.principal_defi_commercial })
       }
