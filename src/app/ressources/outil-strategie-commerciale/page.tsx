@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ArrowLeft, DraftingCompass, Target, TrendingUp, Users, Zap, CheckCircle, Star, Calendar, BarChart } from 'lucide-react';
+import { ArrowLeft, DraftingCompass, Target, TrendingUp, Users, BarChart, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 
 export default function OutilStrategieCommercialePage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <div className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
       <div className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <Link href="/ressources" className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors">
@@ -71,7 +71,6 @@ export default function OutilStrategieCommercialePage() {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
         
-        {/* Introduction */}
         <section className="mb-16">
           <div className="bg-slate-50 dark:bg-gray-anthracite/20 rounded-2xl p-8 mb-12">
             <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6 flex items-center">
@@ -103,7 +102,6 @@ export default function OutilStrategieCommercialePage() {
           </div>
         </section>
 
-        {/* Les 5 Piliers */}
         <section className="mb-16">
           <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 flex items-center">
             <DraftingCompass className="w-8 h-8 text-mint-green mr-3" />
@@ -111,7 +109,6 @@ export default function OutilStrategieCommercialePage() {
           </h2>
           
           <div className="space-y-8">
-            {/* Pilier 1 */}
             <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
               <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4 flex items-center">
                 <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">1</span>
@@ -141,7 +138,6 @@ export default function OutilStrategieCommercialePage() {
               </div>
             </div>
 
-            {/* Pilier 2 */}
             <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
               <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4 flex items-center">
                 <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">2</span>
@@ -169,7 +165,6 @@ export default function OutilStrategieCommercialePage() {
               </div>
             </div>
 
-            {/* Pilier 3 */}
             <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
               <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4 flex items-center">
                 <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">3</span>
@@ -206,7 +201,6 @@ export default function OutilStrategieCommercialePage() {
               </div>
             </div>
 
-            {/* Pilier 4 */}
             <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
               <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4 flex items-center">
                 <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">4</span>
@@ -250,7 +244,6 @@ export default function OutilStrategieCommercialePage() {
               </div>
             </div>
 
-            {/* Pilier 5 */}
             <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
               <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4 flex items-center">
                 <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">5</span>
@@ -270,8 +263,8 @@ export default function OutilStrategieCommercialePage() {
                 <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
                   <h4 className="font-semibold text-mint-green mb-3">⚠️ Signaux d'Alerte</h4>
                   <ul className="space-y-2 text-sm">
-                    <li>• Pipeline < 3x objectif mensuel</li>
-                    <li>• Taux de conversion < seuil</li>
+                    <li>• Pipeline inférieur à 3x objectif mensuel</li>
+                    <li>• Taux de conversion inférieur au seuil</li>
                     <li>• Cycle de vente qui s'allonge</li>
                     <li>• Retard sur objectifs trimestriels</li>
                     <li>• Turnover équipe commerciale</li>
@@ -282,55 +275,6 @@ export default function OutilStrategieCommercialePage() {
           </div>
         </section>
 
-        {/* Template de Plan */}
-        <section className="mb-16">
-          <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-2xl p-8">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6 text-center">
-              📋 Template de Plan Stratégique
-            </h2>
-            
-            <div className="bg-white dark:bg-gray-anthracite/20 rounded-lg p-6 max-w-4xl mx-auto">
-              <div className="space-y-6">
-                <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
-                  <h3 className="text-lg font-semibold text-mint-green mb-2">📈 OBJECTIFS ANNUELS</h3>
-                  <div className="grid md:grid-cols-3 gap-4 text-sm">
-                    <div>CA Cible: _____ € (+____%)</div>
-                    <div>Nouveaux Clients: _____ unités</div>
-                    <div>Marge Brute: _____%</div>
-                  </div>
-                </div>
-                
-                <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
-                  <h3 className="text-lg font-semibold text-mint-green mb-2">🎯 CIBLES PRIORITAIRES</h3>
-                  <div className="text-sm space-y-1">
-                    <div>Segment 1: _________________ (% du CA cible: ____%)</div>
-                    <div>Segment 2: _________________ (% du CA cible: ____%)</div>
-                    <div>Segment 3: _________________ (% du CA cible: ____%)</div>
-                  </div>
-                </div>
-                
-                <div className="border-b border-gray-200 dark:border-gray-600 pb-4">
-                  <h3 className="text-lg font-semibold text-mint-green mb-2">⚡ ACTIONS PRIORITAIRES Q1</h3>
-                  <div className="text-sm space-y-1">
-                    <div>1. _________________________________</div>
-                    <div>2. _________________________________</div>
-                    <div>3. _________________________________</div>
-                  </div>
-                </div>
-                
-                <div>
-                  <h3 className="text-lg font-semibold text-mint-green mb-2">📊 INDICATEURS DE SUIVI</h3>
-                  <div className="grid md:grid-cols-2 gap-4 text-sm">
-                    <div>KPI Principal: _________________</div>
-                    <div>Fréquence de mesure: ___________</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
         <section className="text-center">
           <div className="bg-blue-ink rounded-2xl p-8 text-white">
             <h2 className="text-2xl font-title font-bold mb-4">
@@ -349,6 +293,6 @@ export default function OutilStrategieCommercialePage() {
           </div>
         </section>
       </div>
-    </main>
+    </div>
   );
 }
