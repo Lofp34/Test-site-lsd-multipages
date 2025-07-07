@@ -7,6 +7,23 @@ import { Menu, X } from "lucide-react";
 
 const NAV_ITEMS = [
   { label: "Accueil", href: "/" },
+  { 
+    label: "Expert PME", 
+    href: "/expert-developpement-commercial-pme",
+    isHighlight: true 
+  },
+  { 
+    label: "Services", 
+    href: "#",
+    hasDropdown: true,
+    dropdownItems: [
+      { label: "Formation Commerciale PME", href: "/formation-commerciale-pme" },
+      { label: "Transformation Commerciale", href: "/transformation-commerciale" },
+      { label: "Coach Commercial Entreprise", href: "/coach-commercial-entreprise" },
+      { label: "Consultant Montpellier", href: "/consultant-commercial-montpellier" },
+      { label: "Formateur Vente PME", href: "/formateur-vente-pme" },
+    ]
+  },
   { label: "Bootcamp", href: "/bootcamp" },
   { label: "Diagnostic", href: "/diagnostic" },
   { label: "Blog", href: "/blog" },
@@ -18,6 +35,7 @@ const NAV_ITEMS = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const pathname = usePathname();
 
   const isBlogArticle = pathname.startsWith('/blog/') && pathname !== '/blog';
@@ -71,22 +89,62 @@ export default function Header() {
           {/* Menu Desktop */}
           <ul className="hidden md:flex gap-2 sm:gap-4 md:gap-8">
             {NAV_ITEMS.map((item) => (
-              <li key={item.href}>
-                <Link href={item.href} onClick={() => handleNavClick(item.href)}>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className={`px-3 py-2 ${
-                      (scrolled || isBlogArticle)
-                        ? 'text-white hover:text-mint-green'
-                        : 'text-primary-bg/90 hover:text-mint-green'
-                    } hover:bg-mint-green/10 ${
-                      pathname === item.href ? 'text-mint-green bg-mint-green/10' : ''
-                    }`}
-                  >
-                    {item.label}
-                  </Button>
-                </Link>
+              <li 
+                key={item.href} 
+                className="relative"
+                onMouseEnter={() => item.hasDropdown && setOpenDropdown(item.label)}
+                onMouseLeave={() => item.hasDropdown && setOpenDropdown(null)}
+              >
+                {item.hasDropdown ? (
+                  <div>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className={`px-3 py-2 ${
+                        (scrolled || isBlogArticle)
+                          ? 'text-white hover:text-mint-green'
+                          : 'text-primary-bg/90 hover:text-mint-green'
+                      } hover:bg-mint-green/10`}
+                    >
+                      {item.label} ▼
+                    </Button>
+                    
+                    {/* Dropdown Menu */}
+                    {openDropdown === item.label && (
+                      <div className="absolute top-full left-0 mt-1 w-64 bg-white dark:bg-gray-anthracite border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg z-50">
+                        <ul className="py-2">
+                          {item.dropdownItems?.map((dropdownItem) => (
+                            <li key={dropdownItem.href}>
+                              <Link href={dropdownItem.href} onClick={() => handleNavClick(dropdownItem.href)}>
+                                <div className="px-4 py-2 text-gray-anthracite dark:text-primary-bg hover:bg-mint-green/10 hover:text-mint-green transition-colors">
+                                  {dropdownItem.label}
+                                </div>
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <Link href={item.href} onClick={() => handleNavClick(item.href)}>
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className={`px-3 py-2 ${
+                        item.isHighlight 
+                          ? 'bg-mint-green text-white hover:bg-mint-green/90' 
+                          : (scrolled || isBlogArticle)
+                            ? 'text-white hover:text-mint-green'
+                            : 'text-primary-bg/90 hover:text-mint-green'
+                      } hover:bg-mint-green/10 ${
+                        pathname === item.href ? 'text-mint-green bg-mint-green/10' : ''
+                      }`}
+                    >
+                      {item.label}
+                    </Button>
+                  </Link>
+                )}
               </li>
             ))}
           </ul>
@@ -98,17 +156,40 @@ export default function Header() {
             <ul className="flex flex-col items-center gap-2">
               {NAV_ITEMS.map((item) => (
                 <li key={item.href} className="w-full">
-                  <Link href={item.href} onClick={() => handleNavClick(item.href)}>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      className={`w-full px-6 py-3 text-primary-bg/90 hover:text-mint-green hover:bg-mint-green/10 ${
-                        pathname === item.href ? 'text-mint-green bg-mint-green/10' : ''
-                      }`}
-                    >
-                      {item.label}
-                    </Button>
-                  </Link>
+                  {item.hasDropdown ? (
+                    <div className="w-full">
+                      <div className="px-6 py-2 text-primary-bg/70 text-sm font-semibold">
+                        {item.label}
+                      </div>
+                      {item.dropdownItems?.map((dropdownItem) => (
+                        <Link key={dropdownItem.href} href={dropdownItem.href} onClick={() => handleNavClick(dropdownItem.href)}>
+                          <Button
+                            variant="ghost"
+                            size="sm"
+                            className="w-full px-8 py-2 text-primary-bg/90 hover:text-mint-green hover:bg-mint-green/10 text-sm"
+                          >
+                            • {dropdownItem.label}
+                          </Button>
+                        </Link>
+                      ))}
+                    </div>
+                  ) : (
+                    <Link href={item.href} onClick={() => handleNavClick(item.href)}>
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        className={`w-full px-6 py-3 ${
+                          item.isHighlight 
+                            ? 'bg-mint-green text-white hover:bg-mint-green/90' 
+                            : 'text-primary-bg/90 hover:text-mint-green hover:bg-mint-green/10'
+                        } ${
+                          pathname === item.href ? 'text-mint-green bg-mint-green/10' : ''
+                        }`}
+                      >
+                        {item.label}
+                      </Button>
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
