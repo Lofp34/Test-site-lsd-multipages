@@ -68,20 +68,30 @@ function DiagnosticPage() {
         formType: 'Diagnostic Commercial Gratuit'
       };
 
-      // 🔧 TEST TEMPORAIRE - Tester d'abord l'endpoint de test d'environnement
+      // 🔧 TEST DEBUG - Afficher plus d'infos sur les variables d'environnement
       console.log('🧪 Test des variables d\'environnement...');
       
       try {
         const envTestResponse = await fetch('/api/test-env');
         const envTestData = await envTestResponse.json();
-        console.log('🔍 Variables d\'environnement:', envTestData);
+        console.log('🔍 Variables d\'environnement COMPLÈTES:', envTestData);
+        
+        // Afficher les détails importants
+        if (envTestData.hubspot) {
+          console.log('📋 Détails HubSpot:', {
+            hasToken: envTestData.hubspot.hasToken,
+            hasPortalId: envTestData.hubspot.hasPortalId,
+            tokenStart: envTestData.hubspot.tokenStart,
+            portalId: envTestData.hubspot.portalId
+          });
+        }
       } catch (envError) {
         console.error('❌ Erreur test env:', envError);
       }
 
-      // Essayer d'abord l'API V2 (spécial Vercel)
-      console.log('🚀 Essai API V2 (Vercel-optimized)...');
-      const response = await fetch('/api/hubspot/contact-v2', {
+      // Essayer d'abord l'API SIMPLE pour debug
+      console.log('🆘 Essai API SIMPLE (debug)...');
+      const response = await fetch('/api/hubspot/contact-simple', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
