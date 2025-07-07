@@ -1,9 +1,24 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { HubSpotContact } from '@/utils/hubspot';
+import { 
+  HubSpotContact, 
+  createHubSpotContact, 
+  updateHubSpotContact, 
+  searchHubSpotContactByEmail 
+} from '@/utils/hubspot';
 
 export async function POST(request: NextRequest) {
   try {
-    const { firstName, lastName, email, company, message } = await request.json();
+    const { 
+      firstName, 
+      lastName, 
+      email, 
+      company, 
+      message, 
+      phone,
+      diagnosticScore,
+      diagnosticLevel,
+      formType 
+    } = await request.json();
 
     // Validation des données
     if (!firstName || !email) {
@@ -13,13 +28,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Configuration HubSpot
-    const hubspotApiKey = process.env.HUBSPOT_API_KEY;
+    // Configuration HubSpot avec vos variables
+    const hubspotApiToken = process.env.HUBSPOT_API_TOKEN;
+    const hubspotPortalId = process.env.HUBSPOT_PORTAL_ID;
     
-    if (!hubspotApiKey) {
-      console.error('HUBSPOT_API_KEY manquante');
+    if (!hubspotApiToken) {
+      console.error('HUBSPOT_API_TOKEN manquante');
       return NextResponse.json(
-        { error: 'Configuration serveur manquante' },
+        { error: 'Configuration HubSpot manquante' },
         { status: 500 }
       );
     }
@@ -32,106 +48,53 @@ export async function POST(request: NextRequest) {
         email: email,
         company: company || '',
         message: message || '',
+        phone: phone || '',
         lifecyclestage: 'lead',
-        lead_source: 'Site web Laurent Serre'
+        lead_source: 'Site web Laurent Serre',
+        diagnostic_score: diagnosticScore || '',
+        diagnostic_level: diagnosticLevel || '',
+        form_type: formType || 'Contact'
       }
     };
 
-    // Envoi vers HubSpot API
-    const hubspotResponse = await fetch('https://api.hubapi.com/crm/v3/objects/contacts', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${hubspotApiKey}`,
-      },
-      body: JSON.stringify(contactData),
-    });
-
-    if (!hubspotResponse.ok) {
-      const errorData = await hubspotResponse.json();
-      console.error('Erreur HubSpot:', errorData);
+    try {
+      // Essayer de créer le contact
+      const hubspotData = await createHubSpotContact(contactData, hubspotApiToken);
       
-      // Si le contact existe déjà, on update
-      if (errorData.category === 'CONFLICT') {
-        return await updateExistingContact(email, contactData, hubspotApiKey);
+      return NextResponse.json({
+        success: true,
+        contactId: hubspotData.id,
+        message: 'Contact créé avec succès dans HubSpot'
+      });
+
+    } catch (error: any) {
+      // Si le contact existe déjà (conflit), on le met à jour
+      if (error.message.includes('CONFLICT') || error.message.includes('409')) {
+        try {
+          const existingContacts = await searchHubSpotContactByEmail(email, hubspotApiToken);
+          
+          if (existingContacts.length > 0) {
+            const contactId = existingContacts[0].id;
+            const updatedContact = await updateHubSpotContact(contactId, contactData, hubspotApiToken);
+            
+            return NextResponse.json({
+              success: true,
+              contactId: updatedContact.id,
+              message: 'Contact mis à jour avec succès dans HubSpot'
+            });
+          }
+        } catch (updateError) {
+          console.error('Erreur lors de la mise à jour:', updateError);
+        }
       }
       
-      throw new Error(`HubSpot API Error: ${hubspotResponse.status}`);
+      throw error;
     }
-
-    const hubspotData = await hubspotResponse.json();
-    
-    return NextResponse.json({
-      success: true,
-      contactId: hubspotData.id,
-      message: 'Contact créé avec succès dans HubSpot'
-    });
 
   } catch (error) {
     console.error('Erreur API HubSpot:', error);
     return NextResponse.json(
       { error: 'Erreur lors de l\'envoi vers HubSpot' },
-      { status: 500 }
-    );
-  }
-}
-
-// Fonction pour mettre à jour un contact existant
-async function updateExistingContact(email: string, contactData: HubSpotContact, apiKey: string) {
-  try {
-    // Rechercher le contact par email
-    const searchResponse = await fetch(
-      `https://api.hubapi.com/crm/v3/objects/contacts/search`,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          'Authorization': `Bearer ${apiKey}`,
-        },
-        body: JSON.stringify({
-          filterGroups: [{
-            filters: [{
-              propertyName: 'email',
-              operator: 'EQ',
-              value: email
-            }]
-          }]
-        }),
-      }
-    );
-
-    const searchData = await searchResponse.json();
-    
-    if (searchData.results && searchData.results.length > 0) {
-      const contactId = searchData.results[0].id;
-      
-      // Mettre à jour le contact
-      const updateResponse = await fetch(
-        `https://api.hubapi.com/crm/v3/objects/contacts/${contactId}`,
-        {
-          method: 'PATCH',
-          headers: {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${apiKey}`,
-          },
-          body: JSON.stringify(contactData),
-        }
-      );
-
-      if (updateResponse.ok) {
-        return NextResponse.json({
-          success: true,
-          contactId: contactId,
-          message: 'Contact mis à jour avec succès dans HubSpot'
-        });
-      }
-    }
-
-    throw new Error('Impossible de mettre à jour le contact');
-  } catch (error) {
-    console.error('Erreur lors de la mise à jour:', error);
-    return NextResponse.json(
-      { error: 'Erreur lors de la mise à jour du contact' },
       { status: 500 }
     );
   }
