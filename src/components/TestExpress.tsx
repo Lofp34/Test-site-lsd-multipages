@@ -172,7 +172,31 @@ const TestExpress = () => {
               <Button 
                 variant="primary" 
                 size="sm"
-                onClick={() => window.open('https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone', '_blank')}
+                onClick={async () => {
+                  // Envoyer les données du test vers HubSpot
+                  try {
+                    await fetch('/api/hubspot/contact', {
+                      method: 'POST',
+                      headers: {
+                        'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify({
+                        firstName: 'Prospect',
+                        lastName: 'Test Express',
+                        email: 'test-express@laurentserre.com', // Email temporaire pour tracking
+                        diagnosticScore: score.toString(),
+                        diagnosticLevel: recommendation.level,
+                        formType: 'Test Express Commercial',
+                        message: `Test Express terminé - Score: ${score}/${questions.length * 4} - Niveau: ${recommendation.level}`
+                      }),
+                    });
+                  } catch (error) {
+                    console.log('Tracking test express:', error);
+                  }
+                  
+                  // Rediriger vers HubSpot pour RDV
+                  window.open('https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone', '_blank');
+                }}
               >
                 Prendre rendez-vous
               </Button>

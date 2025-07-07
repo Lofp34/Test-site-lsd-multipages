@@ -1,7 +1,8 @@
 'use client';
 
+import { useState } from 'react';
 import type { Metadata } from 'next';
-import { Target, CheckCircle, Calendar, ArrowRight, Award, Phone, Mail, Zap } from 'lucide-react';
+import { Target, CheckCircle, Calendar, ArrowRight, Award, Phone, Mail, Zap, Loader } from 'lucide-react';
 import Link from 'next/link';
 import TestExpress from '@/components/TestExpress';
 
@@ -28,6 +29,75 @@ const metadata: Metadata = {
 };
 
 function DiagnosticPage() {
+  const [formData, setFormData] = useState({
+    nom: '',
+    entreprise: '',
+    email: '',
+    telephone: '',
+    effectif: '',
+    defi: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      // Préparer les données pour HubSpot
+      const [firstName, ...lastNameParts] = formData.nom.split(' ');
+      const lastName = lastNameParts.join(' ');
+
+      const hubspotData = {
+        firstName: firstName,
+        lastName: lastName,
+        email: formData.email,
+        company: formData.entreprise,
+        phone: formData.telephone,
+        message: `Effectif équipe commerciale: ${formData.effectif}\nPrincipal défi: ${formData.defi}`,
+        formType: 'Diagnostic Commercial Gratuit'
+      };
+
+      const response = await fetch('/api/hubspot/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(hubspotData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        // Réinitialiser le formulaire
+        setFormData({
+          nom: '',
+          entreprise: '',
+          email: '',
+          telephone: '',
+          effectif: '',
+          defi: ''
+        });
+      } else {
+        throw new Error('Erreur lors de l\'envoi');
+      }
+    } catch (error) {
+      console.error('Erreur:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
       {/* Hero Section */}
@@ -84,7 +154,29 @@ function DiagnosticPage() {
                 </p>
               </div>
 
-              <form className="space-y-4">
+              <form onSubmit={handleSubmit} className="space-y-4">
+                {submitStatus === 'success' && (
+                  <div className="bg-mint-green/10 border border-mint-green/20 rounded-lg p-4 mb-4">
+                    <div className="flex items-center">
+                      <CheckCircle className="w-5 h-5 text-mint-green mr-2" />
+                      <p className="text-mint-green font-semibold">
+                        Merci ! Votre demande a été envoyée avec succès.
+                      </p>
+                    </div>
+                    <p className="text-sm text-gray-600 mt-2">
+                      Laurent vous contactera dans les 24h pour planifier votre diagnostic gratuit.
+                    </p>
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="bg-red-50 border border-red-200 rounded-lg p-4 mb-4">
+                    <p className="text-red-700 font-semibold">
+                      Une erreur s'est produite. Veuillez réessayer ou nous contacter directement.
+                    </p>
+                  </div>
+                )}
+
                 <div>
                   <label htmlFor="nom" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Nom Prénom *
@@ -94,8 +186,11 @@ function DiagnosticPage() {
                     id="nom"
                     name="nom"
                     required
+                    value={formData.nom}
+                    onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
                     placeholder="Votre nom complet"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -108,8 +203,11 @@ function DiagnosticPage() {
                     id="entreprise"
                     name="entreprise"
                     required
+                    value={formData.entreprise}
+                    onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
                     placeholder="Nom de votre entreprise"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -122,8 +220,11 @@ function DiagnosticPage() {
                     id="email"
                     name="email"
                     required
+                    value={formData.email}
+                    onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
                     placeholder="votre@email.com"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -136,8 +237,11 @@ function DiagnosticPage() {
                     id="telephone"
                     name="telephone"
                     required
+                    value={formData.telephone}
+                    onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
                     placeholder="06 XX XX XX XX"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -148,7 +252,10 @@ function DiagnosticPage() {
                   <select
                     id="effectif"
                     name="effectif"
+                    value={formData.effectif}
+                    onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
+                    disabled={isSubmitting}
                   >
                     <option value="">Sélectionner</option>
                     <option value="1">1 commercial</option>
@@ -167,17 +274,30 @@ function DiagnosticPage() {
                     id="defi"
                     name="defi"
                     rows={3}
+                    value={formData.defi}
+                    onChange={handleInputChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
                     placeholder="Décrivez votre principal enjeu commercial..."
+                    disabled={isSubmitting}
                   ></textarea>
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-mint-green hover:bg-mint-green/90 text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center"
+                  disabled={isSubmitting}
+                  className="w-full bg-mint-green hover:bg-mint-green/90 disabled:bg-gray-400 disabled:cursor-not-allowed text-white font-semibold py-4 px-6 rounded-lg transition-colors flex items-center justify-center"
                 >
-                  <Calendar className="w-5 h-5 mr-2" />
-                  Réserver Mon Diagnostic Gratuit
+                  {isSubmitting ? (
+                    <>
+                      <Loader className="w-5 h-5 mr-2 animate-spin" />
+                      Envoi en cours...
+                    </>
+                  ) : (
+                    <>
+                      <Calendar className="w-5 h-5 mr-2" />
+                      Réserver Mon Diagnostic Gratuit
+                    </>
+                  )}
                 </button>
 
                 <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
