@@ -68,7 +68,20 @@ function DiagnosticPage() {
         formType: 'Diagnostic Commercial Gratuit'
       };
 
-      const response = await fetch('/api/hubspot/contact', {
+      // 🔧 TEST TEMPORAIRE - Tester d'abord l'endpoint de test d'environnement
+      console.log('🧪 Test des variables d\'environnement...');
+      
+      try {
+        const envTestResponse = await fetch('/api/test-env');
+        const envTestData = await envTestResponse.json();
+        console.log('🔍 Variables d\'environnement:', envTestData);
+      } catch (envError) {
+        console.error('❌ Erreur test env:', envError);
+      }
+
+      // Essayer d'abord l'API V2 (spécial Vercel)
+      console.log('🚀 Essai API V2 (Vercel-optimized)...');
+      const response = await fetch('/api/hubspot/contact-v2', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
