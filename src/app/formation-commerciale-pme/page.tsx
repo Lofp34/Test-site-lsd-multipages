@@ -103,7 +103,7 @@ export default function FormationCommercialePMEPage() {
                   <Link href="/ressources/outil-preparation-rdv" className="hover:text-mint-green">Préparation RDV</Link>
                 </div>
               </div>
-              <Link href="/formation-commerciale-pme#bootcamp-details" className="inline-flex items-center text-mint-green hover:underline font-semibold">
+              <Link href="/bootcamp" className="inline-flex items-center text-mint-green hover:underline font-semibold">
                 En savoir plus <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </div>

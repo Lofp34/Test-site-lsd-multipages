@@ -169,7 +169,7 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 Formation & Développement
               </h3>
               <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
-                Découvrez notre <Link href="/formation-commerciale-pme#bootcamp-details" className="text-mint-green hover:underline">bootcamp commercial intensif</Link> 
+                Découvrez notre <Link href="/bootcamp" className="text-mint-green hover:underline">bootcamp commercial intensif</Link> 
                 et nos <Link href="/ressources/guide-prospection" className="text-mint-green hover:underline">guides pratiques</Link> pour transformer vos équipes.
               </p>
               <div className="space-y-2 text-sm">
