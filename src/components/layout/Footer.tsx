@@ -7,9 +7,9 @@ export default function Footer() {
     <footer className="bg-blue-ink dark:bg-gray-anthracite text-primary-bg">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section principale du footer */}
-        <div className="py-16 grid md:grid-cols-4 gap-8">
+        <div className="py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo et description */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 lg:col-span-2">
             <div className="mb-6">
               <h3 className="text-2xl font-title font-bold text-primary-bg mb-2">
                 Laurent Serre Développement
@@ -58,23 +58,62 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="/bootcamp" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
-                    Offre
+                  <a href="/expert-developpement-commercial-pme" className="font-body text-mint-green hover:text-white font-semibold transition-colors hover:translate-x-1 transform duration-200 block">
+                    Expert PME
+                  </a>
+                </li>
+                <li>
+                  <a href="/services" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                    Nos Services
                   </a>
                 </li>
                 <li>
                   <a href="/diagnostic" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
-                    Diagnostic
+                    Diagnostic Gratuit
                   </a>
                 </li>
                 <li>
-                  <a href="/cas-clients" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
-                    Cas clients
+                  <a href="/blog" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                    Blog
                   </a>
                 </li>
                 <li>
                   <a href="/contact" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
                     Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          {/* Ressources */}
+          <div>
+            <h4 className="font-title font-semibold text-primary-bg mb-6">Ressources</h4>
+            <nav>
+              <ul className="space-y-3">
+                <li>
+                  <a href="/ressources" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                    Toutes les ressources
+                  </a>
+                </li>
+                <li>
+                  <a href="/ressources/guide-prospection" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                    Guide Prospection
+                  </a>
+                </li>
+                <li>
+                  <a href="/ressources/guide-closing" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                    Guide Closing
+                  </a>
+                </li>
+                <li>
+                  <a href="/cas-clients" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                    Cas Clients
+                  </a>
+                </li>
+                <li>
+                  <a href="/a-propos" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                    À Propos
                   </a>
                 </li>
               </ul>

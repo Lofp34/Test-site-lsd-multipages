@@ -7,11 +7,14 @@ import { Menu, X } from "lucide-react";
 
 const NAV_ITEMS = [
   { label: "Accueil", href: "/" },
-  { label: "Bootcamp", href: "/bootcamp" },
+  { 
+    label: "Expert PME", 
+    href: "/expert-developpement-commercial-pme",
+    isHighlight: true 
+  },
+  { label: "Services", href: "/services" },
   { label: "Diagnostic", href: "/diagnostic" },
   { label: "Blog", href: "/blog" },
-  { label: "Ressources", href: "/ressources" },
-  { label: "À propos", href: "/a-propos" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -77,9 +80,11 @@ export default function Header() {
                     variant="ghost"
                     size="sm"
                     className={`px-3 py-2 ${
-                      (scrolled || isBlogArticle)
-                        ? 'text-white hover:text-mint-green'
-                        : 'text-primary-bg/90 hover:text-mint-green'
+                      item.isHighlight 
+                        ? 'bg-mint-green text-white hover:bg-mint-green/90' 
+                        : (scrolled || isBlogArticle)
+                          ? 'text-white hover:text-mint-green'
+                          : 'text-primary-bg/90 hover:text-mint-green'
                     } hover:bg-mint-green/10 ${
                       pathname === item.href ? 'text-mint-green bg-mint-green/10' : ''
                     }`}
@@ -102,7 +107,11 @@ export default function Header() {
                     <Button
                       variant="ghost"
                       size="sm"
-                      className={`w-full px-6 py-3 text-primary-bg/90 hover:text-mint-green hover:bg-mint-green/10 ${
+                      className={`w-full px-6 py-3 ${
+                        item.isHighlight 
+                          ? 'bg-mint-green text-white hover:bg-mint-green/90' 
+                          : 'text-primary-bg/90 hover:text-mint-green hover:bg-mint-green/10'
+                      } ${
                         pathname === item.href ? 'text-mint-green bg-mint-green/10' : ''
                       }`}
                     >
