@@ -41,13 +41,20 @@ export async function POST(request: NextRequest) {
     console.log('🔑 Variables d\'environnement:', {
       hasToken: !!hubspotApiToken,
       hasPortalId: !!hubspotPortalId,
-      tokenStart: hubspotApiToken ? hubspotApiToken.substring(0, 8) + '...' : 'undefined'
+      tokenStart: hubspotApiToken ? hubspotApiToken.substring(0, 8) + '...' : 'undefined',
+      tokenValue: hubspotApiToken || 'undefined',
+      allEnvVars: Object.keys(process.env).filter(key => key.includes('HUBSPOT'))
     });
     
-    if (!hubspotApiToken) {
-      console.error('❌ HUBSPOT_API_TOKEN manquante');
+    if (!hubspotApiToken || hubspotApiToken === 'your_hubspot_token_here') {
+      console.error('❌ HUBSPOT_API_TOKEN manquante ou non configurée');
+      console.error('📋 Variables d\'environnement HubSpot disponibles:', Object.keys(process.env).filter(key => key.includes('HUBSPOT')));
       return NextResponse.json(
-        { error: 'Configuration HubSpot manquante' },
+        { 
+          error: 'Configuration HubSpot manquante',
+          details: 'Veuillez configurer HUBSPOT_API_TOKEN dans .env.local',
+          currentToken: hubspotApiToken || 'undefined'
+        },
         { status: 500 }
       );
     }
