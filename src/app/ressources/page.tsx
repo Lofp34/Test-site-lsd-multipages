@@ -5,7 +5,8 @@ import HubSpotForm from '@/components/HubSpotForm';
 export const metadata: Metadata = {
   title: 'Ressources Gratuites - Outils et Guides | Laurent Serre Développement',
   description: 'Téléchargez nos ressources gratuites pour booster votre performance commerciale : guides, outils, vidéos et stratégies concrètes. 20 ans d\'expérience terrain.',
-  keywords: 'ressources commerciales gratuites, outils vente, guide prospection, formation commerciale, PME, développement commercial',
+  keywords: 'ressources commerciales gratuites, outils vente, guide prospection, formation commerciale, PME, développement commercial, closing techniques, scripts téléphoniques, stratégie commerciale',
+  authors: [{ name: 'Laurent Serre' }],
   alternates: {
     canonical: 'https://laurentserre.com/ressources',
   },
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
     url: 'https://laurentserre.com/ressources',
     type: 'website',
     locale: 'fr_FR',
+    siteName: 'Laurent Serre Développement',
     images: [
       {
         url: 'https://laurentserre.com/laurent.jpg',
@@ -29,6 +31,13 @@ export const metadata: Metadata = {
     title: 'Ressources Gratuites - Outils et Guides | Laurent Serre Développement',
     description: 'Téléchargez nos ressources gratuites pour booster votre performance commerciale : guides, outils, vidéos et stratégies concrètes.',
     images: ['https://laurentserre.com/laurent.jpg'],
+    creator: '@laurentserre',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    'max-image-preview': 'large',
+    'max-snippet': -1,
   },
 };
 
