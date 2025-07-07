@@ -7,9 +7,9 @@ export default function Footer() {
     <footer className="bg-blue-ink dark:bg-gray-anthracite text-primary-bg">
       <div className="max-w-6xl mx-auto px-6">
         {/* Section principale du footer */}
-        <div className="py-16 grid md:grid-cols-4 gap-8">
+        <div className="py-16 grid md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Logo et description */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 lg:col-span-2">
             <div className="mb-6">
               <h3 className="text-2xl font-title font-bold text-primary-bg mb-2">
                 Laurent Serre Développement
@@ -58,13 +58,18 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
+                  <a href="/expert-developpement-commercial-pme" className="font-body text-mint-green hover:text-white font-semibold transition-colors hover:translate-x-1 transform duration-200 block">
+                    Expert Développement Commercial PME
+                  </a>
+                </li>
+                <li>
                   <a href="/bootcamp" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
-                    Offre
+                    Bootcamp Commercial
                   </a>
                 </li>
                 <li>
                   <a href="/diagnostic" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
-                    Diagnostic
+                    Diagnostic Gratuit
                   </a>
                 </li>
                 <li>
@@ -75,6 +80,40 @@ export default function Footer() {
                 <li>
                   <a href="/contact" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
                     Contact
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          {/* Services Spécialisés */}
+          <div>
+            <h4 className="font-title font-semibold text-primary-bg mb-6">Services Spécialisés</h4>
+            <nav>
+              <ul className="space-y-3">
+                <li>
+                  <a href="/formation-commerciale-pme" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                    Formation Commerciale PME
+                  </a>
+                </li>
+                <li>
+                  <a href="/coach-commercial-entreprise" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                    Coaching Commercial
+                  </a>
+                </li>
+                <li>
+                  <a href="/transformation-commerciale" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                    Transformation Commerciale
+                  </a>
+                </li>
+                <li>
+                  <a href="/consultant-commercial-montpellier" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                    Consultant Montpellier
+                  </a>
+                </li>
+                <li>
+                  <a href="/formateur-vente-pme" className="font-body text-white hover:text-mint-green transition-colors hover:translate-x-1 transform duration-200 block">
+                    Formateur Vente PME
                   </a>
                 </li>
               </ul>
