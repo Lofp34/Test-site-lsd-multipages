@@ -4,6 +4,7 @@ import HubSpotForm from '@/components/HubSpotForm';
 import Button from '@/components/ui/Button';
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { trackBusinessEvents } from '@/components/GoogleAnalytics';
+import ContactSimpleForm from '@/components/ContactSimpleForm';
 
 export default function FinalCtaSection() {
   const scrollToSection = (sectionId: string) => {
@@ -52,14 +53,8 @@ export default function FinalCtaSection() {
                   Un simple appel pour comprendre vos enjeux, identifier les opportunités et voir comment nous pouvons travailler ensemble.
                 </p>
                 
-                {/* Formulaire HubSpot intégré avec tracking */}
-                <div className="bg-white/80 dark:bg-gray-anthracite/40 rounded-2xl p-6 mb-6">
-                  <div 
-                    onFocus={() => trackBusinessEvents.ctaClicked('contact_form_focused', 'final_cta_section')}
-                  >
-                    <HubSpotForm />
-                  </div>
-                </div>
+                {/* Formulaire React moderne à la place du HubSpot natif */}
+                <ContactSimpleForm />
 
                 {/* Alternative Calendly */}
                 <div className="border-t border-mint-green/20 pt-6">
