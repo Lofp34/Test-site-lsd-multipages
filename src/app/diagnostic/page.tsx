@@ -30,12 +30,12 @@ const metadata: Metadata = {
 
 function DiagnosticPage() {
   const [formData, setFormData] = useState({
-    nom: '',
-    entreprise: '',
+    firstName: '',
+    lastName: '',
+    company: '',
     email: '',
-    telephone: '',
-    effectif: '',
-    defi: ''
+    phone: '',
+    mainChallenge: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -55,33 +55,18 @@ function DiagnosticPage() {
 
     try {
       // Préparer les données pour HubSpot
-      const [firstName, ...lastNameParts] = formData.nom.split(' ');
-      const lastName = lastNameParts.join(' ');
-
       const hubspotData = {
-        firstName: firstName,
-        lastName: lastName,
+        firstName: formData.firstName,
+        lastName: formData.lastName,
         email: formData.email,
-        company: formData.entreprise,
-        phone: formData.telephone,
-        message: `Effectif équipe commerciale: ${formData.effectif}\nPrincipal défi: ${formData.defi}`,
-        formType: 'Diagnostic Commercial Gratuit'
+        company: formData.company,
+        phone: formData.phone,
+        message: `Principal défi: ${formData.mainChallenge}`,
       };
 
-      // 🔧 TEST TEMPORAIRE - Tester d'abord l'endpoint de test d'environnement
-      console.log('🧪 Test des variables d\'environnement...');
-      
-      try {
-        const envTestResponse = await fetch('/api/test-env');
-        const envTestData = await envTestResponse.json();
-        console.log('🔍 Variables d\'environnement:', envTestData);
-      } catch (envError) {
-        console.error('❌ Erreur test env:', envError);
-      }
+      console.log('📤 Envoi des données vers HubSpot:', hubspotData);
 
-      // Essayer d'abord l'API V2 (spécial Vercel)
-      console.log('🚀 Essai API V2 (Vercel-optimized)...');
-      const response = await fetch('/api/hubspot/contact-v2', {
+      const response = await fetch('/api/hubspot/contact-simple', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -93,12 +78,12 @@ function DiagnosticPage() {
         setSubmitStatus('success');
         // Réinitialiser le formulaire
         setFormData({
-          nom: '',
-          entreprise: '',
+          firstName: '',
+          lastName: '',
+          company: '',
           email: '',
-          telephone: '',
-          effectif: '',
-          defi: ''
+          phone: '',
+          mainChallenge: ''
         });
       } else {
         throw new Error('Erreur lors de l\'envoi');
@@ -190,109 +175,110 @@ function DiagnosticPage() {
                   </div>
                 )}
 
-                <div>
-                  <label htmlFor="nom" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Nom Prénom *
-                  </label>
-                  <input
-                    type="text"
-                    id="nom"
-                    name="nom"
-                    required
-                    value={formData.nom}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
-                    placeholder="Votre nom complet"
-                    disabled={isSubmitting}
-                  />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
+                      Prénom *
+                    </label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      required
+                      value={formData.firstName}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      placeholder="Votre prénom"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
+                      Nom *
+                    </label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      required
+                      value={formData.lastName}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      placeholder="Votre nom"
+                    />
+                  </div>
                 </div>
 
                 <div>
-                  <label htmlFor="entreprise" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                  <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-2">
                     Entreprise *
                   </label>
                   <input
                     type="text"
-                    id="entreprise"
-                    name="entreprise"
+                    id="company"
+                    name="company"
                     required
-                    value={formData.entreprise}
+                    value={formData.company}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                     placeholder="Nom de votre entreprise"
-                    disabled={isSubmitting}
                   />
                 </div>
 
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Email professionnel *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
-                    placeholder="votre@email.com"
-                    disabled={isSubmitting}
-                  />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                      Email professionnel *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      placeholder="votre@entreprise.com"
+                    />
+                  </div>
+                  
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                      Téléphone
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                      placeholder="06 12 34 56 78"
+                    />
+                  </div>
                 </div>
 
                 <div>
-                  <label htmlFor="telephone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Téléphone *
-                  </label>
-                  <input
-                    type="tel"
-                    id="telephone"
-                    name="telephone"
-                    required
-                    value={formData.telephone}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
-                    placeholder="06 XX XX XX XX"
-                    disabled={isSubmitting}
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="effectif" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Effectif équipe commerciale
+                  <label htmlFor="mainChallenge" className="block text-sm font-medium text-gray-700 mb-2">
+                    Principal défi commercial *
                   </label>
                   <select
-                    id="effectif"
-                    name="effectif"
-                    value={formData.effectif}
+                    id="mainChallenge"
+                    name="mainChallenge"
+                    required
+                    value={formData.mainChallenge}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
-                    disabled={isSubmitting}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                   >
-                    <option value="">Sélectionner</option>
-                    <option value="1">1 commercial</option>
-                    <option value="2-5">2 à 5 commerciaux</option>
-                    <option value="6-10">6 à 10 commerciaux</option>
-                    <option value="10+">Plus de 10 commerciaux</option>
-                    <option value="aucun">Aucune équipe commerciale</option>
+                    <option value="">Sélectionnez votre principal défi</option>
+                    <option value="prospection">Difficultés de prospection</option>
+                    <option value="closing">Problèmes de closing</option>
+                    <option value="team">Gestion d'équipe commerciale</option>
+                    <option value="strategy">Stratégie commerciale</option>
+                    <option value="performance">Performance commerciale</option>
+                    <option value="transformation">Transformation digitale</option>
+                    <option value="other">Autre</option>
                   </select>
-                </div>
-
-                <div>
-                  <label htmlFor="defi" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                    Principal défi commercial actuel
-                  </label>
-                  <textarea
-                    id="defi"
-                    name="defi"
-                    rows={3}
-                    value={formData.defi}
-                    onChange={handleInputChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-mint-green focus:border-mint-green"
-                    placeholder="Décrivez votre principal enjeu commercial..."
-                    disabled={isSubmitting}
-                  ></textarea>
                 </div>
 
                 <button
