@@ -150,7 +150,11 @@ export default function TestHubSpot() {
               </h3>
               
               <p className={`mb-4 ${result.success ? 'text-green-700' : 'text-red-700'}`}>
-                {result.message}
+                {result.success ? result.message :
+                  (result.error && result.error.hubspotError && (result.error.hubspotError.category === 'CONFLICT' || result.status === 409)
+                    ? 'Un contact avec cet email existe déjà dans HubSpot.'
+                    : result.message)
+                }
               </p>
 
               <details className="mt-4">
