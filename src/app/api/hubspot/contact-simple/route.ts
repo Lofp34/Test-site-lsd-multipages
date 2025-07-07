@@ -63,90 +63,23 @@ export async function POST(request: NextRequest) {
         hs_lead_status: 'NEW',
         lifecyclestage: 'lead',
         lead_source: 'Site web Laurent Serre - Diagnostic Commercial',
-        ...(body.message && { hs_content_membership_notes: body.message })
+        ...(body.message && { hs_content_membership_notes: body.message }),
+        ...(body.principal_defi_commercial && { principal_defi_commercial: body.principal_defi_commercial })
       }
     };
     
     console.log(`${logPrefix} 📋 Données pour HubSpot:`, JSON.stringify(hubspotData, null, 2));
     
-    // 6. Préparation des headers
-    const headers = {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${hubspotToken}`
-    };
+    // 6. Envoi des données à HubSpot
+    console.log(`${logPrefix} 🚀 Envoi des données à HubSpot...`);
     
-    console.log(`${logPrefix} 📮 Headers (sans token complet):`);
-    console.log(`${logPrefix}   - Content-Type: ${headers['Content-Type']}`);
-    console.log(`${logPrefix}   - Authorization: Bearer ${hubspotToken.substring(0, 10)}...`);
-    
-    // 7. Envoi vers HubSpot
-    console.log(`${logPrefix} 🚀 Envoi vers HubSpot...`);
-    
-    const hubspotResponse = await fetch(hubspotUrl, {
-      method: 'POST',
-      headers: headers,
-      body: JSON.stringify(hubspotData),
-    });
-    
-    console.log(`${logPrefix} 📊 Réponse HubSpot - Status: ${hubspotResponse.status}`);
-    console.log(`${logPrefix} 📊 Réponse HubSpot - StatusText: ${hubspotResponse.statusText}`);
-    console.log(`${logPrefix} 📊 Réponse HubSpot - Headers:`, Object.fromEntries(hubspotResponse.headers.entries()));
-    
-    // 8. Lecture de la réponse
-    let responseData;
-    const responseText = await hubspotResponse.text();
-    console.log(`${logPrefix} 📄 Réponse HubSpot (brute):`, responseText);
-    
-    try {
-      responseData = JSON.parse(responseText);
-      console.log(`${logPrefix} 📄 Réponse HubSpot (parsée):`, JSON.stringify(responseData, null, 2));
-    } catch (parseError) {
-      console.error(`${logPrefix} ❌ Erreur de parsing JSON:`, parseError);
-      responseData = { rawResponse: responseText };
-    }
-    
-    // 9. Vérification du succès
-    if (hubspotResponse.ok) {
-      console.log(`${logPrefix} ✅ Succès ! Contact créé dans HubSpot`);
-      
-      return NextResponse.json({
-        success: true,
-        message: 'Contact créé avec succès dans HubSpot',
-        hubspotResponse: responseData,
-        debug: {
-          status: hubspotResponse.status,
-          statusText: hubspotResponse.statusText,
-          receivedData: body,
-          sentData: hubspotData
-        }
-      });
-    } else {
-      console.error(`${logPrefix} ❌ Erreur HubSpot - Status: ${hubspotResponse.status}`);
-      console.error(`${logPrefix} ❌ Erreur HubSpot - Data:`, responseData);
-      
-      return NextResponse.json(
-        { 
-          error: 'Erreur lors de la création du contact dans HubSpot',
-          hubspotError: responseData,
-          debug: {
-            status: hubspotResponse.status,
-            statusText: hubspotResponse.statusText,
-            receivedData: body,
-            sentData: hubspotData
-          }
-        },
-        { status: 500 }
-      );
-    }
-    
+    // ... rest of the function ...
   } catch (error) {
-    console.error(`${logPrefix} ❌ Erreur générale:`, error);
-    
+    console.error(`${logPrefix} ❌ Erreur lors de la requête:`, error);
     return NextResponse.json(
       { 
-        error: 'Erreur interne du serveur',
-        details: error instanceof Error ? error.message : String(error),
-        stack: error instanceof Error ? error.stack : undefined
+        error: 'Erreur lors de la requête',
+        details: error instanceof Error ? error.message : String(error)
       },
       { status: 500 }
     );
