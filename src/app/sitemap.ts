@@ -11,14 +11,54 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'daily',
       priority: 1,
     },
+    // PAGE CIBLE PRINCIPALE DU COCON SÉMANTIQUE
     {
-      url: `${baseUrl}/bootcamp`,
+      url: `${baseUrl}/expert-developpement-commercial-pme`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    // PAGES INTERMÉDIAIRES COCON SÉMANTIQUE
+    {
+      url: `${baseUrl}/formation-commerciale-pme`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/transformation-commerciale`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
     {
       url: `${baseUrl}/diagnostic`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.95,
+    },
+    // PAGES SPÉCIALISÉES COCON
+    {
+      url: `${baseUrl}/consultant-commercial-montpellier`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/formateur-vente-pme`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/coach-commercial-entreprise`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    // PAGES EXISTANTES
+    {
+      url: `${baseUrl}/bootcamp`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.9,
