@@ -26,7 +26,7 @@ export default function ContactSimpleForm() {
     setResult(null);
 
     try {
-      const response = await fetch('/api/hubspot/contact-simple', {
+      const response = await fetch('/api/hubspot/submit-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
