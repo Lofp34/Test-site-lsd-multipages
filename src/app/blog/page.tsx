@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: '7-etapes-transformer-non-en-oui-performant-2025',
+    title: '7 étapes pour transformer un « non » frustrant en « oui » performant en 2025',
+    description: 'Une méthode claire et moderne pour transformer chaque refus client en opportunité commerciale durable et efficace. Conseils pratiques, techniques d’écoute et outils IA pour performer en 2025.',
+    date: '2024-06-21',
+    readTime: '9 min',
+    category: 'Techniques de vente',
+    image: '/equipe_bureau.jpg',
+    featured: true
+  },
+  {
     slug: '5-signes-structurer-equipe-commerciale',
     title: '5 signes qu\'il est temps de structurer votre équipe commerciale',
     description: 'Découvrez les signaux d\'alerte qui indiquent qu\'il est temps de passer à l\'étape supérieure dans l\'organisation de votre force de vente.',
