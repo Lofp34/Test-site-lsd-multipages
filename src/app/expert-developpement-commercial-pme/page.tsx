@@ -88,26 +88,28 @@ export default function ExpertDeveloppementCommercialPMEPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <div className="inline-flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-6 py-3 rounded-full">
-                <Award className="w-5 h-5 text-mint-green" />
-                <span className="font-title font-semibold text-mint-green">
-                  Expert Développement Commercial • 20 ans d'Expérience
-                </span>
+              <div className="flex justify-center lg:justify-start">
+                <div className="flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-6 py-3 rounded-full text-center">
+                  <Award className="w-5 h-5 text-mint-green" />
+                  <span className="font-title font-semibold text-mint-green">
+                    Expert Développement Commercial • 20 ans d'Expérience
+                  </span>
+                </div>
               </div>
               
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-title font-extrabold text-white leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-title font-extrabold text-white leading-tight text-center lg:text-left">
                 Expert Développement Commercial
                 <span className="block text-mint-green">PME</span>
               </h1>
               
-              <p className="text-xl text-white/95 leading-relaxed">
+              <p className="text-xl text-white/95 leading-relaxed text-center lg:text-left">
                 Laurent Serre accompagne les PME dans leur transformation commerciale depuis 20 ans. 
                 De la <Link href="/formation-commerciale-pme" className="text-mint-green hover:underline">formation des équipes</Link> à la 
                 <Link href="/transformation-commerciale" className="text-mint-green hover:underline"> structuration des processus</Link>, 
                 des méthodes terrain éprouvées pour des résultats mesurables.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link href="/diagnostic" className="inline-flex items-center bg-mint-green hover:bg-mint-green/90 text-white px-8 py-4 rounded-full font-semibold transition-colors">
                   <Target className="w-5 h-5 mr-2" />
                   Diagnostic Gratuit
