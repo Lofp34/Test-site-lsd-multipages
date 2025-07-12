@@ -1,6 +1,6 @@
 'use client';
 
-import { Youtube, FileText, Award, Star, Briefcase, DraftingCompass, Download, Target, Users, TrendingUp, ShieldCheck, Zap, Crown, Calculator, Phone } from 'lucide-react';
+import { Youtube, FileText, Award, Star, Briefcase, DraftingCompass, Download, Target, Users, TrendingUp, ShieldCheck, Zap, Crown, Calculator, Phone, BookOpen } from 'lucide-react';
 import AnimatedSection from '../ui/AnimatedSection';
 import { motion } from 'framer-motion';
 import { useRef, useState } from 'react';
@@ -22,6 +22,15 @@ export default function ResourcesSection() {
   ];
   
   const resources = [
+    {
+      icon: <BookOpen className="w-10 h-10 text-mint-green" />,
+      title: "Le Grand Guide des Techniques de Vente & Négociation",
+      description: "Panorama complet des méthodes de vente et de négociation, décryptées et applicables en PME.",
+      link: "/ressources/le-grand-guide-des-techniques-de-vente",
+      status: "Accéder au guide",
+      available: true,
+      target: "Tous profils",
+    },
     {
       icon: <Youtube className="w-10 h-10 text-red-500" />,
       title: "Dernière Vidéo YouTube",
