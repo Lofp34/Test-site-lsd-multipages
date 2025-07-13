@@ -203,6 +203,46 @@ export const bookCategories: BookCategory[] = [
         tagline: "La méthode structurée pour la vente complexe.",
         summary: "SPIN Selling est l’une des premières méthodes de vente consultative fondées sur la recherche, centrée sur le questionnement et la création de valeur conjointe. Basé sur 12 ans de recherche et l’analyse de 35 000 entretiens, Rackham propose une séquence de questions (Situation, Problème, Implication, Need-payoff) pour amener le client à exprimer ses besoins et la valeur de la solution.",
         category: "methodes-process"
+      },
+      {
+        slug: "the-challenger-sale",
+        title: "The Challenger Sale",
+        author: "Matthew Dixon & Brent Adamson",
+        year: 2011,
+        cover: "/covers/the-challenger-sale.jpg",
+        tagline: "Vendre en leader d’opinion, bousculer le statu quo.",
+        summary: "Basé sur une vaste étude, ce livre identifie le profil du Challenger comme le plus performant. Le vendeur Challenger éduque le client, personnalise son approche et contrôle la vente. Il ose remettre en question la vision du client, apporte des idées nouvelles et sait gérer des ventes complexes à multiples décideurs.",
+        category: "methodes-process"
+      },
+      {
+        slug: "solution-selling",
+        title: "Solution Selling",
+        author: "Michael Bosworth",
+        year: 1994,
+        cover: "/covers/solution-selling.jpg",
+        tagline: "La méthode pour vendre en résolvant les problèmes clients.",
+        summary: "Solution Selling propose un processus en plusieurs étapes : rechercher les difficultés du client, les qualifier, proposer une vision de la solution, faire valider cette vision, justifier le ROI, puis négocier l’accord. L’accent est mis sur la découverte approfondie : un bon vendeur doit agir comme un médecin qui pose un diagnostic avant de prescrire.",
+        category: "methodes-process"
+      },
+      {
+        slug: "gap-selling",
+        title: "Gap Selling",
+        author: "Keenan",
+        year: 2018,
+        cover: "/covers/gap-selling.jpg",
+        tagline: "La méthode pour combler le fossé entre l’état actuel et l’état désiré du client.",
+        summary: "Gap Selling est centré sur le concept de “combler le fossé” (gap) entre l’état actuel du client et l’état futur souhaité. Le commercial agit comme un diagnosticien : il doit découvrir la situation présente du client, l’aider à définir où il veut aller, puis montrer comment la solution réduit ce gap.",
+        category: "methodes-process"
+      },
+      {
+        slug: "strategic-selling",
+        title: "Strategic Selling",
+        author: "Robert Miller & Stephen Heiman",
+        year: 1985,
+        cover: "/covers/strategic-selling.jpg",
+        tagline: "Le guide de la vente grands comptes structurée.",
+        summary: "Strategic Selling propose un processus structuré pour gérer des ventes complexes impliquant de multiples décideurs. L’outil clé est la “Blue Sheet” : cartographier tous les acteurs du compte, leurs critères de succès et le plan d’action pour chacun. La méthode introduit aussi le concept de win-win partagé et la notion de “vendre avec le client”.",
+        category: "methodes-process"
       }
     ]
   },
@@ -212,13 +252,53 @@ export const bookCategories: BookCategory[] = [
     pitch: "Vendre gros, long et complexe",
     books: [
       {
-        slug: "strategic-selling",
-        title: "Strategic Selling",
-        author: "Robert Miller & Stephen Heiman",
-        year: 1985,
-        cover: "/covers/strategic-selling.jpg",
-        tagline: "Le guide de la vente grands comptes.",
-        summary: "Ce livre propose un processus structuré pour gérer des ventes complexes impliquant de multiples décideurs dans l’entreprise cliente.",
+        slug: "the-challenger-customer",
+        title: "The Challenger Customer",
+        author: "Brent Adamson et al.",
+        year: 2015,
+        cover: "/covers/the-challenger-customer.jpg",
+        tagline: "Mobiliser les bons alliés pour vendre à un comité d’achat complexe.",
+        summary: "Suite du Challenger Sale, ce livre se focalise sur l’autre côté de la table : comment vendre efficacement à un comité d’achat complexe. Les auteurs démystifient le processus d’achat en entreprise moderne, qu’ils décrivent comme dysfonctionnel par défaut : en moyenne 5,4 personnes participent à la décision, chacune avec ses priorités, ce qui conduit souvent à l’immobilisme. La clé est d’identifier et de mobiliser un Challenger Customer, un allié interne qui va challenger le statu quo et évangéliser le changement. Le livre fournit des stratégies pour équiper ces alliés et en faire des relais capables de construire le consensus interne autour de votre solution. Un guide précieux pour naviguer les méandres politiques d’un grand compte et remporter l’adhésion collective nécessaire à la signature.",
+        category: "enterprise-account"
+      },
+      {
+        slug: "mastering-the-complex-sale",
+        title: "Mastering the Complex Sale",
+        author: "Jeff Thull",
+        year: 2003,
+        cover: "/covers/mastering-the-complex-sale.jpg",
+        tagline: "Le cadre stratégique pour réussir les ventes complexes et vendre de la valeur.",
+        summary: "Jeff Thull propose un cadre stratégique appelé 'Diagnostic Business Development' pour réussir les ventes complexes. Il insiste sur la notion de valeur : l’erreur de nombreux commerciaux est de vendre leur produit, au lieu d’aider le client à diagnostiquer ses vrais besoins et à quantifier la valeur d’une solution. Thull articule un processus en quatre phases (modèle Prime Process) : Discover, Diagnose, Design, Deliver. En Discover : identifier les clients cibles et formuler une hypothèse de valeur ; en Diagnose : approfondir avec le client pour découvrir les causes racines de ses problèmes ; en Design : co-concevoir avec lui une solution sur mesure ; en Deliver : déployer la solution et mesurer les résultats. Mastering the Complex Sale insiste sur l’importance d’éviter la commoditisation de son offre en apportant cette approche conseil unique. L’auteur met aussi en garde contre les pièges pour le commercial (vouloir trop présenter trop tôt, mal qualifier le processus décisionnel, etc.). Ce livre fournit une feuille de route méthodique pour vendre de la valeur et bâtir une relation de confiance, particulièrement utile pour des ventes B2B complexes où le risque d’échouer en faisant tout bien est élevé si on ne réinvente pas le modèle de discussion.",
+        category: "enterprise-account"
+      },
+      {
+        slug: "key-account-management-definitive-guide",
+        title: "Key Account Management: The Definitive Guide",
+        author: "Diana Woodburn & Malcolm McDonald",
+        year: 2019,
+        cover: "/covers/key-account-management-definitive-guide.jpg",
+        tagline: "Le guide avancé pour structurer un programme KAM performant et mondialement cohérent.",
+        summary: "Cette référence académique offre un panorama complet des meilleures pratiques en gestion des comptes stratégiques. Elle fournit des outils structurés pour segmenter ses clients clés, bâtir des plans d’action par compte, développer les relations multi-niveaux et mesurer la profitabilité des comptes. Woodburn et McDonald définissent notamment comment identifier un 'compte clé' (KAM) – typiquement via une matrice attrait du compte / position concurrentielle – et comment formaliser un plan de compte détaillé : objectifs du client, plan de création de valeur, plan de contacts du compte, etc. Ils insistent aussi sur les compétences du Key Account Manager (communication, influence interne, compréhension du business client, leadership transversal) et sur l’importance d’une culture d’entreprise orientée client pour réussir le KAM. Cet ouvrage puise dans des recherches de l’université de Cranfield et sert de guide avancé pour structurer un programme KAM performant et mondialement cohérent. Un manuel exhaustif pour passer d’une gestion opportuniste des grands comptes à une démarche stratégique et collaborative.",
+        category: "enterprise-account"
+      },
+      {
+        slug: "the-new-successful-large-account-management",
+        title: "The New Successful Large Account Management (LAMP)",
+        author: "Robert Miller, Stephen Heiman, Tad Tuleja",
+        year: 2005,
+        cover: "/covers/the-new-successful-large-account-management.jpg",
+        tagline: "La méthode LAMP pour industrialiser la gestion et la croissance des grands comptes.",
+        summary: "Les fondateurs de Miller Heiman ont formalisé le processus de management des comptes existants via la méthode LAMP (Large Account Management Process). Ce livre explique comment classer ses comptes (top, stratégiques…) et comment élaborer un plan de croissance par compte. La philosophie est de construire des relations long terme mutuellement profitables. Les auteurs détaillent comment conduire régulièrement des revues de compte avec le client, comment détecter de nouvelles opportunités de vente upsell/cross-sell, et comment apporter davantage de valeur pour devenir un partenaire indispensable du client. LAMP fournit des outils pratiques comme l’analyse des 'white spaces' (identifier les lignes de produits non encore vendues au client), le plan d’action annuel co-construit, etc. Il s’agit d’industrialiser la gestion de la relation client pour fidéliser et développer ses principaux clients. Un impératif quand on sait que généralement 20% des clients génèrent 80% du chiffre d’affaires. Ce livre, parent du Strategic Selling, aide à passer d’une posture de vendeur à celle de gestionnaire de partenariat sur le long terme.",
+        category: "enterprise-account"
+      },
+      {
+        slug: "selling-to-big-companies",
+        title: "Selling to Big Companies",
+        author: "Jill Konrath",
+        year: 2005,
+        cover: "/covers/selling-to-big-companies.jpg",
+        tagline: "Le guide concret pour prospecter et obtenir des rendez-vous avec les grands comptes.",
+        summary: "Focus sur la prospection des grands comptes. Jill Konrath y aborde un problème concret : comment réussir à obtenir l’attention et des rendez-vous avec des décideurs très sollicités dans les grandes entreprises. Elle commence par dresser le constat que les acheteurs B2B sont saturés, surinformés, pressés, et qu’il est de plus en plus difficile de 'percer' jusqu’à eux. Konrath propose une approche méthodique pour y parvenir : 1) Cibler finement un segment d’industrie ou de fonction, 2) Rechercher les enjeux et priorités spécifiques de ces prospects, 3) Préparer un message d’accroche ultra-pertinent qui montre en une phrase qu’on peut résoudre un de leurs problèmes critiques, 4) Utiliser un mix d’appels à froid et d’emails percutants, personnalisés, pour décrocher une rencontre. Elle donne de nombreux conseils sur la rédaction d’un bon email de prospection (focalisé sur le client, très court, orienté résultats) et sur la préparation d’un 'elevator pitch' crédible. Selling to Big Companies est ainsi un guide très concret pour tous les commerciaux qui peinent à franchir les barrages et veulent savoir quoi dire aux gros clients potentiels pour susciter leur intérêt. Konrath insiste notamment sur l’importance de parler la langue du client (ex. ROI, productivité, part de marché) plutôt que la langue de son produit. Un livre précieux pour conquérir de nouveaux comptes majeurs.",
         category: "enterprise-account"
       }
     ]
@@ -228,16 +308,7 @@ export const bookCategories: BookCategory[] = [
     title: "Sales Management",
     pitch: "Recruter, coacher, prédire le chiffre",
     books: [
-      {
-        slug: "good-to-great",
-        title: "Good to Great",
-        author: "Jim Collins",
-        year: 2001,
-        cover: "/covers/good-to-great.jpg",
-        tagline: "Les facteurs durables de la réussite organisationnelle.",
-        summary: "Ce livre identifie les facteurs durables de la réussite organisationnelle et introduit des concepts cultes comme le leadership de niveau 5.",
-        category: "management-leadership"
-      }
+      // (vide pour éviter les erreurs 404)
     ]
   },
   {
@@ -245,16 +316,7 @@ export const bookCategories: BookCategory[] = [
     title: "Digital & AI Sales",
     pitch: "Social, automation, IA générative",
     books: [
-      {
-        slug: "the-second-machine-age",
-        title: "The Second Machine Age",
-        author: "Erik Brynjolfsson & Andrew McAfee",
-        year: 2014,
-        cover: "/covers/the-second-machine-age.jpg",
-        tagline: "L’impact économique des technologies numériques.",
-        summary: "Un ouvrage de référence sur l’impact économique des technologies numériques et la révolution de l’IA sur la société.",
-        category: "digital-ai"
-      }
+      // (vide pour éviter les erreurs 404)
     ]
   },
   {
