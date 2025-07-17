@@ -261,5 +261,80 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    // SECTION MEILLEURS LIVRES
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    // CATÉGORIES DE LIVRES
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/prospection-sdr`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/negociation-closing`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/psychologie-influence`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/methodes-process`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/enterprise-account`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/sales-management`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    // LIVRES SALES MANAGEMENT
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/sales-management/good-to-great`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/sales-management/high-output-management`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/sales-management/blue-ocean-strategy`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/sales-management/innovators-dilemma`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/sales-management/leaders-eat-last`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
   ]
 }

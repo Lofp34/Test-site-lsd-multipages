@@ -7,14 +7,25 @@ export type Book = {
   cover: string; // à compléter plus tard
   tagline: string;
   summary: string;
+  detailedSummary?: string; // Nouveau : résumé long pour pages individuelles
+  keyPoints?: string[];     // Nouveau : points clés à retenir
+  targetProfiles?: string[]; // Nouveau : profils cibles
+  difficulty?: 'Facile' | 'Intermédiaire' | 'Avancé'; // Nouveau
+  readingTime?: string;     // Nouveau : durée de lecture estimée
+  terrainAdvice?: string;   // Nouveau : conseil terrain Laurent Serre
+  rating?: number;          // Nouveau : note sur 5
   category: string;
+  complementaryBooks?: string[]; // Nouveau : slugs des livres complémentaires
 };
 
 export type BookCategory = {
   slug: string;
   title: string;
   pitch: string;
+  description?: string;     // Nouveau : description longue de la catégorie
+  icon?: string;           // Nouveau : emoji/icône
   books: Book[];
+  seoKeywords?: string[];  // Nouveau : mots-clés SEO spécifiques
 };
 
 export const bookCategories: BookCategory[] = [
@@ -250,6 +261,9 @@ export const bookCategories: BookCategory[] = [
     slug: "enterprise-account",
     title: "Enterprise & Accounts",
     pitch: "Vendre gros, long et complexe",
+    description: "Maîtriser la vente aux grandes entreprises nécessite des compétences spécifiques : naviguer dans des processus d'achat complexes, gérer de multiples décideurs, construire des relations long terme et apporter une valeur business mesurable. Cette catégorie regroupe les références incontournables pour réussir dans l'univers des grands comptes.",
+    icon: "🏢",
+    seoKeywords: ["vente grands comptes", "enterprise sales", "account management", "vente complexe", "B2B enterprise"],
     books: [
       {
         slug: "the-challenger-customer",
@@ -304,11 +318,63 @@ export const bookCategories: BookCategory[] = [
     ]
   },
   {
-    slug: "management-leadership",
-    title: "Sales Management",
-    pitch: "Recruter, coacher, prédire le chiffre",
+    slug: "sales-management",
+    title: "Sales Management & Leadership",
+    pitch: "Manager, motiver et développer son équipe commerciale",
+    description: "Management et leadership commercial : les références pour diriger, motiver et développer des équipes commerciales performantes. Cette catégorie regroupe les ouvrages essentiels pour transformer une équipe ordinaire en organisation d'excellence, maîtriser l'art du leadership et créer une culture de performance durable.",
+    icon: "👥",
+    seoKeywords: ["management commercial", "leadership vente", "manager équipe commerciale", "good to great", "high output management", "blue ocean strategy", "laurent serre"],
     books: [
-      // (vide pour éviter les erreurs 404)
+      {
+        slug: "good-to-great",
+        title: "Good to Great",
+        author: "Jim Collins",
+        year: 2001,
+        cover: "/covers/good-to-great.jpg",
+        tagline: "Les facteurs durables de la réussite organisationnelle",
+        summary: "Résultat d'une étude approfondie sur des entreprises ayant fait le saut de 'bonnes' à 'excellentes', ce livre identifie les facteurs durables de la réussite organisationnelle. Collins y introduit des concepts devenus cultes, comme le Leadership de niveau 5 : des dirigeants humbles mais déterminés, combinant ambition pour l'entreprise et modestie personnelle.",
+        category: "sales-management"
+      },
+      {
+        slug: "high-output-management",
+        title: "High Output Management",
+        author: "Andy Grove",
+        year: 1983,
+        cover: "/covers/high-output-management.jpg",
+        tagline: "La bible du manager : productivité, OKR et management opérationnel",
+        summary: "Écrit par le légendaire CEO d'Intel, ce livre est considéré dans la Silicon Valley comme la bible du manager. Andy Grove y partage une vision très pragmatique du management, vue comme une fonction de 'multiplication' : la productivité d'un manager se mesure à la somme des outputs de son équipe et de tous ceux qu'il influence.",
+        category: "sales-management"
+      },
+      {
+        slug: "blue-ocean-strategy",
+        title: "Blue Ocean Strategy",
+        author: "W. Chan Kim & Renée Mauborgne",
+        year: 2005,
+        cover: "/covers/blue-ocean-strategy.jpg",
+        tagline: "Créer son propre marché incontesté",
+        summary: "Un livre de stratégie d'entreprise au retentissement mondial, qui prône de quitter les 'océans rouges' saturés de concurrence pour créer son propre 'océan bleu' de marché incontesté. Les auteurs introduisent le concept de l'Innovation-valeur et la matrice ERAC pour repenser les attributs d'une offre.",
+        category: "sales-management"
+      },
+      {
+        slug: "innovators-dilemma",
+        title: "The Innovator's Dilemma",
+        author: "Clayton Christensen",
+        year: 1997,
+        cover: "/covers/innovators-dilemma.jpg",
+        tagline: "Pourquoi les entreprises leaders échouent face à l'innovation disruptive",
+        summary: "Un livre culte en gestion de l'innovation, qui explique pourquoi les entreprises leaders échouent parfois en dépit de décisions apparemment excellentes. Christensen y introduit le concept de technologie de rupture versus technologie de maintien.",
+        category: "sales-management"
+      },
+      {
+        slug: "leaders-eat-last",
+        title: "Leaders Eat Last",
+        author: "Simon Sinek",
+        year: 2014,
+        cover: "/covers/leaders-eat-last.jpg",
+        tagline: "Le leadership bienveillant et le cercle de sécurité",
+        summary: "Sinek explore le rôle du leader sous l'angle de la confiance et de la sécurité qu'il crée pour son équipe. Il développe l'idée d'un 'Cercle de sécurité' : un bon leader élargit ce cercle au maximum pour que ses employés se sentent protégés, soutenus.",
+        category: "sales-management"
+      }
     ]
   },
   {
@@ -337,3 +403,76 @@ export const bookCategories: BookCategory[] = [
     ]
   }
 ]; 
+
+// Fonctions utilitaires pour les nouveaux champs
+
+/**
+ * Retourne l'icône/emoji associé à une catégorie de livre
+ */
+export function getCategoryIcon(categorySlug: string): string {
+  const iconMap: Record<string, string> = {
+    'prospection-sdr': '🎯',
+    'negociation-closing': '🤝',
+    'psychologie-influence': '🧠',
+    'methodes-process': '⚙️',
+    'enterprise-account': '🏢',
+    'sales-management': '👥',
+    'management-leadership': '👥',
+    'digital-ai': '🤖',
+    'mindset-performance': '💪'
+  };
+  
+  return iconMap[categorySlug] || '📚';
+}
+
+/**
+ * Retourne la variante de style pour le badge de difficulté
+ */
+export function getDifficultyVariant(difficulty: 'Facile' | 'Intermédiaire' | 'Avancé'): string {
+  const variantMap: Record<string, string> = {
+    'Facile': 'bg-green-100 text-green-800 border-green-200',
+    'Intermédiaire': 'bg-yellow-100 text-yellow-800 border-yellow-200',
+    'Avancé': 'bg-red-100 text-red-800 border-red-200'
+  };
+  
+  return variantMap[difficulty] || 'bg-gray-100 text-gray-800 border-gray-200';
+}
+
+/**
+ * Retourne le gradient CSS personnalisé pour une catégorie
+ */
+export function getCategoryGradient(categorySlug: string): string {
+  const gradientMap: Record<string, string> = {
+    'prospection-sdr': 'bg-gradient-to-br from-blue-400 to-blue-600',
+    'negociation-closing': 'bg-gradient-to-br from-green-400 to-green-600',
+    'psychologie-influence': 'bg-gradient-to-br from-purple-400 to-purple-600',
+    'methodes-process': 'bg-gradient-to-br from-orange-400 to-orange-600',
+    'enterprise-account': 'bg-gradient-to-br from-indigo-400 to-indigo-600',
+    'sales-management': 'bg-gradient-to-br from-teal-400 to-teal-600',
+    'management-leadership': 'bg-gradient-to-br from-teal-400 to-teal-600',
+    'digital-ai': 'bg-gradient-to-br from-cyan-400 to-cyan-600',
+    'mindset-performance': 'bg-gradient-to-br from-pink-400 to-pink-600'
+  };
+  
+  return gradientMap[categorySlug] || 'bg-gradient-to-br from-gray-400 to-gray-600';
+}
+
+/**
+ * Trouve un livre par son slug dans toutes les catégories
+ */
+export function getBookBySlug(slug: string): Book | undefined {
+  for (const category of bookCategories) {
+    const book = category.books.find(book => book.slug === slug);
+    if (book) {
+      return book;
+    }
+  }
+  return undefined;
+}
+
+/**
+ * Trouve une catégorie par son slug
+ */
+export function getCategoryBySlug(slug: string): BookCategory | undefined {
+  return bookCategories.find(category => category.slug === slug);
+}
