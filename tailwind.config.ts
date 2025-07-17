@@ -46,6 +46,10 @@ const config: Config = {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'float': 'float 3s ease-in-out infinite',
         'glow': 'glow 2s ease-in-out infinite alternate',
+        'circuit-pulse': 'circuitPulse 2s ease-in-out infinite',
+        'data-flow': 'dataFlow 3s linear infinite',
+        'tech-glow': 'techGlow 2.5s ease-in-out infinite alternate',
+        'neural-network': 'neuralNetwork 4s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -81,6 +85,50 @@ const config: Config = {
         glow: {
           '0%': { boxShadow: '0 0 5px rgba(0, 189, 164, 0.5)' },
           '100%': { boxShadow: '0 0 20px rgba(0, 189, 164, 0.8)' },
+        },
+        circuitPulse: {
+          '0%, 100%': { 
+            opacity: '0.4',
+            transform: 'scale(1)',
+            boxShadow: '0 0 0 0 rgba(0, 189, 164, 0.7)'
+          },
+          '50%': { 
+            opacity: '1',
+            transform: 'scale(1.05)',
+            boxShadow: '0 0 0 10px rgba(0, 189, 164, 0)'
+          },
+        },
+        dataFlow: {
+          '0%': { transform: 'translateX(-100%) rotate(0deg)' },
+          '100%': { transform: 'translateX(100vw) rotate(360deg)' },
+        },
+        techGlow: {
+          '0%': { 
+            boxShadow: '0 0 5px rgba(6, 182, 212, 0.5), inset 0 0 5px rgba(6, 182, 212, 0.2)',
+            borderColor: 'rgba(6, 182, 212, 0.3)'
+          },
+          '100%': { 
+            boxShadow: '0 0 25px rgba(6, 182, 212, 0.8), inset 0 0 15px rgba(6, 182, 212, 0.4)',
+            borderColor: 'rgba(6, 182, 212, 0.6)'
+          },
+        },
+        neuralNetwork: {
+          '0%, 100%': { 
+            opacity: '0.3',
+            transform: 'scale(0.95) rotate(0deg)'
+          },
+          '25%': { 
+            opacity: '0.7',
+            transform: 'scale(1.02) rotate(90deg)'
+          },
+          '50%': { 
+            opacity: '1',
+            transform: 'scale(1.05) rotate(180deg)'
+          },
+          '75%': { 
+            opacity: '0.7',
+            transform: 'scale(1.02) rotate(270deg)'
+          },
         },
       },
       backdropBlur: {

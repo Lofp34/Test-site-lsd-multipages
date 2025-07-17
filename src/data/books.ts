@@ -381,8 +381,75 @@ export const bookCategories: BookCategory[] = [
     slug: "digital-ai",
     title: "Digital & AI Sales",
     pitch: "Social, automation, IA générative",
+    description: "La transformation numérique et l'intelligence artificielle révolutionnent le métier commercial. Découvrez les références essentielles pour maîtriser l'IA en vente, comprendre l'impact des technologies numériques et préparer votre équipe aux métiers de demain.",
+    icon: "🤖",
+    seoKeywords: ["IA vente", "digital sales", "intelligence artificielle commercial", "transformation digitale", "vente augmentée", "laurent serre"],
     books: [
-      // (vide pour éviter les erreurs 404)
+      {
+        slug: "the-second-machine-age",
+        title: "The Second Machine Age",
+        author: "Erik Brynjolfsson & Andrew McAfee",
+        year: 2014,
+        cover: "/covers/the-second-machine-age.jpg",
+        tagline: "Comprendre l'impact économique des technologies numériques sur la vente",
+        summary: "Un ouvrage de référence sur l'impact économique des technologies numériques. Les auteurs argumentent que nous vivons une 'seconde révolution industrielle', où les machines augmentent nos capacités mentales avec l'informatique et l'IA.",
+        difficulty: "Intermédiaire",
+        readingTime: "7h",
+        rating: 4.3,
+        category: "digital-ai"
+      },
+      {
+        slug: "ai-superpowers",
+        title: "AI Superpowers",
+        author: "Kai-Fu Lee",
+        year: 2018,
+        cover: "/covers/ai-superpowers.jpg",
+        tagline: "Anticiper l'évolution des métiers commerciaux à l'ère de l'IA",
+        summary: "Un livre passionnant écrit par un pionnier de l'IA sino-américain, qui compare l'avancée de l'intelligence artificielle aux États-Unis et en Chine et analyse ses implications géopolitiques et socio-économiques.",
+        difficulty: "Intermédiaire",
+        readingTime: "6h",
+        rating: 4.4,
+        category: "digital-ai"
+      },
+      {
+        slug: "life-3-0",
+        title: "Life 3.0",
+        author: "Max Tegmark",
+        year: 2017,
+        cover: "/covers/life-3-0.jpg",
+        tagline: "Vision long terme de l'IA en entreprise et implications pour les dirigeants",
+        summary: "Un livre visionnaire qui traite du futur de l'intelligence artificielle et de son impact potentiel sur l'humanité à long terme. Tegmark explore les scénarios d'IA générale et de superintelligence.",
+        difficulty: "Avancé",
+        readingTime: "8h",
+        rating: 4.1,
+        category: "digital-ai"
+      },
+      {
+        slug: "human-machine",
+        title: "Human + Machine",
+        author: "Paul Daugherty & James Wilson",
+        year: 2018,
+        cover: "/covers/human-machine.jpg",
+        tagline: "Réinventer les processus commerciaux avec l'IA : collaboration homme-machine",
+        summary: "Ce livre se concentre sur la transformation concrète du travail par l'IA et propose le concept de fusion homme-machine. Plutôt que de voir l'IA comme une automatisation pure remplaçant l'humain, les auteurs décrivent comment l'IA peut augmenter les humains dans leurs tâches.",
+        difficulty: "Intermédiaire",
+        readingTime: "5h",
+        rating: 4.5,
+        category: "digital-ai"
+      },
+      {
+        slug: "lean-startup",
+        title: "The Lean Startup",
+        author: "Eric Ries",
+        year: 2011,
+        cover: "/covers/lean-startup.jpg",
+        tagline: "Approche test & learn pour la transformation commerciale digitale",
+        summary: "Lean Startup propose une méthode agile pour innover en contexte d'incertitude extrême : construire rapidement un MVP, mesurer les retours, apprendre et itérer.",
+        difficulty: "Facile",
+        readingTime: "6h",
+        rating: 4.2,
+        category: "digital-ai"
+      }
     ]
   },
   {

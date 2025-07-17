@@ -4,6 +4,7 @@ import { Metadata } from 'next/dist/lib/metadata/types/metadata-interface';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import ComparisonTable from '@/components/ui/ComparisonTable';
 import BookCard from '@/components/ui/BookCard';
+import CategoryBreadcrumb from '@/components/ui/CategoryBreadcrumb';
 import React from 'react';
 
 // Données structurées Schema.org pour la page catégorie
@@ -130,6 +131,24 @@ export default function SalesManagementPage() {
       />
       
       <main className="bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16">
+      {/* Breadcrumb navigation */}
+      <CategoryBreadcrumb 
+        items={[
+          { label: 'Accueil', href: '/' },
+          { label: 'Ressources', href: '/ressources' },
+          { label: 'Meilleurs Livres', href: '/ressources/meilleurs-livres' },
+          { label: 'Sales Management & Leadership', href: '/ressources/meilleurs-livres/sales-management', current: true }
+        ]}
+        relatedCategories={[
+          {
+            title: 'Digital & AI Sales',
+            href: '/ressources/meilleurs-livres/digital-ai',
+            icon: '🤖',
+            description: 'IA, digital et transformation commerciale'
+          }
+        ]}
+      />
+
       {/* Hero section */}
       <section className="max-w-4xl mx-auto text-center mb-12 px-4">
         <AnimatedSection animation="fade-in" delay={0}>
@@ -174,25 +193,124 @@ export default function SalesManagementPage() {
         </div>
       </AnimatedSection>
 
-      {/* CTA Bootcamp */}
+      {/* Suggestions cross-catégories */}
       <AnimatedSection delay={400}>
-        <div className="max-w-2xl mx-auto text-center mt-8 px-4">
+        <div className="max-w-6xl mx-auto px-4 mb-12">
           <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-mint-green/20 backdrop-blur-sm">
-            <div className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
-              Passez du livre au terrain
+            <div className="text-center mb-8">
+              <span className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                📚 Élargissez vos compétences
+              </span>
+              <h3 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">
+                Livres complémentaires d'autres catégories
+              </h3>
+              <p className="text-gray-700 dark:text-gray-200 mb-6">
+                Pour un management moderne, combinez leadership traditionnel et transformation digitale
+              </p>
             </div>
-            <h4 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">
-              Découvrez le Bootcamp Commercial Intensif by LSD
-            </h4>
-            <p className="text-lg text-gray-700 dark:text-gray-100 mb-6 leading-relaxed">
-              Formez-vous avec les meilleures méthodes de management commercial issues de ces livres de référence, adaptées aux enjeux des PME françaises.
-            </p>
-            <Link 
-              href="/bootcamp-commercial-intensif" 
-              className="inline-block bg-mint-green text-blue-ink font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-mint-green/80 hover:scale-105 transition-all duration-300"
-            >
-              Voir le Bootcamp
-            </Link>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <Link 
+                href="/ressources/meilleurs-livres/digital-ai/human-machine"
+                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
+              >
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex-1">
+                    <span className="inline-block bg-blue-500/20 text-blue-600 dark:text-blue-400 text-xs font-medium px-2 py-1 rounded-full mb-2">
+                      Digital & AI Sales
+                    </span>
+                    <h4 className="text-xl font-bold text-blue-ink dark:text-blue-300 mb-2 group-hover:text-blue-500 transition-colors">
+                      Human + Machine
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                      Paul Daugherty & James Wilson • 2018
+                    </p>
+                  </div>
+                  <span className="text-blue-500 text-xl opacity-70 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                  Pour comprendre comment l'IA peut augmenter les capacités de management de votre équipe
+                </p>
+                <span className="text-blue-500 font-medium group-hover:underline text-sm">
+                  Découvrir ce livre
+                </span>
+              </Link>
+              
+              <Link 
+                href="/ressources/meilleurs-livres/digital-ai/the-second-machine-age"
+                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
+              >
+                <div className="flex items-start justify-between mb-3">
+                  <div className="flex-1">
+                    <span className="inline-block bg-blue-500/20 text-blue-600 dark:text-blue-400 text-xs font-medium px-2 py-1 rounded-full mb-2">
+                      Digital & AI Sales
+                    </span>
+                    <h4 className="text-xl font-bold text-blue-ink dark:text-blue-300 mb-2 group-hover:text-blue-500 transition-colors">
+                      The Second Machine Age
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                      Erik Brynjolfsson & Andrew McAfee • 2014
+                    </p>
+                  </div>
+                  <span className="text-blue-500 text-xl opacity-70 group-hover:opacity-100 transition-opacity">
+                    →
+                  </span>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                  Pour anticiper l'impact des technologies numériques sur votre organisation commerciale
+                </p>
+                <span className="text-blue-500 font-medium group-hover:underline text-sm">
+                  Découvrir ce livre
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </AnimatedSection>
+
+      {/* CTAs multiples */}
+      <AnimatedSection delay={500}>
+        <div className="max-w-6xl mx-auto px-4 mb-12">
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* CTA Bootcamp */}
+            <div className="bg-gradient-to-r from-mint-green/20 to-blue-ink/20 rounded-2xl shadow-xl p-8 text-center border border-mint-green/30 backdrop-blur-sm">
+              <div className="inline-block bg-mint-green/30 text-mint-green font-semibold rounded-full px-4 py-2 text-sm mb-4 shadow-md backdrop-blur">
+                🎯 Formation
+              </div>
+              <h4 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">
+                Bootcamp Commercial Intensif
+              </h4>
+              <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 leading-relaxed">
+                Formez-vous avec les meilleures méthodes de management commercial issues de ces livres de référence
+              </p>
+              <Link 
+                href="/bootcamp-commercial-intensif" 
+                className="inline-block bg-mint-green text-blue-ink font-bold px-8 py-4 rounded-full shadow-lg hover:bg-mint-green/90 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1"
+              >
+                Voir le Bootcamp
+              </Link>
+            </div>
+
+            {/* CTA Coaching */}
+            <div className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl shadow-xl p-8 text-center border border-blue-300/30 backdrop-blur-sm">
+              <div className="inline-block bg-blue-500/30 text-blue-300 font-semibold rounded-full px-4 py-2 text-sm mb-4 shadow-md backdrop-blur">
+                👥 Accompagnement
+              </div>
+              <h4 className="text-2xl font-bold text-blue-ink dark:text-blue-300 mb-4">
+                Coaching Management Commercial
+              </h4>
+              <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 leading-relaxed">
+                Accompagnement personnalisé pour transformer votre leadership et développer une équipe d'excellence
+              </p>
+              <Link 
+                href="/coach-commercial-entreprise" 
+                className="inline-block bg-blue-500 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1"
+              >
+                Découvrir le coaching
+              </Link>
+            </div>
           </div>
         </div>
       </AnimatedSection>

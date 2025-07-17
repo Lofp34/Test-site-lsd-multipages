@@ -336,5 +336,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.75,
     },
+    // CATÉGORIE DIGITAL & AI SALES
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/digital-ai`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    // LIVRES DIGITAL & AI SALES
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/digital-ai/the-second-machine-age`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/digital-ai/ai-superpowers`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/digital-ai/life-3-0`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/digital-ai/human-machine`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
+      url: `${baseUrl}/ressources/meilleurs-livres/digital-ai/lean-startup`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
   ]
 }
