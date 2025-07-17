@@ -61,7 +61,7 @@
   - Tester le responsive design sur mobile
   - _Requirements: 3.1, 3.2, 3.3, 3.4, 4.1, 4.2, 4.3, 4.4_
 
-- [-] 10. Tests et validation finale
+- [x] 10. Tests et validation finale
   - Tester tous les liens internes et externes
   - Valider le fonctionnement des CTA vers le bootcamp
   - Vérifier la cohérence visuelle avec les autres sections
