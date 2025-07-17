@@ -8,6 +8,7 @@ import CategoryBreadcrumb from '@/components/ui/CategoryBreadcrumb';
 import ParticleBackground from '@/components/ui/ParticleBackground';
 import AIInsight from '@/components/ui/AIInsight';
 import AIIcon from '@/components/ui/AIIcon';
+import { categoryBreadcrumbSuggestions } from '@/utils/cross-category-suggestions';
 import React from 'react';
 
 // Données structurées Schema.org pour la page catégorie
@@ -160,14 +161,7 @@ export default function DigitalAISalesPage() {
             { label: 'Meilleurs Livres', href: '/ressources/meilleurs-livres' },
             { label: 'Digital & AI Sales', href: '/ressources/meilleurs-livres/digital-ai', current: true }
           ]}
-          relatedCategories={[
-            {
-              title: 'Sales Management & Leadership',
-              href: '/ressources/meilleurs-livres/sales-management',
-              icon: '👥',
-              description: 'Manager, motiver et développer son équipe commerciale'
-            }
-          ]}
+          relatedCategories={categoryBreadcrumbSuggestions['digital-ai']}
         />
 
         {/* Hero section avec présentation de la transformation digitale */}
