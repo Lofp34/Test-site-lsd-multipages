@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import CrossCategoryBookSuggestions from '@/components/ui/CrossCategoryBookSuggestions';
+import ContextualCTAs from '@/components/ui/ContextualCTAs';
+import { generateCrossCategorySuggestions, generateContextualCTAs } from '@/utils/cross-category-suggestions';
 
 export const metadata: Metadata = {
   title: 'Good to Great : résumé complet | Sales Management & Leadership | Laurent Serre',
@@ -76,6 +79,27 @@ const reviewStructuredData = {
 };
 
 export default function GoodToGreatPage() {
+  // Données du livre actuel
+  const currentBook = {
+    slug: "good-to-great",
+    title: "Good to Great",
+    author: "Jim Collins",
+    year: 2001,
+    cover: "/covers/good-to-great.jpg",
+    tagline: "Les facteurs durables de la réussite organisationnelle",
+    summary: "Résultat d'une étude approfondie sur des entreprises ayant fait le saut de 'bonnes' à 'excellentes'.",
+    difficulty: "Intermédiaire" as const,
+    readingTime: "8h",
+    rating: 4.6,
+    category: "sales-management"
+  };
+
+  // Générer les suggestions cross-catégories
+  const crossCategorySuggestions = generateCrossCategorySuggestions(currentBook, 'sales-management', 2);
+  
+  // Générer les CTAs contextuels
+  const contextualCTAs = generateContextualCTAs(currentBook, 'sales-management');
+
   return (
     <>
       <script
@@ -296,24 +320,67 @@ export default function GoodToGreatPage() {
           </div>
         </section>
 
-        {/* CTA Bootcamp */}
+        {/* Cross-category book suggestions */}
+        <CrossCategoryBookSuggestions 
+          currentBook={currentBook}
+          suggestedBooks={crossCategorySuggestions}
+        />
+
+        {/* Contextual CTAs */}
+        <ContextualCTAs 
+          ctas={contextualCTAs}
+          title="Transformez votre leadership"
+          subtitle="Appliquez les principes de Good to Great à votre équipe commerciale avec nos formations et outils spécialisés"
+        />
+
+        {/* Outils de management recommandés */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-gradient-to-r from-mint-green/20 to-blue-ink/20 rounded-2xl shadow-xl p-8 text-center border border-mint-green/30">
-            <div className="inline-block bg-mint-green/30 text-mint-green font-semibold rounded-full px-4 py-2 text-sm mb-4 shadow-md backdrop-blur">
-              Passez du livre au terrain
-            </div>
-            <h3 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-4">
-              Découvrez le Bootcamp Commercial Intensif
-            </h3>
-            <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 max-w-2xl mx-auto">
-              Appliquez les principes de Good to Great à votre équipe commerciale. Formation intensive pour managers et dirigeants qui veulent transformer leurs résultats.
+          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+              🛠️ Outils de management recommandés
+            </h2>
+            
+            <p className="text-gray-700 dark:text-gray-300 mb-6">
+              Pour mettre en pratique les concepts de leadership et management abordés dans Good to Great
             </p>
-            <Link 
-              href="/bootcamp-commercial-intensif" 
-              className="inline-block bg-mint-green text-blue-ink font-bold px-8 py-4 rounded-full shadow-lg hover:bg-mint-green/90 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1"
-            >
-              Voir le Bootcamp
-            </Link>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <Link 
+                href="/ressources/kit-gestion-grands-comptes"
+                className="group p-6 bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl border border-mint-green/20 hover:border-mint-green/40 transition-all duration-300 hover:shadow-lg"
+              >
+                <div className="flex items-center mb-3">
+                  <span className="text-2xl mr-3">🏢</span>
+                  <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green group-hover:text-mint-green transition-colors">
+                    Kit Gestion Grands Comptes
+                  </h3>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                  Outils et templates pour appliquer les principes Good to Great à vos comptes stratégiques
+                </p>
+                <span className="text-mint-green font-medium group-hover:underline">
+                  Découvrir le kit →
+                </span>
+              </Link>
+              
+              <Link 
+                href="/ressources/outil-strategie-commerciale"
+                className="group p-6 bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl border border-mint-green/20 hover:border-mint-green/40 transition-all duration-300 hover:shadow-lg"
+              >
+                <div className="flex items-center mb-3">
+                  <span className="text-2xl mr-3">📈</span>
+                  <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green group-hover:text-mint-green transition-colors">
+                    Framework Stratégie Commerciale
+                  </h3>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                  Définir et piloter votre Hedgehog Concept commercial avec méthode
+                </p>
+                <span className="text-mint-green font-medium group-hover:underline">
+                  Télécharger l'outil →
+                </span>
+              </Link>
+            </div>
           </div>
         </section>
 
