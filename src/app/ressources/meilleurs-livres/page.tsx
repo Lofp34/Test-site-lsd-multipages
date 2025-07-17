@@ -10,6 +10,7 @@ const categoryIcons: Record<string, string> = {
   'psychologie-influence': '🧠',
   'methodes-process': '🛠️',
   'enterprise-account': '🏢',
+  'sales-management': '👥',
   'management-leadership': '👔',
   'digital-ai': '🤖',
   'mindset-performance': '🔥',

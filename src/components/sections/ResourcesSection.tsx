@@ -24,6 +24,15 @@ export default function ResourcesSection() {
   const resources = [
     {
       icon: <BookOpen className="w-10 h-10 text-mint-green" />,
+      title: "Bibliothèque des Meilleurs Livres",
+      description: "Découvrez ma sélection des livres incontournables en vente, négociation, management et leadership commercial.",
+      link: "/ressources/meilleurs-livres",
+      status: "Découvrir les livres",
+      available: true,
+      target: "Tous profils",
+    },
+    {
+      icon: <FileText className="w-10 h-10 text-mint-green" />,
       title: "Le Grand Guide des Techniques de Vente & Négociation",
       description: "Panorama complet des méthodes de vente et de négociation, décryptées et applicables en PME.",
       link: "/ressources/le-grand-guide-des-techniques-de-vente",
