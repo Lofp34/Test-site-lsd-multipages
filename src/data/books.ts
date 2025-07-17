@@ -597,28 +597,8 @@ export const bookCategories: BookCategory[] = [
         complementaryBooks: ["atomic-habits", "deep-work"]
       }
     ]
-  },
-  {
-    slug: "mindset-performance",
-    title: "Mindset & Performance",
-    pitch: "État d'esprit gagnant et performance personnelle",
-    description: "Développer un mindset de croissance et optimiser ses performances personnelles sont des facteurs clés de réussite commerciale. Cette catégorie regroupe les références essentielles pour cultiver l'état d'esprit gagnant, développer sa résilience et maximiser son potentiel.",
-    icon: "🧠",
-    seoKeywords: ["mindset commercial", "performance personnelle", "état d'esprit", "développement personnel", "psychologie du succès", "laurent serre"],
-    books: [
-      {
-        slug: "atomic-habits",
-        title: "Atomic Habits",
-        author: "James Clear",
-        year: 2018,
-        cover: "/covers/atomic-habits.jpg",
-        tagline: "L’art de construire de bonnes habitudes.",
-        summary: "Un best-seller mondial sur l’art de construire de bonnes habitudes et d’éliminer les mauvaises, par petits changements continus.",
-        category: "mindset-performance"
-      }
-    ]
   }
-]; 
+];
 
 // Fonctions utilitaires pour les nouveaux champs
 
@@ -637,7 +617,7 @@ export function getCategoryIcon(categorySlug: string): string {
     'digital-ai': '🤖',
     'mindset-performance': '🧠'
   };
-  
+
   return iconMap[categorySlug] || '📚';
 }
 
@@ -650,7 +630,7 @@ export function getDifficultyVariant(difficulty: 'Facile' | 'Intermédiaire' | '
     'Intermédiaire': 'bg-yellow-100 text-yellow-800 border-yellow-200',
     'Avancé': 'bg-red-100 text-red-800 border-red-200'
   };
-  
+
   return variantMap[difficulty] || 'bg-gray-100 text-gray-800 border-gray-200';
 }
 
@@ -669,7 +649,7 @@ export function getCategoryGradient(categorySlug: string): string {
     'digital-ai': 'bg-gradient-to-br from-cyan-400 to-cyan-600',
     'mindset-performance': 'bg-gradient-to-br from-pink-400 to-pink-600'
   };
-  
+
   return gradientMap[categorySlug] || 'bg-gradient-to-br from-gray-400 to-gray-600';
 }
 
