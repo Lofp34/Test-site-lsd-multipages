@@ -651,6 +651,38 @@ export const mindsetPerformanceCategory: BookCategory = {
       complementaryBooks: ["atomic-habits", "grit", "the-7-habits"]
     },
     {
+      slug: "grit-power-passion-perseverance",
+      title: "Grit: The Power of Passion and Perseverance",
+      author: "Angela Duckworth",
+      year: 2016,
+      cover: "/covers/grit-power-passion-perseverance.jpg",
+      tagline: "La ténacité et la persévérance, clés du succès à long terme.",
+      summary: "Angela Duckworth révèle que le grit - combinaison de passion et de persévérance pour des objectifs à long terme - est souvent un meilleur prédicteur de succès que le QI ou le talent. Ses recherches montrent que le grit se construit en ayant une vision à long terme, en s'entraînant de façon délibérée et continue, en restant optimiste malgré les obstacles, et en s'entourant d'une culture qui valorise l'endurance. Pour les commerciaux, ce livre transforme l'approche de la prospection et de la persévérance face aux refus.",
+      detailedSummary: "Angela Duckworth, psychologue à l'Université de Pennsylvanie, révèle une vérité dérangeante : le talent ne fait pas tout. Ses recherches approfondies montrent que le 'grit' - cette combinaison unique de passion et de persévérance pour des objectifs à long terme - prédit mieux le succès que l'intelligence ou les aptitudes naturelles.\n\n**La découverte révolutionnaire** : À West Point, l'académie militaire la plus sélective des États-Unis, le 'Grit Scale' de Duckworth prédit mieux que les résultats académiques ou les tests physiques quels cadets termineront la formation. Cette découverte s'étend à tous les domaines : sport, éducation, business.\n\n**Les deux composantes du Grit** :\n\n**1. Passion** : Avoir un objectif directeur qui donne du sens à tous ses efforts. Ce n'est pas l'intensité émotionnelle, mais la constance d'intérêt sur le long terme.\n\n**2. Persévérance** : Maintenir l'effort et l'intérêt malgré les échecs, l'adversité et les plateaux de progression. C'est la capacité à traiter l'échec comme un feedback, pas comme une fatalité.\n\n**Comment développer son Grit** :\n\n**De l'intérieur** :\n- **Cultiver ses intérêts** : Identifier ce qui vous passionne vraiment et l'approfondir\n- **Pratiquer délibérément** : S'entraîner de façon ciblée sur ses points faibles\n- **Trouver un but supérieur** : Connecter son travail à quelque chose de plus grand que soi\n- **Cultiver l'espoir** : Développer la conviction qu'on peut s'améliorer par l'effort\n\n**De l'extérieur** :\n- **S'entourer d'une culture de grit** : Rejoindre des groupes qui valorisent l'effort et la persévérance\n- **Trouver un mentor gritteux** : Apprendre de quelqu'un qui incarne ces valeurs\n- **Créer des défis progressifs** : Se fixer des objectifs difficiles mais atteignables\n\n**Applications en prospection commerciale** :\n- Voir chaque 'non' comme un pas vers le 'oui' suivant\n- Développer une passion pour l'aide aux clients, pas seulement pour la vente\n- Maintenir l'effort même quand les résultats tardent\n- Traiter les objections comme des puzzles à résoudre, pas comme des rejets personnels\n\n**Le paradoxe du talent** : Duckworth montre que le talent peut parfois nuire au développement du grit. Les personnes 'naturellement douées' peuvent moins développer leur capacité à persévérer face aux difficultés.",
+      keyPoints: [
+        "Le grit prédit mieux le succès que le QI ou le talent naturel",
+        "Grit = Passion (constance d'intérêt) + Persévérance (maintien de l'effort)",
+        "Le grit se développe par la pratique délibérée et l'exposition aux défis",
+        "Avoir un but supérieur qui donne du sens aux efforts quotidiens",
+        "L'échec est un feedback, pas une fatalité personnelle",
+        "S'entourer d'une culture qui valorise l'effort et la persévérance",
+        "Le talent sans grit mène rarement à l'excellence"
+      ],
+      targetProfiles: [
+        "Commerciaux découragés par les refus",
+        "Managers voulant développer la résilience d'équipe",
+        "Entrepreneurs face aux difficultés",
+        "Professionnels en reconversion",
+        "Leaders cherchant la performance long terme"
+      ],
+      difficulty: "Facile",
+      readingTime: "6h",
+      terrainAdvice: "Un livre essentiel pour tous les commerciaux qui baissent les bras trop vite. Duckworth explique scientifiquement pourquoi certains tiennent bon et d'autres abandonnent.\n\nCe qui transforme en prospection :\n- Voir les 100 'non' comme le chemin vers les 10 'oui'\n- Développer une passion pour résoudre les problèmes clients (pas juste vendre)\n- Créer des défis progressifs : cette semaine 5 appels, la prochaine 7\n- Célébrer les progrès, même petits : 'J'ai eu 2 RDV cette semaine vs 0 la précédente'\n\nPour les managers : arrêtez de recruter que sur le talent. Cherchez le grit. Un commercial moyen avec du grit battra toujours un talent sans persévérance.",
+      rating: 4.7,
+      category: "mindset-performance",
+      complementaryBooks: ["mindset", "atomic-habits", "cant-hurt-me"]
+    },
+    {
       slug: "the-power-of-now",
       title: "The Power of Now",
       author: "Eckhart Tolle",

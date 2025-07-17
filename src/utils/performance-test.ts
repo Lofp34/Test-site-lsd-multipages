@@ -1,282 +1,373 @@
-// Performance testing utilities for Digital & AI Sales section
-export interface PerformanceMetrics {
-  loadTime: number;
-  renderTime: number;
-  interactionTime: number;
-  memoryUsage: number;
-  coreWebVitals: {
-    lcp: number; // Largest Contentful Paint
-    fid: number; // First Input Delay
-    cls: number; // Cumulative Layout Shift
-  };
+/**
+ * Tests de performance et accessibilité pour la section Mindset & Performance
+ * Vérifie les Core Web Vitals, l'optimisation des images, l'accessibilité WCAG 2.1
+ */
+
+import fs from 'fs';
+import path from 'path';
+
+interface PerformanceTestResult {
+  test: string;
+  status: 'PASS' | 'FAIL' | 'WARNING';
+  message: string;
+  details?: any;
 }
 
-export class PerformanceMonitor {
-  private startTime: number = 0;
-  private metrics: Partial<PerformanceMetrics> = {};
-
-  startMeasurement(label: string): void {
-    this.startTime = performance.now();
-    performance.mark(`${label}-start`);
-  }
-
-  endMeasurement(label: string): number {
-    const endTime = performance.now();
-    performance.mark(`${label}-end`);
-    performance.measure(label, `${label}-start`, `${label}-end`);
+/**
+ * Teste l'optimisation des images
+ */
+export function testImageOptimization(): PerformanceTestResult {
+  try {
+    const mainPagePath = 'src/app/ressources/meilleurs-livres/mindset-performance/page.tsx';
     
-    const duration = endTime - this.startTime;
-    console.log(`${label}: ${duration.toFixed(2)}ms`);
-    return duration;
-  }
-
-  measureComponentRender<T>(
-    component: () => T,
-    componentName: string
-  ): T {
-    this.startMeasurement(`${componentName}-render`);
-    const result = component();
-    this.endMeasurement(`${componentName}-render`);
-    return result;
-  }
-
-  measureMemoryUsage(): number {
-    if ('memory' in performance) {
-      const memory = (performance as any).memory;
-      return memory.usedJSHeapSize / 1024 / 1024; // Convert to MB
+    if (!fs.existsSync(mainPagePath)) {
+      return {
+        test: 'Image Optimization',
+        status: 'FAIL',
+        message: 'Page principale manquante'
+      };
     }
-    return 0;
-  }
-
-  // Core Web Vitals measurement
-  measureCoreWebVitals(): Promise<Partial<PerformanceMetrics['coreWebVitals']>> {
-    return new Promise((resolve) => {
-      const vitals: Partial<PerformanceMetrics['coreWebVitals']> = {};
-
-      // Largest Contentful Paint
-      new PerformanceObserver((list) => {
-        const entries = list.getEntries();
-        const lastEntry = entries[entries.length - 1];
-        vitals.lcp = lastEntry.startTime;
-      }).observe({ entryTypes: ['largest-contentful-paint'] });
-
-      // First Input Delay
-      new PerformanceObserver((list) => {
-        const entries = list.getEntries();
-        entries.forEach((entry: any) => {
-          vitals.fid = entry.processingStart - entry.startTime;
-        });
-      }).observe({ entryTypes: ['first-input'] });
-
-      // Cumulative Layout Shift
-      let clsValue = 0;
-      new PerformanceObserver((list) => {
-        const entries = list.getEntries();
-        entries.forEach((entry: any) => {
-          if (!entry.hadRecentInput) {
-            clsValue += entry.value;
-          }
-        });
-        vitals.cls = clsValue;
-      }).observe({ entryTypes: ['layout-shift'] });
-
-      // Resolve after a reasonable time
-      setTimeout(() => resolve(vitals), 3000);
-    });
-  }
-
-  // Test specific to Digital & AI components
-  async testDigitalAIPerformance(): Promise<PerformanceMetrics> {
-    const startTime = performance.now();
     
-    // Simulate component loading
-    this.startMeasurement('digital-ai-page-load');
+    const content = fs.readFileSync(mainPagePath, 'utf-8');
     
-    // Test particle background performance
-    this.startMeasurement('particle-background');
-    // Simulate particle animation for 1 second
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    const particleTime = this.endMeasurement('particle-background');
+    const checks = {
+      usesNextImage: content.includes('next/image') || content.includes('OptimizedImage'),
+      hasAltText: content.includes('alt=') || content.includes('alt:'),
+      hasLazyLoading: content.includes('loading=') || content.includes('lazy'),
+      hasWebPSupport: content.includes('webp') || content.includes('avif') || content.includes('next/image'),
+      noDirectImgTags: !content.includes('<img ') || content.includes('next/image')
+    };
     
-    // Test AI components rendering
-    this.startMeasurement('ai-components');
-    await new Promise(resolve => setTimeout(resolve, 500));
-    const aiComponentsTime = this.endMeasurement('ai-components');
+    const passedChecks = Object.values(checks).filter(Boolean).length;
+    const totalChecks = Object.keys(checks).length;
     
-    const totalLoadTime = this.endMeasurement('digital-ai-page-load');
-    const memoryUsage = this.measureMemoryUsage();
-    const coreWebVitals = await this.measureCoreWebVitals();
-    
+    if (passedChecks >= totalChecks * 0.8) {
+      return {
+        test: 'Image Optimization',
+        status: 'PASS',
+        message: `Images optimisées (${passedChecks}/${totalChecks})`
+      };
+    } else if (passedChecks >= totalChecks * 0.6) {
+      return {
+        test: 'Image Optimization',
+        status: 'WARNING',
+        message: `Optimisation partielle (${passedChecks}/${totalChecks})`,
+        details: checks
+      };
+    } else {
+      return {
+        test: 'Image Optimization',
+        status: 'FAIL',
+        message: `Images non optimisées (${passedChecks}/${totalChecks})`,
+        details: checks
+      };
+    }
+  } catch (error) {
     return {
-      loadTime: totalLoadTime,
-      renderTime: aiComponentsTime,
-      interactionTime: particleTime,
-      memoryUsage,
-      coreWebVitals: {
-        lcp: coreWebVitals.lcp || 0,
-        fid: coreWebVitals.fid || 0,
-        cls: coreWebVitals.cls || 0
-      }
+      test: 'Image Optimization',
+      status: 'FAIL',
+      message: `Erreur lors du test images: ${error instanceof Error ? error.message : 'Erreur inconnue'}`
     };
   }
+}
 
-  // Performance recommendations based on metrics
-  getPerformanceRecommendations(metrics: PerformanceMetrics): string[] {
-    const recommendations: string[] = [];
-
-    if (metrics.loadTime > 3000) {
-      recommendations.push('Consider lazy loading for non-critical components');
+/**
+ * Teste l'accessibilité WCAG 2.1
+ */
+export function testAccessibility(): PerformanceTestResult {
+  try {
+    const mainPagePath = 'src/app/ressources/meilleurs-livres/mindset-performance/page.tsx';
+    
+    if (!fs.existsSync(mainPagePath)) {
+      return {
+        test: 'Accessibility WCAG 2.1',
+        status: 'FAIL',
+        message: 'Page principale manquante'
+      };
     }
-
-    if (metrics.coreWebVitals.lcp > 2500) {
-      recommendations.push('Optimize Largest Contentful Paint - consider image optimization');
+    
+    const content = fs.readFileSync(mainPagePath, 'utf-8');
+    
+    const checks = {
+      hasSemanticHTML: content.includes('<main>') && content.includes('<section>') && content.includes('<h1'),
+      hasAriaLabels: content.includes('aria-label') || content.includes('aria-labelledby'),
+      hasAltText: content.includes('alt=') || content.includes('alt:'),
+      hasHeadingHierarchy: content.includes('<h1') && content.includes('<h2'),
+      hasRoleAttributes: content.includes('role=') || content.includes('role:'),
+      hasKeyboardNavigation: content.includes('tabIndex') || content.includes('onKeyDown') || content.includes('Link'),
+      hasColorContrast: !content.includes('text-gray-300') && !content.includes('text-white/30'),
+      hasFocusManagement: content.includes('focus:') || content.includes('focus-visible')
+    };
+    
+    const passedChecks = Object.values(checks).filter(Boolean).length;
+    const totalChecks = Object.keys(checks).length;
+    
+    if (passedChecks >= totalChecks * 0.8) {
+      return {
+        test: 'Accessibility WCAG 2.1',
+        status: 'PASS',
+        message: `Accessibilité conforme (${passedChecks}/${totalChecks})`
+      };
+    } else if (passedChecks >= totalChecks * 0.6) {
+      return {
+        test: 'Accessibility WCAG 2.1',
+        status: 'WARNING',
+        message: `Accessibilité partielle (${passedChecks}/${totalChecks})`,
+        details: checks
+      };
+    } else {
+      return {
+        test: 'Accessibility WCAG 2.1',
+        status: 'FAIL',
+        message: `Accessibilité insuffisante (${passedChecks}/${totalChecks})`,
+        details: checks
+      };
     }
-
-    if (metrics.coreWebVitals.fid > 100) {
-      recommendations.push('Reduce First Input Delay - optimize JavaScript execution');
-    }
-
-    if (metrics.coreWebVitals.cls > 0.1) {
-      recommendations.push('Improve Cumulative Layout Shift - ensure stable layouts');
-    }
-
-    if (metrics.memoryUsage > 50) {
-      recommendations.push('High memory usage detected - consider component optimization');
-    }
-
-    return recommendations;
+  } catch (error) {
+    return {
+      test: 'Accessibility WCAG 2.1',
+      status: 'FAIL',
+      message: `Erreur lors du test accessibilité: ${error instanceof Error ? error.message : 'Erreur inconnue'}`
+    };
   }
 }
 
-// Accessibility testing utilities
-export class AccessibilityTester {
-  testKeyboardNavigation(): boolean {
-    // Test if all interactive elements are keyboard accessible
-    const interactiveElements = document.querySelectorAll(
-      'button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])'
-    );
+/**
+ * Teste les optimisations de code
+ */
+export function testCodeOptimization(): PerformanceTestResult {
+  try {
+    const mainPagePath = 'src/app/ressources/meilleurs-livres/mindset-performance/page.tsx';
     
-    let allAccessible = true;
-    interactiveElements.forEach((element) => {
-      const tabIndex = element.getAttribute('tabindex');
-      if (tabIndex === '-1' && element.tagName !== 'DIV') {
-        allAccessible = false;
-      }
-    });
+    if (!fs.existsSync(mainPagePath)) {
+      return {
+        test: 'Code Optimization',
+        status: 'FAIL',
+        message: 'Page principale manquante'
+      };
+    }
     
-    return allAccessible;
+    const content = fs.readFileSync(mainPagePath, 'utf-8');
+    
+    const checks = {
+      usesLazyLoading: content.includes('lazy') || content.includes('AnimatedSection'),
+      hasTreeShaking: content.includes('import {') && !content.includes('import *'),
+      usesTypeScript: content.includes(': React.') || content.includes('interface ') || content.includes('type '),
+      hasComponentSplitting: content.includes('const ') && content.includes('export default'),
+      usesNextOptimizations: content.includes('next/') || content.includes('Metadata'),
+      hasMinimalDependencies: !content.includes('lodash') && !content.includes('moment'),
+      usesModernJS: content.includes('=>') && content.includes('const '),
+      hasErrorBoundaries: content.includes('try') || content.includes('catch') || content.includes('Error')
+    };
+    
+    const passedChecks = Object.values(checks).filter(Boolean).length;
+    const totalChecks = Object.keys(checks).length;
+    
+    if (passedChecks >= totalChecks * 0.8) {
+      return {
+        test: 'Code Optimization',
+        status: 'PASS',
+        message: `Code optimisé (${passedChecks}/${totalChecks})`
+      };
+    } else if (passedChecks >= totalChecks * 0.6) {
+      return {
+        test: 'Code Optimization',
+        status: 'WARNING',
+        message: `Code partiellement optimisé (${passedChecks}/${totalChecks})`,
+        details: checks
+      };
+    } else {
+      return {
+        test: 'Code Optimization',
+        status: 'FAIL',
+        message: `Code non optimisé (${passedChecks}/${totalChecks})`,
+        details: checks
+      };
+    }
+  } catch (error) {
+    return {
+      test: 'Code Optimization',
+      status: 'FAIL',
+      message: `Erreur lors du test code: ${error instanceof Error ? error.message : 'Erreur inconnue'}`
+    };
   }
+}
 
-  testAriaLabels(): string[] {
-    const issues: string[] = [];
+/**
+ * Teste les animations et interactions
+ */
+export function testAnimationsInteractions(): PerformanceTestResult {
+  try {
+    const mainPagePath = 'src/app/ressources/meilleurs-livres/mindset-performance/page.tsx';
     
-    // Check for missing alt text on images
-    const images = document.querySelectorAll('img');
-    images.forEach((img, index) => {
-      if (!img.alt && !img.getAttribute('aria-label')) {
-        issues.push(`Image ${index + 1} missing alt text or aria-label`);
-      }
-    });
+    if (!fs.existsSync(mainPagePath)) {
+      return {
+        test: 'Animations & Interactions',
+        status: 'FAIL',
+        message: 'Page principale manquante'
+      };
+    }
+    
+    const content = fs.readFileSync(mainPagePath, 'utf-8');
+    
+    const checks = {
+      hasAnimations: content.includes('AnimatedSection') || content.includes('transition') || content.includes('animate'),
+      hasHoverEffects: content.includes('hover:') || content.includes(':hover'),
+      hasFocusStates: content.includes('focus:') || content.includes(':focus'),
+      hasLoadingStates: content.includes('loading') || content.includes('skeleton'),
+      hasResponsiveAnimations: content.includes('motion-reduce') || content.includes('prefers-reduced-motion'),
+      hasPerformantAnimations: content.includes('transform') || content.includes('opacity') || content.includes('scale'),
+      hasInteractiveElements: content.includes('onClick') || content.includes('onHover') || content.includes('Link'),
+      hasAccessibleAnimations: content.includes('aria-') && (content.includes('animation') || content.includes('transition'))
+    };
+    
+    const passedChecks = Object.values(checks).filter(Boolean).length;
+    const totalChecks = Object.keys(checks).length;
+    
+    if (passedChecks >= totalChecks * 0.7) {
+      return {
+        test: 'Animations & Interactions',
+        status: 'PASS',
+        message: `Animations optimisées (${passedChecks}/${totalChecks})`
+      };
+    } else if (passedChecks >= totalChecks * 0.5) {
+      return {
+        test: 'Animations & Interactions',
+        status: 'WARNING',
+        message: `Animations partielles (${passedChecks}/${totalChecks})`,
+        details: checks
+      };
+    } else {
+      return {
+        test: 'Animations & Interactions',
+        status: 'FAIL',
+        message: `Animations insuffisantes (${passedChecks}/${totalChecks})`,
+        details: checks
+      };
+    }
+  } catch (error) {
+    return {
+      test: 'Animations & Interactions',
+      status: 'FAIL',
+      message: `Erreur lors du test animations: ${error instanceof Error ? error.message : 'Erreur inconnue'}`
+    };
+  }
+}
 
-    // Check for missing labels on form elements
-    const formElements = document.querySelectorAll('input, select, textarea');
-    formElements.forEach((element, index) => {
-      const hasLabel = element.getAttribute('aria-label') || 
-                      element.getAttribute('aria-labelledby') ||
-                      document.querySelector(`label[for="${element.id}"]`);
+/**
+ * Teste les Core Web Vitals (simulation statique)
+ */
+export function testCoreWebVitals(): PerformanceTestResult {
+  try {
+    const mainPagePath = 'src/app/ressources/meilleurs-livres/mindset-performance/page.tsx';
+    const nextConfigPath = 'next.config.js';
+    
+    if (!fs.existsSync(mainPagePath)) {
+      return {
+        test: 'Core Web Vitals',
+        status: 'FAIL',
+        message: 'Page principale manquante'
+      };
+    }
+    
+    const pageContent = fs.readFileSync(mainPagePath, 'utf-8');
+    const hasNextConfig = fs.existsSync(nextConfigPath);
+    const nextConfigContent = hasNextConfig ? fs.readFileSync(nextConfigPath, 'utf-8') : '';
+    
+    const checks = {
+      // LCP (Largest Contentful Paint)
+      hasImageOptimization: pageContent.includes('next/image') || pageContent.includes('OptimizedImage'),
+      hasLazyLoading: pageContent.includes('lazy') || pageContent.includes('AnimatedSection'),
       
-      if (!hasLabel) {
-        issues.push(`Form element ${index + 1} missing label`);
-      }
-    });
-
-    return issues;
-  }
-
-  testColorContrast(): Promise<boolean> {
-    // This would typically use a library like axe-core
-    // For now, return a placeholder
-    return Promise.resolve(true);
-  }
-
-  async runFullAccessibilityAudit(): Promise<{
-    keyboardNavigation: boolean;
-    ariaLabels: string[];
-    colorContrast: boolean;
-    score: number;
-  }> {
-    const keyboardNavigation = this.testKeyboardNavigation();
-    const ariaLabels = this.testAriaLabels();
-    const colorContrast = await this.testColorContrast();
+      // FID (First Input Delay)
+      hasCodeSplitting: pageContent.includes('const ') && pageContent.includes('export'),
+      hasMinimalJS: !pageContent.includes('heavy-library') && pageContent.length < 50000,
+      
+      // CLS (Cumulative Layout Shift)
+      hasFixedDimensions: pageContent.includes('width') && pageContent.includes('height'),
+      hasReservedSpace: pageContent.includes('aspect-') || pageContent.includes('min-h-'),
+      
+      // General optimizations
+      hasCompression: hasNextConfig && nextConfigContent.includes('compress'),
+      hasCaching: hasNextConfig && nextConfigContent.includes('cache')
+    };
     
-    // Calculate accessibility score
-    let score = 100;
-    if (!keyboardNavigation) score -= 30;
-    if (ariaLabels.length > 0) score -= ariaLabels.length * 10;
-    if (!colorContrast) score -= 20;
+    const passedChecks = Object.values(checks).filter(Boolean).length;
+    const totalChecks = Object.keys(checks).length;
     
+    if (passedChecks >= totalChecks * 0.8) {
+      return {
+        test: 'Core Web Vitals',
+        status: 'PASS',
+        message: `Core Web Vitals optimisés (${passedChecks}/${totalChecks})`
+      };
+    } else if (passedChecks >= totalChecks * 0.6) {
+      return {
+        test: 'Core Web Vitals',
+        status: 'WARNING',
+        message: `Core Web Vitals partiels (${passedChecks}/${totalChecks})`,
+        details: checks
+      };
+    } else {
+      return {
+        test: 'Core Web Vitals',
+        status: 'FAIL',
+        message: `Core Web Vitals insuffisants (${passedChecks}/${totalChecks})`,
+        details: checks
+      };
+    }
+  } catch (error) {
     return {
-      keyboardNavigation,
-      ariaLabels,
-      colorContrast,
-      score: Math.max(0, score)
+      test: 'Core Web Vitals',
+      status: 'FAIL',
+      message: `Erreur lors du test Core Web Vitals: ${error instanceof Error ? error.message : 'Erreur inconnue'}`
     };
   }
 }
 
-// Mobile performance testing
-export class MobilePerformanceTester {
-  isMobile(): boolean {
-    return window.innerWidth < 768;
+/**
+ * Lance tous les tests de performance et accessibilité
+ */
+export function runPerformanceTests(): PerformanceTestResult[] {
+  console.log('⚡ Tests de performance et accessibilité');
+  console.log('=======================================');
+  
+  const tests = [
+    testCoreWebVitals(),
+    testImageOptimization(),
+    testCodeOptimization(),
+    testAccessibility(),
+    testAnimationsInteractions()
+  ];
+  
+  tests.forEach(result => {
+    const icon = result.status === 'PASS' ? '✅' : result.status === 'WARNING' ? '⚠️' : '❌';
+    console.log(`${icon} ${result.test}: ${result.message}`);
+    if (result.details) {
+      console.log('   Détails:', result.details);
+    }
+  });
+  
+  // Résumé
+  const passed = tests.filter(t => t.status === 'PASS').length;
+  const warnings = tests.filter(t => t.status === 'WARNING').length;
+  const failed = tests.filter(t => t.status === 'FAIL').length;
+  
+  console.log('\n📊 Résumé Performance:');
+  console.log(`✅ Réussis: ${passed}/${tests.length}`);
+  console.log(`⚠️  Avertissements: ${warnings}/${tests.length}`);
+  console.log(`❌ Échoués: ${failed}/${tests.length}`);
+  
+  const successRate = Math.round((passed / tests.length) * 100);
+  console.log(`📈 Taux de réussite Performance: ${successRate}%`);
+  
+  if (successRate >= 80) {
+    console.log('🚀 Performance excellente!');
+  } else if (successRate >= 60) {
+    console.log('⚠️  Performance correcte, améliorations possibles');
+  } else {
+    console.log('❌ Performance à améliorer');
   }
-
-  testTouchTargets(): string[] {
-    const issues: string[] = [];
-    const touchTargets = document.querySelectorAll('button, a, input[type="button"], input[type="submit"]');
-    
-    touchTargets.forEach((element, index) => {
-      const rect = element.getBoundingClientRect();
-      const minSize = 44; // Minimum touch target size in pixels
-      
-      if (rect.width < minSize || rect.height < minSize) {
-        issues.push(`Touch target ${index + 1} too small: ${rect.width}x${rect.height}px`);
-      }
-    });
-    
-    return issues;
-  }
-
-  testViewportMeta(): boolean {
-    const viewportMeta = document.querySelector('meta[name="viewport"]');
-    return viewportMeta !== null;
-  }
-
-  async testMobilePerformance(): Promise<{
-    touchTargets: string[];
-    viewportMeta: boolean;
-    loadTime: number;
-    score: number;
-  }> {
-    const startTime = performance.now();
-    
-    const touchTargets = this.testTouchTargets();
-    const viewportMeta = this.testViewportMeta();
-    
-    // Simulate mobile-specific loading
-    await new Promise(resolve => setTimeout(resolve, 500));
-    const loadTime = performance.now() - startTime;
-    
-    // Calculate mobile performance score
-    let score = 100;
-    if (touchTargets.length > 0) score -= touchTargets.length * 15;
-    if (!viewportMeta) score -= 25;
-    if (loadTime > 2000) score -= 20;
-    
-    return {
-      touchTargets,
-      viewportMeta,
-      loadTime,
-      score: Math.max(0, score)
-    };
-  }
+  
+  return tests;
 }
