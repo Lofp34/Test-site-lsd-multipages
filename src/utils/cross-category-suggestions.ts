@@ -1,5 +1,5 @@
 import { Book } from '@/data/books-enriched';
-import { digitalAISalesCategory, salesManagementCategory } from '@/data/books-enriched';
+import { digitalAISalesCategory, salesManagementCategory, mindsetPerformanceCategory } from '@/data/books-enriched';
 
 // Type pour les suggestions cross-catégories
 export interface CrossCategorySuggestion {
@@ -18,7 +18,62 @@ const categoryMap = {
   'sales-management': {
     data: salesManagementCategory,
     title: 'Sales Management & Leadership'
+  },
+  'mindset-performance': {
+    data: mindsetPerformanceCategory,
+    title: 'Mindset & Performance'
   }
+};
+
+// Configuration des suggestions pour CategoryBreadcrumb
+export const categoryBreadcrumbSuggestions: Record<string, Array<{
+  title: string;
+  href: string;
+  icon: string;
+  description: string;
+}>> = {
+  'mindset-performance': [
+    {
+      title: 'Sales Management & Leadership',
+      href: '/ressources/meilleurs-livres/sales-management',
+      icon: '👥',
+      description: 'Développer son leadership et manager efficacement son équipe commerciale'
+    },
+    {
+      title: 'Digital & AI Sales',
+      href: '/ressources/meilleurs-livres/digital-ai',
+      icon: '🤖',
+      description: 'Cultiver le mindset d\'adaptation nécessaire à la transformation digitale'
+    }
+  ],
+  'sales-management': [
+    {
+      title: 'Mindset & Performance',
+      href: '/ressources/meilleurs-livres/mindset-performance',
+      icon: '💪',
+      description: 'Développer l\'état d\'esprit et les habitudes du leader performant'
+    },
+    {
+      title: 'Digital & AI Sales',
+      href: '/ressources/meilleurs-livres/digital-ai',
+      icon: '🤖',
+      description: 'Manager la transformation digitale de son équipe commerciale'
+    }
+  ],
+  'digital-ai': [
+    {
+      title: 'Sales Management & Leadership',
+      href: '/ressources/meilleurs-livres/sales-management',
+      icon: '👥',
+      description: 'Diriger efficacement la transformation digitale de son équipe'
+    },
+    {
+      title: 'Mindset & Performance',
+      href: '/ressources/meilleurs-livres/mindset-performance',
+      icon: '💪',
+      description: 'Développer le mindset d\'adaptation aux nouvelles technologies'
+    }
+  ]
 };
 
 // Règles de suggestions cross-catégories basées sur les thèmes et complémentarités
@@ -28,6 +83,10 @@ const crossCategorySuggestionRules: Record<string, Record<string, string[]>> = {
       'good-to-great', // Leadership pour transformation digitale
       'high-output-management', // Gestion d'équipe dans l'ère digitale
       'blue-ocean-strategy' // Innovation et disruption
+    ],
+    'mindset-performance': [
+      'atomic-habits', // Habitudes pour l'adoption des outils digitaux
+      'mindset' // Mindset de croissance pour s'adapter aux nouvelles technologies
     ]
   },
   'sales-management': {
@@ -35,6 +94,20 @@ const crossCategorySuggestionRules: Record<string, Record<string, string[]>> = {
       'human-machine', // Collaboration homme-IA en management
       'the-second-machine-age', // Impact du digital sur l'organisation
       'lean-startup' // Agilité et innovation managériale
+    ],
+    'mindset-performance': [
+      'the-7-habits', // Leadership personnel pour manager efficacement
+      'atomic-habits' // Construire des habitudes de management performantes
+    ]
+  },
+  'mindset-performance': {
+    'sales-management': [
+      'good-to-great', // Leadership de niveau 5 et mindset de croissance
+      'leaders-eat-last' // Leadership bienveillant et développement personnel
+    ],
+    'digital-ai': [
+      'human-machine', // Adaptation au changement et collaboration avec l'IA
+      'the-second-machine-age' // Mindset pour naviguer la transformation digitale
     ]
   }
 };
@@ -44,12 +117,22 @@ const suggestionReasons: Record<string, Record<string, string>> = {
   'digital-ai': {
     'good-to-great': 'Pour maîtriser le leadership nécessaire à la transformation digitale de votre équipe commerciale.',
     'high-output-management': 'Pour optimiser la productivité de votre équipe dans un environnement digital.',
-    'blue-ocean-strategy': 'Pour créer de nouveaux espaces de marché grâce aux technologies digitales.'
+    'blue-ocean-strategy': 'Pour créer de nouveaux espaces de marché grâce aux technologies digitales.',
+    'atomic-habits': 'Pour développer les habitudes nécessaires à l\'adoption efficace des outils digitaux.',
+    'mindset': 'Pour cultiver le mindset de croissance nécessaire à l\'adaptation aux nouvelles technologies.'
   },
   'sales-management': {
     'human-machine': 'Pour comprendre comment l\'IA peut augmenter les capacités de management de votre équipe.',
     'the-second-machine-age': 'Pour anticiper l\'impact des technologies numériques sur votre organisation commerciale.',
-    'lean-startup': 'Pour adopter une approche agile et innovante dans le management de vos équipes.'
+    'lean-startup': 'Pour adopter une approche agile et innovante dans le management de vos équipes.',
+    'the-7-habits': 'Pour développer un leadership personnel solide, base de tout management efficace.',
+    'atomic-habits': 'Pour construire des habitudes de management qui transforment durablement vos équipes.'
+  },
+  'mindset-performance': {
+    'good-to-great': 'Pour comprendre comment le mindset de croissance s\'articule avec le leadership de niveau 5.',
+    'leaders-eat-last': 'Pour allier développement personnel et leadership bienveillant au service de l\'équipe.',
+    'human-machine': 'Pour développer le mindset nécessaire à la collaboration efficace avec l\'intelligence artificielle.',
+    'the-second-machine-age': 'Pour cultiver l\'état d\'esprit d\'adaptation continue face aux transformations digitales.'
   }
 };
 
@@ -151,6 +234,28 @@ export function generateContextualCTAs(currentBook: Book, currentCategory: strin
       });
       break;
 
+    case 'mindset-performance':
+      baseCTAs.push({
+        title: 'Coaching Performance Commerciale',
+        description: 'Développez votre mindset de croissance et vos habitudes de performance avec un accompagnement personnalisé.',
+        buttonText: 'Découvrir le coaching',
+        buttonLink: '/coach-commercial-entreprise',
+        icon: '🧠',
+        variant: 'primary' as const,
+        category: 'Développement Personnel'
+      });
+      
+      baseCTAs.push({
+        title: 'Formation Mindset Commercial',
+        description: 'Transformez votre état d\'esprit et développez la résilience nécessaire à l\'excellence commerciale.',
+        buttonText: 'Voir la formation',
+        buttonLink: '/bootcamp-commercial-intensif',
+        icon: '💪',
+        variant: 'accent' as const,
+        category: 'Formation'
+      });
+      break;
+
     default:
       // CTAs génériques
       baseCTAs.push({
@@ -208,6 +313,23 @@ export function generateToolLinks(currentBook: Book, currentCategory: string) {
           description: 'Framework complet pour définir et piloter votre stratégie commerciale',
           link: '/ressources/outil-strategie-commerciale',
           icon: '📈'
+        }
+      );
+      break;
+
+    case 'mindset-performance':
+      toolLinks.push(
+        {
+          title: 'Guide des Techniques de Vente',
+          description: 'Méthodes et techniques pour développer votre performance commerciale',
+          link: '/ressources/techniques-de-vente',
+          icon: '🎯'
+        },
+        {
+          title: 'Outil Préparation RDV',
+          description: 'Framework pour optimiser votre préparation et performance en rendez-vous',
+          link: '/ressources/outil-preparation-rdv',
+          icon: '📋'
         }
       );
       break;

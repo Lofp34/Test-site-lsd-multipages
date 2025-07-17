@@ -5,6 +5,7 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 import ComparisonTable from '@/components/ui/ComparisonTable';
 import BookCard from '@/components/ui/BookCard';
 import CategoryBreadcrumb from '@/components/ui/CategoryBreadcrumb';
+import { categoryBreadcrumbSuggestions } from '@/utils/cross-category-suggestions';
 import React from 'react';
 
 // Données structurées Schema.org pour la page catégorie
@@ -139,14 +140,7 @@ export default function SalesManagementPage() {
           { label: 'Meilleurs Livres', href: '/ressources/meilleurs-livres' },
           { label: 'Sales Management & Leadership', href: '/ressources/meilleurs-livres/sales-management', current: true }
         ]}
-        relatedCategories={[
-          {
-            title: 'Digital & AI Sales',
-            href: '/ressources/meilleurs-livres/digital-ai',
-            icon: '🤖',
-            description: 'IA, digital et transformation commerciale'
-          }
-        ]}
+        relatedCategories={categoryBreadcrumbSuggestions['sales-management']}
       />
 
       {/* Hero section */}
