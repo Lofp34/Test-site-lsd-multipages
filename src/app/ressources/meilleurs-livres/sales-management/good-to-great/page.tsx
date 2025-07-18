@@ -118,13 +118,13 @@ export default function GoodToGreatPage() {
             <span className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-2 text-sm shadow-md backdrop-blur mb-2">
               Sales Management & Leadership
             </span>
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+            <h1 className="text-4xl md:text-6xl font-bold text-primary-title mb-4 drop-shadow-lg">
               Good to Great
             </h1>
-            <p className="text-xl text-mint-green font-semibold mb-2">
-              Jim Collins <span className="text-white/60 font-normal">— 2001</span>
+            <p className="text-xl text-primary-secondary font-semibold mb-2">
+              Jim Collins <span className="text-primary-secondary/70 font-normal">— 2001</span>
             </p>
-            <p className="text-lg text-white/90 italic mb-6 max-w-2xl mx-auto">
+            <p className="text-lg text-primary-secondary/90 italic mb-6 max-w-2xl mx-auto">
               Les facteurs durables de la réussite organisationnelle
             </p>
             
@@ -133,7 +133,7 @@ export default function GoodToGreatPage() {
               <span className="bg-orange-soft/20 text-orange-soft px-3 py-1 rounded-full text-sm font-medium">
                 Intermédiaire
               </span>
-              <span className="bg-blue-ink/20 text-white px-3 py-1 rounded-full text-sm font-medium">
+              <span className="bg-blue-ink/20 text-primary-secondary px-3 py-1 rounded-full text-sm font-medium">
                 8h de lecture
               </span>
               <div className="flex items-center bg-yellow-400/20 text-yellow-600 px-3 py-1 rounded-full text-sm font-medium">

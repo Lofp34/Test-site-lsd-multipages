@@ -174,10 +174,10 @@ export default function DigitalAISalesPage() {
             >
               <span aria-hidden="true">{category.icon}</span> Catégorie
             </span>
-            <h1 id="hero-title" className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
+            <h1 id="hero-title" className="text-4xl md:text-5xl font-bold text-primary-title mb-4 drop-shadow-lg">
               {category.title}
             </h1>
-            <p className="text-lg md:text-xl text-white/80 mb-6 leading-relaxed">
+            <p className="text-lg md:text-xl text-primary-secondary/90 mb-6 leading-relaxed">
               {category.description}
             </p>
             
@@ -202,7 +202,7 @@ export default function DigitalAISalesPage() {
                     L'IA transforme déjà la vente
                   </h2>
                 </div>
-                <p className="text-white/90 leading-relaxed mb-4">
+                <p className="text-primary-secondary/90 leading-relaxed mb-4">
                   Prospection automatisée, scoring prédictif, analyse conversationnelle... 
                   L'intelligence artificielle révolutionne chaque étape du processus commercial. 
                   Ces 5 livres vous donnent les clés pour comprendre, anticiper et maîtriser cette transformation.
@@ -216,7 +216,7 @@ export default function DigitalAISalesPage() {
                     </div>
                     <span className="text-cyan-300 font-semibold">Vision Laurent Serre</span>
                   </div>
-                  <p className="text-white/90 text-sm italic">
+                  <p className="text-primary-secondary/90 text-sm italic">
                     "Après 20 ans d'accompagnement PME, je vois l'IA comme le plus grand levier de transformation commerciale depuis l'arrivée d'Internet. 
                     Ces livres ne sont pas de la théorie : ils décrivent des réalités que mes clients vivent déjà. 
                     L'enjeu n'est plus de savoir si l'IA va transformer votre métier, mais comment vous allez la maîtriser."
@@ -227,15 +227,15 @@ export default function DigitalAISalesPage() {
                 <div className="grid grid-cols-3 gap-4 mt-6 pt-4 border-t border-cyan-400/20">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-cyan-400">85%</div>
-                    <div className="text-xs text-white/70">des entreprises utilisent l'IA</div>
+                    <div className="text-xs text-primary-secondary/70">des entreprises utilisent l'IA</div>
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-cyan-400">3x</div>
-                    <div className="text-xs text-white/70">plus de leads qualifiés</div>
+                    <div className="text-xs text-primary-secondary/70">plus de leads qualifiés</div>
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-cyan-400">60%</div>
-                    <div className="text-xs text-white/70">de gain de temps</div>
+                    <div className="text-xs text-primary-secondary/70">de gain de temps</div>
                   </div>
                 </div>
               </div>
@@ -296,10 +296,10 @@ export default function DigitalAISalesPage() {
                 <AIIcon type="circuit" size="sm" className="inline mr-2" />
                 Technologies émergentes
               </span>
-              <h3 className="text-2xl font-bold text-white mb-4">
+              <h3 className="text-2xl font-bold text-primary-title mb-4">
                 Les innovations qui transforment la vente
               </h3>
-              <p className="text-white/80 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-primary-secondary/90 leading-relaxed max-w-3xl mx-auto">
                 Découvrez les technologies d'IA qui révolutionnent déjà le métier commercial et préparez-vous aux évolutions futures
               </p>
             </div>
