@@ -318,43 +318,36 @@ export default function EnterpriseAccountPage() {
         {/* Section : Exemples concrets PME avec PMECaseStudy component */}
         <AnimatedSection delay={450}>
           <div className="max-w-6xl mx-auto mb-12 px-4">
-            <PMECaseStudy 
-              caseStudies={enterpriseAccountCaseStudies.map(caseStudy => ({
-                industry: caseStudy.industry,
-                companySize: caseStudy.companySize,
-                challenge: caseStudy.challenge,
-                solution: caseStudy.solution,
-                results: caseStudy.results,
-                domainFocus: 'enterprise' as const,
-                metrics: caseStudy.metrics ? Object.fromEntries(
-                  Object.entries(caseStudy.metrics).filter(([_, value]) => value !== undefined)
-                ) : {},
-                laurentQuote: caseStudy.laurentSerreQuote,
-                timeline: caseStudy.timeline
-              }))}
-              title="Cas clients PME"
-              subtitle="Découvrez comment mes clients PME appliquent concrètement les concepts de ces livres"
-              domainColor="#10B981"
-              domainIcon="🏢"
-              laurentExperienceQuote="L'Account Management en PME, c'est différent des grandes entreprises. Vous n'avez pas 50 personnes dédiées, mais vous avez un avantage : la proximité et la réactivité. Mes clients qui réussissent le mieux sont ceux qui structurent leur approche tout en gardant cette agilité PME. Le secret ? Commencer petit, mesurer l'impact, puis étendre progressivement."
-              domainStats={[
-                { 
-                  value: "6 mois", 
-                  label: "Durée moyenne de transformation", 
-                  description: "Pour structurer complètement les processus" 
-                },
-                { 
-                  value: "5x", 
-                  label: "ROI moyen sur les comptes stratégiques", 
-                  description: "Retour sur investissement mesuré" 
-                },
-                { 
-                  value: "85%", 
-                  label: "Taux de rétention des comptes clés", 
-                  description: "Fidélisation des clients stratégiques" 
-                }
-              ]}
-            />
+            {enterpriseAccountCaseStudies && (
+              <PMECaseStudy 
+                caseStudies={enterpriseAccountCaseStudies.map(caseStudy => ({
+                  ...caseStudy,
+                  metrics: caseStudy.metrics || {},
+                }))}
+                title="Cas clients PME"
+                subtitle="Découvrez comment mes clients PME appliquent concrètement les concepts de ces livres"
+                domainColor="#10B981"
+                domainIcon="🏢"
+                laurentExperienceQuote="L'Account Management en PME, c'est différent des grandes entreprises. Vous n'avez pas 50 personnes dédiées, mais vous avez un avantage : la proximité et la réactivité. Mes clients qui réussissent le mieux sont ceux qui structurent leur approche tout en gardant cette agilité PME. Le secret ? Commencer petit, mesurer l'impact, puis étendre progressivement."
+                domainStats={[
+                  { 
+                    value: "6 mois", 
+                    label: "Durée moyenne de transformation", 
+                    description: "Pour structurer complètement les processus" 
+                  },
+                  { 
+                    value: "5x", 
+                    label: "ROI moyen sur les comptes stratégiques", 
+                    description: "Retour sur investissement mesuré" 
+                  },
+                  { 
+                    value: "85%", 
+                    label: "Taux de rétention des comptes clés", 
+                    description: "Fidélisation des clients stratégiques" 
+                  }
+                ]}
+              />
+            )}
           </div>
         </AnimatedSection>
 
