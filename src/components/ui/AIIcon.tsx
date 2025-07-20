@@ -1,7 +1,8 @@
 import React, { memo } from 'react';
 
 interface AIIconProps {
-  type: 'brain' | 'circuit' | 'network' | 'robot' | 'data' | 'automation' | 'digital' | 'future';
+  type: 'brain' | 'circuit' | 'network' | 'robot' | 'data' | 'automation' | 'digital' | 'future' | 
+        'target' | 'handshake' | 'leadership' | 'psychology' | 'process';
   size?: 'sm' | 'md' | 'lg' | 'xl';
   animated?: boolean;
   color?: string;
@@ -35,7 +36,12 @@ const AIIcon: React.FC<AIIconProps> = memo(({
     data: 'Analyse de données',
     automation: 'Automatisation',
     digital: 'Technologie numérique',
-    future: 'Innovation future'
+    future: 'Innovation future',
+    target: 'Ciblage et prospection',
+    handshake: 'Négociation et accord',
+    leadership: 'Leadership et management',
+    psychology: 'Psychologie et influence',
+    process: 'Processus et méthodes'
   };
 
   const renderIcon = () => {
@@ -138,6 +144,63 @@ const AIIcon: React.FC<AIIconProps> = memo(({
             <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
             <path d="M8 11l2 2 4-4"/>
             <circle cx="12" cy="12" r="1"/>
+          </svg>
+        );
+      
+      case 'target':
+        return (
+          <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <circle cx="12" cy="12" r="6"/>
+            <circle cx="12" cy="12" r="2"/>
+            <path d="M12 2v4"/>
+            <path d="M12 18v4"/>
+            <path d="M2 12h4"/>
+            <path d="M18 12h4"/>
+          </svg>
+        );
+      
+      case 'handshake':
+        return (
+          <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M11 12h2a2 2 0 1 0 0-4h-3c-.6 0-1.1.2-1.4.6L3 14"/>
+            <path d="m7 18 1.6-1.4c.3-.4.8-.6 1.4-.6h4c1.1 0 2.1-.4 2.8-1.2l4.6-4.4a2 2 0 0 0-2.75-2.91l-4.2 3.9"/>
+            <path d="m2 13 6 6 3-3"/>
+            <path d="m8 21 2-2"/>
+          </svg>
+        );
+      
+      case 'leadership':
+        return (
+          <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            <path d="M12 2l3 3-3 3"/>
+          </svg>
+        );
+      
+      case 'psychology':
+        return (
+          <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/>
+            <path d="M8.5 8.5c.5 0 1-.2 1.4-.6"/>
+            <path d="M12 2c0 2.5-2.5 5-5 5s-5-2.5-5-5a5 5 0 0 1 10 0Z"/>
+            <circle cx="9" cy="9" r="2"/>
+            <path d="M14 14c1.5 1.5 3 3 3 5a2 2 0 1 1-4 0c0-2 1.5-3.5 3-5"/>
+          </svg>
+        );
+      
+      case 'process':
+        return (
+          <svg viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="3" width="6" height="6" rx="1"/>
+            <rect x="15" y="3" width="6" height="6" rx="1"/>
+            <rect x="9" y="15" width="6" height="6" rx="1"/>
+            <path d="M6 9v3a3 3 0 0 0 3 3h6"/>
+            <path d="M18 9v3a3 3 0 0 1-3 3h-3"/>
+            <path d="M12 12v3"/>
           </svg>
         );
       

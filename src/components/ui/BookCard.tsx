@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Book } from '@/data/books-enriched';
+import { CategoryTheme } from '@/types/category-templates';
 import StarRating from './StarRating';
 import Badge from './Badge';
 
@@ -10,6 +11,8 @@ interface BookCardProps {
   showRating?: boolean;
   showDifficulty?: boolean;
   showReadingTime?: boolean;
+  showCategoryBadge?: boolean;
+  categoryTheme?: CategoryTheme;
   className?: string;
 }
 
@@ -19,6 +22,8 @@ const BookCard: React.FC<BookCardProps> = ({
   showRating = true,
   showDifficulty = true,
   showReadingTime = true,
+  showCategoryBadge = false,
+  categoryTheme,
   className = ''
 }) => {
   /**
@@ -29,12 +34,12 @@ const BookCard: React.FC<BookCardProps> = ({
       'prospection-sdr': '🎯',
       'negociation-closing': '🤝',
       'psychologie-influence': '🧠',
-      'methodes-process': '⚙️',
+      'methodes-process': '🛠️',
       'enterprise-account': '🏢',
       'sales-management': '👥',
       'management-leadership': '👥',
       'digital-ai': '🤖',
-      'mindset-performance': '💪'
+      'mindset-performance': '🎯'
     };
     
     return iconMap[categorySlug] || '📚';
@@ -42,21 +47,36 @@ const BookCard: React.FC<BookCardProps> = ({
 
   /**
    * Retourne le gradient CSS personnalisé pour une catégorie
+   * Utilise le thème fourni ou fallback sur les couleurs par défaut
    */
   const getCategoryGradient = (categorySlug: string): string => {
+    if (categoryTheme) {
+      return `bg-gradient-to-br from-[${categoryTheme.primaryColor}] to-[${categoryTheme.secondaryColor}]`;
+    }
+    
     const gradientMap: Record<string, string> = {
-      'prospection-sdr': 'bg-gradient-to-br from-blue-400 to-blue-600',
-      'negociation-closing': 'bg-gradient-to-br from-green-400 to-green-600',
-      'psychologie-influence': 'bg-gradient-to-br from-purple-400 to-purple-600',
-      'methodes-process': 'bg-gradient-to-br from-orange-400 to-orange-600',
-      'enterprise-account': 'bg-gradient-to-br from-indigo-400 to-indigo-600',
-      'sales-management': 'bg-gradient-to-br from-teal-400 to-teal-600',
-      'management-leadership': 'bg-gradient-to-br from-teal-400 to-teal-600',
-      'digital-ai': 'bg-gradient-to-br from-cyan-400 to-cyan-600',
-      'mindset-performance': 'bg-gradient-to-br from-pink-400 to-pink-600'
+      'prospection-sdr': 'bg-gradient-to-br from-violet-400 to-purple-600',
+      'negociation-closing': 'bg-gradient-to-br from-red-400 to-orange-600',
+      'psychologie-influence': 'bg-gradient-to-br from-purple-400 to-pink-600',
+      'methodes-process': 'bg-gradient-to-br from-blue-400 to-cyan-600',
+      'enterprise-account': 'bg-gradient-to-br from-emerald-400 to-green-600',
+      'sales-management': 'bg-gradient-to-br from-indigo-400 to-blue-600',
+      'management-leadership': 'bg-gradient-to-br from-indigo-400 to-blue-600',
+      'digital-ai': 'bg-gradient-to-br from-cyan-400 to-blue-600',
+      'mindset-performance': 'bg-gradient-to-br from-amber-400 to-red-600'
     };
     
     return gradientMap[categorySlug] || 'bg-gradient-to-br from-gray-400 to-gray-600';
+  };
+
+  /**
+   * Retourne la couleur du CTA basée sur le thème
+   */
+  const getCTAClasses = (): string => {
+    if (categoryTheme) {
+      return `bg-[${categoryTheme.primaryColor}] hover:bg-[${categoryTheme.primaryColor}]/80 text-white`;
+    }
+    return 'bg-mint-green text-blue-ink hover:bg-mint-green/80';
   };
 
   const baseCardClasses = `
@@ -111,8 +131,8 @@ const BookCard: React.FC<BookCardProps> = ({
               {/* CTA */}
               <Link 
                 href={`/ressources/meilleurs-livres/${book.category}/${book.slug}`}
-                className="bg-mint-green text-blue-ink font-semibold px-4 py-2 rounded-full 
-                           shadow hover:bg-mint-green/80 transition text-sm whitespace-nowrap"
+                className={`${getCTAClasses()} font-semibold px-4 py-2 rounded-full 
+                           shadow transition text-sm whitespace-nowrap`}
               >
                 Voir détails
               </Link>
@@ -168,9 +188,9 @@ const BookCard: React.FC<BookCardProps> = ({
           {/* CTA */}
           <Link 
             href={`/ressources/meilleurs-livres/${book.category}/${book.slug}`}
-            className="inline-block bg-mint-green text-blue-ink font-semibold 
-                       px-8 py-3 rounded-full shadow-lg hover:bg-mint-green/80 
-                       hover:scale-105 transition-all duration-300 text-lg"
+            className={`inline-block ${getCTAClasses()} font-semibold 
+                       px-8 py-3 rounded-full shadow-lg 
+                       hover:scale-105 transition-all duration-300 text-lg`}
           >
             Résumé complet
           </Link>
@@ -226,9 +246,9 @@ const BookCard: React.FC<BookCardProps> = ({
         {/* CTA */}
         <Link 
           href={`/ressources/meilleurs-livres/${book.category}/${book.slug}`}
-          className="mt-auto inline-block bg-mint-green text-blue-ink font-semibold 
-                     px-4 py-2 rounded-full shadow hover:bg-mint-green/80 
-                     transition-all duration-300 w-full text-center hover:scale-105"
+          className={`mt-auto inline-block ${getCTAClasses()} font-semibold 
+                     px-4 py-2 rounded-full shadow 
+                     transition-all duration-300 w-full text-center hover:scale-105`}
         >
           Résumé complet
         </Link>

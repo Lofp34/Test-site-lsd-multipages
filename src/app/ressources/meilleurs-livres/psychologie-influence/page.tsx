@@ -1,109 +1,1128 @@
-import { bookCategories } from '@/data/books';
+import { psychologyInfluenceCategoryExtended } from '@/data/books-enriched';
 import Link from 'next/link';
-import Head from 'next/head';
+import { Metadata } from 'next/dist/lib/metadata/types/metadata-interface';
 import AnimatedSection from '@/components/ui/AnimatedSection';
+import ComparisonTable from '@/components/ui/ComparisonTable';
+import BookCard from '@/components/ui/BookCard';
+import CategoryBreadcrumb from '@/components/ui/CategoryBreadcrumb';
+import ParticleBackground from '@/components/ui/ParticleBackground';
+import DomainInsight from '@/components/ui/DomainInsight';
+import PMECaseStudy from '@/components/ui/PMECaseStudy';
+import ImplementationRoadmap from '@/components/ui/ImplementationRoadmap';
+import DomainStats from '@/components/ui/DomainStats';
+import { categoryBreadcrumbSuggestions } from '@/utils/cross-category-suggestions';
 import React from 'react';
 
-function chunkArray<T>(arr: T[], size: number): T[][] {
-  const res: T[][] = [];
-  for (let i = 0; i < arr.length; i += size) {
-    res.push(arr.slice(i, i + size));
+// Données structurées Schema.org pour la page catégorie
+const categoryStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Psychologie & Influence - Meilleurs Livres",
+  "description": "Les meilleurs livres sur la psychologie de la vente et l'influence éthique. Influence de Cialdini, Comment se faire des amis, Thinking Fast and Slow. Résumés détaillés et conseils terrain de Laurent Serre.",
+  "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence",
+  "mainEntity": {
+    "@type": "ItemList",
+    "name": "Meilleurs livres Psychologie & Influence",
+    "numberOfItems": 5,
+    "itemListElement": [
+      {
+        "@type": "Book",
+        "position": 1,
+        "name": "Influence: The Psychology of Persuasion",
+        "author": "Robert Cialdini",
+        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence/influence-psychology-persuasion"
+      },
+      {
+        "@type": "Book", 
+        "position": 2,
+        "name": "Comment se faire des amis",
+        "author": "Dale Carnegie",
+        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence/comment-se-faire-des-amis"
+      },
+      {
+        "@type": "Book",
+        "position": 3, 
+        "name": "Thinking, Fast and Slow",
+        "author": "Daniel Kahneman",
+        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence/thinking-fast-slow"
+      },
+      {
+        "@type": "Book",
+        "position": 4,
+        "name": "Predictably Irrational", 
+        "author": "Dan Ariely",
+        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence/predictably-irrational"
+      },
+      {
+        "@type": "Book",
+        "position": 5,
+        "name": "Pré-Suasion",
+        "author": "Robert Cialdini", 
+        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence/pre-suasion"
+      }
+    ]
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Accueil",
+        "item": "https://laurent-serre-developpement.fr"
+      },
+      {
+        "@type": "ListItem", 
+        "position": 2,
+        "name": "Ressources",
+        "item": "https://laurent-serre-developpement.fr/ressources"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Meilleurs Livres",
+        "item": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Psychologie & Influence"
+      }
+    ]
   }
-  return res;
-}
+};
 
-const category = bookCategories.find(cat => cat.slug === 'psychologie-influence');
+export const metadata: Metadata = {
+  title: 'Psychologie & Influence | Meilleurs Livres | Laurent Serre',
+  description: 'Les meilleurs livres sur la psychologie de la vente et l\'influence éthique. Influence de Cialdini, Comment se faire des amis, Thinking Fast and Slow. Résumés détaillés et conseils terrain de Laurent Serre.',
+  keywords: [
+    'psychologie vente',
+    'influence cialdini', 
+    'persuasion',
+    'biais cognitifs',
+    'psychologie commerciale',
+    'comment se faire des amis',
+    'thinking fast slow',
+    'pre-suasion',
+    'laurent serre'
+  ],
+  openGraph: {
+    title: 'Psychologie & Influence | Meilleurs Livres | Laurent Serre',
+    description: 'Les meilleurs livres sur la psychologie de la vente et l\'influence éthique. Influence de Cialdini, Comment se faire des amis, Thinking Fast and Slow. Résumés détaillés et conseils terrain.',
+    type: 'website',
+    locale: 'fr_FR',
+    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence',
+    images: [
+      {
+        url: 'https://laurent-serre-developpement.fr/images/og-psychologie-influence.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Psychologie & Influence - Meilleurs Livres par Laurent Serre',
+      },
+    ],
+    siteName: 'Laurent Serre Développement',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Psychologie & Influence | Meilleurs Livres | Laurent Serre',
+    description: 'Les meilleurs livres sur la psychologie de la vente et l\'influence éthique. Influence de Cialdini, Comment se faire des amis, Thinking Fast and Slow.',
+    images: ['https://laurent-serre-developpement.fr/images/og-psychologie-influence.jpg'],
+  },
+  alternates: {
+    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence',
+  },
+  other: {
+    'preload': '/ressources/meilleurs-livres/psychologie-influence/influence-psychology-persuasion as document',
+  },
+};
 
 export default function PsychologieInfluencePage() {
-  if (!category) return <div>Catégorie non trouvée.</div>;
+  const category = psychologyInfluenceCategoryExtended;
+  
+  // Debug: Check if category and its properties exist
+  if (!category) {
+    return <div>Category not found</div>;
+  }
+  
+  if (!category.books) {
+    return <div>Books not found in category</div>;
+  }
 
   return (
     <>
-      <Head>
-        <title>Livres de psychologie & influence | Meilleurs livres | LSD</title>
-        <meta name="description" content="Les meilleurs livres pour décoder et guider les décisions d’achat. Résumés, avis, conseils terrain." />
-      </Head>
-      <main className="bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16">
-        {/* Hero section */}
-        <section className="max-w-4xl mx-auto text-center mb-12">
-          <span className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">Catégorie</span>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">Livres de psychologie & influence</h1>
-          <p className="text-lg md:text-xl text-white/80 mb-6">Décoder et guider les décisions d’achat. Les grands principes de l’influence et de la persuasion appliqués à la vente et au business.</p>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(categoryStructuredData) }}
+      />
+      
+      <main className="relative bg-gradient-to-br from-purple-600 via-pink-500/10 to-primary-bg min-h-screen pt-24 pb-16 overflow-hidden">
+        {/* Particle background for psychology atmosphere */}
+        <ParticleBackground 
+          density={30}
+          speed={0.3}
+          color="#8B5CF6"
+          opacity={0.4}
+          className="absolute inset-0"
+        />
+        
+        {/* Breadcrumb navigation */}
+        <CategoryBreadcrumb 
+          items={[
+            { label: 'Accueil', href: '/' },
+            { label: 'Ressources', href: '/ressources' },
+            { label: 'Meilleurs Livres', href: '/ressources/meilleurs-livres' },
+            { label: 'Psychologie & Influence', href: '/ressources/meilleurs-livres/psychologie-influence', current: true }
+          ]}
+          relatedCategories={categoryBreadcrumbSuggestions['psychologie-influence']}
+        />
+
+        {/* Hero section avec présentation de la psychologie commerciale */}
+        <section className="max-w-4xl mx-auto text-center mb-12 px-4" aria-labelledby="hero-title">
+          <AnimatedSection animation="fade-in" delay={0}>
+            <span 
+              className="inline-block bg-purple-500/20 text-purple-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur"
+              role="status"
+              aria-label={`Catégorie ${category.title}`}
+            >
+              <span aria-hidden="true">{category.icon}</span> Catégorie
+            </span>
+            <h1 id="hero-title" className="text-4xl md:text-5xl font-bold text-primary-title mb-4 drop-shadow-lg">
+              {category.title}
+            </h1>
+            <p className="text-lg md:text-xl text-primary-secondary/90 mb-6 leading-relaxed">
+              {category.description}
+            </p>
+            
+            {/* Message spécifique sur la psychologie commerciale avec effets visuels */}
+            <div className="relative bg-white/10 backdrop-blur-sm rounded-xl p-6 mt-8 border border-purple-400/20 overflow-hidden group hover:bg-white/15 transition-all duration-500">
+              {/* Animated background elements */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-400/20 to-pink-500/20 rounded-full blur-2xl opacity-50 group-hover:opacity-70 transition-opacity duration-500"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-br from-pink-400/20 to-purple-500/20 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-700"></div>
+              
+              {/* Floating psychology icons */}
+              <div className="absolute top-4 right-4 opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+                <span className="text-2xl animate-pulse">🧠</span>
+              </div>
+              <div className="absolute bottom-4 left-4 opacity-20 group-hover:opacity-40 transition-opacity duration-500">
+                <span className="text-xl animate-bounce">💡</span>
+              </div>
+              
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center">
+                    <span className="text-2xl">🧠</span>
+                  </div>
+                  <h2 className="text-xl font-semibold text-purple-400">
+                    La psychologie révolutionne la vente moderne
+                  </h2>
+                </div>
+                <p className="text-primary-secondary/90 leading-relaxed mb-4">
+                  95% des décisions d'achat sont émotionnelles, puis rationalisées. Comprendre les biais cognitifs, 
+                  les mécanismes d'influence et les leviers psychologiques de vos prospects, c'est détenir les clés 
+                  d'une vente éthique et efficace. Ces 5 livres vous révèlent les secrets de l'influence authentique.
+                </p>
+                
+                {/* Laurent Serre positioning */}
+                <div className="bg-white/10 rounded-lg p-4 mb-4 border border-purple-400/30">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-8 bg-purple-400 rounded-full flex items-center justify-center">
+                      <span className="text-blue-ink font-bold text-sm">LS</span>
+                    </div>
+                    <span className="text-purple-300 font-semibold">Vision Laurent Serre</span>
+                  </div>
+                  <p className="text-primary-secondary/90 text-sm italic">
+                    "La vente, c'est 20% de technique et 80% de psychologie. Comprendre les biais cognitifs de vos prospects, 
+                    c'est comme avoir les réponses avant l'examen. Mes clients qui maîtrisent ces principes doublent leur taux de conversion. 
+                    Mais attention : il y a une différence fondamentale entre influence et manipulation. L'influence éthique crée de la valeur pour les deux parties."
+                  </p>
+                </div>
+                
+                {/* Psychology stats */}
+                <div className="grid grid-cols-3 gap-4 mt-6 pt-4 border-t border-purple-400/20">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-purple-400">95%</div>
+                    <div className="text-xs text-primary-secondary/70">décisions émotionnelles</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-purple-400">6</div>
+                    <div className="text-xs text-primary-secondary/70">principes universels</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-purple-400">2x</div>
+                    <div className="text-xs text-primary-secondary/70">plus de conversions</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
         </section>
 
-        {/* Tableau comparatif (placeholder) */}
-        <AnimatedSection delay={0.1}>
-          <div className="max-w-3xl mx-auto bg-white/70 dark:bg-blue-ink/80 rounded-xl shadow-lg p-6 mb-10 border border-mint-green/20">
-            <h3 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">Comment choisir ?</h3>
-            <div className="overflow-x-auto">
-              <table className="min-w-full text-left text-sm">
-                <thead>
-                  <tr className="text-mint-green">
-                    <th className="py-2 px-3">Titre</th>
-                    <th className="py-2 px-3">Durée lecture</th>
-                    <th className="py-2 px-3">Difficulté</th>
-                    <th className="py-2 px-3">Pour qui ?</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {category.books.map(book => (
-                    <tr key={book.slug}>
-                      <td className="py-2 px-3 font-semibold">
-                        <Link href={`/ressources/meilleurs-livres/psychologie-influence/${book.slug}`} className="text-mint-green underline hover:text-mint-green/80">
-                          {book.title}
-                        </Link>
-                      </td>
-                      {/* Valeurs fictives à adapter si besoin */}
-                      <td className="py-2 px-3">6h</td>
-                      <td className="py-2 px-3">Accessible</td>
-                      <td className="py-2 px-3">Vendeur, Marketeur</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
+        {/* Tableau comparatif avec critères spécifiques Psychologie */}
+        <section aria-labelledby="comparison-title">
+          <AnimatedSection delay={100}>
+            <div className="max-w-6xl mx-auto px-4">
+              <h2 id="comparison-title" className="sr-only">
+                Tableau comparatif des livres Psychologie & Influence
+              </h2>
+              <ComparisonTable 
+                books={category.books} 
+                category="psychologie-influence" 
+              />
             </div>
-            <div className="mt-4 text-right">
-              <Link href="#quiz" className="text-mint-green underline hover:text-mint-green/80">👉 Quel livre pour votre profil ? (Quiz à venir)</Link>
-            </div>
-          </div>
-        </AnimatedSection>
+          </AnimatedSection>
+        </section>
 
-        {/* Grid de livres */}
-        <AnimatedSection>
-          <div className="max-w-6xl mx-auto mb-12">
-            {chunkArray(category.books, 3).map((row, idx, arr) => {
-              const isLast = idx === arr.length - 1;
-              const missing = 3 - row.length;
-              return (
-                <div key={idx} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
-                  {row.map(book => (
-                    <div key={book.slug} className="bg-white/80 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-6 flex flex-col items-center glassmorphism hover:scale-105 hover:shadow-3xl transition-all duration-300 border border-mint-green/30">
-                      <div className="w-28 h-40 bg-gradient-to-br from-mint-green/30 to-blue-ink/10 rounded-lg mb-4 flex items-center justify-center text-4xl">🧠</div>
-                      <h2 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-2 text-center">{book.title}</h2>
-                      <p className="text-sm text-gray-600 dark:text-gray-200 mb-2 italic">{book.author} — {book.year}</p>
-                      <p className="text-base text-gray-700 dark:text-gray-100 mb-4 text-center">{book.tagline}</p>
-                      <Link href={`/ressources/meilleurs-livres/psychologie-influence/${book.slug}`} className="mt-auto inline-block bg-mint-green text-blue-ink font-semibold px-4 py-2 rounded-full shadow hover:bg-mint-green/80 transition">Résumé complet</Link>
+        {/* Grid de livres avec BookCard adaptée */}
+        <section aria-labelledby="books-grid-title">
+          <AnimatedSection delay={200}>
+            <div className="max-w-6xl mx-auto mb-12 px-4">
+              <h2 id="books-grid-title" className="sr-only">
+                Liste des livres recommandés sur Psychologie & Influence
+              </h2>
+              <div 
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+                role="list"
+                aria-label="Livres recommandés sur Psychologie & Influence"
+              >
+                {category.books.map((book, index) => (
+                  <AnimatedSection key={book.slug} delay={300 + index * 100}>
+                    <div role="listitem">
+                      <BookCard 
+                        book={book} 
+                        variant="grid"
+                        showRating={true}
+                        showDifficulty={true}
+                        showReadingTime={true}
+                      />
                     </div>
-                  ))}
-                  {isLast && missing > 0 && Array.from({ length: missing }).map((_, i) => (
-                    <div key={`empty-${i}`} className="invisible" />
-                  ))}
-                </div>
-              );
-            })}
+                  </AnimatedSection>
+                ))}
+              </div>
+            </div>
+          </AnimatedSection>
+        </section>
+
+        {/* Section Domain Insights - Principes psychologiques */}
+        <AnimatedSection delay={350}>
+          <div className="max-w-6xl mx-auto mb-12 px-4">
+            <div className="text-center mb-8">
+              <span className="inline-block bg-pink-500/20 text-pink-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                <span className="inline mr-2">🎯</span>
+                Principes fondamentaux
+              </span>
+              <h3 className="text-2xl font-bold text-primary-title mb-4">
+                Les 4 piliers de l'influence éthique en vente B2B
+              </h3>
+              <p className="text-primary-secondary/90 leading-relaxed max-w-3xl mx-auto">
+                Découvrez les mécanismes psychologiques qui influencent les décisions d'achat et apprenez à les utiliser 
+                de manière éthique pour créer de la valeur mutuelle avec vos clients
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <AnimatedSection delay={400}>
+                <DomainInsight 
+                  title="Réciprocité : Le Pouvoir du Don"
+                  description="Le principe de réciprocité est l'un des plus puissants en vente B2B. Quand vous donnez quelque chose de valeur en premier (conseil, audit, contenu expert), vous créez un sentiment de dette psychologique qui pousse naturellement à la réciprocité."
+                  businessImpact="Augmentation de 180% du taux de réponse en prospection et amélioration de 65% de la qualité des premiers rendez-vous"
+                  implementationLevel="Débutant"
+                  keyElements={[
+                    "Audit gratuit personnalisé",
+                    "Conseils experts sans contrepartie immédiate", 
+                    "Contenu exclusif adapté aux enjeux client",
+                    "Mise en relation avec des partenaires utiles"
+                  ]}
+                  trend="rising"
+                  domainTheme={{
+                    primaryColor: "#8B5CF6",
+                    secondaryColor: "#EC4899",
+                    accentColor: "#F59E0B"
+                  }}
+                />
+              </AnimatedSection>
+              
+              <AnimatedSection delay={500}>
+                <DomainInsight 
+                  title="Preuve Sociale : L'Influence des Pairs"
+                  description="Nous imitons naturellement les comportements de nos pairs, surtout en situation d'incertitude. En B2B, les témoignages d'entreprises similaires (même secteur, même taille) sont infiniment plus persuasifs que les arguments produit."
+                  businessImpact="Multiplication par 3 du taux de conversion et réduction de 45% du cycle de vente moyen"
+                  implementationLevel="Débutant"
+                  keyElements={[
+                    "Témoignages clients du même secteur",
+                    "Études de cas avec métriques précises",
+                    "Références d'entreprises de taille similaire",
+                    "Logos clients visibles et pertinents"
+                  ]}
+                  trend="stable"
+                  domainTheme={{
+                    primaryColor: "#8B5CF6",
+                    secondaryColor: "#EC4899",
+                    accentColor: "#F59E0B"
+                  }}
+                />
+              </AnimatedSection>
+              
+              <AnimatedSection delay={600}>
+                <DomainInsight 
+                  title="Autorité : La Crédibilité qui Influence"
+                  description="Nous obéissons naturellement aux figures d'autorité légitimes. En vente B2B, établir son expertise et sa crédibilité influence positivement les décisions d'achat. L'autorité se construit par l'expertise démontrée."
+                  businessImpact="Augmentation de 120% de la confiance client et réduction de 50% des objections sur la crédibilité"
+                  implementationLevel="Intermédiaire"
+                  keyElements={[
+                    "Expertise sectorielle reconnue",
+                    "Certifications et formations",
+                    "Publications et interventions",
+                    "Recommandations LinkedIn"
+                  ]}
+                  trend="rising"
+                  domainTheme={{
+                    primaryColor: "#8B5CF6",
+                    secondaryColor: "#EC4899",
+                    accentColor: "#F59E0B"
+                  }}
+                />
+              </AnimatedSection>
+              
+              <AnimatedSection delay={700}>
+                <DomainInsight 
+                  title="Rareté : L'Urgence qui Décide"
+                  description="Nous valorisons davantage ce qui est rare ou limité dans le temps. En B2B, créer une urgence légitime (places limitées, offre temporaire, fenêtre d'opportunité) accélère la prise de décision."
+                  businessImpact="Accélération de 60% de la prise de décision et augmentation de 35% du taux de signature"
+                  implementationLevel="Avancé"
+                  keyElements={[
+                    "Offres à durée limitée authentiques",
+                    "Places limitées en formation",
+                    "Fenêtres d'opportunité business",
+                    "Exclusivité sectorielle ou géographique"
+                  ]}
+                  trend="stable"
+                  domainTheme={{
+                    primaryColor: "#8B5CF6",
+                    secondaryColor: "#EC4899",
+                    accentColor: "#F59E0B"
+                  }}
+                />
+              </AnimatedSection>
+            </div>
           </div>
         </AnimatedSection>
 
-        {/* CTA Bootcamp */}
-        <AnimatedSection delay={0.4}>
-          <div className="max-w-2xl mx-auto text-center mt-8">
-            <div className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-2 shadow-md backdrop-blur">Passez du livre au terrain</div>
-            <h4 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-2">Découvrez le Bootcamp Influence by LSD</h4>
-            <p className="text-lg text-gray-700 dark:text-gray-100 mb-4">Formez-vous avec les meilleures techniques issues de ces livres, adaptées à la réalité du terrain B2B.</p>
-            <Link href="/bootcamp" className="inline-block bg-mint-green text-blue-ink font-semibold px-6 py-3 rounded-full shadow hover:bg-mint-green/80 transition">Voir le Bootcamp</Link>
+        {/* Section : Exemples concrets PME */}
+        <AnimatedSection delay={450}>
+          <div className="max-w-6xl mx-auto mb-12 px-4">
+            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-purple-400/20 backdrop-blur-sm">
+              <div className="text-center mb-8">
+                <span className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                  🏢 Cas clients PME
+                </span>
+                <h3 className="text-2xl font-bold text-blue-ink dark:text-purple-400 mb-4">
+                  Exemples concrets d'influence éthique en PME
+                </h3>
+                <p className="text-gray-700 dark:text-gray-200 mb-6">
+                  Découvrez comment mes clients PME appliquent concrètement les principes psychologiques pour doubler leurs performances
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">E-C</span>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-purple-600">E-commerce B2B - 35 salariés</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">Plateforme de vente en ligne</p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                      <strong>Défi :</strong> Taux de conversion très faible (2,1%) malgré un trafic qualifié. 
+                      Les visiteurs consultent mais n'achètent pas.
+                    </p>
+                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                      <strong>Solution :</strong> Implémentation massive de la preuve sociale : témoignages clients visibles, 
+                      compteurs d'achat en temps réel, logos d'entreprises clientes.
+                    </p>
+                    <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded-lg">
+                      <p className="text-green-700 dark:text-green-300 text-sm font-medium">
+                        📈 Résultats : +120% de conversion (2,1% → 4,6%), +45% de satisfaction client, 
+                        -25% de cycle de vente
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-xl border border-blue-200/50">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">FOR</span>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-blue-600">Formation Pro - 28 salariés</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">Organisme de formation</p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                      <strong>Défi :</strong> Excellente réputation mais difficultés à convertir les prospects 
+                      en inscriptions (12% de conversion).
+                    </p>
+                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                      <strong>Solution :</strong> Développement de l'autorité expertise : publications LinkedIn, 
+                      interventions en conférences, certifications visibles.
+                    </p>
+                    <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded-lg">
+                      <p className="text-green-700 dark:text-green-300 text-sm font-medium">
+                        📈 Résultats : +80% de conversion (12% → 21,6%), +55% de satisfaction, 
+                        -40% de cycle de vente
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="space-y-6">
+                  <div className="p-6 bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/30 dark:to-green-900/30 rounded-xl border border-emerald-200/50">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">CON</span>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-emerald-600">Conseil Management - 18 salariés</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">Cabinet de conseil</p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                      <strong>Défi :</strong> Approche très technique mais taux de réponse en prospection 
+                      de seulement 3%. Difficultés à créer le premier contact.
+                    </p>
+                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                      <strong>Solution :</strong> Application du principe de réciprocité : audits gratuits personnalisés, 
+                      partage d'insights sectoriels exclusifs.
+                    </p>
+                    <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded-lg">
+                      <p className="text-green-700 dark:text-green-300 text-sm font-medium">
+                        📈 Résultats : +200% de réponse (3% → 9%), +70% de satisfaction, 
+                        -30% de cycle de vente
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="p-6 bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-900/30 dark:to-red-900/30 rounded-xl border border-orange-200/50">
+                    <div className="flex items-center gap-3 mb-3">
+                      <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
+                        <span className="text-white font-bold text-sm">TEC</span>
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-orange-600">Solutions Tech - 52 salariés</h4>
+                        <p className="text-sm text-gray-600 dark:text-gray-400">Éditeur de logiciel</p>
+                      </div>
+                    </div>
+                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                      <strong>Défi :</strong> Cycles de vente très longs (8 mois) et taux de signature de 18%. 
+                      Les prospects traînent dans la décision.
+                    </p>
+                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                      <strong>Solution :</strong> Utilisation éthique du principe de rareté : offres à durée limitée 
+                      authentiques, places limitées en formation.
+                    </p>
+                    <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded-lg">
+                      <p className="text-green-700 dark:text-green-300 text-sm font-medium">
+                        📈 Résultats : +45% de conversion (18% → 26%), +35% de satisfaction, 
+                        -60% de cycle (8 → 3,2 mois)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-8 p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">LS</span>
+                  </div>
+                  <h4 className="text-xl font-bold text-purple-600">Retour d'expérience Laurent Serre</h4>
+                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  "La psychologie commerciale, c'est comme apprendre une langue : il faut d'abord maîtriser les bases avant de faire des phrases complexes. 
+                  Mes clients qui réussissent le mieux commencent par un principe (souvent la réciprocité), le testent pendant 2 semaines, 
+                  mesurent l'impact, puis passent au suivant. L'erreur classique ? Vouloir tout appliquer en même temps."
+                </p>
+                <div className="grid md:grid-cols-3 gap-4 mt-4">
+                  <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
+                    <div className="text-2xl font-bold text-purple-600">2x</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">Amélioration moyenne des conversions</div>
+                  </div>
+                  <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
+                    <div className="text-2xl font-bold text-purple-600">6</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">Principes universels d'influence</div>
+                  </div>
+                  <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
+                    <div className="text-2xl font-bold text-purple-600">95%</div>
+                    <div className="text-xs text-gray-600 dark:text-gray-400">Satisfaction clients maintenue</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
+
+        {/* Section : Feuille de route d'implémentation */}
+        <AnimatedSection delay={475}>
+          <ImplementationRoadmap 
+            title="Feuille de route pour maîtriser l'influence éthique"
+            subtitle="Un plan progressif en 4 phases pour transformer votre approche psychologique de la vente"
+            phases={[
+              {
+                phase: 1,
+                title: "Fondamentaux - Bases Psychologiques",
+                duration: "1-2 semaines",
+                description: "Acquisition des bases théoriques et identification des leviers psychologiques les plus pertinents pour votre contexte PME.",
+                actions: [
+                  "Formation équipe aux 6 principes de Cialdini",
+                  "Audit des pratiques commerciales actuelles sous l'angle psychologique",
+                  "Identification des biais cognitifs récurrents de vos clients types",
+                  "Création d'un référentiel de témoignages et preuves sociales"
+                ],
+                expectedResults: "Compréhension claire des mécanismes d'influence et diagnostic des forces/faiblesses actuelles",
+                laurentAdvice: "Ne brûlez pas les étapes ! La psychologie commerciale, c'est comme apprendre une langue : il faut d'abord maîtriser les bases avant de vouloir faire des phrases complexes."
+              },
+              {
+                phase: 2,
+                title: "Mise en pratique - Application Ciblée",
+                duration: "1 mois",
+                description: "Application progressive des techniques psychologiques dans vos interactions commerciales quotidiennes.",
+                actions: [
+                  "Implémentation systématique du principe de réciprocité en prospection",
+                  "Développement et déploiement de la preuve sociale",
+                  "Renforcement de l'autorité expertise",
+                  "Tests A/B sur les techniques d'influence par canal"
+                ],
+                expectedResults: "Amélioration mesurable des performances commerciales grâce aux techniques psychologiques",
+                laurentAdvice: "Testez une technique à la fois pendant 2 semaines et mesurez l'impact. L'erreur classique, c'est de vouloir tout appliquer en même temps."
+              },
+              {
+                phase: 3,
+                title: "Optimisation - Personnalisation Avancée",
+                duration: "2-3 mois",
+                description: "Affinage des techniques en fonction des retours terrain et personnalisation par type de client.",
+                actions: [
+                  "Segmentation psychologique fine de votre clientèle par persona",
+                  "Personnalisation des approches d'influence par type de décideur",
+                  "Développement d'outils d'aide à la vente psychologique",
+                  "Formation avancée aux biais cognitifs"
+                ],
+                expectedResults: "Approche psychologique sophistiquée et personnalisée avec impact business significatif",
+                laurentAdvice: "Créez des 'profils psychologiques' de vos personas et adaptez votre approche. C'est ce qui fait la différence entre un bon commercial et un expert en influence."
+              },
+              {
+                phase: 4,
+                title: "Maîtrise - Leadership d'Influence",
+                duration: "6 mois et plus",
+                description: "Développement d'une expertise reconnue en psychologie commerciale.",
+                actions: [
+                  "Création de contenus experts sur la psychologie commerciale",
+                  "Formation d'autres commerciaux aux techniques avancées",
+                  "Développement de partenariats stratégiques",
+                  "Publication et partage d'expériences sectorielles"
+                ],
+                expectedResults: "Expertise reconnue et avantage concurrentiel durable basé sur l'influence éthique",
+                laurentAdvice: "À ce niveau, vous ne vendez plus : vous influencez. Vos prospects viennent à vous parce qu'ils reconnaissent votre expertise. C'est le Graal !"
+              }
+            ]}
+            tips={[
+              "Commencez par lire 'Influence' de Cialdini en équipe (1 chapitre/semaine)",
+              "Observez vos clients actuels : quels sont leurs déclencheurs d'achat ?",
+              "Collectez systématiquement les témoignages et success stories",
+              "Testez une technique à la fois pendant 2 semaines avant de passer à la suivante",
+              "Mesurez systématiquement les taux de réponse et de conversion"
+            ]}
+            domainColor="#8B5CF6"
+          />
+        </AnimatedSection>
+
+        {/* Section : Suggestions cross-catégories */}
+        <AnimatedSection delay={500}>
+          <div className="max-w-4xl mx-auto mb-12 px-4">
+            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-purple-400/20 backdrop-blur-sm">
+              <div className="text-center mb-6">
+                <span className="inline-block bg-orange-500/20 text-orange-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                  🔗 Complémentaire
+                </span>
+                <h3 className="text-2xl font-bold text-blue-ink dark:text-purple-400 mb-4">
+                  Complétez votre expertise
+                </h3>
+                <p className="text-gray-700 dark:text-gray-200 mb-6">
+                  Ces domaines complémentaires enrichiront votre maîtrise de l'influence éthique
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <Link 
+                  href="/ressources/meilleurs-livres/negociation-closing"
+                  className="group p-6 bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/30 dark:to-orange-900/30 rounded-xl border border-red-200/50 hover:shadow-lg transition-all duration-300"
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-2xl">🤝</span>
+                    <h4 className="font-bold text-red-600 group-hover:text-red-700">Négociation & Closing</h4>
+                  </div>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    Appliquez vos connaissances psychologiques dans des négociations concrètes. 
+                    L'influence éthique est la base de toute négociation collaborative réussie.
+                  </p>
+                </Link>
+                
+                <Link 
+                  href="/ressources/meilleurs-livres/prospection-sdr"
+                  className="group p-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-xl border border-blue-200/50 hover:shadow-lg transition-all duration-300"
+                >
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="text-2xl">📞</span>
+                    <h4 className="font-bold text-blue-600 group-hover:text-blue-700">Prospection & SDR</h4>
+                  </div>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    Utilisez les principes psychologiques pour améliorer vos taux de réponse en prospection. 
+                    La réciprocité et la preuve sociale transforment vos approches.
+                  </p>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
+
+        {/* CTAs multiples */}
+        <AnimatedSection delay={550}>
+          <div className="max-w-4xl mx-auto text-center px-4">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-6 border border-purple-400/20 backdrop-blur-sm">
+                <div className="inline-block bg-purple-500/20 text-purple-600 dark:text-purple-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                  🧠 Formation
+                </div>
+                <h4 className="text-xl font-bold text-blue-ink dark:text-purple-400 mb-3">
+                  Bootcamp Psychologie Commerciale
+                </h4>
+                <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">
+                  Maîtrisez les 6 principes de Cialdini et les biais cognitifs avec une formation pratique 
+                  adaptée aux enjeux PME. Influence éthique, persuasion authentique, psychologie de la décision.
+                </p>
+                <Link 
+                  href="/bootcamp-commercial-intensif" 
+                  className="inline-block bg-purple-500 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-purple-600 transition-colors duration-300"
+                >
+                  Découvrir le Bootcamp
+                </Link>
+              </div>
+              
+              <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-6 border border-pink-400/20 backdrop-blur-sm">
+                <div className="inline-block bg-pink-500/20 text-pink-600 dark:text-pink-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                  💡 Accompagnement
+                </div>
+                <h4 className="text-xl font-bold text-blue-ink dark:text-pink-400 mb-3">
+                  Coaching Influence Personnalisé
+                </h4>
+                <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">
+                  Accompagnement individuel pour développer votre expertise en psychologie commerciale. 
+                  Analyse de vos interactions, techniques avancées, développement de votre influence naturelle.
+                </p>
+                <Link 
+                  href="/coach-commercial-entreprise" 
+                  className="inline-block bg-pink-500 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-pink-600 transition-colors duration-300"
+                >
+                  Découvrir le Coaching
+                </Link>
+              </div>
+            </div>
+            
+            <div className="mt-6">
+              <Link 
+                href="/ressources/meilleurs-livres" 
+                className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors duration-300"
+              >
+                <span>←</span>
+                <span>Retour aux catégories de livres</span>
+              </Link>
+            </div>
           </div>
         </AnimatedSection>
       </main>
     </>
   );
-} 
+}
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(categoryStructuredData) }}
+      />
+      
+      <main className="relative bg-gradient-to-br from-purple-600 via-pink-500/10 to-primary-bg min-h-screen pt-24 pb-16 overflow-hidden">
+        {/* Particle background for psychological atmosphere */}
+        <ParticleBackground 
+          density={30}
+          speed={0.3}
+          color="#8B5CF6"
+          opacity={0.4}
+          className="absolute inset-0"
+        />
+        
+        {/* Breadcrumb navigation */}
+        <CategoryBreadcrumb 
+          items={[
+            { label: 'Accueil', href: '/' },
+            { label: 'Ressources', href: '/ressources' },
+            { label: 'Meilleurs Livres', href: '/ressources/meilleurs-livres' },
+            { label: 'Psychologie & Influence', href: '/ressources/meilleurs-livres/psychologie-influence', current: true }
+          ]}
+          relatedCategories={categoryBreadcrumbSuggestions['psychologie-influence']}
+        />
+
+        {/* Hero section avec présentation de la psychologie commerciale */}
+        <section className="max-w-4xl mx-auto text-center mb-12 px-4" aria-labelledby="hero-title">
+          <AnimatedSection animation="fade-in" delay={0}>
+            <span 
+              className="inline-block bg-purple-500/20 text-purple-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur"
+              role="status"
+              aria-label={`Catégorie ${category.title}`}
+            >
+              <span aria-hidden="true">{category.icon}</span> Catégorie
+            </span>
+            <h1 id="hero-title" className="text-4xl md:text-5xl font-bold text-primary-title mb-4 drop-shadow-lg">
+              {category.title}
+            </h1>
+            <p className="text-lg md:text-xl text-primary-secondary/90 mb-6 leading-relaxed">
+              {category.description}
+            </p>
+            
+            {/* Message spécifique sur la psychologie commerciale avec effets visuels */}
+            <div className="relative bg-white/10 backdrop-blur-sm rounded-xl p-6 mt-8 border border-purple-400/20 overflow-hidden group hover:bg-white/15 transition-all duration-500">
+              {/* Animated background elements */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-400/20 to-pink-500/20 rounded-full blur-2xl opacity-50 group-hover:opacity-70 transition-opacity duration-500"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-br from-pink-400/20 to-purple-500/20 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-700"></div>
+              
+              {/* Floating brain icons */}
+              <div className="absolute top-4 right-4 opacity-20 group-hover:opacity-40 transition-opacity duration-300">
+                <span className="text-2xl">🧠</span>
+              </div>
+              <div className="absolute bottom-4 left-4 opacity-20 group-hover:opacity-40 transition-opacity duration-500">
+                <span className="text-xl">💭</span>
+              </div>
+              
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center">
+                    <span className="text-2xl">🧠</span>
+                  </div>
+                  <h2 className="text-xl font-semibold text-purple-400">
+                    La psychologie au cœur de la vente
+                  </h2>
+                </div>
+                <p className="text-primary-secondary/90 leading-relaxed mb-4">
+                  Réciprocité, preuve sociale, autorité, rareté... Les 6 principes de Cialdini révolutionnent 
+                  votre approche commerciale. Comprendre les biais cognitifs de vos prospects, c'est maîtriser 
+                  l'art de l'influence éthique pour créer une véritable adhésion.
+                </p>
+                
+                {/* Vision Laurent Serre OBLIGATOIRE */}
+                <div className="bg-white/10 rounded-lg p-4 mb-4 border border-purple-400/30">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center">
+                      <span className="text-blue-ink font-bold text-sm">LS</span>
+                    </div>
+                    <span className="text-purple-300 font-semibold">Vision Laurent Serre</span>
+                  </div>
+                  <p className="text-primary-secondary/90 text-sm italic">
+                    "La vente, c'est 20% de technique et 80% de psychologie. Comprendre les biais cognitifs de vos prospects, 
+                    c'est comme avoir les réponses avant l'examen. Mes clients qui maîtrisent ces principes doublent leur taux de conversion. 
+                    Mais attention : il y a une différence fondamentale entre influence et manipulation."
+                  </p>
+                </div>
+                
+                {/* Stats spécifiques au domaine */}
+                <div className="grid grid-cols-3 gap-4 mt-6 pt-4 border-t border-purple-400/20">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-purple-400">2x</div>
+                    <div className="text-xs text-primary-secondary/70">plus de conversions</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-purple-400">95%</div>
+                    <div className="text-xs text-primary-secondary/70">décisions émotionnelles</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-purple-400">6</div>
+                    <div className="text-xs text-primary-secondary/70">principes d'influence</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </section>
+
+        {/* Tableau comparatif avec critères spécifiques psychologie */}
+        <section aria-labelledby="comparison-title">
+          <AnimatedSection delay={100}>
+            <div className="max-w-6xl mx-auto px-4">
+              <h2 id="comparison-title" className="sr-only">
+                Tableau comparatif des livres Psychologie & Influence
+              </h2>
+              <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-purple-400/20 backdrop-blur-sm">
+                <h3 className="text-2xl font-bold text-blue-ink dark:text-purple-400 mb-6 text-center">
+                  Comment choisir le bon livre ?
+                </h3>
+                <div className="grid md:grid-cols-3 gap-6">
+                  <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-xl">
+                    <div className="text-2xl mb-2">🎯</div>
+                    <h4 className="font-bold text-purple-600 mb-2">Débutant</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">
+                      Commencez par "Influence" de Cialdini pour les bases
+                    </p>
+                  </div>
+                  <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-xl">
+                    <div className="text-2xl mb-2">📈</div>
+                    <h4 className="font-bold text-purple-600 mb-2">Intermédiaire</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">
+                      "Thinking Fast and Slow" pour approfondir
+                    </p>
+                  </div>
+                  <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-xl">
+                    <div className="text-2xl mb-2">🚀</div>
+                    <h4 className="font-bold text-purple-600 mb-2">Avancé</h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-300">
+                      "Pré-Suasion" pour maîtriser l'art subtil
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </section>
+
+        {/* Grid de livres avec BookCard adaptée */}
+        <section aria-labelledby="books-grid-title">
+          <AnimatedSection delay={200}>
+            <div className="max-w-6xl mx-auto mb-12 px-4">
+              <h2 id="books-grid-title" className="sr-only">
+                Liste des livres recommandés sur Psychologie & Influence
+              </h2>
+              <div 
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+                role="list"
+                aria-label="Livres recommandés sur Psychologie & Influence"
+              >
+                {category.books && category.books.map((book, index) => (
+                  <AnimatedSection key={book.slug} delay={300 + index * 100}>
+                    <div role="listitem">
+                      <BookCard 
+                        book={book} 
+                        variant="grid"
+                        showRating={true}
+                        showDifficulty={true}
+                        showReadingTime={true}
+                      />
+                    </div>
+                  </AnimatedSection>
+                ))}
+              </div>
+            </div>
+          </AnimatedSection>
+        </section>
+
+        {/* Section Domain Insights - Principes psychologiques */}
+        <AnimatedSection delay={350}>
+          <div className="max-w-6xl mx-auto mb-12 px-4">
+            <div className="text-center mb-8">
+              <span className="inline-block bg-pink-500/20 text-pink-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                <span className="inline mr-2">🧠</span>
+                Principes fondamentaux
+              </span>
+              <h3 className="text-2xl font-bold text-primary-title mb-4">
+                Les mécanismes psychologiques qui influencent vos clients
+              </h3>
+              <p className="text-primary-secondary/90 leading-relaxed max-w-3xl mx-auto">
+                Découvrez les 4 leviers psychologiques les plus puissants en vente B2B et apprenez à les utiliser de manière éthique
+              </p>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="p-6 bg-white/70 dark:bg-blue-ink/80 rounded-xl shadow-lg border border-purple-400/20">
+                <h4 className="text-xl font-bold text-purple-600 mb-3">Réciprocité : Le Pouvoir du Don</h4>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  Le principe de réciprocité est l'un des plus puissants en vente B2B. Quand vous donnez quelque chose de valeur en premier, vous créez un sentiment de dette psychologique.
+                </p>
+                <div className="text-sm text-purple-600 font-medium">
+                  Impact : +180% de taux de réponse en prospection
+                </div>
+              </div>
+              
+              <div className="p-6 bg-white/70 dark:bg-blue-ink/80 rounded-xl shadow-lg border border-purple-400/20">
+                <h4 className="text-xl font-bold text-purple-600 mb-3">Preuve Sociale : L'Influence des Pairs</h4>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  Nous imitons naturellement les comportements de nos pairs. Les témoignages d'entreprises similaires sont infiniment plus persuasifs.
+                </p>
+                <div className="text-sm text-purple-600 font-medium">
+                  Impact : x3 le taux de conversion
+                </div>
+              </div>
+              
+              <div className="p-6 bg-white/70 dark:bg-blue-ink/80 rounded-xl shadow-lg border border-purple-400/20">
+                <h4 className="text-xl font-bold text-purple-600 mb-3">Autorité : La Crédibilité qui Influence</h4>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  Nous obéissons naturellement aux figures d'autorité légitimes. Établir son expertise influence positivement les décisions d'achat.
+                </p>
+                <div className="text-sm text-purple-600 font-medium">
+                  Impact : +120% de confiance client
+                </div>
+              </div>
+              
+              <div className="p-6 bg-white/70 dark:bg-blue-ink/80 rounded-xl shadow-lg border border-purple-400/20">
+                <h4 className="text-xl font-bold text-purple-600 mb-3">Rareté : L'Urgence qui Décide</h4>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  Nous valorisons davantage ce qui est rare ou limité. Créer une urgence légitime accélère la prise de décision.
+                </p>
+                <div className="text-sm text-purple-600 font-medium">
+                  Impact : +60% d'accélération des décisions
+                </div>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
+
+        {/* Section : Exemples concrets PME */}
+        <AnimatedSection delay={450}>
+          <div className="max-w-6xl mx-auto mb-12 px-4">
+            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-purple-400/20 backdrop-blur-sm">
+              <div className="text-center mb-8">
+                <span className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                  🏢 Cas clients PME
+                </span>
+                <h3 className="text-2xl font-bold text-blue-ink dark:text-purple-400 mb-4">
+                  Exemples concrets de psychologie appliquée en PME
+                </h3>
+                <p className="text-gray-700 dark:text-gray-200 mb-6">
+                  Découvrez comment mes clients PME appliquent concrètement les principes psychologiques de ces livres
+                </p>
+              </div>
+              
+              <PMECaseStudy 
+                caseStudies={category.caseStudies || []}
+                title="Cas clients PME"
+                subtitle="Découvrez comment mes clients PME appliquent concrètement les principes psychologiques de ces livres"
+                domainColor="#8B5CF6"
+                domainIcon="🧠"
+                laurentExperienceQuote="Ces transformations ne se font pas du jour au lendemain. Mes clients qui réussissent le mieux commencent par maîtriser un principe à la fois. L'erreur classique est de vouloir tout appliquer d'un coup. Commencez par la réciprocité ou la preuve sociale, mesurez l'impact, puis ajoutez progressivement les autres principes."
+                domainStats={[
+                  { value: "2x", label: "Amélioration moyenne des conversions", description: "Avec psychologie appliquée" },
+                  { value: "6 sem", label: "Durée moyenne de formation", description: "Pour maîtriser les bases" },
+                  { value: "95%", label: "Taux de satisfaction clients", description: "Après formation psychologie" }
+                ]}
+              />
+            </div>
+          </div>
+        </AnimatedSection>
+
+        {/* Section : Feuille de route d'implémentation */}
+        <AnimatedSection delay={475}>
+          <div className="max-w-6xl mx-auto mb-12 px-4">
+            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-purple-400/20 backdrop-blur-sm">
+              <div className="text-center mb-8">
+                <span className="inline-block bg-orange-soft/20 text-orange-soft font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                  🚀 Implémentation
+                </span>
+                <h3 className="text-2xl font-bold text-blue-ink dark:text-purple-400 mb-4">
+                  Votre feuille de route pour maîtriser la psychologie commerciale
+                </h3>
+                <p className="text-gray-700 dark:text-gray-200 mb-6">
+                  Un plan progressif en 4 phases pour intégrer efficacement les principes psychologiques dans votre approche commerciale
+                </p>
+              </div>
+              
+              <ImplementationRoadmap phases={category.implementationPhases || []} />
+            </div>
+          </div>
+        </AnimatedSection>
+
+        {/* Section : Statistiques du domaine */}
+        <AnimatedSection delay={500}>
+          <div className="max-w-4xl mx-auto mb-12 px-4">
+            <DomainStats 
+              stats={category.domainStats || []}
+              title="Impact de la psychologie commerciale"
+              description="Les chiffres clés qui démontrent l'efficacité des techniques psychologiques en vente B2B"
+            />
+          </div>
+        </AnimatedSection>
+
+        {/* Section : Cross-category suggestions */}
+        <AnimatedSection delay={525}>
+          <div className="max-w-6xl mx-auto mb-12 px-4">
+            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-purple-400/20 backdrop-blur-sm">
+              <div className="text-center mb-8">
+                <span className="inline-block bg-cyan-500/20 text-cyan-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                  🔗 Complémentarité
+                </span>
+                <h3 className="text-2xl font-bold text-blue-ink dark:text-purple-400 mb-4">
+                  Domaines complémentaires à explorer
+                </h3>
+                <p className="text-gray-700 dark:text-gray-200 mb-6">
+                  La psychologie commerciale se combine parfaitement avec d'autres disciplines pour maximiser votre efficacité
+                </p>
+              </div>
+              
+              <div className="grid md:grid-cols-3 gap-6">
+                {category.crossCategorySuggestions && category.crossCategorySuggestions.map((suggestion, index) => (
+                  <div key={index} className="p-6 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50">
+                    <h4 className="font-bold text-purple-600 mb-3 capitalize">
+                      {suggestion.targetCategory === 'negotiation' ? 'Négociation & Closing' : 
+                       suggestion.targetCategory === 'methods' ? 'Méthodes & Process' : 
+                       'Prospection & SDR'}
+                    </h4>
+                    <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">
+                      {suggestion.reason}
+                    </p>
+                    <div className="space-y-2">
+                      {suggestion.complementaryBooks.map((book, bookIndex) => (
+                        <div key={bookIndex} className="text-xs text-purple-600 dark:text-purple-400">
+                          • {book.replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
+
+        {/* CTAs multiples */}
+        <AnimatedSection delay={550}>
+          <div className="max-w-4xl mx-auto text-center px-4">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl p-6 text-white">
+                <h4 className="text-xl font-bold mb-3">Bootcamp Influence</h4>
+                <p className="mb-4 opacity-90">
+                  Maîtrisez les 6 principes de Cialdini et les techniques d'influence éthique adaptées au B2B français. Développez votre capacité de persuasion avec des méthodes respectueuses et efficaces.
+                </p>
+                <Link 
+                  href="/bootcamp-commercial-intensif" 
+                  className="inline-block bg-white text-purple-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"
+                >
+                  Découvrir le Bootcamp
+                </Link>
+              </div>
+              
+              <div className="bg-gradient-to-br from-blue-ink to-purple-600 rounded-2xl p-6 text-white">
+                <h4 className="text-xl font-bold mb-3">Coaching Personnalisé</h4>
+                <p className="mb-4 opacity-90">
+                  Accompagnement individuel pour intégrer la psychologie commerciale dans votre contexte spécifique
+                </p>
+                <Link 
+                  href="/contact" 
+                  className="inline-block bg-white text-blue-ink font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition"
+                >
+                  Prendre RDV
+                </Link>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
+      </main>
+    </>
+  );
+}

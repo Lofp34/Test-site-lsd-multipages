@@ -1,4 +1,13 @@
 // Structure de données enrichie pour la librairie des meilleurs livres
+// Import des données spécialisées pour Psychologie & Influence
+import { 
+  psychologyCaseStudies, 
+  psychologyInsights, 
+  psychologyImplementationRoadmap,
+  psychologyStats,
+  laurentSerreVision as psychologyLaurentVision
+} from './psychology-influence-content';
+import { BookCategoryExtended, DomainStatistic } from '../types/book-domains';
 export type Book = {
   slug: string;
   title: string;
@@ -211,6 +220,470 @@ export const enterpriseAccountCategory: BookCategory = {
   ]
 };
 
+// Import des données spécialisées pour Méthodes & Process
+import { 
+  methodsProcessesCaseStudies, 
+  methodsProcessesInsights, 
+  methodsProcessesRoadmap,
+  methodsProcessesStats,
+  methodsProcessesLaurentVision
+} from './methods-processes-content';
+
+// Données enrichies pour la catégorie Méthodes & Process
+export const methodsProcessCategory: BookCategory = {
+  slug: "methodes-process",
+  title: "Méthodes & Process",
+  pitch: "Cadres éprouvés, de SPIN à Challenger",
+  description: "Une méthode de vente, c'est comme un GPS : ça ne remplace pas le commercial, mais ça évite de se perdre. Cette catégorie regroupe les frameworks de vente les plus éprouvés : SPIN Selling pour la découverte structurée, Challenger Sale pour la différenciation, Solution Selling pour les ventes complexes, et Gap Selling pour l'analyse rigoureuse des besoins. Des processus reproductibles pour transformer votre approche commerciale.",
+  icon: "🛠️",
+  seoKeywords: ["méthodes de vente", "spin selling", "challenger sale", "solution selling", "gap selling", "processus commercial", "laurent serre"],
+  books: [
+    {
+      slug: "spin-selling",
+      title: "SPIN Selling",
+      author: "Neil Rackham",
+      year: 1988,
+      cover: "/covers/spin-selling.jpg",
+      tagline: "La méthode structurée pour la vente complexe basée sur 35 000 entretiens analysés.",
+      summary: "SPIN Selling est l'une des premières méthodes de vente consultative fondées sur la recherche, centrée sur le questionnement et la création de valeur conjointe. Basé sur 12 ans de recherche et l'analyse de 35 000 entretiens, Rackham propose une séquence de questions (Situation, Problème, Implication, Need-payoff) pour amener le client à exprimer ses besoins et la valeur de la solution.",
+      detailedSummary: "SPIN Selling révolutionne l'approche de la vente complexe en s'appuyant sur la plus vaste étude jamais menée sur l'efficacité commerciale : 12 ans de recherche et l'analyse de 35 000 entretiens de vente dans 23 pays.\n\nLe constat de Neil Rackham est sans appel : les techniques de vente traditionnelles (présentation produit, closing agressif) sont non seulement inefficaces en vente complexe, mais contre-productives. Plus la vente est importante, plus ces approches échouent.\n\nLa méthode SPIN propose une alternative révolutionnaire : une séquence de questions structurées qui guide naturellement le prospect vers la prise de conscience de ses besoins et de la valeur de votre solution.\n\n**S - Situation** : Questions factuelles pour comprendre le contexte actuel du client. Attention : ne pas en abuser, le prospect s'ennuie vite.\n\n**P - Problème** : Questions pour identifier les difficultés, insatisfactions et préoccupations du client. C'est ici que commence la vraie découverte.\n\n**I - Implication** : Questions cruciales pour faire exprimer au client les conséquences négatives de ses problèmes. Plus le client verbalise l'impact, plus l'urgence d'agir grandit.\n\n**N - Need-payoff** : Questions pour faire formuler au client les bénéfices qu'il retirerait d'une solution. Le client se vend lui-même la solution.\n\nRackham démontre que cette approche transforme la relation commerciale : au lieu de convaincre, vous aidez le client à se convaincre lui-même.",
+      keyPoints: [
+        "Méthode SPIN : Situation, Problème, Implication, Need-payoff",
+        "Basé sur l'analyse de 35 000 entretiens de vente réels",
+        "Approche consultative centrée sur le questionnement structuré",
+        "Techniques pour faire exprimer les besoins par le client lui-même",
+        "Stratégies pour créer l'urgence sans pression",
+        "Framework pour transformer la découverte en processus reproductible"
+      ],
+      targetProfiles: [
+        "Commerciaux B2B",
+        "Account managers",
+        "Consultants en solutions",
+        "Ingénieurs commerciaux",
+        "Managers d'équipes de vente"
+      ],
+      difficulty: "Intermédiaire",
+      readingTime: "7h",
+      terrainAdvice: "Le livre fondateur de la vente consultative moderne. Après 20 ans de terrain, je peux vous dire que SPIN fonctionne vraiment, mais attention aux pièges !\n\nCe qui marche le mieux :\n- Les questions d'Implication (le client réalise l'ampleur du problème)\n- Les questions Need-payoff (le client se vend la solution)\n- La progression logique de la découverte\n\nPièges à éviter :\n- Trop de questions Situation (le client s'ennuie)\n- Passer directement aux Implications sans avoir identifié de vrais Problèmes\n- Oublier que SPIN, c'est un état d'esprit, pas un questionnaire rigide\n\nÀ adapter selon votre secteur, mais les principes restent universels.",
+      rating: 4.7,
+      category: "methodes-process",
+      complementaryBooks: ["the-challenger-sale", "solution-selling", "gap-selling"]
+    },
+    {
+      slug: "the-challenger-sale",
+      title: "The Challenger Sale",
+      author: "Matthew Dixon & Brent Adamson",
+      year: 2011,
+      cover: "/covers/the-challenger-sale.jpg",
+      tagline: "Vendre en leader d'opinion : enseigner, personnaliser, contrôler.",
+      summary: "Basé sur une vaste étude, ce livre identifie le profil du Challenger comme le plus performant. Le vendeur Challenger éduque le client, personnalise son approche et contrôle la vente. Il ose remettre en question la vision du client, apporte des idées nouvelles et sait gérer des ventes complexes à multiples décideurs.",
+      detailedSummary: "The Challenger Sale bouleverse les idées reçues sur la vente en s'appuyant sur une étude massive de plus de 6 000 commerciaux dans 90 entreprises. Les auteurs identifient 5 profils de vendeurs, mais un seul domine vraiment : le Challenger.\n\nContrairement aux croyances populaires, ce ne sont pas les commerciaux les plus relationnels qui performent le mieux, mais ceux qui osent challenger leurs clients de manière constructive.\n\nLe Challenger maîtrise trois compétences clés :\n\n**Teach (Enseigner)** : Il apporte des insights uniques qui font réfléchir le client sur son business. Pas de la théorie, mais des perspectives nouvelles basées sur l'expérience d'autres clients similaires.\n\n**Tailor (Personnaliser)** : Il adapte son message aux différents interlocuteurs du compte. Le DG ne s'intéresse pas aux mêmes enjeux que le DSI ou le DAF.\n\n**Take Control (Contrôler)** : Il n'hésite pas à aborder les sujets difficiles (budget, décision, timing) et maintient une tension constructive tout au long du cycle.\n\nLe livre révèle aussi que 53% des performances commerciales s'expliquent par la capacité à challenger le client, contre seulement 7% pour les compétences relationnelles.\n\nLes auteurs détaillent comment construire un 'Commercial Teaching Pitch' : une présentation qui remet en question les idées reçues du client et l'amène à reconsidérer sa situation sous un angle nouveau.",
+      keyPoints: [
+        "5 profils de vendeurs identifiés, le Challenger surperforme tous les autres",
+        "Méthode Teach-Tailor-Take Control pour structurer l'approche",
+        "Techniques pour challenger constructivement la vision client",
+        "Construction d'un Commercial Teaching Pitch différenciant",
+        "Gestion des ventes complexes multi-interlocuteurs",
+        "Stratégies pour créer et maintenir une tension constructive"
+      ],
+      targetProfiles: [
+        "Commerciaux B2B expérimentés",
+        "Consultants en solutions",
+        "Business developers",
+        "Account managers",
+        "Managers commerciaux"
+      ],
+      difficulty: "Avancé",
+      readingTime: "8h",
+      terrainAdvice: "Un game-changer absolu ! Challenger Sale a transformé l'approche de mes meilleurs clients. Mais attention : challenger ne veut pas dire agresser.\n\nCe qui fonctionne vraiment :\n- Les insights sectoriels (montrer ce que font les autres)\n- La remise en question bienveillante (\"Avez-vous pensé à...?\")\n- Le contrôle assumé du processus de vente\n\nPièges classiques :\n- Confondre challenger et confronter\n- Vouloir challenger sans avoir d'abord établi sa crédibilité\n- Oublier la personnalisation selon les interlocuteurs\n\nÀ réserver aux commerciaux expérimentés. Les débutants feraient mieux de commencer par SPIN.",
+      rating: 4.6,
+      category: "methodes-process",
+      complementaryBooks: ["the-challenger-customer", "spin-selling", "solution-selling"]
+    },
+    {
+      slug: "solution-selling",
+      title: "Solution Selling",
+      author: "Michael Bosworth",
+      year: 1994,
+      cover: "/covers/solution-selling.jpg",
+      tagline: "La méthode pour vendre en résolvant les problèmes clients plutôt qu'en présentant des produits.",
+      summary: "Solution Selling propose un processus en plusieurs étapes : rechercher les difficultés du client, les qualifier, proposer une vision de la solution, faire valider cette vision, justifier le ROI, puis négocier l'accord. L'accent est mis sur la découverte approfondie : un bon vendeur doit agir comme un médecin qui pose un diagnostic avant de prescrire.",
+      detailedSummary: "Solution Selling marque un tournant dans l'histoire de la vente en introduisant le concept révolutionnaire de 'vendre des solutions, pas des produits'. Michael Bosworth part d'un constat simple : dans un monde où les produits se banalisent, la différenciation se fait par la capacité à résoudre les problèmes clients.\n\nLa méthode Solution Selling structure le processus de vente autour de 9 étapes clés :\n\n1. **Prospection ciblée** : Identifier les entreprises susceptibles d'avoir les problèmes que vous savez résoudre\n2. **Qualification initiale** : Vérifier que le prospect a bien le problème et les moyens de le résoudre\n3. **Développement des besoins** : Creuser pour comprendre l'impact business du problème\n4. **Vision de la solution** : Co-construire avec le client une vision de la solution idéale\n5. **Contrôle de la vision** : S'assurer que votre solution correspond à cette vision\n6. **Proposition de valeur** : Quantifier les bénéfices business de la solution\n7. **Justification du ROI** : Démontrer le retour sur investissement\n8. **Négociation** : Finaliser les conditions commerciales\n9. **Implémentation** : Assurer le succès du déploiement\n\nL'innovation majeure de Bosworth est l'introduction du concept de 'pain' (douleur) : sans douleur identifiée et quantifiée, pas de vente possible. Il faut que le client ressente suffisamment l'impact négatif de son problème pour être motivé à agir.",
+      keyPoints: [
+        "Processus de vente en 9 étapes centré sur la résolution de problèmes",
+        "Concept de 'pain' (douleur) comme moteur de la décision d'achat",
+        "Techniques de développement et qualification des besoins",
+        "Méthodes de co-construction de la vision solution avec le client",
+        "Framework de quantification du ROI et de la valeur business",
+        "Approche consultative médecin-patient appliquée à la vente"
+      ],
+      targetProfiles: [
+        "Commerciaux solutions complexes",
+        "Ingénieurs commerciaux",
+        "Consultants en transformation",
+        "Account managers",
+        "Business developers B2B"
+      ],
+      difficulty: "Intermédiaire",
+      readingTime: "6h",
+      terrainAdvice: "Solution Selling reste une excellente base méthodologique, surtout pour les ventes de solutions complexes. L'approche 'médecin' résonne bien avec mes clients PME.\n\nCe qui marche toujours :\n- Le concept de 'pain' (sans douleur, pas de vente)\n- La co-construction de la vision solution\n- La quantification systématique du ROI\n\nPoints d'attention :\n- Certains aspects ont vieilli (le livre date de 1994)\n- L'approche peut paraître trop rigide pour certains secteurs\n- À adapter selon la maturité de votre marché\n\nParfait pour structurer sa pensée commerciale, à compléter avec des approches plus modernes comme Challenger ou Gap Selling.",
+      rating: 4.3,
+      category: "methodes-process",
+      complementaryBooks: ["spin-selling", "gap-selling", "mastering-the-complex-sale"]
+    },
+    {
+      slug: "gap-selling",
+      title: "Gap Selling",
+      author: "Keenan",
+      year: 2018,
+      cover: "/covers/gap-selling.jpg",
+      tagline: "La méthode ultra-rigoureuse pour identifier et combler l'écart entre situation actuelle et situation désirée.",
+      summary: "Gap Selling est centré sur le concept de 'combler le fossé' (gap) entre l'état actuel du client et l'état futur souhaité. Le commercial agit comme un diagnosticien : il doit découvrir la situation présente du client, l'aider à définir où il veut aller, puis montrer comment la solution réduit ce gap.",
+      detailedSummary: "Gap Selling révolutionne la découverte client en proposant la méthodologie la plus rigoureuse jamais développée pour analyser les besoins. Keenan part d'un constat accablant : 90% des commerciaux font une découverte superficielle et proposent des solutions inadaptées.\n\nLa méthode Gap Selling repose sur trois piliers fondamentaux :\n\n**Current State (État actuel)** : Une analyse exhaustive de la situation présente du client. Pas seulement 'Qu'est-ce qui ne va pas ?', mais une cartographie complète des processus, des résultats, des impacts business, des conséquences sur les équipes, etc.\n\n**Future State (État désiré)** : Une vision précise de où le client veut aller. Quels résultats ? Quels processus ? Quels impacts ? Cette étape est souvent négligée par les commerciaux pressés.\n\n**Gap Analysis (Analyse de l'écart)** : La différence entre Current State et Future State constitue le 'gap'. Plus cet écart est important et douloureux, plus la motivation d'achat est forte.\n\nKeenan insiste sur la nécessité de creuser beaucoup plus profondément que la normale. Il propose des centaines de questions pour explorer chaque dimension : technique, business, émotionnelle, organisationnelle.\n\nL'auteur introduit aussi le concept de 'Problem Confirmation' : avant de proposer quoi que ce soit, s'assurer que le client confirme bien avoir le problème que vous pensez résoudre.",
+      keyPoints: [
+        "Méthodologie Current State / Future State / Gap Analysis",
+        "Framework de découverte exhaustive avec centaines de questions",
+        "Techniques de Problem Confirmation avant toute proposition",
+        "Méthodes de quantification précise des impacts business",
+        "Approche diagnostique ultra-rigoureuse du commercial",
+        "Stratégies pour créer l'urgence par la mesure du gap"
+      ],
+      targetProfiles: [
+        "Commerciaux solutions complexes",
+        "Consultants en transformation",
+        "Account managers enterprise",
+        "Business analysts commerciaux",
+        "Ingénieurs avant-vente"
+      ],
+      difficulty: "Avancé",
+      readingTime: "7h",
+      terrainAdvice: "Gap Selling, c'est la Rolls de la découverte client ! Keenan a raison : la plupart des commerciaux font de la découverte de surface. Mais attention, c'est exigeant.\n\nCe qui apporte une vraie différence :\n- La rigueur de l'analyse Current State (on découvre des choses insoupçonnées)\n- La définition précise du Future State (le client clarifie sa vision)\n- La quantification du Gap (crée une urgence mesurable)\n\nPoints d'attention :\n- Très chronophage (prévoir 2-3 RDV pour une vraie découverte Gap)\n- Peut paraître intrusif si mal amené\n- Nécessite une vraie expertise métier pour poser les bonnes questions\n\nRéservé aux ventes complexes à fort enjeu. Pour du transactionnel, c'est overkill.",
+      rating: 4.4,
+      category: "methodes-process",
+      complementaryBooks: ["spin-selling", "solution-selling", "the-challenger-sale"]
+    },
+    {
+      slug: "strategic-selling",
+      title: "Strategic Selling",
+      author: "Robert Miller & Stephen Heiman",
+      year: 1985,
+      cover: "/covers/strategic-selling.jpg",
+      tagline: "Le guide de la vente grands comptes avec la légendaire Blue Sheet.",
+      summary: "Strategic Selling propose un processus structuré pour gérer des ventes complexes impliquant de multiples décideurs. L'outil clé est la 'Blue Sheet' : cartographier tous les acteurs du compte, leurs critères de succès et le plan d'action pour chacun. La méthode introduit aussi le concept de win-win partagé et la notion de 'vendre avec le client'.",
+      detailedSummary: "Strategic Selling est le livre fondateur de la vente grands comptes moderne. Miller et Heiman, forts de leur expérience chez Xerox, ont créé la première méthodologie structurée pour gérer les ventes complexes multi-interlocuteurs.\n\nLa méthode repose sur plusieurs concepts révolutionnaires pour l'époque :\n\n**La Blue Sheet** : Un outil de cartographie stratégique qui identifie tous les acteurs du compte et leur rôle dans la décision. Chaque personne est classée selon 4 catégories :\n- Economic Buyer : Celui qui a le budget et le pouvoir de dire oui\n- User Buyer : Celui qui va utiliser la solution au quotidien\n- Technical Buyer : Celui qui valide les aspects techniques\n- Coach : Votre allié interne qui vous guide\n\n**Le concept Win-Win** : Contrairement aux approches 'gagnant-perdant', Strategic Selling prône une approche où chaque partie prenante doit y trouver son compte. Pas de vente durable sans bénéfice mutuel.\n\n**Les Red Flags** : Des signaux d'alarme qui indiquent que la vente est en danger. Par exemple : pas d'accès à l'Economic Buyer, pas de Coach identifié, ou résistance du User Buyer.\n\n**Le Position Audit** : Une évaluation régulière de votre position sur chaque compte pour identifier les actions correctives nécessaires.\n\nLa force de Strategic Selling est de transformer la vente complexe d'un art intuitif en un processus reproductible et enseignable.",
+      keyPoints: [
+        "Blue Sheet pour cartographier tous les acteurs de la décision",
+        "Classification des 4 types d'acheteurs : Economic, User, Technical, Coach",
+        "Concept Win-Win pour créer de la valeur mutuelle",
+        "Red Flags pour identifier les signaux d'alarme",
+        "Position Audit pour évaluer régulièrement sa position",
+        "Méthodologie pour 'vendre avec le client' plutôt qu'au client"
+      ],
+      targetProfiles: [
+        "Commerciaux grands comptes",
+        "Account managers",
+        "Business developers enterprise",
+        "Consultants en solutions complexes",
+        "Managers d'équipes commerciales"
+      ],
+      difficulty: "Avancé",
+      readingTime: "8h",
+      terrainAdvice: "Le grand classique de la vente grands comptes ! La Blue Sheet reste un outil incontournable 40 ans après. Tous mes clients qui gèrent des comptes complexes l'utilisent.\n\nCe qui reste d'actualité :\n- La cartographie des 4 types d'acheteurs (toujours valable)\n- Le concept Win-Win (plus important que jamais)\n- L'approche structurée des ventes complexes\n\nPoints d'attention :\n- Le livre a vieilli sur certains aspects (technologie, communication)\n- Peut paraître lourd pour des PME\n- La Blue Sheet demande de la rigueur pour être efficace\n\nIncontournable pour les ventes B2B complexes, mais à adapter selon votre contexte. La version moderne serait plutôt Challenger Customer.",
+      rating: 4.1,
+      category: "methodes-process",
+      complementaryBooks: ["the-challenger-customer", "mastering-the-complex-sale", "the-new-successful-large-account-management"]
+    }
+  ]
+};
+
+// Extension pour les livres Méthodes & Process
+export type MethodsProcessBook = Book & {
+  salesFramework: string;
+  processSteps: string[];
+  keyTechniques: string[];
+  implementationLevel: 'Débutant' | 'Intermédiaire' | 'Avancé';
+  businessApplications: string[];
+  targetSituations: string[];
+  measurableOutcomes: string[];
+  practicalTools?: string[];
+};
+
+// Extension pour les livres Psychologie & Influence
+export type PsychologyInfluenceBook = Book & {
+  psychologyPrinciples: string[];
+  cognitiveBiases: string[];
+  influenceTechniques: string[];
+  ethicalGuidelines: string[];
+  businessApplications: string[];
+  targetBehaviors: string[];
+  scientificBasis: string;
+  practicalExercises?: string[];
+};
+
+// Données enrichies pour la catégorie Psychologie & Influence
+export const psychologyInfluenceCategory: BookCategory = {
+  slug: "psychologie-influence",
+  title: "Psychologie & Influence",
+  pitch: "Décoder et guider les décisions d'achat",
+  description: "La vente, c'est 20% de technique et 80% de psychologie. Comprendre les mécanismes cognitifs qui guident les décisions d'achat permet de créer une véritable adhésion sans manipulation. Cette catégorie explore les 6 principes universels d'influence de Cialdini, les biais cognitifs révélés par Kahneman, et les techniques relationnelles de Carnegie, adaptés au contexte commercial B2B français.",
+  icon: "🧠",
+  seoKeywords: ["psychologie vente", "influence cialdini", "persuasion", "biais cognitifs", "psychologie commerciale", "laurent serre"],
+  books: [
+    {
+      slug: "influence-psychology-persuasion",
+      title: "Influence: The Psychology of Persuasion",
+      author: "Robert Cialdini",
+      year: 1984,
+      cover: "/covers/influence-psychology-persuasion.jpg",
+      tagline: "Les 6 principes universels qui guident nos décisions d'achat.",
+      summary: "LE classique de la psychologie de la persuasion. Cialdini y détaille 6 grands principes universels qui guident nos comportements d'acceptation : la réciprocité, la cohérence, la preuve sociale, l'autorité, la sympathie et la rareté. Pour chacun, il explique les expériences psychologiques qui les sous-tendent et comment les mettre en œuvre de façon éthique. Par exemple, le principe de réciprocité implique qu'en rendant un petit service à quelqu'un, il se sentira redevable en retour. En prospection commerciale, offrir un contenu de valeur gratuit peut ainsi augmenter le taux de réponse. Influence est une lecture fascinante qui permet de comprendre pourquoi nous disons « oui » et comment se protéger des manipulations.",
+      detailedSummary: "Influence: The Psychology of Persuasion est le fruit de 35 ans de recherche en psychologie sociale appliquée. Robert Cialdini, professeur à l'Arizona State University, y révèle les mécanismes psychologiques universels qui nous poussent à dire 'oui'.\n\nLes 6 principes fondamentaux :\n\n**1. Réciprocité** : Nous nous sentons obligés de rendre ce qu'on nous a donné. En vente, offrir de la valeur avant de demander crée un sentiment de dette psychologique.\n\n**2. Cohérence/Engagement** : Nous cherchons à rester cohérents avec nos engagements passés. Faire exprimer au client ses besoins et objectifs l'engage psychologiquement vers la solution.\n\n**3. Preuve sociale** : Nous imitons les comportements des autres, surtout nos pairs. Les témoignages clients et références sectorielles sont des leviers puissants.\n\n**4. Autorité** : Nous obéissons aux figures d'autorité légitimes. Établir son expertise et sa crédibilité influence positivement les décisions.\n\n**5. Sympathie** : Nous disons plus facilement oui aux gens que nous apprécions. La similarité, les compliments sincères et la coopération créent de la sympathie.\n\n**6. Rareté** : Nous valorisons davantage ce qui est rare ou limité. Créer une urgence légitime accélère la prise de décision.\n\nCialdini illustre chaque principe avec des expériences fascinantes et des applications concrètes, tout en mettant en garde contre les manipulations. L'objectif est d'influencer de manière éthique en créant de la valeur mutuelle.",
+      keyPoints: [
+        "Les 6 principes universels d'influence : Réciprocité, Cohérence, Preuve sociale, Autorité, Sympathie, Rareté",
+        "Applications éthiques en contexte commercial et professionnel",
+        "Techniques de protection contre les manipulations",
+        "Expériences scientifiques validant chaque principe",
+        "Méthodes pour créer de l'engagement et de l'adhésion",
+        "Framework pour influencer sans manipuler"
+      ],
+      targetProfiles: [
+        "Commerciaux B2B",
+        "Managers et dirigeants",
+        "Marketeurs et communicants",
+        "Négociateurs professionnels",
+        "Consultants et formateurs"
+      ],
+      difficulty: "Intermédiaire",
+      readingTime: "8h",
+      terrainAdvice: "Le livre de référence absolue que je recommande à 100% de mes clients. Cialdini, c'est la base pour comprendre pourquoi vos prospects disent oui ou non. Après 20 ans de terrain, je peux vous dire que ces 6 principes fonctionnent vraiment.\n\nCe qui marche le mieux en PME :\n- La preuve sociale (témoignages de pairs du même secteur)\n- L'autorité (votre expertise reconnue)\n- La réciprocité (donner avant de recevoir)\n\nAttention : ne tombez pas dans la manipulation ! Cialdini insiste sur l'éthique. Utilisez ces principes pour créer de la valeur, pas pour forcer la main. La différence entre influence et manipulation, c'est l'intention et le bénéfice mutuel.",
+      rating: 4.8,
+      category: "psychologie-influence",
+      complementaryBooks: ["comment-se-faire-des-amis", "pre-suasion", "thinking-fast-slow"]
+    },
+    {
+      slug: "comment-se-faire-des-amis",
+      title: "Comment se faire des amis",
+      author: "Dale Carnegie",
+      year: 1936,
+      cover: "/covers/comment-se-faire-des-amis.jpg",
+      tagline: "Le classique intemporel des relations humaines et de l'influence bienveillante.",
+      summary: "Un autre classique intemporel qui, malgré son âge, reste d'une pertinence étonnante pour comprendre la psychologie relationnelle. Carnegie y distille des conseils concrets pour améliorer ses relations et influencer positivement autrui, en se basant sur des principes de bon sens : manifester un intérêt sincère pour les autres, se souvenir de leur prénom, éviter de critiquer frontalement, valoriser honnêtement les qualités de son interlocuteur, etc. Il formule 6 façons de plaire aux autres, 12 moyens de rallier les gens à votre point de vue, et 9 méthodes pour modifier quelqu'un sans susciter de ressentiment. Par exemple, l'une des règles d'or est de parler d'abord des intérêts de l'autre plutôt que des siens. Ce livre montre que l'influence commence par l'empathie et la bienveillance.",
+      detailedSummary: "Publié en 1936, 'How to Win Friends and Influence People' reste l'un des livres de développement personnel les plus vendus au monde. Dale Carnegie y synthétise des décennies d'observation des relations humaines en principes pratiques intemporels.\n\nLe livre s'articule autour de 4 parties :\n\n**Partie 1 : Techniques fondamentales pour traiter avec les gens**\n- Ne critiquez pas, ne condamnez pas, ne vous plaignez pas\n- Complimentez honnêtement et sincèrement\n- Éveillez un vif désir chez l'autre personne\n\n**Partie 2 : Six façons de vous faire apprécier**\n- Intéressez-vous réellement aux autres\n- Souriez\n- Rappelez-vous que le nom d'une personne est le son le plus doux à ses oreilles\n- Soyez un bon auditeur, encouragez les autres à parler d'eux-mêmes\n- Parlez des intérêts de votre interlocuteur\n- Faites sentir aux autres leur importance de manière sincère\n\n**Partie 3 : Douze moyens de rallier les gens à votre façon de penser**\n- Évitez les disputes\n- Respectez les opinions d'autrui, ne dites jamais 'Vous avez tort'\n- Si vous avez tort, admettez-le promptement et énergiquement\n- Commencez de façon amicale\n- Obtenez immédiatement un 'oui' en réponse\n\n**Partie 4 : Soyez un leader : neuf moyens de modifier l'attitude des gens sans les offenser**\n- Commencez par des éloges et des appréciations sincères\n- Attirez l'attention sur les erreurs de manière indirecte\n- Parlez de vos propres erreurs avant de corriger celles des autres\n\nCarnegie démontre que l'influence authentique naît de l'intérêt sincère pour autrui et du respect mutuel.",
+      keyPoints: [
+        "Techniques fondamentales pour créer des relations positives",
+        "6 façons de se faire apprécier naturellement",
+        "12 moyens de rallier les gens à son point de vue sans conflit",
+        "9 méthodes pour influencer sans offenser",
+        "Importance de l'écoute active et de l'empathie",
+        "Principes intemporels de leadership bienveillant"
+      ],
+      targetProfiles: [
+        "Commerciaux et négociateurs",
+        "Managers et dirigeants",
+        "Professionnels en relation client",
+        "Consultants et formateurs",
+        "Toute personne en contact avec autrui"
+      ],
+      difficulty: "Facile",
+      readingTime: "6h",
+      terrainAdvice: "Un classique que je recommande à tous mes clients, surtout ceux qui ont des difficultés relationnelles. Carnegie, c'est du bon sens structuré, mais ça marche ! Après 20 ans de coaching commercial, je vois la différence entre ceux qui appliquent ces principes et les autres.\n\nCe qui fonctionne le mieux :\n- S'intéresser vraiment aux autres (pas du fake)\n- Se rappeler des prénoms et détails personnels\n- Faire parler l'autre de ses succès et passions\n- Admettre ses erreurs rapidement\n\nPiège à éviter : ne pas tomber dans la technique pure. Carnegie insiste sur la sincérité. Si vous faites semblant de vous intéresser, ça se voit. L'authenticité, c'est la clé.",
+      rating: 4.6,
+      category: "psychologie-influence",
+      complementaryBooks: ["influence-psychology-persuasion", "thinking-fast-slow", "pre-suasion"]
+    },
+    {
+      slug: "thinking-fast-slow",
+      title: "Thinking, Fast and Slow",
+      author: "Daniel Kahneman",
+      year: 2011,
+      cover: "/covers/thinking-fast-slow.jpg",
+      tagline: "Comprendre les deux systèmes de pensée qui gouvernent nos décisions.",
+      summary: "Un ouvrage majeur de psychologie cognitive du prix Nobel Daniel Kahneman qui synthétise des décennies de recherche sur nos biais de décision. Il explique que notre esprit comporte deux systèmes de pensée : le Système 1, rapide, instinctif et émotionnel, et le Système 2, plus lent, réfléchi et logique. De nombreux biais cognitifs (excès de confiance, aversion aux pertes, effet d'ancrage…) proviennent des raccourcis pris par le Système 1. En matière d'influence, comprendre ces biais est crucial : par exemple, le biais de rareté ou de preuve sociale fonctionnent justement parce qu'ils exploitent des heuristiques du Système 1. Ce livre enseigne une pensée plus critique et lucide, ce qui peut aider à la fois à mieux persuader et à se prémunir des manipulations.",
+      detailedSummary: "Daniel Kahneman, prix Nobel d'économie 2002, révolutionne notre compréhension de la prise de décision humaine. Son modèle des deux systèmes de pensée est devenu une référence mondiale en psychologie cognitive.\n\n**Système 1 : Pensée rapide**\n- Automatique, intuitif, émotionnel\n- Fonctionne par associations et heuristiques\n- Économe en énergie mentale\n- Source de la plupart de nos biais cognitifs\n- Influence majeure sur nos premières impressions\n\n**Système 2 : Pensée lente**\n- Délibéré, logique, analytique\n- Demande effort et concentration\n- Peut corriger les erreurs du Système 1\n- Souvent paresseux et facilement fatigué\n- Rationalisé a posteriori les décisions du Système 1\n\n**Biais cognitifs majeurs identifiés :**\n- **Effet d'ancrage** : La première information influence toutes les suivantes\n- **Aversion aux pertes** : Nous ressentons plus fortement les pertes que les gains équivalents\n- **Biais de confirmation** : Nous cherchons les informations qui confirment nos croyances\n- **Effet de halo** : Une caractéristique positive influence notre jugement global\n- **Biais de disponibilité** : Nous surestimons la probabilité d'événements facilement mémorisables\n\nPour les professionnels de la vente, comprendre ces mécanismes permet d'adapter sa communication aux modes de traitement de l'information de ses interlocuteurs et d'éviter les pièges de ses propres biais.",
+      keyPoints: [
+        "Modèle des deux systèmes de pensée (rapide vs lent)",
+        "Catalogue complet des biais cognitifs et de leurs mécanismes",
+        "Impact des émotions sur la prise de décision rationnelle",
+        "Techniques pour améliorer la qualité de ses jugements",
+        "Applications en économie comportementale et négociation",
+        "Méthodes pour détecter et corriger ses propres biais"
+      ],
+      targetProfiles: [
+        "Négociateurs et commerciaux avancés",
+        "Managers et dirigeants",
+        "Consultants en stratégie",
+        "Professionnels du marketing",
+        "Analystes et décideurs"
+      ],
+      difficulty: "Avancé",
+      readingTime: "12h",
+      terrainAdvice: "Un livre dense mais absolument fascinant pour comprendre pourquoi vos clients prennent des décisions 'irrationnelles'. Kahneman, c'est du haut niveau, mais ça change votre vision de la vente.\n\nCe qui m'a le plus marqué :\n- L'effet d'ancrage (le premier prix annoncé influence tout le reste)\n- L'aversion aux pertes (mieux vaut parler de ce qu'ils vont perdre que de ce qu'ils vont gagner)\n- Le biais de confirmation (ils cherchent à valider leur décision, pas à la remettre en cause)\n\nAttention : c'est de la psychologie pure, pas un manuel de vente. Mais comprendre ces mécanismes vous donne un avantage énorme pour adapter votre discours au fonctionnement réel du cerveau humain.",
+      rating: 4.5,
+      category: "psychologie-influence",
+      complementaryBooks: ["predictably-irrational", "influence-psychology-persuasion", "pre-suasion"]
+    },
+    {
+      slug: "predictably-irrational",
+      title: "Predictably Irrational",
+      author: "Dan Ariely",
+      year: 2008,
+      cover: "/covers/predictably-irrational.jpg",
+      tagline: "Pourquoi nos décisions sont irrationnelles... de manière prévisible.",
+      summary: "Un ouvrage passionnant de behavioral economics qui démontre à travers des expériences à quel point nos décisions sont souvent irrationnelles… de manière prévisible ! Ariely décortique par exemple l'effet de leurre (comment l'introduction d'une option moins attrayante peut biaiser nos choix). Il montre aussi le pouvoir de la gratuité (on surestime énormément ce qui est gratuit), le biais d'ancrage (la première information vue sert de référence), ou encore pourquoi nous accordons trop de valeur à nos possessions (effet de dotation). Predictably Irrational fourmille d'anecdotes et de résultats d'études qui éclairent nos comportements d'achat, nos jugements sociaux, etc. Pour un professionnel du marketing ou de la vente, c'est une mine d'or pour comprendre les motivations cachées des consommateurs.",
+      detailedSummary: "Dan Ariely, professeur d'économie comportementale à Duke University, révèle à travers des expériences ingénieuses que nos décisions suivent des patterns irrationnels mais prévisibles. Cette prévisibilité de l'irrationalité ouvre des perspectives fascinantes pour comprendre et influencer les comportements.\n\n**Expériences et découvertes clés :**\n\n**L'effet de leurre (Decoy Effect)** : Ariely démontre comment l'ajout d'une option clairement inférieure peut orienter le choix vers l'option premium. En vente, présenter 3 offres (dont une volontairement moins attractive) guide vers l'offre souhaitée.\n\n**Le pouvoir du gratuit** : Nous surestimons drastiquement la valeur de ce qui est gratuit. Une réduction de 1€ sur un produit à 2€ semble moins attractive qu'un produit gratuit (même si la valeur économique est identique).\n\n**L'effet de dotation** : Nous accordons plus de valeur aux choses que nous possédons déjà. En vente, faire 'posséder' mentalement le produit (essai, démonstration) augmente la probabilité d'achat.\n\n**L'ancrage social** : Nos décisions sont influencées par les normes sociales perçues. Montrer que 'la plupart des entreprises comme la vôtre choisissent...' influence positivement.\n\n**La procrastination et l'autocontrôle** : Nous remettons à plus tard les décisions difficiles. Simplifier le processus d'achat et créer des échéances intermédiaires améliore la conversion.\n\n**L'effet de l'attente** : Nos attentes influencent notre expérience réelle. Bien préparer les attentes clients améliore leur satisfaction post-achat.\n\nAriely démontre que comprendre ces 'bugs' de notre cerveau permet de mieux communiquer et de créer des expériences plus satisfaisantes pour tous.",
+      keyPoints: [
+        "Effet de leurre et techniques de présentation des offres",
+        "Psychologie du gratuit et de la valeur perçue",
+        "Effet de dotation et techniques de possession mentale",
+        "Influence des normes sociales sur les décisions",
+        "Mécanismes de procrastination et solutions",
+        "Impact des attentes sur l'expérience client"
+      ],
+      targetProfiles: [
+        "Professionnels du marketing",
+        "Commerciaux et négociateurs",
+        "Product managers",
+        "Entrepreneurs et dirigeants",
+        "Consultants en expérience client"
+      ],
+      difficulty: "Intermédiaire",
+      readingTime: "7h",
+      terrainAdvice: "Un livre génial pour comprendre les 'bugs' du cerveau humain ! Ariely rend la psychologie accessible avec des expériences concrètes. Très utile pour optimiser ses présentations commerciales.\n\nCe qui marche le mieux :\n- L'effet de leurre (présenter 3 options dont une volontairement moins bonne)\n- Le pouvoir du gratuit (audit gratuit, essai gratuit...)\n- L'effet de dotation (faire essayer, tester, visualiser)\n\nApplication concrète : quand je présente mes formations, je propose toujours 3 formules. La formule intermédiaire paraît moins chère par rapport à la premium, et plus complète que la basique. Résultat : 70% choisissent l'intermédiaire !",
+      rating: 4.4,
+      category: "psychologie-influence",
+      complementaryBooks: ["thinking-fast-slow", "influence-psychology-persuasion", "nudge"]
+    },
+    {
+      slug: "pre-suasion",
+      title: "Pré-Suasion",
+      author: "Robert Cialdini",
+      year: 2016,
+      cover: "/covers/pre-suasion.jpg",
+      tagline: "L'art de préparer le terrain psychologique avant de persuader.",
+      summary: "Dans ce complément plus récent à Influence, Cialdini s'intéresse à l'art de la préparation mentale à la persuasion. Son idée centrale : « le moment avant le message » compte autant que le message lui-même. En dirigeant l'attention des gens sur certains antécédents, on modifie leur réceptivité. Par exemple, diffuser une musique française dans un magasin peut augmenter les ventes de vins français (principe du « priming » ou amorçage). Cialdini explique comment capturer puis canaliser l'attention du public pour créer le bon contexte psychologique avant de formuler sa requête. Il décrit des stratégies pour ancrer une idée, susciter une émotion ou une association d'idées positive, afin de préparer le terrain à l'adhésion. Pre-Suasion ajoute un 7e principe à la liste de Cialdini : l'unité (créer un sentiment d'identité commune avec son audience).",
+      detailedSummary: "Pré-Suasion représente l'aboutissement de 30 années de recherche supplémentaires de Robert Cialdini sur les mécanismes de l'influence. Il y révèle que l'efficacité d'un message dépend autant de ce qui précède que du contenu lui-même.\n\n**Le concept central : l'attention privilégiée**\nCe sur quoi nous nous concentrons juste avant une décision influence disproportionnellement cette décision. Cialdini appelle cela 'l'attention privilégiée' - notre tendance à accorder plus d'importance aux informations présentes à l'esprit au moment de choisir.\n\n**Techniques de pré-suasion :**\n\n**1. L'amorçage (Priming)** : Exposer subtilement à des concepts qui orienteront la réflexion. Parler de sécurité avant de présenter une assurance, évoquer l'innovation avant de présenter une solution technologique.\n\n**2. La focalisation attentionnelle** : Diriger l'attention vers les éléments favorables à sa proposition. Utiliser des questions qui font réfléchir aux problèmes que votre solution résout.\n\n**3. L'association positive** : Créer des liens mentaux entre votre proposition et des concepts valorisés par l'interlocuteur (réussite, sécurité, innovation, etc.).\n\n**4. Le timing optimal** : Identifier le moment où l'interlocuteur est le plus réceptif (après un succès, quand il réfléchit à ses défis, etc.).\n\n**Le 7e principe : l'Unité**\nCialdini ajoute l'Unité aux 6 principes d'Influence. Nous sommes plus facilement influencés par ceux avec qui nous partageons une identité commune (même région, même formation, mêmes valeurs, mêmes défis).\n\n**Applications pratiques :**\n- Structurer ses présentations pour préparer mentalement l'audience\n- Utiliser l'environnement physique pour créer le bon état d'esprit\n- Poser les bonnes questions avant de présenter sa solution\n- Créer des liens d'identité commune avec ses prospects",
+      keyPoints: [
+        "Concept d'attention privilégiée et son impact sur les décisions",
+        "Techniques d'amorçage et de préparation mentale",
+        "Stratégies de focalisation attentionnelle",
+        "Le 7e principe d'influence : l'Unité",
+        "Timing optimal pour maximiser la réceptivité",
+        "Applications pratiques en vente et négociation"
+      ],
+      targetProfiles: [
+        "Commerciaux expérimentés",
+        "Négociateurs professionnels",
+        "Managers et dirigeants",
+        "Consultants et formateurs",
+        "Professionnels de la communication"
+      ],
+      difficulty: "Avancé",
+      readingTime: "9h",
+      terrainAdvice: "La suite logique d'Influence, encore plus subtile et puissante. Cialdini nous apprend à préparer le terrain avant même de commencer à vendre. C'est du niveau expert, mais ça change tout !\n\nCe qui marche le mieux :\n- Poser les bonnes questions avant de présenter (faire réfléchir aux problèmes)\n- Créer des liens d'identité commune ('Comme vous, je travaille avec des PME...')\n- Utiliser l'environnement pour créer le bon état d'esprit\n\nExemple concret : avant de parler formation, je demande toujours 'Quel est votre plus gros défi commercial actuellement ?' Cette question les met dans l'état d'esprit 'problème à résoudre'. Résultat : ils sont 3x plus réceptifs à ma solution.",
+      rating: 4.6,
+      category: "psychologie-influence",
+      complementaryBooks: ["influence-psychology-persuasion", "thinking-fast-slow", "comment-se-faire-des-amis"]
+    }
+  ]
+};
+
+// Extended category with PME case studies and advanced features
+export const psychologyInfluenceCategoryExtended: BookCategoryExtended = {
+  slug: "psychologie-influence",
+  title: "Psychologie & Influence",
+  pitch: "Décoder et guider les décisions d'achat",
+  description: "La vente, c'est 20% de technique et 80% de psychologie. Comprendre les mécanismes cognitifs qui guident les décisions d'achat permet de créer une véritable adhésion sans manipulation. Cette catégorie explore les 6 principes universels d'influence de Cialdini, les biais cognitifs révélés par Kahneman, et les techniques relationnelles de Carnegie, adaptés au contexte commercial B2B français.",
+  icon: "🧠",
+  domainType: "psychology",
+  visualTheme: {
+    primaryColor: "#8B5CF6", // Violet
+    secondaryColor: "#EC4899", // Rose
+    accentColor: "#F59E0B", // Orange pour les highlights
+    particleColor: "#8B5CF6",
+    gradientFrom: "#8B5CF6",
+    gradientTo: "#EC4899"
+  },
+  expertInsights: psychologyInsights.map(insight => ({
+    title: insight.title,
+    description: insight.description,
+    businessImpact: insight.businessImpact,
+    implementationLevel: insight.implementationLevel,
+    keyElements: insight.keyElements,
+    trend: insight.trend
+  })),
+  caseStudies: psychologyCaseStudies.map(study => ({
+    industry: study.industry,
+    companySize: study.companySize,
+    challenge: study.challenge,
+    solution: study.psychologyApproach,
+    results: study.results,
+    domainFocus: "psychology" as const,
+    metrics: {
+      conversion: study.metrics.conversionRate,
+      satisfaction: study.metrics.customerSatisfaction,
+      efficiency: study.metrics.salesCycleReduction,
+      roi: study.metrics.teamPerformance
+    },
+    testimonial: `"${psychologyLaurentVision.split('.')[0]}." - Laurent Serre`,
+    duration: "3-6 mois"
+  })),
+  implementationPhases: psychologyImplementationRoadmap.map(phase => ({
+    phase: phase.phase,
+    title: phase.title,
+    description: phase.description,
+    duration: phase.duration,
+    keyActions: phase.keyActions,
+    expectedResults: phase.expectedResults,
+    laurentAdvice: phase.laurentAdvice,
+    domainSpecific: true
+  })),
+  domainStats: [
+    {
+      label: "Conversions",
+      value: psychologyStats.adoptionRate,
+      description: psychologyStats.adoptionDescription,
+      trend: "rising" as const
+    },
+    {
+      label: "Décisions émotionnelles",
+      value: psychologyStats.performanceGain,
+      description: psychologyStats.performanceDescription,
+      trend: "stable" as const
+    },
+    {
+      label: "Principes d'influence",
+      value: psychologyStats.satisfactionImprovement,
+      description: psychologyStats.satisfactionDescription,
+      trend: "stable" as const
+    },
+    {
+      label: "Satisfaction client",
+      value: psychologyStats.cycleReduction,
+      description: psychologyStats.cycleDescription,
+      trend: "rising" as const
+    }
+  ],
+  crossCategorySuggestions: [
+    {
+      targetCategory: "negotiation",
+      reason: "La psychologie de l'influence complète parfaitement les techniques de négociation",
+      complementaryBooks: ["never-split-the-difference", "getting-to-yes"]
+    },
+    {
+      targetCategory: "methods",
+      reason: "Les frameworks de vente gagnent en efficacité avec la compréhension psychologique",
+      complementaryBooks: ["spin-selling", "the-challenger-sale"]
+    },
+    {
+      targetCategory: "prospection",
+      reason: "La prospection devient plus efficace avec les principes d'influence",
+      complementaryBooks: ["fanatical-prospecting", "predictable-revenue"]
+    }
+  ],
+  seoKeywords: ["psychologie vente", "influence cialdini", "persuasion", "biais cognitifs", "psychologie commerciale", "laurent serre"],
+  books: psychologyInfluenceCategory.books
+};
+
 // Données pour la catégorie Sales Management & Leadership
 export const salesManagementCategory: BookCategory = {
   slug: "sales-management",
@@ -368,7 +841,7 @@ export const salesManagementCategory: BookCategory = {
         "Responsables RH",
         "Coaches en leadership"
       ],
-      difficulty: "Débutant",
+      difficulty: "Facile",
       readingTime: "6h",
       terrainAdvice: "Un livre qui remet l'humain au centre du leadership. Sinek a raison : dans un monde de plus en plus digitalisé, c'est la qualité relationnelle qui fait la différence.\n\nCe qui marche en management commercial :\n- Créer un vrai cercle de sécurité (fini la peur de l'erreur)\n- Valoriser publiquement ses commerciaux (sérotonine ++)\n- Prendre les responsabilités en cas d'échec (ocytocine de confiance)\n\nAttention : ne tombez pas dans le leadership bisounours. Bienveillant ne veut pas dire laxiste. Les meilleurs leaders que je connais sont exigeants sur les résultats ET protecteurs avec leurs équipes.",
       rating: 4.4,
@@ -1025,5 +1498,441 @@ export const digitalAISalesCategory: BookCategory = {
       targetRoles: ["Commercial", "Manager", "Dirigeant"],
       prerequisiteKnowledge: ["Bases du management", "Esprit d'expérimentation"]
     } as DigitalAIBook
+  ]
+};
+
+// Extension pour les livres Négociation & Closing
+export type NegotiationClosingBook = Book & {
+  negotiationStrategies: string[];
+  closingTechniques: string[];
+  objectionHandling: string[];
+  valueCreationMethods: string[];
+  psychologyPrinciples: string[];
+  ethicalApproach: string;
+  businessApplications: string[];
+  targetSituations: string[];
+  practicalFrameworks: string[];
+};
+
+// Données enrichies pour la catégorie Négociation & Closing
+export const negotiationClosingCategory: BookCategory = {
+  slug: "negociation-closing",
+  title: "Négociation & Closing",
+  pitch: "Conclure avec élégance et créer de la valeur mutuelle",
+  description: "La négociation commerciale ne consiste pas à gagner contre l'autre, mais à gagner avec l'autre. Cette catégorie regroupe les méthodes les plus efficaces pour mener des négociations collaboratives, gérer les objections en amont, et conclure des ventes sans pression. De Chris Voss (ex-négociateur FBI) à Roger Fisher (Harvard), découvrez comment transformer chaque négociation en opportunité de création de valeur partagée.",
+  icon: "🤝",
+  seoKeywords: ["négociation commerciale", "techniques closing", "never split difference", "getting to yes", "objections commerciales", "laurent serre"],
+  books: [
+    {
+      slug: "never-split-the-difference",
+      title: "Never Split the Difference",
+      author: "Chris Voss",
+      year: 2016,
+      cover: "/covers/never-split-the-difference.jpg",
+      tagline: "Les techniques de négociation d'un ex-négociateur du FBI adaptées au business.",
+      summary: "Écrit par un ancien négociateur du FBI, ce bestseller révolutionne les techniques de négociation en prônant l'empathie tactique et l'écoute active. Voss explique comment 'faire parler' son interlocuteur pour décrypter ses émotions et besoins profonds, puis utiliser des techniques comme le mirroring et les questions calibrées pour orienter la discussion. Il conseille de pratiquer l'Audit d'accusation en début d'entretien : énoncer soi-même les objections que l'autre pourrait avoir pour désamorcer la méfiance. Il recommande aussi d'encourager le 'non' - amener l'autre à dire non plutôt que forcer un oui artificiel - afin de découvrir ses véritables préoccupations.",
+      detailedSummary: "Chris Voss révolutionne l'art de la négociation en appliquant au monde des affaires les techniques qu'il a développées lors de négociations de prises d'otages pour le FBI. Son approche, basée sur l'empathie tactique et la psychologie comportementale, dépasse largement les méthodes traditionnelles.\n\n**L'empathie tactique** : Comprendre la perspective de l'autre partie sans nécessairement être d'accord avec elle. Cette compréhension profonde permet d'identifier les véritables motivations et de créer des solutions créatives.\n\n**Les 9 principes de négociation de Voss** :\n\n**1. La voix de fin de soirée** : Utiliser un ton calme, lent et rassurant pour créer un climat de confiance et réduire l'agressivité.\n\n**2. Le mirroring** : Répéter les 1-3 derniers mots de votre interlocuteur pour l'encourager à révéler plus d'informations.\n\n**3. L'étiquetage** : Identifier et nommer les émotions de l'autre partie (\"Il semble que vous soyez préoccupé par...\") pour créer de l'empathie.\n\n**4. L'audit d'accusation** : Énumérer proactivement toutes les objections négatives que l'autre pourrait avoir contre vous pour les désamorcer.\n\n**5. Encourager le 'Non'** : Poser des questions qui amènent un 'non' protecteur plutôt que de forcer un 'oui' de complaisance.\n\n**6. Déclencher un 'C'est exact'** : Résumer la position de l'autre si précisément qu'il confirme par 'C'est exactement ça' - créant un moment de connexion profonde.\n\n**7. La règle du 7-38-55** : 7% des mots, 38% du ton, 55% du langage corporel - l'importance cruciale du non-verbal.\n\n**8. Questions calibrées** : Utiliser des questions ouvertes commençant par 'Comment' ou 'Quoi' pour faire réfléchir l'autre partie aux solutions.\n\n**9. Le marchandage** : Négocier sur des éléments non-monétaires pour créer de la valeur sans coût direct.\n\n**Applications commerciales** :\n- Découverte client approfondie par l'écoute empathique\n- Gestion des objections par l'audit d'accusation préventif\n- Closing naturel par les questions calibrées\n- Négociation de prix par la création de valeur alternative\n\n**Techniques avancées** :\n- **L'ancrage extrême** : Commencer par une position très éloignée pour influencer la perception\n- **La perte d'aversion** : Présenter ce que l'autre risque de perdre plutôt que ce qu'il peut gagner\n- **Le pouvoir du silence** : Utiliser les pauses pour créer une pression psychologique bienveillante",
+      keyPoints: [
+        "Empathie tactique : comprendre sans être d'accord",
+        "Mirroring : répéter pour faire parler davantage",
+        "Étiquetage des émotions pour créer de la connexion",
+        "Audit d'accusation : désamorcer les objections en les énonçant",
+        "Encourager le 'Non' pour découvrir les vraies préoccupations",
+        "Questions calibrées pour faire réfléchir aux solutions",
+        "Règle 7-38-55 : importance du non-verbal",
+        "Négociation sur les éléments non-monétaires"
+      ],
+      targetProfiles: [
+        "Commerciaux B2B complexes",
+        "Négociateurs professionnels",
+        "Account managers",
+        "Consultants et avocats",
+        "Dirigeants et managers"
+      ],
+      difficulty: "Intermédiaire",
+      readingTime: "7h",
+      terrainAdvice: "Un livre révolutionnaire que je recommande à tous mes clients qui négocient des gros deals. Voss maîtrise parfaitement la psychologie de la négociation.\n\nCe qui marche vraiment sur le terrain :\n- L'audit d'accusation : 'Vous devez penser que c'est trop cher...' (désamorce instantanément)\n- Le mirroring : répéter leurs derniers mots les fait parler davantage\n- Les questions calibrées : 'Comment voyez-vous la mise en œuvre ?' (les fait réfléchir aux solutions)\n\nAttention : ces techniques sont puissantes, utilisez-les avec éthique. L'objectif est de créer de la valeur mutuelle, pas de manipuler. Voss insiste beaucoup sur l'intégrité du négociateur.",
+      rating: 4.7,
+      category: "negociation-closing",
+      complementaryBooks: ["getting-to-yes", "spin-selling", "the-challenger-sale"],
+      // Métadonnées spécifiques Négociation & Closing
+      negotiationStrategies: [
+        "Empathie tactique",
+        "Négociation collaborative",
+        "Ancrage psychologique",
+        "Gestion des émotions"
+      ],
+      closingTechniques: [
+        "Questions calibrées",
+        "Closing par l'écoute",
+        "Validation progressive",
+        "Engagement naturel"
+      ],
+      objectionHandling: [
+        "Audit d'accusation préventif",
+        "Étiquetage des préoccupations",
+        "Reformulation empathique",
+        "Questions de clarification"
+      ],
+      valueCreationMethods: [
+        "Négociation sur éléments non-monétaires",
+        "Solutions créatives win-win",
+        "Identification des intérêts cachés",
+        "Optimisation de la valeur perçue"
+      ],
+      psychologyPrinciples: [
+        "Empathie tactique",
+        "Biais de perte",
+        "Effet d'ancrage",
+        "Réciprocité"
+      ],
+      ethicalApproach: "Négociation collaborative basée sur l'empathie et la création de valeur mutuelle",
+      businessApplications: [
+        "Négociation de contrats complexes",
+        "Gestion des objections prix",
+        "Closing de ventes importantes",
+        "Résolution de conflits clients"
+      ],
+      targetSituations: [
+        "Négociations à forts enjeux",
+        "Situations de blocage",
+        "Objections récurrentes",
+        "Closing difficiles"
+      ],
+      practicalFrameworks: [
+        "Processus d'empathie tactique",
+        "Séquence de questions calibrées",
+        "Méthode d'audit d'accusation",
+        "Framework de mirroring"
+      ]
+    } as NegotiationClosingBook,
+    {
+      slug: "getting-to-yes",
+      title: "Getting to Yes",
+      author: "Roger Fisher & William Ury",
+      year: 1981,
+      cover: "/covers/getting-to-yes.jpg",
+      tagline: "La méthode Harvard de négociation raisonnée pour des accords gagnant-gagnant.",
+      summary: "Le grand classique de la négociation raisonnée de Harvard. Fisher et Ury exposent une méthode en quatre principes pour trouver des accords gagnant-gagnant : 1) raisonner en termes d'intérêts et non de positions, 2) générer des options mutuellement avantageuses avant de décider, 3) s'appuyer sur des critères objectifs pour légitimer l'accord, et 4) dissocier les personnes du problème. Les auteurs introduisent le concept de BATNA (Best Alternative to a Negotiated Agreement), c'est-à-dire connaître sa solution de repli en cas d'échec, afin de négocier avec plus de sérénité. Cet ouvrage a transformé l'approche de la négociation en entreprise en montrant qu'on obtient de bien meilleurs résultats en collaborant pour résoudre un problème commun.",
+      detailedSummary: "Getting to Yes révolutionne l'art de la négociation en proposant une alternative à la négociation positionnelle traditionnelle (où chacun campe sur ses positions). Les auteurs du Harvard Negotiation Project présentent la 'négociation raisonnée' basée sur les mérites du problème plutôt que sur un rapport de force.\n\n**Les 4 principes fondamentaux** :\n\n**1. Séparer les personnes du problème**\n- Traiter les aspects relationnels séparément du fond\n- Attaquer le problème, pas la personne\n- Reconnaître et gérer les émotions\n- Écouter activement et reformuler pour montrer la compréhension\n- Parler de soi plutôt que d'accuser l'autre\n\n**2. Se concentrer sur les intérêts, pas sur les positions**\n- Identifier les besoins, préoccupations et désirs sous-jacents\n- Poser la question 'Pourquoi ?' pour découvrir les intérêts\n- Reconnaître que chaque partie a des intérêts multiples\n- Chercher les intérêts partagés et compatibles\n\n**3. Imaginer des solutions procurant un bénéfice mutuel**\n- Séparer l'invention de la décision\n- Élargir le gâteau avant de le partager\n- Rechercher des gains mutuels\n- Faciliter la décision de l'autre partie\n\n**4. Exiger l'utilisation de critères objectifs**\n- Développer des options basées sur des standards équitables\n- Utiliser des précédents, des expertises, des normes du marché\n- Raisonner et rester ouvert aux arguments\n- Ne jamais céder à la pression, seulement aux principes\n\n**Le concept révolutionnaire de BATNA** :\nLa BATNA (Best Alternative to a Negotiated Agreement) est votre meilleure solution de rechange si la négociation échoue. Connaître sa BATNA permet de :\n- Négocier avec confiance\n- Savoir quand accepter ou refuser un accord\n- Améliorer sa position en développant de meilleures alternatives\n\n**Applications en vente B2B** :\n- **Découverte des intérêts** : Au lieu de se focaliser sur le prix (position), explorer les contraintes budgétaires, les enjeux de ROI, les critères de décision (intérêts)\n- **Création de valeur** : Proposer des options créatives (paiement échelonné, services additionnels, partenariats) qui répondent aux intérêts des deux parties\n- **Légitimation** : Utiliser des benchmarks marché, des études de cas, des références pour justifier la proposition\n- **Préparation BATNA** : Connaître ses alternatives (autres prospects, autres solutions) pour négocier sereinement\n\n**Gestion des tactiques difficiles** :\nLes auteurs proposent des stratégies pour faire face aux négociateurs qui utilisent des tactiques de pression, de manipulation ou de mauvaise foi, en les ramenant vers une négociation raisonnée.",
+      keyPoints: [
+        "Négociation raisonnée vs négociation positionnelle",
+        "Séparer les personnes du problème pour préserver la relation",
+        "Se concentrer sur les intérêts sous-jacents, pas les positions affichées",
+        "Générer des options créatives avant de décider",
+        "Utiliser des critères objectifs pour légitimer l'accord",
+        "Développer sa BATNA pour négocier en position de force",
+        "Transformer l'adversaire en partenaire de résolution de problème"
+      ],
+      targetProfiles: [
+        "Négociateurs professionnels",
+        "Commerciaux B2B",
+        "Managers et dirigeants",
+        "Consultants et avocats",
+        "Acheteurs et procurement"
+      ],
+      difficulty: "Intermédiaire",
+      readingTime: "6h",
+      terrainAdvice: "LE classique incontournable de la négociation. Fisher et Ury ont posé les bases de tout ce qui se fait de sérieux en négociation depuis 40 ans.\n\nCe qui transforme vraiment :\n- Passer des positions aux intérêts : 'Pourquoi ce budget ?' plutôt que 'Le budget c'est ça'\n- Préparer sa BATNA : connaître ses alternatives donne une force de négociation énorme\n- Séparer relationnel et business : on peut être ferme sur le fond et bienveillant sur la forme\n\nConseil pratique : avant chaque négociation importante, listez vos intérêts, ceux du client, et 3 options créatives. Ça change tout.",
+      rating: 4.5,
+      category: "negociation-closing",
+      complementaryBooks: ["never-split-the-difference", "spin-selling", "influence-psychology-persuasion"],
+      // Métadonnées spécifiques Négociation & Closing
+      negotiationStrategies: [
+        "Négociation raisonnée",
+        "Approche collaborative",
+        "Résolution de problème",
+        "Création de valeur mutuelle"
+      ],
+      closingTechniques: [
+        "Accord sur critères objectifs",
+        "Validation des intérêts",
+        "Engagement progressif",
+        "Solutions créatives"
+      ],
+      objectionHandling: [
+        "Exploration des intérêts",
+        "Reformulation des positions",
+        "Questions de clarification",
+        "Recherche de solutions alternatives"
+      ],
+      valueCreationMethods: [
+        "Élargissement du gâteau",
+        "Options à bénéfice mutuel",
+        "Intérêts partagés",
+        "Solutions créatives"
+      ],
+      psychologyPrinciples: [
+        "Séparation personne/problème",
+        "Focus sur les intérêts",
+        "Réciprocité",
+        "Équité"
+      ],
+      ethicalApproach: "Négociation basée sur les mérites et la recherche d'accords équitables",
+      businessApplications: [
+        "Négociation de contrats",
+        "Résolution de conflits",
+        "Partenariats commerciaux",
+        "Accords complexes"
+      ],
+      targetSituations: [
+        "Négociations multipartites",
+        "Situations de blocage",
+        "Enjeux relationnels importants",
+        "Accords à long terme"
+      ],
+      practicalFrameworks: [
+        "Méthode des 4 principes",
+        "Analyse BATNA",
+        "Matrice intérêts/positions",
+        "Génération d'options créatives"
+      ]
+    } as NegotiationClosingBook,
+    {
+      slug: "spin-selling",
+      title: "SPIN Selling",
+      author: "Neil Rackham",
+      year: 1988,
+      cover: "/covers/spin-selling.jpg",
+      tagline: "La méthode de questionnement qui révolutionne la vente consultative.",
+      summary: "Un livre fondé sur 12 ans de recherche et l'analyse de 35 000 entretiens de vente, qui a introduit une méthode devenue classique pour vendre des solutions complexes. Rackham démontre que, dans les ventes de gros enjeux, les techniques de vente traditionnelles sont inefficaces. Il propose l'approche SPIN : une séquence de questions à poser au client – Situation, Problème, Implication, Nécessité (Pay-off) – pour l'amener à exprimer lui-même ses besoins et la valeur de la solution. Cette vente consultative, centrée sur les questions, a prouvé son efficacité pour remporter des ventes complexes en faisant du client un partenaire de la discussion.",
+      detailedSummary: "SPIN Selling représente l'une des études les plus approfondies jamais menées sur l'efficacité des techniques de vente. Neil Rackham et son équipe ont analysé plus de 35 000 entretiens de vente sur 12 ans pour identifier ce qui fonctionne vraiment dans les ventes complexes.\n\n**La découverte révolutionnaire** : Les techniques de vente traditionnelles (présentation produit, closing agressif) qui fonctionnent pour les petites ventes deviennent contre-productives dans les ventes importantes. Plus la vente est complexe, plus il faut adopter une approche consultative.\n\n**La méthode SPIN** :\n\n**S - Questions de Situation**\n- Comprendre la situation actuelle du client\n- Recueillir des faits et des données de base\n- Établir le contexte de la discussion\n- Exemples : \"Combien d'employés avez-vous ?\", \"Quel système utilisez-vous actuellement ?\"\n- Attention : Ne pas en abuser, préparer ces questions en amont\n\n**P - Questions de Problème**\n- Identifier les difficultés, insatisfactions, préoccupations\n- Faire exprimer les problèmes par le client\n- Créer une prise de conscience des dysfonctionnements\n- Exemples : \"Êtes-vous satisfait de votre système actuel ?\", \"Quelles difficultés rencontrez-vous ?\"\n\n**I - Questions d'Implication**\n- Explorer les conséquences des problèmes identifiés\n- Amplifier l'urgence et l'importance de résoudre\n- Quantifier l'impact business des dysfonctionnements\n- Exemples : \"Quel est l'impact de ces retards sur vos clients ?\", \"Combien cela vous coûte-t-il ?\"\n- C'est la partie la plus critique et la plus difficile à maîtriser\n\n**N - Questions de Nécessité (Need-payoff)**\n- Faire exprimer par le client la valeur d'une solution\n- L'amener à formuler lui-même les bénéfices attendus\n- Créer un engagement psychologique vers la solution\n- Exemples : \"En quoi serait-ce utile de résoudre ce problème ?\", \"Quel serait l'impact d'une amélioration ?\"\n\n**Pourquoi SPIN fonctionne** :\n- Le client convainc lui-même plutôt que d'être convaincu\n- Les besoins exprimés par le client ont plus de poids que ceux suggérés par le vendeur\n- La méthode crée un dialogue collaboratif plutôt qu'un monologue commercial\n- Elle respecte le processus psychologique de prise de décision\n\n**Applications modernes** :\n- Découverte client approfondie\n- Qualification des opportunités\n- Préparation des propositions commerciales\n- Gestion des objections par anticipation\n- Closing naturel par l'engagement progressif\n\n**Erreurs courantes à éviter** :\n- Poser trop de questions de situation (ennuyeux)\n- Passer directement aux implications sans identifier les problèmes\n- Oublier les questions de nécessité (le client ne voit pas la valeur)\n- Utiliser SPIN comme un script rigide plutôt qu'un guide flexible",
+      keyPoints: [
+        "Méthode basée sur 35 000 entretiens de vente analysés",
+        "SPIN : Situation, Problème, Implication, Nécessité (Need-payoff)",
+        "Les techniques traditionnelles échouent dans les ventes complexes",
+        "Questions d'Implication : partie la plus critique pour créer l'urgence",
+        "Questions de Nécessité : faire exprimer la valeur par le client",
+        "Approche consultative vs présentation produit",
+        "Le client se convainc lui-même par ses propres réponses"
+      ],
+      targetProfiles: [
+        "Commerciaux B2B complexes",
+        "Account managers",
+        "Consultants en solutions",
+        "Ingénieurs commerciaux",
+        "Business developers"
+      ],
+      difficulty: "Intermédiaire",
+      readingTime: "8h",
+      terrainAdvice: "LA référence absolue en vente consultative. Rackham a fait le boulot scientifique que personne d'autre n'a fait. SPIN, c'est du solide, du prouvé.\n\nCe qui marche vraiment :\n- Les questions d'Implication : 'Si ça continue, quel impact sur votre business ?' (créent l'urgence)\n- Les questions de Nécessité : 'Qu'est-ce que ça changerait si...' (le client vend à votre place)\n- La progression logique : Situation → Problème → Implication → Nécessité\n\nErreur classique : utiliser SPIN comme un questionnaire. C'est un guide, pas un script ! Adaptez selon le contexte et la personnalité du client.",
+      rating: 4.6,
+      category: "negociation-closing",
+      complementaryBooks: ["the-challenger-sale", "mastering-the-complex-sale", "never-split-the-difference"],
+      // Métadonnées spécifiques Négociation & Closing
+      negotiationStrategies: [
+        "Vente consultative",
+        "Questionnement structuré",
+        "Découverte approfondie",
+        "Engagement progressif"
+      ],
+      closingTechniques: [
+        "Closing par les questions",
+        "Engagement naturel",
+        "Validation progressive",
+        "Auto-conviction client"
+      ],
+      objectionHandling: [
+        "Anticipation par les implications",
+        "Questions de clarification",
+        "Reformulation des besoins",
+        "Exploration des conséquences"
+      ],
+      valueCreationMethods: [
+        "Quantification des problèmes",
+        "Amplification des enjeux",
+        "Expression de la valeur par le client",
+        "ROI co-construit"
+      ],
+      psychologyPrinciples: [
+        "Auto-persuasion",
+        "Engagement progressif",
+        "Cohérence cognitive",
+        "Appropriation des solutions"
+      ],
+      ethicalApproach: "Vente consultative basée sur la résolution de problèmes réels du client",
+      businessApplications: [
+        "Ventes B2B complexes",
+        "Solutions sur mesure",
+        "Cycles de vente longs",
+        "Ventes à comité de décision"
+      ],
+      targetSituations: [
+        "Découverte client approfondie",
+        "Qualification d'opportunités",
+        "Ventes consultatives",
+        "Solutions complexes"
+      ],
+      practicalFrameworks: [
+        "Séquence SPIN",
+        "Matrice questions/objectifs",
+        "Guide de découverte client",
+        "Processus de qualification"
+      ]
+    } as NegotiationClosingBook,
+    {
+      slug: "the-challenger-sale",
+      title: "The Challenger Sale",
+      author: "Matthew Dixon & Brent Adamson",
+      year: 2011,
+      cover: "/covers/the-challenger-sale.jpg",
+      tagline: "Enseigner, personnaliser et contrôler pour transformer sa façon de vendre.",
+      summary: "Basé sur une vaste étude, ce livre a bousculé le monde de la vente en identifiant le profil du Challenger comme le plus performant. Les auteurs montrent qu'un vendeur 'challenger' surpasse les vendeurs traditionnels en éduquant le client (Teach), en personnalisant son approche (Tailor) et en contrôlant fermement la vente (Take control). Plutôt que de chercher à tout prix la relation lisse, le Challenger ose remettre en question la vision du client, lui apporte des idées nouvelles sur son business, et sait le pousser hors de sa zone de confort de manière constructive. Le livre détaille comment construire une conversation commerciale percutante qui bouscule les croyances du client pour lui faire prendre conscience d'un problème latent et de la valeur de votre solution.",
+      detailedSummary: "The Challenger Sale révolutionne la compréhension de la performance commerciale en identifiant, à travers une étude massive, les profils de vendeurs qui réussissent le mieux dans l'environnement commercial moderne.\n\n**L'étude révolutionnaire** : Analyse de plus de 6 000 commerciaux dans 90 entreprises pour identifier les profils les plus performants. Résultat surprenant : ce ne sont pas les 'relationship builders' qui gagnent, mais les 'challengers'.\n\n**Les 5 profils de commerciaux identifiés** :\n1. **The Hard Worker** (27%) : Travailleur acharné, persévérant\n2. **The Challenger** (27%) : Remet en question, apporte des insights\n3. **The Relationship Builder** (25%) : Mise sur la relation et le service\n4. **The Lone Wolf** (18%) : Indépendant, suit ses propres règles\n5. **The Reactive Problem Solver** (3%) : Réactif, résout les problèmes\n\n**Pourquoi le Challenger domine** :\n- 40% des top performers sont des Challengers\n- Seulement 7% des top performers sont des Relationship Builders\n- Dans les ventes complexes, l'écart se creuse encore plus\n\n**La méthode Challenger : Teach, Tailor, Take Control**\n\n**1. TEACH (Enseigner)**\n- Apporter des insights uniques sur le business du client\n- Révéler des opportunités ou des risques cachés\n- Éduquer sur des tendances sectorielles méconnues\n- Challenger les idées reçues avec des données factuelles\n- Exemple : \"Saviez-vous que 73% des entreprises de votre secteur qui n'ont pas digitalisé ce processus ont perdu 15% de parts de marché ?\"\n\n**2. TAILOR (Personnaliser)**\n- Adapter le message aux différents interlocuteurs\n- Comprendre les enjeux spécifiques de chaque décideur\n- Personnaliser la valeur selon les priorités individuelles\n- Parler le langage de chaque fonction (finance, technique, opérationnel)\n\n**3. TAKE CONTROL (Prendre le contrôle)**\n- Diriger la conversation commerciale\n- Aborder les sujets difficiles (budget, décision, timing)\n- Créer une tension constructive\n- Pousser vers la décision sans être agressif\n- Maintenir le momentum du processus de vente\n\n**L'insight selling** : Cœur de l'approche Challenger\n- Apporter une perspective nouvelle sur le business du client\n- Révéler des problèmes que le client n'avait pas identifiés\n- Connecter ces problèmes à votre solution unique\n- Créer un sentiment d'urgence légitime\n\n**Construction d'un insight commercial** :\n1. **Lead with insight** : Commencer par une donnée surprenante\n2. **Introduce the problem** : Révéler un problème caché\n3. **Rationalize with data** : Étayer avec des preuves\n4. **Emotionalize the impact** : Montrer les conséquences émotionnelles\n5. **Present the solution** : Proposer votre approche unique\n\n**Gestion des ventes complexes** :\n- Identifier les 'Mobilizers' dans l'organisation cliente\n- Équiper ces alliés pour qu'ils vendent en interne\n- Naviguer dans les processus de décision complexes\n- Maintenir le momentum malgré les obstacles",
+      keyPoints: [
+        "Le profil Challenger surpasse tous les autres en performance",
+        "Teach, Tailor, Take Control : les 3 piliers du Challenger",
+        "L'insight selling : apporter des perspectives nouvelles",
+        "Challenger les idées reçues avec des données factuelles",
+        "Personnaliser le message selon chaque interlocuteur",
+        "Prendre le contrôle de la conversation commerciale",
+        "Créer une tension constructive pour pousser à la décision"
+      ],
+      targetProfiles: [
+        "Commerciaux B2B complexes",
+        "Account managers",
+        "Business developers",
+        "Consultants commerciaux",
+        "Managers commerciaux"
+      ],
+      difficulty: "Avancé",
+      readingTime: "7h",
+      terrainAdvice: "Un livre qui a changé ma vision de la vente ! Dixon et Adamson ont cassé le mythe du 'relationship builder'. En vente complexe, il faut challenger, pas juste être sympa.\n\nCe qui transforme vraiment :\n- L'insight selling : apporter une info que le client n'a pas (game changer)\n- Oser challenger : 'Avez-vous pensé à l'impact de...' (crée de la valeur)\n- Take control : diriger la conversation vers la décision\n\nAttention : challenger ne veut pas dire agresser ! C'est challenger les idées, pas la personne. Toujours avec respect et données à l'appui.",
+      rating: 4.8,
+      category: "negociation-closing",
+      complementaryBooks: ["the-challenger-customer", "spin-selling", "never-split-the-difference"],
+      // Métadonnées spécifiques Négociation & Closing
+      negotiationStrategies: [
+        "Challenger approach",
+        "Insight selling",
+        "Tension constructive",
+        "Contrôle de la conversation"
+      ],
+      closingTechniques: [
+        "Take control closing",
+        "Tension créative",
+        "Urgence par insight",
+        "Closing par la valeur"
+      ],
+      objectionHandling: [
+        "Challenger les objections",
+        "Insights pour contrer",
+        "Données factuelles",
+        "Reframing des enjeux"
+      ],
+      valueCreationMethods: [
+        "Insight selling",
+        "Révélation de problèmes cachés",
+        "Perspectives nouvelles",
+        "Éducation client"
+      ],
+      psychologyPrinciples: [
+        "Tension constructive",
+        "Autorité par l'expertise",
+        "Surprise cognitive",
+        "Urgence légitime"
+      ],
+      ethicalApproach: "Challenger constructif basé sur l'apport de valeur et d'insights",
+      businessApplications: [
+        "Ventes B2B complexes",
+        "Transformation digitale",
+        "Solutions innovantes",
+        "Marchés saturés"
+      ],
+      targetSituations: [
+        "Clients satisfaits du statu quo",
+        "Marchés commoditisés",
+        "Ventes complexes",
+        "Cycles longs"
+      ],
+      practicalFrameworks: [
+        "Méthode Teach-Tailor-Take Control",
+        "Construction d'insights",
+        "Profiling des interlocuteurs",
+        "Gestion des Mobilizers"
+      ]
+    } as NegotiationClosingBook,
+    {
+      slug: "the-lost-art-of-closing",
+      title: "The Lost Art of Closing",
+      author: "Anthony Iannarino",
+      year: 2017,
+      cover: "/covers/the-lost-art-of-closing.jpg",
+      tagline: "Maîtriser l'art du closing moderne par les engagements progressifs.",
+      summary: "Anthony Iannarino démontre que le closing n'est pas un acte unique en fin de cycle, mais une série de 'mini engagements' tout au long du processus de vente. L'idée centrale est d'apporter de la valeur à chaque étape pour mériter naturellement le droit de demander la signature. Ce livre complète les approches globales en fournissant des formules de langage concrètes pour répondre aux dernières objections, créer un sentiment d'urgence ou formuler une demande de commande de façon assumée et confiante. Il rappelle que 'qui ne demande pas, n'obtient pas' : l'art du closing repose sur le courage de faire poliment pression au bon moment, lorsque l'on a vraiment aidé le client à se décider dans la sérénité.",
+      detailedSummary: "Anthony Iannarino révolutionne l'approche du closing en montrant que c'est un processus continu d'engagements progressifs, pas une technique de fin de cycle. Son approche moderne respecte l'évolution des comportements d'achat tout en maintenant l'efficacité commerciale.\n\n**Le mythe du closing traditionnel** :\nLes techniques de closing agressives (assumptive close, alternative close, etc.) ne fonctionnent plus dans l'environnement commercial moderne. Les acheteurs sont plus informés, plus méfiants, et détestent la pression.\n\n**La nouvelle philosophie du closing** :\nLe closing moderne consiste à obtenir une série de petits 'oui' tout au long du processus, créant un momentum naturel vers la signature finale.\n\n**Les 10 engagements progressifs** :\n\n**1. L'engagement de temps** : Obtenir du temps pour une vraie conversation\n- \"Pouvons-nous prévoir 45 minutes pour explorer vos enjeux ?\"\n- Valeur apportée : Diagnostic professionnel gratuit\n\n**2. L'engagement d'exploration** : Accepter un audit ou diagnostic\n- \"Accepteriez-vous que nous analysions votre situation actuelle ?\"\n- Valeur apportée : Insights et recommandations\n\n**3. L'engagement de changement** : Reconnaître la nécessité d'évoluer\n- \"Êtes-vous d'accord qu'il faut faire quelque chose ?\"\n- Valeur apportée : Clarification des enjeux\n\n**4. L'engagement de collaboration** : Travailler ensemble sur la solution\n- \"Pouvons-nous co-construire la solution optimale ?\"\n- Valeur apportée : Solution sur mesure\n\n**5. L'engagement de construction** : Participer à l'élaboration de la proposition\n- \"Pouvez-vous nous aider à calibrer la solution ?\"\n- Valeur apportée : Proposition parfaitement adaptée\n\n**6. L'engagement d'investissement** : Accepter le principe d'un investissement\n- \"Êtes-vous prêt à investir pour résoudre ce problème ?\"\n- Valeur apportée : ROI quantifié\n\n**7. L'engagement de révision** : Examiner la proposition ensemble\n- \"Pouvons-nous présenter notre recommandation ?\"\n- Valeur apportée : Solution détaillée et chiffrée\n\n**8. L'engagement de résolution** : Traiter les dernières préoccupations\n- \"Quels sont vos derniers points d'interrogation ?\"\n- Valeur apportée : Réponses et ajustements\n\n**9. L'engagement de risque** : Accepter de prendre une décision\n- \"Êtes-vous prêt à prendre cette décision ?\"\n- Valeur apportée : Accompagnement dans la décision\n\n**10. L'engagement de commande** : Signer le contrat\n- \"Pouvons-nous démarrer dès la semaine prochaine ?\"\n- Valeur apportée : Mise en œuvre rapide\n\n**Techniques de closing modernes** :\n\n**Le closing consultatif** : \"Basé sur tout ce que nous avons vu, ma recommandation est...\"\n\n**Le closing par l'urgence légitime** : \"Cette opportunité ne se représentera pas avant...\"\n\n**Le closing par la conséquence** : \"Si nous ne faisons rien, voici ce qui va se passer...\"\n\n**Le closing par l'alternative** : \"Préférez-vous commencer par la phase 1 ou déployer directement ?\"\n\n**Gestion des objections de closing** :\n- Prix : Recentrer sur la valeur et le ROI\n- Timing : Créer l'urgence légitime\n- Autorisation : Impliquer les décideurs\n- Concurrence : Différencier par la valeur unique\n\n**L'état d'esprit du closer moderne** :\n- Conviction profonde dans sa solution\n- Courage de demander la commande\n- Persistance respectueuse\n- Focus sur l'aide au client, pas sur sa commission",
+      keyPoints: [
+        "Le closing est un processus d'engagements progressifs, pas un événement",
+        "10 types d'engagements du premier contact à la signature",
+        "Apporter de la valeur à chaque étape pour mériter le droit de demander",
+        "Techniques de closing modernes respectueuses et efficaces",
+        "Gestion des objections de fin de cycle",
+        "L'importance du courage et de la conviction dans le closing",
+        "Créer un momentum naturel vers la décision"
+      ],
+      targetProfiles: [
+        "Commerciaux B2B",
+        "Account managers",
+        "Business developers",
+        "Consultants commerciaux",
+        "Managers commerciaux"
+      ],
+      difficulty: "Intermédiaire",
+      readingTime: "6h",
+      terrainAdvice: "Enfin un livre moderne sur le closing ! Iannarino a compris que les techniques des années 80 ne marchent plus. Son approche par engagements progressifs est brillante.\n\nCe qui fonctionne vraiment :\n- Les micro-engagements : chaque 'oui' facilite le suivant\n- La valeur à chaque étape : on mérite le droit de demander\n- Le closing consultatif : 'Ma recommandation est...'\n\nErreur à éviter : vouloir closer sans avoir créé de valeur. Iannarino le dit bien : 'Earn the right to ask'. D'abord aider, ensuite demander.",
+      rating: 4.4,
+      category: "negociation-closing",
+      complementaryBooks: ["spin-selling", "the-challenger-sale", "never-split-the-difference"],
+      // Métadonnées spécifiques Négociation & Closing
+      negotiationStrategies: [
+        "Engagements progressifs",
+        "Closing consultatif",
+        "Momentum naturel",
+        "Valeur à chaque étape"
+      ],
+      closingTechniques: [
+        "10 engagements progressifs",
+        "Closing par la valeur",
+        "Closing par l'urgence légitime",
+        "Closing par la conséquence"
+      ],
+      objectionHandling: [
+        "Objections prix par ROI",
+        "Objections timing par urgence",
+        "Objections autorisation par implication",
+        "Objections concurrence par différenciation"
+      ],
+      valueCreationMethods: [
+        "Valeur à chaque engagement",
+        "Diagnostic gratuit",
+        "Solution co-construite",
+        "ROI quantifié"
+      ],
+      psychologyPrinciples: [
+        "Engagements progressifs",
+        "Cohérence cognitive",
+        "Réciprocité",
+        "Momentum psychologique"
+      ],
+      ethicalApproach: "Closing basé sur la création de valeur et l'aide à la décision",
+      businessApplications: [
+        "Ventes B2B consultatives",
+        "Cycles de vente longs",
+        "Solutions complexes",
+        "Closing respectueux"
+      ],
+      targetSituations: [
+        "Clients indécis",
+        "Processus de vente longs",
+        "Objections de fin de cycle",
+        "Closing difficiles"
+      ],
+      practicalFrameworks: [
+        "Processus des 10 engagements",
+        "Matrice valeur/engagement",
+        "Scripts de closing modernes",
+        "Gestion des objections finales"
+      ]
+    } as NegotiationClosingBook
   ]
 };
