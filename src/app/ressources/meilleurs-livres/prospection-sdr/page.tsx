@@ -2,6 +2,8 @@ import { bookCategories } from '@/data/books';
 import Link from 'next/link';
 import Head from 'next/head';
 import AnimatedSection from '@/components/ui/AnimatedSection';
+import SmartCategoryBreadcrumb from '@/components/ui/SmartCategoryBreadcrumb';
+import CrossCategoryNavigation from '@/components/ui/CrossCategoryNavigation';
 import React from 'react';
 
 function chunkArray<T>(arr: T[], size: number): T[][] {
@@ -30,6 +32,18 @@ export default function ProspectionSDRPage() {
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">Livres de prospection & SDR</h1>
           <p className="text-lg md:text-xl text-white/80 mb-6">Générez un flux constant d’opportunités et maîtrisez l’art de la prospection moderne en 2025.</p>
         </section>
+
+        {/* Smart Category Breadcrumb with Cross-Category Navigation */}
+        <SmartCategoryBreadcrumb
+          items={[
+            { label: 'Ressources', href: '/ressources' },
+            { label: 'Meilleurs Livres', href: '/ressources/meilleurs-livres' },
+            { label: 'Prospection & SDR', href: '/ressources/meilleurs-livres/prospection-sdr', current: true }
+          ]}
+          currentCategory="prospection-sdr"
+          showIntelligentRecommendations={true}
+          userProfile="SDR"
+        />
 
         {/* Tableau comparatif (déplacé au-dessus de la grid) */}
         <AnimatedSection delay={0.1}>
@@ -98,6 +112,15 @@ export default function ProspectionSDRPage() {
               );
             })}
           </div>
+        </AnimatedSection>
+
+        {/* Cross-Category Navigation */}
+        <AnimatedSection delay={0.3}>
+          <CrossCategoryNavigation 
+            currentCategory="prospection-sdr"
+            userProfile="SDR"
+            className="mb-12"
+          />
         </AnimatedSection>
 
         {/* CTA Bootcamp */}
