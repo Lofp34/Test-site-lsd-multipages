@@ -402,25 +402,29 @@ export default function NegociationClosingPage() {
         {/* Section : Feuille de route d'implémentation avec ImplementationRoadmap */}
         <AnimatedSection delay={475}>
           <ImplementationRoadmap 
-            title="Feuille de route pour maîtriser la négociation collaborative"
-            subtitle="Un plan progressif en 4 phases pour transformer votre approche de la négociation"
             phases={negotiationImplementationRoadmap.map(phase => ({
               phase: phase.phase,
               title: phase.title,
               duration: phase.duration,
               description: phase.description,
-              actions: phase.keyActions || [],
-              expectedResults: phase.expectedResults,
-              laurentAdvice: phase.laurentAdvice
+              keyActions: phase.keyActions || [],
+              expectedResults: [phase.expectedResults || "Amélioration des compétences de négociation"],
+              laurentTip: phase.laurentAdvice || "",
+              difficulty: "Intermédiaire" as const,
+              prerequisites: []
             }))}
-            tips={[
-              "Commencez par analyser vos négociations perdues pour identifier les patterns récurrents",
-              "Pratiquez les techniques sur des négociations à faible enjeu avant les gros deals",
-              "Enregistrez vos négociations (avec accord) pour analyser votre progression",
-              "Créez un kit de négociation avec vos meilleures preuves de valeur",
-              "Développez votre BATNA avant chaque négociation importante"
-            ]}
-            domainColor="#EF4444"
+            categoryTheme={{
+              primaryColor: "#EF4444",
+              secondaryColor: "#F97316",
+              accentColor: "#FEF3C7",
+              particleColor: "#EF4444",
+              gradientFrom: "from-red-600",
+              gradientTo: "to-primary-bg",
+              gradientVia: "via-orange-500/10",
+              icon: "🤝",
+              name: "Négociation & Closing"
+            }}
+            domainTitle="la négociation collaborative"
           />
         </AnimatedSection>
 

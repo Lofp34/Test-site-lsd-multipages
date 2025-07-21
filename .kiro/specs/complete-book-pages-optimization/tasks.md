@@ -114,7 +114,7 @@ Ce plan d'implémentation transforme les requirements et le design en tâches co
   - Configurer les thèmes visuels spécifiques
   - _Requirements: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6_
 
-- [ ] 4.1 Optimiser la page Négociation & Closing
+- [x] 4.1 Optimiser la page Négociation & Closing
   - Créer/optimiser /negociation-closing/page.tsx avec le template CategoryPage
   - Intégrer le contenu négociation-closing-content.ts
   - Appliquer le thème Rouge/Orange (#EF4444, #F97316)

@@ -8,7 +8,7 @@ import CategoryBreadcrumb from '@/components/ui/CategoryBreadcrumb';
 import ParticleBackground from '@/components/ui/ParticleBackground';
 import DomainInsight from '@/components/ui/DomainInsight';
 import ImplementationRoadmap from '@/components/ui/ImplementationRoadmap';
-import PMECaseStudy from '@/components/ui/PMECaseStudy';
+import CaseStudyGrid from '@/components/ui/CaseStudyGrid';
 
 import { categoryBreadcrumbSuggestions } from '@/utils/cross-category-suggestions';
 import { 
@@ -170,7 +170,7 @@ export default function EnterpriseAccountPage() {
             { label: 'Meilleurs Livres', href: '/ressources/meilleurs-livres' },
             { label: 'Enterprise Account', href: '/ressources/meilleurs-livres/enterprise-account', current: true }
           ]}
-          relatedCategories={categoryBreadcrumbSuggestions['enterprise-account']}
+          relatedCategories={categoryBreadcrumbSuggestions ? categoryBreadcrumbSuggestions['enterprise-account'] : []}
         />
 
         {/* Hero section avec présentation des comptes stratégiques */}
@@ -315,64 +315,54 @@ export default function EnterpriseAccountPage() {
           </div>
         </AnimatedSection>
 
-        {/* Section : Exemples concrets PME avec PMECaseStudy component */}
+        {/* Section : Exemples concrets PME avec CaseStudyGrid component */}
         <AnimatedSection delay={450}>
-          <div className="max-w-6xl mx-auto mb-12 px-4">
-            {enterpriseAccountCaseStudies && (
-              <PMECaseStudy 
-                caseStudies={enterpriseAccountCaseStudies.map(caseStudy => ({
-                  ...caseStudy,
-                  metrics: caseStudy.metrics || {},
-                }))}
-                title="Cas clients PME"
-                subtitle="Découvrez comment mes clients PME appliquent concrètement les concepts de ces livres"
-                domainColor="#10B981"
-                domainIcon="🏢"
-                laurentExperienceQuote="L'Account Management en PME, c'est différent des grandes entreprises. Vous n'avez pas 50 personnes dédiées, mais vous avez un avantage : la proximité et la réactivité. Mes clients qui réussissent le mieux sont ceux qui structurent leur approche tout en gardant cette agilité PME. Le secret ? Commencer petit, mesurer l'impact, puis étendre progressivement."
-                domainStats={[
-                  { 
-                    value: "6 mois", 
-                    label: "Durée moyenne de transformation", 
-                    description: "Pour structurer complètement les processus" 
-                  },
-                  { 
-                    value: "5x", 
-                    label: "ROI moyen sur les comptes stratégiques", 
-                    description: "Retour sur investissement mesuré" 
-                  },
-                  { 
-                    value: "85%", 
-                    label: "Taux de rétention des comptes clés", 
-                    description: "Fidélisation des clients stratégiques" 
-                  }
-                ]}
-              />
-            )}
-          </div>
+          <CaseStudyGrid 
+            caseStudies={enterpriseAccountCaseStudies.map(caseStudy => ({
+              industry: caseStudy.industry,
+              companySize: caseStudy.companySize,
+              challenge: caseStudy.challenge,
+              solution: caseStudy.solution,
+              results: caseStudy.results,
+              metrics: caseStudy.metrics ? {
+                before: caseStudy.metrics.revenueGrowth || caseStudy.metrics.cycleReduction || "Situation initiale",
+                after: caseStudy.metrics.accountDiversification || caseStudy.metrics.lostDealsReduction || "Après transformation",
+                timeline: caseStudy.timeline || "6 mois"
+              } : undefined
+            }))}
+            title="Cas clients PME"
+            subtitle="Découvrez comment mes clients PME appliquent concrètement les concepts de ces livres"
+            domainColor="#10B981"
+          />
         </AnimatedSection>
 
         {/* Section : Feuille de route d'implémentation avec ImplementationRoadmap component */}
         <AnimatedSection delay={475}>
           <div className="max-w-6xl mx-auto mb-12 px-4">
             <ImplementationRoadmap 
-              title="Feuille de route pour votre Account Management"
-              subtitle="Un plan progressif en 4 phases pour transformer votre gestion des comptes stratégiques"
               phases={enterpriseAccountRoadmap.map(phase => ({
                 phase: phase.phase,
                 title: phase.title,
                 duration: phase.duration,
                 description: phase.description,
-                actions: phase.keyActions,
-                expectedResults: phase.expectedResults,
-                laurentAdvice: phase.laurentAdvice
+                keyActions: phase.keyActions || [],
+                expectedResults: [phase.expectedResults || "Amélioration des compétences d'account management"],
+                laurentTip: phase.laurentAdvice || "",
+                difficulty: "Avancé" as const,
+                prerequisites: []
               }))}
-              tips={[
-                "Ne tombez pas dans le piège de vouloir traiter tous vos clients comme des comptes stratégiques",
-                "Concentrez-vous sur les 5-10 comptes qui représentent 60-80% de votre potentiel",
-                "Investissez 2-3h par compte en recherche et analyse avant de commencer",
-                "Soyez régulier, tenez vos engagements et créez de la valeur à chaque interaction"
-              ]}
-              domainColor="#10B981"
+              categoryTheme={{
+                primaryColor: "#10B981",
+                secondaryColor: "#059669",
+                accentColor: "#D1FAE5",
+                particleColor: "#10B981",
+                gradientFrom: "from-emerald-600",
+                gradientTo: "to-primary-bg",
+                gradientVia: "via-green-500/10",
+                icon: "🏢",
+                name: "Enterprise Account"
+              }}
+              domainTitle="l'account management"
             />
           </div>
         </AnimatedSection>

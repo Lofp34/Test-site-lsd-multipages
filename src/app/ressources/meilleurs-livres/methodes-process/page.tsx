@@ -7,7 +7,7 @@ import BookCard from '@/components/ui/BookCard';
 import CategoryBreadcrumb from '@/components/ui/CategoryBreadcrumb';
 import ParticleBackground from '@/components/ui/ParticleBackground';
 import DomainInsight from '@/components/ui/DomainInsight';
-import PMECaseStudy from '@/components/ui/PMECaseStudy';
+import CaseStudyGrid from '@/components/ui/CaseStudyGrid';
 import ImplementationRoadmap from '@/components/ui/ImplementationRoadmap';
 import DomainStats from '@/components/ui/DomainStats';
 import { categoryBreadcrumbSuggestions } from '@/utils/cross-category-suggestions';
@@ -310,18 +310,22 @@ export default function MethodesProcessPage() {
 
         {/* Section : Exemples concrets PME */}
         <AnimatedSection delay={450}>
-          <PMECaseStudy 
-            caseStudies={methodsProcessesCaseStudies}
+          <CaseStudyGrid 
+            caseStudies={methodsProcessesCaseStudies.map(caseStudy => ({
+              industry: caseStudy.industry,
+              companySize: caseStudy.companySize,
+              challenge: caseStudy.challenge,
+              solution: caseStudy.solution,
+              results: caseStudy.results,
+              metrics: caseStudy.metrics ? {
+                before: caseStudy.metrics.before || "Situation initiale",
+                after: caseStudy.metrics.after || "Après transformation",
+                timeline: caseStudy.timeline || "3 mois"
+              } : undefined
+            }))}
             title="Cas clients PME"
             subtitle="Découvrez comment mes clients PME appliquent concrètement ces frameworks de vente"
             domainColor="#3B82F6"
-            domainIcon="🛠️"
-            laurentExperienceQuote="Ces transformations méthodologiques ne se font pas du jour au lendemain. Mes clients qui réussissent le mieux choisissent d'abord UNE méthode, la maîtrisent parfaitement, puis l'adaptent à leur contexte. L'erreur classique est de vouloir mixer toutes les approches dès le départ."
-            domainStats={[
-              { value: "3 mois", label: "Durée moyenne d'adoption", description: "Pour maîtriser une méthode" },
-              { value: "+40%", label: "Amélioration taux de closing", description: "Avec méthodes structurées" },
-              { value: "85%", label: "Commerciaux plus confiants", description: "Avec processus clairs" }
-            ]}
           />
         </AnimatedSection>
 
@@ -342,16 +346,29 @@ export default function MethodesProcessPage() {
               </div>
               
               <ImplementationRoadmap 
-                title="Feuille de route pour transformer vos processus commerciaux"
-                subtitle="Un plan progressif en 4 phases pour ancrer durablement les meilleures pratiques méthodologiques"
-                phases={methodsProcessesRoadmap}
-                tips={[
-                  "Commencez par UNE méthode et maîtrisez-la parfaitement avant d'en ajouter d'autres",
-                  "Impliquez vos meilleurs commerciaux dans la conception du processus pour faciliter l'adoption",
-                  "Mesurez systématiquement l'impact de chaque changement pour ajuster rapidement",
-                  "Formez vos managers au coaching processus pour assurer la pérennité"
-                ]}
-                domainColor="#3B82F6"
+                phases={methodsProcessesRoadmap.map(phase => ({
+                  phase: phase.phase,
+                  title: phase.title,
+                  duration: phase.duration,
+                  description: phase.description,
+                  keyActions: phase.keyActions || [],
+                  expectedResults: phase.expectedResults || [],
+                  laurentTip: phase.laurentAdvice || "",
+                  difficulty: "Intermédiaire" as const,
+                  prerequisites: []
+                }))}
+                categoryTheme={{
+                  primaryColor: "#3B82F6",
+                  secondaryColor: "#06B6D4",
+                  accentColor: "#DBEAFE",
+                  particleColor: "#3B82F6",
+                  gradientFrom: "from-blue-600",
+                  gradientTo: "to-primary-bg",
+                  gradientVia: "via-cyan-500/10",
+                  icon: "🛠️",
+                  name: "Méthodes & Process"
+                }}
+                domainTitle="les méthodes de vente structurées"
               />
             </div>
           </div>

@@ -1,4 +1,5 @@
 import { psychologyInfluenceCategoryExtended } from '@/data/books-enriched';
+import { psychologyImplementationRoadmap } from '@/data/psychology-influence-content';
 import Link from 'next/link';
 import { Metadata } from 'next/dist/lib/metadata/types/metadata-interface';
 import AnimatedSection from '@/components/ui/AnimatedSection';
@@ -7,7 +8,7 @@ import BookCard from '@/components/ui/BookCard';
 import CategoryBreadcrumb from '@/components/ui/CategoryBreadcrumb';
 import ParticleBackground from '@/components/ui/ParticleBackground';
 import DomainInsight from '@/components/ui/DomainInsight';
-import PMECaseStudy from '@/components/ui/PMECaseStudy';
+import CaseStudyGrid from '@/components/ui/CaseStudyGrid';
 import ImplementationRoadmap from '@/components/ui/ImplementationRoadmap';
 import DomainStats from '@/components/ui/DomainStats';
 import { categoryBreadcrumbSuggestions } from '@/utils/cross-category-suggestions';
@@ -567,74 +568,13 @@ export default function PsychologieInfluencePage() {
         {/* Section : Feuille de route d'implémentation */}
         <AnimatedSection delay={475}>
           <ImplementationRoadmap 
-            title="Feuille de route pour maîtriser l'influence éthique"
-            subtitle="Un plan progressif en 4 phases pour transformer votre approche psychologique de la vente"
-            phases={[
-              {
-                phase: 1,
-                title: "Fondamentaux - Bases Psychologiques",
-                duration: "1-2 semaines",
-                description: "Acquisition des bases théoriques et identification des leviers psychologiques les plus pertinents pour votre contexte PME.",
-                actions: [
-                  "Formation équipe aux 6 principes de Cialdini",
-                  "Audit des pratiques commerciales actuelles sous l'angle psychologique",
-                  "Identification des biais cognitifs récurrents de vos clients types",
-                  "Création d'un référentiel de témoignages et preuves sociales"
-                ],
-                expectedResults: "Compréhension claire des mécanismes d'influence et diagnostic des forces/faiblesses actuelles",
-                laurentAdvice: "Ne brûlez pas les étapes ! La psychologie commerciale, c'est comme apprendre une langue : il faut d'abord maîtriser les bases avant de vouloir faire des phrases complexes."
-              },
-              {
-                phase: 2,
-                title: "Mise en pratique - Application Ciblée",
-                duration: "1 mois",
-                description: "Application progressive des techniques psychologiques dans vos interactions commerciales quotidiennes.",
-                actions: [
-                  "Implémentation systématique du principe de réciprocité en prospection",
-                  "Développement et déploiement de la preuve sociale",
-                  "Renforcement de l'autorité expertise",
-                  "Tests A/B sur les techniques d'influence par canal"
-                ],
-                expectedResults: "Amélioration mesurable des performances commerciales grâce aux techniques psychologiques",
-                laurentAdvice: "Testez une technique à la fois pendant 2 semaines et mesurez l'impact. L'erreur classique, c'est de vouloir tout appliquer en même temps."
-              },
-              {
-                phase: 3,
-                title: "Optimisation - Personnalisation Avancée",
-                duration: "2-3 mois",
-                description: "Affinage des techniques en fonction des retours terrain et personnalisation par type de client.",
-                actions: [
-                  "Segmentation psychologique fine de votre clientèle par persona",
-                  "Personnalisation des approches d'influence par type de décideur",
-                  "Développement d'outils d'aide à la vente psychologique",
-                  "Formation avancée aux biais cognitifs"
-                ],
-                expectedResults: "Approche psychologique sophistiquée et personnalisée avec impact business significatif",
-                laurentAdvice: "Créez des 'profils psychologiques' de vos personas et adaptez votre approche. C'est ce qui fait la différence entre un bon commercial et un expert en influence."
-              },
-              {
-                phase: 4,
-                title: "Maîtrise - Leadership d'Influence",
-                duration: "6 mois et plus",
-                description: "Développement d'une expertise reconnue en psychologie commerciale.",
-                actions: [
-                  "Création de contenus experts sur la psychologie commerciale",
-                  "Formation d'autres commerciaux aux techniques avancées",
-                  "Développement de partenariats stratégiques",
-                  "Publication et partage d'expériences sectorielles"
-                ],
-                expectedResults: "Expertise reconnue et avantage concurrentiel durable basé sur l'influence éthique",
-                laurentAdvice: "À ce niveau, vous ne vendez plus : vous influencez. Vos prospects viennent à vous parce qu'ils reconnaissent votre expertise. C'est le Graal !"
-              }
-            ]}
-            tips={[
-              "Commencez par lire 'Influence' de Cialdini en équipe (1 chapitre/semaine)",
-              "Observez vos clients actuels : quels sont leurs déclencheurs d'achat ?",
-              "Collectez systématiquement les témoignages et success stories",
-              "Testez une technique à la fois pendant 2 semaines avant de passer à la suivante",
-              "Mesurez systématiquement les taux de réponse et de conversion"
-            ]}
-            domainColor="#8B5CF6"
+            phases={psychologyImplementationRoadmap}
+            categoryTheme={{
+              primaryColor: "#8B5CF6",
+              secondaryColor: "#EC4899", 
+              accentColor: "#F59E0B"
+            }}
+            domainTitle="l'influence éthique"
           />
         </AnimatedSection>
 
