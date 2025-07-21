@@ -422,8 +422,29 @@ export default function MindsetPerformancePage() {
         {/* Section : Feuille de route d'implémentation */}
         <AnimatedSection delay={550}>
           <ImplementationRoadmap 
-            {...mindsetPerformanceRoadmap}
-            domainColor="#FF6B35"
+            phases={mindsetPerformanceRoadmap.phases.map((phase, index) => ({
+              phase: index + 1,
+              title: phase.title,
+              duration: phase.duration,
+              description: phase.description,
+              keyActions: phase.actions || [],
+              expectedResults: phase.deliverables || [],
+              laurentTip: phase.success_metrics || "",
+              difficulty: "Intermédiaire" as const,
+              prerequisites: []
+            }))}
+            categoryTheme={{
+              primaryColor: "#F59E0B",
+              secondaryColor: "#EF4444",
+              accentColor: "#FEF3C7",
+              particleColor: "#F59E0B",
+              gradientFrom: "from-amber-600",
+              gradientTo: "to-primary-bg",
+              gradientVia: "via-red-500/10",
+              icon: "🎯",
+              name: "Mindset & Performance"
+            }}
+            domainTitle="le mindset de performance"
           />
         </AnimatedSection>
 

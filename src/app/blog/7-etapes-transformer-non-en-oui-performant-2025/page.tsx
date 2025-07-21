@@ -263,31 +263,4 @@ export default function Article7EtapesNonOui() {
   );
 }
 
-// Structured data for SEO
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "7 étapes pour transformer un « non » frustrant en « oui » performant en 2025",
-  "description": "Découvrez une méthode en 7 étapes pour transformer chaque refus client frustrant en opportunité commerciale durable et efficace.",
-  "image": "https://laurentserre.com/equipe_bureau.jpg",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://laurentserre.com",
-    "image": "https://laurentserre.com/laurent.jpg"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre Développement",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://laurentserre.com/laurent.jpg"
-    }
-  },
-  "datePublished": "2025-07-01",
-  "dateModified": "2025-07-01",
-  "articleSection": "Techniques de vente",
-  "keywords": ["refus client", "objection commerciale", "transformation vente", "techniques de vente", "développement commercial", "IA commerciale"],
-  "wordCount": 1300,
-  "timeRequired": "PT9M"
-}; 
+ 

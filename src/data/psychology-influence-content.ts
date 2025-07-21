@@ -31,7 +31,8 @@ export interface PsychologyImplementationPhase {
   description: string;
   keyActions: string[];
   expectedResults: string[];
-  laurentAdvice: string;
+  difficulty: 'Débutant' | 'Intermédiaire' | 'Avancé';
+  laurentTip: string;
 }
 
 // Vision Laurent Serre sur la psychologie commerciale
@@ -183,14 +184,20 @@ export const psychologyImplementationRoadmap: PsychologyImplementationPhase[] = 
       "Négliger l'importance de l'authenticité dans l'influence",
       "Oublier que l'influence doit créer de la valeur mutuelle"
     ],
-    expectedResults: "Compréhension claire des mécanismes d'influence et diagnostic des forces/faiblesses actuelles",
+    expectedResults: [
+      "Compréhension claire des mécanismes d'influence",
+      "Diagnostic des forces/faiblesses actuelles",
+      "Référentiel de témoignages constitué",
+      "Plan d'action personnalisé validé"
+    ],
     successMetrics: [
       "100% de l'équipe formée aux 6 principes de Cialdini",
       "Audit psychologique des pratiques actuelles réalisé",
       "Référentiel de 20+ témoignages clients constitué",
       "Plan d'action personnalisé par principe validé"
     ],
-    laurentAdvice: "Ne brûlez pas les étapes ! La psychologie commerciale, c'est comme apprendre une langue : il faut d'abord maîtriser les bases avant de vouloir faire des phrases complexes. Commencez par observer vos clients actuels : quels sont leurs biais récurrents ? Leurs motivations cachées ? Cette phase d'observation est cruciale pour la suite."
+    difficulty: "Débutant",
+    laurentTip: "Ne brûlez pas les étapes ! La psychologie commerciale, c'est comme apprendre une langue : il faut d'abord maîtriser les bases avant de vouloir faire des phrases complexes. Commencez par observer vos clients actuels : quels sont leurs biais récurrents ? Leurs motivations cachées ? Cette phase d'observation est cruciale pour la suite."
   },
   {
     phase: 2,
@@ -216,14 +223,20 @@ export const psychologyImplementationRoadmap: PsychologyImplementationPhase[] = 
       "Négliger le feedback des clients sur votre nouvelle approche",
       "Abandonner une technique après un premier échec"
     ],
-    expectedResults: "Amélioration mesurable des performances commerciales grâce aux techniques psychologiques",
+    expectedResults: [
+      "Amélioration mesurable des performances commerciales",
+      "Maîtrise des techniques psychologiques de base",
+      "Augmentation du taux de réponse en prospection",
+      "Réduction des objections classiques"
+    ],
     successMetrics: [
       "Amélioration de 40% du taux de réponse en prospection",
       "Augmentation de 25% de la qualité des premiers RDV",
       "Réduction de 20% des objections classiques",
       "80% de l'équipe applique au moins 3 principes de façon autonome"
     ],
-    laurentAdvice: "C'est là que ça devient concret ! Mes clients qui réussissent le mieux sont ceux qui testent une technique à la fois. Par exemple, commencez par la réciprocité : offrez un audit gratuit pendant 2 semaines et mesurez l'impact. Puis passez à la preuve sociale. L'erreur classique, c'est de vouloir tout appliquer en même temps."
+    difficulty: "Intermédiaire",
+    laurentTip: "C'est là que ça devient concret ! Mes clients qui réussissent le mieux sont ceux qui testent une technique à la fois. Par exemple, commencez par la réciprocité : offrez un audit gratuit pendant 2 semaines et mesurez l'impact. Puis passez à la preuve sociale. L'erreur classique, c'est de vouloir tout appliquer en même temps."
   },
   {
     phase: 3,
@@ -249,14 +262,20 @@ export const psychologyImplementationRoadmap: PsychologyImplementationPhase[] = 
       "Négliger la formation continue de l'équipe aux nouvelles techniques",
       "Oublier de mesurer l'impact sur la satisfaction client"
     ],
-    expectedResults: "Approche psychologique sophistiquée et personnalisée avec impact business significatif",
+    expectedResults: [
+      "Approche psychologique sophistiquée et personnalisée",
+      "Impact business significatif mesurable",
+      "Segmentation client optimisée",
+      "Processus d'amélioration continue établi"
+    ],
     successMetrics: [
       "Doublement du taux de conversion moyen",
       "Réduction de 35% du cycle de vente",
       "Amélioration de 50% de la satisfaction client (NPS)",
       "Équipe capable d'adapter son approche à 90% des profils clients"
     ],
-    laurentAdvice: "Ici, on passe au niveau expert. Vous devez comprendre que chaque client a ses propres biais cognitifs. Un dirigeant de PME industrielle ne fonctionne pas comme un DG de startup tech. Créez des 'profils psychologiques' de vos personas et adaptez votre approche. C'est ce qui fait la différence entre un bon commercial et un expert en influence."
+    difficulty: "Avancé",
+    laurentTip: "Ici, on passe au niveau expert. Vous devez comprendre que chaque client a ses propres biais cognitifs. Un dirigeant de PME industrielle ne fonctionne pas comme un DG de startup tech. Créez des 'profils psychologiques' de vos personas et adaptez votre approche. C'est ce qui fait la différence entre un bon commercial et un expert en influence."
   },
   {
     phase: 4,
@@ -282,14 +301,20 @@ export const psychologyImplementationRoadmap: PsychologyImplementationPhase[] = 
       "Oublier de continuer à apprendre et se renouveler",
       "Ne pas partager ses connaissances avec son équipe"
     ],
-    expectedResults: "Expertise reconnue et avantage concurrentiel durable basé sur l'influence éthique",
+    expectedResults: [
+      "Expertise reconnue et avantage concurrentiel durable",
+      "Positionnement en tant qu'expert du secteur",
+      "Culture d'entreprise basée sur l'influence éthique",
+      "Capacité à former d'autres commerciaux"
+    ],
     successMetrics: [
       "Reconnaissance en tant qu'expert sectoriel (invitations, publications)",
       "Multiplication par 3 des opportunités inbound qualifiées",
       "Création d'un avantage concurrentiel durable et défendable",
       "Équipe devenue référence en influence éthique sur son marché"
     ],
-    laurentAdvice: "À ce niveau, vous ne vendez plus : vous influencez. Vos prospects viennent à vous parce qu'ils reconnaissent votre expertise. C'est le Graal ! Mais attention : avec le pouvoir vient la responsabilité. Utilisez toujours ces techniques de manière éthique. Votre réputation est votre plus grand actif. En PME, cette expertise en influence peut devenir votre signature distinctive."
+    difficulty: "Avancé",
+    laurentTip: "À ce niveau, vous ne vendez plus : vous influencez. Vos prospects viennent à vous parce qu'ils reconnaissent votre expertise. C'est le Graal ! Mais attention : avec le pouvoir vient la responsabilité. Utilisez toujours ces techniques de manière éthique. Votre réputation est votre plus grand actif. En PME, cette expertise en influence peut devenir votre signature distinctive."
   }
 ];
 
