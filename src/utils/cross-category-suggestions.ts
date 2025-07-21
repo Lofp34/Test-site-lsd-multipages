@@ -6,7 +6,8 @@ import {
   methodsProcessCategory,
   enterpriseAccountCategory,
   psychologyInfluenceCategory,
-  negotiationClosingCategory
+  negotiationClosingCategory,
+  prospectionSDRCategoryExtended
 } from '@/data/books-enriched';
 
 // Type pour les suggestions cross-catégories
@@ -41,7 +42,7 @@ const categoryMap = {
     title: 'Mindset & Performance'
   },
   'prospection-sdr': {
-    data: null, // À implémenter avec les données de prospection
+    data: prospectionSDRCategoryExtended,
     title: 'Prospection & SDR'
   },
   'negociation-closing': {
@@ -636,6 +637,28 @@ export function generateContextualCTAs(currentBook: Book, currentCategory: strin
         buttonText: 'Voir la formation',
         buttonLink: '/bootcamp-commercial-intensif',
         icon: '🎯',
+        variant: 'accent' as const,
+        category: 'Formation'
+      });
+      break;
+
+    case 'prospection-sdr':
+      baseCTAs.push({
+        title: 'Coaching Prospection Moderne',
+        description: 'Développez une stratégie de prospection automatisée et personnalisée qui génère un flux constant d\'opportunités.',
+        buttonText: 'Découvrir le coaching',
+        buttonLink: '/coach-commercial-entreprise',
+        icon: '🎯',
+        variant: 'primary' as const,
+        category: 'Accompagnement'
+      });
+      
+      baseCTAs.push({
+        title: 'Formation Prospection & SDR',
+        description: 'Maîtrisez les techniques modernes de prospection : automatisation, social selling, qualification prédictive.',
+        buttonText: 'Voir la formation',
+        buttonLink: '/bootcamp-commercial-intensif',
+        icon: '📞',
         variant: 'accent' as const,
         category: 'Formation'
       });

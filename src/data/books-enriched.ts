@@ -7,6 +7,12 @@ import {
   psychologyStats,
   laurentSerreVision as psychologyLaurentVision
 } from './psychology-influence-content';
+import {
+  prospectionInsights,
+  prospectionCaseStudies,
+  prospectionRoadmap,
+  prospectionStatistics
+} from './prospection-sdr-content';
 import { BookCategoryExtended, DomainStatistic } from '../types/book-domains';
 export type Book = {
   slug: string;
@@ -1934,5 +1940,187 @@ export const negotiationClosingCategory: BookCategory = {
         "Gestion des objections finales"
       ]
     } as NegotiationClosingBook
+  ]
+};
+
+// Données enrichies pour la catégorie Prospection & SDR
+export const prospectionSDRCategoryExtended: BookCategoryExtended = {
+  slug: "prospection-sdr",
+  title: "Prospection & SDR",
+  description: "Maîtrisez l'art de la prospection moderne et générez un flux constant d'opportunités commerciales. De la prospection digitale au social selling, découvrez les techniques qui transforment les leads en clients.",
+  icon: "🎯",
+  laurentVision: "La prospection moderne, c'est 80% de stratégie et 20% d'exécution. Mes clients qui réussissent le mieux ont compris qu'il faut arrêter de prospecter 'plus' pour prospecter 'mieux'. Une prospection ciblée, personnalisée et automatisée intelligemment génère 5x plus de résultats qu'une approche en mode 'spray and pray'. Le secret ? Combiner la technologie avec l'authenticité humaine.",
+  domainMessage: {
+    title: "La prospection révolutionne la croissance des PME",
+    description: "78% des entreprises qui structurent leur prospection doublent leur croissance en 18 mois. Automatisation intelligente, social selling et qualification prédictive : découvrez les méthodes qui transforment votre pipeline commercial.",
+    icon: "🚀"
+  },
+  insights: prospectionInsights.map(insight => ({
+    title: insight.title,
+    description: insight.description,
+    businessImpact: insight.businessImpact,
+    implementationLevel: insight.implementationLevel,
+    keyElements: insight.keyElements,
+    trend: insight.trend
+  })),
+  caseStudies: prospectionCaseStudies.map(study => ({
+    industry: study.industry,
+    companySize: study.companySize,
+    sector: study.industry,
+    challenge: study.challenge,
+    solutionApplied: study.solution,
+    results: study.results,
+    metrics: {
+      leadIncrease: study.metrics.leadIncrease,
+      conversionRate: study.metrics.conversionRate,
+      roi: study.metrics.roi,
+      timeframe: study.metrics.timeframe
+    },
+    timeline: study.metrics.timeframe,
+    businessImpact: study.results,
+    laurentQuote: study.testimonial,
+    icon: "🎯",
+    themeColor: "#0066CC"
+  })),
+  roadmap: prospectionRoadmap.map(phase => ({
+    phase: phase.phase,
+    title: phase.title,
+    duration: phase.duration,
+    description: phase.description,
+    keyActions: phase.keyActions,
+    expectedResults: [phase.expectedResults],
+    laurentTip: phase.laurentAdvice,
+    difficulty: phase.phase <= 2 ? 'Débutant' : phase.phase === 3 ? 'Intermédiaire' : 'Avancé'
+  })),
+  stats: [
+    {
+      value: "5x",
+      label: "plus de prospects contactés",
+      description: "avec l'automatisation intelligente"
+    },
+    {
+      value: "78%",
+      label: "des PME doublent leur croissance",
+      description: "en structurant leur prospection"
+    },
+    {
+      value: "15-25%",
+      label: "taux de réponse moyen",
+      description: "avec personnalisation avancée"
+    }
+  ],
+  crossCategorySuggestions: [
+    {
+      slug: "psychologie-influence",
+      title: "Psychologie & Influence",
+      description: "Appliquez les principes psychologiques pour améliorer vos taux de réponse en prospection",
+      icon: "🧠",
+      relationshipType: "complementary",
+      suggestedBooks: ["influence", "comment-se-faire-des-amis"]
+    },
+    {
+      slug: "negociation-closing",
+      title: "Négociation & Closing",
+      description: "Transformez vos prospects qualifiés en clients avec les meilleures techniques de closing",
+      icon: "🤝",
+      relationshipType: "advanced",
+      suggestedBooks: ["never-split-the-difference", "spin-selling"]
+    },
+    {
+      slug: "digital-ai",
+      title: "Digital & AI Sales",
+      description: "Utilisez l'IA pour automatiser et optimiser votre prospection",
+      icon: "🤖",
+      relationshipType: "complementary",
+      suggestedBooks: ["ai-sales-revolution", "sales-engagement"]
+    }
+  ],
+  seoKeywords: ["prospection commerciale", "SDR", "social selling", "automatisation prospection", "lead generation", "laurent serre"],
+  books: [
+    {
+      slug: "fanatical-prospecting",
+      title: "Fanatical Prospecting",
+      author: "Jeb Blount",
+      year: 2015,
+      cover: "/covers/fanatical-prospecting.jpg",
+      tagline: "La bible de la prospection moderne, pour remplir son pipe sans relâche.",
+      summary: "Un guide incontournable pour générer un flux constant d'opportunités. Blount détaille les 5 C du social selling, un cadre téléphonique en 5 étapes, et insiste sur l'importance d'une prospection régulière. Tactiques applicables pour surmonter les objections et obtenir plus de rendez-vous qualifiés.",
+      category: "prospection-sdr",
+      difficulty: "Facile",
+      readingTime: "6h",
+      rating: 4.5,
+      terrainAdvice: "Le livre de référence pour structurer sa prospection. Blount donne des méthodes concrètes et immédiatement applicables. Parfait pour les débutants comme pour les confirmés.",
+      keyPoints: ["Les 5 C du social selling", "Cadre téléphonique en 5 étapes", "Prospection fanatique et régulière", "Tactiques pour surmonter les objections"],
+      targetProfiles: ["SDR", "Commercial débutant", "Manager commercial"],
+      complementaryBooks: ["predictable-revenue", "sales-development-playbook"]
+    },
+    {
+      slug: "predictable-revenue",
+      title: "Predictable Revenue",
+      author: "Aaron Ross & Marylou Tyler",
+      year: 2011,
+      cover: "/covers/predictable-revenue.jpg",
+      tagline: "Le modèle SaaS pour générer un flux de leads prévisible.",
+      summary: "La 'bible' de la prospection SaaS. Ross introduit la spécialisation des rôles (SDR, closer, farmer), le Cold Calling 2.0, et la segmentation Seeds/Nets/Spears. Un processus outbound reproductible pour une croissance régulière.",
+      category: "prospection-sdr",
+      difficulty: "Intermédiaire",
+      readingTime: "7h",
+      rating: 4.3,
+      terrainAdvice: "Révolutionnaire pour comprendre la spécialisation des rôles commerciaux. Le modèle Seeds/Nets/Spears est un game-changer pour organiser sa prospection.",
+      keyPoints: ["Spécialisation des rôles commerciaux", "Cold Calling 2.0", "Segmentation Seeds/Nets/Spears", "Processus outbound reproductible"],
+      targetProfiles: ["SDR", "Manager commercial", "Dirigeant"],
+      complementaryBooks: ["fanatical-prospecting", "sales-development-playbook"]
+    },
+    {
+      slug: "sales-development-playbook",
+      title: "The Sales Development Playbook",
+      author: "Trish Bertuzzi",
+      year: 2016,
+      cover: "/covers/sales-development-playbook.jpg",
+      tagline: "Le manuel pour bâtir une équipe SDR performante.",
+      summary: "Six piliers du succès SDR : stratégie, spécialisation, recrutement, motivation, exécution, leadership. Conseils pratiques pour aligner vente/marketing, segmenter les prospects, structurer l'équipe, et scripts d'appels/emails efficaces.",
+      category: "prospection-sdr",
+      difficulty: "Intermédiaire",
+      readingTime: "8h",
+      rating: 4.4,
+      terrainAdvice: "Le guide ultime pour structurer une équipe SDR. Bertuzzi couvre tous les aspects : recrutement, formation, management. Indispensable pour les managers.",
+      keyPoints: ["6 piliers du succès SDR", "Alignement vente/marketing", "Segmentation des prospects", "Scripts d'appels et emails"],
+      targetProfiles: ["Manager SDR", "Directeur commercial", "Team Leader"],
+      complementaryBooks: ["predictable-revenue", "new-sales-simplified"]
+    },
+    {
+      slug: "new-sales-simplified",
+      title: "New Sales. Simplified.",
+      author: "Mike Weinberg",
+      year: 2012,
+      cover: "/covers/new-sales-simplified.jpg",
+      tagline: "Le retour aux fondamentaux de la conquête client.",
+      summary: "Un cadre simple pour conquérir de nouveaux clients : histoire de vente convaincante, liste ciblée, ouverture d'appel à froid, emails percutants, power statement. Un concentré de bonnes pratiques pour maîtriser l'art du cold call.",
+      category: "prospection-sdr",
+      difficulty: "Facile",
+      readingTime: "6h",
+      rating: 4.2,
+      terrainAdvice: "Excellent pour revenir aux fondamentaux. Weinberg simplifie la prospection avec des méthodes éprouvées. Parfait pour les commerciaux qui veulent de l'efficacité immédiate.",
+      keyPoints: ["Histoire de vente convaincante", "Liste ciblée de prospects", "Ouverture d'appel à froid", "Power statement"],
+      targetProfiles: ["Commercial", "Indépendant", "Entrepreneur"],
+      complementaryBooks: ["fanatical-prospecting", "sales-development-cracking-code"]
+    },
+    {
+      slug: "sales-development-cracking-code",
+      title: "Sales Development: Cracking the Code",
+      author: "Cory Bray & Hilmon Sorey",
+      year: 2018,
+      cover: "/covers/sales-development-cracking-code.jpg",
+      tagline: "Le guide moderne et actionnable du SDR outbound.",
+      summary: "Tout le processus SDR : séquences multicanal, qualification, collaboration avec les AE, conseils de carrière. Un manuel opérationnel pour professionnaliser la prospection outbound et progresser en équipe.",
+      category: "prospection-sdr",
+      difficulty: "Intermédiaire",
+      readingTime: "7h",
+      rating: 4.3,
+      terrainAdvice: "Très opérationnel et moderne. Couvre parfaitement les aspects techniques de la prospection outbound. Excellent pour les SDR qui veulent progresser.",
+      keyPoints: ["Séquences multicanal", "Qualification des prospects", "Collaboration avec les AE", "Conseils de carrière SDR"],
+      targetProfiles: ["SDR", "Outbound specialist", "Commercial junior"],
+      complementaryBooks: ["sales-development-playbook", "fanatical-prospecting"]
+    }
   ]
 };

@@ -128,7 +128,7 @@ Ce plan d'implémentation transforme les requirements et le design en tâches co
   - Optimiser pour les requêtes "grands comptes" et "vente complexe"
   - _Requirements: 1.1, 1.2, 1.3, 2.7_
 
-- [ ] 4.3 Créer la page Prospection SDR
+- [x] 4.3 Créer la page Prospection SDR
   - Développer /prospection-sdr/page.tsx avec le template CategoryPage
   - Intégrer le contenu prospection-sdr-content.ts
   - Appliquer un thème spécifique (à définir selon la charte)
