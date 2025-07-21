@@ -5,6 +5,7 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 import ComparisonTable from '@/components/ui/ComparisonTable';
 import BookCard from '@/components/ui/BookCard';
 import CategoryBreadcrumb from '@/components/ui/CategoryBreadcrumb';
+import ParticleBackground from '@/components/ui/ParticleBackground';
 import { categoryBreadcrumbSuggestions } from '@/utils/cross-category-suggestions';
 import React from 'react';
 
@@ -131,32 +132,99 @@ export default function SalesManagementPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(categoryStructuredData) }}
       />
       
-      <main className="bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16">
-      {/* Breadcrumb navigation */}
-      <CategoryBreadcrumb 
-        items={[
-          { label: 'Accueil', href: '/' },
-          { label: 'Ressources', href: '/ressources' },
-          { label: 'Meilleurs Livres', href: '/ressources/meilleurs-livres' },
-          { label: 'Sales Management & Leadership', href: '/ressources/meilleurs-livres/sales-management', current: true }
-        ]}
-        relatedCategories={categoryBreadcrumbSuggestions['sales-management']}
-      />
+      <main className="relative bg-gradient-to-br from-green-600 via-yellow-500/10 to-primary-bg min-h-screen pt-24 pb-16 overflow-hidden">
+        {/* Particle background for leadership atmosphere */}
+        <ParticleBackground 
+          density={25}
+          speed={0.2}
+          color="#00BDA4"
+          opacity={0.3}
+          className="absolute inset-0"
+        />
+        
+        {/* Breadcrumb navigation */}
+        <CategoryBreadcrumb 
+          items={[
+            { label: 'Accueil', href: '/' },
+            { label: 'Ressources', href: '/ressources' },
+            { label: 'Meilleurs Livres', href: '/ressources/meilleurs-livres' },
+            { label: 'Sales Management & Leadership', href: '/ressources/meilleurs-livres/sales-management', current: true }
+          ]}
+          relatedCategories={categoryBreadcrumbSuggestions['sales-management']}
+        />
 
-      {/* Hero section */}
-      <section className="max-w-4xl mx-auto text-center mb-12 px-4">
-        <AnimatedSection animation="fade-in" delay={0}>
-          <span className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
-            {category.icon} Catégorie
-          </span>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg">
-            {category.title}
-          </h1>
-          <p className="text-lg md:text-xl text-white/80 mb-6 leading-relaxed">
-            {category.description}
-          </p>
-        </AnimatedSection>
-      </section>
+        {/* Hero section avec présentation du leadership commercial */}
+        <section className="max-w-4xl mx-auto text-center mb-12 px-4" aria-labelledby="hero-title">
+          <AnimatedSection animation="fade-in" delay={0}>
+            <span 
+              className="inline-block bg-green-500/20 text-green-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur"
+              role="status"
+              aria-label={`Catégorie ${category.title}`}
+            >
+              <span aria-hidden="true">{category.icon}</span> Catégorie
+            </span>
+            <h1 id="hero-title" className="text-4xl md:text-5xl font-bold text-primary-title mb-4 drop-shadow-lg">
+              {category.title}
+            </h1>
+            <p className="text-lg md:text-xl text-primary-secondary/90 mb-6 leading-relaxed">
+              {category.description}
+            </p>
+            
+            {/* Message spécifique sur le leadership commercial avec effets visuels */}
+            <div className="relative bg-white/10 backdrop-blur-sm rounded-xl p-6 mt-8 border border-green-400/20 overflow-hidden group hover:bg-white/15 transition-all duration-500">
+              {/* Animated background elements */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-400/20 to-yellow-500/20 rounded-full blur-2xl opacity-50 group-hover:opacity-70 transition-opacity duration-500"></div>
+              <div className="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-br from-amber-400/20 to-orange-500/20 rounded-full blur-xl opacity-30 group-hover:opacity-50 transition-opacity duration-700"></div>
+              
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-yellow-500 rounded-2xl flex items-center justify-center">
+                    <span className="text-2xl">👑</span>
+                  </div>
+                  <h2 className="text-xl font-semibold text-green-400">
+                    Le leadership commercial transforme tout
+                  </h2>
+                </div>
+                <p className="text-primary-secondary/90 leading-relaxed mb-4">
+                  Manager une équipe commerciale ne s'improvise pas. Entre motivation, coaching, pilotage et développement des talents, 
+                  le leadership commercial moderne exige une approche structurée et humaine. 
+                  Ces 5 livres vous donnent les clés pour devenir le manager que vos équipes méritent.
+                </p>
+                
+                {/* Laurent Serre positioning */}
+                <div className="bg-white/10 rounded-lg p-4 mb-4 border border-green-400/30">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-8 bg-green-400 rounded-full flex items-center justify-center">
+                      <span className="text-blue-ink font-bold text-sm">LS</span>
+                    </div>
+                    <span className="text-green-300 font-semibold">Vision Laurent Serre</span>
+                  </div>
+                  <p className="text-primary-secondary/90 text-sm italic">
+                    "En 20 ans d'accompagnement, j'ai vu des équipes se transformer grâce à un leadership de qualité. 
+                    Un bon manager commercial ne se contente pas de fixer des objectifs : il révèle le potentiel de chacun, 
+                    crée une culture de performance et développe les talents. C'est un métier à part entière."
+                  </p>
+                </div>
+                
+                {/* Management stats */}
+                <div className="grid grid-cols-3 gap-4 mt-6 pt-4 border-t border-green-400/20">
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-green-400">85%</div>
+                    <div className="text-xs text-primary-secondary/70">des équipes bien managées dépassent leurs objectifs</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-green-400">3x</div>
+                    <div className="text-xs text-primary-secondary/70">moins de turnover</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl font-bold text-green-400">70%</div>
+                    <div className="text-xs text-primary-secondary/70">d'amélioration de la motivation</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </AnimatedSection>
+        </section>
 
       {/* Tableau comparatif */}
       <AnimatedSection delay={100}>
@@ -169,23 +237,90 @@ export default function SalesManagementPage() {
       </AnimatedSection>
 
       {/* Grid de livres */}
-      <AnimatedSection delay={200}>
-        <div className="max-w-6xl mx-auto mb-12 px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {category.books.map((book, index) => (
-              <AnimatedSection key={book.slug} delay={300 + index * 100}>
-                <BookCard 
-                  book={book} 
-                  variant="grid"
-                  showRating={true}
-                  showDifficulty={true}
-                  showReadingTime={true}
-                />
-              </AnimatedSection>
-            ))}
+      <section aria-labelledby="books-grid-title">
+        <AnimatedSection delay={200}>
+          <div className="max-w-6xl mx-auto mb-12 px-4">
+            <h2 id="books-grid-title" className="sr-only">
+              Liste des livres recommandés sur Sales Management & Leadership
+            </h2>
+            <div 
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+              role="list"
+              aria-label="Livres recommandés sur Sales Management & Leadership"
+            >
+              {category.books.map((book, index) => (
+                <AnimatedSection key={book.slug} delay={300 + index * 100}>
+                  <div role="listitem">
+                    <BookCard 
+                      book={book} 
+                      variant="grid"
+                      showRating={true}
+                      showDifficulty={true}
+                      showReadingTime={true}
+                    />
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+        </AnimatedSection>
+      </section>
+
+
+
+      {/* Section spécifique : Impact du leadership sur les équipes commerciales */}
+      <AnimatedSection delay={400}>
+        <div className="max-w-4xl mx-auto mb-12 px-4">
+          <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-green-400/20 backdrop-blur-sm">
+            <div className="text-center mb-6">
+              <span className="inline-block bg-green-500/20 text-green-600 dark:text-green-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                🎯 Focus métier
+              </span>
+              <h3 className="text-2xl font-bold text-blue-ink dark:text-green-400 mb-4">
+                Comment le leadership transforme vos équipes commerciales
+              </h3>
+            </div>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <h4 className="font-semibold text-green-600 dark:text-green-400 flex items-center gap-2">
+                  ✅ Équipes bien managées
+                </h4>
+                <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-200">
+                  <li>• Dépassement régulier des objectifs</li>
+                  <li>• Engagement et motivation élevés</li>
+                  <li>• Développement des compétences</li>
+                  <li>• Rétention des talents</li>
+                  <li>• Innovation et proactivité</li>
+                </ul>
+              </div>
+              
+              <div className="space-y-4">
+                <h4 className="font-semibold text-orange-600 dark:text-orange-400 flex items-center gap-2">
+                  ⚠️ Équipes mal managées
+                </h4>
+                <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-200">
+                  <li>• Objectifs non atteints</li>
+                  <li>• Turnover élevé</li>
+                  <li>• Démotivation générale</li>
+                  <li>• Manque de cohésion</li>
+                  <li>• Résistance au changement</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="mt-6 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
+              <p className="text-sm text-gray-700 dark:text-gray-200 italic">
+                💡 <strong>Conseil Laurent Serre :</strong> Le leadership commercial ne s'improvise pas. 
+                C'est un savant mélange de vision stratégique, d'intelligence émotionnelle et de compétences techniques. 
+                Investissez dans votre développement managérial : c'est le levier le plus puissant pour transformer vos résultats !
+              </p>
+            </div>
           </div>
         </div>
       </AnimatedSection>
+
+
 
       {/* Suggestions cross-catégories */}
       <AnimatedSection delay={400}>

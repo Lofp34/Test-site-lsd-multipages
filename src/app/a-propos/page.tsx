@@ -1,9 +1,15 @@
-import dynamic from 'next/dynamic';
-import type { Metadata } from 'next';
-import HubSpotForm from '@/components/HubSpotForm';
-import AboutSection from '@/components/sections/AboutSection';
+import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
+import { CheckCircle, Award, Users, TrendingUp, Target, Brain, Zap, Shield, Star } from 'lucide-react';
+import { TestimonialSlider } from '@/components/ui/TestimonialSlider';
+import { faqAPropos } from '@/data/faq';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/Accordion';
+import AnimatedSection from '@/components/ui/AnimatedSection';
+import { testimonials } from '@/data/testimonials';
 import Button from '@/components/ui/Button';
+import AboutSection from '@/components/sections/AboutSection';
+import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
   title: 'À propos de Laurent Serre – Expert Commercial',

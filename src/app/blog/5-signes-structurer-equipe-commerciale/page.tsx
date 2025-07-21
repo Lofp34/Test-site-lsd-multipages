@@ -332,31 +332,3 @@ export default function Article1() {
   );
 }
 
-// Structured data for SEO
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "5 signes qu'il est temps de structurer votre équipe commerciale",
-  "description": "Découvrez les 5 signaux d'alerte qui indiquent qu'il est temps de passer à l'étape supérieure dans l'organisation de votre force de vente.",
-  "image": "https://laurentserre.com/equipe_bureau.jpg",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://laurentserre.com",
-    "image": "https://laurentserre.com/laurent.jpg"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre Développement",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://laurentserre.com/laurent.jpg"
-    }
-  },
-  "datePublished": "2025-01-15",
-  "dateModified": "2025-01-15",
-  "articleSection": "Développement commercial",
-  "keywords": ["structuration équipe commerciale", "management commercial", "organisation force de vente", "PME"],
-  "wordCount": 1200,
-  "timeRequired": "PT8M"
-};

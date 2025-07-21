@@ -1,8 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import type { Metadata } from 'next';
-import { Target, CheckCircle, Calendar, ArrowRight, Award, Phone, Mail, Zap, Loader } from 'lucide-react';
+import { CheckCircle, Calendar, ArrowRight, Award, Phone, Mail, Zap, Loader } from 'lucide-react';
 import Link from 'next/link';
 import TestExpress from '@/components/TestExpress';
 

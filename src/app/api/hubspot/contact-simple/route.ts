@@ -69,27 +69,14 @@ export async function POST(request: NextRequest) {
     console.log(`${logPrefix} 📋 Données pour HubSpot:`, JSON.stringify(hubspotData, null, 2));
     
     // 6. Préparation des headers
-    const headers = {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${hubspotToken}`
-    };
-    
-    // 7. Envoi à HubSpot
-    let hubspotResponse, hubspotResponseData;
-    try {
-      hubspotResponse = await fetch(hubspotUrl, {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${hubspotToken}`,
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(hubspotData),
-      });
-      hubspotResponseData = await hubspotResponse.json();
-    } catch (error) {
-      console.error(`${logPrefix} ❌ Erreur réseau ou parsing HubSpot:`, error);
-      return NextResponse.json({ error: 'Erreur lors de la communication avec HubSpot', details: String(error) }, { status: 502 });
-    }
+    const response = await fetch(hubspotUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${hubspotToken}`
+      },
+      body: JSON.stringify(hubspotData),
+    });
     
     // 8. Vérification du succès
     if (hubspotResponse.ok) {

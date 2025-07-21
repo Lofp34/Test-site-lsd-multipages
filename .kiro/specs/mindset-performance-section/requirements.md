@@ -1,4 +1,4 @@
-# Requirements Document - Section Mindset et Performance
+ # Requirements Document - Section Mindset et Performance
 
 ## Introduction
 

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { MapPin, Phone, Target, Users, ArrowRight, Award, CheckCircle } from 'lucide-react';
+import { MapPin, Phone, Target, Users, Award, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
