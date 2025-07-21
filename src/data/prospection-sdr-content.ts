@@ -32,8 +32,9 @@ export interface ProspectionPhase {
   duration: string;
   description: string;
   keyActions: string[];
-  expectedResults: string;
-  laurentAdvice: string;
+  expectedResults: string[];
+  difficulty: 'Débutant' | 'Intermédiaire' | 'Avancé';
+  laurentTip: string;
 }
 
 export interface ProspectionStatistic {
@@ -176,8 +177,14 @@ export const prospectionRoadmap: ProspectionPhase[] = [
       "Mise en place des outils de base (CRM, LinkedIn Sales Navigator)",
       "Formation initiale de l'équipe aux nouvelles méthodes"
     ],
-    expectedResults: "Vision claire des axes d'amélioration et outils opérationnels",
-    laurentAdvice: "Cette phase est cruciale. Beaucoup d'entreprises veulent aller trop vite et négligent les fondations. Un bon audit vous fera gagner 6 mois sur la suite."
+    expectedResults: [
+      "Vision claire des axes d'amélioration",
+      "Outils opérationnels configurés",
+      "Personas et ICP définis",
+      "Équipe formée aux bases"
+    ],
+    difficulty: "Débutant",
+    laurentTip: "Cette phase est cruciale. Beaucoup d'entreprises veulent aller trop vite et négligent les fondations. Un bon audit vous fera gagner 6 mois sur la suite."
   },
   {
     phase: 2,
@@ -190,8 +197,14 @@ export const prospectionRoadmap: ProspectionPhase[] = [
       "Développement des templates personnalisables",
       "Tests A/B sur les messages et objets"
     ],
-    expectedResults: "Système de prospection automatisé générant 3x plus de contacts",
-    laurentAdvice: "L'automatisation sans personnalisation, c'est du spam. Chaque message doit donner l'impression d'être écrit spécifiquement pour le prospect."
+    expectedResults: [
+      "Système de prospection automatisé opérationnel",
+      "Génération de 3x plus de contacts qualifiés",
+      "Templates personnalisables optimisés",
+      "Processus de tests A/B établi"
+    ],
+    difficulty: "Intermédiaire",
+    laurentTip: "L'automatisation sans personnalisation, c'est du spam. Chaque message doit donner l'impression d'être écrit spécifiquement pour le prospect."
   },
   {
     phase: 3,
@@ -204,8 +217,14 @@ export const prospectionRoadmap: ProspectionPhase[] = [
       "Formation aux techniques d'engagement social",
       "Mise en place du lead nurturing par le contenu"
     ],
-    expectedResults: "Positionnement d'expert et génération de leads entrants",
-    laurentAdvice: "Le social selling, c'est un marathon, pas un sprint. La régularité dans la création de contenu est plus importante que la perfection."
+    expectedResults: [
+      "Positionnement d'expert établi",
+      "Génération de leads entrants qualifiés",
+      "Calendrier éditorial opérationnel",
+      "Stratégie de lead nurturing active"
+    ],
+    difficulty: "Avancé",
+    laurentTip: "Le social selling, c'est un marathon, pas un sprint. La régularité dans la création de contenu est plus importante que la perfection."
   },
   {
     phase: 4,
@@ -218,8 +237,14 @@ export const prospectionRoadmap: ProspectionPhase[] = [
       "Formation avancée et coaching individuel",
       "Expansion vers de nouveaux canaux et segments"
     ],
-    expectedResults: "Système de prospection mature et évolutif générant un flux constant de leads",
-    laurentAdvice: "La prospection moderne, c'est de l'amélioration continue. Testez, mesurez, ajustez. Les petites optimisations font les grandes différences."
+    expectedResults: [
+      "Système de prospection mature et évolutif",
+      "Flux constant de leads qualifiés généré",
+      "Processus d'amélioration continue établi",
+      "Expansion réussie vers nouveaux segments"
+    ],
+    difficulty: "Avancé",
+    laurentTip: "La prospection moderne, c'est de l'amélioration continue. Testez, mesurez, ajustez. Les petites optimisations font les grandes différences."
   }
 ];
 
