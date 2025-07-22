@@ -1,6 +1,9 @@
-import React from 'react';
+'use client';
 
-interface ButtonProps {
+import React from 'react';
+import { trackCTAClick, trackMicroConversion, CTATrackingData } from '@/utils/cta-tracking';
+
+interface TrackedButtonProps {
   children: React.ReactNode;
   variant?: 'primary' | 'secondary' | 'ghost' | 'outline';
   size?: 'sm' | 'md' | 'lg';
@@ -11,9 +14,17 @@ interface ButtonProps {
   type?: 'button' | 'submit' | 'reset';
   icon?: React.ReactNode;
   iconPosition?: 'left' | 'right';
+  // Propriétés de tracking
+  ctaId: string;
+  ctaText: string;
+  ctaType: 'primary' | 'secondary' | 'tertiary';
+  section: string;
+  destination: string;
+  variant_name?: string;
+  position?: number;
 }
 
-const Button: React.FC<ButtonProps> = ({
+const TrackedButton: React.FC<TrackedButtonProps> = ({
   children,
   variant = 'primary',
   size = 'md',
@@ -23,7 +34,14 @@ const Button: React.FC<ButtonProps> = ({
   className = '',
   type = 'button',
   icon,
-  iconPosition = 'left'
+  iconPosition = 'left',
+  ctaId,
+  ctaText,
+  ctaType,
+  section,
+  destination,
+  variant_name,
+  position
 }) => {
   const baseClasses = 'font-title font-semibold rounded-full transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-mint-green/60 disabled:opacity-50 disabled:cursor-not-allowed group relative overflow-hidden';
   
@@ -34,11 +52,40 @@ const Button: React.FC<ButtonProps> = ({
     outline: 'border-2 border-white text-white hover:bg-white hover:text-blue-ink shadow-lg hover:scale-105 active:scale-95'
   };
   
-  // Enhanced mobile-first sizing with proper touch targets
   const sizeClasses = {
-    sm: 'px-4 py-3 text-sm min-h-[44px] min-w-[44px]', // Minimum 44px touch target
-    md: 'px-6 py-4 text-base min-h-[48px] min-w-[48px]', // Comfortable touch target
-    lg: 'px-8 py-5 text-lg min-h-[56px] min-w-[56px] sm:px-10 sm:py-6' // Large touch target with responsive padding
+    sm: 'px-4 py-3 text-sm min-h-[44px] min-w-[44px]',
+    md: 'px-6 py-4 text-base min-h-[48px] min-w-[48px]',
+    lg: 'px-8 py-5 text-lg min-h-[56px] min-w-[56px] sm:px-10 sm:py-6'
+  };
+
+  const handleClick = () => {
+    // Tracking du clic CTA
+    const trackingData: CTATrackingData = {
+      ctaId,
+      ctaText,
+      ctaType,
+      section,
+      destination,
+      variant: variant_name,
+      position
+    };
+
+    trackCTAClick(trackingData);
+
+    // Appel du onClick personnalisé si fourni
+    if (onClick) {
+      onClick();
+    }
+  };
+
+  const handleMouseEnter = () => {
+    // Tracking du hover pour mesurer l'engagement
+    trackMicroConversion('hover', ctaId, section);
+  };
+
+  const handleFocus = () => {
+    // Tracking du focus pour l'accessibilité
+    trackMicroConversion('focus', ctaId, section);
   };
 
   const loadingSpinner = (
@@ -82,7 +129,9 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type={type}
-      onClick={onClick}
+      onClick={handleClick}
+      onMouseEnter={handleMouseEnter}
+      onFocus={handleFocus}
       disabled={disabled || loading}
       className={`
         ${baseClasses}
@@ -90,11 +139,12 @@ const Button: React.FC<ButtonProps> = ({
         ${sizeClasses[size]}
         ${className}
       `}
-      // Enhanced mobile accessibility
       role="button"
       aria-disabled={disabled || loading}
       aria-label={typeof children === 'string' ? children : undefined}
-      // Mobile tactile feedback - handled via CSS active state instead of JS events
+      data-cta-id={ctaId}
+      data-cta-section={section}
+      data-cta-type={ctaType}
     >
       {/* Ripple effect for mobile feedback */}
       <span className="absolute inset-0 rounded-full bg-white/20 opacity-0 group-active:opacity-100 group-active:animate-ping pointer-events-none"></span>
@@ -106,4 +156,4 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
-export default Button; 
+export default TrackedButton;
