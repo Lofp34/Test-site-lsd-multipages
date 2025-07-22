@@ -1,7 +1,8 @@
 import dynamic from 'next/dynamic';
 import type { Metadata } from 'next';
 import Button from "@/components/ui/Button";
-import Link from "next/link";
+import ABTestButton from "@/components/ui/ABTestButton";
+import TrackedLink from "@/components/ui/TrackedLink";
 import Image from 'next/image';
 import AccueilClient from '@/components/AccueilClient';
 
@@ -65,29 +66,49 @@ export default function Home() {
               </p>
             </div>
 
-            {/* CTAs vers les pages existantes */}
-            <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row justify-center items-center pt-6 sm:pt-8 pb-12 sm:pb-16 px-4">
-              <Link href="/cas-clients">
-                <Button 
-                  variant="primary"
-                  size="lg"
-                  icon="�"
-                  className="w-full sm:w-auto"
+            {/* CTAs optimisés avec A/B Testing - Mobile-first avec hiérarchie claire */}
+            <div className="cta-group-mobile pt-6 sm:pt-8 pb-12 sm:pb-16">
+              <div className="cta-container-mobile lg:flex-row lg:max-w-none lg:gap-6">
+                <TrackedLink 
+                  href="/bootcamp"
+                  ctaId="hero-bootcamp"
+                  ctaText="Rejoindre le Bootcamp Commercial"
+                  ctaType="primary"
+                  section="hero"
+                  position={1}
+                  enableABTest={true}
+                  abTestId="hero-bootcamp-text"
+                  className="block"
                 >
-                  Découvrir les témoignages
-                </Button>
-              </Link>
-              
-              <Link href="/diagnostic">
-                <Button 
-                  variant="outline"
-                  size="lg"
-                  icon="🎯"
-                  className="w-full sm:w-auto"
+                  <ABTestButton
+                    variant="primary"
+                    size="lg"
+                    icon="🚀"
+                    testId="hero-bootcamp-text"
+                    defaultText="Rejoindre le Bootcamp Commercial"
+                    className="cta-mobile cta-primary-mobile lg:w-auto lg:min-w-[280px]"
+                  />
+                </TrackedLink>
+                
+                <TrackedLink 
+                  href="/ressources"
+                  ctaId="hero-resources"
+                  ctaText="Accéder aux Ressources Gratuites"
+                  ctaType="secondary"
+                  section="hero"
+                  position={2}
+                  className="block"
                 >
-                  Faire le diagnostic gratuit
-                </Button>
-              </Link>
+                  <Button 
+                    variant="outline"
+                    size="lg"
+                    icon="📚"
+                    className="cta-mobile cta-secondary-mobile lg:w-auto lg:min-w-[280px] border-white text-white hover:bg-white hover:text-blue-ink"
+                  >
+                    Accéder aux Ressources Gratuites
+                  </Button>
+                </TrackedLink>
+              </div>
             </div>
           </div>
         </div>

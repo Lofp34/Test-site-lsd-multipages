@@ -1,0 +1,534 @@
+{
+  "totalLinks": 75,
+  "validLinks": 0,
+  "brokenLinks": 75,
+  "redirectedLinks": 75,
+  "results": [
+    {
+      "url": "/diagnostic",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/contact",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/bootcamp",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/blog/bootcamp-commercial-pourquoi-formations-echouent",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/guide-recrutement-commercial",
+      "redirectReason": "Contenu lié au recrutement commercial"
+    },
+    {
+      "url": "/blog/vendeur-commercial-transformation-decisive",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/guide-recrutement-commercial",
+      "redirectReason": "Contenu lié au recrutement commercial"
+    },
+    {
+      "url": "/blog/erreurs-fatales-prospection-b2b",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/systeme-suivi-prospects",
+      "redirectReason": "Contenu lié au suivi des prospects"
+    },
+    {
+      "url": "/blog/ia-transforme-developpement-commercial-2025",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/guide-recrutement-commercial",
+      "redirectReason": "Contenu lié au recrutement commercial"
+    },
+    {
+      "url": "/blog/5-signes-structurer-equipe-commerciale",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/techniques-motivation-equipe",
+      "redirectReason": "Contenu lié à la motivation et coaching"
+    },
+    {
+      "url": "/cas-clients",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/expert-developpement-commercial-pme",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/guide-recrutement-commercial",
+      "redirectReason": "Contenu lié au recrutement commercial"
+    },
+    {
+      "url": "/formation-commerciale-pme",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/guide-recrutement-commercial",
+      "redirectReason": "Contenu lié au recrutement commercial"
+    },
+    {
+      "url": "/transformation-commerciale",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/guide-recrutement-commercial",
+      "redirectReason": "Contenu lié au recrutement commercial"
+    },
+    {
+      "url": "/ressources/guide-prospection",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/systeme-suivi-prospects",
+      "redirectReason": "Contenu lié au suivi des prospects"
+    },
+    {
+      "url": "/ressources/guide-closing",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/outil-strategie-commerciale",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/guide-recrutement-commercial",
+      "redirectReason": "Contenu lié au recrutement commercial"
+    },
+    {
+      "url": "/ressources/outil-preparation-rdv",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/kit-gestion-grands-comptes",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/coach-commercial-entreprise",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/guide-recrutement-commercial",
+      "redirectReason": "Contenu lié au recrutement commercial"
+    },
+    {
+      "url": "/ressources",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/formation-commerciale-pme#management-details",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/guide-recrutement-commercial",
+      "redirectReason": "Contenu lié au recrutement commercial"
+    },
+    {
+      "url": "/suivi-performance",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/systeme-suivi-prospects",
+      "redirectReason": "Contenu lié au suivi des prospects"
+    },
+    {
+      "url": "/ressources/outil-offre-5-etoiles",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/consultant-commercial-montpellier",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/guide-recrutement-commercial",
+      "redirectReason": "Contenu lié au recrutement commercial"
+    },
+    {
+      "url": "/formateur-vente-pme",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/bootcamp-commercial-intensif",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/guide-recrutement-commercial",
+      "redirectReason": "Contenu lié au recrutement commercial"
+    },
+    {
+      "url": "/management-equipe-commerciale",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/techniques-motivation-equipe",
+      "redirectReason": "Contenu lié à la motivation et coaching"
+    },
+    {
+      "url": "/ressources/scripts-prospection",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/guide-recrutement-commercial",
+      "redirectReason": "Page créée avec contenu scripts IMPACT et AIDA+"
+    },
+    {
+      "url": "/ressources/linkedin-prospection",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/linkedin-prospection",
+      "redirectReason": "Page créée avec guide LinkedIn et réseaux sociaux"
+    },
+    {
+      "url": "/ressources/systeme-suivi-prospects",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/systeme-suivi-prospects",
+      "redirectReason": "Page créée avec outil de suivi des prospects"
+    },
+    {
+      "url": "/ressources/techniques-motivation-equipe",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/techniques-motivation-equipe",
+      "redirectReason": "Page créée avec guide motivation et coaching"
+    },
+    {
+      "url": "/ressources/guide-recrutement-commercial",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/guide-recrutement-commercial",
+      "redirectReason": "Page créée avec guide recrutement commercial"
+    },
+    {
+      "url": "/favicon.ico",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/services",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/techniques-de-vente",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/techniques-de-negociation",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/le-grand-guide-des-techniques-de-vente.pdf",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/digital-ai/human-machine",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/digital-ai/the-second-machine-age",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/digital-ai",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/digital-ai/ai-superpowers",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/sales-management/good-to-great",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/sales-management/high-output-management",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/enterprise-account",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/methodes-process/strategic-selling",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/enterprise-account/the-challenger-customer",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/enterprise-account/mastering-the-complex-sale",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/enterprise-account/key-account-management-definitive-guide",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/methodes-process",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/psychologie-influence",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/negociation-closing",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/mindset-performance/atomic-habits",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/mindset-performance/mindset-new-psychology-success",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/mindset-performance/grit-power-passion-perseverance",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/mindset-performance/7-habitudes-gens-efficaces",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/mindset-performance/the-7-habits",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/prospection-sdr",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources/systeme-suivi-prospects",
+      "redirectReason": "Contenu lié au suivi des prospects"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/negotiation-closing",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/mindset-performance/deep-work",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/mindset-performance/mindset",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/sales-management/leaders-eat-last",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/blog",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/sales-management/innovators-dilemma",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/sales-management",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/sales-management/the-hard-thing-about-hard-things",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/meilleurs-livres/sales-management/blue-ocean-strategy",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/outil-tableau-bord",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/grille-evaluation",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/ressources/reporting-automatise",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/cookies",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/a-propos",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/mentions-legales",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/cgv",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    },
+    {
+      "url": "/politique-de-confidentialite",
+      "isValid": false,
+      "statusCode": 404,
+      "suggestedRedirect": "/ressources",
+      "redirectReason": "Redirection vers page ressources principale"
+    }
+  ],
+  "generatedAt": "2025-07-21T10:48:23.129Z"
+}

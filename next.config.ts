@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { allRedirects } from "./src/config/redirects";
 
 const nextConfig: NextConfig = {
   eslint: {
@@ -122,6 +123,14 @@ const nextConfig: NextConfig = {
         ],
       },
     ];
+  },
+  // Redirects configuration for broken links
+  async redirects() {
+    return allRedirects.map(redirect => ({
+      source: redirect.source,
+      destination: redirect.destination,
+      permanent: redirect.permanent,
+    }));
   },
   /* config options here */
 };
