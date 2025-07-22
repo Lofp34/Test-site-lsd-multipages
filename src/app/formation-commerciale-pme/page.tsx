@@ -46,7 +46,7 @@ export default function FormationCommercialePMEPage() {
             <p className="text-xl text-white/95 leading-relaxed max-w-3xl mx-auto mb-8">
               <Link href="/expert-developpement-commercial-pme" className="text-mint-green hover:underline">Laurent Serre, expert développement commercial</Link>, 
               conçoit des formations adaptées aux spécificités des PME. Du 
-              <Link href="/bootcamp-commercial-intensif" className="text-mint-green hover:underline"> bootcamp intensif</Link> aux 
+              <Link href="/bootcamp" className="text-mint-green hover:underline"> bootcamp intensif</Link> aux 
               <Link href="/ressources/guide-prospection" className="text-mint-green hover:underline"> ressources pratiques</Link>, 
               transformez vos équipes avec des méthodes terrain éprouvées.
             </p>
@@ -56,7 +56,7 @@ export default function FormationCommercialePMEPage() {
                 <Target className="w-5 h-5 mr-2" />
                 Diagnostic Gratuit
               </Link>
-              <Link href="/bootcamp-commercial-intensif" className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-blue-ink px-8 py-4 rounded-full font-semibold transition-colors">
+              <Link href="/bootcamp" className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-blue-ink px-8 py-4 rounded-full font-semibold transition-colors">
                 <Zap className="w-5 h-5 mr-2" />
                 Bootcamp Intensif
               </Link>
@@ -122,15 +122,15 @@ export default function FormationCommercialePMEPage() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/scripts-prospection" className="hover:text-mint-green cursor-pointer">Scripts IMPACT et AIDA+</Link>
+                  <Link href="/ressources/scripts-prospection" className="hover:text-mint-green">Scripts IMPACT et AIDA+</Link>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/linkedin-prospection" className="hover:text-mint-green cursor-pointer">LinkedIn et réseaux sociaux</Link>
+                  <Link href="/ressources/linkedin-prospection" className="hover:text-mint-green">LinkedIn et réseaux sociaux</Link>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/systeme-suivi-prospects" className="hover:text-mint-green cursor-pointer">Système de suivi efficace</Link>
+                  <Link href="/ressources/systeme-suivi-prospects" className="hover:text-mint-green">Système de suivi efficace</Link>
                 </div>
               </div>
               <Link href="/ressources/guide-prospection" className="inline-flex items-center text-mint-green hover:underline font-semibold">
@@ -152,18 +152,18 @@ export default function FormationCommercialePMEPage() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/techniques-motivation-equipe" className="hover:text-mint-green cursor-pointer">Motivation et coaching</Link>
+                  <Link href="/ressources/techniques-motivation-equipe" className="hover:text-mint-green">Motivation et coaching</Link>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/suivi-performance" className="hover:text-mint-green cursor-pointer">Pilotage performance</Link>
+                  <Link href="/suivi-performance" className="hover:text-mint-green">Pilotage performance</Link>
                 </div>
                 <div className="flex items-center text-gray-600 dark:text-gray-300">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/guide-recrutement-commercial" className="hover:text-mint-green cursor-pointer">Recrutement commercial</Link>
+                  <Link href="/ressources/guide-recrutement-commercial" className="hover:text-mint-green">Recrutement commercial</Link>
                 </div>
               </div>
-              <Link href="/formation-commerciale-pme#management-details" className="inline-flex items-center text-mint-green hover:underline font-semibold">
+              <Link href="/management-equipe-commerciale" className="inline-flex items-center text-mint-green hover:underline font-semibold">
                 Découvrir <ArrowRight className="w-4 h-4 ml-1" />
               </Link>
             </div>

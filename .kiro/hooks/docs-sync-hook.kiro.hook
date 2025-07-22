@@ -1,0 +1,29 @@
+{
+  "enabled": true,
+  "name": "Documentation Sync",
+  "description": "Monitors all source files in the repository and triggers documentation updates when changes are detected",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "src/**/*.{ts",
+      "tsx",
+      "js",
+      "jsx}",
+      "*.{ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "md}",
+      "package.json",
+      "next.config.ts",
+      "tailwind.config.ts",
+      "tsconfig.json"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Source files have been modified. Please review the changes and update the documentation accordingly. Focus on:\n\n1. **README.md** - Update if there are new features, configuration changes, or setup instructions\n2. **docs/ folder** - Update technical documentation if it exists\n3. **Component documentation** - Update any component-specific docs if React components changed\n4. **API documentation** - Update if API routes or interfaces changed\n5. **Configuration docs** - Update if config files like next.config.ts, tailwind.config.ts changed\n\nPlease analyze the file changes and determine what documentation needs to be updated to keep it accurate and helpful for developers and users."
+  }
+}

@@ -1,10 +1,16 @@
 'use client';
 
 import Button from "@/components/ui/Button";
+import ABTestButton from "@/components/ui/ABTestButton";
+import TrackedLink from "@/components/ui/TrackedLink";
 import AnimatedSection from "@/components/ui/AnimatedSection";
-import Link from 'next/link';
+import { useSectionTracking } from "@/hooks/useSectionTracking";
 
 export default function ProblemSection() {
+  const sectionRef = useSectionTracking({ 
+    sectionName: 'problem-section',
+    trackTimeSpent: true 
+  });
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({
       behavior: 'smooth',
@@ -105,18 +111,66 @@ export default function ProblemSection() {
               </p>
             </div>
 
-            {/* CTA avec les deux nouveaux boutons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-              <Link href="/diagnostic">
-                <Button variant="primary" size="lg" icon="🔍">
-                  Envie d'un vrai diagnostic (sans langue de bois) ?
-                </Button>
-              </Link>
-              <Link href="/cas-clients">
-                <Button variant="outline" size="lg" icon="🚣" className="border-white text-white hover:bg-white hover:text-blue-ink">
-                  Voir comment d'autres ont arrêté de ramer !
-                </Button>
-              </Link>
+            {/* CTAs hiérarchisés - Mobile-first avec ordre optimisé */}
+            <div className="cta-group-mobile mt-8">
+              <div className="cta-container-mobile sm:flex-row sm:max-w-none sm:gap-4">
+                <TrackedLink 
+                  href="/bootcamp"
+                  ctaId="problem-bootcamp"
+                  ctaText="Découvrir le Bootcamp Commercial"
+                  ctaType="primary"
+                  section="problem"
+                  position={1}
+                  className="block"
+                >
+                  <Button 
+                    variant="primary" 
+                    size="lg" 
+                    icon="🚀"
+                    className="cta-mobile cta-primary-mobile sm:w-auto sm:min-w-[240px]"
+                  >
+                    Découvrir le Bootcamp Commercial
+                  </Button>
+                </TrackedLink>
+                <TrackedLink 
+                  href="/ressources"
+                  ctaId="problem-resources"
+                  ctaText="Télécharger le Guide Gratuit"
+                  ctaType="secondary"
+                  section="problem"
+                  position={2}
+                  enableABTest={true}
+                  abTestId="problem-resources-text"
+                  className="block"
+                >
+                  <ABTestButton
+                    variant="outline" 
+                    size="lg" 
+                    icon="📚" 
+                    testId="problem-resources-text"
+                    defaultText="Télécharger le Guide Gratuit"
+                    className="cta-mobile cta-secondary-mobile sm:w-auto sm:min-w-[240px] border-mint-green text-mint-green hover:bg-mint-green hover:text-blue-ink"
+                  />
+                </TrackedLink>
+                <TrackedLink 
+                  href="/diagnostic"
+                  ctaId="problem-diagnostic"
+                  ctaText="Faire le Diagnostic"
+                  ctaType="tertiary"
+                  section="problem"
+                  position={3}
+                  className="block"
+                >
+                  <Button 
+                    variant="ghost" 
+                    size="lg" 
+                    icon="🔍" 
+                    className="cta-mobile cta-tertiary-mobile sm:w-auto sm:min-w-[200px] text-white/80 hover:text-white hover:bg-white/10"
+                  >
+                    Faire le Diagnostic
+                  </Button>
+                </TrackedLink>
+              </div>
             </div>
           </div>
         </AnimatedSection>
