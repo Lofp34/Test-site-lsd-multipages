@@ -8,31 +8,55 @@
 import { useEffect, useState } from 'react';
 import Button from '@/components/ui/Button';
 import Link from 'next/link';
-import { runMobileCTAValidation, generateMobileCTAReport, simulateMobileDevice, resetMobileSimulation, MOBILE_DEVICES } from '@/utils/mobile-cta-validator';
+import { validateMobileCTAOptimizations, generateMobileOptimizationRecommendations } from '@/utils/mobile-cta-validator';
 
 export default function TestMobileCTAPage() {
   const [testResults, setTestResults] = useState<string>('');
-  const [isSimulating, setIsSimulating] = useState(false);
-  const [currentDevice, setCurrentDevice] = useState<string>('');
+  const [currentDevice, setCurrentDevice] = useState<string>('desktop');
+
+  const devices = [
+    { name: 'Mobile', width: '375px', icon: '📱' },
+    { name: 'Tablet', width: '768px', icon: '📱' },
+    { name: 'Desktop', width: '100%', icon: '🖥️' }
+  ];
 
   const runTests = () => {
-    const report = generateMobileCTAReport();
+    const validation = validateMobileCTAOptimizations();
+    const recommendations = generateMobileOptimizationRecommendations();
+    
+    const report = `
+Mobile CTA Validation Results:
+==============================
+
+Overall Score: ${validation.score}/100
+Success: ${validation.success ? 'PASS' : 'FAIL'}
+Details: ${validation.details}
+
+Validations:
+${validation.validations.map((v, i) => `
+${i + 1}. ${v.passed ? '✅' : '❌'} ${v.check}
+   Value: ${v.value}
+   Expected: ${v.expected}
+   ${v.fix ? `Fix: ${v.fix}` : ''}
+`).join('')}
+
+Recommendations:
+${recommendations.map((rec, i) => `${i + 1}. ${rec}`).join('\n')}
+    `;
+    
     setTestResults(report);
   };
 
   const simulateDevice = (deviceName: string) => {
-    const device = MOBILE_DEVICES.find(d => d.name === deviceName);
-    if (device) {
-      simulateMobileDevice(device);
-      setIsSimulating(true);
-      setCurrentDevice(deviceName);
+    setCurrentDevice(deviceName.toLowerCase());
+    const container = document.querySelector('.test-container') as HTMLElement;
+    if (container) {
+      const device = devices.find(d => d.name === deviceName);
+      if (device) {
+        container.style.maxWidth = device.width;
+        container.style.margin = '0 auto';
+      }
     }
-  };
-
-  const resetSimulation = () => {
-    resetMobileSimulation();
-    setIsSimulating(false);
-    setCurrentDevice('');
   };
 
   useEffect(() => {
@@ -42,7 +66,7 @@ export default function TestMobileCTAPage() {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-primary-bg via-white to-mint-green/5 py-20">
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="max-w-4xl mx-auto px-6 test-container">
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-title font-bold text-blue-ink mb-4">
@@ -51,13 +75,11 @@ export default function TestMobileCTAPage() {
           <p className="text-xl text-gray-anthracite/80">
             Test and validate mobile CTA optimization
           </p>
-          {isSimulating && (
-            <div className="mt-4 p-3 bg-mint-green/10 rounded-lg">
-              <span className="text-mint-green font-semibold">
-                📱 Simulating: {currentDevice}
-              </span>
-            </div>
-          )}
+          <div className="mt-4 p-3 bg-mint-green/10 rounded-lg">
+            <span className="text-mint-green font-semibold">
+              📱 Current View: {currentDevice}
+            </span>
+          </div>
         </div>
 
         {/* Device Simulation Controls */}
@@ -66,21 +88,19 @@ export default function TestMobileCTAPage() {
             Device Simulation
           </h2>
           <div className="flex flex-wrap gap-4 mb-4">
-            {MOBILE_DEVICES.map(device => (
+            {devices.map(device => (
               <button
                 key={device.name}
                 onClick={() => simulateDevice(device.name)}
-                className="px-4 py-2 bg-mint-green text-white rounded-lg hover:bg-mint-green/90 transition-colors"
+                className={`px-4 py-2 rounded-lg transition-colors font-semibold ${
+                  currentDevice === device.name.toLowerCase()
+                    ? 'bg-mint-green text-white'
+                    : 'bg-gray-200 text-gray-700 hover:bg-mint-green/20'
+                }`}
               >
-                {device.name}
+                {device.icon} {device.name}
               </button>
             ))}
-            <button
-              onClick={resetSimulation}
-              className="px-4 py-2 bg-gray-anthracite text-white rounded-lg hover:bg-gray-anthracite/90 transition-colors"
-            >
-              Reset
-            </button>
           </div>
         </div>
 
@@ -174,9 +194,9 @@ export default function TestMobileCTAPage() {
             </button>
             <button
               onClick={() => {
-                const validation = runMobileCTAValidation();
+                const validation = validateMobileCTAOptimizations();
                 console.log('Mobile CTA Validation Results:', validation);
-                alert(`Overall Score: ${validation.overallScore.toFixed(1)}% - Check console for details`);
+                alert(`Overall Score: ${validation.score}% - Check console for details`);
               }}
               className="px-6 py-3 bg-blue-ink text-white rounded-lg hover:bg-blue-ink/90 transition-colors font-semibold"
             >
