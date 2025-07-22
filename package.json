@@ -17,9 +17,12 @@
     "test:components": "vitest run src/components/ui/__tests__",
     "test:integration": "vitest run src/__tests__/integration",
     "test:seo": "vitest run src/__tests__/seo",
-    "test:performance": "vitest run src/__tests__/performance"
+    "test:performance": "vitest run src/__tests__/performance",
+    "validate:links": "tsx src/scripts/validate-links.ts",
+    "test:redirects": "tsx src/scripts/test-redirects.ts"
   },
   "dependencies": {
+    "@types/jsdom": "^21.1.7",
     "dotenv": "^17.0.1",
     "framer-motion": "^12.18.1",
     "js-cookie": "^3.0.5",

@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { setupCustomEvents, setupConversionGoals } from '@/utils/cta-tracking';
 
 declare global {
   interface Window {
@@ -55,6 +56,10 @@ export default function GoogleAnalytics() {
       script.onload = () => {
         // Script chargé avec succès
         console.log('Google Analytics chargé');
+        
+        // Initialiser le tracking avancé des CTAs
+        setupCustomEvents();
+        setupConversionGoals();
       };
       
       script.onerror = () => {
