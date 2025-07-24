@@ -110,7 +110,7 @@ export default function Header() {
       <nav className="max-w-6xl mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           {/* Logo/Titre */}
-          <Link href="/" className="font-title font-bold text-base sm:text-lg text-primary-bg tracking-tight select-none drop-shadow-sm hover:text-mint-green transition-colors">
+          <Link href="/" className="font-title font-bold text-base sm:text-lg text-white tracking-tight select-none drop-shadow-sm hover:text-mint-green transition-colors">
             Laurent Serre<span className="hidden sm:inline"> Développement</span>
           </Link>
 
@@ -140,7 +140,7 @@ export default function Header() {
                       className={`px-3 py-2 flex items-center gap-1 ${
                         (scrolled || isBlogArticle)
                           ? 'text-white hover:text-mint-green'
-                          : 'text-primary-bg/90 hover:text-mint-green'
+                          : 'text-white/90 hover:text-mint-green'
                       } hover:bg-mint-green/10`}
                       aria-haspopup="true"
                       aria-expanded={openSubMenu === item.label}
@@ -152,7 +152,7 @@ export default function Header() {
                   </span>
                   <ul
                     ref={ressourcesMenuRef}
-                    className={`absolute left-0 top-full mt-2 min-w-[180px] bg-white dark:bg-gray-anthracite rounded-xl shadow-lg border border-mint-green/20 z-50 transition-all duration-200 ${openSubMenu === item.label ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+                    className={`absolute left-0 top-full mt-2 min-w-[180px] bg-white rounded-xl shadow-lg border border-mint-green/20 z-50 transition-all duration-200 ${openSubMenu === item.label ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
                     onMouseEnter={handleRessourcesMenuEnter}
                     onMouseLeave={handleRessourcesMenuLeave}
                   >
@@ -162,7 +162,7 @@ export default function Header() {
                           href={sub.href}
                           onClick={() => setOpenSubMenu(null)}
                         >
-                          <span className="block px-5 py-3 text-primary-secondary hover:bg-mint-green/10 hover:text-mint-green transition-colors cursor-pointer">
+                          <span className="block px-5 py-3 text-gray-anthracite hover:bg-mint-green/10 hover:text-mint-green transition-colors cursor-pointer">
                             {sub.label}
                           </span>
                         </Link>
@@ -181,7 +181,7 @@ export default function Header() {
                           ? 'bg-mint-green text-white hover:bg-mint-green/90' 
                           : (scrolled || isBlogArticle)
                             ? 'text-white hover:text-mint-green'
-                            : 'text-primary-bg/90 hover:text-mint-green'
+                            : 'text-white/90 hover:text-mint-green'
                       } hover:bg-mint-green/10 ${
                         pathname === item.href ? 'text-mint-green bg-mint-green/10' : ''
                       }`}
@@ -203,7 +203,7 @@ export default function Header() {
             style={{ background: 'rgba(20, 40, 80, 0.45)', backdropFilter: 'blur(8px)' }}
           >
             <div
-              className="mt-24 w-[90vw] max-w-md bg-blue-ink/80 dark:bg-gray-anthracite/90 rounded-2xl shadow-2xl border border-mint-green/20 p-6 animate-slideDown"
+              className="mt-24 w-[90vw] max-w-md bg-blue-ink/80 rounded-2xl shadow-2xl border border-mint-green/20 p-6 animate-slideDown"
               style={{
                 animation: 'slideDown 0.35s cubic-bezier(0.4,0,0.2,1)',
               }}
