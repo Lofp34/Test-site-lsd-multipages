@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function Article1() {
   return (
-    <main className="bg-primary-bg text-gray-dark
+    <main className="bg-primary-bg text-gray-dark">
       {/* Hero Section */}
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,7 +83,7 @@ export default function Article1() {
 
       {/* Article Content */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="prose prose-lg max-w-none prose-headings:text-blue-ink prose-headings:dark:text-white prose-p:text-gray-700 prose-p:dark:text-gray-300 prose-strong:text-blue-ink prose-strong:dark:text-white prose-li:text-gray-700 prose-li:dark:text-gray-300">
+        <div className="prose prose-lg max-w-none prose-headings:text-blue-ink prose-p:text-gray-700 prose-strong:text-blue-ink prose-li:text-gray-700">
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
             Vous ressentez que votre équipe commerciale atteint ses limites ? Que les résultats stagnent malgré les efforts ? 
             Il est peut-être temps de passer à l'étape supérieure et de structurer véritablement votre force de vente. 
@@ -320,7 +320,7 @@ export default function Article1() {
         </div>
       </section>
 
-      <section className="py-16 bg-white
+      <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
             Prendre contact avec Laurent Serre

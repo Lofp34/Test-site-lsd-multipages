@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function CoachCommercialEntreprisePage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white
+    <main className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -66,7 +66,7 @@ export default function CoachCommercialEntreprisePage() {
       </section>
 
       {/* Types de Coaching */}
-      <section className="py-20 bg-white
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-title font-bold text-blue-ink mb-6">
@@ -90,19 +90,19 @@ export default function CoachCommercialEntreprisePage() {
                 Accompagnement personnalisé de vos commerciaux pour développer leurs compétences spécifiques et leur performance.
               </p>
               <div className="space-y-3 mb-6">
-                <div className="flex items-center text-gray-600
+                <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Bilan de compétences commercial
                 </div>
-                <div className="flex items-center text-gray-600
+                <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Plan de développement personnalisé
                 </div>
-                <div className="flex items-center text-gray-600
+                <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/guide-prospection" className="hover:text-mint-green">Outils prospection avancés</Link>
                 </div>
-                <div className="flex items-center text-gray-600
+                <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Suivi régulier et ajustements
                 </div>
@@ -121,19 +121,19 @@ export default function CoachCommercialEntreprisePage() {
                 Dynamique collective, cohésion d'équipe et montée en compétences groupée pour maximiser la performance globale.
               </p>
               <div className="space-y-3 mb-6">
-                <div className="flex items-center text-gray-600
+                <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Analyse dynamique d'équipe
                 </div>
-                <div className="flex items-center text-gray-600
+                <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Ateliers collectifs pratiques
                 </div>
-                <div className="flex items-center text-gray-600
+                <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/guide-closing" className="hover:text-mint-green">Techniques closing partagées</Link>
                 </div>
-                <div className="flex items-center text-gray-600
+                <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Émulation et motivation groupe
                 </div>
@@ -152,19 +152,19 @@ export default function CoachCommercialEntreprisePage() {
                 Développement des compétences managériales pour diriger efficacement votre équipe commerciale.
               </p>
               <div className="space-y-3 mb-6">
-                <div className="flex items-center text-gray-600
+                <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Leadership commercial
                 </div>
-                <div className="flex items-center text-gray-600
+                <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Pilotage performance
                 </div>
-                <div className="flex items-center text-gray-600
+                <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/outil-strategie-commerciale" className="hover:text-mint-green">Stratégie et planification</Link>
                 </div>
-                <div className="flex items-center text-gray-600
+                <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Motivation et recrutement
                 </div>
@@ -175,7 +175,7 @@ export default function CoachCommercialEntreprisePage() {
       </section>
 
       {/* Méthodologie Coaching */}
-      <section className="py-20 bg-slate-50
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -190,7 +190,7 @@ export default function CoachCommercialEntreprisePage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-blue-ink mb-2">Évaluation Initiale</h3>
-                    <p className="text-gray-anthracite
+                    <p className="text-gray-anthracite">
                       <Link href="/diagnostic" className="text-mint-green hover:underline">Diagnostic approfondi</Link> des compétences, 
                       motivations et freins de chaque commercial ou de l'équipe.
                     </p>
@@ -203,7 +203,7 @@ export default function CoachCommercialEntreprisePage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-blue-ink mb-2">Plan de Développement</h3>
-                    <p className="text-gray-anthracite
+                    <p className="text-gray-anthracite">
                       Conception d'un parcours personnalisé intégrant <Link href="/formation-commerciale-pme" className="text-mint-green hover:underline">formation</Link> 
                       et coaching terrain adapté aux besoins identifiés.
                     </p>
@@ -216,7 +216,7 @@ export default function CoachCommercialEntreprisePage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-blue-ink mb-2">Accompagnement Terrain</h3>
-                    <p className="text-gray-anthracite
+                    <p className="text-gray-anthracite">
                       Sessions pratiques, accompagnement client, débriefing immédiat et ajustements en temps réel 
                       des techniques commerciales.
                     </p>
@@ -229,7 +229,7 @@ export default function CoachCommercialEntreprisePage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold text-blue-ink mb-2">Autonomisation</h3>
-                    <p className="text-gray-anthracite
+                    <p className="text-gray-anthracite">
                       Transfert progressif des compétences pour rendre vos commerciaux autonomes et maintenir 
                       la performance dans le temps.
                     </p>
@@ -246,19 +246,19 @@ export default function CoachCommercialEntreprisePage() {
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-mint-green mb-2">+22%</div>
-                  <div className="text-gray-anthracite Individuelle</div>
+                  <div className="text-gray-anthracite">Performance Individuelle</div>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-bold text-mint-green mb-2">+100%</div>
-                  <div className="text-gray-anthracite Équipe</div>
+                  <div className="text-gray-anthracite">Cohésion Équipe</div>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-bold text-mint-green mb-2">-37%</div>
-                  <div className="text-gray-anthracite Commercial</div>
+                  <div className="text-gray-anthracite">Turnover Commercial</div>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-bold text-mint-green mb-2">+100%</div>
-                  <div className="text-gray-anthracite en Soi</div>
+                  <div className="text-gray-anthracite">Confiance en Soi</div>
                 </div>
               </div>
 
@@ -278,7 +278,7 @@ export default function CoachCommercialEntreprisePage() {
       </section>
 
       {/* Ressources Coaching */}
-      <section className="py-20 bg-white
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">

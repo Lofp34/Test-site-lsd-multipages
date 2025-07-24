@@ -21,13 +21,13 @@ export default function CGV() {
             <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-6xl">
               Conditions Générales de Vente
             </h1>
-            <p className="mt-4 text-lg leading-8 text-gray-600
+            <p className="mt-4 text-lg leading-8 text-gray-600">
               Applicables aux clients professionnels.
             </p>
             <div className="mt-4 w-24 h-1.5 bg-mint-green rounded-full mx-auto"></div>
           </div>
 
-          <div className="space-y-10 font-body text-base leading-7 text-gray-700
+          <div className="space-y-10 font-body text-base leading-7 text-gray-700">
             
             <p className="text-sm text-gray-500">Dernière mise à jour : 25 juillet 2024</p>
 

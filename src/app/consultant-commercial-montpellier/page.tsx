@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function ConsultantCommercialMontpellierPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white
+    <main className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -65,7 +65,7 @@ export default function ConsultantCommercialMontpellierPage() {
       </section>
 
       {/* Zone d'Intervention */}
-      <section className="py-20 bg-white
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -113,21 +113,21 @@ export default function ConsultantCommercialMontpellierPage() {
               <div className="space-y-4">
                 <div className="bg-white/50 rounded-xl p-4">
                   <h4 className="font-semibold text-blue-ink mb-2">Proximité Géographique</h4>
-                  <p className="text-sm text-gray-anthracite
+                  <p className="text-sm text-gray-anthracite">
                     Interventions terrain facilitées, réactivité maximale et meilleure compréhension du marché local.
                   </p>
                 </div>
                 
                 <div className="bg-white/50 rounded-xl p-4">
                   <h4 className="font-semibold text-blue-ink mb-2">Connaissance du Marché</h4>
-                  <p className="text-sm text-gray-anthracite
+                  <p className="text-sm text-gray-anthracite">
                     Expertise des spécificités économiques de la région Occitanie et de ses secteurs porteurs.
                   </p>
                 </div>
                 
                 <div className="bg-white/50 rounded-xl p-4">
                   <h4 className="font-semibold text-blue-ink mb-2">Réseau Local</h4>
-                  <p className="text-sm text-gray-anthracite
+                  <p className="text-sm text-gray-anthracite">
                     Mise en relation avec des partenaires locaux et opportunités business de la région.
                   </p>
                 </div>
@@ -136,9 +136,9 @@ export default function ConsultantCommercialMontpellierPage() {
               <div className="mt-6 p-4 bg-mint-green/10 rounded-xl">
                 <div className="flex items-center mb-2">
                   <MapPin className="w-5 h-5 text-mint-green mr-2" />
-                  <span className="font-semibold text-blue-ink Privilégiés</span>
+                  <span className="font-semibold text-blue-ink">Secteurs Privilégiés</span>
                 </div>
-                <p className="text-sm text-gray-anthracite
+                <p className="text-sm text-gray-anthracite">
                   Tech, Santé, Services, Industrie, BTP, Commerce - spécialisation PME 10 à 250 salariés
                 </p>
               </div>
@@ -148,7 +148,7 @@ export default function ConsultantCommercialMontpellierPage() {
       </section>
 
       {/* Services Locaux */}
-      <section className="py-20 bg-slate-50
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">
@@ -218,7 +218,7 @@ export default function ConsultantCommercialMontpellierPage() {
       </section>
 
       {/* Références Locales */}
-      <section className="py-20 bg-white
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">
