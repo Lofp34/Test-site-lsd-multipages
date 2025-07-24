@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function PiloterPerformancePage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <main className="flex flex-col min-h-screen bg-white
       {/* Header */}
       <div className="bg-gradient-to-br from-blue-ink to-indigo-500/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -47,15 +47,15 @@ export default function PiloterPerformancePage() {
         
         {/* Introduction */}
         <section className="mb-16">
-          <div className="bg-slate-50 dark:bg-gray-anthracite/20 rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6 flex items-center">
+          <div className="bg-slate-50 rounded-2xl p-8 mb-12">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6 flex items-center">
               <Target className="w-8 h-8 text-indigo-500 mr-3" />
               Ce qui ne se mesure pas ne s'améliore pas
             </h2>
-            <p className="text-lg text-gray-anthracite dark:text-primary-bg/80 mb-4">
+            <p className="text-lg text-gray-anthracite mb-4">
               Le pilotage par la data n'est pas du "flicage". C'est un outil au service de la performance collective et individuelle. Il permet d'objectiver les discussions, d'identifier les vrais points de blocage et de concentrer les efforts là où ils ont le plus d'impact.
             </p>
-            <p className="text-lg text-gray-anthracite dark:text-primary-bg/80">
+            <p className="text-lg text-gray-anthracite
               L'objectif est de passer d'un management réactif ("On n'a pas fait le chiffre") à un management proactif ("Je vois que ton taux de conversion chute, comment puis-je t'aider ?").
             </p>
           </div>
@@ -63,20 +63,20 @@ export default function PiloterPerformancePage() {
 
         {/* Chapitre 1 */}
         <section className="mb-16">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 flex items-center">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8 flex items-center">
             <span className="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">1</span>
             Choisir les Bons Indicateurs (KPIs)
           </h2>
           <div className="space-y-6">
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
-              <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4">
+            <div className="bg-white rounded-xl p-6 border border-slate-200
+              <h3 className="text-xl font-title font-semibold text-blue-ink mb-4">
                 Indicateurs d'Activité (Leading) vs. de Résultat (Lagging)
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">Un bon tableau de bord équilibre deux types de KPIs :</p>
+              <p className="text-gray-anthracite mb-4">Un bon tableau de bord équilibre deux types de KPIs :</p>
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <h4 className="font-semibold text-blue-ink dark:text-primary-bg">Indicateurs d'Activité (Cause)</h4>
-                  <p className="text-sm text-gray-anthracite dark:text-primary-bg/80">Mesurent l'effort. Ils sont contrôlables et prédictifs du résultat futur.</p>
+                  <h4 className="font-semibold text-blue-ink d'Activité (Cause)</h4>
+                  <p className="text-sm text-gray-anthracite l'effort. Ils sont contrôlables et prédictifs du résultat futur.</p>
                   <ul className="mt-2 text-sm space-y-1 list-disc list-inside">
                     <li>Nombre d'appels / emails</li>
                     <li>Nombre de rendez-vous pris</li>
@@ -84,8 +84,8 @@ export default function PiloterPerformancePage() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-blue-ink dark:text-primary-bg">Indicateurs de Résultat (Conséquence)</h4>
-                  <p className="text-sm text-gray-anthracite dark:text-primary-bg/80">Mesurent la performance passée. Ils sont la conséquence de l'effort.</p>
+                  <h4 className="font-semibold text-blue-ink de Résultat (Conséquence)</h4>
+                  <p className="text-sm text-gray-anthracite la performance passée. Ils sont la conséquence de l'effort.</p>
                   <ul className="mt-2 text-sm space-y-1 list-disc list-inside">
                     <li>Chiffre d'Affaires signé</li>
                     <li>Taux de conversion (closing rate)</li>
@@ -103,23 +103,23 @@ export default function PiloterPerformancePage() {
 
         {/* Chapitre 2 */}
         <section className="mb-16">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 flex items-center">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8 flex items-center">
             <span className="bg-indigo-500 text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">2</span>
             Animer les Rituels de Performance
           </h2>
           <div className="space-y-4">
-            <p className="text-lg text-gray-anthracite dark:text-primary-bg/80 mb-4">
+            <p className="text-lg text-gray-anthracite mb-4">
               La data n'a de valeur que si elle est utilisée pour animer des conversations constructives.
             </p>
             <div className="border-l-4 border-indigo-500 pl-6 space-y-8">
               <div>
-                <h4 className="font-title font-bold text-xl text-blue-ink dark:text-primary-bg mb-2">Le "Pipeline Review" Hebdomadaire</h4>
-                <p className="text-gray-anthracite dark:text-primary-bg/80">Ce n'est pas une séance de justification. C'est un atelier de travail collectif pour débloquer les opportunités. Chaque commercial présente 1 ou 2 "deals" sur lesquels il souhaite l'avis du groupe.</p>
+                <h4 className="font-title font-bold text-xl text-blue-ink mb-2">Le "Pipeline Review" Hebdomadaire</h4>
+                <p className="text-gray-anthracite n'est pas une séance de justification. C'est un atelier de travail collectif pour débloquer les opportunités. Chaque commercial présente 1 ou 2 "deals" sur lesquels il souhaite l'avis du groupe.</p>
                 <p className="font-semibold mt-2">Questions clés : "Où est le risque sur ce deal ?", "De quoi as-tu besoin pour avancer ?"</p>
               </div>
               <div>
-                <h4 className="font-title font-bold text-xl text-blue-ink dark:text-primary-bg mb-2">Le Point de Coaching Individuel</h4>
-                <p className="text-gray-anthracite dark:text-primary-bg/80">Basé sur le tableau de bord individuel. On analyse les ratios (ex: taux de conversion entre étape 1 et 2) pour identifier la compétence précise à travailler.</p>
+                <h4 className="font-title font-bold text-xl text-blue-ink mb-2">Le Point de Coaching Individuel</h4>
+                <p className="text-gray-anthracite sur le tableau de bord individuel. On analyse les ratios (ex: taux de conversion entre étape 1 et 2) pour identifier la compétence précise à travailler.</p>
                 <p className="font-semibold mt-2">Exemple : "Je vois que tu as beaucoup de RDV1 mais peu de RDV2. Travaillons ensemble ta phase de découverte."</p>
               </div>
             </div>

@@ -20,8 +20,8 @@ export default function ArtDuClosingPage() {
         </section>
 
         {/* Résumé détaillé */}
-        <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
-          <h2 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">Résumé du livre</h2>
+        <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
+          <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
             Le closing n’est pas un acte unique en fin de cycle, mais une série de « mini-engagements » tout au long du processus de vente. Anthony Iannarino démontre que chaque étape doit apporter de la valeur pour mériter la signature. Ce type d’ouvrage complète les approches globales en fournissant des formules concrètes pour répondre aux dernières objections, créer un sentiment d’urgence et formuler la demande de commande avec confiance.
           </p>
@@ -42,7 +42,7 @@ export default function ArtDuClosingPage() {
             <li>Créer un sentiment d’urgence sans pression excessive.</li>
           </ul>
 
-          <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink dark:text-mint-green mb-6">
+          <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
             « Qui ne demande pas, n’obtient pas. »
           </blockquote>
         </article>
@@ -50,8 +50,8 @@ export default function ArtDuClosingPage() {
         {/* CTA Bootcamp */}
         <div className="max-w-2xl mx-auto text-center mt-8 mb-12">
           <div className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-2 shadow-md backdrop-blur">Passez du livre au terrain</div>
-          <h4 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-2">Découvrez le Bootcamp Négociation by LSD</h4>
-          <p className="text-lg text-gray-700 dark:text-gray-100 mb-4">Formez-vous avec les meilleures méthodes issues de ce livre, adaptées à la réalité du terrain B2B.</p>
+          <h4 className="text-2xl font-bold text-blue-ink mb-2">Découvrez le Bootcamp Négociation by LSD</h4>
+          <p className="text-lg text-gray-700 mb-4">Formez-vous avec les meilleures méthodes issues de ce livre, adaptées à la réalité du terrain B2B.</p>
           <Link href="/bootcamp-commercial-intensif" className="inline-block bg-mint-green text-blue-ink font-semibold px-6 py-3 rounded-full shadow hover:bg-mint-green/80 transition">Voir le Bootcamp</Link>
         </div>
 

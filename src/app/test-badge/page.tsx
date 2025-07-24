@@ -3,15 +3,15 @@ import Badge from '@/components/ui/Badge';
 
 export default function TestBadgePage() {
   return (
-    <div className="min-h-screen bg-bg-main dark:bg-blue-ink p-8">
+    <div className="min-h-screen bg-bg-main p-8">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-8">
+        <h1 className="text-3xl font-bold text-blue-ink mb-8">
           Test du composant Badge
         </h1>
 
         {/* Difficulty variants */}
         <section className="mb-8">
-          <h2 className="text-xl font-semibold text-blue-ink dark:text-mint-green mb-4">
+          <h2 className="text-xl font-semibold text-blue-ink mb-4">
             Variants de difficulté
           </h2>
           <div className="flex flex-wrap gap-4 mb-4">
@@ -20,7 +20,7 @@ export default function TestBadgePage() {
             <Badge variant="difficulty" difficulty="Avancé">Avancé</Badge>
           </div>
           
-          <h3 className="text-lg font-medium text-blue-ink dark:text-mint-green mb-2">
+          <h3 className="text-lg font-medium text-blue-ink mb-2">
             Tailles différentes
           </h3>
           <div className="flex flex-wrap items-center gap-4">
@@ -32,7 +32,7 @@ export default function TestBadgePage() {
 
         {/* Outline variant */}
         <section className="mb-8">
-          <h2 className="text-xl font-semibold text-blue-ink dark:text-mint-green mb-4">
+          <h2 className="text-xl font-semibold text-blue-ink mb-4">
             Variant outline
           </h2>
           <div className="flex flex-wrap gap-4">
@@ -44,7 +44,7 @@ export default function TestBadgePage() {
 
         {/* Category variants */}
         <section className="mb-8">
-          <h2 className="text-xl font-semibold text-blue-ink dark:text-mint-green mb-4">
+          <h2 className="text-xl font-semibold text-blue-ink mb-4">
             Variants de catégorie
           </h2>
           <div className="flex flex-wrap gap-4">
@@ -60,7 +60,7 @@ export default function TestBadgePage() {
 
         {/* Default variant */}
         <section className="mb-8">
-          <h2 className="text-xl font-semibold text-blue-ink dark:text-mint-green mb-4">
+          <h2 className="text-xl font-semibold text-blue-ink mb-4">
             Variant par défaut
           </h2>
           <div className="flex flex-wrap gap-4">
@@ -72,17 +72,17 @@ export default function TestBadgePage() {
 
         {/* Mixed examples */}
         <section className="mb-8">
-          <h2 className="text-xl font-semibold text-blue-ink dark:text-mint-green mb-4">
+          <h2 className="text-xl font-semibold text-blue-ink mb-4">
             Exemples d'utilisation mixte
           </h2>
-          <div className="bg-white/70 dark:bg-blue-ink/80 rounded-xl p-6 border border-mint-green/20">
+          <div className="bg-white/70 rounded-xl p-6 border border-mint-green/20">
             <h3 className="text-lg font-medium mb-4">Livre exemple</h3>
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge variant="difficulty" difficulty="Intermédiaire" size="sm">Intermédiaire</Badge>
               <Badge variant="outline" size="sm">6h</Badge>
               <Badge variant="category" category="enterprise-account" size="sm">Grands comptes</Badge>
             </div>
-            <p className="text-gray-700 dark:text-gray-200">
+            <p className="text-gray-700
               Exemple d'utilisation des badges dans un contexte réel.
             </p>
           </div>

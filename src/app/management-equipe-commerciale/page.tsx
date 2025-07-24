@@ -38,7 +38,7 @@ const chantiers = [
 
 export default function ManagementEquipeCommercialePage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <main className="flex flex-col min-h-screen bg-white
       {/* Header */}
       <div className="bg-gradient-to-br from-blue-ink to-blue-ink/90 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -71,12 +71,12 @@ export default function ManagementEquipeCommercialePage() {
         
         {/* Introduction */}
         <section className="mb-16">
-          <div className="bg-slate-50 dark:bg-gray-anthracite/20 rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6 flex items-center">
-              <Shield className="w-8 h-8 text-blue-ink/80 dark:text-primary-bg/80 mr-3" />
+          <div className="bg-slate-50 rounded-2xl p-8 mb-12">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6 flex items-center">
+              <Shield className="w-8 h-8 text-blue-ink/80 mr-3" />
               Le maillon fort de votre stratégie
             </h2>
-            <p className="text-lg text-gray-anthracite dark:text-primary-bg/80">
+            <p className="text-lg text-gray-anthracite
               Un bon manager ne se contente pas de superviser. Il recrute, motive, coache, et structure. Il est le garant de la culture de la performance et le premier rempart contre le découragement. Investir sur vos managers, c'est investir sur la pérennité de vos résultats.
             </p>
           </div>
@@ -84,7 +84,7 @@ export default function ManagementEquipeCommercialePage() {
 
         {/* Chapitre 1 */}
         <section className="mb-16">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 flex items-center">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8 flex items-center">
             <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">1</span>
             Les 5 Chantiers du Manager Performant
           </h2>
@@ -94,12 +94,12 @@ export default function ManagementEquipeCommercialePage() {
               const Icon = chantier.icon;
               return (
                 <Link href={chantier.href} key={chantier.title} className="block group">
-                  <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700 h-full group-hover:border-mint-green group-hover:shadow-lg transition-all duration-300">
+                  <div className="bg-white rounded-xl p-6 border border-slate-200 h-full group-hover:border-mint-green group-hover:shadow-lg transition-all duration-300">
                     <div className="flex items-center gap-3 mb-2">
-                      <Icon className="w-6 h-6 text-blue-ink dark:text-primary-bg" />
-                      <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg">{chantier.title}</h3>
+                      <Icon className="w-6 h-6 text-blue-ink />
+                      <h3 className="text-xl font-title font-semibold text-blue-ink
                     </div>
-                    <p className="text-gray-anthracite dark:text-primary-bg/80 text-sm">
+                    <p className="text-gray-anthracite text-sm">
                       {chantier.description}
                     </p>
                   </div>

@@ -133,16 +133,16 @@ export default function DiagnosticSection() {
 
   if (showResults) {
     return (
-      <section id="diagnostic" className="py-20 bg-primary-bg dark:bg-blue-ink">
+      <section id="diagnostic" className="py-20 bg-primary-bg
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           {/* Titre */}
           <AnimatedSection animation="slide-up" delay={0}>
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-title font-bold text-blue-ink dark:text-primary-bg leading-tight mb-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-title font-bold text-blue-ink leading-tight mb-4">
                 Diagnostic commercial
                 <span className="block text-mint-green">gratuit</span>
               </h2>
-              <p className="text-lg font-body text-gray-anthracite dark:text-primary-bg/80 max-w-2xl mx-auto">
+              <p className="text-lg font-body text-gray-anthracite max-w-2xl mx-auto">
                 Évaluez votre maturité commerciale en 2 minutes et découvrez vos opportunités d&apos;amélioration
               </p>
             </div>
@@ -150,12 +150,12 @@ export default function DiagnosticSection() {
 
           {/* Résultats */}
           <AnimatedSection animation="slide-up" delay={200}>
-            <div className="bg-white/90 dark:bg-gray-anthracite/40 rounded-3xl p-8 shadow-xl text-center">
+            <div className="bg-white/90 rounded-3xl p-8 shadow-xl text-center">
               <div className="text-6xl mb-6">{recommendation.emoji}</div>
-              <h3 className="text-2xl md:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-2xl md:text-3xl font-title font-bold text-blue-ink mb-4">
                 {recommendation.title}
               </h3>
-              <p className="text-lg font-body text-gray-anthracite dark:text-primary-bg/80 mb-6 leading-relaxed">
+              <p className="text-lg font-body text-gray-anthracite mb-6 leading-relaxed">
                 {recommendation.description}
               </p>
               
@@ -170,22 +170,22 @@ export default function DiagnosticSection() {
           {/* Actions */}
           <AnimatedSection animation="fade-in" delay={400}>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
-              <div className="bg-white/80 dark:bg-gray-anthracite/30 rounded-2xl p-6 text-center border-2 border-transparent hover:border-mint-green/50 transition-all duration-300 hover:scale-105">
+              <div className="bg-white/80 rounded-2xl p-6 text-center border-2 border-transparent hover:border-mint-green/50 transition-all duration-300 hover:scale-105">
                 <div className="text-3xl mb-4">🤐</div>
-                <h3 className="font-title font-bold text-blue-ink dark:text-primary-bg mb-2">
+                <h3 className="font-title font-bold text-blue-ink mb-2">
                   Je garde le résultat pour moi
                 </h3>
-                <p className="font-body text-gray-anthracite dark:text-primary-bg/80 text-sm">
+                <p className="font-body text-gray-anthracite text-sm">
                   Vous pouvez sauvegarder ce diagnostic pour votre usage personnel
                 </p>
               </div>
 
               <div className="bg-mint-green/10 border-2 border-mint-green rounded-2xl p-6 text-center hover:bg-mint-green/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                 <div className="text-3xl mb-4">🚀</div>
-                <h3 className="font-title font-bold text-blue-ink dark:text-primary-bg mb-2">
+                <h3 className="font-title font-bold text-blue-ink mb-2">
                   Je veux aller plus loin
                 </h3>
-                <p className="font-body text-gray-anthracite dark:text-primary-bg/80 text-sm mb-4">
+                <p className="font-body text-gray-anthracite text-sm mb-4">
                   Discutons de vos défis et opportunités
                 </p>
                 <Button variant="primary" size="sm">
@@ -202,7 +202,7 @@ export default function DiagnosticSection() {
                 variant="ghost" 
                 size="sm"
                 onClick={resetDiagnostic}
-                className="font-italic text-gray-anthracite dark:text-primary-bg/70 hover:text-mint-green underline"
+                className="font-italic text-gray-anthracite hover:text-mint-green underline"
               >
                 Refaire le diagnostic
               </Button>
@@ -214,16 +214,16 @@ export default function DiagnosticSection() {
   }
 
   return (
-    <section id="diagnostic" className="py-20 bg-primary-bg dark:bg-blue-ink">
+    <section id="diagnostic" className="py-20 bg-primary-bg
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         {/* Titre */}
         <AnimatedSection animation="slide-up" delay={0}>
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-title font-bold text-blue-ink dark:text-primary-bg leading-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-title font-bold text-blue-ink leading-tight mb-4">
               Diagnostic commercial
               <span className="block text-mint-green">gratuit</span>
             </h2>
-            <p className="text-lg font-body text-gray-anthracite dark:text-primary-bg/80 max-w-2xl mx-auto">
+            <p className="text-lg font-body text-gray-anthracite max-w-2xl mx-auto">
               Évaluez votre maturité commerciale en 2 minutes et découvrez vos opportunités d&apos;amélioration
             </p>
           </div>
@@ -235,14 +235,14 @@ export default function DiagnosticSection() {
             <AnimatedSection animation="fade-in" delay={200}>
               <div className="mb-8">
                 <div className="flex justify-between items-center mb-2">
-                  <span className="font-body text-sm text-gray-anthracite dark:text-primary-bg/70">
+                  <span className="font-body text-sm text-gray-anthracite
                     Question {currentQuestion + 1} sur {questions.length}
                   </span>
                   <span className="font-title font-bold text-mint-green">
                     {Math.round(((currentQuestion + 1) / questions.length) * 100)}%
                   </span>
                 </div>
-                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                <div className="w-full bg-gray-200 rounded-full h-2">
                   <div 
                     className="bg-mint-green h-2 rounded-full transition-all duration-500 ease-out"
                     style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
@@ -253,13 +253,13 @@ export default function DiagnosticSection() {
             
             {/* CTA Psychologique */}
             <div className="text-center mb-8 px-4">
-              <p className="text-sm font-body text-gray-anthracite dark:text-primary-bg/80 italic">
+              <p className="text-sm font-body text-gray-anthracite italic">
                 Votre situation est unique ? Allons droit au but.{" "}
                 <a 
                   href="https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="font-bold text-blue-ink dark:text-white border-b-2 border-mint-green hover:bg-mint-green/10 transition pb-1"
+                  className="font-bold text-blue-ink border-b-2 border-mint-green hover:bg-mint-green/10 transition pb-1"
                 >
                   Échangeons 15 minutes pour un diagnostic sur-mesure.
                 </a>
@@ -268,8 +268,8 @@ export default function DiagnosticSection() {
 
             {/* Question */}
             <AnimatedSection animation="slide-up" delay={400}>
-              <div className="bg-white/90 dark:bg-gray-anthracite/40 rounded-3xl p-6 sm:p-8 shadow-xl">
-                <h3 className="text-2xl md:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 leading-relaxed">
+              <div className="bg-white/90 rounded-3xl p-6 sm:p-8 shadow-xl">
+                <h3 className="text-2xl md:text-3xl font-title font-bold text-blue-ink mb-8 leading-relaxed">
                   {questions[currentQuestion].text}
                 </h3>
 
@@ -279,7 +279,7 @@ export default function DiagnosticSection() {
                     <button
                       key={index}
                       onClick={() => handleAnswer(answer.points)}
-                      className="w-full text-left p-4 bg-primary-bg dark:bg-blue-ink/50 rounded-xl border-2 border-transparent hover:border-mint-green hover:bg-mint-green/5 transition-all duration-300 hover:scale-[1.02] group"
+                      className="w-full text-left p-4 bg-primary-bg rounded-xl border-2 border-transparent hover:border-mint-green hover:bg-mint-green/5 transition-all duration-300 hover:scale-[1.02] group"
                     >
                       <div className="flex items-center gap-4">
                         <div className="w-8 h-8 bg-mint-green/20 rounded-full flex items-center justify-center group-hover:bg-mint-green/40 transition-colors">
@@ -287,7 +287,7 @@ export default function DiagnosticSection() {
                             {String.fromCharCode(65 + index)}
                           </span>
                         </div>
-                        <span className="font-body text-lg text-gray-anthracite dark:text-primary-bg group-hover:text-blue-ink dark:group-hover:text-mint-green">
+                        <span className="font-body text-lg text-gray-anthracite group-hover:text-blue-ink
                           {answer.text}
                         </span>
                       </div>
@@ -301,12 +301,12 @@ export default function DiagnosticSection() {
           <>
             {/* Résultats */}
             <AnimatedSection animation="slide-up" delay={200}>
-              <div className="bg-white/90 dark:bg-gray-anthracite/40 rounded-3xl p-8 shadow-xl text-center">
+              <div className="bg-white/90 rounded-3xl p-8 shadow-xl text-center">
                 <div className="text-6xl mb-6">{recommendation.emoji}</div>
-                <h3 className="text-2xl md:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+                <h3 className="text-2xl md:text-3xl font-title font-bold text-blue-ink mb-4">
                   {recommendation.title}
                 </h3>
-                <p className="text-lg font-body text-gray-anthracite dark:text-primary-bg/80 mb-6 leading-relaxed">
+                <p className="text-lg font-body text-gray-anthracite mb-6 leading-relaxed">
                   {recommendation.description}
                 </p>
                 
@@ -321,22 +321,22 @@ export default function DiagnosticSection() {
             {/* Actions */}
             <AnimatedSection animation="fade-in" delay={400}>
               <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="bg-white/80 dark:bg-gray-anthracite/30 rounded-2xl p-6 text-center border-2 border-transparent hover:border-mint-green/50 transition-all duration-300 hover:scale-105">
+                <div className="bg-white/80 rounded-2xl p-6 text-center border-2 border-transparent hover:border-mint-green/50 transition-all duration-300 hover:scale-105">
                   <div className="text-3xl mb-4">🤐</div>
-                  <h3 className="font-title font-bold text-blue-ink dark:text-primary-bg mb-2">
+                  <h3 className="font-title font-bold text-blue-ink mb-2">
                     Je garde le résultat pour moi
                   </h3>
-                  <p className="font-body text-gray-anthracite dark:text-primary-bg/80 text-sm">
+                  <p className="font-body text-gray-anthracite text-sm">
                     Vous pouvez sauvegarder ce diagnostic pour votre usage personnel
                   </p>
                 </div>
 
                 <div className="bg-mint-green/10 border-2 border-mint-green rounded-2xl p-6 text-center hover:bg-mint-green/20 transition-all duration-300 hover:scale-105 cursor-pointer">
                   <div className="text-3xl mb-4">🚀</div>
-                  <h3 className="font-title font-bold text-blue-ink dark:text-primary-bg mb-2">
+                  <h3 className="font-title font-bold text-blue-ink mb-2">
                     Je veux aller plus loin
                   </h3>
-                  <p className="font-body text-gray-anthracite dark:text-primary-bg/80 text-sm mb-4">
+                  <p className="font-body text-gray-anthracite text-sm mb-4">
                     Discutons de vos défis et opportunités
                   </p>
                   <Button variant="primary" size="sm">
@@ -353,7 +353,7 @@ export default function DiagnosticSection() {
                   variant="ghost" 
                   size="sm"
                   onClick={resetDiagnostic}
-                  className="font-italic text-gray-anthracite dark:text-primary-bg/70 hover:text-mint-green underline"
+                  className="font-italic text-gray-anthracite hover:text-mint-green underline"
                 >
                   Refaire le diagnostic
                 </Button>

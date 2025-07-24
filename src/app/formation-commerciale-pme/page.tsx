@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function FormationCommercialePMEPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <main className="flex flex-col min-h-screen bg-white
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -66,39 +66,39 @@ export default function FormationCommercialePMEPage() {
       </section>
 
       {/* Nos Formations */}
-      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-20 bg-white
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-4xl font-title font-bold text-blue-ink mb-6">
               Nos Formations Spécialisées PME
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-3xl mx-auto">
               Des programmes conçus spécifiquement pour répondre aux défis commerciaux des PME
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Bootcamp Commercial Intensif */}
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 border border-mint-green/20 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-white rounded-2xl p-8 border border-mint-green/20 hover:shadow-2xl transition-all duration-300">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
                 <Zap className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-4">
                 Bootcamp Commercial Intensif
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
+              <p className="text-gray-anthracite mb-6">
                 Formation accélérée de 3 jours pour transformer rapidement vos commerciaux.
               </p>
               <div className="space-y-3 mb-6">
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/guide-prospection" className="hover:text-mint-green">Prospection moderne</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/guide-closing" className="hover:text-mint-green">Techniques de closing</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/outil-preparation-rdv" className="hover:text-mint-green">Préparation RDV</Link>
                 </div>
@@ -109,26 +109,26 @@ export default function FormationCommercialePMEPage() {
             </div>
 
             {/* Formation Prospection Avancée */}
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-white rounded-2xl p-8 hover:shadow-2xl transition-all duration-300">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-4">
                 Formation Prospection Avancée
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
+              <p className="text-gray-anthracite mb-6">
                 Maîtrisez les 7 canaux de prospection moderne avec notre <Link href="/ressources/guide-prospection" className="text-mint-green hover:underline">guide expert</Link>.
               </p>
               <div className="space-y-3 mb-6">
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/scripts-prospection" className="hover:text-mint-green">Scripts IMPACT et AIDA+</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/linkedin-prospection" className="hover:text-mint-green">LinkedIn et réseaux sociaux</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/systeme-suivi-prospects" className="hover:text-mint-green">Système de suivi efficace</Link>
                 </div>
@@ -139,26 +139,26 @@ export default function FormationCommercialePMEPage() {
             </div>
 
             {/* Formation Management Commercial */}
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-white rounded-2xl p-8 hover:shadow-2xl transition-all duration-300">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
                 <Users className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-4">
                 Management Commercial
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
+              <p className="text-gray-anthracite mb-6">
                 Développez vos compétences de <Link href="/management-equipe-commerciale" className="text-mint-green hover:underline">manager commercial</Link> pour PME.
               </p>
               <div className="space-y-3 mb-6">
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/techniques-motivation-equipe" className="hover:text-mint-green">Motivation et coaching</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/suivi-performance" className="hover:text-mint-green">Pilotage performance</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/guide-recrutement-commercial" className="hover:text-mint-green">Recrutement commercial</Link>
                 </div>
@@ -172,24 +172,24 @@ export default function FormationCommercialePMEPage() {
       </section>
 
       {/* Ressources Gratuites */}
-      <section className="py-20 bg-slate-50 dark:bg-gray-anthracite/20">
+      <section className="py-20 bg-slate-50
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">
               Ressources Formation Gratuites
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-2xl mx-auto">
               Accédez immédiatement à nos outils et guides pratiques
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Link href="/ressources/guide-prospection" className="group">
-              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
-                <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green mb-3">
+              <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
+                <h3 className="text-lg font-semibold text-blue-ink group-hover:text-mint-green mb-3">
                   Guide Ultime de la Prospection
                 </h3>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+                <p className="text-gray-anthracite mb-4">
                   Méthodes complètes, scripts et système de suivi pour transformer votre prospection.
                 </p>
                 <div className="flex items-center text-mint-green font-medium">
@@ -199,11 +199,11 @@ export default function FormationCommercialePMEPage() {
             </Link>
 
             <Link href="/ressources/guide-closing" className="group">
-              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
-                <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green mb-3">
+              <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
+                <h3 className="text-lg font-semibold text-blue-ink group-hover:text-mint-green mb-3">
                   Guide Ultime du Closing
                 </h3>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+                <p className="text-gray-anthracite mb-4">
                   7 techniques avancées et méthode AREA pour transformer vos négociations.
                 </p>
                 <div className="flex items-center text-mint-green font-medium">
@@ -213,11 +213,11 @@ export default function FormationCommercialePMEPage() {
             </Link>
 
             <Link href="/ressources/outil-preparation-rdv" className="group">
-              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
-                <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green mb-3">
+              <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
+                <h3 className="text-lg font-semibold text-blue-ink group-hover:text-mint-green mb-3">
                   Outil Préparation RDV
                 </h3>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+                <p className="text-gray-anthracite mb-4">
                   Checklist complète et questions types pour préparer vos rendez-vous commerciaux.
                 </p>
                 <div className="flex items-center text-mint-green font-medium">

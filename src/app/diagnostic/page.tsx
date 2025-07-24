@@ -97,7 +97,7 @@ function DiagnosticPage() {
   };
 
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <main className="flex flex-col min-h-screen bg-white
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -142,12 +142,12 @@ function DiagnosticPage() {
             </div>
 
             {/* Formulaire de Diagnostic */}
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 shadow-2xl">
+            <div className="bg-white rounded-2xl p-8 shadow-2xl">
               <div className="text-center mb-6">
-                <h2 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-2">
+                <h2 className="text-2xl font-title font-bold text-blue-ink mb-2">
                   Réservez Votre Diagnostic
                 </h2>
-                <p className="text-gray-anthracite dark:text-primary-bg/80">
+                <p className="text-gray-anthracite
                   30 minutes qui peuvent transformer votre business
                 </p>
               </div>
@@ -299,7 +299,7 @@ function DiagnosticPage() {
                   )}
                 </button>
 
-                <p className="text-xs text-gray-500 dark:text-gray-400 text-center">
+                <p className="text-xs text-gray-500 text-center">
                   En soumettant ce formulaire, vous acceptez d'être contacté par Laurent Serre Développement. 
                   Vos données sont confidentielles et ne seront jamais transmises à des tiers.
                 </p>
@@ -312,7 +312,7 @@ function DiagnosticPage() {
                     <div className="w-full border-t border-gray-300"></div>
                   </div>
                   <div className="relative flex justify-center text-sm">
-                    <span className="px-4 bg-white dark:bg-gray-anthracite/40 text-gray-500">ou</span>
+                    <span className="px-4 bg-white text-gray-500">ou</span>
                   </div>
                 </div>
               </div>
@@ -342,13 +342,13 @@ function DiagnosticPage() {
       </section>
 
       {/* Section Test Express */}
-      <section id="test-express-section" className="py-20 bg-slate-50 dark:bg-gray-anthracite/20">
+      <section id="test-express-section" className="py-20 bg-slate-50
         <div className="max-w-4xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-4">
               Test Express Commercial
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80">
+            <p className="text-xl text-gray-anthracite
               Évaluez rapidement votre situation commerciale en 5 questions
             </p>
           </div>
@@ -356,7 +356,7 @@ function DiagnosticPage() {
           <TestExpress />
           
           <div className="text-center mt-8">
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-gray-600
               Ce test express vous donne un premier aperçu. Pour une analyse complète et personnalisée, 
               <button 
                 className="text-mint-green hover:underline font-medium"
@@ -375,13 +375,13 @@ function DiagnosticPage() {
       </section>
 
       {/* Processus Diagnostic */}
-      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-20 bg-white
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-4xl font-title font-bold text-blue-ink mb-6">
               Comment Se Déroule Votre Diagnostic ?
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-3xl mx-auto">
               Un processus structuré pour identifier précisément vos leviers de croissance
             </p>
           </div>
@@ -391,10 +391,10 @@ function DiagnosticPage() {
               <div className="w-16 h-16 bg-mint-green/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-mint-green">1</span>
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Analyse Situation Actuelle
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80">
+              <p className="text-gray-anthracite
                 Évaluation de votre organisation, processus commerciaux, équipes et résultats actuels. 
                 Identification des forces et axes d'amélioration prioritaires.
               </p>
@@ -404,10 +404,10 @@ function DiagnosticPage() {
               <div className="w-16 h-16 bg-mint-green/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-mint-green">2</span>
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Identification Opportunités
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80">
+              <p className="text-gray-anthracite
                 Détection des leviers de performance à court et moyen terme. 
                 Priorisation selon l'impact potentiel et la facilité de mise en œuvre.
               </p>
@@ -417,10 +417,10 @@ function DiagnosticPage() {
               <div className="w-16 h-16 bg-mint-green/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-2xl font-bold text-mint-green">3</span>
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Plan d'Action Immédiat
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80">
+              <p className="text-gray-anthracite
                 Recommandations concrètes et applicables immédiatement. 
                 Roadmap personnalisée pour transformer votre performance commerciale.
               </p>
@@ -430,23 +430,23 @@ function DiagnosticPage() {
       </section>
 
       {/* Domaines Analysés */}
-      <section className="py-20 bg-slate-50 dark:bg-gray-anthracite/20">
+      <section className="py-20 bg-slate-50
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">
               Domaines Analysés Lors Du Diagnostic
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-2xl mx-auto">
               Un audit complet pour identifier toutes vos opportunités d'amélioration
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 text-center">
-              <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg mb-3">
+            <div className="bg-white rounded-xl p-6 text-center">
+              <h3 className="text-lg font-semibold text-blue-ink mb-3">
                 Organisation & Processus
               </h3>
-              <ul className="text-sm text-gray-anthracite dark:text-primary-bg/80 space-y-2">
+              <ul className="text-sm text-gray-anthracite space-y-2">
                 <li>• Structure équipe commerciale</li>
                 <li>• Processus de vente existant</li>
                 <li>• Outils et systèmes CRM</li>
@@ -454,11 +454,11 @@ function DiagnosticPage() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 text-center">
-              <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg mb-3">
+            <div className="bg-white rounded-xl p-6 text-center">
+              <h3 className="text-lg font-semibold text-blue-ink mb-3">
                 Prospection & Lead Gen
               </h3>
-              <ul className="text-sm text-gray-anthracite dark:text-primary-bg/80 space-y-2">
+              <ul className="text-sm text-gray-anthracite space-y-2">
                 <li>• Canaux de prospection utilisés</li>
                 <li>• Qualité et volume des leads</li>
                 <li>• <Link href="/ressources/guide-prospection" className="text-mint-green hover:underline">Scripts et méthodes</Link></li>
@@ -466,11 +466,11 @@ function DiagnosticPage() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 text-center">
-              <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg mb-3">
+            <div className="bg-white rounded-xl p-6 text-center">
+              <h3 className="text-lg font-semibold text-blue-ink mb-3">
                 Négociation & Closing
               </h3>
-              <ul className="text-sm text-gray-anthracite dark:text-primary-bg/80 space-y-2">
+              <ul className="text-sm text-gray-anthracite space-y-2">
                 <li>• <Link href="/ressources/outil-preparation-rdv" className="text-mint-green hover:underline">Préparation des RDV</Link></li>
                 <li>• <Link href="/ressources/guide-closing" className="text-mint-green hover:underline">Techniques de closing</Link></li>
                 <li>• Traitement des objections</li>
@@ -478,11 +478,11 @@ function DiagnosticPage() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 text-center">
-              <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg mb-3">
+            <div className="bg-white rounded-xl p-6 text-center">
+              <h3 className="text-lg font-semibold text-blue-ink mb-3">
                 Suivi & Performance
               </h3>
-              <ul className="text-sm text-gray-anthracite dark:text-primary-bg/80 space-y-2">
+              <ul className="text-sm text-gray-anthracite space-y-2">
                 <li>• <Link href="/ressources/kit-gestion-grands-comptes" className="text-mint-green hover:underline">Gestion portefeuille clients</Link></li>
                 <li>• Indicateurs de performance</li>
                 <li>• Cycle de vente moyen</li>
@@ -494,15 +494,15 @@ function DiagnosticPage() {
       </section>
 
       {/* Témoignages */}
-      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-20 bg-white
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-12">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-12">
             Retours Après Diagnostic
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-xl p-6">
-              <blockquote className="text-lg text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+              <blockquote className="text-lg text-gray-anthracite italic mb-4">
                 "Le diagnostic de Laurent a été révélateur. En 30 minutes, il a identifié précisément 
                 nos blocages et nous a donné un plan d'action concret. Résultat : +40% de CA en 6 mois !"
               </blockquote>
@@ -512,7 +512,7 @@ function DiagnosticPage() {
             </div>
 
             <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-xl p-6">
-              <blockquote className="text-lg text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+              <blockquote className="text-lg text-gray-anthracite italic mb-4">
                 "Diagnostic gratuit qui vaut de l'or ! Laurent nous a aidés à restructurer notre approche 
                 commerciale. Nos équipes sont maintenant beaucoup plus efficaces."
               </blockquote>

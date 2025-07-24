@@ -59,15 +59,15 @@ const DomainInsight: React.FC<DomainInsightProps> = ({
 
   const getLevelColor = () => {
     switch (implementationLevel) {
-      case 'Débutant': return 'text-green-600 bg-green-50 border-green-200 dark:text-green-400 dark:bg-green-900/20 dark:border-green-700';
-      case 'Intermédiaire': return 'text-orange-600 bg-orange-50 border-orange-200 dark:text-orange-400 dark:bg-orange-900/20 dark:border-orange-700';
-      case 'Avancé': return 'text-red-600 bg-red-50 border-red-200 dark:text-red-400 dark:bg-red-900/20 dark:border-red-700';
-      default: return 'text-primary-secondary bg-gray-50 border-gray-200 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-600';
+      case 'Débutant': return 'text-green-600 bg-green-50 border-green-200
+      case 'Intermédiaire': return 'text-orange-600 bg-orange-50 border-orange-200
+      case 'Avancé': return 'text-red-600 bg-red-50 border-red-200
+      default: return 'text-primary-secondary bg-gray-50 border-gray-200
     }
   };
 
   return (
-    <div className="bg-white/90 dark:bg-gray-800/90 rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group relative overflow-hidden">
+    <div className="bg-white/90 rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200/50 backdrop-blur-sm hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group relative overflow-hidden">
       {/* Animated background gradient */}
       <div 
         className="absolute inset-0 opacity-0 group-hover:opacity-5 transition-opacity duration-500 rounded-xl"
@@ -172,7 +172,7 @@ const DomainInsight: React.FC<DomainInsightProps> = ({
             {keyElements.map((element, index) => (
               <span
                 key={index}
-                className="text-xs px-2 sm:px-3 py-1 rounded-full bg-background/50 text-primary-secondary border border-gray-200 dark:border-gray-600 hover:shadow-sm hover:scale-105 transition-all duration-200 cursor-default"
+                className="text-xs px-2 sm:px-3 py-1 rounded-full bg-background/50 text-primary-secondary border border-gray-200 hover:shadow-sm hover:scale-105 transition-all duration-200 cursor-default"
                 style={{
                   animationDelay: `${index * 100}ms`
                 }}

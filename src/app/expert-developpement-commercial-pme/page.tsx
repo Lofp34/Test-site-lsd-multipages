@@ -65,7 +65,7 @@ export default function ExpertDeveloppementCommercialPMEPage() {
         ]}
       />
       
-      <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+      <main className="flex flex-col min-h-screen bg-white
       {/* Hero Section */}
       <section className="min-h-[80vh] relative overflow-hidden flex items-center justify-center pt-20">
         <div className="absolute inset-0 z-0">
@@ -149,13 +149,13 @@ export default function ExpertDeveloppementCommercialPMEPage() {
       </section>
 
       {/* Domaines d'Expertise */}
-      <section className="py-20 bg-slate-50 dark:bg-gray-anthracite/20">
+      <section className="py-20 bg-slate-50
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-4xl font-title font-bold text-blue-ink mb-6">
               4 Domaines d'Expertise Reconnus
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-3xl mx-auto">
               Une approche complète du développement commercial, de la formation individuelle 
               à la transformation organisationnelle.
             </p>
@@ -163,27 +163,27 @@ export default function ExpertDeveloppementCommercialPMEPage() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Formation & Développement */}
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div className="bg-white rounded-2xl p-8 text-center group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-mint-green/20 transition-colors">
                 <Users className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Formation & Développement
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
+              <p className="text-gray-anthracite mb-6">
                 Découvrez notre <Link href="/bootcamp" className="text-mint-green hover:underline">bootcamp commercial intensif</Link> 
                 et nos <Link href="/ressources" className="text-mint-green hover:underline">guides pratiques</Link> pour transformer vos équipes.
               </p>
               <div className="space-y-2 text-sm">
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/guide-prospection" className="hover:text-mint-green">Formation prospection avancée</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/guide-closing" className="hover:text-mint-green">Techniques de closing</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/formation-commerciale-pme#management-details" className="hover:text-mint-green">Management commercial</Link>
                 </div>
@@ -191,28 +191,28 @@ export default function ExpertDeveloppementCommercialPMEPage() {
             </div>
 
             {/* Accompagnement & Transformation */}
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div className="bg-white rounded-2xl p-8 text-center group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-mint-green/20 transition-colors">
                 <TrendingUp className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Accompagnement & Transformation
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
+              <p className="text-gray-anthracite mb-6">
                 De l'<Link href="/diagnostic" className="text-mint-green hover:underline">audit initial</Link> à la mise en place 
                 de <Link href="/ressources/outil-strategie-commerciale" className="text-mint-green hover:underline">stratégies sur-mesure</Link>, 
                 un accompagnement complet pour transformer votre performance.
               </p>
               <div className="space-y-2 text-sm">
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/diagnostic" className="hover:text-mint-green">Diagnostic commercial gratuit</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/transformation-commerciale" className="hover:text-mint-green">Transformation processus</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/suivi-performance" className="hover:text-mint-green">Suivi performance</Link>
                 </div>
@@ -220,28 +220,28 @@ export default function ExpertDeveloppementCommercialPMEPage() {
             </div>
 
             {/* Spécialisations Métier */}
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div className="bg-white rounded-2xl p-8 text-center group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-mint-green/20 transition-colors">
                 <Crown className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Spécialisations Métier
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
+              <p className="text-gray-anthracite mb-6">
                 Expertise <Link href="/ressources/kit-gestion-grands-comptes" className="text-mint-green hover:underline">grands comptes</Link>, 
                 <Link href="/ressources/guide-prospection" className="text-mint-green hover:underline"> génération de leads</Link> et 
                 <Link href="/ressources/guide-closing" className="text-mint-green hover:underline"> techniques de closing</Link> avancées.
               </p>
               <div className="space-y-2 text-sm">
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/kit-gestion-grands-comptes" className="hover:text-mint-green">Gestion grands comptes</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/outil-preparation-rdv" className="hover:text-mint-green">Préparation RDV</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/outil-offre-5-etoiles" className="hover:text-mint-green">Offres percutantes</Link>
                 </div>
@@ -249,28 +249,28 @@ export default function ExpertDeveloppementCommercialPMEPage() {
             </div>
 
             {/* Innovation & Technologies */}
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+            <div className="bg-white rounded-2xl p-8 text-center group hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mx-auto mb-6 group-hover:bg-mint-green/20 transition-colors">
                 <Zap className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Innovation & Technologies
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
+              <p className="text-gray-anthracite mb-6">
                 Intégration de l'<Link href="/blog/ia-transforme-developpement-commercial-2025" className="text-mint-green hover:underline">IA dans la vente</Link> et 
                 <Link href="/suivi-performance" className="text-mint-green hover:underline"> approches data-driven</Link> pour 
                 optimiser vos performances commerciales.
               </p>
               <div className="space-y-2 text-sm">
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/blog/ia-transforme-developpement-commercial-2025" className="hover:text-mint-green">IA & Commercial 2025</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/outil-strategie-commerciale" className="hover:text-mint-green">CRM intelligent</Link>
                 </div>
-                <div className="flex items-center text-gray-600 dark:text-gray-300">
+                <div className="flex items-center text-gray-600
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/guide-prospection" className="hover:text-mint-green">Automation prospection</Link>
                 </div>
@@ -281,11 +281,11 @@ export default function ExpertDeveloppementCommercialPMEPage() {
       </section>
 
       {/* Méthode & Résultats */}
-      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-20 bg-white
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8">
+              <h2 className="text-4xl font-title font-bold text-blue-ink mb-8">
                 Une Méthode Terrain Éprouvée
               </h2>
               
@@ -295,8 +295,8 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                     <span className="text-mint-green font-bold text-lg">1</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-blue-ink dark:text-primary-bg mb-2">Diagnostic Complet</h3>
-                    <p className="text-gray-anthracite dark:text-primary-bg/80">
+                    <h3 className="text-xl font-semibold text-blue-ink mb-2">Diagnostic Complet</h3>
+                    <p className="text-gray-anthracite
                       Audit approfondi de votre organisation commerciale, processus et équipes pour identifier 
                       les leviers de performance prioritaires.
                     </p>
@@ -308,8 +308,8 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                     <span className="text-mint-green font-bold text-lg">2</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-blue-ink dark:text-primary-bg mb-2">Stratégie Sur-Mesure</h3>
-                    <p className="text-gray-anthracite dark:text-primary-bg/80">
+                    <h3 className="text-xl font-semibold text-blue-ink mb-2">Stratégie Sur-Mesure</h3>
+                    <p className="text-gray-anthracite
                       Conception d'un plan d'action adapté à votre secteur, vos enjeux et vos objectifs de croissance. 
                       Aucune solution générique.
                     </p>
@@ -321,8 +321,8 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                     <span className="text-mint-green font-bold text-lg">3</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-blue-ink dark:text-primary-bg mb-2">Implémentation Guidée</h3>
-                    <p className="text-gray-anthracite dark:text-primary-bg/80">
+                    <h3 className="text-xl font-semibold text-blue-ink mb-2">Implémentation Guidée</h3>
+                    <p className="text-gray-anthracite
                       Accompagnement terrain pour la mise en œuvre : formation, coaching, suivi des résultats 
                       et ajustements en temps réel.
                     </p>
@@ -334,8 +334,8 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                     <span className="text-mint-green font-bold text-lg">4</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-blue-ink dark:text-primary-bg mb-2">Autonomisation</h3>
-                    <p className="text-gray-anthracite dark:text-primary-bg/80">
+                    <h3 className="text-xl font-semibold text-blue-ink mb-2">Autonomisation</h3>
+                    <p className="text-gray-anthracite
                       Transfert de compétences et d'outils pour rendre vos équipes autonomes et maintenir 
                       la performance dans le temps.
                     </p>
@@ -345,32 +345,32 @@ export default function ExpertDeveloppementCommercialPMEPage() {
             </div>
 
             <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-2xl p-8">
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-6">
                 Résultats Clients Moyens
               </h3>
               
               <div className="grid grid-cols-2 gap-6 mb-8">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-mint-green mb-2">+26%</div>
-                  <div className="text-gray-anthracite dark:text-primary-bg/80">Chiffre d'Affaires</div>
+                  <div className="text-gray-anthracite d'Affaires</div>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-bold text-mint-green mb-2">-40%</div>
-                  <div className="text-gray-anthracite dark:text-primary-bg/80">Cycle Vente</div>
+                  <div className="text-gray-anthracite Vente</div>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-bold text-mint-green mb-2">+32%</div>
-                  <div className="text-gray-anthracite dark:text-primary-bg/80">Leads Qualifiés</div>
+                  <div className="text-gray-anthracite Qualifiés</div>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-bold text-mint-green mb-2">98%</div>
-                  <div className="text-gray-anthracite dark:text-primary-bg/80">Satisfaction</div>
+                  <div className="text-gray-anthracite
                 </div>
               </div>
 
-              <div className="bg-white/50 dark:bg-gray-anthracite/20 rounded-xl p-6">
-                <h4 className="font-semibold text-blue-ink dark:text-primary-bg mb-3">Témoignage Client</h4>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic mb-3">
+              <div className="bg-white/50 rounded-xl p-6">
+                <h4 className="font-semibold text-blue-ink mb-3">Témoignage Client</h4>
+                <p className="text-gray-anthracite italic mb-3">
                   "En 18 mois, Laurent a transformé notre approche commerciale. Notre CA a doublé 
                   et nos équipes sont enfin autonomes et motivées."
                 </p>
@@ -384,23 +384,23 @@ export default function ExpertDeveloppementCommercialPMEPage() {
       </section>
 
       {/* Nos Autres Services */}
-      <section className="py-20 bg-slate-50 dark:bg-gray-anthracite/20">
+      <section className="py-20 bg-slate-50
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg text-center mb-12">
+          <h2 className="text-3xl font-title font-bold text-blue-ink text-center mb-12">
             Nos Autres Expertises Complémentaires
           </h2>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Link href="/consultant-commercial-montpellier" className="group cursor-pointer">
-              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-xl hover:bg-mint-green/5 border-2 border-transparent hover:border-mint-green/20 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02]">
+              <div className="bg-white rounded-xl p-6 hover:shadow-xl hover:bg-mint-green/5 border-2 border-transparent hover:border-mint-green/20 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02]">
                 <div className="flex items-center mb-4">
                   <Phone className="w-6 h-6 text-mint-green mr-3 group-hover:scale-110 transition-transform" />
-                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green transition-colors">
+                  <h3 className="text-lg font-semibold text-blue-ink group-hover:text-mint-green transition-colors">
                     Consultant Commercial Montpellier
                   </h3>
                   <ArrowRight className="w-5 h-5 text-mint-green ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 group-hover:text-gray-800 dark:group-hover:text-primary-bg">
+                <p className="text-gray-anthracite group-hover:text-gray-800
                   Intervention locale sur Montpellier et région Occitanie pour un accompagnement de proximité.
                 </p>
                 <div className="mt-4 text-mint-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">
@@ -410,15 +410,15 @@ export default function ExpertDeveloppementCommercialPMEPage() {
             </Link>
 
             <Link href="/formateur-vente-pme" className="group cursor-pointer">
-              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-xl hover:bg-mint-green/5 border-2 border-transparent hover:border-mint-green/20 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02]">
+              <div className="bg-white rounded-xl p-6 hover:shadow-xl hover:bg-mint-green/5 border-2 border-transparent hover:border-mint-green/20 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02]">
                 <div className="flex items-center mb-4">
                   <Users className="w-6 h-6 text-mint-green mr-3 group-hover:scale-110 transition-transform" />
-                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green transition-colors">
+                  <h3 className="text-lg font-semibold text-blue-ink group-hover:text-mint-green transition-colors">
                     Formateur Vente PME
                   </h3>
                   <ArrowRight className="w-5 h-5 text-mint-green ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 group-hover:text-gray-800 dark:group-hover:text-primary-bg">
+                <p className="text-gray-anthracite group-hover:text-gray-800
                   Formations spécialisées adaptées aux spécificités et contraintes des PME.
                 </p>
                 <div className="mt-4 text-mint-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">
@@ -428,15 +428,15 @@ export default function ExpertDeveloppementCommercialPMEPage() {
             </Link>
 
             <Link href="/coach-commercial-entreprise" className="group cursor-pointer">
-              <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-xl hover:bg-mint-green/5 border-2 border-transparent hover:border-mint-green/20 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02]">
+              <div className="bg-white rounded-xl p-6 hover:shadow-xl hover:bg-mint-green/5 border-2 border-transparent hover:border-mint-green/20 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02]">
                 <div className="flex items-center mb-4">
                   <Target className="w-6 h-6 text-mint-green mr-3 group-hover:scale-110 transition-transform" />
-                  <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg group-hover:text-mint-green transition-colors">
+                  <h3 className="text-lg font-semibold text-blue-ink group-hover:text-mint-green transition-colors">
                     Coach Commercial Entreprise
                   </h3>
                   <ArrowRight className="w-5 h-5 text-mint-green ml-auto opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 group-hover:text-gray-800 dark:group-hover:text-primary-bg">
+                <p className="text-gray-anthracite group-hover:text-gray-800
                   Coaching individuel et collectif pour développer les performances de vos commerciaux.
                 </p>
                 <div className="mt-4 text-mint-green font-medium opacity-0 group-hover:opacity-100 transition-opacity">

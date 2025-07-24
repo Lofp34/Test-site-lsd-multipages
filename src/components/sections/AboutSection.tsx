@@ -3,13 +3,13 @@ import AnimatedSection from "@/components/ui/AnimatedSection";
 
 export default function AboutSection() {
   return (
-    <section className="py-16 sm:py-20 bg-white dark:bg-gray-anthracite/20">
+    <section className="py-16 sm:py-20 bg-white
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Titre */}
         <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-title font-bold text-blue-ink dark:text-primary-bg leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-title font-bold text-blue-ink leading-tight">
             Laurent Serre –
-            <span className="block text-amber-600 dark:text-orange-soft">20 ans dans les bottes du commercial</span>
+            <span className="block text-amber-600 ans dans les bottes du commercial</span>
           </h2>
         </div>
 
@@ -42,16 +42,16 @@ export default function AboutSection() {
           <AnimatedSection animation="slide-right" delay={400}>
             <div className="space-y-6 sm:space-y-8 order-2 lg:order-2">
               <div className="space-y-4 sm:space-y-6">
-                <p className="text-lg sm:text-xl md:text-2xl font-body text-gray-anthracite dark:text-primary-bg leading-relaxed">
+                <p className="text-lg sm:text-xl md:text-2xl font-body text-gray-anthracite leading-relaxed">
                   Depuis plus de 20 ans, ma mission est de transformer la performance commerciale des PME. 
                   J&apos;interviens sur le terrain pour structurer, former et coacher votre force de vente, 
                   en créant des processus clairs et une dynamique d&apos;équipe engagée.
                 </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-body text-gray-anthracite dark:text-primary-bg leading-relaxed">
+                <p className="text-lg sm:text-xl md:text-2xl font-body text-gray-anthracite leading-relaxed">
                   Mon approche est directe, sans jargon, et axée sur l&apos;action. 
                   Je ne vends pas de théories, mais un accompagnement commercial pragmatique qui produit des résultats mesurables.
                 </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-body text-gray-anthracite dark:text-primary-bg leading-relaxed">
+                <p className="text-lg sm:text-xl md:text-2xl font-body text-gray-anthracite leading-relaxed">
                   Je combine une méthodologie de vente éprouvée avec les outils modernes (IA, automatisation) 
                   pour optimiser chaque étape de votre cycle de vente, de la prospection au closing.
                 </p>
@@ -64,32 +64,32 @@ export default function AboutSection() {
                     <div className="w-8 h-8 bg-mint-green/20 rounded-full flex items-center justify-center">
                       <span className="text-mint-green text-sm">✓</span>
                     </div>
-                    <span className="font-body text-gray-anthracite dark:text-primary-bg">Audit Commercial</span>
+                    <span className="font-body text-gray-anthracite Commercial</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 bg-mint-green/20 rounded-full flex items-center justify-center">
                       <span className="text-mint-green text-sm">✓</span>
                     </div>
-                    <span className="font-body text-gray-anthracite dark:text-primary-bg">Coaching d&apos;Équipe</span>
+                    <span className="font-body text-gray-anthracite d&apos;Équipe</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 bg-mint-green/20 rounded-full flex items-center justify-center">
                       <span className="text-mint-green text-sm">✓</span>
                     </div>
-                    <span className="font-body text-gray-anthracite dark:text-primary-bg">Structuration des Ventes</span>
+                    <span className="font-body text-gray-anthracite des Ventes</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 bg-mint-green/20 rounded-full flex items-center justify-center">
                       <span className="text-mint-green text-sm">✓</span>
                     </div>
-                    <span className="font-body text-gray-anthracite dark:text-primary-bg">Performance Mesurable</span>
+                    <span className="font-body text-gray-anthracite Mesurable</span>
                   </div>
                 </div>
               </AnimatedSection>
               {/* Social links */}
               <AnimatedSection animation="fade-in" delay={800}>
                 <div className="mt-8">
-                  <p className="font-title font-semibold text-gray-anthracite dark:text-primary-bg text-center md:text-left">
+                  <p className="font-title font-semibold text-gray-anthracite text-center md:text-left">
                     Retrouvez-moi sur :
                   </p>
                   <div className="flex items-center justify-center md:justify-start space-x-6 mt-4">

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function Article3() {
   return (
-    <main className="bg-primary-bg dark:bg-gray-dark text-gray-dark dark:text-primary-bg">
+    <main className="bg-primary-bg text-gray-dark
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -37,11 +37,11 @@ export default function Article3() {
               <span className="font-title font-semibold text-orange-soft text-sm">Prospection</span>
             </div>
             
-            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink dark:text-white sm:text-5xl mb-6">
+            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
               Les erreurs fatales dans la prospection B2B (et comment les éviter)
             </h1>
             
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8">
+            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
               <div className="flex items-center gap-2">
                 <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" loading="lazy" />
                 <span>Laurent Serre</span>
@@ -70,12 +70,12 @@ export default function Article3() {
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
-          <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+          <p className="text-xl text-gray-600 leading-relaxed mb-8">
             Après 20 ans d'expérience terrain, j'ai identifié 7 erreurs récurrentes qui sabotent 90% des efforts de prospection B2B. 
             Ces erreurs coûtent des millions d'opportunités manquées chaque année. Voici comment les éviter.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Erreur #1 : Prospecter sans persona défini
           </h2>
           
@@ -91,7 +91,7 @@ export default function Article3() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Erreur #2 : L'approche produit plutôt que problème
           </h2>
           
@@ -105,7 +105,7 @@ export default function Article3() {
             en automatisant leur gestion administrative." Voyez la différence ?
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Erreur #3 : Négliger la recherche préalable
           </h2>
           
@@ -126,7 +126,7 @@ export default function Article3() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Erreur #4 : Le pitch trop long dès le premier contact
           </h2>
           
@@ -136,7 +136,7 @@ export default function Article3() {
             toutes les raisons de vous dire non immédiatement.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Erreur #5 : Abandonner après 2-3 tentatives
           </h2>
           
@@ -150,7 +150,7 @@ export default function Article3() {
             et apportez de la valeur à chaque contact (article pertinent, étude de cas, invitation événement).
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Erreur #6 : Ignorer les signaux d'achat digitaux
           </h2>
           
@@ -160,7 +160,7 @@ export default function Article3() {
             Ces signaux chauds doivent déclencher une prospection prioritaire.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Erreur #7 : Ne pas mesurer pour s'améliorer
           </h2>
           
@@ -201,9 +201,9 @@ export default function Article3() {
           </p>
         </div>
       </article>
-      <section className="py-16 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-16 bg-white
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
             Prendre contact avec Laurent Serre
           </h2>
           <HubSpotForm />

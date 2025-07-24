@@ -26,33 +26,33 @@ const AIInsight: React.FC<AIInsightProps> = ({
       case 'Débutant':
         return {
           color: 'from-green-400 to-emerald-500',
-          bgColor: 'bg-green-100 dark:bg-green-900/30',
-          textColor: 'text-green-800 dark:text-green-300',
-          borderColor: 'border-green-200 dark:border-green-700',
+          bgColor: 'bg-green-100
+          textColor: 'text-green-800
+          borderColor: 'border-green-200
           icon: '🟢'
         };
       case 'Intermédiaire':
         return {
           color: 'from-orange-400 to-yellow-500',
-          bgColor: 'bg-orange-100 dark:bg-orange-900/30',
-          textColor: 'text-orange-800 dark:text-orange-300',
-          borderColor: 'border-orange-200 dark:border-orange-700',
+          bgColor: 'bg-orange-100
+          textColor: 'text-orange-800
+          borderColor: 'border-orange-200
           icon: '🟡'
         };
       case 'Avancé':
         return {
           color: 'from-red-400 to-pink-500',
-          bgColor: 'bg-red-100 dark:bg-red-900/30',
-          textColor: 'text-red-800 dark:text-red-300',
-          borderColor: 'border-red-200 dark:border-red-700',
+          bgColor: 'bg-red-100
+          textColor: 'text-red-800
+          borderColor: 'border-red-200
           icon: '🔴'
         };
       default:
         return {
           color: 'from-gray-400 to-gray-500',
-          bgColor: 'bg-gray-100 dark:bg-gray-800',
-          textColor: 'text-gray-700 dark:text-gray-300',
-          borderColor: 'border-gray-200 dark:border-gray-600',
+          bgColor: 'bg-gray-100
+          textColor: 'text-gray-700
+          borderColor: 'border-gray-200
           icon: '⚪'
         };
     }
@@ -64,20 +64,20 @@ const AIInsight: React.FC<AIInsightProps> = ({
       case 'rising':
         return {
           icon: '📈',
-          color: 'text-green-600 dark:text-green-400',
+          color: 'text-green-600
           label: 'Tendance croissante'
         };
       case 'declining':
         return {
           icon: '📉',
-          color: 'text-red-600 dark:text-red-400',
+          color: 'text-red-600
           label: 'Tendance décroissante'
         };
       case 'stable':
       default:
         return {
           icon: '➡️',
-          color: 'text-blue-600 dark:text-blue-400',
+          color: 'text-blue-600
           label: 'Tendance stable'
         };
     }
@@ -88,8 +88,8 @@ const AIInsight: React.FC<AIInsightProps> = ({
 
   return (
     <div className={`
-      relative bg-white/90 dark:bg-blue-ink/90 
-      border border-cyan-400/30 dark:border-cyan-400/20
+      relative bg-white/90 
+      border border-cyan-400/30
       rounded-2xl p-6 shadow-lg hover:shadow-2xl 
       transition-all duration-500 backdrop-blur-sm
       hover:scale-[1.02] hover:border-cyan-400/50
@@ -117,7 +117,7 @@ const AIInsight: React.FC<AIInsightProps> = ({
         
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 mb-2">
-            <h3 className="text-xl font-bold text-blue-ink dark:text-cyan-400 leading-tight">
+            <h3 className="text-xl font-bold text-blue-ink leading-tight">
               {title}
             </h3>
             <span className={`text-sm ${trendConfig.color}`}>
@@ -138,13 +138,13 @@ const AIInsight: React.FC<AIInsightProps> = ({
 
       {/* Description */}
       <div className="relative mb-5">
-        <p className="text-gray-700 dark:text-gray-200 leading-relaxed mb-4">
+        <p className="text-gray-700 leading-relaxed mb-4">
           {description}
         </p>
         
         {/* Business impact section */}
         <div className="bg-gradient-to-r from-mint-green/10 to-cyan-400/10 rounded-xl p-4 
-                        border border-mint-green/20 dark:border-mint-green/10">
+                        border border-mint-green/20
           <div className="flex items-start gap-3">
             <div className="flex-shrink-0">
               <div className="w-8 h-8 bg-gradient-to-br from-mint-green to-teal-500 rounded-lg 
@@ -154,10 +154,10 @@ const AIInsight: React.FC<AIInsightProps> = ({
             </div>
             
             <div className="flex-1">
-              <h4 className="text-sm font-semibold text-mint-green dark:text-mint-green mb-1">
+              <h4 className="text-sm font-semibold text-mint-green mb-1">
                 Impact Business
               </h4>
-              <p className="text-sm text-gray-700 dark:text-gray-300">
+              <p className="text-sm text-gray-700
                 {businessImpact}
               </p>
             </div>
@@ -168,7 +168,7 @@ const AIInsight: React.FC<AIInsightProps> = ({
       {/* Technologies */}
       {technologies.length > 0 && (
         <div className="relative mb-4">
-          <h4 className="text-sm font-semibold text-blue-ink dark:text-cyan-300 mb-3 flex items-center gap-2">
+          <h4 className="text-sm font-semibold text-blue-ink mb-3 flex items-center gap-2">
             <AIIcon type="circuit" size="sm" />
             Technologies clés
           </h4>
@@ -178,12 +178,12 @@ const AIInsight: React.FC<AIInsightProps> = ({
                 key={index}
                 className="inline-flex items-center px-3 py-1.5 
                            bg-gradient-to-r from-blue-100 to-cyan-100 
-                           dark:from-blue-900/30 dark:to-cyan-900/30
-                           text-blue-800 dark:text-cyan-300 
+                          
+                           text-blue-800 
                            text-xs font-medium rounded-full
-                           border border-blue-200 dark:border-cyan-700/50
+                           border border-blue-200
                            hover:from-blue-200 hover:to-cyan-200
-                           dark:hover:from-blue-900/50 dark:hover:to-cyan-900/50
+                          
                            transition-all duration-200 hover:scale-105"
               >
                 <AIIcon type="automation" size="sm" className="mr-1" />
@@ -195,7 +195,7 @@ const AIInsight: React.FC<AIInsightProps> = ({
       )}
 
       {/* Trend indicator */}
-      <div className="relative flex items-center justify-between pt-4 border-t border-gray-200 dark:border-gray-700">
+      <div className="relative flex items-center justify-between pt-4 border-t border-gray-200
         <div className="flex items-center gap-2">
           <span className={`text-sm font-medium ${trendConfig.color}`}>
             {trendConfig.label}
@@ -204,7 +204,7 @@ const AIInsight: React.FC<AIInsightProps> = ({
         
         {/* Animated progress bar */}
         <div className="flex items-center gap-2">
-          <div className="w-16 h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+          <div className="w-16 h-2 bg-gray-200 rounded-full overflow-hidden">
             <div className={`
               h-full bg-gradient-to-r ${levelConfig.color} rounded-full
               transition-all duration-1000 group-hover:animate-pulse

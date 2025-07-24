@@ -182,12 +182,12 @@ export default function TheSecondMachineAgePage() {
 
         {/* Résumé détaillé */}
         <article className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-blue-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-blue-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-blue-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Résumé détaillé
             </h2>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800
               <p className="text-lg leading-relaxed mb-6">
                 Brynjolfsson et McAfee nous plongent dans la "Seconde Ère des Machines", une révolution aussi profonde que celle de la vapeur au 19ème siècle. Mais cette fois, ce ne sont plus nos muscles qui sont augmentés, mais notre cerveau.
               </p>
@@ -231,8 +231,8 @@ export default function TheSecondMachineAgePage() {
                 Les entreprises qui maîtrisent leurs données clients obtiennent un avantage décisif en prédiction des besoins et optimisation des processus.
               </p>
 
-              <div className="bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-500 p-6 rounded-r-lg mb-6">
-                <h4 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-3">Le paradoxe de la productivité</h4>
+              <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-lg mb-6">
+                <h4 className="text-xl font-bold text-blue-600 mb-3">Le paradoxe de la productivité</h4>
                 <p>
                   Malgré ces avancées technologiques, la productivité globale stagne. Les auteurs expliquent ce décalage par les temps d'adaptation nécessaires et l'importance de repenser les organisations.
                 </p>
@@ -296,8 +296,8 @@ export default function TheSecondMachineAgePage() {
 
         {/* Points clés à retenir */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-blue-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-blue-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-blue-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Points clés à retenir
             </h2>
             
@@ -313,7 +313,7 @@ export default function TheSecondMachineAgePage() {
               ].map((point, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-blue-500 text-xl mr-3 mt-1">✓</span>
-                  <span className="text-gray-800 dark:text-gray-200 text-lg">{point}</span>
+                  <span className="text-gray-800 text-lg">{point}</span>
                 </li>
               ))}
             </ul>
@@ -322,8 +322,8 @@ export default function TheSecondMachineAgePage() {
 
         {/* Pour qui ce livre ? */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-blue-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-blue-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-blue-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Pour qui ce livre ?
             </h2>
             
@@ -335,9 +335,9 @@ export default function TheSecondMachineAgePage() {
                 "Consultants en transformation",
                 "Entrepreneurs tech"
               ].map((profile, index) => (
-                <div key={index} className="flex items-center p-3 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
+                <div key={index} className="flex items-center p-3 bg-blue-50 rounded-lg">
                   <span className="text-blue-500 text-lg mr-3">👤</span>
-                  <span className="text-gray-800 dark:text-gray-200 font-medium">{profile}</span>
+                  <span className="text-gray-800 font-medium">{profile}</span>
                 </div>
               ))}
             </div>
@@ -352,14 +352,14 @@ export default function TheSecondMachineAgePage() {
                 <span className="text-white font-bold text-lg">LS</span>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-blue-ink dark:text-blue-300">
+                <h2 className="text-2xl font-bold text-blue-ink
                   Mon avis terrain
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300">Laurent Serre - Expert développement commercial PME</p>
+                <p className="text-gray-600 Serre - Expert développement commercial PME</p>
               </div>
             </div>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800
               <p className="text-lg leading-relaxed mb-6">
                 Un livre fondamental pour comprendre où va le monde commercial. Brynjolfsson et McAfee ne font pas dans la science-fiction, ils analysent des tendances déjà à l'œuvre.
               </p>
@@ -375,18 +375,18 @@ export default function TheSecondMachineAgePage() {
               
               <h3 className="text-xl font-bold text-blue-500 mb-4">Exemples concrets de mes accompagnements :</h3>
               <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <div className="p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
+                <div className="p-4 bg-blue-50 rounded-lg">
                   <h4 className="font-semibold text-blue-600 mb-2">PME Industrie (45 salariés)</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                  <p className="text-sm text-gray-700 mb-2">
                     Automatisation du scoring des opportunités selon les concepts du livre
                   </p>
                   <p className="text-xs text-green-600 font-medium">
                     Résultat : +35% de précision des forecasts, -2h/jour de reporting
                   </p>
                 </div>
-                <div className="p-4 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
+                <div className="p-4 bg-purple-50 rounded-lg">
                   <h4 className="font-semibold text-purple-600 mb-2">SaaS B2B (20 salariés)</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                  <p className="text-sm text-gray-700 mb-2">
                     Mise en place de la personnalisation de masse via IA
                   </p>
                   <p className="text-xs text-green-600 font-medium">
@@ -395,16 +395,16 @@ export default function TheSecondMachineAgePage() {
                 </div>
               </div>
               
-              <div className="bg-blue-100 dark:bg-blue-900/50 border-l-4 border-blue-500 p-4 rounded-r-lg mb-6">
-                <p className="font-semibold text-blue-600 dark:text-blue-400 mb-2">💡 Conseil pratique :</p>
+              <div className="bg-blue-100 border-l-4 border-blue-500 p-4 rounded-r-lg mb-6">
+                <p className="font-semibold text-blue-600 mb-2">💡 Conseil pratique :</p>
                 <p>
                   Commencez par identifier dans votre équipe ce qui peut être automatisé (reporting, qualification, suivi) pour libérer du temps sur la relation client. 
                   Puis investissez dans la formation aux compétences relationnelles que l'IA ne peut pas remplacer.
                 </p>
               </div>
               
-              <div className="bg-orange-100 dark:bg-orange-900/50 border-l-4 border-orange-500 p-4 rounded-r-lg mb-6">
-                <p className="font-semibold text-orange-600 dark:text-orange-400 mb-2">⚠️ Erreur à éviter :</p>
+              <div className="bg-orange-100 border-l-4 border-orange-500 p-4 rounded-r-lg mb-6">
+                <p className="font-semibold text-orange-600 mb-2">⚠️ Erreur à éviter :</p>
                 <p>
                   Ne tombez pas dans le piège de la "technologie pour la technologie". Chaque outil digital doit résoudre un problème concret et mesurable. 
                   Mes clients qui échouent sont ceux qui digitalisent sans repenser leurs processus.
@@ -417,8 +417,8 @@ export default function TheSecondMachineAgePage() {
                     <span key={i} className={i < 4.3 ? "text-yellow-400" : "text-gray-300"}>⭐</span>
                   ))}
                 </div>
-                <span className="text-lg font-semibold text-gray-800 dark:text-gray-200">4.3/5</span>
-                <span className="text-sm text-gray-600 dark:text-gray-400 ml-4">
+                <span className="text-lg font-semibold text-gray-800
+                <span className="text-sm text-gray-600 ml-4">
                   Recommandé par 95% de mes clients PME
                 </span>
               </div>
@@ -428,20 +428,20 @@ export default function TheSecondMachineAgePage() {
 
         {/* Livres complémentaires de la même catégorie */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-blue-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-blue-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-blue-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               📖 Livres complémentaires de la catégorie
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6">
               <Link 
                 href="/ressources/meilleurs-livres/digital-ai/human-machine"
-                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
+                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-blue-300 mb-3 group-hover:text-blue-500 transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-blue-500 transition-colors">
                   Human + Machine
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour comprendre la collaboration homme-IA
                 </p>
                 <span className="text-blue-500 font-medium group-hover:underline">
@@ -451,12 +451,12 @@ export default function TheSecondMachineAgePage() {
               
               <Link 
                 href="/ressources/meilleurs-livres/digital-ai/ai-superpowers"
-                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
+                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-blue-300 mb-3 group-hover:text-blue-500 transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-blue-500 transition-colors">
                   AI Superpowers
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour anticiper l'évolution des métiers commerciaux
                 </p>
                 <span className="text-blue-500 font-medium group-hover:underline">
@@ -482,27 +482,27 @@ export default function TheSecondMachineAgePage() {
 
         {/* Outils digitaux recommandés */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-blue-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-blue-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-blue-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               🛠️ Outils digitaux recommandés
             </h2>
             
-            <p className="text-gray-700 dark:text-gray-300 mb-6">
+            <p className="text-gray-700 mb-6">
               Pour mettre en pratique les concepts de transformation digitale abordés dans le livre
             </p>
             
             <div className="grid md:grid-cols-2 gap-6">
               <Link 
                 href="/ressources/outil-strategie-commerciale"
-                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
+                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
               >
                 <div className="flex items-center mb-3">
                   <span className="text-2xl mr-3">⚙️</span>
-                  <h3 className="text-xl font-bold text-blue-ink dark:text-blue-300 group-hover:text-blue-500 transition-colors">
+                  <h3 className="text-xl font-bold text-blue-ink group-hover:text-blue-500 transition-colors">
                     Framework Stratégie Commerciale
                   </h3>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Outil complet pour digitaliser et optimiser votre stratégie commerciale
                 </p>
                 <span className="text-blue-500 font-medium group-hover:underline">
@@ -512,15 +512,15 @@ export default function TheSecondMachineAgePage() {
               
               <Link 
                 href="/ressources/techniques-de-vente"
-                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
+                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
               >
                 <div className="flex items-center mb-3">
                   <span className="text-2xl mr-3">🤖</span>
-                  <h3 className="text-xl font-bold text-blue-ink dark:text-blue-300 group-hover:text-blue-500 transition-colors">
+                  <h3 className="text-xl font-bold text-blue-ink group-hover:text-blue-500 transition-colors">
                     Guide Techniques de Vente Digitales
                   </h3>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Méthodes et outils pour intégrer l'IA dans vos processus de vente
                 </p>
                 <span className="text-blue-500 font-medium group-hover:underline">

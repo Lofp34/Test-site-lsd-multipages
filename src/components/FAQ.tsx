@@ -27,14 +27,14 @@ export default function FAQ({ items, title = "Questions Fréquentes", descriptio
   };
 
   return (
-    <section className="py-16 bg-white dark:bg-gray-anthracite/10">
+    <section className="py-16 bg-white
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-4">
             {title}
           </h2>
           {description && (
-            <p className="text-xl text-primary-secondary dark:text-primary-bg/80 max-w-2xl mx-auto">
+            <p className="text-xl text-primary-secondary max-w-2xl mx-auto">
               {description}
             </p>
           )}
@@ -44,13 +44,13 @@ export default function FAQ({ items, title = "Questions Fréquentes", descriptio
           {items.map((item, index) => (
             <div
               key={index}
-              className="bg-white dark:bg-gray-anthracite/40 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden"
+              className="bg-white rounded-xl border border-gray-200 overflow-hidden"
             >
               <button
                 onClick={() => toggleItem(index)}
-                className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 dark:hover:bg-gray-anthracite/60 transition-colors"
+                className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
               >
-                <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg pr-4">
+                <h3 className="text-lg font-semibold text-blue-ink pr-4">
                   {item.question}
                 </h3>
                 {openItems.includes(index) ? (
@@ -62,8 +62,8 @@ export default function FAQ({ items, title = "Questions Fréquentes", descriptio
               
               {openItems.includes(index) && (
                 <div className="px-6 pb-4">
-                  <div className="prose prose-gray dark:prose-invert max-w-none">
-                    <p className="text-primary-secondary dark:text-primary-bg/80 leading-relaxed">
+                  <div className="prose prose-gray max-w-none">
+                    <p className="text-primary-secondary leading-relaxed">
                       {item.answer}
                     </p>
                   </div>

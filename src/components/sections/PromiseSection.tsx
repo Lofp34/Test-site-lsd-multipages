@@ -78,14 +78,14 @@ export default function PromiseSection() {
       />
       
       {/* Overlay pour la lisibilité */}
-      <div className="absolute inset-0 bg-primary-bg/90 dark:bg-blue-ink/90" />
+      <div className="absolute inset-0 bg-primary-bg/90 />
       
       {/* Contenu par-dessus le fond */}
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Titre */}
         <AnimatedSection animation="slide-up" delay={0}>
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-title font-bold text-blue-ink dark:text-primary-bg leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-title font-bold text-blue-ink leading-tight">
               Ce que nous allons changer,
               <span className="block text-mint-green">ensemble</span>
             </h2>
@@ -97,7 +97,7 @@ export default function PromiseSection() {
           {promises.map((promise, index) => (
             <AnimatedSection key={index} animation="slide-up" delay={200 + index * 100}>
               <div 
-                className="bg-white/90 dark:bg-gray-anthracite/40 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group cursor-pointer"
+                className="bg-white/90 backdrop-blur-sm rounded-3xl p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] group cursor-pointer"
                 onClick={() => handleCardClick(index)}
                 onMouseEnter={() => handleMouseEnter(index)}
               >
@@ -108,7 +108,7 @@ export default function PromiseSection() {
                   </div>
 
                   <div className="flex-1 flex items-center justify-between">
-                    <p className="text-xl md:text-2xl font-body text-blue-ink dark:text-primary-bg leading-relaxed">
+                    <p className="text-xl md:text-2xl font-body text-blue-ink leading-relaxed">
                       {promise.text}
                     </p>
                     
@@ -134,17 +134,17 @@ export default function PromiseSection() {
                 {activePopup === index && (
                   <AnimatedSection animation="fade-in" delay={100}>
                     <div className="mt-6 p-6 bg-mint-green/5 border border-mint-green/20 rounded-2xl">
-                      <h3 className="font-title font-bold text-blue-ink dark:text-primary-bg text-lg mb-3">
+                      <h3 className="font-title font-bold text-blue-ink text-lg mb-3">
                         {promise.popup.title}
                       </h3>
-                      <p className="font-body text-gray-anthracite dark:text-primary-bg/90 leading-relaxed mb-4">
+                      <p className="font-body text-gray-anthracite leading-relaxed mb-4">
                         {promise.popup.content}
                       </p>
                       <div className="grid sm:grid-cols-2 gap-2">
                         {promise.popup.highlights.map((highlight, highlightIndex) => (
                           <div key={highlightIndex} className="flex items-center gap-2">
                             <div className="w-2 h-2 bg-mint-green rounded-full"></div>
-                            <span className="font-body text-sm text-gray-anthracite dark:text-primary-bg/80">
+                            <span className="font-body text-sm text-gray-anthracite
                               {highlight}
                             </span>
                           </div>
@@ -170,7 +170,7 @@ export default function PromiseSection() {
                 Faire le diagnostic
               </Button>
             </div>
-            <p className="mt-4 font-italic text-gray-anthracite dark:text-primary-bg/70 text-sm">
+            <p className="mt-4 font-italic text-gray-anthracite text-sm">
               Découvrez où vous en êtes vraiment
             </p>
           </div>

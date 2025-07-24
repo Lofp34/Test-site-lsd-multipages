@@ -54,20 +54,20 @@ const DigitalAIComponentTester: React.FC = () => {
   };
 
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white dark:bg-blue-ink rounded-2xl shadow-lg">
-      <h2 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-6">
+    <div className="max-w-4xl mx-auto p-6 bg-white rounded-2xl shadow-lg">
+      <h2 className="text-2xl font-bold text-blue-ink mb-6">
         Digital & AI Components Performance Test
       </h2>
 
       {/* Test Components Display */}
       <div className="mb-8 space-y-6">
-        <h3 className="text-lg font-semibold text-blue-ink dark:text-cyan-400">
+        <h3 className="text-lg font-semibold text-blue-ink
           Components Under Test
         </h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* AI Icons */}
-          <div className="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+          <div className="p-4 border border-gray-200 rounded-lg">
             <h4 className="font-medium mb-2">AI Icons</h4>
             <div className="flex gap-2">
               <AIIcon type="brain" size="md" animated />
@@ -77,7 +77,7 @@ const DigitalAIComponentTester: React.FC = () => {
           </div>
 
           {/* Technology Badges */}
-          <div className="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+          <div className="p-4 border border-gray-200 rounded-lg">
             <h4 className="font-medium mb-2">Technology Badges</h4>
             <div className="space-y-2">
               <TechnologyBadge technology="IA" variant="primary" size="sm" />
@@ -86,7 +86,7 @@ const DigitalAIComponentTester: React.FC = () => {
           </div>
 
           {/* Future Relevance Indicator */}
-          <div className="p-4 border border-gray-200 dark:border-gray-700 rounded-lg">
+          <div className="p-4 border border-gray-200 rounded-lg">
             <h4 className="font-medium mb-2">Future Relevance</h4>
             <FutureRelevanceIndicator 
               relevanceScore={4.2} 
@@ -130,36 +130,36 @@ const DigitalAIComponentTester: React.FC = () => {
       {/* Test Results */}
       {testResults && (
         <div className="space-y-6">
-          <h3 className="text-lg font-semibold text-blue-ink dark:text-cyan-400">
+          <h3 className="text-lg font-semibold text-blue-ink
             Test Results
           </h3>
 
           {/* Performance Results */}
-          <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <h4 className="font-medium mb-3 text-blue-ink dark:text-cyan-300">
+          <div className="p-4 bg-gray-50 rounded-lg">
+            <h4 className="font-medium mb-3 text-blue-ink
               Performance Metrics
             </h4>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
               <div>
-                <span className="text-gray-600 dark:text-gray-400">Load Time</span>
+                <span className="text-gray-600 Time</span>
                 <div className="font-semibold">
                   {testResults.performance.loadTime?.toFixed(2)}ms
                 </div>
               </div>
               <div>
-                <span className="text-gray-600 dark:text-gray-400">Render Time</span>
+                <span className="text-gray-600 Time</span>
                 <div className="font-semibold">
                   {testResults.performance.renderTime?.toFixed(2)}ms
                 </div>
               </div>
               <div>
-                <span className="text-gray-600 dark:text-gray-400">Memory Usage</span>
+                <span className="text-gray-600 Usage</span>
                 <div className="font-semibold">
                   {testResults.performance.memoryUsage?.toFixed(1)}MB
                 </div>
               </div>
               <div>
-                <span className="text-gray-600 dark:text-gray-400">LCP</span>
+                <span className="text-gray-600
                 <div className="font-semibold">
                   {testResults.performance.coreWebVitals?.lcp?.toFixed(0)}ms
                 </div>
@@ -168,8 +168,8 @@ const DigitalAIComponentTester: React.FC = () => {
           </div>
 
           {/* Accessibility Results */}
-          <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <h4 className="font-medium mb-3 text-blue-ink dark:text-cyan-300">
+          <div className="p-4 bg-gray-50 rounded-lg">
+            <h4 className="font-medium mb-3 text-blue-ink
               Accessibility Audit
             </h4>
             <div className="space-y-2">
@@ -196,7 +196,7 @@ const DigitalAIComponentTester: React.FC = () => {
                   <span className="text-red-600 text-sm">
                     ARIA Issues: {testResults.accessibility.ariaLabels.length}
                   </span>
-                  <ul className="text-xs text-gray-600 dark:text-gray-400 mt-1">
+                  <ul className="text-xs text-gray-600 mt-1">
                     {testResults.accessibility.ariaLabels.slice(0, 3).map((issue: string, index: number) => (
                       <li key={index}>• {issue}</li>
                     ))}
@@ -207,8 +207,8 @@ const DigitalAIComponentTester: React.FC = () => {
           </div>
 
           {/* Mobile Performance Results */}
-          <div className="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
-            <h4 className="font-medium mb-3 text-blue-ink dark:text-cyan-300">
+          <div className="p-4 bg-gray-50 rounded-lg">
+            <h4 className="font-medium mb-3 text-blue-ink
               Mobile Performance
             </h4>
             <div className="space-y-2">

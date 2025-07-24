@@ -135,12 +135,12 @@ export default function LeanStartupPage() {
 
         {/* Résumé détaillé */}
         <article className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-emerald-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-emerald-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-emerald-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Résumé détaillé
             </h2>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800
               <p className="text-lg leading-relaxed mb-6">
                 Eric Ries révolutionne l'approche de l'innovation avec sa méthodologie Lean Startup, particulièrement pertinente pour les équipes commerciales qui naviguent dans la transformation digitale.
               </p>
@@ -148,38 +148,38 @@ export default function LeanStartupPage() {
               <h3 className="text-2xl font-bold text-emerald-500 mb-4">Les 5 principes fondamentaux</h3>
               
               <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="p-6 bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/30 dark:to-green-900/30 rounded-xl border border-emerald-200/50">
+                <div className="p-6 bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl border border-emerald-200/50">
                   <h4 className="text-xl font-bold text-emerald-600 mb-3">🚀 1. Les entrepreneurs sont partout</h4>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-gray-700
                     Pas besoin d'être dans une startup. Tout commercial qui teste de nouvelles approches est un entrepreneur.
                   </p>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-green-50 to-lime-50 dark:from-green-900/30 dark:to-lime-900/30 rounded-xl border border-green-200/50">
+                <div className="p-6 bg-gradient-to-r from-green-50 to-lime-50 rounded-xl border border-green-200/50">
                   <h4 className="text-xl font-bold text-green-600 mb-3">⚙️ 2. L'entrepreneuriat est du management</h4>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-gray-700
                     Il faut une discipline et des processus pour gérer l'innovation dans l'incertitude.
                   </p>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-lime-50 to-yellow-50 dark:from-lime-900/30 dark:to-yellow-900/30 rounded-xl border border-lime-200/50">
+                <div className="p-6 bg-gradient-to-r from-lime-50 to-yellow-50 rounded-xl border border-lime-200/50">
                   <h4 className="text-xl font-bold text-lime-600 mb-3">📊 3. Validated Learning</h4>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-gray-700
                     Apprendre ce que veulent vraiment les clients avec des données réelles, pas des opinions.
                   </p>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/30 dark:to-orange-900/30 rounded-xl border border-yellow-200/50">
+                <div className="p-6 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-xl border border-yellow-200/50">
                   <h4 className="text-xl font-bold text-yellow-600 mb-3">🔄 4. Build-Measure-Learn</h4>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-gray-700
                     Le cycle fondamental d'innovation rapide.
                   </p>
                 </div>
               </div>
 
-              <div className="p-6 bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-900/30 dark:to-red-900/30 rounded-xl border border-orange-200/50 mb-8">
+              <div className="p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border border-orange-200/50 mb-8">
                 <h4 className="text-xl font-bold text-orange-600 mb-3">📈 5. Innovation Accounting</h4>
-                <p className="text-gray-700 dark:text-gray-300">
+                <p className="text-gray-700
                   Mesurer les progrès dans un contexte d'incertitude avec des métriques actionnables.
                 </p>
               </div>
@@ -187,36 +187,36 @@ export default function LeanStartupPage() {
               <h3 className="text-2xl font-bold text-emerald-500 mb-4">Le cycle Build-Measure-Learn appliqué au commercial</h3>
               
               <div className="space-y-6 mb-8">
-                <div className="p-6 bg-gradient-to-r from-blue-50 to-emerald-50 dark:from-blue-900/30 dark:to-emerald-900/30 rounded-xl border border-blue-200/50">
+                <div className="p-6 bg-gradient-to-r from-blue-50 to-emerald-50 rounded-xl border border-blue-200/50">
                   <h4 className="text-xl font-bold text-blue-600 mb-3">🔨 Build (Construire)</h4>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3">
+                  <p className="text-gray-700 mb-3">
                     Créer un MVP de votre nouvelle approche commerciale
                   </p>
-                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                  <ul className="text-sm text-gray-600 space-y-1">
                     <li>• Tester un nouveau script de prospection sur 50 appels</li>
                     <li>• Lancer un pilote d'automatisation sur une partie du pipeline</li>
                     <li>• Créer un chatbot simple pour qualifier les leads</li>
                   </ul>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/30 dark:to-green-900/30 rounded-xl border border-emerald-200/50">
+                <div className="p-6 bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl border border-emerald-200/50">
                   <h4 className="text-xl font-bold text-emerald-600 mb-3">📏 Measure (Mesurer)</h4>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3">
+                  <p className="text-gray-700 mb-3">
                     Définir des métriques d'apprentissage (pas juste de vanité)
                   </p>
-                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                  <ul className="text-sm text-gray-600 space-y-1">
                     <li>• Taux de réponse, qualité des leads générés</li>
                     <li>• Temps gagné, satisfaction client</li>
                     <li>• Focus sur les métriques actionnables</li>
                   </ul>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-green-50 to-lime-50 dark:from-green-900/30 dark:to-lime-900/30 rounded-xl border border-green-200/50">
+                <div className="p-6 bg-gradient-to-r from-green-50 to-lime-50 rounded-xl border border-green-200/50">
                   <h4 className="text-xl font-bold text-green-600 mb-3">🧠 Learn (Apprendre)</h4>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3">
+                  <p className="text-gray-700 mb-3">
                     Analyser les résultats pour valider ou invalider les hypothèses
                   </p>
-                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
+                  <ul className="text-sm text-gray-600 space-y-1">
                     <li>• Décider : persévérer ou pivoter ?</li>
                     <li>• Identifier les conditions de succès</li>
                     <li>• Ajuster la stratégie selon les apprentissages</li>
@@ -224,7 +224,7 @@ export default function LeanStartupPage() {
                 </div>
               </div>
 
-              <div className="bg-emerald-50 dark:bg-emerald-900/30 border-l-4 border-emerald-500 p-6 rounded-r-lg mb-6">
+              <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-lg mb-6">
                 <h4 className="text-lg font-bold text-emerald-600 mb-3">🎯 Principe clé</h4>
                 <p>
                   L'objectif n'est pas de construire le produit parfait, mais d'apprendre le plus rapidement possible ce qui fonctionne vraiment avec vos clients. Échouez vite, échouez peu cher, apprenez beaucoup.
@@ -236,74 +236,74 @@ export default function LeanStartupPage() {
 
         {/* Cas d'usage en développement commercial */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-emerald-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-emerald-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-emerald-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Cas d'usage en développement commercial
             </h2>
             
             <div className="space-y-6">
-              <div className="p-6 bg-gradient-to-r from-blue-50 to-emerald-50 dark:from-blue-900/30 dark:to-emerald-900/30 rounded-xl border border-blue-200/50">
+              <div className="p-6 bg-gradient-to-r from-blue-50 to-emerald-50 rounded-xl border border-blue-200/50">
                 <h3 className="text-xl font-bold text-blue-600 mb-3">🤖 Test d'outils IA</h3>
                 <div className="space-y-3">
                   <div>
                     <span className="font-semibold text-blue-500">Hypothèse :</span>
-                    <span className="text-gray-700 dark:text-gray-300 ml-2">"Un chatbot peut qualifier 30% de nos leads entrants"</span>
+                    <span className="text-gray-700 ml-2">"Un chatbot peut qualifier 30% de nos leads entrants"</span>
                   </div>
                   <div>
                     <span className="font-semibold text-emerald-500">MVP :</span>
-                    <span className="text-gray-700 dark:text-gray-300 ml-2">Chatbot simple sur une landing page</span>
+                    <span className="text-gray-700 ml-2">Chatbot simple sur une landing page</span>
                   </div>
                   <div>
                     <span className="font-semibold text-green-500">Mesure :</span>
-                    <span className="text-gray-700 dark:text-gray-300 ml-2">Taux de qualification, satisfaction client</span>
+                    <span className="text-gray-700 ml-2">Taux de qualification, satisfaction client</span>
                   </div>
                   <div>
                     <span className="font-semibold text-lime-500">Apprentissage :</span>
-                    <span className="text-gray-700 dark:text-gray-300 ml-2">Ajuster ou abandonner selon les résultats</span>
+                    <span className="text-gray-700 ml-2">Ajuster ou abandonner selon les résultats</span>
                   </div>
                 </div>
               </div>
               
-              <div className="p-6 bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/30 dark:to-green-900/30 rounded-xl border border-emerald-200/50">
+              <div className="p-6 bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl border border-emerald-200/50">
                 <h3 className="text-xl font-bold text-emerald-600 mb-3">📹 Nouvelle approche de prospection</h3>
                 <div className="space-y-3">
                   <div>
                     <span className="font-semibold text-blue-500">Hypothèse :</span>
-                    <span className="text-gray-700 dark:text-gray-300 ml-2">"La prospection vidéo augmente le taux de réponse"</span>
+                    <span className="text-gray-700 ml-2">"La prospection vidéo augmente le taux de réponse"</span>
                   </div>
                   <div>
                     <span className="font-semibold text-emerald-500">MVP :</span>
-                    <span className="text-gray-700 dark:text-gray-300 ml-2">100 vidéos personnalisées vs 100 emails classiques</span>
+                    <span className="text-gray-700 ml-2">100 vidéos personnalisées vs 100 emails classiques</span>
                   </div>
                   <div>
                     <span className="font-semibold text-green-500">Mesure :</span>
-                    <span className="text-gray-700 dark:text-gray-300 ml-2">Taux d'ouverture, de réponse, de RDV obtenus</span>
+                    <span className="text-gray-700 ml-2">Taux d'ouverture, de réponse, de RDV obtenus</span>
                   </div>
                   <div>
                     <span className="font-semibold text-lime-500">Apprentissage :</span>
-                    <span className="text-gray-700 dark:text-gray-300 ml-2">Valider l'efficacité et les conditions de succès</span>
+                    <span className="text-gray-700 ml-2">Valider l'efficacité et les conditions de succès</span>
                   </div>
                 </div>
               </div>
               
-              <div className="p-6 bg-gradient-to-r from-green-50 to-lime-50 dark:from-green-900/30 dark:to-lime-900/30 rounded-xl border border-green-200/50">
+              <div className="p-6 bg-gradient-to-r from-green-50 to-lime-50 rounded-xl border border-green-200/50">
                 <h3 className="text-xl font-bold text-green-600 mb-3">🔍 Innovation dans le processus de vente</h3>
                 <div className="space-y-3">
                   <div>
                     <span className="font-semibold text-blue-500">Hypothèse :</span>
-                    <span className="text-gray-700 dark:text-gray-300 ml-2">"Un diagnostic digital améliore la conversion"</span>
+                    <span className="text-gray-700 ml-2">"Un diagnostic digital améliore la conversion"</span>
                   </div>
                   <div>
                     <span className="font-semibold text-emerald-500">MVP :</span>
-                    <span className="text-gray-700 dark:text-gray-300 ml-2">Outil de diagnostic simple pour 20 prospects</span>
+                    <span className="text-gray-700 ml-2">Outil de diagnostic simple pour 20 prospects</span>
                   </div>
                   <div>
                     <span className="font-semibold text-green-500">Mesure :</span>
-                    <span className="text-gray-700 dark:text-gray-300 ml-2">Engagement, temps de cycle, taux de closing</span>
+                    <span className="text-gray-700 ml-2">Engagement, temps de cycle, taux de closing</span>
                   </div>
                   <div>
                     <span className="font-semibold text-lime-500">Apprentissage :</span>
-                    <span className="text-gray-700 dark:text-gray-300 ml-2">Identifier les améliorations nécessaires</span>
+                    <span className="text-gray-700 ml-2">Identifier les améliorations nécessaires</span>
                   </div>
                 </div>
               </div>
@@ -313,15 +313,15 @@ export default function LeanStartupPage() {
 
         {/* Pièges à éviter */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-emerald-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-emerald-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-emerald-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Pièges à éviter
             </h2>
             
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="p-6 bg-red-50 dark:bg-red-900/20 rounded-xl border border-red-200/50">
+              <div className="p-6 bg-red-50 rounded-xl border border-red-200/50">
                 <h3 className="text-xl font-bold text-red-600 mb-3">📊 Vanity Metrics</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Se concentrer sur des chiffres flatteurs mais non actionnables
                 </p>
                 <div className="text-sm text-red-500">
@@ -329,9 +329,9 @@ export default function LeanStartupPage() {
                 </div>
               </div>
               
-              <div className="p-6 bg-orange-50 dark:bg-orange-900/20 rounded-xl border border-orange-200/50">
+              <div className="p-6 bg-orange-50 rounded-xl border border-orange-200/50">
                 <h3 className="text-xl font-bold text-orange-600 mb-3">🔧 Feature Creep</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Ajouter des fonctionnalités sans valider leur utilité
                 </p>
                 <div className="text-sm text-orange-500">
@@ -339,9 +339,9 @@ export default function LeanStartupPage() {
                 </div>
               </div>
               
-              <div className="p-6 bg-yellow-50 dark:bg-yellow-900/20 rounded-xl border border-yellow-200/50">
+              <div className="p-6 bg-yellow-50 rounded-xl border border-yellow-200/50">
                 <h3 className="text-xl font-bold text-yellow-600 mb-3">✨ Perfect Product Syndrome</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Attendre la perfection avant de tester
                 </p>
                 <div className="text-sm text-yellow-500">
@@ -354,8 +354,8 @@ export default function LeanStartupPage() {
 
         {/* Points clés à retenir */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-emerald-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-emerald-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-emerald-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Points clés à retenir
             </h2>
             
@@ -371,7 +371,7 @@ export default function LeanStartupPage() {
               ].map((point, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-emerald-500 text-xl mr-3 mt-1">✓</span>
-                  <span className="text-gray-800 dark:text-gray-200 text-lg">{point}</span>
+                  <span className="text-gray-800 text-lg">{point}</span>
                 </li>
               ))}
             </ul>
@@ -380,8 +380,8 @@ export default function LeanStartupPage() {
 
         {/* Pour qui ce livre ? */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-emerald-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-emerald-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-emerald-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Pour qui ce livre ?
             </h2>
             
@@ -395,7 +395,7 @@ export default function LeanStartupPage() {
               ].map((profile, index) => (
                 <div key={index} className="flex items-center p-3 bg-emerald-500/10 rounded-lg">
                   <span className="text-emerald-500 text-lg mr-3">👤</span>
-                  <span className="text-gray-800 dark:text-gray-200 font-medium">{profile}</span>
+                  <span className="text-gray-800 font-medium">{profile}</span>
                 </div>
               ))}
             </div>
@@ -410,14 +410,14 @@ export default function LeanStartupPage() {
                 <span className="text-white font-bold text-lg">LS</span>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-blue-ink dark:text-emerald-300">
+                <h2 className="text-2xl font-bold text-blue-ink
                   Mon avis terrain
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300">Laurent Serre - Expert développement commercial PME</p>
+                <p className="text-gray-600 Serre - Expert développement commercial PME</p>
               </div>
             </div>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800
               <p className="text-lg leading-relaxed mb-6">
                 Un classique qui reste d'actualité ! Ries a posé les bases de l'innovation agile que j'applique avec tous mes clients dans leur transformation commerciale.
               </p>
@@ -433,18 +433,18 @@ export default function LeanStartupPage() {
               
               <h3 className="text-xl font-bold text-emerald-500 mb-4">Succès concrets d'application :</h3>
               <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <div className="p-4 bg-emerald-50 dark:bg-emerald-900/30 rounded-lg">
+                <div className="p-4 bg-emerald-50 rounded-lg">
                   <h4 className="font-semibold text-emerald-600 mb-2">PME SaaS (22 salariés)</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                  <p className="text-sm text-gray-700 mb-2">
                     Application Build-Measure-Learn pour tester une nouvelle approche de prospection
                   </p>
                   <p className="text-xs text-green-600 font-medium">
                     Résultat : +150% de taux de réponse, validation en 3 semaines au lieu de 6 mois
                   </p>
                 </div>
-                <div className="p-4 bg-lime-50 dark:bg-lime-900/30 rounded-lg">
+                <div className="p-4 bg-lime-50 rounded-lg">
                   <h4 className="font-semibold text-lime-600 mb-2">Industrie (65 salariés)</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                  <p className="text-sm text-gray-700 mb-2">
                     MVP d'un processus de vente consultative avant déploiement complet
                   </p>
                   <p className="text-xs text-green-600 font-medium">
@@ -453,7 +453,7 @@ export default function LeanStartupPage() {
                 </div>
               </div>
               
-              <div className="bg-emerald-100/50 dark:bg-emerald-900/30 border-l-4 border-emerald-500 p-4 rounded-r-lg mb-6">
+              <div className="bg-emerald-100/50 border-l-4 border-emerald-500 p-4 rounded-r-lg mb-6">
                 <p className="font-semibold text-emerald-600 mb-2">💡 Exemple concret :</p>
                 <p>
                   Avant d'équiper toute l'équipe d'un CRM IA, testez sur 3 commerciaux pendant 1 mois. Mesurez l'impact réel, ajustez, puis déployez. 
@@ -461,7 +461,7 @@ export default function LeanStartupPage() {
                 </p>
               </div>
               
-              <div className="bg-orange-100/50 dark:bg-orange-900/30 border-l-4 border-orange-500 p-4 rounded-r-lg mb-6">
+              <div className="bg-orange-100/50 border-l-4 border-orange-500 p-4 rounded-r-lg mb-6">
                 <p className="font-semibold text-orange-600 mb-2">⚠️ Piège classique :</p>
                 <p>
                   Mes clients tombent souvent dans le perfectionnisme : "On va d'abord tout préparer parfaitement". 
@@ -469,7 +469,7 @@ export default function LeanStartupPage() {
                 </p>
               </div>
               
-              <div className="bg-green-100/50 dark:bg-green-900/30 border-l-4 border-green-500 p-4 rounded-r-lg mb-6">
+              <div className="bg-green-100/50 border-l-4 border-green-500 p-4 rounded-r-lg mb-6">
                 <p className="font-semibold text-green-600 mb-2">🎯 Action immédiate :</p>
                 <p>
                   Identifiez une innovation commerciale que vous voulez tester (nouveau script, outil, processus). 
@@ -483,8 +483,8 @@ export default function LeanStartupPage() {
                     <span key={i} className={i < 4.2 ? "text-yellow-400" : "text-gray-300"}>⭐</span>
                   ))}
                 </div>
-                <span className="text-lg font-semibold text-gray-800 dark:text-gray-200">4.2/5</span>
-                <span className="text-sm text-gray-600 dark:text-gray-400 ml-4">
+                <span className="text-lg font-semibold text-gray-800
+                <span className="text-sm text-gray-600 ml-4">
                   Méthodologie appliquée par 100% de mes clients en transformation
                 </span>
               </div>
@@ -494,8 +494,8 @@ export default function LeanStartupPage() {
 
         {/* Livres complémentaires */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-emerald-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-emerald-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-emerald-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Livres complémentaires
             </h2>
             
@@ -504,10 +504,10 @@ export default function LeanStartupPage() {
                 href="/ressources/meilleurs-livres/digital-ai/human-machine"
                 className="group p-6 bg-gradient-to-r from-emerald-500/10 to-green-500/10 rounded-xl border border-emerald-300/20 hover:border-emerald-400/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-emerald-300 mb-3 group-hover:text-emerald-500 transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-emerald-500 transition-colors">
                   Human + Machine
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour l'implémentation opérationnelle de l'IA
                 </p>
                 <span className="text-emerald-500 font-medium group-hover:underline">
@@ -519,10 +519,10 @@ export default function LeanStartupPage() {
                 href="/ressources/meilleurs-livres/digital-ai/the-second-machine-age"
                 className="group p-6 bg-gradient-to-r from-green-500/10 to-lime-500/10 rounded-xl border border-green-300/20 hover:border-green-400/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-emerald-300 mb-3 group-hover:text-green-500 transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-green-500 transition-colors">
                   The Second Machine Age
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour comprendre le contexte de la transformation
                 </p>
                 <span className="text-green-500 font-medium group-hover:underline">
@@ -539,10 +539,10 @@ export default function LeanStartupPage() {
             <div className="inline-block bg-emerald-500/30 text-emerald-300 font-semibold rounded-full px-4 py-2 text-sm mb-4 shadow-md backdrop-blur">
               Appliquez la méthode Lean Startup
             </div>
-            <h3 className="text-3xl font-bold text-blue-ink dark:text-emerald-300 mb-4">
+            <h3 className="text-3xl font-bold text-blue-ink mb-4">
               Accompagnement Innovation Commerciale
             </h3>
-            <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
               Mise en place de la culture test & learn dans votre équipe commerciale. Méthodologie, outils et accompagnement pour innover sans risque.
             </p>
             <Link 

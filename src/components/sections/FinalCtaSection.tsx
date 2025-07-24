@@ -25,16 +25,16 @@ export default function FinalCtaSection() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white dark:bg-gray-anthracite/20">
+    <section id="contact" className="py-20 bg-white
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Titre principal */}
         <AnimatedSection animation="slide-up" delay={0}>
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-title font-bold text-blue-ink dark:text-primary-bg leading-tight mb-6">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-title font-bold text-blue-ink leading-tight mb-6">
               Prêt à transformer
               <span className="block text-mint-green">vos résultats ?</span>
             </h2>
-            <p className="text-xl font-body text-primary-secondary dark:text-primary-bg/80 max-w-3xl mx-auto">
+            <p className="text-xl font-body text-primary-secondary max-w-3xl mx-auto">
               Commençons par un échange simple pour comprendre vos enjeux et identifier les opportunités
             </p>
           </div>
@@ -46,10 +46,10 @@ export default function FinalCtaSection() {
             <div className="bg-gradient-to-br from-mint-green/5 to-blue-ink/5 rounded-3xl p-8 mb-8 shadow-xl border border-mint-green/20">
               <div className="max-w-2xl mx-auto">
                 <div className="text-4xl mb-6">🚀</div>
-                <h3 className="text-2xl md:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+                <h3 className="text-2xl md:text-3xl font-title font-bold text-blue-ink mb-4">
                   Commençons par échanger 30 minutes
                 </h3>
-                <p className="text-lg font-body text-primary-secondary dark:text-primary-bg/80 mb-8 leading-relaxed">
+                <p className="text-lg font-body text-primary-secondary mb-8 leading-relaxed">
                   Un simple appel pour comprendre vos enjeux, identifier les opportunités et voir comment nous pouvons travailler ensemble.
                 </p>
                 
@@ -58,7 +58,7 @@ export default function FinalCtaSection() {
 
                 {/* Alternative Calendly */}
                 <div className="border-t border-mint-green/20 pt-6">
-                  <p className="text-sm font-body text-primary-secondary dark:text-primary-bg/70 mb-4">
+                  <p className="text-sm font-body text-primary-secondary mb-4">
                     Ou choisissez directement un créneau dans mon agenda
                   </p>
                   <Button 
@@ -83,10 +83,10 @@ export default function FinalCtaSection() {
           <div className="grid md:grid-cols-2 gap-6 mb-12">
             <div className="bg-mint-green/5 border border-mint-green/20 rounded-2xl p-6 text-center hover:bg-mint-green/10 transition-all duration-300 hover:scale-[1.02] group">
               <div className="text-3xl mb-4 group-hover:animate-bounce-in">📚</div>
-              <h3 className="font-title font-bold text-blue-ink dark:text-primary-bg mb-3">
+              <h3 className="font-title font-bold text-blue-ink mb-3">
                 Ressources gratuites
               </h3>
-              <p className="font-body text-primary-secondary dark:text-primary-bg/80 text-sm mb-4">
+              <p className="font-body text-primary-secondary text-sm mb-4">
                 Accédez à nos guides et outils pour améliorer vos ventes
               </p>
               <Button 
@@ -104,10 +104,10 @@ export default function FinalCtaSection() {
 
             <div className="bg-blue-ink/5 border border-blue-ink/20 rounded-2xl p-6 text-center hover:bg-blue-ink/10 transition-all duration-300 hover:scale-[1.02] group">
               <div className="text-3xl mb-4 group-hover:animate-bounce-in">🎯</div>
-              <h3 className="font-title font-bold text-blue-ink dark:text-primary-bg mb-3">
+              <h3 className="font-title font-bold text-blue-ink mb-3">
                 Faire le diagnostic
               </h3>
-              <p className="font-body text-primary-secondary dark:text-primary-bg/80 text-sm mb-4">
+              <p className="font-body text-primary-secondary text-sm mb-4">
                 Évaluez votre maturité commerciale en 2 minutes
               </p>
               <Button 
@@ -127,19 +127,19 @@ export default function FinalCtaSection() {
             <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto">
               <div className="text-center">
                 <div className="text-2xl mb-2">⏱️</div>
-                <p className="font-body text-sm text-primary-secondary dark:text-primary-bg/80">
+                <p className="font-body text-sm text-primary-secondary
                   Premier échange gratuit
                 </p>
               </div>
               <div className="text-center">
                 <div className="text-2xl mb-2">🤝</div>
-                <p className="font-body text-sm text-primary-secondary dark:text-primary-bg/80">
+                <p className="font-body text-sm text-primary-secondary
                   Aucun engagement
                 </p>
               </div>
               <div className="text-center">
                 <div className="text-2xl mb-2">🎯</div>
-                <p className="font-body text-sm text-primary-secondary dark:text-primary-bg/80">
+                <p className="font-body text-sm text-primary-secondary
                   Solutions sur mesure
                 </p>
               </div>

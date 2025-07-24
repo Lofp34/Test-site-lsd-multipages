@@ -91,7 +91,7 @@ const StarRating: React.FC<StarRatingProps> = ({
         {renderStars()}
       </div>
       {showValue && (
-        <span className={`${textSizeClasses[size]} text-gray-600 dark:text-gray-300 ml-1`}>
+        <span className={`${textSizeClasses[size]} text-gray-600 ml-1`}>
           {rating.toFixed(1)}
         </span>
       )}
