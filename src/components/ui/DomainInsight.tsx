@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronDown, Zap, Lightbulb, TrendingUp, HelpCircle, Target, Users, BookOpen } from 'lucide-react';
+import AIIcon from '@/components/ui/AIIcon';
 import { CategoryTheme } from '@/types/category-templates';
 
 export interface DomainInsightProps {
@@ -59,7 +62,7 @@ const DomainInsight: React.FC<DomainInsightProps> = ({
       case 'Débutant': return 'text-green-600 bg-green-50 border-green-200 dark:text-green-400 dark:bg-green-900/20 dark:border-green-700';
       case 'Intermédiaire': return 'text-orange-600 bg-orange-50 border-orange-200 dark:text-orange-400 dark:bg-orange-900/20 dark:border-orange-700';
       case 'Avancé': return 'text-red-600 bg-red-50 border-red-200 dark:text-red-400 dark:bg-red-900/20 dark:border-red-700';
-      default: return 'text-gray-600 bg-gray-50 border-gray-200 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-600';
+      default: return 'text-primary-secondary bg-gray-50 border-gray-200 dark:text-gray-400 dark:bg-gray-700 dark:border-gray-600';
     }
   };
 
@@ -84,7 +87,7 @@ const DomainInsight: React.FC<DomainInsightProps> = ({
           </div>
           <div className="flex-1">
             <h4 
-              className="font-bold text-base sm:text-lg text-gray-900 dark:text-white group-hover:transition-colors duration-300"
+              className="font-bold text-base sm:text-lg text-primary-title group-hover:transition-colors duration-300"
               style={{ color: `var(--tw-text-opacity) && ${effectiveColor}` }}
             >
               {title}
@@ -103,7 +106,7 @@ const DomainInsight: React.FC<DomainInsightProps> = ({
       </div>
 
       {/* Description */}
-      <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed text-sm sm:text-base relative z-10">
+      <p className="text-primary-secondary/90 leading-relaxed text-sm sm:text-base relative z-10">
         {description}
       </p>
 
@@ -135,7 +138,7 @@ const DomainInsight: React.FC<DomainInsightProps> = ({
       {/* Technologies (if available) */}
       {technologies.length > 0 && (
         <div className="space-y-2 relative z-10 mb-4">
-          <h5 className="font-semibold text-gray-900 dark:text-white text-xs sm:text-sm mb-3 flex items-center gap-1">
+          <h5 className="font-semibold text-primary-title text-xs sm:text-sm mb-3 flex items-center gap-1">
             <span className="animate-pulse">⚙️</span>
             Technologies
           </h5>
@@ -161,7 +164,7 @@ const DomainInsight: React.FC<DomainInsightProps> = ({
       {/* Key Elements */}
       {keyElements.length > 0 && (
         <div className="space-y-2 relative z-10 mb-4">
-          <h5 className="font-semibold text-gray-900 dark:text-white text-xs sm:text-sm mb-3 flex items-center gap-1">
+          <h5 className="font-semibold text-primary-title text-xs sm:text-sm mb-3 flex items-center gap-1">
             <span className="animate-pulse">🔑</span>
             Éléments clés
           </h5>
@@ -169,7 +172,7 @@ const DomainInsight: React.FC<DomainInsightProps> = ({
             {keyElements.map((element, index) => (
               <span
                 key={index}
-                className="text-xs px-2 sm:px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:shadow-sm hover:scale-105 transition-all duration-200 cursor-default"
+                className="text-xs px-2 sm:px-3 py-1 rounded-full bg-background/50 text-primary-secondary border border-gray-200 dark:border-gray-600 hover:shadow-sm hover:scale-105 transition-all duration-200 cursor-default"
                 style={{
                   animationDelay: `${index * 100}ms`
                 }}
@@ -184,7 +187,7 @@ const DomainInsight: React.FC<DomainInsightProps> = ({
       {/* Metrics (if available) */}
       {metrics.length > 0 && (
         <div className="space-y-2 relative z-10">
-          <h5 className="font-semibold text-gray-900 dark:text-white text-xs sm:text-sm mb-3 flex items-center gap-1">
+          <h5 className="font-semibold text-primary-title text-xs sm:text-sm mb-3 flex items-center gap-1">
             <span className="animate-pulse">📈</span>
             Métriques
           </h5>
@@ -204,7 +207,7 @@ const DomainInsight: React.FC<DomainInsightProps> = ({
                 >
                   {metric.value}
                 </div>
-                <div className="text-xs text-gray-600 dark:text-gray-400">
+                <div className="text-xs text-primary-secondary/70">
                   {metric.label}
                 </div>
               </div>

@@ -132,10 +132,10 @@ export default function SalesManagementPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(categoryStructuredData) }}
       />
       
-      <main className="relative bg-gradient-to-br from-green-600 via-yellow-500/10 to-primary-bg min-h-screen pt-24 pb-16 overflow-hidden">
-        {/* Particle background for leadership atmosphere */}
+      <main className="relative bg-gradient-to-br from-primary-bg via-green-500/10 to-background min-h-screen pt-24 pb-16 overflow-hidden">
+        {/* Particle background for management atmosphere */}
         <ParticleBackground 
-          density={25}
+          density={30}
           speed={0.2}
           color="#00BDA4"
           opacity={0.3}

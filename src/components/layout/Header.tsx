@@ -162,7 +162,7 @@ export default function Header() {
                           href={sub.href}
                           onClick={() => setOpenSubMenu(null)}
                         >
-                          <span className="block px-5 py-3 text-gray-700 dark:text-primary-bg hover:bg-mint-green/10 hover:text-mint-green transition-colors cursor-pointer">
+                          <span className="block px-5 py-3 text-primary-secondary hover:bg-mint-green/10 hover:text-mint-green transition-colors cursor-pointer">
                             {sub.label}
                           </span>
                         </Link>

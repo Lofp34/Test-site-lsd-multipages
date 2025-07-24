@@ -173,7 +173,7 @@ export default function BookPageTemplate({
               <h2 id="detailed-summary" className={`text-2xl font-bold text-blue-ink dark:text-[${theme.primaryColor}] mb-6`}>
                 Résumé détaillé
               </h2>
-              <div className="prose prose-lg max-w-none text-gray-700 dark:text-gray-200">
+              <div className="prose prose-lg max-w-none text-primary-secondary">
                 {book.content.detailedSummary.split('\n\n').map((paragraph, index) => (
                   <p key={index} className="mb-4 leading-relaxed">
                     {paragraph}
@@ -203,7 +203,7 @@ export default function BookPageTemplate({
                     >
                       <span className="text-white text-xs font-bold">{index + 1}</span>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-200 text-sm leading-relaxed">
+                    <p className="text-primary-secondary text-sm leading-relaxed">
                       {takeaway}
                     </p>
                   </div>
@@ -236,7 +236,7 @@ export default function BookPageTemplate({
                     className="p-4 bg-gradient-to-r from-[var(--theme-accent)]/30 to-[var(--theme-accent)]/10 rounded-lg border-l-4"
                     style={{ borderLeftColor: theme.primaryColor }}
                   >
-                    <p className="text-gray-700 dark:text-gray-200 leading-relaxed">
+                    <p className="text-primary-secondary leading-relaxed">
                       {recommendation}
                     </p>
                   </div>
@@ -262,7 +262,7 @@ export default function BookPageTemplate({
                   <h3 className={`text-lg font-bold text-[${theme.primaryColor}] mb-2`}>
                     {book.content.pmeUseCase.title}
                   </h3>
-                  <div className="flex gap-4 text-sm text-gray-600 dark:text-gray-400 mb-3">
+                  <div className="flex gap-4 text-sm text-primary-secondary/80 mb-3">
                     <span>📊 {book.content.pmeUseCase.industry}</span>
                     <span>👥 {book.content.pmeUseCase.companySize}</span>
                   </div>
@@ -270,28 +270,28 @@ export default function BookPageTemplate({
                 
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">Contexte :</h4>
-                    <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                    <h4 className="font-semibold text-primary-title mb-2">Contexte :</h4>
+                    <p className="text-primary-secondary text-sm leading-relaxed">
                       {book.content.pmeUseCase.context}
                     </p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">Application :</h4>
-                    <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                    <h4 className="font-semibold text-primary-title mb-2">Application :</h4>
+                    <p className="text-primary-secondary text-sm leading-relaxed">
                       {book.content.pmeUseCase.application}
                     </p>
                   </div>
                   
                   <div>
-                    <h4 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">Résultats :</h4>
-                    <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
+                    <h4 className="font-semibold text-primary-title mb-2">Résultats :</h4>
+                    <p className="text-primary-secondary text-sm leading-relaxed">
                       {book.content.pmeUseCase.results}
                     </p>
                   </div>
                   
                   <div className="mt-4 p-4 bg-white/50 dark:bg-blue-800/30 rounded-lg">
-                    <p className="text-gray-700 dark:text-gray-300 text-sm italic">
+                    <p className="text-primary-secondary text-sm italic">
                       💡 <strong>Laurent Serre :</strong> "{book.content.pmeUseCase.laurentComment}"
                     </p>
                   </div>
@@ -350,7 +350,7 @@ export default function BookPageTemplate({
                 <h3 className={`text-2xl font-bold text-blue-ink dark:text-[${theme.primaryColor}] mb-4`}>
                   Prêt à appliquer les concepts de ce livre ?
                 </h3>
-                <p className="text-gray-700 dark:text-gray-200">
+                <p className="text-primary-secondary">
                   Découvrez comment intégrer ces techniques dans votre stratégie commerciale
                 </p>
               </div>
@@ -380,7 +380,7 @@ export default function BookPageTemplate({
                     <span className="text-2xl">💬</span>
                     <h4 className={`text-xl font-bold text-[${theme.primaryColor}]`}>Coaching Personnalisé</h4>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-200 mb-4">
+                  <p className="text-primary-secondary mb-4">
                     Accompagnement sur-mesure pour votre équipe
                   </p>
                   <span className={`text-sm font-medium text-[${theme.primaryColor}] group-hover:underline`}>
@@ -392,14 +392,14 @@ export default function BookPageTemplate({
               <div className="text-center space-y-2">
                 <Link 
                   href={`/ressources/meilleurs-livres/${category.slug}`}
-                  className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-[var(--theme-primary)] transition-colors"
+                  className="inline-flex items-center gap-2 text-primary-secondary/80 hover:text-primary-accent transition-colors"
                 >
                   ← Retour à {category.title}
                 </Link>
                 <br />
                 <Link 
                   href="/ressources/meilleurs-livres"
-                  className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-[var(--theme-primary)] transition-colors text-sm"
+                  className="inline-flex items-center gap-2 text-primary-secondary/80 hover:text-primary-accent transition-colors text-sm"
                 >
                   Voir toutes les catégories
                 </Link>

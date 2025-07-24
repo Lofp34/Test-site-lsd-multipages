@@ -152,7 +152,7 @@ export default function NegociationClosingPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(categoryStructuredData) }}
       />
       
-      <main className="relative bg-gradient-to-br from-red-600 via-orange-500/10 to-primary-bg min-h-screen pt-24 pb-16 overflow-hidden">
+      <main className="relative bg-gradient-to-br from-primary-bg via-orange-500/10 to-background min-h-screen pt-24 pb-16 overflow-hidden">
         {/* Particle background for negotiation atmosphere */}
         <ParticleBackground 
           density={30}
@@ -334,17 +334,17 @@ export default function NegociationClosingPage() {
                 <span className="inline-block bg-red-500/20 text-red-600 dark:text-red-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🎯 Focus métier
                 </span>
-                <h3 className="text-2xl font-bold text-blue-ink dark:text-red-400 mb-4">
+                <h3 className="text-2xl font-bold text-primary-title mb-4">
                   Comment la négociation transforme vos résultats
                 </h3>
               </div>
               
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-green-600 dark:text-green-400 flex items-center gap-2">
+                  <h4 className="font-semibold text-green-700 dark:text-green-300 flex items-center gap-2">
                     ✅ Négociation collaborative
                   </h4>
-                  <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-200">
+                  <ul className="space-y-2 text-sm text-primary-secondary">
                     <li>• Création de valeur mutuelle</li>
                     <li>• Relations client durables</li>
                     <li>• Préservation des marges</li>
@@ -354,10 +354,10 @@ export default function NegociationClosingPage() {
                 </div>
                 
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-orange-600 dark:text-orange-400 flex items-center gap-2">
+                  <h4 className="font-semibold text-orange-700 dark:text-orange-400 flex items-center gap-2">
                     ⚠️ Négociation traditionnelle
                   </h4>
-                  <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-200">
+                  <ul className="space-y-2 text-sm text-primary-secondary">
                     <li>• Guerre des prix systématique</li>
                     <li>• Relations tendues post-signature</li>
                     <li>• Érosion des marges</li>
@@ -368,7 +368,7 @@ export default function NegociationClosingPage() {
               </div>
               
               <div className="mt-6 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
-                <p className="text-sm text-gray-700 dark:text-gray-200 italic">
+                <p className="text-sm text-primary-secondary italic">
                   💡 <strong>Conseil Laurent Serre :</strong> La négociation collaborative n'est pas de la naïveté, 
                   c'est de l'intelligence business. Mes clients qui l'appliquent augmentent leurs marges de 25% 
                   tout en améliorant leur satisfaction client. Le secret ? Chercher toujours le gagnant-gagnant authentique.
@@ -436,10 +436,10 @@ export default function NegociationClosingPage() {
                 <span className="inline-block bg-purple-500/20 text-purple-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🔗 Complémentaire
                 </span>
-                <h3 className="text-2xl font-bold text-blue-ink dark:text-red-400 mb-4">
+                <h3 className="text-2xl font-bold text-primary-title mb-4">
                   Complétez votre expertise
                 </h3>
-                <p className="text-gray-700 dark:text-gray-200 mb-6">
+                <p className="text-primary-secondary mb-6">
                   Ces domaines complémentaires enrichiront votre maîtrise de la négociation
                 </p>
               </div>
@@ -453,7 +453,7 @@ export default function NegociationClosingPage() {
                     <span className="text-2xl">🎯</span>
                     <h4 className="font-bold text-blue-600 group-hover:text-blue-700">Prospection & SDR</h4>
                   </div>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                  <p className="text-sm text-primary-secondary">
                     Alimentez votre pipeline avec des prospects qualifiés prêts à négocier. 
                     Plus vous avez d'opportunités, plus vous négociez en position de force.
                   </p>
@@ -467,7 +467,7 @@ export default function NegociationClosingPage() {
                     <span className="text-2xl">🧠</span>
                     <h4 className="font-bold text-purple-600 group-hover:text-purple-700">Psychologie & Influence</h4>
                   </div>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                  <p className="text-sm text-primary-secondary">
                     Maîtrisez les biais cognitifs et techniques d'influence pour négocier 
                     avec une compréhension profonde des mécanismes de décision.
                   </p>
@@ -485,10 +485,10 @@ export default function NegociationClosingPage() {
                 <div className="inline-block bg-red-500/20 text-red-600 dark:text-red-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🎯 Formation
                 </div>
-                <h4 className="text-xl font-bold text-blue-ink dark:text-red-400 mb-3">
+                <h4 className="text-xl font-bold text-primary-title mb-3">
                   Bootcamp Négociation
                 </h4>
-                <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">
+                <p className="text-primary-secondary mb-4 text-sm">
                   Maîtrisez les techniques de ces livres avec une formation pratique adaptée aux enjeux PME. 
                   Négociation collaborative, closing consultatif, gestion des objections.
                 </p>
@@ -504,10 +504,10 @@ export default function NegociationClosingPage() {
                 <div className="inline-block bg-orange-500/20 text-orange-600 dark:text-orange-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🤝 Accompagnement
                 </div>
-                <h4 className="text-xl font-bold text-blue-ink dark:text-orange-400 mb-3">
+                <h4 className="text-xl font-bold text-primary-title mb-3">
                   Coaching Négociation Personnalisé
                 </h4>
-                <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">
+                <p className="text-primary-secondary mb-4 text-sm">
                   Accompagnement individuel pour transformer votre approche de la négociation. 
                   Débriefing de vos négociations réelles, techniques avancées, mindset gagnant.
                 </p>

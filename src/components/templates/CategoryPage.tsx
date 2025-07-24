@@ -222,7 +222,7 @@ export default function CategoryPageTemplate({
                 <h3 className={`text-2xl font-bold text-blue-ink dark:text-[${theme.primaryColor}] mb-4`}>
                   Exemples concrets de {category.title} en PME
                 </h3>
-                <p className="text-gray-700 dark:text-gray-200 mb-6">
+                <p className="text-primary-secondary/90">
                   Découvrez comment mes clients PME appliquent concrètement les concepts de ces livres
                 </p>
               </div>
@@ -257,7 +257,7 @@ export default function CategoryPageTemplate({
                     Retour d'expérience Laurent Serre
                   </h4>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                <p className="text-primary-secondary/90">
                   "Ces transformations ne se font pas du jour au lendemain. Mes clients qui réussissent le mieux 
                   suivent une approche progressive : ils commencent par maîtriser un concept, mesurent l'impact, 
                   puis étendent progressivement. L'erreur classique est de vouloir tout appliquer d'un coup."
@@ -265,15 +265,15 @@ export default function CategoryPageTemplate({
                 <div className="grid md:grid-cols-3 gap-4 mt-4">
                   <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
                     <div className={`text-2xl font-bold text-[${theme.primaryColor}]`}>6 mois</div>
-                    <div className="text-xs text-gray-600 dark:text-gray-400">Durée moyenne de maîtrise</div>
+                    <div className="text-xs text-primary-secondary/70">Durée moyenne de maîtrise</div>
                   </div>
                   <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
                     <div className={`text-2xl font-bold text-[${theme.primaryColor}]`}>3-5x</div>
-                    <div className="text-xs text-gray-600 dark:text-gray-400">ROI moyen sur l'investissement</div>
+                    <div className="text-xs text-primary-secondary/70">ROI moyen sur l'investissement</div>
                   </div>
                   <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
                     <div className={`text-2xl font-bold text-[${theme.primaryColor}]`}>95%</div>
-                    <div className="text-xs text-gray-600 dark:text-gray-400">Taux de satisfaction clients</div>
+                    <div className="text-xs text-primary-secondary/70">Taux de satisfaction clients</div>
                   </div>
                 </div>
               </div>
@@ -311,7 +311,7 @@ export default function CategoryPageTemplate({
                 <h3 className={`text-2xl font-bold text-blue-ink dark:text-[${theme.primaryColor}] mb-4`}>
                   Prêt à transformer vos résultats en {category.title} ?
                 </h3>
-                <p className="text-gray-700 dark:text-gray-200">
+                <p className="text-primary-secondary">
                   Découvrez comment appliquer concrètement ces concepts dans votre PME
                 </p>
               </div>
@@ -341,7 +341,7 @@ export default function CategoryPageTemplate({
                     <span className="text-2xl">💬</span>
                     <h4 className={`text-xl font-bold text-[${theme.primaryColor}]`}>Coaching Personnalisé</h4>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-200 mb-4">
+                  <p className="text-primary-secondary mb-4">
                     Accompagnement sur-mesure pour votre équipe commerciale
                   </p>
                   <span className={`text-sm font-medium text-[${theme.primaryColor}] group-hover:underline`}>
@@ -353,9 +353,9 @@ export default function CategoryPageTemplate({
               <div className="mt-6 text-center">
                 <Link 
                   href="/ressources/meilleurs-livres"
-                  className="inline-flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-[var(--theme-primary)] transition-colors"
+                  className="inline-flex items-center gap-2 text-primary-secondary/80 hover:text-[var(--theme-primary)] transition-colors"
                 >
-                  ← Retour aux catégories de livres
+                  ← Retour à la bibliothèque
                 </Link>
               </div>
             </div>

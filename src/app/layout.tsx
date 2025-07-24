@@ -7,6 +7,7 @@ import Footer from "@/components/layout/Footer";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
 import AnalyticsConsent from "@/components/AnalyticsConsent";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -72,7 +73,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html lang="fr" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <AnalyticsConsent />
@@ -196,11 +197,18 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${openSans.variable} ${nunito.variable} ${robotoSlab.variable} antialiased`}
       >
-        <GoogleAnalytics />
-        <Header />
-        {children}
-        <Footer />
-        <CookieConsentBanner />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <GoogleAnalytics />
+          <Header />
+          {children}
+          <Footer />
+          <CookieConsentBanner />
+        </ThemeProvider>
       </body>
     </html>
   );
