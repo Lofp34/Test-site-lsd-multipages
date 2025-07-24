@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { ArrowRight, Target, Users, TrendingUp, Award, CheckCircle, Star, Crown, Zap, Phone, Mail, Calendar, BarChart } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
-import StructuredData from '@/components/StructuredData';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
@@ -46,26 +45,8 @@ export const metadata: Metadata = {
 
 export default function ExpertDeveloppementCommercialPMEPage() {
   return (
-    <>
-      <StructuredData type="person" />
-      <StructuredData type="organization" />
-      <StructuredData 
-        type="service" 
-        data={{
-          name: "Expert Développement Commercial PME",
-          description: "Accompagnement complet pour transformer la performance commerciale des PME avec formation, coaching et stratégies sur-mesure",
-          price: "Sur devis"
-        }}
-      />
-      <StructuredData 
-        type="breadcrumb" 
-        data={[
-          { name: "Accueil", url: "/" },
-          { name: "Expert Développement Commercial PME", url: "/expert-developpement-commercial-pme" }
-        ]}
-      />
-      
-      <main className="flex flex-col min-h-screen bg-white
+    <>      
+      <main className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
       <section className="min-h-[80vh] relative overflow-hidden flex items-center justify-center pt-20">
         <div className="absolute inset-0 z-0">

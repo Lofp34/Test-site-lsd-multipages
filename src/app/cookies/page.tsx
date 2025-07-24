@@ -24,7 +24,7 @@ export default function PolitiqueCookies() {
             <div className="mt-4 w-24 h-1.5 bg-mint-green mx-auto rounded-full"></div>
           </div>
 
-          <div className="prose prose-lg mx-auto text-left
+          <div className="prose prose-lg mx-auto text-left">
             <p>
               Lors de la consultation de notre site laurentserre.com, des cookies sont déposés sur votre ordinateur, votre mobile ou votre tablette. Cette page vous permet de mieux comprendre comment fonctionnent les cookies et comment utiliser les outils actuels afin de les paramétrer.
             </p>

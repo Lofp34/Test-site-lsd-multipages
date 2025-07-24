@@ -1,18 +1,18 @@
 import type { Metadata } from 'next';
-import { Users, Target, TrendingUp, CheckCircle, Star, ArrowRight, Award, Zap } from 'lucide-react';
+import { Award, Target, Users, CheckCircle, ArrowRight, BookOpen, TrendingUp } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Formation Commerciale PME | Laurent Serre - Programmes Sur-Mesure',
-  description: 'Formations commerciales adaptées aux PME. Bootcamp intensif, prospection, closing, management. Méthodes terrain éprouvées par Laurent Serre, expert 20 ans.',
-  keywords: 'formation commerciale PME, formation vente PME, bootcamp commercial, formation prospection, formation closing, formation équipe commerciale PME',
+  title: 'Formation Commerciale PME | Laurent Serre - Expert Développement Commercial',
+  description: 'Formation commerciale PME sur-mesure. Laurent Serre développe les compétences de vos équipes avec des méthodes terrain éprouvées. Résultats garantis.',
+  keywords: 'formation commerciale PME, formation vente PME, formation équipe commerciale, bootcamp commercial PME, développement commercial formation',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
     canonical: 'https://laurentserre.com/formation-commerciale-pme',
   },
   openGraph: {
-    title: 'Formation Commerciale PME | Laurent Serre - Programmes Sur-Mesure',
-    description: 'Formations commerciales adaptées aux PME. Bootcamp intensif, prospection, closing, management. Méthodes terrain éprouvées.',
+    title: 'Formation Commerciale PME | Laurent Serre - Expert Développement Commercial',
+    description: 'Formation commerciale PME sur-mesure. Développez les compétences de vos équipes commerciales.',
     url: 'https://laurentserre.com/formation-commerciale-pme',
     type: 'website',
     locale: 'fr_FR',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function FormationCommercialePMEPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white
+    <main className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -44,20 +44,20 @@ export default function FormationCommercialePMEPage() {
             </h1>
             
             <p className="text-xl text-white/95 leading-relaxed max-w-3xl mx-auto mb-8">
-              <Link href="/expert-developpement-commercial-pme" className="text-mint-green hover:underline">Laurent Serre, expert développement commercial</Link>, 
-              conçoit des formations adaptées aux spécificités des PME. Du 
-              <Link href="/bootcamp" className="text-mint-green hover:underline"> bootcamp intensif</Link> aux 
-              <Link href="/ressources/guide-prospection" className="text-mint-green hover:underline"> ressources pratiques</Link>, 
-              transformez vos équipes avec des méthodes terrain éprouvées.
+              <Link href="/expert-developpement-commercial-pme" className="text-mint-green hover:underline">Laurent Serre, expert développement commercial PME</Link>, 
+              conçoit des formations commerciales sur-mesure adaptées aux spécificités des PME. 
+              <Link href="/formateur-vente-pme" className="text-mint-green hover:underline">Méthodes terrain éprouvées</Link> et 
+              <Link href="/transformation-commerciale" className="text-mint-green hover:underline">résultats garantis</Link> 
+              pour développer vos équipes.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/diagnostic" className="inline-flex items-center bg-mint-green hover:bg-mint-green/90 text-white px-8 py-4 rounded-full font-semibold transition-colors">
                 <Target className="w-5 h-5 mr-2" />
-                Diagnostic Gratuit
+                Formation Sur-Mesure
               </Link>
-              <Link href="/bootcamp" className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-blue-ink px-8 py-4 rounded-full font-semibold transition-colors">
-                <Zap className="w-5 h-5 mr-2" />
+              <Link href="/bootcamp-commercial-intensif" className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-blue-ink px-8 py-4 rounded-full font-semibold transition-colors">
+                <BookOpen className="w-5 h-5 mr-2" />
                 Bootcamp Intensif
               </Link>
             </div>
@@ -65,135 +65,29 @@ export default function FormationCommercialePMEPage() {
         </div>
       </section>
 
-      {/* Nos Formations */}
-      <section className="py-20 bg-white
+      {/* Programmes Formation */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-title font-bold text-blue-ink mb-6">
-              Nos Formations Spécialisées PME
+              Programmes de Formation Commerciale
             </h2>
             <p className="text-xl text-gray-anthracite max-w-3xl mx-auto">
-              Des programmes conçus spécifiquement pour répondre aux défis commerciaux des PME
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Bootcamp Commercial Intensif */}
-            <div className="bg-white rounded-2xl p-8 border border-mint-green/20 hover:shadow-2xl transition-all duration-300">
-              <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
-                <Zap className="w-8 h-8 text-mint-green" />
-              </div>
-              <h3 className="text-2xl font-title font-bold text-blue-ink mb-4">
-                Bootcamp Commercial Intensif
-              </h3>
-              <p className="text-gray-anthracite mb-6">
-                Formation accélérée de 3 jours pour transformer rapidement vos commerciaux.
-              </p>
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center text-gray-600
-                  <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/guide-prospection" className="hover:text-mint-green">Prospection moderne</Link>
-                </div>
-                <div className="flex items-center text-gray-600
-                  <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/guide-closing" className="hover:text-mint-green">Techniques de closing</Link>
-                </div>
-                <div className="flex items-center text-gray-600
-                  <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/outil-preparation-rdv" className="hover:text-mint-green">Préparation RDV</Link>
-                </div>
-              </div>
-              <Link href="/bootcamp" className="inline-flex items-center text-mint-green hover:underline font-semibold">
-                En savoir plus <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </div>
-
-            {/* Formation Prospection Avancée */}
-            <div className="bg-white rounded-2xl p-8 hover:shadow-2xl transition-all duration-300">
-              <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
-                <Target className="w-8 h-8 text-mint-green" />
-              </div>
-              <h3 className="text-2xl font-title font-bold text-blue-ink mb-4">
-                Formation Prospection Avancée
-              </h3>
-              <p className="text-gray-anthracite mb-6">
-                Maîtrisez les 7 canaux de prospection moderne avec notre <Link href="/ressources/guide-prospection" className="text-mint-green hover:underline">guide expert</Link>.
-              </p>
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center text-gray-600
-                  <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/scripts-prospection" className="hover:text-mint-green">Scripts IMPACT et AIDA+</Link>
-                </div>
-                <div className="flex items-center text-gray-600
-                  <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/linkedin-prospection" className="hover:text-mint-green">LinkedIn et réseaux sociaux</Link>
-                </div>
-                <div className="flex items-center text-gray-600
-                  <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/systeme-suivi-prospects" className="hover:text-mint-green">Système de suivi efficace</Link>
-                </div>
-              </div>
-              <Link href="/ressources/guide-prospection" className="inline-flex items-center text-mint-green hover:underline font-semibold">
-                Télécharger le guide <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </div>
-
-            {/* Formation Management Commercial */}
-            <div className="bg-white rounded-2xl p-8 hover:shadow-2xl transition-all duration-300">
-              <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
-                <Users className="w-8 h-8 text-mint-green" />
-              </div>
-              <h3 className="text-2xl font-title font-bold text-blue-ink mb-4">
-                Management Commercial
-              </h3>
-              <p className="text-gray-anthracite mb-6">
-                Développez vos compétences de <Link href="/management-equipe-commerciale" className="text-mint-green hover:underline">manager commercial</Link> pour PME.
-              </p>
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center text-gray-600
-                  <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/techniques-motivation-equipe" className="hover:text-mint-green">Motivation et coaching</Link>
-                </div>
-                <div className="flex items-center text-gray-600
-                  <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/suivi-performance" className="hover:text-mint-green">Pilotage performance</Link>
-                </div>
-                <div className="flex items-center text-gray-600
-                  <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/guide-recrutement-commercial" className="hover:text-mint-green">Recrutement commercial</Link>
-                </div>
-              </div>
-              <Link href="/management-equipe-commerciale" className="inline-flex items-center text-mint-green hover:underline font-semibold">
-                Découvrir <ArrowRight className="w-4 h-4 ml-1" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Ressources Gratuites */}
-      <section className="py-20 bg-slate-50
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">
-              Ressources Formation Gratuites
-            </h2>
-            <p className="text-xl text-gray-anthracite max-w-2xl mx-auto">
-              Accédez immédiatement à nos outils et guides pratiques
+              Des formations adaptées aux besoins spécifiques de votre équipe commerciale
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Link href="/ressources/guide-prospection" className="group">
-              <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
+              <div className="bg-white rounded-xl p-6 border border-mint-green/20 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
                 <h3 className="text-lg font-semibold text-blue-ink group-hover:text-mint-green mb-3">
-                  Guide Ultime de la Prospection
+                  Formation Prospection
                 </h3>
                 <p className="text-gray-anthracite mb-4">
-                  Méthodes complètes, scripts et système de suivi pour transformer votre prospection.
+                  Maîtrisez les techniques modernes de prospection : téléphone, email, LinkedIn et réseaux sociaux.
                 </p>
                 <div className="flex items-center text-mint-green font-medium">
-                  Télécharger gratuitement <ArrowRight className="w-4 h-4 ml-1" />
+                  Voir le programme <ArrowRight className="w-4 h-4 ml-1" />
                 </div>
               </div>
             </Link>
@@ -201,27 +95,27 @@ export default function FormationCommercialePMEPage() {
             <Link href="/ressources/guide-closing" className="group">
               <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
                 <h3 className="text-lg font-semibold text-blue-ink group-hover:text-mint-green mb-3">
-                  Guide Ultime du Closing
+                  Formation Techniques de Vente
                 </h3>
                 <p className="text-gray-anthracite mb-4">
-                  7 techniques avancées et méthode AREA pour transformer vos négociations.
+                  Perfectionnez vos techniques de closing et optimisez chaque étape du processus de vente.
                 </p>
                 <div className="flex items-center text-mint-green font-medium">
-                  Télécharger gratuitement <ArrowRight className="w-4 h-4 ml-1" />
+                  Voir le programme <ArrowRight className="w-4 h-4 ml-1" />
                 </div>
               </div>
             </Link>
 
-            <Link href="/ressources/outil-preparation-rdv" className="group">
+            <Link href="/ressources/techniques-de-negociation" className="group">
               <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1">
                 <h3 className="text-lg font-semibold text-blue-ink group-hover:text-mint-green mb-3">
-                  Outil Préparation RDV
+                  Formation Négociation
                 </h3>
                 <p className="text-gray-anthracite mb-4">
-                  Checklist complète et questions types pour préparer vos rendez-vous commerciaux.
+                  Développez vos compétences de négociation pour préserver vos marges et fidéliser vos clients.
                 </p>
                 <div className="flex items-center text-mint-green font-medium">
-                  Utiliser l'outil <ArrowRight className="w-4 h-4 ml-1" />
+                  Voir le programme <ArrowRight className="w-4 h-4 ml-1" />
                 </div>
               </div>
             </Link>
@@ -229,25 +123,114 @@ export default function FormationCommercialePMEPage() {
         </div>
       </section>
 
-      {/* CTA Laurent Serre */}
+      {/* Méthodes Formation */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-4xl font-title font-bold text-blue-ink mb-8">
+                Méthodes de Formation Terrain
+              </h2>
+              
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-mint-green/10 rounded-lg flex items-center justify-center">
+                    <span className="text-mint-green font-bold text-lg">1</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-blue-ink mb-2">Formation Action</h3>
+                    <p className="text-gray-anthracite">
+                      80% de pratique, 20% de théorie. Vos commerciaux appliquent immédiatement 
+                      les techniques sur leurs vrais prospects.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-mint-green/10 rounded-lg flex items-center justify-center">
+                    <span className="text-mint-green font-bold text-lg">2</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-blue-ink mb-2">Personnalisation</h3>
+                    <p className="text-gray-anthracite">
+                      Chaque formation est adaptée à votre secteur, vos enjeux et votre maturité commerciale.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-mint-green/10 rounded-lg flex items-center justify-center">
+                    <span className="text-mint-green font-bold text-lg">3</span>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-blue-ink mb-2">Suivi Terrain</h3>
+                    <p className="text-gray-anthracite">
+                      Accompagnement post-formation pour ancrer les nouvelles pratiques et mesurer les résultats.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-2xl p-8">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-6">
+                Résultats Formation Moyens
+              </h3>
+              
+              <div className="grid grid-cols-2 gap-6 mb-8">
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-mint-green mb-2">+30%</div>
+                  <div className="text-gray-anthracite">Performance Équipe</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-mint-green mb-2">90%</div>
+                  <div className="text-gray-anthracite">Satisfaction Formation</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-mint-green mb-2">+40%</div>
+                  <div className="text-gray-anthracite">Taux de Closing</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-mint-green mb-2">85%</div>
+                  <div className="text-gray-anthracite">Ancrage à 6 Mois</div>
+                </div>
+              </div>
+
+              <div className="bg-white/50 rounded-xl p-6">
+                <h4 className="font-semibold text-blue-ink mb-3">Témoignage Formation</h4>
+                <p className="text-gray-anthracite italic mb-3">
+                  "Formation exceptionnelle ! Laurent adapte parfaitement sa pédagogie aux contraintes PME. 
+                  Nos commerciaux ont immédiatement appliqué les techniques."
+                </p>
+                <div className="text-sm text-mint-green font-semibold">
+                  DRH PME Services • 18 collaborateurs
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Formation */}
       <section className="py-20 bg-blue-ink">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl sm:text-4xl font-title font-bold text-white mb-6">
-            Formateur Commercial Expert PME
+            Formation Commerciale PME Expert
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            <Link href="/expert-developpement-commercial-pme" className="text-mint-green hover:underline">Laurent Serre, expert développement commercial PME</Link>, 
-            intervient comme <Link href="/formateur-vente-pme" className="text-mint-green hover:underline">formateur vente spécialisé PME</Link> depuis 20 ans.
+            Transformez les compétences de vos équipes avec 
+            <Link href="/expert-developpement-commercial-pme" className="text-mint-green hover:underline"> Laurent Serre</Link>, 
+            expert en formation commerciale PME.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/diagnostic" className="inline-flex items-center bg-mint-green hover:bg-mint-green/90 text-white px-8 py-4 rounded-full font-semibold transition-colors">
               <Target className="w-5 h-5 mr-2" />
-              Diagnostic Formation Gratuit
+              Formation Sur-Mesure
             </Link>
-            <Link href="/expert-developpement-commercial-pme" className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-blue-ink px-8 py-4 rounded-full font-semibold transition-colors">
-              <Star className="w-5 h-5 mr-2" />
-              Découvrir l'Expert
+            <Link href="/formateur-vente-pme" className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-blue-ink px-8 py-4 rounded-full font-semibold transition-colors">
+              <Award className="w-5 h-5 mr-2" />
+              Découvrir le Formateur
             </Link>
           </div>
         </div>
