@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function Article5() {
   return (
-    <main className="bg-primary-bg text-gray-dark
+    <main className="bg-primary-bg text-gray-dark">
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -111,7 +111,7 @@ export default function Article5() {
           </h2>
           
           <div className="overflow-x-auto mb-8">
-            <table className="w-full border-collapse border border-gray-300
+            <table className="w-full border-collapse border border-gray-300">
               <thead>
                 <tr className="bg-blue-ink/10">
                   <th className="border border-gray-300 p-3 text-left font-title font-semibold">Aspect</th>
@@ -125,7 +125,7 @@ export default function Article5() {
                   <td className="border border-gray-300 p-3">Produit</td>
                   <td className="border border-gray-300 p-3">Client</td>
                 </tr>
-                <tr className="bg-gray-50
+                <tr className="bg-gray-50">
                   <td className="border border-gray-300 p-3 font-semibold">Approche</td>
                   <td className="border border-gray-300 p-3">Transaction</td>
                   <td className="border border-gray-300 p-3">Relation</td>
@@ -135,7 +135,7 @@ export default function Article5() {
                   <td className="border border-gray-300 p-3">Court terme</td>
                   <td className="border border-gray-300 p-3">Long terme</td>
                 </tr>
-                <tr className="bg-gray-50
+                <tr className="bg-gray-50">
                   <td className="border border-gray-300 p-3 font-semibold">Posture</td>
                   <td className="border border-gray-300 p-3">Présente</td>
                   <td className="border border-gray-300 p-3">Conseille</td>
@@ -295,7 +295,7 @@ export default function Article5() {
           </p>
         </div>
       </article>
-      <section className="py-16 bg-white
+      <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
             Prendre contact avec Laurent Serre

@@ -155,7 +155,7 @@ export default function BlogPage() {
       </section>
 
       {/* Articles en vedette */}
-      <section className="py-16 bg-white
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-title font-bold text-blue-ink mb-12">
             Articles en vedette
@@ -210,7 +210,7 @@ export default function BlogPage() {
       </section>
 
       {/* Tous les articles */}
-      <section className="py-16 bg-primary-bg
+      <section className="py-16 bg-primary-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-title font-bold text-blue-ink mb-12">
             Tous les articles
@@ -262,7 +262,7 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-white
+      <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
             Prendre contact avec Laurent Serre
