@@ -113,22 +113,20 @@ const mainPageStructuredData = {
 
 export const metadata: Metadata = {
   title: 'Meilleurs Livres de Vente | Guide Complet | Laurent Serre',
-  description: 'La sélection complète des meilleurs livres de vente, négociation, prospection, management et développement commercial. Plus de 45 livres analysés, résumés détaillés et conseils terrain par Laurent Serre.',
+  description: 'La sélection complète des meilleurs livres de vente, négociation, prospection, management et développement commercial. Résumés détaillés et conseils terrain par Laurent Serre.',
   keywords: [
     'meilleurs livres vente',
     'livres développement commercial',
     'livres négociation',
     'livres prospection',
     'livres management commercial',
-    'bibliothèque commerciale',
-    'formation vente livres',
-    'laurent serre livres',
-    'références commerciales',
-    'guide livres business'
+    'résumés livres business',
+    'laurent serre',
+    'développement commercial PME'
   ],
   openGraph: {
     title: 'Meilleurs Livres de Vente | Guide Complet | Laurent Serre',
-    description: 'La sélection complète des meilleurs livres de vente, négociation, prospection, management et développement commercial. Plus de 45 livres analysés avec conseils terrain.',
+    description: 'La sélection complète des meilleurs livres de vente, négociation, prospection, management et développement commercial. Résumés détaillés et conseils terrain.',
     type: 'website',
     locale: 'fr_FR',
     url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres',
@@ -145,7 +143,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Meilleurs Livres de Vente | Guide Complet | Laurent Serre',
-    description: 'La sélection complète des meilleurs livres de vente, négociation, prospection, management et développement commercial. Plus de 45 livres analysés.',
+    description: 'La sélection complète des meilleurs livres de vente, négociation, prospection, management et développement commercial.',
     images: ['https://laurent-serre-developpement.fr/images/og-meilleurs-livres.jpg'],
   },
   alternates: {
@@ -280,78 +278,6 @@ export default function MeilleursLivresPage() {
           </div>
         </AnimatedSection>
 
-        {/* Grid catégories améliorée */}
-        <section className="max-w-6xl mx-auto px-4" aria-labelledby="categories-title">
-          <AnimatedSection delay={200}>
-            <div className="text-center mb-8">
-              <span className="inline-block bg-blue-500/20 text-blue-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
-                <span className="inline mr-2">🎯</span>
-                Domaines d'expertise
-              </span>
-              <h2 id="categories-title" className="text-2xl font-bold text-primary-title mb-4">
-                9 domaines pour maîtriser tous les aspects du commercial
-              </h2>
-              <p className="text-primary-secondary/90 leading-relaxed max-w-3xl mx-auto">
-                De la prospection au management, chaque catégorie regroupe les références 
-                incontournables avec résumés détaillés et conseils d'application terrain.
-              </p>
-            </div>
-            
-            <div 
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
-              role="list"
-              aria-label="Catégories de livres commerciaux"
-            >
-              {bookCategories.map((cat, i) => (
-                <AnimatedSection key={cat.slug} delay={300 + i * 100}>
-                  <div role="listitem">
-                    <Link
-                      href={`/ressources/meilleurs-livres/${cat.slug}`}
-                      className="group relative rounded-2xl bg-white/70 dark:bg-blue-ink/80 backdrop-blur-sm border border-mint-green/20 shadow-xl hover:shadow-2xl p-6 flex flex-col items-center transition-all duration-300 hover:scale-[1.02] overflow-hidden min-h-[320px]"
-                    >
-                      {/* Icône catégorie avec animation */}
-                      <div className="mb-4 w-16 h-16 flex items-center justify-center rounded-2xl bg-primary-accent/10 group-hover:bg-primary-accent/20 shadow-lg transition-all duration-300 group-hover:scale-110">
-                        <span className="text-4xl filter drop-shadow-sm">{categoryIcons[cat.slug] || '📚'}</span>
-                      </div>
-                      
-                      <h3 className="text-xl font-bold text-primary-title group-hover:text-primary-accent text-center mb-2 transition-colors">
-                        {cat.title}
-                      </h3>
-                      
-                      <p className="text-center text-sm text-primary-secondary mb-4 leading-relaxed">
-                        {cat.pitch}
-                      </p>
-                      
-                      {/* Aperçu des livres */}
-                      <div className="flex flex-wrap gap-1 justify-center mt-auto mb-4">
-                        {cat.books.slice(0, 3).map((book) => (
-                          <span key={book.slug} className="bg-mint-green/10 text-mint-green text-xs px-2 py-1 rounded-full font-medium">
-                            {book.title.length > 15 ? book.title.substring(0, 15) + '...' : book.title}
-                          </span>
-                        ))}
-                        {cat.books.length > 3 && (
-                          <span className="bg-mint-green/10 text-mint-green text-xs px-2 py-1 rounded-full font-medium">
-                            +{cat.books.length - 3} autres
-                          </span>
-                        )}
-                      </div>
-                      
-                      {/* Indicateur d'action */}
-                      <div className="flex items-center gap-2 text-mint-green text-sm font-medium group-hover:text-mint-green/80 transition-colors">
-                        <span>Découvrir</span>
-                        <span className="transform group-hover:translate-x-1 transition-transform">→</span>
-                      </div>
-                      
-                      {/* Effet de survol */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-mint-green/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl"></div>
-                    </Link>
-                  </div>
-                </AnimatedSection>
-              ))}
-            </div>
-          </AnimatedSection>
-        </section>
-
         {/* Section pourquoi cette sélection */}
         <AnimatedSection delay={400}>
           <div className="max-w-4xl mx-auto mb-12 px-4">
@@ -401,8 +327,8 @@ export default function MeilleursLivresPage() {
                 </p>
               </div>
             </div>
-          </AnimatedSection>
-        </section>
+          </div>
+        </AnimatedSection>
 
         {/* CTAs multiples */}
         <AnimatedSection delay={500}>
