@@ -4,147 +4,113 @@
 
 @layer base {
   :root {
-    /* Mode Clair */
-    --background: 204 10% 95%; /* #F2F5F7 */
-    --foreground: 215 58% 24%; /* #1B365D */
-  
-    --primary-bg: 204 10% 95%;
-    --primary-title: 215 58% 24%;
-    --primary-accent: 173 100% 37%; /* #00BDA4 */
-    --primary-secondary: 0 0% 25%; /* #414141 */
-    --primary-emotion: 29 100% 67%; /* #FFAA5C */
+    /* Couleurs principales - Mode clair uniquement */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    
+    /* Charte graphique Laurent Serre */
+    --blue-ink: 215 58% 24%;        /* Bleu principal pour titres */
+    --mint-green: 160 84% 39%;      /* Vert menthe pour accents */
+    --orange-soft: 25 95% 53%;      /* Orange doux pour émotions */
+    --gray-anthracite: 220 13% 18%; /* Gris anthracite pour texte */
+    
+    /* Couleurs sémantiques */
+    --primary-bg: 0 0% 100%;        /* Fond principal blanc */
+    --primary-title: 215 58% 24%;   /* Titres en bleu-ink */
+    --primary-accent: 160 84% 39%;  /* Accents en mint-green */
+    --primary-secondary: 220 13% 18%; /* Texte secondaire anthracite */
+    --primary-emotion: 25 95% 53%;  /* Émotions en orange-soft */
+    --primary-dark-bg: 215 58% 24%; /* Fond sombre (non utilisé) */
+  }
 
-    --primary-dark-bg: 215 58% 24%; /* #1B365D - Couleur ancre pour les fonds sombres */
-  }
-  
-  .dark {
-    /* Mode Sombre */
-    --background: 215 58% 18%; /* Un peu plus clair que blue-ink pour le fond */
-    --foreground: 204 10% 95%; /* Texte principal clair */
-  
-    --primary-bg: 215 58% 12%; /* Fond très sombre, proche de blue-ink */
-    --primary-title: 204 10% 95%; /* Titres clairs */
-    --primary-accent: 173 100% 45%; /* Vert menthe un peu plus vif */
-    --primary-secondary: 204 10% 85%; /* Texte secondaire gris clair */
-    --primary-emotion: 29 100% 75%; /* Orange un peu plus vif */
-  }
-  
   body {
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
   }
 }
 
-/* Classes utilitaires pour la typographie - SUPPRIMÉES CAR GÉRÉES PAR TAILWIND */
+/* Animations personnalisées */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
-/* Animation pour le bandeau de logos */
-@keyframes logoScroll {
-  0% {
-    transform: translateX(0);
+@keyframes slideUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
   }
-  100% {
-    transform: translateX(-50%);
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
   }
 }
 
-.hover\:pause:hover {
-  animation-play-state: paused !important;
+@keyframes slideDown {
+  from { 
+    opacity: 0; 
+    transform: translateY(-20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes scaleIn {
+  from { 
+    opacity: 0; 
+    transform: scale(0.9); 
+  }
+  to { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
+}
+
+@keyframes bounceIn {
+  0% { 
+    opacity: 0; 
+    transform: scale(0.3); 
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.05); 
+  }
+  70% { 
+    transform: scale(0.9); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
+  0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
 }
 
-.animate-float {
-  animation: float 4s ease-in-out infinite;
-}
-
-@keyframes pulse-border {
-  0%, 100% {
-    box-shadow: 0 0 20px 5px var(--accent);
-    transform: scale(1.05);
-    animation-play-state: paused !important;
+/* Classes utilitaires personnalisées */
+@layer components {
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-ink to-mint-green bg-clip-text text-transparent;
   }
-  50% {
-    box-shadow: 0 0 20px 5px var(--accent);
-    transform: scale(1.05);
-    animation-play-state: paused !important;
+  
+  .bg-gradient-primary {
+    @apply bg-gradient-to-br from-primary-bg via-mint-green/10 to-background;
   }
-}
-
-/* Technological animations for Digital & AI section */
-@keyframes circuit-flow {
-  0% { 
-    background-position: 0% 50%;
-    opacity: 0.3;
+  
+  .shadow-soft {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
-  50% { 
-    background-position: 100% 50%;
-    opacity: 0.8;
+  
+  .shadow-medium {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   }
-  100% { 
-    background-position: 0% 50%;
-    opacity: 0.3;
+  
+  .shadow-strong {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 }
 
-@keyframes neural-pulse {
-  0%, 100% { 
-    transform: scale(1) rotate(0deg);
-    filter: hue-rotate(0deg);
-  }
-  25% { 
-    transform: scale(1.1) rotate(90deg);
-    filter: hue-rotate(90deg);
-  }
-  50% { 
-    transform: scale(1.2) rotate(180deg);
-    filter: hue-rotate(180deg);
-  }
-  75% { 
-    transform: scale(1.1) rotate(270deg);
-    filter: hue-rotate(270deg);
-  }
-}
-
-@keyframes data-stream {
-  0% { 
-    transform: translateY(100vh) scaleY(0);
-    opacity: 0;
-  }
-  10% { 
-    opacity: 1;
-    transform: translateY(90vh) scaleY(1);
-  }
-  90% { 
-    opacity: 1;
-    transform: translateY(-10vh) scaleY(1);
-  }
-  100% { 
-    opacity: 0;
-    transform: translateY(-20vh) scaleY(0);
-  }
-}
-
-/* Utility classes for AI/Digital theme */
-.tech-border {
-  border-image: linear-gradient(45deg, var(--accent), #0066FF, var(--accent)) 1;
-  border-style: solid;
-  border-width: 2px;
-}
-
-.neural-glow {
-  box-shadow: 
-    0 0 10px rgba(0, 189, 164, 0.3),
-    0 0 20px rgba(0, 189, 164, 0.2),
-    0 0 30px rgba(0, 189, 164, 0.1);
-}
-
-.circuit-pattern {
-  background-image: 
-    radial-gradient(circle at 25% 25%, rgba(0, 189, 164, 0.1) 2px, transparent 2px),
-    radial-gradient(circle at 75% 75%, rgba(0, 102, 255, 0.1) 2px, transparent 2px);
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 10px;
-}
