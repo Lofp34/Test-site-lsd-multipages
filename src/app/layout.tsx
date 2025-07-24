@@ -197,18 +197,14 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${openSans.variable} ${nunito.variable} ${robotoSlab.variable} antialiased`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <GoogleAnalytics />
-          <Header />
+        <Header />
+        <main>
           {children}
-          <Footer />
-          <CookieConsentBanner />
-        </ThemeProvider>
+        </main>
+        <Footer />
+        <CookieConsentBanner />
+        <AnalyticsConsent />
+        <GoogleAnalytics />
       </body>
     </html>
   );

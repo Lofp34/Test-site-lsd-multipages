@@ -188,7 +188,7 @@ export default function MeilleursLivresPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(mainPageStructuredData) }}
       />
       
-      <main className="relative bg-gradient-to-br from-primary-bg via-mint-green/10 to-background min-h-screen pt-24 pb-16 overflow-hidden">
+      <main className="relative bg-gradient-to-br from-white via-mint-green/10 to-gray-50 min-h-screen pt-24 pb-16 overflow-hidden">
         {/* Particle background for bibliothèque atmosphere */}
         <ParticleBackground 
           density={25}
@@ -204,16 +204,15 @@ export default function MeilleursLivresPage() {
             <span 
               className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur"
               role="status"
-              aria-label="Bibliothèque commerciale"
+              aria-label="Catégorie Meilleurs Livres"
             >
-              <span aria-hidden="true">📚</span> Bibliothèque
+              📚 Catégorie
             </span>
-            <h1 id="hero-title" className="text-4xl md:text-5xl font-bold text-primary-title mb-4 drop-shadow-lg">
+            <h1 id="hero-title" className="text-4xl md:text-5xl font-bold text-blue-ink mb-4 drop-shadow-lg">
               Meilleurs Livres de Vente
             </h1>
-            <p className="text-lg md:text-xl text-primary-secondary/90 mb-6 leading-relaxed">
-              La sélection complète des références incontournables pour exceller en développement commercial. 
-              Plus de 45 livres analysés, résumés et enrichis de conseils terrain.
+            <p className="text-lg md:text-xl text-gray-anthracite/90 mb-6 leading-relaxed">
+              La sélection complète des références incontournables pour exceller en développement commercial. Plus de 45 livres analysés, résumés et enrichis de conseils terrain.
             </p>
             
             {/* Message spécifique bibliothèque avec vision Laurent Serre */}
@@ -234,28 +233,24 @@ export default function MeilleursLivresPage() {
                   <div className="w-12 h-12 bg-gradient-to-br from-mint-green to-blue-500 rounded-2xl flex items-center justify-center">
                     <span className="text-2xl">📚</span>
                   </div>
-                  <h2 className="text-xl font-semibold text-mint-green">
+                  <h2 className="text-xl font-semibold text-blue-ink">
                     Une bibliothèque qui transforme les performances
                   </h2>
                 </div>
-                <p className="text-primary-secondary/90 leading-relaxed mb-4">
-                  En 20 ans d'accompagnement PME, j'ai testé des centaines de livres business. 
-                  Cette sélection regroupe uniquement ceux qui ont un impact réel sur le terrain : 
-                  techniques éprouvées, méthodes actionnables, résultats mesurables.
+                <p className="text-gray-anthracite/90 leading-relaxed mb-4">
+                  En 20 ans d'accompagnement PME, j'ai testé des centaines de livres business. Cette sélection regroupe uniquement ceux qui ont un impact réel sur le terrain : techniques éprouvées, méthodes actionnables, résultats mesurables.
                 </p>
                 
-                {/* Vision Laurent Serre OBLIGATOIRE */}
+                {/* Laurent Serre positioning */}
                 <div className="bg-white/10 rounded-lg p-4 mb-4 border border-mint-green/30">
                   <div className="flex items-center gap-3 mb-2">
                     <div className="w-8 h-8 bg-mint-green rounded-full flex items-center justify-center">
                       <span className="text-blue-ink font-bold text-sm">LS</span>
                     </div>
-                    <span className="text-mint-green font-semibold">Vision Laurent Serre</span>
+                    <span className="text-blue-ink font-semibold">Vision Laurent Serre</span>
                   </div>
-                  <p className="text-primary-secondary/90 text-sm italic">
-                    "Trop de commerciaux lisent des livres sans jamais les appliquer. Ma sélection privilégie 
-                    l'actionnable : chaque ouvrage est accompagné de conseils concrets pour passer de la théorie 
-                    à la pratique. Parce qu'un livre qui ne change pas vos résultats ne vaut pas le temps investi."
+                  <p className="text-gray-anthracite/90 text-sm italic">
+                    "Trop de commerciaux lisent des livres sans jamais les appliquer. Ma sélection privilégie l'actionnable : chaque ouvrage est accompagné de conseils concrets pour passer de la théorie à la pratique. Parce qu'un livre qui ne change pas vos résultats ne vaut pas le temps investi."
                   </p>
                 </div>
                 
@@ -264,7 +259,7 @@ export default function MeilleursLivresPage() {
                   {libraryStats.map((stat, index) => (
                     <div key={index} className="text-center">
                       <div className="text-2xl font-bold text-mint-green">{stat.value}</div>
-                      <div className="text-xs text-primary-secondary/70">{stat.label}</div>
+                      <div className="text-xs text-gray-anthracite/70">{stat.label}</div>
                     </div>
                   ))}
                 </div>
@@ -360,111 +355,110 @@ export default function MeilleursLivresPage() {
         {/* Section pourquoi cette sélection */}
         <AnimatedSection delay={400}>
           <div className="max-w-4xl mx-auto mb-12 px-4">
-            <div className="bg-background/70 dark:bg-primary-bg/80 rounded-2xl shadow-2xl p-8 border border-primary-accent/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-mint-green/20 backdrop-blur-sm">
               <div className="text-center mb-6">
-                <span className="inline-block bg-primary-emotion/20 text-primary-emotion font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                <span className="inline-block bg-orange-soft/20 text-orange-soft font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🎯 Méthodologie
                 </span>
-                <h3 className="text-2xl font-bold text-primary-title mb-4">
+                <h3 className="text-2xl font-bold text-blue-ink mb-4">
                   Pourquoi ces livres et pas d'autres ?
                 </h3>
               </div>
               
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-green-700 dark:text-green-300 flex items-center gap-2">
+                  <h4 className="font-semibold text-green-700 flex items-center gap-2">
                     ✅ Critères de sélection
                   </h4>
-                  <ul className="space-y-2 text-sm text-primary-secondary">
-                    <li>• Impact terrain vérifié sur mes clients PME</li>
-                    <li>• Techniques immédiatement applicables</li>
-                    <li>• Auteurs reconnus avec expérience prouvée</li>
-                    <li>• Résultats mesurables et reproductibles</li>
-                    <li>• Adaptation aux enjeux commerciaux actuels</li>
+                  <ul className="space-y-2 text-sm text-gray-anthracite">
+                    <li>• Techniques testées et validées</li>
+                    <li>• Méthodes actionnables immédiatement</li>
+                    <li>• Résultats mesurables et quantifiables</li>
+                    <li>• Adaptées aux enjeux PME françaises</li>
+                    <li>• Conseils terrain de Laurent Serre</li>
                   </ul>
                 </div>
                 
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-red-700 dark:text-red-400 flex items-center gap-2">
+                  <h4 className="font-semibold text-red-700 flex items-center gap-2">
                     ❌ Livres écartés
                   </h4>
-                  <ul className="space-y-2 text-sm text-primary-secondary">
-                    <li>• Théories sans application concrète</li>
-                    <li>• Méthodes obsolètes ou dépassées</li>
-                    <li>• Approches trop agressives ou manipulatrices</li>
-                    <li>• Contenus redondants ou superficiels</li>
-                    <li>• Inadaptés aux contraintes PME</li>
+                  <ul className="space-y-2 text-sm text-gray-anthracite">
+                    <li>• Théories sans application pratique</li>
+                    <li>• Méthodes non adaptées aux PME</li>
+                    <li>• Approches trop génériques</li>
+                    <li>• Livres obsolètes ou dépassés</li>
+                    <li>• Contenu non actionnable</li>
                   </ul>
                 </div>
               </div>
               
-              <div className="mt-6 p-4 bg-primary-accent/10 rounded-lg">
-                <p className="text-sm text-primary-secondary italic">
+              <div className="mt-6 p-4 bg-mint-green/10 rounded-lg">
+                <p className="text-sm text-gray-anthracite italic">
                   💡 <strong>Conseil Laurent Serre :</strong> Ne lisez pas tous ces livres d'un coup ! 
                   Choisissez 1-2 ouvrages par trimestre, appliquez les techniques, mesurez les résultats, 
                   puis passez au suivant. La transformation durable vient de l'application, pas de l'accumulation.
                 </p>
               </div>
             </div>
-          </div>
-        </AnimatedSection>
+          </AnimatedSection>
+        </section>
 
         {/* CTAs multiples */}
         <AnimatedSection delay={500}>
           <div className="max-w-4xl mx-auto text-center px-4">
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-background/70 dark:bg-primary-bg/80 rounded-2xl shadow-2xl p-6 border border-primary-accent/20 backdrop-blur-sm">
-                <div className="inline-block bg-primary-accent/20 text-primary-accent font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+              <div className="bg-white/70 rounded-2xl shadow-2xl p-6 border border-mint-green/20 backdrop-blur-sm">
+                <div className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🎓 Formation
                 </div>
-                <h4 className="text-xl font-bold text-primary-title mb-3">
+                <h4 className="text-xl font-bold text-blue-ink mb-3">
                   Bootcamp Commercial
                 </h4>
-                <p className="text-primary-secondary mb-4 text-sm">
+                <p className="text-gray-anthracite mb-4 text-sm">
                   Appliquez concrètement les meilleures techniques de ces livres 
                   dans une formation intensive adaptée aux PME.
                 </p>
                 <Link 
                   href="/bootcamp-commercial-intensif" 
-                  className="inline-block bg-mint-green text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-mint-green/80 transition-colors duration-300"
+                  className="inline-block bg-mint-green text-blue-ink font-semibold px-6 py-3 rounded-full shadow hover:bg-mint-green/80 transition-colors duration-300"
                 >
                   Découvrir le Bootcamp
                 </Link>
               </div>
               
-              <div className="bg-background/70 dark:bg-primary-bg/80 rounded-2xl shadow-2xl p-6 border border-blue-400/20 backdrop-blur-sm">
-                <div className="inline-block bg-blue-500/20 text-blue-600 dark:text-blue-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+              <div className="bg-white/70 rounded-2xl shadow-2xl p-6 border border-blue-400/20 backdrop-blur-sm">
+                <div className="inline-block bg-blue-500/20 text-blue-600 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🤝 Accompagnement
                 </div>
-                <h4 className="text-xl font-bold text-primary-title mb-3">
+                <h4 className="text-xl font-bold text-blue-ink mb-3">
                   Coaching Personnalisé
                 </h4>
-                <p className="text-primary-secondary mb-4 text-sm">
-                  Accompagnement individuel pour transformer votre approche commerciale 
-                  avec les meilleures pratiques de ces références.
+                <p className="text-gray-anthracite mb-4 text-sm">
+                  Transformez vos performances avec un accompagnement sur-mesure. Débriefing de vos négociations réelles, techniques avancées, mindset gagnant.
                 </p>
                 <Link 
-                  href="/coach-commercial-entreprise" 
-                  className="inline-block bg-blue-500 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-blue-600 transition-colors duration-300"
+                  href="/coach-commercial-entreprise"
+                  className="inline-block bg-mint-green text-blue-ink font-semibold px-6 py-3 rounded-full shadow hover:bg-mint-green/80 transition-colors duration-300"
                 >
                   Découvrir le Coaching
                 </Link>
               </div>
               
-              <div className="bg-background/70 dark:bg-primary-bg/80 rounded-2xl shadow-2xl p-6 border border-orange-400/20 backdrop-blur-sm">
-                <div className="inline-block bg-primary-emotion/20 text-primary-emotion font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+              <div className="bg-white/70 rounded-2xl shadow-2xl p-6 border border-orange-400/20 backdrop-blur-sm">
+                <div className="inline-block bg-orange-soft/20 text-orange-soft font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   📚 Ressources
                 </div>
-                <h4 className="text-xl font-bold text-primary-title mb-3">
+                <h4 className="text-xl font-bold text-blue-ink mb-3">
                   Guides Gratuits
                 </h4>
-                <p className="text-primary-secondary mb-4 text-sm">
+                <p className="text-gray-anthracite mb-4 text-sm">
                   Synthèses pratiques et outils téléchargeables basés sur 
                   les meilleures techniques de ces livres.
                 </p>
                 <Link 
                   href="/ressources" 
-                  className="inline-block bg-orange-soft text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-orange-600 transition-colors duration-300"
+                  className="inline-block bg-orange-soft text-blue-ink font-semibold px-6 py-3 rounded-full shadow hover:bg-orange-soft/80 transition-colors duration-300"
                 >
                   Accéder aux Ressources
                 </Link>
