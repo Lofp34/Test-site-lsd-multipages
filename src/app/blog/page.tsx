@@ -102,7 +102,7 @@ export default function BlogPage() {
   const regularPosts = blogPosts.filter(post => !post.featured);
 
   return (
-    <main className="bg-primary-bg text-gray-dark
+    <main className="bg-primary-bg text-gray-dark">
       {/* Hero Section conforme */}
       <section className="min-h-screen relative overflow-hidden flex items-center justify-center pt-20">
         <div className="absolute inset-0 z-0">
