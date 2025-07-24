@@ -153,10 +153,10 @@ export default function MindsetPerformancePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(categoryStructuredData) }}
       />
       
-      <main className="relative bg-gradient-to-br from-orange-soft/20 via-amber-50/30 to-orange-100/40 min-h-screen pt-24 pb-16 overflow-hidden">
-        {/* Particle background with warm orange tones for motivational atmosphere */}
+      <main className="relative bg-gradient-to-br from-primary-bg via-yellow-500/10 to-background min-h-screen pt-24 pb-16 overflow-hidden">
+        {/* Particle background for mindset atmosphere */}
         <ParticleBackground 
-          density={35}
+          density={30}
           speed={0.4}
           color="#FFAA5C"
           opacity={0.6}
@@ -375,7 +375,7 @@ export default function MindsetPerformancePage() {
                   <h4 className="font-semibold text-green-600 flex items-center gap-2">
                     ✅ Compétences renforcées par le bon mindset
                   </h4>
-                  <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-200">
+                  <ul className="space-y-2 text-sm text-primary-secondary">
                     <li>• Résilience face aux refus et objections</li>
                     <li>• Constance dans l'activité de prospection</li>
                     <li>• Capacité d'apprentissage continu</li>
@@ -385,10 +385,10 @@ export default function MindsetPerformancePage() {
                 </div>
                 
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-red-600 flex items-center gap-2">
+                  <h4 className="font-semibold text-red-700 dark:text-red-400 flex items-center gap-2">
                     ⚠️ Blocages du mindset limitant
                   </h4>
-                  <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-200">
+                  <ul className="space-y-2 text-sm text-primary-secondary">
                     <li>• Abandon rapide face aux difficultés</li>
                     <li>• Peur de l'échec et du jugement</li>
                     <li>• Procrastination et manque de discipline</li>
@@ -399,7 +399,7 @@ export default function MindsetPerformancePage() {
               </div>
               
               <div className="mt-6 p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
-                <p className="text-sm text-gray-700 dark:text-gray-200 italic">
+                <p className="text-sm text-primary-secondary italic">
                   💡 <strong>Conseil Laurent Serre :</strong> Le mindset n'est pas inné, il se développe. 
                   Commencez par identifier vos croyances limitantes, puis travaillez une habitude à la fois. 
                   La transformation prend du temps, mais les résultats sont durables !
@@ -456,10 +456,10 @@ export default function MindsetPerformancePage() {
                 <span className="inline-block bg-amber-500/20 text-amber-600 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🔗 Complémentarité
                 </span>
-                <h3 className="text-2xl font-bold text-orange-600 mb-4">
+                <h3 className="text-2xl font-bold text-primary-title mb-4">
                   Combinez mindset et techniques pour maximiser vos résultats
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-6">
+                <p className="text-primary-secondary mb-6">
                   Le mindset seul ne suffit pas. Découvrez les autres domaines essentiels pour une performance commerciale complète.
                 </p>
               </div>

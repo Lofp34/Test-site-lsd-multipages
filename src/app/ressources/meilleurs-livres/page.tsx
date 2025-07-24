@@ -188,7 +188,7 @@ export default function MeilleursLivresPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(mainPageStructuredData) }}
       />
       
-      <main className="relative bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16 overflow-hidden">
+      <main className="relative bg-gradient-to-br from-primary-bg via-mint-green/10 to-background min-h-screen pt-24 pb-16 overflow-hidden">
         {/* Particle background for bibliothèque atmosphere */}
         <ParticleBackground 
           density={25}
@@ -315,15 +315,15 @@ export default function MeilleursLivresPage() {
                       className="group relative rounded-2xl bg-white/70 dark:bg-blue-ink/80 backdrop-blur-sm border border-mint-green/20 shadow-xl hover:shadow-2xl p-6 flex flex-col items-center transition-all duration-300 hover:scale-[1.02] overflow-hidden min-h-[320px]"
                     >
                       {/* Icône catégorie avec animation */}
-                      <div className="mb-4 w-16 h-16 flex items-center justify-center rounded-2xl bg-mint-green/10 group-hover:bg-mint-green/20 shadow-lg transition-all duration-300 group-hover:scale-110">
+                      <div className="mb-4 w-16 h-16 flex items-center justify-center rounded-2xl bg-primary-accent/10 group-hover:bg-primary-accent/20 shadow-lg transition-all duration-300 group-hover:scale-110">
                         <span className="text-4xl filter drop-shadow-sm">{categoryIcons[cat.slug] || '📚'}</span>
                       </div>
                       
-                      <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green text-center mb-2 group-hover:text-mint-green transition-colors">
+                      <h3 className="text-xl font-bold text-primary-title group-hover:text-primary-accent text-center mb-2 transition-colors">
                         {cat.title}
                       </h3>
                       
-                      <p className="text-center text-sm text-gray-700 dark:text-gray-200 mb-4 leading-relaxed">
+                      <p className="text-center text-sm text-primary-secondary mb-4 leading-relaxed">
                         {cat.pitch}
                       </p>
                       
@@ -360,22 +360,22 @@ export default function MeilleursLivresPage() {
         {/* Section pourquoi cette sélection */}
         <AnimatedSection delay={400}>
           <div className="max-w-4xl mx-auto mb-12 px-4">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-mint-green/20 backdrop-blur-sm">
+            <div className="bg-background/70 dark:bg-primary-bg/80 rounded-2xl shadow-2xl p-8 border border-primary-accent/20 backdrop-blur-sm">
               <div className="text-center mb-6">
-                <span className="inline-block bg-orange-soft/20 text-orange-soft font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                <span className="inline-block bg-primary-emotion/20 text-primary-emotion font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🎯 Méthodologie
                 </span>
-                <h3 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">
+                <h3 className="text-2xl font-bold text-primary-title mb-4">
                   Pourquoi ces livres et pas d'autres ?
                 </h3>
               </div>
               
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-green-600 dark:text-green-400 flex items-center gap-2">
+                  <h4 className="font-semibold text-green-700 dark:text-green-300 flex items-center gap-2">
                     ✅ Critères de sélection
                   </h4>
-                  <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-200">
+                  <ul className="space-y-2 text-sm text-primary-secondary">
                     <li>• Impact terrain vérifié sur mes clients PME</li>
                     <li>• Techniques immédiatement applicables</li>
                     <li>• Auteurs reconnus avec expérience prouvée</li>
@@ -385,10 +385,10 @@ export default function MeilleursLivresPage() {
                 </div>
                 
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-red-600 dark:text-red-400 flex items-center gap-2">
+                  <h4 className="font-semibold text-red-700 dark:text-red-400 flex items-center gap-2">
                     ❌ Livres écartés
                   </h4>
-                  <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-200">
+                  <ul className="space-y-2 text-sm text-primary-secondary">
                     <li>• Théories sans application concrète</li>
                     <li>• Méthodes obsolètes ou dépassées</li>
                     <li>• Approches trop agressives ou manipulatrices</li>
@@ -398,8 +398,8 @@ export default function MeilleursLivresPage() {
                 </div>
               </div>
               
-              <div className="mt-6 p-4 bg-mint-green/10 rounded-lg">
-                <p className="text-sm text-gray-700 dark:text-gray-200 italic">
+              <div className="mt-6 p-4 bg-primary-accent/10 rounded-lg">
+                <p className="text-sm text-primary-secondary italic">
                   💡 <strong>Conseil Laurent Serre :</strong> Ne lisez pas tous ces livres d'un coup ! 
                   Choisissez 1-2 ouvrages par trimestre, appliquez les techniques, mesurez les résultats, 
                   puis passez au suivant. La transformation durable vient de l'application, pas de l'accumulation.
@@ -413,14 +413,14 @@ export default function MeilleursLivresPage() {
         <AnimatedSection delay={500}>
           <div className="max-w-4xl mx-auto text-center px-4">
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-6 border border-mint-green/20 backdrop-blur-sm">
-                <div className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+              <div className="bg-background/70 dark:bg-primary-bg/80 rounded-2xl shadow-2xl p-6 border border-primary-accent/20 backdrop-blur-sm">
+                <div className="inline-block bg-primary-accent/20 text-primary-accent font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🎓 Formation
                 </div>
-                <h4 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-3">
+                <h4 className="text-xl font-bold text-primary-title mb-3">
                   Bootcamp Commercial
                 </h4>
-                <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">
+                <p className="text-primary-secondary mb-4 text-sm">
                   Appliquez concrètement les meilleures techniques de ces livres 
                   dans une formation intensive adaptée aux PME.
                 </p>
@@ -432,14 +432,14 @@ export default function MeilleursLivresPage() {
                 </Link>
               </div>
               
-              <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-6 border border-blue-400/20 backdrop-blur-sm">
+              <div className="bg-background/70 dark:bg-primary-bg/80 rounded-2xl shadow-2xl p-6 border border-blue-400/20 backdrop-blur-sm">
                 <div className="inline-block bg-blue-500/20 text-blue-600 dark:text-blue-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🤝 Accompagnement
                 </div>
-                <h4 className="text-xl font-bold text-blue-ink dark:text-blue-400 mb-3">
+                <h4 className="text-xl font-bold text-primary-title mb-3">
                   Coaching Personnalisé
                 </h4>
-                <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">
+                <p className="text-primary-secondary mb-4 text-sm">
                   Accompagnement individuel pour transformer votre approche commerciale 
                   avec les meilleures pratiques de ces références.
                 </p>
@@ -451,14 +451,14 @@ export default function MeilleursLivresPage() {
                 </Link>
               </div>
               
-              <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-6 border border-orange-400/20 backdrop-blur-sm">
-                <div className="inline-block bg-orange-soft/20 text-orange-soft font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+              <div className="bg-background/70 dark:bg-primary-bg/80 rounded-2xl shadow-2xl p-6 border border-orange-400/20 backdrop-blur-sm">
+                <div className="inline-block bg-primary-emotion/20 text-primary-emotion font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   📚 Ressources
                 </div>
-                <h4 className="text-xl font-bold text-blue-ink dark:text-orange-soft mb-3">
+                <h4 className="text-xl font-bold text-primary-title mb-3">
                   Guides Gratuits
                 </h4>
-                <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">
+                <p className="text-primary-secondary mb-4 text-sm">
                   Synthèses pratiques et outils téléchargeables basés sur 
                   les meilleures techniques de ces livres.
                 </p>

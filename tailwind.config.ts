@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: 'class', // Activation du mode sombre par classe
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,23 +10,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Définition sémantique des couleurs
+        background: 'hsl(var(--background))',
+        foreground: 'hsl(var(--foreground))',
+        
         // Charte graphique personnalisée
         primary: {
-          bg: '#F2F5F7',        // Fond principal - Gris clair bleuté
-          title: '#1B365D',     // Titres & blocs clés - Bleu encre
-          accent: '#00BDA4',    // Accents visuels - Vert menthe doux
-          secondary: '#414141', // Éléments secondaires - Gris anthracite
-          emotion: '#FFAA5C',   // Icônes/Émotions - Orange doux
+          bg: 'hsl(var(--primary-bg))',        // Fond principal
+          title: 'hsl(var(--primary-title))',     // Titres & blocs clés
+          accent: 'hsl(var(--primary-accent))',    // Accents visuels
+          secondary: 'hsl(var(--primary-secondary))', // Éléments secondaires
+          emotion: 'hsl(var(--primary-emotion))',   // Icônes/Émotions
         },
         // Alias pour faciliter l'usage
-        'bg-main': '#F2F5F7',
-        'blue-ink': '#1B365D',
-        'mint-green': '#00BDA4',
-        'gray-anthracite': '#414141',
-        'orange-soft': '#FFAA5C',
-        // Variables CSS existantes
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        'bg-main': 'hsl(var(--primary-bg))',
+        'blue-ink': 'hsl(var(--primary-title))',
+        'mint-green': 'hsl(var(--primary-accent))',
+        'gray-anthracite': 'hsl(var(--primary-secondary))',
+        'orange-soft': 'hsl(var(--primary-emotion))',
+        'dark-bg': 'hsl(var(--primary-dark-bg))', // Nouvelle couleur pour les fonds sombres
       },
       fontFamily: {
         // Utilisation des variables CSS définies dans layout.tsx

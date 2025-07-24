@@ -156,7 +156,7 @@ export default function PsychologieInfluencePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(categoryStructuredData) }}
       />
       
-      <main className="relative bg-gradient-to-br from-purple-600 via-pink-500/10 to-primary-bg min-h-screen pt-24 pb-16 overflow-hidden">
+      <main className="relative bg-gradient-to-br from-primary-bg via-purple-500/10 to-background min-h-screen pt-24 pb-16 overflow-hidden">
         {/* Particle background for psychology atmosphere */}
         <ParticleBackground 
           density={30}
@@ -416,10 +416,10 @@ export default function PsychologieInfluencePage() {
                 <span className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🏢 Cas clients PME
                 </span>
-                <h3 className="text-2xl font-bold text-blue-ink dark:text-purple-400 mb-4">
+                <h3 className="text-2xl font-bold text-primary-title mb-4">
                   Exemples concrets d'influence éthique en PME
                 </h3>
-                <p className="text-gray-700 dark:text-gray-200 mb-6">
+                <p className="text-primary-secondary mb-6">
                   Découvrez comment mes clients PME appliquent concrètement les principes psychologiques pour doubler leurs performances
                 </p>
               </div>
@@ -433,14 +433,14 @@ export default function PsychologieInfluencePage() {
                       </div>
                       <div>
                         <h4 className="font-bold text-purple-600">E-commerce B2B - 35 salariés</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">Plateforme de vente en ligne</p>
+                        <p className="text-sm text-primary-secondary/70">Plateforme de vente en ligne</p>
                       </div>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                    <p className="text-primary-secondary mb-3 text-sm">
                       <strong>Défi :</strong> Taux de conversion très faible (2,1%) malgré un trafic qualifié. 
                       Les visiteurs consultent mais n'achètent pas.
                     </p>
-                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                    <p className="text-primary-secondary mb-3 text-sm">
                       <strong>Solution :</strong> Implémentation massive de la preuve sociale : témoignages clients visibles, 
                       compteurs d'achat en temps réel, logos d'entreprises clientes.
                     </p>
@@ -459,14 +459,14 @@ export default function PsychologieInfluencePage() {
                       </div>
                       <div>
                         <h4 className="font-bold text-blue-600">Formation Pro - 28 salariés</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">Organisme de formation</p>
+                        <p className="text-sm text-primary-secondary/70">Organisme de formation</p>
                       </div>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
-                      <strong>Défi :</strong> Excellente réputation mais difficultés à convertir les prospects 
+                    <p className="text-primary-secondary mb-3 text-sm">
+                      <strong>Défi :</strong> Excellente réputation mais difficultyés à convertir les prospects 
                       en inscriptions (12% de conversion).
                     </p>
-                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                    <p className="text-primary-secondary mb-3 text-sm">
                       <strong>Solution :</strong> Développement de l'autorité expertise : publications LinkedIn, 
                       interventions en conférences, certifications visibles.
                     </p>
@@ -487,14 +487,14 @@ export default function PsychologieInfluencePage() {
                       </div>
                       <div>
                         <h4 className="font-bold text-emerald-600">Conseil Management - 18 salariés</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">Cabinet de conseil</p>
+                        <p className="text-sm text-primary-secondary/70">Cabinet de conseil</p>
                       </div>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                    <p className="text-primary-secondary mb-3 text-sm">
                       <strong>Défi :</strong> Approche très technique mais taux de réponse en prospection 
-                      de seulement 3%. Difficultés à créer le premier contact.
+                      de seulement 3%. Difficultyés à créer le premier contact.
                     </p>
-                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                    <p className="text-primary-secondary mb-3 text-sm">
                       <strong>Solution :</strong> Application du principe de réciprocité : audits gratuits personnalisés, 
                       partage d'insights sectoriels exclusifs.
                     </p>
@@ -513,14 +513,14 @@ export default function PsychologieInfluencePage() {
                       </div>
                       <div>
                         <h4 className="font-bold text-orange-600">Solutions Tech - 52 salariés</h4>
-                        <p className="text-sm text-gray-600 dark:text-gray-400">Éditeur de logiciel</p>
+                        <p className="text-sm text-primary-secondary/70">Éditeur de logiciel</p>
                       </div>
                     </div>
-                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                    <p className="text-primary-secondary mb-3 text-sm">
                       <strong>Défi :</strong> Cycles de vente très longs (8 mois) et taux de signature de 18%. 
                       Les prospects traînent dans la décision.
                     </p>
-                    <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                    <p className="text-primary-secondary mb-3 text-sm">
                       <strong>Solution :</strong> Utilisation éthique du principe de rareté : offres à durée limitée 
                       authentiques, places limitées en formation.
                     </p>
@@ -541,7 +541,7 @@ export default function PsychologieInfluencePage() {
                   </div>
                   <h4 className="text-xl font-bold text-purple-600">Retour d'expérience Laurent Serre</h4>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                <p className="text-primary-secondary mb-4">
                   "La psychologie commerciale, c'est comme apprendre une langue : il faut d'abord maîtriser les bases avant de faire des phrases complexes. 
                   Mes clients qui réussissent le mieux commencent par un principe (souvent la réciprocité), le testent pendant 2 semaines, 
                   mesurent l'impact, puis passent au suivant. L'erreur classique ? Vouloir tout appliquer en même temps."
@@ -549,15 +549,15 @@ export default function PsychologieInfluencePage() {
                 <div className="grid md:grid-cols-3 gap-4 mt-4">
                   <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
                     <div className="text-2xl font-bold text-purple-600">2x</div>
-                    <div className="text-xs text-gray-600 dark:text-gray-400">Amélioration moyenne des conversions</div>
+                    <div className="text-xs text-primary-secondary/70">Amélioration moyenne des conversions</div>
                   </div>
                   <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
                     <div className="text-2xl font-bold text-purple-600">6</div>
-                    <div className="text-xs text-gray-600 dark:text-gray-400">Principes universels d'influence</div>
+                    <div className="text-xs text-primary-secondary/70">Principes universels d'influence</div>
                   </div>
                   <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
                     <div className="text-2xl font-bold text-purple-600">95%</div>
-                    <div className="text-xs text-gray-600 dark:text-gray-400">Satisfaction clients maintenue</div>
+                    <div className="text-xs text-primary-secondary/70">Satisfaction clients maintenue</div>
                   </div>
                 </div>
               </div>
@@ -586,10 +586,10 @@ export default function PsychologieInfluencePage() {
                 <span className="inline-block bg-orange-500/20 text-orange-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🔗 Complémentaire
                 </span>
-                <h3 className="text-2xl font-bold text-blue-ink dark:text-purple-400 mb-4">
+                <h3 className="text-2xl font-bold text-primary-title mb-4">
                   Complétez votre expertise
                 </h3>
-                <p className="text-gray-700 dark:text-gray-200 mb-6">
+                <p className="text-primary-secondary mb-6">
                   Ces domaines complémentaires enrichiront votre maîtrise de l'influence éthique
                 </p>
               </div>
@@ -603,7 +603,7 @@ export default function PsychologieInfluencePage() {
                     <span className="text-2xl">🤝</span>
                     <h4 className="font-bold text-red-600 group-hover:text-red-700">Négociation & Closing</h4>
                   </div>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                  <p className="text-sm text-primary-secondary">
                     Appliquez vos connaissances psychologiques dans des négociations concrètes. 
                     L'influence éthique est la base de toute négociation collaborative réussie.
                   </p>

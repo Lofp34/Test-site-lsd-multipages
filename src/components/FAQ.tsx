@@ -34,7 +34,7 @@ export default function FAQ({ items, title = "Questions Fréquentes", descriptio
             {title}
           </h2>
           {description && (
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-2xl mx-auto">
+            <p className="text-xl text-primary-secondary dark:text-primary-bg/80 max-w-2xl mx-auto">
               {description}
             </p>
           )}
@@ -63,7 +63,7 @@ export default function FAQ({ items, title = "Questions Fréquentes", descriptio
               {openItems.includes(index) && (
                 <div className="px-6 pb-4">
                   <div className="prose prose-gray dark:prose-invert max-w-none">
-                    <p className="text-gray-anthracite dark:text-primary-bg/80 leading-relaxed">
+                    <p className="text-primary-secondary dark:text-primary-bg/80 leading-relaxed">
                       {item.answer}
                     </p>
                   </div>

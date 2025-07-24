@@ -156,7 +156,7 @@ export default function ProspectionSDRPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(categoryStructuredData) }}
       />
       
-      <main className="relative bg-gradient-to-br from-blue-600 via-cyan-500/10 to-primary-bg min-h-screen pt-24 pb-16 overflow-hidden">
+      <main className="relative bg-gradient-to-br from-primary-bg via-cyan-500/10 to-background min-h-screen pt-24 pb-16 overflow-hidden">
         {/* Particle background for prospection atmosphere */}
         <ParticleBackground 
           density={30}
@@ -438,10 +438,10 @@ export default function ProspectionSDRPage() {
                 <span className="inline-block bg-orange-500/20 text-orange-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🔗 Complémentaire
                 </span>
-                <h3 className="text-2xl font-bold text-blue-ink dark:text-blue-400 mb-4">
+                <h3 className="text-2xl font-bold text-primary-title mb-4">
                   Complétez votre expertise en prospection
                 </h3>
-                <p className="text-gray-700 dark:text-gray-200 mb-6">
+                <p className="text-primary-secondary mb-6">
                   Ces domaines complémentaires enrichiront votre maîtrise de la prospection moderne
                 </p>
               </div>
@@ -455,7 +455,7 @@ export default function ProspectionSDRPage() {
                     <span className="text-2xl">🧠</span>
                     <h4 className="font-bold text-purple-600 group-hover:text-purple-700">Psychologie & Influence</h4>
                   </div>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                  <p className="text-sm text-primary-secondary">
                     Appliquez les principes psychologiques pour améliorer vos taux de réponse en prospection. 
                     L'influence éthique est la base de toute prospection authentique et efficace.
                   </p>
@@ -469,7 +469,7 @@ export default function ProspectionSDRPage() {
                     <span className="text-2xl">🤝</span>
                     <h4 className="font-bold text-red-600 group-hover:text-red-700">Négociation & Closing</h4>
                   </div>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                  <p className="text-sm text-primary-secondary">
                     Transformez vos prospects qualifiés en clients avec les meilleures techniques de closing. 
                     La prospection sans closing, c'est comme un moteur sans transmission.
                   </p>
@@ -487,10 +487,10 @@ export default function ProspectionSDRPage() {
               <span className="inline-block bg-blue-500/20 text-blue-400 font-semibold rounded-full px-4 py-1 text-sm mb-4">
                 🚀 Formation intensive
               </span>
-              <h4 className="text-2xl font-bold text-blue-ink dark:text-blue-400 mb-4">
+              <h4 className="text-2xl font-bold text-primary-title mb-4">
                 Bootcamp Prospection Moderne
               </h4>
-              <p className="text-gray-700 dark:text-gray-200 mb-6 max-w-2xl mx-auto">
+              <p className="text-primary-secondary mb-6 max-w-2xl mx-auto">
                 Transformez votre approche prospection avec les méthodes issues de ces livres, 
                 adaptées à la réalité PME française. Automatisation, social selling et qualification prédictive.
               </p>
@@ -507,10 +507,10 @@ export default function ProspectionSDRPage() {
               <span className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4">
                 🎯 Diagnostic gratuit
               </span>
-              <h4 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">
+              <h4 className="text-2xl font-bold text-primary-title mb-4">
                 Auditez votre prospection actuelle
               </h4>
-              <p className="text-gray-700 dark:text-gray-200 mb-6 max-w-2xl mx-auto">
+              <p className="text-primary-secondary mb-6 max-w-2xl mx-auto">
                 Découvrez les axes d'amélioration de votre prospection avec un diagnostic personnalisé. 
                 Identifiez vos points forts et les opportunités d'optimisation.
               </p>
