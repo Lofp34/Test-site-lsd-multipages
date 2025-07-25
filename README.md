@@ -1,124 +1,249 @@
-# Site Internet Next.js - Hello World
+# Laurent Serre Développement
 
-Un projet Next.js moderne et élégant, configuré pour faciliter l'ajout d'effets visuels, d'animations et d'interactions dynamiques.
+Site web professionnel Next.js 15 pour Laurent Serre, expert en développement commercial PME avec 20 ans d'expérience terrain.
 
-## 🚀 Fonctionnalités
+## 🎯 Vue d'ensemble
 
-- **Next.js 15** avec App Router
-- **TypeScript** pour un code robuste et typé
-- **Tailwind CSS** avec animations personnalisées
-- **Mode sombre** automatique
-- **Structure modulaire** prête pour l'extension
-- **Responsive design** adaptatif
+**Laurent Serre Développement** est une plateforme web moderne dédiée à l'accompagnement commercial des PME. Le site combine expertise technique avancée et stratégie SEO optimisée pour positionner Laurent Serre comme référence en développement commercial.
 
-## 🛠️ Technologies utilisées
+### Identité du projet
+- **Expert** : Laurent Serre, 20 ans d'expérience terrain
+- **Spécialité** : Développement commercial pour PME (10-100 salariés)  
+- **Localisation** : Mauguio (Montpellier), Occitanie
+- **Services** : Formation, coaching, transformation commerciale, diagnostic
 
-- [Next.js](https://nextjs.org/) - Framework React
-- [TypeScript](https://www.typescriptlang.org/) - Typage statique
-- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitaire
-- [ESLint](https://eslint.org/) - Linting du code
+## 🚀 Fonctionnalités principales
 
-## 📁 Structure du projet
+- **Cocon sémantique SEO** optimisé pour "expert développement commercial PME"
+- **Système de lead magnets** avec 11+ ressources téléchargeables
+- **Intégration HubSpot** pour la gestion des leads
+- **Blog professionnel** avec articles SEO-optimisés
+- **Bootcamp commercial** avec système d'inscription
+- **Diagnostic commercial gratuit** avec formulaire intégré
+- **Performance optimisée** (Core Web Vitals, Lighthouse 90+)
+
+## 🛠️ Stack technique
+
+- **[Next.js 15](https://nextjs.org/)** avec App Router
+- **[TypeScript](https://www.typescriptlang.org/)** strict pour la robustesse
+- **[Tailwind CSS 3.4](https://tailwindcss.com/)** avec charte graphique personnalisée
+- **[Framer Motion 12](https://www.framer.com/motion/)** pour les animations avancées
+- **[React 19](https://react.dev/)** avec les dernières fonctionnalités
+
+## 📁 Architecture du projet
 
 ```
 src/
-├── app/
-│   ├── globals.css      # Styles globaux
-│   ├── layout.tsx       # Layout principal
-│   └── page.tsx         # Page d'accueil Hello World
-└── components/
-    ├── ui/              # Composants UI de base (à créer)
-    ├── layout/          # Composants de mise en page (à créer)
-    ├── features/        # Composants fonctionnels (à créer)
-    └── animations/      # Composants d'animation (à créer)
+├── app/                           # App Router Next.js 15
+│   ├── globals.css               # Styles globaux + variables CSS
+│   ├── layout.tsx                # Layout principal avec fonts & SEO
+│   ├── page.tsx                  # Page d'accueil optimisée
+│   ├── sitemap.ts               # Sitemap dynamique
+│   ├── robots.ts                # Robots.txt dynamique
+│   ├── bootcamp/                # Formation commerciale intensive
+│   ├── diagnostic/              # Diagnostic commercial gratuit
+│   ├── ressources/              # Lead magnets et guides
+│   ├── blog/                    # Articles SEO-optimisés
+│   └── [cocon-pages]/           # Pages du cocon sémantique
+├── components/
+│   ├── ui/                      # Composants UI réutilisables
+│   ├── layout/                  # Header, Footer, Navigation
+│   ├── sections/                # Sections de pages
+│   └── templates/               # Templates de pages
+├── data/                        # Données structurées
+├── hooks/                       # Hooks React personnalisés
+├── utils/                       # Utilitaires et helpers
+└── types/                       # Types TypeScript
 ```
 
-## 🎨 Animations disponibles
+## 🎨 Charte graphique & Design System
 
-Le projet inclut des animations Tailwind personnalisées prêtes à utiliser :
+### Palette de couleurs
+```css
+primary: {
+  bg: '#F2F5F7',        // Fond principal - Gris clair bleuté
+  title: '#1B365D',     // Titres & blocs clés - Bleu encre  
+  accent: '#00BDA4',    // Accents visuels - Vert menthe doux
+  secondary: '#414141', // Éléments secondaires - Gris anthracite
+  emotion: '#FFAA5C',   // Icônes/Émotions - Orange doux
+}
+```
 
-- `animate-fade-in` - Apparition en fondu
+### Typographie système
+- **Titres** : Inter + Roboto Slab (serif)
+- **Corps** : Open Sans (sans-serif)  
+- **Italique** : Nunito (sans-serif)
+
+### Animations personnalisées
 - `animate-fade-in-up` - Apparition depuis le bas
-- `animate-fade-in-down` - Apparition depuis le haut
-- `animate-slide-in-left` - Glissement depuis la gauche
-- `animate-slide-in-right` - Glissement depuis la droite
+- `animate-slide-in-left/right` - Glissements latéraux
 - `animate-bounce-in` - Apparition avec rebond
-- `animate-float` - Effet de flottement
-- `animate-glow` - Effet de lueur
-- `animate-pulse-slow` - Pulsation lente
+- `animate-float` - Effet de flottement pour les éléments décoratifs
+- `animate-glow` - Effet de lueur pour les CTA importants
 
-## 🚀 Démarrage rapide
+## 🚀 Installation et développement
 
-1. **Installation des dépendances**
-   ```bash
-   npm install
-   ```
+### Prérequis
+- Node.js 18+ 
+- npm ou yarn
+- Git
 
-2. **Lancement du serveur de développement**
-   ```bash
-   npm run dev
-   ```
+### Installation
+```bash
+# Cloner le repository
+git clone [repository-url]
+cd laurent-serre-developpement
 
-3. **Ouvrir dans le navigateur**
-   ```
-   http://localhost:3000
-   ```
+# Installer les dépendances
+npm install
+
+# Configurer les variables d'environnement
+cp .env.example .env.local
+# Éditer .env.local avec vos clés API
+```
+
+### Variables d'environnement
+```bash
+# .env.local
+NEXT_PUBLIC_HUBSPOT_PORTAL_ID=your_portal_id
+HUBSPOT_API_KEY=your_api_key  
+NEXT_PUBLIC_GA_MEASUREMENT_ID=your_ga_id
+```
+
+### Développement
+```bash
+# Serveur de développement
+npm run dev
+
+# Build de production
+npm run build
+
+# Tests et validation
+npm run test
+npm run lint
+npm run validate:links
+```
+
+### Outils de développement recommandés
+
+#### VS Code Extensions
+- **ES7+ React/Redux/React-Native snippets** - Snippets React/TS
+- **Tailwind CSS IntelliSense** - Autocomplétion Tailwind
+- **TypeScript Importer** - Import automatique
+- **Prettier** - Formatage de code
+- **GitLens** - Intégration Git avancée
 
 ## 📝 Scripts disponibles
 
-- `npm run dev` - Serveur de développement
-- `npm run build` - Build de production
+### Développement
+- `npm run dev` - Serveur de développement (port 3000)
+- `npm run build` - Build de production optimisé
 - `npm run start` - Serveur de production
-- `npm run lint` - Vérification du code
+- `npm run lint` - Vérification ESLint
 
-## 🎯 Prochaines étapes suggérées
+### Tests et validation
+- `npm run test` - Tests unitaires avec Vitest
+- `npm run test:run` - Tests en mode CI
+- `npm run test:coverage` - Rapport de couverture
+- `npm run test:book-optimization` - Tests d'optimisation des pages livres
+- `npm run validate:links` - Validation des liens internes/externes
+- `npm run test:redirects` - Tests des redirections
 
-### Composants à ajouter
-- [ ] Header avec navigation
-- [ ] Footer avec liens
-- [ ] Composants de formulaire
-- [ ] Modales et overlays
-- [ ] Carousels et sliders
-- [ ] Graphiques et visualisations
+### SEO et performance
+- `npm run postbuild` - Génération du sitemap (automatique après build)
+- `npm run test:seo` - Tests SEO automatisés
+- `npm run test:performance` - Tests de performance
 
-### Effets visuels à implémenter
-- [ ] Animations de transition de page
-- [ ] Effets de parallaxe
-- [ ] Interactions au scroll
-- [ ] Hover effects avancés
-- [ ] Particules animées
-- [ ] Morphing de formes
+## 🎯 Stratégie SEO & Cocon sémantique
 
-### Fonctionnalités avancées
-- [ ] Système de thèmes personnalisés
-- [ ] Internationalisation (i18n)
-- [ ] PWA (Progressive Web App)
-- [ ] Optimisation des performances
-- [ ] Tests automatisés
-- [ ] Déploiement automatique
+### Pages du cocon (Priorité SEO)
+- ✅ `/expert-developpement-commercial-pme` - Page cible principale
+- ✅ `/formation-commerciale-pme` - Formation spécialisée PME
+- ✅ `/transformation-commerciale` - Accompagnement transformation
+- ✅ `/diagnostic` - Diagnostic commercial gratuit (conversion)
+- ✅ `/consultant-commercial-montpellier` - Ancrage local
+- ✅ `/formateur-vente-pme` - Expertise formation
+- ❌ `/coach-commercial-entreprise` - **À créer en priorité**
 
-## 🎨 Personnalisation
+### Objectifs SEO
+- **Requête principale** : "expert développement commercial PME" (Top 3)
+- **Trafic organique** : +400% en 6 mois
+- **Leads qualifiés** : +45/mois via SEO
+- **Core Web Vitals** : Tous verts (LCP < 2.5s, FID < 100ms, CLS < 0.1)
 
-### Couleurs
-Les couleurs peuvent être personnalisées dans `tailwind.config.ts` et `src/app/globals.css`.
+## 🔧 Intégrations techniques
 
-### Animations
-Ajoutez de nouvelles animations dans la section `keyframes` de `tailwind.config.ts`.
+### HubSpot CRM
+- **Formulaires** : Intégration native des formulaires HubSpot
+- **Lead tracking** : Suivi automatique des conversions
+- **Lead magnets** : 11+ ressources connectées au CRM
 
-### Composants
-Créez de nouveaux composants dans le dossier `src/components/` en suivant la structure recommandée.
+### Analytics & SEO
+- **Google Analytics 4** : Tracking avancé des conversions
+- **Search Console** : Monitoring SEO automatisé
+- **Schema.org** : Données structurées (Person, ProfessionalService, Article)
+- **Sitemap dynamique** : Génération automatique avec priorités
 
-## 📚 Ressources utiles
+### Performance
+- **Images Next.js** : Optimisation automatique (AVIF/WebP)
+- **Cache agressif** : Headers optimisés pour les performances
+- **Compression** : Gzip/Brotli activé
+- **Core Web Vitals** : Monitoring continu
 
-- [Documentation Next.js](https://nextjs.org/docs)
-- [Documentation Tailwind CSS](https://tailwindcss.com/docs)
-- [Guide TypeScript](https://www.typescriptlang.org/docs/)
-- [Exemples d'animations CSS](https://animate.style/)
+## 📊 Métriques de succès
+
+### SEO (Objectifs 6 mois)
+- Position "expert développement commercial PME" : **Top 3**
+- Trafic organique : **+400%**
+- Pages vues cocon : **+500%**
+- Temps sur site : **+30%**
+
+### Conversions
+- Téléchargements ressources : **+300%**
+- Demandes diagnostic : **+250%**  
+- Leads qualifiés : **+45/mois**
+- Taux conversion global : **+80%**
+
+## 🚀 Déploiement
+
+### Vercel (Production)
+```bash
+# Déploiement automatique sur push main
+git push origin main
+
+# Preview deployments sur PR
+git push origin feature-branch
+```
+
+### Monitoring
+- **Uptime** : Surveillance 24/7
+- **Core Web Vitals** : Alertes automatiques
+- **Error tracking** : Logs centralisés
+- **SEO monitoring** : Positions et trafic
+
+## 📚 Documentation technique
+
+- [Architecture technique détaillée](./docs/architecture-technique.md)
+- [Stratégie SEO & Cocon sémantique](./docs/strategie-seo-cocon.md)
+- [Guide des composants](./src/components/README.md)
+- [Standards de développement](./docs/standards-dev.md)
 
 ## 🤝 Contribution
 
-Ce projet est conçu pour être facilement extensible. N'hésitez pas à ajouter de nouveaux composants, animations et fonctionnalités !
+### Standards de code
+- **TypeScript strict** obligatoire
+- **Tests unitaires** pour les composants critiques
+- **Accessibilité** (WCAG 2.1 AA minimum)
+- **Performance** (Lighthouse 90+ requis)
+
+### Workflow
+1. Créer une branche feature
+2. Développer avec tests
+3. Valider Lighthouse + accessibilité
+4. Pull Request avec review
+5. Merge après validation
 
 ---
 
-Créé avec ❤️ en utilisant Next.js 15 et Tailwind CSS
+**Laurent Serre Développement** - Expert commercial PME depuis 20 ans  
+Construit avec Next.js 15, TypeScript et Tailwind CSS
