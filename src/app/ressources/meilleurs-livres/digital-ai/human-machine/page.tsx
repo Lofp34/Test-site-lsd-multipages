@@ -147,20 +147,20 @@ export default function HumanMachinePage() {
 
         {/* Résumé détaillé */}
         <article className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-cyan-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-cyan-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-cyan-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Résumé détaillé
             </h2>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800
               <p className="text-lg leading-relaxed mb-6">
                 Daugherty et Wilson, dirigeants d'Accenture, proposent une vision révolutionnaire : l'avenir n'est ni à l'automatisation totale ni au statu quo, mais à la collaboration intelligente entre humains et machines.
               </p>
 
               <h3 className="text-2xl font-bold text-cyan-500 mb-4">Le "Missing Middle" : la zone de collaboration</h3>
               
-              <div className="bg-gradient-to-r from-cyan-50 to-blue-50 dark:from-cyan-900/30 dark:to-blue-900/30 rounded-xl p-6 mb-8 border border-cyan-200/50">
-                <p className="text-gray-700 dark:text-gray-300 mb-4">
+              <div className="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-xl p-6 mb-8 border border-cyan-200/50">
+                <p className="text-gray-700 mb-4">
                   Entre les tâches purement humaines et celles entièrement automatisées existe une zone hybride où la collaboration homme-machine crée le plus de valeur. C'est dans ce "Missing Middle" que se trouvent les plus grandes opportunités commerciales.
                 </p>
                 <div className="flex items-center justify-center">
@@ -179,9 +179,9 @@ export default function HumanMachinePage() {
               <h3 className="text-2xl font-bold text-cyan-500 mb-4">Les nouveaux rôles humains avec l'IA</h3>
               
               <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 rounded-xl border border-green-200/50">
+                <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-200/50">
                   <h4 className="text-xl font-bold text-green-600 mb-3">🎯 1. Entraîneur (Trainer)</h4>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3">
+                  <p className="text-gray-700 mb-3">
                     Enseigner aux systèmes IA comment se comporter
                   </p>
                   <div className="text-sm text-green-600 font-medium">
@@ -189,9 +189,9 @@ export default function HumanMachinePage() {
                   </div>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-xl border border-blue-200/50">
+                <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl border border-blue-200/50">
                   <h4 className="text-xl font-bold text-blue-600 mb-3">💡 2. Explicateur (Explainer)</h4>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3">
+                  <p className="text-gray-700 mb-3">
                     Rendre les décisions IA compréhensibles
                   </p>
                   <div className="text-sm text-blue-600 font-medium">
@@ -199,9 +199,9 @@ export default function HumanMachinePage() {
                   </div>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50">
+                <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200/50">
                   <h4 className="text-xl font-bold text-purple-600 mb-3">🛡️ 3. Mainteneur (Sustainer)</h4>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3">
+                  <p className="text-gray-700 mb-3">
                     S'assurer que l'IA fonctionne de manière responsable
                   </p>
                   <div className="text-sm text-purple-600 font-medium">
@@ -213,9 +213,9 @@ export default function HumanMachinePage() {
               <h3 className="text-2xl font-bold text-cyan-500 mb-4">Les nouveaux rôles IA pour augmenter l'humain</h3>
               
               <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="p-6 bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-900/30 dark:to-red-900/30 rounded-xl border border-orange-200/50">
+                <div className="p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border border-orange-200/50">
                   <h4 className="text-xl font-bold text-orange-600 mb-3">🚀 Amplificateur</h4>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3">
+                  <p className="text-gray-700 mb-3">
                     L'IA amplifie les capacités humaines
                   </p>
                   <div className="text-sm text-orange-600 font-medium">
@@ -223,9 +223,9 @@ export default function HumanMachinePage() {
                   </div>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-teal-50 to-cyan-50 dark:from-teal-900/30 dark:to-cyan-900/30 rounded-xl border border-teal-200/50">
+                <div className="p-6 bg-gradient-to-r from-teal-50 to-cyan-50 rounded-xl border border-teal-200/50">
                   <h4 className="text-xl font-bold text-teal-600 mb-3">🤝 Interacteur</h4>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3">
+                  <p className="text-gray-700 mb-3">
                     L'IA facilite les interactions humaines
                   </p>
                   <div className="text-sm text-teal-600 font-medium">
@@ -233,9 +233,9 @@ export default function HumanMachinePage() {
                   </div>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-xl border border-indigo-200/50">
+                <div className="p-6 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl border border-indigo-200/50">
                   <h4 className="text-xl font-bold text-indigo-600 mb-3">✨ Incarnateur</h4>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3">
+                  <p className="text-gray-700 mb-3">
                     L'IA donne corps aux idées humaines
                   </p>
                   <div className="text-sm text-indigo-600 font-medium">
@@ -249,26 +249,26 @@ export default function HumanMachinePage() {
 
         {/* Applications concrètes en vente */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-cyan-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-cyan-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-cyan-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Applications concrètes en vente
             </h2>
             
             <div className="space-y-8">
-              <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-xl border border-blue-200/50">
+              <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl border border-blue-200/50">
                 <h3 className="text-2xl font-bold text-blue-600 mb-4">🎯 Prospection augmentée</h3>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div className="p-4 bg-white/50 dark:bg-blue-800/30 rounded-lg">
+                  <div className="p-4 bg-white/50 rounded-lg">
                     <h4 className="font-bold text-blue-600 mb-2">🤖 Rôle de l'IA</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
+                    <ul className="text-gray-700 space-y-1">
                       <li>• Identifie et score les prospects</li>
                       <li>• Analyse les signaux d'achat</li>
                       <li>• Optimise les moments de contact</li>
                     </ul>
                   </div>
-                  <div className="p-4 bg-white/50 dark:bg-blue-800/30 rounded-lg">
+                  <div className="p-4 bg-white/50 rounded-lg">
                     <h4 className="font-bold text-cyan-600 mb-2">👤 Rôle de l'humain</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
+                    <ul className="text-gray-700 space-y-1">
                       <li>• Personnalise l'approche</li>
                       <li>• Crée la relation de confiance</li>
                       <li>• Adapte le message au contexte</li>
@@ -277,20 +277,20 @@ export default function HumanMachinePage() {
                 </div>
               </div>
               
-              <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50">
+              <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200/50">
                 <h3 className="text-2xl font-bold text-purple-600 mb-4">🤝 Négociation hybride</h3>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div className="p-4 bg-white/50 dark:bg-purple-800/30 rounded-lg">
+                  <div className="p-4 bg-white/50 rounded-lg">
                     <h4 className="font-bold text-purple-600 mb-2">🤖 Rôle de l'IA</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
+                    <ul className="text-gray-700 space-y-1">
                       <li>• Analyse en temps réel les signaux</li>
                       <li>• Suggère des arguments</li>
                       <li>• Calcule les marges de manœuvre</li>
                     </ul>
                   </div>
-                  <div className="p-4 bg-white/50 dark:bg-purple-800/30 rounded-lg">
+                  <div className="p-4 bg-white/50 rounded-lg">
                     <h4 className="font-bold text-pink-600 mb-2">👤 Rôle de l'humain</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
+                    <ul className="text-gray-700 space-y-1">
                       <li>• Adapte sa stratégie</li>
                       <li>• Gère l'émotion et l'empathie</li>
                       <li>• Prend les décisions finales</li>
@@ -299,20 +299,20 @@ export default function HumanMachinePage() {
                 </div>
               </div>
               
-              <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 rounded-xl border border-green-200/50">
+              <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-200/50">
                 <h3 className="text-2xl font-bold text-green-600 mb-4">📊 Suivi client intelligent</h3>
                 <div className="grid md:grid-cols-2 gap-6">
-                  <div className="p-4 bg-white/50 dark:bg-green-800/30 rounded-lg">
+                  <div className="p-4 bg-white/50 rounded-lg">
                     <h4 className="font-bold text-green-600 mb-2">🤖 Rôle de l'IA</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
+                    <ul className="text-gray-700 space-y-1">
                       <li>• Détecte les signaux de satisfaction</li>
                       <li>• Identifie les risques de churn</li>
                       <li>• Propose des actions correctives</li>
                     </ul>
                   </div>
-                  <div className="p-4 bg-white/50 dark:bg-green-800/30 rounded-lg">
+                  <div className="p-4 bg-white/50 rounded-lg">
                     <h4 className="font-bold text-emerald-600 mb-2">👤 Rôle de l'humain</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
+                    <ul className="text-gray-700 space-y-1">
                       <li>• Intervient au bon moment</li>
                       <li>• Apporte la bonne approche</li>
                       <li>• Résout les problèmes complexes</li>
@@ -326,15 +326,15 @@ export default function HumanMachinePage() {
 
         {/* Exemples concrets d'implémentation */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-cyan-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-cyan-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-cyan-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Exemples concrets d'implémentation
             </h2>
             
             <div className="space-y-6">
-              <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-xl border border-blue-200/50">
+              <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl border border-blue-200/50">
                 <h3 className="text-xl font-bold text-blue-600 mb-3">🏦 Secteur Bancaire</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   L'IA prépare des analyses de risque que l'expert humain vérifie et adapte selon le contexte client et les enjeux relationnels.
                 </p>
                 <div className="flex items-center text-sm text-blue-500 font-medium">
@@ -343,9 +343,9 @@ export default function HumanMachinePage() {
                 </div>
               </div>
               
-              <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50">
+              <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200/50">
                 <h3 className="text-xl font-bold text-purple-600 mb-3">🛒 E-commerce B2B</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   L'IA gère la recommandation de base et l'optimisation des prix, tandis que les humains conçoivent le contenu créatif et les expériences client personnalisées.
                 </p>
                 <div className="flex items-center text-sm text-purple-500 font-medium">
@@ -354,9 +354,9 @@ export default function HumanMachinePage() {
                 </div>
               </div>
               
-              <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 rounded-xl border border-green-200/50">
+              <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-200/50">
                 <h3 className="text-xl font-bold text-green-600 mb-3">🏭 Industrie Manufacturing</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   L'IA analyse les données de production pour identifier les opportunités de vente additionnelle, que les commerciaux transforment en propositions sur-mesure.
                 </p>
                 <div className="flex items-center text-sm text-green-500 font-medium">
@@ -370,8 +370,8 @@ export default function HumanMachinePage() {
 
         {/* Points clés à retenir */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-cyan-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-cyan-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-cyan-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Points clés à retenir
             </h2>
             
@@ -387,7 +387,7 @@ export default function HumanMachinePage() {
               ].map((point, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-cyan-500 text-xl mr-3 mt-1">✓</span>
-                  <span className="text-gray-800 dark:text-gray-200 text-lg">{point}</span>
+                  <span className="text-gray-800 text-lg">{point}</span>
                 </li>
               ))}
             </ul>
@@ -396,8 +396,8 @@ export default function HumanMachinePage() {
 
         {/* Pour qui ce livre ? */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-cyan-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-cyan-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-cyan-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Pour qui ce livre ?
             </h2>
             
@@ -411,7 +411,7 @@ export default function HumanMachinePage() {
               ].map((profile, index) => (
                 <div key={index} className="flex items-center p-3 bg-cyan-500/10 rounded-lg">
                   <span className="text-cyan-500 text-lg mr-3">👤</span>
-                  <span className="text-gray-800 dark:text-gray-200 font-medium">{profile}</span>
+                  <span className="text-gray-800 font-medium">{profile}</span>
                 </div>
               ))}
             </div>
@@ -426,14 +426,14 @@ export default function HumanMachinePage() {
                 <span className="text-white font-bold text-lg">LS</span>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-blue-ink dark:text-cyan-300">
+                <h2 className="text-2xl font-bold text-blue-ink
                   Mon avis terrain
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300">Laurent Serre - Expert développement commercial PME</p>
+                <p className="text-gray-600 Serre - Expert développement commercial PME</p>
               </div>
             </div>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800
               <p className="text-lg leading-relaxed mb-6">
                 Enfin un livre qui ne tombe ni dans la panique ("l'IA va nous remplacer") ni dans l'utopie ("l'IA va tout résoudre"). Daugherty et Wilson montrent la voie du milieu : la collaboration intelligente.
               </p>
@@ -449,18 +449,18 @@ export default function HumanMachinePage() {
               
               <h3 className="text-xl font-bold text-cyan-500 mb-4">Exemples de mise en œuvre réussie :</h3>
               <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <div className="p-4 bg-cyan-50 dark:bg-cyan-900/30 rounded-lg">
+                <div className="p-4 bg-cyan-50 rounded-lg">
                   <h4 className="font-semibold text-cyan-600 mb-2">PME Tech (40 salariés)</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                  <p className="text-sm text-gray-700 mb-2">
                     Mise en place du "Missing Middle" : IA + commercial sur la qualification
                   </p>
                   <p className="text-xs text-green-600 font-medium">
                     Résultat : +70% de leads qualifiés, satisfaction commerciaux +45%
                   </p>
                 </div>
-                <div className="p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg">
+                <div className="p-4 bg-blue-50 rounded-lg">
                   <h4 className="font-semibold text-blue-600 mb-2">Services B2B (18 salariés)</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                  <p className="text-sm text-gray-700 mb-2">
                     Formation équipe aux rôles "trainer" et "explainer" d'IA
                   </p>
                   <p className="text-xs text-green-600 font-medium">
@@ -469,7 +469,7 @@ export default function HumanMachinePage() {
                 </div>
               </div>
               
-              <div className="bg-cyan-100/50 dark:bg-cyan-900/30 border-l-4 border-cyan-500 p-4 rounded-r-lg mb-6">
+              <div className="bg-cyan-100/50 border-l-4 border-cyan-500 p-4 rounded-r-lg mb-6">
                 <p className="font-semibold text-cyan-600 mb-2">⚠️ Erreur à éviter :</p>
                 <p>
                   Vouloir automatiser tout d'un coup. Commencez par une tâche, maîtrisez la collaboration, puis étendez progressivement. 
@@ -477,7 +477,7 @@ export default function HumanMachinePage() {
                 </p>
               </div>
               
-              <div className="bg-green-100/50 dark:bg-green-900/30 border-l-4 border-green-500 p-4 rounded-r-lg mb-6">
+              <div className="bg-green-100/50 border-l-4 border-green-500 p-4 rounded-r-lg mb-6">
                 <p className="font-semibold text-green-600 mb-2">🎯 Conseil stratégique :</p>
                 <p>
                   Investissez dans la formation de vos équipes aux nouveaux rôles. Le commercial de demain sera celui qui sait orchestrer l'IA pour créer plus de valeur client. 
@@ -485,7 +485,7 @@ export default function HumanMachinePage() {
                 </p>
               </div>
               
-              <div className="bg-orange-100/50 dark:bg-orange-900/30 border-l-4 border-orange-500 p-4 rounded-r-lg mb-6">
+              <div className="bg-orange-100/50 border-l-4 border-orange-500 p-4 rounded-r-lg mb-6">
                 <p className="font-semibold text-orange-600 mb-2">💡 Action immédiate :</p>
                 <p>
                   Cartographiez vos processus commerciaux et identifiez 3 zones de "Missing Middle" où humain + IA créeraient plus de valeur que chacun séparément. 
@@ -499,8 +499,8 @@ export default function HumanMachinePage() {
                     <span key={i} className={i < 4.5 ? "text-yellow-400" : "text-gray-300"}>⭐</span>
                   ))}
                 </div>
-                <span className="text-lg font-semibold text-gray-800 dark:text-gray-200">4.5/5</span>
-                <span className="text-sm text-gray-600 dark:text-gray-400 ml-4">
+                <span className="text-lg font-semibold text-gray-800
+                <span className="text-sm text-gray-600 ml-4">
                   Le guide pratique de référence pour la collaboration IA
                 </span>
               </div>
@@ -510,8 +510,8 @@ export default function HumanMachinePage() {
 
         {/* Livres complémentaires */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-cyan-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-cyan-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-cyan-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Livres complémentaires
             </h2>
             
@@ -520,10 +520,10 @@ export default function HumanMachinePage() {
                 href="/ressources/meilleurs-livres/digital-ai/ai-superpowers"
                 className="group p-6 bg-gradient-to-r from-purple-500/10 to-red-500/10 rounded-xl border border-purple-300/20 hover:border-purple-400/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-cyan-300 mb-3 group-hover:text-purple-500 transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-purple-500 transition-colors">
                   AI Superpowers
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour comprendre l'évolution géopolitique de l'IA
                 </p>
                 <span className="text-purple-500 font-medium group-hover:underline">
@@ -535,10 +535,10 @@ export default function HumanMachinePage() {
                 href="/ressources/meilleurs-livres/digital-ai/the-second-machine-age"
                 className="group p-6 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 rounded-xl border border-blue-300/20 hover:border-blue-400/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-cyan-300 mb-3 group-hover:text-blue-500 transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-blue-500 transition-colors">
                   The Second Machine Age
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour comprendre l'impact économique du numérique
                 </p>
                 <span className="text-blue-500 font-medium group-hover:underline">
@@ -555,10 +555,10 @@ export default function HumanMachinePage() {
             <div className="inline-block bg-cyan-500/30 text-cyan-300 font-semibold rounded-full px-4 py-2 text-sm mb-4 shadow-md backdrop-blur">
               Transformez votre équipe avec l'IA
             </div>
-            <h3 className="text-3xl font-bold text-blue-ink dark:text-cyan-300 mb-4">
+            <h3 className="text-3xl font-bold text-blue-ink mb-4">
               Formation : Collaboration Homme-Machine en Vente
             </h3>
-            <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
               Accompagnement personnalisé pour développer les nouveaux rôles commerciaux et maîtriser la collaboration avec l'IA. Formation pratique avec cas d'usage concrets.
             </p>
             <Link 

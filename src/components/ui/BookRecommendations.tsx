@@ -23,12 +23,12 @@ export default function BookRecommendations({
 
   return (
     <div className={`max-w-6xl mx-auto px-4 ${className}`}>
-      <div className="bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl p-8 border border-purple-200/30">
+      <div className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-2xl p-8 border border-purple-200/30">
         <div className="text-center mb-8">
-          <h2 className="text-2xl font-bold text-blue-ink dark:text-blue-300 mb-3">
+          <h2 className="text-2xl font-bold text-blue-ink mb-3">
             📚 Livres Complémentaires Recommandés
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          <p className="text-gray-600 max-w-3xl mx-auto">
             Approfondissez vos connaissances avec ces livres sélectionnés pour leur complémentarité avec <strong>{currentBook.title}</strong>
           </p>
         </div>
@@ -43,7 +43,7 @@ export default function BookRecommendations({
         </div>
 
         <div className="text-center mt-8">
-          <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
+          <p className="text-sm text-gray-500 mb-4">
             Ces recommandations sont basées sur l'expertise terrain de Laurent Serre et les complémentarités métier
           </p>
           <Link
@@ -64,20 +64,20 @@ function BookSuggestionCard({ suggestion }: { suggestion: CrossCategorySuggestio
   const categoryHref = `/ressources/meilleurs-livres/${suggestion.category}`;
 
   return (
-    <div className="bg-white/80 dark:bg-blue-ink/60 rounded-xl border border-purple-200/30 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+    <div className="bg-white/80 rounded-xl border border-purple-200/30 overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
       {/* Book Link */}
-      <Link href={bookHref} className="block p-6 hover:bg-purple-50/50 dark:hover:bg-purple-900/20 transition-colors">
+      <Link href={bookHref} className="block p-6 hover:bg-purple-50/50 transition-colors">
         <div className="flex items-start justify-between mb-3">
           <div className="flex-1">
-            <h3 className="font-bold text-blue-ink dark:text-blue-300 hover:text-blue-500 transition-colors text-lg mb-1">
+            <h3 className="font-bold text-blue-ink hover:text-blue-500 transition-colors text-lg mb-1">
               {suggestion.book.title}
             </h3>
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+            <p className="text-sm text-gray-600 mb-2">
               par {suggestion.book.author}
             </p>
             <Link 
               href={categoryHref}
-              className="inline-flex items-center text-xs bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 px-2 py-1 rounded-full hover:bg-purple-200 dark:hover:bg-purple-900/50 transition-colors"
+              className="inline-flex items-center text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full hover:bg-purple-200 transition-colors"
             >
               {suggestion.categoryTitle}
             </Link>
@@ -87,18 +87,18 @@ function BookSuggestionCard({ suggestion }: { suggestion: CrossCategorySuggestio
           </span>
         </div>
 
-        <p className="text-sm text-gray-700 dark:text-gray-300 mb-4 line-clamp-2">
+        <p className="text-sm text-gray-700 mb-4 line-clamp-2">
           {suggestion.book.tagline}
         </p>
       </Link>
 
       {/* Recommendation Reason */}
       <div className="px-6 pb-6">
-        <div className="bg-blue-50 dark:bg-blue-900/30 rounded-lg p-3">
-          <p className="text-xs text-blue-700 dark:text-blue-300 font-medium mb-1">
+        <div className="bg-blue-50 rounded-lg p-3">
+          <p className="text-xs text-blue-700 font-medium mb-1">
             💡 Pourquoi ce livre ?
           </p>
-          <p className="text-xs text-blue-600 dark:text-blue-400">
+          <p className="text-xs text-blue-600
             {suggestion.reason}
           </p>
         </div>

@@ -42,15 +42,15 @@ export default function ImplementationRoadmap({
   };
 
   return (
-    <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
+    <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
       <div className="text-center mb-8">
         <span className="inline-block bg-orange-soft/20 text-orange-soft font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
           🚀 Implémentation
         </span>
-        <h3 className={`text-2xl font-bold text-blue-ink dark:text-[${categoryTheme.primaryColor}] mb-4`}>
+        <h3 className={`text-2xl font-bold text-blue-ink mb-4`}>
           Feuille de route pour maîtriser {domainTitle}
         </h3>
-        <p className="text-gray-700 dark:text-gray-200 mb-6">
+        <p className="text-gray-700 mb-6">
           Un plan d'implémentation progressive en 4 phases pour transformer vos résultats
         </p>
       </div>
@@ -80,14 +80,14 @@ export default function ImplementationRoadmap({
                 
                 {/* Contenu de la phase */}
                 <div className="flex-1">
-                  <div className="bg-gradient-to-r from-white/50 to-white/30 dark:from-blue-800/50 dark:to-blue-800/30 rounded-xl p-6 border border-[var(--theme-primary)]/20">
+                  <div className="bg-gradient-to-r from-white/50 to-white/30 rounded-xl p-6 border border-[var(--theme-primary)]/20">
                     {/* En-tête de phase */}
                     <div className="flex items-start justify-between mb-4">
                       <div className="flex-1">
                         <h4 className={`text-xl font-bold text-[${categoryTheme.primaryColor}] mb-2`}>
                           Phase {phase.phase}: {phase.title}
                         </h4>
-                        <div className="flex items-center gap-4 text-sm text-gray-600 dark:text-gray-400">
+                        <div className="flex items-center gap-4 text-sm text-gray-600
                           <span>⏱️ {phase.duration}</span>
                           <span className="flex items-center gap-1">
                             {getDifficultyIcon(phase.difficulty)}
@@ -98,18 +98,18 @@ export default function ImplementationRoadmap({
                     </div>
                     
                     {/* Description */}
-                    <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+                    <p className="text-gray-700 mb-4 leading-relaxed">
                       {phase.description}
                     </p>
                     
                     {/* Actions clés */}
                     <div className="mb-4">
-                      <h5 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                      <h5 className="font-semibold text-gray-800 mb-2">
                         Actions clés :
                       </h5>
                       <ul className="space-y-1">
                         {phase.keyActions.map((action, actionIndex) => (
-                          <li key={actionIndex} className="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
+                          <li key={actionIndex} className="flex items-start gap-2 text-sm text-gray-700
                             <span className="text-[var(--theme-primary)] mt-1">•</span>
                             <span>{action}</span>
                           </li>
@@ -119,14 +119,14 @@ export default function ImplementationRoadmap({
                     
                     {/* Résultats attendus */}
                     <div className="mb-4">
-                      <h5 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                      <h5 className="font-semibold text-gray-800 mb-2">
                         Résultats attendus :
                       </h5>
                       <div className="grid md:grid-cols-2 gap-2">
                         {phase.expectedResults.map((result, resultIndex) => (
                           <div key={resultIndex} className="flex items-start gap-2 text-sm">
                             <span className="text-green-500 mt-1">✓</span>
-                            <span className="text-gray-700 dark:text-gray-300">{result}</span>
+                            <span className="text-gray-700
                           </div>
                         ))}
                       </div>
@@ -135,14 +135,14 @@ export default function ImplementationRoadmap({
                     {/* Prérequis si disponibles */}
                     {phase.prerequisites && phase.prerequisites.length > 0 && (
                       <div className="mb-4">
-                        <h5 className="font-semibold text-gray-800 dark:text-gray-200 mb-2">
+                        <h5 className="font-semibold text-gray-800 mb-2">
                           Prérequis :
                         </h5>
                         <div className="flex flex-wrap gap-2">
                           {phase.prerequisites.map((prerequisite, preqIndex) => (
                             <span 
                               key={preqIndex}
-                              className="px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded-full"
+                              className="px-2 py-1 bg-gray-200 text-gray-700 text-xs rounded-full"
                             >
                               {prerequisite}
                             </span>
@@ -170,7 +170,7 @@ export default function ImplementationRoadmap({
                           Conseil Laurent Serre
                         </span>
                       </div>
-                      <p className="text-gray-700 dark:text-gray-300 text-sm italic">
+                      <p className="text-gray-700 text-sm italic">
                         "{phase.laurentTip}"
                       </p>
                     </div>
@@ -188,7 +188,7 @@ export default function ImplementationRoadmap({
           <h4 className={`text-lg font-bold text-[${categoryTheme.primaryColor}] mb-2`}>
             Résultat après 6 mois d'implémentation
           </h4>
-          <p className="text-gray-700 dark:text-gray-300 text-sm">
+          <p className="text-gray-700 text-sm">
             Une maîtrise progressive et durable des concepts de {domainTitle.toLowerCase()}, 
             avec des résultats mesurables dès la phase 2 et une transformation complète 
             de vos performances commerciales.

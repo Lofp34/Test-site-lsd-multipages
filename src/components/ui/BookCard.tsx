@@ -80,7 +80,7 @@ const BookCard: React.FC<BookCardProps> = ({
   };
 
   const baseCardClasses = `
-    bg-white/80 dark:bg-blue-ink/80 rounded-2xl shadow-2xl 
+    bg-white/80 rounded-2xl shadow-2xl 
     hover:scale-105 hover:shadow-3xl transition-all duration-300 
     border border-mint-green/30 backdrop-blur-sm
   `;
@@ -99,10 +99,10 @@ const BookCard: React.FC<BookCardProps> = ({
           <div className="flex-1 min-w-0">
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1 min-w-0">
-                <h3 className="text-lg font-bold text-blue-ink dark:text-mint-green mb-1 truncate">
+                <h3 className="text-lg font-bold text-blue-ink mb-1 truncate">
                   {book.title}
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-200 mb-2">
+                <p className="text-sm text-gray-600 mb-2">
                   {book.author} — {book.year}
                 </p>
                 
@@ -123,7 +123,7 @@ const BookCard: React.FC<BookCardProps> = ({
                   )}
                 </div>
                 
-                <p className="text-sm text-gray-700 dark:text-gray-100 line-clamp-2">
+                <p className="text-sm text-gray-700 line-clamp-2">
                   {book.tagline}
                 </p>
               </div>
@@ -154,10 +154,10 @@ const BookCard: React.FC<BookCardProps> = ({
           </div>
           
           {/* Title and metadata */}
-          <h3 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-2">
+          <h3 className="text-2xl font-bold text-blue-ink mb-2">
             {book.title}
           </h3>
-          <p className="text-base text-gray-600 dark:text-gray-200 mb-4 italic">
+          <p className="text-base text-gray-600 mb-4 italic">
             {book.author} — {book.year}
           </p>
           
@@ -181,7 +181,7 @@ const BookCard: React.FC<BookCardProps> = ({
           )}
           
           {/* Tagline */}
-          <p className="text-lg text-gray-700 dark:text-gray-100 mb-6 leading-relaxed">
+          <p className="text-lg text-gray-700 mb-6 leading-relaxed">
             {book.tagline}
           </p>
           
@@ -210,10 +210,10 @@ const BookCard: React.FC<BookCardProps> = ({
         </div>
         
         {/* Title and metadata */}
-        <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-2 text-center">
+        <h3 className="text-xl font-bold text-blue-ink mb-2 text-center">
           {book.title}
         </h3>
-        <p className="text-sm text-gray-600 dark:text-gray-200 mb-3 italic text-center">
+        <p className="text-sm text-gray-600 mb-3 italic text-center">
           {book.author} — {book.year}
         </p>
         
@@ -238,7 +238,7 @@ const BookCard: React.FC<BookCardProps> = ({
         )}
         
         {/* Tagline */}
-        <p className="text-base text-gray-700 dark:text-gray-100 mb-4 text-center flex-1 
+        <p className="text-base text-gray-700 mb-4 text-center flex-1 
                       leading-relaxed line-clamp-3">
           {book.tagline}
         </p>

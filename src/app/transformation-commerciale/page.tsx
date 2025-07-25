@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function TransformationCommercialePage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <main className="flex flex-col min-h-screen bg-white
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -66,27 +66,27 @@ export default function TransformationCommercialePage() {
       </section>
 
       {/* Méthodologie */}
-      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-20 bg-white
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-4xl font-title font-bold text-blue-ink mb-6">
               Méthodologie de Transformation
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-3xl mx-auto">
               Une approche structurée en 4 phases pour transformer durablement votre performance commerciale
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Phase 1: Diagnostic */}
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center border border-mint-green/20 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-white rounded-2xl p-8 text-center border border-mint-green/20 hover:shadow-2xl transition-all duration-300">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-mint-green font-bold text-2xl">1</span>
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Diagnostic Complet
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
+              <p className="text-gray-anthracite mb-6">
                 Audit approfondi de votre organisation, processus et équipes commerciales.
               </p>
               <Link href="/diagnostic" className="inline-flex items-center text-mint-green hover:underline font-semibold">
@@ -95,14 +95,14 @@ export default function TransformationCommercialePage() {
             </div>
 
             {/* Phase 2: Stratégie */}
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center hover:shadow-2xl transition-all duration-300">
+            <div className="bg-white rounded-2xl p-8 text-center hover:shadow-2xl transition-all duration-300">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-mint-green font-bold text-2xl">2</span>
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Stratégie Sur-Mesure
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
+              <p className="text-gray-anthracite mb-6">
                 Conception d'un plan d'action adapté à vos enjeux spécifiques.
               </p>
               <Link href="/ressources/outil-strategie-commerciale" className="inline-flex items-center text-mint-green hover:underline font-semibold">
@@ -111,14 +111,14 @@ export default function TransformationCommercialePage() {
             </div>
 
             {/* Phase 3: Formation */}
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center hover:shadow-2xl transition-all duration-300">
+            <div className="bg-white rounded-2xl p-8 text-center hover:shadow-2xl transition-all duration-300">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-mint-green font-bold text-2xl">3</span>
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Formation & Coaching
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
+              <p className="text-gray-anthracite mb-6">
                 Développement des compétences et accompagnement terrain.
               </p>
               <Link href="/formation-commerciale-pme" className="inline-flex items-center text-mint-green hover:underline font-semibold">
@@ -127,14 +127,14 @@ export default function TransformationCommercialePage() {
             </div>
 
             {/* Phase 4: Suivi */}
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center hover:shadow-2xl transition-all duration-300">
+            <div className="bg-white rounded-2xl p-8 text-center hover:shadow-2xl transition-all duration-300">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-mint-green font-bold text-2xl">4</span>
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Suivi & Optimisation
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6">
+              <p className="text-gray-anthracite mb-6">
                 Mesure des résultats et ajustements pour pérenniser la performance.
               </p>
               <Link href="/suivi-performance" className="inline-flex items-center text-mint-green hover:underline font-semibold">
@@ -146,20 +146,20 @@ export default function TransformationCommercialePage() {
       </section>
 
       {/* Domaines de Transformation */}
-      <section className="py-20 bg-slate-50 dark:bg-gray-anthracite/20">
+      <section className="py-20 bg-slate-50
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">
               Domaines de Transformation
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-2xl mx-auto">
               Une approche globale qui couvre tous les aspects de votre performance commerciale
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-6">
                 Transformation Organisationnelle
               </h3>
               <div className="space-y-4">
@@ -191,7 +191,7 @@ export default function TransformationCommercialePage() {
             </div>
 
             <div>
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-6">
                 Transformation Opérationnelle
               </h3>
               <div className="space-y-4">
@@ -226,38 +226,38 @@ export default function TransformationCommercialePage() {
       </section>
 
       {/* Résultats Transformation */}
-      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-20 bg-white
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8">
+              <h2 className="text-4xl font-title font-bold text-blue-ink mb-8">
                 Résultats de Transformation
               </h2>
-              <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 mb-8">
+              <p className="text-xl text-gray-anthracite mb-8">
                 Des transformations mesurables et durables pour nos clients PME
               </p>
               
               <div className="space-y-6">
                 <div className="bg-gradient-to-r from-mint-green/10 to-transparent p-6 rounded-xl">
                   <div className="text-3xl font-bold text-mint-green mb-2">+26%</div>
-                  <div className="text-gray-anthracite dark:text-primary-bg/80">Chiffre d'affaires moyen</div>
+                  <div className="text-gray-anthracite d'affaires moyen</div>
                 </div>
                 <div className="bg-gradient-to-r from-mint-green/10 to-transparent p-6 rounded-xl">
                   <div className="text-3xl font-bold text-mint-green mb-2">-40%</div>
-                  <div className="text-gray-anthracite dark:text-primary-bg/80">Cycle de vente</div>
+                  <div className="text-gray-anthracite de vente</div>
                 </div>
                 <div className="bg-gradient-to-r from-mint-green/10 to-transparent p-6 rounded-xl">
                   <div className="text-3xl font-bold text-mint-green mb-2">+32%</div>
-                  <div className="text-gray-anthracite dark:text-primary-bg/80">Leads qualifiés</div>
+                  <div className="text-gray-anthracite qualifiés</div>
                 </div>
               </div>
             </div>
 
             <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-2xl p-8">
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-6">
                 Témoignage Transformation
               </h3>
-              <blockquote className="text-lg text-gray-anthracite dark:text-primary-bg/80 italic mb-6">
+              <blockquote className="text-lg text-gray-anthracite italic mb-6">
                 "En 18 mois, Laurent a complètement transformé notre approche commerciale. 
                 Notre équipe est maintenant autonome, notre processus optimisé et notre CA a doublé. 
                 Une transformation qui dépasse toutes nos attentes."
@@ -266,8 +266,8 @@ export default function TransformationCommercialePage() {
                 Directeur PME Industrie • 45 collaborateurs
               </div>
               
-              <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
-                <h4 className="font-semibold text-blue-ink dark:text-primary-bg mb-3">Résultats obtenus :</h4>
+              <div className="mt-8 pt-6 border-t border-gray-200
+                <h4 className="font-semibold text-blue-ink mb-3">Résultats obtenus :</h4>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
                     <div className="text-2xl font-bold text-mint-green">x2</div>

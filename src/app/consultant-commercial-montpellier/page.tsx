@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function ConsultantCommercialMontpellierPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <main className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -65,14 +65,14 @@ export default function ConsultantCommercialMontpellierPage() {
       </section>
 
       {/* Zone d'Intervention */}
-      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8">
+              <h2 className="text-4xl font-title font-bold text-blue-ink mb-8">
                 Intervention Région Occitanie
               </h2>
-              <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 mb-8">
+              <p className="text-xl text-gray-anthracite mb-8">
                 Basé à Montpellier, j'interviens dans toute la région Occitanie pour accompagner 
                 les PME dans leur développement commercial.
               </p>
@@ -106,28 +106,28 @@ export default function ConsultantCommercialMontpellierPage() {
             </div>
 
             <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-2xl p-8">
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-6">
                 Avantages de l'Accompagnement Local
               </h3>
               
               <div className="space-y-4">
-                <div className="bg-white/50 dark:bg-gray-anthracite/20 rounded-xl p-4">
-                  <h4 className="font-semibold text-blue-ink dark:text-primary-bg mb-2">Proximité Géographique</h4>
-                  <p className="text-sm text-gray-anthracite dark:text-primary-bg/80">
+                <div className="bg-white/50 rounded-xl p-4">
+                  <h4 className="font-semibold text-blue-ink mb-2">Proximité Géographique</h4>
+                  <p className="text-sm text-gray-anthracite">
                     Interventions terrain facilitées, réactivité maximale et meilleure compréhension du marché local.
                   </p>
                 </div>
                 
-                <div className="bg-white/50 dark:bg-gray-anthracite/20 rounded-xl p-4">
-                  <h4 className="font-semibold text-blue-ink dark:text-primary-bg mb-2">Connaissance du Marché</h4>
-                  <p className="text-sm text-gray-anthracite dark:text-primary-bg/80">
+                <div className="bg-white/50 rounded-xl p-4">
+                  <h4 className="font-semibold text-blue-ink mb-2">Connaissance du Marché</h4>
+                  <p className="text-sm text-gray-anthracite">
                     Expertise des spécificités économiques de la région Occitanie et de ses secteurs porteurs.
                   </p>
                 </div>
                 
-                <div className="bg-white/50 dark:bg-gray-anthracite/20 rounded-xl p-4">
-                  <h4 className="font-semibold text-blue-ink dark:text-primary-bg mb-2">Réseau Local</h4>
-                  <p className="text-sm text-gray-anthracite dark:text-primary-bg/80">
+                <div className="bg-white/50 rounded-xl p-4">
+                  <h4 className="font-semibold text-blue-ink mb-2">Réseau Local</h4>
+                  <p className="text-sm text-gray-anthracite">
                     Mise en relation avec des partenaires locaux et opportunités business de la région.
                   </p>
                 </div>
@@ -136,9 +136,9 @@ export default function ConsultantCommercialMontpellierPage() {
               <div className="mt-6 p-4 bg-mint-green/10 rounded-xl">
                 <div className="flex items-center mb-2">
                   <MapPin className="w-5 h-5 text-mint-green mr-2" />
-                  <span className="font-semibold text-blue-ink dark:text-primary-bg">Secteurs Privilégiés</span>
+                  <span className="font-semibold text-blue-ink">Secteurs Privilégiés</span>
                 </div>
-                <p className="text-sm text-gray-anthracite dark:text-primary-bg/80">
+                <p className="text-sm text-gray-anthracite">
                   Tech, Santé, Services, Industrie, BTP, Commerce - spécialisation PME 10 à 250 salariés
                 </p>
               </div>
@@ -148,26 +148,26 @@ export default function ConsultantCommercialMontpellierPage() {
       </section>
 
       {/* Services Locaux */}
-      <section className="py-20 bg-slate-50 dark:bg-gray-anthracite/20">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">
               Services Consultant Commercial Montpellier
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-2xl mx-auto">
               Un accompagnement complet adapté aux PME de la région Occitanie
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 bg-mint-green/10 rounded-lg flex items-center justify-center mb-4">
                 <Users className="w-6 h-6 text-mint-green" />
               </div>
-              <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg mb-3">
+              <h3 className="text-lg font-semibold text-blue-ink mb-3">
                 Formations Commerciales PME
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 <Link href="/formation-commerciale-pme" className="text-mint-green hover:underline">Formations spécialisées PME</Link> 
                 directement dans vos locaux à Montpellier ou en région.
               </p>
@@ -178,14 +178,14 @@ export default function ConsultantCommercialMontpellierPage() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 bg-mint-green/10 rounded-lg flex items-center justify-center mb-4">
                 <Target className="w-6 h-6 text-mint-green" />
               </div>
-              <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg mb-3">
+              <h3 className="text-lg font-semibold text-blue-ink mb-3">
                 Accompagnement Transformation
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 <Link href="/transformation-commerciale" className="text-mint-green hover:underline">Transformation complète</Link> 
                 de votre organisation commerciale avec suivi terrain régulier.
               </p>
@@ -196,14 +196,14 @@ export default function ConsultantCommercialMontpellierPage() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+            <div className="bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300">
               <div className="w-12 h-12 bg-mint-green/10 rounded-lg flex items-center justify-center mb-4">
                 <Award className="w-6 h-6 text-mint-green" />
               </div>
-              <h3 className="text-lg font-semibold text-blue-ink dark:text-primary-bg mb-3">
+              <h3 className="text-lg font-semibold text-blue-ink mb-3">
                 Coaching Commercial
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 <Link href="/coach-commercial-entreprise" className="text-mint-green hover:underline">Coaching personnalisé</Link> 
                 de vos commerciaux avec accompagnement terrain Montpellier.
               </p>
@@ -218,20 +218,20 @@ export default function ConsultantCommercialMontpellierPage() {
       </section>
 
       {/* Références Locales */}
-      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">
               Références Montpellier & Région
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-2xl mx-auto">
               Des PME locales qui ont transformé leur performance commerciale
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-xl p-8">
-              <blockquote className="text-lg text-gray-anthracite dark:text-primary-bg/80 italic mb-6">
+              <blockquote className="text-lg text-gray-anthracite italic mb-6">
                 "Laurent nous a accompagnés sur 18 mois pour restructurer notre équipe commerciale. 
                 Grâce à son expertise locale et sa connaissance du marché montpelliérain, 
                 nous avons doublé notre CA et renforcé notre position."
@@ -245,7 +245,7 @@ export default function ConsultantCommercialMontpellierPage() {
             </div>
 
             <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-xl p-8">
-              <blockquote className="text-lg text-gray-anthracite dark:text-primary-bg/80 italic mb-6">
+              <blockquote className="text-lg text-gray-anthracite italic mb-6">
                 "Formations très concrètes adaptées à notre réalité PME. 
                 Laurent connaît parfaitement les enjeux des entreprises de notre région. 
                 Nos commerciaux sont maintenant beaucoup plus efficaces."
@@ -260,9 +260,9 @@ export default function ConsultantCommercialMontpellierPage() {
           </div>
 
           <div className="mt-12 text-center">
-            <div className="inline-flex items-center bg-white dark:bg-gray-anthracite/40 rounded-full px-6 py-3">
+            <div className="inline-flex items-center bg-white rounded-full px-6 py-3">
               <MapPin className="w-5 h-5 text-mint-green mr-2" />
-              <span className="text-gray-anthracite dark:text-primary-bg font-medium">
+              <span className="text-gray-anthracite font-medium">
                 Basé à Montpellier • Interventions régulières sur toute la région Occitanie
               </span>
             </div>

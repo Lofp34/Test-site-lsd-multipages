@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function Article2() {
   return (
-    <main className="bg-primary-bg dark:bg-gray-dark text-gray-dark dark:text-primary-bg">
+    <main className="bg-primary-bg text-gray-dark">
       {/* Hero Section */}
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,11 +40,11 @@ export default function Article2() {
               </span>
             </div>
             
-            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink dark:text-white sm:text-5xl mb-6">
+            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
               Comment l'IA transforme le développement commercial en 2025
             </h1>
             
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8">
+            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
               <div className="flex items-center gap-2">
                 <Image
                   src="/laurent.jpg"
@@ -80,13 +80,13 @@ export default function Article2() {
       {/* Article Content */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
-          <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+          <p className="text-xl text-gray-600 leading-relaxed mb-8">
             L'intelligence artificielle n'est plus de la science-fiction dans le monde commercial. 
             En 2025, elle devient un avantage concurrentiel décisif pour les entreprises qui savent l'exploiter. 
             Découvrez comment transformer votre approche commerciale grâce à l'IA.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             L'IA révolutionne la prospection
           </h2>
           
@@ -110,7 +110,7 @@ export default function Article2() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Le scoring intelligent des opportunités
           </h2>
           
@@ -131,7 +131,7 @@ export default function Article2() {
             simplement en priorisant les opportunités selon le score IA.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             La personnalisation à grande échelle
           </h2>
           
@@ -159,7 +159,7 @@ export default function Article2() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             L'assistance à la vente en temps réel
           </h2>
           
@@ -180,7 +180,7 @@ export default function Article2() {
             surtout pour les commerciaux moins expérimentés.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             La prédiction du churn client
           </h2>
           
@@ -196,7 +196,7 @@ export default function Article2() {
             que le client ne réalise qu'il a un problème.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Comment intégrer l'IA dans votre équipe ?
           </h2>
           
@@ -244,7 +244,7 @@ export default function Article2() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Les erreurs à éviter avec l'IA
           </h2>
           
@@ -279,7 +279,7 @@ export default function Article2() {
       </article>
 
       {/* Author Bio */}
-      <section className="bg-white dark:bg-gray-anthracite py-16 mt-16">
+      <section className="bg-white py-16 mt-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="flex-shrink-0">
@@ -292,13 +292,13 @@ export default function Article2() {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-white mb-2">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-2">
                 Laurent Serre
               </h3>
               <p className="text-lg text-mint-green mb-4">
                 Expert en développement commercial • Spécialiste IA & Vente
               </p>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 Pionnier de l'intégration de l'IA dans les processus commerciaux, Laurent forme les équipes 
                 aux nouvelles technologies tout en préservant l'essence humaine de la vente. 
                 Il accompagne les PME dans leur transformation digitale commerciale.
@@ -311,26 +311,26 @@ export default function Article2() {
       {/* Related Articles */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mb-8">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8">
             Articles recommandés
           </h2>
           <div className="grid gap-6 md:grid-cols-2">
             <Link href="/blog/erreurs-fatales-prospection-b2b" className="group">
-              <div className="bg-white dark:bg-gray-anthracite p-6 rounded-xl hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-title font-semibold text-blue-ink dark:text-white mb-2 group-hover:text-mint-green transition-colors">
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-title font-semibold text-blue-ink mb-2 group-hover:text-mint-green transition-colors">
                   Les erreurs fatales dans la prospection B2B
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                <p className="text-gray-600 text-sm">
                   Analyse des erreurs les plus communes qui sabotent vos efforts de prospection et les solutions pour les éviter.
                 </p>
               </div>
             </Link>
             <Link href="/blog/5-signes-structurer-equipe-commerciale" className="group">
-              <div className="bg-white dark:bg-gray-anthracite p-6 rounded-xl hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-title font-semibold text-blue-ink dark:text-white mb-2 group-hover:text-mint-green transition-colors">
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-title font-semibold text-blue-ink mb-2 group-hover:text-mint-green transition-colors">
                   5 signes qu'il est temps de structurer votre équipe commerciale
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                <p className="text-gray-600 text-sm">
                   Découvrez les signaux d'alerte qui indiquent qu'il est temps de passer à l'étape supérieure.
                 </p>
               </div>
@@ -339,9 +339,9 @@ export default function Article2() {
         </div>
       </section>
 
-      <section className="py-16 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
             Prendre contact avec Laurent Serre
           </h2>
           <HubSpotForm />

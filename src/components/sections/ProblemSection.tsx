@@ -29,7 +29,7 @@ export default function ProblemSection() {
       />
       
       {/* Overlay sombre pour la lisibilité */}
-      <div className="absolute inset-0 bg-gray-anthracite/85 dark:bg-gray-anthracite/90" />
+      <div className="absolute inset-0 bg-gray-anthracite/85 />
       
       {/* Contenu par-dessus le fond */}
       <div className="relative z-10 max-w-6xl mx-auto px-6">

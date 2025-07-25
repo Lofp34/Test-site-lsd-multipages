@@ -370,15 +370,15 @@ export default function EnterpriseAccountPage() {
         {/* Suggestions cross-catégories */}
         <AnimatedSection delay={500}>
           <div className="max-w-6xl mx-auto px-4 mb-12">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-emerald-400/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-emerald-400/20 backdrop-blur-sm">
               <div className="text-center mb-8">
-                <span className="inline-block bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                <span className="inline-block bg-emerald-500/20 text-emerald-600 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   📚 Élargissez vos compétences
                 </span>
-                <h3 className="text-2xl font-bold text-blue-ink dark:text-emerald-400 mb-4">
+                <h3 className="text-2xl font-bold text-blue-ink mb-4">
                   Livres complémentaires d'autres catégories
                 </h3>
-                <p className="text-gray-700 dark:text-gray-200 mb-6">
+                <p className="text-gray-700 mb-6">
                   Pour maîtriser pleinement la gestion des comptes stratégiques, combinez account management et leadership d'équipe
                 </p>
               </div>
@@ -393,10 +393,10 @@ export default function EnterpriseAccountPage() {
                       <span className="inline-block bg-mint-green/20 text-mint-green text-xs font-medium px-2 py-1 rounded-full mb-2">
                         Sales Management & Leadership
                       </span>
-                      <h4 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-2 group-hover:text-mint-green transition-colors">
+                      <h4 className="text-xl font-bold text-blue-ink mb-2 group-hover:text-mint-green transition-colors">
                         Good to Great
                       </h4>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                      <p className="text-sm text-gray-600 mb-2">
                         Jim Collins • 2001
                       </p>
                     </div>
@@ -404,7 +404,7 @@ export default function EnterpriseAccountPage() {
                       →
                     </span>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                  <p className="text-gray-700 mb-3 text-sm">
                     Pour développer le leadership de niveau 5 nécessaire à la gestion des comptes stratégiques
                   </p>
                   <span className="text-mint-green font-medium group-hover:underline text-sm">
@@ -421,10 +421,10 @@ export default function EnterpriseAccountPage() {
                       <span className="inline-block bg-mint-green/20 text-mint-green text-xs font-medium px-2 py-1 rounded-full mb-2">
                         Méthodes & Process
                       </span>
-                      <h4 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-2 group-hover:text-mint-green transition-colors">
+                      <h4 className="text-xl font-bold text-blue-ink mb-2 group-hover:text-mint-green transition-colors">
                         Strategic Selling
                       </h4>
-                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                      <p className="text-sm text-gray-600 mb-2">
                         Robert Miller & Stephen Heiman • 1985
                       </p>
                     </div>
@@ -432,7 +432,7 @@ export default function EnterpriseAccountPage() {
                       →
                     </span>
                   </div>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                  <p className="text-gray-700 mb-3 text-sm">
                     Pour maîtriser la méthodologie de vente spécifique aux grands comptes
                   </p>
                   <span className="text-mint-green font-medium group-hover:underline text-sm">
@@ -479,17 +479,17 @@ export default function EnterpriseAccountPage() {
               </div>
 
               {/* CTA Secondaire - Diagnostic */}
-              <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl p-6 border border-emerald-200/50 backdrop-blur-sm">
+              <div className="bg-white/70 rounded-2xl p-6 border border-emerald-200/50 backdrop-blur-sm">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 rounded-xl flex items-center justify-center">
+                  <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center">
                     <span className="text-2xl">📊</span>
                   </div>
                   <div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Évaluation gratuite</div>
-                    <h4 className="text-xl font-bold text-blue-ink dark:text-emerald-400">Audit Grands Comptes</h4>
+                    <div className="text-sm text-gray-600 gratuite</div>
+                    <h4 className="text-xl font-bold text-blue-ink Grands Comptes</h4>
                   </div>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm leading-relaxed">
+                <p className="text-gray-700 mb-4 text-sm leading-relaxed">
                   Évaluez votre maturité en gestion des comptes stratégiques et identifiez vos axes d'amélioration prioritaires.
                 </p>
                 <Link 

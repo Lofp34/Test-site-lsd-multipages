@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 
 export default function OutilStrategieCommercialePage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <div className="flex flex-col min-h-screen bg-white
       <div className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <Link href="/ressources" className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors">
@@ -72,50 +72,50 @@ export default function OutilStrategieCommercialePage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
         
         <section className="mb-16">
-          <div className="bg-slate-50 dark:bg-gray-anthracite/20 rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6 flex items-center">
+          <div className="bg-slate-50 rounded-2xl p-8 mb-12">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6 flex items-center">
               <Target className="w-8 h-8 text-mint-green mr-3" />
               Votre Feuille de Route Commerciale
             </h2>
-            <p className="text-lg text-gray-anthracite dark:text-primary-bg/80 mb-4">
+            <p className="text-lg text-gray-anthracite mb-4">
               Une stratégie commerciale sans plan d'action, c'est comme naviguer sans boussole. 
               Cet outil vous guide pour construire votre stratégie commerciale sur 12 mois.
             </p>
             <div className="grid md:grid-cols-4 gap-4 mt-8">
-              <div className="text-center p-4 bg-white dark:bg-gray-anthracite/10 rounded-xl">
+              <div className="text-center p-4 bg-white rounded-xl">
                 <Target className="w-8 h-8 text-mint-green mx-auto mb-2" />
-                <h3 className="font-semibold text-blue-ink dark:text-primary-bg text-sm">Objectifs Clairs</h3>
+                <h3 className="font-semibold text-blue-ink text-sm">Objectifs Clairs</h3>
               </div>
-              <div className="text-center p-4 bg-white dark:bg-gray-anthracite/10 rounded-xl">
+              <div className="text-center p-4 bg-white rounded-xl">
                 <TrendingUp className="w-8 h-8 text-mint-green mx-auto mb-2" />
-                <h3 className="font-semibold text-blue-ink dark:text-primary-bg text-sm">Croissance Planifiée</h3>
+                <h3 className="font-semibold text-blue-ink text-sm">Croissance Planifiée</h3>
               </div>
-              <div className="text-center p-4 bg-white dark:bg-gray-anthracite/10 rounded-xl">
+              <div className="text-center p-4 bg-white rounded-xl">
                 <Users className="w-8 h-8 text-mint-green mx-auto mb-2" />
-                <h3 className="font-semibold text-blue-ink dark:text-primary-bg text-sm">Équipe Alignée</h3>
+                <h3 className="font-semibold text-blue-ink text-sm">Équipe Alignée</h3>
               </div>
-              <div className="text-center p-4 bg-white dark:bg-gray-anthracite/10 rounded-xl">
+              <div className="text-center p-4 bg-white rounded-xl">
                 <BarChart className="w-8 h-8 text-mint-green mx-auto mb-2" />
-                <h3 className="font-semibold text-blue-ink dark:text-primary-bg text-sm">Résultats Mesurés</h3>
+                <h3 className="font-semibold text-blue-ink text-sm">Résultats Mesurés</h3>
               </div>
             </div>
           </div>
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 flex items-center">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8 flex items-center">
             <DraftingCompass className="w-8 h-8 text-mint-green mr-3" />
             Les 5 Piliers de Votre Stratégie
           </h2>
           
           <div className="space-y-8">
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
-              <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4 flex items-center">
+            <div className="bg-white rounded-xl p-6 border border-slate-200
+              <h3 className="text-xl font-title font-semibold text-blue-ink mb-4 flex items-center">
                 <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">1</span>
                 Analyse de Situation
               </h3>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
+                <div className="bg-slate-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-mint-green mb-3">📊 Audit Interne</h4>
                   <ul className="space-y-2 text-sm">
                     <li>• CA actuel et évolution sur 3 ans</li>
@@ -125,7 +125,7 @@ export default function OutilStrategieCommercialePage() {
                     <li>• Cycle de vente moyen</li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
+                <div className="bg-slate-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-mint-green mb-3">🔍 Analyse Externe</h4>
                   <ul className="space-y-2 text-sm">
                     <li>• Évolution du marché</li>
@@ -138,8 +138,8 @@ export default function OutilStrategieCommercialePage() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
-              <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4 flex items-center">
+            <div className="bg-white rounded-xl p-6 border border-slate-200
+              <h3 className="text-xl font-title font-semibold text-blue-ink mb-4 flex items-center">
                 <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">2</span>
                 Définition des Objectifs SMART
               </h3>
@@ -165,13 +165,13 @@ export default function OutilStrategieCommercialePage() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
-              <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4 flex items-center">
+            <div className="bg-white rounded-xl p-6 border border-slate-200
+              <h3 className="text-xl font-title font-semibold text-blue-ink mb-4 flex items-center">
                 <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">3</span>
                 Stratégies et Tactiques
               </h3>
               <div className="grid md:grid-cols-3 gap-4">
-                <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
+                <div className="bg-slate-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-mint-green mb-2">🔎 Prospection</h4>
                   <ul className="space-y-1 text-sm">
                     <li>• Canaux prioritaires</li>
@@ -180,7 +180,7 @@ export default function OutilStrategieCommercialePage() {
                     <li>• Outils et automation</li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
+                <div className="bg-slate-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-mint-green mb-2">🎭 Proposition de Valeur</h4>
                   <ul className="space-y-1 text-sm">
                     <li>• Différenciation concurrentielle</li>
@@ -189,7 +189,7 @@ export default function OutilStrategieCommercialePage() {
                     <li>• Objections anticipées</li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
+                <div className="bg-slate-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-mint-green mb-2">💰 Politique Tarifaire</h4>
                   <ul className="space-y-1 text-sm">
                     <li>• Grille tarifaire</li>
@@ -201,8 +201,8 @@ export default function OutilStrategieCommercialePage() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
-              <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4 flex items-center">
+            <div className="bg-white rounded-xl p-6 border border-slate-200
+              <h3 className="text-xl font-title font-semibold text-blue-ink mb-4 flex items-center">
                 <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">4</span>
                 Plan d'Actions Trimestriel
               </h3>
@@ -244,13 +244,13 @@ export default function OutilStrategieCommercialePage() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
-              <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4 flex items-center">
+            <div className="bg-white rounded-xl p-6 border border-slate-200
+              <h3 className="text-xl font-title font-semibold text-blue-ink mb-4 flex items-center">
                 <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">5</span>
                 Tableau de Bord et KPIs
               </h3>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
+                <div className="bg-slate-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-mint-green mb-3">📊 KPIs Principaux</h4>
                   <ul className="space-y-2 text-sm">
                     <li>• CA réalisé vs objectif</li>
@@ -260,7 +260,7 @@ export default function OutilStrategieCommercialePage() {
                     <li>• Pipeline valeur</li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
+                <div className="bg-slate-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-mint-green mb-3">⚠️ Signaux d'Alerte</h4>
                   <ul className="space-y-2 text-sm">
                     <li>• Pipeline inférieur à 3x objectif mensuel</li>

@@ -271,22 +271,22 @@ export default function SalesManagementPage() {
       {/* Section spécifique : Impact du leadership sur les équipes commerciales */}
       <AnimatedSection delay={400}>
         <div className="max-w-4xl mx-auto mb-12 px-4">
-          <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-green-400/20 backdrop-blur-sm">
+          <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-green-400/20 backdrop-blur-sm">
             <div className="text-center mb-6">
-              <span className="inline-block bg-green-500/20 text-green-600 dark:text-green-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+              <span className="inline-block bg-green-500/20 text-green-600 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                 🎯 Focus métier
               </span>
-              <h3 className="text-2xl font-bold text-blue-ink dark:text-green-400 mb-4">
+              <h3 className="text-2xl font-bold text-blue-ink mb-4">
                 Comment le leadership transforme vos équipes commerciales
               </h3>
             </div>
             
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
-                <h4 className="font-semibold text-green-600 dark:text-green-400 flex items-center gap-2">
+                <h4 className="font-semibold text-green-600 flex items-center gap-2">
                   ✅ Équipes bien managées
                 </h4>
-                <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-200">
+                <ul className="space-y-2 text-sm text-gray-700
                   <li>• Dépassement régulier des objectifs</li>
                   <li>• Engagement et motivation élevés</li>
                   <li>• Développement des compétences</li>
@@ -296,10 +296,10 @@ export default function SalesManagementPage() {
               </div>
               
               <div className="space-y-4">
-                <h4 className="font-semibold text-orange-600 dark:text-orange-400 flex items-center gap-2">
+                <h4 className="font-semibold text-orange-600 flex items-center gap-2">
                   ⚠️ Équipes mal managées
                 </h4>
-                <ul className="space-y-2 text-sm text-gray-700 dark:text-gray-200">
+                <ul className="space-y-2 text-sm text-gray-700
                   <li>• Objectifs non atteints</li>
                   <li>• Turnover élevé</li>
                   <li>• Démotivation générale</li>
@@ -309,8 +309,8 @@ export default function SalesManagementPage() {
               </div>
             </div>
             
-            <div className="mt-6 p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
-              <p className="text-sm text-gray-700 dark:text-gray-200 italic">
+            <div className="mt-6 p-4 bg-green-50 rounded-lg">
+              <p className="text-sm text-gray-700 italic">
                 💡 <strong>Conseil Laurent Serre :</strong> Le leadership commercial ne s'improvise pas. 
                 C'est un savant mélange de vision stratégique, d'intelligence émotionnelle et de compétences techniques. 
                 Investissez dans votre développement managérial : c'est le levier le plus puissant pour transformer vos résultats !
@@ -325,15 +325,15 @@ export default function SalesManagementPage() {
       {/* Suggestions cross-catégories */}
       <AnimatedSection delay={400}>
         <div className="max-w-6xl mx-auto px-4 mb-12">
-          <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-mint-green/20 backdrop-blur-sm">
+          <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-mint-green/20 backdrop-blur-sm">
             <div className="text-center mb-8">
               <span className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                 📚 Élargissez vos compétences
               </span>
-              <h3 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">
+              <h3 className="text-2xl font-bold text-blue-ink mb-4">
                 Livres complémentaires d'autres catégories
               </h3>
-              <p className="text-gray-700 dark:text-gray-200 mb-6">
+              <p className="text-gray-700 mb-6">
                 Pour un management moderne, combinez leadership traditionnel et transformation digitale
               </p>
             </div>
@@ -341,17 +341,17 @@ export default function SalesManagementPage() {
             <div className="grid md:grid-cols-2 gap-6">
               <Link 
                 href="/ressources/meilleurs-livres/digital-ai/human-machine"
-                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
+                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
               >
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex-1">
-                    <span className="inline-block bg-blue-500/20 text-blue-600 dark:text-blue-400 text-xs font-medium px-2 py-1 rounded-full mb-2">
+                    <span className="inline-block bg-blue-500/20 text-blue-600 text-xs font-medium px-2 py-1 rounded-full mb-2">
                       Digital & AI Sales
                     </span>
-                    <h4 className="text-xl font-bold text-blue-ink dark:text-blue-300 mb-2 group-hover:text-blue-500 transition-colors">
+                    <h4 className="text-xl font-bold text-blue-ink mb-2 group-hover:text-blue-500 transition-colors">
                       Human + Machine
                     </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                    <p className="text-sm text-gray-600 mb-2">
                       Paul Daugherty & James Wilson • 2018
                     </p>
                   </div>
@@ -359,7 +359,7 @@ export default function SalesManagementPage() {
                     →
                   </span>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                <p className="text-gray-700 mb-3 text-sm">
                   Pour comprendre comment l'IA peut augmenter les capacités de management de votre équipe
                 </p>
                 <span className="text-blue-500 font-medium group-hover:underline text-sm">
@@ -369,17 +369,17 @@ export default function SalesManagementPage() {
               
               <Link 
                 href="/ressources/meilleurs-livres/digital-ai/the-second-machine-age"
-                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
+                className="group p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-lg"
               >
                 <div className="flex items-start justify-between mb-3">
                   <div className="flex-1">
-                    <span className="inline-block bg-blue-500/20 text-blue-600 dark:text-blue-400 text-xs font-medium px-2 py-1 rounded-full mb-2">
+                    <span className="inline-block bg-blue-500/20 text-blue-600 text-xs font-medium px-2 py-1 rounded-full mb-2">
                       Digital & AI Sales
                     </span>
-                    <h4 className="text-xl font-bold text-blue-ink dark:text-blue-300 mb-2 group-hover:text-blue-500 transition-colors">
+                    <h4 className="text-xl font-bold text-blue-ink mb-2 group-hover:text-blue-500 transition-colors">
                       The Second Machine Age
                     </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                    <p className="text-sm text-gray-600 mb-2">
                       Erik Brynjolfsson & Andrew McAfee • 2014
                     </p>
                   </div>
@@ -387,7 +387,7 @@ export default function SalesManagementPage() {
                     →
                   </span>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-3 text-sm">
+                <p className="text-gray-700 mb-3 text-sm">
                   Pour anticiper l'impact des technologies numériques sur votre organisation commerciale
                 </p>
                 <span className="text-blue-500 font-medium group-hover:underline text-sm">
@@ -408,10 +408,10 @@ export default function SalesManagementPage() {
               <div className="inline-block bg-mint-green/30 text-mint-green font-semibold rounded-full px-4 py-2 text-sm mb-4 shadow-md backdrop-blur">
                 🎯 Formation
               </div>
-              <h4 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">
+              <h4 className="text-2xl font-bold text-blue-ink mb-4">
                 Bootcamp Commercial Intensif
               </h4>
-              <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Formez-vous avec les meilleures méthodes de management commercial issues de ces livres de référence
               </p>
               <Link 
@@ -427,10 +427,10 @@ export default function SalesManagementPage() {
               <div className="inline-block bg-blue-500/30 text-blue-300 font-semibold rounded-full px-4 py-2 text-sm mb-4 shadow-md backdrop-blur">
                 👥 Accompagnement
               </div>
-              <h4 className="text-2xl font-bold text-blue-ink dark:text-blue-300 mb-4">
+              <h4 className="text-2xl font-bold text-blue-ink mb-4">
                 Coaching Management Commercial
               </h4>
-              <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 Accompagnement personnalisé pour transformer votre leadership et développer une équipe d'excellence
               </p>
               <Link 

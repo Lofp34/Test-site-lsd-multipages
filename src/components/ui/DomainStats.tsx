@@ -79,18 +79,18 @@ const DomainStats: React.FC<DomainStatsProps> = ({
 
   return (
     <div 
-      className={`bg-white/90 dark:bg-gray-800/90 rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 ${
+      className={`bg-white/90 rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 ${
         isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
       }`}
       style={{ borderColor: `${domainColor}20` }}
     >
       {/* Header */}
       <div className="text-center mb-4 sm:mb-6">
-        <h4 className="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-2">
+        <h4 className="text-base sm:text-lg font-bold text-gray-900 mb-2">
           {title}
         </h4>
         {subtitle && (
-          <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+          <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
             {subtitle}
           </p>
         )}
@@ -143,13 +143,13 @@ const DomainStats: React.FC<DomainStatsProps> = ({
             </div>
 
             {/* Label */}
-            <div className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium leading-tight mb-1">
+            <div className="text-xs sm:text-sm text-gray-600 font-medium leading-tight mb-1">
               {stat.label}
             </div>
 
             {/* Description */}
             {stat.description && (
-              <div className="text-xs text-gray-500 dark:text-gray-500 leading-tight opacity-0 group-hover/stat:opacity-100 transition-opacity duration-300">
+              <div className="text-xs text-gray-500 leading-tight opacity-0 group-hover/stat:opacity-100 transition-opacity duration-300">
                 {stat.description}
               </div>
             )}
@@ -166,7 +166,7 @@ const DomainStats: React.FC<DomainStatsProps> = ({
       {/* Animated progress bar at bottom */}
       {animated && (
         <div className="mt-4 sm:mt-6">
-          <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1 overflow-hidden">
+          <div className="w-full bg-gray-200 rounded-full h-1 overflow-hidden">
             <div 
               className="h-full rounded-full transition-all duration-1000 ease-out"
               style={{ 

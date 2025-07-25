@@ -69,7 +69,7 @@ export default function ServicesPage() {
   ];
 
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <main className="flex flex-col min-h-screen bg-white
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -107,13 +107,13 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-20 bg-white
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-4">
               5 Services d'Excellence
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-2xl mx-auto">
               Chaque service est pensé pour répondre aux besoins spécifiques des PME 
               avec un accompagnement personnalisé et des résultats mesurables.
             </p>
@@ -128,26 +128,26 @@ export default function ServicesPage() {
                   href={service.href}
                   className="group"
                 >
-                  <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2 border border-gray-200 dark:border-gray-700">
+                  <div className="bg-white rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2 border border-gray-200
                     {/* Icon */}
                     <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
                       <IconComponent className="w-8 h-8 text-white" />
                     </div>
 
                     {/* Title */}
-                    <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4 group-hover:text-mint-green transition-colors">
+                    <h3 className="text-xl font-title font-bold text-blue-ink mb-4 group-hover:text-mint-green transition-colors">
                       {service.title}
                     </h3>
 
                     {/* Description */}
-                    <p className="text-gray-anthracite dark:text-primary-bg/80 mb-6 leading-relaxed">
+                    <p className="text-gray-anthracite mb-6 leading-relaxed">
                       {service.description}
                     </p>
 
                     {/* Features */}
                     <div className="space-y-2 mb-6">
                       {service.features.map((feature, i) => (
-                        <div key={i} className="flex items-center text-sm text-gray-600 dark:text-gray-300">
+                        <div key={i} className="flex items-center text-sm text-gray-600
                           <CheckCircle className="w-4 h-4 text-mint-green mr-2 flex-shrink-0" />
                           {feature}
                         </div>
@@ -168,12 +168,12 @@ export default function ServicesPage() {
       </section>
 
       {/* Expert Section */}
-      <section className="py-20 bg-slate-50 dark:bg-gray-anthracite/20">
+      <section className="py-20 bg-slate-50
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">
             Un Expert à Votre Service
           </h2>
-          <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-anthracite mb-8 max-w-2xl mx-auto">
             <Link href="/expert-developpement-commercial-pme" className="text-mint-green hover:underline font-semibold">
               Laurent Serre, expert développement commercial PME
             </Link>{" "}

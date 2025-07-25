@@ -214,12 +214,12 @@ export default function CategoryPageTemplate({
         {/* Section Cas Clients PME */}
         <AnimatedSection delay={450}>
           <div className="max-w-6xl mx-auto mb-12 px-4">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
               <div className="text-center mb-8">
                 <span className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🏢 Cas clients PME
                 </span>
-                <h3 className={`text-2xl font-bold text-blue-ink dark:text-[${theme.primaryColor}] mb-4`}>
+                <h3 className={`text-2xl font-bold text-blue-ink mb-4`}>
                   Exemples concrets de {category.title} en PME
                 </h3>
                 <p className="text-primary-secondary/90">
@@ -263,15 +263,15 @@ export default function CategoryPageTemplate({
                   puis étendent progressivement. L'erreur classique est de vouloir tout appliquer d'un coup."
                 </p>
                 <div className="grid md:grid-cols-3 gap-4 mt-4">
-                  <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
+                  <div className="text-center p-3 bg-white/50 rounded-lg">
                     <div className={`text-2xl font-bold text-[${theme.primaryColor}]`}>6 mois</div>
                     <div className="text-xs text-primary-secondary/70">Durée moyenne de maîtrise</div>
                   </div>
-                  <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
+                  <div className="text-center p-3 bg-white/50 rounded-lg">
                     <div className={`text-2xl font-bold text-[${theme.primaryColor}]`}>3-5x</div>
                     <div className="text-xs text-primary-secondary/70">ROI moyen sur l'investissement</div>
                   </div>
-                  <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
+                  <div className="text-center p-3 bg-white/50 rounded-lg">
                     <div className={`text-2xl font-bold text-[${theme.primaryColor}]`}>95%</div>
                     <div className="text-xs text-primary-secondary/70">Taux de satisfaction clients</div>
                   </div>
@@ -306,9 +306,9 @@ export default function CategoryPageTemplate({
         {/* CTAs Multiples */}
         <AnimatedSection delay={525}>
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
               <div className="text-center mb-8">
-                <h3 className={`text-2xl font-bold text-blue-ink dark:text-[${theme.primaryColor}] mb-4`}>
+                <h3 className={`text-2xl font-bold text-blue-ink mb-4`}>
                   Prêt à transformer vos résultats en {category.title} ?
                 </h3>
                 <p className="text-primary-secondary">
@@ -335,7 +335,7 @@ export default function CategoryPageTemplate({
                 
                 <Link 
                   href="/contact"
-                  className="group p-6 bg-white dark:bg-blue-ink border-2 border-[var(--theme-primary)] rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+                  className="group p-6 bg-white border-2 border-[var(--theme-primary)] rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl">💬</span>
