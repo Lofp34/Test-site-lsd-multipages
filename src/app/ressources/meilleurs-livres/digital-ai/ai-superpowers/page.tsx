@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import React from 'react';
 
 export const metadata: Metadata = {
   title: 'AI Superpowers : résumé complet | Digital & AI Sales | Laurent Serre',
