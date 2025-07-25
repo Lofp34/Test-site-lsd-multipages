@@ -38,7 +38,7 @@ const chantiers = [
 
 export default function ManagementEquipeCommercialePage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white
+    <main className="flex flex-col min-h-screen bg-white">
       {/* Header */}
       <div className="bg-gradient-to-br from-blue-ink to-blue-ink/90 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -46,7 +46,6 @@ export default function ManagementEquipeCommercialePage() {
             <ArrowLeft className="w-5 h-5 mr-2" />
             Retour aux services
           </Link>
-          
           <div className="text-center space-y-6">
             <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm border border-white/20 px-6 py-3 rounded-full">
               <Users className="w-5 h-5 text-white" />
@@ -54,21 +53,17 @@ export default function ManagementEquipeCommercialePage() {
                 Service • Management d'Équipe Commerciale
               </span>
             </div>
-            
             <h1 className="text-4xl md:text-6xl font-title font-bold text-white leading-tight">
               Transformez vos Managers en Leaders
             </h1>
-            
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Le manager est la clé de voûte de la performance commerciale. Nous vous aidons à développer leurs compétences pour en faire de véritables coachs.
             </p>
           </div>
         </div>
       </div>
-
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
-        
         {/* Introduction */}
         <section className="mb-16">
           <div className="bg-slate-50 rounded-2xl p-8 mb-12">
@@ -76,19 +71,17 @@ export default function ManagementEquipeCommercialePage() {
               <Shield className="w-8 h-8 text-blue-ink/80 mr-3" />
               Le maillon fort de votre stratégie
             </h2>
-            <p className="text-lg text-gray-anthracite
+            <p className="text-lg text-gray-anthracite">
               Un bon manager ne se contente pas de superviser. Il recrute, motive, coache, et structure. Il est le garant de la culture de la performance et le premier rempart contre le découragement. Investir sur vos managers, c'est investir sur la pérennité de vos résultats.
             </p>
           </div>
         </section>
-
         {/* Chapitre 1 */}
         <section className="mb-16">
           <h2 className="text-3xl font-title font-bold text-blue-ink mb-8 flex items-center">
             <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">1</span>
             Les 5 Chantiers du Manager Performant
           </h2>
-          
           <div className="grid md:grid-cols-2 gap-6">
             {chantiers.map((chantier) => {
               const Icon = chantier.icon;
@@ -96,8 +89,10 @@ export default function ManagementEquipeCommercialePage() {
                 <Link href={chantier.href} key={chantier.title} className="block group">
                   <div className="bg-white rounded-xl p-6 border border-slate-200 h-full group-hover:border-mint-green group-hover:shadow-lg transition-all duration-300">
                     <div className="flex items-center gap-3 mb-2">
-                      <Icon className="w-6 h-6 text-blue-ink />
-                      <h3 className="text-xl font-title font-semibold text-blue-ink
+                      <Icon className="w-6 h-6 text-blue-ink" />
+                      <h3 className="text-xl font-title font-semibold text-blue-ink">
+                        {chantier.title}
+                      </h3>
                     </div>
                     <p className="text-gray-anthracite text-sm">
                       {chantier.description}
@@ -108,7 +103,6 @@ export default function ManagementEquipeCommercialePage() {
             })}
           </div>
         </section>
-
         {/* CTA */}
         <section className="mt-24">
           <div className="bg-gradient-to-br from-blue-ink to-blue-ink/95 rounded-2xl p-10 text-center">
