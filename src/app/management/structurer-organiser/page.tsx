@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
-import { ArrowLeft, Users, FolderKanban, TrendingUp, CheckSquare, FileText, Share2 } from 'lucide-react';
+import { ArrowLeft, FolderKanban, Share2, FileText, Settings, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Structurer & Organiser une Équipe Commerciale | Process & Outils',
-  description: "Mettez en place des processus de vente clairs et des outils qui font gagner du temps. Guide pour les managers souhaitant structurer et organiser leur équipe commerciale.",
-  keywords: 'processus de vente, structurer équipe commerciale, organisation commerciale, sales playbook, outils vente',
+  title: 'Structurer & Organiser Votre Équipe Commerciale | Management',
+  description: 'Apprenez à structurer et organiser votre équipe commerciale avec des processus clairs, des outils optimisés et une organisation qui maximise la performance collective.',
+  keywords: 'structurer équipe commerciale, organisation commerciale, processus de vente, management commercial, outils CRM',
   alternates: {
     canonical: 'https://laurentserre.com/management/structurer-organiser',
   },
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function StructurerOrganiserPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white
+    <main className="flex flex-col min-h-screen bg-white">
       {/* Header */}
       <div className="bg-gradient-to-br from-blue-ink to-rose-500/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -55,7 +55,7 @@ export default function StructurerOrganiserPage() {
             <p className="text-lg text-gray-anthracite mb-4">
               Un commercial talentueux dans un système chaotique sera toujours moins performant à long terme qu'un commercial moyen dans un système bien structuré.
             </p>
-            <p className="text-lg text-gray-anthracite
+            <p className="text-lg text-gray-anthracite">
               <strong className="text-rose-500">Structurer, c'est clarifier le chemin vers le succès.</strong> C'est définir des étapes de vente claires, fournir les bons outils et créer des ressources partagées pour que l'intelligence collective prime sur l'effort individuel.
             </p>
           </div>
@@ -71,15 +71,33 @@ export default function StructurerOrganiserPage() {
             <p className="text-lg text-gray-anthracite mb-4">
               Le Sales Playbook est le document de référence qui centralise toutes les meilleures pratiques de votre équipe. C'est un document vivant, qui doit évoluer.
             </p>
-            <div className="bg-white rounded-xl p-6 border border-slate-200
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
               <h3 className="text-xl font-title font-semibold text-blue-ink mb-4">Contenu Essentiel du Playbook :</h3>
-              <ul className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-gray-anthracite
-                <li className="flex items-start"><FileText className="w-5 h-5 text-rose-500 mr-3 mt-1 flex-shrink-0" /><span>La présentation de l'offre et les personas cibles.</span></li>
-                <li className="flex items-start"><FileText className="w-5 h-5 text-rose-500 mr-3 mt-1 flex-shrink-0" /><span>Les étapes détaillées du processus de vente.</span></li>
-                <li className="flex items-start"><FileText className="w-5 h-5 text-rose-500 mr-3 mt-1 flex-shrink-0" /><span>Les scripts d'appel et modèles d'emails.</span></li>
-                <li className="flex items-start"><FileText className="w-5 h-5 text-rose-500 mr-3 mt-1 flex-shrink-0" /><span>Le traitement des objections les plus fréquentes.</span></li>
-                <li className="flex items-start"><FileText className="w-5 h-5 text-rose-500 mr-3 mt-1 flex-shrink-0" /><span>Les études de cas et témoignages clients.</span></li>
-                <li className="flex items-start"><FileText className="w-5 h-5 text-rose-500 mr-3 mt-1 flex-shrink-0" /><span>Les guides d'utilisation des outils (CRM, etc.).</span></li>
+              <ul className="grid md:grid-cols-2 gap-x-8 gap-y-4 text-gray-anthracite">
+                <li className="flex items-start">
+                  <FileText className="w-5 h-5 text-rose-500 mr-3 mt-1 flex-shrink-0" />
+                  <span>La présentation de l'offre et les personas cibles.</span>
+                </li>
+                <li className="flex items-start">
+                  <FileText className="w-5 h-5 text-rose-500 mr-3 mt-1 flex-shrink-0" />
+                  <span>Les étapes détaillées du processus de vente.</span>
+                </li>
+                <li className="flex items-start">
+                  <FileText className="w-5 h-5 text-rose-500 mr-3 mt-1 flex-shrink-0" />
+                  <span>Les scripts d'appel et modèles d'emails.</span>
+                </li>
+                <li className="flex items-start">
+                  <FileText className="w-5 h-5 text-rose-500 mr-3 mt-1 flex-shrink-0" />
+                  <span>Le traitement des objections les plus fréquentes.</span>
+                </li>
+                <li className="flex items-start">
+                  <FileText className="w-5 h-5 text-rose-500 mr-3 mt-1 flex-shrink-0" />
+                  <span>Les études de cas et témoignages clients.</span>
+                </li>
+                <li className="flex items-start">
+                  <FileText className="w-5 h-5 text-rose-500 mr-3 mt-1 flex-shrink-0" />
+                  <span>Les guides d'utilisation des outils (CRM, etc.).</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -98,11 +116,11 @@ export default function StructurerOrganiserPage() {
             <div className="border-l-4 border-rose-500 pl-6 space-y-8">
               <div>
                 <h4 className="font-title font-bold text-xl text-blue-ink mb-2">Définir les Étapes Claires du Pipeline</h4>
-                <p className="text-gray-anthracite : "Nouveau Lead" -> "Contact Établi" -> "RDV1 Réalisé" -> "Proposition Envoyée" -> "Négociation" -> "Gagné / Perdu". Chaque étape doit avoir des critères de sortie clairs et non-ambigus.</p>
+                <p className="text-gray-anthracite">Exemple : "Nouveau Lead" → "Contact Établi" → "RDV1 Réalisé" → "Proposition Envoyée" → "Négociation" → "Gagné / Perdu". Chaque étape doit avoir des critères de sortie clairs et non-ambigus.</p>
               </div>
               <div>
                 <h4 className="font-title font-bold text-xl text-blue-ink mb-2">Automatiser les Tâches à Faible Valeur</h4>
-                <p className="text-gray-anthracite votre CRM et d'autres outils pour automatiser les emails de relance, la prise de rendez-vous, la création de rapports. Libérez du temps à vos commerciaux pour qu'ils se concentrent sur la vente.</p>
+                <p className="text-gray-anthracite">Utilisez votre CRM et d'autres outils pour automatiser les emails de relance, la prise de rendez-vous, la création de rapports. Libérez du temps à vos commerciaux pour qu'ils se concentrent sur la vente.</p>
               </div>
             </div>
           </div>
@@ -112,19 +130,19 @@ export default function StructurerOrganiserPage() {
         <section className="mt-24">
           <div className="bg-gradient-to-br from-blue-ink to-blue-ink/95 rounded-2xl p-10 text-center">
             <h2 className="text-3xl font-title font-bold text-white mb-4">
-              Bâtissez une organisation commerciale d'élite.
+              Besoin de structurer votre organisation ?
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              La structure est le socle sur lequel la performance peut s'épanouir. Arrêtez de bricoler, commencez à construire.
+              Un système bien structuré multiplie la performance de votre équipe. Transformons votre organisation commerciale.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/diagnostic" className="inline-flex items-center bg-rose-500 hover:bg-rose-500/90 text-white px-8 py-4 rounded-full font-semibold transition-colors">
-                <CheckSquare className="w-5 h-5 mr-2" />
-                Auditer mon organisation commerciale
+              <Link href="/diagnostic" className="inline-flex items-center bg-rose-500 hover:bg-rose-600 text-white px-8 py-4 rounded-full font-semibold transition-colors">
+                <Settings className="w-5 h-5 mr-2" />
+                Auditer mon organisation
               </Link>
               <Link href="/contact" className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-blue-ink px-8 py-4 rounded-full font-semibold transition-colors">
-                <Users className="w-5 h-5 mr-2" />
-                Discuter de mes processus
+                <BarChart3 className="w-5 h-5 mr-2" />
+                Discuter avec un expert
               </Link>
             </div>
           </div>

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function RecruterIntegrerPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white
+    <main className="flex flex-col min-h-screen bg-white">
       {/* Header */}
       <div className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -55,7 +55,7 @@ export default function RecruterIntegrerPage() {
             <p className="text-lg text-gray-anthracite mb-4">
               Un mauvais recrutement coûte cher. Très cher. On estime qu'il représente entre 6 et 18 mois du salaire du poste. Au-delà du coût financier, il y a l'impact sur le moral de l'équipe, la relation client et le temps perdu.
             </p>
-            <p className="text-lg text-gray-anthracite
+            <p className="text-lg text-gray-anthracite">
               Cette section vous donne une méthode structurée pour <strong className="text-mint-green">sécuriser vos recrutements</strong> et <strong className="text-mint-green">accélérer la montée en compétence</strong> de vos nouvelles recrues.
             </p>
           </div>
@@ -68,12 +68,12 @@ export default function RecruterIntegrerPage() {
             Définir le Profil Idéal : Au-delà du CV
           </h2>
           <div className="space-y-6">
-            <div className="bg-white rounded-xl p-6 border border-slate-200
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
               <h3 className="text-xl font-title font-semibold text-blue-ink mb-4">
                 La "Scorecard" du Poste : Votre Boussole
               </h3>
               <p className="text-gray-anthracite mb-4">Avant de chercher, sachez ce que vous voulez trouver. La scorecard définit le succès pour le poste :</p>
-              <ul className="space-y-3 text-gray-anthracite
+              <ul className="space-y-3 text-gray-anthracite">
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-mint-green mr-3 mt-0.5 flex-shrink-0" />
                   <span><strong>Mission :</strong> Quelle est la raison d'être du poste ? (Ex: "Développer un portefeuille de nouveaux clients sur le secteur Est").</span>
@@ -84,15 +84,24 @@ export default function RecruterIntegrerPage() {
                 </li>
               </ul>
             </div>
-            <div className="bg-white rounded-xl p-6 border border-slate-200
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
               <h3 className="text-xl font-title font-semibold text-blue-ink mb-4">
                 Les Compétences Non-Négociables
               </h3>
               <p className="text-gray-anthracite mb-4">L'expérience c'est bien, mais les savoir-être (soft skills) font la différence sur le long terme. Cherchez activement :</p>
               <div className="grid md:grid-cols-3 gap-4 text-center">
-                <div className="bg-slate-50 p-4 rounded-lg"><strong>Curiosité</strong><p className="text-sm">Veut sincèrement comprendre le problème du client.</p></div>
-                <div className="bg-slate-50 p-4 rounded-lg"><strong>Résilience</strong><p className="text-sm">Ne se décourage pas face au "non".</p></div>
-                <div className="bg-slate-50 p-4 rounded-lg"><strong>Coachabilité</strong><p className="text-sm">Est ouvert au feedback et cherche à progresser.</p></div>
+                <div className="bg-slate-50 p-4 rounded-lg">
+                  <strong>Curiosité</strong>
+                  <p className="text-sm">Veut sincèrement comprendre le problème du client.</p>
+                </div>
+                <div className="bg-slate-50 p-4 rounded-lg">
+                  <strong>Résilience</strong>
+                  <p className="text-sm">Ne se décourage pas face au "non".</p>
+                </div>
+                <div className="bg-slate-50 p-4 rounded-lg">
+                  <strong>Coachabilité</strong>
+                  <p className="text-sm">Est ouvert au feedback et cherche à progresser.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -111,30 +120,69 @@ export default function RecruterIntegrerPage() {
             <div className="border-l-4 border-mint-green pl-6 space-y-8">
               <div>
                 <h4 className="font-title font-bold text-xl text-blue-ink mb-2">Jours 1-30 : Immersion & Premières Bases</h4>
-                <ul className="space-y-2 text-gray-anthracite
-                  <li className="flex"><UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" /><span>Immersion culturelle : rencontres avec les équipes clés (produit, marketing, support).</span></li>
-                  <li className="flex"><UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" /><span>Formation produit/service intensive.</span></li>
-                  <li className="flex"><UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" /><span>Prise en main des outils (CRM).</span></li>
-                  <li className="flex"><UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" /><span>Premiers appels en écoute (shadowing) avec un commercial senior.</span></li>
-                  <li className="flex"><UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" /><span><strong>Objectif :</strong> Comprendre l'écosystème et le discours.</span></li>
+                <ul className="space-y-2 text-gray-anthracite">
+                  <li className="flex">
+                    <UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" />
+                    <span>Immersion culturelle : rencontres avec les équipes clés (produit, marketing, support).</span>
+                  </li>
+                  <li className="flex">
+                    <UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" />
+                    <span>Formation produit/service intensive.</span>
+                  </li>
+                  <li className="flex">
+                    <UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" />
+                    <span>Prise en main des outils (CRM).</span>
+                  </li>
+                  <li className="flex">
+                    <UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" />
+                    <span>Premiers appels en écoute (shadowing) avec un commercial senior.</span>
+                  </li>
+                  <li className="flex">
+                    <UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" />
+                    <span><strong>Objectif :</strong> Comprendre l'écosystème et le discours.</span>
+                  </li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-title font-bold text-xl text-blue-ink mb-2">Jours 31-60 : Action & Premiers Feedbacks</h4>
-                <ul className="space-y-2 text-gray-anthracite
-                  <li className="flex"><UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" /><span>Lancement des premières actions de prospection.</span></li>
-                  <li className="flex"><UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" /><span>Premiers rendez-vous menés en binôme avec le manager.</span></li>
-                  <li className="flex"><UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" /><span>Points de feedback hebdomadaires structurés.</span></li>
-                  <li className="flex"><UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" /><span><strong>Objectif :</strong> Générer les premières opportunités et itérer sur l'approche.</span></li>
+                <ul className="space-y-2 text-gray-anthracite">
+                  <li className="flex">
+                    <UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" />
+                    <span>Lancement des premières actions de prospection.</span>
+                  </li>
+                  <li className="flex">
+                    <UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" />
+                    <span>Premiers rendez-vous menés en binôme avec le manager.</span>
+                  </li>
+                  <li className="flex">
+                    <UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" />
+                    <span>Points de feedback hebdomadaires structurés.</span>
+                  </li>
+                  <li className="flex">
+                    <UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" />
+                    <span><strong>Objectif :</strong> Générer les premières opportunités et itérer sur l'approche.</span>
+                  </li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-title font-bold text-xl text-blue-ink mb-2">Jours 61-90 : Autonomie & Performance</h4>
-                <ul className="space-y-2 text-gray-anthracite
-                  <li className="flex"><UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" /><span>Gestion autonome du cycle de vente sur des prospects qualifiés.</span></li>
-                  <li className="flex"><UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" /><span>Atteinte des premiers objectifs d'activité (KPIs).</span></li>
-                  <li className="flex"><UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" /><span>Bilan de performance des 90 jours et définition du plan de développement.</span></li>
-                  <li className="flex"><UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" /><span><strong>Objectif :</strong> Devenir un membre contributeur et autonome de l'équipe.</span></li>
+                <ul className="space-y-2 text-gray-anthracite">
+                  <li className="flex">
+                    <UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" />
+                    <span>Gestion autonome du cycle de vente sur des prospects qualifiés.</span>
+                  </li>
+                  <li className="flex">
+                    <UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" />
+                    <span>Atteinte des premiers objectifs d'activité (KPIs).</span>
+                  </li>
+                  <li className="flex">
+                    <UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" />
+                    <span>Bilan de performance des 90 jours et définition du plan de développement.</span>
+                  </li>
+                  <li className="flex">
+                    <UserCheck className="w-5 h-5 text-mint-green mr-3 flex-shrink-0" />
+                    <span><strong>Objectif :</strong> Devenir un membre contributeur et autonome de l'équipe.</span>
+                  </li>
                 </ul>
               </div>
             </div>
