@@ -10,7 +10,7 @@ export default function ResourcesPMESection() {
     {
       title: "Scripts IMPACT et AIDA+",
       description: "Modèles de scripts de prospection éprouvés pour PME",
-      href: "/ressources/scripts-prospection",
+      href: "/ressources/impact-aida-script-prospection-pme",
       icon: "📝",
       category: "Prospection"
     },
