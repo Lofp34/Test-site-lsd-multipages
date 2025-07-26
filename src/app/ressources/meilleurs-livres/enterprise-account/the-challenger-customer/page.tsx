@@ -20,8 +20,8 @@ export default function ChallengerCustomerPage() {
         </section>
 
         {/* Résumé détaillé */}
-        <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
-          <h2 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">Résumé du livre</h2>
+        <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
+          <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
             Suite du Challenger Sale, ce livre se focalise sur l’autre côté de la table : comment vendre efficacement à un comité d’achat complexe. Les auteurs démystifient le processus d’achat en entreprise moderne, qu’ils décrivent comme dysfonctionnel par défaut : en moyenne 5,4 personnes (parfois plus) participent à la décision, chacune avec ses priorités, ce qui conduit souvent à l’immobilisme ou au choix par défaut (le moins risqué).
           </p>
@@ -40,7 +40,7 @@ export default function ChallengerCustomerPage() {
             <li>Ignorer les Talkers et Blockers pour se concentrer sur les vrais moteurs du changement</li>
           </ul>
 
-          <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink dark:text-mint-green mb-6">
+          <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
             « Pour vendre à un grand compte, il ne suffit pas de convaincre un décideur : il faut mobiliser un allié interne capable de porter le changement et de construire le consensus. »
           </blockquote>
         </article>
@@ -48,8 +48,8 @@ export default function ChallengerCustomerPage() {
         {/* CTA Bootcamp */}
         <div className="max-w-2xl mx-auto text-center mt-8 mb-12">
           <div className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-2 shadow-md backdrop-blur">Passez du livre au terrain</div>
-          <h4 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-2">Découvrez le Bootcamp Grands Comptes by LSD</h4>
-          <p className="text-lg text-gray-700 dark:text-gray-100 mb-4">Formez-vous avec les meilleures méthodes issues de ce livre, adaptées à la gestion des comptes stratégiques et grands comptes.</p>
+          <h4 className="text-2xl font-bold text-blue-ink mb-2">Découvrez le Bootcamp Grands Comptes by LSD</h4>
+          <p className="text-lg text-gray-700 mb-4">Formez-vous avec les meilleures méthodes issues de ce livre, adaptées à la gestion des comptes stratégiques et grands comptes.</p>
           <Link href="/bootcamp" className="inline-block bg-mint-green text-blue-ink font-semibold px-6 py-3 rounded-full shadow hover:bg-mint-green/80 transition">Voir le Bootcamp</Link>
         </div>
 

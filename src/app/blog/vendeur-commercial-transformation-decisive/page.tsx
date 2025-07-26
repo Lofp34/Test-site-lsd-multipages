@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function Article5() {
   return (
-    <main className="bg-primary-bg dark:bg-gray-dark text-gray-dark dark:text-primary-bg">
+    <main className="bg-primary-bg text-gray-dark">
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -37,11 +37,11 @@ export default function Article5() {
               <span className="font-title font-semibold text-mint-green text-sm">Management</span>
             </div>
             
-            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink dark:text-white sm:text-5xl mb-6">
+            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
               De vendeur à commercial : la transformation qui change tout
             </h1>
             
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8">
+            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
               <div className="flex items-center gap-2">
                 <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" loading="lazy" />
                 <span>Laurent Serre</span>
@@ -57,13 +57,13 @@ export default function Article5() {
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
-          <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+          <p className="text-xl text-gray-600 leading-relaxed mb-8">
             "Vendeur" et "commercial" ne sont pas synonymes. Cette confusion coûte cher aux entreprises. 
             Comprendre cette différence et savoir opérer la transformation peut multiplier vos résultats par 3. 
             Voici comment faire.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Le vendeur : technicien de la transaction
           </h2>
           
@@ -84,7 +84,7 @@ export default function Article5() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Le commercial : stratège de la relation
           </h2>
           
@@ -106,50 +106,50 @@ export default function Article5() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Les 5 différences fondamentales
           </h2>
           
           <div className="overflow-x-auto mb-8">
-            <table className="w-full border-collapse border border-gray-300 dark:border-gray-600">
+            <table className="w-full border-collapse border border-gray-300">
               <thead>
                 <tr className="bg-blue-ink/10">
-                  <th className="border border-gray-300 dark:border-gray-600 p-3 text-left font-title font-semibold">Aspect</th>
-                  <th className="border border-gray-300 dark:border-gray-600 p-3 text-left font-title font-semibold">Vendeur</th>
-                  <th className="border border-gray-300 dark:border-gray-600 p-3 text-left font-title font-semibold">Commercial</th>
+                  <th className="border border-gray-300 p-3 text-left font-title font-semibold">Aspect</th>
+                  <th className="border border-gray-300 p-3 text-left font-title font-semibold">Vendeur</th>
+                  <th className="border border-gray-300 p-3 text-left font-title font-semibold">Commercial</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-gray-300 dark:border-gray-600 p-3 font-semibold">Focus</td>
-                  <td className="border border-gray-300 dark:border-gray-600 p-3">Produit</td>
-                  <td className="border border-gray-300 dark:border-gray-600 p-3">Client</td>
+                  <td className="border border-gray-300 p-3 font-semibold">Focus</td>
+                  <td className="border border-gray-300 p-3">Produit</td>
+                  <td className="border border-gray-300 p-3">Client</td>
                 </tr>
-                <tr className="bg-gray-50 dark:bg-gray-800">
-                  <td className="border border-gray-300 dark:border-gray-600 p-3 font-semibold">Approche</td>
-                  <td className="border border-gray-300 dark:border-gray-600 p-3">Transaction</td>
-                  <td className="border border-gray-300 dark:border-gray-600 p-3">Relation</td>
-                </tr>
-                <tr>
-                  <td className="border border-gray-300 dark:border-gray-600 p-3 font-semibold">Temporalité</td>
-                  <td className="border border-gray-300 dark:border-gray-600 p-3">Court terme</td>
-                  <td className="border border-gray-300 dark:border-gray-600 p-3">Long terme</td>
-                </tr>
-                <tr className="bg-gray-50 dark:bg-gray-800">
-                  <td className="border border-gray-300 dark:border-gray-600 p-3 font-semibold">Posture</td>
-                  <td className="border border-gray-300 dark:border-gray-600 p-3">Présente</td>
-                  <td className="border border-gray-300 dark:border-gray-600 p-3">Conseille</td>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-300 p-3 font-semibold">Approche</td>
+                  <td className="border border-gray-300 p-3">Transaction</td>
+                  <td className="border border-gray-300 p-3">Relation</td>
                 </tr>
                 <tr>
-                  <td className="border border-gray-300 dark:border-gray-600 p-3 font-semibold">Valeur</td>
-                  <td className="border border-gray-300 dark:border-gray-600 p-3">Prix</td>
-                  <td className="border border-gray-300 dark:border-gray-600 p-3">ROI</td>
+                  <td className="border border-gray-300 p-3 font-semibold">Temporalité</td>
+                  <td className="border border-gray-300 p-3">Court terme</td>
+                  <td className="border border-gray-300 p-3">Long terme</td>
+                </tr>
+                <tr className="bg-gray-50">
+                  <td className="border border-gray-300 p-3 font-semibold">Posture</td>
+                  <td className="border border-gray-300 p-3">Présente</td>
+                  <td className="border border-gray-300 p-3">Conseille</td>
+                </tr>
+                <tr>
+                  <td className="border border-gray-300 p-3 font-semibold">Valeur</td>
+                  <td className="border border-gray-300 p-3">Prix</td>
+                  <td className="border border-gray-300 p-3">ROI</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Pourquoi cette transformation est cruciale
           </h2>
           
@@ -177,11 +177,11 @@ export default function Article5() {
             Le vendeur vit l'incertitude permanente des nouvelles affaires.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Comment opérer la transformation ?
           </h2>
           
-          <h3 className="text-2xl font-title font-semibold text-blue-ink dark:text-white mt-8 mb-4">
+          <h3 className="text-2xl font-title font-semibold text-blue-ink mt-8 mb-4">
             Étape 1 : Changer le mindset
           </h3>
           
@@ -191,7 +191,7 @@ export default function Article5() {
             à "résolveur de problèmes".
           </p>
           
-          <h3 className="text-2xl font-title font-semibold text-blue-ink dark:text-white mt-8 mb-4">
+          <h3 className="text-2xl font-title font-semibold text-blue-ink mt-8 mb-4">
             Étape 2 : Former à l'écoute active
           </h3>
           
@@ -200,7 +200,7 @@ export default function Article5() {
             20% seulement à présenter. C'est l'inverse du vendeur classique.
           </p>
           
-          <h3 className="text-2xl font-title font-semibold text-blue-ink dark:text-white mt-8 mb-4">
+          <h3 className="text-2xl font-title font-semibold text-blue-ink mt-8 mb-4">
             Étape 3 : Développer la connaissance business
           </h3>
           
@@ -209,7 +209,7 @@ export default function Article5() {
             réglementations, tendances marché, défis récurrents, indicateurs clés.
           </p>
           
-          <h3 className="text-2xl font-title font-semibold text-blue-ink dark:text-white mt-8 mb-4">
+          <h3 className="text-2xl font-title font-semibold text-blue-ink mt-8 mb-4">
             Étape 4 : Structurer le processus de vente
           </h3>
           
@@ -225,7 +225,7 @@ export default function Article5() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Les résistances à anticiper
           </h2>
           
@@ -271,7 +271,7 @@ export default function Article5() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             L'impact de la transformation
           </h2>
           
@@ -295,9 +295,9 @@ export default function Article5() {
           </p>
         </div>
       </article>
-      <section className="py-16 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
             Prendre contact avec Laurent Serre
           </h2>
           <HubSpotForm />

@@ -13,21 +13,21 @@ const techniques = [
 
 export default function TechniquesNegociation() {
   return (
-    <main className="bg-primary-bg dark:bg-gray-dark text-gray-dark dark:text-primary-bg min-h-screen">
+    <main className="bg-primary-bg text-gray-dark min-h-screen">
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl sm:text-5xl font-title font-bold text-blue-ink dark:text-white mb-8">
+          <h1 className="text-4xl sm:text-5xl font-title font-bold text-blue-ink mb-8">
             Techniques de négociation – Ce que le FBI, les psy et les commerciaux ont en commun
           </h1>
-          <p className="text-xl text-gray-700 dark:text-gray-300 mb-12">
+          <p className="text-xl text-gray-700 mb-12">
             Négocier, ce n’est pas convaincre. C’est influencer le cadre. Voici les techniques les plus efficaces, du FBI aux salles de réunion, analysées et contextualisées pour le business B2B.
           </p>
           <div className="grid gap-8 md:grid-cols-2">
             {techniques.map((tech) => (
-              <Link key={tech.slug} href={`/blog/${tech.slug}`} className="block bg-white/80 dark:bg-gray-anthracite/80 rounded-2xl shadow-lg p-8 hover:scale-105 transition-transform border-2 border-blue-ink/20 hover:border-blue-ink/60 mb-4">
-                <h2 className="text-xl font-title font-bold text-blue-ink dark:text-white mb-2">{tech.title}</h2>
-                <p className="text-gray-600 dark:text-gray-300 mb-1">{tech.auteur}</p>
-                <p className="text-gray-500 dark:text-gray-400 text-sm">{tech.remarque}</p>
+              <Link key={tech.slug} href={`/blog/${tech.slug}`} className="block bg-white/80 rounded-2xl shadow-lg p-8 hover:scale-105 transition-transform border-2 border-blue-ink/20 hover:border-blue-ink/60 mb-4">
+                <h2 className="text-xl font-title font-bold text-blue-ink mb-2">{tech.title}</h2>
+                <p className="text-gray-600 mb-1">{tech.auteur}</p>
+                <p className="text-gray-500 text-sm">{tech.remarque}</p>
                 <p className="text-mint-green font-semibold mt-2">Découvrir la technique</p>
               </Link>
             ))}

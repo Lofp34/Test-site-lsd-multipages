@@ -32,13 +32,13 @@ export default function CategoryBreadcrumb({
               <span className="text-gray-400 mx-2">→</span>
             )}
             {item.current ? (
-              <span className="text-blue-ink dark:text-blue-300 font-semibold">
+              <span className="text-blue-ink font-semibold">
                 {item.label}
               </span>
             ) : (
               <Link 
                 href={item.href}
-                className="text-gray-600 dark:text-gray-300 hover:text-blue-500 transition-colors"
+                className="text-gray-600 hover:text-blue-500 transition-colors"
               >
                 {item.label}
               </Link>
@@ -49,8 +49,8 @@ export default function CategoryBreadcrumb({
 
       {/* Related categories */}
       {relatedCategories.length > 0 && (
-        <div className="bg-white/70 dark:bg-blue-ink/80 rounded-xl shadow-lg p-6 border border-blue-200/30 backdrop-blur-sm">
-          <h3 className="text-lg font-bold text-blue-ink dark:text-blue-300 mb-4">
+        <div className="bg-white/70 rounded-xl shadow-lg p-6 border border-blue-200/30 backdrop-blur-sm">
+          <h3 className="text-lg font-bold text-blue-ink mb-4">
             📚 Autres catégories qui pourraient vous intéresser
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -58,14 +58,14 @@ export default function CategoryBreadcrumb({
               <Link
                 key={index}
                 href={category.href}
-                className="group flex items-start p-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-lg border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-md"
+                className="group flex items-start p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-blue-200/30 hover:border-blue-400/50 transition-all duration-300 hover:shadow-md"
               >
                 <span className="text-2xl mr-3 flex-shrink-0">{category.icon}</span>
                 <div className="flex-1 min-w-0">
-                  <h4 className="font-semibold text-blue-ink dark:text-blue-300 group-hover:text-blue-500 transition-colors text-sm">
+                  <h4 className="font-semibold text-blue-ink group-hover:text-blue-500 transition-colors text-sm">
                     {category.title}
                   </h4>
-                  <p className="text-xs text-gray-600 dark:text-gray-400 mt-1 line-clamp-2">
+                  <p className="text-xs text-gray-600 mt-1 line-clamp-2">
                     {category.description}
                   </p>
                 </div>

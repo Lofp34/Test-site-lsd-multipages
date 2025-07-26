@@ -102,7 +102,7 @@ export default function BlogPage() {
   const regularPosts = blogPosts.filter(post => !post.featured);
 
   return (
-    <main className="bg-primary-bg dark:bg-gray-dark text-gray-dark dark:text-primary-bg">
+    <main className="bg-primary-bg text-gray-dark">
       {/* Hero Section conforme */}
       <section className="min-h-screen relative overflow-hidden flex items-center justify-center pt-20">
         <div className="absolute inset-0 z-0">
@@ -155,9 +155,9 @@ export default function BlogPage() {
       </section>
 
       {/* Articles en vedette */}
-      <section className="py-16 bg-white dark:bg-gray-anthracite">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mb-12">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-12">
             Articles en vedette
           </h2>
           
@@ -182,7 +182,7 @@ export default function BlogPage() {
                   </div>
                   
                   <div className="mt-6">
-                    <div className="flex items-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-3">
+                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-3">
                       <time dateTime={post.date}>
                         {new Date(post.date).toLocaleDateString('fr-FR', { 
                           year: 'numeric', 
@@ -194,11 +194,11 @@ export default function BlogPage() {
                       <span>{post.readTime} de lecture</span>
                     </div>
                     
-                    <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-white mb-3 group-hover:text-mint-green transition-colors">
+                    <h3 className="text-xl font-title font-semibold text-blue-ink mb-3 group-hover:text-mint-green transition-colors">
                       {post.title}
                     </h3>
                     
-                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                    <p className="text-gray-600 leading-relaxed">
                       {post.description}
                     </p>
                   </div>
@@ -210,9 +210,9 @@ export default function BlogPage() {
       </section>
 
       {/* Tous les articles */}
-      <section className="py-16 bg-primary-bg dark:bg-gray-dark">
+      <section className="py-16 bg-primary-bg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mb-12">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-12">
             Tous les articles
           </h2>
           
@@ -236,7 +236,7 @@ export default function BlogPage() {
                   </div>
                   
                   <div className="mt-4">
-                    <div className="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400 mb-2">
+                    <div className="flex items-center gap-3 text-sm text-gray-500 mb-2">
                       <time dateTime={post.date}>
                         {new Date(post.date).toLocaleDateString('fr-FR', { 
                           year: 'numeric', 
@@ -248,11 +248,11 @@ export default function BlogPage() {
                       <span>{post.readTime}</span>
                     </div>
                     
-                    <h3 className="text-lg font-title font-semibold text-blue-ink dark:text-white mb-2 group-hover:text-mint-green transition-colors">
+                    <h3 className="text-lg font-title font-semibold text-blue-ink mb-2 group-hover:text-mint-green transition-colors">
                       {post.title}
                     </h3>
                     
-                    <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed">
                       {post.description}
                     </p>
                   </div>
@@ -262,9 +262,9 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-      <section className="py-16 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
             Prendre contact avec Laurent Serre
           </h2>
           <HubSpotForm />

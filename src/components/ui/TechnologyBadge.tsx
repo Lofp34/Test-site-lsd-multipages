@@ -98,58 +98,58 @@ const TechnologyBadge: React.FC<TechnologyBadgeProps> = memo(({
   const colorConfig: Record<string, any> = {
     cyan: {
       primary: 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white border-cyan-400',
-      secondary: 'bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-300 border-cyan-200 dark:border-cyan-700',
-      outline: 'bg-transparent text-cyan-600 dark:text-cyan-400 border-cyan-300 dark:border-cyan-600'
+      secondary: 'bg-cyan-100 text-cyan-800 border-cyan-200',
+      outline: 'bg-transparent text-cyan-600 border-cyan-300'
     },
     purple: {
       primary: 'bg-gradient-to-r from-purple-500 to-indigo-500 text-white border-purple-400',
-      secondary: 'bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 border-purple-200 dark:border-purple-700',
-      outline: 'bg-transparent text-purple-600 dark:text-purple-400 border-purple-300 dark:border-purple-600'
+      secondary: 'bg-purple-100 text-purple-800 border-purple-200',
+      outline: 'bg-transparent text-purple-600 border-purple-300'
     },
     indigo: {
       primary: 'bg-gradient-to-r from-indigo-500 to-purple-500 text-white border-indigo-400',
-      secondary: 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 border-indigo-200 dark:border-indigo-700',
-      outline: 'bg-transparent text-indigo-600 dark:text-indigo-400 border-indigo-300 dark:border-indigo-600'
+      secondary: 'bg-indigo-100 text-indigo-800 border-indigo-200',
+      outline: 'bg-transparent text-indigo-600 border-indigo-300'
     },
     blue: {
       primary: 'bg-gradient-to-r from-blue-500 to-cyan-500 text-white border-blue-400',
-      secondary: 'bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 border-blue-200 dark:border-blue-700',
-      outline: 'bg-transparent text-blue-600 dark:text-blue-400 border-blue-300 dark:border-blue-600'
+      secondary: 'bg-blue-100 text-blue-800 border-blue-200',
+      outline: 'bg-transparent text-blue-600 border-blue-300'
     },
     orange: {
       primary: 'bg-gradient-to-r from-orange-500 to-red-500 text-white border-orange-400',
-      secondary: 'bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300 border-orange-200 dark:border-orange-700',
-      outline: 'bg-transparent text-orange-600 dark:text-orange-400 border-orange-300 dark:border-orange-600'
+      secondary: 'bg-orange-100 text-orange-800 border-orange-200',
+      outline: 'bg-transparent text-orange-600 border-orange-300'
     },
     teal: {
       primary: 'bg-gradient-to-r from-teal-500 to-cyan-500 text-white border-teal-400',
-      secondary: 'bg-teal-100 dark:bg-teal-900/30 text-teal-800 dark:text-teal-300 border-teal-200 dark:border-teal-700',
-      outline: 'bg-transparent text-teal-600 dark:text-teal-400 border-teal-300 dark:border-teal-600'
+      secondary: 'bg-teal-100 text-teal-800 border-teal-200',
+      outline: 'bg-transparent text-teal-600 border-teal-300'
     },
     green: {
       primary: 'bg-gradient-to-r from-green-500 to-teal-500 text-white border-green-400',
-      secondary: 'bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 border-green-200 dark:border-green-700',
-      outline: 'bg-transparent text-green-600 dark:text-green-400 border-green-300 dark:border-green-600'
+      secondary: 'bg-green-100 text-green-800 border-green-200',
+      outline: 'bg-transparent text-green-600 border-green-300'
     },
     emerald: {
       primary: 'bg-gradient-to-r from-emerald-500 to-green-500 text-white border-emerald-400',
-      secondary: 'bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300 border-emerald-200 dark:border-emerald-700',
-      outline: 'bg-transparent text-emerald-600 dark:text-emerald-400 border-emerald-300 dark:border-emerald-600'
+      secondary: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+      outline: 'bg-transparent text-emerald-600 border-emerald-300'
     },
     red: {
       primary: 'bg-gradient-to-r from-red-500 to-pink-500 text-white border-red-400',
-      secondary: 'bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 border-red-200 dark:border-red-700',
-      outline: 'bg-transparent text-red-600 dark:text-red-400 border-red-300 dark:border-red-600'
+      secondary: 'bg-red-100 text-red-800 border-red-200',
+      outline: 'bg-transparent text-red-600 border-red-300'
     },
     mint: {
       primary: 'bg-gradient-to-r from-mint-green to-teal-400 text-blue-ink border-mint-green',
-      secondary: 'bg-mint-green/20 dark:bg-mint-green/10 text-mint-green dark:text-mint-green border-mint-green/30 dark:border-mint-green/20',
+      secondary: 'bg-mint-green/20 text-mint-green border-mint-green/30',
       outline: 'bg-transparent text-mint-green border-mint-green/50'
     },
     gray: {
       primary: 'bg-gradient-to-r from-gray-500 to-gray-600 text-white border-gray-400',
-      secondary: 'bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 border-gray-200 dark:border-gray-600',
-      outline: 'bg-transparent text-gray-600 dark:text-gray-400 border-gray-300 dark:border-gray-600'
+      secondary: 'bg-gray-100 text-gray-700 border-gray-200',
+      outline: 'bg-transparent text-gray-600 border-gray-300'
     }
   };
 

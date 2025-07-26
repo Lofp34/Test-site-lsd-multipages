@@ -122,12 +122,12 @@ export default function InnovatorsDilemmaPage() {
 
         {/* Résumé détaillé */}
         <article className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Résumé détaillé
             </h2>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 Clayton Christensen révolutionne la compréhension de l'innovation avec sa théorie de la disruption. Son analyse de secteurs comme le disque dur, l'acier, ou les ordinateurs révèle un paradoxe troublant : les entreprises les mieux gérées échouent précisément parce qu'elles font ce qu'elles sont censées faire.
               </p>
@@ -202,8 +202,8 @@ export default function InnovatorsDilemmaPage() {
 
         {/* Points clés à retenir */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Points clés à retenir
             </h2>
             
@@ -218,7 +218,7 @@ export default function InnovatorsDilemmaPage() {
               ].map((point, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-mint-green text-xl mr-3 mt-1">✓</span>
-                  <span className="text-gray-800 dark:text-gray-200 text-lg">{point}</span>
+                  <span className="text-gray-800 text-lg">{point}</span>
                 </li>
               ))}
             </ul>
@@ -227,48 +227,48 @@ export default function InnovatorsDilemmaPage() {
 
         {/* Exemples terrain PME françaises */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Exemples terrain adaptés aux PME françaises
             </h2>
             
             <div className="space-y-6">
               <div className="bg-mint-green/10 p-6 rounded-lg">
                 <h3 className="text-xl font-bold text-blue-ink mb-3">🏪 Commerce de proximité vs E-commerce</h3>
-                <p className="text-gray-800 dark:text-gray-200 mb-3">
+                <p className="text-gray-800 mb-3">
                   <strong>Innovation de maintien :</strong> Améliorer l'accueil, agrandir les surfaces, diversifier l'offre
                 </p>
-                <p className="text-gray-800 dark:text-gray-200">
+                <p className="text-gray-800">
                   <strong>Disruption :</strong> Amazon, initialement "moins bien" (pas de contact physique, délais de livraison) mais avec de nouveaux attributs (choix infini, prix, commodité). Beaucoup de commerces ont ignoré cette menace jusqu'à ce qu'il soit trop tard.
                 </p>
               </div>
 
               <div className="bg-blue-ink/10 p-6 rounded-lg">
                 <h3 className="text-xl font-bold text-blue-ink mb-3">🚗 Taxis vs VTC/Uber</h3>
-                <p className="text-gray-800 dark:text-gray-200 mb-3">
+                <p className="text-gray-800 mb-3">
                   <strong>Innovation de maintien :</strong> Améliorer le service, former les chauffeurs, moderniser les véhicules
                 </p>
-                <p className="text-gray-800 dark:text-gray-200">
+                <p className="text-gray-800">
                   <strong>Disruption :</strong> Uber, initialement "moins bien" (chauffeurs non professionnels, véhicules personnels) mais avec de nouveaux attributs (géolocalisation, paiement automatique, notation). Les taxis ont résisté au lieu de s'adapter.
                 </p>
               </div>
 
               <div className="bg-orange-soft/10 p-6 rounded-lg">
                 <h3 className="text-xl font-bold text-blue-ink mb-3">🏦 Banques traditionnelles vs Fintech</h3>
-                <p className="text-gray-800 dark:text-gray-200 mb-3">
+                <p className="text-gray-800 mb-3">
                   <strong>Innovation de maintien :</strong> Améliorer l'accueil en agence, créer de nouveaux produits financiers complexes
                 </p>
-                <p className="text-gray-800 dark:text-gray-200">
+                <p className="text-gray-800">
                   <strong>Disruption :</strong> Revolut, N26, initialement "moins bien" (pas d'agences, services limités) mais avec de nouveaux attributs (100% mobile, frais réduits, simplicité). Beaucoup de banques traditionnelles ont sous-estimé cette menace.
                 </p>
               </div>
 
               <div className="bg-red-500/10 p-6 rounded-lg">
                 <h3 className="text-xl font-bold text-blue-ink mb-3">📚 Formation traditionnelle vs E-learning</h3>
-                <p className="text-gray-800 dark:text-gray-200 mb-3">
+                <p className="text-gray-800 mb-3">
                   <strong>Innovation de maintien :</strong> Améliorer les salles, recruter de meilleurs formateurs, créer des supports plus beaux
                 </p>
-                <p className="text-gray-800 dark:text-gray-200">
+                <p className="text-gray-800">
                   <strong>Disruption :</strong> Formations en ligne, initialement "moins bien" (pas d'interaction directe, moins de networking) mais avec de nouveaux attributs (accessibilité, coût, flexibilité). Beaucoup d'organismes de formation traditionnels peinent à s'adapter.
                 </p>
               </div>
@@ -278,8 +278,8 @@ export default function InnovatorsDilemmaPage() {
 
         {/* Pour qui ce livre ? */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Pour qui ce livre ?
             </h2>
             
@@ -293,7 +293,7 @@ export default function InnovatorsDilemmaPage() {
               ].map((profile, index) => (
                 <div key={index} className="flex items-center p-3 bg-mint-green/10 rounded-lg">
                   <span className="text-mint-green text-lg mr-3">👤</span>
-                  <span className="text-gray-800 dark:text-gray-200 font-medium">{profile}</span>
+                  <span className="text-gray-800 font-medium">{profile}</span>
                 </div>
               ))}
             </div>
@@ -308,14 +308,14 @@ export default function InnovatorsDilemmaPage() {
                 <span className="text-blue-ink font-bold text-lg">LS</span>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-blue-ink dark:text-mint-green">
+                <h2 className="text-2xl font-bold text-blue-ink">
                   Mon avis terrain
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300">Laurent Serre</p>
+                <p className="text-gray-600">Laurent Serre</p>
               </div>
             </div>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 Un livre prophétique qui explique pourquoi tant d'entreprises leaders disparaissent. Christensen a vu juste : Kodak, Nokia, Blockbuster... tous victimes du dilemme de l'innovateur.
               </p>
@@ -348,7 +348,7 @@ export default function InnovatorsDilemmaPage() {
                     <span key={i} className={i < 4.5 ? "text-yellow-400" : "text-gray-300"}>⭐</span>
                   ))}
                 </div>
-                <span className="text-lg font-semibold text-gray-800 dark:text-gray-200">4.5/5</span>
+                <span className="text-lg font-semibold text-gray-800">4.5/5</span>
               </div>
             </div>
           </div>
@@ -356,8 +356,8 @@ export default function InnovatorsDilemmaPage() {
 
         {/* Livres complémentaires */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Livres complémentaires
             </h2>
             
@@ -366,10 +366,10 @@ export default function InnovatorsDilemmaPage() {
                 href="/ressources/meilleurs-livres/sales-management/blue-ocean-strategy"
                 className="group p-6 bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl border border-mint-green/20 hover:border-mint-green/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-3 group-hover:text-mint-green transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-mint-green transition-colors">
                   Blue Ocean Strategy
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour créer de nouveaux marchés plutôt que subir la disruption
                 </p>
                 <span className="text-mint-green font-medium group-hover:underline">
@@ -381,10 +381,10 @@ export default function InnovatorsDilemmaPage() {
                 href="/ressources/meilleurs-livres/sales-management/good-to-great"
                 className="group p-6 bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl border border-mint-green/20 hover:border-mint-green/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-3 group-hover:text-mint-green transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-mint-green transition-colors">
                   Good to Great
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour construire une organisation capable de s'adapter aux disruptions
                 </p>
                 <span className="text-mint-green font-medium group-hover:underline">
@@ -401,10 +401,10 @@ export default function InnovatorsDilemmaPage() {
             <div className="inline-block bg-mint-green/30 text-mint-green font-semibold rounded-full px-4 py-2 text-sm mb-4 shadow-md backdrop-blur">
               Anticipez les disruptions
             </div>
-            <h3 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-4">
+            <h3 className="text-3xl font-bold text-blue-ink mb-4">
               Découvrez le Bootcamp Commercial Intensif
             </h3>
-            <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
               Apprenez à identifier les signaux faibles, créer des stratégies d'innovation et transformer votre approche commerciale avant que la concurrence ne vous disrupts.
             </p>
             <Link 

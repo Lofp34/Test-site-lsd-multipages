@@ -19,7 +19,8 @@
     "test:seo": "vitest run src/__tests__/seo",
     "test:performance": "vitest run src/__tests__/performance",
     "validate:links": "tsx src/scripts/validate-links.ts",
-    "test:redirects": "tsx src/scripts/test-redirects.ts"
+    "test:redirects": "tsx src/scripts/test-redirects.ts",
+    "test:performance-optimizations": "tsx src/scripts/test-performance-optimizations.ts"
   },
   "dependencies": {
     "@types/jsdom": "^21.1.7",

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function LinkedinProspectionPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <main className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
@@ -57,29 +57,29 @@ export default function LinkedinProspectionPage() {
       </section>
 
       {/* Stratégie LinkedIn PME */}
-      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-4xl font-title font-bold text-blue-ink mb-6">
               Stratégie LinkedIn pour PME
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-3xl mx-auto">
               Approche spécifique aux contraintes et opportunités des PME
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 border border-mint-green/20">
+            <div className="bg-white rounded-2xl p-8 border border-mint-green/20">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
                 <Users className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Profil Optimisé PME
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 Créez un profil qui attire vos prospects PME cibles.
               </p>
-              <ul className="space-y-2 text-sm text-gray-anthracite dark:text-primary-bg/80">
+              <ul className="space-y-2 text-sm text-gray-anthracite">
                 <li className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Titre accrocheur orienté bénéfice
@@ -95,17 +95,17 @@ export default function LinkedinProspectionPage() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 border border-mint-green/20">
+            <div className="bg-white rounded-2xl p-8 border border-mint-green/20">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Ciblage Précis
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 Identifiez et segmentez vos prospects PME efficacement.
               </p>
-              <ul className="space-y-2 text-sm text-gray-anthracite dark:text-primary-bg/80">
+              <ul className="space-y-2 text-sm text-gray-anthracite">
                 <li className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Filtres Sales Navigator
@@ -121,17 +121,17 @@ export default function LinkedinProspectionPage() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 border border-mint-green/20">
+            <div className="bg-white rounded-2xl p-8 border border-mint-green/20">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
                 <MessageSquare className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Messages Personnalisés
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 Templates de messages adaptés aux dirigeants PME.
               </p>
-              <ul className="space-y-2 text-sm text-gray-anthracite dark:text-primary-bg/80">
+              <ul className="space-y-2 text-sm text-gray-anthracite">
                 <li className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Approche consultative
@@ -151,111 +151,111 @@ export default function LinkedinProspectionPage() {
       </section>
 
       {/* Templates de Messages */}
-      <section className="py-20 bg-slate-50 dark:bg-gray-anthracite/20">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-4xl font-title font-bold text-blue-ink mb-6">
               Templates de Messages LinkedIn
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-3xl mx-auto">
               Messages prêts à utiliser pour différentes situations
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8">
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+            <div className="bg-white rounded-2xl p-8">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-4">
                 Premier Contact
               </h3>
               <div className="bg-mint-green/10 p-6 rounded-lg mb-4">
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                <p className="text-gray-anthracite italic mb-4">
                   "Bonjour [Prénom],
                 </p>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                <p className="text-gray-anthracite italic mb-4">
                   J'ai remarqué que [Entreprise] se développe bien dans [secteur]. 
                   Félicitations pour [actualité/réussite récente] !
                 </p>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                <p className="text-gray-anthracite italic mb-4">
                   J'accompagne des dirigeants PME comme vous à [bénéfice spécifique]. 
                   Récemment, [Entreprise similaire] a [résultat concret].
                 </p>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic">
+                <p className="text-gray-anthracite italic">
                   Seriez-vous ouvert à un échange de 15 minutes sur vos enjeux [domaine] ?
                 </p>
               </div>
-              <p className="text-sm text-gray-anthracite dark:text-primary-bg/80">
+              <p className="text-sm text-gray-anthracite">
                 <strong>Taux de réponse moyen :</strong> 25-30%
               </p>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8">
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+            <div className="bg-white rounded-2xl p-8">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-4">
                 Relance Soft
               </h3>
               <div className="bg-mint-green/10 p-6 rounded-lg mb-4">
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                <p className="text-gray-anthracite italic mb-4">
                   "Bonjour [Prénom],
                 </p>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                <p className="text-gray-anthracite italic mb-4">
                   Je vous avais contacté il y a quelques semaines concernant [sujet].
                 </p>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                <p className="text-gray-anthracite italic mb-4">
                   Entre temps, j'ai aidé [Entreprise similaire] à [résultat récent]. 
                   Cela pourrait vous intéresser ?
                 </p>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic">
+                <p className="text-gray-anthracite italic">
                   Si ce n'est pas le bon moment, n'hésitez pas à me le dire.
                 </p>
               </div>
-              <p className="text-sm text-gray-anthracite dark:text-primary-bg/80">
+              <p className="text-sm text-gray-anthracite">
                 <strong>Taux de réponse moyen :</strong> 15-20%
               </p>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8">
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+            <div className="bg-white rounded-2xl p-8">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-4">
                 Partage de Contenu
               </h3>
               <div className="bg-mint-green/10 p-6 rounded-lg mb-4">
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                <p className="text-gray-anthracite italic mb-4">
                   "Bonjour [Prénom],
                 </p>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                <p className="text-gray-anthracite italic mb-4">
                   Je viens de publier une étude sur [sujet pertinent pour sa PME]. 
                   Les résultats pourraient vous intéresser.
                 </p>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                <p className="text-gray-anthracite italic mb-4">
                   [Insight clé de l'étude]
                 </p>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic">
+                <p className="text-gray-anthracite italic">
                   Qu'en pensez-vous ? Cela correspond à votre expérience ?
                 </p>
               </div>
-              <p className="text-sm text-gray-anthracite dark:text-primary-bg/80">
+              <p className="text-sm text-gray-anthracite">
                 <strong>Taux d'engagement :</strong> 35-40%
               </p>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8">
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+            <div className="bg-white rounded-2xl p-8">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-4">
                 Référence Commune
               </h3>
               <div className="bg-mint-green/10 p-6 rounded-lg mb-4">
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                <p className="text-gray-anthracite italic mb-4">
                   "Bonjour [Prénom],
                 </p>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                <p className="text-gray-anthracite italic mb-4">
                   [Contact commun] m'a parlé de vos enjeux [domaine] chez [Entreprise].
                 </p>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic mb-4">
+                <p className="text-gray-anthracite italic mb-4">
                   J'ai récemment aidé [Entreprise similaire] à [résultat concret] 
                   sur une problématique similaire.
                 </p>
-                <p className="text-gray-anthracite dark:text-primary-bg/80 italic">
+                <p className="text-gray-anthracite italic">
                   Seriez-vous intéressé par un retour d'expérience ?
                 </p>
               </div>
-              <p className="text-sm text-gray-anthracite dark:text-primary-bg/80">
+              <p className="text-sm text-gray-anthracite">
                 <strong>Taux de réponse moyen :</strong> 45-50%
               </p>
             </div>
@@ -264,50 +264,50 @@ export default function LinkedinProspectionPage() {
       </section>
 
       {/* Autres Réseaux Sociaux */}
-      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-4xl font-title font-bold text-blue-ink mb-6">
               Autres Réseaux Sociaux B2B
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-3xl mx-auto">
               Diversifiez vos canaux de prospection digitale
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center">
+            <div className="bg-white rounded-2xl p-8 text-center">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <Share2 className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Twitter/X
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80">
+              <p className="text-gray-anthracite">
                 Engagement via les discussions sectorielles et partage d'expertise.
               </p>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center">
+            <div className="bg-white rounded-2xl p-8 text-center">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <Users className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Facebook Groupes
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80">
+              <p className="text-gray-anthracite">
                 Participation active dans les groupes de dirigeants PME.
               </p>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center">
+            <div className="bg-white rounded-2xl p-8 text-center">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <TrendingUp className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 YouTube
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80">
+              <p className="text-gray-anthracite">
                 Contenu éducatif pour démontrer votre expertise.
               </p>
             </div>

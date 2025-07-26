@@ -25,7 +25,7 @@ export default function BookPageTemplate({
   structuredData,
   children
 }: BookPageTemplateProps) {
-  const { getThemeStyles, getParticleProps } = useCategoryTheme(category.slug);
+  const { themeStyles, particleProps } = useCategoryTheme(category.slug);
   const theme = category.theme;
 
   return (
@@ -38,11 +38,11 @@ export default function BookPageTemplate({
       
       <main 
         className={`relative bg-gradient-to-br ${theme.gradientFrom} ${theme.gradientVia} ${theme.gradientTo} min-h-screen pt-24 pb-16 overflow-hidden`}
-        style={getThemeStyles()}
+        style={themeStyles}
       >
         {/* Particle Background hérité de la catégorie */}
         <ParticleBackground 
-          {...getParticleProps()}
+          {...particleProps}
           className="absolute inset-0"
         />
 
@@ -169,8 +169,8 @@ export default function BookPageTemplate({
         {/* Résumé détaillé */}
         <AnimatedSection delay={100}>
           <section className="max-w-4xl mx-auto mb-12 px-4" aria-labelledby="detailed-summary">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
-              <h2 id="detailed-summary" className={`text-2xl font-bold text-blue-ink dark:text-[${theme.primaryColor}] mb-6`}>
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
+              <h2 id="detailed-summary" className={`text-2xl font-bold text-blue-ink mb-6`}>
                 Résumé détaillé
               </h2>
               <div className="prose prose-lg max-w-none text-primary-secondary">
@@ -187,8 +187,8 @@ export default function BookPageTemplate({
         {/* Points clés à retenir */}
         <AnimatedSection delay={150}>
           <section className="max-w-4xl mx-auto mb-12 px-4" aria-labelledby="key-takeaways">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
-              <h2 id="key-takeaways" className={`text-2xl font-bold text-blue-ink dark:text-[${theme.primaryColor}] mb-6`}>
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
+              <h2 id="key-takeaways" className={`text-2xl font-bold text-blue-ink mb-6`}>
                 Points clés à retenir
               </h2>
               <div className="grid md:grid-cols-2 gap-4">
@@ -216,7 +216,7 @@ export default function BookPageTemplate({
         {/* Recommandations Laurent Serre */}
         <AnimatedSection delay={200}>
           <section className="max-w-4xl mx-auto mb-12 px-4" aria-labelledby="laurent-recommendations">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
               <div className="flex items-center gap-3 mb-6">
                 <div 
                   className="w-12 h-12 rounded-full flex items-center justify-center"
@@ -224,7 +224,7 @@ export default function BookPageTemplate({
                 >
                   <span className="text-white font-bold">LS</span>
                 </div>
-                <h2 id="laurent-recommendations" className={`text-2xl font-bold text-blue-ink dark:text-[${theme.primaryColor}]`}>
+                <h2 id="laurent-recommendations" className={`text-2xl font-bold text-blue-ink`}>
                   Conseils d'application Laurent Serre
                 </h2>
               </div>
@@ -249,10 +249,10 @@ export default function BookPageTemplate({
         {/* Cas d'usage PME */}
         <AnimatedSection delay={250}>
           <section className="max-w-4xl mx-auto mb-12 px-4" aria-labelledby="pme-use-case">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
               <div className="flex items-center gap-3 mb-6">
                 <span className="text-2xl">🏢</span>
-                <h2 id="pme-use-case" className={`text-2xl font-bold text-blue-ink dark:text-[${theme.primaryColor}]`}>
+                <h2 id="pme-use-case" className={`text-2xl font-bold text-blue-ink`}>
                   Cas d'usage PME concret
                 </h2>
               </div>
@@ -290,7 +290,7 @@ export default function BookPageTemplate({
                     </p>
                   </div>
                   
-                  <div className="mt-4 p-4 bg-white/50 dark:bg-blue-800/30 rounded-lg">
+                  <div className="mt-4 p-4 bg-white/50 rounded-lg">
                     <p className="text-primary-secondary text-sm italic">
                       💡 <strong>Laurent Serre :</strong> "{book.content.pmeUseCase.laurentComment}"
                     </p>
@@ -345,9 +345,9 @@ export default function BookPageTemplate({
         {/* CTAs de fin */}
         <AnimatedSection delay={450}>
           <div className="max-w-4xl mx-auto px-4">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-[var(--theme-primary)]/20 backdrop-blur-sm">
               <div className="text-center mb-8">
-                <h3 className={`text-2xl font-bold text-blue-ink dark:text-[${theme.primaryColor}] mb-4`}>
+                <h3 className={`text-2xl font-bold text-blue-ink mb-4`}>
                   Prêt à appliquer les concepts de ce livre ?
                 </h3>
                 <p className="text-primary-secondary">
@@ -374,7 +374,7 @@ export default function BookPageTemplate({
                 
                 <Link 
                   href="/contact"
-                  className="group p-6 bg-white dark:bg-blue-ink border-2 border-[var(--theme-primary)] rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
+                  className="group p-6 bg-white border-2 border-[var(--theme-primary)] rounded-xl hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl">💬</span>
