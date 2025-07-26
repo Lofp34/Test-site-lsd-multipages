@@ -146,12 +146,12 @@ export default function GoodToGreatPage() {
 
         {/* Résumé détaillé */}
         <article className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Résumé détaillé
             </h2>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 Jim Collins et son équipe ont analysé pendant 5 ans plus de 1 400 entreprises pour identifier celles qui ont réussi la transition de "bonnes" à "excellentes" et maintenu cette excellence pendant au moins 15 ans. Cette recherche rigoureuse a révélé des patterns surprenants qui défient les idées reçues sur le leadership et la performance.
               </p>
@@ -186,8 +186,8 @@ export default function GoodToGreatPage() {
 
         {/* Points clés à retenir */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Points clés à retenir
             </h2>
             
@@ -202,7 +202,7 @@ export default function GoodToGreatPage() {
               ].map((point, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-mint-green text-xl mr-3 mt-1">✓</span>
-                  <span className="text-gray-800 dark:text-gray-200 text-lg">{point}</span>
+                  <span className="text-gray-800 text-lg">{point}</span>
                 </li>
               ))}
             </ul>
@@ -211,8 +211,8 @@ export default function GoodToGreatPage() {
 
         {/* Pour qui ce livre ? */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Pour qui ce livre ?
             </h2>
             
@@ -226,7 +226,7 @@ export default function GoodToGreatPage() {
               ].map((profile, index) => (
                 <div key={index} className="flex items-center p-3 bg-mint-green/10 rounded-lg">
                   <span className="text-mint-green text-lg mr-3">👤</span>
-                  <span className="text-gray-800 dark:text-gray-200 font-medium">{profile}</span>
+                  <span className="text-gray-800 font-medium">{profile}</span>
                 </div>
               ))}
             </div>
@@ -241,14 +241,14 @@ export default function GoodToGreatPage() {
                 <span className="text-blue-ink font-bold text-lg">LS</span>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-blue-ink dark:text-mint-green">
+                <h2 className="text-2xl font-bold text-blue-ink">
                   Mon avis terrain
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300">Laurent Serre</p>
+                <p className="text-gray-600">Laurent Serre</p>
               </div>
             </div>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 Un classique absolu que je recommande à tous les managers commerciaux. Collins a fait un boulot de recherche exceptionnel - du concret, pas du blabla de consultant.
               </p>
@@ -273,7 +273,7 @@ export default function GoodToGreatPage() {
                     <span key={i} className={i < 4.6 ? "text-yellow-400" : "text-gray-300"}>⭐</span>
                   ))}
                 </div>
-                <span className="text-lg font-semibold text-gray-800 dark:text-gray-200">4.6/5</span>
+                <span className="text-lg font-semibold text-gray-800">4.6/5</span>
               </div>
             </div>
           </div>
@@ -281,8 +281,8 @@ export default function GoodToGreatPage() {
 
         {/* Livres complémentaires */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Livres complémentaires
             </h2>
             
@@ -291,10 +291,10 @@ export default function GoodToGreatPage() {
                 href="/ressources/meilleurs-livres/sales-management/high-output-management"
                 className="group p-6 bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl border border-mint-green/20 hover:border-mint-green/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-3 group-hover:text-mint-green transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-mint-green transition-colors">
                   High Output Management
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour l'aspect opérationnel du management
                 </p>
                 <span className="text-mint-green font-medium group-hover:underline">
@@ -306,10 +306,10 @@ export default function GoodToGreatPage() {
                 href="/ressources/meilleurs-livres/sales-management/leaders-eat-last"
                 className="group p-6 bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl border border-mint-green/20 hover:border-mint-green/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-3 group-hover:text-mint-green transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-mint-green transition-colors">
                   Leaders Eat Last
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour approfondir le leadership bienveillant
                 </p>
                 <span className="text-mint-green font-medium group-hover:underline">
@@ -335,12 +335,12 @@ export default function GoodToGreatPage() {
 
         {/* Outils de management recommandés */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               🛠️ Outils de management recommandés
             </h2>
             
-            <p className="text-gray-700 dark:text-gray-300 mb-6">
+            <p className="text-gray-700 mb-6">
               Pour mettre en pratique les concepts de leadership et management abordés dans Good to Great
             </p>
             
@@ -351,11 +351,11 @@ export default function GoodToGreatPage() {
               >
                 <div className="flex items-center mb-3">
                   <span className="text-2xl mr-3">🏢</span>
-                  <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green group-hover:text-mint-green transition-colors">
+                  <h3 className="text-xl font-bold text-blue-ink group-hover:text-mint-green transition-colors">
                     Kit Gestion Grands Comptes
                   </h3>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Outils et templates pour appliquer les principes Good to Great à vos comptes stratégiques
                 </p>
                 <span className="text-mint-green font-medium group-hover:underline">
@@ -369,11 +369,11 @@ export default function GoodToGreatPage() {
               >
                 <div className="flex items-center mb-3">
                   <span className="text-2xl mr-3">📈</span>
-                  <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green group-hover:text-mint-green transition-colors">
+                  <h3 className="text-xl font-bold text-blue-ink group-hover:text-mint-green transition-colors">
                     Framework Stratégie Commerciale
                   </h3>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Définir et piloter votre Hedgehog Concept commercial avec méthode
                 </p>
                 <span className="text-mint-green font-medium group-hover:underline">

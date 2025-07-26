@@ -26,9 +26,9 @@ const FutureRelevanceIndicator: React.FC<FutureRelevanceIndicatorProps> = memo((
       return {
         level: 'Critique',
         color: 'from-green-400 to-emerald-500',
-        bgColor: 'bg-green-100 dark:bg-green-900/30',
-        textColor: 'text-green-800 dark:text-green-300',
-        borderColor: 'border-green-200 dark:border-green-700',
+        bgColor: 'bg-green-100',
+        textColor: 'text-green-800',
+        borderColor: 'border-green-200',
         icon: '🚀',
         description: 'Indispensable pour l\'avenir'
       };
@@ -36,9 +36,9 @@ const FutureRelevanceIndicator: React.FC<FutureRelevanceIndicatorProps> = memo((
       return {
         level: 'Élevée',
         color: 'from-blue-400 to-cyan-500',
-        bgColor: 'bg-blue-100 dark:bg-blue-900/30',
-        textColor: 'text-blue-800 dark:text-blue-300',
-        borderColor: 'border-blue-200 dark:border-blue-700',
+        bgColor: 'bg-blue-100',
+        textColor: 'text-blue-800',
+        borderColor: 'border-blue-200',
         icon: '⭐',
         description: 'Très pertinent à long terme'
       };
@@ -46,9 +46,9 @@ const FutureRelevanceIndicator: React.FC<FutureRelevanceIndicatorProps> = memo((
       return {
         level: 'Modérée',
         color: 'from-orange-400 to-yellow-500',
-        bgColor: 'bg-orange-100 dark:bg-orange-900/30',
-        textColor: 'text-orange-800 dark:text-orange-300',
-        borderColor: 'border-orange-200 dark:border-orange-700',
+        bgColor: 'bg-orange-100',
+        textColor: 'text-orange-800',
+        borderColor: 'border-orange-200',
         icon: '📊',
         description: 'Pertinence moyenne'
       };
@@ -56,9 +56,9 @@ const FutureRelevanceIndicator: React.FC<FutureRelevanceIndicatorProps> = memo((
       return {
         level: 'Limitée',
         color: 'from-gray-400 to-gray-500',
-        bgColor: 'bg-gray-100 dark:bg-gray-800',
-        textColor: 'text-gray-700 dark:text-gray-300',
-        borderColor: 'border-gray-200 dark:border-gray-600',
+        bgColor: 'bg-gray-100',
+        textColor: 'text-gray-700',
+        borderColor: 'border-gray-200',
         icon: '⚠️',
         description: 'Pertinence décroissante'
       };
@@ -66,9 +66,9 @@ const FutureRelevanceIndicator: React.FC<FutureRelevanceIndicatorProps> = memo((
       return {
         level: 'Faible',
         color: 'from-red-400 to-red-500',
-        bgColor: 'bg-red-100 dark:bg-red-900/30',
-        textColor: 'text-red-800 dark:text-red-300',
-        borderColor: 'border-red-200 dark:border-red-700',
+        bgColor: 'bg-red-100',
+        textColor: 'text-red-800',
+        borderColor: 'border-red-200',
         icon: '📉',
         description: 'Peu pertinent à l\'avenir'
       };
@@ -80,20 +80,20 @@ const FutureRelevanceIndicator: React.FC<FutureRelevanceIndicatorProps> = memo((
       case 'rising':
         return {
           icon: '📈',
-          color: 'text-green-600 dark:text-green-400',
+          color: 'text-green-600',
           label: 'En hausse'
         };
       case 'declining':
         return {
           icon: '📉',
-          color: 'text-red-600 dark:text-red-400',
+          color: 'text-red-600',
           label: 'En baisse'
         };
       case 'stable':
       default:
         return {
           icon: '➡️',
-          color: 'text-blue-600 dark:text-blue-400',
+          color: 'text-blue-600',
           label: 'Stable'
         };
     }
@@ -128,7 +128,7 @@ const FutureRelevanceIndicator: React.FC<FutureRelevanceIndicatorProps> = memo((
 
   return (
     <div className={`
-      bg-white/90 dark:bg-blue-ink/90 
+      bg-white/90 
       border ${relevanceConfig.borderColor}
       rounded-2xl ${sizeClasses.container} shadow-lg hover:shadow-xl 
       transition-all duration-300 backdrop-blur-sm
@@ -139,7 +139,7 @@ const FutureRelevanceIndicator: React.FC<FutureRelevanceIndicatorProps> = memo((
         <div className="flex items-center gap-2">
           <span className="text-lg">{relevanceConfig.icon}</span>
           {showLabel && (
-            <h4 className={`font-semibold text-blue-ink dark:text-mint-green ${sizeClasses.title}`}>
+            <h4 className={`font-semibold text-blue-ink ${sizeClasses.title}`}>
               Pertinence Future
             </h4>
           )}
@@ -148,8 +148,8 @@ const FutureRelevanceIndicator: React.FC<FutureRelevanceIndicatorProps> = memo((
         {/* Time horizon badge */}
         <span className={`
           inline-flex items-center rounded-full font-medium
-          bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-300
-          border border-cyan-200 dark:border-cyan-700
+          bg-cyan-100 text-cyan-800
+          border border-cyan-200
           ${sizeClasses.badge}
         `}>
           {timeHorizon}
@@ -160,7 +160,7 @@ const FutureRelevanceIndicator: React.FC<FutureRelevanceIndicatorProps> = memo((
       <div className="flex items-center gap-4 mb-3">
         {/* Circular progress */}
         <div className="relative">
-          <div className="w-16 h-16 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+          <div className="w-16 h-16 rounded-full bg-gray-200 flex items-center justify-center">
             <div className={`
               w-12 h-12 rounded-full bg-gradient-to-br ${relevanceConfig.color}
               flex items-center justify-center text-white font-bold ${sizeClasses.score}
@@ -178,7 +178,7 @@ const FutureRelevanceIndicator: React.FC<FutureRelevanceIndicatorProps> = memo((
               fill="none"
               stroke="currentColor"
               strokeWidth="4"
-              className="text-gray-200 dark:text-gray-700"
+              className="text-gray-200"
             />
             <circle
               cx="32"
@@ -217,7 +217,7 @@ const FutureRelevanceIndicator: React.FC<FutureRelevanceIndicatorProps> = memo((
       </div>
 
       {/* Trend indicator */}
-      <div className="flex items-center justify-between pt-3 border-t border-gray-200 dark:border-gray-700">
+      <div className="flex items-center justify-between pt-3 border-t border-gray-200">
         <div className="flex items-center gap-2">
           <span className="text-sm">{trendConfig.icon}</span>
           <span className={`${sizeClasses.description} font-medium ${trendConfig.color}`}>
@@ -233,7 +233,7 @@ const FutureRelevanceIndicator: React.FC<FutureRelevanceIndicatorProps> = memo((
               className={`text-sm transition-colors ${
                 star <= score 
                   ? 'text-yellow-400' 
-                  : 'text-gray-300 dark:text-gray-600'
+                  : 'text-gray-300'
               }`}
             >
               ⭐

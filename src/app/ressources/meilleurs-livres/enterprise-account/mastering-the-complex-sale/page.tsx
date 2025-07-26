@@ -20,8 +20,8 @@ export default function MasteringTheComplexSalePage() {
         </section>
 
         {/* Résumé détaillé */}
-        <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
-          <h2 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">Résumé du livre</h2>
+        <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
+          <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
             Jeff Thull propose un cadre stratégique appelé « Diagnostic Business Development » pour réussir les ventes complexes. Il insiste sur la notion de « valeur » : l’erreur de nombreux commerciaux est de vendre leur produit, au lieu d’aider le client à diagnostiquer ses vrais besoins et à quantifier la valeur d’une solution. Thull articule un processus en quatre phases (modèle « Prime Process ») : Discover, Diagnose, Design, Deliver.
           </p>
@@ -43,7 +43,7 @@ export default function MasteringTheComplexSalePage() {
             <li>Se méfier des pièges classiques : présentation trop précoce, mauvaise qualification du processus décisionnel</li>
           </ul>
 
-          <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink dark:text-mint-green mb-6">
+          <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
             « Vendre de la valeur, c’est d’abord aider le client à comprendre ses vrais problèmes et à mesurer l’impact d’une solution sur son business. »
           </blockquote>
         </article>
@@ -51,8 +51,8 @@ export default function MasteringTheComplexSalePage() {
         {/* CTA Bootcamp */}
         <div className="max-w-2xl mx-auto text-center mt-8 mb-12">
           <div className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-2 shadow-md backdrop-blur">Passez du livre au terrain</div>
-          <h4 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-2">Découvrez le Bootcamp Grands Comptes by LSD</h4>
-          <p className="text-lg text-gray-700 dark:text-gray-100 mb-4">Formez-vous avec les meilleures méthodes issues de ce livre, adaptées à la gestion des comptes stratégiques et grands comptes.</p>
+          <h4 className="text-2xl font-bold text-blue-ink mb-2">Découvrez le Bootcamp Grands Comptes by LSD</h4>
+          <p className="text-lg text-gray-700 mb-4">Formez-vous avec les meilleures méthodes issues de ce livre, adaptées à la gestion des comptes stratégiques et grands comptes.</p>
           <Link href="/bootcamp" className="inline-block bg-mint-green text-blue-ink font-semibold px-6 py-3 rounded-full shadow hover:bg-mint-green/80 transition">Voir le Bootcamp</Link>
         </div>
 

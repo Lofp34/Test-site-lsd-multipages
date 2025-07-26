@@ -134,26 +134,26 @@ export default function BlueOceanStrategyPage() {
 
         {/* Résumé détaillé */}
         <article className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Résumé détaillé
             </h2>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 Kim et Mauborgne révolutionnent la pensée stratégique avec leur concept d'océan bleu. Leur recherche sur plus de 150 mouvements stratégiques dans 30 industries révèle que les entreprises les plus performantes ne battent pas la concurrence, elles la rendent obsolète.
               </p>
 
               <h3 className="text-2xl font-bold text-mint-green mb-4">Océan Rouge vs Océan Bleu</h3>
               <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg border border-red-200 dark:border-red-800">
-                  <h4 className="font-bold text-red-600 dark:text-red-400 mb-2">🔴 Océan Rouge</h4>
+                <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+                  <h4 className="font-bold text-red-600 mb-2">🔴 Océan Rouge</h4>
                   <p className="text-sm">
                     Marché existant saturé de concurrents qui se battent pour des parts de marché limitées. La concurrence rend l'eau rouge de sang. <strong>Stratégie : battre la concurrence.</strong>
                   </p>
                 </div>
-                <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-800">
-                  <h4 className="font-bold text-blue-600 dark:text-blue-400 mb-2">🔵 Océan Bleu</h4>
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <h4 className="font-bold text-blue-600 mb-2">🔵 Océan Bleu</h4>
                   <p className="text-sm">
                     Espace stratégique inexploré où la demande est créée plutôt que disputée. Pas de concurrence car les règles du jeu n'existent pas encore. <strong>Stratégie : rendre la concurrence non pertinente.</strong>
                   </p>
@@ -207,8 +207,8 @@ export default function BlueOceanStrategyPage() {
 
         {/* Points clés à retenir */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Points clés à retenir
             </h2>
             
@@ -223,7 +223,7 @@ export default function BlueOceanStrategyPage() {
               ].map((point, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-mint-green text-xl mr-3 mt-1">✓</span>
-                  <span className="text-gray-800 dark:text-gray-200 text-lg">{point}</span>
+                  <span className="text-gray-800 text-lg">{point}</span>
                 </li>
               ))}
             </ul>
@@ -232,8 +232,8 @@ export default function BlueOceanStrategyPage() {
 
         {/* Pour qui ce livre ? */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Pour qui ce livre ?
             </h2>
             
@@ -247,7 +247,7 @@ export default function BlueOceanStrategyPage() {
               ].map((profile, index) => (
                 <div key={index} className="flex items-center p-3 bg-mint-green/10 rounded-lg">
                   <span className="text-mint-green text-lg mr-3">👤</span>
-                  <span className="text-gray-800 dark:text-gray-200 font-medium">{profile}</span>
+                  <span className="text-gray-800 font-medium">{profile}</span>
                 </div>
               ))}
             </div>
@@ -262,14 +262,14 @@ export default function BlueOceanStrategyPage() {
                 <span className="text-blue-ink font-bold text-lg">LS</span>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-blue-ink dark:text-mint-green">
+                <h2 className="text-2xl font-bold text-blue-ink">
                   Mon avis terrain
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300">Laurent Serre</p>
+                <p className="text-gray-600">Laurent Serre</p>
               </div>
             </div>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 Un livre qui change la façon de voir la stratégie commerciale. Fini la guerre des prix, place à l'innovation-valeur. Particulièrement pertinent pour les PME qui ne peuvent pas rivaliser sur les coûts avec les gros.
               </p>
@@ -283,7 +283,7 @@ export default function BlueOceanStrategyPage() {
               </ul>
               
               <h3 className="text-xl font-bold text-mint-green mb-4">Application concrète pour les PME :</h3>
-              <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-6">
+              <div className="bg-blue-50 p-4 rounded-lg mb-6">
                 <p className="mb-3">
                   <strong>Exemple :</strong> Une PME de services informatiques face aux gros intégrateurs
                 </p>
@@ -308,7 +308,7 @@ export default function BlueOceanStrategyPage() {
                     <span key={i} className={i < 4.3 ? "text-yellow-400" : "text-gray-300"}>⭐</span>
                   ))}
                 </div>
-                <span className="text-lg font-semibold text-gray-800 dark:text-gray-200">4.3/5</span>
+                <span className="text-lg font-semibold text-gray-800">4.3/5</span>
               </div>
             </div>
           </div>
@@ -316,8 +316,8 @@ export default function BlueOceanStrategyPage() {
 
         {/* Livres complémentaires */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Livres complémentaires
             </h2>
             
@@ -326,10 +326,10 @@ export default function BlueOceanStrategyPage() {
                 href="/ressources/meilleurs-livres/sales-management/innovators-dilemma"
                 className="group p-6 bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl border border-mint-green/20 hover:border-mint-green/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-3 group-hover:text-mint-green transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-mint-green transition-colors">
                   The Innovator's Dilemma
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour comprendre les mécanismes de l'innovation disruptive
                 </p>
                 <span className="text-mint-green font-medium group-hover:underline">
@@ -341,10 +341,10 @@ export default function BlueOceanStrategyPage() {
                 href="/ressources/meilleurs-livres/sales-management/good-to-great"
                 className="group p-6 bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl border border-mint-green/20 hover:border-mint-green/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-3 group-hover:text-mint-green transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-mint-green transition-colors">
                   Good to Great
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour l'excellence opérationnelle avant l'innovation
                 </p>
                 <span className="text-mint-green font-medium group-hover:underline">
@@ -361,10 +361,10 @@ export default function BlueOceanStrategyPage() {
             <div className="inline-block bg-mint-green/30 text-mint-green font-semibold rounded-full px-4 py-2 text-sm mb-4 shadow-md backdrop-blur">
               Créez votre océan bleu commercial
             </div>
-            <h3 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-4">
+            <h3 className="text-3xl font-bold text-blue-ink mb-4">
               Découvrez le Bootcamp Commercial Intensif
             </h3>
-            <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
               Appliquez les principes de Blue Ocean Strategy à votre développement commercial. Sortez de la concurrence et créez votre propre espace de marché.
             </p>
             <Link 

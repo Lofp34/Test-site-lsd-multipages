@@ -98,13 +98,13 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
   const uniqueDifficulties = Array.from(new Set(books.map(book => book.difficulty).filter(Boolean)));
 
   return (
-    <div className={`bg-white/70 dark:bg-blue-ink/80 rounded-xl shadow-lg p-6 mb-10 
+    <div className={`bg-white/70 rounded-xl shadow-lg p-6 mb-10 
                     border border-mint-green/20 backdrop-blur-sm ${className}`}>
-      <h3 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">
+      <h3 className="text-2xl font-bold text-blue-ink mb-4">
         Comment choisir ?
       </h3>
       
-      <p className="text-gray-600 dark:text-gray-300 mb-6">
+      <p className="text-gray-600 mb-6">
         Comparez les livres selon vos critères pour trouver celui qui correspond le mieux à votre profil et vos objectifs.
       </p>
 
@@ -112,14 +112,14 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
       <div className="mb-6">
         <div className="flex flex-wrap items-center gap-4">
           <div className="flex items-center gap-2">
-            <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+            <label className="text-sm font-medium text-gray-700">
               Difficulté :
             </label>
             <select
               value={difficultyFilter}
               onChange={(e) => setDifficultyFilter(e.target.value)}
-              className="px-3 py-1 text-sm border border-gray-300 rounded-md bg-white dark:bg-gray-800 
-                         dark:border-gray-600 dark:text-gray-200 focus:ring-2 focus:ring-mint-green/50 
+              className="px-3 py-1 text-sm border border-gray-300 rounded-md bg-white 
+                         focus:ring-2 focus:ring-mint-green/50 
                          focus:border-mint-green transition-colors"
             >
               <option value="all">Tous niveaux</option>
@@ -131,7 +131,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
             </select>
           </div>
           
-          <div className="text-sm text-gray-500 dark:text-gray-400">
+          <div className="text-sm text-gray-500">
             {filteredBooks.length} livre{filteredBooks.length > 1 ? 's' : ''} affiché{filteredBooks.length > 1 ? 's' : ''}
           </div>
         </div>
@@ -195,12 +195,12 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                   >
                     {book.title}
                   </Link>
-                  <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                  <div className="text-xs text-gray-500 mt-1">
                     {book.author} ({book.year})
                   </div>
                 </td>
                 <td className="py-3 px-4">
-                  <span className="text-gray-700 dark:text-gray-200">
+                  <span className="text-gray-700">
                     {book.readingTime || 'N/A'}
                   </span>
                 </td>
@@ -214,7 +214,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                   )}
                 </td>
                 <td className="py-3 px-4">
-                  <div className="text-sm text-gray-700 dark:text-gray-200 max-w-xs">
+                  <div className="text-sm text-gray-700 max-w-xs">
                     {book.targetProfiles?.slice(0, 2).join(', ') || 'Tous profils'}
                     {book.targetProfiles && book.targetProfiles.length > 2 && (
                       <span className="text-gray-500">
@@ -227,7 +227,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
                   {book.rating ? (
                     <div className="flex items-center gap-2">
                       <StarRating rating={book.rating} size="sm" />
-                      <span className="text-xs text-gray-500 dark:text-gray-400">
+                      <span className="text-xs text-gray-500">
                         {book.rating.toFixed(1)}
                       </span>
                     </div>
@@ -244,7 +244,7 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
       {/* Empty state */}
       {sortedBooks.length === 0 && (
         <div className="text-center py-8">
-          <p className="text-gray-500 dark:text-gray-400">
+          <p className="text-gray-500">
             Aucun livre ne correspond aux critères sélectionnés.
           </p>
           <button
@@ -258,13 +258,13 @@ const ComparisonTable: React.FC<ComparisonTableProps> = ({
       
       {/* CTA Quiz futur */}
       <div className="mt-8 text-center border-t border-gray-200/20 pt-6">
-        <p className="text-sm text-gray-600 dark:text-gray-300 mb-3">
+        <p className="text-sm text-gray-600 mb-3">
           Pas sûr de votre choix ? Laissez-nous vous guider !
         </p>
         <Button variant="outline" size="sm" disabled className="cursor-not-allowed opacity-60">
           🎯 Quiz : Quel livre pour votre profil ? (Bientôt disponible)
         </Button>
-        <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
+        <p className="text-xs text-gray-500 mt-2">
           En attendant, n'hésitez pas à{' '}
           <Link 
             href="/contact" 

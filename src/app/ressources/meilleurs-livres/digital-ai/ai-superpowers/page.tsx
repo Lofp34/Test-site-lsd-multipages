@@ -136,12 +136,12 @@ export default function AISuperPowersPage() {
 
         {/* Résumé détaillé */}
         <article className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-purple-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-purple-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-purple-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Résumé détaillé
             </h2>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 Kai-Fu Lee, figure emblématique de l'IA mondiale (ancien dirigeant de Google Chine, Microsoft, Apple), livre une analyse géopolitique et économique saisissante de la révolution IA en cours.
               </p>
@@ -149,30 +149,30 @@ export default function AISuperPowersPage() {
               <h3 className="text-2xl font-bold text-purple-500 mb-4">Les quatre vagues de l'IA</h3>
               
               <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-xl border border-blue-200/50">
+                <div className="p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200/50">
                   <h4 className="text-xl font-bold text-blue-600 mb-3">🌐 1. IA Internet</h4>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-gray-700">
                     Algorithmes de recommandation, publicité ciblée, e-commerce personnalisé. Cette vague transforme déjà la prospection digitale et le marketing commercial.
                   </p>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50">
+                <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200/50">
                   <h4 className="text-xl font-bold text-purple-600 mb-3">💼 2. IA Business</h4>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-gray-700">
                     Automatisation des processus métier, analyse prédictive, optimisation des opérations. Impact direct sur les CRM, la qualification de leads et le pilotage commercial.
                   </p>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/30 dark:to-blue-900/30 rounded-xl border border-green-200/50">
+                <div className="p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl border border-green-200/50">
                   <h4 className="text-xl font-bold text-green-600 mb-3">👁️ 3. IA Perception</h4>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-gray-700">
                     Reconnaissance vocale, visuelle, traitement du langage naturel. Révolutionne l'interface client (chatbots, assistants virtuels, analyse de sentiment).
                   </p>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-900/30 dark:to-red-900/30 rounded-xl border border-orange-200/50">
+                <div className="p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border border-orange-200/50">
                   <h4 className="text-xl font-bold text-orange-600 mb-3">🤖 4. IA Autonome</h4>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-gray-700">
                     Véhicules autonomes, robots, systèmes entièrement automatisés. Impact à plus long terme sur la logistique et la livraison.
                   </p>
                 </div>
@@ -181,9 +181,9 @@ export default function AISuperPowersPage() {
               <h3 className="text-2xl font-bold text-purple-500 mb-4">Impact sur les métiers commerciaux</h3>
               
               <div className="grid md:grid-cols-2 gap-8 mb-8">
-                <div className="p-6 bg-red-50 dark:bg-red-900/20 rounded-xl border border-red-200/50">
+                <div className="p-6 bg-red-50 rounded-xl border border-red-200/50">
                   <h4 className="text-xl font-bold text-red-600 mb-4">⚠️ Métiers menacés</h4>
-                  <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                  <ul className="space-y-2 text-gray-700">
                     <li>• Téléprospection basique (IA conversationnelle)</li>
                     <li>• Qualification de leads simple (scoring automatique)</li>
                     <li>• Reporting et administration des ventes</li>
@@ -191,9 +191,9 @@ export default function AISuperPowersPage() {
                   </ul>
                 </div>
                 
-                <div className="p-6 bg-green-50 dark:bg-green-900/20 rounded-xl border border-green-200/50">
+                <div className="p-6 bg-green-50 rounded-xl border border-green-200/50">
                   <h4 className="text-xl font-bold text-green-600 mb-4">✅ Métiers renforcés</h4>
-                  <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                  <ul className="space-y-2 text-gray-700">
                     <li>• Vente consultative complexe</li>
                     <li>• Négociation stratégique</li>
                     <li>• Gestion de comptes clés</li>
@@ -207,7 +207,7 @@ export default function AISuperPowersPage() {
                 Lee analyse comment les deux superpuissances développent des approches différentes de l'IA : les États-Unis misent sur l'innovation breakthrough, la Chine sur l'implémentation massive et l'exploitation des données. Cette course a des implications directes pour les entreprises occidentales qui doivent choisir leurs partenaires technologiques.
               </p>
 
-              <div className="bg-purple-50 dark:bg-purple-900/30 border-l-4 border-purple-500 p-6 rounded-r-lg mb-6">
+              <div className="bg-purple-50 border-l-4 border-purple-500 p-6 rounded-r-lg mb-6">
                 <h4 className="text-lg font-bold text-purple-600 mb-3">Vision humaniste de Kai-Fu Lee</h4>
                 <p>
                   L'auteur propose un nouveau contrat social où l'IA libère l'humain pour se concentrer sur ce qu'il fait de mieux : créer du lien, de l'empathie et du sens. Les commerciaux doivent cultiver ces compétences "IA-proof".
@@ -219,39 +219,39 @@ export default function AISuperPowersPage() {
 
         {/* Stratégies d'adaptation pour dirigeants PME */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-purple-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-purple-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-purple-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Stratégies d'adaptation pour dirigeants PME
             </h2>
             
             <div className="space-y-6">
-              <div className="p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-xl border border-blue-200/50">
+              <div className="p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200/50">
                 <h3 className="text-xl font-bold text-blue-600 mb-3">🎯 1. Développer les compétences relationnelles</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Investir massivement dans la formation aux soft skills : empathie, écoute active, intelligence émotionnelle. Ces compétences deviennent votre avantage concurrentiel face à l'IA.
                 </p>
                 <span className="text-sm text-blue-500 font-medium">Priorité immédiate</span>
               </div>
               
-              <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50">
+              <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200/50">
                 <h3 className="text-xl font-bold text-purple-600 mb-3">🧠 2. Se spécialiser dans la vente consultative</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Transformer vos commerciaux en consultants experts. Plus la vente est complexe et personnalisée, moins elle est automatisable.
                 </p>
                 <span className="text-sm text-purple-500 font-medium">Transformation métier</span>
               </div>
               
-              <div className="p-6 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/30 dark:to-blue-900/30 rounded-xl border border-green-200/50">
+              <div className="p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl border border-green-200/50">
                 <h3 className="text-xl font-bold text-green-600 mb-3">🤝 3. Maîtriser l'IA comme assistant</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Former vos équipes à utiliser l'IA pour automatiser les tâches répétitives et se concentrer sur la valeur ajoutée humaine.
                 </p>
                 <span className="text-sm text-green-500 font-medium">Formation continue</span>
               </div>
               
-              <div className="p-6 bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-900/30 dark:to-red-900/30 rounded-xl border border-orange-200/50">
+              <div className="p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border border-orange-200/50">
                 <h3 className="text-xl font-bold text-orange-600 mb-3">🚀 4. Cultiver la créativité et l'adaptabilité</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Encourager l'innovation commerciale, l'expérimentation et la capacité à s'adapter rapidement aux changements du marché.
                 </p>
                 <span className="text-sm text-orange-500 font-medium">Culture d'entreprise</span>
@@ -262,8 +262,8 @@ export default function AISuperPowersPage() {
 
         {/* Points clés à retenir */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-purple-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-purple-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-purple-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Points clés à retenir
             </h2>
             
@@ -279,7 +279,7 @@ export default function AISuperPowersPage() {
               ].map((point, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-purple-500 text-xl mr-3 mt-1">✓</span>
-                  <span className="text-gray-800 dark:text-gray-200 text-lg">{point}</span>
+                  <span className="text-gray-800 text-lg">{point}</span>
                 </li>
               ))}
             </ul>
@@ -288,8 +288,8 @@ export default function AISuperPowersPage() {
 
         {/* Pour qui ce livre ? */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-purple-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-purple-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-purple-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Pour qui ce livre ?
             </h2>
             
@@ -303,7 +303,7 @@ export default function AISuperPowersPage() {
               ].map((profile, index) => (
                 <div key={index} className="flex items-center p-3 bg-purple-500/10 rounded-lg">
                   <span className="text-purple-500 text-lg mr-3">👤</span>
-                  <span className="text-gray-800 dark:text-gray-200 font-medium">{profile}</span>
+                  <span className="text-gray-800 font-medium">{profile}</span>
                 </div>
               ))}
             </div>
@@ -318,14 +318,14 @@ export default function AISuperPowersPage() {
                 <span className="text-white font-bold text-lg">LS</span>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-blue-ink dark:text-purple-300">
+                <h2 className="text-2xl font-bold text-blue-ink">
                   Mon avis terrain
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300">Laurent Serre - Expert développement commercial PME</p>
+                <p className="text-gray-600">Laurent Serre - Expert développement commercial PME</p>
               </div>
             </div>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 Un livre qui fait réfléchir sans tomber dans la panique ou l'utopie. Lee a une vision équilibrée : l'IA va transformer le métier, pas le supprimer.
               </p>
@@ -341,18 +341,18 @@ export default function AISuperPowersPage() {
               
               <h3 className="text-xl font-bold text-purple-500 mb-4">Retours d'expérience concrets :</h3>
               <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <div className="p-4 bg-purple-50 dark:bg-purple-900/30 rounded-lg">
+                <div className="p-4 bg-purple-50 rounded-lg">
                   <h4 className="font-semibold text-purple-600 mb-2">PME Services (30 salariés)</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                  <p className="text-sm text-gray-700 mb-2">
                     Formation équipe aux "métiers renforcés par l'IA" selon le livre
                   </p>
                   <p className="text-xs text-green-600 font-medium">
                     Résultat : +40% de confiance équipe, -25% de résistance au changement
                   </p>
                 </div>
-                <div className="p-4 bg-red-50 dark:bg-red-900/30 rounded-lg">
+                <div className="p-4 bg-red-50 rounded-lg">
                   <h4 className="font-semibold text-red-600 mb-2">Industrie (60 salariés)</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                  <p className="text-sm text-gray-700 mb-2">
                     Repositionnement commercial vers la vente consultative
                   </p>
                   <p className="text-xs text-green-600 font-medium">
@@ -361,7 +361,7 @@ export default function AISuperPowersPage() {
                 </div>
               </div>
               
-              <div className="bg-purple-100/50 dark:bg-purple-900/30 border-l-4 border-purple-500 p-4 rounded-r-lg mb-6">
+              <div className="bg-purple-100/50 border-l-4 border-purple-500 p-4 rounded-r-lg mb-6">
                 <p className="font-semibold text-purple-600 mb-2">🎯 Conseil stratégique :</p>
                 <p>
                   Investissez dès maintenant dans vos compétences relationnelles et consultatives. C'est votre assurance-vie face à l'automatisation. 
@@ -369,7 +369,7 @@ export default function AISuperPowersPage() {
                 </p>
               </div>
               
-              <div className="bg-orange-100/50 dark:bg-orange-900/30 border-l-4 border-orange-500 p-4 rounded-r-lg mb-6">
+              <div className="bg-orange-100/50 border-l-4 border-orange-500 p-4 rounded-r-lg mb-6">
                 <p className="font-semibold text-orange-600 mb-2">⚡ Action immédiate :</p>
                 <p>
                   Faites l'audit de vos tâches commerciales : lesquelles peuvent être automatisées (qualification, reporting) ? 
@@ -384,8 +384,8 @@ export default function AISuperPowersPage() {
                     <span key={i} className={i < 4.4 ? "text-yellow-400" : "text-gray-300"}>⭐</span>
                   ))}
                 </div>
-                <span className="text-lg font-semibold text-gray-800 dark:text-gray-200">4.4/5</span>
-                <span className="text-sm text-gray-600 dark:text-gray-400 ml-4">
+                <span className="text-lg font-semibold text-gray-800">4.4/5</span>
+                <span className="text-sm text-gray-600 ml-4">
                   Livre de référence pour 90% de mes clients en transformation IA
                 </span>
               </div>
@@ -395,8 +395,8 @@ export default function AISuperPowersPage() {
 
         {/* Livres complémentaires */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-purple-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-purple-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-purple-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Livres complémentaires
             </h2>
             
@@ -405,10 +405,10 @@ export default function AISuperPowersPage() {
                 href="/ressources/meilleurs-livres/digital-ai/human-machine"
                 className="group p-6 bg-gradient-to-r from-purple-500/10 to-pink-500/10 rounded-xl border border-purple-300/20 hover:border-purple-400/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-purple-300 mb-3 group-hover:text-purple-500 transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-purple-500 transition-colors">
                   Human + Machine
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour comprendre la collaboration homme-IA
                 </p>
                 <span className="text-purple-500 font-medium group-hover:underline">
@@ -420,10 +420,10 @@ export default function AISuperPowersPage() {
                 href="/ressources/meilleurs-livres/digital-ai/the-second-machine-age"
                 className="group p-6 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl border border-blue-300/20 hover:border-blue-400/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-purple-300 mb-3 group-hover:text-blue-500 transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-blue-500 transition-colors">
                   The Second Machine Age
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour comprendre l'impact économique du numérique
                 </p>
                 <span className="text-blue-500 font-medium group-hover:underline">
@@ -440,10 +440,10 @@ export default function AISuperPowersPage() {
             <div className="inline-block bg-purple-500/30 text-purple-300 font-semibold rounded-full px-4 py-2 text-sm mb-4 shadow-md backdrop-blur">
               Préparez votre équipe à l'ère de l'IA
             </div>
-            <h3 className="text-3xl font-bold text-blue-ink dark:text-purple-300 mb-4">
+            <h3 className="text-3xl font-bold text-blue-ink mb-4">
               Formation : Vendre à l'ère de l'IA
             </h3>
-            <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
               Accompagnement personnalisé pour transformer votre équipe commerciale et développer les compétences IA-proof. Stratégie, formation et mise en œuvre.
             </p>
             <Link 

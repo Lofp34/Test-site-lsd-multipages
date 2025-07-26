@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function GuideProspectionPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <main className="flex flex-col min-h-screen bg-white">
       {/* Header */}
       <div className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -47,16 +47,16 @@ export default function GuideProspectionPage() {
         
         {/* Introduction */}
         <section className="mb-16">
-          <div className="bg-slate-50 dark:bg-gray-anthracite/20 rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6 flex items-center">
+          <div className="bg-slate-50 rounded-2xl p-8 mb-12">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6 flex items-center">
               <Award className="w-8 h-8 text-mint-green mr-3" />
               Pourquoi ce guide ?
             </h2>
-            <p className="text-lg text-gray-anthracite dark:text-primary-bg/80 mb-4">
+            <p className="text-lg text-gray-anthracite mb-4">
               Après 20 ans dans le développement commercial, j'ai accompagné des centaines d'entrepreneurs et de commerciaux. 
               Le constat est toujours le même : la prospection est leur plus grand défi.
             </p>
-            <p className="text-lg text-gray-anthracite dark:text-primary-bg/80">
+            <p className="text-lg text-gray-anthracite">
               Ce guide compile les meilleures techniques et stratégies que j'ai testées et validées sur le terrain pour vous aider à 
               <strong className="text-mint-green"> multiplier vos résultats de prospection par 3 en 90 jours.</strong>
             </p>
@@ -65,17 +65,17 @@ export default function GuideProspectionPage() {
 
         {/* Chapitre 1 */}
         <section className="mb-16">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 flex items-center">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8 flex items-center">
             <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">1</span>
             Mindset et Préparation
           </h2>
           
           <div className="space-y-6">
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
-              <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4">
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
+              <h3 className="text-xl font-title font-semibold text-blue-ink mb-4">
                 🧠 Le Mindset du Prospecteur de Haut Niveau
               </h3>
-              <ul className="space-y-3 text-gray-anthracite dark:text-primary-bg/80">
+              <ul className="space-y-3 text-gray-anthracite">
                 <li className="flex items-start">
                   <CheckCircle className="w-5 h-5 text-mint-green mr-3 mt-0.5 flex-shrink-0" />
                   <span><strong>Rejet = Redirection :</strong> Chaque "non" vous rapproche du "oui" qui compte vraiment</span>
@@ -91,36 +91,36 @@ export default function GuideProspectionPage() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
-              <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4">
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
+              <h3 className="text-xl font-title font-semibold text-blue-ink mb-4">
                 🎯 Définir votre Persona Idéal
               </h3>
               <div className="space-y-4">
-                <p className="text-gray-anthracite dark:text-primary-bg/80">
+                <p className="text-gray-anthracite">
                   <strong>La règle des 3D :</strong> Définissez précisément qui vous voulez cibler
                 </p>
                 <div className="grid md:grid-cols-3 gap-4">
-                  <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
-                    <h4 className="font-semibold text-blue-ink dark:text-primary-bg mb-2">Démographique</h4>
-                    <ul className="text-sm text-gray-anthracite dark:text-primary-bg/80 space-y-1">
+                  <div className="bg-slate-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-blue-ink mb-2">Démographique</h4>
+                    <ul className="text-sm text-gray-anthracite space-y-1">
                       <li>• Secteur d'activité</li>
                       <li>• Taille d'entreprise</li>
                       <li>• Chiffre d'affaires</li>
                       <li>• Localisation</li>
                     </ul>
                   </div>
-                  <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
-                    <h4 className="font-semibold text-blue-ink dark:text-primary-bg mb-2">Décisionnel</h4>
-                    <ul className="text-sm text-gray-anthracite dark:text-primary-bg/80 space-y-1">
+                  <div className="bg-slate-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-blue-ink mb-2">Décisionnel</h4>
+                    <ul className="text-sm text-gray-anthracite space-y-1">
                       <li>• Poste occupé</li>
                       <li>• Pouvoir de décision</li>
                       <li>• Budget disponible</li>
                       <li>• Processus d'achat</li>
                     </ul>
                   </div>
-                  <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
-                    <h4 className="font-semibold text-blue-ink dark:text-primary-bg mb-2">Défi</h4>
-                    <ul className="text-sm text-gray-anthracite dark:text-primary-bg/80 space-y-1">
+                  <div className="bg-slate-50 p-4 rounded-lg">
+                    <h4 className="font-semibold text-blue-ink mb-2">Défi</h4>
+                    <ul className="text-sm text-gray-anthracite space-y-1">
                       <li>• Problèmes rencontrés</li>
                       <li>• Objectifs à atteindre</li>
                       <li>• Conséquences de l'inaction</li>
@@ -135,18 +135,18 @@ export default function GuideProspectionPage() {
 
         {/* Chapitre 2 */}
         <section className="mb-16">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 flex items-center">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8 flex items-center">
             <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">2</span>
             Les 7 Canaux de Prospection
           </h2>
           
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
               <div className="flex items-center mb-4">
                 <Phone className="w-6 h-6 text-mint-green mr-3" />
-                <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg">Prospection Téléphonique</h3>
+                <h3 className="text-xl font-title font-semibold text-blue-ink">Prospection Téléphonique</h3>
               </div>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 Le canal le plus direct et efficace pour créer du lien humain.
               </p>
               <div className="space-y-2">
@@ -161,12 +161,12 @@ export default function GuideProspectionPage() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
               <div className="flex items-center mb-4">
                 <Mail className="w-6 h-6 text-mint-green mr-3" />
-                <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg">Email Marketing</h3>
+                <h3 className="text-xl font-title font-semibold text-blue-ink">Email Marketing</h3>
               </div>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 Scalable et mesurable, idéal pour les approches éducatives.
               </p>
               <div className="space-y-2">
@@ -181,12 +181,12 @@ export default function GuideProspectionPage() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
               <div className="flex items-center mb-4">
                 <Users className="w-6 h-6 text-mint-green mr-3" />
-                <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg">LinkedIn</h3>
+                <h3 className="text-xl font-title font-semibold text-blue-ink">LinkedIn</h3>
               </div>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 Le réseau social B2B par excellence pour les décideurs.
               </p>
               <div className="space-y-2">
@@ -201,12 +201,12 @@ export default function GuideProspectionPage() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
               <div className="flex items-center mb-4">
                 <Calendar className="w-6 h-6 text-mint-green mr-3" />
-                <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg">Événements Networking</h3>
+                <h3 className="text-xl font-title font-semibold text-blue-ink">Événements Networking</h3>
               </div>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 Rencontres physiques pour créer des relations durables.
               </p>
               <div className="space-y-2">
@@ -225,17 +225,17 @@ export default function GuideProspectionPage() {
 
         {/* Chapitre 3 */}
         <section className="mb-16">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 flex items-center">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8 flex items-center">
             <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">3</span>
             Scripts et Templates Éprouvés
           </h2>
           
           <div className="space-y-8">
             <div className="bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl p-6">
-              <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-semibold text-blue-ink mb-4">
                 📞 Script d'Approche Téléphonique "IMPACT"
               </h3>
-              <div className="bg-white dark:bg-gray-anthracite/20 rounded-lg p-4 font-mono text-sm">
+              <div className="bg-white rounded-lg p-4 font-mono text-sm">
                 <p className="mb-2"><strong className="text-mint-green">Introduction :</strong> "Bonjour [Prénom], je suis [Votre nom] de [Entreprise]."</p>
                 <p className="mb-2"><strong className="text-mint-green">Motif :</strong> "Je vous appelle car j'ai remarqué que [observation pertinente]."</p>
                 <p className="mb-2"><strong className="text-mint-green">Permission :</strong> "Avez-vous 2 minutes pour que je vous explique pourquoi ?"</p>
@@ -246,10 +246,10 @@ export default function GuideProspectionPage() {
             </div>
 
             <div className="bg-gradient-to-r from-blue-ink/10 to-mint-green/10 rounded-xl p-6">
-              <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-semibold text-blue-ink mb-4">
                 ✉️ Template Email "AIDA+"
               </h3>
-              <div className="bg-white dark:bg-gray-anthracite/20 rounded-lg p-4 space-y-3">
+              <div className="bg-white rounded-lg p-4 space-y-3">
                 <div>
                   <strong className="text-mint-green">Objet :</strong> [Prénom], 3 questions sur [leur défi]
                 </div>
@@ -275,20 +275,20 @@ export default function GuideProspectionPage() {
 
         {/* Chapitre 4 */}
         <section className="mb-16">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 flex items-center">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8 flex items-center">
             <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">4</span>
             Système de Suivi et Mesure
           </h2>
           
-          <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
-            <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-6">
+          <div className="bg-white rounded-xl p-6 border border-slate-200">
+            <h3 className="text-xl font-title font-semibold text-blue-ink mb-6">
               📊 Tableau de Bord Prospection
             </h3>
             
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 className="font-semibold text-mint-green mb-3">Indicateurs d'Activité</h4>
-                <ul className="space-y-2 text-gray-anthracite dark:text-primary-bg/80">
+                <ul className="space-y-2 text-gray-anthracite">
                   <li>• Nombre de contacts par jour</li>
                   <li>• Taux de joignabilité</li>
                   <li>• Temps moyen par contact</li>
@@ -297,7 +297,7 @@ export default function GuideProspectionPage() {
               </div>
               <div>
                 <h4 className="font-semibold text-mint-green mb-3">Indicateurs de Performance</h4>
-                <ul className="space-y-2 text-gray-anthracite dark:text-primary-bg/80">
+                <ul className="space-y-2 text-gray-anthracite">
                   <li>• Taux de conversion en RDV</li>
                   <li>• Taux de transformation RDV → Vente</li>
                   <li>• Panier moyen par prospect</li>
@@ -311,32 +311,32 @@ export default function GuideProspectionPage() {
         {/* Plan d'Action */}
         <section className="mb-16">
           <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-2xl p-8">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6 text-center">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6 text-center">
               🚀 Votre Plan d'Action des 30 Premiers Jours
             </h2>
             
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="bg-white dark:bg-gray-anthracite/20 rounded-xl p-6">
+              <div className="bg-white rounded-xl p-6">
                 <h3 className="text-lg font-title font-semibold text-mint-green mb-4">Semaine 1-2</h3>
-                <ul className="space-y-2 text-sm text-gray-anthracite dark:text-primary-bg/80">
+                <ul className="space-y-2 text-sm text-gray-anthracite">
                   <li>• Définir votre persona idéal</li>
                   <li>• Créer votre base de prospects</li>
                   <li>• Préparer vos scripts</li>
                   <li>• Tester sur 10 prospects</li>
                 </ul>
               </div>
-              <div className="bg-white dark:bg-gray-anthracite/20 rounded-xl p-6">
+              <div className="bg-white rounded-xl p-6">
                 <h3 className="text-lg font-title font-semibold text-mint-green mb-4">Semaine 3-4</h3>
-                <ul className="space-y-2 text-sm text-gray-anthracite dark:text-primary-bg/80">
+                <ul className="space-y-2 text-sm text-gray-anthracite">
                   <li>• Optimiser selon les retours</li>
                   <li>• Augmenter à 25 contacts/jour</li>
                   <li>• Mettre en place le suivi</li>
                   <li>• Mesurer les premiers résultats</li>
                 </ul>
               </div>
-              <div className="bg-white dark:bg-gray-anthracite/20 rounded-xl p-6">
+              <div className="bg-white rounded-xl p-6">
                 <h3 className="text-lg font-title font-semibold text-mint-green mb-4">Mois 2-3</h3>
-                <ul className="space-y-2 text-sm text-gray-anthracite dark:text-primary-bg/80">
+                <ul className="space-y-2 text-sm text-gray-anthracite">
                   <li>• Industrialiser le processus</li>
                   <li>• Automatiser ce qui peut l'être</li>
                   <li>• Analyser et ajuster</li>

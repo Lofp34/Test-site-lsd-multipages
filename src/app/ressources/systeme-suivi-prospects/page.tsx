@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default function SystemeSuiviProspectsPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <main className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
@@ -57,62 +57,62 @@ export default function SystemeSuiviProspectsPage() {
       </section>
 
       {/* Pourquoi un Système de Suivi */}
-      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-4xl font-title font-bold text-blue-ink mb-6">
               Pourquoi un Système de Suivi ?
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-3xl mx-auto">
               Les PME perdent en moyenne 27% de leurs prospects par manque de suivi structuré
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center border border-mint-green/20">
+            <div className="bg-white rounded-2xl p-8 text-center border border-mint-green/20">
               <div className="w-16 h-16 bg-red-500/10 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl font-bold text-red-500">27%</span>
               </div>
-              <h3 className="text-lg font-title font-bold text-blue-ink dark:text-primary-bg mb-2">
+              <h3 className="text-lg font-title font-bold text-blue-ink mb-2">
                 Prospects Perdus
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 text-sm">
+              <p className="text-gray-anthracite text-sm">
                 Par manque de suivi structuré
               </p>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center border border-mint-green/20">
+            <div className="bg-white rounded-2xl p-8 text-center border border-mint-green/20">
               <div className="w-16 h-16 bg-orange-500/10 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl font-bold text-orange-500">5x</span>
               </div>
-              <h3 className="text-lg font-title font-bold text-blue-ink dark:text-primary-bg mb-2">
+              <h3 className="text-lg font-title font-bold text-blue-ink mb-2">
                 Relances Nécessaires
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 text-sm">
+              <p className="text-gray-anthracite text-sm">
                 En moyenne pour conclure
               </p>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center border border-mint-green/20">
+            <div className="bg-white rounded-2xl p-8 text-center border border-mint-green/20">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl font-bold text-mint-green">+40%</span>
               </div>
-              <h3 className="text-lg font-title font-bold text-blue-ink dark:text-primary-bg mb-2">
+              <h3 className="text-lg font-title font-bold text-blue-ink mb-2">
                 Taux de Conversion
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 text-sm">
+              <p className="text-gray-anthracite text-sm">
                 Avec un suivi structuré
               </p>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 text-center border border-mint-green/20">
+            <div className="bg-white rounded-2xl p-8 text-center border border-mint-green/20">
               <div className="w-16 h-16 bg-blue-500/10 rounded-xl flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl font-bold text-blue-500">3h</span>
               </div>
-              <h3 className="text-lg font-title font-bold text-blue-ink dark:text-primary-bg mb-2">
+              <h3 className="text-lg font-title font-bold text-blue-ink mb-2">
                 Temps Économisé
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 text-sm">
+              <p className="text-gray-anthracite text-sm">
                 Par semaine et par commercial
               </p>
             </div>
@@ -121,29 +121,29 @@ export default function SystemeSuiviProspectsPage() {
       </section>
 
       {/* Composants du Système */}
-      <section className="py-20 bg-slate-50 dark:bg-gray-anthracite/20">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-4xl font-title font-bold text-blue-ink mb-6">
               Composants du Système
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-3xl mx-auto">
               Tout ce dont vous avez besoin pour un suivi efficace
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 border border-mint-green/20">
+            <div className="bg-white rounded-2xl p-8 border border-mint-green/20">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
                 <BarChart3 className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Tableau de Bord Principal
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 Vue d'ensemble de votre pipeline commercial avec métriques clés.
               </p>
-              <ul className="space-y-2 text-sm text-gray-anthracite dark:text-primary-bg/80">
+              <ul className="space-y-2 text-sm text-gray-anthracite">
                 <li className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Nombre de prospects par étape
@@ -159,17 +159,17 @@ export default function SystemeSuiviProspectsPage() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 border border-mint-green/20">
+            <div className="bg-white rounded-2xl p-8 border border-mint-green/20">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
                 <Users className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Fiche Prospect Complète
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 Template de fiche pour centraliser toutes les informations.
               </p>
-              <ul className="space-y-2 text-sm text-gray-anthracite dark:text-primary-bg/80">
+              <ul className="space-y-2 text-sm text-gray-anthracite">
                 <li className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Informations entreprise
@@ -185,17 +185,17 @@ export default function SystemeSuiviProspectsPage() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 border border-mint-green/20">
+            <div className="bg-white rounded-2xl p-8 border border-mint-green/20">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
                 <Calendar className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Planning de Relances
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 Système automatisé de rappels et relances programmées.
               </p>
-              <ul className="space-y-2 text-sm text-gray-anthracite dark:text-primary-bg/80">
+              <ul className="space-y-2 text-sm text-gray-anthracite">
                 <li className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Relances automatiques
@@ -211,17 +211,17 @@ export default function SystemeSuiviProspectsPage() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 border border-mint-green/20">
+            <div className="bg-white rounded-2xl p-8 border border-mint-green/20">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
                 <Target className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Scoring des Prospects
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 Système de notation pour prioriser vos efforts commerciaux.
               </p>
-              <ul className="space-y-2 text-sm text-gray-anthracite dark:text-primary-bg/80">
+              <ul className="space-y-2 text-sm text-gray-anthracite">
                 <li className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Critères de qualification
@@ -237,17 +237,17 @@ export default function SystemeSuiviProspectsPage() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 border border-mint-green/20">
+            <div className="bg-white rounded-2xl p-8 border border-mint-green/20">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
                 <TrendingUp className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Métriques de Performance
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 KPIs essentiels pour piloter votre activité commerciale.
               </p>
-              <ul className="space-y-2 text-sm text-gray-anthracite dark:text-primary-bg/80">
+              <ul className="space-y-2 text-sm text-gray-anthracite">
                 <li className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Taux de conversion
@@ -263,17 +263,17 @@ export default function SystemeSuiviProspectsPage() {
               </ul>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8 border border-mint-green/20">
+            <div className="bg-white rounded-2xl p-8 border border-mint-green/20">
               <div className="w-16 h-16 bg-mint-green/10 rounded-xl flex items-center justify-center mb-6">
                 <BarChart3 className="w-8 h-8 text-mint-green" />
               </div>
-              <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-4">
+              <h3 className="text-xl font-title font-bold text-blue-ink mb-4">
                 Rapports Hebdomadaires
               </h3>
-              <p className="text-gray-anthracite dark:text-primary-bg/80 mb-4">
+              <p className="text-gray-anthracite mb-4">
                 Templates de reporting pour suivre l'évolution de votre activité.
               </p>
-              <ul className="space-y-2 text-sm text-gray-anthracite dark:text-primary-bg/80">
+              <ul className="space-y-2 text-sm text-gray-anthracite">
                 <li className="flex items-center">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   Synthèse hebdomadaire
@@ -293,61 +293,61 @@ export default function SystemeSuiviProspectsPage() {
       </section>
 
       {/* Métriques Clés PME */}
-      <section className="py-20 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <h2 className="text-4xl font-title font-bold text-blue-ink mb-6">
               Métriques Clés pour PME
             </h2>
-            <p className="text-xl text-gray-anthracite dark:text-primary-bg/80 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-anthracite max-w-3xl mx-auto">
               Les indicateurs essentiels adaptés aux spécificités des PME
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8">
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <div className="bg-white rounded-2xl p-8">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-6">
                 Métriques d'Activité
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center p-4 bg-mint-green/10 rounded-lg">
-                  <span className="font-semibold text-gray-anthracite dark:text-primary-bg/80">Nouveaux prospects/semaine</span>
+                  <span className="font-semibold text-gray-anthracite">Nouveaux prospects/semaine</span>
                   <span className="text-mint-green font-bold">10-15</span>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-mint-green/10 rounded-lg">
-                  <span className="font-semibold text-gray-anthracite dark:text-primary-bg/80">Appels/jour</span>
+                  <span className="font-semibold text-gray-anthracite">Appels/jour</span>
                   <span className="text-mint-green font-bold">20-30</span>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-mint-green/10 rounded-lg">
-                  <span className="font-semibold text-gray-anthracite dark:text-primary-bg/80">RDV obtenus/semaine</span>
+                  <span className="font-semibold text-gray-anthracite">RDV obtenus/semaine</span>
                   <span className="text-mint-green font-bold">3-5</span>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-mint-green/10 rounded-lg">
-                  <span className="font-semibold text-gray-anthracite dark:text-primary-bg/80">Propositions envoyées</span>
+                  <span className="font-semibold text-gray-anthracite">Propositions envoyées</span>
                   <span className="text-mint-green font-bold">2-3</span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/40 rounded-2xl p-8">
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6">
+            <div className="bg-white rounded-2xl p-8">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-6">
                 Métriques de Performance
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center p-4 bg-mint-green/10 rounded-lg">
-                  <span className="font-semibold text-gray-anthracite dark:text-primary-bg/80">Taux de conversion prospect→RDV</span>
+                  <span className="font-semibold text-gray-anthracite">Taux de conversion prospect→RDV</span>
                   <span className="text-mint-green font-bold">15-25%</span>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-mint-green/10 rounded-lg">
-                  <span className="font-semibold text-gray-anthracite dark:text-primary-bg/80">Taux de conversion RDV→Proposition</span>
+                  <span className="font-semibold text-gray-anthracite">Taux de conversion RDV→Proposition</span>
                   <span className="text-mint-green font-bold">60-80%</span>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-mint-green/10 rounded-lg">
-                  <span className="font-semibold text-gray-anthracite dark:text-primary-bg/80">Taux de closing</span>
+                  <span className="font-semibold text-gray-anthracite">Taux de closing</span>
                   <span className="text-mint-green font-bold">25-35%</span>
                 </div>
                 <div className="flex justify-between items-center p-4 bg-mint-green/10 rounded-lg">
-                  <span className="font-semibold text-gray-anthracite dark:text-primary-bg/80">Cycle de vente moyen</span>
+                  <span className="font-semibold text-gray-anthracite">Cycle de vente moyen</span>
                   <span className="text-mint-green font-bold">30-60j</span>
                 </div>
               </div>

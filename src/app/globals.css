@@ -20,7 +20,6 @@
     --primary-accent: 160 84% 39%;  /* Accents en mint-green */
     --primary-secondary: 220 13% 18%; /* Texte secondaire anthracite */
     --primary-emotion: 25 95% 53%;  /* Émotions en orange-soft */
-    --primary-dark-bg: 215 58% 24%; /* Fond sombre (non utilisé) */
   }
 
   body {
@@ -89,6 +88,85 @@
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
+}
+
+/* Animations pour les optimisations de performance */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Styles pour les composants d'optimisation */
+.performance-placeholder {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.performance-optimized {
+  will-change: transform, opacity;
+}
+
+.priority-high {
+  z-index: 10;
+}
+
+.priority-normal {
+  z-index: 1;
+}
+
+/* Optimisations pour les Core Web Vitals */
+.performance-optimized img {
+  aspect-ratio: attr(width) / attr(height);
+}
+
+.performance-optimized video {
+  aspect-ratio: 16 / 9;
+}
+
+/* Styles pour les métriques de performance (dev uniquement) */
+.performance-metrics {
+  font-family: 'Courier New', monospace;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Optimisations pour le cache */
+.cache-hit {
+  animation: cache-hit 0.3s ease-out;
+}
+
+@keyframes cache-hit {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Styles pour les breadcrumbs SEO */
+.seo-breadcrumbs {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.seo-breadcrumbs a {
+  transition: color 0.2s ease;
+}
+
+.seo-breadcrumbs a:hover {
+  color: #00BDA4;
+}
+
+.seo-breadcrumbs a[aria-current="page"] {
+  color: #1B365D;
+  font-weight: 500;
 }
 
 /* Classes utilitaires personnalisées */

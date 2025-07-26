@@ -122,12 +122,12 @@ export default function LeadersEatLastPage() {
 
         {/* Résumé détaillé */}
         <article className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Résumé détaillé
             </h2>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 Simon Sinek révèle les secrets du leadership qui inspire la loyauté et la performance exceptionnelle. S'appuyant sur la biologie, l'anthropologie et des exemples concrets d'organisations performantes, il démontre que les meilleurs leaders créent un environnement de sécurité psychologique.
               </p>
@@ -139,22 +139,22 @@ export default function LeadersEatLastPage() {
 
               <h3 className="text-2xl font-bold text-mint-green mb-4">Les 4 hormones du leadership</h3>
               
-              <h4 className="text-xl font-semibold text-blue-ink dark:text-mint-green mb-3">Endorphine</h4>
+              <h4 className="text-xl font-semibold text-blue-ink mb-3">Endorphine</h4>
               <p className="mb-4">
                 Hormone du plaisir et de la persévérance. Libérée lors d'efforts soutenus, elle permet de surmonter les difficultés. Les leaders doivent créer des défis stimulants qui poussent l'équipe à se dépasser.
               </p>
 
-              <h4 className="text-xl font-semibold text-blue-ink dark:text-mint-green mb-3">Dopamine</h4>
+              <h4 className="text-xl font-semibold text-blue-ink mb-3">Dopamine</h4>
               <p className="mb-4">
                 Hormone de la récompense et de l'accomplissement. Motivante mais addictive si mal utilisée (focus sur les résultats court terme). Les bons leaders célèbrent les progrès, pas seulement les résultats finaux.
               </p>
 
-              <h4 className="text-xl font-semibold text-blue-ink dark:text-mint-green mb-3">Sérotonine</h4>
+              <h4 className="text-xl font-semibold text-blue-ink mb-3">Sérotonine</h4>
               <p className="mb-4">
                 Hormone du statut et de la fierté. Libérée quand on se sent respecté et reconnu. Les leaders doivent valoriser publiquement leurs équipes et créer un sentiment d'appartenance.
               </p>
 
-              <h4 className="text-xl font-semibold text-blue-ink dark:text-mint-green mb-3">Ocytocine</h4>
+              <h4 className="text-xl font-semibold text-blue-ink mb-3">Ocytocine</h4>
               <p className="mb-6">
                 Hormone de la confiance et de l'empathie. Libérée lors d'interactions humaines authentiques. C'est l'hormone clé du leadership : elle crée des liens durables et inspire la loyauté inconditionnelle.
               </p>
@@ -178,8 +178,8 @@ export default function LeadersEatLastPage() {
 
         {/* Points clés à retenir */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Points clés à retenir
             </h2>
             
@@ -194,7 +194,7 @@ export default function LeadersEatLastPage() {
               ].map((point, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-mint-green text-xl mr-3 mt-1">✓</span>
-                  <span className="text-gray-800 dark:text-gray-200 text-lg">{point}</span>
+                  <span className="text-gray-800 text-lg">{point}</span>
                 </li>
               ))}
             </ul>
@@ -203,8 +203,8 @@ export default function LeadersEatLastPage() {
 
         {/* Pour qui ce livre ? */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Pour qui ce livre ?
             </h2>
             
@@ -218,7 +218,7 @@ export default function LeadersEatLastPage() {
               ].map((profile, index) => (
                 <div key={index} className="flex items-center p-3 bg-mint-green/10 rounded-lg">
                   <span className="text-mint-green text-lg mr-3">👤</span>
-                  <span className="text-gray-800 dark:text-gray-200 font-medium">{profile}</span>
+                  <span className="text-gray-800 font-medium">{profile}</span>
                 </div>
               ))}
             </div>
@@ -233,14 +233,14 @@ export default function LeadersEatLastPage() {
                 <span className="text-blue-ink font-bold text-lg">LS</span>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-blue-ink dark:text-mint-green">
+                <h2 className="text-2xl font-bold text-blue-ink">
                   Mon avis terrain
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300">Laurent Serre</p>
+                <p className="text-gray-600">Laurent Serre</p>
               </div>
             </div>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 Un livre qui remet l'humain au centre du leadership. Sinek a raison : dans un monde de plus en plus digitalisé, c'est la qualité relationnelle qui fait la différence.
               </p>
@@ -267,7 +267,7 @@ export default function LeadersEatLastPage() {
                     <span key={i} className={i < 4.4 ? "text-yellow-400" : "text-gray-300"}>⭐</span>
                   ))}
                 </div>
-                <span className="text-lg font-semibold text-gray-800 dark:text-gray-200">4.4/5</span>
+                <span className="text-lg font-semibold text-gray-800">4.4/5</span>
               </div>
             </div>
           </div>
@@ -275,8 +275,8 @@ export default function LeadersEatLastPage() {
 
         {/* Livres complémentaires */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Livres complémentaires
             </h2>
             
@@ -285,10 +285,10 @@ export default function LeadersEatLastPage() {
                 href="/ressources/meilleurs-livres/sales-management/good-to-great"
                 className="group p-6 bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl border border-mint-green/20 hover:border-mint-green/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-3 group-hover:text-mint-green transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-mint-green transition-colors">
                   Good to Great
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour les fondamentaux du leadership de niveau 5
                 </p>
                 <span className="text-mint-green font-medium group-hover:underline">
@@ -300,10 +300,10 @@ export default function LeadersEatLastPage() {
                 href="/ressources/meilleurs-livres/sales-management/high-output-management"
                 className="group p-6 bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl border border-mint-green/20 hover:border-mint-green/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-3 group-hover:text-mint-green transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-mint-green transition-colors">
                   High Output Management
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour l'aspect opérationnel du management
                 </p>
                 <span className="text-mint-green font-medium group-hover:underline">
@@ -320,10 +320,10 @@ export default function LeadersEatLastPage() {
             <div className="inline-block bg-mint-green/30 text-mint-green font-semibold rounded-full px-4 py-2 text-sm mb-4 shadow-md backdrop-blur">
               Passez du livre au terrain
             </div>
-            <h3 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-4">
+            <h3 className="text-3xl font-bold text-blue-ink mb-4">
               Découvrez le Bootcamp Commercial Intensif
             </h3>
-            <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
               Appliquez les principes du leadership bienveillant à votre équipe commerciale. Formation intensive pour créer un cercle de sécurité et booster la performance collective.
             </p>
             <Link 

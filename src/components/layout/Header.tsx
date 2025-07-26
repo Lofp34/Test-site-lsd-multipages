@@ -152,7 +152,7 @@ export default function Header() {
                   </span>
                   <ul
                     ref={ressourcesMenuRef}
-                    className={`absolute left-0 top-full mt-2 min-w-[180px] bg-white dark:bg-gray-anthracite rounded-xl shadow-lg border border-mint-green/20 z-50 transition-all duration-200 ${openSubMenu === item.label ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
+                    className={`absolute left-0 top-full mt-2 min-w-[180px] bg-white rounded-xl shadow-lg border border-mint-green/20 z-50 transition-all duration-200 ${openSubMenu === item.label ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
                     onMouseEnter={handleRessourcesMenuEnter}
                     onMouseLeave={handleRessourcesMenuLeave}
                   >
@@ -203,7 +203,7 @@ export default function Header() {
             style={{ background: 'rgba(20, 40, 80, 0.45)', backdropFilter: 'blur(8px)' }}
           >
             <div
-              className="mt-24 w-[90vw] max-w-md bg-blue-ink/80 dark:bg-gray-anthracite/90 rounded-2xl shadow-2xl border border-mint-green/20 p-6 animate-slideDown"
+              className="mt-24 w-[90vw] max-w-md bg-blue-ink/80 rounded-2xl shadow-2xl border border-mint-green/20 p-6 animate-slideDown"
               style={{
                 animation: 'slideDown 0.35s cubic-bezier(0.4,0,0.2,1)',
               }}
