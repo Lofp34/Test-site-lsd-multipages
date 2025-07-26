@@ -25,26 +25,8 @@ export const linkRedirects: RedirectRule[] = [
     destination: "/ressources/guide-recrutement-commercial",
     permanent: true
   },
-  {
-    source: "/ressources/linkedin-prospection",
-    destination: "/ressources/linkedin-prospection",
-    permanent: true
-  },
-  {
-    source: "/ressources/systeme-suivi-prospects",
-    destination: "/ressources/systeme-suivi-prospects",
-    permanent: true
-  },
-  {
-    source: "/ressources/techniques-motivation-equipe",
-    destination: "/ressources/techniques-motivation-equipe",
-    permanent: true
-  },
-  {
-    source: "/ressources/guide-recrutement-commercial",
-    destination: "/ressources/guide-recrutement-commercial",
-    permanent: true
-  },
+
+
   {
     source: "/ressources/scripts-impact",
     destination: "/ressources/scripts-prospection",
