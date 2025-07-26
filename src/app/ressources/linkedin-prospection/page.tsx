@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Linkedin, Users, MessageSquare, TrendingUp, CheckCircle, ArrowRight, Target, Share2, Download, Info, BookOpen, User } from 'lucide-react';
 import Link from 'next/link';
+import EmailCaptureForm from '@/components/ui/EmailCaptureForm';
 
 export const metadata: Metadata = {
   title: 'LinkedIn et Réseaux Sociaux : Guide Complet Prospection Digitale PME | Laurent Serre',
@@ -39,7 +40,7 @@ export default function LinkedinProspectionPage() {
             Transformez LinkedIn en machine à prospects pour votre PME. Stratégies éprouvées, templates de messages et techniques pour générer des leads qualifiés via les réseaux sociaux.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-2">
-            <a href="#telechargement" className="inline-flex items-center bg-mint-green hover:bg-mint-green/90 text-white px-6 py-3 rounded-full font-semibold transition-colors">
+            <a href="/guide-linkedin-prospection-pme.pdf" download className="inline-flex items-center bg-mint-green hover:bg-mint-green/90 text-white px-6 py-3 rounded-full font-semibold transition-colors">
               <Download className="w-5 h-5 mr-2" />
               Télécharger le guide (PDF)
             </a>
@@ -170,14 +171,12 @@ export default function LinkedinProspectionPage() {
 
       {/* Bloc téléchargement/CTA */}
       <section id="telechargement" className="max-w-4xl mx-auto px-4 py-8">
-        <div className="bg-mint-green/10 border border-mint-green/30 rounded-2xl p-8 text-center">
-          <h3 className="text-xl font-title font-bold text-blue-ink mb-2">Télécharger le guide complet (PDF)</h3>
-          <p className="text-gray-anthracite mb-4">Recevez le guide complet avec tous les templates, stratégies et conseils pratiques.</p>
-          <a href="#" className="inline-flex items-center bg-mint-green hover:bg-mint-green/90 text-white px-8 py-4 rounded-full font-semibold transition-colors">
-            <Download className="w-5 h-5 mr-2" />
-            Télécharger le guide LinkedIn PME
-          </a>
-        </div>
+        <EmailCaptureForm 
+          title="Télécharger le guide LinkedIn PME"
+          description="Recevez le guide complet avec tous les templates, stratégies et conseils pratiques directement dans votre boîte mail."
+          buttonText="Télécharger le guide LinkedIn PME"
+          successMessage="Guide envoyé ! Vérifiez votre boîte mail et téléchargez le PDF."
+        />
       </section>
 
       {/* Stratégie LinkedIn PME */}

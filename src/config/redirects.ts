@@ -22,7 +22,7 @@ export interface RedirectAnalyticsData {
 export const linkRedirects: RedirectRule[] = [
   {
     source: "/ressources/scripts-prospection",
-    destination: "/ressources/guide-recrutement-commercial",
+    destination: "/ressources/impact-aida-script-prospection-pme",
     permanent: true
   },
 
