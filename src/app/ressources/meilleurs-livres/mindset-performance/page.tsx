@@ -360,7 +360,7 @@ export default function MindsetPerformancePage() {
         {/* Section spécifique : Impact du mindset sur les métiers commerciaux */}
         <AnimatedSection delay={450}>
           <div className="max-w-4xl mx-auto mb-12 px-4">
-            <div className="bg-white/70 dark:bg-gray-800/80 rounded-2xl shadow-2xl p-8 border border-orange-400/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-orange-400/20 backdrop-blur-sm">
               <div className="text-center mb-6">
                 <span className="inline-block bg-orange-500/20 text-orange-600 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🎯 Focus métier
@@ -385,7 +385,7 @@ export default function MindsetPerformancePage() {
                 </div>
                 
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-red-700 dark:text-red-400 flex items-center gap-2">
+                  <h4 className="font-semibold text-red-700 flex items-center gap-2">
                     ⚠️ Blocages du mindset limitant
                   </h4>
                   <ul className="space-y-2 text-sm text-primary-secondary">
@@ -398,7 +398,7 @@ export default function MindsetPerformancePage() {
                 </div>
               </div>
               
-              <div className="mt-6 p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
+              <div className="mt-6 p-4 bg-orange-50 rounded-lg">
                 <p className="text-sm text-primary-secondary italic">
                   💡 <strong>Conseil Laurent Serre :</strong> Le mindset n'est pas inné, il se développe. 
                   Commencez par identifier vos croyances limitantes, puis travaillez une habitude à la fois. 
@@ -451,7 +451,7 @@ export default function MindsetPerformancePage() {
         {/* Section : Suggestions cross-catégorie et CTAs */}
         <AnimatedSection delay={600}>
           <div className="max-w-4xl mx-auto mb-12 px-4">
-            <div className="bg-white/70 dark:bg-gray-800/80 rounded-2xl shadow-2xl p-8 border border-orange-400/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-orange-400/20 backdrop-blur-sm">
               <div className="text-center mb-8">
                 <span className="inline-block bg-amber-500/20 text-amber-600 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🔗 Complémentarité
@@ -467,26 +467,26 @@ export default function MindsetPerformancePage() {
               <div className="grid md:grid-cols-2 gap-6 mb-8">
                 <Link 
                   href="/ressources/meilleurs-livres/prospection-sdr"
-                  className="group p-6 bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-xl border border-blue-200/50 hover:shadow-lg transition-all duration-300"
+                  className="group p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl border border-blue-200/50 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl">📞</span>
                     <h4 className="font-bold text-blue-600 group-hover:text-blue-500">Prospection & SDR</h4>
                   </div>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                  <p className="text-sm text-gray-700">
                     Appliquez votre nouveau mindset aux techniques de prospection pour générer plus d'opportunités.
                   </p>
                 </Link>
                 
                 <Link 
                   href="/ressources/meilleurs-livres/negotiation-closing"
-                  className="group p-6 bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-900/30 dark:to-orange-900/30 rounded-xl border border-red-200/50 hover:shadow-lg transition-all duration-300"
+                  className="group p-6 bg-gradient-to-br from-red-50 to-orange-50 rounded-xl border border-red-200/50 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl">🤝</span>
                     <h4 className="font-bold text-red-600 group-hover:text-red-500">Négociation & Closing</h4>
                   </div>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                  <p className="text-sm text-gray-700">
                     Utilisez votre résilience mentale pour mieux négocier et conclure vos ventes.
                   </p>
                 </Link>
@@ -502,7 +502,7 @@ export default function MindsetPerformancePage() {
                   Développer le mindset de votre équipe
                   <span>→</span>
                 </Link>
-                <p className="text-sm text-gray-600 dark:text-gray-400 mt-3">
+                <p className="text-sm text-gray-600 mt-3">
                   Accompagnement personnalisé pour transformer l'état d'esprit de vos commerciaux
                 </p>
               </div>

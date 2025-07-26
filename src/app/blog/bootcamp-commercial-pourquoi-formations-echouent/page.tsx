@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 
 export default function Article4() {
   return (
-    <main className="bg-primary-bg dark:bg-gray-dark text-gray-dark dark:text-primary-bg">
+    <main className="bg-primary-bg text-gray-dark">
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -37,11 +37,11 @@ export default function Article4() {
               <span className="font-title font-semibold text-blue-ink text-sm">Formation</span>
             </div>
             
-            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink dark:text-white sm:text-5xl mb-6">
+            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
               Bootcamp commercial : pourquoi 80% des formations échouent
             </h1>
             
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8">
+            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
               <div className="flex items-center gap-2">
                 <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" loading="lazy" />
                 <span>Laurent Serre</span>
@@ -70,13 +70,13 @@ export default function Article4() {
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
-          <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+          <p className="text-xl text-gray-600 leading-relaxed mb-8">
             Chaque année, les entreprises investissent des millions dans la formation commerciale. 
             Pourtant, 80% de ces formations n'améliorent pas durablement les performances. 
             Décryptage d'un gâchis et solutions pour que ça marche vraiment.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Raison #1 : Le syndrome de la formation "one-shot"
           </h2>
           
@@ -93,7 +93,7 @@ export default function Article4() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Raison #2 : Formation générique vs réalité terrain
           </h2>
           
@@ -108,7 +108,7 @@ export default function Article4() {
             vos vraies objections, votre vraie concurrence. Chaque module est adapté à votre réalité.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Raison #3 : Pas de mesure, pas d'amélioration
           </h2>
           
@@ -126,7 +126,7 @@ export default function Article4() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Raison #4 : Le manager n'est pas impliqué
           </h2>
           
@@ -141,7 +141,7 @@ export default function Article4() {
             l'animation d'équipe et le suivi des KPI. Manager et équipe avancent ensemble.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Raison #5 : Formation sans outils opérationnels
           </h2>
           
@@ -151,7 +151,7 @@ export default function Article4() {
             des processus, un CRM adapté...
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Notre approche "bootcamp terrain"
           </h2>
           
@@ -208,9 +208,9 @@ export default function Article4() {
           </p>
         </div>
       </article>
-      <section className="py-16 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
             Prendre contact avec Laurent Serre
           </h2>
           <HubSpotForm />

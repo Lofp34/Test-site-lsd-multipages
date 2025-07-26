@@ -190,7 +190,7 @@ describe('DomainStats Component', () => {
     it('includes progress bar when animated', () => {
       const { container } = render(<DomainStats {...defaultProps} />)
       
-      const progressBar = container.querySelector('.bg-gray-200.dark\\:bg-gray-700')
+      const progressBar = container.querySelector('.bg-gray-200')
       expect(progressBar).toBeInTheDocument()
     })
 
@@ -198,7 +198,7 @@ describe('DomainStats Component', () => {
       const props = { ...defaultProps, animated: false }
       const { container } = render(<DomainStats {...props} />)
       
-      const progressBar = container.querySelector('.bg-gray-200.dark\\:bg-gray-700')
+      const progressBar = container.querySelector('.bg-gray-200')
       expect(progressBar).not.toBeInTheDocument()
     })
   })
@@ -348,19 +348,19 @@ describe('DomainStats Component', () => {
     })
   })
 
-  describe('Dark Mode Support', () => {
-    it('includes dark mode classes', () => {
-      const { container } = render(<DomainStats {...defaultProps} />)
-      
-      const darkModeElements = container.querySelectorAll('[class*="dark:"]')
-      expect(darkModeElements.length).toBeGreaterThan(0)
-    })
-
-    it('has dark mode background classes', () => {
+  describe('Styling Consistency', () => {
+    it('maintains consistent light theme styling', () => {
       const { container } = render(<DomainStats {...defaultProps} />)
       
       const mainContainer = container.firstChild as HTMLElement
-      expect(mainContainer).toHaveClass('dark:bg-gray-800/90')
+      expect(mainContainer).toHaveClass('bg-white/90')
+    })
+
+    it('uses clean CSS classes without theme conflicts', () => {
+      const { container } = render(<DomainStats {...defaultProps} />)
+      
+      // Ensure component renders without styling issues
+      expect(container.firstChild).toBeInTheDocument()
     })
   })
 

@@ -411,7 +411,7 @@ export default function PsychologieInfluencePage() {
         {/* Section : Exemples concrets PME */}
         <AnimatedSection delay={450}>
           <div className="max-w-6xl mx-auto mb-12 px-4">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-purple-400/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-purple-400/20 backdrop-blur-sm">
               <div className="text-center mb-8">
                 <span className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🏢 Cas clients PME
@@ -426,7 +426,7 @@ export default function PsychologieInfluencePage() {
               
               <div className="grid md:grid-cols-2 gap-8">
                 <div className="space-y-6">
-                  <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50">
+                  <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200/50">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
                         <span className="text-white font-bold text-sm">E-C</span>
@@ -444,15 +444,15 @@ export default function PsychologieInfluencePage() {
                       <strong>Solution :</strong> Implémentation massive de la preuve sociale : témoignages clients visibles, 
                       compteurs d'achat en temps réel, logos d'entreprises clientes.
                     </p>
-                    <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded-lg">
-                      <p className="text-green-700 dark:text-green-300 text-sm font-medium">
+                    <div className="bg-green-50 p-3 rounded-lg">
+                      <p className="text-green-700 text-sm font-medium">
                         📈 Résultats : +120% de conversion (2,1% → 4,6%), +45% de satisfaction client, 
                         -25% de cycle de vente
                       </p>
                     </div>
                   </div>
                   
-                  <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-xl border border-blue-200/50">
+                  <div className="p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl border border-blue-200/50">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
                         <span className="text-white font-bold text-sm">FOR</span>
@@ -470,8 +470,8 @@ export default function PsychologieInfluencePage() {
                       <strong>Solution :</strong> Développement de l'autorité expertise : publications LinkedIn, 
                       interventions en conférences, certifications visibles.
                     </p>
-                    <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded-lg">
-                      <p className="text-green-700 dark:text-green-300 text-sm font-medium">
+                    <div className="bg-green-50 p-3 rounded-lg">
+                      <p className="text-green-700 text-sm font-medium">
                         📈 Résultats : +80% de conversion (12% → 21,6%), +55% de satisfaction, 
                         -40% de cycle de vente
                       </p>
@@ -480,7 +480,7 @@ export default function PsychologieInfluencePage() {
                 </div>
                 
                 <div className="space-y-6">
-                  <div className="p-6 bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/30 dark:to-green-900/30 rounded-xl border border-emerald-200/50">
+                  <div className="p-6 bg-gradient-to-r from-emerald-50 to-green-50 rounded-xl border border-emerald-200/50">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center">
                         <span className="text-white font-bold text-sm">CON</span>
@@ -498,15 +498,15 @@ export default function PsychologieInfluencePage() {
                       <strong>Solution :</strong> Application du principe de réciprocité : audits gratuits personnalisés, 
                       partage d'insights sectoriels exclusifs.
                     </p>
-                    <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded-lg">
-                      <p className="text-green-700 dark:text-green-300 text-sm font-medium">
+                    <div className="bg-green-50 p-3 rounded-lg">
+                      <p className="text-green-700 text-sm font-medium">
                         📈 Résultats : +200% de réponse (3% → 9%), +70% de satisfaction, 
                         -30% de cycle de vente
                       </p>
                     </div>
                   </div>
                   
-                  <div className="p-6 bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-900/30 dark:to-red-900/30 rounded-xl border border-orange-200/50">
+                  <div className="p-6 bg-gradient-to-r from-orange-50 to-red-50 rounded-xl border border-orange-200/50">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center">
                         <span className="text-white font-bold text-sm">TEC</span>
@@ -524,8 +524,8 @@ export default function PsychologieInfluencePage() {
                       <strong>Solution :</strong> Utilisation éthique du principe de rareté : offres à durée limitée 
                       authentiques, places limitées en formation.
                     </p>
-                    <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded-lg">
-                      <p className="text-green-700 dark:text-green-300 text-sm font-medium">
+                    <div className="bg-green-50 p-3 rounded-lg">
+                      <p className="text-green-700 text-sm font-medium">
                         📈 Résultats : +45% de conversion (18% → 26%), +35% de satisfaction, 
                         -60% de cycle (8 → 3,2 mois)
                       </p>
@@ -534,7 +534,7 @@ export default function PsychologieInfluencePage() {
                 </div>
               </div>
               
-              <div className="mt-8 p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50">
+              <div className="mt-8 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200/50">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center">
                     <span className="text-white font-bold text-sm">LS</span>
@@ -547,15 +547,15 @@ export default function PsychologieInfluencePage() {
                   mesurent l'impact, puis passent au suivant. L'erreur classique ? Vouloir tout appliquer en même temps."
                 </p>
                 <div className="grid md:grid-cols-3 gap-4 mt-4">
-                  <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
+                  <div className="text-center p-3 bg-white/50 rounded-lg">
                     <div className="text-2xl font-bold text-purple-600">2x</div>
                     <div className="text-xs text-primary-secondary/70">Amélioration moyenne des conversions</div>
                   </div>
-                  <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
+                  <div className="text-center p-3 bg-white/50 rounded-lg">
                     <div className="text-2xl font-bold text-purple-600">6</div>
                     <div className="text-xs text-primary-secondary/70">Principes universels d'influence</div>
                   </div>
-                  <div className="text-center p-3 bg-white/50 dark:bg-blue-800/30 rounded-lg">
+                  <div className="text-center p-3 bg-white/50 rounded-lg">
                     <div className="text-2xl font-bold text-purple-600">95%</div>
                     <div className="text-xs text-primary-secondary/70">Satisfaction clients maintenue</div>
                   </div>
@@ -581,7 +581,7 @@ export default function PsychologieInfluencePage() {
         {/* Section : Suggestions cross-catégories */}
         <AnimatedSection delay={500}>
           <div className="max-w-4xl mx-auto mb-12 px-4">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-purple-400/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-purple-400/20 backdrop-blur-sm">
               <div className="text-center mb-6">
                 <span className="inline-block bg-orange-500/20 text-orange-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🔗 Complémentaire
@@ -597,7 +597,7 @@ export default function PsychologieInfluencePage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <Link 
                   href="/ressources/meilleurs-livres/negociation-closing"
-                  className="group p-6 bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/30 dark:to-orange-900/30 rounded-xl border border-red-200/50 hover:shadow-lg transition-all duration-300"
+                  className="group p-6 bg-gradient-to-r from-red-50 to-orange-50 rounded-xl border border-red-200/50 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl">🤝</span>
@@ -611,13 +611,13 @@ export default function PsychologieInfluencePage() {
                 
                 <Link 
                   href="/ressources/meilleurs-livres/prospection-sdr"
-                  className="group p-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-xl border border-blue-200/50 hover:shadow-lg transition-all duration-300"
+                  className="group p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl border border-blue-200/50 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl">📞</span>
                     <h4 className="font-bold text-blue-600 group-hover:text-blue-700">Prospection & SDR</h4>
                   </div>
-                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                  <p className="text-sm text-gray-700">
                     Utilisez les principes psychologiques pour améliorer vos taux de réponse en prospection. 
                     La réciprocité et la preuve sociale transforment vos approches.
                   </p>
@@ -631,14 +631,14 @@ export default function PsychologieInfluencePage() {
         <AnimatedSection delay={550}>
           <div className="max-w-4xl mx-auto text-center px-4">
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-6 border border-purple-400/20 backdrop-blur-sm">
-                <div className="inline-block bg-purple-500/20 text-purple-600 dark:text-purple-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+              <div className="bg-white/70 rounded-2xl shadow-2xl p-6 border border-purple-400/20 backdrop-blur-sm">
+                <div className="inline-block bg-purple-500/20 text-purple-600 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🧠 Formation
                 </div>
-                <h4 className="text-xl font-bold text-blue-ink dark:text-purple-400 mb-3">
+                <h4 className="text-xl font-bold text-blue-ink mb-3">
                   Bootcamp Psychologie Commerciale
                 </h4>
-                <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">
+                <p className="text-gray-700 mb-4 text-sm">
                   Maîtrisez les 6 principes de Cialdini et les biais cognitifs avec une formation pratique 
                   adaptée aux enjeux PME. Influence éthique, persuasion authentique, psychologie de la décision.
                 </p>
@@ -650,14 +650,14 @@ export default function PsychologieInfluencePage() {
                 </Link>
               </div>
               
-              <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-6 border border-pink-400/20 backdrop-blur-sm">
-                <div className="inline-block bg-pink-500/20 text-pink-600 dark:text-pink-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+              <div className="bg-white/70 rounded-2xl shadow-2xl p-6 border border-pink-400/20 backdrop-blur-sm">
+                <div className="inline-block bg-pink-500/20 text-pink-600 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   💡 Accompagnement
                 </div>
-                <h4 className="text-xl font-bold text-blue-ink dark:text-pink-400 mb-3">
+                <h4 className="text-xl font-bold text-blue-ink mb-3">
                   Coaching Influence Personnalisé
                 </h4>
-                <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">
+                <p className="text-gray-700 mb-4 text-sm">
                   Accompagnement individuel pour développer votre expertise en psychologie commerciale. 
                   Analyse de vos interactions, techniques avancées, développement de votre influence naturelle.
                 </p>

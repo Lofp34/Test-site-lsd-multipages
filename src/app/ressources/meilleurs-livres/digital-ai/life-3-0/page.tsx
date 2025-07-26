@@ -135,12 +135,12 @@ export default function Life30Page() {
 
         {/* Résumé détaillé */}
         <article className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-indigo-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-indigo-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-indigo-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Résumé détaillé
             </h2>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 Max Tegmark, physicien au MIT et cofondateur du Future of Life Institute, nous emmène dans une réflexion profonde sur l'avenir de l'intelligence artificielle et ses implications pour l'humanité.
               </p>
@@ -148,26 +148,26 @@ export default function Life30Page() {
               <h3 className="text-2xl font-bold text-indigo-500 mb-4">Les trois niveaux de vie</h3>
               
               <div className="grid md:grid-cols-3 gap-6 mb-8">
-                <div className="p-6 bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/30 dark:to-blue-900/30 rounded-xl border border-green-200/50">
+                <div className="p-6 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl border border-green-200/50">
                   <h4 className="text-xl font-bold text-green-600 mb-3">🧬 Life 1.0</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">Biologique</p>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-sm text-gray-600 mb-2">Biologique</p>
+                  <p className="text-gray-700">
                     Vie simple où hardware et software sont figés par l'évolution. Pas d'apprentissage individuel.
                   </p>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/30 dark:to-purple-900/30 rounded-xl border border-blue-200/50">
+                <div className="p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl border border-blue-200/50">
                   <h4 className="text-xl font-bold text-blue-600 mb-3">🧠 Life 2.0</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">Culturelle</p>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-sm text-gray-600 mb-2">Culturelle</p>
+                  <p className="text-gray-700">
                     Nous, humains. Hardware figé mais software évolutif (apprentissage, culture, compétences).
                   </p>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50">
+                <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200/50">
                   <h4 className="text-xl font-bold text-purple-600 mb-3">🤖 Life 3.0</h4>
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">Technologique</p>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-sm text-gray-600 mb-2">Technologique</p>
+                  <p className="text-gray-700">
                     IA capable de reprogrammer hardware et software. Potentiel d'amélioration illimité.
                   </p>
                 </div>
@@ -179,9 +179,9 @@ export default function Life30Page() {
               </p>
 
               <div className="grid md:grid-cols-2 gap-6 mb-8">
-                <div className="p-6 bg-green-50 dark:bg-green-900/20 rounded-xl border border-green-200/50">
+                <div className="p-6 bg-green-50 rounded-xl border border-green-200/50">
                   <h4 className="text-lg font-bold text-green-600 mb-3">🌟 Scénarios optimistes</h4>
-                  <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+                  <ul className="space-y-2 text-gray-700 text-sm">
                     <li>• <strong>Libertarien utopique</strong> : L'IA libère l'humanité du travail</li>
                     <li>• <strong>Dirigeant bienveillant</strong> : IA superintelligente guide l'humanité</li>
                     <li>• <strong>Égalitariste</strong> : Bénéfices IA partagés équitablement</li>
@@ -189,9 +189,9 @@ export default function Life30Page() {
                   </ul>
                 </div>
                 
-                <div className="p-6 bg-red-50 dark:bg-red-900/20 rounded-xl border border-red-200/50">
+                <div className="p-6 bg-red-50 rounded-xl border border-red-200/50">
                   <h4 className="text-lg font-bold text-red-600 mb-3">⚠️ Scénarios risqués</h4>
-                  <ul className="space-y-2 text-gray-700 dark:text-gray-300 text-sm">
+                  <ul className="space-y-2 text-gray-700 text-sm">
                     <li>• <strong>Conquérant</strong> : L'IA remplace progressivement l'humanité</li>
                     <li>• <strong>Descendant</strong> : L'humanité devient obsolète</li>
                     <li>• <strong>Zookeeper</strong> : L'humanité en cage dorée</li>
@@ -203,9 +203,9 @@ export default function Life30Page() {
               <h3 className="text-2xl font-bold text-indigo-500 mb-4">Implications pour les entreprises</h3>
               
               <div className="space-y-6 mb-8">
-                <div className="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/30 rounded-xl border border-blue-200/50">
+                <div className="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-200/50">
                   <h4 className="text-xl font-bold text-blue-600 mb-3">📅 Court terme (5-15 ans)</h4>
-                  <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                  <ul className="space-y-2 text-gray-700">
                     <li>• Automatisation progressive des tâches cognitives</li>
                     <li>• Transformation des modèles économiques</li>
                     <li>• Nouveaux avantages concurrentiels basés sur l'IA</li>
@@ -213,18 +213,18 @@ export default function Life30Page() {
                   </ul>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-xl border border-indigo-200/50">
+                <div className="p-6 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl border border-indigo-200/50">
                   <h4 className="text-xl font-bold text-indigo-600 mb-3">📈 Moyen terme (15-50 ans)</h4>
-                  <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                  <ul className="space-y-2 text-gray-700">
                     <li>• IA générale surpassant l'humain dans la plupart des domaines</li>
                     <li>• Remise en question des structures organisationnelles</li>
                     <li>• Nouveaux enjeux éthiques et de gouvernance</li>
                   </ul>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50">
+                <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200/50">
                   <h4 className="text-xl font-bold text-purple-600 mb-3">🚀 Long terme (50+ ans)</h4>
-                  <ul className="space-y-2 text-gray-700 dark:text-gray-300">
+                  <ul className="space-y-2 text-gray-700">
                     <li>• Possible émergence d'une superintelligence</li>
                     <li>• Transformation radicale de l'économie et de la société</li>
                     <li>• Questions existentielles sur le rôle de l'humanité</li>
@@ -232,7 +232,7 @@ export default function Life30Page() {
                 </div>
               </div>
 
-              <div className="bg-indigo-50 dark:bg-indigo-900/30 border-l-4 border-indigo-500 p-6 rounded-r-lg mb-6">
+              <div className="bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-r-lg mb-6">
                 <h4 className="text-lg font-bold text-indigo-600 mb-3">🎯 Pour les commerciaux</h4>
                 <p>
                   Comprendre que l'IA transformera profondément le métier, mais que les compétences humaines fondamentales (empathie, créativité, jugement éthique) resteront essentielles et deviendront même plus précieuses.
@@ -244,39 +244,39 @@ export default function Life30Page() {
 
         {/* Conseils de préparation stratégique */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-indigo-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-indigo-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-indigo-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Conseils de préparation stratégique
             </h2>
             
             <div className="space-y-6">
-              <div className="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/30 dark:to-indigo-900/30 rounded-xl border border-blue-200/50">
+              <div className="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-200/50">
                 <h3 className="text-xl font-bold text-blue-600 mb-3">🔬 1. Investir dans la recherche IA responsable</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Soutenir le développement d'IA alignée sur les valeurs humaines. Participer aux initiatives de recherche éthique et de sécurité IA.
                 </p>
                 <span className="text-sm text-blue-500 font-medium">Vision long terme</span>
               </div>
               
-              <div className="p-6 bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/30 dark:to-purple-900/30 rounded-xl border border-indigo-200/50">
+              <div className="p-6 bg-gradient-to-r from-indigo-50 to-purple-50 rounded-xl border border-indigo-200/50">
                 <h3 className="text-xl font-bold text-indigo-600 mb-3">🔄 2. Préparer les transitions</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Anticiper les transformations et accompagner les collaborateurs. Créer des programmes de formation continue et de reconversion.
                 </p>
                 <span className="text-sm text-indigo-500 font-medium">Gestion du changement</span>
               </div>
               
-              <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50">
+              <div className="p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200/50">
                 <h3 className="text-xl font-bold text-purple-600 mb-3">🏛️ 3. Participer au débat public</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   S'impliquer dans les discussions sur la gouvernance de l'IA. Contribuer aux réflexions sectorielles et réglementaires.
                 </p>
                 <span className="text-sm text-purple-500 font-medium">Responsabilité sociétale</span>
               </div>
               
-              <div className="p-6 bg-gradient-to-r from-pink-50 to-red-50 dark:from-pink-900/30 dark:to-red-900/30 rounded-xl border border-pink-200/50">
+              <div className="p-6 bg-gradient-to-r from-pink-50 to-red-50 rounded-xl border border-pink-200/50">
                 <h3 className="text-xl font-bold text-pink-600 mb-3">🎯 4. Développer une vision long terme</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Intégrer les enjeux IA dans la stratégie d'entreprise. Créer un comité d'éthique IA et définir des principes directeurs.
                 </p>
                 <span className="text-sm text-pink-500 font-medium">Stratégie d'entreprise</span>
@@ -287,8 +287,8 @@ export default function Life30Page() {
 
         {/* Points clés à retenir */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-indigo-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-indigo-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-indigo-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Points clés à retenir
             </h2>
             
@@ -304,7 +304,7 @@ export default function Life30Page() {
               ].map((point, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-indigo-500 text-xl mr-3 mt-1">✓</span>
-                  <span className="text-gray-800 dark:text-gray-200 text-lg">{point}</span>
+                  <span className="text-gray-800 text-lg">{point}</span>
                 </li>
               ))}
             </ul>
@@ -313,8 +313,8 @@ export default function Life30Page() {
 
         {/* Pour qui ce livre ? */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-indigo-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-indigo-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-indigo-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Pour qui ce livre ?
             </h2>
             
@@ -328,7 +328,7 @@ export default function Life30Page() {
               ].map((profile, index) => (
                 <div key={index} className="flex items-center p-3 bg-indigo-500/10 rounded-lg">
                   <span className="text-indigo-500 text-lg mr-3">👤</span>
-                  <span className="text-gray-800 dark:text-gray-200 font-medium">{profile}</span>
+                  <span className="text-gray-800 font-medium">{profile}</span>
                 </div>
               ))}
             </div>
@@ -343,14 +343,14 @@ export default function Life30Page() {
                 <span className="text-white font-bold text-lg">LS</span>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-blue-ink dark:text-indigo-300">
+                <h2 className="text-2xl font-bold text-blue-ink">
                   Mon avis terrain
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300">Laurent Serre - Expert développement commercial PME</p>
+                <p className="text-gray-600">Laurent Serre - Expert développement commercial PME</p>
               </div>
             </div>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 Un livre dense mais fascinant. Tegmark ne fait pas de la science-fiction, il analyse sérieusement les enjeux long terme de l'IA.
               </p>
@@ -366,18 +366,18 @@ export default function Life30Page() {
               
               <h3 className="text-xl font-bold text-indigo-500 mb-4">Applications concrètes avec mes clients :</h3>
               <div className="grid md:grid-cols-2 gap-4 mb-6">
-                <div className="p-4 bg-indigo-50 dark:bg-indigo-900/30 rounded-lg">
+                <div className="p-4 bg-indigo-50 rounded-lg">
                   <h4 className="font-semibold text-indigo-600 mb-2">Groupe industriel (120 salariés)</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                  <p className="text-sm text-gray-700 mb-2">
                     Création d'un comité d'éthique IA inspiré des recommandations du livre
                   </p>
                   <p className="text-xs text-green-600 font-medium">
                     Résultat : Cadre éthique clair, +50% d'adhésion équipes aux projets IA
                   </p>
                 </div>
-                <div className="p-4 bg-cyan-50 dark:bg-cyan-900/30 rounded-lg">
+                <div className="p-4 bg-cyan-50 rounded-lg">
                   <h4 className="font-semibold text-cyan-600 mb-2">PME Services (25 salariés)</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-2">
+                  <p className="text-sm text-gray-700 mb-2">
                     Réflexion stratégique long terme sur l'évolution des métiers
                   </p>
                   <p className="text-xs text-green-600 font-medium">
@@ -386,7 +386,7 @@ export default function Life30Page() {
                 </div>
               </div>
               
-              <div className="bg-indigo-100/50 dark:bg-indigo-900/30 border-l-4 border-indigo-500 p-4 rounded-r-lg mb-6">
+              <div className="bg-indigo-100/50 border-l-4 border-indigo-500 p-4 rounded-r-lg mb-6">
                 <p className="font-semibold text-indigo-600 mb-2">⚠️ Attention :</p>
                 <p>
                   Ne tombez pas dans la paralysie face à ces enjeux énormes. L'idée c'est d'avoir une vision long terme tout en agissant concrètement aujourd'hui. 
@@ -394,7 +394,7 @@ export default function Life30Page() {
                 </p>
               </div>
               
-              <div className="bg-green-100/50 dark:bg-green-900/30 border-l-4 border-green-500 p-4 rounded-r-lg mb-6">
+              <div className="bg-green-100/50 border-l-4 border-green-500 p-4 rounded-r-lg mb-6">
                 <p className="font-semibold text-green-600 mb-2">🎯 Conseil stratégique :</p>
                 <p>
                   Utilisez ce livre pour sensibiliser vos équipes aux enjeux long terme, mais restez pragmatique. 
@@ -408,8 +408,8 @@ export default function Life30Page() {
                     <span key={i} className={i < 4.1 ? "text-yellow-400" : "text-gray-300"}>⭐</span>
                   ))}
                 </div>
-                <span className="text-lg font-semibold text-gray-800 dark:text-gray-200">4.1/5</span>
-                <span className="text-sm text-gray-600 dark:text-gray-400 ml-4">
+                <span className="text-lg font-semibold text-gray-800">4.1/5</span>
+                <span className="text-sm text-gray-600 ml-4">
                   Essentiel pour les dirigeants visionnaires
                 </span>
               </div>
@@ -419,8 +419,8 @@ export default function Life30Page() {
 
         {/* Livres complémentaires */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-indigo-300/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-indigo-300 mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-indigo-300/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Livres complémentaires
             </h2>
             
@@ -429,10 +429,10 @@ export default function Life30Page() {
                 href="/ressources/meilleurs-livres/digital-ai/ai-superpowers"
                 className="group p-6 bg-gradient-to-r from-indigo-500/10 to-purple-500/10 rounded-xl border border-indigo-300/20 hover:border-indigo-400/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-indigo-300 mb-3 group-hover:text-indigo-500 transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-indigo-500 transition-colors">
                   AI Superpowers
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour comprendre les enjeux géopolitiques de l'IA
                 </p>
                 <span className="text-indigo-500 font-medium group-hover:underline">
@@ -444,10 +444,10 @@ export default function Life30Page() {
                 href="/ressources/meilleurs-livres/digital-ai/human-machine"
                 className="group p-6 bg-gradient-to-r from-purple-500/10 to-cyan-500/10 rounded-xl border border-purple-300/20 hover:border-purple-400/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-indigo-300 mb-3 group-hover:text-purple-500 transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-purple-500 transition-colors">
                   Human + Machine
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour l'aspect opérationnel de la collaboration IA
                 </p>
                 <span className="text-purple-500 font-medium group-hover:underline">
@@ -464,10 +464,10 @@ export default function Life30Page() {
             <div className="inline-block bg-indigo-500/30 text-indigo-300 font-semibold rounded-full px-4 py-2 text-sm mb-4 shadow-md backdrop-blur">
               Préparez l'avenir de votre entreprise
             </div>
-            <h3 className="text-3xl font-bold text-blue-ink dark:text-indigo-300 mb-4">
+            <h3 className="text-3xl font-bold text-blue-ink mb-4">
               Stratégie IA pour dirigeants
             </h3>
-            <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
               Accompagnement stratégique pour intégrer l'IA dans votre vision d'entreprise. Définissez votre feuille de route et préparez vos équipes aux transformations à venir.
             </p>
             <Link 

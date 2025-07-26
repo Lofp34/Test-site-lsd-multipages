@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 
 export default function KitGestionGrandsComptesPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white dark:bg-gray-anthracite">
+    <div className="flex flex-col min-h-screen bg-white">
       <div className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <Link href="/ressources" className="inline-flex items-center text-white/80 hover:text-white mb-8 transition-colors">
@@ -72,43 +72,43 @@ export default function KitGestionGrandsComptesPage() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
         
         <section className="mb-16">
-          <div className="bg-slate-50 dark:bg-gray-anthracite/20 rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-6 flex items-center">
+          <div className="bg-slate-50 rounded-2xl p-8 mb-12">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6 flex items-center">
               <Crown className="w-8 h-8 text-mint-green mr-3" />
               L'Art du Key Account Management
             </h2>
-            <p className="text-lg text-gray-anthracite dark:text-primary-bg/80 mb-4">
+            <p className="text-lg text-gray-anthracite mb-4">
               80% de votre chiffre d'affaires vient probablement de 20% de vos clients. 
               Ces comptes stratégiques méritent une approche particulière, méthodique et relationnelle.
             </p>
             <div className="grid md:grid-cols-3 gap-4 mt-8">
-              <div className="text-center p-4 bg-white dark:bg-gray-anthracite/10 rounded-xl">
+              <div className="text-center p-4 bg-white rounded-xl">
                 <div className="text-3xl font-bold text-mint-green mb-2">5x</div>
-                <p className="text-sm text-gray-anthracite dark:text-primary-bg/80">Potentiel de croissance d'un grand compte</p>
+                <p className="text-sm text-gray-anthracite">Potentiel de croissance d'un grand compte</p>
               </div>
-              <div className="text-center p-4 bg-white dark:bg-gray-anthracite/10 rounded-xl">
+              <div className="text-center p-4 bg-white rounded-xl">
                 <div className="text-3xl font-bold text-mint-green mb-2">65%</div>
-                <p className="text-sm text-gray-anthracite dark:text-primary-bg/80">de probabilité de vente supplémentaire</p>
+                <p className="text-sm text-gray-anthracite">de probabilité de vente supplémentaire</p>
               </div>
-              <div className="text-center p-4 bg-white dark:bg-gray-anthracite/10 rounded-xl">
+              <div className="text-center p-4 bg-white rounded-xl">
                 <div className="text-3xl font-bold text-mint-green mb-2">25%</div>
-                <p className="text-sm text-gray-anthracite dark:text-primary-bg/80">de marge supplémentaire en moyenne</p>
+                <p className="text-sm text-gray-anthracite">de marge supplémentaire en moyenne</p>
               </div>
             </div>
           </div>
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 flex items-center">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8 flex items-center">
             <Target className="w-8 h-8 text-mint-green mr-3" />
             Matrice de Classification des Comptes
           </h2>
           
-          <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700 mb-8">
+          <div className="bg-white rounded-xl p-6 border border-slate-200 mb-8">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
-                <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border border-green-200 dark:border-green-700">
-                  <h3 className="text-lg font-semibold text-green-700 dark:text-green-400 mb-2 flex items-center">
+                <div className="bg-green-50 p-4 rounded-lg border border-green-200">
+                  <h3 className="text-lg font-semibold text-green-700 mb-2 flex items-center">
                     <Star className="w-5 h-5 mr-2" />
                     Comptes Stratégiques
                   </h3>
@@ -118,13 +118,13 @@ export default function KitGestionGrandsComptesPage() {
                     <li>• Relation privilégiée</li>
                     <li>• Référence marché</li>
                   </ul>
-                  <p className="text-xs text-green-600 dark:text-green-400 mt-2">
+                  <p className="text-xs text-green-600 mt-2">
                     <strong>Action :</strong> Plan de développement personnalisé
                   </p>
                 </div>
                 
-                <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg border border-blue-200 dark:border-blue-700">
-                  <h3 className="text-lg font-semibold text-blue-700 dark:text-blue-400 mb-2 flex items-center">
+                <div className="bg-blue-50 p-4 rounded-lg border border-blue-200">
+                  <h3 className="text-lg font-semibold text-blue-700 mb-2 flex items-center">
                     <TrendingUp className="w-5 h-5 mr-2" />
                     Comptes Développement
                   </h3>
@@ -134,15 +134,15 @@ export default function KitGestionGrandsComptesPage() {
                     <li>• Relation à construire</li>
                     <li>• Secteur porteur</li>
                   </ul>
-                  <p className="text-xs text-blue-600 dark:text-blue-400 mt-2">
+                  <p className="text-xs text-blue-600 mt-2">
                     <strong>Action :</strong> Plan d'action commercial renforcé
                   </p>
                 </div>
               </div>
               
               <div className="space-y-4">
-                <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg border border-yellow-200 dark:border-yellow-700">
-                  <h3 className="text-lg font-semibold text-yellow-700 dark:text-yellow-400 mb-2 flex items-center">
+                <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200">
+                  <h3 className="text-lg font-semibold text-yellow-700 mb-2 flex items-center">
                     <Shield className="w-5 h-5 mr-2" />
                     Comptes Maintenance
                   </h3>
@@ -152,13 +152,13 @@ export default function KitGestionGrandsComptesPage() {
                     <li>• Relation établie</li>
                     <li>• Rentabilité correcte</li>
                   </ul>
-                  <p className="text-xs text-yellow-600 dark:text-yellow-400 mt-2">
+                  <p className="text-xs text-yellow-600 mt-2">
                     <strong>Action :</strong> Gestion optimisée, up-sell ponctuel
                   </p>
                 </div>
                 
-                <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded-lg border border-red-200 dark:border-red-700">
-                  <h3 className="text-lg font-semibold text-red-700 dark:text-red-400 mb-2 flex items-center">
+                <div className="bg-red-50 p-4 rounded-lg border border-red-200">
+                  <h3 className="text-lg font-semibold text-red-700 mb-2 flex items-center">
                     <Zap className="w-5 h-5 mr-2" />
                     Comptes Problématiques
                   </h3>
@@ -168,7 +168,7 @@ export default function KitGestionGrandsComptesPage() {
                     <li>• Rentabilité faible</li>
                     <li>• Nombreuses difficultés</li>
                   </ul>
-                  <p className="text-xs text-red-600 dark:text-red-400 mt-2">
+                  <p className="text-xs text-red-600 mt-2">
                     <strong>Action :</strong> Plan de sauvetage ou abandon
                   </p>
                 </div>
@@ -178,19 +178,19 @@ export default function KitGestionGrandsComptesPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 flex items-center">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8 flex items-center">
             <Users className="w-8 h-8 text-mint-green mr-3" />
             Plan de Développement de Compte
           </h2>
           
           <div className="space-y-6">
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
-              <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4 flex items-center">
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
+              <h3 className="text-xl font-title font-semibold text-blue-ink mb-4 flex items-center">
                 <span className="bg-mint-green text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-sm">1</span>
                 Analyse et Diagnostic
               </h3>
               <div className="grid md:grid-cols-3 gap-4">
-                <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
+                <div className="bg-slate-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-mint-green mb-2">🔍 Analyse Business</h4>
                   <ul className="text-sm space-y-1">
                     <li>• Modèle économique</li>
@@ -199,7 +199,7 @@ export default function KitGestionGrandsComptesPage() {
                     <li>• Projets en cours</li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
+                <div className="bg-slate-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-mint-green mb-2">👥 Mapping Relationnel</h4>
                   <ul className="text-sm space-y-1">
                     <li>• Décideurs identifiés</li>
@@ -208,7 +208,7 @@ export default function KitGestionGrandsComptesPage() {
                     <li>• Alliés et opposants</li>
                   </ul>
                 </div>
-                <div className="bg-slate-50 dark:bg-gray-anthracite/20 p-4 rounded-lg">
+                <div className="bg-slate-50 p-4 rounded-lg">
                   <h4 className="font-semibold text-mint-green mb-2">⚡ Analyse SWOT</h4>
                   <ul className="text-sm space-y-1">
                     <li>• Forces client</li>
@@ -220,8 +220,8 @@ export default function KitGestionGrandsComptesPage() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
-              <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4 flex items-center">
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
+              <h3 className="text-xl font-title font-semibold text-blue-ink mb-4 flex items-center">
                 <span className="bg-mint-green text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-sm">2</span>
                 Stratégie de Développement
               </h3>
@@ -250,8 +250,8 @@ export default function KitGestionGrandsComptesPage() {
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-anthracite/10 rounded-xl p-6 border border-slate-200 dark:border-gray-700">
-              <h3 className="text-xl font-title font-semibold text-blue-ink dark:text-primary-bg mb-4 flex items-center">
+            <div className="bg-white rounded-xl p-6 border border-slate-200">
+              <h3 className="text-xl font-title font-semibold text-blue-ink mb-4 flex items-center">
                 <span className="bg-mint-green text-white rounded-full w-6 h-6 flex items-center justify-center mr-3 text-sm">3</span>
                 Plan d'Actions Opérationnel
               </h3>

@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function Article1() {
   return (
-    <main className="bg-primary-bg dark:bg-gray-dark text-gray-dark dark:text-primary-bg">
+    <main className="bg-primary-bg text-gray-dark">
       {/* Hero Section */}
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,11 +46,11 @@ export default function Article1() {
               </span>
             </div>
             
-            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink dark:text-white sm:text-5xl mb-6">
+            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
               5 signes qu'il est temps de structurer votre équipe commerciale
             </h1>
             
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8">
+            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
               <div className="flex items-center gap-2">
                 <Image
                   src="/laurent.jpg"
@@ -83,14 +83,14 @@ export default function Article1() {
 
       {/* Article Content */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="prose prose-lg max-w-none prose-headings:text-blue-ink prose-headings:dark:text-white prose-p:text-gray-700 prose-p:dark:text-gray-300 prose-strong:text-blue-ink prose-strong:dark:text-white prose-li:text-gray-700 prose-li:dark:text-gray-300">
-          <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+        <div className="prose prose-lg max-w-none prose-headings:text-blue-ink prose-p:text-gray-700 prose-strong:text-blue-ink prose-li:text-gray-700">
+          <p className="text-xl text-gray-600 leading-relaxed mb-8">
             Vous ressentez que votre équipe commerciale atteint ses limites ? Que les résultats stagnent malgré les efforts ? 
             Il est peut-être temps de passer à l'étape supérieure et de structurer véritablement votre force de vente. 
             Voici les 5 signaux d'alerte à surveiller.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             1. Les résultats deviennent imprévisibles
           </h2>
           
@@ -113,7 +113,7 @@ export default function Article1() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             2. La connaissance client se perd
           </h2>
           
@@ -134,7 +134,7 @@ export default function Article1() {
             et dépendance excessive à certains individus qui peuvent faire chanter l'entreprise.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             3. La formation devient un casse-tête
           </h2>
           
@@ -155,7 +155,7 @@ export default function Article1() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             4. Le manager commercial devient un pompier
           </h2>
           
@@ -174,7 +174,7 @@ export default function Article1() {
             Vous perdez sa capacité à générer du chiffre d'affaires tout en créant un point de défaillance unique.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             5. La motivation s'effrite
           </h2>
           
@@ -193,7 +193,7 @@ export default function Article1() {
             commencent à regarder ailleurs ou à baisser les bras.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Par où commencer la structuration ?
           </h2>
           
@@ -234,7 +234,7 @@ export default function Article1() {
             </div>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             L'erreur à éviter absolument
           </h2>
           
@@ -260,7 +260,7 @@ export default function Article1() {
       </article>
 
       {/* Author Bio */}
-      <section className="bg-white dark:bg-gray-anthracite py-16 mt-16">
+      <section className="bg-white py-16 mt-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="flex-shrink-0">
@@ -273,13 +273,13 @@ export default function Article1() {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-white mb-2">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-2">
                 Laurent Serre
               </h3>
               <p className="text-lg text-mint-green mb-4">
                 Expert en développement commercial • 20 ans d'expérience
               </p>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 Spécialiste de la structuration des équipes commerciales et de la formation à la vente, 
                 Laurent accompagne les PME dans leur transformation commerciale. Fort de 20 ans d'expérience terrain, 
                 il combine méthodes éprouvées et outils innovants pour des résultats mesurables.
@@ -292,26 +292,26 @@ export default function Article1() {
       {/* Related Articles */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mb-8">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8">
             Articles recommandés
           </h2>
           <div className="grid gap-6 md:grid-cols-2">
             <Link href="/blog/bootcamp-commercial-pourquoi-formations-echouent" className="group">
-              <div className="bg-white dark:bg-gray-anthracite p-6 rounded-xl hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-title font-semibold text-blue-ink dark:text-white mb-2 group-hover:text-mint-green transition-colors">
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-title font-semibold text-blue-ink mb-2 group-hover:text-mint-green transition-colors">
                   Bootcamp commercial : pourquoi 80% des formations échouent
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                <p className="text-gray-600 text-sm">
                   Décryptage des raisons pour lesquelles la plupart des formations commerciales n'atteignent pas leurs objectifs.
                 </p>
               </div>
             </Link>
             <Link href="/blog/vendeur-commercial-transformation-decisive" className="group">
-              <div className="bg-white dark:bg-gray-anthracite p-6 rounded-xl hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-title font-semibold text-blue-ink dark:text-white mb-2 group-hover:text-mint-green transition-colors">
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-title font-semibold text-blue-ink mb-2 group-hover:text-mint-green transition-colors">
                   De vendeur à commercial : la transformation qui change tout
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                <p className="text-gray-600 text-sm">
                   Comprendre la différence fondamentale entre un vendeur et un commercial, et comment opérer cette transformation.
                 </p>
               </div>
@@ -320,9 +320,9 @@ export default function Article1() {
         </div>
       </section>
 
-      <section className="py-16 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
             Prendre contact avec Laurent Serre
           </h2>
           <HubSpotForm />

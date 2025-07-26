@@ -329,9 +329,9 @@ export default function NegociationClosingPage() {
         {/* Section spécifique : Impact négociation sur les résultats commerciaux */}
         <AnimatedSection delay={400}>
           <div className="max-w-4xl mx-auto mb-12 px-4">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-red-400/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-red-400/20 backdrop-blur-sm">
               <div className="text-center mb-6">
-                <span className="inline-block bg-red-500/20 text-red-600 dark:text-red-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+                <span className="inline-block bg-red-500/20 text-red-600 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🎯 Focus métier
                 </span>
                 <h3 className="text-2xl font-bold text-primary-title mb-4">
@@ -341,7 +341,7 @@ export default function NegociationClosingPage() {
               
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-green-700 dark:text-green-300 flex items-center gap-2">
+                  <h4 className="font-semibold text-green-700 flex items-center gap-2">
                     ✅ Négociation collaborative
                   </h4>
                   <ul className="space-y-2 text-sm text-primary-secondary">
@@ -354,7 +354,7 @@ export default function NegociationClosingPage() {
                 </div>
                 
                 <div className="space-y-4">
-                  <h4 className="font-semibold text-orange-700 dark:text-orange-400 flex items-center gap-2">
+                  <h4 className="font-semibold text-orange-700 flex items-center gap-2">
                     ⚠️ Négociation traditionnelle
                   </h4>
                   <ul className="space-y-2 text-sm text-primary-secondary">
@@ -367,7 +367,7 @@ export default function NegociationClosingPage() {
                 </div>
               </div>
               
-              <div className="mt-6 p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
+              <div className="mt-6 p-4 bg-red-50 rounded-lg">
                 <p className="text-sm text-primary-secondary italic">
                   💡 <strong>Conseil Laurent Serre :</strong> La négociation collaborative n'est pas de la naïveté, 
                   c'est de l'intelligence business. Mes clients qui l'appliquent augmentent leurs marges de 25% 
@@ -431,7 +431,7 @@ export default function NegociationClosingPage() {
         {/* Section : Suggestions cross-catégories */}
         <AnimatedSection delay={500}>
           <div className="max-w-4xl mx-auto mb-12 px-4">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-red-400/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-red-400/20 backdrop-blur-sm">
               <div className="text-center mb-6">
                 <span className="inline-block bg-purple-500/20 text-purple-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🔗 Complémentaire
@@ -447,7 +447,7 @@ export default function NegociationClosingPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <Link 
                   href="/ressources/meilleurs-livres/prospection-sdr"
-                  className="group p-6 bg-gradient-to-r from-blue-50 to-cyan-50 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-xl border border-blue-200/50 hover:shadow-lg transition-all duration-300"
+                  className="group p-6 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl border border-blue-200/50 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl">🎯</span>
@@ -461,7 +461,7 @@ export default function NegociationClosingPage() {
                 
                 <Link 
                   href="/ressources/meilleurs-livres/psychologie-influence"
-                  className="group p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50 hover:shadow-lg transition-all duration-300"
+                  className="group p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200/50 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl">🧠</span>
@@ -481,8 +481,8 @@ export default function NegociationClosingPage() {
         <AnimatedSection delay={550}>
           <div className="max-w-4xl mx-auto text-center px-4">
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-6 border border-red-400/20 backdrop-blur-sm">
-                <div className="inline-block bg-red-500/20 text-red-600 dark:text-red-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+              <div className="bg-white/70 rounded-2xl shadow-2xl p-6 border border-red-400/20 backdrop-blur-sm">
+                <div className="inline-block bg-red-500/20 text-red-600 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🎯 Formation
                 </div>
                 <h4 className="text-xl font-bold text-primary-title mb-3">
@@ -500,8 +500,8 @@ export default function NegociationClosingPage() {
                 </Link>
               </div>
               
-              <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-6 border border-orange-400/20 backdrop-blur-sm">
-                <div className="inline-block bg-orange-500/20 text-orange-600 dark:text-orange-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
+              <div className="bg-white/70 rounded-2xl shadow-2xl p-6 border border-orange-400/20 backdrop-blur-sm">
+                <div className="inline-block bg-orange-500/20 text-orange-600 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🤝 Accompagnement
                 </div>
                 <h4 className="text-xl font-bold text-primary-title mb-3">

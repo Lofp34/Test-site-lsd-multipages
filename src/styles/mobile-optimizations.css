@@ -295,20 +295,7 @@
   color: #67e8f9;
 }
 
-/* Optimize for dark mode */
-@media (prefers-color-scheme: dark) {
-  .bg-white\/70 {
-    background-color: rgba(27, 54, 93, 0.9);
-  }
 
-  .text-gray-700 {
-    color: #d1d5db;
-  }
-
-  .text-gray-600 {
-    color: #9ca3af;
-  }
-}
 
 /* Print styles */
 @media print {

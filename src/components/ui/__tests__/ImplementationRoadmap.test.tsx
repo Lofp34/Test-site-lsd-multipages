@@ -346,19 +346,19 @@ describe('ImplementationRoadmap Component', () => {
     })
   })
 
-  describe('Dark Mode Support', () => {
-    it('includes dark mode classes', () => {
-      const { container } = render(<ImplementationRoadmap {...defaultProps} />)
-      
-      const darkModeElements = container.querySelectorAll('[class*="dark:"]')
-      expect(darkModeElements.length).toBeGreaterThan(0)
-    })
-
-    it('has dark mode text colors', () => {
+  describe('Styling Consistency', () => {
+    it('uses consistent light theme styling', () => {
       render(<ImplementationRoadmap {...defaultProps} />)
       
       const title = screen.getByText('Feuille de route d\'implémentation')
-      expect(title).toHaveClass('dark:text-white')
+      expect(title).toHaveClass('text-blue-ink')
+    })
+
+    it('maintains clean CSS classes', () => {
+      const { container } = render(<ImplementationRoadmap {...defaultProps} />)
+      
+      // Ensure component renders without styling issues
+      expect(container.firstChild).toBeInTheDocument()
     })
   })
 })

@@ -31,28 +31,28 @@ export default function ContextualCTAs({
         return {
           container: 'bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-300/30',
           badge: 'bg-blue-500/30 text-blue-300',
-          title: 'text-blue-ink dark:text-blue-300',
+          title: 'text-blue-ink',
           button: 'bg-blue-500 text-white hover:bg-blue-600'
         };
       case 'secondary':
         return {
           container: 'bg-gradient-to-r from-mint-green/20 to-blue-ink/20 border-mint-green/30',
           badge: 'bg-mint-green/30 text-mint-green',
-          title: 'text-blue-ink dark:text-mint-green',
+          title: 'text-blue-ink',
           button: 'bg-mint-green text-blue-ink hover:bg-mint-green/90'
         };
       case 'accent':
         return {
           container: 'bg-gradient-to-r from-orange-soft/20 to-yellow-400/20 border-orange-soft/30',
           badge: 'bg-orange-soft/30 text-orange-soft',
-          title: 'text-blue-ink dark:text-orange-soft',
+          title: 'text-blue-ink',
           button: 'bg-orange-soft text-white hover:bg-orange-soft/90'
         };
       default:
         return {
           container: 'bg-gradient-to-r from-blue-500/20 to-purple-500/20 border-blue-300/30',
           badge: 'bg-blue-500/30 text-blue-300',
-          title: 'text-blue-ink dark:text-blue-300',
+          title: 'text-blue-ink',
           button: 'bg-blue-500 text-white hover:bg-blue-600'
         };
     }
@@ -62,11 +62,11 @@ export default function ContextualCTAs({
     <section className={`max-w-4xl mx-auto px-6 mb-12 ${className}`}>
       {title && (
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-blue-ink dark:text-blue-300 mb-4">
+          <h2 className="text-3xl font-bold text-blue-ink mb-4">
             🚀 {title}
           </h2>
           {subtitle && (
-            <p className="text-lg text-gray-700 dark:text-gray-200 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               {subtitle}
             </p>
           )}
@@ -88,7 +88,7 @@ export default function ContextualCTAs({
               <h3 className={`text-2xl font-bold ${styles.title} mb-4`}>
                 {cta.title}
               </h3>
-              <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-700 mb-6 leading-relaxed">
                 {cta.description}
               </p>
               <Link 

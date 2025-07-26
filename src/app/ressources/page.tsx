@@ -89,12 +89,12 @@ export default function RessourcesPage() {
       <ResourcesSection />
 
       {/* CTA Section */}
-      <section className="py-16 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
             Besoin d'un accompagnement personnalisé ?
           </h2>
-          <p className="text-center text-gray-600 dark:text-gray-300 mb-8">
+          <p className="text-center text-gray-600 mb-8">
             Nos ressources gratuites sont un excellent point de départ. Pour aller plus loin, 
             découvrez nos solutions d'accompagnement sur-mesure.
           </p>

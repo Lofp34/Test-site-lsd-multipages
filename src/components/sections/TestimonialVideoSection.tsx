@@ -60,18 +60,18 @@ export default function TestimonialVideoSection() {
       />
       
       {/* Overlay pour la lisibilité */}
-      <div className="absolute inset-0 bg-primary-bg/90 dark:bg-blue-ink/90" />
+      <div className="absolute inset-0 bg-primary-bg/90" />
       
       {/* Contenu par-dessus le fond */}
       <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6">
         {/* Titre de la section */}
         <AnimatedSection animation="slide-up" delay={0}>
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-title font-bold text-blue-ink dark:text-primary-bg leading-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-title font-bold text-blue-ink leading-tight mb-4">
               Ils témoignent de la
               <span className="block text-mint-green">transformation</span>
             </h2>
-            <p className="text-lg font-body text-gray-anthracite dark:text-primary-bg/80 max-w-2xl mx-auto">
+            <p className="text-lg font-body text-gray-anthracite max-w-2xl mx-auto">
               Découvrez comment nos clients ont révolutionné leurs performances commerciales
             </p>
           </div>
@@ -92,15 +92,15 @@ export default function TestimonialVideoSection() {
           {testimonials.map((t, i) => (
             <SwiperSlide key={i}>
               <AnimatedSection animation="slide-up" delay={200 + i * 100}>
-                <div className="bg-white/95 dark:bg-gray-anthracite/90 backdrop-blur-sm rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col items-center h-full">
+                <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col items-center h-full">
                   <div className="w-20 h-20 mb-4 relative rounded-full overflow-hidden border-4 border-mint-green shadow-lg">
                     <Image src={t.photo} alt={`Portrait professionnel de ${t.name}, ${t.role}, client satisfait de l'accompagnement commercial de Laurent Serre.`} fill style={{objectFit:'cover'}} sizes="80px" quality={60} loading="lazy" />
                   </div>
-                  <blockquote className="text-gray-anthracite dark:text-primary-bg/90 font-italic text-lg leading-relaxed mb-4 text-center">"{t.quote}"</blockquote>
-                  <div className="font-title font-bold text-blue-ink dark:text-primary-bg text-base text-center">
+                  <blockquote className="text-gray-anthracite font-italic text-lg leading-relaxed mb-4 text-center">"{t.quote}"</blockquote>
+                  <div className="font-title font-bold text-blue-ink text-base text-center">
                     {t.name}
                   </div>
-                  <div className="font-normal text-gray-anthracite dark:text-primary-bg/70 text-sm text-center">
+                  <div className="font-normal text-gray-anthracite text-sm text-center">
                     {t.role}
                   </div>
                 </div>
@@ -112,7 +112,7 @@ export default function TestimonialVideoSection() {
         {/* CTA optionnel */}
         <AnimatedSection animation="fade-in" delay={800}>
           <div className="text-center mt-8">
-            <p className="font-body text-gray-anthracite dark:text-primary-bg/70 mb-4">
+            <p className="font-body text-gray-anthracite mb-4">
               Vous aussi, transformez vos résultats commerciaux
             </p>
             <Button 

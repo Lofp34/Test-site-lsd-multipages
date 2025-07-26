@@ -20,8 +20,8 @@ export default function SolutionSellingPage() {
         </section>
 
         {/* Résumé détaillé */}
-        <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
-          <h2 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">Résumé du livre</h2>
+        <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
+          <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
             Solution Selling propose un processus en plusieurs étapes : rechercher les difficultés du client, les qualifier, proposer une vision de la solution, faire valider cette vision, justifier le ROI, puis négocier l’accord. L’accent est mis sur la découverte approfondie : un bon vendeur doit agir comme un médecin qui pose un diagnostic avant de prescrire.
           </p>
@@ -42,7 +42,7 @@ export default function SolutionSellingPage() {
             <li>Co-construire la solution avec le client</li>
           </ul>
 
-          <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink dark:text-mint-green mb-6">
+          <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
             « Vendre, c’est résoudre un problème, pas pousser un produit. »
           </blockquote>
         </article>
@@ -50,8 +50,8 @@ export default function SolutionSellingPage() {
         {/* CTA Bootcamp */}
         <div className="max-w-2xl mx-auto text-center mt-8 mb-12">
           <div className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-2 shadow-md backdrop-blur">Passez du livre au terrain</div>
-          <h4 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-2">Découvrez le Bootcamp Méthodes de vente by LSD</h4>
-          <p className="text-lg text-gray-700 dark:text-gray-100 mb-4">Formez-vous avec les meilleures méthodes issues de ce livre, adaptées à la réalité du terrain B2B.</p>
+          <h4 className="text-2xl font-bold text-blue-ink mb-2">Découvrez le Bootcamp Méthodes de vente by LSD</h4>
+          <p className="text-lg text-gray-700 mb-4">Formez-vous avec les meilleures méthodes issues de ce livre, adaptées à la réalité du terrain B2B.</p>
           <Link href="/bootcamp" className="inline-block bg-mint-green text-blue-ink font-semibold px-6 py-3 rounded-full shadow hover:bg-mint-green/80 transition">Voir le Bootcamp</Link>
         </div>
 

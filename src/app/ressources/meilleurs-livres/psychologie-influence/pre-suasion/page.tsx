@@ -20,8 +20,8 @@ export default function PreSuasionPage() {
         </section>
 
         {/* Résumé détaillé */}
-        <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
-          <h2 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">Résumé du livre</h2>
+        <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
+          <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
             Cialdini s’intéresse à l’art de la préparation mentale à la persuasion : « le moment avant le message » compte autant que le message lui-même. Il explique comment capturer puis canaliser l’attention du public pour créer le bon contexte psychologique avant de formuler sa requête. Pré-Suasion ajoute un 7e principe à la liste de Cialdini : l’unité (créer un sentiment d’identité commune avec son audience).
           </p>
@@ -41,7 +41,7 @@ export default function PreSuasionPage() {
             <li>Créer un sentiment d’unité avec son audience</li>
           </ul>
 
-          <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink dark:text-mint-green mb-6">
+          <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
             « Le moment avant le message compte autant que le message lui-même. »
           </blockquote>
         </article>
@@ -49,8 +49,8 @@ export default function PreSuasionPage() {
         {/* CTA Bootcamp */}
         <div className="max-w-2xl mx-auto text-center mt-8 mb-12">
           <div className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-2 shadow-md backdrop-blur">Passez du livre au terrain</div>
-          <h4 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-2">Découvrez le Bootcamp Influence by LSD</h4>
-          <p className="text-lg text-gray-700 dark:text-gray-100 mb-4">Formez-vous avec les meilleures techniques issues de ce livre, adaptées à la réalité du terrain B2B.</p>
+          <h4 className="text-2xl font-bold text-blue-ink mb-2">Découvrez le Bootcamp Influence by LSD</h4>
+          <p className="text-lg text-gray-700 mb-4">Formez-vous avec les meilleures techniques issues de ce livre, adaptées à la réalité du terrain B2B.</p>
           <Link href="/bootcamp" className="inline-block bg-mint-green text-blue-ink font-semibold px-6 py-3 rounded-full shadow hover:bg-mint-green/80 transition">Voir le Bootcamp</Link>
         </div>
 

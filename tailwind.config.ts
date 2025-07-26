@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: false,
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -18,7 +19,6 @@ const config: Config = {
         'primary-accent': 'hsl(var(--primary-accent))',
         'primary-secondary': 'hsl(var(--primary-secondary))',
         'primary-emotion': 'hsl(var(--primary-emotion))',
-        'primary-dark-bg': 'hsl(var(--primary-dark-bg))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
       },

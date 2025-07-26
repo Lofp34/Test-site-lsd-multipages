@@ -116,13 +116,13 @@ export default function SellingToBigCompaniesPage() {
 
         {/* Résumé détaillé */}
         <article className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/95 rounded-2xl shadow-2xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6 flex items-center gap-3">
+          <div className="bg-white/95 rounded-2xl shadow-2xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6 flex items-center gap-3">
               📖 Résumé détaillé
             </h2>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200 leading-relaxed">
-              <p className="text-xl mb-6 font-medium text-blue-ink dark:text-mint-green">
+            <div className="prose prose-lg max-w-none text-gray-800 leading-relaxed">
+              <p className="text-xl mb-6 font-medium text-blue-ink">
                 Jill Konrath s'attaque à un défi majeur : comment percer les barrages des grandes entreprises pour obtenir des rendez-vous avec les vrais décideurs.
               </p>
               
@@ -131,7 +131,7 @@ export default function SellingToBigCompaniesPage() {
               </p>
               
               <div className="bg-mint-green/10 rounded-xl p-6 mb-6 border-l-4 border-mint-green">
-                <ol className="list-decimal list-inside space-y-3 text-blue-ink dark:text-mint-green font-medium">
+                <ol className="list-decimal list-inside space-y-3 text-blue-ink font-medium">
                   <li><strong>Ciblage fin</strong> : Se concentrer sur un segment d'industrie ou de fonction spécifique</li>
                   <li><strong>Recherche approfondie</strong> : Identifier les enjeux et priorités spécifiques de ces prospects</li>
                   <li><strong>Message d'accroche ultra-pertinent</strong> : Montrer en une phrase qu'on peut résoudre un de leurs problèmes critiques</li>
@@ -148,8 +148,8 @@ export default function SellingToBigCompaniesPage() {
 
         {/* Points clés */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/95 rounded-2xl shadow-2xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6 flex items-center gap-3">
+          <div className="bg-white/95 rounded-2xl shadow-2xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6 flex items-center gap-3">
               🎯 Points clés à retenir
             </h2>
             
@@ -166,7 +166,7 @@ export default function SellingToBigCompaniesPage() {
                   <span className="flex-shrink-0 w-6 h-6 bg-mint-green text-white rounded-full flex items-center justify-center text-sm font-bold">
                     {index + 1}
                   </span>
-                  <p className="text-gray-800 dark:text-gray-200 font-medium">{point}</p>
+                  <p className="text-gray-800 font-medium">{point}</p>
                 </div>
               ))}
             </div>
@@ -175,8 +175,8 @@ export default function SellingToBigCompaniesPage() {
 
         {/* Profils cibles */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/95 rounded-2xl shadow-2xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6 flex items-center gap-3">
+          <div className="bg-white/95 rounded-2xl shadow-2xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6 flex items-center gap-3">
               👥 Pour qui ce livre ?
             </h2>
             
@@ -188,7 +188,7 @@ export default function SellingToBigCompaniesPage() {
                 "Managers commerciaux",
                 "Entrepreneurs B2B"
               ].map((profile, index) => (
-                <Badge key={index} variant="outline" size="md" className="text-blue-ink dark:text-mint-green">
+                <Badge key={index} variant="outline" size="md" className="text-blue-ink">
                   {profile}
                 </Badge>
               ))}
@@ -199,30 +199,30 @@ export default function SellingToBigCompaniesPage() {
         {/* Avis terrain Laurent Serre */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
           <div className="bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-2xl shadow-2xl p-8 border border-mint-green/30">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6 flex items-center gap-3">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6 flex items-center gap-3">
               💬 Mon avis terrain
             </h2>
             
-            <div className="bg-white/80 dark:bg-blue-ink/80 rounded-xl p-6 border-l-4 border-mint-green">
-              <p className="text-lg text-gray-800 dark:text-gray-200 mb-4 leading-relaxed">
+            <div className="bg-white/80 rounded-xl p-6 border-l-4 border-mint-green">
+              <p className="text-lg text-gray-800 mb-4 leading-relaxed">
                 Un livre que je recommande particulièrement aux commerciaux qui galèrent à décrocher des RDV avec les gros comptes. Konrath a une approche très pragmatique, sans bullshit.
               </p>
               
               <h3 className="text-xl font-bold text-mint-green mb-3">Ce qui marche vraiment sur le terrain :</h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-800 dark:text-gray-200 mb-4">
+              <ul className="list-disc list-inside space-y-2 text-gray-800 mb-4">
                 <li>Sa méthode de recherche préalable (15 min par prospect max)</li>
                 <li>Les templates d'emails qu'elle propose (à adapter bien sûr)</li>
                 <li>L'approche "problème-solution" en une phrase</li>
               </ul>
               
-              <div className="bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 border-l-4 border-orange-400">
-                <p className="text-gray-800 dark:text-gray-200">
+              <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-400">
+                <p className="text-gray-800">
                   <strong>Attention :</strong> le livre date de 2005, certaines tactiques sont à moderniser (LinkedIn n'existait pas !). Mais les principes restent valables. À coupler avec des techniques plus récentes de social selling.
                 </p>
               </div>
               
               <div className="mt-4 flex items-center gap-2">
-                <span className="text-sm text-gray-600 dark:text-gray-400">Note Laurent Serre :</span>
+                <span className="text-sm text-gray-600">Note Laurent Serre :</span>
                 <StarRating rating={4.2} size="sm" showValue />
               </div>
             </div>
@@ -231,48 +231,48 @@ export default function SellingToBigCompaniesPage() {
 
         {/* Livres complémentaires */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/95 rounded-2xl shadow-2xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6 flex items-center gap-3">
+          <div className="bg-white/95 rounded-2xl shadow-2xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6 flex items-center gap-3">
               📚 Livres complémentaires
             </h2>
             
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
+            <p className="text-gray-600 mb-6">
               Pour approfondir votre maîtrise des grands comptes, ces livres complètent parfaitement Selling to Big Companies :
             </p>
             
             <div className="grid md:grid-cols-3 gap-6">
               <Link 
                 href="/ressources/meilleurs-livres/enterprise-account/the-challenger-customer"
-                className="group p-4 bg-gradient-to-br from-indigo-50 to-indigo-100 dark:from-indigo-900/20 dark:to-indigo-800/20 rounded-xl border border-indigo-200 dark:border-indigo-700 hover:shadow-lg transition-all duration-300"
+                className="group p-4 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl border border-indigo-200 hover:shadow-lg transition-all duration-300"
               >
-                <h3 className="font-bold text-indigo-800 dark:text-indigo-300 mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-200">
+                <h3 className="font-bold text-indigo-800 mb-2 group-hover:text-indigo-600:text-indigo-200">
                   The Challenger Customer
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
+                <p className="text-sm text-gray-600">
                   Gérer les comités d'achat complexes
                 </p>
               </Link>
               
               <Link 
                 href="/ressources/meilleurs-livres/enterprise-account/mastering-the-complex-sale"
-                className="group p-4 bg-gradient-to-br from-indigo-50 to-indigo-100 dark:from-indigo-900/20 dark:to-indigo-800/20 rounded-xl border border-indigo-200 dark:border-indigo-700 hover:shadow-lg transition-all duration-300"
+                className="group p-4 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl border border-indigo-200 hover:shadow-lg transition-all duration-300"
               >
-                <h3 className="font-bold text-indigo-800 dark:text-indigo-300 mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-200">
+                <h3 className="font-bold text-indigo-800 mb-2 group-hover:text-indigo-600:text-indigo-200">
                   Mastering the Complex Sale
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
+                <p className="text-sm text-gray-600">
                   Vendre de la valeur en cycle long
                 </p>
               </Link>
               
               <Link 
                 href="/ressources/meilleurs-livres/enterprise-account/key-account-management-definitive-guide"
-                className="group p-4 bg-gradient-to-br from-indigo-50 to-indigo-100 dark:from-indigo-900/20 dark:to-indigo-800/20 rounded-xl border border-indigo-200 dark:border-indigo-700 hover:shadow-lg transition-all duration-300"
+                className="group p-4 bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl border border-indigo-200 hover:shadow-lg transition-all duration-300"
               >
-                <h3 className="font-bold text-indigo-800 dark:text-indigo-300 mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-200">
+                <h3 className="font-bold text-indigo-800 mb-2 group-hover:text-indigo-600:text-indigo-200">
                   Key Account Management
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-300">
+                <p className="text-sm text-gray-600">
                   Structurer sa gestion des comptes clés
                 </p>
               </Link>
@@ -287,11 +287,11 @@ export default function SellingToBigCompaniesPage() {
               Passez du livre au terrain
             </Badge>
             
-            <h3 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-4">
+            <h3 className="text-3xl font-bold text-blue-ink mb-4">
               Maîtrisez la prospection grands comptes
             </h3>
             
-            <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
               Formez-vous avec les meilleures méthodes issues de ce livre et d'autres références, adaptées à la réalité des grands comptes français.
             </p>
             

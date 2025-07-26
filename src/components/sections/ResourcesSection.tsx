@@ -176,15 +176,15 @@ export default function ResourcesSection() {
         );
   
     return (
-    <section id="ressources" className="py-20 bg-slate-50 dark:bg-blue-ink/20 overflow-hidden">
+    <section id="ressources" className="py-20 bg-slate-50 overflow-hidden">
       <div className="container mx-auto">
         <AnimatedSection animation="slide-up">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-title font-bold text-blue-ink dark:text-primary-bg leading-tight">
+            <h2 className="text-4xl md:text-5xl font-title font-bold text-blue-ink leading-tight">
               Mes ressources pour votre
               <span className="block text-mint-green">performance</span>
             </h2>
-            <p className="mt-4 text-lg text-gray-anthracite dark:text-primary-bg/80 max-w-2xl mx-auto mb-8">
+            <p className="mt-4 text-lg text-gray-anthracite max-w-2xl mx-auto mb-8">
               Des outils et guides concrets, directement issus de 20 ans de terrain, pour vous aider à passer à l'action.
             </p>
             
@@ -197,7 +197,7 @@ export default function ResourcesSection() {
                   className={`px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300 ${
                     selectedFilter === category
                       ? 'bg-mint-green text-white shadow-lg scale-105'
-                      : 'bg-white dark:bg-gray-anthracite/40 text-gray-anthracite dark:text-primary-bg/80 hover:bg-mint-green/10 hover:text-mint-green hover:scale-105'
+                      : 'bg-white text-gray-anthracite hover:bg-mint-green/10 hover:text-mint-green hover:scale-105'
                   }`}
                 >
                   {category}
@@ -210,10 +210,10 @@ export default function ResourcesSection() {
         {filteredResources.length === 0 ? (
           <div className="text-center py-12">
             <div className="text-4xl mb-4">🔍</div>
-            <p className="text-lg text-gray-anthracite dark:text-primary-bg/80 mb-2">
+            <p className="text-lg text-gray-anthracite mb-2">
               Aucune ressource trouvée pour ce profil
             </p>
-            <p className="text-sm text-gray-anthracite dark:text-primary-bg/60">
+            <p className="text-sm text-gray-anthracite">
               Essayez un autre filtre ou sélectionnez "Tous"
             </p>
           </div>
@@ -230,16 +230,16 @@ export default function ResourcesSection() {
                   href={resource.available ? resource.link : undefined}
                   target={resource.available ? "_blank" : undefined}
                   rel="noopener noreferrer"
-                  className={`block bg-white dark:bg-gray-anthracite/60 rounded-2xl shadow-lg p-6 flex flex-col items-start justify-between h-full transition-all duration-300 hover:scale-105 hover:shadow-2xl ${!resource.available ? 'cursor-not-allowed opacity-70' : 'hover:border-mint-green border-transparent'}`}
+                  className={`block bg-white rounded-2xl shadow-lg p-6 flex flex-col items-start justify-between h-full transition-all duration-300 hover:scale-105 hover:shadow-2xl ${!resource.available ? 'cursor-not-allowed opacity-70' : 'hover:border-mint-green border-transparent'}`}
                 >
                   <div>
-                    <div className="w-20 h-20 bg-white dark:bg-gray-anthracite/80 rounded-xl flex items-center justify-center mb-4 border border-slate-200 dark:border-gray-700">
+                    <div className="w-20 h-20 bg-white rounded-xl flex items-center justify-center mb-4 border border-slate-200">
                       {resource.icon}
                     </div>
-                    <h3 className="text-xl font-title font-bold text-blue-ink dark:text-primary-bg mb-2">{resource.title}</h3>
-                    <p className="text-sm font-body text-gray-anthracite dark:text-primary-bg/80 mb-3 h-12">{resource.description}</p>
+                    <h3 className="text-xl font-title font-bold text-blue-ink mb-2">{resource.title}</h3>
+                    <p className="text-sm font-body text-gray-anthracite mb-3 h-12">{resource.description}</p>
                     {resource.target && (
-                      <div className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-blue-ink/10 text-blue-ink dark:bg-mint-green/10 dark:text-mint-green mb-3">
+                      <div className="inline-flex items-center px-2 py-1 rounded-md text-xs font-medium bg-blue-ink/10 text-blue-ink mb-3">
                         {resource.target}
                       </div>
                     )}
@@ -247,7 +247,7 @@ export default function ResourcesSection() {
                   <div className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold mt-4 ${
                     resource.available 
                     ? 'bg-mint-green/20 text-mint-green' 
-                    : 'bg-slate-200 dark:bg-slate-600 text-slate-500 dark:text-slate-300'
+                    : 'bg-slate-200 text-slate-500'
                   }`}>
                     <Download className="w-4 h-4" />
                     {resource.status}

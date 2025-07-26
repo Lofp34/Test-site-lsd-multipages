@@ -122,12 +122,12 @@ export default function HighOutputManagementPage() {
 
         {/* Résumé détaillé */}
         <article className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Résumé détaillé
             </h2>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 Andy Grove, ancien CEO d'Intel, livre dans cet ouvrage fondateur sa philosophie du management opérationnel. Sa vision : un manager est un multiplicateur de force dont la productivité se mesure à l'output de son organisation, pas à ses performances individuelles.
               </p>
@@ -162,8 +162,8 @@ export default function HighOutputManagementPage() {
 
         {/* Points clés à retenir */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Points clés à retenir
             </h2>
             
@@ -178,7 +178,7 @@ export default function HighOutputManagementPage() {
               ].map((point, index) => (
                 <li key={index} className="flex items-start">
                   <span className="text-mint-green text-xl mr-3 mt-1">✓</span>
-                  <span className="text-gray-800 dark:text-gray-200 text-lg">{point}</span>
+                  <span className="text-gray-800 text-lg">{point}</span>
                 </li>
               ))}
             </ul>
@@ -187,8 +187,8 @@ export default function HighOutputManagementPage() {
 
         {/* Pour qui ce livre ? */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Pour qui ce livre ?
             </h2>
             
@@ -202,7 +202,7 @@ export default function HighOutputManagementPage() {
               ].map((profile, index) => (
                 <div key={index} className="flex items-center p-3 bg-mint-green/10 rounded-lg">
                   <span className="text-mint-green text-lg mr-3">👤</span>
-                  <span className="text-gray-800 dark:text-gray-200 font-medium">{profile}</span>
+                  <span className="text-gray-800 font-medium">{profile}</span>
                 </div>
               ))}
             </div>
@@ -217,14 +217,14 @@ export default function HighOutputManagementPage() {
                 <span className="text-blue-ink font-bold text-lg">LS</span>
               </div>
               <div>
-                <h2 className="text-2xl font-bold text-blue-ink dark:text-mint-green">
+                <h2 className="text-2xl font-bold text-blue-ink">
                   Mon avis terrain
                 </h2>
-                <p className="text-gray-600 dark:text-gray-300">Laurent Serre</p>
+                <p className="text-gray-600">Laurent Serre</p>
               </div>
             </div>
             
-            <div className="prose prose-lg max-w-none text-gray-800 dark:text-gray-200">
+            <div className="prose prose-lg max-w-none text-gray-800">
               <p className="text-lg leading-relaxed mb-6">
                 LE livre de management opérationnel. Grove a une approche d'ingénieur appliquée au management - du concret, du mesurable, de l'efficace. Parfait pour les managers commerciaux qui veulent des résultats.
               </p>
@@ -249,7 +249,7 @@ export default function HighOutputManagementPage() {
                     <span key={i} className={i < 4.8 ? "text-yellow-400" : "text-gray-300"}>⭐</span>
                   ))}
                 </div>
-                <span className="text-lg font-semibold text-gray-800 dark:text-gray-200">4.8/5</span>
+                <span className="text-lg font-semibold text-gray-800">4.8/5</span>
               </div>
             </div>
           </div>
@@ -257,8 +257,8 @@ export default function HighOutputManagementPage() {
 
         {/* Livres complémentaires */}
         <section className="max-w-4xl mx-auto px-6 mb-12">
-          <div className="bg-white/95 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 border border-mint-green/20">
-            <h2 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-6">
+          <div className="bg-white/95 rounded-2xl shadow-xl p-8 border border-mint-green/20">
+            <h2 className="text-3xl font-bold text-blue-ink mb-6">
               Livres complémentaires
             </h2>
             
@@ -267,10 +267,10 @@ export default function HighOutputManagementPage() {
                 href="/ressources/meilleurs-livres/sales-management/good-to-great"
                 className="group p-6 bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl border border-mint-green/20 hover:border-mint-green/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-3 group-hover:text-mint-green transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-mint-green transition-colors">
                   Good to Great
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour l'aspect stratégique et humain du leadership
                 </p>
                 <span className="text-mint-green font-medium group-hover:underline">
@@ -282,10 +282,10 @@ export default function HighOutputManagementPage() {
                 href="/ressources/meilleurs-livres/sales-management/the-hard-thing-about-hard-things"
                 className="group p-6 bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl border border-mint-green/20 hover:border-mint-green/40 transition-all duration-300 hover:shadow-lg"
               >
-                <h3 className="text-xl font-bold text-blue-ink dark:text-mint-green mb-3 group-hover:text-mint-green transition-colors">
+                <h3 className="text-xl font-bold text-blue-ink mb-3 group-hover:text-mint-green transition-colors">
                   The Hard Thing About Hard Things
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-3">
+                <p className="text-gray-700 mb-3">
                   Pour gérer les situations difficiles en management
                 </p>
                 <span className="text-mint-green font-medium group-hover:underline">
@@ -302,10 +302,10 @@ export default function HighOutputManagementPage() {
             <div className="inline-block bg-mint-green/30 text-mint-green font-semibold rounded-full px-4 py-2 text-sm mb-4 shadow-md backdrop-blur">
               Passez du livre au terrain
             </div>
-            <h3 className="text-3xl font-bold text-blue-ink dark:text-mint-green mb-4">
+            <h3 className="text-3xl font-bold text-blue-ink mb-4">
               Découvrez le Bootcamp Commercial Intensif
             </h3>
-            <p className="text-lg text-gray-700 dark:text-gray-200 mb-6 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
               Appliquez les principes de High Output Management à votre équipe commerciale. Formation intensive pour managers qui veulent des résultats mesurables.
             </p>
             <Link 
