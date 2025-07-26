@@ -122,7 +122,7 @@ export default function FormationCommercialePMEPage() {
               <div className="space-y-3 mb-6">
                 <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
-                  <Link href="/ressources/scripts-prospection" className="hover:text-mint-green">Scripts IMPACT et AIDA+</Link>
+                  <Link href="/ressources/impact-aida-script-prospection-pme" className="hover:text-mint-green">Scripts IMPACT et AIDA+</Link>
                 </div>
                 <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
