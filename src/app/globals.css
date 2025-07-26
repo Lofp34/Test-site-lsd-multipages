@@ -192,3 +192,13 @@
   }
 }
 
+/* Animation pour le bandeau déroulant des logos clients */
+@keyframes logoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
