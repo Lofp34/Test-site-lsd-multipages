@@ -433,7 +433,7 @@ export default function ProspectionSDRPage() {
         {/* Section : Suggestions cross-catégories */}
         <AnimatedSection delay={500}>
           <div className="max-w-4xl mx-auto mb-12 px-4">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-blue-400/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-blue-400/20 backdrop-blur-sm">
               <div className="text-center mb-6">
                 <span className="inline-block bg-orange-500/20 text-orange-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🔗 Complémentaire
@@ -449,7 +449,7 @@ export default function ProspectionSDRPage() {
               <div className="grid md:grid-cols-2 gap-6">
                 <Link 
                   href="/ressources/meilleurs-livres/psychologie-influence"
-                  className="group p-6 bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/30 dark:to-pink-900/30 rounded-xl border border-purple-200/50 hover:shadow-lg transition-all duration-300"
+                  className="group p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-xl border border-purple-200/50 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl">🧠</span>
@@ -463,7 +463,7 @@ export default function ProspectionSDRPage() {
                 
                 <Link 
                   href="/ressources/meilleurs-livres/negociation-closing"
-                  className="group p-6 bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/30 dark:to-orange-900/30 rounded-xl border border-red-200/50 hover:shadow-lg transition-all duration-300"
+                  className="group p-6 bg-gradient-to-r from-red-50 to-orange-50 rounded-xl border border-red-200/50 hover:shadow-lg transition-all duration-300"
                 >
                   <div className="flex items-center gap-3 mb-3">
                     <span className="text-2xl">🤝</span>

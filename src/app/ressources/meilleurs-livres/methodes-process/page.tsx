@@ -332,15 +332,15 @@ export default function MethodesProcessPage() {
         {/* Section : Feuille de route d'implémentation */}
         <AnimatedSection delay={475}>
           <div className="max-w-6xl mx-auto mb-12 px-4">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-blue-400/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-blue-400/20 backdrop-blur-sm">
               <div className="text-center mb-8">
                 <span className="inline-block bg-orange-soft/20 text-orange-soft font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🚀 Implémentation
                 </span>
-                <h3 className="text-2xl font-bold text-blue-ink dark:text-blue-400 mb-4">
+                <h3 className="text-2xl font-bold text-blue-ink mb-4">
                   Feuille de route pour transformer vos processus commerciaux
                 </h3>
-                <p className="text-gray-700 dark:text-gray-200 mb-6">
+                <p className="text-gray-700 mb-6">
                   Un plan progressif en 4 phases pour ancrer durablement les meilleures pratiques méthodologiques
                 </p>
               </div>
@@ -377,20 +377,20 @@ export default function MethodesProcessPage() {
         {/* Section : Suggestions cross-catégorie */}
         <AnimatedSection delay={500}>
           <div className="max-w-4xl mx-auto mb-12 px-4">
-            <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl shadow-2xl p-8 border border-blue-400/20 backdrop-blur-sm">
+            <div className="bg-white/70 rounded-2xl shadow-2xl p-8 border border-blue-400/20 backdrop-blur-sm">
               <div className="text-center mb-6">
                 <span className="inline-block bg-purple-500/20 text-purple-400 font-semibold rounded-full px-4 py-1 text-sm mb-4 shadow-md backdrop-blur">
                   🔗 Compléments recommandés
                 </span>
-                <h3 className="text-2xl font-bold text-blue-ink dark:text-blue-400 mb-4">
+                <h3 className="text-2xl font-bold text-blue-ink mb-4">
                   Enrichissez votre approche méthodologique
                 </h3>
               </div>
               
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 rounded-xl border border-green-200/50">
+                <div className="p-6 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-200/50">
                   <h4 className="font-bold text-green-600 mb-2">🧠 Psychologie & Influence</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
+                  <p className="text-sm text-gray-700 mb-3">
                     Complétez vos frameworks avec la compréhension des mécanismes psychologiques de la décision
                   </p>
                   <Link href="/ressources/meilleurs-livres/psychologie-influence" className="text-green-600 hover:text-green-700 text-sm font-medium">
@@ -398,9 +398,9 @@ export default function MethodesProcessPage() {
                   </Link>
                 </div>
                 
-                <div className="p-6 bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/30 dark:to-orange-900/30 rounded-xl border border-red-200/50">
+                <div className="p-6 bg-gradient-to-r from-red-50 to-orange-50 rounded-xl border border-red-200/50">
                   <h4 className="font-bold text-red-600 mb-2">🤝 Négociation & Closing</h4>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 mb-3">
+                  <p className="text-sm text-gray-700 mb-3">
                     Intégrez les techniques de closing dans vos processus de vente formalisés
                   </p>
                   <Link href="/ressources/meilleurs-livres/negociation-closing" className="text-red-600 hover:text-red-700 text-sm font-medium">
@@ -447,17 +447,17 @@ export default function MethodesProcessPage() {
               </div>
 
               {/* CTA Secondaire - Audit Processus */}
-              <div className="bg-white/70 dark:bg-blue-ink/80 rounded-2xl p-6 border border-blue-200/50 backdrop-blur-sm">
+              <div className="bg-white/70 rounded-2xl p-6 border border-blue-200/50 backdrop-blur-sm">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center">
+                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
                     <span className="text-2xl">📋</span>
                   </div>
                   <div>
-                    <div className="text-sm text-gray-600 dark:text-gray-400">Évaluation gratuite</div>
-                    <h4 className="text-xl font-bold text-blue-ink dark:text-blue-400">Audit Processus Commercial</h4>
+                    <div className="text-sm text-gray-600">Évaluation gratuite</div>
+                    <h4 className="text-xl font-bold text-blue-ink">Audit Processus Commercial</h4>
                   </div>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-4 text-sm leading-relaxed">
+                <p className="text-gray-700 mb-4 text-sm leading-relaxed">
                   Analysez vos processus commerciaux actuels et identifiez quelle méthode structurée adopter en priorité.
                 </p>
                 <Link 

@@ -23,9 +23,9 @@ export default function LogoBanner() {
   ];
 
   return (
-    <section className="py-12 bg-primary-bg dark:bg-blue-ink">
+    <section className="py-12 bg-primary-bg">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-2xl font-bold font-title text-primary-title dark:text-primary-bg mb-4">
+        <h2 className="text-2xl font-bold font-title text-primary-title mb-4">
           Ils m'ont fait confiance
         </h2>
         <p className="text-base font-body text-primary-secondary max-w-4xl mx-auto">

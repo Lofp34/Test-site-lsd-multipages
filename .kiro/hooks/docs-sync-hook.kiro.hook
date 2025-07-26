@@ -4,7 +4,7 @@
   "description": "Monitors all source files in the repository and triggers documentation updates when changes are detected",
   "version": "1",
   "when": {
-    "type": "fileEdited",
+    "type": "userTriggered",
     "patterns": [
       "src/**/*.{ts",
       "tsx",

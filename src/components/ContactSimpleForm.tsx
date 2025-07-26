@@ -61,7 +61,7 @@ export default function ContactSimpleForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 bg-white/80 dark:bg-gray-anthracite/40 rounded-2xl p-6 mb-6 shadow">
+    <form onSubmit={handleSubmit} className="space-y-6 bg-white/80 rounded-2xl p-6 mb-6 shadow">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">Prénom *</label>

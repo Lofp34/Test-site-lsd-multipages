@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "totalTests": 1,
+    "averageScore": 100,
+    "timestamp": "2025-07-26T07:19:45.324Z"
+  },
+  "results": [
+    {
+      "timestamp": "2025-07-26T07:19:44.562Z",
+      "performance": {
+        "lcp": 1132.3893597404103,
+        "fid": 72.92183724255113,
+        "cls": 0.06822605576863808,
+        "ttfb": 285.79794853233756,
+        "fcp": 934.4643144987707,
+        "si": 2240.663059119878,
+        "tti": 2002.7133876517782,
+        "tbt": 126.77147053452435
+      },
+      "seo": {
+        "titleLength": 58,
+        "descriptionLength": 155,
+        "keywordsCount": 8,
+        "structuredDataPresent": true,
+        "canonicalPresent": true,
+        "ogTagsPresent": true
+      },
+      "score": 100,
+      "recommendations": [
+        "Performance excellente, maintenir les optimisations actuelles"
+      ]
+    }
+  ],
+  "recommendations": [
+    "Performance excellente, maintenir les optimisations actuelles"
+  ]
+}

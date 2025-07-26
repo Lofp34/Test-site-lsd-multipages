@@ -35,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function Article7EtapesNonOui() {
   return (
-    <main className="bg-primary-bg dark:bg-gray-dark text-gray-dark dark:text-primary-bg">
+    <main className="bg-primary-bg text-gray-dark">
       {/* Hero Section */}
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,10 +45,10 @@ export default function Article7EtapesNonOui() {
                 Techniques de vente
               </span>
             </div>
-            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink dark:text-white sm:text-5xl mb-6">
+            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
               7 étapes pour transformer un « non » frustrant en « oui » performant en 2025
             </h1>
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 dark:text-gray-400 mb-8">
+            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
               <div className="flex items-center gap-2">
                 <Image
                   src="/laurent.jpg"
@@ -80,12 +80,12 @@ export default function Article7EtapesNonOui() {
 
       {/* Article Content */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="prose prose-lg max-w-none prose-headings:text-blue-ink prose-headings:dark:text-white prose-p:text-gray-700 prose-p:dark:text-gray-300 prose-strong:text-blue-ink prose-strong:dark:text-white prose-li:text-gray-700 prose-li:dark:text-gray-300">
-          <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+        <div className="prose prose-lg max-w-none prose-headings:text-blue-ink prose-p:text-gray-700 prose-strong:text-blue-ink prose-li:text-gray-700">
+          <p className="text-xl text-gray-600 leading-relaxed mb-8">
             Un « non » client, c’est souvent frustrant. Pourtant, en 2025, les meilleurs commerciaux ne se contentent plus d’accepter ce refus : ils savent transformer un non frustrant en oui performant. Découvrez une méthode éprouvée, en 7 étapes, pour faire de chaque « non » une opportunité commerciale.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             1. Réaliser un audit express du refus
           </h2>
           <p className="mb-6">
@@ -98,7 +98,7 @@ export default function Article7EtapesNonOui() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             2. Reformuler avec empathie
           </h2>
           <p className="mb-6">
@@ -110,7 +110,7 @@ export default function Article7EtapesNonOui() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             3. Libérer les raisons sous-jacentes
           </h2>
           <p className="mb-6">
@@ -122,7 +122,7 @@ export default function Article7EtapesNonOui() {
             <li><strong>Bénéfice :</strong> Vous devenez partenaire de réflexion, plus seulement vendeur.</li>
           </ul>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             4. Repositionner votre solution sur mesure
           </h2>
           <p className="mb-6">
@@ -132,7 +132,7 @@ export default function Article7EtapesNonOui() {
             <li><strong>Astuce IA :</strong> Utilisez des outils de personnalisation intelligente (analyse sémantique) pour adapter votre discours à chaque profil client.</li>
           </ul>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             5. Tester une petite action concrète
           </h2>
           <p className="mb-6">
@@ -145,7 +145,7 @@ export default function Article7EtapesNonOui() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             6. Renforcer la relation par un mini-geste humain
           </h2>
           <p className="mb-6">
@@ -156,7 +156,7 @@ export default function Article7EtapesNonOui() {
             <li><strong>Erreur à éviter :</strong> Ne pas donner suite après un refus, laissant un goût amer et définitif.</li>
           </ul>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             7. Mesurer, ajuster et relancer au bon rythme
           </h2>
           <p className="mb-6">
@@ -167,7 +167,7 @@ export default function Article7EtapesNonOui() {
             <li><strong>Outil pratique :</strong> Configurez des alertes intelligentes (sentiment analysis IA) pour détecter le meilleur moment émotionnel pour relancer.</li>
           </ul>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mt-12 mb-6">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Conclusion : Transformez chaque « non » frustrant en tremplin relationnel et en « oui » performant
           </h2>
           <p className="mb-6">
@@ -193,7 +193,7 @@ export default function Article7EtapesNonOui() {
       </article>
 
       {/* Author Bio */}
-      <section className="bg-white dark:bg-gray-anthracite py-16 mt-16">
+      <section className="bg-white py-16 mt-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="flex-shrink-0">
@@ -206,13 +206,13 @@ export default function Article7EtapesNonOui() {
               />
             </div>
             <div>
-              <h3 className="text-2xl font-title font-bold text-blue-ink dark:text-white mb-2">
+              <h3 className="text-2xl font-title font-bold text-blue-ink mb-2">
                 Laurent Serre
               </h3>
               <p className="text-lg text-mint-green mb-4">
                 Expert en développement commercial • 20 ans d'expérience
               </p>
-              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p className="text-gray-600 leading-relaxed">
                 Spécialiste de la transformation commerciale et de la formation à la vente, Laurent accompagne les PME dans l’optimisation de leur performance. Fort de 20 ans d’expérience terrain, il combine méthodes éprouvées et outils innovants pour des résultats concrets.
               </p>
             </div>
@@ -223,26 +223,26 @@ export default function Article7EtapesNonOui() {
       {/* Related Articles */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-title font-bold text-blue-ink dark:text-white mb-8">
+          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8">
             Articles recommandés
           </h2>
           <div className="grid gap-6 md:grid-cols-2">
             <Link href="/blog/erreurs-fatales-prospection-b2b" className="group">
-              <div className="bg-white dark:bg-gray-anthracite p-6 rounded-xl hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-title font-semibold text-blue-ink dark:text-white mb-2 group-hover:text-mint-green transition-colors">
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-title font-semibold text-blue-ink mb-2 group-hover:text-mint-green transition-colors">
                   Les 7 erreurs fatales en prospection B2B
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                <p className="text-gray-600 text-sm">
                   Découvrez les pièges à éviter pour réussir vos campagnes de prospection et booster vos résultats.
                 </p>
               </div>
             </Link>
             <Link href="/blog/ia-transforme-developpement-commercial-2025" className="group">
-              <div className="bg-white dark:bg-gray-anthracite p-6 rounded-xl hover:shadow-lg transition-shadow">
-                <h3 className="text-lg font-title font-semibold text-blue-ink dark:text-white mb-2 group-hover:text-mint-green transition-colors">
+              <div className="bg-white p-6 rounded-xl hover:shadow-lg transition-shadow">
+                <h3 className="text-lg font-title font-semibold text-blue-ink mb-2 group-hover:text-mint-green transition-colors">
                   Comment l’IA transforme le développement commercial en 2025
                 </h3>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">
+                <p className="text-gray-600 text-sm">
                   Analyse des nouvelles pratiques et outils IA pour doper la performance commerciale.
                 </p>
               </div>
@@ -251,9 +251,9 @@ export default function Article7EtapesNonOui() {
         </div>
       </section>
 
-      <section className="py-16 bg-white dark:bg-gray-anthracite/10">
+      <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink dark:text-primary-bg mb-8 text-center">
+          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
             Prendre contact avec Laurent Serre
           </h2>
           <HubSpotForm />

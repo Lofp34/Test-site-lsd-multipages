@@ -268,14 +268,14 @@ describe('DomainInsight Component', () => {
       const { container } = render(<DomainInsight {...mockProps} />)
       
       const mainContainer = container.firstChild as HTMLElement
-      expect(mainContainer).toHaveClass('dark:bg-gray-800/90')
+      expect(mainContainer).toHaveClass('bg-white/90')
     })
 
-    it('has dark mode text colors', () => {
+    it('has light mode text colors only', () => {
       render(<DomainInsight {...mockProps} />)
       
       const title = screen.getByText('SPIN Selling')
-      expect(title).toHaveClass('dark:text-white')
+      expect(title).toHaveClass('text-blue-ink')
     })
   })
 })

@@ -20,8 +20,8 @@ export default function StrategicSellingPage() {
         </section>
 
         {/* Résumé détaillé */}
-        <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 dark:bg-blue-ink/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
-          <h2 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-4">Résumé du livre</h2>
+        <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
+          <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
             Strategic Selling propose un processus structuré pour gérer des ventes complexes impliquant de multiples décideurs dans l’entreprise cliente. L’outil clé apporté est la fameuse « Blue Sheet » : une fiche où le commercial cartographie tous les acteurs du compte (décideur économique, utilisateur clé, sponsor, opposant…), leurs critères de succès et le plan d’action pour chacun. Miller et Heiman définissent les 4 types de personnes dans un compte (le coach, l’utilisateur, le décideur, le gatekeeper) et comment adapter sa stratégie à chacun. Strategic Selling introduit également le concept de win-win partagé et la notion qu’il faut « vendre avec le client » et non « au client ».
           </p>
@@ -41,7 +41,7 @@ export default function StrategicSellingPage() {
             <li>Construire un plan d’action détaillé pour chaque compte</li>
           </ul>
 
-          <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink dark:text-mint-green mb-6">
+          <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
             « Vendre avec le client, pas au client. »
           </blockquote>
         </article>
@@ -49,8 +49,8 @@ export default function StrategicSellingPage() {
         {/* CTA Bootcamp */}
         <div className="max-w-2xl mx-auto text-center mt-8 mb-12">
           <div className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-2 shadow-md backdrop-blur">Passez du livre au terrain</div>
-          <h4 className="text-2xl font-bold text-blue-ink dark:text-mint-green mb-2">Découvrez le Bootcamp Grands Comptes by LSD</h4>
-          <p className="text-lg text-gray-700 dark:text-gray-100 mb-4">Formez-vous avec les meilleures méthodes issues de ce livre, adaptées à la gestion des comptes stratégiques et grands comptes.</p>
+          <h4 className="text-2xl font-bold text-blue-ink mb-2">Découvrez le Bootcamp Grands Comptes by LSD</h4>
+          <p className="text-lg text-gray-700 mb-4">Formez-vous avec les meilleures méthodes issues de ce livre, adaptées à la gestion des comptes stratégiques et grands comptes.</p>
           <Link href="/bootcamp" className="inline-block bg-mint-green text-blue-ink font-semibold px-6 py-3 rounded-full shadow hover:bg-mint-green/80 transition">Voir le Bootcamp</Link>
         </div>
 
