@@ -8,6 +8,7 @@ import CookieConsentBanner from "@/components/CookieConsentBanner";
 import AnalyticsConsent from "@/components/AnalyticsConsent";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import PerformanceMonitor from "@/components/PerformanceMonitor";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -205,6 +206,7 @@ export default function RootLayout({
         <CookieConsentBanner />
         <AnalyticsConsent />
         <GoogleAnalytics />
+        <PerformanceMonitor />
       </body>
     </html>
   );

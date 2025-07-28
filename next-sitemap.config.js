@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
-module.exports = {
+export default {
     siteUrl: 'https://laurentserre.com',
     generateRobotsTxt: true,
     exclude: [
@@ -56,4 +56,4 @@ module.exports = {
         lastmod: new Date().toISOString(),
       }
     },
-  }
+  };
