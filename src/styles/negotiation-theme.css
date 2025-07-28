@@ -1,0 +1,241 @@
+/* Thème spécifique pour les techniques de négociation */
+
+@layer base {
+  :root {
+    /* Couleurs spécifiques négociation */
+    --negotiation-primary: 220 38% 34%;    /* Rouge principal #DC2626 */
+    --negotiation-secondary: 24 95% 53%;   /* Orange accent #EA580C */
+    --negotiation-accent: 45 93% 47%;      /* Ambre highlight #F59E0B */
+    --negotiation-bg: 0 0% 98%;            /* Fond légèrement teinté */
+    --negotiation-surface: 0 0% 100%;      /* Surface blanche */
+    
+    /* Variations d'intensité */
+    --negotiation-primary-light: 220 38% 45%;
+    --negotiation-primary-dark: 220 38% 25%;
+    --negotiation-secondary-light: 24 95% 65%;
+    --negotiation-secondary-dark: 24 95% 40%;
+  }
+}
+
+/* Classes utilitaires pour le thème négociation */
+@layer components {
+  .negotiation-gradient-primary {
+    @apply bg-gradient-to-br from-red-600 via-orange-500/10 to-primary-bg;
+  }
+  
+  .negotiation-gradient-secondary {
+    @apply bg-gradient-to-br from-orange-500 via-red-400/10 to-primary-bg;
+  }
+  
+  .negotiation-gradient-accent {
+    @apply bg-gradient-to-br from-amber-500 via-orange-400/10 to-primary-bg;
+  }
+  
+  .negotiation-text-gradient {
+    @apply bg-gradient-to-r from-red-600 to-orange-500 bg-clip-text text-transparent;
+  }
+  
+  .negotiation-shadow-primary {
+    box-shadow: 0 10px 25px -5px rgba(220, 38, 38, 0.2), 0 4px 6px -2px rgba(220, 38, 38, 0.1);
+  }
+  
+  .negotiation-shadow-secondary {
+    box-shadow: 0 10px 25px -5px rgba(234, 88, 12, 0.2), 0 4px 6px -2px rgba(234, 88, 12, 0.1);
+  }
+  
+  .negotiation-border-primary {
+    @apply border-red-600/30;
+  }
+  
+  .negotiation-border-secondary {
+    @apply border-orange-500/30;
+  }
+  
+  .negotiation-bg-surface {
+    @apply bg-white/80 backdrop-blur-sm;
+  }
+  
+  .negotiation-hover-lift {
+    @apply hover:scale-105 hover:shadow-xl transition-all duration-300;
+  }
+}
+
+/* Animations spécifiques négociation */
+@keyframes negotiationPulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.02);
+  }
+}
+
+@keyframes negotiationGlow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(220, 38, 38, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.6), 0 0 30px rgba(234, 88, 12, 0.3);
+  }
+}
+
+@keyframes negotiationSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes negotiationFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Classes d'animation négociation */
+@layer utilities {
+  .animate-negotiation-pulse {
+    animation: negotiationPulse 2s ease-in-out infinite;
+  }
+  
+  .animate-negotiation-glow {
+    animation: negotiationGlow 3s ease-in-out infinite;
+  }
+  
+  .animate-negotiation-slide-in {
+    animation: negotiationSlideIn 0.6s ease-out;
+  }
+  
+  .animate-negotiation-fade-up {
+    animation: negotiationFadeUp 0.8s ease-out;
+  }
+}
+
+/* Styles pour les particules de fond négociation */
+.negotiation-particles {
+  background: radial-gradient(circle at 20% 50%, rgba(220, 38, 38, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(234, 88, 12, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 40% 80%, rgba(245, 158, 11, 0.05) 0%, transparent 50%);
+}
+
+/* Styles pour les éléments interactifs */
+.negotiation-interactive {
+  @apply transition-all duration-300 cursor-pointer;
+}
+
+.negotiation-interactive:hover {
+  @apply transform scale-105 shadow-lg;
+  filter: brightness(1.05);
+}
+
+.negotiation-interactive:active {
+  @apply transform scale-95;
+  filter: brightness(0.95);
+}
+
+/* Styles pour les badges négociation */
+.negotiation-badge-primary {
+  @apply bg-red-100 text-red-800 border border-red-200;
+}
+
+.negotiation-badge-secondary {
+  @apply bg-orange-100 text-orange-800 border border-orange-200;
+}
+
+.negotiation-badge-accent {
+  @apply bg-amber-100 text-amber-800 border border-amber-200;
+}
+
+/* Styles pour les CTAs négociation */
+.negotiation-cta-primary {
+  @apply bg-gradient-to-r from-red-600 to-orange-500 text-white;
+  @apply hover:from-red-700 hover:to-orange-600;
+  @apply shadow-lg hover:shadow-red-500/30;
+  @apply transform hover:scale-105 active:scale-95;
+  @apply transition-all duration-300;
+}
+
+.negotiation-cta-secondary {
+  @apply bg-gradient-to-r from-orange-500 to-amber-500 text-white;
+  @apply hover:from-orange-600 hover:to-amber-600;
+  @apply shadow-lg hover:shadow-orange-500/30;
+  @apply transform hover:scale-105 active:scale-95;
+  @apply transition-all duration-300;
+}
+
+.negotiation-cta-outline {
+  @apply border-2 border-red-600 text-red-600 bg-transparent;
+  @apply hover:bg-red-600 hover:text-white;
+  @apply transition-all duration-300;
+}
+
+/* Styles pour les cartes négociation */
+.negotiation-card {
+  @apply bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl;
+  @apply border border-red-200/50 hover:shadow-2xl;
+  @apply transition-all duration-300 group;
+}
+
+.negotiation-card:hover {
+  @apply transform scale-105;
+  box-shadow: 0 25px 50px -12px rgba(220, 38, 38, 0.15);
+}
+
+/* Styles pour les sections */
+.negotiation-section {
+  @apply relative overflow-hidden;
+}
+
+.negotiation-section::before {
+  content: '';
+  @apply absolute inset-0 opacity-5;
+  background: radial-gradient(circle at 30% 40%, rgba(220, 38, 38, 0.3) 0%, transparent 50%),
+              radial-gradient(circle at 70% 60%, rgba(234, 88, 12, 0.2) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Responsive optimizations */
+@media (max-width: 768px) {
+  .negotiation-card {
+    @apply hover:scale-100; /* Disable hover scale on mobile */
+  }
+  
+  .negotiation-interactive:hover {
+    @apply transform scale-100; /* Disable hover scale on mobile */
+  }
+  
+  .negotiation-cta-primary,
+  .negotiation-cta-secondary {
+    @apply hover:scale-100; /* Disable hover scale on mobile */
+  }
+}
+
+/* Dark mode support (if needed later) */
+@media (prefers-color-scheme: dark) {
+  .negotiation-card {
+    @apply bg-gray-900/80 border-red-800/30;
+  }
+  
+  .negotiation-badge-primary {
+    @apply bg-red-900/50 text-red-200 border-red-800;
+  }
+  
+  .negotiation-badge-secondary {
+    @apply bg-orange-900/50 text-orange-200 border-orange-800;
+  }
+  
+  .negotiation-badge-accent {
+    @apply bg-amber-900/50 text-amber-200 border-amber-800;
+  }
+}
