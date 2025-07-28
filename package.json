@@ -20,7 +20,11 @@
     "test:performance": "vitest run src/__tests__/performance",
     "validate:links": "tsx src/scripts/validate-links.ts",
     "test:redirects": "tsx src/scripts/test-redirects.ts",
-    "test:performance-optimizations": "tsx src/scripts/test-performance-optimizations.ts"
+    "test:performance-optimizations": "tsx src/scripts/test-performance-optimizations.ts",
+    "validate:user-journey": "tsx scripts/run-user-validation.ts",
+    "audit:seo-final": "tsx scripts/seo-final-audit.ts",
+    "deploy:check": "tsx scripts/production-deployment.ts",
+    "deploy:ready": "npm run test:coverage && npm run audit:seo-final && npm run validate:user-journey && npm run deploy:check"
   },
   "dependencies": {
     "@types/jsdom": "^21.1.7",
@@ -34,6 +38,7 @@
     "react-cookie-consent": "^9.0.0",
     "react-dom": "^19.0.0",
     "swiper": "^11.2.8",
+    "web-vitals": "^5.0.3",
     "zod": "^4.0.5"
   },
   "devDependencies": {
@@ -45,6 +50,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^4.7.0",
+    "@vitest/coverage-v8": "^3.2.4",
     "autoprefixer": "^10.4.21",
     "eslint": "^9",
     "eslint-config-next": "15.3.3",

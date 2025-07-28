@@ -1,0 +1,102 @@
+{
+  "timestamp": "2025-07-28T09:50:13.422Z",
+  "overallScore": 56,
+  "readyForProduction": false,
+  "checks": [
+    {
+      "name": "Tests unitaires",
+      "status": "failed",
+      "score": 0,
+      "message": "❌ Échec des tests unitaires: Error: Command failed: npm run test:coverage\n MISSING DEPENDENCY  Cannot find dependency '@vitest/coverage-v8'\n\n",
+      "blocking": true
+    },
+    {
+      "name": "Build de production",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Build de production réussie",
+      "blocking": true
+    },
+    {
+      "name": "Analyse du bundle",
+      "status": "warning",
+      "score": 70,
+      "message": "⚠️ Impossible d'analyser la taille du bundle",
+      "blocking": false
+    },
+    {
+      "name": "Audit SEO",
+      "status": "passed",
+      "score": 91,
+      "message": "✅ Score SEO: 91/100",
+      "blocking": false
+    },
+    {
+      "name": "Issues SEO critiques",
+      "status": "failed",
+      "score": 0,
+      "message": "❌ 2 issue(s) SEO critique(s)",
+      "blocking": true
+    },
+    {
+      "name": "Tests utilisateur",
+      "status": "passed",
+      "score": 90,
+      "message": "✅ Validation utilisateur: 90.0%",
+      "blocking": false
+    },
+    {
+      "name": "Audit de sécurité npm",
+      "status": "warning",
+      "score": 60,
+      "message": "⚠️ Vulnérabilités détectées dans les dépendances",
+      "blocking": false
+    },
+    {
+      "name": "Vérifications de sécurité",
+      "status": "failed",
+      "score": 0,
+      "message": "❌ Erreur lors des vérifications: ReferenceError: require is not defined",
+      "blocking": false
+    },
+    {
+      "name": "Vérifications de performance",
+      "status": "failed",
+      "score": 0,
+      "message": "❌ Erreur lors des vérifications: ReferenceError: require is not defined",
+      "blocking": false
+    },
+    {
+      "name": "Variables d'environnement",
+      "status": "warning",
+      "score": 60,
+      "message": "⚠️ Variables manquantes: NEXT_PUBLIC_BASE_URL, NEXT_PUBLIC_GA_MEASUREMENT_ID",
+      "blocking": false
+    },
+    {
+      "name": "Configuration sitemap",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Sitemap configuré",
+      "blocking": false
+    },
+    {
+      "name": "Configuration robots.txt",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Robots.txt configuré",
+      "blocking": false
+    }
+  ],
+  "blockingIssues": [
+    "❌ Échec des tests unitaires: Error: Command failed: npm run test:coverage\n MISSING DEPENDENCY  Cannot find dependency '@vitest/coverage-v8'\n\n",
+    "❌ 2 issue(s) SEO critique(s)"
+  ],
+  "recommendations": [
+    "⚠️ Impossible d'analyser la taille du bundle",
+    "⚠️ Vulnérabilités détectées dans les dépendances",
+    "❌ Erreur lors des vérifications: ReferenceError: require is not defined",
+    "❌ Erreur lors des vérifications: ReferenceError: require is not defined",
+    "⚠️ Variables manquantes: NEXT_PUBLIC_BASE_URL, NEXT_PUBLIC_GA_MEASUREMENT_ID"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "timestamp": "2025-07-28T09:50:12.476Z",
+  "totalTests": 10,
+  "passedTests": 9,
+  "failedTests": 1,
+  "skippedTests": 0,
+  "successRate": 90,
+  "totalDuration": 25960,
+  "results": [
+    {
+      "suite": "Parcours utilisateur complet",
+      "test": "user-journey-novice",
+      "status": "passed",
+      "duration": 1862
+    },
+    {
+      "suite": "Parcours utilisateur complet",
+      "test": "user-journey-expert",
+      "status": "passed",
+      "duration": 2697
+    },
+    {
+      "suite": "Téléchargements et leads",
+      "test": "resource-download",
+      "status": "passed",
+      "duration": 1646
+    },
+    {
+      "suite": "Téléchargements et leads",
+      "test": "lead-generation",
+      "status": "failed",
+      "duration": 3412,
+      "error": "Échec simulé pour lead-generation"
+    },
+    {
+      "suite": "Conversions",
+      "test": "diagnostic-conversion",
+      "status": "passed",
+      "duration": 2519
+    },
+    {
+      "suite": "Conversions",
+      "test": "bootcamp-conversion",
+      "status": "passed",
+      "duration": 1591
+    },
+    {
+      "suite": "Mobile et accessibilité",
+      "test": "mobile-experience",
+      "status": "passed",
+      "duration": 3419
+    },
+    {
+      "suite": "Mobile et accessibilité",
+      "test": "accessibility",
+      "status": "passed",
+      "duration": 3405
+    },
+    {
+      "suite": "Performance",
+      "test": "performance",
+      "status": "passed",
+      "duration": 1890
+    },
+    {
+      "suite": "Performance",
+      "test": "core-web-vitals",
+      "status": "passed",
+      "duration": 2504
+    }
+  ],
+  "recommendations": [
+    "1 test(s) ont échoué - Vérifier les logs détaillés"
+  ]
+}

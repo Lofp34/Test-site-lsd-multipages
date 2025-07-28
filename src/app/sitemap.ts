@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://laurentserre.com'
+  const baseUrl = 'https://laurent-serre-developpement.fr'
   const currentDate = new Date()
 
   return [
@@ -370,6 +370,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // CATÉGORIE DIGITAL & AI SALES
     {
       url: `${baseUrl}/ressources/meilleurs-livres/digital-ai`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    // SECTION TECHNIQUES DE NÉGOCIATION
+    {
+      url: `${baseUrl}/ressources/techniques-de-negociation`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.85,
+    },
+    // TECHNIQUES DE NÉGOCIATION INDIVIDUELLES
+    {
+      url: `${baseUrl}/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.8,

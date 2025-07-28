@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport de Validation Utilisateur</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 20px; background: #f8fafc; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .header { background: #1e40af; color: white; padding: 20px; border-radius: 8px 8px 0 0; }
+        .content { padding: 20px; }
+        .metrics { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
+        .metric { background: #f1f5f9; padding: 15px; border-radius: 6px; text-align: center; }
+        .metric-value { font-size: 2em; font-weight: bold; color: #1e40af; }
+        .metric-label { color: #64748b; font-size: 0.9em; }
+        .test-results { margin: 20px 0; }
+        .test-suite { margin: 15px 0; border: 1px solid #e2e8f0; border-radius: 6px; }
+        .suite-header { background: #f8fafc; padding: 10px 15px; font-weight: bold; border-bottom: 1px solid #e2e8f0; }
+        .test-item { padding: 10px 15px; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center; }
+        .test-item:last-child { border-bottom: none; }
+        .test-status { font-weight: bold; }
+        .recommendations { background: #fef3c7; border: 1px solid #f59e0b; border-radius: 6px; padding: 15px; margin: 20px 0; }
+        .recommendations h3 { margin-top: 0; color: #92400e; }
+        .recommendations ul { margin: 0; padding-left: 20px; }
+        .recommendations li { margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📊 Rapport de Validation Utilisateur</h1>
+            <p>Généré le 28/07/2025 11:43:54</p>
+        </div>
+        
+        <div class="content">
+            <div class="metrics">
+                <div class="metric">
+                    <div class="metric-value">10</div>
+                    <div class="metric-label">Tests Total</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" style="color: #22c55e">8</div>
+                    <div class="metric-label">Réussis</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" style="color: #ef4444">2</div>
+                    <div class="metric-label">Échoués</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">80.0%</div>
+                    <div class="metric-label">Taux de Réussite</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value">27s</div>
+                    <div class="metric-label">Durée Totale</div>
+                </div>
+            </div>
+
+            <div class="test-results">
+                <h2>Résultats Détaillés</h2>
+                
+                    <div class="test-suite">
+                        <div class="suite-header">Parcours utilisateur complet</div>
+                        
+                            <div class="test-item">
+                                <span>
+                                    <span class="test-status" style="color: #22c55e">
+                                        ✅ user-journey-novice
+                                    </span>
+                                    
+                                </span>
+                                <span style="color: #64748b">2302ms</span>
+                            </div>
+                        
+                            <div class="test-item">
+                                <span>
+                                    <span class="test-status" style="color: #22c55e">
+                                        ✅ user-journey-expert
+                                    </span>
+                                    
+                                </span>
+                                <span style="color: #64748b">1544ms</span>
+                            </div>
+                        
+                    </div>
+                
+                    <div class="test-suite">
+                        <div class="suite-header">Téléchargements et leads</div>
+                        
+                            <div class="test-item">
+                                <span>
+                                    <span class="test-status" style="color: #22c55e">
+                                        ✅ resource-download
+                                    </span>
+                                    
+                                </span>
+                                <span style="color: #64748b">3394ms</span>
+                            </div>
+                        
+                            <div class="test-item">
+                                <span>
+                                    <span class="test-status" style="color: #22c55e">
+                                        ✅ lead-generation
+                                    </span>
+                                    
+                                </span>
+                                <span style="color: #64748b">1685ms</span>
+                            </div>
+                        
+                    </div>
+                
+                    <div class="test-suite">
+                        <div class="suite-header">Conversions</div>
+                        
+                            <div class="test-item">
+                                <span>
+                                    <span class="test-status" style="color: #ef4444">
+                                        ❌ diagnostic-conversion
+                                    </span>
+                                    <br><small style="color: #ef4444">Échec simulé pour diagnostic-conversion</small>
+                                </span>
+                                <span style="color: #64748b">2156ms</span>
+                            </div>
+                        
+                            <div class="test-item">
+                                <span>
+                                    <span class="test-status" style="color: #22c55e">
+                                        ✅ bootcamp-conversion
+                                    </span>
+                                    
+                                </span>
+                                <span style="color: #64748b">1914ms</span>
+                            </div>
+                        
+                    </div>
+                
+                    <div class="test-suite">
+                        <div class="suite-header">Mobile et accessibilité</div>
+                        
+                            <div class="test-item">
+                                <span>
+                                    <span class="test-status" style="color: #22c55e">
+                                        ✅ mobile-experience
+                                    </span>
+                                    
+                                </span>
+                                <span style="color: #64748b">3695ms</span>
+                            </div>
+                        
+                            <div class="test-item">
+                                <span>
+                                    <span class="test-status" style="color: #ef4444">
+                                        ❌ accessibility
+                                    </span>
+                                    <br><small style="color: #ef4444">Échec simulé pour accessibility</small>
+                                </span>
+                                <span style="color: #64748b">1437ms</span>
+                            </div>
+                        
+                    </div>
+                
+                    <div class="test-suite">
+                        <div class="suite-header">Performance</div>
+                        
+                            <div class="test-item">
+                                <span>
+                                    <span class="test-status" style="color: #22c55e">
+                                        ✅ performance
+                                    </span>
+                                    
+                                </span>
+                                <span style="color: #64748b">3827ms</span>
+                            </div>
+                        
+                            <div class="test-item">
+                                <span>
+                                    <span class="test-status" style="color: #22c55e">
+                                        ✅ core-web-vitals
+                                    </span>
+                                    
+                                </span>
+                                <span style="color: #64748b">1002ms</span>
+                            </div>
+                        
+                    </div>
+                
+            </div>
+
+            <div class="recommendations">
+                <h3>🎯 Recommandations</h3>
+                <ul>
+                    <li>2 test(s) ont échoué - Vérifier les logs détaillés</li><li>Problèmes d'accessibilité détectés - Vérifier WCAG 2.1 AA</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

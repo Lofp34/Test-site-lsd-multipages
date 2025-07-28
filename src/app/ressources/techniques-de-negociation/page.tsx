@@ -24,11 +24,27 @@ export default function TechniquesNegociation() {
           </p>
           <div className="grid gap-8 md:grid-cols-2">
             {techniques.map((tech) => (
-              <Link key={tech.slug} href={`/blog/${tech.slug}`} className="block bg-white/80 rounded-2xl shadow-lg p-8 hover:scale-105 transition-transform border-2 border-blue-ink/20 hover:border-blue-ink/60 mb-4">
+              <Link 
+                key={tech.slug} 
+                href={tech.slug === 'ne-jamais-couper-la-poire-en-deux' 
+                  ? `/ressources/techniques-de-negociation/${tech.slug}` 
+                  : `/blog/${tech.slug}`
+                } 
+                className="block bg-white/80 rounded-2xl shadow-lg p-8 hover:scale-105 transition-transform border-2 border-blue-ink/20 hover:border-blue-ink/60 mb-4"
+              >
                 <h2 className="text-xl font-title font-bold text-blue-ink mb-2">{tech.title}</h2>
                 <p className="text-gray-600 mb-1">{tech.auteur}</p>
                 <p className="text-gray-500 text-sm">{tech.remarque}</p>
-                <p className="text-mint-green font-semibold mt-2">Découvrir la technique</p>
+                <p className="text-mint-green font-semibold mt-2">
+                  {tech.slug === 'ne-jamais-couper-la-poire-en-deux' ? 'Guide complet' : 'Découvrir la technique'}
+                </p>
+                {tech.slug === 'ne-jamais-couper-la-poire-en-deux' && (
+                  <div className="mt-2">
+                    <span className="inline-block bg-red-600/20 text-red-600 text-xs font-semibold rounded-full px-2 py-1">
+                      🤝 Page dédiée
+                    </span>
+                  </div>
+                )}
               </Link>
             ))}
           </div>
