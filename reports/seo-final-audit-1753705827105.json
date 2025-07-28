@@ -1,0 +1,284 @@
+{
+  "timestamp": "2025-07-28T12:30:27.104Z",
+  "overallScore": 91,
+  "results": [
+    {
+      "category": "Métadonnées",
+      "test": "Title présent et optimisé",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Title présent et optimisé configuré correctement"
+    },
+    {
+      "category": "Métadonnées",
+      "test": "Description présente et optimisée",
+      "status": "failed",
+      "score": 0,
+      "message": "❌ Description présente et optimisée manquant ou mal configuré",
+      "recommendation": "Description entre 120-160 caractères"
+    },
+    {
+      "category": "Métadonnées",
+      "test": "Keywords présents",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Keywords présents configuré correctement"
+    },
+    {
+      "category": "Métadonnées",
+      "test": "Open Graph configuré",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Open Graph configuré configuré correctement"
+    },
+    {
+      "category": "Métadonnées",
+      "test": "Twitter Cards configurées",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Twitter Cards configurées configuré correctement"
+    },
+    {
+      "category": "Métadonnées",
+      "test": "URL canonique définie",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ URL canonique définie configuré correctement"
+    },
+    {
+      "category": "Métadonnées",
+      "test": "Longueur du titre",
+      "status": "warning",
+      "score": 50,
+      "message": "⚠️ Titre de 79 caractères (optimal: 30-60)",
+      "recommendation": "Ajuster la longueur du titre pour l'optimisation SEO"
+    },
+    {
+      "category": "Métadonnées",
+      "test": "Longueur de la description",
+      "status": "warning",
+      "score": 50,
+      "message": "⚠️ Description de 38 caractères (optimal: 120-160)",
+      "recommendation": "Ajuster la longueur de la description"
+    },
+    {
+      "category": "Données Structurées",
+      "test": "Schema Article",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Schema Article présent"
+    },
+    {
+      "category": "Données Structurées",
+      "test": "Schema HowTo",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Schema HowTo présent"
+    },
+    {
+      "category": "Données Structurées",
+      "test": "Schema FAQPage",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Schema FAQPage présent"
+    },
+    {
+      "category": "Données Structurées",
+      "test": "Schema BreadcrumbList",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Schema BreadcrumbList présent"
+    },
+    {
+      "category": "Données Structurées",
+      "test": "Schema Person (Laurent Serre)",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Schema Person (Laurent Serre) présent"
+    },
+    {
+      "category": "Données Structurées",
+      "test": "Schema ProfessionalService",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Schema ProfessionalService présent"
+    },
+    {
+      "category": "Données Structurées",
+      "test": "Validité JSON Schema 1",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Schema 1 JSON valide"
+    },
+    {
+      "category": "Données Structurées",
+      "test": "Validité JSON Schema 2",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Schema 2 JSON valide"
+    },
+    {
+      "category": "Maillage Interne",
+      "test": "Nombre de liens internes",
+      "status": "failed",
+      "score": 60,
+      "message": "❌ 6 liens internes (objectif: ≥10)",
+      "recommendation": "Ajouter plus de liens internes vers les pages du cocon sémantique"
+    },
+    {
+      "category": "Maillage Interne",
+      "test": "Qualité des ancres",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ 100% d'ancres de qualité"
+    },
+    {
+      "category": "Indexation",
+      "test": "Configuration robots.txt",
+      "status": "warning",
+      "score": 50,
+      "message": "⚠️ Robots.txt pourrait bloquer l'indexation",
+      "recommendation": "Vérifier la configuration robots.txt"
+    },
+    {
+      "category": "Indexation",
+      "test": "Sitemap inclut la technique",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Page technique incluse dans le sitemap"
+    },
+    {
+      "category": "Indexation",
+      "test": "Priorités sitemap",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Priorités définies dans le sitemap"
+    },
+    {
+      "category": "Performance SEO",
+      "test": "Optimisation images",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Formats d'images modernes configurés (AVIF, WebP)"
+    },
+    {
+      "category": "Performance SEO",
+      "test": "Compression activée",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Compression configurée"
+    },
+    {
+      "category": "Performance SEO",
+      "test": "Lazy loading configuré",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Lazy loading des composants configuré"
+    },
+    {
+      "category": "Performance SEO",
+      "test": "Resource hints",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Resource hints configurés"
+    },
+    {
+      "category": "Rich Snippets",
+      "test": "Schema HowTo pour guide étape par étape",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Schema HowTo pour guide étape par étape configuré"
+    },
+    {
+      "category": "Rich Snippets",
+      "test": "Schema FAQPage pour questions fréquentes",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Schema FAQPage pour questions fréquentes configuré"
+    },
+    {
+      "category": "Rich Snippets",
+      "test": "Schema Article avec auteur et date",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Schema Article avec auteur et date configuré"
+    },
+    {
+      "category": "Rich Snippets",
+      "test": "Breadcrumb markup",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Breadcrumb markup configuré"
+    },
+    {
+      "category": "Rich Snippets",
+      "test": "Rating/Review schema",
+      "status": "warning",
+      "score": 60,
+      "message": "⚠️ Rating/Review schema manquant",
+      "recommendation": "Schema de notation pour crédibilité"
+    },
+    {
+      "category": "Rich Snippets",
+      "test": "Featured snippet: speakable",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Élément speakable configuré pour featured snippets"
+    },
+    {
+      "category": "Rich Snippets",
+      "test": "Featured snippet: mainEntity",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Élément mainEntity configuré pour featured snippets"
+    },
+    {
+      "category": "Rich Snippets",
+      "test": "Featured snippet: about",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Élément about configuré pour featured snippets"
+    },
+    {
+      "category": "Rich Snippets",
+      "test": "Featured snippet: mentions",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Élément mentions configuré pour featured snippets"
+    },
+    {
+      "category": "Monitoring",
+      "test": "Google Analytics configuré",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Google Analytics configuré"
+    },
+    {
+      "category": "Monitoring",
+      "test": "Search Console ready",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Prêt pour Search Console"
+    },
+    {
+      "category": "Monitoring",
+      "test": "Core Web Vitals monitoring",
+      "status": "passed",
+      "score": 100,
+      "message": "✅ Monitoring Core Web Vitals configuré"
+    }
+  ],
+  "criticalIssues": [
+    "Métadonnées: ❌ Description présente et optimisée manquant ou mal configuré",
+    "Maillage Interne: ❌ 6 liens internes (objectif: ≥10)"
+  ],
+  "recommendations": [
+    "Description entre 120-160 caractères",
+    "Ajuster la longueur du titre pour l'optimisation SEO",
+    "Ajuster la longueur de la description",
+    "Ajouter plus de liens internes vers les pages du cocon sémantique",
+    "Vérifier la configuration robots.txt",
+    "Schema de notation pour crédibilité"
+  ],
+  "readyForProduction": false
+}

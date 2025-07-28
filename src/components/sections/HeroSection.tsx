@@ -1,99 +1,187 @@
 'use client';
 
-import Image from 'next/image';
-import Button from "@/components/ui/Button";
+import React from 'react';
+import AnimatedSection from '@/components/ui/AnimatedSection';
+import ParticleBackground from '@/components/ui/ParticleBackground';
+import { NegotiationTechnique } from '@/types/negotiation-technique';
 
-export default function HeroSection() {
-  const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
+interface HeroSectionProps {
+  technique: NegotiationTechnique;
+}
+
+const HeroSection: React.FC<HeroSectionProps> = ({ technique }) => {
+  // Transform technique data for hero display
+  const heroData = {
+    technique: {
+      title: technique.title,
+      author: technique.author,
+      context: technique.origin,
+      description: technique.description,
+      keyBenefit: technique.psychologyPrinciples[0] || 'Technique de négociation avancée'
+    },
+    stats: {
+      successRate: technique.successMetrics.find(m => m.metric.includes('marge'))?.value || '85%',
+      applicationContext: technique.businessApplications[0] || 'Négociations B2B',
+      difficultyLevel: technique.difficultyLevel === 'intermediate' ? 'Intermédiaire' : 
+                      technique.difficultyLevel === 'advanced' ? 'Avancé' : 'Débutant'
+    }
   };
 
   return (
-    <section className="min-h-screen relative overflow-hidden flex items-center justify-center pt-20">
-      {/* Image de fond avec overlay */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/laurent.jpg"
-          alt="Photo de Laurent Serre, consultant et formateur en développement commercial"
-          fill
-          sizes="100vw"
-          className="object-cover object-center"
-          priority
-        />
-        <div className="absolute inset-0 bg-blue-ink/60"></div>
-      </div>
+    <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+      {/* ParticleBackground avec thème négociation */}
+      <ParticleBackground 
+        density={30}
+        speed={0.3}
+        color="#DC2626"
+        opacity={0.4}
+        className="absolute inset-0"
+      />
+      
+      {/* Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-red-600 via-orange-500/10 to-primary-bg" />
+      
+      {/* Content Container */}
+      <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
+        <AnimatedSection animation="fade-in" delay={0}>
+          {/* FBI Badge */}
+          <div className="inline-flex items-center gap-2 bg-red-600/20 backdrop-blur-sm border border-red-500/30 rounded-full px-6 py-2 mb-6">
+            <span className="text-2xl" role="img" aria-label="FBI">🎯</span>
+            <span className="text-red-600 font-semibold text-sm uppercase tracking-wide">
+              Technique FBI
+            </span>
+          </div>
+        </AnimatedSection>
 
-      {/* Background decorative elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-mint-green rounded-full mix-blend-multiply filter blur-xl animate-float"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-orange-soft rounded-full mix-blend-multiply filter blur-xl animate-float" style={{ animationDelay: '2s' }}></div>
-      </div>
+        <AnimatedSection animation="slide-up" delay={100}>
+          {/* Main Title - SEO Optimized */}
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-primary-title mb-6 leading-tight">
+            <span className="block">{heroData.technique.title}</span>
+            <span className="block text-2xl md:text-3xl lg:text-4xl text-red-600 mt-2 font-medium">
+              Technique FBI de {heroData.technique.author}
+            </span>
+          </h1>
+        </AnimatedSection>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-        <div className="space-y-6 sm:space-y-8 animate-fade-in-up">
-          {/* Badge d'expertise */}
-          <div className="animate-fade-in-up mb-8">
-            <div className="inline-flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-6 py-3 rounded-full">
-              <span className="w-3 h-3 bg-mint-green rounded-full animate-pulse"></span>
-              <span className="font-title font-semibold text-mint-green text-sm md:text-base">
-                +20 ans d&apos;expertise • Accompagnement commercial sur-mesure
-              </span>
+        <AnimatedSection animation="slide-up" delay={200}>
+          {/* Context Badge */}
+          <div className="inline-block bg-orange-500/20 backdrop-blur-sm border border-orange-400/30 rounded-lg px-4 py-2 mb-6">
+            <span className="text-orange-600 font-medium">
+              {heroData.technique.context}
+            </span>
+          </div>
+        </AnimatedSection>
+
+        <AnimatedSection animation="slide-up" delay={300}>
+          {/* Description */}
+          <p className="text-lg md:text-xl text-primary-secondary/90 mb-8 leading-relaxed max-w-3xl mx-auto">
+            {heroData.technique.description.substring(0, 200)}...
+          </p>
+        </AnimatedSection>
+
+        <AnimatedSection animation="slide-up" delay={400}>
+          {/* Key Benefit Highlight */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-8 border border-red-500/20 max-w-2xl mx-auto">
+            <div className="flex items-center gap-3 mb-3">
+              <div className="w-10 h-10 bg-red-600 rounded-full flex items-center justify-center">
+                <span className="text-white text-xl">💡</span>
+              </div>
+              <h2 className="text-xl font-semibold text-red-600">
+                Principe Fondamental
+              </h2>
+            </div>
+            <p className="text-primary-secondary/90 leading-relaxed">
+              {heroData.technique.keyBenefit}
+            </p>
+          </div>
+        </AnimatedSection>
+
+        <AnimatedSection animation="slide-up" delay={500}>
+          {/* Stats Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-red-500/20">
+              <div className="text-3xl font-bold text-red-600 mb-2">
+                {heroData.stats.successRate}
+              </div>
+              <div className="text-sm text-primary-secondary/70 uppercase tracking-wide">
+                Taux de Réussite
+              </div>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-orange-500/20">
+              <div className="text-3xl font-bold text-orange-600 mb-2">
+                {heroData.stats.difficultyLevel}
+              </div>
+              <div className="text-sm text-primary-secondary/70 uppercase tracking-wide">
+                Niveau
+              </div>
+            </div>
+            
+            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-amber-500/20">
+              <div className="text-lg font-bold text-amber-600 mb-2">
+                B2B PME
+              </div>
+              <div className="text-sm text-primary-secondary/70 uppercase tracking-wide">
+                Application
+              </div>
             </div>
           </div>
+        </AnimatedSection>
 
-          {/* Titre punchy */}
-          <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-title font-extrabold text-white leading-tight drop-shadow-lg">
-            <span className="block">De l&apos;effort commercial</span>
-            <span className="block text-mint-green">au levier stratégique</span>
-          </h1>
-
-          {/* Sous-titre inspirant */}
-          <div className="max-w-5xl mx-auto space-y-4 sm:space-y-6">
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-body text-white/95 leading-relaxed drop-shadow-md px-2">
-              Je structure votre force de vente pour en faire une équipe engagée, 
-              qui applique une méthodologie claire pour une performance commerciale durable.
-            </p>
-            
-            <p className="text-base sm:text-lg md:text-xl font-italic text-white/90 leading-relaxed drop-shadow-sm px-2">
-              Mon approche, issue de 20 ans d&apos;expérience terrain et augmentée par l&apos;IA, 
-              est conçue pour améliorer votre performance commerciale, durablement.
-            </p>
-          </div>
-
-          {/* CTAs principaux */}
-          <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row justify-center items-center pt-6 sm:pt-8 pb-12 sm:pb-16 px-4">
-            <Button 
-              variant="primary"
-              size="lg"
-              icon="🎯"
-              onClick={() => scrollToSection('diagnostic')}
-              className="w-full sm:w-auto"
+        <AnimatedSection animation="slide-up" delay={600}>
+          {/* CTA Button */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button 
+              className="group relative bg-gradient-to-r from-red-600 to-orange-600 hover:from-red-700 hover:to-orange-700 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+              onClick={() => {
+                document.getElementById('guide')?.scrollIntoView({ 
+                  behavior: 'smooth' 
+                });
+              }}
             >
-              Faire le diagnostic gratuit
-            </Button>
+              <span className="relative z-10 flex items-center gap-2">
+                Découvrir la technique complète
+                <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
+              </span>
+              <div className="absolute inset-0 bg-gradient-to-r from-red-700 to-orange-700 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            </button>
             
-            <Button 
-              variant="outline"
-              size="lg"
-              icon="📊"
-              onClick={() => scrollToSection('cas-clients')}
-              className="w-full sm:w-auto"
+            <button 
+              className="text-red-600 hover:text-red-700 font-medium px-6 py-4 border border-red-600/30 hover:border-red-600/50 rounded-lg transition-all duration-300 backdrop-blur-sm hover:bg-red-600/5"
+              onClick={() => {
+                document.getElementById('cases')?.scrollIntoView({ 
+                  behavior: 'smooth' 
+                });
+              }}
             >
-              Voir les cas clients
-            </Button>
+              Voir les cas clients PME
+            </button>
           </div>
-        </div>
+        </AnimatedSection>
+
+        <AnimatedSection animation="fade-in" delay={700}>
+          {/* Scroll Indicator */}
+          <div className="mt-12 flex flex-col items-center">
+            <div className="text-primary-secondary/60 text-sm mb-2">
+              Découvrez la méthode complète
+            </div>
+            <div className="w-6 h-10 border-2 border-red-600/30 rounded-full flex justify-center">
+              <div className="w-1 h-3 bg-red-600 rounded-full mt-2 animate-bounce" />
+            </div>
+          </div>
+        </AnimatedSection>
       </div>
 
-      {/* Indicateur de scroll - repositionné */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-        <div className="w-6 h-10 border-2 border-mint-green rounded-full flex justify-center bg-white/10 backdrop-blur-sm shadow-lg">
-          <div className="w-1 h-3 bg-mint-green rounded-full mt-2 animate-pulse"></div>
-        </div>
-      </div>
+      {/* Performance optimization: Preload critical resources */}
+      <link 
+        rel="preload" 
+        href="/fonts/inter.woff2" 
+        as="font" 
+        type="font/woff2" 
+        crossOrigin="anonymous" 
+      />
     </section>
   );
-} 
+};
+
+export default HeroSection;
