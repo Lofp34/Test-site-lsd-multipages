@@ -301,39 +301,39 @@ const NavigationLinks: React.FC<NavigationLinksProps> = ({ current }) => {
   );
 };
 
-// Composant Liens vers formations
+// Composant Liens vers formations EXISTANTES
 const FormationLinks: React.FC<FormationLinksProps> = ({ currentCategory }) => {
   const getFormationByCategory = () => {
     switch (currentCategory) {
       case 'psychology':
         return {
-          title: 'Formation Psychologie de la Négociation',
-          description: 'Maîtrisez les techniques psychologiques avancées',
-          url: '/formation-psychologie-negociation'
+          title: 'Formation Commerciale PME',
+          description: 'Maîtrisez les techniques psychologiques et commerciales',
+          url: '/formation-commerciale-pme' // ✅ PAGE EXISTANTE
         };
       case 'closing':
         return {
-          title: 'Bootcamp Closing Commercial',
-          description: 'Techniques de conclusion et signature',
-          url: '/bootcamp-closing-commercial'
+          title: 'Bootcamp Commercial Intensif',
+          description: 'Techniques de conclusion et négociation avancées',
+          url: '/bootcamp-commercial-intensif' // ✅ PAGE EXISTANTE
         };
       case 'preparation':
         return {
-          title: 'Formation Préparation Négociation',
-          description: 'Méthodologie et outils de préparation',
-          url: '/formation-preparation-negociation'
+          title: 'Coaching Commercial Entreprise',
+          description: 'Préparation personnalisée de vos négociations',
+          url: '/coach-commercial-entreprise' // ✅ PAGE EXISTANTE
         };
       case 'objection-handling':
         return {
-          title: 'Masterclass Gestion d\'Objections',
-          description: 'Transformer les objections en opportunités',
-          url: '/masterclass-objections'
+          title: 'Expert Développement Commercial',
+          description: 'Transformer les objections en opportunités PME',
+          url: '/expert-developpement-commercial-pme' // ✅ PAGE EXISTANTE
         };
       default:
         return {
-          title: 'Formation Négociation Complète',
-          description: 'Programme complet toutes techniques',
-          url: '/formation-negociation-complete'
+          title: 'Formation Commerciale Complète',
+          description: 'Programme complet pour PME',
+          url: '/formation-commerciale-pme' // ✅ PAGE EXISTANTE
         };
     }
   };
@@ -351,19 +351,21 @@ const FormationLinks: React.FC<FormationLinksProps> = ({ currentCategory }) => {
             {formation.description}
           </p>
           <div className="flex items-center gap-4 text-sm text-gray-500">
-            <span>✓ Certification incluse</span>
-            <span>✓ Suivi 3 mois</span>
+            <span>✓ Expertise Laurent Serre</span>
+            <span>✓ Méthodes éprouvées</span>
             <span>✓ Cas pratiques PME</span>
           </div>
         </div>
         
-        <Button
-          variant="primary"
-          size="md"
-          icon={<span>🚀</span>}
-        >
-          Découvrir
-        </Button>
+        <Link href={formation.url}>
+          <Button
+            variant="primary"
+            size="md"
+            icon={<span>🚀</span>}
+          >
+            Découvrir
+          </Button>
+        </Link>
       </div>
     </div>
   );
@@ -494,13 +496,13 @@ const RelatedTechniques: React.FC<RelatedTechniquesProps> = ({ current, relatedT
                   </Button>
                 </Link>
                 
-                <Link href="/ressources">
+                <Link href="/ressources/le-grand-guide-des-techniques-de-vente">
                   <Button
                     variant="outline"
                     size="lg"
-                    icon={<span>🏠</span>}
+                    icon={<span>📖</span>}
                   >
-                    Centre de ressources
+                    Guide complet
                   </Button>
                 </Link>
               </div>

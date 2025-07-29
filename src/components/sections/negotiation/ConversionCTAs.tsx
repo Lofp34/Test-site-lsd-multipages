@@ -154,31 +154,35 @@ const ProgressBasedCTA: React.FC<ProgressBasedCTAProps> = ({ technique, readingP
         description: "Vous venez de commencer à explorer cette technique. Obtenez un diagnostic personnalisé pour voir comment l'appliquer dans votre contexte.",
         ctaText: "Diagnostic gratuit",
         ctaIcon: "🎯",
-        variant: "outline" as const
+        variant: "outline" as const,
+        href: "/diagnostic" // ✅ PAGE EXISTANTE
       };
     } else if (readingProgress < 50) {
       return {
         title: "Approfondissez vos connaissances",
-        description: "Vous progressez bien ! Accédez à notre formation complète pour maîtriser tous les aspects de cette technique.",
-        ctaText: "Voir la formation",
+        description: "Vous progressez bien ! Accédez à notre formation PME complète pour maîtriser tous les aspects de cette technique.",
+        ctaText: "Formation PME",
         ctaIcon: "📚",
-        variant: "secondary" as const
+        variant: "secondary" as const,
+        href: "/formation-commerciale-pme" // ✅ PAGE EXISTANTE
       };
     } else if (readingProgress < 75) {
       return {
         title: "Passez à la pratique",
         description: "Vous avez une bonne compréhension. Un coaching personnalisé vous aidera à appliquer efficacement cette technique.",
-        ctaText: "Coaching individuel",
+        ctaText: "Coaching entreprise",
         ctaIcon: "🎯",
-        variant: "primary" as const
+        variant: "primary" as const,
+        href: "/coach-commercial-entreprise" // ✅ PAGE EXISTANTE
       };
     } else {
       return {
         title: "Excellente progression !",
-        description: "Vous maîtrisez les concepts. Rejoignez notre programme avancé pour devenir expert en négociation.",
-        ctaText: "Programme expert",
+        description: "Vous maîtrisez les concepts. Découvrez notre expertise complète en développement commercial PME.",
+        ctaText: "Expertise PME",
         ctaIcon: "🏆",
-        variant: "primary" as const
+        variant: "primary" as const,
+        href: "/expert-developpement-commercial-pme" // ✅ PAGE EXISTANTE
       };
     }
   };
@@ -195,6 +199,8 @@ const ProgressBasedCTA: React.FC<ProgressBasedCTAProps> = ({ technique, readingP
         reading_progress: readingProgress
       });
     }
+    // Redirection vers page existante
+    window.location.href = cta.href;
   };
 
   return (
@@ -245,6 +251,8 @@ const StickyBottomCTA: React.FC<StickyBottomCTAProps> = ({ technique, isVisible 
         technique_id: technique.id
       });
     }
+    // Redirection vers diagnostic existant
+    window.location.href = "/diagnostic";
   };
 
   if (!isVisible) return null;
@@ -319,6 +327,8 @@ const UrgencyBanner: React.FC<UrgencyBannerProps> = ({ technique }) => {
         technique_id: technique.id
       });
     }
+    // Redirection vers diagnostic existant
+    window.location.href = "/diagnostic";
   };
 
   return (
@@ -400,7 +410,7 @@ const ConversionCTAs: React.FC<ConversionCTAsProps> = ({ technique }) => {
     return () => window.removeEventListener('scroll', calculateReadingProgress);
   }, []);
 
-  // Définir les CTAs principaux
+  // Définir les CTAs principaux - TOUS VERS PAGES EXISTANTES
   const mainCTAs = [
     {
       title: "Diagnostic gratuit personnalisé",
@@ -415,6 +425,7 @@ const ConversionCTAs: React.FC<ConversionCTAsProps> = ({ technique }) => {
       ctaIcon: "🎯",
       variant: "primary" as const,
       socialProof: "Déjà 847 dirigeants PME accompagnés",
+      href: "/diagnostic", // ✅ PAGE EXISTANTE
       onClick: () => {
         if (typeof window !== 'undefined' && window.gtag) {
           window.gtag('event', 'diagnostic_cta_click', {
@@ -423,10 +434,11 @@ const ConversionCTAs: React.FC<ConversionCTAsProps> = ({ technique }) => {
             technique_id: technique.id
           });
         }
+        window.location.href = "/diagnostic";
       }
     },
     {
-      title: "Formation complète en négociation",
+      title: "Bootcamp commercial intensif",
       description: "Maîtrisez cette technique et 6 autres méthodes éprouvées dans notre bootcamp intensif spécialement conçu pour les PME.",
       benefits: [
         "7 techniques de négociation avancées",
@@ -434,23 +446,25 @@ const ConversionCTAs: React.FC<ConversionCTAsProps> = ({ technique }) => {
         "Certification Laurent Serre",
         "Suivi post-formation 3 mois"
       ],
-      ctaText: "Découvrir la formation",
+      ctaText: "Découvrir le bootcamp",
       ctaIcon: "🚀",
       variant: "secondary" as const,
       urgency: "Places limitées",
       socialProof: "4.9/5 - 156 avis clients",
+      href: "/bootcamp-commercial-intensif", // ✅ PAGE EXISTANTE
       onClick: () => {
         if (typeof window !== 'undefined' && window.gtag) {
-          window.gtag('event', 'formation_cta_click', {
+          window.gtag('event', 'bootcamp_cta_click', {
             event_category: 'Conversion',
-            event_label: 'Main Formation CTA',
+            event_label: 'Main Bootcamp CTA',
             technique_id: technique.id
           });
         }
+        window.location.href = "/bootcamp-commercial-intensif";
       }
     },
     {
-      title: "Coaching individuel intensif",
+      title: "Coaching commercial entreprise",
       description: "Accompagnement personnalisé pour intégrer cette technique dans votre style de négociation et vos processus commerciaux.",
       benefits: [
         "Sessions 1-to-1 avec Laurent Serre",
@@ -462,6 +476,7 @@ const ConversionCTAs: React.FC<ConversionCTAsProps> = ({ technique }) => {
       ctaIcon: "👨‍💼",
       variant: "outline" as const,
       socialProof: "92% de réussite mesurée",
+      href: "/coach-commercial-entreprise", // ✅ PAGE EXISTANTE
       onClick: () => {
         if (typeof window !== 'undefined' && window.gtag) {
           window.gtag('event', 'coaching_cta_click', {
@@ -470,6 +485,7 @@ const ConversionCTAs: React.FC<ConversionCTAsProps> = ({ technique }) => {
             technique_id: technique.id
           });
         }
+        window.location.href = "/coach-commercial-entreprise";
       }
     }
   ];
