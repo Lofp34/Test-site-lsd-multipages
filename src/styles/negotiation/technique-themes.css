@@ -1,0 +1,377 @@
+/* Thèmes visuels pour les techniques de négociation */
+/* Chaque technique a son identité visuelle unique */
+
+/* Variables CSS globales pour les thèmes */
+:root {
+  --technique-primary: #DC2626;
+  --technique-secondary: #EA580C;
+  --technique-accent: #F59E0B;
+  --technique-particle: #DC2626;
+  --technique-gradient-from: from-red-600;
+  --technique-gradient-via: via-orange-500/10;
+  --technique-gradient-to: to-primary-bg;
+}
+
+/* Classe de base pour toutes les pages de techniques */
+.technique-page {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Thème Effet Miroir - Bleu empathie */
+.theme-effet-miroir {
+  --technique-primary: #4F46E5;
+  --technique-secondary: #6366F1;
+  --technique-accent: #8B5CF6;
+  --technique-particle: #4F46E5;
+}
+
+.theme-effet-miroir .hero-section {
+  background: linear-gradient(135deg, #4F46E5 0%, rgba(99, 102, 241, 0.1) 50%, var(--primary-bg) 100%);
+}
+
+.theme-effet-miroir .technique-badge {
+  background: rgba(79, 70, 229, 0.2);
+  color: #4F46E5;
+  border: 1px solid rgba(79, 70, 229, 0.3);
+}
+
+.theme-effet-miroir .cta-primary {
+  background: linear-gradient(135deg, #4F46E5 0%, #6366F1 100%);
+  box-shadow: 0 4px 20px rgba(79, 70, 229, 0.3);
+}
+
+.theme-effet-miroir .cta-primary:hover {
+  background: linear-gradient(135deg, #3730A3 0%, #4F46E5 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.4);
+}
+
+/* Thème Silence Stratégique - Gris mystère */
+.theme-silence-strategique {
+  --technique-primary: #6B7280;
+  --technique-secondary: #9CA3AF;
+  --technique-accent: #374151;
+  --technique-particle: #6B7280;
+}
+
+.theme-silence-strategique .hero-section {
+  background: linear-gradient(135deg, #6B7280 0%, rgba(156, 163, 175, 0.1) 50%, var(--primary-bg) 100%);
+}
+
+.theme-silence-strategique .technique-badge {
+  background: rgba(107, 114, 128, 0.2);
+  color: #6B7280;
+  border: 1px solid rgba(107, 114, 128, 0.3);
+}
+
+.theme-silence-strategique .cta-primary {
+  background: linear-gradient(135deg, #6B7280 0%, #9CA3AF 100%);
+  box-shadow: 0 4px 20px rgba(107, 114, 128, 0.3);
+}
+
+.theme-silence-strategique .cta-primary:hover {
+  background: linear-gradient(135deg, #4B5563 0%, #6B7280 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(107, 114, 128, 0.4);
+}
+
+/* Thème Négociation Raisonnée - Vert équilibre */
+.theme-negociation-raisonnee {
+  --technique-primary: #10B981;
+  --technique-secondary: #34D399;
+  --technique-accent: #059669;
+  --technique-particle: #10B981;
+}
+
+.theme-negociation-raisonnee .hero-section {
+  background: linear-gradient(135deg, #10B981 0%, rgba(52, 211, 153, 0.1) 50%, var(--primary-bg) 100%);
+}
+
+.theme-negociation-raisonnee .technique-badge {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10B981;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.theme-negociation-raisonnee .cta-primary {
+  background: linear-gradient(135deg, #10B981 0%, #34D399 100%);
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+}
+
+.theme-negociation-raisonnee .cta-primary:hover {
+  background: linear-gradient(135deg, #047857 0%, #10B981 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.4);
+}
+
+/* Thème Ancrage Tactique - Orange influence */
+.theme-ancrage-tactique {
+  --technique-primary: #F59E0B;
+  --technique-secondary: #FBBF24;
+  --technique-accent: #D97706;
+  --technique-particle: #F59E0B;
+}
+
+.theme-ancrage-tactique .hero-section {
+  background: linear-gradient(135deg, #F59E0B 0%, rgba(251, 191, 36, 0.1) 50%, var(--primary-bg) 100%);
+}
+
+.theme-ancrage-tactique .technique-badge {
+  background: rgba(245, 158, 11, 0.2);
+  color: #F59E0B;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.theme-ancrage-tactique .cta-primary {
+  background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 100%);
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.3);
+}
+
+.theme-ancrage-tactique .cta-primary:hover {
+  background: linear-gradient(135deg, #D97706 0%, #F59E0B 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(245, 158, 11, 0.4);
+}
+
+/* Thème Oui Progressif - Violet persuasion */
+.theme-oui-progressif {
+  --technique-primary: #8B5CF6;
+  --technique-secondary: #A78BFA;
+  --technique-accent: #7C3AED;
+  --technique-particle: #8B5CF6;
+}
+
+.theme-oui-progressif .hero-section {
+  background: linear-gradient(135deg, #8B5CF6 0%, rgba(167, 139, 250, 0.1) 50%, var(--primary-bg) 100%);
+}
+
+.theme-oui-progressif .technique-badge {
+  background: rgba(139, 92, 246, 0.2);
+  color: #8B5CF6;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+}
+
+.theme-oui-progressif .cta-primary {
+  background: linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%);
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
+}
+
+.theme-oui-progressif .cta-primary:hover {
+  background: linear-gradient(135deg, #7C3AED 0%, #8B5CF6 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(139, 92, 246, 0.4);
+}
+
+/* Thème Recadrage de Valeur - Teal transformation */
+.theme-recadrage-valeur {
+  --technique-primary: #14B8A6;
+  --technique-secondary: #5EEAD4;
+  --technique-accent: #0F766E;
+  --technique-particle: #14B8A6;
+}
+
+.theme-recadrage-valeur .hero-section {
+  background: linear-gradient(135deg, #14B8A6 0%, rgba(94, 234, 212, 0.1) 50%, var(--primary-bg) 100%);
+}
+
+.theme-recadrage-valeur .technique-badge {
+  background: rgba(20, 184, 166, 0.2);
+  color: #14B8A6;
+  border: 1px solid rgba(20, 184, 166, 0.3);
+}
+
+.theme-recadrage-valeur .cta-primary {
+  background: linear-gradient(135deg, #14B8A6 0%, #5EEAD4 100%);
+  box-shadow: 0 4px 20px rgba(20, 184, 166, 0.3);
+}
+
+.theme-recadrage-valeur .cta-primary:hover {
+  background: linear-gradient(135deg, #0F766E 0%, #14B8A6 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(20, 184, 166, 0.4);
+}
+
+/* Thème Concession Calculée - Rouge stratégie */
+.theme-concession-calculee {
+  --technique-primary: #EF4444;
+  --technique-secondary: #F87171;
+  --technique-accent: #DC2626;
+  --technique-particle: #EF4444;
+}
+
+.theme-concession-calculee .hero-section {
+  background: linear-gradient(135deg, #EF4444 0%, rgba(248, 113, 113, 0.1) 50%, var(--primary-bg) 100%);
+}
+
+.theme-concession-calculee .technique-badge {
+  background: rgba(239, 68, 68, 0.2);
+  color: #EF4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.theme-concession-calculee .cta-primary {
+  background: linear-gradient(135deg, #EF4444 0%, #F87171 100%);
+  box-shadow: 0 4px 20px rgba(239, 68, 68, 0.3);
+}
+
+.theme-concession-calculee .cta-primary:hover {
+  background: linear-gradient(135deg, #DC2626 0%, #EF4444 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(239, 68, 68, 0.4);
+}
+
+/* Styles communs pour tous les thèmes */
+.technique-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.technique-badge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  background: transparent;
+  border: 2px solid var(--technique-primary);
+  color: var(--technique-primary);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cta-secondary:hover {
+  background: var(--technique-primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations pour les particules de fond */
+.technique-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.technique-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: var(--technique-particle);
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float 6s ease-in-out infinite;
+}
+
+.technique-particle:nth-child(2n) {
+  animation-delay: -2s;
+  animation-duration: 8s;
+}
+
+.technique-particle:nth-child(3n) {
+  animation-delay: -4s;
+  animation-duration: 10s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+    opacity: 0.3;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .technique-badge {
+    font-size: 0.75rem;
+    padding: 0.375rem 0.75rem;
+  }
+  
+  .cta-primary,
+  .cta-secondary {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* Mode sombre */
+@media (prefers-color-scheme: dark) {
+  .technique-badge {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .technique-particle {
+    opacity: 0.4;
+  }
+}
+
+/* Accessibilité */
+@media (prefers-reduced-motion: reduce) {
+  .technique-particle {
+    animation: none;
+  }
+  
+  .cta-primary:hover,
+  .cta-secondary:hover,
+  .technique-badge:hover {
+    transform: none;
+  }
+}
+
+/* Focus states pour l'accessibilité */
+.cta-primary:focus,
+.cta-secondary:focus {
+  outline: 2px solid var(--technique-accent);
+  outline-offset: 2px;
+}
+
+/* États de chargement */
+.technique-loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.technique-loading .cta-primary,
+.technique-loading .cta-secondary {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
