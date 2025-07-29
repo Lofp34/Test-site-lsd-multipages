@@ -335,6 +335,92 @@ export default function CoachCommercialEntreprisePage() {
         </div>
       </section>
 
+      {/* Techniques de Négociation pour Coaching */}
+      <section className="py-20 bg-gradient-to-r from-mint-green/5 to-blue-ink/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">
+              🎯 Techniques de Négociation Avancées
+            </h2>
+            <p className="text-xl text-gray-anthracite max-w-3xl mx-auto">
+              Intégrez ces techniques éprouvées dans votre coaching pour développer l'expertise négociation de vos commerciaux
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link 
+              href="/ressources/techniques-de-negociation/recadrage-valeur"
+              className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 hover:border-mint-green/40"
+            >
+              <div className="flex items-start gap-4">
+                <span className="text-3xl">🔄</span>
+                <div>
+                  <h3 className="font-title font-bold text-blue-ink group-hover:text-mint-green mb-2">
+                    Le recadrage de valeur
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Transformer chaque objection en opportunité de découverte - Essentiel en coaching
+                  </p>
+                  <span className="text-mint-green font-semibold text-sm">
+                    Guide coaching →
+                  </span>
+                </div>
+              </div>
+            </Link>
+            
+            <Link 
+              href="/ressources/techniques-de-negociation/effet-miroir"
+              className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 hover:border-mint-green/40"
+            >
+              <div className="flex items-start gap-4">
+                <span className="text-3xl">🪞</span>
+                <div>
+                  <h3 className="font-title font-bold text-blue-ink group-hover:text-mint-green mb-2">
+                    L'effet miroir
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Technique FBI d'empathie tactique - Parfait pour développer l'écoute active
+                  </p>
+                  <span className="text-mint-green font-semibold text-sm">
+                    Guide coaching →
+                  </span>
+                </div>
+              </div>
+            </Link>
+            
+            <Link 
+              href="/ressources/techniques-de-negociation/concession-calculee"
+              className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 hover:border-mint-green/40"
+            >
+              <div className="flex items-start gap-4">
+                <span className="text-3xl">🎯</span>
+                <div>
+                  <h3 className="font-title font-bold text-blue-ink group-hover:text-mint-green mb-2">
+                    La concession calculée
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Stratégie d'échange planifié - Crucial pour éviter les concessions perdantes
+                  </p>
+                  <span className="text-mint-green font-semibold text-sm">
+                    Guide coaching →
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link 
+              href="/ressources/techniques-de-negociation"
+              className="inline-flex items-center bg-blue-ink text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-ink/90 transition-colors"
+            >
+              Toutes les techniques pour coaching
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Expert */}
       <section className="py-20 bg-blue-ink">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">

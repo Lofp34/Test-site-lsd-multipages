@@ -388,6 +388,49 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    // NOUVELLES TECHNIQUES DE NÉGOCIATION
+    {
+      url: `${baseUrl}/ressources/techniques-de-negociation/effet-miroir`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ressources/techniques-de-negociation/silence-strategique`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ressources/techniques-de-negociation/negociation-raisonnee`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ressources/techniques-de-negociation/ancrage-tactique`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ressources/techniques-de-negociation/oui-progressif`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ressources/techniques-de-negociation/recadrage-valeur`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/ressources/techniques-de-negociation/concession-calculee`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
     // LIVRES DIGITAL & AI SALES
     {
       url: `${baseUrl}/ressources/meilleurs-livres/digital-ai/the-second-machine-age`,
