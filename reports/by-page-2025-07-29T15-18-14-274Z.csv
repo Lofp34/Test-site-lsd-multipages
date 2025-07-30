@@ -1,0 +1,5 @@
+Page source,Nombre de liens morts,Impact SEO total,Impact SEO moyen,Priorité maximale,URLs concernées
+src/components/Navigation.tsx,1,24,24.0,critical,/internal/missing-page
+src/app/services/page.tsx,1,24,24.0,critical,/internal/missing-page
+src/app/resources/page.tsx,1,12,12.0,high,/downloads/missing-file.pdf
+src/app/about/page.tsx,1,6,6.0,medium,https://example.com/broken-page

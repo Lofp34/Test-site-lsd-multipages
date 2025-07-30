@@ -1,0 +1,4 @@
+URL;Priorité;Type de lien;Erreur;Impact SEO;Nombre de sources;Fichiers sources;Actions suggérées;Dernière fois fonctionnel
+/internal/missing-page;critical;internal;Page not found (404);24;2;src/components/Navigation.tsx; src/app/services/page.tsx;Vérifier si la page a été déplacée; Créer une redirection 301; PRIORITÉ CRITIQUE - Corriger immédiatement;2025-07-22T15:18:14.273Z
+/downloads/missing-file.pdf;high;download;File not found (404);12;1;src/app/resources/page.tsx;"Vérifier si le fichier existe dans le dossier public; Créer une page temporaire ""Ressource en développement""";Inconnu
+https://example.com/broken-page;medium;external;Page not found (404);6;1;src/app/about/page.tsx;Vérifier si la page a été déplacée; Rechercher une URL alternative;Inconnu

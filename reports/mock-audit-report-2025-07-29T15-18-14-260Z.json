@@ -1,0 +1,84 @@
+{
+  "timestamp": "2025-07-29T15:18:14.260Z",
+  "summary": {
+    "totalLinks": 5,
+    "validLinks": 1,
+    "brokenLinks": 3,
+    "correctedLinks": 1,
+    "pendingLinks": 1,
+    "seoHealthScore": 75
+  },
+  "brokenLinks": [
+    {
+      "url": "/internal/missing-page",
+      "sourceFiles": [
+        "src/components/Navigation.tsx",
+        "src/app/services/page.tsx"
+      ],
+      "linkType": "internal",
+      "priority": "critical",
+      "error": "Internal page not found",
+      "suggestedActions": [
+        "Vérifier si la page a été déplacée",
+        "Créer une redirection 301"
+      ],
+      "seoImpact": 24
+    },
+    {
+      "url": "/downloads/missing-file.pdf",
+      "sourceFiles": [
+        "src/app/resources/page.tsx"
+      ],
+      "linkType": "download",
+      "priority": "high",
+      "error": "File not found",
+      "suggestedActions": [
+        "Vérifier si le fichier existe",
+        "Créer une page temporaire"
+      ],
+      "seoImpact": 12
+    }
+  ],
+  "corrections": [
+    {
+      "applied": true,
+      "originalUrl": "/old-page",
+      "newUrl": "/new-page",
+      "filePath": "src/app/page.tsx",
+      "backupCreated": true,
+      "rollbackId": "rollback-001"
+    },
+    {
+      "applied": false,
+      "originalUrl": "/complex-broken-link",
+      "newUrl": "/suggested-fix",
+      "filePath": "src/components/Footer.tsx",
+      "backupCreated": false,
+      "rollbackId": "rollback-002"
+    }
+  ],
+  "recommendations": [
+    "Test recommendation 1",
+    "Test recommendation 2"
+  ],
+  "seoImpact": {
+    "criticalIssues": 1,
+    "estimatedTrafficLoss": 3.2,
+    "affectedPages": [
+      "src/components/Navigation.tsx"
+    ],
+    "priorityActions": [
+      "Corriger 1 lien critique"
+    ],
+    "linkHealthScore": 75
+  },
+  "resourceRequests": {
+    "totalRequests": 5,
+    "mostRequested": [
+      {
+        "url": "/test-resource",
+        "count": 3
+      }
+    ]
+  }
+}
