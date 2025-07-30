@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapport d'Audit des Liens - 29/07/2025</title>
+    <style>
+        :root {
+            --primary-color: #1B365D;
+            --accent-color: #00BDA4;
+            --danger-color: #EF4444;
+            --warning-color: #F59E0B;
+            --success-color: #10B981;
+            --bg-color: #F2F5F7;
+            --card-bg: #FFFFFF;
+            --text-primary: #1B365D;
+            --text-secondary: #6B7280;
+            --border-color: #E5E7EB;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .section {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .metric-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .metric-critical { color: var(--danger-color); }
+        .metric-warning { color: var(--warning-color); }
+        .metric-success { color: var(--success-color); }
+        .metric-info { color: var(--accent-color); }
+
+        .health-score {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+
+        .health-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+            margin-right: 1rem;
+        }
+
+        .health-excellent { background: var(--success-color); }
+        .health-good { background: var(--accent-color); }
+        .health-warning { background: var(--warning-color); }
+        .health-critical { background: var(--danger-color); }
+
+        .filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .filter-group label {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        select, input {
+            padding: 0.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            margin-top: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: var(--bg-color);
+            font-weight: 600;
+            color: var(--primary-color);
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover {
+            background-color: #E5E7EB;
+        }
+
+        .sortable::after {
+            content: ' ↕';
+            opacity: 0.5;
+        }
+
+        .sort-asc::after {
+            content: ' ↑';
+            opacity: 1;
+        }
+
+        .sort-desc::after {
+            content: ' ↓';
+            opacity: 1;
+        }
+
+        .priority-critical {
+            background-color: #FEF2F2;
+            color: var(--danger-color);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .priority-high {
+            background-color: #FEF3C7;
+            color: var(--warning-color);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .priority-medium {
+            background-color: #DBEAFE;
+            color: #3B82F6;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .priority-low {
+            background-color: #F0FDF4;
+            color: var(--success-color);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .link-type {
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .type-internal { background-color: #EBF8FF; color: #3182CE; }
+        .type-external { background-color: #F0FFF4; color: #38A169; }
+        .type-download { background-color: #FAF5FF; color: #805AD5; }
+        .type-anchor { background-color: #FFFBEB; color: #D69E2E; }
+
+        .url-cell {
+            max-width: 300px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .url-cell:hover {
+            white-space: normal;
+            word-break: break-all;
+        }
+
+        .actions-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .actions-list li {
+            padding: 0.25rem 0;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .actions-list li::before {
+            content: '→ ';
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .chart-container {
+            height: 300px;
+            margin: 1rem 0;
+            background: var(--card-bg);
+            border-radius: 8px;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+        }
+
+        .recommendations-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .recommendations-list li {
+            padding: 0.75rem;
+            margin: 0.5rem 0;
+            background: #F8FAFC;
+            border-left: 4px solid var(--accent-color);
+            border-radius: 4px;
+        }
+
+        .recommendations-list li::before {
+            content: '💡 ';
+            margin-right: 0.5rem;
+        }
+
+        .resource-requests {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .resource-item {
+            background: #F8FAFC;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--warning-color);
+        }
+
+        .resource-url {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            word-break: break-all;
+        }
+
+        .resource-count {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .metrics-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .filters {
+                flex-direction: column;
+            }
+
+            .table-container {
+                font-size: 0.8rem;
+            }
+
+            th, td {
+                padding: 0.5rem;
+            }
+        }
+    </style>
+    <script>
+        let currentSort = { column: null, direction: 'asc' };
+        let filteredData = [];
+
+        function initializeFilters() {
+            const priorityFilter = document.getElementById('priorityFilter');
+            const typeFilter = document.getElementById('typeFilter');
+            const searchInput = document.getElementById('searchInput');
+
+            if (priorityFilter) {
+                priorityFilter.addEventListener('change', applyFilters);
+            }
+            if (typeFilter) {
+                typeFilter.addEventListener('change', applyFilters);
+            }
+            if (searchInput) {
+                searchInput.addEventListener('input', applyFilters);
+            }
+
+            // Initialiser les données filtrées
+            const rows = document.querySelectorAll('#brokenLinksTable tbody tr');
+            filteredData = Array.from(rows);
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const priorityFilter = document.getElementById('priorityFilter');
+            const typeFilter = document.getElementById('typeFilter');
+            const searchInput = document.getElementById('searchInput');
+            
+            const priorityValue = priorityFilter ? priorityFilter.value : '';
+            const typeValue = typeFilter ? typeFilter.value : '';
+            const searchValue = searchInput ? searchInput.value.toLowerCase() : '';
+
+            const rows = document.querySelectorAll('#brokenLinksTable tbody tr');
+            let visibleCount = 0;
+
+            rows.forEach(row => {
+                const priority = row.dataset.priority || '';
+                const type = row.dataset.type || '';
+                const url = row.dataset.url || '';
+                const error = row.dataset.error || '';
+
+                const matchesPriority = !priorityValue || priority === priorityValue;
+                const matchesType = !typeValue || type === typeValue;
+                const matchesSearch = !searchValue || 
+                    url.toLowerCase().includes(searchValue) || 
+                    error.toLowerCase().includes(searchValue);
+
+                if (matchesPriority && matchesType && matchesSearch) {
+                    row.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    row.classList.add('hidden');
+                }
+            });
+
+            // Mettre à jour le compteur
+            const counter = document.getElementById('filteredCount');
+            if (counter) {
+                counter.textContent = `${visibleCount} liens affichés`;
+            }
+        }
+
+        function initializeSorting() {
+            const headers = document.querySelectorAll('#brokenLinksTable th.sortable');
+            headers.forEach(header => {
+                header.addEventListener('click', () => {
+                    const column = header.dataset.column;
+                    sortTable(column);
+                });
+            });
+        }
+
+        function sortTable(column) {
+            const table = document.getElementById('brokenLinksTable');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+
+            // Déterminer la direction du tri
+            if (currentSort.column === column) {
+                currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.column = column;
+                currentSort.direction = 'asc';
+            }
+
+            // Trier les lignes
+            rows.sort((a, b) => {
+                let aValue = a.dataset[column] || '';
+                let bValue = b.dataset[column] || '';
+
+                // Conversion pour les valeurs numériques
+                if (column === 'seoImpact') {
+                    aValue = parseInt(aValue) || 0;
+                    bValue = parseInt(bValue) || 0;
+                }
+
+                if (aValue < bValue) {
+                    return currentSort.direction === 'asc' ? -1 : 1;
+                }
+                if (aValue > bValue) {
+                    return currentSort.direction === 'asc' ? 1 : -1;
+                }
+                return 0;
+            });
+
+            // Réorganiser le DOM
+            rows.forEach(row => tbody.appendChild(row));
+
+            // Mettre à jour les indicateurs de tri
+            document.querySelectorAll('#brokenLinksTable th').forEach(th => {
+                th.classList.remove('sort-asc', 'sort-desc');
+            });
+
+            const currentHeader = document.querySelector(`#brokenLinksTable th[data-column="${column}"]`);
+            if (currentHeader) {
+                currentHeader.classList.add(currentSort.direction === 'asc' ? 'sort-asc' : 'sort-desc');
+            }
+        }
+
+        function initializeCharts() {
+            // Placeholder pour les graphiques
+            // En production, on utiliserait Chart.js ou D3.js
+            const chartContainers = document.querySelectorAll('.chart-container');
+            chartContainers.forEach(container => {
+                if (container.innerHTML.trim() === '') {
+                    container.innerHTML = '<p>Graphique disponible avec Chart.js</p>';
+                }
+            });
+        }
+
+        function exportToCSV() {
+            const table = document.getElementById('brokenLinksTable');
+            const rows = table.querySelectorAll('tr:not(.hidden)');
+            let csv = [];
+
+            // En-têtes
+            const headers = Array.from(table.querySelectorAll('th')).map(th => th.textContent.trim());
+            csv.push(headers.join(','));
+
+            // Données
+            rows.forEach((row, index) => {
+                if (index === 0) return; // Ignorer l'en-tête
+                const cells = Array.from(row.querySelectorAll('td')).map(td => {
+                    return '"' + td.textContent.trim().replace(/"/g, '""') + '"';
+                });
+                csv.push(cells.join(','));
+            });
+
+            // Télécharger
+            const csvContent = csv.join('\n');
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', 'audit-liens-morts.csv');
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        
+    <div class="header">
+        <h1>🔍 Rapport d'Audit des Liens</h1>
+        <div class="subtitle">
+            Généré le mardi 29 juillet 2025 à 17:18
+        </div>
+    </div>
+        
+    <div class="section">
+        <h2>📊 Résumé Exécutif</h2>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value metric-info">100</div>
+                <div class="metric-label">Total des liens</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value metric-success">85</div>
+                <div class="metric-label">Liens valides</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value metric-critical">12</div>
+                <div class="metric-label">Liens morts</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value metric-warning">2</div>
+                <div class="metric-label">Liens corrigés</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value metric-info">1</div>
+                <div class="metric-label">En attente</div>
+            </div>
+        </div>
+        
+        <div class="health-score">
+            <div class="health-circle health-good">
+                87%
+            </div>
+            <div>
+                <h3>Score de Santé SEO</h3>
+                <p>Basé sur le ratio de liens fonctionnels</p>
+            </div>
+        </div>
+    </div>
+        
+    <div class="section">
+        <h2>🎯 Impact SEO</h2>
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value metric-critical">1</div>
+                <div class="metric-label">Problèmes critiques</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value metric-warning">3.2%</div>
+                <div class="metric-label">Perte de trafic estimée</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value metric-info">2</div>
+                <div class="metric-label">Pages affectées</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value health-good">87%</div>
+                <div class="metric-label">Score santé liens</div>
+            </div>
+        </div>
+        
+        <h3>Actions Prioritaires</h3>
+        <ul class="recommendations-list">
+            <li>Corriger immédiatement 1 liens critiques</li><li>Réparer 1 liens internes cassés (impact SEO élevé)</li>
+        </ul>
+    </div>
+        
+    <div class="section">
+        <h2>❌ Liens Morts (2)</h2>
+        
+        <div class="filters">
+            <div class="filter-group">
+                <label for="priorityFilter">Priorité</label>
+                <select id="priorityFilter">
+                    <option value="">Toutes les priorités</option>
+                    <option value="critical">critical</option><option value="high">high</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="typeFilter">Type</label>
+                <select id="typeFilter">
+                    <option value="">Tous les types</option>
+                    <option value="internal">internal</option><option value="download">download</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="searchInput">Rechercher</label>
+                <input type="text" id="searchInput" placeholder="URL ou erreur...">
+            </div>
+            <div class="filter-group">
+                <label>&nbsp;</label>
+                <button onclick="exportToCSV()" style="padding: 0.5rem 1rem; background: var(--accent-color); color: white; border: none; border-radius: 6px; cursor: pointer;">
+                    📥 Exporter CSV
+                </button>
+            </div>
+        </div>
+        
+        <div id="filteredCount" style="margin-bottom: 1rem; color: var(--text-secondary);">
+            2 liens affichés
+        </div>
+        
+        <div class="table-container">
+            <table id="brokenLinksTable">
+                <thead>
+                    <tr>
+                        <th class="sortable" data-column="url">URL</th>
+                        <th class="sortable" data-column="priority">Priorité</th>
+                        <th class="sortable" data-column="linkType">Type</th>
+                        <th class="sortable" data-column="error">Erreur</th>
+                        <th class="sortable" data-column="seoImpact">Impact SEO</th>
+                        <th>Sources</th>
+                        <th>Actions suggérées</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+    <tr data-url="/internal/missing-page" 
+        data-priority="critical" 
+        data-type="internal" 
+        data-error="Page not found (404)"
+        data-seo-impact="24">
+        <td class="url-cell" title="/internal/missing-page">/internal/missing-page</td>
+        <td><span class="priority-critical">critical</span></td>
+        <td><span class="link-type type-internal">internal</span></td>
+        <td>Page not found (404)</td>
+        <td><strong>24</strong></td>
+        <td>
+            <details>
+                <summary>2 fichier(s)</summary>
+                <ul style="margin-top: 0.5rem; font-size: 0.8rem;">
+                    <li>src/components/Navigation.tsx</li><li>src/app/services/page.tsx</li>
+                    
+                </ul>
+            </details>
+        </td>
+        <td>
+            <ul class="actions-list">
+                <li>Vérifier si la page a été déplacée</li><li>Créer une redirection 301</li><li>PRIORITÉ CRITIQUE - Corriger immédiatement</li>
+            </ul>
+        </td>
+    </tr>
+    <tr data-url="/downloads/guide.pdf" 
+        data-priority="high" 
+        data-type="download" 
+        data-error="File not found (404)"
+        data-seo-impact="12">
+        <td class="url-cell" title="/downloads/guide.pdf">/downloads/guide.pdf</td>
+        <td><span class="priority-high">high</span></td>
+        <td><span class="link-type type-download">download</span></td>
+        <td>File not found (404)</td>
+        <td><strong>12</strong></td>
+        <td>
+            <details>
+                <summary>1 fichier(s)</summary>
+                <ul style="margin-top: 0.5rem; font-size: 0.8rem;">
+                    <li>src/app/resources/page.tsx</li>
+                    
+                </ul>
+            </details>
+        </td>
+        <td>
+            <ul class="actions-list">
+                <li>Vérifier si le fichier existe</li><li>Créer une page temporaire</li>
+            </ul>
+        </td>
+    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        
+    <div class="section">
+        <h2>🔧 Corrections Appliquées (2)</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>URL Originale</th>
+                        <th>Nouvelle URL</th>
+                        <th>Fichier</th>
+                        <th>Statut</th>
+                        <th>Rollback ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td class="url-cell">/old-page</td>
+                        <td class="url-cell">/new-page</td>
+                        <td>src/app/page.tsx</td>
+                        <td>
+                            <span class="metric-success">
+                                ✅ Appliquée
+                            </span>
+                        </td>
+                        <td><code>rollback-001</code></td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="url-cell">/complex-broken-link</td>
+                        <td class="url-cell">/suggested-fix</td>
+                        <td>src/components/Footer.tsx</td>
+                        <td>
+                            <span class="metric-critical">
+                                ❌ Échec
+                            </span>
+                        </td>
+                        <td><code>rollback-002</code></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+        
+    <div class="section">
+        <h2>📧 Demandes de Ressources</h2>
+        <div class="metric-card" style="margin-bottom: 1.5rem;">
+            <div class="metric-value metric-info">5</div>
+            <div class="metric-label">Total des demandes</div>
+        </div>
+        
+        <h3>Ressources les plus demandées</h3>
+        <div class="resource-requests">
+            
+            <div class="resource-item">
+                <div class="resource-url">/downloads/guide.pdf</div>
+                <div class="resource-count">3 demande(s)</div>
+            </div>
+            
+            <div class="resource-item">
+                <div class="resource-url">/resources/template.docx</div>
+                <div class="resource-count">2 demande(s)</div>
+            </div>
+            
+        </div>
+    </div>
+        
+    <div class="section">
+        <h2>💡 Recommandations</h2>
+        <ul class="recommendations-list">
+            <li>Score de santé des liens acceptable mais peut être amélioré</li><li>Liens critiques détectés - intervention immédiate requise</li><li>Mettre en place des redirections 301 pour les liens internes cassés</li>
+        </ul>
+    </div>
+        
+    <div class="section">
+        <h2>📈 Visualisations</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem;">
+            <div>
+                <h3>Répartition par Type de Lien</h3>
+                <div class="chart-container" id="linkTypeChart">
+                    <!-- Graphique généré par JavaScript -->
+                </div>
+            </div>
+            <div>
+                <h3>Répartition par Priorité</h3>
+                <div class="chart-container" id="priorityChart">
+                    <!-- Graphique généré par JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        // Initialiser les graphiques et interactions
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeFilters();
+            initializeCharts();
+            initializeSorting();
+        });
+    </script>
+</body>
+</html>

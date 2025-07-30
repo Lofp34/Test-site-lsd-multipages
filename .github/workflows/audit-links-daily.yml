@@ -1,0 +1,155 @@
+name: Audit des Liens Quotidien
+
+on:
+  schedule:
+    # Tous les jours à 2h du matin UTC (3h/4h en France selon saison)
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      depth:
+        description: 'Profondeur de scan'
+        required: false
+        default: '3'
+        type: string
+      include_external:
+        description: 'Inclure les liens externes'
+        required: false
+        default: false
+        type: boolean
+      format:
+        description: 'Format de rapport'
+        required: false
+        default: 'all'
+        type: choice
+        options:
+          - json
+          - html
+          - csv
+          - all
+
+jobs:
+  audit-links:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Setup environment
+      run: |
+        echo "SENDGRID_API_KEY=${{ secrets.SENDGRID_API_KEY }}" >> $GITHUB_ENV
+        echo "SENDGRID_FROM_EMAIL=${{ secrets.SENDGRID_FROM_EMAIL }}" >> $GITHUB_ENV
+        echo "SENDGRID_FROM_NAME=${{ secrets.SENDGRID_FROM_NAME }}" >> $GITHUB_ENV
+        echo "ADMIN_EMAIL=${{ secrets.ADMIN_EMAIL }}" >> $GITHUB_ENV
+        echo "NEXT_PUBLIC_SUPABASE_URL=${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}" >> $GITHUB_ENV
+        echo "SUPABASE_SERVICE_ROLE_KEY=${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" >> $GITHUB_ENV
+        echo "NEXT_PUBLIC_BASE_URL=${{ secrets.NEXT_PUBLIC_BASE_URL }}" >> $GITHUB_ENV
+        
+    - name: Create reports directory
+      run: mkdir -p reports
+      
+    - name: Run link audit
+      run: |
+        npm run audit:cli audit \
+          --depth ${{ github.event.inputs.depth || '3' }} \
+          ${{ github.event.inputs.include_external == 'true' && '--external' || '' }} \
+          --format ${{ github.event.inputs.format || 'all' }} \
+          --output ./reports \
+          --timeout 60000 \
+          --batch-size 5
+      continue-on-error: true
+      
+    - name: Upload audit reports
+      uses: actions/upload-artifact@v4
+      with:
+        name: audit-reports-${{ github.run_number }}
+        path: reports/
+        retention-days: 30
+        
+    - name: Check for critical issues
+      id: check-critical
+      run: |
+        # Vérifier s'il y a des liens morts critiques
+        if [ -f "reports/audit-report-*.json" ]; then
+          CRITICAL_COUNT=$(jq '.summary.brokenLinks' reports/audit-report-*.json | head -1)
+          echo "critical_count=$CRITICAL_COUNT" >> $GITHUB_OUTPUT
+          
+          if [ "$CRITICAL_COUNT" -gt 10 ]; then
+            echo "critical_alert=true" >> $GITHUB_OUTPUT
+          else
+            echo "critical_alert=false" >> $GITHUB_OUTPUT
+          fi
+        else
+          echo "critical_count=0" >> $GITHUB_OUTPUT
+          echo "critical_alert=false" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Send critical alert
+      if: steps.check-critical.outputs.critical_alert == 'true'
+      run: |
+        echo "🚨 ALERTE: ${{ steps.check-critical.outputs.critical_count }} liens morts détectés!"
+        # L'alerte email sera envoyée automatiquement par le système d'audit
+        
+    - name: Auto-fix simple issues
+      if: steps.check-critical.outputs.critical_count > 0
+      run: |
+        npm run audit:cli fix \
+          --confidence 0.9 \
+          --backup \
+          --dry-run
+      continue-on-error: true
+      
+    - name: Comment PR with results
+      if: github.event_name == 'pull_request'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const path = require('path');
+          
+          // Lire le rapport JSON le plus récent
+          const reportsDir = './reports';
+          const files = fs.readdirSync(reportsDir).filter(f => f.endsWith('.json'));
+          
+          if (files.length > 0) {
+            const reportPath = path.join(reportsDir, files[0]);
+            const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+            
+            const comment = `## 🔍 Résultats de l'Audit des Liens
+            
+**Résumé:**
+- Total des liens: ${report.summary.totalLinks}
+- Liens valides: ${report.summary.validLinks} ✅
+- Liens morts: ${report.summary.brokenLinks} ❌
+- Score de santé SEO: ${report.summary.seoHealthScore}%
+
+${report.summary.brokenLinks > 0 ? 
+  `⚠️ **${report.summary.brokenLinks} liens morts détectés!**\n\nVeuillez corriger ces liens avant de merger.` : 
+  '✅ **Tous les liens sont fonctionnels!**'
+}
+
+[Voir le rapport complet](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})`;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+          }
+          
+    - name: Fail if critical issues
+      if: steps.check-critical.outputs.critical_count > 20
+      run: |
+        echo "❌ Trop de liens morts détectés (${{ steps.check-critical.outputs.critical_count }})"
+        echo "L'audit a échoué - intervention manuelle requise"
+        exit 1

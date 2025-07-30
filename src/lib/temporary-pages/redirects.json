@@ -1,0 +1,12 @@
+[
+  {
+    "source": "/ressources/guide-prospection-avancee.pdf",
+    "destination": "/temporary-resource?url=%2Fressources%2Fguide-prospection-avancee.pdf&source=%2Fressources&type=download&title=Guide+de+Prospection+Avanc%C3%A9e&description=Guide+complet+sur+les+techniques+de+prospection+modernes&estimated=Mars+2025&priority=high",
+    "permanent": false
+  },
+  {
+    "source": "/templates/email-prospection-b2b.docx",
+    "destination": "/temporary-resource?url=%2Ftemplates%2Femail-prospection-b2b.docx&source=%2Fressources%2Ftemplates&type=template&title=Templates+d%27emails+de+prospection+B2B&description=Collection+de+templates+d%27emails+pour+la+prospection+B2B&estimated=F%C3%A9vrier+2025&priority=high",
+    "permanent": false
+  }
+]

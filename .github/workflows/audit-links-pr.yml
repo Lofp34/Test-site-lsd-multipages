@@ -1,0 +1,207 @@
+name: Validation des Liens sur PR
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'pages/**'
+      - '*.md'
+      - '*.json'
+  workflow_dispatch:
+
+jobs:
+  validate-links:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        # Récupérer l'historique pour comparer avec la branche de base
+        fetch-depth: 0
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Setup environment
+      run: |
+        echo "SENDGRID_API_KEY=${{ secrets.SENDGRID_API_KEY }}" >> $GITHUB_ENV
+        echo "SENDGRID_FROM_EMAIL=${{ secrets.SENDGRID_FROM_EMAIL }}" >> $GITHUB_ENV
+        echo "SENDGRID_FROM_NAME=${{ secrets.SENDGRID_FROM_NAME }}" >> $GITHUB_ENV
+        echo "ADMIN_EMAIL=${{ secrets.ADMIN_EMAIL }}" >> $GITHUB_ENV
+        echo "NEXT_PUBLIC_SUPABASE_URL=${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}" >> $GITHUB_ENV
+        echo "SUPABASE_SERVICE_ROLE_KEY=${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" >> $GITHUB_ENV
+        echo "NEXT_PUBLIC_BASE_URL=${{ secrets.NEXT_PUBLIC_BASE_URL }}" >> $GITHUB_ENV
+        
+    - name: Get changed files
+      id: changed-files
+      run: |
+        # Obtenir la liste des fichiers modifiés
+        git diff --name-only origin/${{ github.base_ref }}..HEAD > changed_files.txt
+        echo "Changed files:"
+        cat changed_files.txt
+        
+        # Filtrer les fichiers pertinents pour l'audit des liens
+        grep -E '\.(tsx?|jsx?|md|json)$' changed_files.txt > relevant_files.txt || true
+        
+        if [ -s relevant_files.txt ]; then
+          echo "has_relevant_changes=true" >> $GITHUB_OUTPUT
+          echo "Relevant files found:"
+          cat relevant_files.txt
+        else
+          echo "has_relevant_changes=false" >> $GITHUB_OUTPUT
+          echo "No relevant files changed"
+        fi
+        
+    - name: Run focused link audit
+      if: steps.changed-files.outputs.has_relevant_changes == 'true'
+      run: |
+        # Audit ciblé sur les fichiers modifiés
+        npm run audit:cli audit \
+          --depth 2 \
+          --format json \
+          --output ./pr-reports \
+          --timeout 30000 \
+          --batch-size 10
+      continue-on-error: true
+      
+    - name: Run quick validation
+      if: steps.changed-files.outputs.has_relevant_changes == 'false'
+      run: |
+        # Validation rapide si pas de changements pertinents
+        npm run audit:status --config
+        echo "✅ Configuration valide - pas de changements de liens détectés"
+        
+    - name: Analyze results
+      if: steps.changed-files.outputs.has_relevant_changes == 'true'
+      id: analyze
+      run: |
+        if [ -f "pr-reports/audit-report-*.json" ]; then
+          REPORT_FILE=$(ls pr-reports/audit-report-*.json | head -1)
+          
+          TOTAL_LINKS=$(jq '.summary.totalLinks' "$REPORT_FILE")
+          BROKEN_LINKS=$(jq '.summary.brokenLinks' "$REPORT_FILE")
+          HEALTH_SCORE=$(jq '.summary.seoHealthScore' "$REPORT_FILE")
+          
+          echo "total_links=$TOTAL_LINKS" >> $GITHUB_OUTPUT
+          echo "broken_links=$BROKEN_LINKS" >> $GITHUB_OUTPUT
+          echo "health_score=$HEALTH_SCORE" >> $GITHUB_OUTPUT
+          
+          # Déterminer le statut
+          if [ "$BROKEN_LINKS" -eq 0 ]; then
+            echo "status=success" >> $GITHUB_OUTPUT
+            echo "status_emoji=✅" >> $GITHUB_OUTPUT
+          elif [ "$BROKEN_LINKS" -le 5 ]; then
+            echo "status=warning" >> $GITHUB_OUTPUT
+            echo "status_emoji=⚠️" >> $GITHUB_OUTPUT
+          else
+            echo "status=failure" >> $GITHUB_OUTPUT
+            echo "status_emoji=❌" >> $GITHUB_OUTPUT
+          fi
+          
+          # Extraire les liens morts pour le commentaire
+          jq -r '.brokenLinks[] | "- \(.url) (\(.error))"' "$REPORT_FILE" > broken_links_list.txt
+        else
+          echo "status=error" >> $GITHUB_OUTPUT
+          echo "status_emoji=🔧" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Upload PR audit reports
+      if: steps.changed-files.outputs.has_relevant_changes == 'true'
+      uses: actions/upload-artifact@v4
+      with:
+        name: pr-audit-reports-${{ github.event.number }}
+        path: pr-reports/
+        retention-days: 7
+        
+    - name: Comment on PR
+      if: steps.changed-files.outputs.has_relevant_changes == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          
+          const status = '${{ steps.analyze.outputs.status }}';
+          const emoji = '${{ steps.analyze.outputs.status_emoji }}';
+          const totalLinks = '${{ steps.analyze.outputs.total_links }}';
+          const brokenLinks = '${{ steps.analyze.outputs.broken_links }}';
+          const healthScore = '${{ steps.analyze.outputs.health_score }}';
+          
+          let comment = `## ${emoji} Audit des Liens - PR #${{ github.event.number }}
+          
+**Résultats de la validation:**
+- Total des liens analysés: ${totalLinks}
+- Liens morts détectés: ${brokenLinks}
+- Score de santé: ${healthScore}%
+          
+`;
+          
+          if (status === 'success') {
+            comment += `✅ **Excellent!** Tous les liens sont fonctionnels.`;
+          } else if (status === 'warning') {
+            comment += `⚠️ **Attention:** Quelques liens morts détectés. Correction recommandée avant merge.
+            
+**Liens à corriger:**`;
+            
+            try {
+              const brokenList = fs.readFileSync('broken_links_list.txt', 'utf8');
+              comment += '\n' + brokenList;
+            } catch (e) {
+              comment += '\n(Voir les détails dans les artifacts)';
+            }
+          } else if (status === 'failure') {
+            comment += `❌ **Problème critique:** Trop de liens morts détectés (${brokenLinks}).
+            
+**Action requise:** Veuillez corriger ces liens avant de merger.
+            
+**Liens à corriger:**`;
+            
+            try {
+              const brokenList = fs.readFileSync('broken_links_list.txt', 'utf8');
+              comment += '\n' + brokenList;
+            } catch (e) {
+              comment += '\n(Voir les détails dans les artifacts)';
+            }
+          } else {
+            comment += `🔧 **Erreur:** Impossible de valider les liens. Vérifiez les logs.`;
+          }
+          
+          comment += `
+          
+---
+*Audit automatique généré par GitHub Actions*
+[Voir les détails](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})`;
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: comment
+          });
+          
+    - name: Set PR status
+      if: steps.changed-files.outputs.has_relevant_changes == 'true'
+      run: |
+        STATUS="${{ steps.analyze.outputs.status }}"
+        BROKEN_LINKS="${{ steps.analyze.outputs.broken_links }}"
+        
+        if [ "$STATUS" = "failure" ] && [ "$BROKEN_LINKS" -gt 10 ]; then
+          echo "❌ Échec critique: $BROKEN_LINKS liens morts détectés"
+          echo "Cette PR ne peut pas être mergée en l'état"
+          exit 1
+        elif [ "$STATUS" = "warning" ]; then
+          echo "⚠️ Avertissement: $BROKEN_LINKS liens morts détectés"
+          echo "Correction recommandée mais pas bloquante"
+          exit 0
+        else
+          echo "✅ Validation réussie"
+          exit 0
+        fi

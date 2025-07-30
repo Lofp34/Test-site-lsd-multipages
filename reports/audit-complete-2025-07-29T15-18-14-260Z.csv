@@ -1,0 +1,22 @@
+# RÉSUMÉ EXÉCUTIF
+Date du rapport,29/07/2025 17:18
+Total des liens,5
+Liens valides,1
+Liens morts,3
+Liens corrigés,1
+Liens en attente,1
+Score de santé SEO,75%
+
+# IMPACT SEO
+Problèmes critiques,1
+Perte de trafic estimée,3.2%
+Score santé des liens,75%
+Pages affectées,1
+
+# LIENS MORTS DÉTAILLÉS
+/internal/missing-page,critical,internal,Internal page not found,24,2,src/components/Navigation.tsx; src/app/services/page.tsx,Vérifier si la page a été déplacée; Créer une redirection 301,Inconnu
+/downloads/missing-file.pdf,high,download,File not found,12,1,src/app/resources/page.tsx,Vérifier si le fichier existe; Créer une page temporaire,Inconnu
+
+# CORRECTIONS APPLIQUÉES
+/old-page,/new-page,src/app/page.tsx,Appliquée,Oui,rollback-001
+/complex-broken-link,/suggested-fix,src/components/Footer.tsx,Échec,Non,rollback-002
