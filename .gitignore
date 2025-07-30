@@ -34,6 +34,7 @@ next-env.d.ts
 # Local environment files
 # Can be committed if needed, but risky
 .env*.local
+.env
 
 # Editor directories
 .vscode/*

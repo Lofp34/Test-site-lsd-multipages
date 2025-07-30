@@ -171,6 +171,92 @@ export default function FormationCommercialePMEPage() {
         </div>
       </section>
 
+      {/* Techniques de Négociation Avancées */}
+      <section className="py-20 bg-gradient-to-r from-mint-green/5 to-blue-ink/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">
+              🎯 Techniques de Négociation Avancées
+            </h2>
+            <p className="text-xl text-gray-anthracite max-w-3xl mx-auto">
+              Complétez votre formation avec nos guides détaillés sur les techniques de négociation les plus efficaces
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Link 
+              href="/ressources/techniques-de-negociation/effet-miroir"
+              className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 hover:border-mint-green/40"
+            >
+              <div className="flex items-start gap-4">
+                <span className="text-3xl">🪞</span>
+                <div>
+                  <h3 className="font-title font-bold text-blue-ink group-hover:text-mint-green mb-2">
+                    L'effet miroir
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Technique FBI d'empathie tactique pour faire parler et découvrir les vraies motivations
+                  </p>
+                  <span className="text-mint-green font-semibold text-sm">
+                    Guide complet →
+                  </span>
+                </div>
+              </div>
+            </Link>
+            
+            <Link 
+              href="/ressources/techniques-de-negociation/negociation-raisonnee"
+              className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 hover:border-mint-green/40"
+            >
+              <div className="flex items-start gap-4">
+                <span className="text-3xl">⚖️</span>
+                <div>
+                  <h3 className="font-title font-bold text-blue-ink group-hover:text-mint-green mb-2">
+                    La négociation raisonnée
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Méthode Harvard gagnant-gagnant avec BATNA pour des accords durables
+                  </p>
+                  <span className="text-mint-green font-semibold text-sm">
+                    Guide complet →
+                  </span>
+                </div>
+              </div>
+            </Link>
+            
+            <Link 
+              href="/ressources/techniques-de-negociation/silence-strategique"
+              className="group block bg-white rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 hover:border-mint-green/40"
+            >
+              <div className="flex items-start gap-4">
+                <span className="text-3xl">🤫</span>
+                <div>
+                  <h3 className="font-title font-bold text-blue-ink group-hover:text-mint-green mb-2">
+                    Le silence stratégique
+                  </h3>
+                  <p className="text-sm text-gray-600 mb-3">
+                    Maîtriser l'art du silence pour créer la tension et obtenir des informations
+                  </p>
+                  <span className="text-mint-green font-semibold text-sm">
+                    Guide complet →
+                  </span>
+                </div>
+              </div>
+            </Link>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link 
+              href="/ressources/techniques-de-negociation"
+              className="inline-flex items-center bg-blue-ink text-white px-8 py-4 rounded-full font-semibold hover:bg-blue-ink/90 transition-colors"
+            >
+              Voir toutes les techniques
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Ressources Gratuites */}
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">

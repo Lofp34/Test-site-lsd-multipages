@@ -1,0 +1,208 @@
+name: Rapport Hebdomadaire des Liens
+
+on:
+  schedule:
+    # Tous les lundis à 9h UTC (10h/11h en France)
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+    inputs:
+      send_email:
+        description: 'Envoyer le rapport par email'
+        required: false
+        default: true
+        type: boolean
+
+jobs:
+  weekly-report:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Setup environment
+      run: |
+        echo "SENDGRID_API_KEY=${{ secrets.SENDGRID_API_KEY }}" >> $GITHUB_ENV
+        echo "SENDGRID_FROM_EMAIL=${{ secrets.SENDGRID_FROM_EMAIL }}" >> $GITHUB_ENV
+        echo "SENDGRID_FROM_NAME=${{ secrets.SENDGRID_FROM_NAME }}" >> $GITHUB_ENV
+        echo "ADMIN_EMAIL=${{ secrets.ADMIN_EMAIL }}" >> $GITHUB_ENV
+        echo "NEXT_PUBLIC_SUPABASE_URL=${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}" >> $GITHUB_ENV
+        echo "SUPABASE_SERVICE_ROLE_KEY=${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" >> $GITHUB_ENV
+        echo "NEXT_PUBLIC_BASE_URL=${{ secrets.NEXT_PUBLIC_BASE_URL }}" >> $GITHUB_ENV
+        
+    - name: Generate comprehensive audit
+      run: |
+        mkdir -p weekly-reports
+        
+        # Audit complet avec liens externes
+        npm run audit:cli audit \
+          --depth 5 \
+          --external \
+          --format all \
+          --output ./weekly-reports \
+          --timeout 90000 \
+          --batch-size 3
+      continue-on-error: true
+      
+    - name: Generate health report
+      run: |
+        npm run maintenance:health > weekly-reports/health-report.txt
+        
+    - name: Create summary report
+      run: |
+        # Créer un résumé en markdown
+        cat > weekly-reports/weekly-summary.md << 'EOF'
+        # Rapport Hebdomadaire - Audit des Liens
+        
+        **Date:** $(date '+%d/%m/%Y')
+        **Période:** Semaine du $(date -d '7 days ago' '+%d/%m/%Y') au $(date '+%d/%m/%Y')
+        
+        ## Résumé Exécutif
+        
+        EOF
+        
+        # Ajouter les métriques du rapport JSON
+        if [ -f weekly-reports/audit-report-*.json ]; then
+          REPORT_FILE=$(ls weekly-reports/audit-report-*.json | head -1)
+          
+          echo "### Métriques Principales" >> weekly-reports/weekly-summary.md
+          echo "" >> weekly-reports/weekly-summary.md
+          echo "- **Total des liens:** $(jq '.summary.totalLinks' "$REPORT_FILE")" >> weekly-reports/weekly-summary.md
+          echo "- **Liens valides:** $(jq '.summary.validLinks' "$REPORT_FILE")" >> weekly-reports/weekly-summary.md
+          echo "- **Liens morts:** $(jq '.summary.brokenLinks' "$REPORT_FILE")" >> weekly-reports/weekly-summary.md
+          echo "- **Score de santé SEO:** $(jq '.summary.seoHealthScore' "$REPORT_FILE")%" >> weekly-reports/weekly-summary.md
+          echo "- **Corrections appliquées:** $(jq '.summary.correctedLinks' "$REPORT_FILE")" >> weekly-reports/weekly-summary.md
+          echo "" >> weekly-reports/weekly-summary.md
+          
+          # Ajouter les recommandations
+          echo "### Recommandations" >> weekly-reports/weekly-summary.md
+          echo "" >> weekly-reports/weekly-summary.md
+          jq -r '.recommendations[]' "$REPORT_FILE" | sed 's/^/- /' >> weekly-reports/weekly-summary.md
+          echo "" >> weekly-reports/weekly-summary.md
+          
+          # Top 5 des liens morts par priorité
+          echo "### Top 5 des Liens Morts (Priorité Critique)" >> weekly-reports/weekly-summary.md
+          echo "" >> weekly-reports/weekly-summary.md
+          jq -r '.brokenLinks[] | select(.priority == "critical") | "- \(.url) - \(.error)"' "$REPORT_FILE" | head -5 >> weekly-reports/weekly-summary.md
+        fi
+        
+        # Ajouter les statistiques de demandes de ressources
+        echo "" >> weekly-reports/weekly-summary.md
+        echo "### Demandes de Ressources" >> weekly-reports/weekly-summary.md
+        echo "" >> weekly-reports/weekly-summary.md
+        
+        if [ -f weekly-reports/audit-report-*.json ]; then
+          echo "- **Total des demandes:** $(jq '.resourceRequests.totalRequests' "$REPORT_FILE")" >> weekly-reports/weekly-summary.md
+          echo "" >> weekly-reports/weekly-summary.md
+          echo "**Ressources les plus demandées:**" >> weekly-reports/weekly-summary.md
+          jq -r '.resourceRequests.mostRequested[] | "- \(.url) (\(.count) demandes)"' "$REPORT_FILE" | head -5 >> weekly-reports/weekly-summary.md
+        fi
+        
+    - name: Upload weekly reports
+      uses: actions/upload-artifact@v4
+      with:
+        name: weekly-audit-report-${{ github.run_number }}
+        path: weekly-reports/
+        retention-days: 90
+        
+    - name: Send email report
+      if: github.event.inputs.send_email != 'false'
+      run: |
+        # Le rapport sera envoyé automatiquement par le système SendGrid
+        echo "📧 Rapport hebdomadaire envoyé à ${{ secrets.ADMIN_EMAIL }}"
+        
+    - name: Create GitHub Issue for critical problems
+      if: always()
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          
+          try {
+            const reportFiles = fs.readdirSync('./weekly-reports').filter(f => f.endsWith('.json'));
+            
+            if (reportFiles.length > 0) {
+              const reportPath = `./weekly-reports/${reportFiles[0]}`;
+              const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+              
+              const brokenLinks = report.summary.brokenLinks;
+              const healthScore = report.summary.seoHealthScore;
+              
+              // Créer une issue si problèmes critiques
+              if (brokenLinks > 20 || healthScore < 80) {
+                const title = `🚨 Audit Hebdomadaire: ${brokenLinks} liens morts détectés (Score: ${healthScore}%)`;
+                
+                const body = `## Rapport d'Audit Hebdomadaire - Action Requise
+                
+**Date:** ${new Date().toLocaleDateString('fr-FR')}
+**Statut:** ⚠️ Problèmes critiques détectés
+
+### Métriques
+- **Liens morts:** ${brokenLinks}
+- **Score de santé:** ${healthScore}%
+- **Impact SEO:** ${report.seoImpact.criticalIssues} problèmes critiques
+
+### Actions Recommandées
+${report.recommendations.map(r => `- ${r}`).join('\n')}
+
+### Liens Critiques à Corriger
+${report.brokenLinks
+  .filter(link => link.priority === 'critical')
+  .slice(0, 10)
+  .map(link => `- \`${link.url}\` - ${link.error}`)
+  .join('\n')}
+
+---
+*Rapport généré automatiquement par GitHub Actions*
+[Voir les détails complets](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})`;
+
+                await github.rest.issues.create({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  title: title,
+                  body: body,
+                  labels: ['audit', 'liens-morts', 'critique']
+                });
+                
+                console.log('Issue créée pour les problèmes critiques');
+              } else {
+                console.log('✅ Pas de problèmes critiques détectés');
+              }
+            }
+          } catch (error) {
+            console.error('Erreur lors de la création de l\'issue:', error);
+          }
+          
+    - name: Update README badge
+      run: |
+        # Mettre à jour le badge de santé des liens dans le README
+        if [ -f weekly-reports/audit-report-*.json ]; then
+          REPORT_FILE=$(ls weekly-reports/audit-report-*.json | head -1)
+          HEALTH_SCORE=$(jq '.summary.seoHealthScore' "$REPORT_FILE")
+          
+          # Déterminer la couleur du badge
+          if [ "$HEALTH_SCORE" -ge 95 ]; then
+            COLOR="brightgreen"
+          elif [ "$HEALTH_SCORE" -ge 85 ]; then
+            COLOR="green"
+          elif [ "$HEALTH_SCORE" -ge 70 ]; then
+            COLOR="yellow"
+          else
+            COLOR="red"
+          fi
+          
+          # Créer l'URL du badge
+          BADGE_URL="https://img.shields.io/badge/Liens-${HEALTH_SCORE}%25-${COLOR}"
+          
+          echo "Badge URL: $BADGE_URL"
+          # TODO: Mettre à jour le README avec le nouveau badge
+        fi

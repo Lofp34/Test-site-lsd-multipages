@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle demande de ressource</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #1B365D, #00BDA4);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .content {
+            background: #F2F5F7;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #00BDA4;
+        }
+        .field {
+            margin-bottom: 15px;
+            padding: 10px;
+            background: white;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
+        }
+        .field-label {
+            font-weight: bold;
+            color: #1B365D;
+            margin-bottom: 5px;
+        }
+        .field-value {
+            color: #414141;
+            word-break: break-all;
+        }
+        .priority-badge {
+            display: inline-block;
+            background: #00BDA4;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+            font-size: 12px;
+            text-align: center;
+        }
+        .stats {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        .stats-text {
+            color: #856404;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚨 Nouvelle demande de ressource</h1>
+            <p style="margin: 5px 0 0 0; opacity: 0.9;">Système d'audit automatique - Laurent Serre Développement</p>
+        </div>
+        
+        <div class="content">
+            <div class="field">
+                <div class="field-label">📧 Email du demandeur :</div>
+                <div class="field-value">{{userEmail}}</div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">📄 Ressource demandée :</div>
+                <div class="field-value">{{resourceUrl}}</div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">🌐 Page source :</div>
+                <div class="field-value"><a href="{{sourceUrl}}" style="color: #00BDA4;">{{sourceUrl}}</a></div>
+            </div>
+            
+            <div class="field">
+                <div class="field-label">📊 Nombre de demandes :</div>
+                <div class="field-value">{{requestCount}} fois ce mois-ci</div>
+            </div>
+            
+            {{#if message}}
+            <div class="field">
+                <div class="field-label">💬 Message du demandeur :</div>
+                <div class="field-value" style="background: #f8f9fa; padding: 15px; border-radius: 4px; font-style: italic;">
+                    "{{message}}"
+                </div>
+            </div>
+            {{/if}}
+        </div>
+        
+        <div class="stats">
+            <div class="stats-text">
+                📈 Cette ressource a été demandée {{requestCount}} fois ce mois-ci.
+                {{#if isHighPriority}}
+                <span class="priority-badge">PRIORITÉ ÉLEVÉE</span>
+                {{/if}}
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin: 20px 0;">
+            <p style="color: #1B365D; font-weight: bold;">
+                💡 Action recommandée : Créer cette ressource en priorité pour répondre à la demande des utilisateurs.
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p>Système d'audit automatique - Laurent Serre Développement</p>
+            <p>Email généré automatiquement le {{timestamp}}</p>
+        </div>
+    </div>
+</body>
+</html>
