@@ -1,0 +1,44 @@
+{
+  "L3Jlc3NvdXJjZXMvZ3VpZGUtcHJvc3BlY3Rpb24tYXZhbmNlZS5wZGY": {
+    "resourceUrl": "/ressources/guide-prospection-avancee.pdf",
+    "sourceUrl": "/ressources",
+    "resourceType": "download",
+    "title": "Guide de Prospection Avancée",
+    "description": "Guide complet sur les techniques de prospection modernes",
+    "estimatedDate": "Février 2025",
+    "priority": "high",
+    "developmentStatus": "review",
+    "progress": 80,
+    "alternatives": [
+      {
+        "title": "Guide de base de la prospection",
+        "url": "/ressources/prospection-base",
+        "description": "Version simplifiée du guide",
+        "type": "internal"
+      }
+    ]
+  },
+  "L3RlbXBsYXRlcy9lbWFpbC1wcm9zcGVjdGlvbi1iMmIuZG9jeA": {
+    "resourceUrl": "/templates/email-prospection-b2b.docx",
+    "sourceUrl": "/ressources/templates",
+    "resourceType": "template",
+    "title": "Templates d'emails de prospection B2B",
+    "description": "Collection de templates d'emails pour la prospection B2B",
+    "estimatedDate": "Février 2025",
+    "priority": "high",
+    "alternatives": [
+      {
+        "title": "Ressources disponibles",
+        "url": "/ressources",
+        "description": "Découvrez toutes nos ressources actuellement disponibles",
+        "type": "internal"
+      },
+      {
+        "title": "Nous contacter",
+        "url": "/contact",
+        "description": "Contactez-nous pour des besoins spécifiques",
+        "type": "internal"
+      }
+    ]
+  }
+}

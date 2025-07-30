@@ -1,0 +1,2 @@
+URL,Priorité,Type de lien,Erreur,Impact SEO,Nombre de sources,Fichiers sources,Actions suggérées,Dernière fois fonctionnel
+/internal/missing-page,critical,internal,Page not found (404),24,2,src/components/Navigation.tsx; src/app/services/page.tsx,Vérifier si la page a été déplacée; Créer une redirection 301; PRIORITÉ CRITIQUE - Corriger immédiatement,22/07/2025 17:18

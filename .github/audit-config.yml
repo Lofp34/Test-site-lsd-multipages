@@ -1,0 +1,150 @@
+# Configuration pour les workflows d'audit des liens
+# Ce fichier centralise les paramètres utilisés par les différents workflows
+
+# Paramètres généraux d'audit
+audit:
+  # Profondeur de scan par défaut
+  default_depth: 3
+  
+  # Timeout pour les validations (en millisecondes)
+  default_timeout: 30000
+  
+  # Taille des lots pour la validation
+  default_batch_size: 10
+  
+  # Délai entre les requêtes (rate limiting)
+  rate_limit_delay: 1000
+  
+  # Patterns à exclure du scan
+  exclude_patterns:
+    - "node_modules/**"
+    - ".git/**"
+    - ".next/**"
+    - "dist/**"
+    - "build/**"
+    - "*.log"
+    - "*.tmp"
+    - "coverage/**"
+    - ".github/**"
+
+# Seuils de validation
+thresholds:
+  # Score de santé minimum pour un déploiement
+  min_health_score_deploy: 90
+  
+  # Score de santé minimum avec surveillance
+  min_health_score_warning: 80
+  
+  # Nombre maximum de liens morts pour un déploiement
+  max_broken_links_deploy: 5
+  
+  # Nombre maximum de liens morts pour une PR
+  max_broken_links_pr: 10
+  
+  # Nombre de liens morts déclenchant une alerte critique
+  critical_alert_threshold: 20
+
+# Configuration des rapports
+reports:
+  # Formats de rapport à générer
+  formats:
+    daily: ["json", "html"]
+    weekly: ["json", "html", "csv"]
+    pr: ["json"]
+    deploy: ["json", "html"]
+  
+  # Rétention des artifacts (en jours)
+  retention:
+    daily: 30
+    weekly: 90
+    pr: 7
+    deploy: 30
+
+# Configuration des notifications
+notifications:
+  # Envoyer des emails pour les audits quotidiens
+  daily_email: true
+  
+  # Envoyer des emails pour les rapports hebdomadaires
+  weekly_email: true
+  
+  # Créer des issues GitHub pour les problèmes critiques
+  create_issues: true
+  
+  # Labels à appliquer aux issues créées
+  issue_labels:
+    - "audit"
+    - "liens-morts"
+    - "maintenance"
+
+# Chemins critiques à valider en priorité
+critical_paths:
+  - "/"
+  - "/a-propos"
+  - "/services"
+  - "/contact"
+  - "/ressources"
+  - "/blog"
+  - "/formation-commerciale-pme"
+  - "/consultant-commercial-montpellier"
+  - "/expert-developpement-commercial-pme"
+
+# Configuration des corrections automatiques
+auto_correction:
+  # Seuil de confiance minimum pour les corrections automatiques
+  min_confidence: 0.8
+  
+  # Créer des backups avant correction
+  create_backups: true
+  
+  # Types de corrections autorisées
+  allowed_types:
+    - "typo"
+    - "extension"
+    - "redirect"
+  
+  # Types de corrections nécessitant une validation manuelle
+  manual_review_types:
+    - "moved"
+    - "similar"
+
+# Configuration de la maintenance
+maintenance:
+  # Nombre de jours à conserver pour les rapports
+  reports_retention_days: 30
+  
+  # Nombre de jours à conserver pour les backups
+  backups_retention_days: 90
+  
+  # Nombre de jours à conserver pour les données d'audit
+  audit_data_retention_days: 180
+  
+  # Fréquence de nettoyage automatique
+  cleanup_schedule: "weekly"
+
+# Variables d'environnement requises
+required_secrets:
+  - "SENDGRID_API_KEY"
+  - "SENDGRID_FROM_EMAIL"
+  - "SENDGRID_FROM_NAME"
+  - "ADMIN_EMAIL"
+  - "NEXT_PUBLIC_SUPABASE_URL"
+  - "SUPABASE_SERVICE_ROLE_KEY"
+  - "NEXT_PUBLIC_BASE_URL"
+
+# Configuration spécifique par environnement
+environments:
+  production:
+    min_health_score: 95
+    max_broken_links: 2
+    require_manual_approval: true
+    
+  staging:
+    min_health_score: 85
+    max_broken_links: 10
+    require_manual_approval: false
+    
+  development:
+    min_health_score: 70
+    max_broken_links: 20
+    require_manual_approval: false

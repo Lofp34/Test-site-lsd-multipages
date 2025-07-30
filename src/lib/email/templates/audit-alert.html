@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerte : Liens morts détectés</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #EF4444, #DC2626);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .alert-box {
+            background: #FEF2F2;
+            border-left: 4px solid #EF4444;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .alert-text {
+            color: #991B1B;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: #F8F9FA;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #E9ECEF;
+        }
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #EF4444;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #6C757D;
+            margin-top: 5px;
+        }
+        .health-score {
+            background: linear-gradient(135deg, #00BDA4, #059669);
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .health-score.warning {
+            background: linear-gradient(135deg, #F59E0B, #D97706);
+        }
+        .health-score.critical {
+            background: linear-gradient(135deg, #EF4444, #DC2626);
+        }
+        .links-list {
+            background: #F8F9FA;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .link-item {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 6px;
+            border-left: 4px solid #EF4444;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .link-url {
+            font-weight: bold;
+            color: #1B365D;
+            word-break: break-all;
+            margin-bottom: 5px;
+        }
+        .link-error {
+            color: #EF4444;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .link-impact {
+            color: #6C757D;
+            font-size: 12px;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #00BDA4;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
+            font-size: 12px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚨 Alerte : Liens morts détectés</h1>
+            <p style="margin: 5px 0 0 0; opacity: 0.9;">Audit automatique du {{timestamp}}</p>
+        </div>
+        
+        <div class="alert-box">
+            <div class="alert-text">
+                {{brokenLinksCount}} liens morts ont été détectés sur votre site Laurent Serre Développement.
+            </div>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">{{totalLinks}}</div>
+                <div class="stat-label">Total des liens</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">{{brokenLinksCount}}</div>
+                <div class="stat-label">Liens morts</div>
+            </div>
+        </div>
+        
+        <div class="health-score {{healthScoreClass}}">
+            <h3 style="margin: 0 0 10px 0;">Score de santé des liens</h3>
+            <div style="font-size: 32px; font-weight: bold;">{{healthScore}}%</div>
+        </div>
+        
+        {{#if criticalLinks}}
+        <div class="links-list">
+            <h3 style="color: #1B365D; margin-bottom: 15px;">🔥 Liens critiques à corriger en priorité :</h3>
+            
+            {{#each criticalLinks}}
+            <div class="link-item">
+                <div class="link-url">{{url}}</div>
+                <div class="link-error">❌ {{error}}</div>
+                <div class="link-impact">📊 Impact SEO: {{seoImpact}} | Trouvé dans: {{sourceFiles}}</div>
+            </div>
+            {{/each}}
+        </div>
+        {{/if}}
+        
+        {{#if reportUrl}}
+        <div style="text-align: center;">
+            <a href="{{reportUrl}}" class="cta-button">
+                📊 Voir le rapport complet
+            </a>
+        </div>
+        {{/if}}
+        
+        <div style="background: #E3F2FD; padding: 15px; border-radius: 8px; margin: 20px 0;">
+            <h4 style="color: #1565C0; margin: 0 0 10px 0;">💡 Actions recommandées :</h4>
+            <ul style="color: #1976D2; margin: 0; padding-left: 20px;">
+                <li>Corriger les liens critiques en priorité</li>
+                <li>Vérifier les ressources manquantes</li>
+                <li>Mettre à jour les liens internes cassés</li>
+                <li>Créer des redirections si nécessaire</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Système d'audit automatique - Laurent Serre Développement</p>
+            <p>Email généré automatiquement le {{timestamp}}</p>
+            <p>Prochaine vérification programmée dans 24h</p>
+        </div>
+    </div>
+</body>
+</html>
