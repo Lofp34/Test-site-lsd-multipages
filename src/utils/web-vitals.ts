@@ -1,8 +1,6 @@
 /**
- * Web Vitals monitoring for Core Web Vitals optimization
+ * Lightweight Web Vitals monitoring
  */
-
-import { onCLS, onINP, onFCP, onLCP, onTTFB } from 'web-vitals';
 
 // Thresholds for Core Web Vitals (Google recommendations)
 const THRESHOLDS = {
@@ -84,46 +82,29 @@ function rateMetric(name: string, value: number): 'good' | 'needs-improvement' |
   return 'poor';
 }
 
-// Initialize Web Vitals monitoring
+// Lightweight Web Vitals monitoring
 export function initWebVitals() {
   if (typeof window === 'undefined') return;
-
-  // Core Web Vitals
-  onCLS((metric) => {
-    sendToAnalytics({
-      ...metric,
-      rating: rateMetric('CLS', metric.value),
-    });
-  });
-
-  onINP((metric) => {
-    sendToAnalytics({
-      ...metric,
-      rating: rateMetric('INP', metric.value),
-    });
-  });
-
-  onLCP((metric) => {
-    sendToAnalytics({
-      ...metric,
-      rating: rateMetric('LCP', metric.value),
-    });
-  });
-
-  // Additional metrics
-  onFCP((metric) => {
-    sendToAnalytics({
-      ...metric,
-      rating: rateMetric('FCP', metric.value),
-    });
-  });
-
-  onTTFB((metric) => {
-    sendToAnalytics({
-      ...metric,
-      rating: rateMetric('TTFB', metric.value),
-    });
-  });
+  
+  // Minimal monitoring - only in production and with sampling
+  if (process.env.NODE_ENV === 'production' && Math.random() < 0.1) {
+    // Only track LCP (most important) with native API
+    try {
+      const observer = new PerformanceObserver((list) => {
+        const entries = list.getEntries();
+        const lastEntry = entries[entries.length - 1];
+        if (lastEntry && window.gtag) {
+          window.gtag('event', 'LCP', {
+            event_category: 'Web Vitals',
+            value: Math.round(lastEntry.startTime),
+          });
+        }
+      });
+      observer.observe({ entryTypes: ['largest-contentful-paint'] });
+    } catch (e) {
+      // Ignore if not supported
+    }
+  }
 }
 
 // Monitor resource loading performance
@@ -243,40 +224,12 @@ export function monitorNetworkConditions() {
   }
 }
 
-// Initialize all performance monitoring
+// Lightweight performance monitoring
 export function initPerformanceMonitoring() {
   if (typeof window === 'undefined') return;
-
+  
+  // Only initialize minimal web vitals
   initWebVitals();
-  monitorResourcePerformance();
-  monitorLongTasks();
-  monitorMemoryUsage();
-  monitorNetworkConditions();
-
-  // Report initial page load performance
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
-      if (navigation) {
-        const loadTime = navigation.loadEventEnd - navigation.fetchStart;
-        const domContentLoaded = navigation.domContentLoadedEventEnd - navigation.fetchStart;
-        
-        console.log(`Page load time: ${Math.round(loadTime)}ms`);
-        console.log(`DOM content loaded: ${Math.round(domContentLoaded)}ms`);
-        
-        if (window.gtag) {
-          window.gtag('event', 'page_load_time', {
-            event_category: 'Performance',
-            value: Math.round(loadTime),
-            custom_map: {
-              dom_content_loaded: Math.round(domContentLoaded),
-              page: window.location.pathname,
-            },
-          });
-        }
-      }
-    }, 0);
-  });
 }
 
 // Export for use in _app.tsx or layout.tsx

@@ -1,6 +1,7 @@
 import { ValidationResult, ValidationConfig, ScannedLink } from './types';
 import { validationConfig } from './config';
 import { getSupabaseAdmin } from './database';
+import { cacheStrategy } from './cache-strategy';
 
 /**
  * Link Validator - Validates HTTP links and local files
@@ -22,10 +23,16 @@ export class LinkValidator {
   async validateLink(url: string, config?: Partial<ValidationConfig>): Promise<ValidationResult> {
     const finalConfig = { ...this.config, ...config };
     
-    // Check cache first
-    const cached = this.cache.get(url);
-    if (cached && this.isCacheValid(cached)) {
+    // Check intelligent cache first
+    const cached = cacheStrategy.getLinkResult(url);
+    if (cached) {
       return cached;
+    }
+    
+    // Fallback to local cache for backward compatibility
+    const localCached = this.cache.get(url);
+    if (localCached && this.isCacheValid(localCached)) {
+      return localCached;
     }
 
     const startTime = Date.now();
@@ -35,8 +42,9 @@ export class LinkValidator {
       try {
         const result = await this.performValidation(url, finalConfig);
         
-        // Cache successful results
+        // Cache successful results in both caches
         this.cache.set(url, result);
+        cacheStrategy.setLinkResult(url, result);
         
         // Store in database
         await this.storeValidationResult(result);
@@ -68,6 +76,7 @@ export class LinkValidator {
     };
 
     this.cache.set(url, failedResult);
+    cacheStrategy.setLinkResult(url, failedResult);
     await this.storeValidationResult(failedResult);
     
     return failedResult;

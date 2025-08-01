@@ -1,23 +1,46 @@
 {
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
   ],
   "crons": [
     {
-      "path": "/api/audit-links",
+      "path": "/api/audit-complete",
       "schedule": "0 2 * * *"
     },
     {
-      "path": "/api/weekly-report",
+      "path": "/api/maintenance-weekly",
       "schedule": "0 9 * * 1"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/health",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
     },
     {
-      "path": "/api/admin/trigger-alerts",
-      "schedule": "0 */6 * * *"
-    },
-    {
-      "path": "/api/cron/process-queue",
-      "schedule": "*/5 * * * *"
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
     }
   ]
-} 
+}

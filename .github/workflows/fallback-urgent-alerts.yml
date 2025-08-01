@@ -1,0 +1,261 @@
+name: Fallback - Alertes Urgentes
+
+on:
+  schedule:
+    # Toutes les 6 heures (00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      force_check:
+        description: 'Forcer la vérification même si Vercel fonctionne'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  urgent-alerts-fallback:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Setup environment
+      run: |
+        echo "SENDGRID_API_KEY=${{ secrets.SENDGRID_API_KEY }}" >> $GITHUB_ENV
+        echo "SENDGRID_FROM_EMAIL=${{ secrets.SENDGRID_FROM_EMAIL }}" >> $GITHUB_ENV
+        echo "SENDGRID_FROM_NAME=${{ secrets.SENDGRID_FROM_NAME }}" >> $GITHUB_ENV
+        echo "ADMIN_EMAIL=${{ secrets.ADMIN_EMAIL }}" >> $GITHUB_ENV
+        echo "NEXT_PUBLIC_SUPABASE_URL=${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}" >> $GITHUB_ENV
+        echo "SUPABASE_SERVICE_ROLE_KEY=${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" >> $GITHUB_ENV
+        echo "NEXT_PUBLIC_BASE_URL=${{ secrets.NEXT_PUBLIC_BASE_URL }}" >> $GITHUB_ENV
+        echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+        
+    - name: Check Vercel system status
+      id: vercel-check
+      run: |
+        # Vérifier si le système Vercel principal fonctionne
+        FORCE_CHECK="${{ github.event.inputs.force_check }}"
+        
+        if [ "$FORCE_CHECK" = "true" ]; then
+          echo "vercel_down=true" >> $GITHUB_OUTPUT
+          echo "reason=Force check requested" >> $GITHUB_OUTPUT
+        else
+          # Tenter d'appeler l'API Vercel pour vérifier le statut
+          VERCEL_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            "https://api.vercel.com/v1/projects" \
+            -H "Authorization: Bearer ${{ secrets.VERCEL_TOKEN }}" || echo "000")
+          
+          if [ "$VERCEL_STATUS" != "200" ]; then
+            echo "vercel_down=true" >> $GITHUB_OUTPUT
+            echo "reason=Vercel API unreachable (HTTP $VERCEL_STATUS)" >> $GITHUB_OUTPUT
+          else
+            # Vérifier si les cron jobs Vercel fonctionnent
+            LAST_AUDIT_TIME=$(npm run audit:cli status --last-run 2>/dev/null || echo "0")
+            CURRENT_TIME=$(date +%s)
+            TIME_DIFF=$((CURRENT_TIME - LAST_AUDIT_TIME))
+            
+            # Si le dernier audit date de plus de 8 heures (28800 secondes)
+            if [ "$TIME_DIFF" -gt 28800 ]; then
+              echo "vercel_down=true" >> $GITHUB_OUTPUT
+              echo "reason=No audit activity for $((TIME_DIFF / 3600)) hours" >> $GITHUB_OUTPUT
+            else
+              echo "vercel_down=false" >> $GITHUB_OUTPUT
+              echo "reason=Vercel system operational" >> $GITHUB_OUTPUT
+            fi
+          fi
+        fi
+        
+    - name: Run urgent alerts check
+      if: steps.vercel-check.outputs.vercel_down == 'true'
+      run: |
+        echo "🚨 Système Vercel indisponible - Activation du fallback"
+        echo "Raison: ${{ steps.vercel-check.outputs.reason }}"
+        
+        mkdir -p fallback-reports
+        
+        # Audit critique des liens les plus importants
+        npm run audit:cli audit \
+          --depth 1 \
+          --critical-only \
+          --format json \
+          --output ./fallback-reports \
+          --timeout 30000 \
+          --batch-size 5
+      continue-on-error: true
+      
+    - name: Detect critical issues
+      if: steps.vercel-check.outputs.vercel_down == 'true'
+      id: critical-check
+      run: |
+        if [ -f "fallback-reports/audit-report-*.json" ]; then
+          REPORT_FILE=$(ls fallback-reports/audit-report-*.json | head -1)
+          
+          CRITICAL_LINKS=$(jq '[.brokenLinks[] | select(.priority == "critical")] | length' "$REPORT_FILE")
+          TOTAL_BROKEN=$(jq '.summary.brokenLinks' "$REPORT_FILE")
+          HEALTH_SCORE=$(jq '.summary.seoHealthScore' "$REPORT_FILE")
+          
+          echo "critical_links=$CRITICAL_LINKS" >> $GITHUB_OUTPUT
+          echo "total_broken=$TOTAL_BROKEN" >> $GITHUB_OUTPUT
+          echo "health_score=$HEALTH_SCORE" >> $GITHUB_OUTPUT
+          
+          # Déterminer si une alerte urgente est nécessaire
+          if [ "$CRITICAL_LINKS" -gt 0 ] || [ "$HEALTH_SCORE" -lt 70 ]; then
+            echo "urgent_alert=true" >> $GITHUB_OUTPUT
+          else
+            echo "urgent_alert=false" >> $GITHUB_OUTPUT
+          fi
+          
+          # Extraire les liens critiques pour l'alerte
+          jq -r '.brokenLinks[] | select(.priority == "critical") | "- \(.url): \(.error)"' "$REPORT_FILE" > critical_links.txt
+        else
+          echo "urgent_alert=true" >> $GITHUB_OUTPUT
+          echo "critical_links=unknown" >> $GITHUB_OUTPUT
+          echo "Erreur: Impossible de générer le rapport d'audit" > critical_links.txt
+        fi
+        
+    - name: Send urgent alert email
+      if: steps.vercel-check.outputs.vercel_down == 'true' && steps.critical-check.outputs.urgent_alert == 'true'
+      run: |
+        # Préparer le contenu de l'alerte
+        cat > urgent_alert.json << EOF
+        {
+          "personalizations": [
+            {
+              "to": [{"email": "${{ secrets.ADMIN_EMAIL }}"}],
+              "subject": "🚨 ALERTE URGENTE - Système d'audit en fallback"
+            }
+          ],
+          "from": {
+            "email": "${{ secrets.SENDGRID_FROM_EMAIL }}",
+            "name": "${{ secrets.SENDGRID_FROM_NAME }}"
+          },
+          "content": [
+            {
+              "type": "text/html",
+              "value": "$(cat << 'HTML'
+        <h2>🚨 Alerte Urgente - Système d'Audit</h2>
+        
+        <p><strong>Statut:</strong> Système Vercel indisponible - Fallback GitHub Actions activé</p>
+        <p><strong>Raison:</strong> ${{ steps.vercel-check.outputs.reason }}</p>
+        <p><strong>Heure:</strong> $(date '+%d/%m/%Y %H:%M:%S UTC')</p>
+        
+        <h3>Problèmes Critiques Détectés</h3>
+        <ul>
+          <li><strong>Liens critiques morts:</strong> ${{ steps.critical-check.outputs.critical_links }}</li>
+          <li><strong>Total liens morts:</strong> ${{ steps.critical-check.outputs.total_broken }}</li>
+          <li><strong>Score de santé:</strong> ${{ steps.critical-check.outputs.health_score }}%</li>
+        </ul>
+        
+        <h3>Liens Critiques à Corriger</h3>
+        <pre>$(cat critical_links.txt)</pre>
+        
+        <h3>Actions Recommandées</h3>
+        <ol>
+          <li>Vérifier le statut du système Vercel</li>
+          <li>Corriger immédiatement les liens critiques</li>
+          <li>Surveiller les métriques de trafic</li>
+          <li>Réactiver le système principal dès que possible</li>
+        </ol>
+        
+        <p><em>Alerte générée automatiquement par GitHub Actions Fallback</em></p>
+        <p><a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}">Voir les détails</a></p>
+HTML
+)"
+            }
+          ]
+        }
+EOF
+        
+        # Envoyer l'email via SendGrid
+        curl -X POST "https://api.sendgrid.com/v3/mail/send" \
+          -H "Authorization: Bearer ${{ secrets.SENDGRID_API_KEY }}" \
+          -H "Content-Type: application/json" \
+          -d @urgent_alert.json
+          
+        echo "📧 Alerte urgente envoyée à ${{ secrets.ADMIN_EMAIL }}"
+        
+    - name: Create GitHub Issue for critical problems
+      if: steps.vercel-check.outputs.vercel_down == 'true' && steps.critical-check.outputs.urgent_alert == 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          
+          const title = `🚨 URGENT: Système d'audit en fallback - ${new Date().toLocaleDateString('fr-FR')}`;
+          
+          let criticalLinks = '';
+          try {
+            criticalLinks = fs.readFileSync('critical_links.txt', 'utf8');
+          } catch (e) {
+            criticalLinks = 'Impossible de récupérer la liste des liens critiques';
+          }
+          
+          const body = `## 🚨 Alerte Urgente - Système d'Audit en Fallback
+          
+**Statut:** Système Vercel indisponible
+**Raison:** ${{ steps.vercel-check.outputs.reason }}
+**Heure:** ${new Date().toLocaleString('fr-FR')}
+
+### Problèmes Critiques
+- **Liens critiques morts:** ${{ steps.critical-check.outputs.critical_links }}
+- **Total liens morts:** ${{ steps.critical-check.outputs.total_broken }}
+- **Score de santé:** ${{ steps.critical-check.outputs.health_score }}%
+
+### Liens Critiques à Corriger
+\`\`\`
+${criticalLinks}
+\`\`\`
+
+### Actions Requises
+- [ ] Vérifier le statut du système Vercel
+- [ ] Corriger les liens critiques immédiatement
+- [ ] Surveiller les métriques de trafic
+- [ ] Réactiver le système principal
+
+### Monitoring
+Ce fallback continuera de surveiller le système toutes les 6 heures jusqu'à résolution.
+
+---
+*Issue créée automatiquement par GitHub Actions Fallback*
+[Voir les logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})`;
+
+          await github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: title,
+            body: body,
+            labels: ['urgent', 'fallback', 'système', 'critique'],
+            assignees: ['${{ github.repository_owner }}']
+          });
+          
+    - name: Upload fallback reports
+      if: steps.vercel-check.outputs.vercel_down == 'true'
+      uses: actions/upload-artifact@v4
+      with:
+        name: fallback-urgent-reports-${{ github.run_number }}
+        path: fallback-reports/
+        retention-days: 7
+        
+    - name: Log fallback status
+      run: |
+        if [ "${{ steps.vercel-check.outputs.vercel_down }}" = "true" ]; then
+          echo "🔄 Fallback GitHub Actions activé"
+          echo "Raison: ${{ steps.vercel-check.outputs.reason }}"
+          if [ "${{ steps.critical-check.outputs.urgent_alert }}" = "true" ]; then
+            echo "🚨 Alerte urgente envoyée"
+          else
+            echo "✅ Pas de problèmes critiques détectés"
+          fi
+        else
+          echo "✅ Système Vercel opérationnel - Fallback non nécessaire"
+        fi

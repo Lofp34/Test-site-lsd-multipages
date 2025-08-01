@@ -1,0 +1,58 @@
+{
+  "timestamp": "2025-08-01T07-36-58-646Z",
+  "version": "1.0.0",
+  "vercelConfig": {
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ],
+    "crons": [
+      {
+        "path": "/api/audit-complete",
+        "schedule": "0 2 * * *"
+      },
+      {
+        "path": "/api/maintenance-weekly",
+        "schedule": "0 9 * * 1"
+      }
+    ]
+  },
+  "databaseTables": [
+    "scanned_links",
+    "validation_results",
+    "applied_corrections",
+    "resource_requests",
+    "audit_history",
+    "link_health_metrics"
+  ],
+  "totalRecords": {
+    "scanned_links": 0,
+    "validation_results": 440,
+    "applied_corrections": 0,
+    "resource_requests": 0,
+    "audit_history": 2,
+    "link_health_metrics": 0
+  },
+  "backupSize": {
+    "vercel.json": 261,
+    "scanned_links": 101,
+    "validation_results": 143566,
+    "applied_corrections": 107,
+    "resource_requests": 105,
+    "audit_history": 628,
+    "link_health_metrics": 107,
+    "schema": 330
+  },
+  "checksums": {
+    "vercel.json": "bc669601477b092bbd4744570dd313d2",
+    "scanned_links": "0cbfae25a4c2b08cce629ac2e9bb5bb7",
+    "validation_results": "92a7eba7aa96b7a765ba4694db197010",
+    "applied_corrections": "ef1f1491f9a9b5d38d90265738a2a962",
+    "resource_requests": "2a74aee786c6b5f7a00583fc113aa9a5",
+    "audit_history": "28bb950b5cbdf148180b797b8aafe974",
+    "link_health_metrics": "d7554465dc1fbf44d6dce53e910bcf63",
+    "schema": "80b3bda4c52246d1432f0f4da6a1e12e"
+  }
+}

@@ -1,0 +1,4407 @@
+{
+  "table": "validation_results",
+  "timestamp": "2025-08-01T07-36-58-646Z",
+  "count": 440,
+  "data": [
+    {
+      "id": 1,
+      "url": "https://example.com/valid",
+      "status": "broken",
+      "status_code": 404,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 1479,
+      "checked_at": "2025-07-30T09:25:52.641+00:00"
+    },
+    {
+      "id": 2,
+      "url": "/broken-internal",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /broken-internal",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:25:54.082+00:00"
+    },
+    {
+      "id": 3,
+      "url": "/abotu",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /abotu",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:25:55.222+00:00"
+    },
+    {
+      "id": 4,
+      "url": "/downloads/file.pdf",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /downloads/file.pdf",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:25:56.347+00:00"
+    },
+    {
+      "id": 5,
+      "url": "/old-page",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /old-page",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:25:57.438+00:00"
+    },
+    {
+      "id": 6,
+      "url": "/contact-us",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /contact-us",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:25:58.52+00:00"
+    },
+    {
+      "id": 7,
+      "url": "/about",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /about",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:25:59.656+00:00"
+    },
+    {
+      "id": 8,
+      "url": "/internal-page",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /internal-page",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:00.743+00:00"
+    },
+    {
+      "id": 9,
+      "url": "/valid-page",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /valid-page",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:26:01.846+00:00"
+    },
+    {
+      "id": 10,
+      "url": "/test-page",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /test-page",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:26:02.931+00:00"
+    },
+    {
+      "id": 11,
+      "url": "/single-file-link",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /single-file-link",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:03.01+00:00"
+    },
+    {
+      "id": 12,
+      "url": "/component-link",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /component-link",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:26:04.088+00:00"
+    },
+    {
+      "id": 13,
+      "url": "/diagnostic",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /diagnostic",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:26:05.17+00:00"
+    },
+    {
+      "id": 14,
+      "url": "/contact",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /contact",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:06.252+00:00"
+    },
+    {
+      "id": 15,
+      "url": "/blog/bootcamp-commercial-pourquoi-formations-echouent",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /blog/bootcamp-commercial-pourquoi-formations-echouent",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:26:07.327+00:00"
+    },
+    {
+      "id": 16,
+      "url": "/blog/vendeur-commercial-transformation-decisive",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /blog/vendeur-commercial-transformation-decisive",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:08.425+00:00"
+    },
+    {
+      "id": 17,
+      "url": "/blog/erreurs-fatales-prospection-b2b",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /blog/erreurs-fatales-prospection-b2b",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:09.506+00:00"
+    },
+    {
+      "id": 18,
+      "url": "/blog/ia-transforme-developpement-commercial-2025",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /blog/ia-transforme-developpement-commercial-2025",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:10.59+00:00"
+    },
+    {
+      "id": 19,
+      "url": "/laurent.jpg",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /laurent.jpg",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:11.674+00:00"
+    },
+    {
+      "id": 20,
+      "url": "/blog/5-signes-structurer-equipe-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /blog/5-signes-structurer-equipe-commerciale",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:13.762+00:00"
+    },
+    {
+      "id": 21,
+      "url": "/bootcamp",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /bootcamp",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:26:15.841+00:00"
+    },
+    {
+      "id": 22,
+      "url": "/cas-clients",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /cas-clients",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:18.935+00:00"
+    },
+    {
+      "id": 23,
+      "url": "/expert-developpement-commercial-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /expert-developpement-commercial-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:22.021+00:00"
+    },
+    {
+      "id": 24,
+      "url": "/formation-commerciale-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /formation-commerciale-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:23.103+00:00"
+    },
+    {
+      "id": 25,
+      "url": "/transformation-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /transformation-commerciale",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:26:24.185+00:00"
+    },
+    {
+      "id": 26,
+      "url": "/ressources/guide-prospection",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/guide-prospection",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:26:27.298+00:00"
+    },
+    {
+      "id": 27,
+      "url": "/ressources/guide-closing",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/guide-closing",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:26:28.382+00:00"
+    },
+    {
+      "id": 28,
+      "url": "/ressources/outil-strategie-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/outil-strategie-commerciale",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:26:29.473+00:00"
+    },
+    {
+      "id": 29,
+      "url": "/ressources/outil-preparation-rdv",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/outil-preparation-rdv",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:26:30.557+00:00"
+    },
+    {
+      "id": 30,
+      "url": "/ressources/kit-gestion-grands-comptes",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/kit-gestion-grands-comptes",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:31.652+00:00"
+    },
+    {
+      "id": 31,
+      "url": "/coach-commercial-entreprise",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /coach-commercial-entreprise",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:38.752+00:00"
+    },
+    {
+      "id": 32,
+      "url": "https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 279,
+      "checked_at": "2025-07-30T09:26:40.248+00:00"
+    },
+    {
+      "id": 33,
+      "url": "https://support.google.com/chrome/answer/95647?hl=fr&hlrm=en",
+      "status": "broken",
+      "status_code": 404,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 211,
+      "checked_at": "2025-07-30T09:26:41.597+00:00"
+    },
+    {
+      "id": 34,
+      "url": "https://support.mozilla.org/fr/kb/activer-desactiver-cookies-preferences",
+      "status": "broken",
+      "status_code": 405,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 325,
+      "checked_at": "2025-07-30T09:26:42.019+00:00"
+    },
+    {
+      "id": 35,
+      "url": "https://support.microsoft.com/fr-fr/help/17442/windows-internet-explorer-delete-manage-cookies",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://support.microsoft.com/fr-fr/windows/g%C3%A9rer-les-cookies-dans-microsoft-edge-afficher-autoriser-bloquer-supprimer-et-utiliser-168dab11-0753-043d-7c16-ede5947fc64d",
+      "error_message": null,
+      "response_time": 931,
+      "checked_at": "2025-07-30T09:26:44.037+00:00"
+    },
+    {
+      "id": 36,
+      "url": "https://support.apple.com/fr-fr/guide/safari/sfri11471/mac",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 482,
+      "checked_at": "2025-07-30T09:26:45.66+00:00"
+    },
+    {
+      "id": 37,
+      "url": "https://www.cnil.fr/fr/cookies-et-autres-traceurs",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 322,
+      "checked_at": "2025-07-30T09:26:47.053+00:00"
+    },
+    {
+      "id": 38,
+      "url": "/ressources",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:26:59.166+00:00"
+    },
+    {
+      "id": 39,
+      "url": "/suivi-performance",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /suivi-performance",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:27:02.325+00:00"
+    },
+    {
+      "id": 40,
+      "url": "/ressources/outil-offre-5-etoiles",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/outil-offre-5-etoiles",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:27:05.444+00:00"
+    },
+    {
+      "id": 41,
+      "url": "/consultant-commercial-montpellier",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /consultant-commercial-montpellier",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:27:07.537+00:00"
+    },
+    {
+      "id": 42,
+      "url": "/formateur-vente-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /formateur-vente-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:27:08.628+00:00"
+    },
+    {
+      "id": 43,
+      "url": "/bootcamp-commercial-intensif",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /bootcamp-commercial-intensif",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:27:13.73+00:00"
+    },
+    {
+      "id": 44,
+      "url": "/management-equipe-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /management-equipe-commerciale",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:27:18.923+00:00"
+    },
+    {
+      "id": 45,
+      "url": "/ressources/impact-aida-script-prospection-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/impact-aida-script-prospection-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:27:25.147+00:00"
+    },
+    {
+      "id": 46,
+      "url": "/ressources/linkedin-prospection",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/linkedin-prospection",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:27:26.349+00:00"
+    },
+    {
+      "id": 47,
+      "url": "/ressources/systeme-suivi-prospects",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/systeme-suivi-prospects",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:27:27.484+00:00"
+    },
+    {
+      "id": 48,
+      "url": "/ressources/techniques-motivation-equipe",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/techniques-motivation-equipe",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:27:29.575+00:00"
+    },
+    {
+      "id": 49,
+      "url": "/ressources/guide-recrutement-commercial",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/guide-recrutement-commercial",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:27:30.665+00:00"
+    },
+    {
+      "id": 50,
+      "url": "/favicon.ico",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /favicon.ico",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:27:32.746+00:00"
+    },
+    {
+      "id": 51,
+      "url": "/services",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /services",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:27:47.85+00:00"
+    },
+    {
+      "id": 52,
+      "url": "https://vercel.com",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 235,
+      "checked_at": "2025-07-30T09:27:50.421+00:00"
+    },
+    {
+      "id": 53,
+      "url": "/ressources/techniques-de-vente",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/techniques-de-vente",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:27:59.519+00:00"
+    },
+    {
+      "id": 54,
+      "url": "/ressources/techniques-de-negociation",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/techniques-de-negociation",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:28:00.686+00:00"
+    },
+    {
+      "id": 55,
+      "url": "/ressources/le-grand-guide-des-techniques-de-vente.pdf",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/le-grand-guide-des-techniques-de-vente.pdf",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:28:01.775+00:00"
+    },
+    {
+      "id": 56,
+      "url": "/guide-linkedin-prospection-pme.pdf",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /guide-linkedin-prospection-pme.pdf",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:28:04.858+00:00"
+    },
+    {
+      "id": 57,
+      "url": "/ressources/scripts-prospection",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/scripts-prospection",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:28:06.966+00:00"
+    },
+    {
+      "id": 58,
+      "url": "/ressources/meilleurs-livres/enterprise-account",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/meilleurs-livres/enterprise-account",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:28:11.043+00:00"
+    },
+    {
+      "id": 59,
+      "url": "/ressources/meilleurs-livres",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/meilleurs-livres",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:28:14.212+00:00"
+    },
+    {
+      "id": 60,
+      "url": "/ressources/meilleurs-livres/methodes-process",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/meilleurs-livres/methodes-process",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:28:21.311+00:00"
+    },
+    {
+      "id": 61,
+      "url": "/ressources/meilleurs-livres/psychologie-influence",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/meilleurs-livres/psychologie-influence",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:28:22.478+00:00"
+    },
+    {
+      "id": 62,
+      "url": "/ressources/meilleurs-livres/negociation-closing",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/meilleurs-livres/negociation-closing",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:28:23.605+00:00"
+    },
+    {
+      "id": 63,
+      "url": "/ressources/meilleurs-livres/prospection-sdr",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/meilleurs-livres/prospection-sdr",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:28:42.719+00:00"
+    },
+    {
+      "id": 64,
+      "url": "/ressources/techniques-de-negociation/effet-miroir",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/techniques-de-negociation/effet-miroir",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:29:06.948+00:00"
+    },
+    {
+      "id": 65,
+      "url": "/ressources/techniques-de-negociation/negociation-raisonnee",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/techniques-de-negociation/negociation-raisonnee",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:29:08.093+00:00"
+    },
+    {
+      "id": 66,
+      "url": "/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:29:09.282+00:00"
+    },
+    {
+      "id": 67,
+      "url": "/ressources/outil-tableau-bord",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/outil-tableau-bord",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:29:17.393+00:00"
+    },
+    {
+      "id": 68,
+      "url": "/ressources/grille-evaluation",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/grille-evaluation",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:29:18.554+00:00"
+    },
+    {
+      "id": 69,
+      "url": "/ressources/reporting-automatise",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/reporting-automatise",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:29:19.646+00:00"
+    },
+    {
+      "id": 70,
+      "url": "/cookies",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /cookies",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:29:31.863+00:00"
+    },
+    {
+      "id": 71,
+      "url": "/api/admin/alert-config",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/alert-config",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:29:33.221+00:00"
+    },
+    {
+      "id": 72,
+      "url": "/api/weekly-report",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/weekly-report",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:29:34.308+00:00"
+    },
+    {
+      "id": 73,
+      "url": "/api/admin/audit-metrics",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/audit-metrics",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:29:35.382+00:00"
+    },
+    {
+      "id": 74,
+      "url": "/api/admin/audit-activities",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/audit-activities",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:29:36.468+00:00"
+    },
+    {
+      "id": 75,
+      "url": "/api/admin/audit-history",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/audit-history",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:29:37.557+00:00"
+    },
+    {
+      "id": 76,
+      "url": "/api/admin/broken-links",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/broken-links",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:29:38.65+00:00"
+    },
+    {
+      "id": 77,
+      "url": "/api/admin/most-requested-resources",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/most-requested-resources",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:29:39.749+00:00"
+    },
+    {
+      "id": 78,
+      "url": "/api/admin/seo-impact",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/seo-impact",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:29:40.827+00:00"
+    },
+    {
+      "id": 79,
+      "url": "/api/admin/scheduler",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/scheduler",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:29:40.911+00:00"
+    },
+    {
+      "id": 80,
+      "url": "/",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:29:42.004+00:00"
+    },
+    {
+      "id": 81,
+      "url": "/blog",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /blog",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:29:46.097+00:00"
+    },
+    {
+      "id": 82,
+      "url": "/a-propos",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /a-propos",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:29:51.261+00:00"
+    },
+    {
+      "id": 83,
+      "url": "/mentions-legales",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /mentions-legales",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:29:52.426+00:00"
+    },
+    {
+      "id": 84,
+      "url": "/cgv",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /cgv",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:29:53.591+00:00"
+    },
+    {
+      "id": 85,
+      "url": "/politique-de-confidentialite",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /politique-de-confidentialite",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:29:54.682+00:00"
+    },
+    {
+      "id": 86,
+      "url": "https://www.linkedin.com/in/laurentserre34",
+      "status": "broken",
+      "status_code": 405,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 335,
+      "checked_at": "2025-07-30T09:29:58.1+00:00"
+    },
+    {
+      "id": 87,
+      "url": "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A?cbrd=1&ucbcb=1",
+      "error_message": null,
+      "response_time": 1064,
+      "checked_at": "2025-07-30T09:30:00.289+00:00"
+    },
+    {
+      "id": 88,
+      "url": "/ressources/le-grand-guide-des-techniques-de-vente",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/le-grand-guide-des-techniques-de-vente",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:30:03.391+00:00"
+    },
+    {
+      "id": 89,
+      "url": "/fonts/inter-var.woff2",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /fonts/inter-var.woff2",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:30:04.469+00:00"
+    },
+    {
+      "id": 90,
+      "url": "/fonts/roboto-slab-var.woff2",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /fonts/roboto-slab-var.woff2",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:30:05.58+00:00"
+    },
+    {
+      "id": 91,
+      "url": "/path",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /path",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:30:08.671+00:00"
+    },
+    {
+      "id": 92,
+      "url": "/api/path",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/path",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:30:09.766+00:00"
+    },
+    {
+      "id": 93,
+      "url": "url",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from url",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:30:10.866+00:00"
+    },
+    {
+      "id": 94,
+      "url": "/api/download",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/download",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:30:11.968+00:00"
+    },
+    {
+      "id": 95,
+      "url": "https://developers.hubspot.com/docs/guides/api/marketing/forms",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://developers.hubspot.com/docs/guides/api/marketing/forms/forms",
+      "error_message": null,
+      "response_time": 677,
+      "checked_at": "2025-07-30T09:30:13.721+00:00"
+    },
+    {
+      "id": 96,
+      "url": "https://knowledge.hubspot.com/forms/create-forms",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 212,
+      "checked_at": "2025-07-30T09:30:15.022+00:00"
+    },
+    {
+      "id": 97,
+      "url": "https://developers.hubspot.com/docs/guides/cms/content/forms#the-default-form-module",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #the-default-form-module not found on page",
+      "response_time": 601,
+      "checked_at": "2025-07-30T09:30:16.71+00:00"
+    },
+    {
+      "id": 98,
+      "url": "https://developers.hubspot.com/docs/guides/cms/content/forms#form-fields-in-custom-modules",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #form-fields-in-custom-modules not found on page",
+      "response_time": 372,
+      "checked_at": "2025-07-30T09:30:18.493+00:00"
+    },
+    {
+      "id": 99,
+      "url": "https://developers.hubspot.com/docs/guides/cms/content/forms#using-the-form-hubl-tag",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #using-the-form-hubl-tag not found on page",
+      "response_time": 293,
+      "checked_at": "2025-07-30T09:30:20.199+00:00"
+    },
+    {
+      "id": 100,
+      "url": "https://developers.hubspot.com/docs/guides/cms/content/forms#using-the-form-embed-code",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #using-the-form-embed-code not found on page",
+      "response_time": 293,
+      "checked_at": "2025-07-30T09:30:21.794+00:00"
+    },
+    {
+      "id": 101,
+      "url": "https://developers.hubspot.com/docs/reference/cms/hubl/tags/dnd-areas",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 829,
+      "checked_at": "2025-07-30T09:30:23.965+00:00"
+    },
+    {
+      "id": 102,
+      "url": "https://developers.hubspot.com/docs/reference/cms/modules/default-modules#form",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #form not found on page",
+      "response_time": 766,
+      "checked_at": "2025-07-30T09:30:25.825+00:00"
+    },
+    {
+      "id": 103,
+      "url": "https://www.hubspot.com/hubfs/Knowledge_Base_2023_2024/clone-form-module.png",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 258,
+      "checked_at": "2025-07-30T09:30:26.403+00:00"
+    },
+    {
+      "id": 104,
+      "url": "https://www.hubspot.com/hubfs/Knowledge_Base_2023_2024/default-form-module-clone-section.png",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 196,
+      "checked_at": "2025-07-30T09:30:27.684+00:00"
+    },
+    {
+      "id": 105,
+      "url": "https://developers.hubspot.com/docs/reference/cms/fields/module-theme-fields#form",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #form not found on page",
+      "response_time": 751,
+      "checked_at": "2025-07-30T09:30:29.517+00:00"
+    },
+    {
+      "id": 106,
+      "url": "https://www.hubspot.com/hubfs/Knowledge_Base_2023_2024/design-manager-select-form-field.png",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 1497,
+      "checked_at": "2025-07-30T09:30:32.398+00:00"
+    },
+    {
+      "id": 107,
+      "url": "https://www.hubspot.com/hubfs/Knowledge_Base_2023_2024/module-field-copy-snippet.png",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 233,
+      "checked_at": "2025-07-30T09:30:33.713+00:00"
+    },
+    {
+      "id": 108,
+      "url": "https://www.hubspot.com/hubfs/Knowledge_Base_2023_2024/module-field-paste-snippet.png",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 218,
+      "checked_at": "2025-07-30T09:30:35.016+00:00"
+    },
+    {
+      "id": 109,
+      "url": "https://developers.hubspot.com/docs/guides/cms/setup/getting-started-with-local-development",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 982,
+      "checked_at": "2025-07-30T09:30:37.09+00:00"
+    },
+    {
+      "id": 110,
+      "url": "https://knowledge.hubspot.com/forms/how-can-i-share-a-hubspot-form-if-im-using-an-external-site#add-the-form-embed-code",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #add-the-form-embed-code not found on page",
+      "response_time": 216,
+      "checked_at": "2025-07-30T09:30:38.394+00:00"
+    },
+    {
+      "id": 111,
+      "url": "https://developers.hubspot.com/docs/reference/cms/forms",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://developers.hubspot.com/docs/reference/cms/forms/legacy-forms",
+      "error_message": null,
+      "response_time": 1464,
+      "checked_at": "2025-07-30T09:30:41.161+00:00"
+    },
+    {
+      "id": 112,
+      "url": "https://github.com/HubSpot/cms-theme-boilerplate/blob/main/src/css/elements/_forms.css",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 622,
+      "checked_at": "2025-07-30T09:30:42.87+00:00"
+    },
+    {
+      "id": 113,
+      "url": "https://cdn2.hubspot.net/hubfs/53/5Cdocs/forms/form-module-css-pane-4.jpg",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 179,
+      "checked_at": "2025-07-30T09:30:43.141+00:00"
+    },
+    {
+      "id": 114,
+      "url": "https://knowledge.hubspot.com/forms/set-global-form-colors-and-fonts",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 546,
+      "checked_at": "2025-07-30T09:30:44.769+00:00"
+    },
+    {
+      "id": 115,
+      "url": "https://cdn2.hubspot.net/hubfs/53/5Cdocs/forms/global-form-styling-options-4.png",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 141,
+      "checked_at": "2025-07-30T09:30:45.99+00:00"
+    },
+    {
+      "id": 116,
+      "url": "https://cdn2.hubspot.net/hubfs/53/5Cdocs/forms/set-as-raw-html-form-4.jpg",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 147,
+      "checked_at": "2025-07-30T09:30:47.227+00:00"
+    },
+    {
+      "id": 117,
+      "url": "./src/components/ui/PerformanceOptimizer.tsx",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./src/components/ui/PerformanceOptimizer.tsx",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:30:48.316+00:00"
+    },
+    {
+      "id": 118,
+      "url": "./src/components/ui/SEOOptimizer.tsx",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./src/components/ui/SEOOptimizer.tsx",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:30:49.405+00:00"
+    },
+    {
+      "id": 119,
+      "url": "./src/scripts/test-performance-optimizations.ts",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./src/scripts/test-performance-optimizations.ts",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:30:50.489+00:00"
+    },
+    {
+      "id": 120,
+      "url": "./docs/performance-optimization-guide.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./docs/performance-optimization-guide.md",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:30:51.572+00:00"
+    },
+    {
+      "id": 121,
+      "url": "./docs/performance-best-practices.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./docs/performance-best-practices.md",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:30:52.657+00:00"
+    },
+    {
+      "id": 122,
+      "url": "./docs/performance-troubleshooting.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./docs/performance-troubleshooting.md",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:30:53.759+00:00"
+    },
+    {
+      "id": 123,
+      "url": "https://nextjs.org",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 251,
+      "checked_at": "2025-07-30T09:30:54.089+00:00"
+    },
+    {
+      "id": 124,
+      "url": "https://www.typescriptlang.org",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 338,
+      "checked_at": "2025-07-30T09:30:55.513+00:00"
+    },
+    {
+      "id": 125,
+      "url": "https://tailwindcss.com",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 181,
+      "checked_at": "2025-07-30T09:30:56.779+00:00"
+    },
+    {
+      "id": 126,
+      "url": "https://www.framer.com/motion",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://motion.dev/",
+      "error_message": null,
+      "response_time": 543,
+      "checked_at": "2025-07-30T09:30:58.474+00:00"
+    },
+    {
+      "id": 127,
+      "url": "https://react.dev",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 232,
+      "checked_at": "2025-07-30T09:30:59.79+00:00"
+    },
+    {
+      "id": 128,
+      "url": "./docs/architecture-technique.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./docs/architecture-technique.md",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:31:00.87+00:00"
+    },
+    {
+      "id": 129,
+      "url": "./docs/strategie-seo-cocon.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./docs/strategie-seo-cocon.md",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:31:01.958+00:00"
+    },
+    {
+      "id": 130,
+      "url": "./src/components/README.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./src/components/README.md",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:31:03.039+00:00"
+    },
+    {
+      "id": 131,
+      "url": "./docs/standards-dev.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./docs/standards-dev.md",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:31:04.14+00:00"
+    },
+    {
+      "id": 132,
+      "url": "https://sendgrid.com",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://sendgrid.com/en-us",
+      "error_message": null,
+      "response_time": 618,
+      "checked_at": "2025-07-30T09:31:05.849+00:00"
+    },
+    {
+      "id": 133,
+      "url": "./SENDGRID_CONFIGURATION_GUIDE.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./SENDGRID_CONFIGURATION_GUIDE.md",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:31:05.942+00:00"
+    },
+    {
+      "id": 134,
+      "url": "./AUDIT_SYSTEM_TECHNICAL_GUIDE.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./AUDIT_SYSTEM_TECHNICAL_GUIDE.md",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:31:07.035+00:00"
+    },
+    {
+      "id": 135,
+      "url": "./AUDIT_SYSTEM_TROUBLESHOOTING_GUIDE.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./AUDIT_SYSTEM_TROUBLESHOOTING_GUIDE.md",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:31:08.131+00:00"
+    },
+    {
+      "id": 136,
+      "url": "./AUDIT_SYSTEM_FAQ.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./AUDIT_SYSTEM_FAQ.md",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:31:10.242+00:00"
+    },
+    {
+      "id": 137,
+      "url": "https://laurentserre.com/formation-commerciale-pme",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://www.laurentserre.com/formation-commerciale-pme",
+      "error_message": null,
+      "response_time": 3377,
+      "checked_at": "2025-07-30T09:31:15.707+00:00"
+    },
+    {
+      "id": 138,
+      "url": "https://laurentserre.com/ressources",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://www.laurentserre.com/ressources",
+      "error_message": null,
+      "response_time": 1001,
+      "checked_at": "2025-07-30T09:31:18.114+00:00"
+    },
+    {
+      "id": 139,
+      "url": "https://laurentserre.com/bootcamp-commercial-intensif",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://www.laurentserre.com/bootcamp",
+      "error_message": null,
+      "response_time": 1262,
+      "checked_at": "2025-07-30T09:31:20.478+00:00"
+    },
+    {
+      "id": 140,
+      "url": "https://docs.sendgrid.com",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://www.twilio.com/docs/sendgrid",
+      "error_message": null,
+      "response_time": 804,
+      "checked_at": "2025-07-30T09:31:22.383+00:00"
+    },
+    {
+      "id": 141,
+      "url": "https://status.sendgrid.com",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 489,
+      "checked_at": "2025-07-30T09:31:22.972+00:00"
+    },
+    {
+      "id": 142,
+      "url": "https://community.sendgrid.com",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "fetch failed",
+      "response_time": 60,
+      "checked_at": "2025-07-30T09:31:24.135+00:00"
+    },
+    {
+      "id": 143,
+      "url": "https://eslint.org",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 282,
+      "checked_at": "2025-07-30T09:31:48.536+00:00"
+    },
+    {
+      "id": 144,
+      "url": "https://nextjs.org/docs",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 163,
+      "checked_at": "2025-07-30T09:31:49.984+00:00"
+    },
+    {
+      "id": 145,
+      "url": "https://tailwindcss.com/docs",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://tailwindcss.com/docs/installation/using-vite",
+      "error_message": null,
+      "response_time": 317,
+      "checked_at": "2025-07-30T09:31:51.449+00:00"
+    },
+    {
+      "id": 146,
+      "url": "https://www.typescriptlang.org/docs",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://www.typescriptlang.org/docs/",
+      "error_message": null,
+      "response_time": 465,
+      "checked_at": "2025-07-30T09:31:52.003+00:00"
+    },
+    {
+      "id": 147,
+      "url": "https://animate.style",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 939,
+      "checked_at": "2025-07-30T09:31:54.08+00:00"
+    },
+    {
+      "id": 148,
+      "url": "${baseUrl}/expert-developpement-commercial-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/expert-developpement-commercial-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:31:55.183+00:00"
+    },
+    {
+      "id": 149,
+      "url": "${baseUrl}/formation-commerciale-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/formation-commerciale-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:31:56.29+00:00"
+    },
+    {
+      "id": 150,
+      "url": "${baseUrl}/transformation-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/transformation-commerciale",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:31:57.452+00:00"
+    },
+    {
+      "id": 151,
+      "url": "${baseUrl}/diagnostic",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/diagnostic",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:31:58.553+00:00"
+    },
+    {
+      "id": 152,
+      "url": "${baseUrl}/consultant-commercial-montpellier",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/consultant-commercial-montpellier",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:31:59.656+00:00"
+    },
+    {
+      "id": 153,
+      "url": "${baseUrl}/formateur-vente-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/formateur-vente-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:00.757+00:00"
+    },
+    {
+      "id": 154,
+      "url": "${baseUrl}/coach-commercial-entreprise",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/coach-commercial-entreprise",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:01.88+00:00"
+    },
+    {
+      "id": 155,
+      "url": "${baseUrl}/management-equipe-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/management-equipe-commerciale",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:02.986+00:00"
+    },
+    {
+      "id": 156,
+      "url": "${baseUrl}/management/recruter-integrer",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/management/recruter-integrer",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:03.091+00:00"
+    },
+    {
+      "id": 157,
+      "url": "${baseUrl}/management/motiver-engager",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/management/motiver-engager",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:04.184+00:00"
+    },
+    {
+      "id": 158,
+      "url": "${baseUrl}/management/piloter-performance",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/management/piloter-performance",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:05.319+00:00"
+    },
+    {
+      "id": 159,
+      "url": "${baseUrl}/management/former-coacher",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/management/former-coacher",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:06.423+00:00"
+    },
+    {
+      "id": 160,
+      "url": "${baseUrl}/management/structurer-organiser",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/management/structurer-organiser",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:07.515+00:00"
+    },
+    {
+      "id": 161,
+      "url": "${baseUrl}/bootcamp",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/bootcamp",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:08.631+00:00"
+    },
+    {
+      "id": 162,
+      "url": "${baseUrl}/blog",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/blog",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:09.735+00:00"
+    },
+    {
+      "id": 163,
+      "url": "${baseUrl}/blog/5-signes-structurer-equipe-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/blog/5-signes-structurer-equipe-commerciale",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:10.834+00:00"
+    },
+    {
+      "id": 164,
+      "url": "${baseUrl}/blog/ia-transforme-developpement-commercial-2025",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/blog/ia-transforme-developpement-commercial-2025",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:11.927+00:00"
+    },
+    {
+      "id": 165,
+      "url": "${baseUrl}/blog/erreurs-fatales-prospection-b2b",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/blog/erreurs-fatales-prospection-b2b",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:13.058+00:00"
+    },
+    {
+      "id": 166,
+      "url": "${baseUrl}/blog/bootcamp-commercial-pourquoi-formations-echouent",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/blog/bootcamp-commercial-pourquoi-formations-echouent",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:13.175+00:00"
+    },
+    {
+      "id": 167,
+      "url": "${baseUrl}/blog/vendeur-commercial-transformation-decisive",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/blog/vendeur-commercial-transformation-decisive",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:14.285+00:00"
+    },
+    {
+      "id": 168,
+      "url": "${baseUrl}/cgv",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/cgv",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:15.381+00:00"
+    },
+    {
+      "id": 169,
+      "url": "${baseUrl}/mentions-legales",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/mentions-legales",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:16.487+00:00"
+    },
+    {
+      "id": 170,
+      "url": "${baseUrl}/politique-de-confidentialite",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/politique-de-confidentialite",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:17.588+00:00"
+    },
+    {
+      "id": 171,
+      "url": "${baseUrl}/cookies",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/cookies",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:18.7+00:00"
+    },
+    {
+      "id": 172,
+      "url": "${baseUrl}/ressources",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:19.844+00:00"
+    },
+    {
+      "id": 173,
+      "url": "${baseUrl}/ressources/guide-prospection",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/guide-prospection",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:20.958+00:00"
+    },
+    {
+      "id": 174,
+      "url": "${baseUrl}/ressources/guide-closing",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/guide-closing",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:22.09+00:00"
+    },
+    {
+      "id": 175,
+      "url": "${baseUrl}/ressources/outil-offre-5-etoiles",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/outil-offre-5-etoiles",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:23.202+00:00"
+    },
+    {
+      "id": 176,
+      "url": "${baseUrl}/ressources/outil-preparation-rdv",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/outil-preparation-rdv",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:23.316+00:00"
+    },
+    {
+      "id": 177,
+      "url": "${baseUrl}/ressources/outil-strategie-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/outil-strategie-commerciale",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:24.444+00:00"
+    },
+    {
+      "id": 178,
+      "url": "${baseUrl}/ressources/kit-gestion-grands-comptes",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/kit-gestion-grands-comptes",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:25.624+00:00"
+    },
+    {
+      "id": 179,
+      "url": "${baseUrl}/ressources/guide-management-equipe",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/guide-management-equipe",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:26.742+00:00"
+    },
+    {
+      "id": 180,
+      "url": "${baseUrl}/ressources/outil-tableau-bord-commercial",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/outil-tableau-bord-commercial",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:27.843+00:00"
+    },
+    {
+      "id": 181,
+      "url": "${baseUrl}/ressources/scripts-prospection-telephonique",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/scripts-prospection-telephonique",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:28.966+00:00"
+    },
+    {
+      "id": 182,
+      "url": "${baseUrl}/ressources/methode-closing-avance",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/methode-closing-avance",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:30.083+00:00"
+    },
+    {
+      "id": 183,
+      "url": "${baseUrl}/ressources/strategie-negociation-b2b",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/strategie-negociation-b2b",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:31.203+00:00"
+    },
+    {
+      "id": 184,
+      "url": "${baseUrl}/ressources/outil-roi-commercial",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/outil-roi-commercial",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:32.334+00:00"
+    },
+    {
+      "id": 185,
+      "url": "${baseUrl}/ressources/playbook-qualification-bant",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/playbook-qualification-bant",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:33.451+00:00"
+    },
+    {
+      "id": 186,
+      "url": "${baseUrl}/ressources/scripts-prospection",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/scripts-prospection",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:33.573+00:00"
+    },
+    {
+      "id": 187,
+      "url": "${baseUrl}/ressources/linkedin-prospection",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/linkedin-prospection",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:34.697+00:00"
+    },
+    {
+      "id": 188,
+      "url": "${baseUrl}/ressources/systeme-suivi-prospects",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/systeme-suivi-prospects",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:35.816+00:00"
+    },
+    {
+      "id": 189,
+      "url": "${baseUrl}/ressources/techniques-motivation-equipe",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-motivation-equipe",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:36.919+00:00"
+    },
+    {
+      "id": 190,
+      "url": "${baseUrl}/ressources/guide-recrutement-commercial",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/guide-recrutement-commercial",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:38.034+00:00"
+    },
+    {
+      "id": 191,
+      "url": "${baseUrl}/contact",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/contact",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:39.142+00:00"
+    },
+    {
+      "id": 192,
+      "url": "${baseUrl}/a-propos",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/a-propos",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:40.236+00:00"
+    },
+    {
+      "id": 193,
+      "url": "${baseUrl}/cas-clients",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/cas-clients",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:41.346+00:00"
+    },
+    {
+      "id": 194,
+      "url": "${baseUrl}/ressources/meilleurs-livres",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:42.463+00:00"
+    },
+    {
+      "id": 195,
+      "url": "${baseUrl}/ressources/meilleurs-livres/prospection-sdr",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/prospection-sdr",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:43.568+00:00"
+    },
+    {
+      "id": 196,
+      "url": "${baseUrl}/ressources/meilleurs-livres/negociation-closing",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/negociation-closing",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:43.678+00:00"
+    },
+    {
+      "id": 197,
+      "url": "${baseUrl}/ressources/meilleurs-livres/psychologie-influence",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/psychologie-influence",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:44.776+00:00"
+    },
+    {
+      "id": 198,
+      "url": "${baseUrl}/ressources/meilleurs-livres/methodes-process",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/methodes-process",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:45.888+00:00"
+    },
+    {
+      "id": 199,
+      "url": "${baseUrl}/ressources/meilleurs-livres/enterprise-account",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/enterprise-account",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:47.03+00:00"
+    },
+    {
+      "id": 200,
+      "url": "${baseUrl}/ressources/meilleurs-livres/sales-management",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/sales-management",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:48.166+00:00"
+    },
+    {
+      "id": 201,
+      "url": "${baseUrl}/ressources/meilleurs-livres/sales-management/good-to-great",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/sales-management/good-to-great",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:49.265+00:00"
+    },
+    {
+      "id": 202,
+      "url": "${baseUrl}/ressources/meilleurs-livres/sales-management/high-output-management",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/sales-management/high-output-management",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:50.365+00:00"
+    },
+    {
+      "id": 203,
+      "url": "${baseUrl}/ressources/meilleurs-livres/sales-management/blue-ocean-strategy",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/sales-management/blue-ocean-strategy",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:51.471+00:00"
+    },
+    {
+      "id": 204,
+      "url": "${baseUrl}/ressources/meilleurs-livres/sales-management/innovators-dilemma",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/sales-management/innovators-dilemma",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:52.577+00:00"
+    },
+    {
+      "id": 205,
+      "url": "${baseUrl}/ressources/meilleurs-livres/sales-management/leaders-eat-last",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/sales-management/leaders-eat-last",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:53.683+00:00"
+    },
+    {
+      "id": 206,
+      "url": "${baseUrl}/ressources/meilleurs-livres/digital-ai",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/digital-ai",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:53.786+00:00"
+    },
+    {
+      "id": 207,
+      "url": "${baseUrl}/ressources/techniques-de-negociation",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:54.89+00:00"
+    },
+    {
+      "id": 208,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:56.004+00:00"
+    },
+    {
+      "id": 209,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/effet-miroir",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/effet-miroir",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:57.104+00:00"
+    },
+    {
+      "id": 210,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/silence-strategique",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/silence-strategique",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:32:58.224+00:00"
+    },
+    {
+      "id": 211,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/negociation-raisonnee",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/negociation-raisonnee",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:32:59.333+00:00"
+    },
+    {
+      "id": 212,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/ancrage-tactique",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/ancrage-tactique",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:33:00.575+00:00"
+    },
+    {
+      "id": 213,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/oui-progressif",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/oui-progressif",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:33:01.669+00:00"
+    },
+    {
+      "id": 269,
+      "url": "/ressources/guide-recrutement-commercial",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/guide-recrutement-commercial",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:36:33.981+00:00"
+    },
+    {
+      "id": 214,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/recadrage-valeur",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/recadrage-valeur",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:33:02.792+00:00"
+    },
+    {
+      "id": 215,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/concession-calculee",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/concession-calculee",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:33:03.896+00:00"
+    },
+    {
+      "id": 216,
+      "url": "${baseUrl}/ressources/meilleurs-livres/digital-ai/the-second-machine-age",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/digital-ai/the-second-machine-age",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:33:03.986+00:00"
+    },
+    {
+      "id": 217,
+      "url": "${baseUrl}/ressources/meilleurs-livres/digital-ai/ai-superpowers",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/digital-ai/ai-superpowers",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:33:05.091+00:00"
+    },
+    {
+      "id": 218,
+      "url": "${baseUrl}/ressources/meilleurs-livres/digital-ai/life-3-0",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/digital-ai/life-3-0",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:33:06.201+00:00"
+    },
+    {
+      "id": 219,
+      "url": "${baseUrl}/ressources/meilleurs-livres/digital-ai/human-machine",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/digital-ai/human-machine",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:33:07.292+00:00"
+    },
+    {
+      "id": 220,
+      "url": "${baseUrl}/ressources/meilleurs-livres/digital-ai/lean-startup",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/digital-ai/lean-startup",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:33:08.389+00:00"
+    },
+    {
+      "id": 221,
+      "url": "https://example.com/valid",
+      "status": "broken",
+      "status_code": 404,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 848,
+      "checked_at": "2025-07-30T09:34:48.608+00:00"
+    },
+    {
+      "id": 222,
+      "url": "/broken-internal",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /broken-internal",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:34:50.052+00:00"
+    },
+    {
+      "id": 223,
+      "url": "/abotu",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /abotu",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:34:51.15+00:00"
+    },
+    {
+      "id": 224,
+      "url": "/downloads/file.pdf",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /downloads/file.pdf",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:34:52.249+00:00"
+    },
+    {
+      "id": 225,
+      "url": "/old-page",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /old-page",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:34:53.342+00:00"
+    },
+    {
+      "id": 226,
+      "url": "/contact-us",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /contact-us",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:34:54.437+00:00"
+    },
+    {
+      "id": 227,
+      "url": "/about",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /about",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:34:55.515+00:00"
+    },
+    {
+      "id": 228,
+      "url": "/internal-page",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /internal-page",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:34:56.596+00:00"
+    },
+    {
+      "id": 229,
+      "url": "/valid-page",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /valid-page",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:34:57.685+00:00"
+    },
+    {
+      "id": 230,
+      "url": "/test-page",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /test-page",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:34:58.761+00:00"
+    },
+    {
+      "id": 231,
+      "url": "/single-file-link",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /single-file-link",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:34:58.852+00:00"
+    },
+    {
+      "id": 232,
+      "url": "/component-link",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /component-link",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:34:59.945+00:00"
+    },
+    {
+      "id": 233,
+      "url": "/diagnostic",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /diagnostic",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:35:01.043+00:00"
+    },
+    {
+      "id": 234,
+      "url": "/contact",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /contact",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:35:02.139+00:00"
+    },
+    {
+      "id": 235,
+      "url": "/blog/bootcamp-commercial-pourquoi-formations-echouent",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /blog/bootcamp-commercial-pourquoi-formations-echouent",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:35:03.23+00:00"
+    },
+    {
+      "id": 236,
+      "url": "/blog/vendeur-commercial-transformation-decisive",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /blog/vendeur-commercial-transformation-decisive",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:35:04.309+00:00"
+    },
+    {
+      "id": 237,
+      "url": "/blog/erreurs-fatales-prospection-b2b",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /blog/erreurs-fatales-prospection-b2b",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:35:05.392+00:00"
+    },
+    {
+      "id": 238,
+      "url": "/blog/ia-transforme-developpement-commercial-2025",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /blog/ia-transforme-developpement-commercial-2025",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:35:06.479+00:00"
+    },
+    {
+      "id": 239,
+      "url": "/laurent.jpg",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /laurent.jpg",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:35:07.565+00:00"
+    },
+    {
+      "id": 240,
+      "url": "/blog/5-signes-structurer-equipe-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /blog/5-signes-structurer-equipe-commerciale",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:35:09.652+00:00"
+    },
+    {
+      "id": 241,
+      "url": "/bootcamp",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /bootcamp",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:35:11.751+00:00"
+    },
+    {
+      "id": 242,
+      "url": "/cas-clients",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /cas-clients",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:35:14.855+00:00"
+    },
+    {
+      "id": 243,
+      "url": "/expert-developpement-commercial-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /expert-developpement-commercial-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:35:17.944+00:00"
+    },
+    {
+      "id": 244,
+      "url": "/formation-commerciale-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /formation-commerciale-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:35:19.024+00:00"
+    },
+    {
+      "id": 245,
+      "url": "/transformation-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /transformation-commerciale",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:35:20.121+00:00"
+    },
+    {
+      "id": 246,
+      "url": "/ressources/guide-prospection",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/guide-prospection",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:35:23.202+00:00"
+    },
+    {
+      "id": 247,
+      "url": "/ressources/guide-closing",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/guide-closing",
+      "response_time": 4,
+      "checked_at": "2025-07-30T09:35:24.283+00:00"
+    },
+    {
+      "id": 248,
+      "url": "/ressources/outil-strategie-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/outil-strategie-commerciale",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:35:25.38+00:00"
+    },
+    {
+      "id": 249,
+      "url": "/ressources/outil-preparation-rdv",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/outil-preparation-rdv",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:35:26.463+00:00"
+    },
+    {
+      "id": 250,
+      "url": "/ressources/kit-gestion-grands-comptes",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/kit-gestion-grands-comptes",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:35:27.552+00:00"
+    },
+    {
+      "id": 251,
+      "url": "/coach-commercial-entreprise",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /coach-commercial-entreprise",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:35:34.646+00:00"
+    },
+    {
+      "id": 252,
+      "url": "https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 292,
+      "checked_at": "2025-07-30T09:35:36.11+00:00"
+    },
+    {
+      "id": 253,
+      "url": "https://support.google.com/chrome/answer/95647?hl=fr&hlrm=en",
+      "status": "broken",
+      "status_code": 404,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 188,
+      "checked_at": "2025-07-30T09:35:37.415+00:00"
+    },
+    {
+      "id": 254,
+      "url": "https://support.mozilla.org/fr/kb/activer-desactiver-cookies-preferences",
+      "status": "broken",
+      "status_code": 405,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 287,
+      "checked_at": "2025-07-30T09:35:37.798+00:00"
+    },
+    {
+      "id": 255,
+      "url": "https://support.microsoft.com/fr-fr/help/17442/windows-internet-explorer-delete-manage-cookies",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://support.microsoft.com/fr-fr/windows/g%C3%A9rer-les-cookies-dans-microsoft-edge-afficher-autoriser-bloquer-supprimer-et-utiliser-168dab11-0753-043d-7c16-ede5947fc64d",
+      "error_message": null,
+      "response_time": 8387,
+      "checked_at": "2025-07-30T09:35:47.296+00:00"
+    },
+    {
+      "id": 256,
+      "url": "https://support.apple.com/fr-fr/guide/safari/sfri11471/mac",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 180,
+      "checked_at": "2025-07-30T09:35:48.66+00:00"
+    },
+    {
+      "id": 257,
+      "url": "https://www.cnil.fr/fr/cookies-et-autres-traceurs",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 263,
+      "checked_at": "2025-07-30T09:35:50.019+00:00"
+    },
+    {
+      "id": 258,
+      "url": "/ressources",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:36:02.139+00:00"
+    },
+    {
+      "id": 259,
+      "url": "/suivi-performance",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /suivi-performance",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:36:05.33+00:00"
+    },
+    {
+      "id": 260,
+      "url": "/ressources/outil-offre-5-etoiles",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/outil-offre-5-etoiles",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:36:08.44+00:00"
+    },
+    {
+      "id": 261,
+      "url": "/consultant-commercial-montpellier",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /consultant-commercial-montpellier",
+      "response_time": 2,
+      "checked_at": "2025-07-30T09:36:10.535+00:00"
+    },
+    {
+      "id": 262,
+      "url": "/formateur-vente-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /formateur-vente-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:36:11.631+00:00"
+    },
+    {
+      "id": 263,
+      "url": "/bootcamp-commercial-intensif",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /bootcamp-commercial-intensif",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:36:16.739+00:00"
+    },
+    {
+      "id": 264,
+      "url": "/management-equipe-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /management-equipe-commerciale",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:36:22.174+00:00"
+    },
+    {
+      "id": 265,
+      "url": "/ressources/impact-aida-script-prospection-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/impact-aida-script-prospection-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:36:28.362+00:00"
+    },
+    {
+      "id": 266,
+      "url": "/ressources/linkedin-prospection",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/linkedin-prospection",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:36:29.54+00:00"
+    },
+    {
+      "id": 267,
+      "url": "/ressources/systeme-suivi-prospects",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/systeme-suivi-prospects",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:36:30.633+00:00"
+    },
+    {
+      "id": 268,
+      "url": "/ressources/techniques-motivation-equipe",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/techniques-motivation-equipe",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:36:32.721+00:00"
+    },
+    {
+      "id": 270,
+      "url": "/favicon.ico",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /favicon.ico",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:36:36.074+00:00"
+    },
+    {
+      "id": 271,
+      "url": "/services",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /services",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:36:51.176+00:00"
+    },
+    {
+      "id": 272,
+      "url": "https://vercel.com",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 325,
+      "checked_at": "2025-07-30T09:36:53.71+00:00"
+    },
+    {
+      "id": 273,
+      "url": "/ressources/techniques-de-vente",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/techniques-de-vente",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:37:02.836+00:00"
+    },
+    {
+      "id": 274,
+      "url": "/ressources/techniques-de-negociation",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/techniques-de-negociation",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:37:04.014+00:00"
+    },
+    {
+      "id": 275,
+      "url": "/ressources/le-grand-guide-des-techniques-de-vente.pdf",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/le-grand-guide-des-techniques-de-vente.pdf",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:37:05.101+00:00"
+    },
+    {
+      "id": 276,
+      "url": "/guide-linkedin-prospection-pme.pdf",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /guide-linkedin-prospection-pme.pdf",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:37:08.196+00:00"
+    },
+    {
+      "id": 277,
+      "url": "/ressources/scripts-prospection",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/scripts-prospection",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:37:10.306+00:00"
+    },
+    {
+      "id": 278,
+      "url": "/ressources/meilleurs-livres/enterprise-account",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/meilleurs-livres/enterprise-account",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:37:14.408+00:00"
+    },
+    {
+      "id": 279,
+      "url": "/ressources/meilleurs-livres",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/meilleurs-livres",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:37:17.565+00:00"
+    },
+    {
+      "id": 280,
+      "url": "/ressources/meilleurs-livres/methodes-process",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/meilleurs-livres/methodes-process",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:37:24.657+00:00"
+    },
+    {
+      "id": 281,
+      "url": "/ressources/meilleurs-livres/psychologie-influence",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/meilleurs-livres/psychologie-influence",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:37:25.83+00:00"
+    },
+    {
+      "id": 282,
+      "url": "/ressources/meilleurs-livres/negociation-closing",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/meilleurs-livres/negociation-closing",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:37:26.919+00:00"
+    },
+    {
+      "id": 283,
+      "url": "/ressources/meilleurs-livres/prospection-sdr",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/meilleurs-livres/prospection-sdr",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:37:46.063+00:00"
+    },
+    {
+      "id": 284,
+      "url": "/ressources/techniques-de-negociation/effet-miroir",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/techniques-de-negociation/effet-miroir",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:10.309+00:00"
+    },
+    {
+      "id": 285,
+      "url": "/ressources/techniques-de-negociation/negociation-raisonnee",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/techniques-de-negociation/negociation-raisonnee",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:11.464+00:00"
+    },
+    {
+      "id": 286,
+      "url": "/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:38:12.556+00:00"
+    },
+    {
+      "id": 287,
+      "url": "/ressources/outil-tableau-bord",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/outil-tableau-bord",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:38:20.66+00:00"
+    },
+    {
+      "id": 288,
+      "url": "/ressources/grille-evaluation",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/grille-evaluation",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:22.011+00:00"
+    },
+    {
+      "id": 289,
+      "url": "/ressources/reporting-automatise",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/reporting-automatise",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:23.12+00:00"
+    },
+    {
+      "id": 290,
+      "url": "/cookies",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /cookies",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:38:35.235+00:00"
+    },
+    {
+      "id": 291,
+      "url": "/api/admin/alert-config",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/alert-config",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:36.433+00:00"
+    },
+    {
+      "id": 292,
+      "url": "/api/weekly-report",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/weekly-report",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:38:37.535+00:00"
+    },
+    {
+      "id": 293,
+      "url": "/api/admin/audit-metrics",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/audit-metrics",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:38.646+00:00"
+    },
+    {
+      "id": 294,
+      "url": "/api/admin/audit-activities",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/audit-activities",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:38:39.744+00:00"
+    },
+    {
+      "id": 295,
+      "url": "/api/admin/audit-history",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/audit-history",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:38:40.842+00:00"
+    },
+    {
+      "id": 296,
+      "url": "/api/admin/broken-links",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/broken-links",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:41.952+00:00"
+    },
+    {
+      "id": 297,
+      "url": "/api/admin/most-requested-resources",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/most-requested-resources",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:43.047+00:00"
+    },
+    {
+      "id": 298,
+      "url": "/api/admin/seo-impact",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/seo-impact",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:44.129+00:00"
+    },
+    {
+      "id": 299,
+      "url": "/api/admin/scheduler",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/admin/scheduler",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:38:44.223+00:00"
+    },
+    {
+      "id": 300,
+      "url": "/",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:45.322+00:00"
+    },
+    {
+      "id": 301,
+      "url": "/blog",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /blog",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:49.42+00:00"
+    },
+    {
+      "id": 302,
+      "url": "/a-propos",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /a-propos",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:54.601+00:00"
+    },
+    {
+      "id": 303,
+      "url": "/mentions-legales",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /mentions-legales",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:55.78+00:00"
+    },
+    {
+      "id": 304,
+      "url": "/cgv",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /cgv",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:38:57.085+00:00"
+    },
+    {
+      "id": 305,
+      "url": "/politique-de-confidentialite",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /politique-de-confidentialite",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:38:58.18+00:00"
+    },
+    {
+      "id": 306,
+      "url": "https://www.linkedin.com/in/laurentserre34",
+      "status": "broken",
+      "status_code": 999,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 424,
+      "checked_at": "2025-07-30T09:39:01.698+00:00"
+    },
+    {
+      "id": 307,
+      "url": "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A?cbrd=1&ucbcb=1",
+      "error_message": null,
+      "response_time": 797,
+      "checked_at": "2025-07-30T09:39:03.606+00:00"
+    },
+    {
+      "id": 308,
+      "url": "/ressources/le-grand-guide-des-techniques-de-vente",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /ressources/le-grand-guide-des-techniques-de-vente",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:39:06.718+00:00"
+    },
+    {
+      "id": 309,
+      "url": "/fonts/inter-var.woff2",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /fonts/inter-var.woff2",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:39:07.808+00:00"
+    },
+    {
+      "id": 310,
+      "url": "/fonts/roboto-slab-var.woff2",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /fonts/roboto-slab-var.woff2",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:39:08.938+00:00"
+    },
+    {
+      "id": 311,
+      "url": "/path",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /path",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:39:12.046+00:00"
+    },
+    {
+      "id": 312,
+      "url": "/api/path",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/path",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:39:13.155+00:00"
+    },
+    {
+      "id": 313,
+      "url": "url",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from url",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:39:14.251+00:00"
+    },
+    {
+      "id": 314,
+      "url": "/api/download",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from /api/download",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:39:15.358+00:00"
+    },
+    {
+      "id": 315,
+      "url": "https://developers.hubspot.com/docs/guides/api/marketing/forms",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://developers.hubspot.com/docs/guides/api/marketing/forms/forms",
+      "error_message": null,
+      "response_time": 2389,
+      "checked_at": "2025-07-30T09:39:18.843+00:00"
+    },
+    {
+      "id": 316,
+      "url": "https://knowledge.hubspot.com/forms/create-forms",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 229,
+      "checked_at": "2025-07-30T09:39:20.174+00:00"
+    },
+    {
+      "id": 317,
+      "url": "https://developers.hubspot.com/docs/guides/cms/content/forms#the-default-form-module",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #the-default-form-module not found on page",
+      "response_time": 723,
+      "checked_at": "2025-07-30T09:39:21.995+00:00"
+    },
+    {
+      "id": 318,
+      "url": "https://developers.hubspot.com/docs/guides/cms/content/forms#form-fields-in-custom-modules",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #form-fields-in-custom-modules not found on page",
+      "response_time": 454,
+      "checked_at": "2025-07-30T09:39:23.944+00:00"
+    },
+    {
+      "id": 319,
+      "url": "https://developers.hubspot.com/docs/guides/cms/content/forms#using-the-form-hubl-tag",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #using-the-form-hubl-tag not found on page",
+      "response_time": 420,
+      "checked_at": "2025-07-30T09:39:25.691+00:00"
+    },
+    {
+      "id": 320,
+      "url": "https://developers.hubspot.com/docs/guides/cms/content/forms#using-the-form-embed-code",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #using-the-form-embed-code not found on page",
+      "response_time": 581,
+      "checked_at": "2025-07-30T09:39:27.661+00:00"
+    },
+    {
+      "id": 321,
+      "url": "https://developers.hubspot.com/docs/reference/cms/hubl/tags/dnd-areas",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 1197,
+      "checked_at": "2025-07-30T09:39:30.176+00:00"
+    },
+    {
+      "id": 322,
+      "url": "https://developers.hubspot.com/docs/reference/cms/modules/default-modules#form",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #form not found on page",
+      "response_time": 583,
+      "checked_at": "2025-07-30T09:39:31.876+00:00"
+    },
+    {
+      "id": 323,
+      "url": "https://www.hubspot.com/hubfs/Knowledge_Base_2023_2024/clone-form-module.png",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 306,
+      "checked_at": "2025-07-30T09:39:32.588+00:00"
+    },
+    {
+      "id": 324,
+      "url": "https://www.hubspot.com/hubfs/Knowledge_Base_2023_2024/default-form-module-clone-section.png",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 188,
+      "checked_at": "2025-07-30T09:39:33.867+00:00"
+    },
+    {
+      "id": 325,
+      "url": "https://developers.hubspot.com/docs/reference/cms/fields/module-theme-fields#form",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #form not found on page",
+      "response_time": 727,
+      "checked_at": "2025-07-30T09:39:35.706+00:00"
+    },
+    {
+      "id": 326,
+      "url": "https://www.hubspot.com/hubfs/Knowledge_Base_2023_2024/design-manager-select-form-field.png",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 260,
+      "checked_at": "2025-07-30T09:39:37.317+00:00"
+    },
+    {
+      "id": 327,
+      "url": "https://www.hubspot.com/hubfs/Knowledge_Base_2023_2024/module-field-copy-snippet.png",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 226,
+      "checked_at": "2025-07-30T09:39:38.641+00:00"
+    },
+    {
+      "id": 328,
+      "url": "https://www.hubspot.com/hubfs/Knowledge_Base_2023_2024/module-field-paste-snippet.png",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 199,
+      "checked_at": "2025-07-30T09:39:39.94+00:00"
+    },
+    {
+      "id": 329,
+      "url": "https://developers.hubspot.com/docs/guides/cms/setup/getting-started-with-local-development",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 879,
+      "checked_at": "2025-07-30T09:39:41.917+00:00"
+    },
+    {
+      "id": 330,
+      "url": "https://knowledge.hubspot.com/forms/how-can-i-share-a-hubspot-form-if-im-using-an-external-site#add-the-form-embed-code",
+      "status": "broken",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": "Anchor #add-the-form-embed-code not found on page",
+      "response_time": 1677,
+      "checked_at": "2025-07-30T09:39:44.71+00:00"
+    },
+    {
+      "id": 331,
+      "url": "https://developers.hubspot.com/docs/reference/cms/forms",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://developers.hubspot.com/docs/reference/cms/forms/legacy-forms",
+      "error_message": null,
+      "response_time": 1379,
+      "checked_at": "2025-07-30T09:39:47.362+00:00"
+    },
+    {
+      "id": 332,
+      "url": "https://github.com/HubSpot/cms-theme-boilerplate/blob/main/src/css/elements/_forms.css",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 534,
+      "checked_at": "2025-07-30T09:39:48.999+00:00"
+    },
+    {
+      "id": 333,
+      "url": "https://cdn2.hubspot.net/hubfs/53/5Cdocs/forms/form-module-css-pane-4.jpg",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 222,
+      "checked_at": "2025-07-30T09:39:49.314+00:00"
+    },
+    {
+      "id": 334,
+      "url": "https://knowledge.hubspot.com/forms/set-global-form-colors-and-fonts",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 513,
+      "checked_at": "2025-07-30T09:39:50.92+00:00"
+    },
+    {
+      "id": 335,
+      "url": "https://cdn2.hubspot.net/hubfs/53/5Cdocs/forms/global-form-styling-options-4.png",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 137,
+      "checked_at": "2025-07-30T09:39:52.149+00:00"
+    },
+    {
+      "id": 336,
+      "url": "https://cdn2.hubspot.net/hubfs/53/5Cdocs/forms/set-as-raw-html-form-4.jpg",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 146,
+      "checked_at": "2025-07-30T09:39:53.39+00:00"
+    },
+    {
+      "id": 337,
+      "url": "./src/components/ui/PerformanceOptimizer.tsx",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./src/components/ui/PerformanceOptimizer.tsx",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:39:54.486+00:00"
+    },
+    {
+      "id": 338,
+      "url": "./src/components/ui/SEOOptimizer.tsx",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./src/components/ui/SEOOptimizer.tsx",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:39:55.577+00:00"
+    },
+    {
+      "id": 339,
+      "url": "./src/scripts/test-performance-optimizations.ts",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./src/scripts/test-performance-optimizations.ts",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:39:56.682+00:00"
+    },
+    {
+      "id": 340,
+      "url": "./docs/performance-optimization-guide.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./docs/performance-optimization-guide.md",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:39:57.789+00:00"
+    },
+    {
+      "id": 341,
+      "url": "./docs/performance-best-practices.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./docs/performance-best-practices.md",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:39:58.887+00:00"
+    },
+    {
+      "id": 342,
+      "url": "./docs/performance-troubleshooting.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./docs/performance-troubleshooting.md",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:39:59.98+00:00"
+    },
+    {
+      "id": 343,
+      "url": "https://nextjs.org",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 223,
+      "checked_at": "2025-07-30T09:40:00.308+00:00"
+    },
+    {
+      "id": 344,
+      "url": "https://www.typescriptlang.org",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 243,
+      "checked_at": "2025-07-30T09:40:01.645+00:00"
+    },
+    {
+      "id": 345,
+      "url": "https://tailwindcss.com",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 195,
+      "checked_at": "2025-07-30T09:40:02.934+00:00"
+    },
+    {
+      "id": 346,
+      "url": "https://www.framer.com/motion",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://motion.dev/",
+      "error_message": null,
+      "response_time": 516,
+      "checked_at": "2025-07-30T09:40:04.547+00:00"
+    },
+    {
+      "id": 347,
+      "url": "https://react.dev",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 276,
+      "checked_at": "2025-07-30T09:40:06.085+00:00"
+    },
+    {
+      "id": 348,
+      "url": "./docs/architecture-technique.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./docs/architecture-technique.md",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:40:07.157+00:00"
+    },
+    {
+      "id": 349,
+      "url": "./docs/strategie-seo-cocon.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./docs/strategie-seo-cocon.md",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:40:08.259+00:00"
+    },
+    {
+      "id": 350,
+      "url": "./src/components/README.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./src/components/README.md",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:40:09.352+00:00"
+    },
+    {
+      "id": 351,
+      "url": "./docs/standards-dev.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./docs/standards-dev.md",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:40:10.457+00:00"
+    },
+    {
+      "id": 352,
+      "url": "https://sendgrid.com",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://sendgrid.com/en-us",
+      "error_message": null,
+      "response_time": 651,
+      "checked_at": "2025-07-30T09:40:12.181+00:00"
+    },
+    {
+      "id": 353,
+      "url": "./SENDGRID_CONFIGURATION_GUIDE.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./SENDGRID_CONFIGURATION_GUIDE.md",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:40:12.271+00:00"
+    },
+    {
+      "id": 354,
+      "url": "./AUDIT_SYSTEM_TECHNICAL_GUIDE.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./AUDIT_SYSTEM_TECHNICAL_GUIDE.md",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:40:13.351+00:00"
+    },
+    {
+      "id": 355,
+      "url": "./AUDIT_SYSTEM_TROUBLESHOOTING_GUIDE.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./AUDIT_SYSTEM_TROUBLESHOOTING_GUIDE.md",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:40:14.468+00:00"
+    },
+    {
+      "id": 356,
+      "url": "./AUDIT_SYSTEM_FAQ.md",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ./AUDIT_SYSTEM_FAQ.md",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:40:16.57+00:00"
+    },
+    {
+      "id": 357,
+      "url": "https://laurentserre.com/formation-commerciale-pme",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://www.laurentserre.com/formation-commerciale-pme",
+      "error_message": null,
+      "response_time": 992,
+      "checked_at": "2025-07-30T09:40:19.649+00:00"
+    },
+    {
+      "id": 358,
+      "url": "https://laurentserre.com/ressources",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://www.laurentserre.com/ressources",
+      "error_message": null,
+      "response_time": 387,
+      "checked_at": "2025-07-30T09:40:21.125+00:00"
+    },
+    {
+      "id": 359,
+      "url": "https://laurentserre.com/bootcamp-commercial-intensif",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://www.laurentserre.com/bootcamp",
+      "error_message": null,
+      "response_time": 596,
+      "checked_at": "2025-07-30T09:40:22.803+00:00"
+    },
+    {
+      "id": 360,
+      "url": "https://docs.sendgrid.com",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://www.twilio.com/docs/sendgrid",
+      "error_message": null,
+      "response_time": 540,
+      "checked_at": "2025-07-30T09:40:24.444+00:00"
+    },
+    {
+      "id": 361,
+      "url": "https://status.sendgrid.com",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 518,
+      "checked_at": "2025-07-30T09:40:25.057+00:00"
+    },
+    {
+      "id": 362,
+      "url": "https://community.sendgrid.com",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "fetch failed",
+      "response_time": 77,
+      "checked_at": "2025-07-30T09:40:26.222+00:00"
+    },
+    {
+      "id": 363,
+      "url": "https://eslint.org",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 255,
+      "checked_at": "2025-07-30T09:40:50.61+00:00"
+    },
+    {
+      "id": 364,
+      "url": "https://nextjs.org/docs",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 161,
+      "checked_at": "2025-07-30T09:40:51.981+00:00"
+    },
+    {
+      "id": 365,
+      "url": "https://tailwindcss.com/docs",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://tailwindcss.com/docs/installation/using-vite",
+      "error_message": null,
+      "response_time": 286,
+      "checked_at": "2025-07-30T09:40:53.354+00:00"
+    },
+    {
+      "id": 366,
+      "url": "https://www.typescriptlang.org/docs",
+      "status": "redirect",
+      "status_code": 200,
+      "redirect_url": "https://www.typescriptlang.org/docs/",
+      "error_message": null,
+      "response_time": 473,
+      "checked_at": "2025-07-30T09:40:53.97+00:00"
+    },
+    {
+      "id": 367,
+      "url": "https://animate.style",
+      "status": "valid",
+      "status_code": 200,
+      "redirect_url": null,
+      "error_message": null,
+      "response_time": 100,
+      "checked_at": "2025-07-30T09:40:55.168+00:00"
+    },
+    {
+      "id": 368,
+      "url": "${baseUrl}/expert-developpement-commercial-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/expert-developpement-commercial-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:40:56.256+00:00"
+    },
+    {
+      "id": 369,
+      "url": "${baseUrl}/formation-commerciale-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/formation-commerciale-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:40:57.344+00:00"
+    },
+    {
+      "id": 370,
+      "url": "${baseUrl}/transformation-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/transformation-commerciale",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:40:58.436+00:00"
+    },
+    {
+      "id": 371,
+      "url": "${baseUrl}/diagnostic",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/diagnostic",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:40:59.543+00:00"
+    },
+    {
+      "id": 372,
+      "url": "${baseUrl}/consultant-commercial-montpellier",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/consultant-commercial-montpellier",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:00.654+00:00"
+    },
+    {
+      "id": 373,
+      "url": "${baseUrl}/formateur-vente-pme",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/formateur-vente-pme",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:01.748+00:00"
+    },
+    {
+      "id": 374,
+      "url": "${baseUrl}/coach-commercial-entreprise",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/coach-commercial-entreprise",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:02.848+00:00"
+    },
+    {
+      "id": 375,
+      "url": "${baseUrl}/management-equipe-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/management-equipe-commerciale",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:03.957+00:00"
+    },
+    {
+      "id": 376,
+      "url": "${baseUrl}/management/recruter-integrer",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/management/recruter-integrer",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:04.049+00:00"
+    },
+    {
+      "id": 377,
+      "url": "${baseUrl}/management/motiver-engager",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/management/motiver-engager",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:05.14+00:00"
+    },
+    {
+      "id": 378,
+      "url": "${baseUrl}/management/piloter-performance",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/management/piloter-performance",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:06.229+00:00"
+    },
+    {
+      "id": 379,
+      "url": "${baseUrl}/management/former-coacher",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/management/former-coacher",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:07.316+00:00"
+    },
+    {
+      "id": 380,
+      "url": "${baseUrl}/management/structurer-organiser",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/management/structurer-organiser",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:08.41+00:00"
+    },
+    {
+      "id": 381,
+      "url": "${baseUrl}/bootcamp",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/bootcamp",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:09.486+00:00"
+    },
+    {
+      "id": 382,
+      "url": "${baseUrl}/blog",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/blog",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:10.587+00:00"
+    },
+    {
+      "id": 383,
+      "url": "${baseUrl}/blog/5-signes-structurer-equipe-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/blog/5-signes-structurer-equipe-commerciale",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:11.701+00:00"
+    },
+    {
+      "id": 384,
+      "url": "${baseUrl}/blog/ia-transforme-developpement-commercial-2025",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/blog/ia-transforme-developpement-commercial-2025",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:12.894+00:00"
+    },
+    {
+      "id": 385,
+      "url": "${baseUrl}/blog/erreurs-fatales-prospection-b2b",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/blog/erreurs-fatales-prospection-b2b",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:14.134+00:00"
+    },
+    {
+      "id": 386,
+      "url": "${baseUrl}/blog/bootcamp-commercial-pourquoi-formations-echouent",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/blog/bootcamp-commercial-pourquoi-formations-echouent",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:14.236+00:00"
+    },
+    {
+      "id": 387,
+      "url": "${baseUrl}/blog/vendeur-commercial-transformation-decisive",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/blog/vendeur-commercial-transformation-decisive",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:15.355+00:00"
+    },
+    {
+      "id": 388,
+      "url": "${baseUrl}/cgv",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/cgv",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:16.459+00:00"
+    },
+    {
+      "id": 389,
+      "url": "${baseUrl}/mentions-legales",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/mentions-legales",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:17.556+00:00"
+    },
+    {
+      "id": 390,
+      "url": "${baseUrl}/politique-de-confidentialite",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/politique-de-confidentialite",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:18.691+00:00"
+    },
+    {
+      "id": 391,
+      "url": "${baseUrl}/cookies",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/cookies",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:19.82+00:00"
+    },
+    {
+      "id": 392,
+      "url": "${baseUrl}/ressources",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:20.94+00:00"
+    },
+    {
+      "id": 393,
+      "url": "${baseUrl}/ressources/guide-prospection",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/guide-prospection",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:22.036+00:00"
+    },
+    {
+      "id": 394,
+      "url": "${baseUrl}/ressources/guide-closing",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/guide-closing",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:23.154+00:00"
+    },
+    {
+      "id": 395,
+      "url": "${baseUrl}/ressources/outil-offre-5-etoiles",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/outil-offre-5-etoiles",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:24.241+00:00"
+    },
+    {
+      "id": 396,
+      "url": "${baseUrl}/ressources/outil-preparation-rdv",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/outil-preparation-rdv",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:24.373+00:00"
+    },
+    {
+      "id": 397,
+      "url": "${baseUrl}/ressources/outil-strategie-commerciale",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/outil-strategie-commerciale",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:25.507+00:00"
+    },
+    {
+      "id": 398,
+      "url": "${baseUrl}/ressources/kit-gestion-grands-comptes",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/kit-gestion-grands-comptes",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:26.597+00:00"
+    },
+    {
+      "id": 399,
+      "url": "${baseUrl}/ressources/guide-management-equipe",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/guide-management-equipe",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:27.81+00:00"
+    },
+    {
+      "id": 400,
+      "url": "${baseUrl}/ressources/outil-tableau-bord-commercial",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/outil-tableau-bord-commercial",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:28.902+00:00"
+    },
+    {
+      "id": 401,
+      "url": "${baseUrl}/ressources/scripts-prospection-telephonique",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/scripts-prospection-telephonique",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:30.007+00:00"
+    },
+    {
+      "id": 402,
+      "url": "${baseUrl}/ressources/methode-closing-avance",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/methode-closing-avance",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:31.123+00:00"
+    },
+    {
+      "id": 403,
+      "url": "${baseUrl}/ressources/strategie-negociation-b2b",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/strategie-negociation-b2b",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:32.215+00:00"
+    },
+    {
+      "id": 404,
+      "url": "${baseUrl}/ressources/outil-roi-commercial",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/outil-roi-commercial",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:33.31+00:00"
+    },
+    {
+      "id": 405,
+      "url": "${baseUrl}/ressources/playbook-qualification-bant",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/playbook-qualification-bant",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:34.413+00:00"
+    },
+    {
+      "id": 406,
+      "url": "${baseUrl}/ressources/scripts-prospection",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/scripts-prospection",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:34.562+00:00"
+    },
+    {
+      "id": 407,
+      "url": "${baseUrl}/ressources/linkedin-prospection",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/linkedin-prospection",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:35.684+00:00"
+    },
+    {
+      "id": 408,
+      "url": "${baseUrl}/ressources/systeme-suivi-prospects",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/systeme-suivi-prospects",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:36.801+00:00"
+    },
+    {
+      "id": 409,
+      "url": "${baseUrl}/ressources/techniques-motivation-equipe",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-motivation-equipe",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:37.893+00:00"
+    },
+    {
+      "id": 410,
+      "url": "${baseUrl}/ressources/guide-recrutement-commercial",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/guide-recrutement-commercial",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:39.128+00:00"
+    },
+    {
+      "id": 411,
+      "url": "${baseUrl}/contact",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/contact",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:40.207+00:00"
+    },
+    {
+      "id": 412,
+      "url": "${baseUrl}/a-propos",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/a-propos",
+      "response_time": 2,
+      "checked_at": "2025-07-30T09:41:41.303+00:00"
+    },
+    {
+      "id": 413,
+      "url": "${baseUrl}/cas-clients",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/cas-clients",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:42.397+00:00"
+    },
+    {
+      "id": 414,
+      "url": "${baseUrl}/ressources/meilleurs-livres",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:43.509+00:00"
+    },
+    {
+      "id": 415,
+      "url": "${baseUrl}/ressources/meilleurs-livres/prospection-sdr",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/prospection-sdr",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:44.6+00:00"
+    },
+    {
+      "id": 416,
+      "url": "${baseUrl}/ressources/meilleurs-livres/negociation-closing",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/negociation-closing",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:44.695+00:00"
+    },
+    {
+      "id": 417,
+      "url": "${baseUrl}/ressources/meilleurs-livres/psychologie-influence",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/psychologie-influence",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:45.783+00:00"
+    },
+    {
+      "id": 418,
+      "url": "${baseUrl}/ressources/meilleurs-livres/methodes-process",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/methodes-process",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:46.892+00:00"
+    },
+    {
+      "id": 419,
+      "url": "${baseUrl}/ressources/meilleurs-livres/enterprise-account",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/enterprise-account",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:48.161+00:00"
+    },
+    {
+      "id": 420,
+      "url": "${baseUrl}/ressources/meilleurs-livres/sales-management",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/sales-management",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:49.53+00:00"
+    },
+    {
+      "id": 421,
+      "url": "${baseUrl}/ressources/meilleurs-livres/sales-management/good-to-great",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/sales-management/good-to-great",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:50.627+00:00"
+    },
+    {
+      "id": 422,
+      "url": "${baseUrl}/ressources/meilleurs-livres/sales-management/high-output-management",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/sales-management/high-output-management",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:41:51.717+00:00"
+    },
+    {
+      "id": 423,
+      "url": "${baseUrl}/ressources/meilleurs-livres/sales-management/blue-ocean-strategy",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/sales-management/blue-ocean-strategy",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:52.816+00:00"
+    },
+    {
+      "id": 424,
+      "url": "${baseUrl}/ressources/meilleurs-livres/sales-management/innovators-dilemma",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/sales-management/innovators-dilemma",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:53.92+00:00"
+    },
+    {
+      "id": 425,
+      "url": "${baseUrl}/ressources/meilleurs-livres/sales-management/leaders-eat-last",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/sales-management/leaders-eat-last",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:55.027+00:00"
+    },
+    {
+      "id": 426,
+      "url": "${baseUrl}/ressources/meilleurs-livres/digital-ai",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/digital-ai",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:55.115+00:00"
+    },
+    {
+      "id": 427,
+      "url": "${baseUrl}/ressources/techniques-de-negociation",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:56.218+00:00"
+    },
+    {
+      "id": 428,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:57.329+00:00"
+    },
+    {
+      "id": 429,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/effet-miroir",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/effet-miroir",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:58.426+00:00"
+    },
+    {
+      "id": 430,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/silence-strategique",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/silence-strategique",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:41:59.521+00:00"
+    },
+    {
+      "id": 431,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/negociation-raisonnee",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/negociation-raisonnee",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:42:00.641+00:00"
+    },
+    {
+      "id": 432,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/ancrage-tactique",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/ancrage-tactique",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:42:01.72+00:00"
+    },
+    {
+      "id": 433,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/oui-progressif",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/oui-progressif",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:42:02.826+00:00"
+    },
+    {
+      "id": 434,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/recadrage-valeur",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/recadrage-valeur",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:42:03.922+00:00"
+    },
+    {
+      "id": 435,
+      "url": "${baseUrl}/ressources/techniques-de-negociation/concession-calculee",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/techniques-de-negociation/concession-calculee",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:42:05.036+00:00"
+    },
+    {
+      "id": 436,
+      "url": "${baseUrl}/ressources/meilleurs-livres/digital-ai/the-second-machine-age",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/digital-ai/the-second-machine-age",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:42:05.14+00:00"
+    },
+    {
+      "id": 437,
+      "url": "${baseUrl}/ressources/meilleurs-livres/digital-ai/ai-superpowers",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/digital-ai/ai-superpowers",
+      "response_time": 1,
+      "checked_at": "2025-07-30T09:42:06.217+00:00"
+    },
+    {
+      "id": 438,
+      "url": "${baseUrl}/ressources/meilleurs-livres/digital-ai/life-3-0",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/digital-ai/life-3-0",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:42:07.337+00:00"
+    },
+    {
+      "id": 439,
+      "url": "${baseUrl}/ressources/meilleurs-livres/digital-ai/human-machine",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/digital-ai/human-machine",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:42:08.44+00:00"
+    },
+    {
+      "id": 440,
+      "url": "${baseUrl}/ressources/meilleurs-livres/digital-ai/lean-startup",
+      "status": "broken",
+      "status_code": null,
+      "redirect_url": null,
+      "error_message": "Failed to parse URL from ${baseUrl}/ressources/meilleurs-livres/digital-ai/lean-startup",
+      "response_time": 0,
+      "checked_at": "2025-07-30T09:42:09.545+00:00"
+    }
+  ]
+}

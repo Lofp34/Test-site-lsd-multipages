@@ -105,11 +105,18 @@ cp .env.example .env.local
 ```
 
 ### Variables d'environnement
+
+**Production (Vercel)** : Toutes les variables sont configurées directement dans l'interface Vercel (Settings → Environment Variables) pour une sécurité optimale.
+
 ```bash
-# .env.local
+# .env.local (développement local uniquement)
 NEXT_PUBLIC_HUBSPOT_PORTAL_ID=your_portal_id
 HUBSPOT_API_KEY=your_api_key  
 NEXT_PUBLIC_GA_MEASUREMENT_ID=your_ga_id
+SENDGRID_API_KEY=your_sendgrid_key
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_key
 ```
 
 ### Développement
@@ -257,3 +264,33 @@ git push origin feature-branch
 
 **Laurent Serre Développement** - Expert commercial PME depuis 20 ans  
 Construit avec Next.js 15, TypeScript et Tailwind CSS
+
+
+## Système d'Audit Optimisé
+
+Ce projet utilise un système d'audit des liens optimisé pour le plan Vercel Hobby :
+
+- **2 cron jobs maximum** (limite Vercel Hobby respectée)
+- **Usage < 80%** des limites Vercel (80k invocations, 80 GB-heures/mois)
+- **Cache intelligent** pour optimiser les performances
+- **Fallbacks GitHub Actions** pour la résilience
+- **Monitoring temps réel** des métriques d'usage
+
+### Scripts de Déploiement
+
+```bash
+# Déploiement complet avec surveillance
+npm run deploy:production:safe
+
+# Validation post-déploiement
+npm run validate:production
+
+# Vérification de santé
+npm run health:production
+```
+
+### Architecture
+
+- `/api/audit-complete` - Cron job quotidien (2h00)
+- `/api/maintenance-weekly` - Cron job hebdomadaire (Lundi 9h00)
+- `/api/health` - Endpoint de santé pour monitoring

@@ -1,0 +1,16 @@
+{
+  "enabled": true,
+  "healthCheckInterval": 300000,
+  "alertThresholds": {
+    "responseTime": 5000,
+    "errorRate": 0.05,
+    "memoryUsage": 400,
+    "vercelUsage": 0.8
+  },
+  "endpoints": [
+    "/api/health",
+    "/api/audit-complete",
+    "/api/maintenance-weekly"
+  ],
+  "lastUpdated": "2025-08-01T08:17:15.741Z"
+}

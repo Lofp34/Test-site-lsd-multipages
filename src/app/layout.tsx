@@ -1,5 +1,5 @@
 import React from "react";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Open_Sans, Nunito, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
@@ -34,13 +34,20 @@ const robotoSlab = Roboto_Slab({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: '#00BDA4',
+};
+
 export const metadata: Metadata = {
   title: "Laurent Serre Développement - Expert Commercial & Formation",
   description: "Accompagnement commercial pour PME : structuration des équipes, formation à la vente, méthodes éprouvées. 20 ans d'expérience terrain + outils IA.",
   keywords: "formation commerciale, accompagnement vente, expert commercial, PME, structuration équipe commerciale, Laurent Serre",
   authors: [{ name: "Laurent Serre" }],
   creator: "Laurent Serre",
-  viewport: "width=device-width, initial-scale=1",
   openGraph: {
     title: "Laurent Serre Développement - Expert Commercial & Formation",
     description: "De l'effort commercial au levier stratégique. Accompagnement et formation pour équipes commerciales.",
@@ -77,6 +84,7 @@ export default function RootLayout({
     <html lang="fr" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
         <AnalyticsConsent />
         
         {/* Scripts JSON-LD pour le SEO */}

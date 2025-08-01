@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "crons": [
+    {
+      "path": "/api/audit-complete",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/maintenance-weekly",
+      "schedule": "0 9 * * 1"
+    }
+  ]
+} 

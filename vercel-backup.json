@@ -1,0 +1,23 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "crons": [
+    {
+      "path": "/api/audit-links",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/weekly-report",
+      "schedule": "0 9 * * 1"
+    },
+    {
+      "path": "/api/admin/trigger-alerts",
+      "schedule": "0 */6 * * *"
+    },
+    {
+      "path": "/api/cron/process-queue",
+      "schedule": "*/5 * * * *"
+    }
+  ]
+} 

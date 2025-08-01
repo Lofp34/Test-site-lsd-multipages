@@ -1,0 +1,27 @@
+{
+  "table": "audit_history",
+  "timestamp": "2025-08-01T07-36-58-646Z",
+  "count": 2,
+  "data": [
+    {
+      "id": 1,
+      "total_links": 100,
+      "broken_links": 5,
+      "corrected_links": 2,
+      "seo_score": 95,
+      "report_path": "/test/report.json",
+      "execution_time": 30,
+      "created_at": "2025-07-29T14:44:16.474172+00:00"
+    },
+    {
+      "id": 2,
+      "total_links": 498,
+      "broken_links": 442,
+      "corrected_links": 0,
+      "seo_score": 8,
+      "report_path": "reports/audit-1753868633266.json",
+      "execution_time": 0,
+      "created_at": "2025-07-30T09:43:53.426188+00:00"
+    }
+  ]
+}

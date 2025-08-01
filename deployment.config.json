@@ -1,0 +1,46 @@
+{
+  "production": {
+    "previewMode": true,
+    "monitoringDuration": 30,
+    "rollbackOnError": true,
+    "validateHealthChecks": true,
+    "healthCheckEndpoint": "/api/health",
+    "criticalEndpoints": [
+      "/api/audit-complete",
+      "/api/maintenance-weekly",
+      "/api/health"
+    ],
+    "performanceThresholds": {
+      "responseTime": 5000,
+      "memoryUsage": 400,
+      "errorRate": 5
+    },
+    "vercelLimits": {
+      "maxInvocations": 80000,
+      "maxComputeHours": 80,
+      "warningThreshold": 70
+    }
+  },
+  "staging": {
+    "previewMode": true,
+    "monitoringDuration": 10,
+    "rollbackOnError": false,
+    "validateHealthChecks": true,
+    "healthCheckEndpoint": "/api/health",
+    "criticalEndpoints": [
+      "/api/audit-complete",
+      "/api/maintenance-weekly"
+    ],
+    "performanceThresholds": {
+      "responseTime": 10000,
+      "memoryUsage": 512,
+      "errorRate": 10
+    }
+  },
+  "development": {
+    "previewMode": false,
+    "monitoringDuration": 5,
+    "rollbackOnError": false,
+    "validateHealthChecks": false
+  }
+}
