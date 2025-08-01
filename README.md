@@ -257,3 +257,33 @@ git push origin feature-branch
 
 **Laurent Serre Développement** - Expert commercial PME depuis 20 ans  
 Construit avec Next.js 15, TypeScript et Tailwind CSS
+
+
+## Système d'Audit Optimisé
+
+Ce projet utilise un système d'audit des liens optimisé pour le plan Vercel Hobby :
+
+- **2 cron jobs maximum** (limite Vercel Hobby respectée)
+- **Usage < 80%** des limites Vercel (80k invocations, 80 GB-heures/mois)
+- **Cache intelligent** pour optimiser les performances
+- **Fallbacks GitHub Actions** pour la résilience
+- **Monitoring temps réel** des métriques d'usage
+
+### Scripts de Déploiement
+
+```bash
+# Déploiement complet avec surveillance
+npm run deploy:production:safe
+
+# Validation post-déploiement
+npm run validate:production
+
+# Vérification de santé
+npm run health:production
+```
+
+### Architecture
+
+- `/api/audit-complete` - Cron job quotidien (2h00)
+- `/api/maintenance-weekly` - Cron job hebdomadaire (Lundi 9h00)
+- `/api/health` - Endpoint de santé pour monitoring

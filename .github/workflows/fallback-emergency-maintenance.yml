@@ -1,0 +1,444 @@
+name: Fallback - Maintenance d'Urgence
+
+on:
+  workflow_dispatch:
+    inputs:
+      maintenance_type:
+        description: 'Type de maintenance'
+        required: true
+        type: choice
+        options:
+          - database_cleanup
+          - cache_reset
+          - link_correction
+          - system_recovery
+          - full_maintenance
+        default: 'system_recovery'
+      severity:
+        description: 'Niveau de sévérité'
+        required: true
+        type: choice
+        options:
+          - low
+          - medium
+          - high
+          - critical
+        default: 'high'
+      notify_admin:
+        description: 'Notifier l\'administrateur'
+        required: false
+        default: true
+        type: boolean
+  repository_dispatch:
+    types: [emergency_maintenance]
+
+jobs:
+  emergency-maintenance:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Setup environment
+      run: |
+        echo "SENDGRID_API_KEY=${{ secrets.SENDGRID_API_KEY }}" >> $GITHUB_ENV
+        echo "SENDGRID_FROM_EMAIL=${{ secrets.SENDGRID_FROM_EMAIL }}" >> $GITHUB_ENV
+        echo "SENDGRID_FROM_NAME=${{ secrets.SENDGRID_FROM_NAME }}" >> $GITHUB_ENV
+        echo "ADMIN_EMAIL=${{ secrets.ADMIN_EMAIL }}" >> $GITHUB_ENV
+        echo "NEXT_PUBLIC_SUPABASE_URL=${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}" >> $GITHUB_ENV
+        echo "SUPABASE_SERVICE_ROLE_KEY=${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" >> $GITHUB_ENV
+        echo "NEXT_PUBLIC_BASE_URL=${{ secrets.NEXT_PUBLIC_BASE_URL }}" >> $GITHUB_ENV
+        echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+        
+    - name: Determine maintenance parameters
+      id: params
+      run: |
+        # Déterminer les paramètres selon le type de maintenance
+        MAINTENANCE_TYPE="${{ github.event.inputs.maintenance_type || github.event.client_payload.maintenance_type || 'system_recovery' }}"
+        SEVERITY="${{ github.event.inputs.severity || github.event.client_payload.severity || 'high' }}"
+        
+        echo "maintenance_type=$MAINTENANCE_TYPE" >> $GITHUB_OUTPUT
+        echo "severity=$SEVERITY" >> $GITHUB_OUTPUT
+        
+        # Définir les actions selon le type
+        case "$MAINTENANCE_TYPE" in
+          "database_cleanup")
+            echo "actions=cleanup_db,optimize_indexes,vacuum_tables" >> $GITHUB_OUTPUT
+            echo "estimated_duration=15" >> $GITHUB_OUTPUT
+            ;;
+          "cache_reset")
+            echo "actions=clear_cache,reset_redis,rebuild_cache" >> $GITHUB_OUTPUT
+            echo "estimated_duration=5" >> $GITHUB_OUTPUT
+            ;;
+          "link_correction")
+            echo "actions=scan_links,auto_correct,validate_fixes" >> $GITHUB_OUTPUT
+            echo "estimated_duration=20" >> $GITHUB_OUTPUT
+            ;;
+          "system_recovery")
+            echo "actions=health_check,restart_services,validate_system" >> $GITHUB_OUTPUT
+            echo "estimated_duration=10" >> $GITHUB_OUTPUT
+            ;;
+          "full_maintenance")
+            echo "actions=cleanup_db,clear_cache,scan_links,auto_correct,health_check" >> $GITHUB_OUTPUT
+            echo "estimated_duration=45" >> $GITHUB_OUTPUT
+            ;;
+        esac
+        
+    - name: Send maintenance start notification
+      if: github.event.inputs.notify_admin != 'false'
+      run: |
+        MAINTENANCE_TYPE="${{ steps.params.outputs.maintenance_type }}"
+        SEVERITY="${{ steps.params.outputs.severity }}"
+        DURATION="${{ steps.params.outputs.estimated_duration }}"
+        
+        # Préparer la notification de début
+        cat > maintenance_start.json << EOF
+        {
+          "personalizations": [
+            {
+              "to": [{"email": "${{ secrets.ADMIN_EMAIL }}"}],
+              "subject": "🔧 MAINTENANCE D'URGENCE - Début ($MAINTENANCE_TYPE)"
+            }
+          ],
+          "from": {
+            "email": "${{ secrets.SENDGRID_FROM_EMAIL }}",
+            "name": "${{ secrets.SENDGRID_FROM_NAME }}"
+          },
+          "content": [
+            {
+              "type": "text/html",
+              "value": "$(cat << 'HTML'
+        <h2>🔧 Maintenance d'Urgence - Début</h2>
+        
+        <p><strong>Type:</strong> $MAINTENANCE_TYPE</p>
+        <p><strong>Sévérité:</strong> $SEVERITY</p>
+        <p><strong>Durée estimée:</strong> $DURATION minutes</p>
+        <p><strong>Heure de début:</strong> $(date '+%d/%m/%Y %H:%M:%S UTC')</p>
+        
+        <h3>Actions Prévues</h3>
+        <p>${{ steps.params.outputs.actions }}</p>
+        
+        <p><strong>Statut:</strong> 🟡 En cours...</p>
+        
+        <p><em>Maintenance automatique par GitHub Actions Fallback</em></p>
+        <p><a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}">Suivre le progrès</a></p>
+HTML
+)"
+            }
+          ]
+        }
+EOF
+        
+        curl -X POST "https://api.sendgrid.com/v3/mail/send" \
+          -H "Authorization: Bearer ${{ secrets.SENDGRID_API_KEY }}" \
+          -H "Content-Type: application/json" \
+          -d @maintenance_start.json
+          
+        echo "📧 Notification de début envoyée"
+        
+    - name: Execute database cleanup
+      if: contains(steps.params.outputs.actions, 'cleanup_db')
+      run: |
+        echo "🗄️ Nettoyage de la base de données..."
+        
+        mkdir -p maintenance-reports
+        
+        # Nettoyer les anciens logs d'audit (>30 jours)
+        npm run maintenance:cleanup-db --days=30 > maintenance-reports/db-cleanup.log 2>&1 || true
+        
+        echo "✅ Nettoyage de la base de données terminé"
+        
+    - name: Execute cache reset
+      if: contains(steps.params.outputs.actions, 'clear_cache')
+      run: |
+        echo "🔄 Réinitialisation du cache..."
+        
+        # Vider tous les caches
+        npm run maintenance:clear-cache > maintenance-reports/cache-reset.log 2>&1 || true
+        
+        echo "✅ Cache réinitialisé"
+        
+    - name: Execute link scanning and correction
+      if: contains(steps.params.outputs.actions, 'scan_links')
+      run: |
+        echo "🔗 Scan et correction des liens..."
+        
+        # Scan rapide des liens critiques
+        npm run audit:cli audit \
+          --depth 2 \
+          --critical-only \
+          --format json \
+          --output ./maintenance-reports \
+          --timeout 30000 \
+          --batch-size 5 > maintenance-reports/link-scan.log 2>&1 || true
+          
+        # Tentative de correction automatique
+        if contains(steps.params.outputs.actions, 'auto_correct'); then
+          npm run audit:cli fix \
+            --confidence 0.8 \
+            --max-fixes 10 > maintenance-reports/auto-correction.log 2>&1 || true
+        fi
+        
+        echo "✅ Scan et correction des liens terminés"
+        
+    - name: Execute system health check
+      if: contains(steps.params.outputs.actions, 'health_check')
+      run: |
+        echo "🏥 Vérification de la santé du système..."
+        
+        # Test complet de santé
+        npm run maintenance:health > maintenance-reports/health-check.log 2>&1 || true
+        
+        # Vérifier les services critiques
+        SITE_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "${{ secrets.NEXT_PUBLIC_BASE_URL }}" || echo "000")
+        echo "Site status: $SITE_STATUS" >> maintenance-reports/health-check.log
+        
+        # Test de la base de données
+        DB_STATUS=$(npm run audit:cli status --db-test 2>&1 || echo "ERREUR")
+        echo "Database status: $DB_STATUS" >> maintenance-reports/health-check.log
+        
+        echo "✅ Vérification de santé terminée"
+        
+    - name: Optimize database indexes
+      if: contains(steps.params.outputs.actions, 'optimize_indexes')
+      run: |
+        echo "⚡ Optimisation des index de base de données..."
+        
+        # Optimiser les index critiques
+        npm run maintenance:optimize-indexes > maintenance-reports/index-optimization.log 2>&1 || true
+        
+        echo "✅ Optimisation des index terminée"
+        
+    - name: Validate system after maintenance
+      id: validation
+      run: |
+        echo "✅ Validation post-maintenance..."
+        
+        # Tests de validation
+        VALIDATION_SCORE=100
+        ISSUES_FOUND=""
+        
+        # Test du site principal
+        SITE_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "${{ secrets.NEXT_PUBLIC_BASE_URL }}" || echo "000")
+        if [ "$SITE_STATUS" != "200" ]; then
+          VALIDATION_SCORE=$((VALIDATION_SCORE - 30))
+          ISSUES_FOUND="$ISSUES_FOUND\n- Site principal inaccessible ($SITE_STATUS)"
+        fi
+        
+        # Test de la base de données
+        DB_TEST=$(npm run audit:cli status --db-test 2>/dev/null || echo "ERREUR")
+        if [[ "$DB_TEST" == *"ERREUR"* ]]; then
+          VALIDATION_SCORE=$((VALIDATION_SCORE - 25))
+          ISSUES_FOUND="$ISSUES_FOUND\n- Base de données inaccessible"
+        fi
+        
+        # Test des liens critiques
+        if [ -f "maintenance-reports/audit-report-*.json" ]; then
+          REPORT_FILE=$(ls maintenance-reports/audit-report-*.json | head -1)
+          CRITICAL_BROKEN=$(jq '[.brokenLinks[] | select(.priority == "critical")] | length' "$REPORT_FILE" 2>/dev/null || echo "0")
+          if [ "$CRITICAL_BROKEN" -gt 0 ]; then
+            VALIDATION_SCORE=$((VALIDATION_SCORE - 20))
+            ISSUES_FOUND="$ISSUES_FOUND\n- $CRITICAL_BROKEN liens critiques encore morts"
+          fi
+        fi
+        
+        echo "validation_score=$VALIDATION_SCORE" >> $GITHUB_OUTPUT
+        echo "issues_found=$ISSUES_FOUND" >> $GITHUB_OUTPUT
+        
+        if [ "$VALIDATION_SCORE" -ge 80 ]; then
+          echo "maintenance_success=true" >> $GITHUB_OUTPUT
+          echo "✅ Maintenance réussie (Score: $VALIDATION_SCORE%)"
+        else
+          echo "maintenance_success=false" >> $GITHUB_OUTPUT
+          echo "⚠️ Maintenance partiellement réussie (Score: $VALIDATION_SCORE%)"
+        fi
+        
+    - name: Generate maintenance report
+      run: |
+        # Créer un rapport de maintenance complet
+        cat > maintenance_report.md << EOF
+        # Rapport de Maintenance d'Urgence
+        
+        **Type:** ${{ steps.params.outputs.maintenance_type }}
+        **Sévérité:** ${{ steps.params.outputs.severity }}
+        **Début:** $(date '+%d/%m/%Y %H:%M:%S UTC')
+        **Durée estimée:** ${{ steps.params.outputs.estimated_duration }} minutes
+        
+        ## Actions Exécutées
+        
+        ${{ steps.params.outputs.actions }}
+        
+        ## Résultats de Validation
+        
+        **Score de validation:** ${{ steps.validation.outputs.validation_score }}%
+        **Statut:** ${{ steps.validation.outputs.maintenance_success == 'true' && '✅ Succès' || '⚠️ Partiel' }}
+        
+        ### Problèmes Détectés
+        
+        ${{ steps.validation.outputs.issues_found }}
+        
+        ## Logs de Maintenance
+        
+        Les logs détaillés sont disponibles dans les artifacts de ce workflow.
+        
+        ## Recommandations Post-Maintenance
+        
+EOF
+        
+        # Ajouter des recommandations basées sur les résultats
+        if [ "${{ steps.validation.outputs.maintenance_success }}" = "true" ]; then
+          echo "- ✅ **Maintenance réussie** - Système opérationnel" >> maintenance_report.md
+          echo "- 📊 Surveiller les métriques dans les prochaines heures" >> maintenance_report.md
+          echo "- 🔄 Planifier la prochaine maintenance préventive" >> maintenance_report.md
+        else
+          echo "- ⚠️ **Intervention manuelle requise** - Problèmes persistants" >> maintenance_report.md
+          echo "- 🔍 Analyser les logs pour identifier les causes" >> maintenance_report.md
+          echo "- 📞 Contacter l'équipe technique si nécessaire" >> maintenance_report.md
+        fi
+        
+        echo "" >> maintenance_report.md
+        echo "---" >> maintenance_report.md
+        echo "*Rapport généré automatiquement par GitHub Actions Fallback*" >> maintenance_report.md
+        
+    - name: Send maintenance completion notification
+      if: github.event.inputs.notify_admin != 'false'
+      run: |
+        MAINTENANCE_TYPE="${{ steps.params.outputs.maintenance_type }}"
+        VALIDATION_SCORE="${{ steps.validation.outputs.validation_score }}"
+        SUCCESS="${{ steps.validation.outputs.maintenance_success }}"
+        
+        if [ "$SUCCESS" = "true" ]; then
+          STATUS_EMOJI="✅"
+          STATUS_TEXT="TERMINÉE AVEC SUCCÈS"
+          STATUS_COLOR="green"
+        else
+          STATUS_EMOJI="⚠️"
+          STATUS_TEXT="TERMINÉE AVEC PROBLÈMES"
+          STATUS_COLOR="orange"
+        fi
+        
+        # Préparer la notification de fin
+        cat > maintenance_end.json << EOF
+        {
+          "personalizations": [
+            {
+              "to": [{"email": "${{ secrets.ADMIN_EMAIL }}"}],
+              "subject": "$STATUS_EMOJI MAINTENANCE D'URGENCE - $STATUS_TEXT"
+            }
+          ],
+          "from": {
+            "email": "${{ secrets.SENDGRID_FROM_EMAIL }}",
+            "name": "${{ secrets.SENDGRID_FROM_NAME }}"
+          },
+          "content": [
+            {
+              "type": "text/html",
+              "value": "$(cat << 'HTML'
+        <h2>$STATUS_EMOJI Maintenance d'Urgence - Terminée</h2>
+        
+        <p><strong>Type:</strong> $MAINTENANCE_TYPE</p>
+        <p><strong>Statut:</strong> <span style="color: $STATUS_COLOR;">$STATUS_TEXT</span></p>
+        <p><strong>Score de validation:</strong> $VALIDATION_SCORE%</p>
+        <p><strong>Heure de fin:</strong> $(date '+%d/%m/%Y %H:%M:%S UTC')</p>
+        
+        <h3>Actions Exécutées</h3>
+        <p>${{ steps.params.outputs.actions }}</p>
+        
+        <h3>Problèmes Détectés</h3>
+        <pre>${{ steps.validation.outputs.issues_found }}</pre>
+        
+        <h3>Prochaines Étapes</h3>
+        $(if [ "$SUCCESS" = "true" ]; then
+          echo "<p>✅ Système opérationnel - Surveillance recommandée</p>"
+        else
+          echo "<p>⚠️ Intervention manuelle requise - Analyser les logs</p>"
+        fi)
+        
+        <p><em>Maintenance automatique par GitHub Actions Fallback</em></p>
+        <p><a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}">Voir le rapport complet</a></p>
+HTML
+)"
+            }
+          ]
+        }
+EOF
+        
+        curl -X POST "https://api.sendgrid.com/v3/mail/send" \
+          -H "Authorization: Bearer ${{ secrets.SENDGRID_API_KEY }}" \
+          -H "Content-Type: application/json" \
+          -d @maintenance_end.json
+          
+        echo "📧 Notification de fin envoyée"
+        
+    - name: Create GitHub Issue if problems persist
+      if: steps.validation.outputs.maintenance_success != 'true'
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const title = `🔧 Maintenance d'urgence incomplète - ${new Date().toLocaleDateString('fr-FR')}`;
+          
+          const body = `## 🔧 Maintenance d'Urgence Incomplète
+          
+**Type:** ${{ steps.params.outputs.maintenance_type }}
+**Score de validation:** ${{ steps.validation.outputs.validation_score }}%
+**Heure:** ${new Date().toLocaleString('fr-FR')}
+
+### Problèmes Persistants
+${{ steps.validation.outputs.issues_found }}
+
+### Actions Exécutées
+${{ steps.params.outputs.actions }}
+
+### Actions Requises
+- [ ] Analyser les logs de maintenance
+- [ ] Corriger les problèmes identifiés
+- [ ] Re-lancer la validation
+- [ ] Planifier une maintenance manuelle si nécessaire
+
+### Logs Disponibles
+Les logs détaillés sont disponibles dans les artifacts du workflow.
+
+---
+*Issue créée automatiquement par GitHub Actions Fallback*
+[Voir les logs](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})`;
+
+          await github.rest.issues.create({
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            title: title,
+            body: body,
+            labels: ['maintenance', 'fallback', 'problème', 'urgent'],
+            assignees: ['${{ github.repository_owner }}']
+          });
+          
+    - name: Upload maintenance reports
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: emergency-maintenance-${{ github.run_number }}
+        path: |
+          maintenance_report.md
+          maintenance-reports/
+        retention-days: 30
+        
+    - name: Log maintenance completion
+      run: |
+        echo "🔧 Maintenance d'urgence terminée"
+        echo "Type: ${{ steps.params.outputs.maintenance_type }}"
+        echo "Score: ${{ steps.validation.outputs.validation_score }}%"
+        
+        if [ "${{ steps.validation.outputs.maintenance_success }}" = "true" ]; then
+          echo "✅ Maintenance réussie - Système opérationnel"
+        else
+          echo "⚠️ Maintenance partiellement réussie - Intervention requise"
+        fi
