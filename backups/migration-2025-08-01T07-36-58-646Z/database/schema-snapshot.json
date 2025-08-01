@@ -1,0 +1,13 @@
+{
+  "timestamp": "2025-08-01T07-36-58-646Z",
+  "note": "Fallback schema - contains table structure from setup script",
+  "tables": [
+    "scanned_links",
+    "validation_results",
+    "applied_corrections",
+    "resource_requests",
+    "audit_history",
+    "link_health_metrics"
+  ],
+  "setupScript": "scripts/setup-audit-db.ts"
+}

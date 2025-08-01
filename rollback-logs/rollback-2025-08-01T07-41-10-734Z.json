@@ -1,0 +1,44 @@
+{
+  "config": {
+    "backupId": "2025-08-01T07-36-58-646Z",
+    "force": false,
+    "notify": false,
+    "timestamp": "2025-08-01T07-41-10-734Z",
+    "backupDir": "/Users/laurents/Documents/Site_LSD_Kiro_250725/Test-site-lsd-multipages/backups/migration-2025-08-01T07-36-58-646Z"
+  },
+  "result": {
+    "success": false,
+    "steps": [
+      {
+        "name": "validate-backup",
+        "status": "success",
+        "message": "Completed successfully",
+        "duration": 0.003
+      },
+      {
+        "name": "stop-current-system",
+        "status": "success",
+        "message": "Completed successfully",
+        "duration": 1.001
+      },
+      {
+        "name": "restore-vercel-config",
+        "status": "success",
+        "message": "Completed successfully",
+        "duration": 0.008
+      },
+      {
+        "name": "restore-database",
+        "status": "failed",
+        "message": "Failed: Error: Failed to restore validation_results: cannot insert a non-DEFAULT value into column \"id\"",
+        "duration": 1.055
+      }
+    ],
+    "totalDuration": 2.069,
+    "errors": [
+      "restore-database: Error: Failed to restore validation_results: cannot insert a non-DEFAULT value into column \"id\"",
+      "Rollback failed: Error: Failed to restore validation_results: cannot insert a non-DEFAULT value into column \"id\""
+    ]
+  },
+  "timestamp": "2025-08-01T07:41:12.803Z"
+}
