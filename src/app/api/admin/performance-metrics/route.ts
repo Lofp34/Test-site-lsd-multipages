@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getPerformanceAlerts, getAllPerformanceStats } from '@/lib/vercel/performance-integration';
-import { withPerformanceMonitoring } from '@/lib/vercel/performance-integration';
 
 /**
  * GET /api/admin/performance-metrics
@@ -131,9 +130,5 @@ async function DELETE(request: NextRequest): Promise<NextResponse> {
   }
 }
 
-// Apply performance monitoring to these API routes
-export { 
-  withPerformanceMonitoring(GET, '/api/admin/performance-metrics') as GET,
-  withPerformanceMonitoring(POST, '/api/admin/performance-metrics') as POST,
-  withPerformanceMonitoring(DELETE, '/api/admin/performance-metrics') as DELETE,
-};
+// Export the API route handlers
+export { GET, POST, DELETE };
