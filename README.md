@@ -105,11 +105,18 @@ cp .env.example .env.local
 ```
 
 ### Variables d'environnement
+
+**Production (Vercel)** : Toutes les variables sont configurées directement dans l'interface Vercel (Settings → Environment Variables) pour une sécurité optimale.
+
 ```bash
-# .env.local
+# .env.local (développement local uniquement)
 NEXT_PUBLIC_HUBSPOT_PORTAL_ID=your_portal_id
 HUBSPOT_API_KEY=your_api_key  
 NEXT_PUBLIC_GA_MEASUREMENT_ID=your_ga_id
+SENDGRID_API_KEY=your_sendgrid_key
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_key
 ```
 
 ### Développement
