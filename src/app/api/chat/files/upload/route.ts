@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import { GoogleGenAI } from '@google/genai';
 import { RateLimiter } from '@/lib/gemini/rate-limiter';
 import { InputValidator } from '@/lib/gemini/input-validator';
 
@@ -12,7 +12,7 @@ const uploadRateLimiter = new RateLimiter({
 });
 
 // Configuration de l'API Gemini
-const ai = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
 
 // Validation des fichiers
 const fileValidator = new InputValidator({

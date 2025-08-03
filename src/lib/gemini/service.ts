@@ -1,10 +1,10 @@
 'use client';
 
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI, createUserContent, createPartFromUri } from "@google/genai";
 import { ChatMessage, GeminiConfig, UploadedFile, ChatError, ChatErrorType } from './types';
 
 export class GeminiService {
-  private ai: GoogleGenerativeAI;
+  private ai: GoogleGenAI;
   private chat: any = null;
   private config: GeminiConfig;
   private conversationId: string;
@@ -20,7 +20,7 @@ export class GeminiService {
       throw new Error('API key is required');
     }
 
-    this.ai = new GoogleGenerativeAI(config.apiKey);
+    this.ai = new GoogleGenAI({ apiKey: config.apiKey });
     this.config = config;
     this.conversationId = conversationId || `conv_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
   }
@@ -30,17 +30,10 @@ export class GeminiService {
    */
   async initializeChat(): Promise<void> {
     try {
-      // Créer le chat avec l'historique vide et les instructions système
+      // Créer le chat selon la documentation officielle
       this.chat = this.ai.chats.create({
         model: this.config.model,
-        history: [],
-        config: {
-          systemInstruction: this.config.systemInstruction,
-          temperature: this.config.temperature,
-          thinkingConfig: {
-            thinkingBudget: this.config.thinkingBudget || 0 // Désactivé par défaut pour la performance
-          }
-        }
+        history: []
       });
 
       console.log('Chat Gemini initialisé avec succès');

@@ -73,7 +73,7 @@
     "analyze": "ANALYZE=true npm run build"
   },
   "dependencies": {
-    "@google/generative-ai": "^0.24.1",
+    "@google/genai": "^1.12.0",
     "@sendgrid/mail": "^8.1.5",
     "@supabase/supabase-js": "^2.53.0",
     "@types/jsdom": "^21.1.7",

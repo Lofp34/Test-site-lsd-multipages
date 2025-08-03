@@ -1,10 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { GoogleGenAI } from '@google/genai';
+
+// Configuration de l'API Gemini selon la documentation officielle
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
 
 export async function POST(request: NextRequest) {
   try {
     // Vérifier la clé API
-    const apiKey = process.env.GEMINI_API_KEY;
-    if (!apiKey) {
+    if (!process.env.GEMINI_API_KEY) {
       return NextResponse.json(
         { error: 'Service temporairement indisponible' },
         { status: 503 }
@@ -22,41 +25,22 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Appel direct à l'API Gemini
-    const response = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'x-goog-api-key': apiKey,
-      },
-      body: JSON.stringify({
-        contents: [{
-          parts: [{ text: message }]
-        }],
-        systemInstruction: systemInstruction ? {
-          parts: [{ text: systemInstruction }]
-        } : undefined,
-        generationConfig: {
-          temperature: config?.temperature || 0.7,
-          maxOutputTokens: config?.maxTokens || 2048,
-        }
-      })
+    // Utiliser le SDK officiel GoogleGenAI
+    const response = await ai.models.generateContent({
+      model: "gemini-2.5-flash",
+      contents: message,
+      config: {
+        systemInstruction: systemInstruction,
+        temperature: config?.temperature || 0.7,
+        maxOutputTokens: config?.maxTokens || 2048,
+        thinkingConfig: {
+          thinkingBudget: 0, // Désactiver la réflexion pour la performance
+        },
+      }
     });
 
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
-      console.error('Gemini API Error:', errorData);
-      return NextResponse.json(
-        { error: 'Erreur lors de la génération de la réponse' },
-        { status: 500 }
-      );
-    }
-
-    const data = await response.json();
-    const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
-
     return NextResponse.json({
-      text,
+      text: response.text,
       metadata: {
         model: 'gemini-2.5-flash',
         timestamp: new Date().toISOString()

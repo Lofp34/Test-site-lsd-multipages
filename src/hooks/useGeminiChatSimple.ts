@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useCallback, useRef, useEffect } from 'react';
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from "@google/genai";
 import { ChatMessage, GeminiConfig, UploadedFile, ChatError, ChatErrorType } from '@/lib/gemini/types';
 
 interface UseGeminiChatSimpleConfig {
@@ -59,7 +59,7 @@ export function useGeminiChatSimple({
   const [isRecovering] = useState(false);
   const [recoveryAction] = useState<any>(null);
 
-  const aiRef = useRef<GoogleGenerativeAI | null>(null);
+  const aiRef = useRef<GoogleGenAI | null>(null);
   const chatRef = useRef<any>(null);
   const conversationIdRef = useRef<string>(conversationId || `conv_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`);
   const initializationAttempted = useRef<boolean>(false);
@@ -77,7 +77,7 @@ export function useGeminiChatSimple({
       
       try {
         // Initialiser l'API Gemini avec la clé API
-        aiRef.current = new GoogleGenerativeAI(apiKey);
+        aiRef.current = new GoogleGenAI({ apiKey });
 
         // Configuration par défaut
         const geminiConfig: GeminiConfig = {
@@ -89,18 +89,9 @@ export function useGeminiChatSimple({
           ...config
         };
 
-        // Créer le modèle avec les instructions système
-        const model = aiRef.current.getGenerativeModel({
+        // Créer le chat selon la documentation officielle
+        chatRef.current = aiRef.current.chats.create({
           model: geminiConfig.model,
-          systemInstruction: geminiConfig.systemInstruction,
-          generationConfig: {
-            temperature: geminiConfig.temperature,
-            maxOutputTokens: geminiConfig.maxTokens,
-          }
-        });
-
-        // Créer le chat
-        chatRef.current = model.startChat({
           history: []
         });
 
@@ -273,8 +264,10 @@ export function useGeminiChatSimple({
       setMessages(prev => [...prev, userMessage]);
       setIsLoading(false);
 
-      // Utiliser le streaming selon la documentation
-      const stream = await chatRef.current.sendMessageStream(messageContent);
+      // Utiliser le streaming selon la documentation officielle
+      const stream = await chatRef.current.sendMessageStream({
+        message: messageContent
+      });
 
       let assistantContent = '';
 

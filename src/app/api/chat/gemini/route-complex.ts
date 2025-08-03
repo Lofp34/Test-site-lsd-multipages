@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import { GoogleGenAI } from '@google/genai';
 import { RateLimiter } from '@/lib/gemini/rate-limiter';
 import { InputValidator } from '@/lib/gemini/input-validator';
 import { getValidatedProductionConfig, getSecurityHeaders } from '@/config/production';
@@ -17,7 +17,7 @@ const rateLimiter = new RateLimiter({
 });
 
 // Configuration de l'API Gemini avec paramètres sécurisés
-const ai = new GoogleGenerativeAI(config.gemini.apiKey);
+const ai = new GoogleGenAI({ apiKey: config.gemini.apiKey });
 
 // Validation des inputs avec configuration de production
 const inputValidator = new InputValidator({
