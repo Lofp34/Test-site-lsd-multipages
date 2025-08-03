@@ -47,44 +47,51 @@ export default function HubSpotForm({
 
     const windowWithHubSpot = window as HubSpotWindow;
     
-    // Charger le script HubSpot si pas déjà chargé
-    if (typeof window !== 'undefined' && !windowWithHubSpot.hbspt) {
-      const script = document.createElement('script');
-      script.src = '//js.hsforms.net/forms/embed/v2.js';
-      script.charset = 'utf-8';
-      script.async = true;
-      script.onload = () => {
+    try {
+      // Charger le script HubSpot si pas déjà chargé
+      if (typeof window !== 'undefined' && !windowWithHubSpot.hbspt) {
+        const script = document.createElement('script');
+        script.src = '//js.hsforms.net/forms/embed/v2.js';
+        script.charset = 'utf-8';
+        script.async = true;
+        script.onload = () => {
+          setFormLoaded(true);
+          // Créer le formulaire une fois le script chargé
+          if (windowWithHubSpot.hbspt) {
+            windowWithHubSpot.hbspt.forms.create({
+              region: region,
+              portalId: portalId,
+              formId: formId,
+              target: '#hubspot-form-container',
+              onFormReady: () => {
+                console.log('Formulaire HubSpot prêt');
+              },
+              onFormSubmit: () => {
+                console.log('Formulaire soumis');
+              },
+              onFormSubmitted: () => {
+                console.log('Formulaire envoyé avec succès vers HubSpot CRM');
+                // Optionnel: ajouter un tracking ou redirection
+              }
+            });
+          }
+        };
+        script.onerror = () => {
+          console.error('Erreur lors du chargement du script HubSpot');
+        };
+        document.head.appendChild(script);
+      } else if (windowWithHubSpot.hbspt) {
+        // Si le script est déjà chargé, créer directement le formulaire
         setFormLoaded(true);
-        // Créer le formulaire une fois le script chargé
-        if (windowWithHubSpot.hbspt) {
-          windowWithHubSpot.hbspt.forms.create({
-            region: region,
-            portalId: portalId,
-            formId: formId,
-            target: '#hubspot-form-container',
-            onFormReady: () => {
-              console.log('Formulaire HubSpot prêt');
-            },
-            onFormSubmit: () => {
-              console.log('Formulaire soumis');
-            },
-            onFormSubmitted: () => {
-              console.log('Formulaire envoyé avec succès vers HubSpot CRM');
-              // Optionnel: ajouter un tracking ou redirection
-            }
-          });
-        }
-      };
-      document.head.appendChild(script);
-    } else if (windowWithHubSpot.hbspt) {
-      // Si le script est déjà chargé, créer directement le formulaire
-      setFormLoaded(true);
-      windowWithHubSpot.hbspt.forms.create({
-        region: region,
-        portalId: portalId,
-        formId: formId,
-        target: '#hubspot-form-container'
-      });
+        windowWithHubSpot.hbspt.forms.create({
+          region: region,
+          portalId: portalId,
+          formId: formId,
+          target: '#hubspot-form-container'
+        });
+      }
+    } catch (error) {
+      console.error('Erreur lors de l\'initialisation du formulaire HubSpot:', error);
     }
   }, [isInView, formLoaded, formId, region, portalId]);
 

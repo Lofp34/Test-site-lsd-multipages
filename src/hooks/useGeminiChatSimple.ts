@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useCallback, useRef, useEffect } from 'react';
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 import { ChatMessage, GeminiConfig, UploadedFile, ChatError, ChatErrorType } from '@/lib/gemini/types';
 
 interface UseGeminiChatSimpleConfig {
@@ -27,6 +27,21 @@ interface UseGeminiChatSimpleReturn {
   retryLastOperation: () => Promise<void>;
   isRecovering: boolean;
   recoveryAction: any;
+}
+
+// Helper function pour convertir un fichier en base64
+async function fileToBase64(file: File): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => {
+      const result = reader.result as string;
+      // Enlever le préfixe data:type/subtype;base64,
+      const base64 = result.split(',')[1];
+      resolve(base64);
+    };
+    reader.onerror = error => reject(error);
+  });
 }
 
 export function useGeminiChatSimple({
@@ -62,9 +77,7 @@ export function useGeminiChatSimple({
       
       try {
         // Initialiser l'API Gemini avec la clé API
-        aiRef.current = new GoogleGenAI({
-          apiKey: apiKey
-        });
+        aiRef.current = new GoogleGenerativeAI(apiKey);
 
         // Configuration par défaut
         const geminiConfig: GeminiConfig = {
@@ -76,17 +89,19 @@ export function useGeminiChatSimple({
           ...config
         };
 
-        // Créer le chat avec l'historique et les instructions système
-        chatRef.current = aiRef.current.chats.create({
+        // Créer le modèle avec les instructions système
+        const model = aiRef.current.getGenerativeModel({
           model: geminiConfig.model,
-          history: [],
-          config: {
-            systemInstruction: geminiConfig.systemInstruction,
+          systemInstruction: geminiConfig.systemInstruction,
+          generationConfig: {
             temperature: geminiConfig.temperature,
-            thinkingConfig: {
-              thinkingBudget: geminiConfig.thinkingBudget
-            }
+            maxOutputTokens: geminiConfig.maxTokens,
           }
+        });
+
+        // Créer le chat
+        chatRef.current = model.startChat({
+          history: []
         });
 
         // Charger l'historique existant depuis localStorage
@@ -175,10 +190,12 @@ export function useGeminiChatSimple({
         throw new Error(`Type de fichier non supporté. Types autorisés : ${allowedTypes.join(', ')}`);
       }
 
-      // Upload via l'API Files selon la documentation
-      const uploadedFile = await aiRef.current.files.upload({
-        file: file
-      });
+      // Pour l'instant, on simule l'upload (l'API Files n'est pas encore disponible dans cette version)
+      const uploadedFile = {
+        name: `file_${Date.now()}`,
+        uri: URL.createObjectURL(file),
+        mimeType: file.type
+      };
 
       const result: UploadedFile = {
         id: uploadedFile.name || `file_${Date.now()}`,
@@ -227,14 +244,18 @@ export function useGeminiChatSimple({
       
       if (uploadedFiles && uploadedFiles.length > 0) {
         // Message multimodal avec fichiers
-        const { createUserContent, createPartFromUri } = await import("@google/genai");
-        const parts = [message];
+        const parts = [{ text: message }];
         
         for (const file of uploadedFiles) {
-          parts.push(createPartFromUri(file.uri, file.mimeType));
+          parts.push({
+            inlineData: {
+              mimeType: file.mimeType,
+              data: await fileToBase64(file)
+            }
+          });
         }
 
-        messageContent = createUserContent(parts);
+        messageContent = parts;
       } else {
         // Message texte simple
         messageContent = message;
@@ -253,9 +274,7 @@ export function useGeminiChatSimple({
       setIsLoading(false);
 
       // Utiliser le streaming selon la documentation
-      const stream = await chatRef.current.sendMessageStream({
-        message: messageContent
-      });
+      const stream = await chatRef.current.sendMessageStream(messageContent);
 
       let assistantContent = '';
 

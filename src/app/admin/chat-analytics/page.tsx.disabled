@@ -1,0 +1,16 @@
+import { Metadata } from 'next';
+import ChatAnalyticsDashboard from '@/components/admin/ChatAnalyticsDashboard';
+
+export const metadata: Metadata = {
+  title: 'Analytics Chat Gemini | Admin | Laurent Serre',
+  description: 'Dashboard d\'analytics pour le chat Gemini - métriques, performances et insights',
+  robots: 'noindex, nofollow', // Page admin non indexée
+};
+
+export default function ChatAnalyticsPage() {
+  return (
+    <div className="min-h-screen bg-primary-bg">
+      <ChatAnalyticsDashboard />
+    </div>
+  );
+}

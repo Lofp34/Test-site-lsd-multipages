@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { GoogleGenAI } from '@google/genai';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 import { RateLimiter } from '@/lib/gemini/rate-limiter';
 import { InputValidator } from '@/lib/gemini/input-validator';
 

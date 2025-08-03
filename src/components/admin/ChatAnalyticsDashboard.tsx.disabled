@@ -1,0 +1,673 @@
+'use client';
+
+import React, { useState, useEffect } from 'react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
+import { 
+  BarChart, 
+  Bar, 
+  XAxis, 
+  YAxis, 
+  CartesianGrid, 
+  Tooltip, 
+  ResponsiveContainer,
+  LineChart,
+  Line,
+  PieChart,
+  Pie,
+  Cell,
+  Area,
+  AreaChart
+} from 'recharts';
+import { 
+  MessageSquare, 
+  Users, 
+  AlertTriangle, 
+  Clock, 
+  TrendingUp, 
+  Download,
+  RefreshCw,
+  Smartphone,
+  Monitor,
+  Tablet,
+  DollarSign,
+  FileText,
+  Zap
+} from 'lucide-react';
+
+interface ChatAnalyticsData {
+  overview: {
+    totalSessions: number;
+    totalMessages: number;
+    totalErrors: number;
+    errorRate: number;
+    avgResponseTime: number;
+  };
+  last24Hours: {
+    sessions: number;
+    messages: number;
+    errors: number;
+    errorRate: number;
+  };
+  lastWeek: {
+    sessions: number;
+  };
+  topErrorTypes: Array<{ type: string; count: number }>;
+  deviceBreakdown: Record<string, number>;
+  timestamp: string;
+}
+
+interface PerformanceData {
+  averageResponseTime: number;
+  averageFileUploadTime: number;
+  averageStreamingLatency: number;
+  tokenProcessingRate: number;
+  performanceTrends: Array<{ timestamp: Date; responseTime: number }>;
+}
+
+interface ConversationAnalytics {
+  sessionId: string;
+  totalMessages: number;
+  averageResponseTime: number;
+  totalTokensUsed: number;
+  filesUploaded: number;
+  conversationDuration: number;
+  topicsDiscussed: string[];
+  conversionIntent: 'high' | 'medium' | 'low';
+  bounced: boolean;
+}
+
+const COLORS = ['#00BDA4', '#1B365D', '#FFAA5C', '#414141', '#F2F5F7'];
+
+export default function ChatAnalyticsDashboard() {
+  const [analyticsData, setAnalyticsData] = useState<ChatAnalyticsData | null>(null);
+  const [performanceData, setPerformanceData] = useState<PerformanceData | null>(null);
+  const [conversationData, setConversationData] = useState<ConversationAnalytics[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [lastRefresh, setLastRefresh] = useState<Date>(new Date());
+
+  // Configuration des alertes
+  const [alertThresholds] = useState({
+    errorRate: 5, // 5%
+    responseTime: 5000, // 5 secondes
+    apiCostPerDay: 50 // 50€ par jour
+  });
+
+  useEffect(() => {
+    fetchAnalyticsData();
+    
+    // Actualisation automatique toutes les 30 secondes
+    const interval = setInterval(fetchAnalyticsData, 30000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const fetchAnalyticsData = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+
+      // Récupérer les données d'analytics
+      const [analyticsResponse, performanceResponse, conversationResponse] = await Promise.all([
+        fetch('/api/chat/analytics?type=summary'),
+        fetch('/api/chat/analytics?type=performance'),
+        fetch('/api/chat/analytics?type=conversation_analytics&limit=50')
+      ]);
+
+      if (!analyticsResponse.ok || !performanceResponse.ok || !conversationResponse.ok) {
+        throw new Error('Erreur lors de la récupération des données');
+      }
+
+      const analytics = await analyticsResponse.json();
+      const performance = await performanceResponse.json();
+      const conversations = await conversationResponse.json();
+
+      setAnalyticsData(analytics);
+      setPerformanceData(performance.data || {
+        averageResponseTime: 0,
+        averageFileUploadTime: 0,
+        averageStreamingLatency: 0,
+        tokenProcessingRate: 0,
+        performanceTrends: []
+      });
+      setConversationData(conversations.data || []);
+      setLastRefresh(new Date());
+
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Erreur inconnue');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const exportData = async () => {
+    try {
+      const response = await fetch('/api/chat/analytics');
+      const data = await response.json();
+      
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `chat-analytics-${new Date().toISOString().split('T')[0]}.json`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      console.error('Erreur lors de l\'export:', err);
+    }
+  };
+
+  const clearData = async () => {
+    if (!confirm('Êtes-vous sûr de vouloir supprimer toutes les données d\'analytics ?')) {
+      return;
+    }
+
+    try {
+      const response = await fetch('/api/chat/analytics?confirm=true', {
+        method: 'DELETE'
+      });
+
+      if (response.ok) {
+        await fetchAnalyticsData();
+        alert('Données supprimées avec succès');
+      } else {
+        throw new Error('Erreur lors de la suppression');
+      }
+    } catch (err) {
+      alert('Erreur lors de la suppression des données');
+    }
+  };
+
+  // Calcul des alertes
+  const getAlerts = () => {
+    const alerts = [];
+    
+    if (analyticsData) {
+      if (analyticsData.overview.errorRate > alertThresholds.errorRate) {
+        alerts.push({
+          type: 'error',
+          title: 'Taux d\'erreur élevé',
+          message: `Le taux d'erreur actuel (${analyticsData.overview.errorRate.toFixed(2)}%) dépasse le seuil de ${alertThresholds.errorRate}%`
+        });
+      }
+    }
+
+    if (performanceData) {
+      if (performanceData.averageResponseTime > alertThresholds.responseTime) {
+        alerts.push({
+          type: 'warning',
+          title: 'Temps de réponse lent',
+          message: `Le temps de réponse moyen (${performanceData.averageResponseTime}ms) dépasse le seuil de ${alertThresholds.responseTime}ms`
+        });
+      }
+    }
+
+    return alerts;
+  };
+
+  // Préparation des données pour les graphiques
+  const prepareDeviceData = () => {
+    if (!analyticsData?.deviceBreakdown) return [];
+    
+    return Object.entries(analyticsData.deviceBreakdown).map(([device, count]) => ({
+      name: device === 'mobile' ? 'Mobile' : device === 'tablet' ? 'Tablette' : 'Desktop',
+      value: count,
+      percentage: ((count / analyticsData.overview.totalSessions) * 100).toFixed(1)
+    }));
+  };
+
+  const prepareErrorData = () => {
+    if (!analyticsData?.topErrorTypes) return [];
+    
+    return analyticsData.topErrorTypes.map(error => ({
+      type: error.type.replace('_', ' ').toUpperCase(),
+      count: error.count
+    }));
+  };
+
+  const preparePerformanceTrends = () => {
+    if (!performanceData?.performanceTrends) return [];
+    
+    return performanceData.performanceTrends.map(trend => ({
+      time: new Date(trend.timestamp).toLocaleTimeString(),
+      responseTime: trend.responseTime
+    }));
+  };
+
+  const prepareConversionData = () => {
+    if (!conversationData.length) return [];
+    
+    const intentCounts = conversationData.reduce((acc, conv) => {
+      acc[conv.conversionIntent] = (acc[conv.conversionIntent] || 0) + 1;
+      return acc;
+    }, {} as Record<string, number>);
+
+    return Object.entries(intentCounts).map(([intent, count]) => ({
+      name: intent === 'high' ? 'Élevée' : intent === 'medium' ? 'Moyenne' : 'Faible',
+      value: count,
+      percentage: ((count / conversationData.length) * 100).toFixed(1)
+    }));
+  };
+
+  if (loading && !analyticsData) {
+    return (
+      <div className="flex items-center justify-center h-64">
+        <RefreshCw className="w-8 h-8 animate-spin text-primary-accent" />
+        <span className="ml-2 text-primary-secondary">Chargement des analytics...</span>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <Alert className="border-red-200 bg-red-50">
+        <AlertTriangle className="h-4 w-4 text-red-600" />
+        <AlertTitle className="text-red-800">Erreur</AlertTitle>
+        <AlertDescription className="text-red-700">
+          {error}
+          <Button 
+            variant="outline" 
+            size="sm" 
+            onClick={fetchAnalyticsData}
+            className="ml-2"
+          >
+            Réessayer
+          </Button>
+        </AlertDescription>
+      </Alert>
+    );
+  }
+
+  const alerts = getAlerts();
+
+  return (
+    <div className="space-y-6 p-6 bg-primary-bg min-h-screen">
+      {/* Header */}
+      <div className="flex justify-between items-center">
+        <div>
+          <h1 className="text-3xl font-bold text-primary-title">Analytics Chat Gemini</h1>
+          <p className="text-primary-secondary mt-1">
+            Dernière mise à jour: {lastRefresh.toLocaleString()}
+          </p>
+        </div>
+        <div className="flex gap-2">
+          <Button onClick={fetchAnalyticsData} variant="outline" size="sm">
+            <RefreshCw className="w-4 h-4 mr-2" />
+            Actualiser
+          </Button>
+          <Button onClick={exportData} variant="outline" size="sm">
+            <Download className="w-4 h-4 mr-2" />
+            Exporter
+          </Button>
+          <Button onClick={clearData} variant="destructive" size="sm">
+            <AlertTriangle className="w-4 h-4 mr-2" />
+            Vider
+          </Button>
+        </div>
+      </div>
+
+      {/* Alertes */}
+      {alerts.length > 0 && (
+        <div className="space-y-2">
+          {alerts.map((alert, index) => (
+            <Alert key={index} className={`border-${alert.type === 'error' ? 'red' : 'yellow'}-200 bg-${alert.type === 'error' ? 'red' : 'yellow'}-50`}>
+              <AlertTriangle className={`h-4 w-4 text-${alert.type === 'error' ? 'red' : 'yellow'}-600`} />
+              <AlertTitle className={`text-${alert.type === 'error' ? 'red' : 'yellow'}-800`}>
+                {alert.title}
+              </AlertTitle>
+              <AlertDescription className={`text-${alert.type === 'error' ? 'red' : 'yellow'}-700`}>
+                {alert.message}
+              </AlertDescription>
+            </Alert>
+          ))}
+        </div>
+      )}
+
+      {/* Métriques principales */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Sessions totales</CardTitle>
+            <Users className="h-4 w-4 text-primary-accent" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold text-primary-title">
+              {analyticsData?.overview.totalSessions || 0}
+            </div>
+            <p className="text-xs text-primary-secondary">
+              +{analyticsData?.last24Hours.sessions || 0} dernières 24h
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Messages échangés</CardTitle>
+            <MessageSquare className="h-4 w-4 text-primary-accent" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold text-primary-title">
+              {analyticsData?.overview.totalMessages || 0}
+            </div>
+            <p className="text-xs text-primary-secondary">
+              +{analyticsData?.last24Hours.messages || 0} dernières 24h
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Taux d'erreur</CardTitle>
+            <AlertTriangle className="h-4 w-4 text-primary-emotion" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold text-primary-title">
+              {analyticsData?.overview.errorRate.toFixed(2) || 0}%
+            </div>
+            <p className="text-xs text-primary-secondary">
+              {analyticsData?.overview.totalErrors || 0} erreurs totales
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+            <CardTitle className="text-sm font-medium">Temps de réponse</CardTitle>
+            <Clock className="h-4 w-4 text-primary-accent" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold text-primary-title">
+              {performanceData?.averageResponseTime || 0}ms
+            </div>
+            <p className="text-xs text-primary-secondary">
+              Temps moyen de réponse
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Onglets détaillés */}
+      <Tabs defaultValue="overview" className="space-y-4">
+        <TabsList className="grid w-full grid-cols-5">
+          <TabsTrigger value="overview">Vue d'ensemble</TabsTrigger>
+          <TabsTrigger value="performance">Performance</TabsTrigger>
+          <TabsTrigger value="errors">Erreurs</TabsTrigger>
+          <TabsTrigger value="conversations">Conversations</TabsTrigger>
+          <TabsTrigger value="costs">Coûts API</TabsTrigger>
+        </TabsList>
+
+        <TabsContent value="overview" className="space-y-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {/* Répartition par appareil */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Répartition par appareil</CardTitle>
+                <CardDescription>
+                  Distribution des sessions par type d'appareil
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ResponsiveContainer width="100%" height={300}>
+                  <PieChart>
+                    <Pie
+                      data={prepareDeviceData()}
+                      cx="50%"
+                      cy="50%"
+                      labelLine={false}
+                      label={({ name, percentage }) => `${name} (${percentage}%)`}
+                      outerRadius={80}
+                      fill="#8884d8"
+                      dataKey="value"
+                    >
+                      {prepareDeviceData().map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                      ))}
+                    </Pie>
+                    <Tooltip />
+                  </PieChart>
+                </ResponsiveContainer>
+              </CardContent>
+            </Card>
+
+            {/* Intention de conversion */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Intention de conversion</CardTitle>
+                <CardDescription>
+                  Répartition des conversations par niveau d'intention
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ResponsiveContainer width="100%" height={300}>
+                  <PieChart>
+                    <Pie
+                      data={prepareConversionData()}
+                      cx="50%"
+                      cy="50%"
+                      labelLine={false}
+                      label={({ name, percentage }) => `${name} (${percentage}%)`}
+                      outerRadius={80}
+                      fill="#8884d8"
+                      dataKey="value"
+                    >
+                      {prepareConversionData().map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                      ))}
+                    </Pie>
+                    <Tooltip />
+                  </PieChart>
+                </ResponsiveContainer>
+              </CardContent>
+            </Card>
+          </div>
+        </TabsContent>
+
+        <TabsContent value="performance" className="space-y-4">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            {/* Tendances de performance */}
+            <Card className="lg:col-span-2">
+              <CardHeader>
+                <CardTitle>Tendances des temps de réponse</CardTitle>
+                <CardDescription>
+                  Évolution des temps de réponse au cours du temps
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ResponsiveContainer width="100%" height={300}>
+                  <AreaChart data={preparePerformanceTrends()}>
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="time" />
+                    <YAxis />
+                    <Tooltip />
+                    <Area 
+                      type="monotone" 
+                      dataKey="responseTime" 
+                      stroke="#00BDA4" 
+                      fill="#00BDA4" 
+                      fillOpacity={0.3}
+                    />
+                  </AreaChart>
+                </ResponsiveContainer>
+              </CardContent>
+            </Card>
+
+            {/* Métriques de performance détaillées */}
+            <Card>
+              <CardHeader>
+                <CardTitle>Métriques détaillées</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-primary-secondary">Temps de réponse moyen</span>
+                  <Badge variant="outline">
+                    {performanceData?.averageResponseTime || 0}ms
+                  </Badge>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-primary-secondary">Upload de fichiers</span>
+                  <Badge variant="outline">
+                    {performanceData?.averageFileUploadTime || 0}ms
+                  </Badge>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-primary-secondary">Latence streaming</span>
+                  <Badge variant="outline">
+                    {performanceData?.averageStreamingLatency || 0}ms
+                  </Badge>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-primary-secondary">Tokens/seconde</span>
+                  <Badge variant="outline">
+                    {performanceData?.tokenProcessingRate || 0}
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </TabsContent>
+
+        <TabsContent value="errors" className="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Types d'erreurs les plus fréquents</CardTitle>
+              <CardDescription>
+                Répartition des erreurs par type
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ResponsiveContainer width="100%" height={300}>
+                <BarChart data={prepareErrorData()}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="type" />
+                  <YAxis />
+                  <Tooltip />
+                  <Bar dataKey="count" fill="#FFAA5C" />
+                </BarChart>
+              </ResponsiveContainer>
+            </CardContent>
+          </Card>
+        </TabsContent>
+
+        <TabsContent value="conversations" className="space-y-4">
+          <Card>
+            <CardHeader>
+              <CardTitle>Conversations récentes</CardTitle>
+              <CardDescription>
+                Analyse des dernières conversations
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                {conversationData.slice(0, 10).map((conv, index) => (
+                  <div key={index} className="flex items-center justify-between p-3 border rounded-lg">
+                    <div className="flex items-center space-x-3">
+                      <div className="flex items-center space-x-2">
+                        <MessageSquare className="w-4 h-4 text-primary-accent" />
+                        <span className="text-sm font-medium">
+                          {conv.totalMessages} messages
+                        </span>
+                      </div>
+                      <div className="flex items-center space-x-2">
+                        <Clock className="w-4 h-4 text-primary-secondary" />
+                        <span className="text-sm text-primary-secondary">
+                          {Math.round(conv.conversationDuration / 1000)}s
+                        </span>
+                      </div>
+                      {conv.filesUploaded > 0 && (
+                        <div className="flex items-center space-x-2">
+                          <FileText className="w-4 h-4 text-primary-emotion" />
+                          <span className="text-sm text-primary-secondary">
+                            {conv.filesUploaded} fichiers
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Badge 
+                        variant={
+                          conv.conversionIntent === 'high' ? 'default' : 
+                          conv.conversionIntent === 'medium' ? 'secondary' : 'outline'
+                        }
+                      >
+                        {conv.conversionIntent === 'high' ? 'Élevée' : 
+                         conv.conversionIntent === 'medium' ? 'Moyenne' : 'Faible'}
+                      </Badge>
+                      {conv.bounced && (
+                        <Badge variant="destructive">Rebond</Badge>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
+        </TabsContent>
+
+        <TabsContent value="costs" className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Card>
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-medium">Coût estimé aujourd'hui</CardTitle>
+                <DollarSign className="h-4 w-4 text-primary-accent" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold text-primary-title">
+                  €{((analyticsData?.last24Hours.messages || 0) * 0.001).toFixed(2)}
+                </div>
+                <p className="text-xs text-primary-secondary">
+                  Basé sur {analyticsData?.last24Hours.messages || 0} messages
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-medium">Coût mensuel estimé</CardTitle>
+                <TrendingUp className="h-4 w-4 text-primary-accent" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold text-primary-title">
+                  €{((analyticsData?.overview.totalMessages || 0) * 0.001 * 30).toFixed(2)}
+                </div>
+                <p className="text-xs text-primary-secondary">
+                  Projection basée sur l'usage actuel
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+                <CardTitle className="text-sm font-medium">Efficacité</CardTitle>
+                <Zap className="h-4 w-4 text-primary-accent" />
+              </CardHeader>
+              <CardContent>
+                <div className="text-2xl font-bold text-primary-title">
+                  {analyticsData?.overview.totalMessages ? 
+                    (analyticsData.overview.totalSessions / analyticsData.overview.totalMessages * 100).toFixed(1) : 0}%
+                </div>
+                <p className="text-xs text-primary-secondary">
+                  Messages par session
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <Alert className="border-primary-accent/20 bg-primary-accent/5">
+            <DollarSign className="h-4 w-4 text-primary-accent" />
+            <AlertTitle className="text-primary-title">Optimisation des coûts</AlertTitle>
+            <AlertDescription className="text-primary-secondary">
+              Les coûts sont calculés de manière approximative. Pour une facturation précise, 
+              consultez votre tableau de bord Google Cloud. Considérez l'optimisation du cache 
+              et la limitation du taux pour réduire les coûts.
+            </AlertDescription>
+          </Alert>
+        </TabsContent>
+      </Tabs>
+    </div>
+  );
+}
