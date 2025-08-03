@@ -6,8 +6,8 @@ import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { FileService, FileErrorCode } from '@/lib/gemini/file-service';
 
 // Mock de l'API Gemini
-vi.mock('@google/generative-ai', () => ({
-  GoogleGenerativeAI: vi.fn().mockImplementation(() => ({
+vi.mock('@google/genai', () => ({
+  GoogleGenAI: vi.fn().mockImplementation(() => ({
     files: {
       upload: vi.fn()
     }

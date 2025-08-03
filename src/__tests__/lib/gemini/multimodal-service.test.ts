@@ -8,8 +8,8 @@ import { UploadedFile, ChatMessage } from '@/lib/gemini/types';
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 
 // Mock de l'API Gemini
-vi.mock('@google/generative-ai', () => ({
-  GoogleGenerativeAI: vi.fn().mockImplementation(() => ({}))
+vi.mock('@google/genai', () => ({
+  GoogleGenAI: vi.fn().mockImplementation(() => ({}))
 }));
 
 describe('MultimodalService', () => {

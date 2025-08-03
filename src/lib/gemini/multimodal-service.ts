@@ -3,7 +3,7 @@
  * Utilise createUserContent et createPartFromUri pour gérer les fichiers
  */
 
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from "@google/genai";
 import { UploadedFile, ChatMessage } from './types';
 
 export interface MultimodalMessage {
@@ -18,10 +18,10 @@ export interface ProcessedContent {
 }
 
 export class MultimodalService {
-  private ai: GoogleGenerativeAI;
+  private ai: GoogleGenAI;
 
   constructor(apiKey: string) {
-    this.ai = new GoogleGenerativeAI(apiKey);
+    this.ai = new GoogleGenAI({ apiKey });
   }
 
   /**

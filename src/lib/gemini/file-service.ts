@@ -3,7 +3,7 @@
  * Gère l'upload, la validation et la gestion des fichiers multimodaux
  */
 
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenAI } from "@google/genai";
 
 export interface UploadedFile {
   id: string;
@@ -28,7 +28,7 @@ export enum FileErrorCode {
 }
 
 export class FileService {
-  private ai: GoogleGenerativeAI;
+  private ai: GoogleGenAI;
   private readonly MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
   private readonly SUPPORTED_TYPES = [
     // Images
@@ -53,7 +53,7 @@ export class FileService {
   ];
 
   constructor(apiKey: string) {
-    this.ai = new GoogleGenerativeAI(apiKey);
+    this.ai = new GoogleGenAI({ apiKey });
   }
 
   /**
