@@ -648,6 +648,18 @@ const InteractiveTools: React.FC<InteractiveToolsProps> = ({ technique }) => {
                 <Button
                   variant="primary"
                   size="lg"
+                  onClick={() => {
+                    // Track coaching CTA click
+                    if (typeof window !== 'undefined' && window.gtag) {
+                      window.gtag('event', 'coaching_cta_click', {
+                        event_category: 'Interactive Tools',
+                        event_label: 'Coaching individuel',
+                        technique_id: technique.id
+                      });
+                    }
+                    // Redirect to coaching page
+                    window.location.href = '/coach-commercial-entreprise';
+                  }}
                   icon={<span>🎯</span>}
                 >
                   Coaching individuel
@@ -656,6 +668,18 @@ const InteractiveTools: React.FC<InteractiveToolsProps> = ({ technique }) => {
                 <Button
                   variant="outline"
                   size="lg"
+                  onClick={() => {
+                    // Track formation CTA click
+                    if (typeof window !== 'undefined' && window.gtag) {
+                      window.gtag('event', 'formation_cta_click', {
+                        event_category: 'Interactive Tools',
+                        event_label: 'Formation équipe',
+                        technique_id: technique.id
+                      });
+                    }
+                    // Redirect to bootcamp page
+                    window.location.href = '/bootcamp-commercial-intensif';
+                  }}
                   icon={<span>👥</span>}
                 >
                   Formation équipe

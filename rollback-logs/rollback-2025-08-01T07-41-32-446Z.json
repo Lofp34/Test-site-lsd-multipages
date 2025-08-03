@@ -1,0 +1,53 @@
+{
+  "config": {
+    "backupId": "2025-08-01T07-36-58-646Z",
+    "force": false,
+    "notify": false,
+    "timestamp": "2025-08-01T07-41-32-446Z",
+    "backupDir": "/Users/laurents/Documents/Site_LSD_Kiro_250725/Test-site-lsd-multipages/backups/migration-2025-08-01T07-36-58-646Z"
+  },
+  "result": {
+    "success": true,
+    "steps": [
+      {
+        "name": "validate-backup",
+        "status": "success",
+        "message": "Completed successfully",
+        "duration": 0.003
+      },
+      {
+        "name": "stop-current-system",
+        "status": "success",
+        "message": "Completed successfully",
+        "duration": 1.002
+      },
+      {
+        "name": "restore-vercel-config",
+        "status": "success",
+        "message": "Completed successfully",
+        "duration": 0.006
+      },
+      {
+        "name": "restore-database",
+        "status": "success",
+        "message": "Completed successfully",
+        "duration": 1.22
+      },
+      {
+        "name": "verify-system-health",
+        "status": "success",
+        "message": "Completed successfully",
+        "duration": 0.174
+      },
+      {
+        "name": "send-notifications",
+        "status": "success",
+        "message": "Completed successfully",
+        "duration": 0
+      }
+    ],
+    "totalDuration": 2.405,
+    "errors": []
+  },
+  "timestamp": "2025-08-01T07:41:34.853Z"
+}

@@ -1,0 +1,368 @@
+name: Fallback - Monitoring de Santé
+
+on:
+  schedule:
+    # Toutes les heures
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      detailed_check:
+        description: 'Effectuer un contrôle détaillé'
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  health-monitoring-fallback:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Setup environment
+      run: |
+        echo "SENDGRID_API_KEY=${{ secrets.SENDGRID_API_KEY }}" >> $GITHUB_ENV
+        echo "SENDGRID_FROM_EMAIL=${{ secrets.SENDGRID_FROM_EMAIL }}" >> $GITHUB_ENV
+        echo "SENDGRID_FROM_NAME=${{ secrets.SENDGRID_FROM_NAME }}" >> $GITHUB_ENV
+        echo "ADMIN_EMAIL=${{ secrets.ADMIN_EMAIL }}" >> $GITHUB_ENV
+        echo "NEXT_PUBLIC_SUPABASE_URL=${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}" >> $GITHUB_ENV
+        echo "SUPABASE_SERVICE_ROLE_KEY=${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" >> $GITHUB_ENV
+        echo "NEXT_PUBLIC_BASE_URL=${{ secrets.NEXT_PUBLIC_BASE_URL }}" >> $GITHUB_ENV
+        echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> $GITHUB_ENV
+        
+    - name: Check system health
+      id: health-check
+      run: |
+        echo "🔍 Vérification de la santé du système..."
+        
+        # Vérifier la connectivité de base
+        SITE_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "${{ secrets.NEXT_PUBLIC_BASE_URL }}" || echo "000")
+        echo "site_status=$SITE_STATUS" >> $GITHUB_OUTPUT
+        
+        # Vérifier Supabase
+        SUPABASE_STATUS="unknown"
+        if [ -n "${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}" ]; then
+          SUPABASE_RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" \
+            "${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}/rest/v1/" \
+            -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" || echo "000")
+          if [ "$SUPABASE_RESPONSE" = "200" ]; then
+            SUPABASE_STATUS="healthy"
+          else
+            SUPABASE_STATUS="unhealthy"
+          fi
+        fi
+        echo "supabase_status=$SUPABASE_STATUS" >> $GITHUB_OUTPUT
+        
+        # Vérifier SendGrid
+        SENDGRID_STATUS="unknown"
+        if [ -n "${{ secrets.SENDGRID_API_KEY }}" ]; then
+          SENDGRID_RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" \
+            "https://api.sendgrid.com/v3/user/profile" \
+            -H "Authorization: Bearer ${{ secrets.SENDGRID_API_KEY }}" || echo "000")
+          if [ "$SENDGRID_RESPONSE" = "200" ]; then
+            SENDGRID_STATUS="healthy"
+          else
+            SENDGRID_STATUS="unhealthy"
+          fi
+        fi
+        echo "sendgrid_status=$SENDGRID_STATUS" >> $GITHUB_OUTPUT
+        
+        # Vérifier l'état des cron jobs Vercel
+        VERCEL_CRON_STATUS="unknown"
+        LAST_AUDIT_TIME=$(npm run audit:cli status --last-run 2>/dev/null || echo "0")
+        CURRENT_TIME=$(date +%s)
+        TIME_DIFF=$((CURRENT_TIME - LAST_AUDIT_TIME))
+        
+        if [ "$LAST_AUDIT_TIME" = "0" ]; then
+          VERCEL_CRON_STATUS="no_data"
+        elif [ "$TIME_DIFF" -lt 7200 ]; then  # Moins de 2 heures
+          VERCEL_CRON_STATUS="healthy"
+        elif [ "$TIME_DIFF" -lt 14400 ]; then  # Moins de 4 heures
+          VERCEL_CRON_STATUS="warning"
+        else
+          VERCEL_CRON_STATUS="unhealthy"
+        fi
+        echo "vercel_cron_status=$VERCEL_CRON_STATUS" >> $GITHUB_OUTPUT
+        echo "last_audit_hours_ago=$((TIME_DIFF / 3600))" >> $GITHUB_OUTPUT
+        
+        # Calculer le score de santé global
+        HEALTH_SCORE=100
+        
+        if [ "$SITE_STATUS" != "200" ]; then
+          HEALTH_SCORE=$((HEALTH_SCORE - 40))
+        fi
+        
+        if [ "$SUPABASE_STATUS" = "unhealthy" ]; then
+          HEALTH_SCORE=$((HEALTH_SCORE - 25))
+        fi
+        
+        if [ "$SENDGRID_STATUS" = "unhealthy" ]; then
+          HEALTH_SCORE=$((HEALTH_SCORE - 15))
+        fi
+        
+        if [ "$VERCEL_CRON_STATUS" = "unhealthy" ]; then
+          HEALTH_SCORE=$((HEALTH_SCORE - 20))
+        elif [ "$VERCEL_CRON_STATUS" = "warning" ]; then
+          HEALTH_SCORE=$((HEALTH_SCORE - 10))
+        fi
+        
+        echo "health_score=$HEALTH_SCORE" >> $GITHUB_OUTPUT
+        
+        # Déterminer si une intervention est nécessaire
+        if [ "$HEALTH_SCORE" -lt 70 ]; then
+          echo "needs_attention=true" >> $GITHUB_OUTPUT
+          echo "severity=critical" >> $GITHUB_OUTPUT
+        elif [ "$HEALTH_SCORE" -lt 85 ]; then
+          echo "needs_attention=true" >> $GITHUB_OUTPUT
+          echo "severity=warning" >> $GITHUB_OUTPUT
+        else
+          echo "needs_attention=false" >> $GITHUB_OUTPUT
+          echo "severity=info" >> $GITHUB_OUTPUT
+        fi
+        
+    - name: Run detailed health check
+      if: github.event.inputs.detailed_check == 'true' || steps.health-check.outputs.needs_attention == 'true'
+      run: |
+        echo "🔬 Contrôle de santé détaillé..."
+        
+        mkdir -p health-reports
+        
+        # Test de connectivité approfondi
+        echo "=== Test de Connectivité ===" > health-reports/detailed-health.txt
+        echo "Site principal: ${{ steps.health-check.outputs.site_status }}" >> health-reports/detailed-health.txt
+        echo "Supabase: ${{ steps.health-check.outputs.supabase_status }}" >> health-reports/detailed-health.txt
+        echo "SendGrid: ${{ steps.health-check.outputs.sendgrid_status }}" >> health-reports/detailed-health.txt
+        echo "Cron Jobs Vercel: ${{ steps.health-check.outputs.vercel_cron_status }}" >> health-reports/detailed-health.txt
+        echo "" >> health-reports/detailed-health.txt
+        
+        # Test des pages critiques
+        echo "=== Test des Pages Critiques ===" >> health-reports/detailed-health.txt
+        CRITICAL_PAGES=("/" "/a-propos" "/services" "/contact" "/ressources")
+        
+        for page in "${CRITICAL_PAGES[@]}"; do
+          PAGE_STATUS=$(curl -s -o /dev/null -w "%{http_code}" "${{ secrets.NEXT_PUBLIC_BASE_URL }}$page" || echo "000")
+          echo "$page: $PAGE_STATUS" >> health-reports/detailed-health.txt
+        done
+        echo "" >> health-reports/detailed-health.txt
+        
+        # Test de la base de données
+        echo "=== Test Base de Données ===" >> health-reports/detailed-health.txt
+        DB_TEST_RESULT=$(npm run audit:cli status --db-test 2>&1 || echo "ERREUR")
+        echo "$DB_TEST_RESULT" >> health-reports/detailed-health.txt
+        echo "" >> health-reports/detailed-health.txt
+        
+        # Métriques système
+        echo "=== Métriques Système ===" >> health-reports/detailed-health.txt
+        echo "Score de santé global: ${{ steps.health-check.outputs.health_score }}%" >> health-reports/detailed-health.txt
+        echo "Dernier audit: il y a ${{ steps.health-check.outputs.last_audit_hours_ago }} heures" >> health-reports/detailed-health.txt
+        echo "Timestamp: $(date '+%d/%m/%Y %H:%M:%S UTC')" >> health-reports/detailed-health.txt
+        
+    - name: Check database health
+      id: db-check
+      run: |
+        echo "🗄️ Vérification de la santé de la base de données..."
+        
+        # Tester la connectivité et les performances de la DB
+        DB_HEALTH="unknown"
+        DB_RESPONSE_TIME=0
+        
+        if [ -n "${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}" ]; then
+          START_TIME=$(date +%s%N)
+          DB_RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" \
+            "${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}/rest/v1/audit_logs?select=count" \
+            -H "apikey: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}" \
+            -H "Range: 0-0" || echo "000")
+          END_TIME=$(date +%s%N)
+          
+          DB_RESPONSE_TIME=$(( (END_TIME - START_TIME) / 1000000 ))  # Convertir en millisecondes
+          
+          if [ "$DB_RESPONSE" = "200" ] || [ "$DB_RESPONSE" = "206" ]; then
+            if [ "$DB_RESPONSE_TIME" -lt 1000 ]; then
+              DB_HEALTH="excellent"
+            elif [ "$DB_RESPONSE_TIME" -lt 3000 ]; then
+              DB_HEALTH="good"
+            elif [ "$DB_RESPONSE_TIME" -lt 5000 ]; then
+              DB_HEALTH="slow"
+            else
+              DB_HEALTH="very_slow"
+            fi
+          else
+            DB_HEALTH="unhealthy"
+          fi
+        fi
+        
+        echo "db_health=$DB_HEALTH" >> $GITHUB_OUTPUT
+        echo "db_response_time=$DB_RESPONSE_TIME" >> $GITHUB_OUTPUT
+        
+    - name: Generate health report
+      run: |
+        # Créer un rapport de santé complet
+        cat > health_report.md << EOF
+        # Rapport de Santé du Système
+        
+        **Date:** $(date '+%d/%m/%Y %H:%M:%S UTC')
+        **Score Global:** ${{ steps.health-check.outputs.health_score }}%
+        **Statut:** ${{ steps.health-check.outputs.severity }}
+        
+        ## Composants Système
+        
+        | Composant | Statut | Détails |
+        |-----------|--------|---------|
+        | Site Principal | ${{ steps.health-check.outputs.site_status }} | ${{ secrets.NEXT_PUBLIC_BASE_URL }} |
+        | Base de Données | ${{ steps.db-check.outputs.db_health }} | Temps de réponse: ${{ steps.db-check.outputs.db_response_time }}ms |
+        | SendGrid | ${{ steps.health-check.outputs.sendgrid_status }} | Service d'email |
+        | Cron Jobs Vercel | ${{ steps.health-check.outputs.vercel_cron_status }} | Dernier audit: ${{ steps.health-check.outputs.last_audit_hours_ago }}h |
+        
+        ## Recommandations
+        
+EOF
+        
+        # Ajouter des recommandations basées sur l'état
+        if [ "${{ steps.health-check.outputs.site_status }}" != "200" ]; then
+          echo "- ⚠️ **Site principal inaccessible** - Vérifier le déploiement Vercel" >> health_report.md
+        fi
+        
+        if [ "${{ steps.db-check.outputs.db_health }}" = "unhealthy" ]; then
+          echo "- 🔴 **Base de données inaccessible** - Vérifier la configuration Supabase" >> health_report.md
+        elif [ "${{ steps.db-check.outputs.db_health }}" = "very_slow" ]; then
+          echo "- 🟡 **Base de données lente** - Optimiser les requêtes ou upgrader le plan" >> health_report.md
+        fi
+        
+        if [ "${{ steps.health-check.outputs.sendgrid_status }}" = "unhealthy" ]; then
+          echo "- 📧 **SendGrid inaccessible** - Vérifier la clé API et les quotas" >> health_report.md
+        fi
+        
+        if [ "${{ steps.health-check.outputs.vercel_cron_status }}" = "unhealthy" ]; then
+          echo "- ⏰ **Cron jobs Vercel en panne** - Activer le fallback GitHub Actions" >> health_report.md
+        elif [ "${{ steps.health-check.outputs.vercel_cron_status }}" = "warning" ]; then
+          echo "- 🟡 **Cron jobs Vercel en retard** - Surveiller les prochaines exécutions" >> health_report.md
+        fi
+        
+        if [ "${{ steps.health-check.outputs.health_score }}" -ge 90 ]; then
+          echo "- ✅ **Système en excellente santé** - Aucune action requise" >> health_report.md
+        fi
+        
+        echo "" >> health_report.md
+        echo "---" >> health_report.md
+        echo "*Rapport généré automatiquement par GitHub Actions Fallback*" >> health_report.md
+        
+    - name: Send health alert if needed
+      if: steps.health-check.outputs.needs_attention == 'true'
+      run: |
+        SEVERITY="${{ steps.health-check.outputs.severity }}"
+        HEALTH_SCORE="${{ steps.health-check.outputs.health_score }}"
+        
+        if [ "$SEVERITY" = "critical" ]; then
+          SUBJECT="🚨 CRITIQUE: Santé du système dégradée ($HEALTH_SCORE%)"
+          PRIORITY="high"
+        else
+          SUBJECT="⚠️ ATTENTION: Problèmes de santé détectés ($HEALTH_SCORE%)"
+          PRIORITY="normal"
+        fi
+        
+        # Préparer le contenu de l'alerte
+        cat > health_alert.json << EOF
+        {
+          "personalizations": [
+            {
+              "to": [{"email": "${{ secrets.ADMIN_EMAIL }}"}],
+              "subject": "$SUBJECT"
+            }
+          ],
+          "from": {
+            "email": "${{ secrets.SENDGRID_FROM_EMAIL }}",
+            "name": "${{ secrets.SENDGRID_FROM_NAME }}"
+          },
+          "content": [
+            {
+              "type": "text/html",
+              "value": "$(cat << 'HTML'
+        <h2>🏥 Rapport de Santé du Système</h2>
+        
+        <p><strong>Score Global:</strong> $HEALTH_SCORE%</p>
+        <p><strong>Sévérité:</strong> $SEVERITY</p>
+        <p><strong>Heure:</strong> $(date '+%d/%m/%Y %H:%M:%S UTC')</p>
+        
+        <h3>État des Composants</h3>
+        <ul>
+          <li><strong>Site Principal:</strong> ${{ steps.health-check.outputs.site_status }}</li>
+          <li><strong>Base de Données:</strong> ${{ steps.db-check.outputs.db_health }} (${{ steps.db-check.outputs.db_response_time }}ms)</li>
+          <li><strong>SendGrid:</strong> ${{ steps.health-check.outputs.sendgrid_status }}</li>
+          <li><strong>Cron Jobs Vercel:</strong> ${{ steps.health-check.outputs.vercel_cron_status }}</li>
+        </ul>
+        
+        <h3>Actions Recommandées</h3>
+        <p>Consultez le rapport détaillé pour les recommandations spécifiques.</p>
+        
+        <p><em>Monitoring automatique par GitHub Actions Fallback</em></p>
+        <p><a href="https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}">Voir les détails</a></p>
+HTML
+)"
+            }
+          ]
+        }
+EOF
+        
+        # Envoyer l'email seulement si SendGrid fonctionne
+        if [ "${{ steps.health-check.outputs.sendgrid_status }}" = "healthy" ]; then
+          curl -X POST "https://api.sendgrid.com/v3/mail/send" \
+            -H "Authorization: Bearer ${{ secrets.SENDGRID_API_KEY }}" \
+            -H "Content-Type: application/json" \
+            -d @health_alert.json
+          echo "📧 Alerte de santé envoyée"
+        else
+          echo "⚠️ Impossible d'envoyer l'alerte - SendGrid indisponible"
+        fi
+        
+    - name: Update system status
+      run: |
+        # Enregistrer le statut actuel pour les prochaines vérifications
+        mkdir -p .github/system-status
+        
+        cat > .github/system-status/last-health-check.json << EOF
+        {
+          "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+          "health_score": ${{ steps.health-check.outputs.health_score }},
+          "site_status": "${{ steps.health-check.outputs.site_status }}",
+          "supabase_status": "${{ steps.health-check.outputs.supabase_status }}",
+          "sendgrid_status": "${{ steps.health-check.outputs.sendgrid_status }}",
+          "vercel_cron_status": "${{ steps.health-check.outputs.vercel_cron_status }}",
+          "db_health": "${{ steps.db-check.outputs.db_health }}",
+          "db_response_time": ${{ steps.db-check.outputs.db_response_time }},
+          "needs_attention": ${{ steps.health-check.outputs.needs_attention }},
+          "severity": "${{ steps.health-check.outputs.severity }}"
+        }
+EOF
+        
+    - name: Upload health reports
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: health-monitoring-${{ github.run_number }}
+        path: |
+          health_report.md
+          health-reports/
+          .github/system-status/
+        retention-days: 7
+        
+    - name: Log monitoring status
+      run: |
+        echo "🏥 Monitoring de santé terminé"
+        echo "Score: ${{ steps.health-check.outputs.health_score }}%"
+        echo "Statut: ${{ steps.health-check.outputs.severity }}"
+        
+        if [ "${{ steps.health-check.outputs.needs_attention }}" = "true" ]; then
+          echo "⚠️ Attention requise - Alerte envoyée"
+        else
+          echo "✅ Système en bonne santé"
+        fi

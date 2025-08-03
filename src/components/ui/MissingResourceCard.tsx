@@ -102,7 +102,7 @@ export default function MissingResourceCard({
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
         resourceUrl={resourceUrl}
-        sourceUrl={sourceUrl || window.location.href}
+        sourceUrl={sourceUrl || (typeof window !== 'undefined' ? window.location.href : '')}
         resourceTitle={resourceTitle}
         resourceDescription={resourceDescription}
       />
