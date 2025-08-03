@@ -1,0 +1,136 @@
+/**
+ * Composants lazy-loaded pour optimiser les performances
+ */
+
+import { lazy, Suspense } from 'react';
+import { ChatWidgetProps } from '@/lib/gemini/types';
+
+// Lazy loading des composants lourds
+const ChatWidget = lazy(() => import('./ChatWidget'));
+const ChatAnalyticsDashboard = lazy(() => import('../admin/ChatAnalyticsDashboard'));
+const FileUploader = lazy(() => import('./FileUploader'));
+
+// Composants de loading
+function ChatWidgetSkeleton() {
+  return (
+    <div className="fixed bottom-4 right-4 z-50">
+      <div className="w-16 h-16 bg-primary-accent rounded-full animate-pulse shadow-lg">
+        <div className="w-full h-full rounded-full bg-gradient-to-br from-primary-accent/80 to-primary-accent animate-pulse" />
+      </div>
+    </div>
+  );
+}
+
+function DashboardSkeleton() {
+  return (
+    <div className="p-6 space-y-6">
+      <div className="h-8 bg-gray-200 rounded animate-pulse" />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {[1, 2, 3].map(i => (
+          <div key={i} className="h-32 bg-gray-200 rounded animate-pulse" />
+        ))}
+      </div>
+      <div className="h-64 bg-gray-200 rounded animate-pulse" />
+    </div>
+  );
+}
+
+function FileUploaderSkeleton() {
+  return (
+    <div className="border-2 border-dashed border-gray-300 rounded-lg p-6">
+      <div className="text-center">
+        <div className="w-12 h-12 bg-gray-200 rounded-full mx-auto mb-4 animate-pulse" />
+        <div className="h-4 bg-gray-200 rounded w-3/4 mx-auto mb-2 animate-pulse" />
+        <div className="h-3 bg-gray-200 rounded w-1/2 mx-auto animate-pulse" />
+      </div>
+    </div>
+  );
+}
+
+// Composants wrappés avec Suspense
+export function LazyChatWidget(props: ChatWidgetProps) {
+  return (
+    <Suspense fallback={<ChatWidgetSkeleton />}>
+      <ChatWidget {...props} />
+    </Suspense>
+  );
+}
+
+export function LazyChatAnalyticsDashboard() {
+  return (
+    <Suspense fallback={<DashboardSkeleton />}>
+      <ChatAnalyticsDashboard />
+    </Suspense>
+  );
+}
+
+export function LazyFileUploader(props: any) {
+  return (
+    <Suspense fallback={<FileUploaderSkeleton />}>
+      <FileUploader {...props} />
+    </Suspense>
+  );
+}
+
+// Hook pour précharger les composants
+export function usePreloadChatComponents() {
+  const preloadChatWidget = () => {
+    import('./ChatWidget');
+  };
+
+  const preloadAnalytics = () => {
+    import('../admin/ChatAnalyticsDashboard');
+  };
+
+  const preloadFileUploader = () => {
+    import('./FileUploader');
+  };
+
+  const preloadAll = () => {
+    preloadChatWidget();
+    preloadAnalytics();
+    preloadFileUploader();
+  };
+
+  return {
+    preloadChatWidget,
+    preloadAnalytics,
+    preloadFileUploader,
+    preloadAll
+  };
+}
+
+// Préchargement conditionnel basé sur l'interaction utilisateur
+export function useConditionalPreload() {
+  const preloadOnHover = () => {
+    // Précharger quand l'utilisateur survole le bouton chat
+    import('./ChatWidget');
+  };
+
+  const preloadOnScroll = () => {
+    // Précharger quand l'utilisateur scroll (engagement)
+    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+      requestIdleCallback(() => {
+        import('./ChatWidget');
+        import('./FileUploader');
+      });
+    }
+  };
+
+  const preloadOnIdle = () => {
+    // Précharger pendant les moments d'inactivité
+    if (typeof window !== 'undefined' && 'requestIdleCallback' in window) {
+      requestIdleCallback(() => {
+        import('./ChatWidget');
+        import('./FileUploader');
+        import('../admin/ChatAnalyticsDashboard');
+      }, { timeout: 5000 });
+    }
+  };
+
+  return {
+    preloadOnHover,
+    preloadOnScroll,
+    preloadOnIdle
+  };
+}

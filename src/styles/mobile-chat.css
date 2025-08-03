@@ -1,0 +1,235 @@
+/* Mobile Chat Optimizations */
+
+/* Prevent zoom on input focus (iOS) */
+@media screen and (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="search"],
+  textarea,
+  select {
+    font-size: 16px !important;
+    transform: translateZ(0);
+  }
+}
+
+/* Touch-friendly interactions */
+@media (hover: none) and (pointer: coarse) {
+  .chat-button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .chat-touch-target {
+    padding: 12px;
+  }
+}
+
+/* Keyboard visibility adjustments */
+@media screen and (max-width: 768px) {
+  .chat-container {
+    transition: height 0.3s ease-in-out;
+  }
+  
+  .chat-input-area {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    z-index: 10;
+  }
+}
+
+/* Gesture indicators */
+.swipe-indicator {
+  position: relative;
+  overflow: hidden;
+}
+
+.swipe-indicator::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 1px;
+  transform: translate(-50%, -50%);
+  animation: swipe-hint 2s ease-in-out infinite;
+}
+
+@keyframes swipe-hint {
+  0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scaleX(1); }
+  50% { opacity: 0.7; transform: translate(-50%, -50%) scaleX(1.2); }
+}
+
+/* File upload progress animations */
+.upload-progress {
+  position: relative;
+  overflow: hidden;
+}
+
+.upload-progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { left: -100%; }
+  100% { left: 100%; }
+}
+
+/* Connection speed indicators */
+.connection-fast {
+  color: #10b981;
+}
+
+.connection-slow {
+  color: #f59e0b;
+}
+
+.connection-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.connection-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.connection-dot.fast {
+  background-color: #10b981;
+}
+
+.connection-dot.slow {
+  background-color: #f59e0b;
+}
+
+/* Mobile-specific animations */
+@media (prefers-reduced-motion: no-preference) {
+  .mobile-bounce {
+    animation: mobile-bounce 0.6s ease-in-out;
+  }
+  
+  @keyframes mobile-bounce {
+    0%, 20%, 53%, 80%, 100% {
+      transform: translate3d(0, 0, 0);
+    }
+    40%, 43% {
+      transform: translate3d(0, -8px, 0);
+    }
+    70% {
+      transform: translate3d(0, -4px, 0);
+    }
+    90% {
+      transform: translate3d(0, -2px, 0);
+    }
+  }
+}
+
+/* Safe area handling for devices with notches */
+@supports (padding: max(0px)) {
+  .chat-widget-mobile {
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+    padding-left: max(16px, env(safe-area-inset-left));
+    padding-right: max(16px, env(safe-area-inset-right));
+  }
+  
+  .chat-header-mobile {
+    padding-top: max(12px, env(safe-area-inset-top));
+  }
+}
+
+/* Haptic feedback simulation */
+.haptic-light {
+  transition: transform 0.1s ease-out;
+}
+
+.haptic-light:active {
+  transform: scale(0.98);
+}
+
+.haptic-medium {
+  transition: transform 0.15s ease-out;
+}
+
+.haptic-medium:active {
+  transform: scale(0.95);
+}
+
+/* Accessibility improvements for mobile */
+@media (prefers-contrast: high) {
+  .chat-button {
+    border: 2px solid currentColor;
+  }
+  
+  .chat-message {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .chat-container {
+    background-color: #1f2937;
+    color: #f9fafb;
+  }
+  
+  .chat-input {
+    background-color: #374151;
+    border-color: #4b5563;
+    color: #f9fafb;
+  }
+  
+  .chat-message.user {
+    background-color: #059669;
+  }
+  
+  .chat-message.assistant {
+    background-color: #374151;
+    color: #f9fafb;
+  }
+}
+
+/* Orientation-specific styles */
+@media screen and (orientation: landscape) and (max-height: 500px) {
+  .chat-widget-mobile {
+    max-height: 90vh;
+  }
+  
+  .chat-messages {
+    max-height: 250px;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .chat-avatar {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .chat-widget,
+  .chat-message,
+  .upload-progress {
+    animation: none !important;
+    transition: none !important;
+  }
+}
