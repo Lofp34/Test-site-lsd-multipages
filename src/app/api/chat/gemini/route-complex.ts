@@ -17,9 +17,7 @@ const rateLimiter = new RateLimiter({
 });
 
 // Configuration de l'API Gemini avec paramètres sécurisés
-const ai = new GoogleGenAI({
-  apiKey: config.gemini.apiKey,
-});
+const ai = new GoogleGenerativeAI(config.gemini.apiKey);
 
 // Validation des inputs avec configuration de production
 const inputValidator = new InputValidator({

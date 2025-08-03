@@ -5,7 +5,7 @@
  * Valide le fonctionnement de l'API selon la documentation
  */
 
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 import dotenv from 'dotenv';
 import chalk from 'chalk';
 
@@ -21,7 +21,7 @@ interface TestResult {
 }
 
 class GeminiIntegrationTester {
-  private ai: GoogleGenAI | null = null;
+  private ai: GoogleGenerativeAI | null = null;
   private apiKey: string;
 
   constructor() {
@@ -115,7 +115,7 @@ class GeminiIntegrationTester {
     const startTime = Date.now();
 
     try {
-      this.ai = new GoogleGenAI({});
+      this.ai = new GoogleGenerativeAI(this.apiKey);
 
       return {
         name: 'Initialisation API',

@@ -59,7 +59,7 @@ export function useGeminiChatSimple({
   const [isRecovering] = useState(false);
   const [recoveryAction] = useState<any>(null);
 
-  const aiRef = useRef<GoogleGenAI | null>(null);
+  const aiRef = useRef<GoogleGenerativeAI | null>(null);
   const chatRef = useRef<any>(null);
   const conversationIdRef = useRef<string>(conversationId || `conv_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`);
   const initializationAttempted = useRef<boolean>(false);

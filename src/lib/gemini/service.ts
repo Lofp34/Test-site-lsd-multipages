@@ -1,10 +1,10 @@
 'use client';
 
-import { GoogleGenAI, createUserContent, createPartFromUri } from "@google/genai";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 import { ChatMessage, GeminiConfig, UploadedFile, ChatError, ChatErrorType } from './types';
 
 export class GeminiService {
-  private ai: GoogleGenAI;
+  private ai: GoogleGenerativeAI;
   private chat: any = null;
   private config: GeminiConfig;
   private conversationId: string;
@@ -20,7 +20,7 @@ export class GeminiService {
       throw new Error('API key is required');
     }
 
-    this.ai = new GoogleGenAI({});
+    this.ai = new GoogleGenerativeAI(config.apiKey);
     this.config = config;
     this.conversationId = conversationId || `conv_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
   }
@@ -65,7 +65,7 @@ export class GeminiService {
       if (files && files.length > 0) {
         // Message multimodal avec fichiers
         const parts = [message];
-        
+
         for (const file of files) {
           parts.push(createPartFromUri(file.uri, file.mimeType));
         }
@@ -102,7 +102,7 @@ export class GeminiService {
    */
   async sendMessage(message: string, files?: UploadedFile[]): Promise<string> {
     const chunks: string[] = [];
-    
+
     for await (const chunk of this.sendMessageStream(message, files)) {
       chunks.push(chunk);
     }
@@ -184,13 +184,13 @@ export class GeminiService {
     try {
       // Générer un nouvel ID de conversation
       this.conversationId = `conv_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-      
+
       // Réinitialiser le chat
       await this.initializeChat();
-      
+
       // Nettoyer l'historique local
       localStorage.removeItem(`chat_history_${this.conversationId}`);
-      
+
       return this.conversationId;
     } catch (error) {
       console.error('Erreur lors du démarrage d\'une nouvelle conversation:', error);
@@ -205,7 +205,7 @@ export class GeminiService {
     try {
       // Nettoyer l'historique local
       localStorage.removeItem(`chat_history_${this.conversationId}`);
-      
+
       // Réinitialiser le chat
       await this.initializeChat();
     } catch (error) {
@@ -248,7 +248,7 @@ export class GeminiService {
 
     if (error instanceof Error) {
       message = error.message;
-      
+
       // Déterminer le type d'erreur basé sur le message
       if (message.includes('rate limit') || message.includes('quota')) {
         errorType = ChatErrorType.RATE_LIMIT;
