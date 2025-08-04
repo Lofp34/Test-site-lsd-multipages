@@ -53,10 +53,12 @@ npx tsx scripts/test-chat-gemini-integration.ts
 - [x] **Suppression du code** : Fichier supprimé du repository
 - [x] **Nettoyage historique** : Clé supprimée de l'historique Git
 - [x] **Push forcé** : Historique mis à jour sur GitHub
-- [ ] **Révocation clé** : ⚠️ **EN ATTENTE - URGENT**
-- [ ] **Nouvelle clé** : ⚠️ **EN ATTENTE - URGENT**
-- [ ] **Mise à jour env** : ⚠️ **EN ATTENTE - URGENT**
-- [ ] **Tests** : En attente des nouvelles clés
+- [x] **Révocation clé** : ✅ **TERMINÉ** - Ancienne clé supprimée
+- [x] **Nouvelle clé** : ✅ **TERMINÉ** - Nouvelle clé générée et validée
+- [x] **Mise à jour env local** : ✅ **TERMINÉ** - `.env` corrigé (clé unique)
+- [x] **Tests locaux** : ✅ **TERMINÉ** - 8/8 tests réussis ✅
+- [ ] **Mise à jour Vercel** : ⚠️ **PROCHAINE ÉTAPE** - Variable d'environnement
+- [ ] **Tests production** : En attente de la mise à jour Vercel
 
 ## 🛡️ Mesures préventives mises en place
 
