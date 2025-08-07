@@ -22,6 +22,10 @@ export interface UseChatHistoryReturn {
   startNewConversation: () => string;
   loadConversation: (conversationId: string) => void;
   
+  // Enhanced actions (backward compatible)
+  updateMessageMetadata?: (messageId: string, metadata: any) => void;
+  markMessageAsRendered?: (messageId: string, renderTime: number) => void;
+  
   // Sauvegarde/Restauration
   saveConversationBackup: () => string | null;
   restoreConversationBackup: (backupKey: string) => boolean;
@@ -32,9 +36,16 @@ export interface UseChatHistoryReturn {
   canSendMessage: () => boolean;
   exportConversation: () => string;
   importConversation: (data: string) => boolean;
+  
+  // Enhanced utilities (backward compatible)
+  searchMessages?: (query: string) => ChatMessage[];
+  getConversationAnalytics?: () => any;
 }
 
-export function useChatHistory(initialConversationId?: string): UseChatHistoryReturn {
+export function useChatHistory(
+  initialConversationId?: string,
+  enhancedMode: boolean = false
+): UseChatHistoryReturn {
   const [historyService] = useState(() => new ChatHistoryService(initialConversationId));
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [conversationId, setConversationId] = useState<string>('');
@@ -208,6 +219,43 @@ export function useChatHistory(initialConversationId?: string): UseChatHistoryRe
     }
   }, [historyService, updateStateFromService]);
 
+  // Enhanced functionality (only available in enhanced mode)
+  const updateMessageMetadata = enhancedMode ? useCallback((messageId: string, metadata: any) => {
+    // This would be implemented with enhanced message storage
+    console.log('Enhanced mode: updating message metadata', messageId, metadata);
+  }, []) : undefined;
+
+  const markMessageAsRendered = enhancedMode ? useCallback((messageId: string, renderTime: number) => {
+    // This would be implemented with enhanced message storage
+    console.log('Enhanced mode: marking message as rendered', messageId, renderTime);
+  }, []) : undefined;
+
+  const searchMessages = enhancedMode ? useCallback((query: string): ChatMessage[] => {
+    if (!query.trim()) return [];
+    
+    const searchTerm = query.toLowerCase();
+    return messages.filter(message => 
+      message.content.toLowerCase().includes(searchTerm)
+    );
+  }, [messages]) : undefined;
+
+  const getConversationAnalytics = enhancedMode ? useCallback(() => {
+    const userMessages = messages.filter(msg => msg.role === 'user');
+    const assistantMessages = messages.filter(msg => msg.role === 'assistant');
+
+    return {
+      totalMessages: messages.length,
+      userMessages: userMessages.length,
+      assistantMessages: assistantMessages.length,
+      averageMessageLength: messages.length > 0 
+        ? messages.reduce((sum, msg) => sum + msg.content.length, 0) / messages.length 
+        : 0,
+      conversationDuration: messages.length > 1 
+        ? messages[messages.length - 1].timestamp.getTime() - messages[0].timestamp.getTime()
+        : 0
+    };
+  }, [messages]) : undefined;
+
   // Obtenir les statistiques d'utilisation
   const getUsageStats = useCallback(() => {
     return historyService.getUsageStats();
@@ -233,6 +281,12 @@ export function useChatHistory(initialConversationId?: string): UseChatHistoryRe
     startNewConversation,
     loadConversation,
     
+    // Enhanced actions (only in enhanced mode)
+    ...(enhancedMode && {
+      updateMessageMetadata,
+      markMessageAsRendered
+    }),
+    
     // Sauvegarde/Restauration
     saveConversationBackup,
     restoreConversationBackup,
@@ -243,6 +297,12 @@ export function useChatHistory(initialConversationId?: string): UseChatHistoryRe
     canSendMessage,
     exportConversation,
     importConversation,
+    
+    // Enhanced utilities (only in enhanced mode)
+    ...(enhancedMode && {
+      searchMessages,
+      getConversationAnalytics
+    })
   };
 }
 

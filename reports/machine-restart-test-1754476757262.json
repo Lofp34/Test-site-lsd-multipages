@@ -1,0 +1,25 @@
+{
+  "testType": "Machine Restart Simulation",
+  "timestamp": "2025-08-06T10:39:17.262Z",
+  "beforeState": {
+    "nodeModulesExists": true,
+    "nextBuildExists": true,
+    "packageLockExists": true,
+    "envFileExists": true,
+    "nodeVersion": "v22.15.0",
+    "npmVersion": "10.9.2",
+    "timestamp": "2025-08-06T10:39:05.717Z"
+  },
+  "afterState": {
+    "nodeModulesExists": true,
+    "nextBuildExists": true,
+    "packageLockExists": true,
+    "envFileExists": true,
+    "nodeVersion": "v22.15.0",
+    "npmVersion": "10.9.2",
+    "timestamp": "2025-08-06T10:39:10.941Z"
+  },
+  "environmentPersistent": false,
+  "startupAfterRestart": true,
+  "overallSuccess": false
+}

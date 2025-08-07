@@ -1,6 +1,6 @@
 'use client';
 
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import ABTestButton from "@/components/ui/ABTestButton";
 import TrackedLink from "@/components/ui/TrackedLink";
 import AnimatedSection from "@/components/ui/AnimatedSection";

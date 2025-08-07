@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import type { Metadata } from 'next';
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 
 
 const FinalCtaSection = dynamic(() => import('@/components/sections/FinalCtaSection'));

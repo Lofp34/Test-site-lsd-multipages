@@ -6,7 +6,7 @@ import { Navigation, Pagination, A11y } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 
 const testimonials = [

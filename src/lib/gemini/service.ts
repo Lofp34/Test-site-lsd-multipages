@@ -20,7 +20,7 @@ export class GeminiService {
       throw new Error('API key is required');
     }
 
-    this.ai = new GoogleGenAI({ apiKey: config.apiKey });
+    this.ai = new GoogleGenAI({ apiKey });
     this.config = config;
     this.conversationId = conversationId || `conv_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
   }

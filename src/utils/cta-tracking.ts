@@ -48,14 +48,16 @@ export function setupConversionGoals() {
   console.log('Conversion goals setup');
 }
 
-export function trackSectionView(sectionId: string, sectionName: string) {
-  console.log('Section view tracked:', { sectionId, sectionName });
+export function trackSectionView(sectionName: string, options?: { sectionId?: string; timeSpent?: number }) {
+  const { sectionId, timeSpent } = options || {};
+  console.log('Section view tracked:', { sectionName, sectionId, timeSpent });
   
   // Simple analytics tracking
   if (typeof window !== 'undefined' && (window as any).gtag) {
     (window as any).gtag('event', 'section_view', {
+      section_name: sectionName,
       section_id: sectionId,
-      section_name: sectionName
+      time_spent: timeSpent
     });
   }
 }

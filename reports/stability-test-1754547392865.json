@@ -1,0 +1,59 @@
+{
+  "totalTests": 6,
+  "successfulStarts": 6,
+  "failedStarts": 0,
+  "averageStartTime": 1862,
+  "averageResponseTime": 410,
+  "results": [
+    {
+      "attempt": 1,
+      "success": true,
+      "startTime": 2025,
+      "timestamp": "2025-08-07T06:16:32.972Z",
+      "responseTime": 370
+    },
+    {
+      "attempt": 2,
+      "success": true,
+      "startTime": 2009,
+      "timestamp": "2025-08-07T06:16:44.373Z",
+      "responseTime": 411
+    },
+    {
+      "attempt": 3,
+      "success": true,
+      "startTime": 1831,
+      "timestamp": "2025-08-07T06:16:55.249Z",
+      "responseTime": 408
+    },
+    {
+      "attempt": 4,
+      "success": true,
+      "startTime": 1740,
+      "timestamp": "2025-08-07T06:17:05.839Z",
+      "responseTime": 396
+    },
+    {
+      "attempt": 5,
+      "success": true,
+      "startTime": 1772,
+      "timestamp": "2025-08-07T06:17:16.759Z",
+      "responseTime": 391
+    },
+    {
+      "attempt": 6,
+      "success": true,
+      "startTime": 1795,
+      "timestamp": "2025-08-07T06:17:35.343Z",
+      "responseTime": 482
+    }
+  ],
+  "systemInfo": {
+    "nodeVersion": "v22.15.0",
+    "npmVersion": "10.9.2",
+    "nextVersion": "15.3.3",
+    "platform": "darwin",
+    "arch": "arm64",
+    "memory": "12MB"
+  }
+}

@@ -3,7 +3,7 @@
 import React from 'react';
 import { LucideIcon } from 'lucide-react';
 import AnimatedSection from '@/components/ui/AnimatedSection';
-import Button from '@/components/ui/Button';
+import { Button } from '@/components/ui/Button';
 
 export interface ResourceHeroProps {
   title: string;

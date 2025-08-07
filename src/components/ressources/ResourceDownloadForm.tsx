@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Send, CheckCircle, AlertCircle, Loader2, Download, Mail, User } from 'lucide-react';
 import AnimatedSection from '@/components/ui/AnimatedSection';
-import Button from '@/components/ui/Button';
+import { Button } from '@/components/ui/Button';
 import { trackFormSubmission, trackDownloadSuccess, trackDownloadError, resourceAnalytics } from '@/utils/resource-analytics';
 
 export interface ResourceDownloadFormProps {

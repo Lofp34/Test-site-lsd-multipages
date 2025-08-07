@@ -29,14 +29,25 @@ interface UseMultimodalChatReturn {
   sendMultimodalMessage: (text: string) => Promise<void>;
   clearUploadError: () => void;
   
+  // Enhanced actions (backward compatible)
+  analyzeFile?: (fileId: string) => Promise<void>;
+  generatePreview?: (fileId: string) => Promise<void>;
+  retryFailedUpload?: (fileIndex: number) => Promise<void>;
+  
   // Utilitaires
   hasFiles: boolean;
   canSendMessage: boolean;
+  
+  // Enhanced utilities (backward compatible)
+  getFileAnalysis?: (fileId: string) => any;
+  getUploadProgress?: (fileId: string) => number;
+  uploadMetrics?: any;
 }
 
 export function useMultimodalChat(
   apiKey: string,
-  onSendMessage?: (message: string, files?: UploadedFile[]) => Promise<void>
+  onSendMessage?: (message: string, files?: UploadedFile[]) => Promise<void>,
+  enhancedMode: boolean = false
 ): UseMultimodalChatReturn {
   const [state, setState] = useState<UseMultimodalChatState>({
     messages: [],
@@ -189,6 +200,46 @@ export function useMultimodalChat(
     }));
   }, []);
 
+  // Enhanced functionality (only in enhanced mode)
+  const analyzeFile = enhancedMode ? useCallback(async (fileId: string) => {
+    console.log('Enhanced mode: analyzing file', fileId);
+    // Placeholder for file analysis
+  }, []) : undefined;
+
+  const generatePreview = enhancedMode ? useCallback(async (fileId: string) => {
+    console.log('Enhanced mode: generating preview', fileId);
+    // Placeholder for preview generation
+  }, []) : undefined;
+
+  const retryFailedUpload = enhancedMode ? useCallback(async (fileIndex: number) => {
+    const file = state.pendingFiles[fileIndex];
+    if (!file) return;
+
+    setState(prev => ({
+      ...prev,
+      pendingFiles: prev.pendingFiles.filter((_, i) => i !== fileIndex)
+    }));
+
+    await addFiles([file]);
+  }, [state.pendingFiles, addFiles]) : undefined;
+
+  const getFileAnalysis = enhancedMode ? useCallback((fileId: string) => {
+    const file = state.uploadedFiles.find(f => f.id === fileId);
+    return file?.metadata || null;
+  }, [state.uploadedFiles]) : undefined;
+
+  const getUploadProgress = enhancedMode ? useCallback((fileId: string) => {
+    // Placeholder for upload progress tracking
+    return 100;
+  }, []) : undefined;
+
+  const uploadMetrics = enhancedMode ? {
+    totalUploads: state.uploadedFiles.length,
+    successfulUploads: state.uploadedFiles.length,
+    failedUploads: 0,
+    averageUploadTime: 1000
+  } : undefined;
+
   // Propriétés calculées
   const hasFiles = state.uploadedFiles.length > 0 || state.pendingFiles.length > 0;
   const canSendMessage = !state.isUploading && (
@@ -212,8 +263,22 @@ export function useMultimodalChat(
     sendMultimodalMessage,
     clearUploadError,
     
+    // Enhanced actions (only in enhanced mode)
+    ...(enhancedMode && {
+      analyzeFile,
+      generatePreview,
+      retryFailedUpload
+    }),
+    
     // Utilitaires
     hasFiles,
-    canSendMessage
+    canSendMessage,
+    
+    // Enhanced utilities (only in enhanced mode)
+    ...(enhancedMode && {
+      getFileAnalysis,
+      getUploadProgress,
+      uploadMetrics
+    })
   };
 }

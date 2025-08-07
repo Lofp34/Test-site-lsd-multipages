@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Play, Image as ImageIcon, FileText, Download, Eye, Maximize2 } from 'lucide-react';
 import AnimatedSection from '@/components/ui/AnimatedSection';
-import Badge from '@/components/ui/Badge';
+import { Badge } from '@/components/ui/badge';
 import OptimizedImage from '@/components/ui/OptimizedImage';
 
 export interface ToolPreviewProps {

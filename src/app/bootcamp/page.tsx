@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import type { Metadata } from 'next';
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 
 const ProcessSection = dynamic(() => import('@/components/sections/ProcessSection'));

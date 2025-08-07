@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback, useRef, useEffect } from 'react';
+import { useState, useCallback, useRef, useEffect, useMemo } from 'react';
 import { ChatMessage, GeminiConfig, UploadedFile, ChatError, ChatErrorType } from '@/lib/gemini/types';
 import { GeminiService } from '@/lib/gemini/service';
 import { chatErrorHandler, ErrorContext } from '@/lib/gemini/error-handler';
@@ -14,6 +14,10 @@ interface UseGeminiChatConfig {
   systemInstruction: string;
   config?: Partial<GeminiConfig>;
   conversationId?: string;
+  // Enhanced options for backward compatibility
+  enhancedMode?: boolean;
+  markdownEnabled?: boolean;
+  autoScrollEnabled?: boolean;
 }
 
 interface UseGeminiChatState {
@@ -50,7 +54,10 @@ export function useGeminiChat({
   apiKey,
   systemInstruction,
   config,
-  conversationId
+  conversationId,
+  enhancedMode = false,
+  markdownEnabled = false,
+  autoScrollEnabled = false
 }: UseGeminiChatConfig): UseGeminiChatReturn {
   const [state, setState] = useState<UseGeminiChatState>({
     messages: [],
@@ -76,6 +83,26 @@ export function useGeminiChat({
   const analytics = useChatAnalytics();
   const cache = useChatCache();
   const memoryManager = useChatMemoryManager();
+
+  // Enhanced system instruction with markdown support
+  const enhancedSystemInstruction = useMemo(() => {
+    let instruction = systemInstruction;
+    
+    if (enhancedMode && markdownEnabled) {
+      instruction += `
+
+IMPORTANT: Format your responses using Markdown for better readability:
+- Use **bold** for important points
+- Use *italic* for emphasis
+- Use bullet points for lists
+- Use code blocks for examples
+- Use tables for comparisons
+- Use headers for structure
+`;
+    }
+    
+    return instruction;
+  }, [systemInstruction, enhancedMode, markdownEnabled]);
 
   // Initialisation du service Gemini
   useEffect(() => {
@@ -104,7 +131,7 @@ export function useGeminiChat({
           model: 'gemini-2.5-flash',
           temperature: 0.7,
           thinkingBudget: 0,
-          systemInstruction,
+          systemInstruction: enhancedSystemInstruction,
           maxTokens: 2048,
           ...config
         };
@@ -148,7 +175,7 @@ export function useGeminiChat({
     };
 
     initializeService();
-  }, [apiKey, systemInstruction, config, conversationId]);
+  }, [apiKey, enhancedSystemInstruction, config, conversationId, analyticsEnabled]);
 
   // Gestion centralisée des erreurs
   const handleError = useCallback(async (error: unknown, context: ErrorContext) => {

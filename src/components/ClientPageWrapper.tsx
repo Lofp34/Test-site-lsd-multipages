@@ -2,7 +2,7 @@
 
 import React, { lazy, Suspense, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import ABTestButton from "@/components/ui/ABTestButton";
 import TrackedLink from "@/components/ui/TrackedLink";
 import Image from 'next/image';

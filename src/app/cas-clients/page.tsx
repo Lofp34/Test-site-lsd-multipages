@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import type { Metadata, Viewport } from 'next';
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 
 const TestimonialVideoSection = dynamic(() => import('@/components/sections/TestimonialVideoSection'));

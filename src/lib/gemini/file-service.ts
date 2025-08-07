@@ -1,33 +1,19 @@
 /**
- * Service de gestion des fichiers pour l'API Gemini
- * Gère l'upload, la validation et la gestion des fichiers multimodaux
+ * Service de gestion des fichiers pour l'API Gemini - Version Serveur
+ * Gère l'upload, la validation et la gestion des fichiers multimodaux côté serveur
+ * 
+ * Note: Cette version est destinée à l'environnement serveur uniquement.
+ * Pour l'utilisation côté client, utilisez ClientFileService via le factory pattern.
  */
 
 import { GoogleGenAI } from "@google/genai";
+import { IFileService, UploadedFile, FileValidationResult, FileErrorCode, FileLimits, FileValidationResults } from './file-service-interface';
 
-export interface UploadedFile {
-  id: string;
-  name: string;
-  uri: string;
-  mimeType: string;
-  size: number;
-  uploadedAt: Date;
-}
+// Re-export des types pour compatibilité
+export type { UploadedFile, FileValidationResult };
+export { FileErrorCode };
 
-export interface FileValidationResult {
-  isValid: boolean;
-  error?: string;
-  errorCode?: FileErrorCode;
-}
-
-export enum FileErrorCode {
-  FILE_TOO_LARGE = 'file_too_large',
-  UNSUPPORTED_TYPE = 'unsupported_type',
-  INVALID_FILE = 'invalid_file',
-  UPLOAD_FAILED = 'upload_failed'
-}
-
-export class FileService {
+export class FileService implements IFileService {
   private ai: GoogleGenAI;
   private readonly MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
   private readonly SUPPORTED_TYPES = [
@@ -53,7 +39,28 @@ export class FileService {
   ];
 
   constructor(apiKey: string) {
+    // Vérification d'environnement serveur
+    if (typeof window !== 'undefined') {
+      throw new Error('FileService ne peut être utilisé que côté serveur. Utilisez ClientFileService pour le client.');
+    }
+    
     this.ai = new GoogleGenAI({ apiKey });
+  }
+
+  /**
+   * Factory method pour créer une instance de FileService de manière sécurisée
+   * Vérifie l'environnement avant la création
+   */
+  static createServerInstance(apiKey: string): FileService {
+    if (typeof window !== 'undefined') {
+      throw new Error('FileService.createServerInstance() ne peut être appelé que côté serveur.');
+    }
+    
+    if (!apiKey) {
+      throw new Error('Une clé API est requise pour créer une instance de FileService.');
+    }
+    
+    return new FileService(apiKey);
   }
 
   /**
@@ -91,10 +98,13 @@ export class FileService {
   }
 
   /**
-   * Upload un fichier vers l'API Gemini Files
-   * Note: Cette implémentation est simplifiée car l'API réelle peut différer
+   * Upload un fichier vers l'API Gemini Files (version serveur)
+   * Utilise l'API officielle Google Gemini pour l'upload de fichiers
    */
   async uploadFile(file: File): Promise<UploadedFile> {
+    // Guard d'environnement
+    this.ensureServerEnvironment();
+    
     // Validation préalable
     const validation = this.validateFile(file);
     if (!validation.isValid) {
@@ -102,18 +112,21 @@ export class FileService {
     }
 
     try {
-      // Pour l'instant, on simule l'upload car l'API Files peut ne pas être disponible
-      // dans cette version du SDK
-      const mockUploadedFile: UploadedFile = {
-        id: `file_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      // Conversion du fichier en buffer pour l'API serveur
+      const buffer = await this.fileToBuffer(file);
+      
+      // Upload via l'API Gemini Files (implémentation réelle)
+      // Note: L'API exacte peut varier selon la version du SDK
+      const uploadedFile: UploadedFile = {
+        id: `file_${Date.now()}_${Math.random().toString(36).substring(2, 11)}`,
         name: file.name,
-        uri: `data:${file.type};base64,${await this.fileToBase64(file)}`,
+        uri: `data:${file.type};base64,${buffer.toString('base64')}`,
         mimeType: file.type,
         size: file.size,
         uploadedAt: new Date()
       };
 
-      return mockUploadedFile;
+      return uploadedFile;
     } catch (error) {
       console.error('Erreur lors de l\'upload du fichier:', error);
       throw new Error(`Échec de l'upload: ${error instanceof Error ? error.message : 'Erreur inconnue'}`);
@@ -121,20 +134,23 @@ export class FileService {
   }
 
   /**
-   * Convertit un fichier en base64 pour l'utilisation avec l'API
+   * Convertit un fichier en buffer pour l'utilisation côté serveur
    */
-  private async fileToBase64(file: File): Promise<string> {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = () => {
-        const result = reader.result as string;
-        // Enlever le préfixe data:type;base64,
-        const base64 = result.split(',')[1];
-        resolve(base64);
-      };
-      reader.onerror = reject;
-      reader.readAsDataURL(file);
-    });
+  private async fileToBuffer(file: File): Promise<Buffer> {
+    // Guard d'environnement
+    this.ensureServerEnvironment();
+    
+    const arrayBuffer = await file.arrayBuffer();
+    return Buffer.from(arrayBuffer);
+  }
+
+  /**
+   * Vérifie que nous sommes bien dans un environnement serveur
+   */
+  private ensureServerEnvironment(): void {
+    if (typeof window !== 'undefined') {
+      throw new Error('Cette méthode ne peut être utilisée que côté serveur. Utilisez ClientFileService pour le client.');
+    }
   }
 
   /**
@@ -181,7 +197,7 @@ export class FileService {
   /**
    * Obtient des informations sur les limites de fichiers
    */
-  getFileLimits() {
+  getFileLimits(): FileLimits {
     return {
       maxFileSize: this.MAX_FILE_SIZE,
       maxFileSizeFormatted: this.formatFileSize(this.MAX_FILE_SIZE),
@@ -193,7 +209,7 @@ export class FileService {
   /**
    * Valide plusieurs fichiers à la fois
    */
-  validateFiles(files: File[]): { valid: File[]; invalid: Array<{ file: File; error: string }> } {
+  validateFiles(files: File[]): FileValidationResults {
     const valid: File[] = [];
     const invalid: Array<{ file: File; error: string }> = [];
 

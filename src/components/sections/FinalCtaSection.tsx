@@ -1,7 +1,7 @@
 'use client';
 
 import HubSpotForm from '@/components/HubSpotForm';
-import Button from '@/components/ui/Button';
+import { Button } from '@/components/ui/Button';
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { trackBusinessEvents } from '@/components/GoogleAnalytics';
 import ContactSimpleForm from '@/components/ContactSimpleForm';

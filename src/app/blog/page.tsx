@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import Button from '@/components/ui/Button';
+import { Button } from '@/components/ui/Button';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {

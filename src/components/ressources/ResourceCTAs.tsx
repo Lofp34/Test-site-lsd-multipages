@@ -3,7 +3,7 @@
 import React from 'react';
 import { ArrowRight, Calendar, MessageCircle, BookOpen, Users, Target, Phone } from 'lucide-react';
 import AnimatedSection from '@/components/ui/AnimatedSection';
-import Button from '@/components/ui/Button';
+import { Button } from '@/components/ui/Button';
 
 export interface CTAConfig {
   title: string;

@@ -2,8 +2,8 @@
 
 import React, { useRef, useState, useCallback, useEffect } from 'react';
 import { FileUploaderProps, UploadedFile } from '@/lib/gemini/types';
-import { FileService } from '@/lib/gemini/file-service';
 import { useMobileOptimization } from '@/hooks/useMobileOptimization';
+import { useFileService } from '@/hooks/useFileService';
 
 interface FileUploaderState {
   isDragOver: boolean;
@@ -46,7 +46,23 @@ export default function FileUploader({
     getMobileClasses 
   } = useMobileOptimization();
 
-  const fileService = new FileService(process.env.NEXT_PUBLIC_GEMINI_API_KEY || '');
+  // Hook pour gérer le FileService avec gestion d'erreurs
+  const {
+    service: fileService,
+    isLoading: serviceLoading,
+    error: serviceError,
+    isReady: serviceReady,
+    validateFiles,
+    retry: retryService
+  } = useFileService({
+    onLoadError: (error) => {
+      console.error('Erreur de chargement du FileService:', error);
+      setState(prev => ({
+        ...prev,
+        error: `Erreur de chargement du service: ${error.message}`
+      }));
+    }
+  });
 
   // Détecter la vitesse de connexion
   useEffect(() => {
@@ -125,6 +141,15 @@ export default function FileUploader({
   const handleFileSelect = useCallback(async (files: FileList | null) => {
     if (!files || files.length === 0) return;
 
+    // Vérifier que le service est prêt
+    if (!serviceReady || !fileService) {
+      setState(prev => ({
+        ...prev,
+        error: 'Service de fichiers non disponible. Veuillez réessayer.'
+      }));
+      return;
+    }
+
     const fileArray = Array.from(files);
     
     // Limiter le nombre de fichiers
@@ -140,8 +165,20 @@ export default function FileUploader({
     }));
 
     try {
-      // Valider les fichiers
-      const { valid, invalid } = fileService.validateFiles(selectedFiles);
+      // Valider les fichiers avec le hook
+      const validationResult = validateFiles(selectedFiles);
+      
+      if (!validationResult) {
+        setState(prev => ({
+          ...prev,
+          error: 'Erreur lors de la validation des fichiers',
+          isUploading: false,
+          uploadQueue: []
+        }));
+        return;
+      }
+
+      const { valid, invalid } = validationResult;
       
       if (invalid.length > 0) {
         setState(prev => ({
@@ -220,7 +257,7 @@ export default function FileUploader({
         isCompressing: false
       }));
     }
-  }, [maxFiles, onFileSelect, fileService, state.connectionSpeed, compressImage]);
+  }, [maxFiles, onFileSelect, serviceReady, fileService, validateFiles, state.connectionSpeed, compressImage]);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     handleFileSelect(event.target.files);
@@ -232,10 +269,10 @@ export default function FileUploader({
 
   const handleDragOver = useCallback((event: React.DragEvent) => {
     event.preventDefault();
-    if (!disabled) {
+    if (!disabled && serviceReady) {
       setState(prev => ({ ...prev, isDragOver: true }));
     }
-  }, [disabled]);
+  }, [disabled, serviceReady]);
 
   const handleDragLeave = useCallback((event: React.DragEvent) => {
     event.preventDefault();
@@ -246,19 +283,19 @@ export default function FileUploader({
     event.preventDefault();
     setState(prev => ({ ...prev, isDragOver: false }));
     
-    if (!disabled) {
+    if (!disabled && serviceReady) {
       handleFileSelect(event.dataTransfer.files);
     }
-  }, [disabled, handleFileSelect]);
+  }, [disabled, serviceReady, handleFileSelect]);
 
   const handleClick = () => {
-    if (!disabled && fileInputRef.current) {
+    if (!disabled && serviceReady && fileInputRef.current) {
       fileInputRef.current.click();
     }
   };
 
   const handleCameraClick = () => {
-    if (!disabled && cameraInputRef.current) {
+    if (!disabled && serviceReady && cameraInputRef.current) {
       cameraInputRef.current.click();
     }
   };
@@ -266,6 +303,19 @@ export default function FileUploader({
   const clearError = () => {
     setState(prev => ({ ...prev, error: null }));
   };
+
+  // Fonction pour réessayer le chargement du service
+  const handleRetryService = useCallback(async () => {
+    setState(prev => ({ ...prev, error: null }));
+    try {
+      await retryService();
+    } catch (error) {
+      setState(prev => ({
+        ...prev,
+        error: `Impossible de charger le service: ${error instanceof Error ? error.message : 'Erreur inconnue'}`
+      }));
+    }
+  }, [retryService]);
 
   return (
     <div className="file-uploader">
@@ -277,12 +327,12 @@ export default function FileUploader({
             ? 'border-mint-green bg-mint-green/10' 
             : 'border-gray-300 hover:border-mint-green/50'
           }
-          ${disabled ? 'opacity-50 cursor-not-allowed' : ''}
+          ${disabled || !serviceReady ? 'opacity-50 cursor-not-allowed' : ''}
         `}
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
         onDrop={handleDrop}
-        onClick={!isMobile ? handleClick : undefined}
+        onClick={!isMobile && serviceReady ? handleClick : undefined}
       >
         {/* Input pour fichiers généraux */}
         <input
@@ -291,7 +341,7 @@ export default function FileUploader({
           multiple={maxFiles > 1}
           accept={Array.isArray(acceptedTypes) ? acceptedTypes.join(',') : acceptedTypes}
           onChange={handleInputChange}
-          disabled={disabled}
+          disabled={disabled || !serviceReady}
           className="hidden"
         />
 
@@ -302,7 +352,7 @@ export default function FileUploader({
           accept="image/*,video/*"
           capture="environment"
           onChange={handleInputChange}
-          disabled={disabled}
+          disabled={disabled || !serviceReady}
           className="hidden"
         />
 
@@ -313,12 +363,52 @@ export default function FileUploader({
           accept="image/*,video/*"
           capture="user"
           onChange={handleInputChange}
-          disabled={disabled}
+          disabled={disabled || !serviceReady}
           className="hidden"
         />
 
         <div className="text-center">
-          {state.isUploading ? (
+          {serviceLoading ? (
+            <div className={getMobileClasses('space-y-3', 'space-y-2')}>
+              <div className={getMobileClasses(
+                'w-12 h-12 mx-auto border-3 border-blue-ink border-t-transparent rounded-full animate-spin',
+                'w-8 h-8 border-2'
+              )} />
+              <p className={getMobileClasses('text-sm font-medium text-gray-700', 'text-xs')}>
+                Chargement du service de fichiers...
+              </p>
+            </div>
+          ) : serviceError ? (
+            <div className={getMobileClasses('space-y-3', 'space-y-2')}>
+              <div className={getMobileClasses('w-12 h-12 mx-auto text-red-500', 'w-8 h-8')}>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path 
+                    strokeLinecap="round" 
+                    strokeLinejoin="round" 
+                    strokeWidth={2} 
+                    d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" 
+                  />
+                </svg>
+              </div>
+              <div>
+                <p className={getMobileClasses('text-sm font-medium text-red-600', 'text-xs')}>
+                  Erreur de chargement
+                </p>
+                <p className={getMobileClasses('text-xs text-red-500 mt-1', 'text-[10px]')}>
+                  {serviceError.message}
+                </p>
+                <button
+                  onClick={handleRetryService}
+                  className={getMobileClasses(
+                    'mt-2 px-3 py-1 bg-red-100 hover:bg-red-200 text-red-700 rounded text-xs transition-colors',
+                    'px-2 py-0.5 text-[10px]'
+                  )}
+                >
+                  Réessayer
+                </button>
+              </div>
+            </div>
+          ) : state.isUploading ? (
             <div className={getMobileClasses('space-y-3', 'space-y-2')}>
               <div className={getMobileClasses(
                 'w-12 h-12 mx-auto border-3 border-mint-green border-t-transparent rounded-full animate-spin',
@@ -418,11 +508,11 @@ export default function FileUploader({
       </div>
 
       {/* Boutons mobiles pour caméra/galerie */}
-      {isMobile && !state.isUploading && (
+      {isMobile && !state.isUploading && !serviceLoading && (
         <div className={getMobileClasses('mt-3 grid grid-cols-2 gap-2', 'grid-cols-3 gap-1.5 mt-2')}>
           <button
             onClick={handleClick}
-            disabled={disabled}
+            disabled={disabled || !serviceReady}
             className={getMobileClasses(
               'flex items-center justify-center space-x-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg transition-colors disabled:opacity-50',
               'px-2 py-1.5 space-x-1 active:bg-gray-300'
@@ -436,7 +526,7 @@ export default function FileUploader({
           
           <button
             onClick={handleCameraClick}
-            disabled={disabled}
+            disabled={disabled || !serviceReady}
             className={getMobileClasses(
               'flex items-center justify-center space-x-2 px-4 py-2 bg-mint-green hover:bg-mint-green/90 text-white rounded-lg transition-colors disabled:opacity-50',
               'px-2 py-1.5 space-x-1 active:bg-mint-green/80'
@@ -452,6 +542,7 @@ export default function FileUploader({
           {/* Bouton caméra frontale (selfie) */}
           <button
             onClick={() => {
+              if (!serviceReady) return;
               const selfieInput = document.createElement('input');
               selfieInput.type = 'file';
               selfieInput.accept = 'image/*,video/*';
@@ -462,7 +553,7 @@ export default function FileUploader({
               };
               selfieInput.click();
             }}
-            disabled={disabled}
+            disabled={disabled || !serviceReady}
             className={getMobileClasses(
               'flex items-center justify-center space-x-2 px-4 py-2 bg-blue-ink hover:bg-blue-ink/90 text-white rounded-lg transition-colors disabled:opacity-50',
               'px-2 py-1.5 space-x-1 active:bg-blue-ink/80'
@@ -528,8 +619,20 @@ export default function FileUploader({
           </div>
         )}
         
+        {/* Indicateur de statut du service */}
+        <div className="flex items-center space-x-1 text-xs">
+          <div className={`w-2 h-2 rounded-full ${
+            serviceReady ? 'bg-green-500' : serviceLoading ? 'bg-yellow-500' : 'bg-red-500'
+          }`} />
+          <span className={`text-[10px] ${
+            serviceReady ? 'text-green-600' : serviceLoading ? 'text-yellow-600' : 'text-red-600'
+          }`}>
+            Service: {serviceReady ? 'Prêt' : serviceLoading ? 'Chargement...' : 'Erreur'}
+          </span>
+        </div>
+
         {/* Indicateurs de support mobile */}
-        {isMobile && (
+        {isMobile && serviceReady && (
           <div className="space-y-1 mt-2">
             <div className="flex items-center space-x-1 text-xs text-mint-green">
               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">

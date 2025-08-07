@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import type { Metadata } from 'next';
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import ABTestButton from "@/components/ui/ABTestButton";
 import TrackedLink from "@/components/ui/TrackedLink";
 import Image from 'next/image';
