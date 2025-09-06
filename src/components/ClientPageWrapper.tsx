@@ -105,7 +105,7 @@ export default function ClientPageWrapper({
               <SimpleChatWidget
                 position={chatConfig.position || 'bottom-right'}
                 theme={chatConfig.theme || 'auto'}
-                initialMessage={chatConfig.initialMessage || "Bonjour ! Je suis Laurent Serre, expert en développement commercial PME. Comment puis-je vous aider ?"}
+                initialMessage={chatConfig.initialMessage || "Bonjour Laurent, comment peux tu m'aider ?"}
                 apiKey={process.env.NEXT_PUBLIC_GEMINI_API_KEY}
               />
             </Suspense>
