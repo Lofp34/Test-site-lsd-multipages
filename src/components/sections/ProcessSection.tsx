@@ -139,7 +139,7 @@ const ProcessSection = () => {
           
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">4 950€</div>
+              <div className="text-3xl font-bold mb-2">6 950€</div>
               <div className="text-sm opacity-80">H.T. pour 6 personnes</div>
             </div>
             <div className="text-center">
