@@ -42,7 +42,7 @@ const blogPosts = [
     date: '2025-09-30',
     readTime: '10 min',
     category: 'Management',
-    image: '/equipe_bureau.jpg',
+    image: '/accompagnement_commercial.png',
     featured: true
   },
   {

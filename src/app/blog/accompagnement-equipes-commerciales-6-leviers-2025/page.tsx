@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/equipe_bureau.jpg',
+        url: 'https://laurentserre.com/accompagnement_commercial.png',
         width: 1200,
         height: 630,
         alt: 'Accompagnement des équipes commerciales - 6 leviers pour 2025',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Accompagnement des équipes commerciales : 6 leviers d’expert pour booster vos ventes en 2025",
     description: "Méthode concrète pour structurer l’accompagnement commercial et faire monter vos équipes en compétences.",
-    images: ['https://laurentserre.com/equipe_bureau.jpg'],
+    images: ['https://laurentserre.com/accompagnement_commercial.png'],
   },
 };
 
@@ -61,7 +61,7 @@ export default function ArticleAccompagnement() {
 
           <div className="relative mb-12">
             <Image
-              src="/equipe_bureau.jpg"
+              src="/accompagnement_commercial.png"
               alt="Accompagnement des équipes commerciales - 6 leviers pour 2025"
               width={1200}
               height={600}
