@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'accompagnement-equipes-commerciales-6-leviers-2025',
+    title: 'Accompagnement des équipes commerciales : 6 leviers d\'expert pour booster vos ventes en 2025',
+    description: 'Structuration, coaching, outils et méthode pour faire monter votre équipe en compétences et en performance, avec un guide pratique d\'externalisation.',
+    date: '2025-09-30',
+    readTime: '10 min',
+    category: 'Management',
+    image: '/equipe_bureau.jpg',
+    featured: true
+  },
+  {
     slug: '7-etapes-transformer-non-en-oui-performant-2025',
     title: '7 étapes pour transformer un « non » frustrant en « oui » performant en 2025',
     description: 'Une méthode claire et moderne pour transformer chaque refus client en opportunité commerciale durable et efficace. Conseils pratiques, techniques d’écoute et outils IA pour performer en 2025.',
