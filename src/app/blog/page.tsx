@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'closing-b2b-7-techniques',
+    title: 'Closing B2B : 7 techniques qui marchent (+ scripts à copier)',
+    description: 'Augmentez votre taux de closing en 90 jours sans forcer grâce au MAP, trial close, business case, POC cadré et 5 scripts copiables.',
+    date: '2025-10-13',
+    readTime: '12 min',
+    category: 'Techniques de vente',
+    image: '/images/closing_post.png',
+    featured: false
+  },
+  {
     slug: 'accompagnement-equipes-commerciales-6-leviers-2025',
     title: 'Accompagnement des équipes commerciales : 6 leviers d\'expert pour booster vos ventes en 2025',
     description: 'Structuration, coaching, outils et méthode pour faire monter votre équipe en compétences et en performance, avec un guide pratique d\'externalisation.',
