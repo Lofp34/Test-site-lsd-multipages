@@ -91,7 +91,7 @@ export default function ClosingB2BTechniques() {
             <div className="font-semibold">Cibles de pilotage</div>
             <ul className="list-disc pl-6">
               <li>≥ 85 % des opportunités avec next-step <strong>datée</strong></li>
-              <li>No-show < 8 %</li>
+              <li>No-show &lt; 8 %</li>
               <li>Time-to-close –15 % en 3 mois</li>
             </ul>
           </div>
@@ -200,9 +200,10 @@ Laurent
 
           <h4 className="text-xl font-title font-bold text-blue-ink mt-6 mb-2">4) Trial close en découverte (visio)</h4>
           <pre className="bg-gray-50 p-4 rounded-xl overflow-x-auto mb-6"><code>
-Si on répond bien aux 3 critères que vous avez posés (délais S1, intégration DSI, payback < 6 mois),
+Si on répond bien aux 3 critères que vous avez posés (délais S1, intégration DSI, payback &lt; 6 mois),
 est-ce que vous seriez prêt à valider l’étape DAF vendredi ?
           </code></pre>
+          
 
           <h4 className="text-xl font-title font-bold text-blue-ink mt-6 mb-2">5) Déclosing propre (email)</h4>
           <pre className="bg-gray-50 p-4 rounded-xl overflow-x-auto mb-6"><code>
@@ -219,9 +220,9 @@ Laurent
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Mesurer & piloter</h2>
           <ul className="list-disc pl-6 mb-8">
             <li><strong>Next-step</strong> : ≥ 85 % des opportunités avec prochaine étape datée.</li>
-            <li><strong>No-show</strong> : < 8 % (rappel J-1 + SMS J-0).</li>
+            <li><strong>No-show</strong> : &lt; 8 % (rappel J-1 + SMS J-0).</li>
             <li><strong>Time-to-close</strong> : –15 % (MAP + trial closes).</li>
-            <li><strong>POC → Prod</strong> : > 60 % si critères cadrés.</li>
+            <li><strong>POC → Prod</strong> : &gt; 60 % si critères cadrés.</li>
             <li><strong>A/B scripts</strong> : testez 2 versions « prix » sur 30 jours.</li>
           </ul>
 
@@ -258,4 +259,3 @@ Laurent
     </main>
   );
 }
-
