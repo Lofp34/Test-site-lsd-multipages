@@ -43,7 +43,7 @@ const blogPosts = [
     readTime: '12 min',
     category: 'Techniques de vente',
     image: '/images/closing_post.png',
-    featured: false
+    featured: true
   },
   {
     slug: 'accompagnement-equipes-commerciales-6-leviers-2025',
