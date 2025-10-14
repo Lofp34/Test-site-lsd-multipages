@@ -6,6 +6,7 @@ import Link from "next/link";
 const ProcessSection = dynamic(() => import('@/components/sections/ProcessSection'));
 const PromiseSection = dynamic(() => import('@/components/sections/PromiseSection'));
 const FinalCtaSection = dynamic(() => import('@/components/sections/FinalCtaSection'));
+const ResultsSection = dynamic(() => import('@/components/sections/ResultsSection'));
 
 export const metadata: Metadata = {
   title: 'Bootcamp Commercial pour PME - Formation Intensive | Laurent Serre',
@@ -100,6 +101,7 @@ export default function BootcampPage() {
       <ProcessSection />
       <PromiseSection />
       <FinalCtaSection />
+      <ResultsSection />
     </main>
   );
-} 
+}

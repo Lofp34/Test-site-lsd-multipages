@@ -69,6 +69,21 @@ export default function PromiseSection() {
           "Interne ou externe (clients/projets)"
         ]
       }
+    },
+    {
+      icon: "♿",
+      text: "Accueil et aménagements pour les personnes en situation de handicap",
+      delay: "1.0s",
+      popup: {
+        title: "Personnes en situation de handicap — informations et contacts",
+        content: "Personnes en situation de handicap bienvenues. Aménagements possibles (matériel, temps, supports). Locaux ERP accessibles PMR. Contact handicap / référent : Laurent Serre – ls@laurentserre.com. Pour appui : RHF Occitanie (06 70 03 42 49 / rhf-occitanie@agefiph.asso.fr), équipe RHF Est (Hérault) Aline Dumont 06 17 73 58 42.",
+        highlights: [
+          "Aménagements possibles: matériel, temps, supports",
+          "Locaux ERP accessibles PMR",
+          "Référent handicap: ls@laurentserre.com",
+          "RHF Occitanie: 06 70 03 42 49 / rhf-occitanie@agefiph.asso.fr"
+        ]
+      }
     }
   ];
 
@@ -106,6 +121,11 @@ export default function PromiseSection() {
             </h2>
           </div>
         </AnimatedSection>
+
+        {/* Date de mise à jour */}
+        <div className="text-center mb-6">
+          <p className="text-xs md:text-sm font-body text-primary-secondary">Dernière mise à jour: 2 septembre 2025</p>
+        </div>
 
         {/* Liste des promesses */}
         <div className="space-y-6 mb-16">
