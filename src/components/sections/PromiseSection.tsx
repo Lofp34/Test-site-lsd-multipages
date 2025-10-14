@@ -54,6 +54,21 @@ export default function PromiseSection() {
         content: "Outil IA sur mesure incluant : génération de propositions commerciales ultra-affûtées, coaching post-entretien structuré, plans de suivi personnalisés, comptes-rendus CRM enrichis, et ajustements du plan de vente selon le terrain.",
         highlights: ["Propositions IA", "Coaching automatisé", "CRM optimisé", "Booster performance"]
       }
+    },
+    {
+      icon: "ℹ️",
+      text: "Les prérequis pour participer au Bootcamp Vente",
+      delay: "0.8s",
+      popup: {
+        title: "Prérequis d'accès au Bootcamp",
+        content: "Aucun prérequis particulier. Le programme est ouvert à tous les publics, à la seule condition que l'apprenant soit en situation de vente — interne (vente de projets, d'idées, d'initiatives) ou externe (relation clients/prospects).",
+        highlights: [
+          "Ouvert à tous les publics",
+          "Aucun niveau requis",
+          "Condition: être en situation de vente",
+          "Interne ou externe (clients/projets)"
+        ]
+      }
     }
   ];
 
