@@ -32,6 +32,15 @@ export default function ResourcesSection() {
       target: "Tous profils",
     },
     {
+      icon: <Target className="w-10 h-10 text-indigo-500" />,
+      title: "Scorecard Structuration + Mini-Playbook IA",
+      description: "Diagnostiquez vos 5 leviers en 12 minutes et obtenez 3 actions à fort impact (version interactive + PDF).",
+      link: "/ressources/scorecard",
+      status: "Découvrir la scorecard",
+      available: true,
+      target: "Directeurs • Commerciaux",
+    },
+    {
       icon: <FileText className="w-10 h-10 text-mint-green" />,
       title: "Le Grand Guide des Techniques de Vente & Négociation",
       description: "Panorama complet des méthodes de vente et de négociation, décryptées et applicables en PME.",

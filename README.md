@@ -117,7 +117,10 @@ SENDGRID_API_KEY=your_sendgrid_key
 NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 SUPABASE_SERVICE_ROLE_KEY=your_supabase_service_key
+NEXT_PUBLIC_SCORECARD_CTA_URL=https://calendly.com/votre-lien-audit
 ```
+
+`NEXT_PUBLIC_SCORECARD_CTA_URL` configure le bouton "Audit express" sur la page Scorecard. Laissez vide pour masquer le CTA (défaut). Remplacez `public/lead-magnet-scorecard.pdf` par votre PDF final généré depuis la page.
 
 ### Développement
 ```bash
