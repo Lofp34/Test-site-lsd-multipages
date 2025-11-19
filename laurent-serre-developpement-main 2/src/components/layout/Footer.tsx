@@ -1,6 +1,9 @@
+import { useState } from "react";
+
 import ManageCookiesButton from "@/components/ui/ManageCookiesButton";
 
 export default function Footer() {
+  const [isCertModalOpen, setCertModalOpen] = useState(false);
   const currentYear = new Date().getFullYear();
 
   return (
@@ -19,6 +22,16 @@ export default function Footer() {
                 Transformez votre force de vente en équipe engagée, structurée et performante. 
                 Avec 20 ans d&apos;expérience terrain et les meilleurs outils d&apos;aujourd&apos;hui.
               </p>
+              <div className="mt-6">
+                <button
+                  type="button"
+                  onClick={() => setCertModalOpen(true)}
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-mint-green text-blue-ink font-semibold font-body transition-all duration-300 hover:bg-white hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-blue-ink"
+                >
+                  <span>Visualiser notre certificat Qualiopi</span>
+                  <span aria-hidden="true">👁️</span>
+                </button>
+              </div>
             </div>
 
             {/* Réseaux sociaux */}
@@ -157,6 +170,56 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
+      {isCertModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-blue-ink/80 px-4">
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-label="Certificat Qualiopi"
+            className="w-full max-w-4xl overflow-hidden rounded-2xl bg-white shadow-2xl"
+          >
+            <div className="flex items-center justify-between bg-blue-ink px-6 py-4 text-white">
+              <p className="font-title text-lg font-semibold">Certificat Qualiopi</p>
+              <button
+                type="button"
+                onClick={() => setCertModalOpen(false)}
+                className="rounded-full bg-white/20 px-3 py-1 text-sm font-semibold transition hover:bg-white/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-blue-ink"
+              >
+                Fermer
+              </button>
+            </div>
+            <div className="h-[70vh] bg-slate-100">
+              <iframe
+                src="/certificat-qualiopi-laurent-serre.pdf#toolbar=0"
+                title="Certificat Qualiopi"
+                className="h-full w-full"
+              />
+            </div>
+            <div className="flex items-center justify-between gap-4 bg-slate-50 px-6 py-4">
+              <p className="text-sm text-blue-ink/70">
+                Document officiel attestant de la certification Qualiopi de Laurent Serre Développement.
+              </p>
+              <div className="flex gap-3">
+                <a
+                  href="/certificat-qualiopi-laurent-serre.pdf"
+                  download
+                  className="rounded-full bg-mint-green px-4 py-2 text-sm font-semibold text-blue-ink transition hover:bg-mint-green/80"
+                >
+                  Télécharger
+                </a>
+                <button
+                  type="button"
+                  onClick={() => setCertModalOpen(false)}
+                  className="rounded-full border border-blue-ink/20 px-4 py-2 text-sm font-semibold text-blue-ink transition hover:bg-blue-ink hover:text-white"
+                >
+                  Fermer
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </footer>
   );
-} 
+}
