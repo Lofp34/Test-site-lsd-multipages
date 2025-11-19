@@ -16,29 +16,38 @@ export default function Footer() {
               </h3>
               <div className="w-16 h-1 bg-mint-green rounded-full mb-4"></div>
               <p className="font-body text-white leading-relaxed">
-                Transformez votre force de vente en équipe engagée, structurée et performante. 
+                Transformez votre force de vente en équipe engagée, structurée et performante.
                 Avec 20 ans d&apos;expérience terrain et les meilleurs outils d&apos;aujourd&apos;hui.
               </p>
+              <a
+                href="/certificat-qualiopi-laurent-serre.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2 bg-mint-green text-blue-ink font-semibold px-5 py-3 rounded-xl shadow-lg hover:-translate-y-0.5 hover:shadow-xl transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-mint-green focus-visible:ring-offset-blue-ink"
+              >
+                <span>Visualiser notre certificat Qualiopi</span>
+                <span aria-hidden="true">↗</span>
+              </a>
             </div>
 
             {/* Réseaux sociaux */}
             <div>
               <h4 className="font-title font-semibold text-primary-bg mb-4">Suivez-moi</h4>
               <div className="flex gap-4">
-                <a 
-                  href="https://www.linkedin.com/in/laurentserre34/" 
+                <a
+                  href="https://www.linkedin.com/in/laurentserre34/"
                   className="w-12 h-12 bg-mint-green/20 hover:bg-mint-green rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                   aria-label="LinkedIn"
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span className="text-xl group-hover:text-white transition-colors">💼</span>
                 </a>
-                <a 
-                  href="https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/" 
+                <a
+                  href="https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
                   className="w-12 h-12 bg-orange-soft/20 hover:bg-orange-soft rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                   aria-label="YouTube"
-                  target="_blank" 
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   <span className="text-xl group-hover:text-white transition-colors">📺</span>
@@ -133,7 +142,7 @@ export default function Footer() {
                   </a>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-3">
                 <span className="text-lg mt-1">📞</span>
                 <div>
@@ -198,4 +207,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-} 
+}
