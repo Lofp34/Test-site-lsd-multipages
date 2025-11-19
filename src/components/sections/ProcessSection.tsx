@@ -32,7 +32,7 @@ const ProcessSection = () => {
     {
       icon: BarChart3,
       title: "Déploiement du Plan d'Action",
-      duration: "4h",
+      duration: "8h",
       description: "Présentation du plan d'action commercial finalisé et formation à l'agent IA pour garantir l'adoption des nouvelles pratiques par l'équipe.",
       highlights: ["Plan de vente", "Agent IA", "Plans d'action"]
     },
