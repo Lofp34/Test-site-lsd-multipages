@@ -19,6 +19,16 @@ export default function Footer() {
                 Transformez votre force de vente en équipe engagée, structurée et performante. 
                 Avec 20 ans d&apos;expérience terrain et les meilleurs outils d&apos;aujourd&apos;hui.
               </p>
+              <div className="mt-6">
+                <a
+                  href="/certificat-qualiopi-laurent-serre.pdf"
+                  download
+                  className="inline-flex items-center gap-2 px-5 py-3 rounded-full bg-mint-green text-blue-ink font-semibold font-body transition-all duration-300 hover:bg-white hover:-translate-y-0.5"
+                >
+                  <span>Visualiser notre certificat Qualiopi</span>
+                  <span aria-hidden="true">⬇️</span>
+                </a>
+              </div>
             </div>
 
             {/* Réseaux sociaux */}
