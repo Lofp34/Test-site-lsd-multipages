@@ -5,6 +5,11 @@ const nextConfig: NextConfig = {
   experimental: {
     inlineCss: true,
   },
+  // Expose required HubSpot environment variables at build time
+  env: {
+    HUBSPOT_API_TOKEN: process.env.HUBSPOT_API_TOKEN ?? '',
+    HUBSPOT_PORTAL_ID: process.env.HUBSPOT_PORTAL_ID ?? '',
+  },
   // Optimisations JavaScript - Éviter les polyfills inutiles
   compiler: {
     // Supprimer les console.log en production
@@ -76,6 +81,23 @@ const nextConfig: NextConfig = {
           {
             key: 'Referrer-Policy',
             value: 'strict-origin-when-cross-origin',
+          },
+        ],
+      },
+      {
+        source: '/api/hubspot/:path*',
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*',
+          },
+          {
+            key: 'Access-Control-Allow-Methods',
+            value: 'GET, POST, PUT, DELETE, OPTIONS',
+          },
+          {
+            key: 'Access-Control-Allow-Headers',
+            value: 'Content-Type, Authorization',
           },
         ],
       },
