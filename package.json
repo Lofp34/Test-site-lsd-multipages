@@ -70,7 +70,8 @@
     "optimize:chat": "tsx scripts/optimize-chat-deployment.ts",
     "test:chat-performance": "vitest run src/__tests__/performance -t chat",
     "lighthouse:chat": "lighthouse http://localhost:3000 --only-categories=performance,accessibility,seo --chrome-flags='--headless'",
-    "analyze": "ANALYZE=true npm run build"
+    "analyze": "ANALYZE=true npm run build",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@google/genai": "^1.12.0",
