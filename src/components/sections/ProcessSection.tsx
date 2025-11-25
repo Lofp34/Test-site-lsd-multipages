@@ -25,14 +25,14 @@ const ProcessSection = () => {
     {
       icon: Brain,
       title: "Structuration & Outillage (Sales Playbook)",
-      duration: "16h asynchrone",
+      duration: "16h",
       description: "Création de votre Sales Playbook sur-mesure et de l'agent IA d'auto-coaching pour outiller votre équipe avec une méthodologie de vente claire et des scripts performants.",
       highlights: ["Sales Playbook", "Agent GPT-IA", "Scripts optimisés"]
     },
     {
       icon: BarChart3,
       title: "Déploiement du Plan d'Action",
-      duration: "4h",
+      duration: "8h",
       description: "Présentation du plan d'action commercial finalisé et formation à l'agent IA pour garantir l'adoption des nouvelles pratiques par l'équipe.",
       highlights: ["Plan de vente", "Agent IA", "Plans d'action"]
     },
