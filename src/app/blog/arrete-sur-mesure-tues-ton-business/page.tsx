@@ -84,6 +84,8 @@ export default function ArreteSurMesureArticle() {
             construit une prison dorée dont tu es le seul gardien.
           </p>
 
+          <p className="mb-6 italic text-gray-500">Générique court (3 sec).</p>
+
           <div className="bg-orange-soft/10 border-l-4 border-orange-soft p-6 my-8">
             <p className="text-base">
               Si personne d’autre ne peut finaliser une offre, ton entreprise ne dépend pas
@@ -92,7 +94,7 @@ export default function ArreteSurMesureArticle() {
           </div>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
-            Le constat : ton génie ne se scale pas
+            Le constat (the what) : ton génie ne se scale pas
           </h2>
           <p className="mb-6">
             Toi, tu convertis un prospect sur deux. Tes vendeurs ? Un sur dix.
@@ -104,15 +106,24 @@ export default function ArreteSurMesureArticle() {
             à « monter une solution » sur-mesure. Et toutes les 15 minutes, il frappe
             à ta porte pour valider une virgule.
           </p>
+          <p className="mb-6">
+            Résultat : tu ne scales pas. Ton entreprise ne dépend pas d’un système.
+            Elle dépend de ton génie. Et le génie, ça ne se duplique pas.
+          </p>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
-            La logique : plus ton offre est flexible, plus le closing s’effondre
+            La logique (the why) : clarté &gt; flexibilité
           </h2>
           <p className="mb-6">
-            C’est neuroscientifique : l’heuristique de fluidité. Un client n’achète pas ce qui
-            est « mieux ». Il achète ce qui est clair. Si ton vendeur hésite, bégaye ou bricole
-            l’offre devant le prospect, le cerveau détecte un danger. Doute = pas de vente.
+            Pourquoi tes vendeurs échouent là où tu réussis ? C’est neuroscientifique :
+            l’heuristique de fluidité et la loi de Hick (choix = paralysie).
+            Un client n’achète pas ce qui est « mieux ». Il achète ce qui est clair.
+            Si ton vendeur hésite, bégaye ou bricole une offre devant le prospect,
+            le cerveau détecte un danger. Doute = pas de vente.
           </p>
+          <div className="bg-blue-ink/5 border border-blue-ink/20 p-4 rounded-xl mb-6">
+            <p className="text-base font-semibold text-blue-ink">Loi de Hick : choix = paralysie.</p>
+          </div>
           <div className="bg-blue-ink/10 border-l-4 border-blue-ink p-6 my-8">
             <p className="text-base">
               L’équation est cruelle mais simple : <strong>plus ton offre est flexible, plus le closing de ton équipe s’effondre.</strong>
@@ -120,7 +131,7 @@ export default function ArreteSurMesureArticle() {
           </div>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
-            Le plan : transformer ton expertise en process (3 étapes)
+            Le plan (the how) : transformer ton expertise en process (3 étapes)
           </h2>
 
           <h3 className="text-2xl font-title font-semibold text-blue-ink mt-8 mb-4">
@@ -157,7 +168,7 @@ export default function ArreteSurMesureArticle() {
           </p>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
-            La preuve : un cas concret
+            La preuve (levier)
           </h2>
           <p className="mb-6">
             Client dans le bâtiment. Devis 15 pages. 4 jours pour les sortir.
