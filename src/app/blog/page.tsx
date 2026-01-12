@@ -38,7 +38,7 @@ const blogPosts = [
   {
     slug: 'arrete-sur-mesure-tues-ton-business',
     title: 'Arrête le sur-mesure (tu tues ton business)',
-    description: 'Le sur-mesure paralyse vos ventes. Découvrez comment packager votre expertise pour scaler avec 3 étapes actionnables.',
+    description: 'Pourquoi le sur-mesure paralyse vos ventes et comment transformer votre expertise en process avec 3 étapes actionnables.',
     date: '2026-01-12',
     readTime: '10 min',
     category: 'Stratégie',

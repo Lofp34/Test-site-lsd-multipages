@@ -79,12 +79,28 @@ export default function ArreteSurMesureArticle() {
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
             Il est 22h. Tes bureaux sont vides. Tes commerciaux sont chez eux depuis 18h.
             Et toi ? Tu es encore là, seul, à réécrire un devis parce que « c’est compliqué »
-            et que « personne d’autre ne peut le faire ». Si tu te reconnais, le problème
-            n’est pas ton équipe. C’est que tu as construit une prison dorée… dont tu es le seul gardien.
+            et que « personne d’autre ne peut le faire ». Si tu te reconnais, arrête de chercher
+            des « meilleurs vendeurs ». Le problème, ce n’est pas ton équipe. C’est que tu as
+            construit une prison dorée dont tu es le seul gardien.
           </p>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
-            Le constat : ton génie ne se scale pas
+            Cold open : la claque
+          </h2>
+          <p className="mb-6">
+            Tu es encore là tard le soir parce que chaque devis repose sur ton cerveau.
+            Tu penses que ton niveau d’exigence protège la qualité. En réalité, il enferme
+            ton business dans ta tête. Et c’est précisément ce qui empêche la croissance.
+          </p>
+          <div className="bg-orange-soft/10 border-l-4 border-orange-soft p-6 my-8">
+            <p className="text-base">
+              Si personne d’autre ne peut finaliser une offre, ton entreprise ne dépend pas
+              d’un système. Elle dépend de ton génie. Et le génie… ça ne se duplique pas.
+            </p>
+          </div>
+
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
+            Le constat : le sur-mesure tue l’exécution
           </h2>
           <p className="mb-6">
             Toi, tu convertis un prospect sur deux. Tes vendeurs ? Un sur dix.
@@ -96,25 +112,18 @@ export default function ArreteSurMesureArticle() {
             à « monter une solution » sur-mesure. Et toutes les 15 minutes, il frappe
             à ta porte pour valider une virgule.
           </p>
-          <div className="bg-orange-soft/10 border-l-4 border-orange-soft p-6 my-8">
-            <p className="text-base">
-              Résultat : ton entreprise ne dépend pas d’un système. Elle dépend de ton génie.
-              Et le génie… ça ne se duplique pas.
-            </p>
-          </div>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
-            La logique : plus c’est flexible, plus ça s’effondre
+            La logique : clarté &gt; flexibilité
           </h2>
           <p className="mb-6">
-            C’est neuroscientifique : l’heuristique de fluidité.
-            Un client n’achète pas ce qui est « mieux ». Il achète ce qui est clair.
-            Si ton vendeur hésite, bégaye ou bricole l’offre devant le prospect,
-            le cerveau détecte un danger. Doute = pas de vente.
+            C’est neuroscientifique : l’heuristique de fluidité. Un client n’achète pas ce qui
+            est « mieux ». Il achète ce qui est clair. Si ton vendeur hésite, bégaye ou bricole
+            l’offre devant le prospect, le cerveau détecte un danger. Doute = pas de vente.
           </p>
           <div className="bg-blue-ink/10 border-l-4 border-blue-ink p-6 my-8">
             <p className="text-base">
-              Équation simple : <strong>plus ton offre est flexible, plus le closing de ton équipe s’effondre.</strong>
+              L’équation est cruelle mais simple : <strong>plus ton offre est flexible, plus le closing de ton équipe s’effondre.</strong>
             </p>
           </div>
 
@@ -126,9 +135,9 @@ export default function ArreteSurMesureArticle() {
             Étape 1 — Standardise l’invisible
           </h3>
           <p className="mb-6">
-            Prends tes 20 dernières ventes. Dans 80% des cas, c’est la même chose.
-            C’est ton cœur d’offre. Tout le sur-mesure « pour flatter l’ego » ?
-            Tu le supprimes. Ou tu le factures le triple.
+            Prends tes 20 dernières ventes. Dans 80 % des cas, c’est la même chose.
+            C’est ton cœur d’offre. Tout le sur-mesure ajouté pour flatter l’ego ?
+            Tu le supprimes. Ou tu le factures le triple. On rigidifie pour scaler.
           </p>
 
           <h3 className="text-2xl font-title font-semibold text-blue-ink mt-8 mb-4">
@@ -136,10 +145,10 @@ export default function ArreteSurMesureArticle() {
           </h3>
           <p className="mb-6">
             Arrête avec les devis à tiroirs. Tu ne vends pas des ingrédients, tu vends le plat.
-            Crée 3 packages fermes, orientés résultat :
+            Crée 3 packages fermes, orientés résultats :
           </p>
           <ul className="list-disc list-inside space-y-2 mb-6">
-            <li><strong>Essential</strong> : résoudre le problème.</li>
+            <li><strong>Essential</strong> : traiter le problème.</li>
             <li><strong>Performance</strong> : aller plus vite.</li>
             <li><strong>Total Care</strong> : ne plus jamais y penser.</li>
           </ul>
@@ -151,9 +160,8 @@ export default function ArreteSurMesureArticle() {
             Étape 3 — Vends l’histoire, pas la fiche technique
           </h3>
           <p className="mb-6">
-            Une offre packagée est une histoire simple.
-            Au lieu de dire « On a un moteur V12 », ton vendeur dit :
-            « Avec l’offre Performance, vous divisez votre temps de production par deux. »
+            Une offre packagée est une histoire simple. Au lieu de dire « On a un moteur V12 »,
+            ton vendeur dit : « Avec l’offre Performance, vous divisez votre temps de production par deux. »
           </p>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
@@ -169,8 +177,7 @@ export default function ArreteSurMesureArticle() {
             « Vous cherchez le prix le plus bas avec un risque modéré, ou une garantie totale sur 10 ans ? »
           </p>
           <p className="mb-6">
-            Réponse client : « Je veux la garantie. »
-            Réponse vendeur : « Alors c’est l’offre Sérénité. »
+            Le client répond : « Je veux la garantie. » Le vendeur dit : « Alors c’est l’offre Sérénité. »
             <strong>Boum. Vendu en 20 minutes. Sans passer par le patron.</strong>
           </p>
 
