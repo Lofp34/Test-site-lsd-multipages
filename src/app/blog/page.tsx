@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'arrete-sur-mesure-tues-ton-business',
+    title: 'Arrête le sur-mesure (tu tues ton business)',
+    description: 'Le sur-mesure paralyse vos ventes. Découvrez comment packager votre expertise pour scaler avec 3 étapes actionnables.',
+    date: '2026-01-12',
+    readTime: '10 min',
+    category: 'Stratégie',
+    image: '/equipe_bureau.jpg',
+    featured: true
+  },
+  {
     slug: 'closing-b2b-7-techniques',
     title: 'Closing B2B : 7 techniques qui marchent (+ scripts à copier)',
     description: 'Augmentez votre taux de closing en 90 jours sans forcer grâce au MAP, trial close, business case, POC cadré et 5 scripts copiables.',
