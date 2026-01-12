@@ -84,14 +84,6 @@ export default function ArreteSurMesureArticle() {
             construit une prison dorée dont tu es le seul gardien.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
-            Cold open : la claque
-          </h2>
-          <p className="mb-6">
-            Tu es encore là tard le soir parce que chaque devis repose sur ton cerveau.
-            Tu penses que ton niveau d’exigence protège la qualité. En réalité, il enferme
-            ton business dans ta tête. Et c’est précisément ce qui empêche la croissance.
-          </p>
           <div className="bg-orange-soft/10 border-l-4 border-orange-soft p-6 my-8">
             <p className="text-base">
               Si personne d’autre ne peut finaliser une offre, ton entreprise ne dépend pas
@@ -100,11 +92,11 @@ export default function ArreteSurMesureArticle() {
           </div>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
-            Le constat : le sur-mesure tue l’exécution
+            Le constat : ton génie ne se scale pas
           </h2>
           <p className="mb-6">
             Toi, tu convertis un prospect sur deux. Tes vendeurs ? Un sur dix.
-            Tu crois qu’ils manquent de talent ? Faux. Ils sont en surcharge cognitive.
+            Tu penses qu’ils manquent de talent ? Faux. Ils sont en surcharge cognitive.
           </p>
           <p className="mb-6">
             Quand tu vends, tu improvises : 15 ans de métier, c’est du jazz.
@@ -114,7 +106,7 @@ export default function ArreteSurMesureArticle() {
           </p>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
-            La logique : clarté &gt; flexibilité
+            La logique : plus ton offre est flexible, plus le closing s’effondre
           </h2>
           <p className="mb-6">
             C’est neuroscientifique : l’heuristique de fluidité. Un client n’achète pas ce qui
@@ -188,6 +180,8 @@ export default function ArreteSurMesureArticle() {
             <p className="mb-6">
               Simplifier ton offre, ce n’est pas une régression.
               C’est le seul moyen de redevenir un CEO — pas le commercial le plus fatigué de la boîte.
+              Si ton offre actuelle est une usine à gaz et que tu le sais, je fais des audits
+              de structure commerciale pour ceux qui veulent scaler.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -206,7 +200,7 @@ export default function ArreteSurMesureArticle() {
           </div>
 
           <p className="mb-6">
-            Arrête le sur-mesure. Commence à faire du volume.
+            Arrête de faire du sur-mesure. Commence à faire du volume.
           </p>
         </div>
       </article>
