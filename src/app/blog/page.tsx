@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'commission-breath-3-mecanismes-tuent-closing',
+    title: 'Commission Breath : les 3 mécanismes invisibles qui tuent votre closing',
+    description: 'Découvrez pourquoi vos leads ne sont pas mauvais et comment la biologie, l\'identité et le cadre sabotent vos ventes. Méthode du détachement radical.',
+    date: '2025-01-15',
+    readTime: '10 min',
+    category: 'Psychologie de vente',
+    image: '/images/closing_post.png',
+    featured: true
+  },
+  {
     slug: 'closing-b2b-7-techniques',
     title: 'Closing B2B : 7 techniques qui marchent (+ scripts à copier)',
     description: 'Augmentez votre taux de closing en 90 jours sans forcer grâce au MAP, trial close, business case, POC cadré et 5 scripts copiables.',
