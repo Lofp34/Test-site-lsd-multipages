@@ -457,7 +457,7 @@ export class PrivacyManager {
     const personalDataPatterns = [
       /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/, // Email
       /\b\d{2}[.\-\s]?\d{2}[.\-\s]?\d{2}[.\-\s]?\d{2}[.\-\s]?\d{2}\b/, // Téléphone français
-      /\b\d{1,2}[\/\-\.]\d{1,2}[\/\-\.]\d{2,4}\b/, // Date de naissance
+      /\b\d{1,2}[/\-.]\d{1,2}[/\-.]\d{2,4}\b/, // Date de naissance
     ];
 
     for (const conv of conversations) {
@@ -530,7 +530,7 @@ export class PrivacyManager {
     return text
       .replace(/\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/g, '[EMAIL_MASQUÉ]')
       .replace(/\b\d{2}[.\-\s]?\d{2}[.\-\s]?\d{2}[.\-\s]?\d{2}[.\-\s]?\d{2}\b/g, '[TÉLÉPHONE_MASQUÉ]')
-      .replace(/\b\d{1,2}[\/\-\.]\d{1,2}[\/\-\.]\d{2,4}\b/g, '[DATE_MASQUÉE]');
+      .replace(/\b\d{1,2}[/\-.]\d{1,2}[/\-.]\d{2,4}\b/g, '[DATE_MASQUÉE]');
   }
 
   /**

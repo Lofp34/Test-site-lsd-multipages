@@ -330,7 +330,7 @@ export class ProductionMonitor {
 
     // Mettre à jour les métriques d'erreur
     const currentUrl = typeof window !== 'undefined' ? window.location.pathname : '';
-    const techniqueMatch = currentUrl.match(/\/techniques-de-negociation\/([^\/]+)/);
+    const techniqueMatch = currentUrl.match(/\/techniques-de-negociation\/([^/]+)/);
     
     if (techniqueMatch) {
       const techniqueId = techniqueMatch[1];
@@ -356,7 +356,7 @@ export class ProductionMonitor {
 
     // Mettre à jour les métriques de performance
     const currentUrl = typeof window !== 'undefined' ? window.location.pathname : '';
-    const techniqueMatch = currentUrl.match(/\/techniques-de-negociation\/([^\/]+)/);
+    const techniqueMatch = currentUrl.match(/\/techniques-de-negociation\/([^/]+)/);
     
     if (techniqueMatch && metric.name === 'LCP') {
       const techniqueId = techniqueMatch[1];

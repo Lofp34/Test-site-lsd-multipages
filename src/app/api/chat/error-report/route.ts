@@ -151,7 +151,7 @@ function sanitizeString(str: string, maxLength: number = 255): string {
   
   // Supprimer les caractères dangereux
   const sanitized = str
-    .replace(/[<>\"'&]/g, '') // Supprimer les caractères HTML/JS dangereux
+    .replace(/[<>"'&]/g, '') // Supprimer les caractères HTML/JS dangereux
     .replace(/[\r\n\t]/g, ' ') // Remplacer les retours à la ligne par des espaces
     .trim();
   

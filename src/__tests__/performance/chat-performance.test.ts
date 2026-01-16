@@ -43,16 +43,16 @@ describe('Chat Performance Tests', () => {
       }
     };
 
-    // @ts-ignore
+    // @ts-expect-error - test environment setup
     global.window = mockWindow;
-    // @ts-ignore
+    // @ts-expect-error - test environment setup
     global.document = mockDocument;
   });
 
   afterAll(() => {
-    // @ts-ignore
+    // @ts-expect-error - test environment setup
     delete global.window;
-    // @ts-ignore
+    // @ts-expect-error - test environment setup
     delete global.document;
   });
 
