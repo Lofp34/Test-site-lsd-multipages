@@ -72,19 +72,15 @@ describe('Chat Conversation Flow Integration', () => {
               read: vi.fn()
                 .mockResolvedValueOnce({
                   done: false,
-                  value: new TextEncoder().encode('data: {"text": "Bonjour ! "}\n')
+                  value: new TextEncoder().encode('data: {"text": "Je souhaite augmenter la performance de mon équipe commerciale mais "}\n')
                 })
                 .mockResolvedValueOnce({
                   done: false,
-                  value: new TextEncoder().encode('data: {"text": "Je suis Laurent Serre, "}\n')
+                  value: new TextEncoder().encode('data: {"text": "j’ai du mal à prioriser, "}\n')
                 })
                 .mockResolvedValueOnce({
                   done: false,
-                  value: new TextEncoder().encode('data: {"text": "expert en développement commercial. "}\n')
-                })
-                .mockResolvedValueOnce({
-                  done: false,
-                  value: new TextEncoder().encode('data: {"text": "Comment puis-je vous aider ?"}\n')
+                  value: new TextEncoder().encode('data: {"text": "que me conseilles-tu ?"}\n')
                 })
                 .mockResolvedValueOnce({
                   done: true,
@@ -130,12 +126,20 @@ describe('Chat Conversation Flow Integration', () => {
       
       // 4. Vérifier que la réponse streaming apparaît
       await waitFor(() => {
-        expect(screen.getByText(/Bonjour ! Je suis Laurent Serre/)).toBeInTheDocument();
+        expect(
+          screen.getByText(
+            /Je souhaite augmenter la performance de mon équipe commerciale mais j’ai du mal à prioriser, que me conseilles-tu/
+          )
+        ).toBeInTheDocument();
       }, { timeout: 5000 });
       
       // 5. Vérifier que le streaming est terminé
       await waitFor(() => {
-        expect(screen.getByText(/Comment puis-je vous aider/)).toBeInTheDocument();
+        expect(
+          screen.getByText(
+            /Je souhaite augmenter la performance de mon équipe commerciale mais j’ai du mal à prioriser, que me conseilles-tu/
+          )
+        ).toBeInTheDocument();
       });
       
       // 6. Vérifier les appels API
