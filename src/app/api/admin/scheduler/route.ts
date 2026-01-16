@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
     const { action, ...params } = body;
     
     switch (action) {
-      case 'schedule_audit':
+      case 'schedule_audit': {
         const auditJobId = await scheduler.scheduleFullAudit(
           params.scheduledAt ? new Date(params.scheduledAt) : undefined,
           params.priority || 5
@@ -40,23 +40,25 @@ export async function POST(request: NextRequest) {
           jobId: auditJobId,
           message: 'Audit planifié avec succès'
         });
-        
-      case 'schedule_quick_check':
+      }
+
+      case 'schedule_quick_check': {
         const quickJobId = await scheduler.scheduleQuickCheck(params.priority || 3);
         return NextResponse.json({
           success: true,
           jobId: quickJobId,
           message: 'Vérification rapide planifiée'
         });
-        
+      }
+
       case 'process_queue':
         await scheduler.processQueue();
         return NextResponse.json({
           success: true,
           message: 'File d\'attente traitée'
         });
-        
-      case 'cancel_job':
+
+      case 'cancel_job': {
         if (!params.jobId) {
           return NextResponse.json(
             { error: 'Job ID required' },
@@ -68,7 +70,8 @@ export async function POST(request: NextRequest) {
           success: cancelled,
           message: cancelled ? 'Job annulé' : 'Job non trouvé'
         });
-        
+      }
+
       case 'update_config':
         if (params.config) {
           scheduler.updateConfig(params.config);

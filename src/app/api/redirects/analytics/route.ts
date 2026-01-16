@@ -13,15 +13,16 @@ export async function GET(request: NextRequest) {
     const type = searchParams.get('type') || 'stats';
 
     switch (type) {
-      case 'stats':
+      case 'stats': {
         const stats = redirectAnalytics.getRedirectStats();
         return NextResponse.json({
           success: true,
           data: stats,
           timestamp: new Date().toISOString()
         });
+      }
 
-      case 'logs':
+      case 'logs': {
         const logs = redirectAnalytics.getRecentLogs(limit);
         return NextResponse.json({
           success: true,
@@ -29,14 +30,16 @@ export async function GET(request: NextRequest) {
           count: logs.length,
           timestamp: new Date().toISOString()
         });
+      }
 
-      case 'top':
+      case 'top': {
         const topUrls = redirectAnalytics.getMostRedirectedUrls(limit);
         return NextResponse.json({
           success: true,
           data: topUrls,
           timestamp: new Date().toISOString()
         });
+      }
 
       default:
         return NextResponse.json({

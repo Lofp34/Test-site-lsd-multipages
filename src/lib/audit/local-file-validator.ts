@@ -36,11 +36,12 @@ export class LocalFileValidator {
           }
           break;
 
-        case 'anchor':
+        case 'anchor': {
           const anchorResult = await this.validateAnchorLink(link.url);
           isValid = anchorResult.isValid;
           error = anchorResult.error;
           break;
+        }
 
         default:
           error = `Unknown link type: ${link.linkType}`;

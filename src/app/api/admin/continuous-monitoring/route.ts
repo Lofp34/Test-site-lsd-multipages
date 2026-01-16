@@ -32,7 +32,7 @@ export async function GET(request: NextRequest) {
           }
         });
 
-      case 'metrics':
+      case 'metrics': {
         const hours = parseInt(searchParams.get('hours') || '24');
         return NextResponse.json({
           success: true,
@@ -41,19 +41,20 @@ export async function GET(request: NextRequest) {
             history: continuousMonitoring.getMetricsHistory(hours)
           }
         });
+      }
 
-      case 'health':
+      case 'health': {
         const currentMetrics = continuousMonitoring.getCurrentMetrics();
         const status = continuousMonitoring.getStatus();
-        
+
         return NextResponse.json({
           success: true,
           data: {
             overall: currentMetrics ? (
-              currentMetrics.systemHealth.vercelStatus === 'critical' || 
+              currentMetrics.systemHealth.vercelStatus === 'critical' ||
               currentMetrics.systemHealth.databaseStatus === 'unhealthy'
                 ? 'critical'
-                : currentMetrics.systemHealth.vercelStatus === 'warning' || 
+                : currentMetrics.systemHealth.vercelStatus === 'warning' ||
                   currentMetrics.systemHealth.databaseStatus === 'slow'
                   ? 'warning'
                   : 'healthy'
@@ -68,6 +69,7 @@ export async function GET(request: NextRequest) {
             criticalAlerts: currentMetrics?.alerts.criticalAlerts || 0
           }
         });
+      }
 
       default:
         return NextResponse.json({
@@ -114,7 +116,7 @@ export async function POST(request: NextRequest) {
           }
         });
 
-      case 'force-check':
+      case 'force-check': {
         const metrics = await continuousMonitoring.forceMonitoringCycle();
         return NextResponse.json({
           success: true,
@@ -124,8 +126,9 @@ export async function POST(request: NextRequest) {
             status: continuousMonitoring.getStatus()
           }
         });
+      }
 
-      case 'test-alert':
+      case 'test-alert': {
         const { ruleId } = params;
         if (!ruleId) {
           return NextResponse.json({
@@ -146,10 +149,10 @@ export async function POST(request: NextRequest) {
         };
 
         continuousMonitoring.addAlertRule(testRule);
-        
+
         // Forcer un cycle pour déclencher l'alerte
         await continuousMonitoring.forceMonitoringCycle();
-        
+
         // Supprimer la règle de test
         continuousMonitoring.removeAlertRule(testRule.id);
 
@@ -160,6 +163,7 @@ export async function POST(request: NextRequest) {
             testRuleId: testRule.id
           }
         });
+      }
 
       default:
         return NextResponse.json({
@@ -183,7 +187,7 @@ export async function PUT(request: NextRequest) {
     const { type, ...config } = body;
 
     switch (type) {
-      case 'alert-rule':
+      case 'alert-rule': {
         const { ruleId, updates } = config;
         if (!ruleId || !updates) {
           return NextResponse.json({
@@ -208,8 +212,9 @@ export async function PUT(request: NextRequest) {
             updates
           }
         });
+      }
 
-      case 'thresholds':
+      case 'thresholds': {
         const { usageThresholds } = config;
         if (!usageThresholds) {
           return NextResponse.json({
@@ -244,6 +249,7 @@ export async function PUT(request: NextRequest) {
             usageThresholds
           }
         });
+      }
 
       default:
         return NextResponse.json({
