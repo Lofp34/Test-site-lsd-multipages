@@ -242,7 +242,7 @@ class ChatCacheService {
     const commonQuestions = [
       {
         input: "bonjour",
-        response: "Bonjour ! Je suis Laurent Serre, expert en développement commercial PME. Comment puis-je vous aider aujourd'hui ?",
+        response: "Je souhaite augmenter la performance de mon équipe commerciale mais j’ai du mal à prioriser, que me conseilles-tu ?",
         metadata: { tokens: 25, confidence: 0.9, source: 'template' as const }
       },
       {

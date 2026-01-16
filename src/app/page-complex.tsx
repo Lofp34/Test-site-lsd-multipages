@@ -147,7 +147,7 @@ export default function Home() {
         <ChatWidgetWrapper 
           position="bottom-right"
           theme="auto"
-          initialMessage="Bonjour ! Je suis Laurent Serre, expert en développement commercial PME. Comment puis-je vous aider ?"
+          initialMessage="Je souhaite augmenter la performance de mon équipe commerciale mais j’ai du mal à prioriser, que me conseilles-tu ?"
           expertiseContext="Laurent Serre - Expert en développement commercial PME, formation et coaching terrain à Montpellier"
         />
       </ErrorBoundary>
