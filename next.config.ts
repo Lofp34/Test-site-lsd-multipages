@@ -1,17 +1,22 @@
 import type { NextConfig } from "next";
-import { allRedirects } from "./src/config/redirects";
+import { linkRedirects } from "./src/config/redirects";
 
 const nextConfig: NextConfig = {
   eslint: {
-    // Ignore ESLint errors during build to allow deployment
+    // Les erreurs ESLint pré-existantes bloquent le build - on les ignore temporairement
     ignoreDuringBuilds: true,
   },
   typescript: {
-    // Ignore TypeScript errors during build
+    // Idem pour TypeScript si nécessaire
     ignoreBuildErrors: true,
   },
   experimental: {
     inlineCss: true,
+  },
+  // Expose required HubSpot environment variables at build time
+  env: {
+    HUBSPOT_API_TOKEN: process.env.HUBSPOT_API_TOKEN ?? '',
+    HUBSPOT_PORTAL_ID: process.env.HUBSPOT_PORTAL_ID ?? '',
   },
   // Optimisations JavaScript - Éviter les polyfills inutiles
   compiler: {
@@ -88,6 +93,23 @@ const nextConfig: NextConfig = {
         ],
       },
       {
+        source: '/api/hubspot/:path*',
+        headers: [
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*',
+          },
+          {
+            key: 'Access-Control-Allow-Methods',
+            value: 'GET, POST, PUT, DELETE, OPTIONS',
+          },
+          {
+            key: 'Access-Control-Allow-Headers',
+            value: 'Content-Type, Authorization',
+          },
+        ],
+      },
+      {
         source: '/images/(.*)',
         headers: [
           {
@@ -126,7 +148,7 @@ const nextConfig: NextConfig = {
   },
   // Redirects configuration for broken links
   async redirects() {
-    return allRedirects.map(redirect => ({
+    return linkRedirects.map(redirect => ({
       source: redirect.source,
       destination: redirect.destination,
       permanent: redirect.permanent,
