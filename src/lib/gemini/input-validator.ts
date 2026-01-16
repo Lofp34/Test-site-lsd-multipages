@@ -67,14 +67,14 @@ export class InputValidator {
 
     this.xssPatterns = [
       /<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi,
-      /<img[^>]+src[\\s]*=[\\s]*["\']javascript:/gi,
+      /<img[^>]+src[\s]*=[\s]*["']javascript:/gi,
       /<[^>]*\bon\w+\s*=/gi,
       /expression\s*\(/gi,
       /url\s*\(\s*javascript:/gi,
     ];
 
     this.commandInjectionPatterns = [
-      /(\||&|;|\$\(|\`)/g,
+      /(\||&|;|\$\(|`)/g,
       /(rm\s|del\s|format\s|shutdown\s)/gi,
       /(wget\s|curl\s|nc\s|netcat\s)/gi,
       /(\.\.|\/etc\/|\/proc\/|\/sys\/)/gi,

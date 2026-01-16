@@ -83,7 +83,7 @@ export class AutoCorrector {
       // Double slashes
       { from: '//', to: '/' },
       // Missing trailing slash for directories
-      { from: /\/([^\/\.\?]+)$/, to: '/$1/' },
+      { from: /\/([^/.?]+)$/, to: '/$1/' },
     ];
 
     for (const typo of commonTypos) {

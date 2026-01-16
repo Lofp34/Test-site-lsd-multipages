@@ -157,7 +157,7 @@ class FinalPerformanceValidator {
           const content = readFileSync(file, 'utf8');
           
           // Compter les classes dark:
-          const darkMatches = content.match(/dark:[a-zA-Z0-9\-\/\[\]]+/g);
+          const darkMatches = content.match(/dark:[a-zA-Z0-9\-/[\]]+/g);
           if (darkMatches) {
             darkClassesFound += darkMatches.length;
           }

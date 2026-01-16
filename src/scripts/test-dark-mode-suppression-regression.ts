@@ -227,7 +227,7 @@ class CSSOptimizationTester {
       const content = fs.readFileSync(fullPath, 'utf8');
       
       // Rechercher les classes dark:
-      const darkClasses = content.match(/dark:[a-zA-Z0-9\-\/\[\]]+/g);
+      const darkClasses = content.match(/dark:[a-zA-Z0-9\-/[\]]+/g);
       if (darkClasses) {
         allPassed = false;
         allErrors.push(`${componentPath}: ${darkClasses.length} classes dark: trouvées`);
