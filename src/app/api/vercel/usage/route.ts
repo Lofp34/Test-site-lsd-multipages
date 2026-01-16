@@ -7,7 +7,7 @@ import { createVercelMonitor, checkVercelMonitoringHealth } from '@/lib/vercel';
  * POST /api/vercel/usage - Trigger usage check and alerts
  */
 
-export async function GET(request: NextRequest) {
+export async function GET(_request: NextRequest) {
   try {
     // Check if monitoring is enabled
     if (process.env.VERCEL_MONITORING_ENABLED !== 'true') {

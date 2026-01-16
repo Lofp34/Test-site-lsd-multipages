@@ -32,7 +32,7 @@ interface CheckResult {
   lastCheck: string;
 }
 
-export async function GET(request: NextRequest): Promise<NextResponse> {
+export async function GET(_request: NextRequest): Promise<NextResponse> {
   const startTime = Date.now();
   
   try {
@@ -290,7 +290,7 @@ async function checkMonitoring(): Promise<CheckResult> {
 }
 
 // Support pour les autres méthodes HTTP
-export async function HEAD(request: NextRequest): Promise<NextResponse> {
+export async function HEAD(_request: NextRequest): Promise<NextResponse> {
   // Health check léger pour les load balancers
   return new NextResponse(null, { 
     status: 200,
@@ -300,7 +300,7 @@ export async function HEAD(request: NextRequest): Promise<NextResponse> {
   });
 }
 
-export async function OPTIONS(request: NextRequest): Promise<NextResponse> {
+export async function OPTIONS(_request: NextRequest): Promise<NextResponse> {
   return new NextResponse(null, {
     status: 200,
     headers: {

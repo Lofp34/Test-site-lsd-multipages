@@ -8,7 +8,7 @@ export class SendGridEmailService {
     this.config = config;
   }
 
-  async sendResourceRequest(request: ResourceRequestEmail): Promise<boolean> {
+  async sendResourceRequest(_request: ResourceRequestEmail): Promise<boolean> {
     // TODO: Implement in task 6.2
     throw new Error('Not implemented yet - will be implemented in task 6.2');
   }

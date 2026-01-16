@@ -8,32 +8,32 @@ export class SendGridEmailService {
     this.config = config;
   }
 
-  async sendResourceRequest(request: ResourceRequestEmail): Promise<boolean> {
+  async sendResourceRequest(_request: ResourceRequestEmail): Promise<boolean> {
     // Implementation will be added in task 6.2
     throw new Error('Not implemented yet');
   }
 
-  async sendAuditAlert(brokenLinks: BrokenLinkDetail[]): Promise<boolean> {
+  async sendAuditAlert(_brokenLinks: BrokenLinkDetail[]): Promise<boolean> {
     // Implementation will be added in task 9.2
     throw new Error('Not implemented yet');
   }
 
-  async sendAutoResponse(userEmail: string, resourceUrl: string): Promise<boolean> {
+  async sendAutoResponse(_userEmail: string, _resourceUrl: string): Promise<boolean> {
     // Implementation will be added in task 6.2
     throw new Error('Not implemented yet');
   }
 
-  async sendWeeklyReport(report: AuditReport): Promise<boolean> {
+  async sendWeeklyReport(_report: AuditReport): Promise<boolean> {
     // Implementation will be added in task 9.2
     throw new Error('Not implemented yet');
   }
 
-  private generateResourceRequestTemplate(request: ResourceRequestEmail): EmailTemplate {
+  private generateResourceRequestTemplate(_request: ResourceRequestEmail): EmailTemplate {
     // Implementation will be added in task 6.1
     throw new Error('Not implemented yet');
   }
 
-  private generateAlertTemplate(brokenLinks: BrokenLinkDetail[]): EmailTemplate {
+  private generateAlertTemplate(_brokenLinks: BrokenLinkDetail[]): EmailTemplate {
     // Implementation will be added in task 6.1
     throw new Error('Not implemented yet');
   }

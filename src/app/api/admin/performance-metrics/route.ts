@@ -5,7 +5,7 @@ import { getPerformanceAlerts, getAllPerformanceStats } from '@/lib/vercel/perfo
  * GET /api/admin/performance-metrics
  * Returns performance metrics and statistics for all monitored functions
  */
-async function GET(request: NextRequest): Promise<NextResponse> {
+async function GET(_request: NextRequest): Promise<NextResponse> {
   try {
     const performanceAlerts = getPerformanceAlerts();
     
