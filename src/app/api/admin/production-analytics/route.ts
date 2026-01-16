@@ -15,13 +15,15 @@ export async function GET(request: NextRequest) {
     const analytics = new ProductionAnalytics(supabase);
 
     switch (action) {
-      case 'report':
+      case 'report': {
         const report = await analytics.generateAnalysisReport();
         return NextResponse.json(report);
+      }
 
-      case 'metrics':
+      case 'metrics': {
         const metrics = await analytics.collectWeeklyMetrics();
         return NextResponse.json(metrics);
+      }
 
       default:
         return NextResponse.json(

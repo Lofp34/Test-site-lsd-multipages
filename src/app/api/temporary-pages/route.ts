@@ -18,14 +18,16 @@ export async function GET(request: NextRequest) {
     const action = searchParams.get('action');
     
     switch (action) {
-      case 'stats':
+      case 'stats': {
         const stats = await temporaryPageGenerator.getStats();
         return NextResponse.json({ success: true, stats });
-        
+      }
+
       case 'list':
-      default:
+      default: {
         const pages = await temporaryPageGenerator.getAllTemporaryPages();
         return NextResponse.json({ success: true, pages });
+      }
     }
     
   } catch (error) {
@@ -46,7 +48,7 @@ export async function POST(request: NextRequest) {
     const { action, ...data } = body;
     
     switch (action) {
-      case 'create':
+      case 'create': {
         // Créer une page temporaire manuelle
         const config: TemporaryPageConfig = {
           resourceUrl: data.resourceUrl,
@@ -60,7 +62,7 @@ export async function POST(request: NextRequest) {
           progress: data.progress,
           alternatives: data.alternatives
         };
-        
+
         // Validation
         if (!config.resourceUrl) {
           return NextResponse.json(
@@ -68,41 +70,44 @@ export async function POST(request: NextRequest) {
             { status: 400 }
           );
         }
-        
+
         const temporaryUrl = await temporaryPageGenerator.createTemporaryPage(config);
-        
+
         return NextResponse.json({
           success: true,
           message: 'Page temporaire créée avec succès',
           temporaryUrl,
           config
         });
-        
-      case 'auto-detect':
+      }
+
+      case 'auto-detect': {
         // Lancer la détection automatique
         const detectionConfig = {
           ...defaultDetectionConfig,
           ...data.config
         };
-        
+
         const detectionResult = await autoDetector.detectAndCreateTemporaryPages(detectionConfig);
-        
+
         return NextResponse.json({
           success: true,
           message: 'Détection automatique terminée',
           result: detectionResult
         });
-        
-      case 'cleanup':
+      }
+
+      case 'cleanup': {
         // Nettoyer les pages obsolètes
         const cleanupResult = await autoDetector.cleanupObsoletePages();
-        
+
         return NextResponse.json({
           success: true,
           message: 'Nettoyage terminé',
           result: cleanupResult
         });
-        
+      }
+
       default:
         return NextResponse.json(
           { success: false, error: 'Action non reconnue' },

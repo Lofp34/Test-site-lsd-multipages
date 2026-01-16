@@ -14,7 +14,7 @@ function main() {
     const command = args[0];
     
     switch (command) {
-      case '--page':
+      case '--page': {
         // Test d'une page spécifique
         const url = args[1];
         if (!url) {
@@ -24,6 +24,7 @@ function main() {
         }
         testSpecificPage(url);
         break;
+      }
         
       case '--global':
         // Tests globaux uniquement

@@ -38,11 +38,12 @@ export async function GET(request: NextRequest) {
           errors: productionMonitoring.getRecentErrors(limit)
         });
       
-      case 'metrics':
+      case 'metrics': {
         const metric = searchParams.get('metric');
         return NextResponse.json({
           metrics: productionMonitoring.getRecentMetrics(metric, limit)
         });
+      }
       
       case 'rate-limits':
         return NextResponse.json(await getRateLimitStats());
@@ -79,7 +80,7 @@ export async function POST(request: NextRequest) {
     const { action, target, data } = body;
 
     switch (action) {
-      case 'reset-rate-limit':
+      case 'reset-rate-limit': {
         if (target) {
           const globalLimiter = GlobalRateLimiter.getInstance();
           const limiter = globalLimiter.getLimiter('chat-gemini', {
@@ -87,10 +88,11 @@ export async function POST(request: NextRequest) {
             maxRequests: 20
           });
           limiter.resetLimits(target);
-          
+
           return NextResponse.json({ success: true, message: 'Rate limit réinitialisé' });
         }
         break;
+      }
       
       case 'clear-errors':
         // En production, implémenter la logique de nettoyage des erreurs
