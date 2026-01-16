@@ -98,7 +98,7 @@ export default function StructurerOrganiserPage() {
             <div className="border-l-4 border-rose-500 pl-6 space-y-8">
               <div>
                 <h4 className="font-title font-bold text-xl text-blue-ink mb-2">Définir les Étapes Claires du Pipeline</h4>
-                <p className="text-gray-anthracite">Exemple : "Nouveau Lead" -> "Contact Établi" -> "RDV1 Réalisé" -> "Proposition Envoyée" -> "Négociation" -> "Gagné / Perdu". Chaque étape doit avoir des critères de sortie clairs et non-ambigus.</p>
+                <p className="text-gray-anthracite">Exemple : &quot;Nouveau Lead&quot; → &quot;Contact Établi&quot; → &quot;RDV1 Réalisé&quot; → &quot;Proposition Envoyée&quot; → &quot;Négociation&quot; → &quot;Gagné / Perdu&quot;. Chaque étape doit avoir des critères de sortie clairs et non-ambigus.</p>
               </div>
               <div>
                 <h4 className="font-title font-bold text-xl text-blue-ink mb-2">Automatiser les Tâches à Faible Valeur</h4>
