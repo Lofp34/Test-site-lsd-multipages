@@ -23,12 +23,12 @@ export default function StrategicSellingPage() {
         <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
           <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
-            Strategic Selling propose un processus structuré pour gérer des ventes complexes impliquant de multiples décideurs. L’outil clé est la “Blue Sheet” : cartographier tous les acteurs du compte, leurs critères de succès et le plan d’action pour chacun. La méthode introduit aussi le concept de win-win partagé et la notion de “vendre avec le client”.
+            Strategic Selling propose un processus structuré pour gérer des ventes complexes impliquant de multiples décideurs. L’outil clé est la “Blue Sheet” : cartographier tous les acteurs du compte, leurs critères de succès et le plan d’action pour chacun. La méthode introduit aussi le concept de win-win partagé et la notion de “vendre avec le client”.
           </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Concepts clés de Strategic Selling</h3>
           <ul className="list-disc ml-6 mb-6">
-            <li>La Blue Sheet : cartographie des acteurs et plan d’action</li>
+            <li>La Blue Sheet : cartographie des acteurs et plan d’action</li>
             <li>Les 4 types de personnes dans un compte (coach, utilisateur, décideur, gatekeeper)</li>
             <li>Win-win partagé, vendre avec le client</li>
             <li>Stratégie par compte, gestion des ventes complexes</li>
@@ -42,7 +42,7 @@ export default function StrategicSellingPage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Vendre avec le client, pas au client. »
+            « Vendre avec le client, pas au client. »
           </blockquote>
         </article>
 

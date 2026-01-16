@@ -23,7 +23,7 @@ export default function CommentSeFaireDesAmisPage() {
         <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
           <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
-            Carnegie distille des conseils concrets pour améliorer ses relations et influencer positivement autrui : manifester un intérêt sincère pour les autres, se souvenir de leur prénom, éviter de critiquer frontalement, valoriser honnêtement les qualités de son interlocuteur… Ce livre, best-seller mondial depuis près de 90 ans, montre que l’influence commence par l’empathie et la bienveillance.
+            Carnegie distille des conseils concrets pour améliorer ses relations et influencer positivement autrui : manifester un intérêt sincère pour les autres, se souvenir de leur prénom, éviter de critiquer frontalement, valoriser honnêtement les qualités de son interlocuteur… Ce livre, best-seller mondial depuis près de 90 ans, montre que l’influence commence par l’empathie et la bienveillance.
           </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Principes clés</h3>
@@ -43,7 +43,7 @@ export default function CommentSeFaireDesAmisPage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Parlez d’abord des intérêts de l’autre, et il s’intéressera à vous. »
+            « Parlez d’abord des intérêts de l’autre, et il s’intéressera à vous. »
           </blockquote>
         </article>
 

@@ -10,7 +10,7 @@ export default function NeverSplitTheDifferencePage() {
   return (
     <>
       <Head>
-        <title>{book.title} : résumé complet | Meilleurs livres | LSD</title>
+        <title>{book.title} : résumé complet | Meilleurs livres | LSD</title>
         <meta name="description" content={`Résumé détaillé, points clés et avis sur ${book.title} de ${book.author}. Les meilleures techniques de négociation par l’ancien du FBI.`} />
       </Head>
       <main className="bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16">
@@ -49,12 +49,12 @@ export default function NeverSplitTheDifferencePage() {
             <li>Pratiquer l’écoute active pour comprendre les besoins cachés</li>
             <li>Utiliser le mirroring pour instaurer la confiance</li>
             <li>Formuler les objections de l’autre avant qu’il ne le fasse</li>
-            <li>Ne pas avoir peur du « non » : c’est le début de la vraie négociation</li>
+            <li>Ne pas avoir peur du « non » : c’est le début de la vraie négociation</li>
             <li>Rechercher la confiance et la créativité plutôt que le compromis</li>
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « L’empathie tactique, c’est comprendre l’autre mieux qu’il ne se comprend lui-même. »
+            « L’empathie tactique, c’est comprendre l’autre mieux qu’il ne se comprend lui-même. »
           </blockquote>
         </article>
 

@@ -10,7 +10,7 @@ export default function GettingToYesPage() {
   return (
     <>
       <Head>
-        <title>{book.title} : résumé complet | Meilleurs livres | LSD</title>
+        <title>{book.title} : résumé complet | Meilleurs livres | LSD</title>
         <meta name="description" content={`Résumé détaillé, points clés et avis sur ${book.title} de ${book.author}. Le classique de la négociation raisonnée de Harvard.`} />
       </Head>
       <main className="bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16">
@@ -32,7 +32,7 @@ export default function GettingToYesPage() {
         <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
           <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
-            Getting to Yes expose une méthode en quatre principes pour trouver des accords gagnant-gagnant : raisonner en intérêts (et non en positions), générer des options mutuellement avantageuses, s’appuyer sur des critères objectifs, dissocier les personnes du problème. Les auteurs introduisent le concept de BATNA (meilleure solution de repli) pour négocier avec sérénité et obtenir des résultats durables.
+            Getting to Yes expose une méthode en quatre principes pour trouver des accords gagnant-gagnant : raisonner en intérêts (et non en positions), générer des options mutuellement avantageuses, s’appuyer sur des critères objectifs, dissocier les personnes du problème. Les auteurs introduisent le concept de BATNA (meilleure solution de repli) pour négocier avec sérénité et obtenir des résultats durables.
           </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Chapitres clés</h3>
@@ -54,7 +54,7 @@ export default function GettingToYesPage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « On n’obtient pas ce qu’on mérite, mais ce qu’on négocie intelligemment. »
+            « On n’obtient pas ce qu’on mérite, mais ce qu’on négocie intelligemment. »
           </blockquote>
         </article>
 

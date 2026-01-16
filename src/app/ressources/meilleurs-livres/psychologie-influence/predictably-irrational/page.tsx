@@ -23,7 +23,7 @@ export default function PredictablyIrrationalPage() {
         <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
           <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
-            Ariely démontre à travers des expériences à quel point nos décisions sont souvent irrationnelles… de manière prévisible ! Il décortique l’effet de leurre, le pouvoir de la gratuité, le biais d’ancrage, et explique pourquoi nous accordons trop de valeur à nos possessions. Une mine d’or pour comprendre les motivations cachées des consommateurs.
+            Ariely démontre à travers des expériences à quel point nos décisions sont souvent irrationnelles… de manière prévisible ! Il décortique l’effet de leurre, le pouvoir de la gratuité, le biais d’ancrage, et explique pourquoi nous accordons trop de valeur à nos possessions. Une mine d’or pour comprendre les motivations cachées des consommateurs.
           </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Concepts clés</h3>
@@ -43,7 +43,7 @@ export default function PredictablyIrrationalPage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Nos décisions ne sont pas aussi rationnelles qu’on le croit… et c’est prévisible. »
+            « Nos décisions ne sont pas aussi rationnelles qu’on le croit… et c’est prévisible. »
           </blockquote>
         </article>
 

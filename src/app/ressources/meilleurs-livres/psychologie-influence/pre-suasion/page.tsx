@@ -23,15 +23,15 @@ export default function PreSuasionPage() {
         <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
           <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
-            Cialdini s’intéresse à l’art de la préparation mentale à la persuasion : « le moment avant le message » compte autant que le message lui-même. Il explique comment capturer puis canaliser l’attention du public pour créer le bon contexte psychologique avant de formuler sa requête. Pré-Suasion ajoute un 7e principe à la liste de Cialdini : l’unité (créer un sentiment d’identité commune avec son audience).
+            Cialdini s’intéresse à l’art de la préparation mentale à la persuasion : « le moment avant le message » compte autant que le message lui-même. Il explique comment capturer puis canaliser l’attention du public pour créer le bon contexte psychologique avant de formuler sa requête. Pré-Suasion ajoute un 7e principe à la liste de Cialdini : l’unité (créer un sentiment d’identité commune avec son audience).
           </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Concepts clés</h3>
           <ul className="list-disc ml-6 mb-6">
-            <li>L’importance du « priming » (amorçage) avant le message</li>
+            <li>L’importance du « priming » (amorçage) avant le message</li>
             <li>Capturer et canaliser l’attention pour préparer la persuasion</li>
             <li>Créer un contexte psychologique favorable</li>
-            <li>Le 7e principe : l’unité (sentiment d’identité commune)</li>
+            <li>Le 7e principe : l’unité (sentiment d’identité commune)</li>
           </ul>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">À retenir / Conseils terrain</h3>
@@ -42,7 +42,7 @@ export default function PreSuasionPage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Le moment avant le message compte autant que le message lui-même. »
+            « Le moment avant le message compte autant que le message lui-même. »
           </blockquote>
         </article>
 

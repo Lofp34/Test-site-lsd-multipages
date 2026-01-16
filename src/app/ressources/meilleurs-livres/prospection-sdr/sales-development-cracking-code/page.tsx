@@ -10,7 +10,7 @@ export default function SalesDevelopmentCrackingCodePage() {
   return (
     <>
       <Head>
-        <title>{book.title} : résumé complet | Meilleurs livres | LSD</title>
+        <title>{book.title} : résumé complet | Meilleurs livres | LSD</title>
         <meta name="description" content={`Résumé détaillé, points clés et avis sur ${book.title} de ${book.author}. Le guide moderne et actionnable du SDR outbound.`} />
       </Head>
       <main className="bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16">
@@ -32,7 +32,7 @@ export default function SalesDevelopmentCrackingCodePage() {
         <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
           <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
-            Sales Development: Cracking the Code of Outbound Sales est un guide moderne 100% focalisé sur le rôle de SDR et les meilleures techniques d’outbound. Cory Bray & Hilmon Sorey couvrent tout le processus SDR : séquences multicanal, qualification, collaboration avec les AE, conseils de carrière. Un manuel opérationnel pour professionnaliser la prospection outbound et progresser en équipe.
+            Sales Development: Cracking the Code of Outbound Sales est un guide moderne 100% focalisé sur le rôle de SDR et les meilleures techniques d’outbound. Cory Bray & Hilmon Sorey couvrent tout le processus SDR : séquences multicanal, qualification, collaboration avec les AE, conseils de carrière. Un manuel opérationnel pour professionnaliser la prospection outbound et progresser en équipe.
           </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Chapitres clés</h3>
@@ -54,7 +54,7 @@ export default function SalesDevelopmentCrackingCodePage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Un SDR pro, c’est celui qui maîtrise le process, la collaboration et la progression continue. »
+            « Un SDR pro, c’est celui qui maîtrise le process, la collaboration et la progression continue. »
           </blockquote>
         </article>
 

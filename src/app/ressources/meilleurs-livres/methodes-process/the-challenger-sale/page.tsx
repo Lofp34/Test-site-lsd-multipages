@@ -28,9 +28,9 @@ export default function ChallengerSalePage() {
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Le modèle Challenger</h3>
           <ul className="list-disc ml-6 mb-6">
-            <li><b>Teach</b> : Apporter un insight inédit au client, l’éduquer sur son business.</li>
-            <li><b>Tailor</b> : Personnaliser l’approche selon les interlocuteurs.</li>
-            <li><b>Take Control</b> : Contrôler la vente, aborder les sujets difficiles, maintenir une tension constructive.</li>
+            <li><b>Teach</b> : Apporter un insight inédit au client, l’éduquer sur son business.</li>
+            <li><b>Tailor</b> : Personnaliser l’approche selon les interlocuteurs.</li>
+            <li><b>Take Control</b> : Contrôler la vente, aborder les sujets difficiles, maintenir une tension constructive.</li>
           </ul>
           <p>Le Challenger ose bousculer les croyances du client pour lui faire prendre conscience d’un problème latent et de la valeur de la solution.</p>
 
@@ -42,7 +42,7 @@ export default function ChallengerSalePage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Les vendeurs Challenger ne se contentent pas de répondre à la demande, ils la redéfinissent. »
+            « Les vendeurs Challenger ne se contentent pas de répondre à la demande, ils la redéfinissent. »
           </blockquote>
         </article>
 

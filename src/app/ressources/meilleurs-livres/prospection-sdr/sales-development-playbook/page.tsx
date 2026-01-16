@@ -10,7 +10,7 @@ export default function SalesDevelopmentPlaybookPage() {
   return (
     <>
       <Head>
-        <title>{book.title} : résumé complet | Meilleurs livres | LSD</title>
+        <title>{book.title} : résumé complet | Meilleurs livres | LSD</title>
         <meta name="description" content={`Résumé détaillé, points clés et avis sur ${book.title} de ${book.author}. Le manuel pour bâtir une équipe SDR performante.`} />
       </Head>
       <main className="bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16">
@@ -55,7 +55,7 @@ export default function SalesDevelopmentPlaybookPage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Le succès d’une équipe SDR repose sur la stratégie, la spécialisation et la motivation continue. »
+            « Le succès d’une équipe SDR repose sur la stratégie, la spécialisation et la motivation continue. »
           </blockquote>
         </article>
 

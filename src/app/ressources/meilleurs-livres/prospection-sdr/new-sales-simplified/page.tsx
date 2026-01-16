@@ -10,7 +10,7 @@ export default function NewSalesSimplifiedPage() {
   return (
     <>
       <Head>
-        <title>{book.title} : résumé complet | Meilleurs livres | LSD</title>
+        <title>{book.title} : résumé complet | Meilleurs livres | LSD</title>
         <meta name="description" content={`Résumé détaillé, points clés et avis sur ${book.title} de ${book.author}. Le retour aux fondamentaux de la conquête client.`} />
       </Head>
       <main className="bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16">
@@ -32,7 +32,7 @@ export default function NewSalesSimplifiedPage() {
         <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
           <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
-            New Sales. Simplified. est un livre percutant sur la vente « new business » qui fournit un cadre simple et éprouvé pour conquérir de nouveaux clients. Mike Weinberg insiste sur le retour aux fondamentaux de la prospection : histoire de vente convaincante, démarche proactive, construction d’une liste ciblée, ouverture d’appel à froid, emails percutants, power statement. Un concentré de bonnes pratiques pour maîtriser l’art du cold call.
+            New Sales. Simplified. est un livre percutant sur la vente « new business » qui fournit un cadre simple et éprouvé pour conquérir de nouveaux clients. Mike Weinberg insiste sur le retour aux fondamentaux de la prospection : histoire de vente convaincante, démarche proactive, construction d’une liste ciblée, ouverture d’appel à froid, emails percutants, power statement. Un concentré de bonnes pratiques pour maîtriser l’art du cold call.
           </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Chapitres clés</h3>
@@ -41,7 +41,7 @@ export default function NewSalesSimplifiedPage() {
             <li>Élaborer une liste ciblée de prospects de qualité</li>
             <li>Réussir l’ouverture d’appel à froid</li>
             <li>Rédiger des emails percutants et laisser des messages vocaux efficaces</li>
-            <li>Le concept de « power statement » pour formaliser sa proposition de valeur</li>
+            <li>Le concept de « power statement » pour formaliser sa proposition de valeur</li>
             <li>Créer son plan de prospection et maîtriser l’art du cold call</li>
           </ul>
 
@@ -55,7 +55,7 @@ export default function NewSalesSimplifiedPage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Maîtriser l’art du cold call, c’est d’abord maîtriser son histoire et sa discipline. »
+            « Maîtriser l’art du cold call, c’est d’abord maîtriser son histoire et sa discipline. »
           </blockquote>
         </article>
 

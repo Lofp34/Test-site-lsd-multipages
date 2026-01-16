@@ -23,7 +23,7 @@ export default function GapSellingPage() {
         <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
           <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
-            Gap Selling est centré sur le concept de “combler le fossé” (gap) entre l’état actuel du client et l’état futur souhaité. Le commercial agit comme un diagnosticien : il doit découvrir la situation présente du client, l’aider à définir où il veut aller, puis montrer comment la solution réduit ce gap.
+            Gap Selling est centré sur le concept de “combler le fossé” (gap) entre l’état actuel du client et l’état futur souhaité. Le commercial agit comme un diagnosticien : il doit découvrir la situation présente du client, l’aider à définir où il veut aller, puis montrer comment la solution réduit ce gap.
           </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Étapes clés de Gap Selling</h3>
@@ -43,7 +43,7 @@ export default function GapSellingPage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « La vente, c’est l’art de combler le fossé entre où est le client et où il veut aller. »
+            « La vente, c’est l’art de combler le fossé entre où est le client et où il veut aller. »
           </blockquote>
         </article>
 

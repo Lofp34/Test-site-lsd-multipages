@@ -23,7 +23,7 @@ export default function SolutionSellingPage() {
         <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
           <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
-            Solution Selling propose un processus en plusieurs étapes : rechercher les difficultés du client, les qualifier, proposer une vision de la solution, faire valider cette vision, justifier le ROI, puis négocier l’accord. L’accent est mis sur la découverte approfondie : un bon vendeur doit agir comme un médecin qui pose un diagnostic avant de prescrire.
+            Solution Selling propose un processus en plusieurs étapes : rechercher les difficultés du client, les qualifier, proposer une vision de la solution, faire valider cette vision, justifier le ROI, puis négocier l’accord. L’accent est mis sur la découverte approfondie : un bon vendeur doit agir comme un médecin qui pose un diagnostic avant de prescrire.
           </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Étapes clés de Solution Selling</h3>
@@ -37,13 +37,13 @@ export default function SolutionSellingPage() {
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">À retenir / Conseils terrain</h3>
           <ul className="list-disc ml-6 mb-6">
-            <li>Agir comme un médecin : diagnostiquer avant de prescrire</li>
+            <li>Agir comme un médecin : diagnostiquer avant de prescrire</li>
             <li>Creuser la “douleur” du client pour proposer une solution personnalisée</li>
             <li>Co-construire la solution avec le client</li>
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Vendre, c’est résoudre un problème, pas pousser un produit. »
+            « Vendre, c’est résoudre un problème, pas pousser un produit. »
           </blockquote>
         </article>
 

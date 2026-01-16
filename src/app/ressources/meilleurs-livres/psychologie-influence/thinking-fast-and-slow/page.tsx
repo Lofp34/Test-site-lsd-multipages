@@ -23,14 +23,14 @@ export default function ThinkingFastAndSlowPage() {
         <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
           <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
-            Kahneman explique que notre esprit comporte deux systèmes de pensée : le Système 1, rapide, instinctif et émotionnel, et le Système 2, plus lent, réfléchi et logique. De nombreux biais cognitifs proviennent des raccourcis pris par le Système 1. Ce livre enseigne une pensée plus critique et lucide, pour mieux persuader et se prémunir des manipulations.
+            Kahneman explique que notre esprit comporte deux systèmes de pensée : le Système 1, rapide, instinctif et émotionnel, et le Système 2, plus lent, réfléchi et logique. De nombreux biais cognitifs proviennent des raccourcis pris par le Système 1. Ce livre enseigne une pensée plus critique et lucide, pour mieux persuader et se prémunir des manipulations.
           </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Concepts clés</h3>
           <ul className="list-disc ml-6 mb-6">
-            <li>Système 1 : pensée rapide, intuitive, émotionnelle</li>
-            <li>Système 2 : pensée lente, analytique, logique</li>
-            <li>Biais cognitifs : excès de confiance, aversion aux pertes, effet d’ancrage…</li>
+            <li>Système 1 : pensée rapide, intuitive, émotionnelle</li>
+            <li>Système 2 : pensée lente, analytique, logique</li>
+            <li>Biais cognitifs : excès de confiance, aversion aux pertes, effet d’ancrage…</li>
             <li>Importance de la vigilance face à nos intuitions</li>
           </ul>
 
@@ -42,7 +42,7 @@ export default function ThinkingFastAndSlowPage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Nous surestimons souvent la fiabilité de nos intuitions. »
+            « Nous surestimons souvent la fiabilité de nos intuitions. »
           </blockquote>
         </article>
 
