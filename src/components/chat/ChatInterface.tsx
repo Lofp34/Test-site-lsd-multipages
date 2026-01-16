@@ -432,7 +432,7 @@ export default function ChatInterface({
                 }
               }}
               onChange={(e) => setInputText(e.target.value)}
-              placeholder={isMobile ? "Votre question..." : "Posez votre question à Laurent Serre..."}
+              placeholder={isMobile ? "Comment développer mon CA ?" : "Je voudrais développer le CA et la marge de mon entreprise mais j'ai du mal à prioriser mes actions..."}
               className={getMobileClasses(
                 `w-full px-4 py-3 pr-12 border border-gray-300 rounded-2xl 
                 focus:outline-none focus:ring-2 focus:ring-mint-green focus:border-transparent
