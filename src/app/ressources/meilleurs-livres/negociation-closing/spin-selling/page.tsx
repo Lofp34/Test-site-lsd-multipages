@@ -23,27 +23,27 @@ export default function SpinSellingPage() {
         <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
           <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
-            SPIN Selling est l’une des premières méthodes de vente consultative fondées sur la recherche, centrée sur le questionnement et la création de valeur conjointe. Basé sur 12 ans de recherche et l’analyse de 35 000 entretiens de vente, Rackham démontre que, dans les ventes à fort enjeu, les techniques traditionnelles sont inefficaces. Il propose à la place l’approche SPIN : une séquence de questions à poser au client pour l’amener à exprimer lui-même ses besoins et la valeur de la solution.
+            SPIN Selling est l’une des premières méthodes de vente consultative fondées sur la recherche, centrée sur le questionnement et la création de valeur conjointe. Basé sur 12 ans de recherche et l’analyse de 35 000 entretiens de vente, Rackham démontre que, dans les ventes à fort enjeu, les techniques traditionnelles sont inefficaces. Il propose à la place l’approche SPIN : une séquence de questions à poser au client pour l’amener à exprimer lui-même ses besoins et la valeur de la solution.
           </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">La méthode SPIN</h3>
           <ul className="list-disc ml-6 mb-6">
-            <li><b>Situation</b> : comprendre la situation actuelle du client.</li>
-            <li><b>Problème</b> : identifier un problème ou une douleur.</li>
-            <li><b>Implication</b> : explorer les conséquences négatives du problème.</li>
-            <li><b>Need-Payoff</b> : aider le client à formuler l’intérêt d’une solution.</li>
+            <li><b>Situation</b> : comprendre la situation actuelle du client.</li>
+            <li><b>Problème</b> : identifier un problème ou une douleur.</li>
+            <li><b>Implication</b> : explorer les conséquences négatives du problème.</li>
+            <li><b>Need-Payoff</b> : aider le client à formuler l’intérêt d’une solution.</li>
           </ul>
           <p>Cette séquence de questions permet au client de prendre conscience de ses besoins et de la valeur de la solution, au lieu de subir un argumentaire trop tôt.</p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">À retenir / Conseils terrain</h3>
           <ul className="list-disc ml-6 mb-6">
             <li>Privilégier l’écoute active et le questionnement structuré.</li>
-            <li>Ne pas précipiter la présentation de la solution : faire émerger le besoin d’abord.</li>
+            <li>Ne pas précipiter la présentation de la solution : faire émerger le besoin d’abord.</li>
             <li>Utiliser la méthode SPIN pour guider la découverte client et créer de la valeur conjointe.</li>
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Les meilleurs vendeurs posent plus de questions, et de meilleures questions, que les autres. »
+            « Les meilleurs vendeurs posent plus de questions, et de meilleures questions, que les autres. »
           </blockquote>
         </article>
 

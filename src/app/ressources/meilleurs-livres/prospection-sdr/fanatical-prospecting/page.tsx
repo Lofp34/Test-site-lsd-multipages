@@ -10,7 +10,7 @@ export default function FanaticalProspectingPage() {
   return (
     <>
       <Head>
-        <title>{book.title} : résumé complet | Meilleurs livres | LSD</title>
+        <title>{book.title} : résumé complet | Meilleurs livres | LSD</title>
         <meta name="description" content={`Résumé détaillé, points clés et avis sur ${book.title} de ${book.author}. Découvrez les meilleures techniques de prospection moderne.`} />
       </Head>
       <main className="bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16">
@@ -37,7 +37,7 @@ export default function FanaticalProspectingPage() {
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Chapitres clés</h3>
           <ul className="list-disc ml-6 mb-6">
-            <li>Les 5 C du social selling : Contact, Cadence, Cadre, Conversation, Conversion</li>
+            <li>Les 5 C du social selling : Contact, Cadence, Cadre, Conversation, Conversion</li>
             <li>Le script téléphonique en 5 étapes pour réussir ses appels à froid</li>
             <li>Comment surmonter les objections de début de cycle</li>
             <li>La discipline de la prospection quotidienne</li>
@@ -54,7 +54,7 @@ export default function FanaticalProspectingPage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « La prospection fanatique, c’est la discipline qui sépare les top performers des vendeurs moyens. »
+            « La prospection fanatique, c’est la discipline qui sépare les top performers des vendeurs moyens. »
           </blockquote>
         </article>
 

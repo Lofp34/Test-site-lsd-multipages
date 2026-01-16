@@ -23,28 +23,28 @@ export default function InfluencePage() {
         <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
           <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
-            Cialdini détaille 6 grands principes universels qui guident nos comportements d’acceptation : la réciprocité, la cohérence, la preuve sociale, l’autorité, la sympathie et la rareté. Pour chacun, il explique les expériences psychologiques qui les sous-tendent et comment les mettre en œuvre de façon éthique. Influence est une lecture fascinante qui permet de comprendre pourquoi nous disons « oui » et comment se protéger des manipulations.
+            Cialdini détaille 6 grands principes universels qui guident nos comportements d’acceptation : la réciprocité, la cohérence, la preuve sociale, l’autorité, la sympathie et la rareté. Pour chacun, il explique les expériences psychologiques qui les sous-tendent et comment les mettre en œuvre de façon éthique. Influence est une lecture fascinante qui permet de comprendre pourquoi nous disons « oui » et comment se protéger des manipulations.
           </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Les 6 principes de l’influence</h3>
           <ul className="list-disc ml-6 mb-6">
-            <li><b>Réciprocité</b> : donner pour recevoir.</li>
-            <li><b>Cohérence</b> : l’engagement et la constance.</li>
-            <li><b>Preuve sociale</b> : suivre l’exemple des autres.</li>
-            <li><b>Autorité</b> : écouter les experts ou figures d’autorité.</li>
-            <li><b>Sympathie</b> : nous sommes plus influencés par ceux que nous aimons.</li>
-            <li><b>Rareté</b> : ce qui est rare a plus de valeur.</li>
+            <li><b>Réciprocité</b> : donner pour recevoir.</li>
+            <li><b>Cohérence</b> : l’engagement et la constance.</li>
+            <li><b>Preuve sociale</b> : suivre l’exemple des autres.</li>
+            <li><b>Autorité</b> : écouter les experts ou figures d’autorité.</li>
+            <li><b>Sympathie</b> : nous sommes plus influencés par ceux que nous aimons.</li>
+            <li><b>Rareté</b> : ce qui est rare a plus de valeur.</li>
           </ul>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">À retenir / Conseils terrain</h3>
           <ul className="list-disc ml-6 mb-6">
-            <li>Utiliser la réciprocité pour augmenter le taux de réponse (ex : offrir un contenu gratuit).</li>
+            <li>Utiliser la réciprocité pour augmenter le taux de réponse (ex : offrir un contenu gratuit).</li>
             <li>Créer de la preuve sociale pour rassurer (témoignages, logos clients…)</li>
-            <li>Être attentif à l’éthique : influencer n’est pas manipuler.</li>
+            <li>Être attentif à l’éthique : influencer n’est pas manipuler.</li>
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Comprendre l’influence, c’est se donner le pouvoir de dire oui… ou non. »
+            « Comprendre l’influence, c’est se donner le pouvoir de dire oui… ou non. »
           </blockquote>
         </article>
 

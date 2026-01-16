@@ -23,7 +23,7 @@ export default function ArtDuClosingPage() {
         <article className="prose prose-lg max-w-3xl mx-auto bg-white/90 rounded-2xl shadow-xl p-8 mb-12 border border-mint-green/20">
           <h2 className="text-2xl font-bold text-blue-ink mb-4">Résumé du livre</h2>
           <p>
-            Le closing n’est pas un acte unique en fin de cycle, mais une série de « mini-engagements » tout au long du processus de vente. Anthony Iannarino démontre que chaque étape doit apporter de la valeur pour mériter la signature. Ce type d’ouvrage complète les approches globales en fournissant des formules concrètes pour répondre aux dernières objections, créer un sentiment d’urgence et formuler la demande de commande avec confiance.
+            Le closing n’est pas un acte unique en fin de cycle, mais une série de « mini-engagements » tout au long du processus de vente. Anthony Iannarino démontre que chaque étape doit apporter de la valeur pour mériter la signature. Ce type d’ouvrage complète les approches globales en fournissant des formules concrètes pour répondre aux dernières objections, créer un sentiment d’urgence et formuler la demande de commande avec confiance.
           </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">Techniques et concepts clés</h3>
@@ -43,7 +43,7 @@ export default function ArtDuClosingPage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Qui ne demande pas, n’obtient pas. »
+            « Qui ne demande pas, n’obtient pas. »
           </blockquote>
         </article>
 

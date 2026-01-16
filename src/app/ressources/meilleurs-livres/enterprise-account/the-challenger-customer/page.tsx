@@ -41,7 +41,7 @@ export default function ChallengerCustomerPage() {
           </ul>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-blue-ink mb-6">
-            « Pour vendre à un grand compte, il ne suffit pas de convaincre un décideur : il faut mobiliser un allié interne capable de porter le changement et de construire le consensus. »
+            « Pour vendre à un grand compte, il ne suffit pas de convaincre un décideur : il faut mobiliser un allié interne capable de porter le changement et de construire le consensus. »
           </blockquote>
         </article>
 
