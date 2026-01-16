@@ -125,11 +125,11 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
           }
         };
 
-      case 'service':
+      case 'service': {
         const serviceName = data?.name || 'Service développement commercial';
         const serviceDescription = data?.description || 'Service de développement commercial pour PME';
         const servicePrice = data?.price || 'Sur devis';
-        
+
         return {
           "@context": "https://schema.org",
           "@type": "Service",
@@ -194,6 +194,7 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
             "ratingCount": "89"
           }
         };
+      }
 
       case 'course':
         return {
@@ -237,7 +238,7 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
           }
         };
 
-      case 'breadcrumb':
+      case 'breadcrumb': {
         const breadcrumbData = data || [];
         return {
           "@context": "https://schema.org",
@@ -249,6 +250,7 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
             "item": `https://laurentserre.com${item.url}`
           }))
         };
+      }
 
       default:
         return null;

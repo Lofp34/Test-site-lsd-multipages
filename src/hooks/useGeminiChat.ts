@@ -575,7 +575,7 @@ export function useGeminiChat({
         case 'upload_file':
           await uploadFile(lastOperation.params.file);
           break;
-        case 'initialize_chat':
+        case 'initialize_chat': {
           // Réinitialiser le service
           const { apiKey, systemInstruction, config, conversationId } = lastOperation.params;
           const geminiConfig: GeminiConfig = {
@@ -588,7 +588,7 @@ export function useGeminiChat({
           };
           geminiServiceRef.current = new GeminiService(apiKey, geminiConfig, conversationId);
           await geminiServiceRef.current.initializeChat();
-          
+
           const history = await geminiServiceRef.current.getConversationHistory();
           setState(prev => ({
             ...prev,
@@ -598,6 +598,7 @@ export function useGeminiChat({
             error: null
           }));
           break;
+        }
         default:
           console.warn('Type d\'opération inconnu:', lastOperation.type);
       }

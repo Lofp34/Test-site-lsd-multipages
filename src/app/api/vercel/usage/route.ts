@@ -76,14 +76,15 @@ export async function POST(request: NextRequest) {
     const monitor = createVercelMonitor();
 
     switch (action) {
-      case 'check_usage':
+      case 'check_usage': {
         const currentUsage = await monitor.getCurrentUsage();
         const prediction = await monitor.predictMonthlyUsage();
-        
+
         return NextResponse.json({
           success: true,
           data: { currentUsage, prediction }
         });
+      }
 
       case 'send_alert':
         if (!threshold || typeof threshold !== 'number') {
@@ -92,18 +93,18 @@ export async function POST(request: NextRequest) {
             { status: 400 }
           );
         }
-        
+
         await monitor.sendUsageAlert(threshold);
-        
+
         return NextResponse.json({
           success: true,
           message: `Alert sent for ${threshold}% threshold`
         });
 
-      case 'check_limits':
+      case 'check_limits': {
         const limitStatuses = await monitor.checkLimits();
         const exceededLimits = limitStatuses.filter(status => status.exceeded);
-        
+
         return NextResponse.json({
           success: true,
           data: {
@@ -112,6 +113,7 @@ export async function POST(request: NextRequest) {
             hasExceededLimits: exceededLimits.length > 0
           }
         });
+      }
 
       default:
         return NextResponse.json(
