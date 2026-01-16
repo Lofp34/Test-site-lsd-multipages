@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ArrowLeft, Download, Target, Users, Phone, Mail, Calendar, CheckCircle, TrendingUp, Star, Award } from 'lucide-react';
+import { ArrowLeft, Target, Users, Phone, Mail, Calendar, CheckCircle, TrendingUp, Star, Award } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {

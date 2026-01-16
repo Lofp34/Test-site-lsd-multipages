@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ArrowLeft, Users, Briefcase, TrendingUp, CheckCircle, Award, Target, UserCheck } from 'lucide-react';
+import { ArrowLeft, Users, Briefcase, CheckCircle, Award, Target, UserCheck } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
