@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowLeft, Users, BarChart, TrendingUp, CheckCircle, Award, Target, Brain, Shield, FolderKanban, Briefcase, Heart } from 'lucide-react';
+import { ArrowLeft, Users, BarChart, Target, Brain, Shield, FolderKanban, Briefcase, Heart } from 'lucide-react';
 import Link from 'next/link';
 
 const chantiers = [

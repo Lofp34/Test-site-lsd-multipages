@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ArrowLeft, Users, FolderKanban, TrendingUp, CheckSquare, FileText, Share2 } from 'lucide-react';
+import { ArrowLeft, Users, FolderKanban, CheckSquare, FileText, Share2 } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {

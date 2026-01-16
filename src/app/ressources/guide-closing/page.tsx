@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ArrowLeft, Award, Target, Brain, Zap, CheckCircle, TrendingUp, Star, Crown, Shield } from 'lucide-react';
+import { ArrowLeft, CheckCircle, Crown } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {

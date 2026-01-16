@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import { ChatMessage, UploadedFile, ChatError } from '@/lib/gemini/types';
+import { ChatMessage, ChatError } from '@/lib/gemini/types';
 import { ErrorRecoveryAction } from '@/lib/gemini/error-handler';
 import FileUploader from './FileUploader';
 import FilePreview from './FilePreview';

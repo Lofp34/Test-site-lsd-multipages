@@ -7,7 +7,6 @@ import Footer from "@/components/layout/Footer";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
 import AnalyticsConsent from "@/components/AnalyticsConsent";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
-import { ThemeProvider } from "@/components/ThemeProvider";
 import PerformanceMonitor from "@/components/PerformanceMonitor";
 
 const inter = Inter({

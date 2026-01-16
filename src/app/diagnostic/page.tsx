@@ -5,28 +5,6 @@ import { CheckCircle, Calendar, ArrowRight, Award, Phone, Mail, Zap, Loader } fr
 import Link from 'next/link';
 import TestExpress from '@/components/TestExpress';
 
-const metadata: Metadata = {
-  title: 'Diagnostic Commercial Gratuit PME | Laurent Serre - 30 min',
-  description: 'Diagnostic commercial gratuit 30 minutes avec Laurent Serre, expert développement commercial PME. Analyse personnalisée de votre organisation commerciale.',
-  keywords: 'diagnostic commercial gratuit, audit commercial PME, diagnostic gratuit équipe commerciale, évaluation commerciale PME, Laurent Serre diagnostic',
-  authors: [{ name: 'Laurent Serre' }],
-  alternates: {
-    canonical: 'https://laurentserre.com/diagnostic',
-  },
-  openGraph: {
-    title: 'Diagnostic Commercial Gratuit PME | Laurent Serre - 30 min',
-    description: 'Diagnostic commercial gratuit avec expert PME. Analyse personnalisée en 30 minutes.',
-    url: 'https://laurentserre.com/diagnostic',
-    type: 'website',
-    locale: 'fr_FR',
-    siteName: 'Laurent Serre Développement',
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
-
 function DiagnosticPage() {
   const [formData, setFormData] = useState({
     firstName: '',
