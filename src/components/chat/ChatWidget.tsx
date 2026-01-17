@@ -70,7 +70,7 @@ export default function ChatWidget({
     apiKey: apiKey || process.env.NEXT_PUBLIC_GEMINI_API_KEY || '',
     systemInstruction: LAURENT_SERRE_SYSTEM_INSTRUCTION,
     config: {
-      model: 'gemini-2.5-flash',
+      model: 'gemini-3-pro-preview',
       temperature: 0.7,
       thinkingBudget: 0, // Désactivé pour la performance
       maxTokens: 2048

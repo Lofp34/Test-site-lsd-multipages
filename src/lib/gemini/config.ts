@@ -23,7 +23,7 @@ Si la demande sort de ces domaines, dis-le clairement et recentre.
 // Configuration par défaut du chat
 export const DEFAULT_CHAT_CONFIG: ChatConfiguration = {
   gemini: {
-    model: 'gemini-2.5-flash',
+    model: 'gemini-3-pro-preview',
     apiKey: process.env.GEMINI_API_KEY || '',
     temperature: 0.7,
     thinkingBudget: 0, // Désactivé pour la performance
