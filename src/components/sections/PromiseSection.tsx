@@ -196,17 +196,24 @@ export default function PromiseSection() {
         <AnimatedSection animation="fade-in" delay={800}>
           <div className="text-center">
             <div className="inline-block">
-              <Button 
+              <Button
                 variant="secondary"
-                icon="🔍"
-                onClick={() => window.location.href = '/diagnostic'}
+                icon="📅"
+                onClick={() => {
+                  const contactSection = document.getElementById('bootcamp-contact');
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  } else {
+                    window.location.href = '/bootcamp#bootcamp-contact';
+                  }
+                }}
                 className="bg-mint-green text-white border-2 border-mint-green hover:bg-mint-green/90 hover:text-white shadow-lg"
               >
-                Faire le diagnostic
+                Réserver un appel gratuit
               </Button>
             </div>
             <p className="mt-4 font-italic text-gray-anthracite text-sm">
-              Découvrez où vous en êtes vraiment
+              30 minutes pour analyser votre situation, sans engagement
             </p>
           </div>
         </AnimatedSection>

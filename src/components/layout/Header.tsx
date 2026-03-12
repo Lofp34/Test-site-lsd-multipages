@@ -7,10 +7,10 @@ import { Menu, X } from "lucide-react";
 
 const NAV_ITEMS = [
   { label: "Accueil", href: "/" },
-  { 
-    label: "Expert PME", 
-    href: "/expert-developpement-commercial-pme",
-    isHighlight: true 
+  {
+    label: "Bootcamp",
+    href: "/bootcamp",
+    isHighlight: true
   },
   { label: "Services", href: "/services" },
   { label: "Diagnostic", href: "/diagnostic" },

@@ -149,29 +149,39 @@ export default function ClientPageWrapper({
             </div>
 
             <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-title font-extrabold text-white leading-tight drop-shadow-lg">
-              <span className="block">De l'effort commercial</span>
-              <span className="block text-mint-green">au levier stratégique</span>
+              <span className="block">Transformez votre équipe</span>
+              <span className="block text-mint-green">en machine commerciale</span>
             </h1>
 
             <div className="max-w-5xl mx-auto space-y-4 sm:space-y-6">
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-body text-white/95 leading-relaxed drop-shadow-md px-2">
-                Je structure votre force de vente pour en faire une équipe engagée, 
-                qui applique une méthodologie claire pour une performance commerciale durable.
+                Le Bootcamp Commercial : 42h d'accompagnement intensif pour structurer votre force de vente
+                et obtenir des résultats mesurables dès les premières semaines.
               </p>
-              
-              <p className="text-base sm:text-lg md:text-xl font-italic text-white/90 leading-relaxed drop-shadow-sm px-2">
-                Mon approche, issue de 20 ans d'expérience terrain et augmentée par l'IA, 
-                est conçue pour améliorer votre performance commerciale, durablement.
-              </p>
+
+              <div className="flex flex-wrap justify-center gap-4 sm:gap-6 text-white/90">
+                <div className="flex items-center gap-2">
+                  <span className="text-mint-green font-bold text-xl">+50%</span>
+                  <span className="text-sm">de performance moyenne</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-mint-green font-bold text-xl">97%</span>
+                  <span className="text-sm">de satisfaction</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-mint-green font-bold text-xl">20 ans</span>
+                  <span className="text-sm">d'expertise terrain</span>
+                </div>
+              </div>
             </div>
 
-            {/* CTAs optimisés avec A/B Testing - Mobile-first avec hiérarchie claire */}
+            {/* CTAs optimisés - Bootcamp en priorité absolue */}
             <div className="cta-group-mobile pt-6 sm:pt-8 pb-12 sm:pb-16">
               <div className="cta-container-mobile lg:flex-row lg:max-w-none lg:gap-6">
-                <TrackedLink 
+                <TrackedLink
                   href="/bootcamp"
                   ctaId="hero-bootcamp"
-                  ctaText="Rejoindre le Bootcamp Commercial"
+                  ctaText="Découvrir le Bootcamp Commercial"
                   ctaType="primary"
                   section="hero"
                   position={1}
@@ -184,39 +194,29 @@ export default function ClientPageWrapper({
                     size="lg"
                     icon="🚀"
                     testId="hero-bootcamp-text"
-                    defaultText="Rejoindre le Bootcamp Commercial"
-                    className="cta-mobile cta-primary-mobile lg:w-auto lg:min-w-[280px]"
+                    defaultText="Découvrir le Bootcamp Commercial"
+                    className="cta-mobile cta-primary-mobile lg:w-auto lg:min-w-[320px]"
                   />
                 </TrackedLink>
-                
-                <TrackedLink 
-                  href="/ressources"
-                  ctaId="hero-resources"
-                  ctaText="Accéder aux Ressources Gratuites"
+
+                <TrackedLink
+                  href="/diagnostic"
+                  ctaId="hero-diagnostic"
+                  ctaText="Diagnostic Gratuit en 2 min"
                   ctaType="secondary"
                   section="hero"
                   position={2}
                   className="block"
                 >
-                  <Button 
+                  <Button
                     variant="outline"
                     size="lg"
-                    icon="📚"
+                    icon="🎯"
                     className="cta-mobile cta-secondary-mobile lg:w-auto lg:min-w-[280px] border-white text-white hover:bg-white hover:text-blue-ink"
                   >
-                    Accéder aux Ressources Gratuites
+                    Diagnostic Gratuit en 2 min
                   </Button>
                 </TrackedLink>
-              </div>
-            </div>
-
-            {/* Indicateur de chat disponible */}
-            <div className="mt-8 flex justify-center">
-              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 border border-white/20">
-                <p className="text-sm text-white/80 flex items-center gap-2">
-                  <span className="w-2 h-2 bg-mint-green rounded-full animate-pulse"></span>
-                  Chat expert disponible - Posez vos questions !
-                </p>
               </div>
             </div>
           </div>

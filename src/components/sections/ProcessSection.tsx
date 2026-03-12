@@ -152,11 +152,11 @@ const ProcessSection = () => {
             </div>
           </div>
 
-          <a 
-            href="#contact" 
+          <a
+            href="#bootcamp-contact"
             className="inline-block bg-white text-mint-green border-2 border-mint-green hover:bg-mint-green hover:text-white font-semibold rounded-full px-8 py-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
           >
-            Démarrer votre transformation
+            Réserver un appel gratuit
           </a>
         </motion.div>
       </div>

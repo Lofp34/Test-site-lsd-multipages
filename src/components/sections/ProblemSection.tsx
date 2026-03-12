@@ -1,7 +1,6 @@
 'use client';
 
 import Button from "@/components/ui/Button";
-import ABTestButton from "@/components/ui/ABTestButton";
 import TrackedLink from "@/components/ui/TrackedLink";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { useSectionTracking } from "@/hooks/useSectionTracking";
@@ -111,10 +110,10 @@ export default function ProblemSection() {
               </p>
             </div>
 
-            {/* CTAs hiérarchisés - Mobile-first avec ordre optimisé */}
+            {/* CTA unique et puissant vers le bootcamp */}
             <div className="cta-group-mobile mt-8">
               <div className="cta-container-mobile sm:flex-row sm:max-w-none sm:gap-4">
-                <TrackedLink 
+                <TrackedLink
                   href="/bootcamp"
                   ctaId="problem-bootcamp"
                   ctaText="Découvrir le Bootcamp Commercial"
@@ -123,51 +122,31 @@ export default function ProblemSection() {
                   position={1}
                   className="block"
                 >
-                  <Button 
-                    variant="primary" 
-                    size="lg" 
+                  <Button
+                    variant="primary"
+                    size="lg"
                     icon="🚀"
-                    className="cta-mobile cta-primary-mobile sm:w-auto sm:min-w-[240px]"
+                    className="cta-mobile cta-primary-mobile sm:w-auto sm:min-w-[320px]"
                   >
                     Découvrir le Bootcamp Commercial
                   </Button>
                 </TrackedLink>
-                <TrackedLink 
-                  href="/ressources"
-                  ctaId="problem-resources"
-                  ctaText="Télécharger le Guide Gratuit"
+                <TrackedLink
+                  href="/diagnostic"
+                  ctaId="problem-diagnostic"
+                  ctaText="Faire le Diagnostic Gratuit"
                   ctaType="secondary"
                   section="problem"
                   position={2}
-                  enableABTest={true}
-                  abTestId="problem-resources-text"
                   className="block"
                 >
-                  <ABTestButton
-                    variant="outline" 
-                    size="lg" 
-                    icon="📚" 
-                    testId="problem-resources-text"
-                    defaultText="Télécharger le Guide Gratuit"
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    icon="🎯"
                     className="cta-mobile cta-secondary-mobile sm:w-auto sm:min-w-[240px] border-mint-green text-mint-green hover:bg-mint-green hover:text-blue-ink"
-                  />
-                </TrackedLink>
-                <TrackedLink 
-                  href="/diagnostic"
-                  ctaId="problem-diagnostic"
-                  ctaText="Faire le Diagnostic"
-                  ctaType="tertiary"
-                  section="problem"
-                  position={3}
-                  className="block"
-                >
-                  <Button 
-                    variant="ghost" 
-                    size="lg" 
-                    icon="🔍" 
-                    className="cta-mobile cta-tertiary-mobile sm:w-auto sm:min-w-[200px] text-white/80 hover:text-white hover:bg-white/10"
                   >
-                    Faire le Diagnostic
+                    Faire le Diagnostic Gratuit
                   </Button>
                 </TrackedLink>
               </div>
