@@ -91,11 +91,11 @@ export default function BootcampHero() {
             <Button
               variant="outline"
               size="lg"
-              icon="👇"
+              icon="💬"
               className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-blue-ink"
               onClick={scrollToContact}
             >
-              Voir comment ça fonctionne
+              On en parle maintenant ?
             </Button>
           </div>
 
