@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useId, useRef } from 'react';
 import { useInView } from '@/hooks/useInView';
 
 // Types pour HubSpot
@@ -33,7 +33,8 @@ export default function HubSpotForm({
   region = "na1",
   portalId = "7401198"
 }: HubSpotFormProps) {
-  const [formLoaded, setFormLoaded] = useState(false);
+  const formCreatedRef = useRef(false);
+  const formTargetId = `hubspot-form-container-${useId().replace(/:/g, '')}`;
   const { ref, isInView } = useInView({
     triggerOnce: true, // Pour ne déclencher qu'une seule fois
     threshold: 0.1, // Se déclenche quand 10% de l'élément est visible
@@ -41,64 +42,82 @@ export default function HubSpotForm({
 
   useEffect(() => {
     // Ne rien faire si le formulaire est déjà chargé ou s'il n'est pas visible
-    if (formLoaded || !isInView) {
+    if (formCreatedRef.current || !isInView) {
       return;
     }
 
     const windowWithHubSpot = window as HubSpotWindow;
+    const createForm = () => {
+      if (formCreatedRef.current || !windowWithHubSpot.hbspt) {
+        return;
+      }
+
+      const formContainer = document.getElementById(formTargetId);
+      if (!formContainer) {
+        return;
+      }
+
+      formContainer.innerHTML = '';
+      windowWithHubSpot.hbspt.forms.create({
+        region,
+        portalId,
+        formId,
+        target: `#${formTargetId}`,
+        onFormReady: () => {
+          console.log('Formulaire HubSpot prêt');
+        },
+        onFormSubmit: () => {
+          console.log('Formulaire soumis');
+        },
+        onFormSubmitted: () => {
+          console.log('Formulaire envoyé avec succès vers HubSpot CRM');
+        }
+      });
+
+      formCreatedRef.current = true;
+    };
     
     try {
+      if (windowWithHubSpot.hbspt) {
+        createForm();
+        return;
+      }
+
       // Charger le script HubSpot si pas déjà chargé
-      if (typeof window !== 'undefined' && !windowWithHubSpot.hbspt) {
+      if (typeof window !== 'undefined') {
+        const existingScript = document.querySelector('script[data-hubspot-forms="true"]') as HTMLScriptElement | null;
+
+        if (existingScript) {
+          existingScript.addEventListener('load', createForm, { once: true });
+          return () => {
+            existingScript.removeEventListener('load', createForm);
+          };
+        }
+
         const script = document.createElement('script');
-        script.src = '//js.hsforms.net/forms/embed/v2.js';
+        script.src = 'https://js.hsforms.net/forms/embed/v2.js';
         script.charset = 'utf-8';
         script.async = true;
-        script.onload = () => {
-          setFormLoaded(true);
-          // Créer le formulaire une fois le script chargé
-          if (windowWithHubSpot.hbspt) {
-            windowWithHubSpot.hbspt.forms.create({
-              region: region,
-              portalId: portalId,
-              formId: formId,
-              target: '#hubspot-form-container',
-              onFormReady: () => {
-                console.log('Formulaire HubSpot prêt');
-              },
-              onFormSubmit: () => {
-                console.log('Formulaire soumis');
-              },
-              onFormSubmitted: () => {
-                console.log('Formulaire envoyé avec succès vers HubSpot CRM');
-                // Optionnel: ajouter un tracking ou redirection
-              }
-            });
-          }
-        };
+        script.dataset.hubspotForms = 'true';
+        script.addEventListener('load', createForm, { once: true });
         script.onerror = () => {
           console.error('Erreur lors du chargement du script HubSpot');
         };
         document.head.appendChild(script);
-      } else if (windowWithHubSpot.hbspt) {
-        // Si le script est déjà chargé, créer directement le formulaire
-        setFormLoaded(true);
-        windowWithHubSpot.hbspt.forms.create({
-          region: region,
-          portalId: portalId,
-          formId: formId,
-          target: '#hubspot-form-container'
-        });
+
+        return () => {
+          script.removeEventListener('load', createForm);
+        };
       }
     } catch (error) {
       console.error('Erreur lors de l\'initialisation du formulaire HubSpot:', error);
     }
-  }, [isInView, formLoaded, formId, region, portalId]);
+  }, [formTargetId, formId, isInView, portalId, region]);
 
   return (
     <div ref={ref} className="hubspot-form-wrapper">
       {isInView ? (
-        <div id="hubspot-form-container"></div>
+        <div id={formTargetId}></div>
       ) : (
         <div style={{ height: '500px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
           {/* Placeholder pour garder la hauteur et éviter le décalage de mise en page */}
@@ -186,4 +205,4 @@ export default function HubSpotForm({
       `}</style>
     </div>
   );
-} 
+}

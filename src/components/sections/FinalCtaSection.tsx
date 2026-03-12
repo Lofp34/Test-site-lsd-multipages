@@ -4,7 +4,6 @@ import HubSpotForm from '@/components/HubSpotForm';
 import Button from '@/components/ui/Button';
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { trackBusinessEvents } from '@/components/GoogleAnalytics';
-import ContactSimpleForm from '@/components/ContactSimpleForm';
 
 export default function FinalCtaSection() {
   const scrollToSection = (sectionId: string) => {
@@ -53,8 +52,11 @@ export default function FinalCtaSection() {
                   Un simple appel pour comprendre vos enjeux, identifier les opportunités et voir comment nous pouvons travailler ensemble.
                 </p>
                 
-                {/* Formulaire React moderne à la place du HubSpot natif */}
-                <ContactSimpleForm />
+                <HubSpotForm
+                  portalId="7401198"
+                  formId="884e2971-2d90-4ca1-86ee-eb824f43f074"
+                  region="na1"
+                />
 
                 {/* Alternative Calendly */}
                 <div className="border-t border-mint-green/20 pt-6">
@@ -149,4 +151,4 @@ export default function FinalCtaSection() {
       </div>
     </section>
   );
-} 
+}

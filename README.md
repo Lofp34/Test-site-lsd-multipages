@@ -6,6 +6,8 @@ Site web professionnel Next.js 15 pour Laurent Serre, expert en développement c
 
 **Laurent Serre Développement** est une plateforme web moderne dédiée à l'accompagnement commercial des PME. Le site combine expertise technique avancée et stratégie SEO optimisée pour positionner Laurent Serre comme référence en développement commercial.
 
+Statut projet: [documentation/project-status.md](documentation/project-status.md)
+
 ### Identité du projet
 - **Expert** : Laurent Serre, 20 ans d'expérience terrain
 - **Spécialité** : Développement commercial pour PME (10-100 salariés)  
