@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
     // Idem pour TypeScript si nécessaire
     ignoreBuildErrors: true,
   },
+  turbopack: {},
   experimental: {
     inlineCss: true,
   },

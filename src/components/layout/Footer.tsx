@@ -67,8 +67,8 @@ export default function Footer() {
                   </a>
                 </li>
                 <li>
-                  <a href="/expert-developpement-commercial-pme" className="font-body text-mint-green hover:text-white font-semibold transition-colors hover:translate-x-1 transform duration-200 block">
-                    Expert PME
+                  <a href="/bootcamp" className="font-body text-mint-green hover:text-white font-semibold transition-colors hover:translate-x-1 transform duration-200 block">
+                    Bootcamp Commercial
                   </a>
                 </li>
                 <li>

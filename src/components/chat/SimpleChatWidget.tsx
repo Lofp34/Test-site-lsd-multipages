@@ -97,6 +97,18 @@ export default function SimpleChatWidget({
     }
   }, []);
 
+  // Fermer le chat quand on clique à l'extérieur
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleClickOutside = (event: MouseEvent) => {
+      if (chatRef.current && !chatRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isOpen]);
+
   // Notification de nouveaux messages
   useEffect(() => {
     if (messages.length > 0 && !isOpen) {
