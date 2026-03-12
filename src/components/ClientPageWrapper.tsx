@@ -177,7 +177,7 @@ export default function ClientPageWrapper({
 
             {/* CTAs optimisés - Bootcamp en priorité absolue */}
             <div className="cta-group-mobile pt-6 sm:pt-8 pb-12 sm:pb-16">
-              <div className="cta-container-mobile lg:flex-row lg:max-w-none lg:gap-6">
+              <div className="cta-container-mobile lg:flex-row lg:justify-center lg:max-w-none lg:gap-6">
                 <TrackedLink
                   href="/bootcamp"
                   ctaId="hero-bootcamp"
