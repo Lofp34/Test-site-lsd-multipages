@@ -70,8 +70,8 @@ export default function BootcampHero() {
                 <div className="text-sm text-white/80">d&apos;abandon</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl sm:text-4xl font-title font-bold text-orange-soft">6 950&euro;</div>
-                <div className="text-sm text-white/80">H.T. / 6 personnes</div>
+                <div className="text-2xl sm:text-3xl font-title font-bold text-orange-soft">Plus de 800</div>
+                <div className="text-sm text-white/80">commerciaux formés</div>
               </div>
             </div>
           </div>
