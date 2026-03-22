@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'prospection-b2b-2026-methode-4-blocs-rdv-qualifies',
+    title: 'Prospection B2B 2026 : la méthode 4 blocs pour générer plus de RDV qualifiés',
+    description: 'Ciblage, message, séquence, pilotage : une méthode terrain simple pour améliorer la qualité de votre pipeline commercial B2B.',
+    date: '2026-03-22',
+    readTime: '10 min',
+    category: 'Prospection',
+    image: '/equipe_bureau.jpg',
+    featured: true
+  },
+  {
     slug: 'commission-breath-3-mecanismes-tuent-closing',
     title: 'Commission Breath : les 3 mécanismes invisibles qui tuent votre closing',
     description: 'Découvrez pourquoi vos leads ne sont pas mauvais et comment la biologie, l\'identité et le cadre sabotent vos ventes. Méthode du détachement radical.',
