@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pipeline-commercial-q2-2026-5-decisions-dirigeant',
+    title: 'Pipeline commercial Q2 2026 : 5 décisions de dirigeant pour sécuriser le chiffre d\'affaires',
+    description: 'Un plan concret pour fiabiliser vos prévisions, accélérer les décisions et convertir plus sereinement au T2 2026.',
+    date: '2026-03-23',
+    readTime: '11 min',
+    category: 'Stratégie commerciale',
+    image: '/images/blog/2026-03-23-pipeline-q2-hero.png',
+    featured: true
+  },
+  {
     slug: 'prospection-b2b-2026-methode-4-blocs-rdv-qualifies',
     title: 'Prospection B2B 2026 : la méthode 4 blocs pour générer plus de RDV qualifiés',
     description: 'Ciblage, message, séquence, pilotage : une méthode terrain simple pour améliorer la qualité de votre pipeline commercial B2B.',
