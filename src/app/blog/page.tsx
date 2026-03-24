@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'systeme-90-jours-anti-yo-yo-ca',
+    title: 'Système commercial 90 jours : le plan anti yo-yo du chiffre d\'affaires',
+    description: 'Le cadre opérationnel en 3 sprints pour stabiliser le CA, améliorer la conversion et sécuriser le trimestre suivant.',
+    date: '2026-03-24',
+    readTime: '10 min',
+    category: 'Exécution commerciale',
+    image: '/images/blog/2026-03-24-systeme-90-jours-hero.png',
+    featured: true
+  },
+  {
     slug: 'pipeline-commercial-q2-2026-5-decisions-dirigeant',
     title: 'Pipeline commercial Q2 2026 : 5 décisions de dirigeant pour sécuriser le chiffre d\'affaires',
     description: 'Un plan concret pour fiabiliser vos prévisions, accélérer les décisions et convertir plus sereinement au T2 2026.',
