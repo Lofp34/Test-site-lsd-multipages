@@ -152,6 +152,10 @@ const ProcessSection = () => {
             </div>
           </div>
 
+          <p className="text-sm md:text-base font-medium opacity-90 mb-8">
+            Financement possible par votre OPCO.
+          </p>
+
           <a
             href="#bootcamp-contact"
             className="inline-block bg-white text-mint-green border-2 border-mint-green hover:bg-mint-green hover:text-white font-semibold rounded-full px-8 py-3 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
