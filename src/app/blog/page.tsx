@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'reunion-commerciale-hebdo-rituel-closing',
+    title: 'Réunion commerciale hebdo : le rituel de 45 minutes qui fait remonter le closing',
+    description: 'Le rituel hebdomadaire pour assainir le pipeline, coacher les deals et faire progresser le taux de conversion sans micro-manager.',
+    date: '2026-03-25',
+    readTime: '9 min',
+    category: 'Management commercial',
+    image: '/images/blog/2026-03-25-revue-pipeline-rituel.svg',
+    featured: true
+  },
+  {
     slug: 'systeme-90-jours-anti-yo-yo-ca',
     title: 'Système commercial 90 jours : le plan anti yo-yo du chiffre d\'affaires',
     description: 'Le cadre opérationnel en 3 sprints pour stabiliser le CA, améliorer la conversion et sécuriser le trimestre suivant.',
