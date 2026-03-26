@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'fin-trimestre-commercial-7-arbitrages-eviter-avril-creux',
+    title: 'Fin de trimestre commercial : 7 arbitrages pour éviter un mois d\'avril creux',
+    description: 'Les arbitrages concrets de fin de trimestre pour protéger avril, éviter les remises panique et garder un pipeline crédible.',
+    date: '2026-03-26',
+    readTime: '12 min',
+    category: 'Pilotage commercial',
+    image: '/images/blog/2026-03-26-fin-trimestre-arbitrages-hero.svg',
+    featured: true
+  },
+  {
     slug: 'reunion-commerciale-hebdo-rituel-closing',
     title: 'Réunion commerciale hebdo : le rituel de 45 minutes qui fait remonter le closing',
     description: 'Le rituel hebdomadaire pour assainir le pipeline, coacher les deals et faire progresser le taux de conversion sans micro-manager.',
