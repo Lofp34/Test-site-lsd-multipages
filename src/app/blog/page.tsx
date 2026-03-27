@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'comptes-strategiques-dormants-relance-dirigeant',
+    title: 'Comptes stratégiques dormants : la relance que les dirigeants oublient trop souvent',
+    description: 'La méthode premium pour réactiver des comptes dormants à fort potentiel sans tomber dans la relance opportuniste ni le théâtre CRM.',
+    date: '2026-03-27',
+    readTime: '11 min',
+    category: 'Développement de comptes',
+    image: '/images/blog/2026-03-27-comptes-strategiques-dormants-hero.png',
+    featured: true
+  },
+  {
     slug: 'fin-trimestre-commercial-7-arbitrages-eviter-avril-creux',
     title: 'Fin de trimestre commercial : 7 arbitrages pour éviter un mois d\'avril creux',
     description: 'Les arbitrages concrets de fin de trimestre pour protéger avril, éviter les remises panique et garder un pipeline crédible.',
