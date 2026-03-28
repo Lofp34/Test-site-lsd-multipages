@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pipeline-fantome-lundi-matin-test-9-minutes',
+    title: 'Pipeline fantôme : le test des 9 minutes du lundi matin',
+    description: 'Le test simple et exigeant pour repérer les faux deals, requalifier le forecast et reprendre le contrôle dès le lundi matin.',
+    date: '2026-03-28',
+    readTime: '10 min',
+    category: 'Pilotage commercial',
+    image: '/images/blog/2026-03-28-pipeline-fantome-lundi-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'comptes-strategiques-dormants-relance-dirigeant',
     title: 'Comptes stratégiques dormants : la relance que les dirigeants oublient trop souvent',
     description: 'La méthode premium pour réactiver des comptes dormants à fort potentiel sans tomber dans la relance opportuniste ni le théâtre CRM.',
