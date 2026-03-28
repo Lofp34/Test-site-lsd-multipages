@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-03-29-revue-deal-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-03-28-revue-deal-hero.jpg',
         width: 1376,
         height: 768,
         alt: 'Revue deal dirigeant et directeur commercial avant envoi de proposition',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Avant d’envoyer une proposition : la revue deal en 17 minutes',
     description: 'Le rituel simple qui évite les propositions trop tôt et améliore la qualité du closing.',
-    images: ['https://www.laurentserre.com/images/blog/2026-03-29-revue-deal-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-03-28-revue-deal-hero.jpg'],
   },
 };
 
@@ -53,7 +53,7 @@ export default function RevueDealAvantPropositionPage() {
                 <span>Laurent Serre</span>
               </div>
               <span>•</span>
-              <time dateTime="2026-03-29">29 mars 2026</time>
+              <time dateTime="2026-03-28">28 mars 2026</time>
               <span>•</span>
               <span>11 min de lecture</span>
             </div>
@@ -61,7 +61,7 @@ export default function RevueDealAvantPropositionPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-03-29-revue-deal-hero.jpg"
+              src="/images/blog/2026-03-28-revue-deal-hero.jpg"
               alt="Revue deal dirigeant et directeur commercial avant envoi de proposition"
               width={1376}
               height={768}
