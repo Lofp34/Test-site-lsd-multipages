@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'revue-deal-avant-proposition-3-verifications',
+    title: 'Avant d\'envoyer une proposition : la revue deal en 17 minutes',
+    description: 'Le rituel de revue deal qui évite les propositions prématurées, protège la marge et améliore le taux de signature en B2B.',
+    date: '2026-03-29',
+    readTime: '11 min',
+    category: 'Closing B2B',
+    image: '/images/blog/2026-03-29-revue-deal-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'pipeline-fantome-lundi-matin-test-9-minutes',
     title: 'Pipeline fantôme : le test des 9 minutes du lundi matin',
     description: 'Le test simple et exigeant pour repérer les faux deals, requalifier le forecast et reprendre le contrôle dès le lundi matin.',
