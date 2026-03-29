@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'comite-commercial-mensuel-decisions-dirigeant',
+    title: 'Comité commercial mensuel : les 6 décisions qu’un dirigeant doit exiger',
+    description: 'Le cadre mensuel pour sortir du commentaire CRM, fiabiliser le forecast et prendre de vraies décisions de pilotage commercial.',
+    date: '2026-03-29',
+    readTime: '12 min',
+    category: 'Pilotage commercial',
+    image: '/images/blog/2026-03-29-comite-commercial-mensuel-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'revue-deal-avant-proposition-3-verifications',
     title: 'Avant d\'envoyer une proposition : la revue deal en 17 minutes',
     description: 'Le rituel de revue deal qui évite les propositions prématurées, protège la marge et améliore le taux de signature en B2B.',
