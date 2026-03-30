@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'debut-avril-recharger-pipeline-sans-brader-t2',
+    title: 'Début avril : 5 décisions pour recharger le pipeline sans brader le T2',
+    description: 'Le cadre dirigeant pour recharger un pipeline fragile en début de T2 sans dégrader la marge ni envoyer des propositions prématurées.',
+    date: '2026-03-30',
+    readTime: '11 min',
+    category: 'Dirigeant / arbitrage',
+    image: '/images/blog/2026-03-30-avril-recharger-pipeline-t2-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'comite-commercial-mensuel-decisions-dirigeant',
     title: 'Comité commercial mensuel : les 6 décisions qu’un dirigeant doit exiger',
     description: 'Le cadre mensuel pour sortir du commentaire CRM, fiabiliser le forecast et prendre de vraies décisions de pilotage commercial.',
