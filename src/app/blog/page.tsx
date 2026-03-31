@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe',
+    title: 'Pourquoi un manager commercial qui suit sans coacher plombe son équipe',
+    description: 'Le vrai problème n’est pas le manque de suivi. C’est un suivi sans progression, qui occupe l’équipe sans la faire grandir.',
+    date: '2026-03-31',
+    readTime: '10 min',
+    category: 'Management / transformation',
+    image: '/images/blog/2026-03-31-manager-suivre-sans-coacher-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'reunion-30-minutes-proteger-marge-pipeline-avril',
     title: 'La réunion de 30 minutes qui protège votre marge et votre pipeline en avril',
     description: 'Le rituel dirigeant pour nettoyer le pipeline, éviter les remises réflexes et concentrer le management là où il crée vraiment de la conversion.',

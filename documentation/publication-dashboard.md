@@ -15,15 +15,15 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 1
-- **Publications blog publiées** : 1
+- **Total publications suivies** : 2
+- **Publications blog publiées** : 2
 - **Idées en backlog** : 0
-- **Articles avec kit LinkedIn prêt** : 1
-- **Articles avec email prêt/envoyé** : 1
+- **Articles avec kit LinkedIn prêt** : 2
+- **Articles avec email prêt/envoyé** : 2
 
 ### Répartition par pilier
 - Expertise développement commercial PME : 0
-- Formation / transformation commerciale : 0
+- Formation / transformation commerciale : 1
 - Outils / méthodes / ressources : 0
 - IA / tendances / prospective : 0
 - Management / pilotage dirigeant : 1
@@ -32,7 +32,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Erreur fréquente : 0
 - Diagnostic : 0
 - Méthode : 0
-- Point de vue : 0
+- Point de vue : 1
 - Terrain : 0
 - Dirigeant / arbitrage : 1
 - Transformation : 0
@@ -41,23 +41,25 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Actualité interprétée : 0
 
 ### Vigilance diversité
-- **Angles surreprésentés** : aucun à ce stade
-- **Angles sous-exploités** : erreur fréquente, diagnostic, méthode, point de vue, terrain, transformation, IA utile, ressource / outil, actualité interprétée
-- **Piliers sous-traités** : expertise développement commercial PME, formation / transformation commerciale, outils / méthodes / ressources, IA / tendances / prospective
-- **Opportunités saisonnières du moment** : début de T2, rechargement pipeline d’avril, arbitrages post-fin de trimestre
+- **Angles surreprésentés** : dirigeant / arbitrage, diagnostic de pilotage, méthode de rituel de pilotage
+- **Angles sous-exploités** : erreur fréquente, terrain, transformation, IA utile, ressource / outil, actualité interprétée, psychologie commerciale
+- **Piliers sous-traités** : techniques de vente terrain, IA / tendances / prospective, psychologie / comportements commerciaux, points de vue forts dirigeant
+- **Sujets temporairement sous quota fort** : pipeline fragile, pipeline fantôme, début/fin de trimestre, réunion commerciale hebdo, comité commercial mensuel, revue deal, forecast, protection de marge par rituel de pilotage
+- **Opportunités saisonnières du moment** : début de T2, mais à traiter désormais avec angles plus larges et moins centrés sur le pipe ou les réunions
 
 ## 3. Backlog prioritaire d’idées
 
 | Priorité | Sujet | Angle | ICP | Source dominante | Pourquoi maintenant | Statut |
 |---|---|---|---|---|---|---|
-| P1 | À définir | À définir | Dirigeant PME B2B | Fondamentaux | À définir | Idée |
-| P1 | À définir | À définir | Directeur commercial | Signal interne | À définir | Idée |
-| P2 | À définir | À définir | PME B2B | Saisonnalité | À définir | Idée |
+| P1 | Pourquoi vos commerciaux parlent trop tôt des solutions — et combien ça vous coûte | Erreur fréquente / terrain | Dirigeant PME B2B / directeur commercial | Fondamentaux | Très fort potentiel de respiration après la séquence pipeline et management | Idée |
+| P1 | Les erreurs d’onboarding commercial qui vont plomber la performance du nouveau | Transformation | Dirigeant PME B2B / manager commercial | Signal interne | Début de T2 propice aux recrutements et à la montée en cadence | Idée |
+| P2 | La peur du prix : le vrai problème n’est presque jamais le tarif | Point de vue / psychologie | Dirigeant PME B2B / commerciaux / managers | Fondamentaux | Angle fort, partageable, bon relais LinkedIn | Idée |
 
 ## 4. Journal des publications
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-03-31 | publié | Pourquoi un manager commercial qui suit sans coacher plombe son équipe | Coaching managérial vs simple suivi | Point de vue | Formation / transformation commerciale | Dirigeant PME B2B / directeur commercial / manager commercial | Ouvrir des conversations sur le coaching managérial, la transformation d’équipe et la montée en fiabilité commerciale | Fondamentaux / historique | Oui — respiration éditoriale après une série centrée pipeline / réunions / T2 | https://www.laurentserre.com/blog/pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe | oui | envoyé | Post LinkedIn d’opinion, carrousel suivre vs coacher, script vidéo management | Ouvre un territoire management plus net et sort clairement des angles pipeline/forecast |
 | 2026-03-30 | publié | Début avril : 5 décisions pour recharger le pipeline sans brader le T2 | Rechargement pipeline T2 | Dirigeant / arbitrage | Management / pilotage dirigeant | Dirigeant PME B2B / directeur commercial | Générer une prise de contact autour du redressement pipeline et de la protection de marge | Saisonnalité / événement | Oui — démarrage T2 / avril | https://www.laurentserre.com/blog/debut-avril-recharger-pipeline-sans-brader-t2 | oui | envoyé | Déclinaison newsletter, post LinkedIn, script vidéo court | Angle premium orienté arbitrages de début de trimestre |
 
 ## 5. Légende de classification
