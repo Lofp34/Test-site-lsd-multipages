@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'reunion-30-minutes-proteger-marge-pipeline-avril',
+    title: 'La réunion de 30 minutes qui protège votre marge et votre pipeline en avril',
+    description: 'Le rituel dirigeant pour nettoyer le pipeline, éviter les remises réflexes et concentrer le management là où il crée vraiment de la conversion.',
+    date: '2026-03-31',
+    readTime: '11 min',
+    category: 'Pilotage commercial',
+    image: '/images/blog/2026-03-31-reunion-30-minutes-marge-pipeline-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'debut-avril-recharger-pipeline-sans-brader-t2',
     title: 'Début avril : 5 décisions pour recharger le pipeline sans brader le T2',
     description: 'Le cadre dirigeant pour recharger un pipeline fragile en début de T2 sans dégrader la marge ni envoyer des propositions prématurées.',
