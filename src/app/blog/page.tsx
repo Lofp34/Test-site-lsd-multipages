@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-ia-sans-plan-vente-produit-surtout-bruit',
+    title: 'Pourquoi l’IA sans plan de vente produit surtout du bruit',
+    description: 'L’IA aide une équipe claire. Sans plan de vente net, elle accélère surtout la confusion, le reporting et les faux gains de modernité.',
+    date: '2026-04-01',
+    readTime: '9 min',
+    category: 'IA utile',
+    image: '/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe',
     title: 'Pourquoi un manager commercial qui suit sans coacher plombe son équipe',
     description: 'Le vrai problème n’est pas le manque de suivi. C’est un suivi sans progression, qui occupe l’équipe sans la faire grandir.',
