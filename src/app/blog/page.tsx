@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif',
+    title: 'La peur du prix : le vrai problème n’est presque jamais le tarif',
+    description: 'Quand une vente bloque sur le prix, le tarif n’est souvent que la surface du problème. Valeur perçue, découverte et décision pèsent bien plus lourd.',
+    date: '2026-04-02',
+    readTime: '9 min',
+    category: 'Psychologie commerciale',
+    image: '/images/blog/2026-04-02-peur-prix-vrai-probleme-pas-tarif-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'pourquoi-ia-sans-plan-vente-produit-surtout-bruit',
     title: 'Pourquoi l’IA sans plan de vente produit surtout du bruit',
     description: 'L’IA aide une équipe claire. Sans plan de vente net, elle accélère surtout la confusion, le reporting et les faux gains de modernité.',

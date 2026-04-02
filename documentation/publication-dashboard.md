@@ -15,11 +15,11 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 3
-- **Publications blog publiées** : 3
+- **Total publications suivies** : 4
+- **Publications blog publiées** : 4
 - **Idées en backlog** : 0
-- **Articles avec kit LinkedIn prêt** : 3
-- **Articles avec email prêt/envoyé** : 3
+- **Articles avec kit LinkedIn prêt** : 4
+- **Articles avec email prêt/envoyé** : 4
 
 ### Répartition par pilier
 - Expertise développement commercial PME : 0
@@ -32,7 +32,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Erreur fréquente : 0
 - Diagnostic : 0
 - Méthode : 0
-- Point de vue : 1
+- Point de vue : 2
 - Terrain : 0
 - Dirigeant / arbitrage : 1
 - Transformation : 0
@@ -53,12 +53,13 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 |---|---|---|---|---|---|---|
 | P1 | Pourquoi vos commerciaux parlent trop tôt des solutions — et combien ça vous coûte | Erreur fréquente / terrain | Dirigeant PME B2B / directeur commercial | Fondamentaux | Très fort potentiel de respiration après la séquence pipeline et management | Idée |
 | P1 | Les erreurs d’onboarding commercial qui vont plomber la performance du nouveau | Transformation | Dirigeant PME B2B / manager commercial | Signal interne | Début de T2 propice aux recrutements et à la montée en cadence | Idée |
-| P2 | La peur du prix : le vrai problème n’est presque jamais le tarif | Point de vue / psychologie | Dirigeant PME B2B / commerciaux / managers | Fondamentaux | Angle fort, partageable, bon relais LinkedIn | Idée |
+
 
 ## 4. Journal des publications
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-02 | publié | La peur du prix : le vrai problème n’est presque jamais le tarif | Objection prix vs valeur perçue | Point de vue | Psychologie / comportements commerciaux | Dirigeant PME B2B / directeur commercial / manager commercial | Ouvrir des conversations sur la valeur perçue, la posture commerciale et la protection de marge sans discount réflexe | Fondamentaux / historique | Oui — excellente respiration après la séquence pilotage + IA, avec un territoire psychologie encore peu exploité | https://www.laurentserre.com/blog/la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif | oui | envoyé | Post LinkedIn de conviction, carrousel valeur vs prix, mini-vidéo objection prix | Ouvre un territoire psychologique premium sans retomber dans pipeline / forecast / rituels |
 | 2026-04-01 | publié | Pourquoi l’IA sans plan de vente produit surtout du bruit | IA sans cap commercial clair | IA utile | IA / tendances / prospective | Dirigeant PME B2B / directeur commercial / manager commercial | Ouvrir des conversations sur la structuration commerciale, le sales enablement et les bons usages de l’IA | Fondamentaux / web / historique | Oui — fort contexte de hype IA en début de T2, avec besoin de cadrage managérial | https://www.laurentserre.com/blog/pourquoi-ia-sans-plan-vente-produit-surtout-bruit | oui | envoyé | Post LinkedIn d’opinion, carrousel clarté vs bruit, mini-vidéo usages IA utiles | Ouvre enfin le territoire IA utile sans retomber dans la fascination outil |
 | 2026-03-31 | publié | Pourquoi un manager commercial qui suit sans coacher plombe son équipe | Coaching managérial vs simple suivi | Point de vue | Formation / transformation commerciale | Dirigeant PME B2B / directeur commercial / manager commercial | Ouvrir des conversations sur le coaching managérial, la transformation d’équipe et la montée en fiabilité commerciale | Fondamentaux / historique | Oui — respiration éditoriale après une série centrée pipeline / réunions / T2 | https://www.laurentserre.com/blog/pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe | oui | envoyé | Post LinkedIn d’opinion, carrousel suivre vs coacher, script vidéo management | Ouvre un territoire management plus net et sort clairement des angles pipeline/forecast |
 | 2026-03-30 | publié | Début avril : 5 décisions pour recharger le pipeline sans brader le T2 | Rechargement pipeline T2 | Dirigeant / arbitrage | Management / pilotage dirigeant | Dirigeant PME B2B / directeur commercial | Générer une prise de contact autour du redressement pipeline et de la protection de marge | Saisonnalité / événement | Oui — démarrage T2 / avril | https://www.laurentserre.com/blog/debut-avril-recharger-pipeline-sans-brader-t2 | oui | envoyé | Déclinaison newsletter, post LinkedIn, script vidéo court | Angle premium orienté arbitrages de début de trimestre |
