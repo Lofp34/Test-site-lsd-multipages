@@ -15,27 +15,28 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 4
-- **Publications blog publiées** : 4
+- **Total publications suivies** : 6
+- **Publications blog publiées** : 6
 - **Idées en backlog** : 0
-- **Articles avec kit LinkedIn prêt** : 4
-- **Articles avec email prêt/envoyé** : 4
+- **Articles avec kit LinkedIn prêt** : 6
+- **Articles avec email prêt/envoyé** : 6
 
 ### Répartition par pilier
 - Expertise développement commercial PME : 0
-- Formation / transformation commerciale : 1
+- Formation / transformation commerciale : 2
 - Outils / méthodes / ressources : 0
 - IA / tendances / prospective : 1
 - Management / pilotage dirigeant : 1
+- Techniques de vente terrain : 1
 
 ### Répartition par angle
-- Erreur fréquente : 0
+- Erreur fréquente : 1
 - Diagnostic : 0
 - Méthode : 0
 - Point de vue : 2
-- Terrain : 0
+- Terrain : 1
+- Transformation : 1
 - Dirigeant / arbitrage : 1
-- Transformation : 0
 - IA utile : 1
 - Ressource / outil : 0
 - Actualité interprétée : 0
@@ -59,6 +60,8 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-04 | publié | Les erreurs d’onboarding commercial qui vont plomber la performance du nouveau | Onboarding commercial structuré vs intégration floue | Transformation | Formation / transformation commerciale | Dirigeant PME B2B / directeur commercial / manager commercial | Réduire le coût caché des recrutements commerciaux ratés et fiabiliser la montée en performance des nouveaux | Fondamentaux / signal interne / historique | Oui — début de T2 propice aux recrutements et à l’intégration de nouveaux commerciaux | https://www.laurentserre.com/blog/les-erreurs-onboarding-commercial-qui-plombent-performance-nouveau | oui | envoyé | Post LinkedIn d’opinion + variantes, commentaire de premier niveau, visuel premium incarné, email de diffusion | Ouvre un territoire transformation très concret, cohérent avec management/coaching sans revenir sur pipeline/forecast |
+| 2026-04-03 | publié | Pourquoi beaucoup de relances commerciales affaiblissent la vente au lieu de la faire avancer | Relance commerciale faible vs progression réelle | Erreur fréquente / terrain | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Relever la qualité de progression des deals en évitant les relances qui dégradent la valeur perçue et la posture commerciale | Fondamentaux / historique | Oui — sujet terrain très utile qui ouvre un territoire opérationnel sans retomber dans le pilotage pipeline | https://www.laurentserre.com/blog/pourquoi-beaucoup-relances-commerciales-affaiblissent-vente | oui | envoyé | Post LinkedIn d’opinion + variantes, commentaire de premier niveau, visuel premium incarné, email de diffusion | Respiration éditoriale forte côté technique de vente ; renforce le lien avec la peur du prix et le coaching managérial |
 | 2026-04-02 | publié | La peur du prix : le vrai problème n’est presque jamais le tarif | Objection prix vs valeur perçue | Point de vue | Psychologie / comportements commerciaux | Dirigeant PME B2B / directeur commercial / manager commercial | Ouvrir des conversations sur la valeur perçue, la posture commerciale et la protection de marge sans discount réflexe | Fondamentaux / historique | Oui — excellente respiration après la séquence pilotage + IA, avec un territoire psychologie encore peu exploité | https://www.laurentserre.com/blog/la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif | oui | envoyé | Post LinkedIn de conviction, carrousel valeur vs prix, mini-vidéo objection prix | Ouvre un territoire psychologique premium sans retomber dans pipeline / forecast / rituels |
 | 2026-04-01 | publié | Pourquoi l’IA sans plan de vente produit surtout du bruit | IA sans cap commercial clair | IA utile | IA / tendances / prospective | Dirigeant PME B2B / directeur commercial / manager commercial | Ouvrir des conversations sur la structuration commerciale, le sales enablement et les bons usages de l’IA | Fondamentaux / web / historique | Oui — fort contexte de hype IA en début de T2, avec besoin de cadrage managérial | https://www.laurentserre.com/blog/pourquoi-ia-sans-plan-vente-produit-surtout-bruit | oui | envoyé | Post LinkedIn d’opinion, carrousel clarté vs bruit, mini-vidéo usages IA utiles | Ouvre enfin le territoire IA utile sans retomber dans la fascination outil |
 | 2026-03-31 | publié | Pourquoi un manager commercial qui suit sans coacher plombe son équipe | Coaching managérial vs simple suivi | Point de vue | Formation / transformation commerciale | Dirigeant PME B2B / directeur commercial / manager commercial | Ouvrir des conversations sur le coaching managérial, la transformation d’équipe et la montée en fiabilité commerciale | Fondamentaux / historique | Oui — respiration éditoriale après une série centrée pipeline / réunions / T2 | https://www.laurentserre.com/blog/pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe | oui | envoyé | Post LinkedIn d’opinion, carrousel suivre vs coacher, script vidéo management | Ouvre un territoire management plus net et sort clairement des angles pipeline/forecast |

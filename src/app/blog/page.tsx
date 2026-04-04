@@ -36,6 +36,26 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'les-erreurs-onboarding-commercial-qui-plombent-performance-nouveau',
+    title: 'Les erreurs d’onboarding commercial qui vont plomber la performance du nouveau',
+    description: 'Un onboarding commercial flou coûte des mois de performance. Le nouveau n’échoue pas seul : il hérite souvent d’un système mal cadré.',
+    date: '2026-04-04',
+    readTime: '10 min',
+    category: 'Management / transformation',
+    image: '/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.jpg',
+    featured: true
+  },
+  {
+    slug: 'pourquoi-beaucoup-relances-commerciales-affaiblissent-vente',
+    title: 'Pourquoi beaucoup de relances commerciales affaiblissent la vente au lieu de la faire avancer',
+    description: 'Relancer plus ne fait pas toujours avancer une vente. Souvent, cela compense une étape mal sécurisée et affaiblit la valeur perçue.',
+    date: '2026-04-03',
+    readTime: '10 min',
+    category: 'Techniques de vente terrain',
+    image: '/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif',
     title: 'La peur du prix : le vrai problème n’est presque jamais le tarif',
     description: 'Quand une vente bloque sur le prix, le tarif n’est souvent que la surface du problème. Valeur perçue, découverte et décision pèsent bien plus lourd.',
