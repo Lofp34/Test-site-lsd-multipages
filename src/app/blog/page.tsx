@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme',
+    title: 'Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système',
+    description: 'Quand un bon commercial devient irrégulier, le problème n’est pas toujours la personne. Un système flou dégrade la posture, la lecture et la performance de l’équipe.',
+    date: '2026-04-05',
+    readTime: '10 min',
+    category: 'Structure / système commercial',
+    image: '/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'les-erreurs-onboarding-commercial-qui-plombent-performance-nouveau',
     title: 'Les erreurs d’onboarding commercial qui vont plomber la performance du nouveau',
     description: 'Un onboarding commercial flou coûte des mois de performance. Le nouveau n’échoue pas seul : il hérite souvent d’un système mal cadré.',

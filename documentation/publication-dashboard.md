@@ -15,11 +15,11 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 6
-- **Publications blog publiées** : 6
+- **Total publications suivies** : 7
+- **Publications blog publiées** : 7
 - **Idées en backlog** : 0
-- **Articles avec kit LinkedIn prêt** : 6
-- **Articles avec email prêt/envoyé** : 6
+- **Articles avec kit LinkedIn prêt** : 7
+- **Articles avec email prêt/envoyé** : 7
 
 ### Répartition par pilier
 - Expertise développement commercial PME : 0
@@ -28,12 +28,13 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - IA / tendances / prospective : 1
 - Management / pilotage dirigeant : 1
 - Techniques de vente terrain : 1
+- Structure / système commercial : 1
 
 ### Répartition par angle
 - Erreur fréquente : 1
 - Diagnostic : 0
 - Méthode : 0
-- Point de vue : 2
+- Point de vue : 3
 - Terrain : 1
 - Transformation : 1
 - Dirigeant / arbitrage : 1
@@ -52,14 +53,15 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Priorité | Sujet | Angle | ICP | Source dominante | Pourquoi maintenant | Statut |
 |---|---|---|---|---|---|---|
-| P1 | Pourquoi vos commerciaux parlent trop tôt des solutions — et combien ça vous coûte | Erreur fréquente / terrain | Dirigeant PME B2B / directeur commercial | Fondamentaux | Très fort potentiel de respiration après la séquence pipeline et management | Idée |
-| P1 | Les erreurs d’onboarding commercial qui vont plomber la performance du nouveau | Transformation | Dirigeant PME B2B / manager commercial | Signal interne | Début de T2 propice aux recrutements et à la montée en cadence | Idée |
+| P1 | Pourquoi vos commerciaux parlent trop tôt des solutions — et combien ça vous coûte | Erreur fréquente / terrain | Dirigeant PME B2B / directeur commercial | Fondamentaux | Très fort potentiel de respiration après la séquence structure / système | Idée |
+| P1 | Les cinq signes qu’un commercial motivé va quand même échouer | Point de vue / diagnostic | Dirigeant PME B2B / manager commercial | Fondamentaux | Suite naturelle après l’article du jour pour prolonger le territoire système vers la lecture des profils | Idée |
 
 
 ## 4. Journal des publications
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-05 | publié | Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système | Dégradation de bons profils par un système commercial flou | Point de vue | Structure / système commercial | Dirigeant PME B2B / directeur commercial / manager commercial | Déplacer le diagnostic de la personne vers le système pour ouvrir des conversations de structuration commerciale et de transformation managériale | Fondamentaux / historique | Oui — forte respiration après management, terrain, psychologie et IA ; ouvre un territoire structurel premium sans revenir au pipeline/forecast | https://www.laurentserre.com/blog/pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme | oui | à envoyer | Post LinkedIn d’opinion + variantes, commentaire de premier niveau, visuel premium incarné, email HTML de diffusion | Ouvre un nouveau territoire de crédibilité structure / système commercial et prépare bien une future bascule vers découverte / motivation / conversion |
 | 2026-04-04 | publié | Les erreurs d’onboarding commercial qui vont plomber la performance du nouveau | Onboarding commercial structuré vs intégration floue | Transformation | Formation / transformation commerciale | Dirigeant PME B2B / directeur commercial / manager commercial | Réduire le coût caché des recrutements commerciaux ratés et fiabiliser la montée en performance des nouveaux | Fondamentaux / signal interne / historique | Oui — début de T2 propice aux recrutements et à l’intégration de nouveaux commerciaux | https://www.laurentserre.com/blog/les-erreurs-onboarding-commercial-qui-plombent-performance-nouveau | oui | envoyé | Post LinkedIn d’opinion + variantes, commentaire de premier niveau, visuel premium incarné, email de diffusion | Ouvre un territoire transformation très concret, cohérent avec management/coaching sans revenir sur pipeline/forecast |
 | 2026-04-03 | publié | Pourquoi beaucoup de relances commerciales affaiblissent la vente au lieu de la faire avancer | Relance commerciale faible vs progression réelle | Erreur fréquente / terrain | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Relever la qualité de progression des deals en évitant les relances qui dégradent la valeur perçue et la posture commerciale | Fondamentaux / historique | Oui — sujet terrain très utile qui ouvre un territoire opérationnel sans retomber dans le pilotage pipeline | https://www.laurentserre.com/blog/pourquoi-beaucoup-relances-commerciales-affaiblissent-vente | oui | envoyé | Post LinkedIn d’opinion + variantes, commentaire de premier niveau, visuel premium incarné, email de diffusion | Respiration éditoriale forte côté technique de vente ; renforce le lien avec la peur du prix et le coaching managérial |
 | 2026-04-02 | publié | La peur du prix : le vrai problème n’est presque jamais le tarif | Objection prix vs valeur perçue | Point de vue | Psychologie / comportements commerciaux | Dirigeant PME B2B / directeur commercial / manager commercial | Ouvrir des conversations sur la valeur perçue, la posture commerciale et la protection de marge sans discount réflexe | Fondamentaux / historique | Oui — excellente respiration après la séquence pilotage + IA, avec un territoire psychologie encore peu exploité | https://www.laurentserre.com/blog/la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif | oui | envoyé | Post LinkedIn de conviction, carrousel valeur vs prix, mini-vidéo objection prix | Ouvre un territoire psychologique premium sans retomber dans pipeline / forecast / rituels |
