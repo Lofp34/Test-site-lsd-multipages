@@ -143,7 +143,7 @@ const ProcessSection = () => {
               <div className="text-sm opacity-80">H.T. pour 6 personnes</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold mb-2">42h</div>
+              <div className="text-3xl font-bold mb-2">3 mois</div>
               <div className="text-sm opacity-80">d'accompagnement intensif</div>
             </div>
             <div className="text-center">

@@ -155,7 +155,7 @@ export default function ClientPageWrapper({
 
             <div className="max-w-5xl mx-auto space-y-4 sm:space-y-6">
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-body text-white/95 leading-relaxed drop-shadow-md px-2">
-                Le Bootcamp Commercial : 42h d'accompagnement intensif pour structurer votre force de vente
+                Le Bootcamp Commercial : 3 mois d'accompagnement intensif pour structurer votre force de vente
                 et obtenir des résultats mesurables dès les premières semaines.
               </p>
 
