@@ -36,16 +36,6 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
-    slug: 'article-test-publication-openclaw',
-    title: 'Article test de publication OpenClaw',
-    description: 'Article de test publié automatiquement depuis le dépôt GitHub pour valider le workflow de publication du blog Laurent Serre.',
-    date: '2026-04-07',
-    readTime: '3 min',
-    category: 'Test technique',
-    image: '/images/blog/2026-04-07-test-publication-openclaw-hero.jpg',
-    featured: true
-  },
-  {
     slug: 'pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme',
     title: 'Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système',
     description: 'Quand un bon commercial devient irrégulier, le problème n’est pas toujours la personne. Un système flou dégrade la posture, la lecture et la performance de l’équipe.',
