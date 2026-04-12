@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-vos-commerciaux-parlent-trop-tot-des-solutions',
+    title: 'Pourquoi vos commerciaux parlent trop tôt des solutions, et combien ça vous coûte',
+    description: 'Parler trop tôt de la solution rassure le commercial, mais fragilise souvent la vente. Le vrai sujet est la qualité de la découverte et la construction de la décision.',
+    date: '2026-04-11',
+    readTime: '10 min',
+    category: 'Techniques de vente terrain',
+    image: '/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.png',
+    featured: true
+  },
+  {
     slug: 'pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme',
     title: 'Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système',
     description: 'Quand un bon commercial devient irrégulier, le problème n’est pas toujours la personne. Un système flou dégrade la posture, la lecture et la performance de l’équipe.',
