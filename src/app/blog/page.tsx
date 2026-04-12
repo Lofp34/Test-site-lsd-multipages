@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'cinq-signes-commercial-motive-va-quand-meme-echouer',
+    title: 'Les cinq signes qu’un commercial motivé va quand même échouer',
+    description: 'La motivation ne compense pas un mauvais cadrage commercial. Voici les signaux concrets qui montrent qu’un profil engagé risque quand même de se casser.',
+    date: '2026-04-12',
+    readTime: '9 min',
+    category: 'Psychologie commerciale',
+    image: '/images/blog/2026-04-12-signes-commercial-motive-va-echouer-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'pourquoi-vos-commerciaux-parlent-trop-tot-des-solutions',
     title: 'Pourquoi vos commerciaux parlent trop tôt des solutions, et combien ça vous coûte',
     description: 'Parler trop tôt de la solution rassure le commercial, mais fragilise souvent la vente. Le vrai sujet est la qualité de la découverte et la construction de la décision.',
