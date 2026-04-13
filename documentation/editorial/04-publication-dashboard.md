@@ -15,16 +15,16 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 9
-- **Publications blog publiées** : 9
+- **Total publications suivies** : 10
+- **Publications blog publiées** : 10
 - **Idées en backlog** : 0
-- **Articles avec kit LinkedIn prêt** : 9
+- **Articles avec kit LinkedIn prêt** : 10
 - **Articles avec email prêt/envoyé** : 7
 
 ### Répartition par pilier
 - Expertise développement commercial PME : 0
 - Formation / transformation commerciale : 2
-- Outils / méthodes / ressources : 0
+- Outils / méthodes / ressources : 1
 - IA / tendances / prospective : 1
 - Management / pilotage dirigeant : 1
 - Techniques de vente terrain : 2
@@ -34,7 +34,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 ### Répartition par angle
 - Erreur fréquente : 2
 - Diagnostic : 1
-- Méthode : 0
+- Méthode : 1
 - Point de vue : 3
 - Terrain : 1
 - Transformation : 1
@@ -46,7 +46,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 ### Vigilance diversité
 - **Angles surreprésentés** : point de vue dirigeant, système commercial, diagnostic de pilotage
 - **Angles sous-exploités** : erreur fréquente, terrain, transformation, ressource / outil, actualité interprétée
-- **Piliers sous-traités** : techniques de vente terrain, points de vue forts dirigeant, outils / méthodes / ressources
+- **Piliers sous-traités** : techniques de vente terrain, points de vue forts dirigeant
 - **Sujets temporairement sous quota fort** : pipeline fragile, pipeline fantôme, début/fin de trimestre, réunion commerciale hebdo, comité commercial mensuel, revue deal, forecast, protection de marge par rituel de pilotage
 - **Opportunités saisonnières du moment** : début de T2, mais avec priorité à des diagnostics de management, de comportement et d’exécution commerciale plutôt qu’à de nouveaux marronniers de pilotage
 
@@ -59,6 +59,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-13 | publié | Pourquoi le compte rendu commercial ne remplace jamais le débrief à chaud | Débrief commercial à chaud vs compte rendu CRM | Méthode | Outils / méthodes / ressources | Dirigeant PME B2B / directeur commercial / manager commercial | Aider les managers à reprendre les rendez-vous au bon niveau et ouvrir des conversations sur le coaching commercial concret plutôt que le simple suivi CRM | Fondamentaux / historique | Oui — bon contrepoint méthode après plusieurs articles de diagnostic, de psychologie et de vente terrain, sans retomber dans les marronniers pipeline | https://www.laurentserre.com/blog/pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud | oui | à préparer | Post LinkedIn d’opinion managériale, carrousel compte rendu vs débrief, email court sur les six minutes utiles après rendez-vous, visuel premium incarné | Ouvre enfin l’angle méthode dans le dashboard, renforce le pilier outils / méthodes et crée un pont fort avec l’article sur le manager qui suit sans coacher |
 | 2026-04-12 | publié | Les cinq signes qu’un commercial motivé va quand même échouer | Signaux faibles d’échec chez un commercial engagé dans un cadre mal tenu | Diagnostic | Psychologie / comportements commerciaux | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à repérer plus tôt les profils qui s’usent dans le système et ouvrir des conversations sur le management, le coaching et la structuration commerciale | Fondamentaux / historique | Oui — suite naturelle après l’article sur la découverte commerciale, avec un angle plus dirigeant et plus lecture des profils que pure technique de vente | https://www.laurentserre.com/blog/cinq-signes-commercial-motive-va-quand-meme-echouer | oui | à préparer | Post LinkedIn de diagnostic dirigeant, carrousel signes faibles, email court sur les faux mauvais commerciaux, visuel premium incarné | Renforce le pilier psychologie commerciale sans retomber dans un article purement motivationnel ; bon pont entre management, système et qualité des rendez-vous |
 | 2026-04-11 | publié | Pourquoi vos commerciaux parlent trop tôt des solutions, et combien ça vous coûte | Solution présentée trop tôt avant une vraie découverte | Erreur fréquente / terrain | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à diagnostiquer des ventes fragiles dès la phase de découverte et ouvrir des conversations sur la qualité réelle des rendez-vous commerciaux | Fondamentaux / historique | Oui — fort effet de respiration après la séquence structure / système ; ouvre un territoire très concret de découverte commerciale sans revenir au pipeline ou au forecast | https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-parlent-trop-tot-des-solutions | oui | à préparer | Post LinkedIn d’opinion terrain, carrousel découverte vs présentation, email de diffusion, visuel réunion premium | Renforce le pilier vente terrain, complète bien l’article sur les relances et prépare des suites sur découverte, objection et proposition |
 | 2026-04-05 | publié | Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système | Dégradation de bons profils par un système commercial flou | Point de vue | Structure / système commercial | Dirigeant PME B2B / directeur commercial / manager commercial | Déplacer le diagnostic de la personne vers le système pour ouvrir des conversations de structuration commerciale et de transformation managériale | Fondamentaux / historique | Oui — forte respiration après management, terrain, psychologie et IA ; ouvre un territoire structurel premium sans revenir au pipeline/forecast | https://www.laurentserre.com/blog/pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme | oui | à envoyer | Post LinkedIn d’opinion + variantes, commentaire de premier niveau, visuel premium incarné, email HTML de diffusion | Ouvre un nouveau territoire de crédibilité structure / système commercial et prépare bien une future bascule vers découverte / motivation / conversion |

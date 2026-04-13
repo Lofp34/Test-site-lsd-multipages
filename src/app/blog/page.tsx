@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud',
+    title: 'Pourquoi le compte rendu commercial ne remplace jamais le débrief à chaud',
+    description: 'Le compte rendu rassure le management, mais il ne fait pas progresser la vente. Ce qui change vraiment le niveau d’une équipe, c’est le débrief à chaud, court et précis.',
+    date: '2026-04-13',
+    readTime: '9 min',
+    category: 'Méthode / management commercial',
+    image: '/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'cinq-signes-commercial-motive-va-quand-meme-echouer',
     title: 'Les cinq signes qu’un commercial motivé va quand même échouer',
     description: 'La motivation ne compense pas un mauvais cadrage commercial. Voici les signaux concrets qui montrent qu’un profil engagé risque quand même de se casser.',
