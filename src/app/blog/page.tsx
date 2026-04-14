@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-vos-commerciaux-remplissent-mal-le-crm-et-utilisent-mal-lia',
+    title: 'Pourquoi vos commerciaux remplissent mal le CRM… et utilisent mal l’IA',
+    description: 'Quand les notes CRM sont vagues, l’IA ne rend pas l’équipe plus pertinente. Elle industrialise surtout le flou commercial et le transforme en prose plus propre.',
+    date: '2026-04-14',
+    readTime: '8 min',
+    category: 'IA utile',
+    image: '/images/blog/2026-04-14-crm-ia-hero.png',
+    featured: true
+  },
+  {
     slug: 'pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud',
     title: 'Pourquoi le compte rendu commercial ne remplace jamais le débrief à chaud',
     description: 'Le compte rendu rassure le management, mais il ne fait pas progresser la vente. Ce qui change vraiment le niveau d’une équipe, c’est le débrief à chaud, court et précis.',
