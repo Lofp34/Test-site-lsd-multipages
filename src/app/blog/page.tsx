@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'anticiper-lechec-nest-pas-du-pessimisme-cest-une-discipline-commerciale',
+    title: 'Anticiper l’échec n’est pas du pessimisme, c’est une discipline commerciale',
+    description: 'En vente, la pensée positive rassure. La lucidité, elle, aide à mieux vendre, à mieux qualifier et à éviter les illusions confortables.',
+    date: '2026-04-15',
+    readTime: '6 min',
+    category: 'Psychologie commerciale',
+    image: '/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'pourquoi-vos-commerciaux-remplissent-mal-le-crm-et-utilisent-mal-lia',
     title: 'Pourquoi vos commerciaux remplissent mal le CRM… et utilisent mal l’IA',
     description: 'Quand les notes CRM sont vagues, l’IA ne rend pas l’équipe plus pertinente. Elle industrialise surtout le flou commercial et le transforme en prose plus propre.',

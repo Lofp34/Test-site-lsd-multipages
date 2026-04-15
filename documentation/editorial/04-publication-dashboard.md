@@ -15,8 +15,8 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 11
-- **Publications blog publiées** : 11
+- **Total publications suivies** : 12
+- **Publications blog publiées** : 12
 - **Idées en backlog** : 0
 - **Articles avec kit LinkedIn prêt** : 10
 - **Articles avec email prêt/envoyé** : 7
@@ -29,13 +29,13 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Management / pilotage dirigeant : 1
 - Techniques de vente terrain : 2
 - Structure / système commercial : 1
-- Psychologie / comportements commerciaux : 2
+- Psychologie / comportements commerciaux : 3
 
 ### Répartition par angle
 - Erreur fréquente : 2
 - Diagnostic : 1
 - Méthode : 1
-- Point de vue : 3
+- Point de vue : 4
 - Terrain : 1
 - Transformation : 1
 - Dirigeant / arbitrage : 1
@@ -59,6 +59,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-15 | publié | Anticiper l’échec n’est pas du pessimisme, c’est une discipline commerciale | Lucidité commerciale et anticipation des zones de rupture avant rendez-vous | Point de vue | Psychologie / comportements commerciaux | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à faire monter la qualité de préparation des rendez-vous et ouvrir des conversations sur la lecture réelle des opportunités, des objections et des prochaines étapes | Signal interne / historique | Oui — prolongement naturel des articles sur la découverte, le débrief et les illusions commerciales, avec un article validé fourni dans l’input du jour | https://www.laurentserre.com/blog/anticiper-lechec-nest-pas-du-pessimisme-cest-une-discipline-commerciale | à préparer | non requis (.publish-ok) | Post LinkedIn d’opinion sur la lucidité commerciale, carrousel confiance vs lucidité, email court sur les illusions confortables en vente | Publication directe depuis le fichier validé `.publish-ok.md`, sans repasse éditoriale ni email comparatif ; illustration créée faute de visuel fourni dans le dossier |
 | 2026-04-14 | publié | Pourquoi vos commerciaux remplissent mal le CRM… et utilisent mal l’IA | Mauvais remplissage CRM et mauvais usage de l’IA commerciale | IA utile | IA / tendances / prospective | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à comprendre que l’IA ne compense pas une lecture commerciale pauvre et ouvrir des conversations sur la capture de matière utile après rendez-vous | Signal interne / historique | Oui — prolongement direct du travail éditorial sur CRM, débrief à chaud et IA utile, avec une matière validée fournie dans l’input du jour | https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-remplissent-mal-le-crm-et-utilisent-mal-lia | à préparer | non requis (.publish-ok) | Post LinkedIn d’opinion sur CRM vide et IA, carrousel matière utile vs prose IA, email court sur la qualité de capture après rendez-vous | Publication directe depuis le fichier validé `.publish-ok.md`, sans repasse éditoriale ni email comparatif ; crée un pont fort entre CRM, débrief et IA utile |
 | 2026-04-13 | publié | Pourquoi le compte rendu commercial ne remplace jamais le débrief à chaud | Débrief commercial à chaud vs compte rendu CRM | Méthode | Outils / méthodes / ressources | Dirigeant PME B2B / directeur commercial / manager commercial | Aider les managers à reprendre les rendez-vous au bon niveau et ouvrir des conversations sur le coaching commercial concret plutôt que le simple suivi CRM | Fondamentaux / historique | Oui — bon contrepoint méthode après plusieurs articles de diagnostic, de psychologie et de vente terrain, sans retomber dans les marronniers pipeline | https://www.laurentserre.com/blog/pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud | oui | à préparer | Post LinkedIn d’opinion managériale, carrousel compte rendu vs débrief, email court sur les six minutes utiles après rendez-vous, visuel premium incarné | Ouvre enfin l’angle méthode dans le dashboard, renforce le pilier outils / méthodes et crée un pont fort avec l’article sur le manager qui suit sans coacher |
 | 2026-04-12 | publié | Les cinq signes qu’un commercial motivé va quand même échouer | Signaux faibles d’échec chez un commercial engagé dans un cadre mal tenu | Diagnostic | Psychologie / comportements commerciaux | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à repérer plus tôt les profils qui s’usent dans le système et ouvrir des conversations sur le management, le coaching et la structuration commerciale | Fondamentaux / historique | Oui — suite naturelle après l’article sur la découverte commerciale, avec un angle plus dirigeant et plus lecture des profils que pure technique de vente | https://www.laurentserre.com/blog/cinq-signes-commercial-motive-va-quand-meme-echouer | oui | à préparer | Post LinkedIn de diagnostic dirigeant, carrousel signes faibles, email court sur les faux mauvais commerciaux, visuel premium incarné | Renforce le pilier psychologie commerciale sans retomber dans un article purement motivationnel ; bon pont entre management, système et qualité des rendez-vous |
