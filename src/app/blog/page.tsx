@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'largent-nest-pas-le-probleme-cest-la-mesure-objective-de-la-valeur',
+    title: 'L’argent n’est pas le problème, c’est la mesure objective de la valeur',
+    description: 'Quand un prospect dit qu’il n’a pas le budget, le vrai sujet est souvent ailleurs. L’argent mesure surtout la valeur perçue, la priorité et la confiance accordée à la décision.',
+    date: '2026-04-16',
+    readTime: '5 min',
+    category: 'Psychologie commerciale',
+    image: '/images/blog/2026-04-16-argent-mesure-valeur-hero.png',
+    featured: true
+  },
+  {
     slug: 'anticiper-lechec-nest-pas-du-pessimisme-cest-une-discipline-commerciale',
     title: 'Anticiper l’échec n’est pas du pessimisme, c’est une discipline commerciale',
     description: 'En vente, la pensée positive rassure. La lucidité, elle, aide à mieux vendre, à mieux qualifier et à éviter les illusions confortables.',
