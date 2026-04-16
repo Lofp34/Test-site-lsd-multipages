@@ -36,13 +36,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
-    slug: 'en-2030-au-fil-des-toits-les-agents-ia-ont-change-le-rythme',
-    title: 'En 2030, chez Au Fil des Toits, les agents IA ont changé le rythme',
-    description: 'Projection 2030, crédible et assumée, de la transformation d’une PME de couverture par des agents IA utiles, côté direction, commerce, chantiers et pilotage.',
+    slug: 'en-2030-les-agents-ia-ont-change-le-rythme-dune-pme-terrain',
+    title: 'En 2030, les agents IA ont changé le rythme d’une PME de terrain',
+    description: 'Projection 2030, crédible et assumée, de la transformation d’une PME de terrain par des agents IA utiles, côté direction, commerce, chantiers et pilotage.',
     date: '2026-04-16',
     readTime: '7 min',
     category: 'IA utile / transformation PME',
-    image: '/images/blog/2026-04-16-au-fil-des-toits-agents-ia-hero.jpg',
+    image: '/images/blog/2026-04-16-pme-terrain-agents-ia-hero.jpg',
     featured: true
   },
   {
