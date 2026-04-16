@@ -17,10 +17,10 @@ const testimonials = [
     quote: "Le parcours avec Laurent nous a permis une progression de plus de 50% des objectifs réalisés sur le dernier semestre par rapport au semestre de l'année dernière. On dit merci à Laurent !",
   },
   {
-    name: "Client accompagné",
-    role: "Responsable commercial, PME de couverture",
-    photo: "/images/client-pme-couverture.jpeg",
-    quote: "Laurent nous a aidés à structurer le commerce, à mieux piloter les chiffres et à franchir un vrai cap de performance.",
+    name: "Alexandre",
+    role: "Responsable commercial Toiture et COMPAGNIE",
+    photo: "/images/Alexandre.jpeg",
+    quote: "LAURENT nous a donné l'amour du commerce et surtout au niveau des chiffres, on a explosé avec 40 % d'augmentation",
   },
   {
     name: "Elisa Gorbatoff",

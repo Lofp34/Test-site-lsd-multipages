@@ -4,40 +4,40 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'En 2030, les agents IA ont changé le rythme d’une PME de terrain | Laurent Serre',
+  title: 'En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme | Laurent Serre',
   description:
-    'Projection 2030, concrète et assumée, de la transformation d’une PME de terrain grâce à des agents IA utiles, côté direction, commerce, opérations et pilotage.',
+    'À partir d’une base bien réelle, voilà à quoi pourrait ressembler en 2030 la transformation d’une PME de couverture comme Toiture et COMPAGNIE grâce à des agents IA vraiment utiles.',
   keywords:
-    'agents IA PME, transformation PME 2030, entreprise de terrain, IA commerce operations, Laurent Serre',
+    'agents IA PME, Toiture et COMPAGNIE, transformation PME 2030, couverture toiture, IA commerce operations, Laurent Serre',
   alternates: {
-    canonical: 'https://www.laurentserre.com/blog/en-2030-les-agents-ia-ont-change-le-rythme-dune-pme-terrain',
+    canonical: 'https://www.laurentserre.com/blog/en-2030-toiture-et-compagnie-les-agents-ia-ont-change-le-rythme',
   },
   openGraph: {
-    title: 'En 2030, les agents IA ont changé le rythme d’une PME de terrain',
+    title: 'En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme',
     description:
-      'Projection 2030, crédible et assumée, sur la manière dont des agents IA peuvent transformer une PME de terrain sans tomber dans la science-fiction.',
-    url: 'https://www.laurentserre.com/blog/en-2030-les-agents-ia-ont-change-le-rythme-dune-pme-terrain',
+      'Projection 2030, concrète et assumée, sur la manière dont des agents IA peuvent transformer une PME de couverture sans tomber dans la science-fiction.',
+    url: 'https://www.laurentserre.com/blog/en-2030-toiture-et-compagnie-les-agents-ia-ont-change-le-rythme',
     type: 'article',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-16-pme-terrain-agents-ia-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.jpg',
         width: 2528,
         height: 1696,
-        alt: 'Illustration éditoriale stylisée de deux dirigeants sur un toit avec des tableaux de bord d’agents IA',
+        alt: 'Illustration éditoriale stylisée de Laurent Serre et Alexandre sur un toit avec des tableaux de bord d’agents IA',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'En 2030, les agents IA ont changé le rythme d’une PME de terrain',
+    title: 'En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme',
     description:
-      'Une projection terrain, crédible et très PME, de ce que des agents IA peuvent changer dans une entreprise qui vit sur la réactivité et la qualité d’exécution.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-16-pme-terrain-agents-ia-hero.jpg'],
+      'Une projection terrain, crédible et très PME, de ce que des agents IA peuvent changer dans une entreprise de couverture.',
+    images: ['https://www.laurentserre.com/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.jpg'],
   },
 };
 
-export default function En2030LesAgentsIaOntChangeLeRythmeDunePmeTerrainPage() {
+export default function En2030ToitureEtCompagnieLesAgentsIaOntChangeLeRythmePage() {
   return (
     <main className="bg-primary-bg text-gray-dark">
       <section className="py-24 sm:py-32">
@@ -48,7 +48,7 @@ export default function En2030LesAgentsIaOntChangeLeRythmeDunePmeTerrainPage() {
             </div>
 
             <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              En 2030, les agents IA ont changé le rythme d’une PME de terrain
+              En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme
             </h1>
 
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
@@ -65,8 +65,8 @@ export default function En2030LesAgentsIaOntChangeLeRythmeDunePmeTerrainPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-16-pme-terrain-agents-ia-hero.jpg"
-              alt="Illustration éditoriale stylisée de deux dirigeants sur un toit avec des tableaux de bord d’agents IA"
+              src="/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.jpg"
+              alt="Illustration éditoriale stylisée de Laurent Serre et Alexandre sur un toit avec des tableaux de bord d’agents IA"
               width={2528}
               height={1696}
               className="w-full h-auto object-cover object-center rounded-2xl shadow-lg"
@@ -81,7 +81,7 @@ export default function En2030LesAgentsIaOntChangeLeRythmeDunePmeTerrainPage() {
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
-            Cette scène s’appuie sur une réalité simple. Dans une PME de couverture et de maintenance, les urgences tombent mal, les devis mal cadrés coûtent de la marge, et la coordination se joue souvent à quelques détails. Ce qui suit est une projection assumée vers 2030.
+            Aujourd’hui, Toiture et COMPAGNIE existe bien. Entretien, couverture, réparation, rénovation. Des particuliers, des pros, une promesse claire, prolonger la durée de vie des toitures, plusieurs agences déjà visibles, Marseille, Perpignan, puis Strasbourg, Nantes et Paris. La base est réelle. Ce qui suit est une projection assumée vers 2030.
           </p>
 
           <p className="mb-8">
@@ -89,11 +89,11 @@ export default function En2030LesAgentsIaOntChangeLeRythmeDunePmeTerrainPage() {
           </p>
 
           <p className="mb-8">
-            En 2030, tout n’a pas changé. Les toits fuient toujours. Les urgences arrivent toujours au mauvais moment. Les équipes terrain ont toujours besoin de coordination propre. En revanche, le rythme de l’entreprise, lui, n’a plus rien à voir.
+            En 2030, tout n’a pas changé chez Toiture et COMPAGNIE. Les toits fuient toujours. Les urgences tombent mal. Les devis mal cadrés coûtent toujours de la marge. Les équipes terrain ont toujours besoin de coordination propre. En revanche, le rythme de l’entreprise, lui, n’a plus rien à voir.
           </p>
 
           <p className="mb-8">
-            Un lundi matin, le dirigeant ouvre son cockpit. Pas un gadget. Un vrai poste de pilotage. Un agent lui remonte les zones où la demande repart. Un autre compare les demandes entrantes, les taux de signature, les temps de cycle et les trous de planning. Un troisième signale qu’une offre de maintenance a plus de chances de rentrer sur un portefeuille déjà actif qu’en prospection froide dispersée. La direction ne passe plus sa journée à courir après l’information. Elle arbitre plus vite, sur du réel.
+            Un lundi matin, Alexandre ouvre son cockpit. Pas un gadget. Un poste de pilotage simple. Un agent lui remonte les zones géographiques où la prospection bâtiment repart. Un autre compare les demandes entrantes, les taux de signature, les temps de cycle et les trous de planning. Un troisième lui signale qu’une offre maintenance a plus de chances de rentrer sur un parc d’immeubles à Strasbourg que sur des interventions diffuses à Nantes cette semaine. La direction ne passe plus ses journées à courir après l’information. Elle arbitre plus vite, sur du réel.
           </p>
 
           <div className="bg-blue-ink/10 border-l-4 border-blue-ink p-6 my-8">
@@ -107,11 +107,11 @@ export default function En2030LesAgentsIaOntChangeLeRythmeDunePmeTerrainPage() {
           </p>
 
           <p className="mb-8">
-            La différence, ce n’est pas qu’il envoie plus de messages. C’est qu’il oublie beaucoup moins de dossiers valables. Dans une PME, c’est énorme. Quelques devis sérieux repris au bon moment, quelques contrats mieux suivis, quelques signatures qui ne se perdent plus dans le bruit, et vous changez déjà l’année.
+            La différence, ce n’est pas qu’il envoie plus de messages. C’est qu’il oublie beaucoup moins de dossiers valables. Dans une PME, c’est énorme. Quelques devis sérieux repris au bon moment, quelques contrats d’entretien mieux suivis, quelques signatures qui ne se perdent plus dans le bruit, et vous changez déjà l’année.
           </p>
 
           <p className="mb-8">
-            Sur les chantiers, le gain est encore plus concret parce qu’il se voit tout de suite. Un agent recoupe les urgences, les compétences disponibles, les habilitations, les temps de trajet, la météo et les engagements clients. Un autre suit l’avancement à partir des photos, des messages et des comptes rendus vocaux des équipes. Résultat, moins d’allers-retours absurdes, moins d’oublis de matériel, moins de journées qui glissent parce qu’une information est restée dans le téléphone de quelqu’un.
+            Sur les chantiers, le gain est encore plus concret parce qu’il se voit tout de suite. Un agent recoupe les urgences, les compétences disponibles, les contraintes SS4 amiante, les temps de trajet, la météo et les engagements clients. Un autre suit l’avancement chantier à partir des photos, des messages et des comptes rendus vocaux des équipes. Résultat, moins d’allers-retours absurdes, moins d’oublis de matériel, moins de journées qui glissent parce qu’une information est restée dans le téléphone de quelqu’un.
           </p>
 
           <p className="mb-8">
@@ -119,7 +119,7 @@ export default function En2030LesAgentsIaOntChangeLeRythmeDunePmeTerrainPage() {
           </p>
 
           <p className="mb-8">
-            C’est aussi là que beaucoup de fantasmes sur l’IA tombent. Les agents ne remplacent pas les techniciens. Ils ne montent pas sur le toit. Ils ne rassurent pas un client inquiet à la place de l’équipe. En revanche, ils retirent une masse énorme de micro-frictions qui épuisent tout le monde et bouffent la marge sans bruit. C’est le même sujet que dans{' '}
+            C’est aussi là que beaucoup de fantasmes sur l’IA tombent. Les agents ne remplacent pas les couvreurs. Ils ne montent pas sur le toit. Ils ne rassurent pas un client inquiet à la place de l’équipe. En revanche, ils retirent une masse énorme de micro-frictions qui épuisent tout le monde et bouffent la marge sans bruit. C’est le même sujet que dans{' '}
             <Link href="/blog/pourquoi-ia-sans-plan-vente-produit-surtout-bruit" className="text-blue-ink font-semibold underline hover:text-mint-green">
               Pourquoi l’IA sans plan de vente produit surtout du bruit
             </Link>
@@ -131,7 +131,7 @@ export default function En2030LesAgentsIaOntChangeLeRythmeDunePmeTerrainPage() {
           </p>
 
           <p className="mb-8">
-            L’administratif et le financier, enfin, arrêtent de jouer en retard. En 2030, un agent vérifie les pièces avant facturation, un autre relance selon la réalité client, un autre remonte les dérives de marge par type d’intervention, par équipe et par canal d’acquisition. La direction n’attend plus la fin du mois pour découvrir que certaines urgences sont rentrées vite mais sorties trop bas, ou que certains contrats sont excellents commercialement mais mal exécutés opérationnellement.
+            L’administratif et le financier, enfin, arrêtent de jouer en retard. En 2030, un agent vérifie les pièces avant facturation, un autre relance selon la réalité client, un autre remonte les dérives de marge par type d’intervention, par agence, par équipe, par canal d’acquisition. Alexis et Alexandre n’attendent plus la fin du mois pour découvrir que certaines urgences sont rentrées vite mais sorties trop bas, ou que certains contrats d’entretien sont excellents commercialement mais mal exécutés opérationnellement.
           </p>
 
           <p className="mb-8">
@@ -139,7 +139,7 @@ export default function En2030LesAgentsIaOntChangeLeRythmeDunePmeTerrainPage() {
           </p>
 
           <p className="mb-8">
-            En 2030, les agents IA n’ont pas remplacé le savoir-faire. Ils ont remis de l’air entre la demande client, la décision, l’organisation et la facturation. Et dans une PME qui vit sur la réactivité, la qualité d’exécution et la confiance, ce n’est pas un détail. C’est un changement de niveau.
+            En 2030, chez Toiture et COMPAGNIE, les agents IA n’ont pas remplacé le savoir-faire. Ils ont remis de l’air entre la demande client, la décision, l’organisation et la facturation. Et dans une PME qui vit sur la réactivité, la qualité d’exécution et la confiance, ce n’est pas un détail. C’est un changement de niveau.
           </p>
 
           <p className="mb-12 font-semibold text-blue-ink">
