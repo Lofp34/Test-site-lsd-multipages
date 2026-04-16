@@ -15,8 +15,8 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 13
-- **Publications blog publiées** : 13
+- **Total publications suivies** : 14
+- **Publications blog publiées** : 14
 - **Idées en backlog** : 0
 - **Articles avec kit LinkedIn prêt** : 10
 - **Articles avec email prêt/envoyé** : 7
@@ -25,7 +25,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Expertise développement commercial PME : 0
 - Formation / transformation commerciale : 2
 - Outils / méthodes / ressources : 1
-- IA / tendances / prospective : 2
+- IA / tendances / prospective : 3
 - Management / pilotage dirigeant : 1
 - Techniques de vente terrain : 2
 - Structure / système commercial : 1
@@ -38,6 +38,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Point de vue : 5
 - Terrain : 1
 - Transformation : 1
+- Prospective : 1
 - Dirigeant / arbitrage : 1
 - IA utile : 2
 - Ressource / outil : 0
@@ -59,6 +60,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-16 | publié | En 2030, chez Au Fil des Toits, les agents IA ont changé le rythme | Projection concrète d’une PME de couverture transformée par des agents IA sur la direction, le commerce, les chantiers et l’administratif | Prospective | IA / tendances / prospective | Dirigeant PME B2B / directeur commercial / manager commercial | Montrer à un dirigeant de PME terrain ce que des agents IA changent vraiment quand on part du réel, pas du techno-blabla | Web / actualité / démonstration ciblée | Oui — démonstration prospective appuyée sur des faits publics vérifiables d’une entreprise réelle, avec projection assumée vers 2030 | https://www.laurentserre.com/blog/en-2030-au-fil-des-toits-les-agents-ia-ont-change-le-rythme | à préparer | non requis | Post LinkedIn de projection terrain, carrousel direction / commerce / chantier / finance, email court de démonstration sectorielle IA | Article prospectif rédigé et publié pour illustrer une transformation PME concrète ; illustration éditoriale stylisée créée à partir de références partagées, en rendu non photoréaliste |
 | 2026-04-16 | publié | L’argent n’est pas le problème, c’est la mesure objective de la valeur | Budget, arbitrage et valeur perçue dans la décision commerciale | Point de vue | Psychologie / comportements commerciaux | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à traiter les objections budget avec plus de lucidité et ouvrir des conversations sur la valeur perçue, la priorité réelle et la décision côté client | Signal interne / historique | Oui — prolongement direct de l’article sur le prix, avec un article validé fourni dans l’input du jour | https://www.laurentserre.com/blog/largent-nest-pas-le-probleme-cest-la-mesure-objective-de-la-valeur | à préparer | non requis (.publish-ok) | Post LinkedIn d’opinion sur budget vs valeur, carrousel arbitrage réel, email court sur la mesure vraie de la priorité commerciale | Publication directe depuis le fichier validé `.publish-ok.md`, sans repasse éditoriale ni email comparatif ; illustration du dossier du jour réutilisée |
 | 2026-04-15 | publié | Anticiper l’échec n’est pas du pessimisme, c’est une discipline commerciale | Lucidité commerciale et anticipation des zones de rupture avant rendez-vous | Point de vue | Psychologie / comportements commerciaux | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à faire monter la qualité de préparation des rendez-vous et ouvrir des conversations sur la lecture réelle des opportunités, des objections et des prochaines étapes | Signal interne / historique | Oui — prolongement naturel des articles sur la découverte, le débrief et les illusions commerciales, avec un article validé fourni dans l’input du jour | https://www.laurentserre.com/blog/anticiper-lechec-nest-pas-du-pessimisme-cest-une-discipline-commerciale | à préparer | non requis (.publish-ok) | Post LinkedIn d’opinion sur la lucidité commerciale, carrousel confiance vs lucidité, email court sur les illusions confortables en vente | Publication directe depuis le fichier validé `.publish-ok.md`, sans repasse éditoriale ni email comparatif ; illustration créée faute de visuel fourni dans le dossier |
 | 2026-04-14 | publié | Pourquoi vos commerciaux remplissent mal le CRM… et utilisent mal l’IA | Mauvais remplissage CRM et mauvais usage de l’IA commerciale | IA utile | IA / tendances / prospective | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à comprendre que l’IA ne compense pas une lecture commerciale pauvre et ouvrir des conversations sur la capture de matière utile après rendez-vous | Signal interne / historique | Oui — prolongement direct du travail éditorial sur CRM, débrief à chaud et IA utile, avec une matière validée fournie dans l’input du jour | https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-remplissent-mal-le-crm-et-utilisent-mal-lia | à préparer | non requis (.publish-ok) | Post LinkedIn d’opinion sur CRM vide et IA, carrousel matière utile vs prose IA, email court sur la qualité de capture après rendez-vous | Publication directe depuis le fichier validé `.publish-ok.md`, sans repasse éditoriale ni email comparatif ; crée un pont fort entre CRM, débrief et IA utile |
@@ -96,6 +98,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Terrain
 - Dirigeant / arbitrage
 - Transformation
+- Prospective
 - IA utile
 - Ressource / outil
 - Actualité interprétée

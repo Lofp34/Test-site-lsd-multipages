@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'en-2030-au-fil-des-toits-les-agents-ia-ont-change-le-rythme',
+    title: 'En 2030, chez Au Fil des Toits, les agents IA ont changé le rythme',
+    description: 'Projection 2030, crédible et assumée, de la transformation d’une PME de couverture par des agents IA utiles, côté direction, commerce, chantiers et pilotage.',
+    date: '2026-04-16',
+    readTime: '7 min',
+    category: 'IA utile / transformation PME',
+    image: '/images/blog/2026-04-16-au-fil-des-toits-agents-ia-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'largent-nest-pas-le-probleme-cest-la-mesure-objective-de-la-valeur',
     title: 'L’argent n’est pas le problème, c’est la mesure objective de la valeur',
     description: 'Quand un prospect dit qu’il n’a pas le budget, le vrai sujet est souvent ailleurs. L’argent mesure surtout la valeur perçue, la priorité et la confiance accordée à la décision.',
