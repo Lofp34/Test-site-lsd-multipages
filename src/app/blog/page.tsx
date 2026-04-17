@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-meilleurs-commerciaux-dirco-entrepreneurs-se-cassent-la-figure',
+    title: 'Pourquoi les meilleurs commerciaux se cassent la gueule quand ils deviennent dirco, et pourquoi les meilleurs dirco se cassent la figure quand ils deviennent entrepreneurs',
+    description: 'Passer de commercial à directeur commercial, puis de dirco à entrepreneur, ce ne sont pas des promotions. Ce sont trois métiers différents. Voici pourquoi les meilleurs se plantent en changeant d’étage, et ce qu’il faut vraiment installer pour tenir.',
+    date: '2026-04-17',
+    readTime: '11 min de lecture',
+    category: 'Management / transformation commerciale',
+    image: '/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'en-2030-toiture-et-compagnie-les-agents-ia-ont-change-le-rythme',
     title: 'En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme',
     description: 'Projection 2030, crédible et assumée, de la transformation d’une PME de couverture par des agents IA utiles, côté direction, commerce, chantiers et pilotage.',

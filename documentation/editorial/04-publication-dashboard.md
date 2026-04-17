@@ -15,15 +15,15 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 14
-- **Publications blog publiées** : 14
+- **Total publications suivies** : 15
+- **Publications blog publiées** : 15
 - **Idées en backlog** : 0
 - **Articles avec kit LinkedIn prêt** : 10
 - **Articles avec email prêt/envoyé** : 7
 
 ### Répartition par pilier
 - Expertise développement commercial PME : 0
-- Formation / transformation commerciale : 2
+- Formation / transformation commerciale : 3
 - Outils / méthodes / ressources : 1
 - IA / tendances / prospective : 3
 - Management / pilotage dirigeant : 1
@@ -35,7 +35,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Erreur fréquente : 2
 - Diagnostic : 1
 - Méthode : 1
-- Point de vue : 5
+- Point de vue : 6
 - Terrain : 1
 - Transformation : 1
 - Prospective : 1
@@ -60,6 +60,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-17 | publié | Pourquoi les meilleurs commerciaux se cassent la gueule quand ils deviennent dirco, et pourquoi les meilleurs dirco se cassent la figure quand ils deviennent entrepreneurs | Changement de métier entre commercial, directeur commercial et entrepreneur | Point de vue | Formation / transformation commerciale | Dirigeant PME B2B / directeur commercial / entrepreneur | Aider à sécuriser les changements de rôle critiques, ouvrir des conversations sur la posture, les rituels et le cadre de transition | Signal interne / fondamentaux | Oui — sujet très concret de transformation de rôle, publié tel quel sans réécriture de fond à partir du texte source fourni | https://www.laurentserre.com/blog/pourquoi-meilleurs-commerciaux-dirco-entrepreneurs-se-cassent-la-figure | à préparer | non requis | Post LinkedIn d’opinion sur les faux changements de niveau, carrousel commercial / dirco / entrepreneur, email court sur les erreurs de changement d’étage | Publication directe à partir du texte source fourni, avec conservation du fond et des formulations ; illustration éditoriale créée pour publication |
 | 2026-04-16 | publié | En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme | Projection concrète d’une PME de couverture transformée par des agents IA sur la direction, le commerce, les chantiers et l’administratif | Prospective | IA / tendances / prospective | Dirigeant PME B2B / directeur commercial / manager commercial | Montrer à un dirigeant de PME terrain ce que des agents IA changent vraiment quand on part du réel, pas du techno-blabla | Web / actualité / démonstration ciblée | Oui — démonstration prospective appuyée sur une entreprise renommée pour publication, avec projection assumée vers 2030 | https://www.laurentserre.com/blog/en-2030-toiture-et-compagnie-les-agents-ia-ont-change-le-rythme | à préparer | non requis | Post LinkedIn de projection terrain, carrousel direction / commerce / chantier / finance, email court de démonstration sectorielle IA | Article prospectif rétabli sur la base de la première version, avec substitutions demandées sur le nom de société, le prénom du dirigeant cité et les villes |
 | 2026-04-16 | publié | L’argent n’est pas le problème, c’est la mesure objective de la valeur | Budget, arbitrage et valeur perçue dans la décision commerciale | Point de vue | Psychologie / comportements commerciaux | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à traiter les objections budget avec plus de lucidité et ouvrir des conversations sur la valeur perçue, la priorité réelle et la décision côté client | Signal interne / historique | Oui — prolongement direct de l’article sur le prix, avec un article validé fourni dans l’input du jour | https://www.laurentserre.com/blog/largent-nest-pas-le-probleme-cest-la-mesure-objective-de-la-valeur | à préparer | non requis (.publish-ok) | Post LinkedIn d’opinion sur budget vs valeur, carrousel arbitrage réel, email court sur la mesure vraie de la priorité commerciale | Publication directe depuis le fichier validé `.publish-ok.md`, sans repasse éditoriale ni email comparatif ; illustration du dossier du jour réutilisée |
 | 2026-04-15 | publié | Anticiper l’échec n’est pas du pessimisme, c’est une discipline commerciale | Lucidité commerciale et anticipation des zones de rupture avant rendez-vous | Point de vue | Psychologie / comportements commerciaux | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à faire monter la qualité de préparation des rendez-vous et ouvrir des conversations sur la lecture réelle des opportunités, des objections et des prochaines étapes | Signal interne / historique | Oui — prolongement naturel des articles sur la découverte, le débrief et les illusions commerciales, avec un article validé fourni dans l’input du jour | https://www.laurentserre.com/blog/anticiper-lechec-nest-pas-du-pessimisme-cest-une-discipline-commerciale | à préparer | non requis (.publish-ok) | Post LinkedIn d’opinion sur la lucidité commerciale, carrousel confiance vs lucidité, email court sur les illusions confortables en vente | Publication directe depuis le fichier validé `.publish-ok.md`, sans repasse éditoriale ni email comparatif ; illustration créée faute de visuel fourni dans le dossier |
