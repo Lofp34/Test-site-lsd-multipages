@@ -81,21 +81,21 @@ export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
-            Beaucoup de commerciaux croient bien faire quand ils répondent vite à une objection. En réalité, ils se jettent souvent sur une phrase avant d’avoir compris ce qu’elle protège. Et c’est exactement comme ça qu’une vente se met à glisser.
+            Beaucoup de commerciaux croient bien faire quand ils répondent vite à une objection. En réalité, ils se jettent souvent sur une phrase avant d’avoir compris ce qu’elle protège. Et c’est exactement comme ça qu’une vente se met à déraper.
           </p>
 
           <p className="mb-8">
-            Je vois souvent la même scène. Le prospect dit : “C’est plus cher que ce qu’on avait prévu.” Le commercial part aussitôt sur la valeur, le retour sur investissement, la différence de qualité, parfois même sur une remise habillée. Ça parle beaucoup. Mais personne n’a encore vérifié si le sujet était vraiment le prix, si le décideur était vraiment engagé, ou si le dossier n’était pas simplement en train de perdre sa priorité.
+            Je vois souvent la même scène. Le prospect dit : “C’est plus cher que ce qu’on avait prévu.” Le commercial part aussitôt sur la valeur, le retour sur investissement, la différence de qualité, parfois même directement sur une remise habillée. Ça parle beaucoup. Je suis sûr que ça vous rappelle des souvenirs. Mais personne n’a encore vérifié si le sujet était vraiment le prix, si le décideur était vraiment engagé, ou si le dossier n’était pas simplement en train de perdre sa priorité.
           </p>
 
           <div className="bg-blue-ink/10 border-l-4 border-blue-ink p-6 my-8">
             <p className="text-base">
-              <strong>Une objection n’est pas toujours un mur.</strong> Très souvent, c’est une porte entrouverte sur le vrai problème. Répondre trop vite, c’est la refermer soi-même.
+              <strong>Une objection n’est pas toujours un refus.</strong> Très souvent, c’est une porte entrouverte sur le vrai problème. Répondre trop vite, c’est la refermer soi-même.
             </p>
           </div>
 
           <p className="mb-8">
-            Le premier piège, c’est de traiter l’objection comme une question technique. “Trop cher”, “pas le moment”, “on doit réfléchir”, ce ne sont pas des cases à cocher avec le bon argument. Ce sont des formulations de protection. Parfois le prospect doute de la valeur. Parfois il n’a pas embarqué le bon décideur. Parfois il veut juste écourter un échange qui n’a pas assez creusé son problème.
+            Le premier piège, c’est de traiter l’objection comme une question technique. “Trop cher”, “pas le moment”, “on doit réfléchir”, ce ne sont pas des cases à cocher avec le bon argument. Ce sont des formulations de protection. Parfois le prospect doute de la valeur. Parfois il n’a pas embarqué le vrai décideur. Parfois il veut juste écourter un échange qui n’a pas assez fait ressortir son vrai problème.
           </p>
 
           <p className="mb-8">
@@ -107,7 +107,7 @@ export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage
           </p>
 
           <p className="mb-8">
-            Sur le terrain, une bonne réaction est souvent plus lente. Pas molle. Plus lente. “Quand vous dites que c’est trop cher, vous comparez à quoi exactement ?” “Qu’est-ce qui vous fait hésiter aujourd’hui ?” “Si le sujet était prioritaire, qu’est-ce qui devrait être vrai pour avancer ?” Là, on ne contre pas l’objection. On la travaille. Et très souvent, on découvre que le mot prononcé n’est pas le vrai sujet.
+            Sur le terrain, une bonne réaction est souvent plus lente. Pas molle. Plus lente. “Quand vous dites que c’est trop cher, vous comparez à quoi exactement ?” “Qu’est-ce qui vous fait hésiter aujourd’hui ?” “Si le sujet était prioritaire, par où devrait-on commencer pour avancer ?” Là, on ne contre pas l’objection. On la travaille. Et très souvent, on découvre que le mot prononcé n’est pas le vrai sujet.
           </p>
 
           <p className="mb-8">
@@ -123,7 +123,7 @@ export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage
           </p>
 
           <p className="mb-8">
-            Et si vos commerciaux ont du mal à tenir ce calme, il faut reprendre les scènes juste après les rendez-vous. Le débrief à chaud sert aussi à ça : repérer le moment exact où le commercial a voulu sauver la vente au lieu de lire l’objection. Sinon, on continuera à commenter des phrases dans le CRM au lieu de corriger les mécanismes. C’est pour ça que{' '}
+            Et si vos commerciaux ont du mal à tenir ce calme, il faut faire de la mise en situation juste après les rendez-vous. Le débrief à chaud sert aussi à ça : repérer le moment exact où le commercial a voulu sauver précipitamment la vente au lieu de lire l’objection. Sinon, on continuera à commenter des phrases dans le CRM au lieu de corriger les mécanismes. C’est pour ça que{' '}
             <Link href="/blog/pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud" className="text-blue-ink font-semibold underline hover:text-mint-green">
               le débrief à chaud vaut plus qu’un compte rendu propre
             </Link>
