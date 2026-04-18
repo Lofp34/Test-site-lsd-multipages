@@ -119,6 +119,15 @@ export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage
             . Le prix devient central quand la valeur, la priorité ou la décision ne sont pas assez solides.
           </p>
 
+          <div className="my-10 rounded-2xl border border-blue-ink/15 bg-white p-6">
+            <p className="text-base text-gray-700 mb-4">
+              Si vous voyez ce réflexe trop souvent dans l’équipe, le bon sujet n’est pas seulement la réponse à l’objection. C’est la lecture commerciale derrière.
+            </p>
+            <Link href="/diagnostic" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
+              Demander un diagnostic commercial
+            </Link>
+          </div>
+
           <p className="mb-8">
             Ce que je recommande est simple. Après une objection importante, interdiction de répondre dans la seconde. On marque un temps. On fait préciser. On cherche la conséquence concrète derrière la formule. Est-ce un arbitrage budgétaire réel ? Une inquiétude sur la mise en œuvre ? Un manque de confiance ? Un dossier qui n’a pas assez avancé politiquement en interne ? Tant que ça, ce n’est pas clair, la réponse risque d’être brillante mais inutile.
           </p>
@@ -136,9 +145,9 @@ export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage
           </p>
 
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
-            <h3 className="text-2xl font-title font-bold mb-4">Vous voulez faire progresser le traitement des objections dans l’équipe ?</h3>
+            <h3 className="text-2xl font-title font-bold mb-4">Vous voulez faire remonter le niveau sur les objections dans l’équipe ?</h3>
             <p className="mb-6">
-              J’aide les dirigeants, managers et équipes commerciales à reprendre les scènes de vente au bon niveau, pour mieux lire les objections, mieux qualifier les hésitations et éviter les réponses automatiques qui fragilisent les deals.
+              Si le sujet est déjà visible dans vos rendez-vous, le plus utile est souvent de repartir d’un diagnostic clair des scènes, des réflexes et des points de rupture. Et si vous voulez installer une montée en niveau plus large, le Bootcamp donne le cadre.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/diagnostic" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
@@ -154,9 +163,12 @@ export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage
 
       <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
-            Prendre contact avec Laurent Serre
+          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-4 text-center">
+            Besoin d’en parler plus directement ?
           </h2>
+          <p className="text-center text-gray-600 mb-8">
+            Si votre cas mérite un échange plus direct, vous pouvez aussi laisser un message ici.
+          </p>
           <HubSpotForm />
         </div>
       </section>
