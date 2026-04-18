@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections',
+    title: 'Pourquoi vos commerciaux répondent trop vite aux objections',
+    description: 'Quand un commercial répond trop vite à une objection, il traite une phrase avant d’avoir compris la vraie inquiétude. C’est souvent là que la vente se fragilise.',
+    date: '2026-04-18',
+    readTime: '7 min de lecture',
+    category: 'Erreur fréquente / vente terrain',
+    image: '/images/blog/2026-04-18-objections-trop-tot-hero.png',
+    featured: true
+  },
+  {
     slug: 'pourquoi-meilleurs-commerciaux-dirco-entrepreneurs-se-cassent-la-figure',
     title: 'Pourquoi les meilleurs commerciaux se cassent la gueule quand ils deviennent dirco, et pourquoi les meilleurs dirco se cassent la figure quand ils deviennent entrepreneurs',
     description: 'Passer de commercial à directeur commercial, puis de dirco à entrepreneur, ce ne sont pas des promotions. Ce sont trois métiers différents. Voici pourquoi les meilleurs se plantent en changeant d’étage, et ce qu’il faut vraiment installer pour tenir.',
