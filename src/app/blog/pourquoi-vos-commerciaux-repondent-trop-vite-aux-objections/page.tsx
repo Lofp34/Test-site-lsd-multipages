@@ -96,7 +96,7 @@ export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage
           </div>
 
           <p className="mb-8">
-            Le premier piège, c’est de traiter l’objection comme une question technique. “Trop cher”, “pas le moment”, “on doit réfléchir”, ce ne sont pas des cases à cocher avec le bon argument. Ce sont des formulations de protection. Parfois le prospect doute de la valeur. Parfois il n’a pas embarqué le vrai décideur. Parfois il veut juste écourter un échange qui n’a pas assez fait ressortir son vrai problème.
+            Le premier piège, c’est de traiter l’objection comme une question technique. “Trop cher”, “pas le moment”, “on doit réfléchir”, ce ne sont pas des cases à cocher avec le bon argument. Ce sont des formulations de protection. Parfois le prospect doute de la valeur. Parfois il n’a pas embarqué le vrai décideur. Parfois il veut juste écourter un échange qui n’a pas assez permis de faire ressortir son vrai problème.
           </p>
 
           <p className="mb-8">
