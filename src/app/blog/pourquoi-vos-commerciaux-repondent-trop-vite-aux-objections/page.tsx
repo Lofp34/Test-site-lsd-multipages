@@ -38,7 +38,7 @@ export const metadata: Metadata = {
 };
 
 export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage() {
-  // Live refresh marker 2026-04-18 to force redeploy after Laurent correction.
+  // Live refresh marker 2026-04-18 CTA pass 2 to force redeploy after Laurent validation.
   return (
     <main className="bg-primary-bg text-gray-dark">
       <section className="py-24 sm:py-32">
