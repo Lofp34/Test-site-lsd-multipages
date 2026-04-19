@@ -15,8 +15,8 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 16
-- **Publications blog publiées** : 16
+- **Total publications suivies** : 17
+- **Publications blog publiées** : 17
 - **Idées en backlog** : 0
 - **Articles avec kit LinkedIn prêt** : 10
 - **Articles avec email prêt/envoyé** : 7
@@ -27,7 +27,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Outils / méthodes / ressources : 1
 - IA / tendances / prospective : 3
 - Management / pilotage dirigeant : 1
-- Techniques de vente terrain : 3
+- Techniques de vente terrain : 4
 - Structure / système commercial : 1
 - Psychologie / comportements commerciaux : 4
 
@@ -36,7 +36,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Diagnostic : 1
 - Méthode : 1
 - Point de vue : 6
-- Terrain : 1
+- Terrain : 2
 - Transformation : 1
 - Prospective : 1
 - Dirigeant / arbitrage : 1
@@ -46,8 +46,8 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ### Vigilance diversité
 - **Angles surreprésentés** : point de vue dirigeant, système commercial, diagnostic de pilotage
-- **Angles sous-exploités** : erreur fréquente, terrain, transformation, ressource / outil, actualité interprétée
-- **Piliers sous-traités** : techniques de vente terrain, points de vue forts dirigeant
+- **Angles sous-exploités** : erreur fréquente, transformation, ressource / outil, actualité interprétée
+- **Piliers sous-traités** : points de vue forts dirigeant
 - **Sujets temporairement sous quota fort** : pipeline fragile, pipeline fantôme, début/fin de trimestre, réunion commerciale hebdo, comité commercial mensuel, revue deal, forecast, protection de marge par rituel de pilotage
 - **Opportunités saisonnières du moment** : début de T2, mais avec priorité à des diagnostics de management, de comportement et d’exécution commerciale plutôt qu’à de nouveaux marronniers de pilotage
 
@@ -60,6 +60,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-19 | publié | Pourquoi vos commerciaux confondent intérêt et décision | Confusion entre intérêt exprimé, rendez-vous agréable et vraie progression de décision | Terrain | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à fiabiliser la lecture des affaires et ouvrir des conversations sur la qualification réelle, la décision et les faux signaux de pipeline | Fondamentaux / historique | Oui — bon prolongement très terrain après l’article sur les objections, sans doublonner l’angle et en renforçant le sujet de la décision réelle | https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-confondent-interet-et-decision | à préparer | non requis | Post LinkedIn d’opinion sur intérêt vs décision, carrousel signal positif vs vraie avancée, email court sur les faux signaux de pipeline | Génération autonome du jour avec illustration éditoriale créée ; bons liens naturels vers solutions, objections et revue deal |
 | 2026-04-18 | publié | Pourquoi vos commerciaux répondent trop vite aux objections | Réponses trop rapides aux objections et perte de lecture commerciale | Erreur fréquente / terrain | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à mieux lire les objections réelles et ouvrir des conversations sur le discernement commercial, la qualification et le débrief de scène | Fondamentaux / historique | Oui — angle terrain et erreur fréquente pour rééquilibrer la séquence récente sans revenir au pilotage pipeline | https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections | à préparer | non requis | Post LinkedIn d’opinion sur les objections mal lues, carrousel objection vs vraie inquiétude, email court sur la différence entre répondre et creuser | Génération autonome du jour avec illustration éditoriale créée ; bons liens naturels vers prix, découverte et débrief |
 | 2026-04-17 | publié | Pourquoi les meilleurs commerciaux se cassent la gueule quand ils deviennent dirco, et pourquoi les meilleurs dirco se cassent la figure quand ils deviennent entrepreneurs | Changement de métier entre commercial, directeur commercial et entrepreneur | Point de vue | Formation / transformation commerciale | Dirigeant PME B2B / directeur commercial / entrepreneur | Aider à sécuriser les changements de rôle critiques, ouvrir des conversations sur la posture, les rituels et le cadre de transition | Signal interne / fondamentaux | Oui — sujet très concret de transformation de rôle, publié tel quel sans réécriture de fond à partir du texte source fourni | https://www.laurentserre.com/blog/pourquoi-meilleurs-commerciaux-dirco-entrepreneurs-se-cassent-la-figure | à préparer | non requis | Post LinkedIn d’opinion sur les faux changements de niveau, carrousel commercial / dirco / entrepreneur, email court sur les erreurs de changement d’étage | Publication directe à partir du texte source fourni, avec conservation du fond et des formulations ; illustration éditoriale créée pour publication |
 | 2026-04-16 | publié | En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme | Projection concrète d’une PME de couverture transformée par des agents IA sur la direction, le commerce, les chantiers et l’administratif | Prospective | IA / tendances / prospective | Dirigeant PME B2B / directeur commercial / manager commercial | Montrer à un dirigeant de PME terrain ce que des agents IA changent vraiment quand on part du réel, pas du techno-blabla | Web / actualité / démonstration ciblée | Oui — démonstration prospective appuyée sur une entreprise renommée pour publication, avec projection assumée vers 2030 | https://www.laurentserre.com/blog/en-2030-toiture-et-compagnie-les-agents-ia-ont-change-le-rythme | à préparer | non requis | Post LinkedIn de projection terrain, carrousel direction / commerce / chantier / finance, email court de démonstration sectorielle IA | Article prospectif rétabli sur la base de la première version, avec substitutions demandées sur le nom de société, le prénom du dirigeant cité et les villes |

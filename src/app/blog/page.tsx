@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-vos-commerciaux-confondent-interet-et-decision',
+    title: 'Pourquoi vos commerciaux confondent intérêt et décision',
+    description: 'Un prospect intéressé n’est pas encore une vente qui avance. Beaucoup d’équipes confondent un bon échange avec une vraie progression de décision.',
+    date: '2026-04-19',
+    readTime: '7 min de lecture',
+    category: 'Terrain / qualification commerciale',
+    image: '/images/blog/2026-04-19-interet-vs-decision-hero.png',
+    featured: true
+  },
+  {
     slug: 'pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections',
     title: 'Pourquoi vos commerciaux répondent trop vite aux objections',
     description: 'Quand un commercial répond trop vite à une objection, il traite une phrase avant d’avoir compris la vraie inquiétude. C’est souvent là que la vente se fragilise.',
