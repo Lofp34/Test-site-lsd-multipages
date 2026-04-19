@@ -42,7 +42,7 @@ const blogPosts = [
     date: '2026-04-19',
     readTime: '7 min de lecture',
     category: 'Terrain / qualification commerciale',
-    image: '/images/blog/2026-04-19-interet-vs-decision-hero.png',
+    image: '/images/blog/2026-04-19-interet-vs-decision-hero-v2.jpg',
     featured: true
   },
   {
