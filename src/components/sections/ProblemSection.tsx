@@ -5,150 +5,168 @@ import TrackedLink from "@/components/ui/TrackedLink";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import { useSectionTracking } from "@/hooks/useSectionTracking";
 
+const problems = [
+  {
+    number: '01',
+    title: 'Prospection qui fatigue plus qu’elle n’alimente',
+    description:
+      'Vos commerciaux s’activent, mais le pipe ne se remplit pas au bon niveau. Beaucoup d’effort, trop peu d’affaires vraiment qualifiées.',
+    accent: 'orange',
+  },
+  {
+    number: '02',
+    title: 'Cycles de vente longs, usants, mal tenus',
+    description:
+      'Les affaires traînent, les négociations s’étirent, l’énergie se disperse. L’équipe donne beaucoup, mais le rythme commercial s’érode.',
+    accent: 'mint',
+  },
+  {
+    number: '03',
+    title: 'Prévisions fragiles, pilotage instable',
+    description:
+      'Sans méthode claire, vous pilotez plus au ressenti qu’à la lecture. Et quand les prévisions flottent, la croissance devient nerveuse.',
+    accent: 'blue',
+  },
+];
+
+const accentClasses = {
+  orange: {
+    badge: 'text-orange-soft border-orange-soft/40 bg-orange-soft/10',
+    line: 'from-orange-soft/70 to-orange-soft/10',
+    glow: 'group-hover:shadow-orange-soft/20',
+  },
+  mint: {
+    badge: 'text-mint-green border-mint-green/40 bg-mint-green/10',
+    line: 'from-mint-green/70 to-mint-green/10',
+    glow: 'group-hover:shadow-mint-green/20',
+  },
+  blue: {
+    badge: 'text-white border-white/30 bg-white/10',
+    line: 'from-white/70 to-white/10',
+    glow: 'group-hover:shadow-white/10',
+  },
+};
+
 export default function ProblemSection() {
-  const sectionRef = useSectionTracking({ 
+  const sectionRef = useSectionTracking({
     sectionName: 'problem-section',
-    trackTimeSpent: true 
+    trackTimeSpent: true,
   });
-  const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    });
-  };
 
   return (
-    <section className="py-20 relative overflow-hidden">
-      {/* Image de fond */}
-      <div 
+    <section ref={sectionRef} className="py-24 relative overflow-hidden">
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'url(/equipe_bureau.jpg)',
         }}
       />
-      
-      {/* Overlay sombre pour la lisibilité */}
-      <div className="absolute inset-0 bg-gray-anthracite/85" />
-      
-      {/* Contenu par-dessus le fond */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6">
-        {/* Titre */}
+
+      <div className="absolute inset-0 bg-gray-anthracite/90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-ink/30 via-transparent to-blue-ink/40" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <AnimatedSection animation="slide-up" delay={0}>
-          <div className="text-center mb-16">
+          <div className="max-w-4xl mx-auto text-center mb-16 md:mb-20">
+            <div className="inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-5 py-2 mb-6 backdrop-blur-sm">
+              <span className="h-2.5 w-2.5 rounded-full bg-orange-soft" />
+              <span className="text-sm font-title font-semibold tracking-wide text-white/85 uppercase">
+                Là où beaucoup d’équipes commerciales s’usent
+              </span>
+            </div>
+
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-title font-bold text-white leading-tight">
-              Votre équipe commerciale donne beaucoup…
-              <span className="block text-orange-soft">mais obtient peu ?</span>
+              Votre équipe commerciale donne beaucoup.
+              <span className="block text-orange-soft mt-2">Mais le système derrière ne suit pas.</span>
             </h2>
+
+            <p className="mt-6 text-lg md:text-xl text-white/75 leading-relaxed max-w-3xl mx-auto">
+              Le problème n’est pas toujours l’énergie, ni même la bonne volonté. Très souvent, c’est la structure commerciale qui laisse l’effort se perdre.
+            </p>
           </div>
         </AnimatedSection>
 
-        {/* 3 bullets illustrées */}
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <AnimatedSection animation="slide-up" delay={200}>
-            <div className="text-center space-y-6 animate-slide-in-left group">
-              <div className="w-20 h-20 bg-orange-soft/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto group-hover:bg-orange-soft/30 transition-all duration-300">
-                <span className="text-4xl animate-float">💸</span>
-              </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-title font-bold text-white">
-                  Prospection inefficace
-                </h3>
-                <p className="font-body text-white/90 leading-relaxed">
-                  Votre force de vente passe des heures à prospecter, mais le portefeuille de nouvelles affaires peine à se remplir.
-                </p>
-              </div>
-            </div>
-          </AnimatedSection>
+        <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 mb-14">
+          {problems.map((problem, index) => {
+            const accents = accentClasses[problem.accent as keyof typeof accentClasses];
 
-          <AnimatedSection animation="slide-up" delay={400}>
-            <div className="text-center space-y-6 animate-slide-in-right group" style={{ animationDelay: '0.2s' }}>
-              <div className="w-20 h-20 bg-mint-green/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto group-hover:bg-mint-green/30 transition-all duration-300">
-                <span className="text-4xl animate-float" style={{ animationDelay: '0.5s' }}>😰</span>
-              </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-title font-bold text-white">
-                  Cycle de vente épuisant
-                </h3>
-                <p className="font-body text-white/90 leading-relaxed">
-                  Les cycles de vente s&apos;éternisent, les négociations sont difficiles, et le taux de closing stagne, créant de la frustration.
-                </p>
-              </div>
-            </div>
-          </AnimatedSection>
+            return (
+              <AnimatedSection key={problem.number} animation="slide-up" delay={150 + index * 120}>
+                <div className={`group h-full rounded-3xl border border-white/10 bg-white/[0.06] backdrop-blur-md p-8 shadow-2xl transition-all duration-300 hover:-translate-y-1 hover:border-white/20 ${accents.glow}`}>
+                  <div className="flex items-center justify-between gap-4 mb-8">
+                    <div className={`inline-flex items-center justify-center rounded-2xl border px-4 py-2 text-sm font-title font-bold tracking-[0.2em] ${accents.badge}`}>
+                      {problem.number}
+                    </div>
+                    <div className={`h-px flex-1 bg-gradient-to-r ${accents.line}`} />
+                  </div>
 
-          <AnimatedSection animation="slide-up" delay={600}>
-            <div className="text-center space-y-6 animate-slide-in-right group" style={{ animationDelay: '0.4s' }}>
-              <div className="w-20 h-20 bg-blue-ink/20 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto group-hover:bg-blue-ink/30 transition-all duration-300">
-                <span className="text-4xl animate-float" style={{ animationDelay: '1s' }}>🎯</span>
-              </div>
-              <div className="space-y-3">
-                <h3 className="text-xl font-title font-bold text-white">
-                  Manque de prévisions fiables
-                </h3>
-                <p className="font-body text-white/90 leading-relaxed">
-                  Sans méthodologie de vente claire, il est impossible d&apos;avoir des prévisions de vente fiables et de piloter la croissance.
-                </p>
-              </div>
-            </div>
-          </AnimatedSection>
+                  <div className="space-y-5">
+                    <h3 className="text-2xl font-title font-bold text-white leading-snug max-w-xs">
+                      {problem.title}
+                    </h3>
+                    <p className="text-base md:text-lg text-white/78 leading-relaxed max-w-sm">
+                      {problem.description}
+                    </p>
+                  </div>
+                </div>
+              </AnimatedSection>
+            );
+          })}
         </div>
 
-        {/* Accroche finale */}
-        <AnimatedSection animation="fade-in" delay={800}>
-          <div className="text-center max-w-4xl mx-auto">
-            <div className="bg-white/10 backdrop-blur-sm border-l-4 border-mint-green rounded-r-2xl p-8 mb-8">
-              <p className="text-2xl md:text-3xl font-body text-white leading-relaxed mb-4">
-                Vous n&apos;avez pas un problème de{" "}
-                <span className="font-bold text-orange-soft">motivation</span>.
-              </p>
-              <p className="text-2xl md:text-3xl font-body text-white leading-relaxed">
-                Vous avez un problème de{" "}
-                <span className="font-bold text-mint-green">structuration</span>.
-                <span className="block mt-2 font-italic text-xl">
-                  Et cela se corrige.
-                </span>
-              </p>
-            </div>
+        <AnimatedSection animation="fade-in" delay={650}>
+          <div className="max-w-5xl mx-auto rounded-[2rem] border border-white/10 bg-white/[0.07] backdrop-blur-md px-8 py-10 md:px-10 md:py-12 shadow-2xl">
+            <div className="grid lg:grid-cols-[1.2fr_auto] gap-8 items-center">
+              <div>
+                <p className="text-sm uppercase tracking-[0.25em] text-mint-green font-title font-semibold mb-4">
+                  Le vrai sujet
+                </p>
+                <p className="text-2xl md:text-3xl font-body text-white leading-relaxed">
+                  Vous n’avez pas seulement un problème de motivation.
+                  <span className="block mt-2 font-semibold text-white">Vous avez un problème de structuration commerciale.</span>
+                </p>
+                <p className="mt-4 text-white/70 text-base md:text-lg leading-relaxed max-w-3xl">
+                  Et tant que ce cadre n’est pas renforcé, l’équipe continue à donner, sans transformer cet effort en dynamique commerciale solide et prévisible.
+                </p>
+              </div>
 
-            {/* CTA unique et puissant vers le bootcamp */}
-            <div className="cta-group-mobile mt-8">
-              <div className="cta-container-mobile sm:flex-row sm:max-w-none sm:gap-4">
-                <TrackedLink
-                  href="/bootcamp"
-                  ctaId="problem-bootcamp"
-                  ctaText="Découvrir le Bootcamp Commercial"
-                  ctaType="primary"
-                  section="problem"
-                  position={1}
-                  className="block"
-                >
-                  <Button
-                    variant="primary"
-                    size="lg"
-                    icon="🚀"
-                    className="cta-mobile cta-primary-mobile sm:w-auto sm:min-w-[320px]"
+              <div className="cta-group-mobile w-full lg:w-auto">
+                <div className="cta-container-mobile sm:flex-row sm:max-w-none sm:gap-4 lg:flex-col lg:min-w-[300px]">
+                  <TrackedLink
+                    href="/bootcamp"
+                    ctaId="problem-bootcamp"
+                    ctaText="Découvrir le Bootcamp Commercial"
+                    ctaType="primary"
+                    section="problem"
+                    position={1}
+                    className="block"
                   >
-                    Découvrir le Bootcamp Commercial
-                  </Button>
-                </TrackedLink>
-                <TrackedLink
-                  href="/diagnostic"
-                  ctaId="problem-diagnostic"
-                  ctaText="Faire le Diagnostic Gratuit"
-                  ctaType="secondary"
-                  section="problem"
-                  position={2}
-                  className="block"
-                >
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    icon="🎯"
-                    className="cta-mobile cta-secondary-mobile sm:w-auto sm:min-w-[240px] border-mint-green text-mint-green hover:bg-mint-green hover:text-blue-ink"
+                    <Button
+                      variant="primary"
+                      size="lg"
+                      className="cta-mobile cta-primary-mobile sm:w-auto lg:w-full"
+                    >
+                      Découvrir le Bootcamp Commercial
+                    </Button>
+                  </TrackedLink>
+                  <TrackedLink
+                    href="/diagnostic"
+                    ctaId="problem-diagnostic"
+                    ctaText="Faire le Diagnostic Gratuit"
+                    ctaType="secondary"
+                    section="problem"
+                    position={2}
+                    className="block"
                   >
-                    Faire le Diagnostic Gratuit
-                  </Button>
-                </TrackedLink>
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      className="cta-mobile cta-secondary-mobile sm:w-auto lg:w-full border-mint-green text-mint-green hover:bg-mint-green hover:text-blue-ink"
+                    >
+                      Faire le Diagnostic Gratuit
+                    </Button>
+                  </TrackedLink>
+                </div>
               </div>
             </div>
           </div>
@@ -156,4 +174,4 @@ export default function ProblemSection() {
       </div>
     </section>
   );
-} 
+}
