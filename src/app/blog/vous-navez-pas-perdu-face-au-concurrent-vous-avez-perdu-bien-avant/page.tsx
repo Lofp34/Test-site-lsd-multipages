@@ -81,11 +81,11 @@ export default function VousNAvezPasPerduFaceAuConcurrentVousAvezPerduBienAvantP
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
-            Quand une affaire se perd, beaucoup d’équipes disent la même chose, le concurrent était meilleur. Je vois souvent des commerciaux sortir cette phrase comme une explication finale, alors qu’elle sert surtout à éviter une vérité moins confortable.
+            Quand une affaire se perd, beaucoup d’équipes disent la même chose : le concurrent était meilleur. Le problème, c’est que cette phrase sert surtout à éviter une vérité moins confortable.
           </p>
 
           <p className="mb-8">
-            La scène est classique. Le prospect a demandé une proposition. Les échanges étaient corrects. Le commercial pensait être dans la course. Puis le dossier s’arrête. On apprend qu’un concurrent a été retenu. Et tout le monde se détend un peu avec cette lecture. On n’a pas été mauvais. On est simplement tombé sur plus fort. Le problème, c’est que dans beaucoup de cas, la vente s’était déjà fragilisée bien avant l’arrivée visible du concurrent.
+            La scène est classique. Le prospect a demandé une proposition. Les échanges étaient très corrects. Le commercial pensait être dans la course. Puis le dossier s’arrête. On apprend qu’un concurrent a été retenu. Et tout le monde se détend un peu avec cette lecture. On n’a pas été mauvais. On est simplement tombé sur plus fort. Le problème, c’est que dans beaucoup de cas, la vente s’était déjà fragilisée bien avant l’arrivée visible du concurrent.
           </p>
 
           <div className="bg-blue-ink/10 border-l-4 border-blue-ink p-6 my-8">
@@ -112,7 +112,7 @@ export default function VousNAvezPasPerduFaceAuConcurrentVousAvezPerduBienAvantP
 
           <div className="my-10 rounded-2xl border border-blue-ink/15 bg-white p-6">
             <p className="text-base text-gray-700 mb-4">
-              Si vos affaires perdues finissent trop souvent classées en “concurrent”, le sujet n’est pas le CRM. C’est la qualité de lecture commerciale avant la proposition.
+              Si vos affaires perdues finissent trop souvent classées en “concurrent”, le sujet n’est pas le CRM. C’est la qualité de lecture commerciale avant la proposition, de vos techniques de vente, de votre capacité à mesurer et développer la motivation de votre client, à détecter les angles morts de votre proposition et à les combler.
             </p>
             <Link href="/diagnostic" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
               Demander un diagnostic commercial
@@ -120,7 +120,7 @@ export default function VousNAvezPasPerduFaceAuConcurrentVousAvezPerduBienAvantP
           </div>
 
           <p className="mb-8">
-            En débrief, je recommande une question très simple, à quel moment exact avons-nous commencé à perdre cette vente ? Si l’équipe répond “quand le concurrent est arrivé”, on reste à la surface. Si elle peut nommer un rendez-vous trop flou, une décision non préparée, une objection traitée trop vite ou une proposition envoyée trop tôt, alors on commence enfin à voir le vrai problème. Et c’est beaucoup plus utile pour la suite.
+            En débrief d’entretien de vente, je recommande une question très simple : à quel moment exact avons-nous commencé à perdre cette vente ? Si l’équipe répond “quand le concurrent est arrivé”, on reste à la surface. Si elle peut nommer un rendez-vous trop flou, une décision non préparée, une objection traitée trop vite ou une proposition envoyée trop tôt, alors on commence enfin à voir le vrai problème. Et c’est beaucoup plus utile pour la suite.
           </p>
 
           <p className="mb-8">
@@ -130,7 +130,7 @@ export default function VousNAvezPasPerduFaceAuConcurrentVousAvezPerduBienAvantP
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <h3 className="text-2xl font-title font-bold mb-4">Vous voulez des débriefs qui font vraiment progresser l’équipe ?</h3>
             <p className="mb-6">
-              Si vos pertes sont trop souvent expliquées par le prix, le timing ou le concurrent, il faut reprendre les scènes plus tôt et regarder la mécanique réelle de décision. Et si vous voulez installer ce niveau d’exigence durablement, le Bootcamp peut servir d’appui.
+              Si vos pertes sont trop souvent expliquées par le prix, le timing ou le concurrent, il faut reprendre les entretiens perdus plus tôt et regarder la mécanique réelle de décision. Et si vous voulez installer ce niveau d’exigence durablement, le Bootcamp peut servir d’appui.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/diagnostic" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
