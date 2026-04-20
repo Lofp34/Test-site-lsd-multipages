@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'vous-navez-pas-perdu-face-au-concurrent-vous-avez-perdu-bien-avant',
+    title: 'Vous n’avez pas perdu face au concurrent, vous avez perdu bien avant',
+    description: 'Quand une équipe dit qu’elle a perdu face au concurrent, elle évite souvent une vérité moins confortable. La vente s’est généralement fragilisée bien plus tôt.',
+    date: '2026-04-20',
+    readTime: '6 min de lecture',
+    category: 'Point de vue / lecture commerciale',
+    image: '/images/blog/2026-04-20-concurrent-verite-confortable-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'pourquoi-vos-commerciaux-confondent-interet-et-decision',
     title: 'Pourquoi vos commerciaux confondent intérêt et décision',
     description: 'Un prospect intéressé n’est pas encore une vente qui avance. Beaucoup d’équipes confondent un bon échange avec une vraie progression de décision.',
