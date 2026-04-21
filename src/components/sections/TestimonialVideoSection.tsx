@@ -1,157 +1,222 @@
 'use client';
 
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, A11y } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import Button from "@/components/ui/Button";
-import AnimatedSection from "@/components/ui/AnimatedSection";
+import { useMemo, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import Button from '@/components/ui/Button';
+import AnimatedSection from '@/components/ui/AnimatedSection';
 
-const testimonials = [
+type VideoItem = {
+  youtubeId: string;
+  title: string;
+  description: string;
+  eyebrow?: string;
+};
+
+const videos: VideoItem[] = [
   {
-    name: "Alexis Alvarez",
-    role: "CEO Queoval",
-    photo: "/images/Alexis Alvarez.jpeg",
-    quote: "Le parcours avec Laurent nous a permis une progression de plus de 50% des objectifs réalisés sur le dernier semestre par rapport au semestre de l'année dernière. On dit merci à Laurent !",
+    youtubeId: 'ooEf32IGpMM',
+    title: 'Des résultats qui se voient dans les chiffres',
+    description:
+      'Une compilation centrée sur les résultats pour voir, en quelques minutes, ce que disent les clients quand la dynamique commerciale change vraiment.',
+    eyebrow: 'Témoignage principal',
   },
   {
-    name: "Alexandre",
-    role: "Responsable commercial Toiture et COMPAGNIE",
-    photo: "/images/Alexandre.jpeg",
-    quote: "LAURENT nous a donné l'amour du commerce et surtout au niveau des chiffres, on a explosé avec 40 % d'augmentation",
+    youtubeId: '0kWjp_4g2Pk',
+    title: 'Témoignage client',
+    description: 'Un retour d’expérience client à lancer directement dans le player principal.',
   },
   {
-    name: "Elisa Gorbatoff",
-    role: "Responsable commerciale Evolvia",
-    photo: "/images/Elisa Gorbatoff.jpeg",
-    quote: "L'accompagnement de Laurent nous a permis de finir l'année de manière incroyable avec une hausse de 90 % de notre chiffre d'affaires !",
+    youtubeId: 'ojopxkWzXy8',
+    title: 'Retour d’expérience',
+    description: 'Un témoignage vidéo supplémentaire, accessible sans quitter la page.',
   },
   {
-    name: "Kristina Kovriznoh",
-    role: "Responsable commerciale Creavea",
-    photo: "/images/Kristina Kovriznoh.jpeg",
-    quote: "Sur le deuxieme trimestre nous avons fait une progression inespérée de 39%",
+    youtubeId: 'kkU2jPspfVk',
+    title: 'Transformation commerciale',
+    description: 'Une autre preuve terrain à afficher dans le player principal.',
   },
   {
-    name: "Charles Mancini",
-    role: "Directeur commercial",
-    photo: "/images/Charles Manicini.jpeg",
-    quote: "Laurent a mené un audit en profondeur, la méthode rigoureuse et efficace qui nous permis d'avoir des signatures plus reccurentes, des prospects plus à l'écoute, et surtout, 35% de progression du C.A.",
+    youtubeId: 'LpYgrI2TPlw',
+    title: 'Progression des résultats',
+    description: 'Un témoignage complémentaire pour montrer la continuité des résultats.',
   },
   {
-    name: "Chloé Galmes",
-    role: "Dirigeante Freedom Boat club",
-    photo: "/images/chloé galmes.jpeg",
-    quote: "Grace à l'accompagnement de Laurent nous avons doublé notre nombre d'adhérent, au-dela de nos objectifs, la rigueur et la pertinence ont fourni leurs effets !",
+    youtubeId: 'ffegHBVorPo',
+    title: 'Accompagnement terrain',
+    description: 'Une séquence terrain supplémentaire consultable dans le même lecteur.',
+  },
+  {
+    youtubeId: 'uNisunsWkn4',
+    title: 'Résultats obtenus',
+    description: 'Un dernier témoignage vidéo pour compléter la preuve sociale.',
   },
 ];
 
+function thumbnailUrl(id: string) {
+  return `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
+}
+
+function youtubeUrl(id: string) {
+  return `https://www.youtube.com/watch?v=${id}`;
+}
+
 export default function TestimonialVideoSection() {
+  const [activeVideoId, setActiveVideoId] = useState(videos[0].youtubeId);
+
+  const activeVideo = useMemo(
+    () => videos.find((video) => video.youtubeId === activeVideoId) ?? videos[0],
+    [activeVideoId],
+  );
+
+  const secondaryVideos = videos.slice(1);
+
   return (
-    <section id="cas-clients" className="py-16 sm:py-20 relative overflow-hidden">
-      {/* Image de fond */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url(/tableau-de-bord.jpeg)',
-        }}
-      />
-      
-      {/* Overlay pour la lisibilité */}
-      <div className="absolute inset-0 bg-primary-bg/90" />
-      
-      {/* Contenu par-dessus le fond */}
-      <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6">
-        {/* Titre de la section */}
+    <section id="cas-clients" className="relative overflow-hidden bg-[#07111B] py-24 text-white">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,189,164,0.12),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(255,122,89,0.14),_transparent_28%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),transparent)]" />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
         <AnimatedSection animation="slide-up" delay={0}>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-title font-bold text-blue-ink leading-tight mb-4">
-              Ils témoignent de la
-              <span className="block text-mint-green">transformation</span>
+          <div className="mx-auto mb-14 max-w-4xl text-center">
+            <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-5 py-2 backdrop-blur-sm">
+              <span className="h-2.5 w-2.5 rounded-full bg-mint-green" />
+              <span className="font-title text-sm font-semibold uppercase tracking-wide text-white/85">
+                Ils parlent des résultats obtenus
+              </span>
+            </div>
+
+            <h2 className="text-4xl font-title font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+              La preuve par les clients.
+              <span className="mt-2 block text-mint-green">Pas par les promesses.</span>
             </h2>
-            <p className="text-lg font-body text-gray-anthracite max-w-2xl mx-auto">
-              Découvrez comment nos clients ont révolutionné leurs performances commerciales
+
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-white/78 md:text-xl">
+              Quand l’organisation commerciale tient mieux, les résultats se voient. Voici ce que racontent les clients, chiffres à l’appui.
             </p>
           </div>
         </AnimatedSection>
 
-        {/* Slider Swiper */}
-        <Swiper
-          modules={[Navigation, Pagination, A11y]}
-          spaceBetween={32}
-          slidesPerView={1}
-          navigation
-          pagination={{ clickable: true }}
-          className="mb-12"
-          breakpoints={{
-            1024: { slidesPerView: 2 },
-          }}
-        >
-          {testimonials.map((t, i) => (
-            <SwiperSlide key={i}>
-              <AnimatedSection animation="slide-up" delay={200 + i * 100}>
-                <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col items-center h-full">
-                  <div className="w-20 h-20 mb-4 relative rounded-full overflow-hidden border-4 border-mint-green shadow-lg">
-                    <Image src={t.photo} alt={`Portrait professionnel de ${t.name}, ${t.role}, client satisfait de l'accompagnement commercial de Laurent Serre.`} fill style={{objectFit:'cover'}} sizes="80px" quality={60} loading="lazy" />
-                  </div>
-                  <blockquote className="text-gray-anthracite font-italic text-lg leading-relaxed mb-4 text-center">"{t.quote}"</blockquote>
-                  <div className="font-title font-bold text-blue-ink text-base text-center">
-                    {t.name}
-                  </div>
-                  <div className="font-normal text-gray-anthracite text-sm text-center">
-                    {t.role}
-                  </div>
+        <AnimatedSection animation="slide-up" delay={120}>
+          <div className="mb-10 rounded-[2rem] border border-white/10 bg-white/[0.05] p-6 shadow-[0_40px_120px_rgba(0,0,0,0.35)] backdrop-blur-md lg:p-8">
+            <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-black shadow-2xl">
+              <div className="aspect-video">
+                <iframe
+                  key={activeVideo.youtubeId}
+                  src={`https://www.youtube-nocookie.com/embed/${activeVideo.youtubeId}?rel=0&modestbranding=1&autoplay=1`}
+                  title={activeVideo.title}
+                  className="h-full w-full"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            <div className="mt-8 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
+              <div>
+                <p className="mb-4 font-title text-sm font-semibold uppercase tracking-[0.24em] text-orange-soft">
+                  {activeVideo.eyebrow ?? 'Témoignage vidéo'}
+                </p>
+                <h3 className="text-3xl font-title font-bold leading-tight text-white md:text-4xl">
+                  {activeVideo.title}
+                </h3>
+                <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/76 md:text-lg">
+                  {activeVideo.description}
+                </p>
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
+                <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <div className="font-title text-2xl font-bold text-mint-green">6</div>
+                  <p className="mt-2 text-sm leading-relaxed text-white/72">autres témoignages disponibles en un clic sous la vidéo principale</p>
                 </div>
-              </AnimatedSection>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+                <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <div className="font-title text-2xl font-bold text-orange-soft">1 player</div>
+                  <p className="mt-2 text-sm leading-relaxed text-white/72">une seule zone de lecture, plus propre, plus premium, plus lisible</p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <div className="font-title text-2xl font-bold text-white">YouTube</div>
+                  <p className="mt-2 text-sm leading-relaxed text-white/72">les vidéos restent faciles à enrichir à mesure que de nouveaux témoignages arrivent</p>
+                </div>
+              </div>
+            </div>
 
-        {/* CTA optionnel */}
-        <AnimatedSection animation="fade-in" delay={800}>
-          <div className="text-center mt-8">
-            <p className="font-body text-gray-anthracite mb-4">
-              Vous aussi, transformez vos résultats commerciaux
-            </p>
-            <Button 
-              variant="secondary"
-              icon="📞"
-              onClick={() => window.open('https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone', '_blank')}
-              className="bg-mint-green text-white border-2 border-mint-green hover:bg-mint-green/90 hover:text-white shadow-lg"
-            >
-              Échanger avec Laurent
-            </Button>
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+              <Link href={youtubeUrl(activeVideo.youtubeId)} target="_blank" rel="noreferrer" className="block">
+                <Button variant="primary" size="lg" className="w-full sm:w-auto">
+                  Voir sur YouTube
+                </Button>
+              </Link>
+              <Link href="/diagnostic" className="block">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full border-mint-green text-mint-green hover:bg-mint-green hover:text-blue-ink sm:w-auto"
+                >
+                  Demander un diagnostic
+                </Button>
+              </Link>
+            </div>
           </div>
         </AnimatedSection>
+
+        <AnimatedSection animation="fade-in" delay={240}>
+          <div className="mb-8">
+            <p className="mb-3 font-title text-sm font-semibold uppercase tracking-[0.22em] text-white/60">
+              Autres témoignages vidéo
+            </p>
+            <h3 className="text-2xl font-title font-bold text-white md:text-3xl">
+              Cliquer sur un rectangle pour le lancer dans le player principal
+            </h3>
+          </div>
+        </AnimatedSection>
+
+        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+          {secondaryVideos.map((video, index) => {
+            const isActive = activeVideo.youtubeId === video.youtubeId;
+
+            return (
+              <AnimatedSection key={video.youtubeId} animation="slide-up" delay={320 + index * 80}>
+                <button
+                  type="button"
+                  onClick={() => setActiveVideoId(video.youtubeId)}
+                  className={`group block w-full overflow-hidden rounded-[1.4rem] border text-left shadow-[0_20px_60px_rgba(0,0,0,0.28)] transition-all duration-300 hover:-translate-y-1 ${
+                    isActive
+                      ? 'border-mint-green bg-white/[0.09] ring-1 ring-mint-green/40'
+                      : 'border-white/10 bg-white/[0.05] hover:border-white/20 hover:bg-white/[0.07]'
+                  }`}
+                >
+                  <div className="relative aspect-[16/9] overflow-hidden">
+                    <Image
+                      src={thumbnailUrl(video.youtubeId)}
+                      alt={video.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
+                      quality={80}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
+                    <div className="absolute left-4 top-4 inline-flex items-center rounded-full border border-white/20 bg-black/30 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/80 backdrop-blur-sm">
+                      {isActive ? 'En lecture' : 'Témoignage'}
+                    </div>
+                    <div className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm">
+                      <svg width="14" height="16" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg" className="translate-x-[1px]">
+                        <path d="M1 1.5L14 9L1 16.5V1.5Z" fill="white" />
+                      </svg>
+                    </div>
+                    <div className="absolute inset-x-0 bottom-0 p-4">
+                      <h4 className="font-title text-lg font-bold text-white">{video.title}</h4>
+                      <p className="mt-2 text-sm leading-relaxed text-white/75">Lire ce témoignage dans la vidéo principale</p>
+                    </div>
+                  </div>
+                </button>
+              </AnimatedSection>
+            );
+          })}
+        </div>
       </div>
-
-      <style jsx global>{`
-        .swiper-pagination-bullet {
-          width: 12px;
-          height: 12px;
-          background-color: #AAB8C2; /* Gris clair pour les non-actifs */
-          opacity: 0.8;
-          transition: all 0.3s ease;
-          margin: 0 8px !important; /* Ajoute de l'espace entre les points */
-        }
-        .swiper-pagination-bullet-active {
-          background-color: #00BDA4; /* Couleur d'accentuation pour l'actif */
-          transform: scale(1.2);
-          opacity: 1;
-        }
-
-        /* Augmente la zone tactile sans changer la taille visuelle radicalement */
-        .swiper-pagination-bullet::before {
-          content: '';
-          position: absolute;
-          top: -10px;
-          bottom: -10px;
-          left: -10px;
-          right: -10px;
-        }
-      `}</style>
     </section>
   );
-} 
+}
