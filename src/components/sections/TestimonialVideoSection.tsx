@@ -1,157 +1,249 @@
 'use client';
 
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, A11y } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import Button from "@/components/ui/Button";
-import AnimatedSection from "@/components/ui/AnimatedSection";
+import Image from 'next/image';
+import Link from 'next/link';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import Button from '@/components/ui/Button';
+import AnimatedSection from '@/components/ui/AnimatedSection';
 
-const testimonials = [
+const heroVideo = {
+  title: 'Des résultats qui se voient dans les chiffres',
+  description:
+    'Une compilation centrée sur les résultats pour voir, en quelques minutes, ce que disent les clients quand la dynamique commerciale change vraiment.',
+  youtubeId: 'ooEf32IGpMM',
+  eyebrow: 'Témoignage principal',
+};
+
+const secondaryVideos = [
   {
-    name: "Alexis Alvarez",
-    role: "CEO Queoval",
-    photo: "/images/Alexis Alvarez.jpeg",
-    quote: "Le parcours avec Laurent nous a permis une progression de plus de 50% des objectifs réalisés sur le dernier semestre par rapport au semestre de l'année dernière. On dit merci à Laurent !",
+    youtubeId: '0kWjp_4g2Pk',
+    title: 'Témoignage client',
   },
   {
-    name: "Alexandre",
-    role: "Responsable commercial Toiture et COMPAGNIE",
-    photo: "/images/Alexandre.jpeg",
-    quote: "LAURENT nous a donné l'amour du commerce et surtout au niveau des chiffres, on a explosé avec 40 % d'augmentation",
+    youtubeId: 'ojopxkWzXy8',
+    title: 'Retour d’expérience',
   },
   {
-    name: "Elisa Gorbatoff",
-    role: "Responsable commerciale Evolvia",
-    photo: "/images/Elisa Gorbatoff.jpeg",
-    quote: "L'accompagnement de Laurent nous a permis de finir l'année de manière incroyable avec une hausse de 90 % de notre chiffre d'affaires !",
+    youtubeId: 'kkU2jPspfVk',
+    title: 'Transformation commerciale',
   },
   {
-    name: "Kristina Kovriznoh",
-    role: "Responsable commerciale Creavea",
-    photo: "/images/Kristina Kovriznoh.jpeg",
-    quote: "Sur le deuxieme trimestre nous avons fait une progression inespérée de 39%",
+    youtubeId: 'LpYgrI2TPlw',
+    title: 'Progression des résultats',
   },
   {
-    name: "Charles Mancini",
-    role: "Directeur commercial",
-    photo: "/images/Charles Manicini.jpeg",
-    quote: "Laurent a mené un audit en profondeur, la méthode rigoureuse et efficace qui nous permis d'avoir des signatures plus reccurentes, des prospects plus à l'écoute, et surtout, 35% de progression du C.A.",
+    youtubeId: 'ffegHBVorPo',
+    title: 'Accompagnement terrain',
   },
   {
-    name: "Chloé Galmes",
-    role: "Dirigeante Freedom Boat club",
-    photo: "/images/chloé galmes.jpeg",
-    quote: "Grace à l'accompagnement de Laurent nous avons doublé notre nombre d'adhérent, au-dela de nos objectifs, la rigueur et la pertinence ont fourni leurs effets !",
+    youtubeId: 'uNisunsWkn4',
+    title: 'Résultats obtenus',
   },
 ];
 
+function thumbnailUrl(id: string) {
+  return `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
+}
+
+function youtubeUrl(id: string) {
+  return `https://www.youtube.com/watch?v=${id}`;
+}
+
 export default function TestimonialVideoSection() {
   return (
-    <section id="cas-clients" className="py-16 sm:py-20 relative overflow-hidden">
-      {/* Image de fond */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: 'url(/tableau-de-bord.jpeg)',
-        }}
-      />
-      
-      {/* Overlay pour la lisibilité */}
-      <div className="absolute inset-0 bg-primary-bg/90" />
-      
-      {/* Contenu par-dessus le fond */}
-      <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6">
-        {/* Titre de la section */}
+    <section id="cas-clients" className="relative overflow-hidden bg-[#07111B] py-24 text-white">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(0,189,164,0.12),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(255,122,89,0.14),_transparent_28%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),transparent)]" />
+
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
         <AnimatedSection animation="slide-up" delay={0}>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-title font-bold text-blue-ink leading-tight mb-4">
-              Ils témoignent de la
-              <span className="block text-mint-green">transformation</span>
+          <div className="mx-auto mb-14 max-w-4xl text-center">
+            <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-5 py-2 backdrop-blur-sm">
+              <span className="h-2.5 w-2.5 rounded-full bg-mint-green" />
+              <span className="font-title text-sm font-semibold uppercase tracking-wide text-white/85">
+                Ils parlent des résultats obtenus
+              </span>
+            </div>
+
+            <h2 className="text-4xl font-title font-bold leading-tight text-white md:text-5xl lg:text-6xl">
+              La preuve par les clients.
+              <span className="mt-2 block text-mint-green">Pas par les promesses.</span>
             </h2>
-            <p className="text-lg font-body text-gray-anthracite max-w-2xl mx-auto">
-              Découvrez comment nos clients ont révolutionné leurs performances commerciales
+
+            <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-white/78 md:text-xl">
+              Quand l’organisation commerciale tient mieux, les résultats se voient. Voici ce que racontent les clients, chiffres à l’appui.
             </p>
           </div>
         </AnimatedSection>
 
-        {/* Slider Swiper */}
+        <AnimatedSection animation="slide-up" delay={120}>
+          <div className="mb-16 grid gap-8 rounded-[2rem] border border-white/10 bg-white/[0.05] p-6 shadow-[0_40px_120px_rgba(0,0,0,0.35)] backdrop-blur-md lg:grid-cols-[1.25fr_0.95fr] lg:p-8">
+            <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-black shadow-2xl">
+              <div className="aspect-video">
+                <iframe
+                  src={`https://www.youtube-nocookie.com/embed/${heroVideo.youtubeId}?rel=0&modestbranding=1`}
+                  title={heroVideo.title}
+                  className="h-full w-full"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+            </div>
+
+            <div className="flex h-full flex-col justify-center">
+              <p className="mb-4 font-title text-sm font-semibold uppercase tracking-[0.24em] text-orange-soft">
+                {heroVideo.eyebrow}
+              </p>
+              <h3 className="text-3xl font-title font-bold leading-tight text-white md:text-4xl">
+                {heroVideo.title}
+              </h3>
+              <p className="mt-5 text-base leading-relaxed text-white/76 md:text-lg">
+                {heroVideo.description}
+              </p>
+
+              <div className="mt-8 grid gap-4 sm:grid-cols-3">
+                <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <div className="font-title text-2xl font-bold text-mint-green">6</div>
+                  <p className="mt-2 text-sm leading-relaxed text-white/72">vidéos pour voir la variété des contextes et des résultats</p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <div className="font-title text-2xl font-bold text-orange-soft">100%</div>
+                  <p className="mt-2 text-sm leading-relaxed text-white/72">centré sur les retours clients, pas sur une promesse marketing</p>
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+                  <div className="font-title text-2xl font-bold text-white">YouTube</div>
+                  <p className="mt-2 text-sm leading-relaxed text-white/72">facile à enrichir à mesure que de nouveaux témoignages arrivent</p>
+                </div>
+              </div>
+
+              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                <Link href={youtubeUrl(heroVideo.youtubeId)} target="_blank" rel="noreferrer" className="block">
+                  <Button variant="primary" size="lg" className="w-full sm:w-auto">
+                    Voir la vidéo principale
+                  </Button>
+                </Link>
+                <Link href="/diagnostic" className="block">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="w-full border-mint-green text-mint-green hover:bg-mint-green hover:text-blue-ink sm:w-auto"
+                  >
+                    Demander un diagnostic
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </AnimatedSection>
+
+        <AnimatedSection animation="fade-in" delay={240}>
+          <div className="mb-8 flex items-end justify-between gap-6">
+            <div>
+              <p className="mb-3 font-title text-sm font-semibold uppercase tracking-[0.22em] text-white/60">
+                Autres témoignages vidéo
+              </p>
+              <h3 className="text-2xl font-title font-bold text-white md:text-3xl">
+                Un slider plus élégant pour parcourir les autres retours clients
+              </h3>
+            </div>
+          </div>
+        </AnimatedSection>
+
         <Swiper
           modules={[Navigation, Pagination, A11y]}
-          spaceBetween={32}
-          slidesPerView={1}
+          spaceBetween={24}
+          slidesPerView={1.1}
           navigation
           pagination={{ clickable: true }}
-          className="mb-12"
+          className="premium-testimonial-swiper"
           breakpoints={{
-            1024: { slidesPerView: 2 },
+            640: { slidesPerView: 1.5 },
+            900: { slidesPerView: 2.2 },
+            1200: { slidesPerView: 3.1 },
           }}
         >
-          {testimonials.map((t, i) => (
-            <SwiperSlide key={i}>
-              <AnimatedSection animation="slide-up" delay={200 + i * 100}>
-                <div className="bg-white/95 backdrop-blur-sm rounded-3xl p-6 sm:p-8 shadow-xl flex flex-col items-center h-full">
-                  <div className="w-20 h-20 mb-4 relative rounded-full overflow-hidden border-4 border-mint-green shadow-lg">
-                    <Image src={t.photo} alt={`Portrait professionnel de ${t.name}, ${t.role}, client satisfait de l'accompagnement commercial de Laurent Serre.`} fill style={{objectFit:'cover'}} sizes="80px" quality={60} loading="lazy" />
+          {secondaryVideos.map((video, index) => (
+            <SwiperSlide key={video.youtubeId}>
+              <AnimatedSection animation="slide-up" delay={320 + index * 80}>
+                <Link
+                  href={youtubeUrl(video.youtubeId)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group block overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.05] shadow-[0_20px_60px_rgba(0,0,0,0.28)] transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.07]"
+                >
+                  <div className="relative aspect-video overflow-hidden">
+                    <Image
+                      src={thumbnailUrl(video.youtubeId)}
+                      alt={video.title}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      quality={80}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-transparent" />
+                    <div className="absolute left-5 top-5 inline-flex items-center rounded-full border border-white/20 bg-black/30 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 backdrop-blur-sm">
+                      Témoignage
+                    </div>
+                    <div className="absolute inset-x-0 bottom-0 flex items-end justify-between p-5">
+                      <div>
+                        <h4 className="font-title text-xl font-bold text-white">{video.title}</h4>
+                        <p className="mt-2 text-sm leading-relaxed text-white/75">Cliquer pour ouvrir la vidéo sur YouTube</p>
+                      </div>
+                      <div className="ml-4 flex h-14 w-14 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm transition-transform duration-300 group-hover:scale-105">
+                        <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg" className="translate-x-[1px]">
+                          <path d="M1 1.5L14 9L1 16.5V1.5Z" fill="white" />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
-                  <blockquote className="text-gray-anthracite font-italic text-lg leading-relaxed mb-4 text-center">"{t.quote}"</blockquote>
-                  <div className="font-title font-bold text-blue-ink text-base text-center">
-                    {t.name}
-                  </div>
-                  <div className="font-normal text-gray-anthracite text-sm text-center">
-                    {t.role}
-                  </div>
-                </div>
+                </Link>
               </AnimatedSection>
             </SwiperSlide>
           ))}
         </Swiper>
-
-        {/* CTA optionnel */}
-        <AnimatedSection animation="fade-in" delay={800}>
-          <div className="text-center mt-8">
-            <p className="font-body text-gray-anthracite mb-4">
-              Vous aussi, transformez vos résultats commerciaux
-            </p>
-            <Button 
-              variant="secondary"
-              icon="📞"
-              onClick={() => window.open('https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone', '_blank')}
-              className="bg-mint-green text-white border-2 border-mint-green hover:bg-mint-green/90 hover:text-white shadow-lg"
-            >
-              Échanger avec Laurent
-            </Button>
-          </div>
-        </AnimatedSection>
       </div>
 
       <style jsx global>{`
-        .swiper-pagination-bullet {
-          width: 12px;
-          height: 12px;
-          background-color: #AAB8C2; /* Gris clair pour les non-actifs */
-          opacity: 0.8;
-          transition: all 0.3s ease;
-          margin: 0 8px !important; /* Ajoute de l'espace entre les points */
-        }
-        .swiper-pagination-bullet-active {
-          background-color: #00BDA4; /* Couleur d'accentuation pour l'actif */
-          transform: scale(1.2);
-          opacity: 1;
+        .premium-testimonial-swiper {
+          padding-bottom: 3.5rem;
         }
 
-        /* Augmente la zone tactile sans changer la taille visuelle radicalement */
-        .swiper-pagination-bullet::before {
-          content: '';
-          position: absolute;
-          top: -10px;
-          bottom: -10px;
-          left: -10px;
-          right: -10px;
+        .premium-testimonial-swiper .swiper-button-prev,
+        .premium-testimonial-swiper .swiper-button-next {
+          color: #ffffff;
+          width: 48px;
+          height: 48px;
+          border-radius: 9999px;
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          backdrop-filter: blur(10px);
+        }
+
+        .premium-testimonial-swiper .swiper-button-prev:after,
+        .premium-testimonial-swiper .swiper-button-next:after {
+          font-size: 18px;
+          font-weight: 700;
+        }
+
+        .premium-testimonial-swiper .swiper-pagination-bullet {
+          width: 10px;
+          height: 10px;
+          background: rgba(255, 255, 255, 0.35);
+          opacity: 1;
+          margin: 0 6px !important;
+        }
+
+        .premium-testimonial-swiper .swiper-pagination-bullet-active {
+          background: #00bda4;
+          transform: scale(1.15);
         }
       `}</style>
     </section>
   );
-} 
+}
