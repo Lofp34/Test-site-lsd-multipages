@@ -82,19 +82,35 @@ export default function TestimonialVideoSection() {
 
         <AnimatedSection animation="slide-up" delay={120}>
           <div className="mb-16 grid gap-8 rounded-[2rem] border border-white/10 bg-white/[0.05] p-6 shadow-[0_40px_120px_rgba(0,0,0,0.35)] backdrop-blur-md lg:grid-cols-[1.25fr_0.95fr] lg:p-8">
-            <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-black shadow-2xl">
-              <div className="aspect-video">
-                <iframe
-                  src={`https://www.youtube-nocookie.com/embed/${heroVideo.youtubeId}?rel=0&modestbranding=1`}
-                  title={heroVideo.title}
-                  className="h-full w-full"
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
+            <Link
+              href={youtubeUrl(heroVideo.youtubeId)}
+              target="_blank"
+              rel="noreferrer"
+              className="group block overflow-hidden rounded-[1.5rem] border border-white/10 bg-black shadow-2xl"
+            >
+              <div className="relative aspect-video">
+                <Image
+                  src={thumbnailUrl(heroVideo.youtubeId)}
+                  alt={heroVideo.title}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                  sizes="(max-width: 1024px) 100vw, 60vw"
+                  quality={90}
+                  priority
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="flex h-20 w-20 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md transition-transform duration-300 group-hover:scale-105">
+                    <svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg" className="translate-x-[2px]">
+                      <path d="M2 2L20 13L2 24V2Z" fill="white" />
+                    </svg>
+                  </div>
+                </div>
+                <div className="absolute left-5 top-5 inline-flex items-center rounded-full border border-white/20 bg-black/30 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-white/80 backdrop-blur-sm">
+                  Lecture sur YouTube
+                </div>
               </div>
-            </div>
+            </Link>
 
             <div className="flex h-full flex-col justify-center">
               <p className="mb-4 font-title text-sm font-semibold uppercase tracking-[0.24em] text-orange-soft">
