@@ -8,23 +8,23 @@ import { useSectionTracking } from "@/hooks/useSectionTracking";
 const problems = [
   {
     number: '01',
-    title: 'Prospection qui fatigue plus qu’elle n’alimente',
+    title: 'Prospection qui fatigue plus qu’elle ne donne de résultats',
     description:
       'Vos commerciaux s’activent, mais le pipe ne se remplit pas au bon niveau. Beaucoup d’effort, trop peu d’affaires vraiment qualifiées.',
     accent: 'orange',
   },
   {
     number: '02',
-    title: 'Cycles de vente longs, usants, mal tenus',
+    title: 'Cycle de vente long, usant, mal maîtrisé',
     description:
       'Les affaires traînent, les négociations s’étirent, l’énergie se disperse. L’équipe donne beaucoup, mais le rythme commercial s’érode.',
     accent: 'mint',
   },
   {
     number: '03',
-    title: 'Prévisions fragiles, pilotage instable',
+    title: 'Vision fragile, management peu efficace',
     description:
-      'Sans méthode claire, vous pilotez plus au ressenti qu’à la lecture. Et quand les prévisions flottent, la croissance devient nerveuse.',
+      'Sans cadre clair, vous pilotez plus au ressenti qu’avec une vraie lecture. Et quand la vision commerciale se fragilise, la croissance devient instable.',
     accent: 'blue',
   },
 ];
@@ -76,12 +76,12 @@ export default function ProblemSection() {
             </div>
 
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-title font-bold text-white leading-tight">
-              Votre équipe commerciale donne beaucoup.
-              <span className="block text-orange-soft mt-2">Mais le système derrière ne suit pas.</span>
+              Votre organisation commerciale
+              <span className="block text-orange-soft mt-2">est-elle à la hauteur ?</span>
             </h2>
 
-            <p className="mt-6 text-lg md:text-xl text-white/75 leading-relaxed max-w-3xl mx-auto">
-              Le problème n’est pas toujours l’énergie, ni même la bonne volonté. Très souvent, c’est la structure commerciale qui laisse l’effort se perdre.
+            <p className="mt-6 text-lg md:text-xl text-white/80 leading-relaxed max-w-3xl mx-auto">
+              Le problème n’est pas toujours l’énergie, ni même la bonne volonté. Très souvent, c’est l’organisation commerciale qui laisse l’effort se perdre.
             </p>
           </div>
         </AnimatedSection>
@@ -104,7 +104,7 @@ export default function ProblemSection() {
                     <h3 className="text-2xl font-title font-bold text-white leading-snug max-w-xs">
                       {problem.title}
                     </h3>
-                    <p className="text-base md:text-lg text-white/78 leading-relaxed max-w-sm">
+                    <p className="text-base md:text-lg text-white leading-relaxed max-w-sm">
                       {problem.description}
                     </p>
                   </div>
@@ -122,10 +122,10 @@ export default function ProblemSection() {
                   Le vrai sujet
                 </p>
                 <p className="text-2xl md:text-3xl font-body text-white leading-relaxed">
-                  Vous n’avez pas seulement un problème de motivation.
-                  <span className="block mt-2 font-semibold text-white">Vous avez un problème de structuration commerciale.</span>
+                  Vous n’avez pas un problème de motivation de votre équipe.
+                  <span className="block mt-2 font-semibold text-white">Vous avez un problème d’organisation commerciale.</span>
                 </p>
-                <p className="mt-4 text-white/70 text-base md:text-lg leading-relaxed max-w-3xl">
+                <p className="mt-4 text-white/78 text-base md:text-lg leading-relaxed max-w-3xl">
                   Et tant que ce cadre n’est pas renforcé, l’équipe continue à donner, sans transformer cet effort en dynamique commerciale solide et prévisible.
                 </p>
               </div>
