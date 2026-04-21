@@ -15,8 +15,8 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 18
-- **Publications blog publiées** : 18
+- **Total publications suivies** : 19
+- **Publications blog publiées** : 19
 - **Idées en backlog** : 0
 - **Articles avec kit LinkedIn prêt** : 10
 - **Articles avec email prêt/envoyé** : 7
@@ -26,13 +26,13 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Formation / transformation commerciale : 3
 - Outils / méthodes / ressources : 1
 - IA / tendances / prospective : 3
-- Management / pilotage dirigeant : 1
+- Management / pilotage dirigeant : 2
 - Techniques de vente terrain : 4
 - Structure / système commercial : 1
 - Psychologie / comportements commerciaux : 4
 
 ### Répartition par angle
-- Erreur fréquente : 3
+- Erreur fréquente : 4
 - Diagnostic : 1
 - Méthode : 1
 - Point de vue : 6
@@ -60,6 +60,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-21 | publié | Pourquoi un forecast rassurant fait souvent perdre du temps et des ventes | Forecast commercial trop confortable et lecture trop indulgente des affaires | Erreur fréquente | Management / pilotage dirigeant | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à durcir la qualité des revues forecast et ouvrir des conversations sur la fiabilité du pipe, la décision réelle et le rôle du management dans le challenge des affaires | Fondamentaux / historique | Oui — retour utile sur un angle erreur fréquente de pilotage sans refaire un marronnier pipeline, avec un ancrage très concret sur la revue d’affaires | https://www.laurentserre.com/blog/pourquoi-un-forecast-rassurant-fait-souvent-perdre-du-temps-et-des-ventes | à préparer | non requis | Post LinkedIn d’opinion sur le forecast poli, carrousel pipe rassurant vs pipe fiable, email court sur les trois questions de revue d’affaires | Génération autonome du jour avec illustration éditoriale créée ; bon pont avec décision réelle, concurrent et revues d’affaires |
 | 2026-04-20 | publié | Vous n’avez pas perdu face au concurrent, vous avez perdu bien avant | Affaires perdues attribuées au concurrent au lieu de relire les causes plus amont de la perte | Point de vue | Expertise développement commercial PME | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à relever le niveau des débriefs de pertes et ouvrir des conversations sur la découverte, la décision réelle et la qualité de lecture commerciale | Fondamentaux / historique | Oui — bon rééquilibrage vers un point de vue dirigeant concret après les angles très terrain sur objections et décision | https://www.laurentserre.com/blog/vous-navez-pas-perdu-face-au-concurrent-vous-avez-perdu-bien-avant | à préparer | non requis | Post LinkedIn d’opinion sur l’excuse du concurrent, carrousel cause apparente vs cause profonde, email court sur le vrai moment où une vente se perd | Génération autonome du jour avec illustration éditoriale créée ; article relié naturellement aux sujets décision, objections et qualité de qualification |
 | 2026-04-19 | publié | Pourquoi vos commerciaux confondent intérêt et décision | Confusion entre intérêt exprimé, rendez-vous agréable et vraie progression de décision | Terrain | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à fiabiliser la lecture des affaires et ouvrir des conversations sur la qualification réelle, la décision et les faux signaux de pipeline | Fondamentaux / historique | Oui — bon prolongement très terrain après l’article sur les objections, sans doublonner l’angle et en renforçant le sujet de la décision réelle | https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-confondent-interet-et-decision | à préparer | non requis | Post LinkedIn d’opinion sur intérêt vs décision, carrousel signal positif vs vraie avancée, email court sur les faux signaux de pipeline | Génération autonome du jour avec illustration éditoriale créée ; bons liens naturels vers solutions, objections et revue deal |
 | 2026-04-18 | publié | Pourquoi vos commerciaux répondent trop vite aux objections | Réponses trop rapides aux objections et perte de lecture commerciale | Erreur fréquente / terrain | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à mieux lire les objections réelles et ouvrir des conversations sur le discernement commercial, la qualification et le débrief de scène | Fondamentaux / historique | Oui — angle terrain et erreur fréquente pour rééquilibrer la séquence récente sans revenir au pilotage pipeline | https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections | à préparer | non requis | Post LinkedIn d’opinion sur les objections mal lues, carrousel objection vs vraie inquiétude, email court sur la différence entre répondre et creuser | Génération autonome du jour avec illustration éditoriale créée ; bons liens naturels vers prix, découverte et débrief |

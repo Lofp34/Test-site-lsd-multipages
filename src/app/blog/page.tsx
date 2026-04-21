@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-un-forecast-rassurant-fait-souvent-perdre-du-temps-et-des-ventes',
+    title: 'Pourquoi un forecast rassurant fait souvent perdre du temps et des ventes',
+    description: 'Un forecast qui rassure trop vite donne souvent une illusion de maîtrise. Le vrai sujet est la qualité de lecture commerciale derrière les chiffres.',
+    date: '2026-04-21',
+    readTime: '6 min de lecture',
+    category: 'Erreur fréquente / pilotage commercial',
+    image: '/images/blog/2026-04-21-forecast-rassurant-hero.png',
+    featured: true
+  },
+  {
     slug: 'vous-navez-pas-perdu-face-au-concurrent-vous-avez-perdu-bien-avant',
     title: 'Vous n’avez pas perdu face au concurrent, vous avez perdu bien avant',
     description: 'Quand une équipe dit qu’elle a perdu face au concurrent, elle évite souvent une vérité moins confortable. La vente s’est généralement fragilisée bien plus tôt.',
