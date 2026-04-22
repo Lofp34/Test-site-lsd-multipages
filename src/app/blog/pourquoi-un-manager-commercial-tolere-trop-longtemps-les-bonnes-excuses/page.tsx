@@ -80,25 +80,25 @@ export default function PourquoiUnManagerCommercialTolereTropLongtempsLesBonnesE
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
-            Dans beaucoup d’équipes, les ventes fragiles ne tiennent pas grâce au talent du commercial. Elles tiennent grâce aux bonnes excuses qu’on accepte trop longtemps.
+            Dans beaucoup d’équipes, les bonnes excuses servent à fluidifier la relation. Malheureusement, ça se fait au détriment des ventes et donc du chiffre d’affaires.
           </p>
 
           <p className="mb-8">
-            Je vois souvent la même scène en revue d’affaires. Un commercial explique qu’il attend le retour du client, que le budget est un peu serré, que le décideur était pris, que le dossier va repartir. Tout ça sonne plausible. Le manager hoche la tête, note une relance, passe au deal suivant. Le problème, ce n’est pas la phrase du commercial. Le problème, c’est qu’à ce moment-là personne ne relit la mécanique réelle de la vente.
+            Je vois souvent la même scène en réunion commerciale. Un commercial explique qu’il attend le retour du client, que le budget est un peu serré, que le décideur était pris, que le dossier va repartir. Tout ça a l’air crédible. Le manager hoche la tête, note une relance, passe au deal suivant. Le problème, ce n’est pas l’excuse du commercial. Le problème, c’est qu’à ce moment-là, le manager ne creuse pas. Il ne cherche pas à challenger son commercial sur la réalité du deal.
           </p>
 
           <div className="bg-blue-ink/10 border-l-4 border-blue-ink p-6 my-8">
             <p className="text-base">
-              <strong>Une bonne excuse est dangereuse parce qu’elle est crédible.</strong> Elle calme la réunion, protège le commercial, et retarde le vrai diagnostic.
+              <strong>Une bonne excuse est dangereuse parce qu’elle est crédible.</strong> Elle calme les esprits, protège l’ego du commercial, la tranquillité du dirco et retarde le vrai diagnostic. Un peu de sérénité tout de suite. Plus de stress après.
             </p>
           </div>
 
           <p className="mb-8">
-            Quand un manager tolère trop longtemps ces explications, il n’installe pas du soutien. Il installe du flou. L’équipe apprend vite la règle implicite : tant que l’histoire est propre, personne n’ira chercher ce qui n’a pas été validé, ce qui n’a pas été découvert, ou le moment exact où la vente a commencé à se dégrader.
+            Quand un manager tolère trop longtemps ces explications, il n’apporte pas du soutien. Il installe du flou. Il installe du mou. L’équipe apprend vite la règle implicite : tant que l’histoire est propre, personne n’ira chercher ce qui n’a pas été validé, ce qui n’a pas été découvert ou le moment exact où la vente a commencé à se dégrader.
           </p>
 
           <p className="mb-8">
-            C’est là que le management commercial devient faible sans s’en rendre compte. On croit faire preuve de confiance. En réalité, on évite la confrontation utile. Et sans cette confrontation, les mêmes dérives reviennent : proposition partie trop tôt, vrai décideur jamais touché, objection mal lue, prochaine étape floue. On retrouve ensuite ces symptômes dans{' '}
+            C’est là que le management commercial devient faible sans s’en rendre compte. On croit faire preuve de confiance. En réalité, on évite la confrontation utile. Et sans cette confrontation, les mêmes dérives reviennent : proposition partie trop tôt, vrai décideur jamais touché, objection mal traitée, prochaine étape floue. On retrouve ensuite ces symptômes dans{' '}
             <Link href="/blog/pourquoi-vos-commerciaux-confondent-interet-et-decision" className="text-blue-ink font-semibold underline hover:text-mint-green">
               les dossiers où l’intérêt est confondu avec une vraie décision
             </Link>
@@ -110,7 +110,7 @@ export default function PourquoiUnManagerCommercialTolereTropLongtempsLesBonnesE
           </p>
 
           <p className="mb-8">
-            Beaucoup de managers n’aiment pas ce moment parce qu’ils ont peur de casser la motivation. Je pense l’inverse. Ce qui abîme une équipe, ce n’est pas un débrief exigeant. C’est l’accumulation de dossiers qu’on laisse vieillir avec des explications polies. Le commercial finit par croire que son problème est le timing du client, alors que la vente était déjà mal engagée bien avant. C’est exactement le même mécanisme que dans{' '}
+            Beaucoup de managers n’aiment pas ce moment parce qu’ils ont peur de casser la motivation ou de perdre leur leadership. Ce qui abîme une équipe, ce n’est pas un débrief exigeant. C’est l’accumulation de dossiers qu’on laisse vieillir avec des explications propres, mais trompeuses. Le commercial finit par croire que son problème est le timing du client, alors que la vente était déjà mal engagée bien avant. C’est exactement le même mécanisme que dans{' '}
             <Link href="/blog/vous-navez-pas-perdu-face-au-concurrent-vous-avez-perdu-bien-avant" className="text-blue-ink font-semibold underline hover:text-mint-green">
               les affaires qu’on attribue trop vite au concurrent
             </Link>
@@ -119,7 +119,7 @@ export default function PourquoiUnManagerCommercialTolereTropLongtempsLesBonnesE
 
           <div className="my-10 rounded-2xl border border-blue-ink/15 bg-white p-6">
             <p className="text-base text-gray-700 mb-4">
-              Si vous sentez que vos revues d’affaires laissent trop souvent passer des explications confortables, le sujet n’est pas le reporting. C’est le niveau d’exigence du débrief.
+              Si vos commerciaux apportent souvent des dossiers qui paraissent rassurants, mais en fait sont fragiles, on peut repartir d’un diagnostic clair des entretiens de vente, des excuses acceptées trop vite et des sessions qui ne sont jamais vraiment challengées.
             </p>
             <Link href="/diagnostic" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
               Demander un diagnostic commercial
@@ -127,7 +127,7 @@ export default function PourquoiUnManagerCommercialTolereTropLongtempsLesBonnesE
           </div>
 
           <p className="mb-8">
-            Ce travail se joue souvent juste après le rendez-vous, pas seulement en réunion hebdo. Un bon manager reprend la scène pendant qu’elle est encore chaude. Il ne demande pas un roman CRM. Il demande ce que le client a vraiment dit, ce qui a été évité, ce qui a été obtenu, et ce qui manque encore. C’est pour ça que{' '}
+            Ce travail se joue souvent juste après le rendez-vous, pas seulement en réunion hebdo. Un bon manager débriefe un entretien pendant qu’il est encore chaud. Il ne demande pas un beau compte-rendu dans le CRM. Il demande ce que le client a vraiment dit, ce qui a été évité, ce qui a été obtenu, et ce qui manque encore. C’est pour ça que{' '}
             <Link href="/blog/pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud" className="text-blue-ink font-semibold underline hover:text-mint-green">
               le débrief à chaud vaut plus qu’un compte rendu propre
             </Link>
@@ -135,13 +135,13 @@ export default function PourquoiUnManagerCommercialTolereTropLongtempsLesBonnesE
           </p>
 
           <p className="mb-8">
-            Un manager commercial solide n’est pas celui qui trouve toujours la bonne réponse. C’est celui qui refuse que l’équipe se cache derrière des explications propres. Parce qu’une excuse bien racontée peut sauver une réunion. Mais elle ne sauve jamais une vente.
+            Un manager commercial solide n’est pas celui qui trouve toujours la bonne réponse. C’est celui qui refuse que l’équipe se cache derrière des explications propres, mais trompeuses. Parce qu’une excuse bien amenée peut sauver une réunion, mais elle ne sauve jamais une vente.
           </p>
 
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
-            <h3 className="text-2xl font-title font-bold mb-4">Vous voulez durcir le niveau de vos revues d’affaires ?</h3>
+            <h3 className="text-2xl font-title font-bold mb-4">Vous voulez améliorer l’impact de vos réunions commerciales ?</h3>
             <p className="mb-6">
-              Si vos commerciaux amènent souvent des dossiers qui paraissent rassurants mais restent fragiles, on peut repartir d’un diagnostic clair des scènes, des excuses acceptées trop vite et des décisions qui ne sont jamais vraiment challengées.
+              Si vos commerciaux apportent souvent des dossiers qui paraissent rassurants, mais en fait sont fragiles, on peut repartir d’un diagnostic clair des entretiens de vente, des excuses acceptées trop vite et des sessions qui ne sont jamais vraiment challengées.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/diagnostic" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
