@@ -42,7 +42,7 @@ const blogPosts = [
     date: '2026-04-22',
     readTime: '6 min de lecture',
     category: 'Management / coaching commercial',
-    image: '/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.svg',
+    image: '/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.png',
     featured: true
   },
   {

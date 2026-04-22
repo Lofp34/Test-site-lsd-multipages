@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.svg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.png',
         width: 1536,
         height: 1024,
         alt: 'Débrief commercial exigeant entre un manager et un commercial dans une PME',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Pourquoi un manager commercial tolère trop longtemps les bonnes excuses',
     description:
       'À force d’accepter les explications confortables, un manager commercial affaiblit la lucidité de l’équipe et laisse les mêmes erreurs se répéter.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.svg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.png'],
   },
 };
 
@@ -65,7 +65,7 @@ export default function PourquoiUnManagerCommercialTolereTropLongtempsLesBonnesE
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.svg"
+              src="/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.png"
               alt="Débrief commercial exigeant entre un manager et un commercial dans une PME"
               width={1536}
               height={1024}
