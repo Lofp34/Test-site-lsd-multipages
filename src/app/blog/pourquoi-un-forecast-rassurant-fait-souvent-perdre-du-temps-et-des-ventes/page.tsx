@@ -94,29 +94,33 @@ export default function PourquoiUnForecastRassurantFaitSouventPerdreDuTempsEtDes
 
           <div className="bg-blue-ink/10 border-l-4 border-blue-ink p-6 my-8">
             <p className="text-base">
-              <strong>Des prévisions commerciales rassurantes ne veulent pas dire que les ventes avancent. Très souvent, elles veulent juste dire qu’on a mis des mots propres sur des affaires qui sont déjà fragiles.</strong>
+              <strong>Dans beaucoup d’équipes, les bonnes excuses servent à fluidifier la relation. Malheureusement, ça se fait au détriment des ventes et donc du chiffre d’affaires.</strong>
             </p>
           </div>
 
           <p className="mb-8">
-            Dans beaucoup d’équipes, on confond encore un bon contact avec un deal solide. Le rendez-vous s’est bien passé. Le prospect a posé des questions. Il a demandé une proposition. Il a dit que le sujet l’intéressait. Très bien. Mais rien là-dedans ne prouve qu’une décision est réellement en train de se construire.
+            Je vois souvent les mêmes scènes en réunion commerciale. Un commercial déroule son dossier. Le contact est bon. Le client a dit qu’il était intéressé. Une proposition est partie. Il faut juste attendre le retour. Tout ça a l’air crédible.
           </p>
 
           <p className="mb-8">
-            Et comme tout ça sonne bien en réunion, tout le monde se détend. Le commercial se rassure. Le manager se rassure. Le dirigeant se rassure. Sauf que la vente, elle, ne se rassure pas. Elle avance, ou elle n’avance pas.
+            Le problème, ce n’est pas l’excuse du commercial. Le problème, c’est qu’à ce moment-là, le manager ne creuse pas. Il ne cherche pas à challenger son commercial sur la réalité du deal.
           </p>
 
           <p className="mb-8">
-            Quand je regarde des affaires qui finissent avec trois mois de retard, ou qui disparaissent après avoir occupé l’équipe pendant des semaines, je retrouve presque toujours les mêmes signaux au départ. Pas de vraie priorité côté client. Pas de décideur clairement engagé. Pas de prochaine étape nette. Pas de conséquence concrète si rien ne bouge. Et très souvent, une proposition envoyée beaucoup trop tôt.
+            Une bonne excuse est dangereuse parce qu’elle est crédible. Elle calme les esprits, protège l’ego du commercial, la tranquillité du dirco et retarde le vrai diagnostic. Un peu de sérénité tout de suite. Plus de stress après.
           </p>
 
           <p className="mb-8">
-            Mais au lieu de nommer ça, l’équipe utilise un langage qui calme tout le monde. « C’est bien embarqué. » « Le client est intéressé. » « Le dossier est mûr. » « Ils doivent revenir vers nous. » Franchement, ce langage-là ne pilote rien. Il maquille le flou.
+            Quand un manager tolère trop longtemps ces explications, il n’apporte pas du soutien. Il installe du flou. Il installe du mou. Et l’équipe apprend vite la règle implicite : tant que l’histoire est propre, personne n’ira chercher ce qui n’a pas été validé, ce qui n’a pas été découvert ou le moment exact où la vente a commencé à se dégrader.
+          </p>
+
+          <p className="mb-8">
+            C’est comme ça qu’on laisse monter des dossiers fragiles. Pas forcément parce que les commerciaux mentent. Mais parce que les explications propres, mais trompeuses, arrivent trop tôt et sont acceptées trop vite.
           </p>
 
           <div className="my-10 rounded-2xl border border-blue-ink/15 bg-white p-6">
             <p className="text-base text-gray-700 mb-4">
-              Si vos prévisions commerciales rassurent plus qu’elles n’aident à décider, le sujet n’est pas seulement le pipe. C’est votre niveau de lecture des affaires, la qualité des questions posées et la capacité du management à challenger les dossiers trop tôt rassurants.
+              Si vos commerciaux apportent souvent des dossiers qui paraissent rassurants, mais qui sont en fait fragiles, on peut repartir d’un diagnostic clair des entretiens de vente, des excuses acceptées trop vite et des sessions qui ne sont jamais vraiment challengées.
             </p>
             <Link href="/diagnostic" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
               Demander un diagnostic commercial
@@ -124,29 +128,25 @@ export default function PourquoiUnForecastRassurantFaitSouventPerdreDuTempsEtDes
           </div>
 
           <p className="mb-8">
-            Une prévision utile ne sert pas à rassurer la réunion. Elle sert à faire remonter plus tôt les affaires qui sentent déjà mauvais. La vraie question n’est pas : est-ce que le dossier a l’air vivant ? La vraie question est : qu’est-ce qui a réellement avancé dans la décision du client ?
+            On retrouve souvent les mêmes signes derrière. Une priorité floue. Un vrai décideur pas touché. Une objection mal traitée. Une proposition envoyée trop tôt. Un commercial qui pense que le deal avance parce que la relation reste fluide, alors que la décision, elle, n’a presque pas bougé.
           </p>
 
           <p className="mb-8">
-            Si personne ne sait répondre clairement à ça, l’affaire n’est pas en avance. Elle est suspendue. Et une affaire suspendue qui reste trop haut dans les prévisions finit toujours par coûter quelque chose. Du temps. De l’énergie. De l’attention managériale. Et souvent, du chiffre qu’on croyait déjà presque signé.
+            Beaucoup de managers n’aiment pas ce moment parce qu’ils ont peur de casser la motivation ou de perdre leur leadership. C’est justement là qu’ils se trompent. Un bon manager débriefe un entretien pendant qu’il est encore chaud. Il ne demande pas un beau compte-rendu dans le CRM.
           </p>
 
           <p className="mb-8">
-            C’est là que le sujet devient managérial. Parce qu’une prévision commerciale trop rassurante est souvent un signal de faiblesse dans la lecture des affaires. Pas parce que les gens sont mauvais. Parce qu’on s’est habitué à commenter les dossiers au lieu de les challenger.
+            Parce qu’une excuse bien amenée peut sauver une réunion, mais elle ne sauve jamais une vente.
           </p>
 
           <p className="mb-8">
-            On protège l’ambiance. On évite de mettre un commercial face à un deal mal engagé. On reporte la vraie discussion. On garde des dates de signature qui arrangent tout le monde. Et à la fin du mois, on dit que ça s’est décalé. Parfois, oui. Mais souvent, la vérité est plus simple. La vente n’était pas assez construite pour mériter la place qu’on lui avait donnée.
-          </p>
-
-          <p className="mb-8">
-            Une équipe commerciale commence à devenir bonne quand elle accepte de redescendre une affaire sans drame. Quand elle accepte de dire : là, on n’a pas assez. Là, le décideur n’est pas touché. Là, la proposition est partie trop tôt. Là, on a pris de l’intérêt pour une décision. Là, on s’est raconté une belle histoire.
+            Si on veut améliorer le niveau commercial d’une équipe, il faut apprendre à aller derrière des explications propres, mais trompeuses. C’est là qu’on recommence à voir le vrai état des ventes.
           </p>
 
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
-            <h3 className="text-2xl font-title font-bold mb-4">Vous voulez fiabiliser vos prévisions commerciales ?</h3>
+            <h3 className="text-2xl font-title font-bold mb-4">Vous voulez améliorer l’impact de vos réunions commerciales ?</h3>
             <p className="mb-6">
-              Si vos réunions commerciales rassurent plus qu’elles n’aident à décider, il faut reprendre la lecture des affaires, durcir les critères et remettre du vrai pilotage là où il n’y a parfois plus qu’un commentaire collectif. Le diagnostic est la bonne porte d’entrée. Le Bootcamp peut ensuite aider à installer le cadre dans la durée.
+              Si vos commerciaux apportent souvent des dossiers qui paraissent rassurants, mais en fait sont fragiles, on peut repartir d’un diagnostic clair des entretiens de vente, des excuses acceptées trop vite et des sessions qui ne sont jamais vraiment challengées.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/diagnostic" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
