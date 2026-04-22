@@ -62,7 +62,7 @@ const blogPosts = [
     date: '2026-04-20',
     readTime: '6 min de lecture',
     category: 'Point de vue / lecture commerciale',
-    image: '/images/blog/2026-04-20-concurrent-verite-confortable-hero.jpg',
+    image: '/images/blog/2026-04-20-concurrent-verite-confortable-hero.png',
     featured: true
   },
   {
@@ -72,7 +72,7 @@ const blogPosts = [
     date: '2026-04-19',
     readTime: '7 min de lecture',
     category: 'Terrain / qualification commerciale',
-    image: '/images/blog/2026-04-19-interet-vs-decision-hero-v2.jpg',
+    image: '/images/blog/2026-04-19-interet-vs-decision-hero-v3.png',
     featured: true
   },
   {
@@ -82,7 +82,7 @@ const blogPosts = [
     date: '2026-04-18',
     readTime: '7 min de lecture',
     category: 'Erreur fréquente / vente terrain',
-    image: '/images/blog/2026-04-18-objections-trop-tot-hero.png',
+    image: '/images/blog/2026-04-18-objections-trop-tot-hero-v2.png',
     featured: true
   },
   {
@@ -92,7 +92,7 @@ const blogPosts = [
     date: '2026-04-17',
     readTime: '11 min de lecture',
     category: 'Management / transformation commerciale',
-    image: '/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero.jpg',
+    image: '/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.png',
     featured: true
   },
   {

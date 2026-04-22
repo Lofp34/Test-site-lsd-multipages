@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v2.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v3.png',
         width: 1536,
         height: 1024,
         alt: 'Un rendez-vous commercial agréable qui masque une décision pas encore engagée',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Pourquoi vos commerciaux confondent intérêt et décision',
     description:
       'Un prospect intéressé n’est pas encore une vente qui avance. C’est souvent là que les équipes se racontent une histoire trop tôt.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v2.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v3.png'],
   },
 };
 
@@ -65,7 +65,7 @@ export default function PourquoiVosCommerciauxConfondentInteretEtDecisionPage() 
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-19-interet-vs-decision-hero-v2.jpg"
+              src="/images/blog/2026-04-19-interet-vs-decision-hero-v3.png"
               alt="Un rendez-vous commercial agréable qui masque une décision pas encore engagée"
               width={1536}
               height={1024}

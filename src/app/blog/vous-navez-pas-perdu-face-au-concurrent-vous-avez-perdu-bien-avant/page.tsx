@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-20-concurrent-verite-confortable-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-20-concurrent-verite-confortable-hero.png',
         width: 1536,
         height: 1024,
         alt: 'Deux responsables commerciaux relisent une affaire perdue et questionnent la vraie cause de la perte',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Vous n’avez pas perdu face au concurrent, vous avez perdu bien avant',
     description:
       'Le concurrent sert souvent d’explication confortable. Mais la vente s’est généralement fragilisée bien plus tôt.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-20-concurrent-verite-confortable-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-20-concurrent-verite-confortable-hero.png'],
   },
 };
 
@@ -65,7 +65,7 @@ export default function VousNAvezPasPerduFaceAuConcurrentVousAvezPerduBienAvantP
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-20-concurrent-verite-confortable-hero.jpg"
+              src="/images/blog/2026-04-20-concurrent-verite-confortable-hero.png"
               alt="Deux responsables commerciaux relisent une affaire perdue et questionnent la vraie cause de la perte"
               width={1536}
               height={1024}

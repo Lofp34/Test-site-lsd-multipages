@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero-v2.png',
         width: 1536,
         height: 1024,
         alt: 'Un échange commercial tendu mais maîtrisé autour d’une objection client',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Pourquoi vos commerciaux répondent trop vite aux objections',
     description:
       'Le problème n’est pas l’objection. Le problème, c’est la précipitation à y répondre avant d’avoir compris ce qu’elle protège vraiment.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero-v2.png'],
   },
 };
 
@@ -66,7 +66,7 @@ export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-18-objections-trop-tot-hero.png"
+              src="/images/blog/2026-04-18-objections-trop-tot-hero-v2.png"
               alt="Un échange commercial tendu mais maîtrisé autour d’une objection client"
               width={1536}
               height={1024}

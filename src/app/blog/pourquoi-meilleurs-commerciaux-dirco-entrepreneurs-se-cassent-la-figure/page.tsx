@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.png',
         width: 1536,
         height: 1024,
         alt: 'Illustration éditoriale sur le passage de commercial à dirco puis entrepreneur',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Pourquoi les meilleurs commerciaux se cassent la gueule quand ils deviennent dirco, et pourquoi les meilleurs dirco se cassent la figure quand ils deviennent entrepreneurs',
     description:
       'Trois métiers différents, pas trois niveaux. Pourquoi les meilleurs se plantent en changeant d’étage.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.png'],
   },
 };
 
@@ -65,7 +65,7 @@ export default function PourquoiMeilleursCommerciauxDircoEntrepreneursSeCassentL
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero.jpg"
+              src="/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.png"
               alt="Illustration éditoriale sur le passage de commercial à dirco puis entrepreneur"
               width={1536}
               height={1024}
