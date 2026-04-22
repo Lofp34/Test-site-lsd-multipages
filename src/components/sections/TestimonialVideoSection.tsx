@@ -8,48 +8,79 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 
 type VideoItem = {
   youtubeId: string;
+  badge: string;
   title: string;
-  description: string;
-  eyebrow?: string;
+  subtitle: string;
+  summary: string;
+  isPrimary?: boolean;
+};
+
+const sectionCopy = {
+  eyebrow: 'Ils racontent ce qui a vraiment changé',
+  title: 'Des témoignages qui parlent de terrain,',
+  highlightedTitlePart: 'pas de promesses.',
+  intro:
+    'Vous pouvez lancer chaque témoignage directement ici. Ce qui m’intéresse, ce n’est pas de montrer des vidéos de plus. C’est de vous donner accès à des retours concrets, incarnés, et directement liés au travail commercial mené sur le terrain.',
+  secondaryTitle: 'Cliquez sur un témoignage pour le charger dans le player principal',
 };
 
 const videos: VideoItem[] = [
   {
     youtubeId: 'ooEf32IGpMM',
+    badge: 'Résultats clients',
     title: 'Des résultats qui se voient dans les chiffres',
-    description:
+    subtitle: 'Une sélection courte de retours clients pour voir ce qui change quand la dynamique commerciale tient mieux.',
+    summary:
       'Une compilation centrée sur les résultats pour voir, en quelques minutes, ce que disent les clients quand la dynamique commerciale change vraiment.',
-    eyebrow: 'Témoignage principal',
+    isPrimary: true,
   },
   {
     youtubeId: '0kWjp_4g2Pk',
-    title: 'Témoignage client',
-    description: 'Un retour d’expérience client à lancer directement dans le player principal.',
+    badge: 'Rendez-vous décisif',
+    title: 'Pierre Vincent — transformer un rendez-vous prématuré en engagement concret',
+    subtitle: 'Préparer les enjeux de l’entreprise et de l’interlocuteur pour sécuriser une vraie avancée.',
+    summary:
+      'Pierre Vincent raconte comment un rendez-vous qu’il jugeait trop tôt s’est transformé en lettre d’engagement grâce à une préparation beaucoup plus stratégique des enjeux et de la discussion.',
   },
   {
     youtubeId: 'ojopxkWzXy8',
-    title: 'Retour d’expérience',
-    description: 'Un témoignage vidéo supplémentaire, accessible sans quitter la page.',
+    badge: 'Transformation équipe',
+    title: 'Transformer une équipe commerciale plus vite que prévu',
+    subtitle: 'Un témoignage sur le switch mental, le plan de vente et une accélération bien au-delà des objectifs initiaux.',
+    summary:
+      'Ce retour explique comment une équipe en pleine transformation a basculé plus vite vers une nouvelle dynamique commerciale, jusqu’à dépasser largement les objectifs de ventes de la première année.',
   },
   {
     youtubeId: 'kkU2jPspfVk',
-    title: 'Transformation commerciale',
-    description: 'Une autre preuve terrain à afficher dans le player principal.',
+    badge: 'Méthode commerciale',
+    title: 'Mieux structurer ses entretiens pour gagner en confiance et en chiffre',
+    subtitle: 'Un témoignage sur la méthode, la préparation des rendez-vous et une progression de 39 % du chiffre d’affaires.',
+    summary:
+      'Cette vidéo montre l’impact d’un accompagnement suivi dans le temps : meilleure organisation, plan de vente plus clair, entretiens mieux préparés et progression commerciale mesurable.',
   },
   {
     youtubeId: 'LpYgrI2TPlw',
-    title: 'Progression des résultats',
-    description: 'Un témoignage complémentaire pour montrer la continuité des résultats.',
+    badge: 'Dirigeant PME',
+    title: 'Charles — gagner en efficacité sans sacrifier la qualité',
+    subtitle: 'Reprendre un pôle, structurer le développement commercial et faire progresser le chiffre d’affaires de 35 %.',
+    summary:
+      'Charles explique comment un accompagnement précis et adapté à son contexte métier a permis d’améliorer la prospection, de signer plus régulièrement et de faire croître le chiffre d’affaires de 35 %.',
   },
   {
     youtubeId: 'ffegHBVorPo',
-    title: 'Accompagnement terrain',
-    description: 'Une séquence terrain supplémentaire consultable dans le même lecteur.',
+    badge: 'Progression rapide',
+    title: 'Sacha — passer de technicien à commercial plus vite et plus sereinement',
+    subtitle: 'Une structure claire pour les entretiens, plus de confiance en rendez-vous et +40 % de chiffre d’affaires en un mois.',
+    summary:
+      'Sacha raconte comment une méthode commerciale concrète lui a donné des repères immédiats pour ses rendez-vous, jusqu’à gagner en aisance et faire bondir ses résultats.',
   },
   {
     youtubeId: 'uNisunsWkn4',
-    title: 'Résultats obtenus',
-    description: 'Un dernier témoignage vidéo pour compléter la preuve sociale.',
+    badge: 'Performance commerciale',
+    title: 'Elisa — booster ses compétences commerciales et faire +50 %',
+    subtitle: 'Un témoignage court et net sur la structuration du plan de vente et l’impact sur la performance.',
+    summary:
+      'Elisa explique comment le parcours de perfectionnement a renforcé ses compétences commerciales, structuré le plan de vente de l’équipe et permis une hausse de 50 % de son chiffre sur le semestre.',
   },
 ];
 
@@ -57,19 +88,16 @@ function thumbnailUrl(id: string) {
   return `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
 }
 
-function youtubeUrl(id: string) {
-  return `https://www.youtube.com/watch?v=${id}`;
-}
-
 export default function TestimonialVideoSection() {
-  const [activeVideoId, setActiveVideoId] = useState(videos[0].youtubeId);
+  const defaultVideo = videos.find((video) => video.isPrimary) ?? videos[0];
+  const [activeVideoId, setActiveVideoId] = useState(defaultVideo.youtubeId);
 
   const activeVideo = useMemo(
-    () => videos.find((video) => video.youtubeId === activeVideoId) ?? videos[0],
+    () => videos.find((video) => video.youtubeId === activeVideoId) ?? defaultVideo,
     [activeVideoId],
   );
 
-  const secondaryVideos = videos.slice(1);
+  const secondaryVideos = videos.filter((video) => video.youtubeId !== activeVideo.youtubeId);
 
   return (
     <section id="cas-clients" className="relative overflow-hidden bg-[#07111B] py-24 text-white">
@@ -82,17 +110,17 @@ export default function TestimonialVideoSection() {
             <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/5 px-5 py-2 backdrop-blur-sm">
               <span className="h-2.5 w-2.5 rounded-full bg-mint-green" />
               <span className="font-title text-sm font-semibold uppercase tracking-wide text-white/85">
-                Ils parlent des résultats obtenus
+                {sectionCopy.eyebrow}
               </span>
             </div>
 
             <h2 className="text-4xl font-title font-bold leading-tight text-white md:text-5xl lg:text-6xl">
-              La preuve par les clients.
-              <span className="mt-2 block text-mint-green">Pas par les promesses.</span>
+              {sectionCopy.title}
+              <span className="mt-2 block text-mint-green">{sectionCopy.highlightedTitlePart}</span>
             </h2>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-relaxed text-white/78 md:text-xl">
-              Quand l’organisation commerciale tient mieux, les résultats se voient. Voici ce que racontent les clients, chiffres à l’appui.
+              {sectionCopy.intro}
             </p>
           </div>
         </AnimatedSection>
@@ -117,45 +145,39 @@ export default function TestimonialVideoSection() {
             <div className="mt-8 grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
               <div>
                 <p className="mb-4 font-title text-sm font-semibold uppercase tracking-[0.24em] text-orange-soft">
-                  {activeVideo.eyebrow ?? 'Témoignage vidéo'}
+                  {activeVideo.badge}
                 </p>
                 <h3 className="text-3xl font-title font-bold leading-tight text-white md:text-4xl">
                   {activeVideo.title}
                 </h3>
+                <p className="mt-4 max-w-3xl text-base font-semibold leading-relaxed text-white/90 md:text-lg">
+                  {activeVideo.subtitle}
+                </p>
                 <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/76 md:text-lg">
-                  {activeVideo.description}
+                  {activeVideo.summary}
                 </p>
               </div>
 
-              <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1 xl:grid-cols-3">
-                <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-                  <div className="font-title text-2xl font-bold text-mint-green">6</div>
-                  <p className="mt-2 text-sm leading-relaxed text-white/72">autres témoignages disponibles en un clic sous la vidéo principale</p>
-                </div>
-                <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-                  <div className="font-title text-2xl font-bold text-orange-soft">1 player</div>
-                  <p className="mt-2 text-sm leading-relaxed text-white/72">une seule zone de lecture, plus propre, plus premium, plus lisible</p>
-                </div>
-                <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-                  <div className="font-title text-2xl font-bold text-white">YouTube</div>
-                  <p className="mt-2 text-sm leading-relaxed text-white/72">les vidéos restent faciles à enrichir à mesure que de nouveaux témoignages arrivent</p>
-                </div>
+              <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-6">
+                <p className="text-sm leading-relaxed text-white/72">
+                  Lancez le témoignage qui vous parle le plus et regardez-le directement ici. Chaque vignette charge la vidéo correspondante dans le player principal, sans quitter la page.
+                </p>
               </div>
             </div>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <Link href={youtubeUrl(activeVideo.youtubeId)} target="_blank" rel="noreferrer" className="block">
+              <Link href="/diagnostic" className="block">
                 <Button variant="primary" size="lg" className="w-full sm:w-auto">
-                  Voir sur YouTube
+                  Demander un diagnostic
                 </Button>
               </Link>
-              <Link href="/diagnostic" className="block">
+              <Link href="/bootcamp" className="block">
                 <Button
                   variant="outline"
                   size="lg"
                   className="w-full border-mint-green text-mint-green hover:bg-mint-green hover:text-blue-ink sm:w-auto"
                 >
-                  Demander un diagnostic
+                  Découvrir le Bootcamp
                 </Button>
               </Link>
             </div>
@@ -168,7 +190,7 @@ export default function TestimonialVideoSection() {
               Autres témoignages vidéo
             </p>
             <h3 className="text-2xl font-title font-bold text-white md:text-3xl">
-              Cliquer sur un rectangle pour le lancer dans le player principal
+              {sectionCopy.secondaryTitle}
             </h3>
           </div>
         </AnimatedSection>
@@ -199,7 +221,7 @@ export default function TestimonialVideoSection() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
                     <div className="absolute left-4 top-4 inline-flex items-center rounded-full border border-white/20 bg-black/30 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] text-white/80 backdrop-blur-sm">
-                      {isActive ? 'En lecture' : 'Témoignage'}
+                      {isActive ? 'En lecture' : video.badge}
                     </div>
                     <div className="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-sm">
                       <svg width="14" height="16" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg" className="translate-x-[1px]">
@@ -208,7 +230,7 @@ export default function TestimonialVideoSection() {
                     </div>
                     <div className="absolute inset-x-0 bottom-0 p-4">
                       <h4 className="font-title text-lg font-bold text-white">{video.title}</h4>
-                      <p className="mt-2 text-sm leading-relaxed text-white/75">Lire ce témoignage dans la vidéo principale</p>
+                      <p className="mt-2 text-sm leading-relaxed text-white/80">{video.subtitle}</p>
                     </div>
                   </div>
                 </button>
