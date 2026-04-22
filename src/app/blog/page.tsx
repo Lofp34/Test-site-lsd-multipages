@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-un-manager-commercial-tolere-trop-longtemps-les-bonnes-excuses',
+    title: 'Pourquoi un manager commercial tolère trop longtemps les bonnes excuses',
+    description: 'Quand un manager commercial laisse passer trop longtemps les bonnes excuses, il protège le confort de l’équipe mais laisse aussi s’installer des ventes fragiles et des habitudes faibles.',
+    date: '2026-04-22',
+    readTime: '6 min de lecture',
+    category: 'Management / coaching commercial',
+    image: '/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.svg',
+    featured: true
+  },
+  {
     slug: 'pourquoi-un-forecast-rassurant-fait-souvent-perdre-du-temps-et-des-ventes',
     title: 'Pourquoi des prévisions commerciales rassurantes font souvent perdre des ventes',
     description: 'Des prévisions commerciales rassurantes ne prouvent pas que les ventes avancent. Souvent, elles masquent surtout des affaires déjà fragiles.',

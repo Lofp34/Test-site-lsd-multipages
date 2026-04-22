@@ -1,0 +1,44 @@
+<svg width="1536" height="1024" viewBox="0 0 1536 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1536" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F2745"/>
+      <stop offset="1" stop-color="#16385F"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="180" y1="150" x2="1260" y2="860" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.04"/>
+    </linearGradient>
+  </defs>
+  <rect width="1536" height="1024" fill="url(#bg)"/>
+  <circle cx="1280" cy="170" r="180" fill="#8FE3C8" fill-opacity="0.10"/>
+  <circle cx="250" cy="840" r="220" fill="#8FE3C8" fill-opacity="0.08"/>
+  <rect x="118" y="120" width="1300" height="784" rx="36" fill="url(#panel)" stroke="rgba(255,255,255,0.16)"/>
+
+  <rect x="220" y="210" width="440" height="530" rx="24" fill="#0B1D33" fill-opacity="0.55"/>
+  <rect x="250" y="260" width="180" height="16" rx="8" fill="#8FE3C8" fill-opacity="0.85"/>
+  <rect x="250" y="302" width="320" height="16" rx="8" fill="#D6E4F0" fill-opacity="0.92"/>
+  <rect x="250" y="334" width="280" height="16" rx="8" fill="#D6E4F0" fill-opacity="0.72"/>
+  <rect x="250" y="430" width="130" height="190" rx="18" fill="#8FE3C8" fill-opacity="0.72"/>
+  <rect x="405" y="390" width="130" height="230" rx="18" fill="#8FE3C8" fill-opacity="0.45"/>
+  <rect x="560" y="465" width="70" height="155" rx="18" fill="#FF8A7A" fill-opacity="0.82"/>
+  <path d="M275 656C356 596 447 569 598 520" stroke="#FF8A7A" stroke-width="8" stroke-linecap="round" stroke-dasharray="10 14"/>
+
+  <rect x="738" y="210" width="580" height="530" rx="24" fill="#F6FBFF" fill-opacity="0.95"/>
+  <rect x="786" y="260" width="214" height="18" rx="9" fill="#10304F"/>
+  <rect x="786" y="304" width="378" height="14" rx="7" fill="#6E8196"/>
+  <rect x="786" y="334" width="338" height="14" rx="7" fill="#6E8196" fill-opacity="0.75"/>
+
+  <circle cx="882" cy="496" r="78" fill="#16385F"/>
+  <rect x="824" y="574" width="118" height="132" rx="32" fill="#16385F"/>
+  <circle cx="1098" cy="520" r="68" fill="#8FE3C8"/>
+  <rect x="1048" y="590" width="104" height="116" rx="30" fill="#8FE3C8"/>
+  <path d="M1010 470C1044 444 1074 438 1116 446" stroke="#0F2745" stroke-width="8" stroke-linecap="round"/>
+  <path d="M846 468C874 448 907 444 936 450" stroke="#D6E4F0" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1066 670L1216 602" stroke="#FF8A7A" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="1238" cy="592" r="40" fill="#FF8A7A"/>
+  <rect x="1172" y="666" width="118" height="18" rx="9" fill="#16385F" fill-opacity="0.85"/>
+  <rect x="1172" y="698" width="94" height="18" rx="9" fill="#16385F" fill-opacity="0.55"/>
+
+  <rect x="220" y="790" width="1098" height="68" rx="20" fill="#0B1D33" fill-opacity="0.42"/>
+  <text x="260" y="833" fill="#F6FBFF" font-family="Arial, Helvetica, sans-serif" font-size="35" font-weight="700">Le vrai sujet n’est pas l’excuse. C’est ce qu’elle évite de regarder.</text>
+</svg>
