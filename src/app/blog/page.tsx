@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial',
+    title: 'Pourquoi la motivation ne règle presque jamais le problème commercial',
+    description: 'Quand une équipe commerciale cale, le vrai problème n’est pas toujours la motivation. Très souvent, c’est le flou du système, du management ou de la lecture des ventes.',
+    date: '2026-04-23',
+    readTime: '6 min de lecture',
+    category: 'Psychologie commerciale / management',
+    image: '/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.png',
+    featured: true
+  },
+  {
     slug: 'pourquoi-un-manager-commercial-tolere-trop-longtemps-les-bonnes-excuses',
     title: 'Pourquoi un manager commercial tolère trop longtemps les bonnes excuses',
     description: 'Quand un manager commercial laisse passer trop longtemps les bonnes excuses, il protège le confort de l’équipe mais laisse aussi s’installer des ventes fragiles et des habitudes faibles.',

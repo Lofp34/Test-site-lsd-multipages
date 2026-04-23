@@ -15,8 +15,8 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 20
-- **Publications blog publiées** : 20
+- **Total publications suivies** : 21
+- **Publications blog publiées** : 21
 - **Idées en backlog** : 0
 - **Articles avec kit LinkedIn prêt** : 10
 - **Articles avec email prêt/envoyé** : 7
@@ -29,13 +29,13 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Management / pilotage dirigeant : 2
 - Techniques de vente terrain : 4
 - Structure / système commercial : 1
-- Psychologie / comportements commerciaux : 4
+- Psychologie / comportements commerciaux : 5
 
 ### Répartition par angle
 - Erreur fréquente : 4
 - Diagnostic : 1
 - Méthode : 1
-- Point de vue : 7
+- Point de vue : 8
 - Terrain : 2
 - Transformation : 1
 - Prospective : 1
@@ -60,6 +60,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-23 | publié | Pourquoi la motivation ne règle presque jamais le problème commercial | Usage paresseux du mot motivation pour éviter le vrai diagnostic commercial, managérial et systémique | Point de vue | Psychologie / comportements commerciaux | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à sortir du faux diagnostic de motivation et ouvrir des conversations sur le management de proximité, le coaching de scène et la tenue du système commercial | Fondamentaux / historique | Oui — ouvre un angle de psychologie managériale utile après la séquence excuses, forecast, concurrent et objections, sans revenir au pipeline ni au trimestre | https://www.laurentserre.com/blog/pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial | à préparer | non requis | Post LinkedIn d’opinion sur la motivation comme faux problème, carrousel énergie vs niveau réel, email court sur le coût du mauvais diagnostic managérial | Génération autonome du jour sans dossier input ; nouvelle illustration hero créée puis publication complète réalisée |
 | 2026-04-22 | publié | Pourquoi un manager commercial tolère trop longtemps les bonnes excuses | Excuses commerciales crédibles tolérées trop longtemps par le management, au détriment du vrai diagnostic des ventes | Point de vue | Formation / transformation commerciale | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à relever l’exigence des revues d’affaires et ouvrir des conversations sur le débrief, le coaching et la confrontation utile | Fondamentaux / historique | Oui — respiration nette côté management commercial après la séquence objections, décision, concurrent et forecast, sans remettre le pipeline au centre | https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-tolere-trop-longtemps-les-bonnes-excuses | à préparer | non requis | Post LinkedIn d’opinion sur les excuses qui rassurent trop vite, carrousel excuse crédible vs vrai diagnostic, email court sur le management qui protège le confort au lieu de relire la vente | Illustration hero remplacée le 2026-04-22 avec une nouvelle image générée via OpenAI `gpt-image-2` |
 | 2026-04-21 | publié | Pourquoi un forecast rassurant fait souvent perdre du temps et des ventes | Forecast commercial trop confortable et lecture trop indulgente des affaires | Erreur fréquente | Management / pilotage dirigeant | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à durcir la qualité des revues forecast et ouvrir des conversations sur la fiabilité du pipe, la décision réelle et le rôle du management dans le challenge des affaires | Fondamentaux / historique | Oui — retour utile sur un angle erreur fréquente de pilotage sans refaire un marronnier pipeline, avec un ancrage très concret sur la revue d’affaires | https://www.laurentserre.com/blog/pourquoi-un-forecast-rassurant-fait-souvent-perdre-du-temps-et-des-ventes | à préparer | non requis | Post LinkedIn d’opinion sur le forecast poli, carrousel pipe rassurant vs pipe fiable, email court sur les trois questions de revue d’affaires | Génération autonome du jour avec illustration éditoriale créée ; bon pont avec décision réelle, concurrent et revues d’affaires |
 | 2026-04-20 | publié | Vous n’avez pas perdu face au concurrent, vous avez perdu bien avant | Affaires perdues attribuées au concurrent au lieu de relire les causes plus amont de la perte | Point de vue | Expertise développement commercial PME | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à relever le niveau des débriefs de pertes et ouvrir des conversations sur la découverte, la décision réelle et la qualité de lecture commerciale | Fondamentaux / historique | Oui — bon rééquilibrage vers un point de vue dirigeant concret après les angles très terrain sur objections et décision | https://www.laurentserre.com/blog/vous-navez-pas-perdu-face-au-concurrent-vous-avez-perdu-bien-avant | à préparer | non requis | Post LinkedIn d’opinion sur l’excuse du concurrent, carrousel cause apparente vs cause profonde, email court sur le vrai moment où une vente se perd | Génération autonome du jour avec illustration éditoriale créée ; article relié naturellement aux sujets décision, objections et qualité de qualification |
