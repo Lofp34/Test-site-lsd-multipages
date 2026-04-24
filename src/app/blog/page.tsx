@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix',
+    title: 'Pourquoi même des commerciaux expérimentés se font encore bananer sur l’objection prix',
+    description: 'Quand une vente bloque sur le prix, le tarif n’est pas toujours le vrai sujet. Très souvent, l’objection prix masque un diagnostic commercial évité trop vite.',
+    date: '2026-04-24',
+    readTime: '6 min de lecture',
+    category: 'Objection prix / vente terrain',
+    image: '/images/blog/2026-04-24-objection-prix-bd-hero-selected.png',
+    featured: true
+  },
+  {
     slug: 'pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial',
     title: 'Pourquoi la motivation ne règle presque jamais le problème commercial',
     description: 'Quand une équipe commerciale cale, le vrai problème n’est pas toujours la motivation. Très souvent, c’est le flou du système, du management ou de la lecture des ventes.',
