@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi des prévisions commerciales rassurantes font souvent perdre des ventes | Laurent Serre',
+  title: 'Prévisions commerciales : les chiffres qui rassurent font souvent perdre des ventes | Laurent Serre',
   description:
     'Des prévisions commerciales rassurantes ne prouvent pas que les ventes avancent. Souvent, elles masquent surtout des affaires déjà fragiles.',
   keywords:
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/pourquoi-un-forecast-rassurant-fait-souvent-perdre-du-temps-et-des-ventes',
   },
   openGraph: {
-    title: 'Pourquoi des prévisions commerciales rassurantes font souvent perdre des ventes',
+    title: 'Prévisions commerciales : les chiffres qui rassurent font souvent perdre des ventes',
     description:
       'Quand les prévisions commerciales rassurent trop, elles cachent souvent des affaires fragiles plutôt qu’une vraie avance dans les ventes.',
     url: 'https://www.laurentserre.com/blog/pourquoi-un-forecast-rassurant-fait-souvent-perdre-du-temps-et-des-ventes',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pourquoi des prévisions commerciales rassurantes font souvent perdre des ventes',
+    title: 'Prévisions commerciales : les chiffres qui rassurent font souvent perdre des ventes',
     description:
       'Des prévisions trop rassurantes cachent souvent des affaires suspendues et une lecture des ventes trop indulgente.',
     images: ['https://www.laurentserre.com/images/blog/2026-04-21-previsions-rassurantes-pas-fiables-hero.jpg'],
@@ -48,7 +48,7 @@ export default function PourquoiUnForecastRassurantFaitSouventPerdreDuTempsEtDes
             </div>
 
             <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              Pourquoi des prévisions commerciales rassurantes font souvent perdre des ventes
+              Prévisions commerciales : les chiffres qui rassurent font souvent perdre des ventes
             </h1>
 
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">

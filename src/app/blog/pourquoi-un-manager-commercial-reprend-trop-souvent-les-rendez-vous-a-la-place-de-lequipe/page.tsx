@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe | Laurent Serre',
+  title: 'Manager commercial : à force de sauver les rendez-vous, vous affaiblissez l’équipe | Laurent Serre',
   description:
     'Quand un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe, il rassure sur le moment mais il apprend surtout aux commerciaux à attendre qu’on les sauve.',
   keywords:
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       'https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-reprend-trop-souvent-les-rendez-vous-a-la-place-de-lequipe',
   },
   openGraph: {
-    title: 'Pourquoi un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe',
+    title: 'Manager commercial : à force de sauver les rendez-vous, vous affaiblissez l’équipe',
     description:
       'À force de sauver les rendez-vous de ses commerciaux, un manager commercial affaiblit l’équipe et concentre toute la crédibilité sur lui.',
     url: 'https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-reprend-trop-souvent-les-rendez-vous-a-la-place-de-lequipe',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pourquoi un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe',
+    title: 'Manager commercial : à force de sauver les rendez-vous, vous affaiblissez l’équipe',
     description:
       'Sauver un rendez-vous peut rassurer. Le faire trop souvent affaiblit l’équipe et concentre toute la crédibilité sur le manager.',
     images: ['https://www.laurentserre.com/images/blog/2026-04-25-manager-reprend-rendez-vous-equipe-hero.png'],
@@ -49,7 +49,7 @@ export default function PourquoiUnManagerCommercialReprendTropSouventLesRendezVo
             </div>
 
             <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              Pourquoi un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe
+              Manager commercial : à force de sauver les rendez-vous, vous affaiblissez l’équipe
             </h1>
 
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">

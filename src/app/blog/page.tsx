@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const blogPosts = [
   {
     slug: 'pourquoi-un-manager-commercial-reprend-trop-souvent-les-rendez-vous-a-la-place-de-lequipe',
-    title: 'Pourquoi un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe',
+    title: 'Manager commercial : à force de sauver les rendez-vous, vous affaiblissez l’équipe',
     description: 'Quand un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe, il rassure sur le moment mais il apprend surtout aux commerciaux à attendre qu’on les sauve.',
     date: '2026-04-25',
     readTime: '6 min de lecture',
@@ -47,7 +47,7 @@ const blogPosts = [
   },
   {
     slug: 'pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix',
-    title: 'Pourquoi même des commerciaux expérimentés se font encore bananer sur l’objection prix',
+    title: 'Objection prix : même des commerciaux expérimentés se font encore bananer',
     description: 'Quand une vente bloque sur le prix, le tarif n’est pas toujours le vrai sujet. Très souvent, l’objection prix masque un diagnostic commercial évité trop vite.',
     date: '2026-04-24',
     readTime: '6 min de lecture',
@@ -57,7 +57,7 @@ const blogPosts = [
   },
   {
     slug: 'pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial',
-    title: 'Pourquoi la motivation ne règle presque jamais le problème commercial',
+    title: 'Le vrai problème de votre équipe n’est presque jamais la motivation',
     description: 'Quand une équipe commerciale cale, parler motivation permet souvent d’éviter le vrai sujet : des rendez-vous faibles, un management mou ou des ventes mal relues.',
     date: '2026-04-23',
     readTime: '6 min de lecture',
@@ -67,7 +67,7 @@ const blogPosts = [
   },
   {
     slug: 'pourquoi-un-manager-commercial-tolere-trop-longtemps-les-bonnes-excuses',
-    title: 'Pourquoi un manager commercial tolère trop longtemps les bonnes excuses',
+    title: 'Manager commercial : tolérer les bonnes excuses vous coûte des ventes',
     description: 'Quand un manager commercial laisse passer trop longtemps les bonnes excuses, il protège le confort de l’équipe mais laisse aussi s’installer des ventes fragiles et des habitudes faibles.',
     date: '2026-04-22',
     readTime: '6 min de lecture',
@@ -77,7 +77,7 @@ const blogPosts = [
   },
   {
     slug: 'pourquoi-un-forecast-rassurant-fait-souvent-perdre-du-temps-et-des-ventes',
-    title: 'Pourquoi des prévisions commerciales rassurantes font souvent perdre des ventes',
+    title: 'Prévisions commerciales : les chiffres qui rassurent font souvent perdre des ventes',
     description: 'Des prévisions commerciales rassurantes ne prouvent pas que les ventes avancent. Souvent, elles masquent surtout des affaires déjà fragiles.',
     date: '2026-04-21',
     readTime: '6 min de lecture',
@@ -97,7 +97,7 @@ const blogPosts = [
   },
   {
     slug: 'pourquoi-vos-commerciaux-confondent-interet-et-decision',
-    title: 'Pourquoi vos commerciaux confondent intérêt et décision',
+    title: 'Un prospect intéressé n’est pas encore une décision',
     description: 'Un prospect intéressé n’est pas encore une vente qui avance. Beaucoup d’équipes confondent un bon échange avec une vraie progression de décision.',
     date: '2026-04-19',
     readTime: '7 min de lecture',
@@ -107,7 +107,7 @@ const blogPosts = [
   },
   {
     slug: 'pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections',
-    title: 'Pourquoi vos commerciaux répondent trop vite aux objections',
+    title: 'Objections commerciales : répondre trop vite vous fait perdre la main',
     description: 'Quand un commercial répond trop vite à une objection, il saute sur sa réponse avant d’avoir compris ce que le client essayait vraiment de dire.',
     date: '2026-04-18',
     readTime: '7 min de lecture',
@@ -117,7 +117,7 @@ const blogPosts = [
   },
   {
     slug: 'pourquoi-meilleurs-commerciaux-dirco-entrepreneurs-se-cassent-la-figure',
-    title: 'Pourquoi les meilleurs commerciaux se cassent la gueule quand ils deviennent dirco, et pourquoi les meilleurs dirco se cassent la figure quand ils deviennent entrepreneurs',
+    title: 'Passer de commercial à dirco, puis de dirco à entrepreneur : trois métiers, trois pièges',
     description: 'Passer de commercial à directeur commercial, puis de dirco à entrepreneur, ce ne sont pas des promotions. Ce sont trois métiers différents. Voici pourquoi les meilleurs se plantent en changeant d’étage, et ce qu’il faut vraiment installer pour tenir.',
     date: '2026-04-17',
     readTime: '11 min de lecture',

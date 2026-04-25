@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi un manager commercial tolère trop longtemps les bonnes excuses | Laurent Serre',
+  title: 'Manager commercial : tolérer les bonnes excuses vous coûte des ventes | Laurent Serre',
   description:
     'Quand un manager commercial laisse passer trop longtemps les bonnes excuses, il protège le confort de l’équipe mais il laisse aussi s’installer des ventes fragiles et des habitudes faibles.',
   keywords:
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-tolere-trop-longtemps-les-bonnes-excuses',
   },
   openGraph: {
-    title: 'Pourquoi un manager commercial tolère trop longtemps les bonnes excuses',
+    title: 'Manager commercial : tolérer les bonnes excuses vous coûte des ventes',
     description:
       'Le problème n’est pas l’excuse en elle-même. Le problème, c’est le management qui la laisse tenir trop longtemps sans relire la mécanique réelle de la vente.',
     url: 'https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-tolere-trop-longtemps-les-bonnes-excuses',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pourquoi un manager commercial tolère trop longtemps les bonnes excuses',
+    title: 'Manager commercial : tolérer les bonnes excuses vous coûte des ventes',
     description:
       'À force d’accepter les explications confortables, un manager commercial affaiblit la lucidité de l’équipe et laisse les mêmes erreurs se répéter.',
     images: ['https://www.laurentserre.com/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.png'],
@@ -48,7 +48,7 @@ export default function PourquoiUnManagerCommercialTolereTropLongtempsLesBonnesE
             </div>
 
             <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              Pourquoi un manager commercial tolère trop longtemps les bonnes excuses
+              Manager commercial : tolérer les bonnes excuses vous coûte des ventes
             </h1>
 
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">

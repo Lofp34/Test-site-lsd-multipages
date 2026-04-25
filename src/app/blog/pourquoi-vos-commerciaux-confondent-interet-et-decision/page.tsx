@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi vos commerciaux confondent intérêt et décision | Laurent Serre',
+  title: 'Un prospect intéressé n’est pas encore une décision | Laurent Serre',
   description:
     'Un prospect intéressé n’est pas encore une vente qui avance. Beaucoup d’équipes confondent un bon échange avec une vraie progression de décision.',
   keywords:
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-confondent-interet-et-decision',
   },
   openGraph: {
-    title: 'Pourquoi vos commerciaux confondent intérêt et décision',
+    title: 'Un prospect intéressé n’est pas encore une décision',
     description:
       'Quand un prospect dit que c’est intéressant, beaucoup de commerciaux se détendent trop tôt. Le problème, c’est que l’intérêt ne vaut pas encore décision.',
     url: 'https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-confondent-interet-et-decision',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pourquoi vos commerciaux confondent intérêt et décision',
+    title: 'Un prospect intéressé n’est pas encore une décision',
     description:
       'Un prospect intéressé n’est pas encore une décision qui avance, et c’est là que beaucoup d’équipes se trompent trop tôt.',
     images: ['https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v3.png'],
@@ -48,7 +48,7 @@ export default function PourquoiVosCommerciauxConfondentInteretEtDecisionPage() 
             </div>
 
             <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              Pourquoi vos commerciaux confondent intérêt et décision
+              Un prospect intéressé n’est pas encore une décision
             </h1>
 
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">

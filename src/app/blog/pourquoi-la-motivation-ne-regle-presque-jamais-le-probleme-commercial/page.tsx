@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi la motivation ne règle presque jamais le problème commercial | Laurent Serre',
+  title: 'Le vrai problème de votre équipe n’est presque jamais la motivation | Laurent Serre',
   description:
     'Quand une équipe commerciale cale, parler motivation permet souvent d’éviter le vrai sujet : des rendez-vous faibles, un management mou ou des ventes mal relues.',
   keywords:
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial',
   },
   openGraph: {
-    title: 'Pourquoi la motivation ne règle presque jamais le problème commercial',
+    title: 'Le vrai problème de votre équipe n’est presque jamais la motivation',
     description:
       'Quand une équipe cale, le mot motivation sert souvent à éviter un diagnostic plus exigeant.',
     url: 'https://www.laurentserre.com/blog/pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pourquoi la motivation ne règle presque jamais le problème commercial',
+    title: 'Le vrai problème de votre équipe n’est presque jamais la motivation',
     description:
       'Le mot motivation rassure. Il évite souvent de regarder le vrai problème : des scènes mal tenues, un management faible ou des ventes mal construites.',
     images: ['https://www.laurentserre.com/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.png'],
@@ -48,7 +48,7 @@ export default function PourquoiLaMotivationNeReglePresqueJamaisLeProblemeCommer
             </div>
 
             <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              Pourquoi la motivation ne règle presque jamais le problème commercial
+              Le vrai problème de votre équipe n’est presque jamais la motivation
             </h1>
 
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">

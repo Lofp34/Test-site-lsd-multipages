@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi même des commerciaux expérimentés se font encore bananer sur l’objection prix | Laurent Serre',
+  title: 'Objection prix : même des commerciaux expérimentés se font encore bananer | Laurent Serre',
   description:
     'Quand une vente bloque sur le prix, le tarif n’est pas toujours le vrai sujet. Très souvent, l’objection prix masque un diagnostic commercial évité trop vite.',
   keywords:
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
       'https://www.laurentserre.com/blog/pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix',
   },
   openGraph: {
-    title: 'Pourquoi même des commerciaux expérimentés se font encore bananer sur l’objection prix',
+    title: 'Objection prix : même des commerciaux expérimentés se font encore bananer',
     description:
       'L’objection prix n’est pas toujours un problème de prix. C’est souvent le nom pratique d’un problème plus ancien dans la vente.',
     url: 'https://www.laurentserre.com/blog/pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pourquoi même des commerciaux expérimentés se font encore bananer sur l’objection prix',
+    title: 'Objection prix : même des commerciaux expérimentés se font encore bananer',
     description:
       'Quand un client dit que c’est trop cher, le vrai blocage est souvent ailleurs et il est apparu bien avant le prix.',
     images: ['https://www.laurentserre.com/images/blog/2026-04-24-objection-prix-bd-hero-selected.png'],
@@ -49,7 +49,7 @@ export default function PourquoiMemeDesCommerciauxExperimentesSeFontEncoreBanane
             </div>
 
             <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              Pourquoi même des commerciaux expérimentés se font encore bananer sur l’objection prix
+              Objection prix : même des commerciaux expérimentés se font encore bananer
             </h1>
 
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi vos commerciaux répondent trop vite aux objections | Laurent Serre',
+  title: 'Objections commerciales : répondre trop vite vous fait perdre la main | Laurent Serre',
   description:
     'Quand un commercial répond trop vite à une objection, il saute sur sa réponse avant d’avoir compris ce que le client essayait vraiment de dire.',
   keywords:
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections',
   },
   openGraph: {
-    title: 'Pourquoi vos commerciaux répondent trop vite aux objections',
+    title: 'Objections commerciales : répondre trop vite vous fait perdre la main',
     description:
       'Une objection n’appelle pas toujours une réponse rapide. Souvent, elle montre surtout ce que le client n’a pas encore vraiment dit.',
     url: 'https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pourquoi vos commerciaux répondent trop vite aux objections',
+    title: 'Objections commerciales : répondre trop vite vous fait perdre la main',
     description:
       'Le problème n’est pas l’objection. Le problème, c’est la précipitation à répondre avant d’avoir compris ce qu’elle cache.',
     images: ['https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero-v2.png'],
@@ -49,7 +49,7 @@ export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage
             </div>
 
             <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              Pourquoi vos commerciaux répondent trop vite aux objections
+              Objections commerciales : répondre trop vite vous fait perdre la main
             </h1>
 
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
