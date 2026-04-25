@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Pourquoi même des commerciaux expérimentés se font encore bananer sur l’objection prix',
     description:
-      'Le prix arrive à la fin, mais le vrai problème a souvent commencé bien avant.',
+      'Quand un client dit que c’est trop cher, le vrai blocage est souvent ailleurs et il est apparu bien avant le prix.',
     images: ['https://www.laurentserre.com/images/blog/2026-04-24-objection-prix-bd-hero-selected.png'],
   },
 };
@@ -85,82 +85,78 @@ export default function PourquoiMemeDesCommerciauxExperimentesSeFontEncoreBanane
           </blockquote>
 
           <p className="mb-8">
-            La phrase arrive souvent très vite. Le dossier vient de sortir. La proposition est partie. Le prospect a freiné. Et en dix secondes, le débrief est déjà presque terminé.
-          </p>
-
-          <p className="mb-8">Prix.</p>
-
-          <p className="mb-8">
-            Le problème, c’est que cette conclusion est souvent trop rapide. Pas parce que le prix ne compte pas. Bien sûr qu’il compte. Mais parce qu’il sert très souvent de mot pratique pour éviter un diagnostic plus exigeant.
+            La phrase tombe souvent trop vite. La proposition est partie. Le client a freiné. Le commercial revient un peu secoué. Et, en deux minutes, tout le monde se range derrière la même explication : on était trop chers.
           </p>
 
           <p className="mb-8">
-            Je vois des commerciaux expérimentés se faire bananer là-dessus en permanence. Pas parce qu’ils sont mauvais. Justement parce qu’ils connaissent trop bien la musique. Ils ont déjà entendu cent fois « c’est trop cher ». Alors ils anticipent. Ils repartent sur la valeur, le retour sur investissement, la qualité de service, la différence d’approche, parfois même sur une concession plus ou moins habillée. Ils répondent vite. Ils remplissent vite le blanc qui peut se créer quand on commence à parler du tarif. Ils négocient déjà avant que le client ait vraiment exprimé le fond de sa pensée.
+            Parfois, c’est vrai. Mais très souvent, le prix arrive à la fin pour recouvrir tout le reste.
+          </p>
+
+          <p className="mb-8">
+            Je pense à ces rendez-vous où le client dit : « Franchement, c’est au-dessus de ce qu’on avait en tête. » Là, beaucoup de commerciaux expérimentés partent aussitôt en défense. Ils détaillent le service, rappellent la qualité, expliquent pourquoi leur offre tient mieux la route. Certains commencent même à rogner avant d’avoir compris ce qui gêne vraiment.
           </p>
 
           <div className="bg-blue-ink/10 border-l-4 border-blue-ink p-6 my-8">
             <p className="text-base">
-              <strong>Et c’est là qu’ils perdent la main.</strong>
+              <strong>C’est là qu’ils se piègent.</strong>
             </p>
           </div>
 
           <p className="mb-8">
-            L’objection prix n’est pas toujours un problème de prix. C’est souvent un mélange plus confus : valeur mal posée, problème pas assez coûteux, vraie priorité pas vraiment installée, décideur encore mal embarqué, comparaison faussée, ou proposition envoyée trop tôt.
-          </p>
-
-          <p className="mb-8">Autrement dit : le prix arrive à la fin, mais le vrai problème a souvent commencé bien avant.</p>
-
-          <p className="mb-8">
-            C’est d’ailleurs pour ça que des commerciaux expérimentés tombent eux aussi dans le piège. L’expérience les aide à reconnaître les objections. Mais elle peut aussi les rendre trop rapides. Ils croient reconnaître la scène avant de l’avoir relue. Ils entendent un mot, et ils sortent la réponse qui va avec. Sur l’objection prix, cette vitesse est rarement une force. Très souvent, c’est une négligence.
+            Quand un client parle du prix, il peut vouloir dire autre chose. Qu’il ne voit pas assez la différence. Qu’il ne voit pas encore ce que lui coûte l’attente. Que le sujet n’est pas assez urgent. Que la bonne personne n’a pas donné son avis. Ou simplement qu’il compare votre proposition complète à quelque chose de plus court et de moins solide.
           </p>
 
           <p className="mb-8">
-            Le client dit peut-être « c’est trop cher ». Mais ce qu’il pense vraiment est parfois tout autre. Peut-être qu’il ne voit pas assez la différence. Peut-être qu’il n’a pas encore relié votre offre à un problème assez coûteux pour bouger. Peut-être qu’il n’a pas embarqué le vrai décideur. Peut-être qu’il compare votre proposition complète à une proposition plus étriquée, plus floue, moins complète, moins adaptée. Et peut-être aussi que le sujet n’est simplement pas assez prioritaire pour passer devant le reste.
+            Dans tous ces cas, répondre trop vite ne sert à rien. Vous défendez un chiffre alors que le doute est ailleurs.
           </p>
 
           <p className="mb-8">
-            Si vous répondez trop vite, vous ne travaillez rien de tout ça. Vous défendez seulement votre tarif contre une objection dont vous n’avez pas encore creusé le vrai contenu.
+            C’est pour ça que même des commerciaux solides se font encore avoir. L’habitude les rend rapides. Or, sur le prix, cette vitesse est souvent une paresse déguisée. On croit aller droit au but. En réalité, on évite la seule chose utile : comprendre ce que le client met derrière sa phrase. C’est la même dérive que lorsqu’une équipe se met à{' '}
+            <Link href="/blog/pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections" className="text-blue-ink font-semibold underline hover:text-mint-green">
+              répondre trop vite aux objections
+            </Link>
+            .
           </p>
 
           <p className="mb-8">
-            C’est aussi pour ça que beaucoup de commerciaux remettent ensuite très vite la faute sur l’entreprise. « On est trop chers. » « Avec nos prix, ça ne passe pas. » « Le marché ne veut plus payer ça. »
+            Ensuite, le réflexe classique arrive. « Avec nos tarifs, ça ne passe plus. » « En face, ils sont moins chers. » « Le marché est devenu trop dur. »
           </p>
 
           <p className="mb-8">
-            Parfois, c’est vrai. Il existe des offres mal positionnées. Il existe des écarts trop grands. Il existe des marchés devenus plus durs. Mais dans énormément de cas, cette explication protège surtout le commercial d’une question moins confortable : est-ce que la vente a été vraiment construite ?
+            Cela peut arriver, bien sûr. Mais, dans beaucoup de dossiers, cette explication arrange tout le monde. Le client s’abrite derrière le prix. Le commercial s’abrite derrière l’entreprise. Et le manager évite une question plus gênante : à quel moment exact la vente a-t-elle commencé à se fragiliser ?
           </p>
 
           <p className="mb-8">
-            Est-ce que le problème du client a été assez creusé ? Est-ce que le coût de l’inaction a été assez travaillé ? Est-ce que la valeur a été formulée assez tôt, assez clairement, assez concrètement ? Est-ce que le niveau de décision a été mesuré correctement ? Est-ce que la proposition est partie au bon moment ?
+            Est-ce que le client avait vraiment compris ce qu’il achetait ? Est-ce qu’il voyait clairement ce que cela changeait pour lui ? Est-ce que le problème était assez sérieux pour l’obliger à bouger ? Est-ce que la personne qui tranche était réellement dans la discussion ? Est-ce que la proposition est partie trop tôt ?
           </p>
 
           <p className="mb-8">
-            Tant que ces questions restent floues, l’objection prix devient un refuge parfait. Pour le prospect comme pour le commercial. Le prospect s’abrite derrière un mot simple. Le commercial s’abrite derrière une explication simple. Et tout le monde évite le vrai travail.
+            Tant que ces questions ne sont pas posées, dire « c’est trop cher » ne sert presque à rien. C’est une étiquette, pas un diagnostic.
           </p>
 
           <p className="mb-8">
-            Sur ce sujet, un bon commercial ne contre pas d’abord. Il ralentit un peu. Pas pour devenir mou. Pour devenir juste.
+            Un bon commercial ne contre donc pas tout de suite. Il ralentit.
           </p>
 
           <div className="my-10 rounded-2xl border border-blue-ink/15 bg-white p-6">
             <p className="text-base text-gray-700 mb-4">
-              « Trop cher par rapport à quoi exactement ? »<br />
-              « Qu’est-ce qui vous fait hésiter aujourd’hui ? »<br />
-              « Qu’est-ce qui vous manquerait pour considérer que ce sujet mérite vraiment cet investissement ? »<br />
-              « Qui d’autre doit valider ce niveau de décision ? »
+              « Trop cher par rapport à quoi ? »<br />
+              « Qu’est-ce que vous comparez exactement ? »<br />
+              « Qu’est-ce qui vous fait hésiter maintenant ? »<br />
+              « Qui doit encore se prononcer ? »
             </p>
           </div>
 
           <p className="mb-8">
-            Là, on commence à travailler. Là, on sort du théâtre habituel. Là, on arrête de traiter le prix comme une réponse, pour le traiter enfin comme un signal.
+            Le but n’est pas de faire parler pour faire parler. Le but est de remettre la vente sur le vrai point de blocage.
           </p>
 
           <p className="mb-8">
-            Le vrai sujet n’est donc pas d’apprendre à mieux défendre ses prix. Le vrai sujet, c’est d’arrêter de laisser l’objection prix faire le ménage à la place du commercial. Parce qu’à ce moment-là, elle ramasse tout : le flou, la négligence, la précipitation, la proposition trop tôt, la valeur mal installée.
+            Le prix n’est souvent que l’endroit où le dossier craque en dernier. Le problème, lui, est apparu bien avant : dans un besoin mal creusé, une différence mal montrée, une urgence mal installée, une proposition envoyée trop tôt ou une discussion menée sans la bonne personne.
           </p>
 
           <p className="mb-8">
-            Et tant qu’une équipe dira trop vite « on était trop chers », elle continuera à se faire bananer sur un sujet qu’elle croit pourtant connaître par cœur.
+            Tant qu’une équipe dira trop vite « on l’a perdu au prix », elle continuera à confondre la dernière phrase du client avec la vraie raison de la vente ratée.
           </p>
 
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">

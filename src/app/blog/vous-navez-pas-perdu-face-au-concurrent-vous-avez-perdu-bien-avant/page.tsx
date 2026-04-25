@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Vous n’avez pas perdu face au concurrent, vous avez perdu bien avant',
     description:
-      'Le concurrent sert souvent d’explication confortable. Mais la vente s’est généralement fragilisée bien plus tôt.',
+      'Le concurrent sert souvent d’explication confortable alors que la vente s’est fragilisée bien avant sa vraie apparition.',
     images: ['https://www.laurentserre.com/images/blog/2026-04-20-concurrent-verite-confortable-hero.png'],
   },
 };
@@ -81,11 +81,11 @@ export default function VousNAvezPasPerduFaceAuConcurrentVousAvezPerduBienAvantP
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
-            Quand une affaire se perd, beaucoup d’équipes disent la même chose : le concurrent était meilleur. Le problème, c’est que cette phrase sert surtout à éviter une vérité moins confortable.
+            Quand une affaire se perd, le mot « concurrent » arrive souvent très vite. Trop vite.
           </p>
 
           <p className="mb-8">
-            La scène est classique. Le prospect a demandé une proposition. Les échanges étaient très corrects. Le commercial pensait être dans la course. Puis le dossier s’arrête. On apprend qu’un concurrent a été retenu. Et tout le monde se détend un peu avec cette lecture. On n’a pas été mauvais. On est simplement tombé sur plus fort. Le problème, c’est que dans beaucoup de cas, la vente s’était déjà fragilisée bien avant l’arrivée visible du concurrent.
+            Le client a demandé une proposition. Les échanges étaient cordiaux. Le commercial pensait être dans la course. Puis le dossier se ferme. On apprend qu’un autre a été retenu. Et, tout de suite, l’explication qui soulage sort en premier : le concurrent était meilleur.
           </p>
 
           <div className="bg-blue-ink/10 border-l-4 border-blue-ink p-6 my-8">
@@ -95,7 +95,7 @@ export default function VousNAvezPasPerduFaceAuConcurrentVousAvezPerduBienAvantP
           </div>
 
           <p className="mb-8">
-            Par exemple, le vrai problème était peut-être une découverte trop faible. Le client avait exprimé un intérêt, mais pas une priorité assez forte. Ou alors la douleur était connue, sans avoir été reliée à une conséquence concrète. Ou encore le commercial parlait avec un interlocuteur impliqué, mais pas avec le vrai décideur. Dans ces cas-là, le concurrent ne gagne pas seulement parce qu’il est meilleur. Il gagne parce qu’il arrive dans une vente qui n’était pas vraiment construite.
+            Dans beaucoup de cas, le dossier s’était fragilisé bien avant son arrivée visible. Le client avait montré de l’intérêt, mais pas une priorité assez forte. Le problème était connu, mais pas relié à une conséquence concrète. Le commercial parlait avec quelqu’un d’impliqué, mais pas avec la personne qui pouvait vraiment trancher. Ou la proposition était partie trop tôt, sur la base d’un « envoyez-moi quelque chose » pris pour une avancée.
           </p>
 
           <p className="mb-8">
@@ -107,12 +107,12 @@ export default function VousNAvezPasPerduFaceAuConcurrentVousAvezPerduBienAvantP
           </p>
 
           <p className="mb-8">
-            Le concurrent devient alors une explication très pratique. Il protège l’ego du commercial. Il protège aussi le management d’un débrief plus exigeant. Parce que si on retire cette excuse, il faut regarder autre chose. Pourquoi la proposition est-elle partie si tôt ? Pourquoi a-t-on accepté un “envoyez-moi quelque chose” comme une avancée ? Pourquoi personne n’a vraiment vérifié qui déciderait, sur quoi, et à quel moment ? C’est moins confortable, mais c’est là que l’équipe progresse.
+            À partir de là, le concurrent devient une explication très pratique. Il protège l’ego du commercial. Il protège aussi le management d’un débrief plus exigeant. Parce que si on retire cette excuse, il faut regarder autre chose : pourquoi la proposition est-elle partie si tôt ? Pourquoi a-t-on accepté un « envoyez-moi quelque chose » comme une avancée ? Pourquoi personne n’a vraiment vérifié qui déciderait, sur quoi et à quel moment ?
           </p>
 
           <div className="my-10 rounded-2xl border border-blue-ink/15 bg-white p-6">
             <p className="text-base text-gray-700 mb-4">
-              Si vos affaires perdues finissent trop souvent classées en “concurrent”, le sujet n’est pas le CRM. C’est la qualité de lecture commerciale avant la proposition, de vos techniques de vente, de votre capacité à mesurer et développer la motivation de votre client, à détecter les angles morts de votre proposition et à les combler.
+              Si vos affaires perdues finissent trop souvent classées en « concurrent », le sujet n’est pas le logiciel ni le tableau de suivi. C’est la qualité de lecture commerciale avant la proposition, la manière dont vous qualifiez, et le niveau d’exigence de vos débriefs.
             </p>
             <Link href="/diagnostic" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
               Demander un diagnostic commercial
@@ -120,11 +120,15 @@ export default function VousNAvezPasPerduFaceAuConcurrentVousAvezPerduBienAvantP
           </div>
 
           <p className="mb-8">
-            En débrief d’entretien de vente, je recommande une question très simple : à quel moment exact avons-nous commencé à perdre cette vente ? Si l’équipe répond “quand le concurrent est arrivé”, on reste à la surface. Si elle peut nommer un rendez-vous trop flou, une décision non préparée, une objection traitée trop vite ou une proposition envoyée trop tôt, alors on commence enfin à voir le vrai problème. Et c’est beaucoup plus utile pour la suite.
+            En débrief, il y a une question simple et dure : à quel moment exact avons-nous commencé à perdre cette vente ? Si l’équipe répond « quand le concurrent est arrivé », elle reste à la surface. Si elle peut nommer un rendez-vous trop flou, une décision non préparée, une objection traitée trop vite ou une proposition envoyée trop tôt, alors elle commence enfin à voir le vrai problème. Et c’est beaucoup plus utile pour la suite. D’ailleurs, si vous voulez éviter ce type de départ prématuré, relisez aussi la{' '}
+            <Link href="/blog/revue-deal-avant-proposition-3-verifications" className="text-blue-ink font-semibold underline hover:text-mint-green">
+              revue avant proposition
+            </Link>
+            .
           </p>
 
           <p className="mb-8">
-            Une équipe commerciale progresse quand elle arrête de se raconter des histoires propres. Le concurrent existe, bien sûr. Mais dans beaucoup d’affaires perdues, il n’est pas la cause profonde. Il est juste celui qui profite d’une vente déjà mal engagée.
+            Une équipe progresse quand elle arrête de se raconter des histoires propres. Le concurrent existe, bien sûr. Mais dans beaucoup d’affaires perdues, il n’est pas la cause profonde. Il est juste celui qui profite d’une vente déjà mal engagée.
           </p>
 
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
