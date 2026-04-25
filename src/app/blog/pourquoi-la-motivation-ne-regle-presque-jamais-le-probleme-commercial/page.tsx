@@ -6,7 +6,7 @@ import HubSpotForm from '@/components/HubSpotForm';
 export const metadata: Metadata = {
   title: 'Pourquoi la motivation ne règle presque jamais le problème commercial | Laurent Serre',
   description:
-    'Quand une équipe commerciale cale, le vrai problème n’est pas toujours la motivation. Très souvent, c’est le flou du système, du management ou de la lecture des ventes.',
+    'Quand une équipe commerciale cale, parler motivation permet souvent d’éviter le vrai sujet : des rendez-vous faibles, un management mou ou des ventes mal relues.',
   keywords:
     'motivation commerciale, management commercial, performance commerciale PME, coaching commercial, Laurent Serre',
   alternates: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Pourquoi la motivation ne règle presque jamais le problème commercial',
     description:
-      'Quand une équipe cale, parler motivation est souvent une manière confortable d’éviter le vrai problème commercial.',
+      'Quand une équipe cale, le mot motivation sert souvent à éviter un diagnostic plus exigeant.',
     url: 'https://www.laurentserre.com/blog/pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial',
     type: 'article',
     locale: 'fr_FR',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Pourquoi la motivation ne règle presque jamais le problème commercial',
     description:
-      'Le mot motivation rassure. Il évite souvent de regarder le vrai problème : un système flou, un management faible ou une vente mal construite.',
+      'Le mot motivation rassure. Il évite souvent de regarder le vrai problème : des scènes mal tenues, un management faible ou des ventes mal construites.',
     images: ['https://www.laurentserre.com/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.png'],
   },
 };
@@ -89,12 +89,12 @@ export default function PourquoiLaMotivationNeReglePresqueJamaisLeProblemeCommer
 
           <div className="bg-blue-ink/10 border-l-4 border-blue-ink p-6 my-8">
             <p className="text-base">
-              <strong>Le manque de motivation est souvent le nom pratique d’un problème qu’on n’a pas eu le courage de regarder en face.</strong>
+              <strong>Le manque de motivation est souvent le nom pratique d’un problème qu’on n’a pas voulu regarder de près.</strong>
             </p>
           </div>
 
           <p className="mb-8">
-            C’est plus confortable de parler d’énergie que de méthode. Plus simple de dire qu’un commercial n’a plus envie que d’admettre qu’il ne sait plus très bien comment faire avancer une vente. Ou qu’il n’est presque jamais repris sur sa posture, ses questions, son timing, sa manière de traiter une objection ou de faire ressortir le vrai problème du client.
+            C’est plus confortable de parler d’énergie que de méthode. Plus simple de dire qu’un commercial n’a plus envie que d’admettre qu’il ne sait plus très bien comment faire avancer une vente. Ou qu’il n’est presque jamais repris sur sa manière de questionner, sur son timing, sur sa façon de prendre une objection ou de faire sortir le vrai problème du client.
           </p>
 
           <p className="mb-8">
@@ -106,7 +106,7 @@ export default function PourquoiLaMotivationNeReglePresqueJamaisLeProblemeCommer
           </p>
 
           <p className="mb-8">
-            Le réflexe utile n’est donc pas de demander comment remotiver l’équipe. Le vrai réflexe, c’est de regarder où elle perd sa solidité. Est-ce que les rendez-vous sont bien préparés ? Est-ce que les managers débriefent pendant que l’entretien est encore chaud ? Est-ce qu’on fait vraiment de la mise en situation ? Est-ce qu’on challenge les excuses crédibles avant qu’elles deviennent des habitudes ? Sans ça, on confond animation et progression. On fait monter un peu l’ambiance, mais on ne fait pas monter le niveau.
+            Le réflexe utile n’est donc pas de demander comment remotiver l’équipe. Le vrai réflexe, c’est de regarder où elle perd sa solidité. Est-ce que les rendez-vous sont bien préparés ? Est-ce que les managers débriefent pendant que l’entretien est encore chaud ? Est-ce qu’on fait vraiment de la mise en situation ? Est-ce qu’on reprend les excuses crédibles avant qu’elles deviennent des habitudes ? Sans ça, on confond animation et progression. On fait monter un peu l’ambiance, mais on ne fait pas monter le niveau.
           </p>
 
           <p className="mb-8">
@@ -119,7 +119,7 @@ export default function PourquoiLaMotivationNeReglePresqueJamaisLeProblemeCommer
 
           <div className="my-10 rounded-2xl border border-blue-ink/15 bg-white p-6">
             <p className="text-base text-gray-700 mb-4">
-              Si vous avez le sentiment que votre équipe commerciale manque d’élan, on peut d’abord vérifier si le vrai problème vient de la motivation, du management, de la qualité des rendez-vous ou d’un système commercial devenu trop flou.
+              Si vous avez le sentiment que votre équipe commerciale manque d’élan, on peut d’abord vérifier si le vrai problème vient de la motivation, du management, de la qualité des rendez-vous ou d’une manière de piloter devenue trop floue.
             </p>
             <Link href="/diagnostic" className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
               Demander un diagnostic commercial
@@ -127,7 +127,7 @@ export default function PourquoiLaMotivationNeReglePresqueJamaisLeProblemeCommer
           </div>
 
           <p className="mb-8">
-            Le bon manager commercial ne passe pas son temps à rebooster. Il remet du réel dans la machine. Il reprend une scène précise. Il demande ce qui a été validé, ce qui a été évité, où la vente a commencé à se ramollir, et par où il faudrait recommencer pour avancer. C’est pour ça que{' '}
+            Le bon manager commercial ne passe pas son temps à rebooster. Il remet du réel dans la machine. Il reprend une scène précise. Il demande ce qui a été validé, ce qui a été évité, où la vente a commencé à se ramollir, et par où il faudrait reprendre. C’est pour ça que{' '}
             <Link href="/blog/pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud" className="text-blue-ink font-semibold underline hover:text-mint-green">
               le débrief à chaud vaut plus qu’un beau compte rendu
             </Link>
@@ -135,7 +135,7 @@ export default function PourquoiLaMotivationNeReglePresqueJamaisLeProblemeCommer
           </p>
 
           <p className="mb-8">
-            La motivation aide parfois à repartir. Mais elle ne corrige ni un système faible, ni un management mou, ni une vente mal engagée. Et tant qu’on traite la motivation comme le problème principal, on évite souvent le seul travail qui changerait vraiment le niveau de l’équipe.
+            La motivation aide parfois à repartir. Mais elle ne corrige ni un cadre faible, ni un management mou, ni une vente mal engagée. Et tant qu’on traite la motivation comme le problème principal, on évite souvent le seul travail qui ferait vraiment progresser l’équipe.
           </p>
 
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">

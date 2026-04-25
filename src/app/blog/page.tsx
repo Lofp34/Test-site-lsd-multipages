@@ -38,7 +38,7 @@ const blogPosts = [
   {
     slug: 'pourquoi-un-manager-commercial-reprend-trop-souvent-les-rendez-vous-a-la-place-de-lequipe',
     title: 'Pourquoi un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe',
-    description: 'Quand un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe, il rassure sur le moment mais il installe surtout une dépendance qui affaiblit les commerciaux.',
+    description: 'Quand un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe, il rassure sur le moment mais il apprend surtout aux commerciaux à attendre qu’on les sauve.',
     date: '2026-04-25',
     readTime: '6 min de lecture',
     category: 'Management / coaching commercial',
@@ -58,7 +58,7 @@ const blogPosts = [
   {
     slug: 'pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial',
     title: 'Pourquoi la motivation ne règle presque jamais le problème commercial',
-    description: 'Quand une équipe commerciale cale, le vrai problème n’est pas toujours la motivation. Très souvent, c’est le flou du système, du management ou de la lecture des ventes.',
+    description: 'Quand une équipe commerciale cale, parler motivation permet souvent d’éviter le vrai sujet : des rendez-vous faibles, un management mou ou des ventes mal relues.',
     date: '2026-04-23',
     readTime: '6 min de lecture',
     category: 'Psychologie commerciale / management',
@@ -108,7 +108,7 @@ const blogPosts = [
   {
     slug: 'pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections',
     title: 'Pourquoi vos commerciaux répondent trop vite aux objections',
-    description: 'Quand un commercial répond trop vite à une objection, il traite une phrase avant d’avoir compris la vraie inquiétude. C’est souvent là que la vente se fragilise.',
+    description: 'Quand un commercial répond trop vite à une objection, il saute sur sa réponse avant d’avoir compris ce que le client essayait vraiment de dire.',
     date: '2026-04-18',
     readTime: '7 min de lecture',
     category: 'Erreur fréquente / vente terrain',

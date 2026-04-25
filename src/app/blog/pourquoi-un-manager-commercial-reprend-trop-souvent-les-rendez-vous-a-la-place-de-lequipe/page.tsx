@@ -6,7 +6,7 @@ import HubSpotForm from '@/components/HubSpotForm';
 export const metadata: Metadata = {
   title: 'Pourquoi un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe | Laurent Serre',
   description:
-    'Quand un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe, il rassure sur le moment mais il installe surtout une dépendance qui affaiblit les commerciaux.',
+    'Quand un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe, il rassure sur le moment mais il apprend surtout aux commerciaux à attendre qu’on les sauve.',
   keywords:
     'manager commercial, coaching commercial, rendez-vous client, directeur commercial, vente B2B, PME, Laurent Serre',
   alternates: {
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Pourquoi un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe',
     description:
-      'À force de sauver les rendez-vous de ses commerciaux, un manager commercial affaiblit l’équipe et devient lui-même le goulot d’étranglement des deals.',
+      'À force de sauver les rendez-vous de ses commerciaux, un manager commercial affaiblit l’équipe et concentre toute la crédibilité sur lui.',
     url: 'https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-reprend-trop-souvent-les-rendez-vous-a-la-place-de-lequipe',
     type: 'article',
     locale: 'fr_FR',
@@ -117,7 +117,7 @@ export default function PourquoiUnManagerCommercialReprendTropSouventLesRendezVo
           </p>
 
           <p className="mb-8">
-            Le coût est lourd. Le manager sature. Les gros rendez-vous s’accumulent sur lui. Les commerciaux progressent moins vite parce qu’ils vivent moins les moments qui font grandir. Et les deals deviennent trompeurs : sur le papier, ils appartiennent à l’équipe ; dans la vraie vie, ils avancent surtout quand le manager vient les sauver.
+            Le coût est lourd. Le manager sature. Les gros rendez-vous s’accumulent sur lui. Les commerciaux progressent moins vite parce qu’ils vivent moins les moments qui font grandir. Et les dossiers deviennent trompeurs : sur le papier, ils appartiennent à l’équipe ; dans la vraie vie, ils avancent surtout quand le manager vient les sauver.
           </p>
 
           <p className="mb-8">
@@ -150,7 +150,7 @@ export default function PourquoiUnManagerCommercialReprendTropSouventLesRendezVo
           </div>
 
           <p className="mb-8">
-            Si vous voulez savoir si ce réflexe vous coûte cher, regardez trois choses très simples. Est-ce que vos commerciaux mènent vraiment les rendez-vous importants, ou les démarrent seulement ? Est-ce que vos clients continuent à parler au commercial quand le sujet se tend, ou cherchent-ils tout de suite le manager ? Et combien de deals supposés “portés par l’équipe” auraient en fait décroché sans l’intervention du chef ?
+            Si vous voulez savoir si ce réflexe vous coûte cher, regardez trois choses très simples. Est-ce que vos commerciaux mènent vraiment les rendez-vous importants, ou les démarrent seulement ? Est-ce que vos clients continuent à parler au commercial quand le sujet se tend, ou cherchent-ils tout de suite le manager ? Et combien de dossiers supposés “portés par l’équipe” auraient en fait décroché sans l’intervention du chef ?
           </p>
 
           <p className="mb-8">
