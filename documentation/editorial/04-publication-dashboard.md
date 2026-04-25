@@ -15,15 +15,15 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 22
-- **Publications blog publiées** : 22
+- **Total publications suivies** : 23
+- **Publications blog publiées** : 23
 - **Idées en backlog** : 0
 - **Articles avec kit LinkedIn prêt** : 10
 - **Articles avec email prêt/envoyé** : 7
 
 ### Répartition par pilier
 - Expertise développement commercial PME : 0
-- Formation / transformation commerciale : 4
+- Formation / transformation commerciale : 5
 - Outils / méthodes / ressources : 1
 - IA / tendances / prospective : 3
 - Management / pilotage dirigeant : 2
@@ -32,7 +32,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Psychologie / comportements commerciaux : 5
 
 ### Répartition par angle
-- Erreur fréquente : 5
+- Erreur fréquente : 6
 - Diagnostic : 1
 - Méthode : 1
 - Point de vue : 8
@@ -60,6 +60,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-25 | publié | Pourquoi un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe | Manager commercial qui sauve trop souvent les rendez-vous et installe une dépendance de l’équipe au lieu de la faire progresser | Erreur fréquente | Formation / transformation commerciale | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à relire le rôle réel du manager en rendez-vous, à réduire la dépendance aux sauvetages et à faire progresser le coaching avant/après les scènes de vente | Fondamentaux / historique | Oui — bon déplacement après la séquence motivation / excuses / prix, avec un angle concret de management de proximité et de transformation d’équipe sans revenir au pipeline | https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-reprend-trop-souvent-les-rendez-vous-a-la-place-de-lequipe | à préparer | non requis | Post LinkedIn d’opinion sur le manager-béquille, carrousel sauver un deal vs construire une équipe, email court sur les rendez-vous confisqués par le management | Génération autonome du jour sans dossier input ; nouvel article rédigé, visuel hero créé en `gpt-image-2`, publication complète réalisée |
 | 2026-04-24 | publié | Pourquoi même des commerciaux expérimentés se font encore bananer sur l’objection prix | Objection prix lue trop vite comme un problème de tarif au lieu d’un signal de vente mal construite | Erreur fréquente | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à mieux relire les objections prix, à éviter la négociation prématurée et à rouvrir le diagnostic commercial réel | Signal interne / input du jour | Oui — suite directe et plus ciblée à la séquence objections, décision, concurrent, forecast et bonnes excuses, avec validation explicite dans le dossier input du jour | https://www.laurentserre.com/blog/pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix | à préparer | non requis (.publish-ok) | Post LinkedIn d’opinion sur le prix comme faux diagnostic, carrousel prix vs vrai problème, email court sur les ventes qu’on négocie trop tôt | Publication directe depuis le fichier validé `.publish-ok.md`, sans repasse éditoriale ; illustration du dossier du jour réutilisée |
 | 2026-04-23 | publié | Pourquoi la motivation ne règle presque jamais le problème commercial | Usage paresseux du mot motivation pour éviter le vrai diagnostic commercial, managérial et systémique | Point de vue | Psychologie / comportements commerciaux | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à sortir du faux diagnostic de motivation et ouvrir des conversations sur le management de proximité, le coaching de scène et la tenue du système commercial | Fondamentaux / historique | Oui — ouvre un angle de psychologie managériale utile après la séquence excuses, forecast, concurrent et objections, sans revenir au pipeline ni au trimestre | https://www.laurentserre.com/blog/pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial | à préparer | non requis | Post LinkedIn d’opinion sur la motivation comme faux problème, carrousel énergie vs niveau réel, email court sur le coût du mauvais diagnostic managérial | Génération autonome du jour sans dossier input ; nouvelle illustration hero créée puis publication complète réalisée |
 | 2026-04-22 | publié | Pourquoi un manager commercial tolère trop longtemps les bonnes excuses | Excuses commerciales crédibles tolérées trop longtemps par le management, au détriment du vrai diagnostic des ventes | Point de vue | Formation / transformation commerciale | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à relever l’exigence des revues d’affaires et ouvrir des conversations sur le débrief, le coaching et la confrontation utile | Fondamentaux / historique | Oui — respiration nette côté management commercial après la séquence objections, décision, concurrent et forecast, sans remettre le pipeline au centre | https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-tolere-trop-longtemps-les-bonnes-excuses | à préparer | non requis | Post LinkedIn d’opinion sur les excuses qui rassurent trop vite, carrousel excuse crédible vs vrai diagnostic, email court sur le management qui protège le confort au lieu de relire la vente | Illustration hero remplacée le 2026-04-22 avec une nouvelle image générée via OpenAI `gpt-image-2` |

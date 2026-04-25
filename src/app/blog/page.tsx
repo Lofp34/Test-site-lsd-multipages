@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pourquoi-un-manager-commercial-reprend-trop-souvent-les-rendez-vous-a-la-place-de-lequipe',
+    title: 'Pourquoi un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe',
+    description: 'Quand un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe, il rassure sur le moment mais il installe surtout une dépendance qui affaiblit les commerciaux.',
+    date: '2026-04-25',
+    readTime: '6 min de lecture',
+    category: 'Management / coaching commercial',
+    image: '/images/blog/2026-04-25-manager-reprend-rendez-vous-equipe-hero.png',
+    featured: true
+  },
+  {
     slug: 'pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix',
     title: 'Pourquoi même des commerciaux expérimentés se font encore bananer sur l’objection prix',
     description: 'Quand une vente bloque sur le prix, le tarif n’est pas toujours le vrai sujet. Très souvent, l’objection prix masque un diagnostic commercial évité trop vite.',
