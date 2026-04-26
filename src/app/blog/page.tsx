@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'reunion-commerciale-sans-decision-commenter-les-chiffres',
+    title: 'Une réunion commerciale sans décision apprend surtout à commenter les chiffres',
+    description: 'Quand une réunion commerciale se contente de commenter les chiffres sans trancher, elle donne une impression de sérieux mais ne fait presque jamais avancer les ventes.',
+    date: '2026-04-26',
+    readTime: '6 min de lecture',
+    category: 'Méthode / pilotage commercial',
+    image: '/images/blog/2026-04-26-reunion-commerciale-sans-decision-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'pourquoi-un-manager-commercial-reprend-trop-souvent-les-rendez-vous-a-la-place-de-lequipe',
     title: 'Manager commercial : à force de sauver les rendez-vous, vous affaiblissez l’équipe',
     description: 'Quand un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe, il rassure sur le moment mais il apprend surtout aux commerciaux à attendre qu’on les sauve.',
