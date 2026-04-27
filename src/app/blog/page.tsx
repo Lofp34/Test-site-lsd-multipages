@@ -36,13 +36,13 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
-    slug: 'le-28-du-mois-vos-ventes-ne-se-sauvent-plus-elles-se-relisent',
-    title: 'Le 28 du mois, vos ventes ne se sauvent plus. Elles se relisent.',
-    description: 'Quand une équipe veut sauver le mois dans les derniers jours, elle ne rattrape presque jamais une vente. Elle révèle surtout tout ce qu’elle n’a pas voulu regarder plus tôt.',
+    slug: 'si-vous-pensez-encore-au-boulot-le-week-end-vous-ne-recuperez-pas',
+    title: 'Si vous pensez encore au boulot le week-end, vous ne récupérez pas',
+    description: 'Un dirigeant qui ne décroche jamais le week-end ne revient pas vraiment reposé le lundi. La récupération commence par une vraie clôture de semaine.',
     date: '2026-04-27',
-    readTime: '6 min de lecture',
-    category: 'Dirigeant / arbitrage commercial',
-    image: '/images/blog/2026-03-29-comite-commercial-mensuel-hero.jpg',
+    readTime: '5 min de lecture',
+    category: 'Dirigeant / récupération',
+    image: '/images/blog/2026-04-27-recuperation-week-end-hero.png',
     featured: true
   },
   {
