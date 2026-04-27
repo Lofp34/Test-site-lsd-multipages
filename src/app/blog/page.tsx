@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'le-28-du-mois-vos-ventes-ne-se-sauvent-plus-elles-se-relisent',
+    title: 'Le 28 du mois, vos ventes ne se sauvent plus. Elles se relisent.',
+    description: 'Quand une équipe veut sauver le mois dans les derniers jours, elle ne rattrape presque jamais une vente. Elle révèle surtout tout ce qu’elle n’a pas voulu regarder plus tôt.',
+    date: '2026-04-27',
+    readTime: '6 min de lecture',
+    category: 'Dirigeant / arbitrage commercial',
+    image: '/images/blog/2026-03-29-comite-commercial-mensuel-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'reunion-commerciale-sans-decision-commenter-les-chiffres',
     title: 'Une réunion commerciale sans décision apprend surtout à commenter les chiffres',
     description: 'Quand une réunion commerciale se contente de commenter les chiffres sans trancher, elle donne une impression de sérieux mais ne fait presque jamais avancer les ventes.',

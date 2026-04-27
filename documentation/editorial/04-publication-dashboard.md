@@ -15,8 +15,8 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 24
-- **Publications blog publiées** : 24
+- **Total publications suivies** : 25
+- **Publications blog publiées** : 25
 - **Idées en backlog** : 0
 - **Articles avec kit LinkedIn prêt** : 10
 - **Articles avec email prêt/envoyé** : 7
@@ -26,7 +26,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Formation / transformation commerciale : 5
 - Outils / méthodes / ressources : 2
 - IA / tendances / prospective : 3
-- Management / pilotage dirigeant : 2
+- Management / pilotage dirigeant : 3
 - Techniques de vente terrain : 5
 - Structure / système commercial : 1
 - Psychologie / comportements commerciaux : 5
@@ -39,7 +39,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Terrain : 2
 - Transformation : 1
 - Prospective : 1
-- Dirigeant / arbitrage : 1
+- Dirigeant / arbitrage : 2
 - IA utile : 2
 - Ressource / outil : 0
 - Actualité interprétée : 0
@@ -60,6 +60,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-27 | publié | Le 28 du mois, vos ventes ne se sauvent plus. Elles se relisent. | Fin de mois commerciale vécue comme un sauvetage alors qu’elle révèle surtout des affaires mal lues, mal qualifiées ou maintenues en vie trop longtemps | Dirigeant / arbitrage | Management / pilotage dirigeant | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à relire les fins de mois, à nettoyer le pipe plus tôt et à relever l’exigence des arbitrages commerciaux de dernière semaine | Fondamentaux / saisonnalité / historique | Oui — très bon point d’appui de fin de mois, avec un angle dirigeant concret encore peu exploité dans la séquence récente | https://www.laurentserre.com/blog/le-28-du-mois-vos-ventes-ne-se-sauvent-plus-elles-se-relisent | à préparer | non requis | Post LinkedIn d’opinion sur les fins de mois qu’on tente de sauver, carrousel sauver vs relire, email court sur les trois arbitrages utiles du 28 | Génération autonome du jour sans dossier input ; nouvel article rédigé et publié ; faute de génération `gpt-image-2` disponible ce matin, réutilisation volontaire d’un visuel éditorial déjà présent et pertinent ; index blog et dashboard mis à jour, publication vérifiée en réel |
 | 2026-04-26 | publié | Une réunion commerciale sans décision apprend surtout à commenter les chiffres | Réunion commerciale hebdomadaire qui commente les affaires sans trancher les vraies priorités ni nettoyer les ventes fragiles | Méthode | Outils / méthodes / ressources | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à rendre les réunions commerciales plus exigeantes, plus décisionnelles et moins confortables pour les affaires faibles | Fondamentaux / historique | Oui — bon retour sur un rituel de pilotage concret à la veille de fin de mois, avec un angle méthode peu exploité dans la séquence récente | https://www.laurentserre.com/blog/reunion-commerciale-sans-decision-commenter-les-chiffres | à préparer | non requis | Post LinkedIn d’opinion sur les réunions qui commentent sans trancher, carrousel commentaire vs décision, email court sur les trois arbitrages qui doivent sortir de chaque réunion | Génération autonome du jour sans dossier input ; nouvel article rédigé, visuel hero généré pour publication, article publié et index blog mis à jour avec vérification live |
 | 2026-04-25 | publié | Manager commercial : à force de sauver les rendez-vous, vous affaiblissez l’équipe | Manager commercial qui sauve trop souvent les rendez-vous et installe une dépendance de l’équipe au lieu de la faire progresser | Erreur fréquente | Formation / transformation commerciale | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à relire le rôle réel du manager en rendez-vous, à réduire la dépendance aux sauvetages et à faire progresser le coaching avant/après les scènes de vente | Fondamentaux / historique | Oui — bon déplacement après la séquence motivation / excuses / prix, avec un angle concret de management de proximité et de transformation d’équipe sans revenir au pipeline | https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-reprend-trop-souvent-les-rendez-vous-a-la-place-de-lequipe | à préparer | non requis | Post LinkedIn d’opinion sur le manager-béquille, carrousel sauver un deal vs construire une équipe, email court sur les rendez-vous confisqués par le management | Génération autonome du jour sans dossier input ; nouvel article rédigé, visuel hero créé en `gpt-image-2`, publication complète réalisée ; texte repris le 2026-04-25 avec la grille anti-calque et remis à jour sur le site |
 | 2026-04-24 | publié | Objection prix : même des commerciaux expérimentés se font encore bananer | Objection prix lue trop vite comme un problème de tarif au lieu d’un signal de vente mal construite | Erreur fréquente | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à mieux relire les objections prix, à éviter la négociation prématurée et à rouvrir le diagnostic commercial réel | Signal interne / input du jour | Oui — suite directe et plus ciblée à la séquence objections, décision, concurrent, forecast et bonnes excuses, avec validation explicite dans le dossier input du jour | https://www.laurentserre.com/blog/pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix | à préparer | non requis (.publish-ok) | Post LinkedIn d’opinion sur le prix comme faux diagnostic, carrousel prix vs vrai problème, email court sur les ventes qu’on négocie trop tôt | Publication directe depuis le fichier validé `.publish-ok.md`, sans repasse éditoriale ; illustration du dossier du jour réutilisée ; texte repris le 2026-04-25 avec la grille anti-calque et remis à jour sur le site |
