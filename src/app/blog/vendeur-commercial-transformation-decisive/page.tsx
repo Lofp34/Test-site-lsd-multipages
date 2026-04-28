@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: 'Comprendre la différence fondamentale entre un vendeur et un commercial, et comment opérer cette transformation décisive dans votre équipe.',
   keywords: 'vendeur vs commercial, transformation commerciale, management équipe vente, développement commercial, PME',
   alternates: {
-    canonical: 'https://laurentserre.com/blog/vendeur-commercial-transformation-decisive',
+    canonical: 'https://www.laurentserre.com/blog/vendeur-commercial-transformation-decisive',
   },
   openGraph: {
     title: 'De vendeur à commercial : la transformation qui change tout',
     description: 'Comprendre la différence fondamentale entre un vendeur et un commercial, et comment opérer cette transformation décisive.',
-    url: 'https://laurentserre.com/blog/vendeur-commercial-transformation-decisive',
+    url: 'https://www.laurentserre.com/blog/vendeur-commercial-transformation-decisive',
     type: 'article',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/equipedeface.jpg',
+        url: 'https://www.laurentserre.com/equipedeface.jpg',
         width: 1200,
         height: 630,
         alt: 'Transformation vendeur commercial - équipe commerciale professionnelle',

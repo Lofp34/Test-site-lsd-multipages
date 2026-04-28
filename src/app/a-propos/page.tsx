@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'À propos de Laurent Serre – Expert Commercial',
   description: "Découvrez le parcours de Laurent Serre, expert en développement commercial avec 20 ans d'expérience terrain. Méthodes, valeurs, approche.",
   alternates: {
-    canonical: 'https://laurentserre.com/a-propos',
+    canonical: 'https://www.laurentserre.com/a-propos',
   },
 };
 

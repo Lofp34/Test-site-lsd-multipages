@@ -16,8 +16,8 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
           "name": "Laurent Serre",
           "jobTitle": "Expert Développement Commercial PME",
           "description": "Expert en développement commercial spécialisé PME avec 20 ans d'expérience. Formation commerciale, coaching et transformation digitale.",
-          "url": "https://laurentserre.com",
-          "image": "https://laurentserre.com/images/laurent-serre-expert-commercial.jpg",
+          "url": "https://www.laurentserre.com",
+          "image": "https://www.laurentserre.com/images/laurent-serre-expert-commercial.jpg",
           "email": "contact@laurentserre.com",
           "telephone": "+33 6 XX XX XX XX",
           "address": {
@@ -58,9 +58,9 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
           "@type": "Organization",
           "name": "Laurent Serre Développement",
           "description": "Cabinet de conseil spécialisé en développement commercial pour PME. Formation, coaching et transformation commerciale.",
-          "url": "https://laurentserre.com",
-          "logo": "https://laurentserre.com/images/logo-laurent-serre.png",
-          "image": "https://laurentserre.com/images/laurent-serre-expert-commercial.jpg",
+          "url": "https://www.laurentserre.com",
+          "logo": "https://www.laurentserre.com/images/logo-laurent-serre.png",
+          "image": "https://www.laurentserre.com/images/laurent-serre-expert-commercial.jpg",
           "email": "contact@laurentserre.com",
           "telephone": "+33 6 XX XX XX XX",
           "address": {
@@ -138,7 +138,7 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
           "provider": {
             "@type": "Organization",
             "name": "Laurent Serre Développement",
-            "url": "https://laurentserre.com"
+            "url": "https://www.laurentserre.com"
           },
           "serviceType": "Conseil en développement commercial",
           "areaServed": [
@@ -204,7 +204,7 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
           "provider": {
             "@type": "Organization",
             "name": "Laurent Serre Développement",
-            "url": "https://laurentserre.com"
+            "url": "https://www.laurentserre.com"
           },
           "instructor": {
             "@type": "Person",
@@ -246,7 +246,7 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
             "@type": "ListItem",
             "position": index + 1,
             "name": item.name,
-            "item": `https://laurentserre.com${item.url}`
+            "item": `https://www.laurentserre.com${item.url}`
           }))
         };
 

@@ -53,6 +53,20 @@ function DiagnosticPage() {
       });
 
       if (response.ok) {
+        if (typeof window !== 'undefined' && window.gtag) {
+          window.gtag('event', 'diagnostic_form_submit', {
+            event_category: 'lead_generation',
+            event_label: 'Diagnostic commercial gratuit',
+            form_id: hubspotData.formId,
+          });
+
+          window.gtag('event', 'contact_form_submitted', {
+            event_category: 'lead_generation',
+            event_label: 'Diagnostic commercial gratuit',
+            form_id: hubspotData.formId,
+          });
+        }
+
         setSubmitStatus('success');
         // Réinitialiser le formulaire
         setFormData({

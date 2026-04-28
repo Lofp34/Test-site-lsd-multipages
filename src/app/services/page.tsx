@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   keywords: 'services développement commercial PME, formation commerciale, coaching commercial, transformation commerciale, consultant commercial',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurentserre.com/services',
+    canonical: 'https://www.laurentserre.com/services',
   },
   openGraph: {
     title: 'Services Développement Commercial PME | Laurent Serre',
     description: 'Tous nos services spécialisés en développement commercial PME pour transformer vos performances.',
-    url: 'https://laurentserre.com/services',
+    url: 'https://www.laurentserre.com/services',
     type: 'website',
     locale: 'fr_FR',
     siteName: 'Laurent Serre Développement',

@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: 'Analyse des raisons pour lesquelles la plupart des formations commerciales n\'atteignent pas leurs objectifs et notre approche différente qui fonctionne.',
   keywords: 'formation commerciale, bootcamp commercial, échec formation, formation équipe vente, PME',
   alternates: {
-    canonical: 'https://laurentserre.com/blog/bootcamp-commercial-pourquoi-formations-echouent',
+    canonical: 'https://www.laurentserre.com/blog/bootcamp-commercial-pourquoi-formations-echouent',
   },
   openGraph: {
     title: 'Bootcamp commercial : pourquoi 80% des formations échouent',
     description: 'Analyse des raisons pour lesquelles la plupart des formations commerciales n\'atteignent pas leurs objectifs.',
-    url: 'https://laurentserre.com/blog/bootcamp-commercial-pourquoi-formations-echouent',
+    url: 'https://www.laurentserre.com/blog/bootcamp-commercial-pourquoi-formations-echouent',
     type: 'article',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/photo-formation.png',
+        url: 'https://www.laurentserre.com/photo-formation.png',
         width: 1200,
         height: 630,
         alt: 'Formation commerciale bootcamp - session d\'accompagnement terrain',

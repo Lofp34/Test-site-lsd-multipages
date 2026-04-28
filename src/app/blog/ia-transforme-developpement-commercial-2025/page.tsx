@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: 'Découvrez comment l\'intelligence artificielle révolutionne la prospection, le scoring et le suivi client. Guide complet pour intégrer l\'IA efficacement.',
   keywords: 'IA développement commercial, intelligence artificielle vente, prospection IA, automation commerciale, CRM IA',
   alternates: {
-    canonical: 'https://laurentserre.com/blog/ia-transforme-developpement-commercial-2025',
+    canonical: 'https://www.laurentserre.com/blog/ia-transforme-developpement-commercial-2025',
   },
   openGraph: {
     title: 'Comment l\'IA transforme le développement commercial en 2025',
     description: 'Découvrez comment l\'intelligence artificielle révolutionne la prospection, le scoring et le suivi client.',
-    url: 'https://laurentserre.com/blog/ia-transforme-developpement-commercial-2025',
+    url: 'https://www.laurentserre.com/blog/ia-transforme-developpement-commercial-2025',
     type: 'article',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/tableau-de-bord.jpeg',
+        url: 'https://www.laurentserre.com/tableau-de-bord.jpeg',
         width: 1200,
         height: 630,
         alt: 'Intelligence artificielle et développement commercial - tableau de bord',

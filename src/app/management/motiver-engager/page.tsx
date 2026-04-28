@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Découvrez des stratégies concrètes pour créer un environnement de travail qui stimule la motivation intrinsèque, l'engagement et l'esprit d'équipe de vos commerciaux.",
   keywords: 'motiver équipe commerciale, engager commerciaux, motivation manager, leadership commercial, esprit d\'équipe vente',
   alternates: {
-    canonical: 'https://laurentserre.com/management/motiver-engager',
+    canonical: 'https://www.laurentserre.com/management/motiver-engager',
   },
 };
 

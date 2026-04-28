@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: 'article',
   },
   alternates: {
-    canonical: 'https://laurentserre.com/ressources/meilleurs-livres/enterprise-account/selling-to-big-companies'
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/enterprise-account/selling-to-big-companies'
   },
   other: {
     'article:author': 'Jill Konrath',

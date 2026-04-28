@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'Maîtrisez l\'art du closing et les techniques avancées pour conclure plus d\'affaires avec confiance et efficacité.',
   keywords: 'closing, techniques de vente, négociation, conclure une vente, commercial, closing commercial',
   alternates: {
-    canonical: 'https://laurentserre.com/ressources/guide-closing',
+    canonical: 'https://www.laurentserre.com/ressources/guide-closing',
   },
 };
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Contact – Laurent Serre Développement',
   description: 'Contactez Laurent Serre pour discuter de vos besoins en développement commercial. Prise de contact rapide et personnalisée.',
   alternates: {
-    canonical: 'https://laurentserre.com/contact',
+    canonical: 'https://www.laurentserre.com/contact',
   },
 };
 

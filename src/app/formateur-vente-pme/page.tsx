@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   keywords: 'formateur vente PME, formation commerciale PME, formateur commercial PME, formation vente sur mesure, bootcamp commercial PME',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurentserre.com/formateur-vente-pme',
+    canonical: 'https://www.laurentserre.com/formateur-vente-pme',
   },
   openGraph: {
     title: 'Formateur Vente PME | Laurent Serre - Formations Commerciales Expertes',
     description: 'Formateur vente spécialisé PME. Formations commerciales sur-mesure adaptées aux spécificités des PME.',
-    url: 'https://laurentserre.com/formateur-vente-pme',
+    url: 'https://www.laurentserre.com/formateur-vente-pme',
     type: 'website',
     locale: 'fr_FR',
     siteName: 'Laurent Serre Développement',

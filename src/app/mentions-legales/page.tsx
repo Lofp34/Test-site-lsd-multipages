@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Mentions Légales – Laurent Serre Développement",
   description: "Informations légales sur Laurent Serre Développement : éditeur, hébergeur, propriété intellectuelle et données personnelles.",
   alternates: {
-    canonical: "https://laurentserre.com/mentions-legales"
+    canonical: "https://www.laurentserre.com/mentions-legales"
   },
   robots: {
     index: true,

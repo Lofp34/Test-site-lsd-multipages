@@ -48,7 +48,7 @@ export const resourceRequestConfig = (): ResourceRequestConfig => {
 };
 
 // Base URL for the application
-export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://laurentserre.com';
+export const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.laurentserre.com';
 
 // Validate required environment variables
 export function validateConfig(): void {

@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: 'Découvrez les 7 erreurs qui sabotent vos efforts de prospection B2B et les solutions concrètes pour les éviter. Guide expert pour PME.',
   keywords: 'erreurs prospection B2B, démarchage commercial, techniques prospection, PME, vente B2B',
   alternates: {
-    canonical: 'https://laurentserre.com/blog/erreurs-fatales-prospection-b2b',
+    canonical: 'https://www.laurentserre.com/blog/erreurs-fatales-prospection-b2b',
   },
   openGraph: {
     title: 'Les erreurs fatales dans la prospection B2B (et comment les éviter)',
     description: 'Découvrez les 7 erreurs qui sabotent vos efforts de prospection B2B et les solutions concrètes pour les éviter.',
-    url: 'https://laurentserre.com/blog/erreurs-fatales-prospection-b2b',
+    url: 'https://www.laurentserre.com/blog/erreurs-fatales-prospection-b2b',
     type: 'article',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/erreurs-fatales.png',
+        url: 'https://www.laurentserre.com/erreurs-fatales.png',
         width: 1200,
         height: 630,
         alt: 'Erreurs fatales dans la prospection B2B - Guide expert',

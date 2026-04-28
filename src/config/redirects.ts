@@ -20,6 +20,43 @@ export interface RedirectAnalyticsData {
 
 // Redirections configurées pour les liens cassés identifiés
 export const linkRedirects: RedirectRule[] = [
+  // Nettoyage SEO 2026-04-28 : anciennes URLs présentes dans les sitemaps,
+  // désormais redirigées vers les ressources actives les plus proches.
+  {
+    source: "/ressources/guide-management-equipe",
+    destination: "/management-equipe-commerciale",
+    permanent: true
+  },
+  {
+    source: "/ressources/outil-tableau-bord-commercial",
+    destination: "/management/piloter-performance",
+    permanent: true
+  },
+  {
+    source: "/ressources/scripts-prospection-telephonique",
+    destination: "/ressources/impact-aida-script-prospection-pme",
+    permanent: true
+  },
+  {
+    source: "/ressources/methode-closing-avance",
+    destination: "/ressources/guide-closing",
+    permanent: true
+  },
+  {
+    source: "/ressources/strategie-negociation-b2b",
+    destination: "/ressources/techniques-de-negociation",
+    permanent: true
+  },
+  {
+    source: "/ressources/outil-roi-commercial",
+    destination: "/diagnostic",
+    permanent: true
+  },
+  {
+    source: "/ressources/playbook-qualification-bant",
+    destination: "/ressources/guide-prospection",
+    permanent: true
+  },
   {
     source: "/ressources/scripts-prospection",
     destination: "/ressources/impact-aida-script-prospection-pme",

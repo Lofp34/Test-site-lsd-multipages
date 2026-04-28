@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Passez du rôle de manager à celui de coach. Découvrez des méthodes pour faire monter en compétence chaque membre de l'équipe par un suivi individualisé et pertinent.",
   keywords: 'coaching commercial, former équipe de vente, coaching manager, faire progresser commerciaux, management coaching',
   alternates: {
-    canonical: 'https://laurentserre.com/management/former-coacher',
+    canonical: 'https://www.laurentserre.com/management/former-coacher',
   },
 };
 

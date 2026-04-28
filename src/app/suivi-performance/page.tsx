@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   keywords: 'suivi performance commerciale, KPI commercial PME, pilotage commercial, optimisation performance vente, tableaux de bord commercial',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurentserre.com/suivi-performance',
+    canonical: 'https://www.laurentserre.com/suivi-performance',
   },
   openGraph: {
     title: 'Suivi & Optimisation Performance | Laurent Serre - KPI Commerciaux PME',
     description: 'Accompagnement suivi et optimisation performance commerciale PME. Pilotage KPI et amélioration continue.',
-    url: 'https://laurentserre.com/suivi-performance',
+    url: 'https://www.laurentserre.com/suivi-performance',
     type: 'website',
     locale: 'fr_FR',
     siteName: 'Laurent Serre Développement',

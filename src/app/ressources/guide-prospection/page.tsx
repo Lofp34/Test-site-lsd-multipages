@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'Découvrez les techniques et stratégies avancées de prospection commerciale pour générer des leads qualifiés et développer votre chiffre d\'affaires.',
   keywords: 'prospection commerciale, génération de leads, développement commercial, techniques de vente, stratégie commerciale',
   alternates: {
-    canonical: 'https://laurentserre.com/ressources/guide-prospection',
+    canonical: 'https://www.laurentserre.com/ressources/guide-prospection',
   },
 };
 

@@ -243,9 +243,9 @@ Ressource demandée: ${resourceUrl}
 Votre demande a été transmise à Laurent Serre et sera traitée dans les plus brefs délais.
 
 En attendant, découvrez nos ressources disponibles:
-- Formations commerciales: https://laurentserre.com/formation-commerciale-pme
-- Ressources gratuites: https://laurentserre.com/ressources
-- Bootcamp intensif: https://laurentserre.com/bootcamp-commercial-intensif
+- Formations commerciales: https://www.laurentserre.com/formation-commerciale-pme
+- Ressources gratuites: https://www.laurentserre.com/ressources
+- Bootcamp intensif: https://www.laurentserre.com/bootcamp-commercial-intensif
 
 Vous serez automatiquement notifié(e) dès que la ressource sera disponible.
 

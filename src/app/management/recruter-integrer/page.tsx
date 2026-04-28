@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Apprenez à recruter les bons profils commerciaux et à construire un processus d'onboarding (intégration) qui garantit leur succès et leur performance rapide.",
   keywords: 'recrutement commercial, onboarding commercial, intégration commercial, recruter vendeur, manager commercial',
   alternates: {
-    canonical: 'https://laurentserre.com/management/recruter-integrer',
+    canonical: 'https://www.laurentserre.com/management/recruter-integrer',
   },
 };
 

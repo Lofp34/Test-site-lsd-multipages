@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   keywords: 'transformation commerciale PME, accompagnement commercial PME, restructuration commerciale, optimisation processus vente, transformation équipe commerciale',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurentserre.com/transformation-commerciale',
+    canonical: 'https://www.laurentserre.com/transformation-commerciale',
   },
   openGraph: {
     title: 'Transformation Commerciale PME | Laurent Serre - Accompagnement Expert',
     description: 'Transformez votre organisation commerciale PME avec un expert. Accompagnement complet et résultats mesurables.',
-    url: 'https://laurentserre.com/transformation-commerciale',
+    url: 'https://www.laurentserre.com/transformation-commerciale',
     type: 'website',
     locale: 'fr_FR',
     siteName: 'Laurent Serre Développement',

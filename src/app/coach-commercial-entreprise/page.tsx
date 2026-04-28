@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   keywords: 'coach commercial entreprise, coaching commercial PME, coach commercial individuel, coaching équipe commerciale, développement commercial coaching',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurentserre.com/coach-commercial-entreprise',
+    canonical: 'https://www.laurentserre.com/coach-commercial-entreprise',
   },
   openGraph: {
     title: 'Coach Commercial Entreprise | Laurent Serre - Coaching Personnalisé PME',
     description: 'Coach commercial entreprise spécialisé PME. Coaching personnalisé pour développer vos performances commerciales.',
-    url: 'https://laurentserre.com/coach-commercial-entreprise',
+    url: 'https://www.laurentserre.com/coach-commercial-entreprise',
     type: 'website',
     locale: 'fr_FR',
     siteName: 'Laurent Serre Développement',

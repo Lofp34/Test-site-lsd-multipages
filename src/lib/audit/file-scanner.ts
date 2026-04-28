@@ -433,7 +433,7 @@ export class FileScanner {
     if (patternType === 'internal') {
       if (url.startsWith('http://') || url.startsWith('https://')) {
         // Check if it's our domain
-        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://laurentserre.com';
+        const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.laurentserre.com';
         if (url.startsWith(baseUrl)) {
           return 'internal';
         } else {
@@ -445,7 +445,7 @@ export class FileScanner {
 
     // For mixed type, determine based on URL
     if (url.startsWith('http://') || url.startsWith('https://')) {
-      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://laurentserre.com';
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.laurentserre.com';
       return url.startsWith(baseUrl) ? 'internal' : 'external';
     }
 

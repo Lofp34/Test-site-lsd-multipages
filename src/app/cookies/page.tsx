@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Politique de Cookies – Laurent Serre Développement",
   description: "Informations sur l'utilisation des cookies sur laurentserre.com : types de cookies, gestion des préférences et paramétrage.",
   alternates: {
-    canonical: "https://laurentserre.com/cookies"
+    canonical: "https://www.laurentserre.com/cookies"
   },
   robots: {
     index: true,

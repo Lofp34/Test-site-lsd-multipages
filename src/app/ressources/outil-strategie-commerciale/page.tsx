@@ -8,18 +8,18 @@ export const metadata: Metadata = {
   keywords: 'stratégie commerciale, plan action commercial, objectifs commerciaux, tactiques de vente, développement commercial PME',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurentserre.com/ressources/outil-strategie-commerciale',
+    canonical: 'https://www.laurentserre.com/ressources/outil-strategie-commerciale',
   },
   openGraph: {
     title: 'Outil Stratégie Commerciale sur 1 an | Laurent Serre Développement',
     description: 'Construisez votre plan d\'action commercial sur 1 an avec notre outil interactif. Définissez objectifs, stratégies et tactiques pour réussir.',
-    url: 'https://laurentserre.com/ressources/outil-strategie-commerciale',
+    url: 'https://www.laurentserre.com/ressources/outil-strategie-commerciale',
     type: 'article',
     locale: 'fr_FR',
     siteName: 'Laurent Serre Développement',
     images: [
       {
-        url: 'https://laurentserre.com/laurent.jpg',
+        url: 'https://www.laurentserre.com/laurent.jpg',
         width: 1200,
         height: 630,
         alt: 'Outil de stratégie commerciale Laurent Serre',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Outil Stratégie Commerciale sur 1 an | Laurent Serre',
     description: 'Construisez votre plan d\'action commercial sur 1 an avec notre outil interactif.',
-    images: ['https://laurentserre.com/laurent.jpg'],
+    images: ['https://www.laurentserre.com/laurent.jpg'],
     creator: '@laurentserre',
   },
   robots: {

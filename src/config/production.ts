@@ -101,7 +101,7 @@ export const getProductionConfig = (): ProductionConfig => {
       trustedOrigins: [
         process.env.NEXT_PUBLIC_BASE_URL!,
         'https://laurent-serre-developpement.fr',
-        'https://laurentserre.com',
+        'https://www.laurentserre.com',
         ...(isDevelopment ? ['http://localhost:3000', 'http://localhost:3001'] : [])
       ],
     },

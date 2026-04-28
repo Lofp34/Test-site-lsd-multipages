@@ -8,18 +8,18 @@ export const metadata: Metadata = {
   keywords: 'préparation rdv commercial, checklist entretien commercial, préparation rendez-vous client, outils commercial, techniques de vente',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurentserre.com/ressources/outil-preparation-rdv',
+    canonical: 'https://www.laurentserre.com/ressources/outil-preparation-rdv',
   },
   openGraph: {
     title: 'Outil Préparation RDV Commercial | Laurent Serre Développement',
     description: 'Préparez vos rendez-vous commerciaux comme un pro avec notre checklist complète. Ne laissez plus rien au hasard avant un entretien clé.',
-    url: 'https://laurentserre.com/ressources/outil-preparation-rdv',
+    url: 'https://www.laurentserre.com/ressources/outil-preparation-rdv',
     type: 'article',
     locale: 'fr_FR',
     siteName: 'Laurent Serre Développement',
     images: [
       {
-        url: 'https://laurentserre.com/laurent.jpg',
+        url: 'https://www.laurentserre.com/laurent.jpg',
         width: 1200,
         height: 630,
         alt: 'Outil de préparation RDV commercial Laurent Serre',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Outil Préparation RDV Commercial | Laurent Serre Développement',
     description: 'Préparez vos rendez-vous commerciaux comme un pro avec notre checklist complète.',
-    images: ['https://laurentserre.com/laurent.jpg'],
+    images: ['https://www.laurentserre.com/laurent.jpg'],
     creator: '@laurentserre',
   },
   robots: {

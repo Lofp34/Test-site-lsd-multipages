@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: 'Découvrez les 5 signaux d\'alerte qui indiquent qu\'il est temps de passer à l\'étape supérieure dans l\'organisation de votre force de vente. Conseils d\'expert.',
   keywords: 'structurer équipe commerciale, organisation force de vente, management commercial, PME, développement commercial',
   alternates: {
-    canonical: 'https://laurentserre.com/blog/5-signes-structurer-equipe-commerciale',
+    canonical: 'https://www.laurentserre.com/blog/5-signes-structurer-equipe-commerciale',
   },
   openGraph: {
     title: '5 signes qu\'il est temps de structurer votre équipe commerciale',
     description: 'Découvrez les 5 signaux d\'alerte qui indiquent qu\'il est temps de passer à l\'étape supérieure dans l\'organisation de votre force de vente.',
-    url: 'https://laurentserre.com/blog/5-signes-structurer-equipe-commerciale',
+    url: 'https://www.laurentserre.com/blog/5-signes-structurer-equipe-commerciale',
     type: 'article',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/equipe_bureau.jpg',
+        url: 'https://www.laurentserre.com/equipe_bureau.jpg',
         width: 1200,
         height: 630,
         alt: 'Équipe commerciale au bureau - structuration commerciale',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '5 signes qu\'il est temps de structurer votre équipe commerciale',
     description: 'Découvrez les 5 signaux d\'alerte qui indiquent qu\'il est temps de passer à l\'étape supérieure dans l\'organisation de votre force de vente.',
-    images: ['https://laurentserre.com/equipe_bureau.jpg'],
+    images: ['https://www.laurentserre.com/equipe_bureau.jpg'],
   },
 };
 

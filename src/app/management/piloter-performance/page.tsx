@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Apprenez à définir des KPIs pertinents et à utiliser la data pour prendre des décisions éclairées. Guide complet pour un pilotage de la performance commerciale efficace.",
   keywords: 'piloter performance commerciale, KPI vente, indicateur performance commercial, management par la data, coaching commercial',
   alternates: {
-    canonical: 'https://laurentserre.com/management/piloter-performance',
+    canonical: 'https://www.laurentserre.com/management/piloter-performance',
   },
 };
 

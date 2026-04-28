@@ -8,18 +8,18 @@ export const metadata: Metadata = {
   keywords: 'gestion grands comptes, key account manager, comptes stratégiques, développement grands comptes, KAM, commercial grands comptes',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurentserre.com/ressources/kit-gestion-grands-comptes',
+    canonical: 'https://www.laurentserre.com/ressources/kit-gestion-grands-comptes',
   },
   openGraph: {
     title: 'Kit Gestion Grands Comptes | Laurent Serre Développement',
     description: 'Méthodes et outils pour développer vos comptes stratégiques. Kit complet pour Key Account Managers.',
-    url: 'https://laurentserre.com/ressources/kit-gestion-grands-comptes',
+    url: 'https://www.laurentserre.com/ressources/kit-gestion-grands-comptes',
     type: 'article',
     locale: 'fr_FR',
     siteName: 'Laurent Serre Développement',
     images: [
       {
-        url: 'https://laurentserre.com/laurent.jpg',
+        url: 'https://www.laurentserre.com/laurent.jpg',
         width: 1200,
         height: 630,
         alt: 'Kit gestion grands comptes Laurent Serre',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Kit Gestion Grands Comptes | Laurent Serre',
     description: 'Méthodes et outils pour développer vos comptes stratégiques.',
-    images: ['https://laurentserre.com/laurent.jpg'],
+    images: ['https://www.laurentserre.com/laurent.jpg'],
     creator: '@laurentserre',
   },
   robots: {

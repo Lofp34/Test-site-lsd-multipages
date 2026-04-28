@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: 'Augmentez votre taux de closing en 90 jours sans forcer : MAP, trial close, résumé décisionnel, A/B close, business case, POC cadré, déclosing propre. Bonus : 5 scripts prêts à copier.',
   keywords: 'closing B2B, techniques de closing, MAP, trial close, business case, POC, déclosing, scripts closing, vente B2B',
   alternates: {
-    canonical: 'https://laurentserre.com/blog/closing-b2b-7-techniques',
+    canonical: 'https://www.laurentserre.com/blog/closing-b2b-7-techniques',
   },
   openGraph: {
     title: 'Closing B2B : 7 techniques qui marchent (+ scripts)',
     description: 'Augmentez votre taux de closing en 90 jours avec des méthodes terrain et éthiques, et 5 scripts copiables.',
-    url: 'https://laurentserre.com/blog/closing-b2b-7-techniques',
+    url: 'https://www.laurentserre.com/blog/closing-b2b-7-techniques',
     type: 'article',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/images/closing_post.png',
+        url: 'https://www.laurentserre.com/images/closing_post.png',
         width: 1200,
         height: 630,
         alt: 'Closing B2B : 7 techniques qui marchent',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Closing B2B : 7 techniques qui marchent (+ scripts)',
     description: 'Augmentez votre taux de closing en 90 jours avec des méthodes terrain et éthiques, et 5 scripts copiables.',
-    images: ['https://laurentserre.com/images/closing_post.png'],
+    images: ['https://www.laurentserre.com/images/closing_post.png'],
   },
 };
 

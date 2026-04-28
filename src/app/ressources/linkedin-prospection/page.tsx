@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   keywords: 'LinkedIn PME, prospection LinkedIn, réseaux sociaux B2B, social selling, prospection digitale, LinkedIn Sales Navigator, prospection commerciale PME, génération leads B2B',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurentserre.com/ressources/linkedin-prospection',
+    canonical: 'https://www.laurentserre.com/ressources/linkedin-prospection',
   },
   openGraph: {
     title: 'LinkedIn et Réseaux Sociaux : Guide Complet Prospection Digitale PME | Laurent Serre',
     description: 'Guide complet LinkedIn et réseaux sociaux pour PME. Stratégies de prospection, templates de messages et techniques éprouvées pour générer des leads qualifiés.',
-    url: 'https://laurentserre.com/ressources/linkedin-prospection',
+    url: 'https://www.laurentserre.com/ressources/linkedin-prospection',
     type: 'article',
     locale: 'fr_FR',
     siteName: 'Laurent Serre Développement',

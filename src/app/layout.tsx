@@ -50,12 +50,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Laurent Serre Développement - Expert Commercial & Formation",
     description: "De l'effort commercial au levier stratégique. Accompagnement et formation pour équipes commerciales.",
-    url: "https://laurentserre.com",
+    url: "https://www.laurentserre.com",
     type: "website",
     locale: "fr_FR",
     images: [
       {
-        url: "https://laurentserre.com/laurent.jpg",
+        url: "https://www.laurentserre.com/laurent.jpg",
         width: 1200,
         height: 630,
         alt: "Laurent Serre - Expert en développement commercial",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Laurent Serre Développement - Expert Commercial & Formation",
     description: "De l'effort commercial au levier stratégique. Accompagnement et formation pour équipes commerciales.",
-    images: ["https://laurentserre.com/laurent.jpg"],
+    images: ["https://www.laurentserre.com/laurent.jpg"],
   },
   robots: {
     index: true,
@@ -94,9 +94,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Laurent Serre Développement",
-              "url": "https://laurentserre.com",
-              "logo": "https://laurentserre.com/laurent.jpg",
-              "image": "https://laurentserre.com/laurent.jpg",
+              "url": "https://www.laurentserre.com",
+              "logo": "https://www.laurentserre.com/laurent.jpg",
+              "image": "https://www.laurentserre.com/laurent.jpg",
               "description": "Expert en développement commercial et formation pour PME. Accompagnement terrain, structuration des équipes commerciales, méthodes éprouvées avec 20 ans d'expérience.",
               "foundingDate": "2020",
               "areaServed": {
@@ -169,8 +169,8 @@ export default function RootLayout({
                   "addressCountry": "FR"
                 }
               },
-              "url": "https://laurentserre.com",
-              "image": "https://laurentserre.com/laurent.jpg",
+              "url": "https://www.laurentserre.com",
+              "image": "https://www.laurentserre.com/laurent.jpg",
               "description": "Expert en développement commercial avec 20 ans d'expérience terrain. Spécialisé dans la structuration des équipes commerciales, la formation à la vente et l'accompagnement des PME.",
               "knowsAbout": [
                 "Formation commerciale",

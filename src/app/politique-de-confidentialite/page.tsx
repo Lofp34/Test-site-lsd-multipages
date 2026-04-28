@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: "Politique de Confidentialité – Laurent Serre Développement",
   description: "Découvrez comment Laurent Serre Développement collecte, utilise et protège vos données personnelles conformément au RGPD.",
   alternates: {
-    canonical: "https://laurentserre.com/politique-de-confidentialite"
+    canonical: "https://www.laurentserre.com/politique-de-confidentialite"
   },
   robots: {
     index: true,

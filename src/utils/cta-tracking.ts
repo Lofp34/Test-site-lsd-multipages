@@ -42,6 +42,46 @@ export function trackMicroConversion(type: string, ctaId: string, section: strin
 // Additional exports for GoogleAnalytics component
 export function setupCustomEvents() {
   console.log('Custom events setup');
+
+  if (typeof window === 'undefined' || !(window as any).gtag) {
+    return;
+  }
+
+  document.addEventListener('click', (event) => {
+    const target = event.target as HTMLElement | null;
+    const link = target?.closest('a');
+
+    if (!link) {
+      return;
+    }
+
+    const href = link.getAttribute('href') || '';
+    const linkText = link.textContent?.trim().slice(0, 120) || '';
+
+    if (href.startsWith('tel:')) {
+      (window as any).gtag('event', 'phone_click', {
+        event_category: 'lead_generation',
+        event_label: linkText || href,
+        link_url: href,
+      });
+    }
+
+    if (href.startsWith('mailto:')) {
+      (window as any).gtag('event', 'email_click', {
+        event_category: 'lead_generation',
+        event_label: linkText || href,
+        link_url: href,
+      });
+    }
+
+    if (href === '/contact' || href === '/diagnostic' || href.includes('/contact') || href.includes('/diagnostic')) {
+      (window as any).gtag('event', 'cta_clicked', {
+        event_category: 'lead_generation',
+        event_label: linkText || href,
+        link_url: href,
+      });
+    }
+  });
 }
 
 export function setupConversionGoals() {

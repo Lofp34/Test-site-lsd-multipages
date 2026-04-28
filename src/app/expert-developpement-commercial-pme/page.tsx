@@ -11,18 +11,18 @@ export const metadata: Metadata = {
   keywords: 'expert développement commercial PME, consultant commercial PME, formation commerciale PME, accompagnement commercial PME, structuration équipe commerciale, Laurent Serre expert commercial',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurentserre.com/expert-developpement-commercial-pme',
+    canonical: 'https://www.laurentserre.com/expert-developpement-commercial-pme',
   },
   openGraph: {
     title: 'Expert Développement Commercial PME | Laurent Serre - 20 ans d\'Expérience Terrain',
     description: 'Expert développement commercial PME depuis 20 ans. Formation, accompagnement et transformation des équipes commerciales avec résultats mesurables.',
-    url: 'https://laurentserre.com/expert-developpement-commercial-pme',
+    url: 'https://www.laurentserre.com/expert-developpement-commercial-pme',
     type: 'website',
     locale: 'fr_FR',
     siteName: 'Laurent Serre Développement',
     images: [
       {
-        url: 'https://laurentserre.com/laurent.jpg',
+        url: 'https://www.laurentserre.com/laurent.jpg',
         width: 1200,
         height: 630,
         alt: 'Laurent Serre - Expert Développement Commercial PME',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Expert Développement Commercial PME | Laurent Serre',
     description: 'Expert développement commercial PME depuis 20 ans. Méthodes terrain éprouvées, résultats mesurables.',
-    images: ['https://laurentserre.com/laurent.jpg'],
+    images: ['https://www.laurentserre.com/laurent.jpg'],
     creator: '@laurentserre',
   },
   robots: {

@@ -9,17 +9,17 @@ export const metadata: Metadata = {
   description: 'Découvrez nos articles d\'expert sur le développement commercial, la formation des équipes de vente et les stratégies B2B. Conseils pratiques pour PME.',
   keywords: 'blog développement commercial, formation commerciale, stratégies vente B2B, conseils PME, expert commercial',
   alternates: {
-    canonical: 'https://laurentserre.com/blog',
+    canonical: 'https://www.laurentserre.com/blog',
   },
   openGraph: {
     title: 'Blog Développement Commercial - Conseils d\'Expert',
     description: 'Découvrez nos articles d\'expert sur le développement commercial, la formation des équipes de vente et les stratégies B2B.',
-    url: 'https://laurentserre.com/blog',
+    url: 'https://www.laurentserre.com/blog',
     type: 'website',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/erreurs-fatales.png',
+        url: 'https://www.laurentserre.com/erreurs-fatales.png',
         width: 1200,
         height: 630,
         alt: 'Blog développement commercial Laurent Serre',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Blog Développement Commercial - Conseils d\'Expert',
     description: 'Découvrez nos articles d\'expert sur le développement commercial, la formation des équipes de vente et les stratégies B2B.',
-    images: ['https://laurentserre.com/erreurs-fatales.png'],
+    images: ['https://www.laurentserre.com/erreurs-fatales.png'],
   },
 };
 

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: 'Cas clients & Témoignages – Laurent Serre',
   description: 'Découvrez les résultats concrets obtenus avec nos clients : amélioration des performances commerciales, structuration des équipes, ROI mesurable.',
   alternates: {
-    canonical: 'https://laurentserre.com/cas-clients',
+    canonical: 'https://www.laurentserre.com/cas-clients',
   },
 };
 

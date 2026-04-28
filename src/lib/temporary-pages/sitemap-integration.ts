@@ -24,7 +24,7 @@ export class SitemapIntegration {
   private sitemapPath: string;
   private baseUrl: string;
   
-  constructor(baseUrl: string = process.env.NEXT_PUBLIC_BASE_URL || 'https://laurentserre.com') {
+  constructor(baseUrl: string = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.laurentserre.com') {
     this.sitemapPath = join(process.cwd(), 'public/sitemap.xml');
     this.baseUrl = baseUrl.replace(/\/$/, ''); // Supprimer le slash final
   }

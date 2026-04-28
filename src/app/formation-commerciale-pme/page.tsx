@@ -8,12 +8,12 @@ export const metadata: Metadata = {
   keywords: 'formation commerciale PME, formation vente PME, bootcamp commercial, formation prospection, formation closing, formation équipe commerciale PME',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurentserre.com/formation-commerciale-pme',
+    canonical: 'https://www.laurentserre.com/formation-commerciale-pme',
   },
   openGraph: {
     title: 'Formation Commerciale PME | Laurent Serre - Programmes Sur-Mesure',
     description: 'Formations commerciales adaptées aux PME. Bootcamp intensif, prospection, closing, management. Méthodes terrain éprouvées.',
-    url: 'https://laurentserre.com/formation-commerciale-pme',
+    url: 'https://www.laurentserre.com/formation-commerciale-pme',
     type: 'website',
     locale: 'fr_FR',
     siteName: 'Laurent Serre Développement',

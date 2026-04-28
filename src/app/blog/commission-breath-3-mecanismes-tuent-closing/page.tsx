@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: 'Découvrez pourquoi vos leads ne sont pas mauvais et comment la biologie, l\'identité et le cadre sabotent vos ventes. Méthode du détachement radical pour closer sans pression.',
   keywords: 'commission breath, closing, neurones miroirs, détachement radical, psychologie vente, closing B2B, taux de conversion, cadre diagnostic, techniques closing',
   alternates: {
-    canonical: 'https://laurentserre.com/blog/commission-breath-3-mecanismes-tuent-closing',
+    canonical: 'https://www.laurentserre.com/blog/commission-breath-3-mecanismes-tuent-closing',
   },
   openGraph: {
     title: 'Commission Breath : les 3 mécanismes invisibles qui tuent votre closing',
     description: 'Pourquoi vos leads ne sont pas mauvais. Les 3 mécanismes biologiques et psychologiques qui sabotent vos ventes, et comment les inverser.',
-    url: 'https://laurentserre.com/blog/commission-breath-3-mecanismes-tuent-closing',
+    url: 'https://www.laurentserre.com/blog/commission-breath-3-mecanismes-tuent-closing',
     type: 'article',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/images/closing_post.png',
+        url: 'https://www.laurentserre.com/images/closing_post.png',
         width: 1200,
         height: 630,
         alt: 'Commission Breath : les 3 mécanismes invisibles qui tuent votre closing',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Commission Breath : les 3 mécanismes invisibles qui tuent votre closing',
     description: 'Pourquoi vos leads ne sont pas mauvais. Les 3 mécanismes biologiques et psychologiques qui sabotent vos ventes.',
-    images: ['https://laurentserre.com/images/closing_post.png'],
+    images: ['https://www.laurentserre.com/images/closing_post.png'],
   },
 };
 

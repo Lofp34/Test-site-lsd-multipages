@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Mettez en place des processus de vente clairs et des outils qui font gagner du temps. Guide pour les managers souhaitant structurer et organiser leur équipe commerciale.",
   keywords: 'processus de vente, structurer équipe commerciale, organisation commerciale, sales playbook, outils vente',
   alternates: {
-    canonical: 'https://laurentserre.com/management/structurer-organiser',
+    canonical: 'https://www.laurentserre.com/management/structurer-organiser',
   },
 };
 

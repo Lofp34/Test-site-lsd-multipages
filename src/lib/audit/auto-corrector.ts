@@ -11,7 +11,7 @@ export class AutoCorrector {
   private baseUrl: string;
   private projectRoot: string;
 
-  constructor(baseUrl: string = 'https://laurentserre.com', projectRoot: string = process.cwd()) {
+  constructor(baseUrl: string = 'https://www.laurentserre.com', projectRoot: string = process.cwd()) {
     this.baseUrl = baseUrl;
     this.projectRoot = projectRoot;
   }

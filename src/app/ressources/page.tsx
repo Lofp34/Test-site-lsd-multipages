@@ -8,18 +8,18 @@ export const metadata: Metadata = {
   keywords: 'ressources commerciales gratuites, outils vente, guide prospection, formation commerciale, PME, développement commercial, closing techniques, scripts téléphoniques, stratégie commerciale',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurentserre.com/ressources',
+    canonical: 'https://www.laurentserre.com/ressources',
   },
   openGraph: {
     title: 'Ressources Gratuites - Outils et Guides | Laurent Serre Développement',
     description: 'Téléchargez nos ressources gratuites pour booster votre performance commerciale : guides, outils, vidéos et stratégies concrètes.',
-    url: 'https://laurentserre.com/ressources',
+    url: 'https://www.laurentserre.com/ressources',
     type: 'website',
     locale: 'fr_FR',
     siteName: 'Laurent Serre Développement',
     images: [
       {
-        url: 'https://laurentserre.com/laurent.jpg',
+        url: 'https://www.laurentserre.com/laurent.jpg',
         width: 1200,
         height: 630,
         alt: 'Ressources commerciales gratuites Laurent Serre',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Ressources Gratuites - Outils et Guides | Laurent Serre Développement',
     description: 'Téléchargez nos ressources gratuites pour booster votre performance commerciale : guides, outils, vidéos et stratégies concrètes.',
-    images: ['https://laurentserre.com/laurent.jpg'],
+    images: ['https://www.laurentserre.com/laurent.jpg'],
     creator: '@laurentserre',
   },
   robots: {

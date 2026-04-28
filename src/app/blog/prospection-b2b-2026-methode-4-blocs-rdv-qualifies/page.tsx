@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: 'Une méthode terrain en 4 blocs pour générer plus de RDV qualifiés en prospection B2B : ciblage, message, séquence, pilotage.',
   keywords: 'prospection B2B, RDV qualifiés, pipeline commercial, séquence de prospection, méthode commerciale PME',
   alternates: {
-    canonical: 'https://laurentserre.com/blog/prospection-b2b-2026-methode-4-blocs-rdv-qualifies',
+    canonical: 'https://www.laurentserre.com/blog/prospection-b2b-2026-methode-4-blocs-rdv-qualifies',
   },
   openGraph: {
     title: 'Prospection B2B 2026 : méthode 4 blocs pour plus de RDV qualifiés',
     description: 'Ciblage, message, séquence, pilotage : la méthode simple pour structurer une prospection qui convertit.',
-    url: 'https://laurentserre.com/blog/prospection-b2b-2026-methode-4-blocs-rdv-qualifies',
+    url: 'https://www.laurentserre.com/blog/prospection-b2b-2026-methode-4-blocs-rdv-qualifies',
     type: 'article',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/equipe_bureau.jpg',
+        url: 'https://www.laurentserre.com/equipe_bureau.jpg',
         width: 1200,
         height: 630,
         alt: 'Prospection B2B : méthode 4 blocs',

@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   description: 'Découvrez une méthode en 7 étapes pour transformer chaque refus client frustrant en opportunité commerciale durable et efficace. Conseils pratiques, techniques d’écoute et outils IA pour performer en 2025.',
   keywords: 'refus client, objection commerciale, transformation vente, techniques de vente, développement commercial, IA commerciale',
   alternates: {
-    canonical: 'https://laurentserre.com/blog/7-etapes-transformer-non-en-oui-performant-2025',
+    canonical: 'https://www.laurentserre.com/blog/7-etapes-transformer-non-en-oui-performant-2025',
   },
   openGraph: {
     title: '7 étapes pour transformer un « non » frustrant en « oui » performant en 2025',
     description: 'Découvrez une méthode en 7 étapes pour transformer chaque refus client frustrant en opportunité commerciale durable et efficace.',
-    url: 'https://laurentserre.com/blog/7-etapes-transformer-non-en-oui-performant-2025',
+    url: 'https://www.laurentserre.com/blog/7-etapes-transformer-non-en-oui-performant-2025',
     type: 'article',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurentserre.com/equipe_bureau.jpg',
+        url: 'https://www.laurentserre.com/equipe_bureau.jpg',
         width: 1200,
         height: 630,
         alt: 'Réunion commerciale - transformer un non frustrant en oui performant',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '7 étapes pour transformer un « non » frustrant en « oui » performant en 2025',
     description: 'Découvrez une méthode en 7 étapes pour transformer chaque refus client frustrant en opportunité commerciale durable et efficace.',
-    images: ['https://laurentserre.com/equipe_bureau.jpg'],
+    images: ['https://www.laurentserre.com/equipe_bureau.jpg'],
   },
 };
 

@@ -35,7 +35,7 @@ export const SEOOptimizer: React.FC<SEOOptimizerProps> = ({
   description = "Expert en développement commercial pour PME. Formation, coaching et accompagnement terrain avec 20 ans d'expérience. Structuration d'équipes commerciales performantes.",
   keywords = "expert développement commercial PME, formation commerciale, coaching commercial, accompagnement vente, structuration équipe commerciale, Laurent Serre",
   canonical,
-  ogImage = "https://laurentserre.com/laurent.jpg",
+  ogImage = "https://www.laurentserre.com/laurent.jpg",
   ogType = "website",
   structuredData,
   priority = "medium",
@@ -46,9 +46,9 @@ export const SEOOptimizer: React.FC<SEOOptimizerProps> = ({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "Laurent Serre Développement",
-    "url": "https://laurentserre.com",
-    "logo": "https://laurentserre.com/laurent.jpg",
-    "image": "https://laurentserre.com/laurent.jpg",
+    "url": "https://www.laurentserre.com",
+    "logo": "https://www.laurentserre.com/laurent.jpg",
+    "image": "https://www.laurentserre.com/laurent.jpg",
     "description": description,
     "foundingDate": "2020",
     "areaServed": {
@@ -142,7 +142,7 @@ export const SEOOptimizer: React.FC<SEOOptimizerProps> = ({
       "name": "Laurent Serre Développement",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://laurentserre.com/laurent.jpg"
+        "url": "https://www.laurentserre.com/laurent.jpg"
       }
     }
   });
@@ -201,7 +201,7 @@ export const SEOOptimizer: React.FC<SEOOptimizerProps> = ({
         <meta property="og:title" content={optimizedTitle} />
         <meta property="og:description" content={optimizedDescription} />
         <meta property="og:type" content={ogType} />
-        <meta property="og:url" content={canonical || "https://laurentserre.com"} />
+        <meta property="og:url" content={canonical || "https://www.laurentserre.com"} />
         <meta property="og:image" content={ogImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
