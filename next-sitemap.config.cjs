@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-    siteUrl: 'https://laurentserre.com',
+    siteUrl: 'https://www.laurentserre.com',
     generateRobotsTxt: true,
     exclude: [
       '/cas-clients',

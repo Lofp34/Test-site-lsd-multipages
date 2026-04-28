@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://laurentserre.com
+Host: https://www.laurentserre.com
 
 # Sitemaps
-Sitemap: https://laurentserre.com/sitemap.xml
+Sitemap: https://www.laurentserre.com/sitemap.xml

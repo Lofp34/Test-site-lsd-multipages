@@ -41,7 +41,7 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 2,
       }
     ],
-    sitemap: 'https://laurent-serre-developpement.fr/sitemap.xml',
-    host: 'https://laurent-serre-developpement.fr',
+    sitemap: 'https://www.laurentserre.com/sitemap.xml',
+    host: 'https://www.laurentserre.com',
   }
 }
