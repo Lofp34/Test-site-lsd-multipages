@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'le-28-du-mois-il-est-trop-tard-pour-sauver-vos-ventes',
+    title: 'Le 28 du mois, il est trop tard pour sauver vos ventes',
+    description: 'Quand la fin de mois ressemble à une opération de sauvetage, le problème n’est presque jamais le dernier appel. Il est dans ce qui n’a pas été regardé plus tôt.',
+    date: '2026-04-28',
+    readTime: '5 min',
+    category: 'Pilotage commercial / fin de mois',
+    image: '/images/blog/2026-04-28-fin-de-mois-sauver-ventes-hero.png',
+    featured: true
+  },
+  {
     slug: 'si-vous-pensez-encore-au-boulot-le-week-end-vous-ne-recuperez-pas',
     title: 'Si vous pensez encore au boulot le week-end, vous ne récupérez pas',
     description: 'Un dirigeant qui ne décroche jamais le week-end ne revient pas vraiment reposé le lundi. La récupération commence par une vraie clôture de semaine.',
