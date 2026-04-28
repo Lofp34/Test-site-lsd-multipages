@@ -1,18 +1,19 @@
 import type { Metadata } from 'next';
 import { Users, Target, CheckCircle, Star, ArrowRight, Award, Zap } from 'lucide-react';
 import Link from 'next/link';
+import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Formation Commerciale PME | Laurent Serre - Programmes Sur-Mesure',
-  description: 'Formations commerciales adaptées aux PME. Bootcamp intensif, prospection, closing, management. Méthodes terrain éprouvées par Laurent Serre, expert 20 ans.',
+  title: 'Formation Commerciale PME : prospection, closing, management | Laurent Serre',
+  description: 'Formation commerciale PME pour renforcer prospection, closing et management. Programmes terrain, bootcamp intensif et accompagnement mesurable.',
   keywords: 'formation commerciale PME, formation vente PME, bootcamp commercial, formation prospection, formation closing, formation équipe commerciale PME',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
     canonical: 'https://www.laurentserre.com/formation-commerciale-pme',
   },
   openGraph: {
-    title: 'Formation Commerciale PME | Laurent Serre - Programmes Sur-Mesure',
-    description: 'Formations commerciales adaptées aux PME. Bootcamp intensif, prospection, closing, management. Méthodes terrain éprouvées.',
+    title: 'Formation Commerciale PME : prospection, closing, management',
+    description: 'Programmes terrain pour développer les compétences commerciales PME : prospection, closing, management et pilotage de la performance.',
     url: 'https://www.laurentserre.com/formation-commerciale-pme',
     type: 'website',
     locale: 'fr_FR',
@@ -316,6 +317,25 @@ export default function FormationCommercialePMEPage() {
       </section>
 
       {/* CTA Laurent Serre */}
+      <FAQ
+        title="Questions fréquentes sur la formation commerciale PME"
+        description="Les réponses pour choisir une formation commerciale vraiment adaptée aux contraintes d’une PME."
+        items={[
+          {
+            question: "Quelle formation commerciale choisir pour une PME ?",
+            answer: "La bonne formation dépend du blocage principal : prospection insuffisante, taux de transformation faible, management commercial fragile ou manque de méthode. Un diagnostic permet de prioriser le module le plus rentable."
+          },
+          {
+            question: "Une formation commerciale PME doit-elle être sur-mesure ?",
+            answer: "Oui, car une PME n’a pas les mêmes ressources, cycles de décision et contraintes qu’un grand groupe. Les scripts, cas pratiques et outils doivent coller au terrain de l’équipe."
+          },
+          {
+            question: "Combien de temps faut-il pour voir les effets d’une formation commerciale ?",
+            answer: "Les premiers effets apparaissent souvent dès les premières semaines sur la discipline commerciale et la qualité des rendez-vous. Les impacts CA se mesurent plutôt sur 2 à 6 mois selon le cycle de vente."
+          }
+        ]}
+      />
+
       <section className="py-20 bg-blue-ink">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <h2 className="text-3xl sm:text-4xl font-title font-bold text-white mb-6">

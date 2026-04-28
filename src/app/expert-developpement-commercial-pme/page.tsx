@@ -1,21 +1,21 @@
 import type { Metadata } from 'next';
-import { ArrowRight, Target, Users, TrendingUp, Award, CheckCircle, Star, Crown, Zap, Phone, Mail, Calendar, BarChart } from 'lucide-react';
+import { ArrowRight, Target, Users, TrendingUp, Award, CheckCircle, Star, Crown, Zap, Phone, Mail, Calendar } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import StructuredData from '@/components/StructuredData';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Expert Développement Commercial PME | Laurent Serre - 20 ans d\'Expérience Terrain',
-  description: 'Laurent Serre, expert développement commercial PME depuis 20 ans. Formation, accompagnement et transformation des équipes commerciales. Méthodes terrain éprouvées, résultats mesurables.',
+  title: 'Expert Développement Commercial PME : méthode terrain & résultats | Laurent Serre',
+  description: 'Expert développement commercial PME : diagnostic, formation et accompagnement terrain pour structurer votre force de vente et générer plus de clients.',
   keywords: 'expert développement commercial PME, consultant commercial PME, formation commerciale PME, accompagnement commercial PME, structuration équipe commerciale, Laurent Serre expert commercial',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
     canonical: 'https://www.laurentserre.com/expert-developpement-commercial-pme',
   },
   openGraph: {
-    title: 'Expert Développement Commercial PME | Laurent Serre - 20 ans d\'Expérience Terrain',
-    description: 'Expert développement commercial PME depuis 20 ans. Formation, accompagnement et transformation des équipes commerciales avec résultats mesurables.',
+    title: 'Expert Développement Commercial PME : méthode terrain & résultats',
+    description: 'Diagnostic, formation et accompagnement commercial PME pour structurer la prospection, le closing et le management des équipes.',
     url: 'https://www.laurentserre.com/expert-developpement-commercial-pme',
     type: 'website',
     locale: 'fr_FR',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Expert Développement Commercial PME | Laurent Serre',
-    description: 'Expert développement commercial PME depuis 20 ans. Méthodes terrain éprouvées, résultats mesurables.',
+    description: 'Expert développement commercial PME : diagnostic, formation et accompagnement terrain pour générer plus de clients qualifiés.',
     images: ['https://www.laurentserre.com/laurent.jpg'],
     creator: '@laurentserre',
   },
@@ -503,9 +503,9 @@ export default function ExpertDeveloppementCommercialPMEPage() {
               <Calendar className="w-5 h-5 mr-2" />
               Diagnostic Gratuit 30min
             </Link>
-            <Link href="/contact" className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-blue-ink px-8 py-4 rounded-full font-semibold transition-colors">
+            <Link href="/bootcamp" className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-blue-ink px-8 py-4 rounded-full font-semibold transition-colors">
               <Mail className="w-5 h-5 mr-2" />
-              Nous Contacter
+              Voir le Bootcamp
             </Link>
           </div>
           

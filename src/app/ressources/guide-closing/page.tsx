@@ -1,13 +1,21 @@
 import type { Metadata } from 'next';
 import { ArrowLeft, CheckCircle, Crown } from 'lucide-react';
 import Link from 'next/link';
+import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Guide Ultime du Closing | Laurent Serre Développement',
-  description: 'Maîtrisez l\'art du closing et les techniques avancées pour conclure plus d\'affaires avec confiance et efficacité.',
+  title: 'Techniques de Closing : 7 méthodes pour conclure plus de ventes | Laurent Serre',
+  description: 'Découvrez 7 techniques de closing concrètes pour traiter les objections, détecter les signaux d’achat et conclure plus de ventes B2B.',
   keywords: 'closing, techniques de vente, négociation, conclure une vente, commercial, closing commercial',
   alternates: {
     canonical: 'https://www.laurentserre.com/ressources/guide-closing',
+  },
+  openGraph: {
+    title: 'Techniques de Closing : 7 méthodes pour conclure plus de ventes',
+    description: 'Méthode terrain pour améliorer vos fins d’entretien, traiter les objections et augmenter votre taux de transformation.',
+    url: 'https://www.laurentserre.com/ressources/guide-closing',
+    type: 'article',
+    locale: 'fr_FR',
   },
 };
 
@@ -56,9 +64,14 @@ export default function GuideClosingPage() {
               Le closing n'est pas de la manipulation, c'est un service rendu au client. C'est l'art de l'accompagner 
               vers la décision qui va résoudre son problème.
             </p>
-            <p className="text-lg text-gray-anthracite">
+            <p className="text-lg text-gray-anthracite mb-4">
               Ce guide vous révèle les <strong className="text-mint-green">7 techniques de closing</strong> qui transformeront 
               vos entretiens commerciaux en succès mesurables.
+            </p>
+            <p className="text-lg text-gray-anthracite">
+              Pour aller plus loin, comparez ces techniques avec votre réalité terrain via le
+              <Link href="/diagnostic" className="text-mint-green hover:underline font-semibold"> diagnostic commercial gratuit</Link>
+              ou intégrez-les dans un <Link href="/bootcamp" className="text-mint-green hover:underline font-semibold">bootcamp commercial intensif</Link>.
             </p>
           </div>
         </section>
@@ -375,6 +388,29 @@ export default function GuideClosingPage() {
           </div>
         </section>
 
+        <FAQ
+          title="Questions fréquentes sur les techniques de closing"
+          description="Les réponses pratiques pour mieux conclure sans forcer la décision."
+          items={[
+            {
+              question: "Quelle est la meilleure technique de closing en B2B ?",
+              answer: "La meilleure technique dépend du contexte, mais le closing récapitulatif est souvent le plus robuste en B2B : il reformule les enjeux, les bénéfices validés et la prochaine étape concrète sans pression artificielle."
+            },
+            {
+              question: "Comment closer sans paraître insistant ?",
+              answer: "Un closing efficace s’appuie sur le diagnostic, les signaux d’achat et la valeur déjà reconnue par le prospect. Si ces éléments ne sont pas clairs, il vaut mieux clarifier les objections avant de demander une décision."
+            },
+            {
+              question: "Quand faut-il poser la question de closing ?",
+              answer: "Posez-la quand le prospect a reconnu son problème, validé l’impact business et compris la valeur de votre solution. Les questions sur le délai, le budget ou la mise en œuvre sont de bons signaux."
+            },
+            {
+              question: "Comment améliorer son taux de closing rapidement ?",
+              answer: "Travaillez trois leviers : meilleure qualification en amont, préparation des objections probables et entraînement aux questions de conclusion. Un diagnostic externe permet souvent d’identifier le blocage principal."
+            }
+          ]}
+        />
+
         {/* CTA */}
         <section className="text-center">
           <div className="bg-blue-ink rounded-2xl p-8 text-white">
@@ -386,10 +422,10 @@ export default function GuideClosingPage() {
               vous pouvez doubler votre taux de transformation en 60 jours.
             </p>
             <Link 
-              href="/contact" 
+              href="/diagnostic" 
               className="inline-flex items-center bg-mint-green hover:bg-mint-green/90 text-white px-8 py-3 rounded-full font-semibold transition-colors"
             >
-              Booster mon closing
+              Diagnostiquer mon closing
             </Link>
           </div>
         </section>

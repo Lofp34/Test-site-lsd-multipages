@@ -2,17 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
+import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'De vendeur à commercial : la transformation qui change tout | Laurent Serre',
-  description: 'Comprendre la différence fondamentale entre un vendeur et un commercial, et comment opérer cette transformation décisive dans votre équipe.',
+  title: 'Vendeur vs Commercial : 5 différences pour transformer votre équipe | Laurent Serre',
+  description: 'Découvrez la différence vendeur/commercial et les étapes pour transformer une équipe de vente en force commerciale consultative et performante.',
   keywords: 'vendeur vs commercial, transformation commerciale, management équipe vente, développement commercial, PME',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog/vendeur-commercial-transformation-decisive',
   },
   openGraph: {
-    title: 'De vendeur à commercial : la transformation qui change tout',
-    description: 'Comprendre la différence fondamentale entre un vendeur et un commercial, et comment opérer cette transformation décisive.',
+    title: 'Vendeur vs Commercial : transformer une équipe de vente en force consultative',
+    description: 'Différences clés, étapes de transformation et actions terrain pour faire évoluer vos vendeurs en commerciaux performants.',
     url: 'https://www.laurentserre.com/blog/vendeur-commercial-transformation-decisive',
     type: 'article',
     locale: 'fr_FR',
@@ -62,6 +63,16 @@ export default function Article5() {
             Comprendre cette différence et savoir opérer la transformation peut multiplier vos résultats par 3. 
             Voici comment faire.
           </p>
+
+          <div className="bg-mint-green/10 border-l-4 border-mint-green p-6 my-8">
+            <p className="text-base mb-3">
+              Vous voulez situer votre équipe ? Commencez par un
+              <Link href="/diagnostic" className="text-mint-green hover:underline font-semibold"> diagnostic commercial gratuit</Link>,
+              puis structurez la montée en compétence avec la
+              <Link href="/formation-commerciale-pme" className="text-mint-green hover:underline font-semibold"> formation commerciale PME</Link>
+              ou le <Link href="/bootcamp" className="text-mint-green hover:underline font-semibold">bootcamp commercial</Link>.
+            </p>
+          </div>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
             Le vendeur : technicien de la transaction
@@ -295,6 +306,24 @@ export default function Article5() {
           </p>
         </div>
       </article>
+      <FAQ
+        title="Questions fréquentes : vendeur ou commercial ?"
+        description="Les réponses utiles pour transformer une équipe commerciale sans perdre l’énergie terrain."
+        items={[
+          {
+            question: "Quelle est la différence entre vendeur et commercial ?",
+            answer: "Le vendeur présente une offre et cherche la transaction. Le commercial diagnostique le contexte client, révèle les enjeux business et construit une solution qui crée de la valeur mesurable."
+          },
+          {
+            question: "Comment transformer un vendeur en commercial consultatif ?",
+            answer: "La transformation passe par l’écoute active, la qualification, la connaissance business, la structuration du processus de vente et un coaching terrain régulier sur les rendez-vous réels."
+          },
+          {
+            question: "Combien de temps faut-il pour faire évoluer une équipe ?",
+            answer: "Comptez généralement 3 à 6 mois pour installer les nouveaux réflexes, selon le niveau initial, la discipline managériale et la fréquence d’entraînement commercial."
+          }
+        ]}
+      />
       <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
