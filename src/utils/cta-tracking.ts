@@ -1,5 +1,17 @@
 'use client';
 
+type GtagFunction = (
+  command: 'event',
+  eventName: string,
+  parameters?: Record<string, string | number | boolean | undefined>
+) => void;
+
+declare global {
+  interface Window {
+    gtag?: GtagFunction;
+  }
+}
+
 // Simple CTA tracking utility - fallback version
 export interface CTATrackingData {
   ctaId: string;
@@ -15,8 +27,8 @@ export function trackCTAClick(data: CTATrackingData) {
   console.log('CTA Click tracked:', data);
   
   // Simple analytics tracking
-  if (typeof window !== 'undefined' && (window as any).gtag) {
-    (window as any).gtag('event', 'cta_click', {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'cta_click', {
       cta_id: data.ctaId,
       cta_text: data.ctaText,
       cta_type: data.ctaType,
@@ -30,8 +42,8 @@ export function trackMicroConversion(type: string, ctaId: string, section: strin
   console.log('Micro conversion tracked:', { type, ctaId, section });
   
   // Simple analytics tracking
-  if (typeof window !== 'undefined' && (window as any).gtag) {
-    (window as any).gtag('event', 'micro_conversion', {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'micro_conversion', {
       conversion_type: type,
       cta_id: ctaId,
       section: section
@@ -43,7 +55,7 @@ export function trackMicroConversion(type: string, ctaId: string, section: strin
 export function setupCustomEvents() {
   console.log('Custom events setup');
 
-  if (typeof window === 'undefined' || !(window as any).gtag) {
+  if (typeof window === 'undefined' || !window.gtag) {
     return;
   }
 
@@ -59,7 +71,7 @@ export function setupCustomEvents() {
     const linkText = link.textContent?.trim().slice(0, 120) || '';
 
     if (href.startsWith('tel:')) {
-      (window as any).gtag('event', 'phone_click', {
+      window.gtag('event', 'phone_click', {
         event_category: 'lead_generation',
         event_label: linkText || href,
         link_url: href,
@@ -67,7 +79,7 @@ export function setupCustomEvents() {
     }
 
     if (href.startsWith('mailto:')) {
-      (window as any).gtag('event', 'email_click', {
+      window.gtag('event', 'email_click', {
         event_category: 'lead_generation',
         event_label: linkText || href,
         link_url: href,
@@ -75,7 +87,7 @@ export function setupCustomEvents() {
     }
 
     if (href === '/contact' || href === '/diagnostic' || href.includes('/contact') || href.includes('/diagnostic')) {
-      (window as any).gtag('event', 'cta_clicked', {
+      window.gtag('event', 'cta_clicked', {
         event_category: 'lead_generation',
         event_label: linkText || href,
         link_url: href,
@@ -92,8 +104,8 @@ export function trackSectionView(sectionId: string, sectionName: string) {
   console.log('Section view tracked:', { sectionId, sectionName });
   
   // Simple analytics tracking
-  if (typeof window !== 'undefined' && (window as any).gtag) {
-    (window as any).gtag('event', 'section_view', {
+  if (typeof window !== 'undefined' && window.gtag) {
+    window.gtag('event', 'section_view', {
       section_id: sectionId,
       section_name: sectionName
     });
