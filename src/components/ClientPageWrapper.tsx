@@ -138,8 +138,8 @@ export default function ClientPageWrapper({
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <div className="space-y-6 sm:space-y-8 animate-fade-in-up">
-            <div className="animate-fade-in-up mb-8">
+          <div className="space-y-6 sm:space-y-8">
+            <div className="mb-8">
               <div className="inline-flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-6 py-3 rounded-full">
                 <span className="w-3 h-3 bg-mint-green rounded-full animate-pulse"></span>
                 <span className="font-title font-semibold text-mint-green text-sm md:text-base">
