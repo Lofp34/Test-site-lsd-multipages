@@ -91,10 +91,11 @@ function thumbnailUrl(id: string) {
 export default function TestimonialVideoSection() {
   const defaultVideo = videos.find((video) => video.isPrimary) ?? videos[0];
   const [activeVideoId, setActiveVideoId] = useState(defaultVideo.youtubeId);
+  const [playingVideoId, setPlayingVideoId] = useState<string | null>(null);
 
   const activeVideo = useMemo(
     () => videos.find((video) => video.youtubeId === activeVideoId) ?? defaultVideo,
-    [activeVideoId],
+    [activeVideoId, defaultVideo],
   );
 
   const secondaryVideos = videos.filter((video) => video.youtubeId !== activeVideo.youtubeId);
@@ -128,17 +129,52 @@ export default function TestimonialVideoSection() {
         <AnimatedSection animation="slide-up" delay={120}>
           <div className="mb-10 rounded-[2rem] border border-white/10 bg-white/[0.05] p-6 shadow-[0_40px_120px_rgba(0,0,0,0.35)] backdrop-blur-md lg:p-8">
             <div className="overflow-hidden rounded-[1.5rem] border border-white/10 bg-black shadow-2xl">
-              <div className="aspect-video">
-                <iframe
-                  key={activeVideo.youtubeId}
-                  src={`https://www.youtube-nocookie.com/embed/${activeVideo.youtubeId}?rel=0&modestbranding=1&autoplay=1`}
-                  title={activeVideo.title}
-                  className="h-full w-full"
-                  loading="lazy"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                />
+              <div className="relative aspect-video">
+                {playingVideoId === activeVideo.youtubeId ? (
+                  <iframe
+                    key={activeVideo.youtubeId}
+                    src={`https://www.youtube-nocookie.com/embed/${activeVideo.youtubeId}?rel=0&modestbranding=1&autoplay=1`}
+                    title={activeVideo.title}
+                    className="h-full w-full"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                  />
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => setPlayingVideoId(activeVideo.youtubeId)}
+                    className="group relative block h-full w-full overflow-hidden text-left"
+                    aria-label={`Lire la vidéo : ${activeVideo.title}`}
+                  >
+                    <Image
+                      src={thumbnailUrl(activeVideo.youtubeId)}
+                      alt=""
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 1024px) 100vw, 1200px"
+                      quality={70}
+                      priority={false}
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/30 to-black/10" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="flex h-20 w-20 items-center justify-center rounded-full border border-white/30 bg-white/15 shadow-2xl backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
+                        <svg width="28" height="32" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg" className="translate-x-0.5">
+                          <path d="M1 1.5L14 9L1 16.5V1.5Z" fill="white" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
+                      <p className="mb-2 font-title text-sm font-semibold uppercase tracking-[0.24em] text-mint-green">
+                        Vidéo chargée au clic
+                      </p>
+                      <p className="max-w-2xl text-xl font-title font-bold text-white md:text-2xl">
+                        {activeVideo.title}
+                      </p>
+                    </div>
+                  </button>
+                )}
               </div>
             </div>
 
@@ -203,7 +239,10 @@ export default function TestimonialVideoSection() {
               <AnimatedSection key={video.youtubeId} animation="slide-up" delay={320 + index * 80}>
                 <button
                   type="button"
-                  onClick={() => setActiveVideoId(video.youtubeId)}
+                  onClick={() => {
+                    setActiveVideoId(video.youtubeId);
+                    setPlayingVideoId(null);
+                  }}
                   className={`group block w-full overflow-hidden rounded-[1.4rem] border text-left shadow-[0_20px_60px_rgba(0,0,0,0.28)] transition-all duration-300 hover:-translate-y-1 ${
                     isActive
                       ? 'border-mint-green bg-white/[0.09] ring-1 ring-mint-green/40'
