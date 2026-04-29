@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'votre-client-nest-souvent-pas-conscient-du-probleme-que-vous-pouvez-resoudre',
+    title: 'Votre client n’est souvent pas conscient du problème que vous pouvez résoudre',
+    description: 'Un client formule rarement son vrai problème du premier coup. Le rôle du commercial est d’aider à distinguer la demande visible, l’enjeu réel et les conséquences concrètes.',
+    date: '2026-04-29',
+    readTime: '6 min',
+    category: 'Découverte commerciale / besoin client',
+    image: '/images/blog/2026-04-29-besoin-reel-enjeu-client-hero.png',
+    featured: true
+  },
+  {
     slug: 'le-28-du-mois-il-est-trop-tard-pour-sauver-vos-ventes',
     title: 'Le 28 du mois, il est trop tard pour sauver vos ventes',
     description: 'Quand la fin de mois ressemble à une opération de sauvetage, le problème n’est presque jamais le dernier appel. Il est dans ce qui n’a pas été regardé plus tôt.',
