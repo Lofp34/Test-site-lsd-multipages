@@ -106,6 +106,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/blog/votre-client-nest-souvent-pas-conscient-du-probleme-que-vous-pouvez-resoudre`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.75,
+    },
+    {
       url: `${baseUrl}/blog/5-signes-structurer-equipe-commerciale`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
