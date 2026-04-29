@@ -69,7 +69,7 @@ export async function POST(request: NextRequest) {
     console.log(`${logPrefix} 📋 Données pour HubSpot:`, JSON.stringify(hubspotData, null, 2));
     
     // 6. Préparation des headers
-    const response = await fetch(hubspotUrl, {
+    const hubspotResponse = await fetch(hubspotUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -77,6 +77,8 @@ export async function POST(request: NextRequest) {
       },
       body: JSON.stringify(hubspotData),
     });
+
+    const hubspotResponseData = await hubspotResponse.json().catch(() => null);
     
     // 8. Vérification du succès
     if (hubspotResponse.ok) {

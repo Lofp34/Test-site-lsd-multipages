@@ -10,7 +10,7 @@ export default function ContactSimpleForm() {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [result, setResult] = useState<any>(null);
+  const [result, setResult] = useState<{ success: boolean; message: string; data?: unknown; error?: unknown; status?: number } | null>(null);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -108,11 +108,12 @@ export default function ContactSimpleForm() {
           />
         </div>
         <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Téléphone</label>
+          <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">Téléphone *</label>
           <input
             type="tel"
             id="phone"
             name="phone"
+            required
             value={formData.phone}
             onChange={handleInputChange}
             className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
