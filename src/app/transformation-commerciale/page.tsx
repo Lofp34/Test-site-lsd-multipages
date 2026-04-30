@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { TrendingUp, Target, Zap, CheckCircle, BarChart, ArrowRight, Award } from 'lucide-react';
+import { TrendingUp, Target, CheckCircle, BarChart, ArrowRight, Award } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Transformation Commerciale PME | Laurent Serre - Accompagnement Expert',
-  description: 'Transformez votre organisation commerciale PME avec Laurent Serre. Accompagnement complet : diagnostic, stratégie, mise en œuvre. Résultats mesurables garantis.',
+  description: 'Transformez votre organisation commerciale PME avec Laurent Serre. Accompagnement complet : diagnostic, stratégie, mise en œuvre et suivi terrain.',
   keywords: 'transformation commerciale PME, accompagnement commercial PME, restructuration commerciale, optimisation processus vente, transformation équipe commerciale',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Transformation Commerciale PME | Laurent Serre - Accompagnement Expert',
-    description: 'Transformez votre organisation commerciale PME avec un expert. Accompagnement complet et résultats mesurables.',
+    description: 'Transformez votre organisation commerciale PME avec un expert. Accompagnement complet, diagnostic et suivi terrain.',
     url: 'https://www.laurentserre.com/transformation-commerciale',
     type: 'website',
     locale: 'fr_FR',
@@ -48,7 +48,7 @@ export default function TransformationCommercialePage() {
               accompagne votre transformation commerciale complète. Du 
               <Link href="/diagnostic" className="text-mint-green hover:underline"> diagnostic initial</Link> à l'implémentation de 
               <Link href="/ressources/outil-strategie-commerciale" className="text-mint-green hover:underline"> stratégies sur-mesure</Link>, 
-              des résultats mesurables en moins de 6 mois.
+              un plan d'action commercial plus clair, plus pilotable et mieux suivi dans la durée.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -231,53 +231,50 @@ export default function TransformationCommercialePage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl font-title font-bold text-blue-ink mb-8">
-                Résultats de Transformation
+                Ce qui se transforme concrètement
               </h2>
               <p className="text-xl text-gray-anthracite mb-8">
-                Des transformations mesurables et durables pour nos clients PME
+                Une transformation commerciale utile ne se résume pas à une moyenne. Elle rend le réel plus lisible et les actions plus suivables.
               </p>
               
               <div className="space-y-6">
                 <div className="bg-gradient-to-r from-mint-green/10 to-transparent p-6 rounded-xl">
-                  <div className="text-3xl font-bold text-mint-green mb-2">+26%</div>
-                  <div className="text-gray-anthracite">Chiffre d'affaires moyen</div>
+                  <h3 className="text-lg font-semibold text-blue-ink mb-2">Diagnostic plus clair</h3>
+                  <div className="text-gray-anthracite">Identifier les vrais blocages : ciblage, qualification, pilotage des opportunités, préparation des rendez-vous ou conclusion des ventes.</div>
                 </div>
                 <div className="bg-gradient-to-r from-mint-green/10 to-transparent p-6 rounded-xl">
-                  <div className="text-3xl font-bold text-mint-green mb-2">-40%</div>
-                  <div className="text-gray-anthracite">Cycle de vente</div>
+                  <h3 className="text-lg font-semibold text-blue-ink mb-2">Plan d'action partagé</h3>
+                  <div className="text-gray-anthracite">Transformer les priorités commerciales en rituels, outils et décisions suivies par l'équipe.</div>
                 </div>
                 <div className="bg-gradient-to-r from-mint-green/10 to-transparent p-6 rounded-xl">
-                  <div className="text-3xl font-bold text-mint-green mb-2">+32%</div>
-                  <div className="text-gray-anthracite">Leads qualifiés</div>
+                  <h3 className="text-lg font-semibold text-blue-ink mb-2">Pilotage plus exigeant</h3>
+                  <div className="text-gray-anthracite">Aider les managers à questionner les opportunités et à faire progresser les gestes commerciaux.</div>
                 </div>
               </div>
             </div>
 
             <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-2xl p-8">
               <h3 className="text-2xl font-title font-bold text-blue-ink mb-6">
-                Témoignage Transformation
+                Preuves clients vérifiables
               </h3>
-              <blockquote className="text-lg text-gray-anthracite italic mb-6">
-                "En 18 mois, Laurent a complètement transformé notre approche commerciale. 
-                Notre équipe est maintenant autonome, notre processus optimisé et notre CA a doublé. 
-                Une transformation qui dépasse toutes nos attentes."
-              </blockquote>
-              <div className="text-mint-green font-semibold">
-                Directeur PME Industrie • 45 collaborateurs
-              </div>
+              <p className="text-lg text-gray-anthracite mb-6">
+                Les cas clients publics montrent des progressions différentes selon les contextes : structuration du management commercial, meilleure préparation des rendez-vous, clarification du plan de vente et montée en exigence des équipes.
+              </p>
+              <p className="text-gray-anthracite mb-8">
+                Chaque preuve doit rester reliée à son contexte. C'est ce qui la rend utile pour un dirigeant de PME, et lisible pour les moteurs ou assistants IA.
+              </p>
               
-              <div className="mt-8 pt-6 border-t border-gray-200">
-                <h4 className="font-semibold text-blue-ink mb-3">Résultats obtenus :</h4>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-mint-green">x2</div>
-                    <div className="text-sm">Chiffre d'Affaires</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl font-bold text-mint-green">+60%</div>
-                    <div className="text-sm">Taux Conversion</div>
-                  </div>
+              <div className="pt-6 border-t border-gray-200">
+                <h4 className="font-semibold text-blue-ink mb-3">À lire dans les cas clients :</h4>
+                <div className="space-y-3 text-gray-anthracite">
+                  <div>• contexte commercial de départ ;</div>
+                  <div>• travail mené avec les équipes ;</div>
+                  <div>• changement observé après accompagnement ;</div>
+                  <div>• vidéo ou témoignage public quand disponible.</div>
                 </div>
+                <Link href="/cas-clients" className="mt-6 inline-flex items-center text-mint-green hover:underline font-semibold">
+                  Voir les cas clients documentés <ArrowRight className="w-4 h-4 ml-1" />
+                </Link>
               </div>
             </div>
           </div>

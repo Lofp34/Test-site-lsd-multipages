@@ -106,7 +106,7 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 Laurent Serre accompagne les PME dans leur transformation commerciale depuis 20 ans. 
                 De la <Link href="/formation-commerciale-pme" className="text-mint-green hover:underline">formation des équipes</Link> à la 
                 <Link href="/transformation-commerciale" className="text-mint-green hover:underline"> structuration des processus</Link>, 
-                des méthodes terrain éprouvées pour des résultats mesurables.
+                des méthodes terrain pour clarifier le diagnostic, structurer l’action commerciale et rendre les progrès observables.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -116,30 +116,30 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 </Link>
                 <Link href="/cas-clients" className="inline-flex items-center border-2 border-white text-white hover:bg-white hover:text-blue-ink px-8 py-4 rounded-full font-semibold transition-colors">
                   <Star className="w-5 h-5 mr-2" />
-                  Voir les Résultats
+                  Voir les cas clients
                 </Link>
               </div>
             </div>
             
             <div className="lg:pl-12">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-                <h3 className="text-2xl font-title font-bold text-white mb-6">En Chiffres</h3>
+                <h3 className="text-2xl font-title font-bold text-white mb-6">Preuves terrain</h3>
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
                     <div className="text-3xl font-bold text-mint-green">20</div>
-                    <div className="text-white/80">Ans d'Expérience</div>
+                    <div className="text-white/80">Ans d'expérience terrain</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-mint-green">500+</div>
-                    <div className="text-white/80">PME Accompagnées</div>
+                    <div className="text-3xl font-bold text-mint-green">PME</div>
+                    <div className="text-white/80">B2B accompagnées</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-mint-green">+17%</div>
-                    <div className="text-white/80">CA Moyen Client</div>
+                    <div className="text-3xl font-bold text-mint-green">Plans</div>
+                    <div className="text-white/80">d'action structurés</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-mint-green">98%</div>
-                    <div className="text-white/80">Taux Satisfaction</div>
+                    <div className="text-3xl font-bold text-mint-green">Cas</div>
+                    <div className="text-white/80">clients documentés</div>
                   </div>
                 </div>
               </div>
@@ -346,37 +346,32 @@ export default function ExpertDeveloppementCommercialPMEPage() {
 
             <div className="bg-gradient-to-br from-mint-green/10 to-blue-ink/10 rounded-2xl p-8">
               <h3 className="text-2xl font-title font-bold text-blue-ink mb-6">
-                Résultats Clients Moyens
+                Des résultats à lire dans leur contexte
               </h3>
               
-              <div className="grid grid-cols-2 gap-6 mb-8">
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">+26%</div>
-                  <div className="text-gray-anthracite">Chiffre d'Affaires</div>
+              <div className="space-y-4 mb-8">
+                <div className="bg-white/60 rounded-xl p-5">
+                  <h4 className="font-semibold text-blue-ink mb-2">Situation commerciale de départ</h4>
+                  <p className="text-gray-anthracite">Clarifier les enjeux réels : ciblage, qualification, pilotage, management, préparation des rendez-vous.</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">-40%</div>
-                  <div className="text-gray-anthracite">Cycle Vente</div>
+                <div className="bg-white/60 rounded-xl p-5">
+                  <h4 className="font-semibold text-blue-ink mb-2">Travail mené avec les équipes</h4>
+                  <p className="text-gray-anthracite">Installer un plan d'action, entraîner les gestes commerciaux et rendre les progrès suivables dans le temps.</p>
                 </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">+32%</div>
-                  <div className="text-gray-anthracite">Leads Qualifiés</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-4xl font-bold text-mint-green mb-2">98%</div>
-                  <div className="text-gray-anthracite">Satisfaction</div>
+                <div className="bg-white/60 rounded-xl p-5">
+                  <h4 className="font-semibold text-blue-ink mb-2">Changements observés</h4>
+                  <p className="text-gray-anthracite">Des managers plus exigeants, des commerciaux mieux préparés et des opportunités mieux qualifiées.</p>
                 </div>
               </div>
 
               <div className="bg-white/50 rounded-xl p-6">
-                <h4 className="font-semibold text-blue-ink mb-3">Témoignage Client</h4>
-                <p className="text-gray-anthracite italic mb-3">
-                  "En 18 mois, Laurent a transformé notre approche commerciale. Notre CA a doublé 
-                  et nos équipes sont enfin autonomes et motivées."
+                <h4 className="font-semibold text-blue-ink mb-3">Preuves clients documentées</h4>
+                <p className="text-gray-anthracite mb-4">
+                  Les cas clients publics présentent le contexte, le travail réalisé et les changements observés, avec vidéo ou témoignage quand la preuve est disponible.
                 </p>
-                <div className="text-sm text-mint-green font-semibold">
-                  Direction PME Industrie • 45 collaborateurs
-                </div>
+                <Link href="/cas-clients" className="inline-flex items-center text-mint-green hover:underline font-semibold">
+                  Voir les cas clients documentés <ArrowRight className="w-4 h-4 ml-1" />
+                </Link>
               </div>
             </div>
           </div>
@@ -495,7 +490,7 @@ export default function ExpertDeveloppementCommercialPMEPage() {
             Prêt à Transformer Votre Performance Commerciale ?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Bénéficiez de 20 ans d'expérience terrain pour développer durablement votre chiffre d'affaires.
+            Bénéficiez de 20 ans d'expérience terrain pour structurer votre développement commercial et mieux piloter vos opportunités.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -510,7 +505,7 @@ export default function ExpertDeveloppementCommercialPMEPage() {
           </div>
           
           <div className="mt-8 text-white/70 text-sm">
-            🏆 95% de clients satisfaits • ⚡ Résultats en moins de 6 mois • 💎 Méthodes exclusives terrain
+            🏆 Méthodes terrain • ⚡ Diagnostic concret • 💎 Cas clients documentés
           </div>
         </div>
       </section>
