@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 import type { Metadata, Viewport } from 'next';
 import Button from '@/components/ui/Button';
+import CaseClientVideoEmbed from '@/components/sections/CaseClientVideoEmbed';
 import Link from 'next/link';
 
 const TestimonialVideoSection = dynamic(() => import('@/components/sections/TestimonialVideoSection'));
@@ -54,6 +55,13 @@ const clientCases = [
       { href: '/formation-commerciale-pme', label: 'Formation commerciale PME' },
       { href: '/transformation-commerciale', label: 'Transformation commerciale' },
     ],
+    video: {
+      youtubeId: 'ojopxkWzXy8',
+      title: 'Tony Grippon — le premier X10 de l’équipe Septeo Hospitality',
+      eyebrow: 'Témoignage vidéo Septeo',
+      summary:
+        'Tony Grippon revient sur le cap franchi par l’équipe : objectifs ambitieux, entraînement terrain et dynamique commerciale suivie dans la durée.',
+    },
   },
   {
     name: 'Bernafon',
@@ -71,6 +79,13 @@ const clientCases = [
       { href: '/formation-commerciale-pme', label: 'Formation commerciale PME' },
       { href: '/diagnostic', label: 'Diagnostic commercial' },
     ],
+    video: {
+      youtubeId: 'XrijjFzFvlA',
+      title: 'Benoît Arnaudin — relier méthode commerciale et chiffre d’affaires chez Bernafon',
+      eyebrow: 'Témoignage vidéo Bernafon',
+      summary:
+        'Benoît Arnaudin revient sur ce que l’accompagnement a changé concrètement chez Bernafon, avec un résultat contextualisé : +25% de chiffre d’affaires en 2025.',
+    },
   },
   {
     name: 'IPO Technologie',
@@ -117,8 +132,11 @@ const clientCases = [
       { href: '/management-equipe-commerciale', label: 'Management commercial' },
     ],
     video: {
-      href: 'https://www.youtube.com/watch?v=jwY2-aKRBac',
-      label: 'Voir le témoignage complet de Dimitri sur YouTube',
+      youtubeId: 'jwY2-aKRBac',
+      title: 'Dimitri de Cruz — faire monter toute l’équipe en compétence commerciale',
+      eyebrow: 'Témoignage vidéo Mon Coach Brico',
+      summary:
+        'Dimitri de Cruz explique comment l’accompagnement a contribué à structurer une dynamique collective, avec un +15% observé sur le premier quadrimestre dans un contexte plus large de progression.',
     },
   },
 ];
@@ -429,16 +447,6 @@ export default function CasClientsPage() {
                         {link.label}
                       </Link>
                     ))}
-                    {client.video && (
-                      <a
-                        href={client.video.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="rounded-full border border-orange-soft/40 px-4 py-2 text-sm font-semibold text-blue-ink hover:bg-orange-soft/10 transition-colors"
-                      >
-                        {client.video.label}
-                      </a>
-                    )}
                   </div>
                 </div>
 
@@ -453,6 +461,15 @@ export default function CasClientsPage() {
                     <p className="text-lg font-italic text-blue-ink leading-relaxed">“{client.quote}”</p>
                     <footer className="mt-3 text-sm font-semibold text-gray-anthracite">— {client.quoteAuthor}</footer>
                   </blockquote>
+                )}
+
+                {client.video && (
+                  <CaseClientVideoEmbed
+                    youtubeId={client.video.youtubeId}
+                    title={client.video.title}
+                    eyebrow={client.video.eyebrow}
+                    summary={client.video.summary}
+                  />
                 )}
 
                 <div className="mt-7 rounded-2xl bg-blue-ink/5 p-5">
