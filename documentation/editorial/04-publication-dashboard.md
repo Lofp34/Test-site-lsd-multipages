@@ -15,8 +15,8 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 27
-- **Publications blog publiées** : 27
+- **Total publications suivies** : 28
+- **Publications blog publiées** : 28
 - **Idées en backlog** : 0
 - **Articles avec kit LinkedIn prêt** : 10
 - **Articles avec email prêt/envoyé** : 7
@@ -27,7 +27,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Outils / méthodes / ressources : 2
 - IA / tendances / prospective : 3
 - Management / pilotage dirigeant : 4
-- Techniques de vente terrain : 6
+- Techniques de vente terrain : 7
 - Structure / système commercial : 1
 - Psychologie / comportements commerciaux : 5
 
@@ -36,7 +36,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 - Diagnostic : 1
 - Méthode : 2
 - Point de vue : 8
-- Terrain : 3
+- Terrain : 4
 - Transformation : 1
 - Prospective : 1
 - Dirigeant / arbitrage : 3
@@ -60,6 +60,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-04-30 | publié | Le téléphone n’est pas mort, mais l’appel au hasard l’est | Prospection téléphonique B2B préparée vs appel au hasard | Terrain | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Aider les équipes à retrouver une prospection téléphonique utile, située et qualifiante au lieu d’une activité d’appels pauvre | Queue éditoriale / reprise au filtre Laurent | Oui — sujet planifié au 30 avril dans `input/article_queue_20260428_dataset_laurent_serre`, fortement réécrit avant publication | https://www.laurentserre.com/blog/le-telephone-nest-pas-mort-mais-lappel-au-hasard-lest | à préparer | non requis | Post LinkedIn d’opinion sur téléphone mort vs appel pauvre ; carrousel appel au hasard / appel légitime / qualification ; email court sur les premières phrases qui changent tout | Le candidat planifié était marqué `needs_editorial_gate`; publication faite après reprise éditoriale complète, visuel hero généré en `gpt-image-2`, page article, index blog et dashboard mis à jour |
 | 2026-04-29 | publié | Votre client n’est souvent pas conscient du problème que vous pouvez résoudre | Écart entre la demande exprimée par le client, son enjeu réel et les conséquences concrètes qui créent la priorité | Terrain | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Aider les équipes à améliorer la découverte commerciale, éviter les propositions trop rapides et faire émerger la vraie raison d’agir côté client | Input validé / correction Laurent | Oui — article validé dans `input/article_29042026` avec suffixe `.publish-ok.md`, publié directement le 29 avril | https://www.laurentserre.com/blog/votre-client-nest-souvent-pas-conscient-du-probleme-que-vous-pouvez-resoudre | à préparer | non requis (.publish-ok) | Post LinkedIn d’opinion sur demande exprimée vs enjeu réel ; carrousel besoin / enjeu / conséquence ; email court sur les rendez-vous où le client n’a pas encore compris ce que le problème lui coûte | Publication directe depuis le fichier validé `.publish-ok.md`, sans repasse éditoriale ; liens internes ajoutés vers solution trop tôt et intérêt vs décision ; illustration hero générée en `gpt-image-2`, index blog mis à jour et vérifications effectuées |
 | 2026-04-28 | publié | Le 28 du mois, il est trop tard pour sauver vos ventes | Fin de mois commerciale qui révèle des ventes fragiles plutôt qu’elle ne les sauve | Dirigeant / arbitrage | Management / pilotage dirigeant | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à fiabiliser la lecture du pipe, nettoyer les affaires faibles et éviter les sauvetages de fin de mois qui prolongent le flou | Input validé / calendrier mensuel | Oui — publication le 28, cohérente avec la tension réelle de fin de mois et validée par `.publish-ok.md` dans le dossier du jour | https://www.laurentserre.com/blog/le-28-du-mois-il-est-trop-tard-pour-sauver-vos-ventes | à préparer | non requis (.publish-ok) | Post LinkedIn d’opinion sur les fins de mois qui paient les illusions du pipe ; carrousel sauver le mois vs nettoyer le pipe ; email court sur les trois questions à poser le 28 | Publication directe depuis le fichier validé `.publish-ok.md`, sans repasse éditoriale ; illustration hero générée en `gpt-image-2`, index blog mis à jour et vérifications effectuées |
 | 2026-04-27 | publié | Si vous pensez encore au boulot le week-end, vous ne récupérez pas | Dirigeant qui ne décroche pas vraiment le week-end et revient déjà fatigué le lundi matin | Dirigeant / récupération | Psychologie dirigeant / organisation PME | Dirigeant PME B2B / directeur commercial / entrepreneur | Aider à nommer le coût réel des faux week-ends et à relier la récupération à l’organisation, la clôture de semaine et la délégation | Input validé / correction de calendrier | Oui — article écrit et validé la veille pour publication le lundi 27, cohérent avec le retour du week-end | https://www.laurentserre.com/blog/si-vous-pensez-encore-au-boulot-le-week-end-vous-ne-recuperez-pas | préparé | non requis (.publish-ok) | Post LinkedIn déjà préparé dans `input/article_26042026/` ; angle possible : un week-end où vous pensez au boulot n’est pas un vrai week-end | Publication remise en ordre le 2026-04-27 : remplacement de l’article généré par erreur le matin, publication directe du `.publish-ok.md`, visuel hero généré en `gpt-image-2`, index blog mis à jour et article du 28 remis en input pour publication demain |

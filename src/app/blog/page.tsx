@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'le-telephone-nest-pas-mort-mais-lappel-au-hasard-lest',
+    title: 'Le téléphone n’est pas mort, mais l’appel au hasard l’est',
+    description: 'La prospection téléphonique fonctionne encore quand elle sert un vrai échange préparé. Ce qui ne marche plus, c’est l’appel lancé au hasard pour réciter un argumentaire.',
+    date: '2026-04-30',
+    readTime: '5 min',
+    category: 'Prospection commerciale / vente terrain',
+    image: '/images/blog/2026-04-30-prospection-telephone-b2b-hero.png',
+    featured: true
+  },
+  {
     slug: 'votre-client-nest-souvent-pas-conscient-du-probleme-que-vous-pouvez-resoudre',
     title: 'Votre client n’est souvent pas conscient du problème que vous pouvez résoudre',
     description: 'Un client formule rarement son vrai problème du premier coup. Le rôle du commercial est d’aider à distinguer la demande visible, l’enjeu réel et les conséquences concrètes.',
