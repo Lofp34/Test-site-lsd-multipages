@@ -29,9 +29,9 @@ const videos: VideoItem[] = [
     youtubeId: 'ooEf32IGpMM',
     badge: 'Résultats clients',
     title: 'Des résultats qui se voient dans les chiffres',
-    subtitle: 'Une sélection courte de retours clients pour voir ce qui change quand la dynamique commerciale tient mieux.',
+    subtitle: 'Une sélection courte de retours clients, dont Dimitri de Cruz / Mon Coach Brico, pour voir ce qui change quand la dynamique commerciale tient mieux.',
     summary:
-      'Une compilation centrée sur les résultats pour voir, en quelques minutes, ce que disent les clients quand la dynamique commerciale change vraiment.',
+      'Une compilation centrée sur les résultats, avec des retours clients chiffrés et l’extrait Dimitri de Cruz / Mon Coach Brico sur le +15% observé dans la dynamique créée.',
     isPrimary: true,
   },
   {

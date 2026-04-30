@@ -98,6 +98,68 @@ const clientCases = [
       'Formation entrepreneuriale, transmission, fondamentaux commerciaux, montée en compétences, pédagogie terrain.',
     links: [{ href: '/formation-commerciale-pme', label: 'Formation commerciale PME' }],
   },
+  {
+    name: 'Mon Coach Brico',
+    title: 'Faire monter une équipe entière en compétence commerciale',
+    body: [
+      'Le témoignage de Dimitri de Cruz illustre un cas très concret : une entreprise où la progression commerciale ne dépend pas uniquement d’un commercial identifié, mais de la capacité de toute l’équipe à mieux comprendre le business, les conversions et les actions qui font avancer l’activité.',
+      'L’accompagnement a servi à structurer une promotion interne commerciale : donner un cadre, des outils, des repères de pilotage et une dynamique collective à une petite équipe où chacun doit contribuer au développement.',
+      'Après l’accompagnement, Mon Coach Brico observe +15% sur le premier quadrimestre. Ce résultat n’est pas présenté comme une causalité magique ou isolée : Dimitri précise que la formation fait partie d’un ensemble plus large, avec la dynamique créée dans l’entreprise et le travail de l’équipe.',
+      'C’est précisément ce qui rend le témoignage crédible : la méthode ne remplace pas les personnes, elle crée les conditions pour que l’équipe transforme son potentiel en résultats mesurables.',
+    ],
+    quote:
+      'Aujourd’hui, l’entreprise fait +15% sur le premier quadrimestre… ce n’est pas lié à la formation seule, mais ça en fait partie.',
+    quoteAuthor: 'Dimitri de Cruz, Mon Coach Brico',
+    illustrates:
+      'Promotion interne commerciale, montée en compétence d’une équipe PME, pilotage commercial, outils de suivi, dynamique collective et progression mesurable avec attribution nuancée.',
+    links: [
+      { href: '/formation-commerciale-pme', label: 'Formation commerciale PME' },
+      { href: '/management-equipe-commerciale', label: 'Management commercial' },
+    ],
+    video: {
+      href: 'https://www.youtube.com/watch?v=ooEf32IGpMM',
+      label: 'Voir l’extrait vidéo de Dimitri dans la compilation témoignages',
+    },
+  },
+];
+
+const evidenceMetrics = [
+  {
+    value: '+15%',
+    label: 'sur le premier quadrimestre',
+    context:
+      'Témoignage Dimitri de Cruz / Mon Coach Brico, avec attribution nuancée : la formation fait partie de la dynamique créée.',
+  },
+  {
+    value: '+25%',
+    label: 'de croissance sur un marché à 8,5%',
+    context:
+      'Preuve issue de la compilation vidéo, à garder en preuve transversale tant que le témoin et le périmètre ne sont pas confirmés.',
+  },
+  {
+    value: '+35%',
+    label: 'de chiffre d’affaires',
+    context:
+      'Témoignage vidéo identifié comme preuve globale, à contextualiser avant attribution nominative.',
+  },
+  {
+    value: '+39%',
+    label: 'de chiffre d’affaires par rapport à l’objectif',
+    context:
+      'Preuve vidéo forte, à relier au cas client exact avant d’en faire un bloc nominatif.',
+  },
+  {
+    value: '+50%',
+    label: 'sur un semestre ou un chiffre d’affaires selon les témoignages',
+    context:
+      'Plusieurs verbatims de la compilation évoquent une progression forte après structuration commerciale.',
+  },
+  {
+    value: '+90%',
+    label: 'sur deux mois',
+    context:
+      'Signal très fort à présenter avec prudence, comme preuve globale tant que la période et le contexte ne sont pas validés.',
+  },
 ];
 
 const proofPoints = [
@@ -177,6 +239,8 @@ const structuredData = [
       'Formation commerciale',
       'Transformation commerciale',
       'Management commercial',
+      'Témoignages clients vidéo',
+      'Preuves commerciales mesurables',
     ],
   },
   {
@@ -298,6 +362,44 @@ export default function CasClientsPage() {
 
       <section className="py-16 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="max-w-4xl mb-12">
+            <p className="text-sm font-title font-bold uppercase tracking-[0.2em] text-mint-green mb-3">
+              Preuves vidéo analysées
+            </p>
+            <h2 className="text-3xl lg:text-5xl font-title font-bold text-blue-ink mb-5">
+              Des progressions mesurables, présentées sans promesse magique
+            </h2>
+            <div className="space-y-4 text-lg text-gray-anthracite leading-relaxed">
+              <p>
+                Les témoignages vidéo sont conservés sur YouTube pour l’instant : c’est le support le plus stable pour l’intégration, le partage et l’indexation. Ils montrent des progressions fortes après accompagnement : +15%, +25%, +35%, +39%, +50%, +90%, objectifs dépassés ou volumes de vente franchis. Ces chiffres doivent rester attachés à leur contexte, leur période et leur périmètre.
+              </p>
+              <p>
+                La lecture juste n’est pas “Laurent produit seul le résultat”. La lecture juste est plus solide : la méthode, l’entraînement et le pilotage créent une dynamique dans laquelle les équipes transforment enfin leur potentiel en résultats mesurables.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {evidenceMetrics.map((metric) => (
+              <article key={`${metric.value}-${metric.label}`} className="rounded-2xl border border-gray-200 bg-gray-50 p-6 shadow-sm">
+                <p className="text-4xl font-title font-extrabold text-mint-green mb-2">{metric.value}</p>
+                <h3 className="text-lg font-title font-bold text-blue-ink mb-3">{metric.label}</h3>
+                <p className="text-sm text-gray-anthracite leading-relaxed">{metric.context}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-8 rounded-2xl border border-orange-soft/30 bg-orange-soft/10 p-6">
+            <p className="font-title font-bold text-blue-ink mb-2">Note éditoriale</p>
+            <p className="text-gray-anthracite leading-relaxed">
+              Le cas Dimitri de Cruz / Mon Coach Brico peut être utilisé nommément. Les autres chiffres issus de la compilation restent, eux, en preuve transversale tant que chaque témoin n’est pas relié avec certitude à son entreprise, à sa période et à sa métrique.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 lg:py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="max-w-3xl mb-12">
             <h2 className="text-3xl lg:text-5xl font-title font-bold text-blue-ink mb-4">Cas clients</h2>
             <p className="text-lg text-gray-anthracite leading-relaxed">
@@ -327,6 +429,16 @@ export default function CasClientsPage() {
                         {link.label}
                       </Link>
                     ))}
+                    {client.video && (
+                      <a
+                        href={client.video.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="rounded-full border border-orange-soft/40 px-4 py-2 text-sm font-semibold text-blue-ink hover:bg-orange-soft/10 transition-colors"
+                      >
+                        {client.video.label}
+                      </a>
+                    )}
                   </div>
                 </div>
 
