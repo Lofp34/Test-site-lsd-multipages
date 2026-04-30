@@ -117,8 +117,8 @@ const clientCases = [
       { href: '/management-equipe-commerciale', label: 'Management commercial' },
     ],
     video: {
-      href: 'https://www.youtube.com/watch?v=ooEf32IGpMM',
-      label: 'Voir l’extrait vidéo de Dimitri dans la compilation témoignages',
+      href: 'https://www.youtube.com/watch?v=jwY2-aKRBac',
+      label: 'Voir le témoignage complet de Dimitri sur YouTube',
     },
   },
 ];
