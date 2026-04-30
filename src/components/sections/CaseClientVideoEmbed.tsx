@@ -16,6 +16,7 @@ function thumbnailUrl(id: string) {
 
 export default function CaseClientVideoEmbed({ youtubeId, title, eyebrow, summary }: CaseClientVideoEmbedProps) {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [thumbnailFailed, setThumbnailFailed] = useState(false);
 
   return (
     <div className="mt-7 overflow-hidden rounded-2xl border border-gray-200 bg-blue-ink shadow-sm">
@@ -37,14 +38,19 @@ export default function CaseClientVideoEmbed({ youtubeId, title, eyebrow, summar
             className="group relative block h-full w-full overflow-hidden text-left"
             aria-label={`Lire la vidéo : ${title}`}
           >
-            <Image
-              src={thumbnailUrl(youtubeId)}
-              alt=""
-              fill
-              className="object-cover transition-transform duration-500 group-hover:scale-105"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 900px"
-              quality={70}
-            />
+            {thumbnailFailed ? (
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(0,189,164,0.28),_transparent_34%),linear-gradient(135deg,#07111B,#102A3D)]" />
+            ) : (
+              <Image
+                src={thumbnailUrl(youtubeId)}
+                alt=""
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 900px"
+                quality={70}
+                onError={() => setThumbnailFailed(true)}
+              />
+            )}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/10" />
             <div className="absolute inset-0 flex items-center justify-center">
               <span className="flex h-16 w-16 items-center justify-center rounded-full border border-white/35 bg-white/20 shadow-2xl backdrop-blur-sm transition-transform duration-300 group-hover:scale-110 md:h-20 md:w-20">
