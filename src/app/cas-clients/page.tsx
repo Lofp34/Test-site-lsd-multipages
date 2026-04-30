@@ -146,37 +146,37 @@ const evidenceMetrics = [
     value: '+15%',
     label: 'sur le premier quadrimestre',
     context:
-      'Témoignage Dimitri de Cruz / Mon Coach Brico, avec attribution nuancée : la formation fait partie de la dynamique créée.',
+      'Dimitri de Cruz / Mon Coach Brico évoque une progression observée dans la dynamique créée avec l’équipe.',
   },
   {
     value: '+25%',
     label: 'de croissance sur un marché à 8,5%',
     context:
-      'Preuve issue de la compilation vidéo, à garder en preuve transversale tant que le témoin et le périmètre ne sont pas confirmés.',
+      'Un témoignage client met en avant une croissance supérieure à celle du marché, rattachée à son contexte et à sa période.',
   },
   {
     value: '+35%',
     label: 'de chiffre d’affaires',
     context:
-      'Témoignage vidéo identifié comme preuve globale, à contextualiser avant attribution nominative.',
+      'Un dirigeant témoigne d’une progression commerciale nette après un travail de structuration et de suivi terrain.',
   },
   {
     value: '+39%',
     label: 'de chiffre d’affaires par rapport à l’objectif',
     context:
-      'Preuve vidéo forte, à relier au cas client exact avant d’en faire un bloc nominatif.',
+      'Un retour client souligne le dépassement d’un objectif commercial mesurable, dans un périmètre précis.',
   },
   {
     value: '+50%',
     label: 'sur un semestre ou un chiffre d’affaires selon les témoignages',
     context:
-      'Plusieurs verbatims de la compilation évoquent une progression forte après structuration commerciale.',
+      'Plusieurs témoignages évoquent une progression forte après clarification du plan de vente et entraînement commercial.',
   },
   {
     value: '+90%',
     label: 'sur deux mois',
     context:
-      'Signal très fort à présenter avec prudence, comme preuve globale tant que la période et le contexte ne sont pas validés.',
+      'Un témoignage court met en avant une accélération très forte, à lire dans son contexte commercial spécifique.',
   },
 ];
 
@@ -382,17 +382,17 @@ export default function CasClientsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="max-w-4xl mb-12">
             <p className="text-sm font-title font-bold uppercase tracking-[0.2em] text-mint-green mb-3">
-              Preuves vidéo analysées
+              Résultats évoqués en vidéo
             </p>
             <h2 className="text-3xl lg:text-5xl font-title font-bold text-blue-ink mb-5">
-              Des progressions mesurables, présentées sans promesse magique
+              Des progressions mesurables, rattachées à des contextes précis
             </h2>
             <div className="space-y-4 text-lg text-gray-anthracite leading-relaxed">
               <p>
-                Les témoignages vidéo sont conservés sur YouTube pour l’instant : c’est le support le plus stable pour l’intégration, le partage et l’indexation. Ils montrent des progressions fortes après accompagnement : +15%, +25%, +35%, +39%, +50%, +90%, objectifs dépassés ou volumes de vente franchis. Ces chiffres doivent rester attachés à leur contexte, leur période et leur périmètre.
+                Les témoignages clients mettent en avant des progressions fortes après accompagnement : +15%, +25%, +35%, +39%, +50%, +90%, objectifs dépassés ou volumes de vente franchis. Ces chiffres ont de la valeur parce qu’ils restent reliés à une entreprise, une période, une équipe et un travail commercial concret.
               </p>
               <p>
-                La lecture juste n’est pas “Laurent produit seul le résultat”. La lecture juste est plus solide : la méthode, l’entraînement et le pilotage créent une dynamique dans laquelle les équipes transforment enfin leur potentiel en résultats mesurables.
+                Ils ne racontent pas une promesse automatique. Ils montrent comment la méthode, l’entraînement et le pilotage peuvent créer une dynamique dans laquelle les équipes transforment leur potentiel en résultats mesurables.
               </p>
             </div>
           </div>
@@ -407,12 +407,6 @@ export default function CasClientsPage() {
             ))}
           </div>
 
-          <div className="mt-8 rounded-2xl border border-orange-soft/30 bg-orange-soft/10 p-6">
-            <p className="font-title font-bold text-blue-ink mb-2">Note éditoriale</p>
-            <p className="text-gray-anthracite leading-relaxed">
-              Le cas Dimitri de Cruz / Mon Coach Brico peut être utilisé nommément. Les autres chiffres issus de la compilation restent, eux, en preuve transversale tant que chaque témoin n’est pas relié avec certitude à son entreprise, à sa période et à sa métrique.
-            </p>
-          </div>
         </div>
       </section>
 
