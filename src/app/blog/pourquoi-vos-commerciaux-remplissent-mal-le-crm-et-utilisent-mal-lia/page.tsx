@@ -392,7 +392,7 @@ export default function PourquoiVosCommerciauxRemplissentMalLeCrmEtUtilisentMalL
           </p>
 
           <p className="mb-8">
-            Bien utilisés ensemble, les deux peuvent au contraire transformer une équipe.
+            Bien utilisés ensemble, les deux peuvent au contraire transformer une équipe. C’est le sujet que je développe plus largement dans la page dédiée à l’<Link href="/ia-commercial-pme" className="text-blue-ink font-semibold underline hover:text-mint-green">IA commerciale pour PME</Link>.
           </p>
 
           <p className="mb-8">

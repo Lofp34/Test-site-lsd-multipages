@@ -37,6 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.95,
     },
+    {
+      url: `${baseUrl}/ia-commercial-pme`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
     // PAGES SPÉCIALISÉES COCON
     {
       url: `${baseUrl}/consultant-commercial-montpellier`,
