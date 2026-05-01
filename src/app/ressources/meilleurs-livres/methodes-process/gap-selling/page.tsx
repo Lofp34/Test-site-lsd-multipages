@@ -60,6 +60,5 @@ export default function GapSellingPage() {
           <Link href="/ressources/meilleurs-livres/methodes-process" className="text-mint-green underline hover:text-mint-green/80 text-lg">← Retour à la catégorie Méthodes & Processus de vente</Link>
         </div>
       </main>
-    </>
   );
 } 
