@@ -156,8 +156,8 @@ const techniqueStructuredData = {
         "jobTitle": "Expert Développement Commercial PME",
         "description": "Expert en développement commercial PME avec 20 ans d'expérience terrain",
         "sameAs": [
-          "https://www.linkedin.com/in/laurent-serre-developpement",
-          "https://twitter.com/laurent_serre"
+          "https://www.linkedin.com/in/laurentserre34/",
+          "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
         ],
         "worksFor": {
           "@type": "Organization",
@@ -646,8 +646,8 @@ const localBusinessData = {
   "priceRange": "€€",
   "openingHours": "Mo-Fr 09:00-18:00",
   "sameAs": [
-    "https://www.linkedin.com/in/laurent-serre-developpement",
-    "https://twitter.com/laurent_serre"
+    "https://www.linkedin.com/in/laurentserre34/",
+    "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
   ]
 };
 

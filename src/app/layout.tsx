@@ -191,8 +191,8 @@ export default function RootLayout({
                 }
               ],
               "sameAs": [
-                "https://www.linkedin.com/in/laurent-serre-developpement",
-                "https://www.youtube.com/@laurentserre"
+                "https://www.linkedin.com/in/laurentserre34/",
+                "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
               ],
               "alumniOf": {
                 "@type": "Organization",

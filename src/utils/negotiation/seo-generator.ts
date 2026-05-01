@@ -267,8 +267,8 @@ export class SEOGenerator {
         "image": authorInfo.image,
         "description": authorInfo.description,
         "sameAs": [
-          "https://www.linkedin.com/in/laurent-serre-developpement/",
-          "https://twitter.com/laurentserre"
+          "https://www.linkedin.com/in/laurentserre34/",
+          "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
         ]
       },
       "publisher": {

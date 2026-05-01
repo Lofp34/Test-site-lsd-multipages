@@ -148,6 +148,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/blog/le-telephone-nest-pas-mort-mais-lappel-au-hasard-lest`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: `${baseUrl}/cgv`,
       lastModified: currentDate,
       changeFrequency: 'yearly',

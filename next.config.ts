@@ -77,6 +77,28 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: '/sitemap.xml',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=3600, s-maxage=3600',
+          },
+          {
+            key: 'Content-Type',
+            value: 'application/xml',
+          },
+        ],
+      },
+      {
+        source: '/robots.txt',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=86400, s-maxage=86400',
+          },
+        ],
+      },
+      {
         source: '/(.*)',
         headers: [
           {
@@ -149,11 +171,25 @@ const nextConfig: NextConfig = {
   },
   // Redirects configuration for broken links
   async redirects() {
-    return linkRedirects.map(redirect => ({
-      source: redirect.source,
-      destination: redirect.destination,
-      permanent: redirect.permanent,
-    }));
+    return [
+      // Redirection non-www → www en 301 (permanent)
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'laurentserre.com',
+          },
+        ],
+        destination: 'https://www.laurentserre.com/:path*',
+        permanent: true,
+      },
+      ...linkRedirects.map(redirect => ({
+        source: redirect.source,
+        destination: redirect.destination,
+        permanent: redirect.permanent,
+      })),
+    ];
   },
   /* config options here */
 };

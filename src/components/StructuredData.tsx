@@ -47,8 +47,8 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
             }
           },
           "sameAs": [
-            "https://www.linkedin.com/in/laurent-serre-commercial",
-            "https://twitter.com/laurentserre_dev"
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
           ]
         };
 
@@ -116,12 +116,6 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
                 }
               }
             ]
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "bestRating": "5",
-            "ratingCount": "127"
           }
         };
 
@@ -186,12 +180,6 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
                 }
               }
             ]
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "bestRating": "5", 
-            "ratingCount": "89"
           }
         };
 
@@ -228,13 +216,7 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
             "Closing et finalisation"
           ],
           "timeRequired": "PT14H",
-          "coursePrerequisites": "Expérience commerciale souhaitée",
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "bestRating": "5",
-            "ratingCount": "156"
-          }
+          "coursePrerequisites": "Expérience commerciale souhaitée"
         };
 
       case 'breadcrumb':

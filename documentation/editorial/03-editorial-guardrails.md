@@ -48,6 +48,7 @@ Avant validation d’un article, il faut vérifier aussi :
 - l’angle principal,
 - la promesse business,
 - la temporalité,
+- la charpente du titre,
 - la proximité avec les 10 derniers articles publiés.
 
 Un article peut être refusé même s’il est bon, simplement parce qu’il ressemble trop à ce qui vient d’être publié.
@@ -93,6 +94,21 @@ Refuser un sujet si au moins 2 conditions sont vraies :
 3. il reprend la même promesse business qu’un article récent ;
 4. il réutilise le même angle principal (diagnostic dirigeant, arbitrage, rituel de pilotage) ;
 5. il n’ouvre pas un nouveau territoire de crédibilité.
+
+## 6 bis. Garde-fou spécifique sur les titres
+
+Un blog peut devenir monotone même si les sujets changent, simplement parce que les titres répètent la même charpente.
+
+Avant publication :
+- comparer le titre du jour aux 8 à 10 derniers titres affichés sur le blog ;
+- repérer les ouvertures répétées (`Pourquoi`, `Comment`, `Les 5...`, etc.) ;
+- si une même charpente d’ouverture apparaît plus de 2 fois sur les 10 derniers articles, la considérer comme surexploitée ;
+- réécrire le titre si une version plus explicite, plus attirante et plus originale existe sans trahir le fond.
+
+Important :
+- on ne change pas un titre juste pour faire joli ;
+- on change un titre seulement si la nouvelle version améliore aussi la clarté, l’intérêt et la singularité ;
+- le slug peut rester stable ; le titre affiché doit servir d’abord la lecture humaine.
 
 ---
 
