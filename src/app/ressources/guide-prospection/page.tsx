@@ -3,7 +3,7 @@ import { ArrowLeft, Target, Users, Phone, Mail, Calendar, CheckCircle, TrendingU
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Guide Ultime de la Prospection | Laurent Serre Développement',
+  title: 'Prospection B2B : stratégie 4 blocs pour des RDV qualifiés (guide 2026)',
   description: 'Découvrez les techniques et stratégies avancées de prospection commerciale pour générer des leads qualifiés et développer votre chiffre d\'affaires.',
   keywords: 'prospection commerciale, génération de leads, développement commercial, techniques de vente, stratégie commerciale',
   alternates: {

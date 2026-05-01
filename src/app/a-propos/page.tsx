@@ -5,8 +5,8 @@ import AboutSection from '@/components/sections/AboutSection';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'À propos de Laurent Serre – Expert Commercial',
-  description: "Découvrez le parcours de Laurent Serre, expert en développement commercial avec 20 ans d'expérience terrain. Méthodes, valeurs, approche.",
+  title: 'Laurent Serre — 20 ans d’expérience en développement commercial PME',
+  description: '20 ans sur le terrain commercial PME. Laurent Serre accompagne les entreprises sur la prospection, le closing, le management d’équipe et la transformation commerciale.',
   alternates: {
     canonical: 'https://www.laurentserre.com/a-propos',
   },

@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'The Innovator\'s Dilemma : résumé complet | Sales Management & Leadership | Laurent Serre',
-  description: 'Résumé détaillé, concepts clés, conseils terrain et avis de The Innovator\'s Dilemma (Clayton Christensen). Innovation disruptive vs sustaining, exemples PME françaises.',
+  title: 'The Innovator\'s Dilemma — résumé et leçons pour commerciaux',
+  description: 'Le dilemme de l\'innovateur expliqué aux commerciaux et managers : disruption, sustaining innovation, et comment anticiper le changement sans tout casser.',
   keywords: [
     'innovators dilemma',
     'clayton christensen',
@@ -17,16 +17,16 @@ export const metadata: Metadata = {
     title: 'The Innovator\'s Dilemma : résumé complet | Sales Management & Leadership',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de The Innovator\'s Dilemma (Clayton Christensen). Innovation disruptive vs sustaining.',
     type: 'article',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/innovators-dilemma',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/innovators-dilemma',
     locale: 'fr_FR',
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/innovators-dilemma',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/innovators-dilemma',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Innovator\'s Dilemma : résumé complet | Sales Management & Leadership',
-    description: 'Résumé détaillé, concepts clés, conseils terrain et avis de The Innovator\'s Dilemma (Clayton Christensen).',
+    title: 'The Innovator\'s Dilemma — résumé et leçons pour commerciaux',
+    description: 'Le dilemme de l\'innovateur expliqué aux commerciaux : disruption et anticipation du changement.',
   }
 };
 

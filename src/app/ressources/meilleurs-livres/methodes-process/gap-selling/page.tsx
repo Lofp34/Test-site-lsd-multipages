@@ -1,13 +1,13 @@
 import Link from 'next/link';
-import Head from 'next/head';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Gap Selling — méthode et résumé pour commerciaux B2B',
+  description: 'La méthode Gap Selling de Keenan : identifier l’écart entre la situation actuelle et souhaitée du client pour vendre sans forcer. Résumé et applications terrain.',
+};
 
 export default function GapSellingPage() {
   return (
-    <>
-      <Head>
-        <title>Gap Selling : résumé complet | Méthodes & Processus de vente | LSD</title>
-        <meta name="description" content="Résumé détaillé, concepts clés, conseils terrain et citation de Gap Selling (Keenan). La méthode pour combler le fossé entre l'état actuel et l'état désiré du client." />
-      </Head>
       <main className="bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16">
         {/* Hero section */}
         <section className="max-w-3xl mx-auto text-center mb-10">

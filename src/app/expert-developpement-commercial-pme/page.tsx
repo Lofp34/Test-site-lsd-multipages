@@ -6,16 +6,16 @@ import StructuredData from '@/components/StructuredData';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Expert Développement Commercial PME : méthode terrain & résultats | Laurent Serre',
-  description: 'Expert développement commercial PME : diagnostic, formation et accompagnement terrain pour structurer votre force de vente et générer plus de clients.',
+  title: 'Expert Développement Commercial PME — diagnostic, formation, accompagnement terrain',
+  description: 'Expert en développement commercial PME depuis 20 ans. Diagnostic gratuit, formation terrain et structuration d’équipe pour générer plus de clients qualifiés.',
   keywords: 'expert développement commercial PME, consultant commercial PME, formation commerciale PME, accompagnement commercial PME, structuration équipe commerciale, Laurent Serre expert commercial',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
     canonical: 'https://www.laurentserre.com/expert-developpement-commercial-pme',
   },
   openGraph: {
-    title: 'Expert Développement Commercial PME : méthode terrain & résultats',
-    description: 'Diagnostic, formation et accompagnement commercial PME pour structurer la prospection, le closing et le management des équipes.',
+    title: 'Expert Développement Commercial PME — diagnostic, formation, accompagnement terrain',
+    description: 'Expert en développement commercial PME : diagnostic, formation et structuration d’équipe pour générer plus de clients qualifiés.',
     url: 'https://www.laurentserre.com/expert-developpement-commercial-pme',
     type: 'website',
     locale: 'fr_FR',
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Expert Développement Commercial PME | Laurent Serre',
-    description: 'Expert développement commercial PME : diagnostic, formation et accompagnement terrain pour générer plus de clients qualifiés.',
+    title: 'Expert Développement Commercial PME — diagnostic, formation terrain',
+    description: 'Expert en développement commercial PME : diagnostic, formation terrain et structuration d’équipe pour plus de clients qualifiés.',
     images: ['https://www.laurentserre.com/laurent.jpg'],
     creator: '@laurentserre',
   },

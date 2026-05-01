@@ -4,15 +4,15 @@ import Link from 'next/link';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Techniques de Closing : 7 méthodes pour conclure plus de ventes | Laurent Serre',
-  description: 'Découvrez 7 techniques de closing concrètes pour traiter les objections, détecter les signaux d’achat et conclure plus de ventes B2B.',
-  keywords: 'closing, techniques de vente, négociation, conclure une vente, commercial, closing commercial',
+  title: '7 Techniques de Closing B2B qui marchent vraiment (guide terrain)',
+  description: 'Les techniques de closing qui fonctionnent en B2B : objection prix, signaux d’achat, closing assumé. Un guide terrain pour conclure plus de ventes sans forcer.',
+  keywords: 'closing B2B, techniques de vente, objection prix, signaux d’achat, conclure une vente, closing commercial',
   alternates: {
     canonical: 'https://www.laurentserre.com/ressources/guide-closing',
   },
   openGraph: {
-    title: 'Techniques de Closing : 7 méthodes pour conclure plus de ventes',
-    description: 'Méthode terrain pour améliorer vos fins d’entretien, traiter les objections et augmenter votre taux de transformation.',
+    title: '7 Techniques de Closing B2B qui marchent vraiment',
+    description: 'Les techniques de closing B2B terrain : objection prix, signaux d’achat, closing assumé. Pour conclure plus de ventes sans forcer.',
     url: 'https://www.laurentserre.com/ressources/guide-closing',
     type: 'article',
     locale: 'fr_FR',

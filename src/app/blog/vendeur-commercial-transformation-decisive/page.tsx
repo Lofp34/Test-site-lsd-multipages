@@ -5,15 +5,15 @@ import HubSpotForm from '@/components/HubSpotForm';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Vendeur vs Commercial : 5 différences pour transformer votre équipe | Laurent Serre',
-  description: 'Découvrez la différence vendeur/commercial et les étapes pour transformer une équipe de vente en force commerciale consultative et performante.',
+  title: 'Vendeur vs Commercial : les 5 vraies différences qui changent vos résultats',
+  description: 'Vous avez des vendeurs ou des commerciaux ? Les 5 différences qui séparent une force de vente d\'une équipe commerciale performante. Auto-diagnostic inclus.',
   keywords: 'vendeur vs commercial, transformation commerciale, management équipe vente, développement commercial, PME',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog/vendeur-commercial-transformation-decisive',
   },
   openGraph: {
-    title: 'Vendeur vs Commercial : transformer une équipe de vente en force consultative',
-    description: 'Différences clés, étapes de transformation et actions terrain pour faire évoluer vos vendeurs en commerciaux performants.',
+    title: 'Vendeur vs Commercial : les 5 vraies différences qui changent vos résultats',
+    description: 'Les 5 différences clés entre un vendeur et un commercial, avec des actions terrain pour faire évoluer votre équipe vers la performance.',
     url: 'https://www.laurentserre.com/blog/vendeur-commercial-transformation-decisive',
     type: 'article',
     locale: 'fr_FR',
