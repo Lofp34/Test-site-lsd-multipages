@@ -56,16 +56,6 @@ const blogPosts = [
     featured: true
   },
   {
-    slug: 'quand-un-client-vous-dit-je-reflechis-sa-decision-est-souvent-deja-prise',
-    title: 'Quand un client vous dit « je réfléchis », sa décision est souvent déjà prise',
-    description: '« Je réfléchis » n'est pas une objection. C'est une sortie. Apprenez à repérer ce signal et à ne pas quitter le rendez-vous sans avoir posé le vrai cadre de décision.',
-    date: '2026-05-03',
-    readTime: '5 min',
-    category: 'Closing / vente B2B',
-    image: '/images/blog/2026-05-03-client-dit-je-reflechis-hero.jpg',
-    featured: true
-  },
-  {
     slug: 'le-telephone-nest-pas-mort-mais-lappel-au-hasard-lest',
     title: 'Le téléphone n'est pas mort, mais l'appel au hasard l'est',
     description: 'La prospection téléphonique fonctionne encore quand elle sert un vrai échange préparé. Ce qui ne marche plus, c'est l'appel lancé au hasard pour réciter un argumentaire.',
