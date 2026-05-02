@@ -4,18 +4,15 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Techniques de closing B2B : comment signer sans forcer et sans brader | Laurent Serre',
+  title: 'Techniques de closing B2B : signer sans forcer ni brader',
   description:
-    'Le closing B2B n\'est pas une manipulation. C\'est une conclusion logique quand la découverte a bien été faite. Les techniques qui fonctionnent vraiment en PME.',
+    '5 techniques de closing B2B pour conclure une vente sans manipulation et sans brader vos marges. Ce qui fonctionne vraiment en PME, avec exemples concrets.',
   keywords:
-    'closing B2B, techniques de closing, signature commerciale, vente B2B, conclure une vente, Laurent Serre',
-  alternates: {
-    canonical: 'https://www.laurentserre.com/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader',
-  },
+    'closing B2B, techniques de closing, conclure une vente, taux de closing, objections commerciales, closing commercial PME, vente B2B, Laurent Serre',
   openGraph: {
-    title: 'Techniques de closing B2B : comment signer sans forcer et sans brader',
+    title: 'Techniques de closing B2B : signer sans forcer ni brader',
     description:
-      'Le closing n\'est pas un combat si la découverte a été bien faite. Voici les techniques qui fonctionnent vraiment en PME, sans manipulation et sans brader.',
+      '5 techniques de closing B2B pour conclure une vente sans manipulation et sans brader vos marges. Ce qui fonctionne vraiment en PME.',
     url: 'https://www.laurentserre.com/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader',
     type: 'article',
     locale: 'fr_FR',
@@ -30,16 +27,72 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Techniques de closing B2B : comment signer sans forcer et sans brader',
+    title: 'Techniques de closing B2B : signer sans forcer ni brader',
     description:
-      'Savoir quand et comment conclure sans manipuler. Les techniques de closing B2B qui marchent vraiment en PME.',
+      '5 techniques de closing B2B pour conclure une vente sans manipulation. Ce qui marche vraiment en PME.',
     images: ['https://www.laurentserre.com/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.jpg'],
+  },
+  alternates: {
+    canonical: 'https://www.laurentserre.com/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader',
   },
 };
 
 export default function TechniquesDeClosingB2B() {
+  const howToJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    'name': 'Techniques de closing B2B : signer sans forcer ni brader',
+    'description': '5 techniques de closing B2B pour conclure une vente sans manipulation en PME.',
+    'author': { '@type': 'Person', 'name': 'Laurent Serre', 'url': 'https://www.laurentserre.com/a-propos' },
+    'step': [
+      { '@type': 'HowToStep', 'position': 1, 'name': 'Le closing direct', 'text': 'Demander directement si le prospect est prêt à avancer après avoir confirmé la valeur apportée.' },
+      { '@type': 'HowToStep', 'position': 2, 'name': 'Le closing par résumé', 'text': 'Récapituler les enjeux identifiés pendant la découverte et proposer de conclure immédiatement.' },
+      { '@type': 'HowToStep', 'position': 3, 'name': 'Le closing par alternative', 'text': 'Proposer deux options concrètes, toutes deux menant à la signature.' },
+      { '@type': 'HowToStep', 'position': 4, 'name': 'Le closing de l\'urgence légitime', 'text': 'Utiliser une contrainte calendaire réelle pour accélérer la décision sans fausse pression.' },
+      { '@type': 'HowToStep', 'position': 5, 'name': 'Le closing sur objection finale', 'text': 'Lever la dernière objection explicitement, puis enchaîner sur une conclusion conditionnelle.' }
+    ],
+    'mainEntityOfPage': {
+      '@type': 'WebPage',
+      '@id': 'https://www.laurentserre.com/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader'
+    }
+  };
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': [
+      {
+        '@type': 'Question',
+        'name': 'Que faire quand un prospect dit "je vais réfléchir" ?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Répondre : "Je comprends tout à fait. Pour vous aider dans votre réflexion, pouvez-vous me dire sur quoi porte principalement votre hésitation ?" Cette question rouvre le dialogue et permet de traiter le vrai blocage.'
+        }
+      },
+      {
+        '@type': 'Question',
+        'name': 'Quels sont les signaux d\'achat en B2B ?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Les signaux verbaux incluent des questions sur les modalités pratiques, l\'utilisation du futur ("quand on travaillera ensemble") et des demandes de garanties. Les signaux comportementaux : implication accrue dans les échanges, introduction d\'autres décideurs, questions sur les conditions de paiement.'
+        }
+      },
+      {
+        '@type': 'Question',
+        'name': 'Comment améliorer son taux de closing en B2B PME ?',
+        'acceptedAnswer': {
+          '@type': 'Answer',
+          'text': 'Identifier les affaires perdues en "je vais réfléchir", maîtriser 2 à 3 techniques de closing adaptées à son contexte, confirmer systématiquement par écrit dans les 2 heures après un accord verbal, et travailler sa posture de découverte en amont.'
+        }
+      }
+    ]
+  };
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <main className="bg-primary-bg text-gray-dark">
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -83,9 +136,9 @@ export default function TechniquesDeClosingB2B() {
 
           <p className="mb-8">Et pourtant, sans closing, il n'y a pas de vente.</p>
 
-          <p className="mb-8">La réalité, c'est que si vous avez bien travaillé en amont — bien qualifié, bien découvert les besoins, bien construit votre proposition de valeur — le closing n'est pas un combat. C'est une conclusion logique.</p>
+          <p className="mb-8">La réalité, c'est que si vous avez bien travaillé en amont - bien qualifié, bien découvert les besoins, bien construit votre proposition de valeur - le closing n'est pas un combat. C'est une conclusion logique.</p>
 
-          <p className="mb-8">Mais savoir comment et quand conclure, ça s'apprend. Voici les techniques de closing B2B qui fonctionnent vraiment en PME, sans manipuler et sans casser vos marges.</p>
+          <p className="mb-8">Mais savoir comment et quand <strong>conclure une vente</strong>, ça s’apprend. Voici les techniques de closing B2B qui fonctionnent vraiment en PME pour améliorer votre <strong>taux de closing</strong>, sans manipuler et sans casser vos marges.</p>
 
           <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Pourquoi la plupart des commerciaux ratent le closing</h2>
 
@@ -95,18 +148,18 @@ export default function TechniquesDeClosingB2B() {
 
           <p className="mb-8">Demander la signature n'est pas une agression. C'est votre droit, si vous avez apporté de la valeur tout au long du processus.</p>
 
-          <p className="mb-8">La cause numéro deux : ils closent trop tôt — avant d'avoir réellement compris les enjeux du client.</p>
+          <p className="mb-8">La cause numéro deux : ils closent trop tôt - avant d'avoir réellement compris les enjeux du client.</p>
 
           <p className="mb-8">Un closing prématuré déclenche l'objection. Un closing au bon moment, après une vraie découverte, obtient le « oui ».</p>
 
           <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les signaux d'achat : savoir quand le prospect est prêt</h2>
 
-          <p className="mb-8">Avant de tenter de conclure, apprenez à lire les signaux. Un prospect prêt à signer vous envoie des signaux clairs — si vous savez les détecter.</p>
+          <p className="mb-8">Avant de tenter de conclure, apprenez à lire les signaux. Un prospect prêt à signer vous envoie des signaux clairs - si vous savez les détecter.</p>
 
           <p className="mb-4 font-semibold">Signaux verbaux :</p>
           <ul className="list-disc pl-6 mb-8">
             <li className="mb-2">Il pose des questions sur les modalités pratiques : « Comment ça se passe pour la mise en place ? »</li>
-            <li className="mb-2">Il utilise le futur : « Quand on travaillera ensemble… »</li>
+            <li className="mb-2">Il utilise le futur : « Quand on travaillera ensemble... »</li>
             <li className="mb-2">Il demande des références clients ou des garanties</li>
           </ul>
 
@@ -119,7 +172,7 @@ export default function TechniquesDeClosingB2B() {
 
           <p className="mb-8">Quand vous percevez ces signaux, c'est le moment. N'attendez pas.</p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les 5 techniques de closing qui fonctionnent en B2B</h2>
+          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les 5 techniques de closing commercial qui fonctionnent en B2B</h2>
 
           <h3 className="text-xl font-title font-semibold text-blue-ink mt-10 mb-4">1. Le closing direct</h3>
           <p className="mb-8">Simple, honnête, efficace.</p>
@@ -158,13 +211,13 @@ export default function TechniquesDeClosingB2B() {
 
           <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Ce qui se passe après le « oui »</h2>
 
-          <p className="mb-8">Beaucoup de commerciaux relâchent leur attention après le « oui » verbal. Grosse erreur.</p>
+          <p className="mb-8">Beaucoup de commerciaux relâchent leur attention après le « oui » verbal. Grosse erreur — et l’une des principales causes d’effondrement du taux de closing réel.</p>
 
           <p className="mb-8">Entre le « oui » oral et la signature effective, il peut se passer beaucoup de choses. Un concurrent qui relance. Un associé qui soulève des objections. Un changement de priorité interne.</p>
 
           <p className="mb-4 font-semibold">Ce qu'il faut faire immédiatement après le « oui » :</p>
           <ol className="list-decimal pl-6 mb-8">
-            <li className="mb-2">Confirmez par écrit dans les 24 heures — email de récapitulatif, proposition formalisée</li>
+            <li className="mb-2">Confirmez par écrit dans les 24 heures - email de récapitulatif, proposition formalisée</li>
             <li className="mb-2">Proposez une date de signature ou de démarrage concrète</li>
             <li className="mb-2">Identifiez les autres décideurs qui pourraient bloquer et adressez-les pro-activement</li>
           </ol>
@@ -199,7 +252,10 @@ export default function TechniquesDeClosingB2B() {
 
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <p className="mb-6">
-              Si vos équipes peinent à conclure ou laissent trop d'affaires en « je réfléchis », on peut travailler ensemble sur leur posture de closing et leur capacité à transformer un intérêt en signature.
+              Si vos équipes peinent à conclure ou laissent trop d’affaires en « je réfléchis », on peut travailler ensemble dans le cadre d’une{' '}
+              <Link href="/formation-commerciale-pme" className="text-mint-green font-semibold underline">formation commerciale sur-mesure pour PME</Link>{' '}
+              ou d’un{' '}
+              <Link href="/coach-commercial-entreprise" className="text-mint-green font-semibold underline">accompagnement commercial individualisé</Link>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/diagnostic" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
@@ -211,7 +267,7 @@ export default function TechniquesDeClosingB2B() {
             </div>
           </div>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Conclusion : 3 actions pour améliorer votre taux de closing cette semaine</h2>
+          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">3 actions concrètes pour améliorer votre taux de closing cette semaine</h2>
 
           <ol className="list-decimal pl-6 mb-8">
             <li className="mb-4"><strong>Identifiez les 3 dernières affaires perdues</strong> en « je vais réfléchir ». Analysez ce qui s'est passé. Avez-vous détecté les signaux d'achat ? Avez-vous osé demander la signature ?</li>
@@ -219,7 +275,8 @@ export default function TechniquesDeClosingB2B() {
             <li className="mb-4"><strong>Après votre prochain « oui » verbal</strong> : envoyez un email de confirmation dans les 2 heures et proposez une date de démarrage dans le même message.</li>
           </ol>
 
-          <p className="mb-8">Le closing, ce n'est pas une question de talent naturel. C'est une compétence qui s'apprend, se pratique et s'améliore.</p>
+          <p className="mb-8">Le closing, ce n’est pas une question de talent naturel. C’est une compétence qui s’apprend, se pratique et s’améliore. Si vous souhaitez aller plus loin, consultez notre guide complet sur la{' '}
+          <Link href="/expert-developpement-commercial-pme" className="text-mint-green hover:underline">transformation commerciale des PME</Link>.</p>
         </div>
       </article>
 
@@ -235,5 +292,6 @@ export default function TechniquesDeClosingB2B() {
         </div>
       </section>
     </main>
+    </>
   );
 }
