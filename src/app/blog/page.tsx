@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader',
+    title: 'Techniques de closing B2B : comment signer sans forcer et sans brader',
+    description: 'Le closing B2B n\'est pas une manipulation. C\'est une conclusion logique quand la découverte a bien été faite. Savoir quand et comment conclure, ça s\'apprend.',
+    date: '2026-05-02',
+    readTime: '7 min',
+    category: 'Closing / vente B2B',
+    image: '/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'le-telephone-nest-pas-mort-mais-lappel-au-hasard-lest',
     title: 'Le téléphone n’est pas mort, mais l’appel au hasard l’est',
     description: 'La prospection téléphonique fonctionne encore quand elle sert un vrai échange préparé. Ce qui ne marche plus, c’est l’appel lancé au hasard pour réciter un argumentaire.',
