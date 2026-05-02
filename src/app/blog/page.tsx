@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'gestion-des-objections-commerciales-transformer-le-non-en-opportunite',
+    title: 'Gestion des objections commerciales : transformer le non en opportunité',
+    description: 'Les objections ne sont pas des obstacles, ce sont des portes. La méthode en 4 étapes pour traiter n\'importe quelle objection B2B sans forcer, du prix à l\'autorité.',
+    date: '2026-05-03',
+    readTime: '7 min',
+    category: 'Vente B2B / objections',
+    image: '/images/blog/2026-05-03-gestion-objections-commerciales-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader',
     title: 'Techniques de closing B2B : comment signer sans forcer et sans brader',
     description: 'Le closing B2B n\'est pas une manipulation. C\'est une conclusion logique quand la découverte a bien été faite. Savoir quand et comment conclure, ça s\'apprend.',
@@ -43,6 +53,17 @@ const blogPosts = [
     readTime: '7 min',
     category: 'Closing / vente B2B',
     image: '/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.jpg',
+    featured: true
+  },
+  },
+  {
+    slug: 'quand-un-client-vous-dit-je-reflechis-sa-decision-est-souvent-deja-prise',
+    title: 'Quand un client vous dit « je réfléchis », sa décision est souvent déjà prise',
+    description: '"Je réfléchis" n\'est pas une objection. C\'est une sortie. Apprenez à repérer ce signal et à ne pas quitter le rendez-vous sans avoir posé le vrai cadre de décision.',
+    date: '2026-05-03',
+    readTime: '5 min',
+    category: 'Closing / vente B2B',
+    image: '/images/blog/2026-05-03-client-dit-je-reflechis-hero.jpg',
     featured: true
   },
   {
