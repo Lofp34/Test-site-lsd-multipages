@@ -36,6 +36,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'ia-et-prospection-commerciale-ce-qui-change-vraiment-pour-vos-equipes-en-2026',
+    title: 'IA et prospection commerciale : ce qui change vraiment pour vos équipes en 2026',
+    description: 'L\'IA ne remplace pas vos commerciaux. Elle amplifie leur capacité à être pertinents, rapides et efficaces. Ce qui change concrètement pour les PME qui intègrent l\'IA.',
+    date: '2026-05-04',
+    readTime: '9 min',
+    category: 'IA / prospection',
+    image: '/images/blog/2026-05-04-ia-prospection-commerciale-hero.jpg',
+    featured: true
+  },  {
     slug: 'gestion-des-objections-commerciales-transformer-le-non-en-opportunite',
     title: 'Gestion des objections commerciales : transformer le non en opportunité',
     description: 'Les objections ne sont pas des obstacles, ce sont des portes. La méthode en 4 étapes pour traiter n\'importe quelle objection B2B sans forcer, du prix à l\'autorité.',
