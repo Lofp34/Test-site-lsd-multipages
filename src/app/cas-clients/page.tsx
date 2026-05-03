@@ -117,12 +117,12 @@ const clientCases = [
     name: 'Pierre Vincent',
     title: 'Transformer un rendez-vous prématuré en engagement concret',
     body: [
-      'Pierre Vincent évolue dans un contexte de vente complexe, où les premiers rendez-vous avec un prospect peuvent sembler trop tôt — le besoin n\'est pas encore exprimé, le projet pas encore cadré, la décision pas encore mûre.',
+      'Pierre Vincent évolue dans l\'industrie du recyclage, un secteur où les cycles de vente sont longs et où un premier rendez-vous peut sembler prématuré — le besoin n\'est pas encore exprimé, le projet pas encore cadré, la décision pas encore mûre.',
       'Plutôt que de repousser ou de faire un rendez-vous découverte superficiel, l\'accompagnement a consisté à préparer le rendez-vous de manière beaucoup plus stratégique : lire les enjeux de l\'entreprise et de l\'interlocuteur avant même d\'entrer dans la discussion commerciale.',
       'Le résultat : un rendez-vous qui aurait pu rester exploratoire s\'est transformé en lettre d\'engagement. Ce cas illustre que la préparation des enjeux est souvent le levier le plus sous-estimé de la vente B2B.',
     ],
     illustrates:
-      'Préparation stratégique des rendez-vous, transformation d\'un contact trop précoce en engagement, vente complexe, lecture des enjeux avant la discussion commerciale.',
+      'Préparation stratégique des rendez-vous, industrie du recyclage, transformation d\'un contact trop précoce en engagement, vente complexe, lecture des enjeux avant la discussion commerciale.',
     links: [
       { href: '/formation-commerciale-pme', label: 'Formation commerciale PME' },
       { href: '/diagnostic', label: 'Diagnostic commercial' },
@@ -139,12 +139,12 @@ const clientCases = [
     name: 'Creavea',
     title: 'Structurer sa méthode commerciale pour gagner en confiance et en chiffre',
     body: [
-      'Kristina, de Creavea, avait déjà une activité commerciale. Mais ses entretiens manquaient de structure : chaque rendez-vous était différent, la progression dépendait trop de l\'inspiration du moment, et le chiffre d\'affaires n\'était pas aussi régulier qu\'il aurait pu l\'être.',
+      'Kristina dirige Creavea, une entreprise de distribution B2B en gros. Elle avait déjà une activité commerciale solide. Mais ses entretiens manquaient de structure : chaque rendez-vous était différent, la progression dépendait trop de l\'inspiration du moment, et le chiffre d\'affaires n\'était pas aussi régulier qu\'il aurait pu l\'être.',
       'L\'accompagnement a porté sur la structuration de la méthode : mieux préparer chaque entretien, clarifier le plan de vente, installer des repères solides pour chaque étape du rendez-vous, et suivre les progrès dans la durée.',
       'Le résultat est mesurable : +39% de chiffre d\'affaires. Mais au-delà du chiffre, Kristina décrit un changement plus profond : une confiance plus solide en rendez-vous, une méthode qui tient dans le temps, et la capacité à reproduire ce qui marche sans dépendre de l\'inspiration.',
     ],
     illustrates:
-      'Structuration de la méthode commerciale, progression du chiffre d\'affaires (+39%), préparation des entretiens, régularité commerciale, confiance en rendez-vous.',
+      'Structuration de la méthode commerciale, distribution B2B en gros, progression du chiffre d\'affaires (+39%), préparation des entretiens, régularité commerciale, confiance en rendez-vous.',
     links: [
       { href: '/formation-commerciale-pme', label: 'Formation commerciale PME' },
       { href: '/coach-commercial-entreprise', label: 'Coaching commercial' },
