@@ -57,8 +57,8 @@ const blogPosts = [
   },
   {
     slug: 'le-telephone-nest-pas-mort-mais-lappel-au-hasard-lest',
-    title: 'Le téléphone n'est pas mort, mais l'appel au hasard l'est',
-    description: 'La prospection téléphonique fonctionne encore quand elle sert un vrai échange préparé. Ce qui ne marche plus, c'est l'appel lancé au hasard pour réciter un argumentaire.',
+    title: 'Le téléphone n\'est pas mort, mais l\'appel au hasard l\'est',
+    description: 'La prospection téléphonique fonctionne encore quand elle sert un vrai échange préparé. Ce qui ne marche plus, c\'est l\'appel lancé au hasard pour réciter un argumentaire.',
     date: '2026-04-30',
     readTime: '5 min',
     category: 'Prospection commerciale / vente terrain',
@@ -67,8 +67,8 @@ const blogPosts = [
   },
   {
     slug: 'votre-client-nest-souvent-pas-conscient-du-probleme-que-vous-pouvez-resoudre',
-    title: 'Votre client n'est souvent pas conscient du problème que vous pouvez résoudre',
-    description: 'Un client formule rarement son vrai problème du premier coup. Le rôle du commercial est d'aider à distinguer la demande visible, l'enjeu réel et les conséquences concrètes.',
+    title: 'Votre client n\'est souvent pas conscient du problème que vous pouvez résoudre',
+    description: 'Un client formule rarement son vrai problème du premier coup. Le rôle du commercial est d\'aider à distinguer la demande visible, l\'enjeu réel et les conséquences concrètes.',
     date: '2026-04-29',
     readTime: '6 min',
     category: 'Découverte commerciale / besoin client',
@@ -78,7 +78,7 @@ const blogPosts = [
   {
     slug: 'le-28-du-mois-il-est-trop-tard-pour-sauver-vos-ventes',
     title: 'Le 28 du mois, il est trop tard pour sauver vos ventes',
-    description: 'Quand la fin de mois ressemble à une opération de sauvetage, le problème n'est presque jamais le dernier appel. Il est dans ce qui n'a pas été regardé plus tôt.',
+    description: 'Quand la fin de mois ressemble à une opération de sauvetage, le problème n\'est presque jamais le dernier appel. Il est dans ce qui n\'a pas été regardé plus tôt.',
     date: '2026-04-28',
     readTime: '5 min',
     category: 'Pilotage commercial / fin de mois',
@@ -107,8 +107,8 @@ const blogPosts = [
   },
   {
     slug: 'pourquoi-un-manager-commercial-reprend-trop-souvent-les-rendez-vous-a-la-place-de-lequipe',
-    title: 'Manager commercial : à force de sauver les rendez-vous, vous affaiblissez l'équipe',
-    description: 'Quand un manager commercial reprend trop souvent les rendez-vous à la place de l'équipe, il rassure sur le moment mais il apprend surtout aux commerciaux à attendre qu'on les sauve.',
+    title: 'Manager commercial : à force de sauver les rendez-vous, vous affaiblissez l\'équipe',
+    description: 'Quand un manager commercial reprend trop souvent les rendez-vous à la place de l\'équipe, il rassure sur le moment mais il apprend surtout aux commerciaux à attendre qu\'on les sauve.',
     date: '2026-04-25',
     readTime: '6 min de lecture',
     category: 'Management / coaching commercial',
@@ -118,7 +118,7 @@ const blogPosts = [
   {
     slug: 'pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix',
     title: 'Objection prix : même des commerciaux expérimentés se font encore bananer',
-    description: 'Quand une vente bloque sur le prix, le tarif n'est pas toujours le vrai sujet. Très souvent, l'objection prix masque un diagnostic commercial évité trop vite.',
+    description: 'Quand une vente bloque sur le prix, le tarif n\'est pas toujours le vrai sujet. Très souvent, l\'objection prix masque un diagnostic commercial évité trop vite.',
     date: '2026-04-24',
     readTime: '6 min de lecture',
     category: 'Objection prix / vente terrain',
@@ -127,8 +127,8 @@ const blogPosts = [
   },
   {
     slug: 'pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial',
-    title: 'Le vrai problème de votre équipe n'est presque jamais la motivation',
-    description: 'Quand une équipe commerciale cale, parler motivation permet souvent d'éviter le vrai sujet : des rendez-vous faibles, un management mou ou des ventes mal relues.',
+    title: 'Le vrai problème de votre équipe n\'est presque jamais la motivation',
+    description: 'Quand une équipe commerciale cale, parler motivation permet souvent d\'éviter le vrai sujet : des rendez-vous faibles, un management mou ou des ventes mal relues.',
     date: '2026-04-23',
     readTime: '6 min de lecture',
     category: 'Psychologie commerciale / management',
@@ -138,7 +138,7 @@ const blogPosts = [
   {
     slug: 'pourquoi-un-manager-commercial-tolere-trop-longtemps-les-bonnes-excuses',
     title: 'Manager commercial : tolérer les bonnes excuses vous coûte des ventes',
-    description: 'Quand un manager commercial laisse passer trop longtemps les bonnes excuses, il protège le confort de l'équipe mais laisse aussi s'installer des ventes fragiles et des habitudes faibles.',
+    description: 'Quand un manager commercial laisse passer trop longtemps les bonnes excuses, il protège le confort de l\'équipe mais laisse aussi s\'installer des ventes fragiles et des habitudes faibles.',
     date: '2026-04-22',
     readTime: '6 min de lecture',
     category: 'Management / coaching commercial',
@@ -157,8 +157,8 @@ const blogPosts = [
   },
   {
     slug: 'vous-navez-pas-perdu-face-au-concurrent-vous-avez-perdu-bien-avant',
-    title: 'Vous n'avez pas perdu face au concurrent, vous avez perdu bien avant',
-    description: 'Quand une équipe dit qu'elle a perdu face au concurrent, elle évite souvent une vérité moins confortable. La vente s'est généralement fragilisée bien plus tôt.',
+    title: 'Vous n\'avez pas perdu face au concurrent, vous avez perdu bien avant',
+    description: 'Quand une équipe dit qu\'elle a perdu face au concurrent, elle évite souvent une vérité moins confortable. La vente s\'est généralement fragilisée bien plus tôt.',
     date: '2026-04-20',
     readTime: '6 min de lecture',
     category: 'Point de vue / lecture commerciale',
@@ -167,8 +167,8 @@ const blogPosts = [
   },
   {
     slug: 'pourquoi-vos-commerciaux-confondent-interet-et-decision',
-    title: 'Un prospect intéressé n'est pas encore une décision',
-    description: 'Un prospect intéressé n'est pas encore une vente qui avance. Beaucoup d'équipes confondent un bon échange avec une vraie progression de décision.',
+    title: 'Un prospect intéressé n\'est pas encore une décision',
+    description: 'Un prospect intéressé n\'est pas encore une vente qui avance. Beaucoup d\'équipes confondent un bon échange avec une vraie progression de décision.',
     date: '2026-04-19',
     readTime: '7 min de lecture',
     category: 'Terrain / qualification commerciale',
@@ -178,7 +178,7 @@ const blogPosts = [
   {
     slug: 'pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections',
     title: 'Objections commerciales : répondre trop vite vous fait perdre la main',
-    description: 'Quand un commercial répond trop vite à une objection, il saute sur sa réponse avant d'avoir compris ce que le client essayait vraiment de dire.',
+    description: 'Quand un commercial répond trop vite à une objection, il saute sur sa réponse avant d\'avoir compris ce que le client essayait vraiment de dire.',
     date: '2026-04-18',
     readTime: '7 min de lecture',
     category: 'Erreur fréquente / vente terrain',
@@ -188,7 +188,7 @@ const blogPosts = [
   {
     slug: 'pourquoi-meilleurs-commerciaux-dirco-entrepreneurs-se-cassent-la-figure',
     title: 'Passer de commercial à dirco, puis de dirco à entrepreneur : trois métiers, trois pièges',
-    description: 'Passer de commercial à directeur commercial, puis de dirco à entrepreneur, ce ne sont pas des promotions. Ce sont trois métiers différents. Voici pourquoi les meilleurs se plantent en changeant d'étage, et ce qu'il faut vraiment installer pour tenir.',
+    description: 'Passer de commercial à directeur commercial, puis de dirco à entrepreneur, ce ne sont pas des promotions. Ce sont trois métiers différents. Voici pourquoi les meilleurs se plantent en changeant d\'étage, et ce qu\'il faut vraiment installer pour tenir.',
     date: '2026-04-17',
     readTime: '11 min de lecture',
     category: 'Management / transformation commerciale',
@@ -198,7 +198,7 @@ const blogPosts = [
   {
     slug: 'en-2030-toiture-et-compagnie-les-agents-ia-ont-change-le-rythme',
     title: 'En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme',
-    description: 'Projection 2030, crédible et assumée, de la transformation d'une PME de couverture par des agents IA utiles, côté direction, commerce, chantiers et pilotage.',
+    description: 'Projection 2030, crédible et assumée, de la transformation d\'une PME de couverture par des agents IA utiles, côté direction, commerce, chantiers et pilotage.',
     date: '2026-04-16',
     readTime: '7 min',
     category: 'IA utile / transformation PME',
@@ -207,8 +207,8 @@ const blogPosts = [
   },
   {
     slug: 'largent-nest-pas-le-probleme-cest-la-mesure-objective-de-la-valeur',
-    title: 'L'argent n'est pas le problème, c'est la mesure objective de la valeur',
-    description: 'Quand un prospect dit qu'il n'a pas le budget, le vrai sujet est souvent ailleurs. L'argent mesure surtout la valeur perçue, la priorité et la confiance accordée à la décision.',
+    title: 'L\'argent n\'est pas le problème, c\'est la mesure objective de la valeur',
+    description: 'Quand un prospect dit qu\'il n\'a pas le budget, le vrai sujet est souvent ailleurs. L\'argent mesure surtout la valeur perçue, la priorité et la confiance accordée à la décision.',
     date: '2026-04-16',
     readTime: '5 min',
     category: 'Psychologie commerciale',
@@ -217,7 +217,7 @@ const blogPosts = [
   },
   {
     slug: 'anticiper-lechec-nest-pas-du-pessimisme-cest-une-discipline-commerciale',
-    title: 'Anticiper l'échec n'est pas du pessimisme, c'est une discipline commerciale',
+    title: 'Anticiper l\'échec n\'est pas du pessimisme, c\'est une discipline commerciale',
     description: 'En vente, la pensée positive rassure. La lucidité, elle, aide à mieux vendre, à mieux qualifier et à éviter les illusions confortables.',
     date: '2026-04-15',
     readTime: '6 min',
@@ -227,8 +227,8 @@ const blogPosts = [
   },
   {
     slug: 'pourquoi-vos-commerciaux-remplissent-mal-le-crm-et-utilisent-mal-lia',
-    title: 'Pourquoi vos commerciaux remplissent mal le CRM... et utilisent mal l'IA',
-    description: 'Quand les notes CRM sont vagues, l'IA ne rend pas l'équipe plus pertinente. Elle industrialise surtout le flou commercial et le transforme en prose plus propre.',
+    title: 'Pourquoi vos commerciaux remplissent mal le CRM... et utilisent mal l\'IA',
+    description: 'Quand les notes CRM sont vagues, l\'IA ne rend pas l\'équipe plus pertinente. Elle industrialise surtout le flou commercial et le transforme en prose plus propre.',
     date: '2026-04-14',
     readTime: '8 min',
     category: 'IA utile',
@@ -238,7 +238,7 @@ const blogPosts = [
   {
     slug: 'pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud',
     title: 'Pourquoi le compte rendu commercial ne remplace jamais le débrief à chaud',
-    description: 'Le compte rendu rassure le management, mais il ne fait pas progresser la vente. Ce qui change vraiment le niveau d'une équipe, c'est le débrief à chaud, court et précis.',
+    description: 'Le compte rendu rassure le management, mais il ne fait pas progresser la vente. Ce qui change vraiment le niveau d\'une équipe, c\'est le débrief à chaud, court et précis.',
     date: '2026-04-13',
     readTime: '9 min',
     category: 'Méthode / management commercial',
@@ -247,8 +247,8 @@ const blogPosts = [
   },
   {
     slug: 'cinq-signes-commercial-motive-va-quand-meme-echouer',
-    title: 'Les cinq signes qu'un commercial motivé va quand même échouer',
-    description: 'La motivation ne compense pas un mauvais cadrage commercial. Voici les signaux concrets qui montrent qu'un profil engagé risque quand même de se casser.',
+    title: 'Les cinq signes qu\'un commercial motivé va quand même échouer',
+    description: 'La motivation ne compense pas un mauvais cadrage commercial. Voici les signaux concrets qui montrent qu\'un profil engagé risque quand même de se casser.',
     date: '2026-04-12',
     readTime: '9 min',
     category: 'Psychologie commerciale',
@@ -268,7 +268,7 @@ const blogPosts = [
   {
     slug: 'pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme',
     title: 'Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système',
-    description: 'Quand un bon commercial devient irrégulier, le problème n'est pas toujours la personne. Un système flou dégrade la posture, la lecture et la performance de l'équipe.',
+    description: 'Quand un bon commercial devient irrégulier, le problème n\'est pas toujours la personne. Un système flou dégrade la posture, la lecture et la performance de l\'équipe.',
     date: '2026-04-05',
     readTime: '10 min',
     category: 'Structure / système commercial',
@@ -277,8 +277,8 @@ const blogPosts = [
   },
   {
     slug: 'les-erreurs-onboarding-commercial-qui-plombent-performance-nouveau',
-    title: 'Les erreurs d'onboarding commercial qui vont plomber la performance du nouveau',
-    description: 'Un onboarding commercial flou coûte des mois de performance. Le nouveau n'échoue pas seul : il hérite souvent d'un système mal cadré.',
+    title: 'Les erreurs d\'onboarding commercial qui vont plomber la performance du nouveau',
+    description: 'Un onboarding commercial flou coûte des mois de performance. Le nouveau n\'échoue pas seul : il hérite souvent d\'un système mal cadré.',
     date: '2026-04-04',
     readTime: '10 min',
     category: 'Management / transformation',
@@ -297,8 +297,8 @@ const blogPosts = [
   },
   {
     slug: 'la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif',
-    title: 'La peur du prix : le vrai problème n'est presque jamais le tarif',
-    description: 'Quand une vente bloque sur le prix, le tarif n'est souvent que la surface du problème. Valeur perçue, découverte et décision pèsent bien plus lourd.',
+    title: 'La peur du prix : le vrai problème n\'est presque jamais le tarif',
+    description: 'Quand une vente bloque sur le prix, le tarif n\'est souvent que la surface du problème. Valeur perçue, découverte et décision pèsent bien plus lourd.',
     date: '2026-04-02',
     readTime: '9 min',
     category: 'Psychologie commerciale',
@@ -307,8 +307,8 @@ const blogPosts = [
   },
   {
     slug: 'pourquoi-ia-sans-plan-vente-produit-surtout-bruit',
-    title: 'Pourquoi l'IA sans plan de vente produit surtout du bruit',
-    description: 'L'IA aide une équipe claire. Sans plan de vente net, elle accélère surtout la confusion, le reporting et les faux gains de modernité.',
+    title: 'Pourquoi l\'IA sans plan de vente produit surtout du bruit',
+    description: 'L\'IA aide une équipe claire. Sans plan de vente net, elle accélère surtout la confusion, le reporting et les faux gains de modernité.',
     date: '2026-04-01',
     readTime: '9 min',
     category: 'IA utile',
@@ -318,7 +318,7 @@ const blogPosts = [
   {
     slug: 'pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe',
     title: 'Pourquoi un manager commercial qui suit sans coacher plombe son équipe',
-    description: 'Le vrai problème n'est pas le manque de suivi. C'est un suivi sans progression, qui occupe l'équipe sans la faire grandir.',
+    description: 'Le vrai problème n\'est pas le manque de suivi. C\'est un suivi sans progression, qui occupe l\'équipe sans la faire grandir.',
     date: '2026-03-31',
     readTime: '10 min',
     category: 'Management / transformation',
@@ -347,7 +347,7 @@ const blogPosts = [
   },
   {
     slug: 'comite-commercial-mensuel-decisions-dirigeant',
-    title: 'Comité commercial mensuel : les 6 décisions qu'un dirigeant doit exiger',
+    title: 'Comité commercial mensuel : les 6 décisions qu\'un dirigeant doit exiger',
     description: 'Le cadre mensuel pour sortir du commentaire CRM, fiabiliser le forecast et prendre de vraies décisions de pilotage commercial.',
     date: '2026-03-29',
     readTime: '12 min',
@@ -468,7 +468,7 @@ const blogPosts = [
   {
     slug: '7-etapes-transformer-non-en-oui-performant-2025',
     title: '7 étapes pour transformer un « non » frustrant en « oui » performant en 2025',
-    description: 'Une méthode claire et moderne pour transformer chaque refus client en opportunité commerciale durable et efficace. Conseils pratiques, techniques d'écoute et outils IA pour performer en 2025.',
+    description: 'Une méthode claire et moderne pour transformer chaque refus client en opportunité commerciale durable et efficace. Conseils pratiques, techniques d\'écoute et outils IA pour performer en 2025.',
     date: '2025-07-11',
     readTime: '9 min',
     category: 'Techniques de vente',
