@@ -85,6 +85,43 @@ export default function FormationCommercialePMEPage() {
         </div>
       </section>
 
+      {/* Pourquoi une formation specifique PME */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="mb-12">
+            <h2 className="text-3xl lg:text-4xl font-title font-bold text-blue-ink mb-6">
+              Pourquoi une formation commerciale spécifique aux PME ?
+            </h2>
+            <p className="text-lg text-gray-anthracite leading-relaxed mb-6">
+              Une PME n’a pas les mêmes moyens, les mêmes cycles de décision ni les mêmes contraintes qu’un grand groupe. Pourtant, la plupart des formations commerciales du marché sont conçues pour des entreprises qui peuvent se permettre deux jours de formation en salle sans que l’activité ne s’arrête, et avec un service RH dédié pour planifier, suivre et mesurer.
+            </p>
+            <p className="text-lg text-gray-anthracite leading-relaxed mb-6">
+              Dans une PME, la réalité est différente. Le dirigeant est souvent aussi le directeur commercial. Les commerciaux sont en rendez-vous toute la semaine. La formation doit s’adapter au rythme de l’entreprise, pas l’inverse. Elle doit être opérationnelle immédiatement — pas un catalogue de bonnes pratiques théoriques. Elle doit produire des changements visibles dans les rendez-vous dès les premières semaines.
+            </p>
+            <p className="text-lg text-gray-anthracite leading-relaxed mb-6">
+              C’est pour cette raison que nous avons construit des programmes pensés pour la PME : formats courts et intensifs, cas pratiques calés sur votre secteur, suivi terrain après la formation, et un formateur qui connaît vos enjeux parce qu’il les vit avec vous.
+            </p>
+            <div className="grid sm:grid-cols-3 gap-6 mt-10">
+              <div className="bg-white rounded-xl p-6 border border-gray-200">
+                <p className="text-3xl mb-3">📋</p>
+                <h3 className="font-title font-bold text-blue-ink mb-2">Adapté au rythme PME</h3>
+                <p className="text-sm text-gray-600">Formats courts et intensifs qui ne bloquent pas votre activité commerciale pendant des semaines.</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-200">
+                <p className="text-3xl mb-3">🎯</p>
+                <h3 className="font-title font-bold text-blue-ink mb-2">Résultats immédiats</h3>
+                <p className="text-sm text-gray-600">Des méthodes applicables dès le lendemain en rendez-vous, pas des concepts à digérer pendant 6 mois.</p>
+              </div>
+              <div className="bg-white rounded-xl p-6 border border-gray-200">
+                <p className="text-3xl mb-3">🔧</p>
+                <h3 className="font-title font-bold text-blue-ink mb-2">Sur-mesure sectoriel</h3>
+                <p className="text-sm text-gray-600">Cas pratiques, scripts et jeux de rôles calés sur votre secteur d’activité et vos vrais clients.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Nos Formations */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -191,7 +228,41 @@ export default function FormationCommercialePMEPage() {
         </div>
       </section>
 
-      {/* Techniques de Négociation Avancées */}
+      {/* Notre methode de formation */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <h2 className="text-3xl lg:text-4xl font-title font-bold text-blue-ink mb-6">
+            Comment se déroule une formation commerciale avec Laurent Serre ?
+          </h2>
+          <p className="text-lg text-gray-anthracite leading-relaxed mb-6">
+            Une formation commerciale utile ne commence pas par un programme standard. Elle commence par un diagnostic : où sont les vrais blocages dans votre équipe ? Est-ce la prospection qui pêche, le closing qui fait peur, le management qui ne challenge pas assez, ou le discours commercial qui n’est pas assez clair ?
+          </p>
+          <p className="text-lg text-gray-anthracite leading-relaxed mb-6">
+            Une fois le diagnostic posé, nous construisons le parcours ensemble : quels modules, dans quel ordre, sur quel rythme, avec quels cas pratiques. La formation alterne apports de méthode, exercices sur vos vraies situations commerciales, scripts actionnables, débriefs collectifs et plans d’action individuels.
+          </p>
+          <p className="text-lg text-gray-anthracite leading-relaxed mb-10">
+            Et après la formation, le suivi continue. Parce qu’une formation qui ne change pas les rendez-vous de la semaine suivante n’a pas servi à grand-chose. Nous assurons un suivi terrain pour ancrer les nouveaux gestes, corriger ce qui dérape, et mesurer les progrès.
+          </p>
+          <div className="space-y-6">
+            {[
+              { step: 1, title: 'Diagnostic commercial', text: 'On identifie ensemble le vrai blocage : prospection, discours, closing, management ou pilotage.' },
+              { step: 2, title: 'Parcours sur-mesure', text: 'On choisit les modules, le rythme et les cas pratiques adaptés à votre équipe et votre secteur.' },
+              { step: 3, title: 'Formation terrain', text: 'Alternance de méthode, exercices, scripts, jeux de rôles et plans d\'action immédiats.' },
+              { step: 4, title: 'Suivi et ancrage', text: 'Débriefs post-formation, correction des gestes, mesure des progrès sur plusieurs semaines.' },
+            ].map((item) => (
+              <div key={item.step} className="flex gap-4 items-start">
+                <div className="w-10 h-10 rounded-full bg-mint-green/15 text-mint-green font-title font-bold flex items-center justify-center shrink-0">{item.step}</div>
+                <div>
+                  <h3 className="font-title font-bold text-blue-ink text-lg mb-1">{item.title}</h3>
+                  <p className="text-gray-anthracite">{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Techniques de Negociation Avancees */}
       <section className="py-20 bg-gradient-to-r from-mint-green/5 to-blue-ink/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-16">
@@ -351,6 +422,26 @@ export default function FormationCommercialePMEPage() {
           {
             question: "Combien de temps faut-il pour voir les effets d’une formation commerciale ?",
             answer: "Les premiers effets apparaissent souvent dès les premières semaines sur la discipline commerciale et la qualité des rendez-vous. Les impacts CA se mesurent plutôt sur 2 à 6 mois selon le cycle de vente."
+          },
+          {
+            question: "Quelle différence entre une formation catalogue et une formation PME sur-mesure ?",
+            answer: "Une formation catalogue applique un programme standard quel que soit votre secteur. Une formation PME sur-mesure part de vos vrais rendez-vous, de vos vrais clients, de vos vraies difficultés. Les exercices ne sont pas génériques : ils sont calés sur votre réalité commerciale."
+          },
+          {
+            question: "Peut-on financer une formation commerciale via les OPCO ou le CPF ?",
+            answer: "Oui, les formations commerciales sont éligibles aux financements OPCO pour les entreprises. Selon votre convention collective et votre OPCO de rattachement, une prise en charge partielle ou totale est possible. Nous vous accompagnons dans les démarches."
+          },
+          {
+            question: "Faut-il former toute l’équipe ou seulement les commerciaux en difficulté ?",
+            answer: "Former seulement les commerciaux en difficulté crée un écart qui se voit et peut démotiver. Il est souvent plus efficace de former l’équipe entière sur un socle commun, quitte à approfondir ensuite sur les points individuels. Le management doit aussi être formé pour faire vivre les nouveaux repères après la formation."
+          },
+          {
+            question: "La formation est-elle adaptée aux équipes de 2 à 5 commerciaux ?",
+            answer: "Oui, c’est même une taille idéale. L’effectif réduit permet un travail très individualisé, des débriefs précis et un suivi rapproché. Chaque commercial repart avec ses propres axes de progression et un plan d’action personnel."
+          },
+          {
+            question: "Que se passe-t-il après la formation ?",
+            answer: "Nous assurons un suivi terrain post-formation : débriefs des premiers rendez-vous, correction des gestes, ajustement des scripts, mesure des progrès. L’objectif est que les nouveaux réflexes tiennent dans la durée, pas seulement pendant la semaine qui suit la formation."
           }
         ]}
       />
