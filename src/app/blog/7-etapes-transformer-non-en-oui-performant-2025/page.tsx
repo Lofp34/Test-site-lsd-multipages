@@ -36,6 +36,24 @@ export const metadata: Metadata = {
 export default function Article7EtapesNonOui() {
   return (
     <main className="bg-primary-bg text-gray-dark">
+      {/* JSON-LD Article */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "7 étapes pour transformer un « non » frustrant en « oui » performant en 2025",
+            "description": "Découvrez une méthode en 7 étapes pour transformer chaque refus client frustrant en opportunité commerciale durable et efficace.",
+            "author": { "@type": "Person", "name": "Laurent Serre", "url": "https://www.laurentserre.com/a-propos" },
+            "datePublished": "2025-07-01",
+            "dateModified": "2026-05-03",
+            "image": "https://www.laurentserre.com/equipe_bureau.jpg",
+            "url": "https://www.laurentserre.com/blog/7-etapes-transformer-non-en-oui-performant-2025",
+            "publisher": { "@type": "Organization", "name": "Laurent Serre Développement", "url": "https://www.laurentserre.com" }
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

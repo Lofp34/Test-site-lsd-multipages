@@ -36,6 +36,24 @@ export const metadata: Metadata = {
 export default function ClosingB2BTechniques() {
   return (
     <main className="bg-primary-bg text-gray-dark">
+      {/* JSON-LD Article */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Closing B2B : 7 techniques qui marchent (+ scripts à copier)",
+            "description": "Augmentez votre taux de closing en 90 jours sans forcer : MAP, trial close, résumé décisionnel, A/B close, business case, POC cadré, déclosing propre. Bonus : 5 scripts prêts à copier.",
+            "author": { "@type": "Person", "name": "Laurent Serre", "url": "https://www.laurentserre.com/a-propos" },
+            "datePublished": "2025-10-13",
+            "dateModified": "2026-05-03",
+            "image": "https://www.laurentserre.com/images/closing_post.png",
+            "url": "https://www.laurentserre.com/blog/closing-b2b-7-techniques",
+            "publisher": { "@type": "Organization", "name": "Laurent Serre Développement", "url": "https://www.laurentserre.com" }
+          })
+        }}
+      />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

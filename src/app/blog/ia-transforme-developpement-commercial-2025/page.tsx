@@ -30,6 +30,24 @@ export const metadata: Metadata = {
 export default function Article2() {
   return (
     <main className="bg-primary-bg text-gray-dark">
+      {/* JSON-LD Article */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Comment l'IA transforme le développement commercial en 2025",
+            "description": "Découvrez comment l'intelligence artificielle révolutionne la prospection, le scoring et le suivi client. Guide complet pour intégrer l'IA efficacement.",
+            "author": { "@type": "Person", "name": "Laurent Serre", "url": "https://www.laurentserre.com/a-propos" },
+            "datePublished": "2025-01-10",
+            "dateModified": "2026-05-03",
+            "image": "https://www.laurentserre.com/tableau-de-bord.jpeg",
+            "url": "https://www.laurentserre.com/blog/ia-transforme-developpement-commercial-2025",
+            "publisher": { "@type": "Organization", "name": "Laurent Serre Développement", "url": "https://www.laurentserre.com" }
+          })
+        }}
+      />
       {/* Hero Section */}
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

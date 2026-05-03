@@ -27,6 +27,44 @@ export const metadata: Metadata = {
 export default function ConsultantCommercialMontpellierPage() {
   return (
     <main className="flex flex-col min-h-screen bg-white">
+      {/* JSON-LD LocalBusiness */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Laurent Serre Développement — Consultant Commercial Montpellier",
+            "url": "https://www.laurentserre.com/consultant-commercial-montpellier",
+            "image": "https://www.laurentserre.com/laurent.jpg",
+            "description": "Consultant commercial Montpellier pour PME. Laurent Serre intervient en région Occitanie pour formations, accompagnement et transformation commerciale.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "FR",
+              "addressRegion": "Occitanie",
+              "addressLocality": "Mauguio",
+              "postalCode": "34130",
+              "streetAddress": "259, rue de la lavande"
+            },
+            "areaServed": [
+              { "@type": "City", "name": "Montpellier" },
+              { "@type": "City", "name": "Béziers" },
+              { "@type": "City", "name": "Sète" },
+              { "@type": "City", "name": "Nîmes" },
+              { "@type": "City", "name": "Perpignan" },
+              { "@type": "City", "name": "Toulouse" },
+              { "@type": "AdministrativeArea", "name": "Occitanie" }
+            ],
+            "priceRange": "€€",
+            "telephone": "+33 6 14 94 40 60",
+            "sameAs": [
+              "https://www.linkedin.com/in/laurentserre34/",
+              "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+            ]
+          })
+        }}
+      />
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">

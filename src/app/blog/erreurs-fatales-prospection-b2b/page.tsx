@@ -30,6 +30,24 @@ export const metadata: Metadata = {
 export default function Article3() {
   return (
     <main className="bg-primary-bg text-gray-dark">
+      {/* JSON-LD Article */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Les erreurs fatales dans la prospection B2B (et comment les éviter)",
+            "description": "Après 20 ans d'expérience terrain, découvrez les 7 erreurs qui sabotent vos efforts de prospection B2B et les solutions concrètes pour les éviter.",
+            "author": { "@type": "Person", "name": "Laurent Serre", "url": "https://www.laurentserre.com/a-propos" },
+            "datePublished": "2025-01-05",
+            "dateModified": "2026-05-03",
+            "image": "https://www.laurentserre.com/erreurs-fatales.png",
+            "url": "https://www.laurentserre.com/blog/erreurs-fatales-prospection-b2b",
+            "publisher": { "@type": "Organization", "name": "Laurent Serre Développement", "url": "https://www.laurentserre.com" }
+          })
+        }}
+      />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

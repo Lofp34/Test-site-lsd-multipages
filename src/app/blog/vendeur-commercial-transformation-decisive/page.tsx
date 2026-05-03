@@ -31,6 +31,24 @@ export const metadata: Metadata = {
 export default function Article5() {
   return (
     <main className="bg-primary-bg text-gray-dark">
+      {/* JSON-LD Article */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "Vendeur vs Commercial : les 5 vraies différences qui changent vos résultats",
+            "description": "Vous avez des vendeurs ou des commerciaux ? Les 5 différences qui séparent une force de vente d'une équipe commerciale performante. Auto-diagnostic inclus.",
+            "author": { "@type": "Person", "name": "Laurent Serre", "url": "https://www.laurentserre.com/a-propos" },
+            "datePublished": "2024-12-20",
+            "dateModified": "2026-05-03",
+            "image": "https://www.laurentserre.com/equipedeface.jpg",
+            "url": "https://www.laurentserre.com/blog/vendeur-commercial-transformation-decisive",
+            "publisher": { "@type": "Organization", "name": "Laurent Serre Développement", "url": "https://www.laurentserre.com" }
+          })
+        }}
+      />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
