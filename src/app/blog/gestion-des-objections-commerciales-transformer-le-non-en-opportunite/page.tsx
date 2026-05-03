@@ -38,8 +38,105 @@ export const metadata: Metadata = {
 };
 
 export default function GestionObjectionsCommerciales() {
+  const articleUrl = 'https://www.laurentserre.com/blog/gestion-des-objections-commerciales-transformer-le-non-en-opportunite';
+
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: 'Gestion des objections commerciales : transformer le non en opportunité',
+    description:
+      'Les objections ne sont pas des obstacles, ce sont des portes. Découvrez la méthode en 4 étapes pour traiter n\'importe quelle objection B2B sans forcer.',
+    image: 'https://www.laurentserre.com/images/blog/2026-05-03-gestion-objections-commerciales-hero.jpg',
+    datePublished: '2026-05-03',
+    dateModified: '2026-05-03',
+    author: {
+      '@type': 'Person',
+      name: 'Laurent Serre',
+      url: 'https://www.laurentserre.com/a-propos',
+      sameAs: [
+        'https://www.linkedin.com/in/laurentserre34/',
+        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+      ],
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Laurent Serre Développement',
+      url: 'https://www.laurentserre.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.laurentserre.com/logo.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': articleUrl,
+    },
+    articleSection: 'Vente B2B / objections',
+    keywords: ['objections commerciales', 'gestion objections', 'vente B2B', 'objection prix', 'objection concurrence', 'traitement objections'],
+  };
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Pourquoi les objections commerciales sont-elles une bonne nouvelle pour un vendeur ?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Une objection signifie que le prospect est engagé et envisage sérieusement l\'offre. Un prospect désintéressé ne soulève pas d\'objections — il dit non merci et s\'en va. Une objection est une information précieuse car elle révèle un frein identifiable, et un frein identifiable peut être travaillé.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Quels sont les 4 types d\'objections les plus fréquentes en vente B2B ?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Les 4 types d\'objections les plus fréquentes sont : l\'objection prix (c\'est trop cher, pas de budget), l\'objection timing (ce n\'est pas le bon moment), l\'objection concurrence (on travaille déjà avec quelqu\'un) et l\'objection autorité (je dois en parler à mon associé).',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Quelle est la méthode en 4 étapes pour traiter une objection commerciale ?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'La méthode se déroule en 4 étapes : 1) Accuser réception de l\'objection sans céder ni réfuter, 2) Creuser avec des questions ouvertes pour comprendre le vrai fond, 3) Reformuler et valider pour s\'assurer d\'avoir bien compris, 4) Répondre avec précision en utilisant des faits, des exemples et des chiffres.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Comment réagir quand un prospect dit "c\'est trop cher" ?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Ne pas baisser immédiatement le prix : cela signalerait que le tarif initial n\'était pas sérieux. À la place : accuser réception, creuser l\'origine de la comparaison (budget disponible ou offre concurrente ?), recadrer sur le coût de l\'inaction vs l\'investissement, et proposer une alternative comme un démarrage progressif ou un paiement étalé.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Que faire face à l\'objection "je dois en parler à mon associé" ?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Ne pas envoyer une proposition par email seul. Proposer un document ciblé sur les préoccupations de l\'associé, et demander à le rencontrer, même 20 minutes par visio, pour répondre directement à ses questions. L\'objectif est de rester dans la boucle de décision.',
+        },
+      },
+    ],
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.laurentserre.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.laurentserre.com/blog' },
+      { '@type': 'ListItem', position: 3, name: 'Gestion des objections commerciales', item: articleUrl },
+    ],
+  };
+
   return (
     <main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -86,6 +183,16 @@ export default function GestionObjectionsCommerciales() {
           <p className="mb-8">La gestion des objections commerciales est l'une des compétences les plus déterminantes en vente B2B. Pas parce qu'elle vous permet de « vaincre » votre prospect — mais parce qu'elle vous permet de comprendre ce qui se passe vraiment et de trouver ensemble le bon chemin.</p>
 
           <p className="mb-8">Voici ma méthode, testée sur le terrain depuis 20 ans.</p>
+
+          <div className="bg-mint-green/5 border-l-4 border-mint-green p-6 rounded-r-2xl mb-12">
+            <p className="font-title font-bold text-blue-ink text-lg mb-3">À retenir</p>
+            <ul className="space-y-2 text-gray-dark">
+              <li><strong>Une objection n'est pas un refus</strong> — c'est un signe d'engagement. Le prospect désintéressé ne soulève pas d'objections.</li>
+              <li><strong>Il existe 4 grandes familles</strong> : prix, timing, concurrence, autorité — chacune se traite différemment.</li>
+              <li><strong>La méthode en 4 étapes</strong> : accuser réception → creuser → reformuler → répondre avec précision.</li>
+              <li><strong>Ne jamais baisser le prix</strong> en première intention — recadrer la valeur avant d'envisager une alternative.</li>
+            </ul>
+          </div>
 
           <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Pourquoi les objections sont une bonne nouvelle</h2>
 
@@ -195,6 +302,43 @@ export default function GestionObjectionsCommerciales() {
           <p className="mb-8">Les objections ne sont pas des obstacles. Ce sont des portes. Apprenez à les ouvrir.</p>
         </div>
       </article>
+
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-title font-bold text-blue-ink mb-8 text-center">
+            Articles similaires
+          </h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <Link
+              href="/blog/pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix"
+              className="block bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+            >
+              <p className="text-xs text-mint-green font-semibold uppercase tracking-wide mb-2">Objection prix</p>
+              <p className="font-title font-semibold text-blue-ink text-sm leading-snug">
+                Objection prix : même des commerciaux expérimentés se font encore bananer
+              </p>
+            </Link>
+            <Link
+              href="/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader"
+              className="block bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+            >
+              <p className="text-xs text-mint-green font-semibold uppercase tracking-wide mb-2">Closing B2B</p>
+              <p className="font-title font-semibold text-blue-ink text-sm leading-snug">
+                Techniques de closing B2B : signer sans forcer et sans brader
+              </p>
+            </Link>
+            <Link
+              href="/blog/pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections"
+              className="block bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow border border-gray-100"
+            >
+              <p className="text-xs text-mint-green font-semibold uppercase tracking-wide mb-2">Objections</p>
+              <p className="font-title font-semibold text-blue-ink text-sm leading-snug">
+                Objections : répondre trop vite vous fait perdre la main
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
 
       <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
