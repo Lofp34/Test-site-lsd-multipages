@@ -94,12 +94,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/services`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.85,
-    },
-    {
       url: `${baseUrl}/suivi-performance`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
@@ -109,12 +103,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // === PAGES SPÉCIALISÉES ===
     {
       url: `${baseUrl}/consultant-commercial-montpellier`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/formateur-vente-pme`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.85,

@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     siteName: 'Laurent Serre Développement',
   },
   robots: {
-    index: true,
+    index: false,
     follow: true,
   },
 };

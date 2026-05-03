@@ -184,6 +184,17 @@ const nextConfig: NextConfig = {
         destination: 'https://www.laurentserre.com/:path*',
         permanent: true,
       },
+      // Redirection pages obsolètes → pages piliers (301)
+      {
+        source: '/formateur-vente-pme',
+        destination: '/formation-commerciale-pme',
+        permanent: true,
+      },
+      {
+        source: '/formateur-vente-pme/:path*',
+        destination: '/formation-commerciale-pme',
+        permanent: true,
+      },
       ...linkRedirects.map(redirect => ({
         source: redirect.source,
         destination: redirect.destination,
