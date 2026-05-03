@@ -184,6 +184,19 @@ export default function GestionObjectionsCommerciales() {
 
           <p className="mb-8">Voici ma méthode, testée sur le terrain depuis 20 ans.</p>
 
+          <nav className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 mb-8 not-prose" aria-label="Sommaire">
+            <p className="font-title font-bold text-blue-ink mb-3">Au sommaire</p>
+            <ol className="space-y-1.5 text-sm">
+              <li><a href="#pourquoi-bonne-nouvelle" className="text-blue-ink hover:text-mint-green transition-colors">1. Pourquoi les objections sont une bonne nouvelle</a></li>
+              <li><a href="#4-types" className="text-blue-ink hover:text-mint-green transition-colors">2. Les 4 types d'objections</a></li>
+              <li><a href="#methode-4-etapes" className="text-blue-ink hover:text-mint-green transition-colors">3. La methode en 4 etapes</a></li>
+              <li><a href="#cas-trop-cher" className="text-blue-ink hover:text-mint-green transition-colors">4. Cas pratique : C'est trop cher</a></li>
+              <li><a href="#cas-associe" className="text-blue-ink hover:text-mint-green transition-colors">5. Cas pratique : Je dois en parler a mon associe</a></li>
+              <li><a href="#conclusion-actions" className="text-blue-ink hover:text-mint-green transition-colors">6. Conclusion : 3 actions pour cette semaine</a></li>
+            </ol>
+          </nav>
+          
+
           <div className="bg-mint-green/5 border-l-4 border-mint-green p-6 rounded-r-2xl mb-12">
             <p className="font-title font-bold text-blue-ink text-lg mb-3">À retenir</p>
             <ul className="space-y-2 text-gray-dark">
@@ -194,7 +207,7 @@ export default function GestionObjectionsCommerciales() {
             </ul>
           </div>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Pourquoi les objections sont une bonne nouvelle</h2>
+          <h2 id="pourquoi-bonne-nouvelle" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Pourquoi les objections sont une bonne nouvelle</h2>
 
           <p className="mb-8">Contre-intuitif ? Oui. Mais réel.</p>
 
@@ -204,7 +217,7 @@ export default function GestionObjectionsCommerciales() {
 
           <p className="mb-8">Celui qui objecte vous donne une information précieuse : il y a un frein identifiable. Et un frein identifiable, ça se travaille.</p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les 4 types d'objections que vous rencontrerez</h2>
+          <h2 id="4-types" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les 4 types d'objections que vous rencontrerez</h2>
 
           <p className="mb-4 font-semibold">1. L'objection prix</p>
           <p className="mb-8">« C'est trop cher », « On n'a pas le budget », « Votre concurrent est moins cher ».</p>
@@ -222,7 +235,7 @@ export default function GestionObjectionsCommerciales() {
           <p className="mb-8">« Je dois en parler à mon associé », « Ce n'est pas moi qui décide ».</p>
           <p className="mb-8">Classique. Identifiez les vrais décideurs et impliquez-les dans le processus.</p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">La méthode en 4 étapes pour traiter n'importe quelle objection</h2>
+          <h2 id="methode-4-etapes" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">La méthode en 4 étapes pour traiter n'importe quelle objection</h2>
 
           <h3 className="text-xl font-title font-semibold text-blue-ink mt-10 mb-4">Étape 1 : Accuser réception sans céder</h3>
           <p className="mb-8">Ne réfutez pas immédiatement. Ne vous justifiez pas non plus. Accusez réception avec calme.</p>
@@ -251,7 +264,7 @@ export default function GestionObjectionsCommerciales() {
             « C'est exactement pour cette raison que je vais vous partager les résultats obtenus par une PME similaire à la vôtre : +35 % de rendez-vous qualifiés en 90 jours, pour un investissement de X€. Le ROI a été atteint en 4 mois. »
           </blockquote>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Cas pratique : « C'est trop cher »</h2>
+          <h2 id="cas-trop-cher" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Cas pratique : « C'est trop cher »</h2>
 
           <p className="mb-4 font-semibold">Ne pas faire :</p>
           <p className="mb-8">Baisser immédiatement le prix. Vous signalez que votre tarif initial n'était pas sérieux.</p>
@@ -264,7 +277,7 @@ export default function GestionObjectionsCommerciales() {
             <li className="mb-2">Proposer une alternative : démarrage progressif, paiement étalé</li>
           </ol>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Cas pratique : « Je dois en parler à mon associé »</h2>
+          <h2 id="cas-associe" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Cas pratique : « Je dois en parler à mon associé »</h2>
 
           <p className="mb-8">Cette objection cache souvent une réalité simple : vous n'avez pas encore convaincu tous les décideurs.</p>
 
@@ -291,7 +304,7 @@ export default function GestionObjectionsCommerciales() {
             </div>
           </div>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Conclusion : 3 actions pour cette semaine</h2>
+          <h2 id="conclusion-actions" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Conclusion : 3 actions pour cette semaine</h2>
 
           <ol className="list-decimal pl-6 mb-8">
             <li className="mb-4"><strong>Listez les 5 objections que vous entendez le plus souvent.</strong> Pour chacune, rédigez votre réponse idéale en suivant les 4 étapes : réception → creuser → reformuler → répondre.</li>

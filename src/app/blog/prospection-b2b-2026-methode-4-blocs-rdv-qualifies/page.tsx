@@ -117,7 +117,7 @@ export default function ProspectionB2B4BlocsPage() {
             Ce cadre permet d&apos;augmenter la qualité des RDV et de réduire le bruit commercial.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Bloc 1 — Ciblage : arrêter de parler à tout le monde</h2>
+          <h2 id="bloc-ciblage" className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Bloc 1 — Ciblage : arrêter de parler à tout le monde</h2>
           <p className="mb-4">
             Premier levier : définir un ICP concret, pas un persona “marketing”. Vous devez savoir qui décide, qui influence,
             quelle douleur coûte réellement de l&apos;argent, et quel niveau de maturité est compatible avec votre offre.
@@ -128,7 +128,7 @@ export default function ProspectionB2B4BlocsPage() {
             <li>Fenêtre de décision probable (3 à 6 mois)</li>
           </ul>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Bloc 2 — Message : parler résultat, pas brochure</h2>
+          <h2 id="bloc-message" className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Bloc 2 — Message : parler résultat, pas brochure</h2>
           <p className="mb-4">
             Un bon message de prospection ne présente pas votre offre. Il ouvre une conversation utile sur un risque, une perte
             de performance ou un objectif business. Votre prospect doit se dire : “c&apos;est mon sujet”.
@@ -140,7 +140,7 @@ export default function ProspectionB2B4BlocsPage() {
             </p>
           </div>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Bloc 3 — Séquence : cadence courte, valeur continue</h2>
+          <h2 id="bloc-sequence" className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Bloc 3 — Séquence : cadence courte, valeur continue</h2>
           <p className="mb-4">
             Une séquence efficace n&apos;est pas une répétition. C&apos;est une progression : chaque contact ajoute de la valeur.
             Sur 21 jours, combinez email, téléphone et LinkedIn avec un angle différent à chaque fois.
@@ -153,7 +153,7 @@ export default function ProspectionB2B4BlocsPage() {
             <li>J21 : relance finale claire</li>
           </ul>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Bloc 4 — Pilotage : mesurer ce qui fait progresser</h2>
+          <h2 id="bloc-pilotage" className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Bloc 4 — Pilotage : mesurer ce qui fait progresser</h2>
           <p className="mb-4">
             Les KPI de volume ne suffisent pas. Il faut suivre des indicateurs de qualité : taux de réponse qualifiée,
             taux de RDV tenus, et taux de transformation RDV → opportunité.
@@ -162,12 +162,12 @@ export default function ProspectionB2B4BlocsPage() {
             Sans pilotage qualité, l&apos;équipe se fatigue et le pipeline gonfle artificiellement.
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Mini-cas terrain</h2>
+          <h2 id="mini-cas-prosp" className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Mini-cas terrain</h2>
           <p className="mb-2"><strong>Contexte :</strong> PME B2B, 6 commerciaux, pipeline instable.</p>
           <p className="mb-2"><strong>Action :</strong> mise en place des 4 blocs pendant 6 semaines.</p>
           <p className="mb-8"><strong>Résultat :</strong> +28% de RDV qualifiés et cycle commercial mieux maîtrisé.</p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Checklist de démarrage (30 minutes)</h2>
+          <h2 id="checklist" className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Checklist de démarrage (30 minutes)</h2>
           <ul className="list-disc pl-6 mb-8">
             <li>Définir 1 ICP prioritaire pour les 30 prochains jours</li>
             <li>Écrire 1 message d&apos;accroche orienté douleur business</li>
