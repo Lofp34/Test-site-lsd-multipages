@@ -338,9 +338,12 @@ export default function MethodesVenteComparees() {
             <p className="mt-12">Vous voulez aller plus loin ? Consultez notre guide sur les{' '}
               <Link href="/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader" className="text-mint-green hover:underline">
                 techniques de closing B2B
-              </Link> ou découvrez comment nous accompagnons les PME dans la{' '}
+              </Link>, découvrez comment nous accompagnons les PME dans la{' '}
               <Link href="/formation-commerciale-pme" className="text-mint-green hover:underline">
                 formation commerciale sur-mesure
+              </Link>, ou voyez les{' '}
+              <Link href="/cas-clients" className="text-mint-green hover:underline">
+                résultats obtenus avec nos clients
               </Link>.
             </p>
           </div>
