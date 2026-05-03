@@ -39,8 +39,46 @@ export const metadata: Metadata = {
 
 export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage() {
   // Live refresh marker 2026-04-18 CTA pass 2 to force redeploy after Laurent validation.
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Objections commerciales : répondre trop vite vous fait perdre la main",
+  "description": "Quand un commercial répond trop vite à une objection, il saute sur sa réponse avant d’avoir compris ce que le client essayait vraiment de dire.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero-v2.png",
+  "datePublished": "2026-04-18",
+  "dateModified": "2026-04-18",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections"
+  },
+  "articleSection": "Erreur fréquente / vente terrain",
+  "keywords": [
+    "objections commerciales",
+    "objection prix",
+    "vente B2B",
+    "découverte commerciale",
+    "Laurent Serre",
+    "PME"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

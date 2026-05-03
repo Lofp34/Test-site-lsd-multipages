@@ -38,8 +38,49 @@ export const metadata: Metadata = {
 };
 
 export default function RelancesCommercialesAffaiblissentVentePage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pourquoi beaucoup de relances commerciales affaiblissent la vente au lieu de la faire avancer",
+  "description": "Quand une relance commerciale devient un réflexe, elle dégrade souvent la valeur perçue, la posture du vendeur et la dynamique de décision. Le vrai sujet est rarement la fréquence seule.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.jpg",
+  "datePublished": "2026-04-03",
+  "dateModified": "2026-04-03",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/pourquoi-beaucoup-relances-commerciales-affaiblissent-vente"
+  },
+  "articleSection": "Techniques de vente terrain / relance commerciale",
+  "keywords": [
+    "relances commerciales",
+    "vente B2B",
+    "suivi commercial",
+    "posture commerciale",
+    "valeur perçue",
+    "closing B2B",
+    "Laurent Serre",
+    "bootcamp commercial",
+    "diagnostic commercial"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

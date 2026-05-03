@@ -38,8 +38,48 @@ export const metadata: Metadata = {
 };
 
 export default function IASansPlanVentePage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pourquoi l’IA sans plan de vente produit surtout du bruit",
+  "description": "Beaucoup d’équipes commerciales ajoutent des outils IA avant d’avoir clarifié leur plan de vente. Elles accélèrent alors la confusion plus que la performance.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.jpg",
+  "datePublished": "2026-04-01",
+  "dateModified": "2026-04-01",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/pourquoi-ia-sans-plan-vente-produit-surtout-bruit"
+  },
+  "articleSection": "IA utile / structure commerciale",
+  "keywords": [
+    "IA commerciale",
+    "plan de vente",
+    "équipe commerciale B2B",
+    "sales enablement IA",
+    "transformation commerciale",
+    "Laurent Serre",
+    "bootcamp commercial",
+    "diagnostic commercial"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

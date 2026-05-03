@@ -34,8 +34,45 @@ export const metadata: Metadata = {
 };
 
 export default function FinTrimestreCommercialPage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Fin de trimestre commercial : 7 arbitrages pour éviter un mois d&apos;avril creux",
+  "description": "Les 7 arbitrages de fin de trimestre qui permettent aux dirigeants et directeurs commerciaux de sécuriser avril sans pression inutile ni pipeline artificiel.",
+  "image": "https://www.laurentserre.com/images/blog/2026-03-26-fin-trimestre-arbitrages-hero.svg",
+  "datePublished": "2026-03-26",
+  "dateModified": "2026-03-26",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/fin-trimestre-commercial-7-arbitrages-eviter-avril-creux"
+  },
+  "keywords": [
+    "fin de trimestre commercial",
+    "pipeline commercial",
+    "directeur commercial",
+    "dirigeant PME",
+    "prévision commerciale",
+    "bootcamp vente"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

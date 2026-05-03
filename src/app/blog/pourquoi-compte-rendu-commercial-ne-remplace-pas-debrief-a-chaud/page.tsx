@@ -38,8 +38,47 @@ export const metadata: Metadata = {
 };
 
 export default function PourquoiCompteRenduCommercialNeRemplacePasDebriefAChaudPage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pourquoi le compte rendu commercial ne remplace jamais le débrief à chaud",
+  "description": "Beaucoup d’équipes commentent les rendez-vous commerciaux après coup sans vraiment les travailler. Le compte rendu rassure. Le débrief à chaud, lui, fait progresser.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.jpg",
+  "datePublished": "2026-04-13",
+  "dateModified": "2026-04-13",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud"
+  },
+  "articleSection": "Méthode / management commercial terrain",
+  "keywords": [
+    "débrief commercial",
+    "compte rendu commercial",
+    "manager commercial",
+    "coaching commercial",
+    "rendez-vous commercial",
+    "PME B2B",
+    "Laurent Serre"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

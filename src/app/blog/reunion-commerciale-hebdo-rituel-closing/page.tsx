@@ -34,8 +34,46 @@ export const metadata: Metadata = {
 };
 
 export default function ReunionCommercialeHebdoPage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Réunion commerciale hebdo : le rituel de 45 minutes qui fait remonter le closing",
+  "description": "Le rituel hebdomadaire qu’utilisent les dirigeants et directeurs commerciaux pour assainir le pipeline, coacher sans micro-manager et faire remonter le taux de conversion.",
+  "image": "https://www.laurentserre.com/images/blog/2026-03-25-revue-pipeline-rituel.svg",
+  "datePublished": "2026-03-25",
+  "dateModified": "2026-03-25",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/reunion-commerciale-hebdo-rituel-closing"
+  },
+  "keywords": [
+    "réunion commerciale",
+    "revue pipeline",
+    "closing B2B",
+    "directeur commercial",
+    "management commercial",
+    "rituel commercial",
+    "bootcamp commercial"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

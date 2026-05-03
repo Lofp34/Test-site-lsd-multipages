@@ -38,8 +38,46 @@ export const metadata: Metadata = {
 };
 
 export default function PourquoiMeilleursCommerciauxDircoEntrepreneursSeCassentLaFigurePage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Passer de commercial à dirco, puis de dirco à entrepreneur : trois métiers, trois pièges",
+  "description": "Passer de commercial à directeur commercial, puis de dirco à entrepreneur, ce ne sont pas des promotions. Ce sont trois métiers différents. Voici pourquoi les meilleurs se plantent en changeant d’étage, et ce qu’il faut vraiment installer pour tenir.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.png",
+  "datePublished": "2026-04-17",
+  "dateModified": "2026-04-17",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/pourquoi-meilleurs-commerciaux-dirco-entrepreneurs-se-cassent-la-figure"
+  },
+  "articleSection": "Management / transformation commerciale",
+  "keywords": [
+    "directeur commercial",
+    "entrepreneur",
+    "management commercial",
+    "transformation commerciale",
+    "promotion commerciale",
+    "Laurent Serre"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

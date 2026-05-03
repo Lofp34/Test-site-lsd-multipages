@@ -34,8 +34,45 @@ export const metadata: Metadata = {
 };
 
 export default function ArticleAccompagnement() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Accompagnement des équipes commerciales : 6 leviers d’expert pour booster vos ventes en 2025",
+  "description": "Méthode concrète pour structurer l’accompagnement commercial et faire monter vos équipes en compétences : modèles, leviers humains et technos, et guide pratique d’externalisation.",
+  "image": "https://www.laurentserre.com/accompagnement_commercial.png",
+  "datePublished": "2025-09-30",
+  "dateModified": "2025-09-30",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/accompagnement-equipes-commerciales-6-leviers-2025"
+  },
+  "keywords": [
+    "accompagnement commercial",
+    "direction commerciale externalisée",
+    "coaching commercial",
+    "sales enablement",
+    "management commercial",
+    "IA marketing"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

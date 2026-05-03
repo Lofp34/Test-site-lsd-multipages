@@ -38,8 +38,48 @@ export const metadata: Metadata = {
 };
 
 export default function ErreursOnboardingCommercialPage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Les erreurs d’onboarding commercial qui vont plomber la performance du nouveau",
+  "description": "Un recrutement commercial peut échouer dès les premières semaines. Les erreurs d’onboarding coûtent cher : pipeline fragile, posture hésitante et conversion affaiblie.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.jpg",
+  "datePublished": "2026-04-04",
+  "dateModified": "2026-04-04",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/les-erreurs-onboarding-commercial-qui-plombent-performance-nouveau"
+  },
+  "articleSection": "Management / transformation commerciale",
+  "keywords": [
+    "onboarding commercial",
+    "intégration commercial B2B",
+    "manager commercial",
+    "performance commerciale",
+    "recrutement commercial",
+    "Laurent Serre",
+    "bootcamp commercial",
+    "diagnostic commercial"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

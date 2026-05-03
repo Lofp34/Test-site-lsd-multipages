@@ -34,8 +34,45 @@ export const metadata: Metadata = {
 };
 
 export default function PipelineCommercialQ22026Page() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pipeline commercial Q2 2026 : 5 décisions de dirigeant pour sécuriser le chiffre d&apos;affaires",
+  "description": "Dirigeants et directeurs commerciaux : 5 décisions concrètes pour fiabiliser le pipeline au T2 2026, accélérer les cycles et convertir sans pression inutile.",
+  "image": "https://www.laurentserre.com/images/blog/2026-03-23-pipeline-q2-hero.png",
+  "datePublished": "2026-03-23",
+  "dateModified": "2026-03-23",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/pipeline-commercial-q2-2026-5-decisions-dirigeant"
+  },
+  "keywords": [
+    "pipeline commercial",
+    "directeur commercial",
+    "dirigeant PME",
+    "conversion B2B",
+    "prévision commerciale",
+    "bootcamp vente"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

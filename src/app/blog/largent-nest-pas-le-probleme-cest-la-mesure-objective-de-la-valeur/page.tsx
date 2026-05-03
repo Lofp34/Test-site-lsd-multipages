@@ -38,8 +38,46 @@ export const metadata: Metadata = {
 };
 
 export default function LargentNestPasLeProblemeCestLaMesureObjectiveDeLaValeurPage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "L’argent n’est pas le problème, c’est la mesure objective de la valeur",
+  "description": "Quand un prospect dit qu’il n’a pas le budget, le vrai sujet est souvent ailleurs. L’argent mesure surtout la valeur perçue, la priorité et la confiance accordée à la décision.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-16-argent-mesure-valeur-hero.png",
+  "datePublished": "2026-04-16",
+  "dateModified": "2026-04-16",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/largent-nest-pas-le-probleme-cest-la-mesure-objective-de-la-valeur"
+  },
+  "articleSection": "Psychologie commerciale / valeur perçue",
+  "keywords": [
+    "budget client vente",
+    "valeur perçue vente",
+    "objection prix b2b",
+    "arbitrage budget prospect",
+    "priorite commerciale",
+    "Laurent Serre"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

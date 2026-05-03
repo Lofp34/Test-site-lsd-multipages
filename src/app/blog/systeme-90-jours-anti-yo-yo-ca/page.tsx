@@ -34,8 +34,45 @@ export const metadata: Metadata = {
 };
 
 export default function Systeme90JoursPage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Système commercial 90 jours : le plan anti yo-yo du chiffre d&apos;affaires",
+  "description": "Le framework 90 jours pour dirigeants et directeurs commerciaux qui veulent stabiliser le CA, accélérer les cycles et convertir plus proprement.",
+  "image": "https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero.png",
+  "datePublished": "2026-03-24",
+  "dateModified": "2026-03-24",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/systeme-90-jours-anti-yo-yo-ca"
+  },
+  "keywords": [
+    "système commercial",
+    "plan 90 jours",
+    "directeur commercial",
+    "dirigeant PME",
+    "conversion B2B",
+    "bootcamp vente"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

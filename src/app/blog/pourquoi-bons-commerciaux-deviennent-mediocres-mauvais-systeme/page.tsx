@@ -38,8 +38,48 @@ export const metadata: Metadata = {
 };
 
 export default function BonsCommerciauxMauvaisSystemePage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système",
+  "description": "Quand un bon commercial devient irrégulier, le problème n’est pas toujours la personne. Un système commercial flou dégrade la lecture, la posture et la performance de toute l’équipe.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.jpg",
+  "datePublished": "2026-04-05",
+  "dateModified": "2026-04-05",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme"
+  },
+  "articleSection": "Structure / système commercial",
+  "keywords": [
+    "système commercial",
+    "performance commerciale",
+    "management commercial",
+    "structuration commerciale",
+    "équipe de vente B2B",
+    "Laurent Serre",
+    "bootcamp commercial",
+    "diagnostic commercial"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

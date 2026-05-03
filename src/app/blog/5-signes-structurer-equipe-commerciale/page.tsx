@@ -34,8 +34,44 @@ export const metadata: Metadata = {
 };
 
 export default function Article1() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "5 signes qu'il est temps de structurer votre équipe commerciale",
+  "image": "https://www.laurentserre.com/equipe_bureau.jpg",
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-15",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/5-signes-structurer-equipe-commerciale"
+  },
+  "articleSection": "Stratégie",
+  "keywords": [
+    "structurer équipe commerciale",
+    "organisation force de vente",
+    "management commercial",
+    "PME",
+    "développement commercial"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       {/* Hero Section */}
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

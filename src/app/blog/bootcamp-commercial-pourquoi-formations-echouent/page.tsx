@@ -28,8 +28,44 @@ export const metadata: Metadata = {
 };
 
 export default function Article4() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Bootcamp commercial : pourquoi 80% des formations échouent",
+  "description": "Analyse des raisons pour lesquelles la plupart des formations commerciales n\\",
+  "image": "https://www.laurentserre.com/photo-formation.png",
+  "datePublished": "2024-12-28",
+  "dateModified": "2024-12-28",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/bootcamp-commercial-pourquoi-formations-echouent"
+  },
+  "keywords": [
+    "formation commerciale",
+    "bootcamp commercial",
+    "échec formation",
+    "formation équipe vente",
+    "PME"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

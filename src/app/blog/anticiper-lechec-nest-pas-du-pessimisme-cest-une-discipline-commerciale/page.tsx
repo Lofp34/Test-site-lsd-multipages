@@ -38,8 +38,46 @@ export const metadata: Metadata = {
 };
 
 export default function AnticiperLechecNestPasDuPessimismeCestUneDisciplineCommercialePage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Anticiper l’échec n’est pas du pessimisme, c’est une discipline commerciale",
+  "description": "Les meilleurs commerciaux ne se préparent pas seulement à convaincre. Ils se préparent à ce qui peut bloquer, déraper ou rester flou. Cette lucidité change la vente.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.jpg",
+  "datePublished": "2026-04-15",
+  "dateModified": "2026-04-15",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/anticiper-lechec-nest-pas-du-pessimisme-cest-une-discipline-commerciale"
+  },
+  "articleSection": "Psychologie commerciale / lucidité terrain",
+  "keywords": [
+    "anticiper echec vente",
+    "lucidité commerciale",
+    "objections commerciales",
+    "discipline commerciale",
+    "preparation rendez-vous client",
+    "Laurent Serre"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

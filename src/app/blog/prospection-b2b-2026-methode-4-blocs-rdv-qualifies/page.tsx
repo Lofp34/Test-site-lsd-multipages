@@ -28,8 +28,44 @@ export const metadata: Metadata = {
 };
 
 export default function ProspectionB2B4BlocsPage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Prospection B2B 2026 : la méthode 4 blocs pour générer plus de RDV qualifiés",
+  "description": "Une méthode terrain en 4 blocs pour générer plus de RDV qualifiés en prospection B2B : ciblage, message, séquence, pilotage.",
+  "image": "https://www.laurentserre.com/equipe_bureau.jpg",
+  "datePublished": "2026-03-22",
+  "dateModified": "2026-03-22",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/prospection-b2b-2026-methode-4-blocs-rdv-qualifies"
+  },
+  "keywords": [
+    "prospection B2B",
+    "RDV qualifiés",
+    "pipeline commercial",
+    "séquence de prospection",
+    "méthode commerciale PME"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

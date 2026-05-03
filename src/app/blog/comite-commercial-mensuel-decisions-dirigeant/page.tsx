@@ -34,8 +34,47 @@ export const metadata: Metadata = {
 };
 
 export default function ComiteCommercialMensuelPage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Comité commercial mensuel : les 6 décisions qu&apos;un dirigeant doit exiger",
+  "description": "Le comité commercial mensuel ne doit pas être un théâtre CRM. Voici les 6 décisions qu’un dirigeant ou directeur commercial doit obtenir pour sécuriser le trimestre et convertir plus proprement.",
+  "image": "https://www.laurentserre.com/images/blog/2026-03-29-comite-commercial-mensuel-hero.jpg",
+  "datePublished": "2026-03-29",
+  "dateModified": "2026-03-29",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/comite-commercial-mensuel-decisions-dirigeant"
+  },
+  "articleSection": "Pilotage commercial",
+  "keywords": [
+    "comité commercial mensuel",
+    "pilotage commercial",
+    "dirigeant PME B2B",
+    "directeur commercial",
+    "forecast",
+    "bootcamp vente",
+    "diagnostic commercial"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

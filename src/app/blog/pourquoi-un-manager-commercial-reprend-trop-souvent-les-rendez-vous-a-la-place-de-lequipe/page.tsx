@@ -39,8 +39,47 @@ export const metadata: Metadata = {
 };
 
 export default function PourquoiUnManagerCommercialReprendTropSouventLesRendezVousALaPlaceDeLEquipePage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Manager commercial : à force de sauver les rendez-vous, vous affaiblissez l’équipe",
+  "description": "Quand un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe, il rassure sur le moment mais il apprend surtout aux commerciaux à attendre qu’on les sauve.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-25-manager-reprend-rendez-vous-equipe-hero.png",
+  "datePublished": "2026-04-25",
+  "dateModified": "2026-04-25",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-reprend-trop-souvent-les-rendez-vous-a-la-place-de-lequipe"
+  },
+  "articleSection": "Management / coaching commercial",
+  "keywords": [
+    "manager commercial",
+    "coaching commercial",
+    "rendez-vous client",
+    "directeur commercial",
+    "vente B2B",
+    "PME",
+    "Laurent Serre"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

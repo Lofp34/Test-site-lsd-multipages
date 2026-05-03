@@ -34,8 +34,49 @@ export const metadata: Metadata = {
 };
 
 export default function CommissionBreathArticle() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Commission Breath : les 3 mécanismes invisibles qui tuent votre closing",
+  "description": "Découvrez pourquoi vos leads ne sont pas mauvais et comment la biologie, l\\",
+  "image": "https://www.laurentserre.com/images/closing_post.png",
+  "datePublished": "2025-01-15",
+  "dateModified": "2025-01-15",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/commission-breath-3-mecanismes-tuent-closing"
+  },
+  "articleSection": "Psychologie de vente",
+  "keywords": [
+    "commission breath",
+    "closing",
+    "neurones miroirs",
+    "détachement radical",
+    "psychologie vente",
+    "closing B2B",
+    "taux de conversion",
+    "cadre diagnostic",
+    "techniques closing"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

@@ -38,8 +38,46 @@ export const metadata: Metadata = {
 };
 
 export default function PourquoiVosCommerciauxConfondentInteretEtDecisionPage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Un prospect intéressé n’est pas encore une décision",
+  "description": "Un prospect intéressé n’est pas encore une vente qui avance. Beaucoup d’équipes confondent un bon échange avec une vraie progression de décision.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v3.png",
+  "datePublished": "2026-04-19",
+  "dateModified": "2026-04-19",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-confondent-interet-et-decision"
+  },
+  "articleSection": "Terrain / qualification commerciale",
+  "keywords": [
+    "intérêt prospect",
+    "décision commerciale",
+    "vente B2B",
+    "qualification commerciale",
+    "Laurent Serre",
+    "PME"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

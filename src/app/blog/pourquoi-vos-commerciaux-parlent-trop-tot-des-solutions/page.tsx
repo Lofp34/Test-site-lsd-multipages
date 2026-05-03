@@ -38,8 +38,47 @@ export const metadata: Metadata = {
 };
 
 export default function CommerciauxParlentTropTotSolutionsPage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Pourquoi vos commerciaux parlent trop tôt de leur solution, et ce que ça vous coûte",
+  "description": "Le problème n’est pas qu’un commercial parle de son produit. Le problème, c’est qu’il le fait pour éviter les vraies questions. Et ça se paie ensuite en rendez-vous mous, en devis envoyés trop tôt et en silence côté client.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.png",
+  "datePublished": "2026-04-11",
+  "dateModified": "2026-04-11",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-parlent-trop-tot-des-solutions"
+  },
+  "keywords": [
+    "découverte commerciale",
+    "vente B2B",
+    "commercial parle trop tôt du produit",
+    "rendez-vous commercial",
+    "devis trop tôt",
+    "Laurent Serre",
+    "bootcamp commercial",
+    "diagnostic commercial"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

@@ -34,8 +34,47 @@ export const metadata: Metadata = {
 };
 
 export default function Reunion30MinutesMargePipelinePage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "La réunion de 30 minutes qui protège votre marge et votre pipeline en avril",
+  "description": "Quand avril démarre sous tension, beaucoup de PME B2B accélèrent les propositions et les remises. Voici la réunion de 30 minutes que je recommande pour protéger la marge, assainir le pipeline et décider plus vite.",
+  "image": "https://www.laurentserre.com/images/blog/2026-03-31-reunion-30-minutes-marge-pipeline-hero.jpg",
+  "datePublished": "2026-03-31",
+  "dateModified": "2026-03-31",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/reunion-30-minutes-proteger-marge-pipeline-avril"
+  },
+  "articleSection": "Pilotage commercial",
+  "keywords": [
+    "pipeline commercial avril",
+    "protéger la marge",
+    "dirigeant PME B2B",
+    "réunion commerciale efficace",
+    "pilotage commercial",
+    "bootcamp commercial",
+    "diagnostic commercial"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

@@ -38,8 +38,47 @@ export const metadata: Metadata = {
 };
 
 export default function ReunionCommercialeSansDecisionCommenterLesChiffresPage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Une réunion commerciale sans décision apprend surtout à commenter les chiffres",
+  "description": "Quand une réunion commerciale se contente de commenter les chiffres sans trancher, elle donne une impression de sérieux mais ne fait presque jamais avancer les ventes.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-26-reunion-commerciale-sans-decision-hero.jpg",
+  "datePublished": "2026-04-26",
+  "dateModified": "2026-04-26",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/reunion-commerciale-sans-decision-commenter-les-chiffres"
+  },
+  "articleSection": "Méthode / pilotage commercial",
+  "keywords": [
+    "réunion commerciale",
+    "pilotage commercial",
+    "manager commercial",
+    "directeur commercial",
+    "PME",
+    "vente B2B",
+    "Laurent Serre"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

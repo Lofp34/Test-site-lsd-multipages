@@ -38,8 +38,46 @@ export const metadata: Metadata = {
 };
 
 export default function En2030ToitureEtCompagnieLesAgentsIaOntChangeLeRythmePage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme",
+  "description": "À partir d’une base bien réelle, voilà à quoi pourrait ressembler en 2030 la transformation d’une PME de couverture comme Toiture et COMPAGNIE grâce à des agents IA vraiment utiles.",
+  "image": "https://www.laurentserre.com/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.jpg",
+  "datePublished": "2026-04-16",
+  "dateModified": "2026-04-16",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/en-2030-toiture-et-compagnie-les-agents-ia-ont-change-le-rythme"
+  },
+  "articleSection": "IA utile / transformation PME terrain",
+  "keywords": [
+    "agents IA PME",
+    "Toiture et COMPAGNIE",
+    "transformation PME 2030",
+    "couverture toiture",
+    "IA commerce operations",
+    "Laurent Serre"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">

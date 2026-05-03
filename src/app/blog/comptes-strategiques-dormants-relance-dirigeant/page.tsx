@@ -34,8 +34,46 @@ export const metadata: Metadata = {
 };
 
 export default function ComptesStrategiquesDormantsPage() {
+  const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Comptes stratégiques dormants : la relance que les dirigeants oublient trop souvent",
+  "description": "Comment réactiver des comptes stratégiques dormants sans abîmer la relation, recréer de la valeur business et générer des opportunités plus crédibles que de la prospection froide.",
+  "image": "https://www.laurentserre.com/images/blog/2026-03-27-comptes-strategiques-dormants-hero.png",
+  "datePublished": "2026-03-27",
+  "dateModified": "2026-03-27",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com/a-propos",
+    "sameAs": [
+      "https://www.linkedin.com/in/laurentserre34/",
+      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Laurent Serre Développement",
+    "url": "https://www.laurentserre.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/blog/comptes-strategiques-dormants-relance-dirigeant"
+  },
+  "articleSection": "Développement de comptes",
+  "keywords": [
+    "comptes stratégiques dormants",
+    "relance commerciale",
+    "directeur commercial",
+    "dirigeant PME",
+    "account management B2B",
+    "bootcamp commercial"
+  ]
+};
+
   return (
-    <main className="bg-primary-bg text-gray-dark">
+<main className="bg-primary-bg text-gray-dark">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
