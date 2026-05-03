@@ -146,6 +146,50 @@ export default function TechniquesDeClosingB2B() {
         </div>
       </section>
 
+      {/* Sommaire interactif */}
+      <nav className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-8" aria-label="Sommaire de l'article">
+        <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6">
+          <h2 className="text-lg font-title font-bold text-blue-ink mb-4">📋 Au sommaire de cet article</h2>
+          <ol className="space-y-2 text-sm">
+            <li className="flex items-start gap-2">
+              <span className="text-mint-green font-bold mt-0.5">1.</span>
+              <a href="#pourquoi-commerciaux-ratent" className="text-blue-ink hover:text-mint-green transition-colors">Pourquoi la plupart des commerciaux ratent le closing</a>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-mint-green font-bold mt-0.5">2.</span>
+              <a href="#signaux-achat" className="text-blue-ink hover:text-mint-green transition-colors">Les signaux d'achat : savoir quand le prospect est prêt</a>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-mint-green font-bold mt-0.5">3.</span>
+              <a href="#5-techniques" className="text-blue-ink hover:text-mint-green transition-colors">Les 5 techniques de closing commercial qui fonctionnent en B2B</a>
+              <ol className="ml-4 mt-1 space-y-1 text-gray-500">
+                <li>3.1 Le closing direct</li>
+                <li>3.2 Le closing par résumé</li>
+                <li>3.3 Le closing par alternative</li>
+                <li>3.4 Le closing de l'urgence légitime</li>
+                <li>3.5 Le closing sur objection finale</li>
+              </ol>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-mint-green font-bold mt-0.5">4.</span>
+              <a href="#apres-le-oui" className="text-blue-ink hover:text-mint-green transition-colors">Ce qui se passe après le « oui »</a>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-mint-green font-bold mt-0.5">5.</span>
+              <a href="#gerer-je-reflechis" className="text-blue-ink hover:text-mint-green transition-colors">Gérer le « je vais réfléchir »</a>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-mint-green font-bold mt-0.5">6.</span>
+              <a href="#etat-esprit" className="text-blue-ink hover:text-mint-green transition-colors">L'état d'esprit du bon closer</a>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-mint-green font-bold mt-0.5">7.</span>
+              <a href="#3-actions" className="text-blue-ink hover:text-mint-green transition-colors">3 actions concrètes pour améliorer votre taux de closing cette semaine</a>
+            </li>
+          </ol>
+        </div>
+      </nav>
+
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
           <p className="mb-8">Le closing. Ce mot fait peur à beaucoup de commerciaux. Il évoque pression, manipulation, forcing.</p>
@@ -156,7 +200,7 @@ export default function TechniquesDeClosingB2B() {
 
           <p className="mb-8">Mais savoir comment et quand <strong>conclure une vente</strong>, ça s’apprend. Voici les techniques de closing B2B qui fonctionnent vraiment en PME pour améliorer votre <strong>taux de closing</strong>, sans manipuler et sans casser vos marges.</p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Pourquoi la plupart des commerciaux ratent le closing</h2>
+          <h2 id="pourquoi-commerciaux-ratent" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Pourquoi la plupart des commerciaux ratent le closing</h2>
 
           <p className="mb-8">La cause numéro un : ils n'osent pas demander.</p>
 
@@ -168,7 +212,7 @@ export default function TechniquesDeClosingB2B() {
 
           <p className="mb-8">Un closing prématuré déclenche l'objection. Un closing au bon moment, après une vraie découverte, obtient le « oui ».</p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les signaux d'achat : savoir quand le prospect est prêt</h2>
+          <h2 id="signaux-achat" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les signaux d'achat : savoir quand le prospect est prêt</h2>
 
           <p className="mb-8">Avant de tenter de conclure, apprenez à lire les signaux. Un prospect prêt à signer vous envoie des signaux clairs - si vous savez les détecter.</p>
 
@@ -188,7 +232,7 @@ export default function TechniquesDeClosingB2B() {
 
           <p className="mb-8">Quand vous percevez ces signaux, c'est le moment. N'attendez pas.</p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les 5 techniques de closing commercial qui fonctionnent en B2B</h2>
+          <h2 id="5-techniques" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les 5 techniques de closing commercial qui fonctionnent en B2B</h2>
 
           <h3 className="text-xl font-title font-semibold text-blue-ink mt-10 mb-4">1. Le closing direct</h3>
           <p className="mb-8">Simple, honnête, efficace.</p>
@@ -225,7 +269,7 @@ export default function TechniquesDeClosingB2B() {
           </blockquote>
           <p className="mb-8">Cette technique isole l'objection, la lève, et transforme le mouvement de résistance en accord conditionnel.</p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Ce qui se passe après le « oui »</h2>
+          <h2 id="apres-le-oui" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Ce qui se passe après le « oui »</h2>
 
           <p className="mb-8">Beaucoup de commerciaux relâchent leur attention après le « oui » verbal. Grosse erreur — et l’une des principales causes d’effondrement du taux de closing réel.</p>
 
@@ -238,7 +282,7 @@ export default function TechniquesDeClosingB2B() {
             <li className="mb-2">Identifiez les autres décideurs qui pourraient bloquer et adressez-les pro-activement</li>
           </ol>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Gérer le « je vais réfléchir »</h2>
+          <h2 id="gerer-je-reflechis" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Gérer le « je vais réfléchir »</h2>
 
           <p className="mb-8">C'est la réponse qui fait couler le plus d'affaires. Et pourtant, elle se gère.</p>
 
@@ -256,7 +300,7 @@ export default function TechniquesDeClosingB2B() {
           </blockquote>
           <p className="mb-8">Cette question rouvre le dialogue. Elle vous donne l'information nécessaire pour traiter le vrai blocage plutôt que de disparaître en espérant un retour qui ne viendra jamais.</p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">L'état d'esprit du bon closer</h2>
+          <h2 id="etat-esprit" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">L'état d'esprit du bon closer</h2>
 
           <p className="mb-8">Les meilleurs closers que j'ai croisés en PME ont un point commun : ils ne cherchent pas à vendre à tout prix. Ils cherchent à aider.</p>
 
@@ -283,7 +327,7 @@ export default function TechniquesDeClosingB2B() {
             </div>
           </div>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">3 actions concrètes pour améliorer votre taux de closing cette semaine</h2>
+          <h2 id="3-actions" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">3 actions concrètes pour améliorer votre taux de closing cette semaine</h2>
 
           <ol className="list-decimal pl-6 mb-8">
             <li className="mb-4"><strong>Identifiez les 3 dernières affaires perdues</strong> en « je vais réfléchir ». Analysez ce qui s'est passé. Avez-vous détecté les signaux d'achat ? Avez-vous osé demander la signature ?</li>
