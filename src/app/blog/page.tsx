@@ -36,6 +36,15 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'methodes-vente-comparees-spin-bant-bebedc',
+    title: 'Méthodes de vente comparées : SPIN, BANT, BEBEDC — laquelle choisir ?',
+    description: 'SPIN, BANT, BEBEDC : comparatif complet des 3 méthodes de vente B2B les plus utilisées. Avantages, limites, tableau comparatif et guide de choix pour dirigeant de PME.',
+    date: '2026-05-03',
+    readTime: '8 min',
+    category: 'Méthodes de vente',
+    featured: true
+  },
+  {
     slug: 'ia-et-prospection-commerciale-ce-qui-change-vraiment-pour-vos-equipes-en-2026',
     title: 'IA et prospection commerciale : ce qui change vraiment pour vos équipes en 2026',
     description: 'L\'IA ne remplace pas vos commerciaux. Elle amplifie leur capacité à être pertinents, rapides et efficaces. Ce qui change concrètement pour les PME qui intègrent l\'IA.',
