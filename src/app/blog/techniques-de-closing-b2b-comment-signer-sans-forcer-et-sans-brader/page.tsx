@@ -38,6 +38,21 @@ export const metadata: Metadata = {
 };
 
 export default function TechniquesDeClosingB2B() {
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    'headline': 'Techniques de closing B2B : comment signer sans forcer et sans brader',
+    'author': { '@type': 'Person', 'name': 'Laurent Serre', 'url': 'https://www.laurentserre.com/a-propos' },
+    'datePublished': '2026-05-02',
+    'dateModified': '2026-05-02',
+    'image': 'https://www.laurentserre.com/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.jpg',
+    'description': '5 techniques de closing B2B pour conclure une vente sans manipulation et sans brader vos marges. Ce qui fonctionne vraiment en PME, avec exemples concrets.',
+    'mainEntityOfPage': {
+      '@type': 'WebPage',
+      '@id': 'https://www.laurentserre.com/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader'
+    }
+  };
+
   const howToJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
@@ -90,6 +105,7 @@ export default function TechniquesDeClosingB2B() {
 
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <main className="bg-primary-bg text-gray-dark">
