@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Users, Target, CheckCircle, Star, ArrowRight, Award, Zap } from 'lucide-react';
 import Link from 'next/link';
 import FAQ from '@/components/FAQ';
+import StructuredData from '@/components/StructuredData';
 
 export const metadata: Metadata = {
   title: 'Formation Commerciale PME : prospection, closing, management | Laurent Serre',
@@ -27,7 +28,25 @@ export const metadata: Metadata = {
 
 export default function FormationCommercialePMEPage() {
   return (
-    <main className="flex flex-col min-h-screen bg-white">
+    <>
+      <StructuredData 
+        type="service" 
+        data={{
+          name: "Formation Commerciale PME — Prospection, Closing, Management",
+          description: "Formation commerciale PME terrain : prospection, closing, management et pilotage de la performance. Bootcamp intensif et accompagnement mesurable adaptés aux PME.",
+          provider: { "@type": "ProfessionalService", "name": "Laurent Serre Développement" },
+          areaServed: { "@type": "Country", "name": "France" },
+        }}
+      />
+      <StructuredData 
+        type="breadcrumb" 
+        data={[
+          { name: "Accueil", url: "/" },
+          { name: "Formation Commerciale PME", url: "/formation-commerciale-pme" }
+        ]}
+      />
+      
+      <main className="flex flex-col min-h-screen bg-white">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -359,5 +378,6 @@ export default function FormationCommercialePMEPage() {
         </div>
       </section>
     </main>
+    </>
   );
 }
