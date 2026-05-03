@@ -103,11 +103,24 @@ export default function TechniquesDeClosingB2B() {
     ]
   };
 
+  const videoJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Kristina Creavea — mieux structurer ses entretiens pour gagner en confiance et en chiffre',
+    description: 'Kristina montre l\'impact d\'un accompagnement suivi dans le temps : meilleure organisation, plan de vente plus clair, entretiens mieux préparés et +39% de chiffre d\'affaires.',
+    thumbnailUrl: 'https://img.youtube.com/vi/kkU2jPspfVk/maxresdefault.jpg',
+    uploadDate: '2026-04-21',
+    embedUrl: 'https://www.youtube-nocookie.com/embed/kkU2jPspfVk',
+    contentUrl: 'https://www.youtube.com/watch?v=kkU2jPspfVk',
+    author: { '@type': 'Person', name: 'Laurent Serre', url: 'https://www.laurentserre.com/a-propos' },
+  };
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }} />
       <main className="bg-primary-bg text-gray-dark">
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -339,6 +352,27 @@ export default function TechniquesDeClosingB2B() {
           <Link href="/expert-developpement-commercial-pme" className="text-mint-green hover:underline">transformation commerciale des PME</Link>.</p>
         </div>
       </article>
+
+      {/* Video temoignage */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6">
+          <p className="font-title font-bold text-blue-ink text-lg mb-3">🎬 Pour aller plus loin</p>
+          <p className="text-gray-600 mb-5">
+            Le closing ne s&apos;apprend pas seulement en lisant. Regardez comment Kristina, de Creavea, a structuré sa méthode d&apos;entretien pour gagner en confiance et en chiffre (+39% de CA).
+          </p>
+          <div className="relative aspect-video rounded-xl overflow-hidden">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/kkU2jPspfVk?rel=0&modestbranding=1"
+              title="Kristina Creavea — mieux structurer ses entretiens pour gagner en confiance et en chiffre"
+              className="w-full h-full"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      </section>
 
       <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
