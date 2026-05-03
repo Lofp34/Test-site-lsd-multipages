@@ -21,48 +21,7 @@ export const metadata: Metadata = {
 };
 
 const clientCases = [
-  {
-    name: 'OVEA',
-    title: 'Structurer l’effort commercial d’un acteur du cloud souverain',
-    body: [
-      'OVEA est un acteur du cloud souverain. Comme beaucoup d’entreprises techniques solides, sa valeur métier est forte. Mais une valeur technique ne suffit pas toujours à construire une dynamique commerciale lisible.',
-      'L’accompagnement a porté sur trois mois de bootcamp et de structuration vente intensive : clarifier les fondations, organiser l’effort de vente, renforcer la cohérence de l’équipe et rendre l’action commerciale plus humaine, plus lisible et plus performante.',
-      'Le travail ne consistait pas à ajouter une couche de discours commercial. Il s’agissait de transformer une expertise réelle en système de vente plus clair : qui cible-t-on, avec quel discours, sur quels enjeux, avec quelles étapes, et comment l’équipe garde le cap dans la durée.',
-    ],
-    quote: 'Merci Laurent Serre pour ton accompagnement et pour tout le travail réalisé ensemble 💪',
-    quoteAuthor: 'Benjamin Bernabeu, OVEA',
-    illustrates:
-      'Structuration commerciale B2B, vente de valeur, cloud souverain, équipe commerciale, passage de l’expertise métier à une méthode partagée.',
-    links: [
-      { href: '/transformation-commerciale', label: 'Transformation commerciale' },
-      { href: '/diagnostic', label: 'Diagnostic commercial' },
-    ],
-  },
-  {
-    name: 'Septeo',
-    title: 'Closing, objectifs ambitieux et entraînement terrain',
-    body: [
-      'Avec les équipes Septeo, l’enjeu n’était pas de faire une formation commerciale de plus.',
-      'Une équipe mature n’a pas besoin d’un discours motivant plaqué. Elle a besoin d’exigence, de repères communs, de situations rejouées, de gestes commerciaux plus précis et d’un entraînement qui colle au terrain.',
-      'Le travail a porté sur le closing, la préparation des entretiens, l’alignement des objectifs et la capacité à transformer l’ambition commerciale en actions concrètes. Sur la période fin 2025 / début 2026, Septeo Hospitality a atteint X10 sur les objectifs.',
-      'Ce chiffre doit être lu pour ce qu’il est : le résultat d’un contexte, d’une équipe, d’une ambition et d’un travail mené dans la durée. Pas une recette magique.',
-    ],
-    quote: 'Merci Laurent pour cet accompagnement top niveau toujours aligné sur nos enjeux business…',
-    quoteAuthor: 'Tony Grippon, Septeo',
-    illustrates:
-      'Closing B2B, équipe commerciale mature, objectifs ambitieux, entraînement terrain, progression sur plusieurs mois.',
-    links: [
-      { href: '/formation-commerciale-pme', label: 'Formation commerciale PME' },
-      { href: '/transformation-commerciale', label: 'Transformation commerciale' },
-    ],
-    video: {
-      youtubeId: 'ojopxkWzXy8',
-      title: 'Tony Grippon — le premier X10 de l’équipe Septeo Hospitality',
-      eyebrow: 'Témoignage vidéo Septeo',
-      summary:
-        'Tony Grippon revient sur le cap franchi par l’équipe : objectifs ambitieux, entraînement terrain et dynamique commerciale suivie dans la durée.',
-    },
-  },
+
   {
     name: 'Bernafon',
     title: 'Relier méthode commerciale et chiffre d’affaires',
@@ -88,54 +47,6 @@ const clientCases = [
     },
   },
   {
-    name: 'IPO Technologie',
-    title: 'Transformer une expertise industrielle en discours commercial lisible',
-    body: [
-      'IPO Technologie illustre un cas fréquent dans les entreprises industrielles et techniques : la valeur est réelle, mais elle peut rester trop enfermée dans le produit, la technologie ou les caractéristiques métier.',
-      'IPO Technologie fabrique des PC durcis en France. Le sujet touche à la souveraineté industrielle, à la fiabilité, à la robustesse, à des usages exigeants. Commercialement, le risque est de rester trop technique et de ne pas rendre immédiatement visible ce que cette expertise change pour le client.',
-      'L’accompagnement a porté sur l’efficacité commerciale : prospection, discours, structuration de l’approche et capacité à transformer une expertise technique en arguments compréhensibles, utiles et actionnables pour les prospects.',
-      'Le travail commercial consiste souvent à sortir la tête du moteur. Non pas pour renier la technique, mais pour la traduire en enjeux clients : sécurité, continuité, fiabilité, souveraineté, coût de l’erreur, choix d’un partenaire industriel solide.',
-    ],
-    illustrates:
-      'Vente technique, industrie française, souveraineté, prospection, passage de l’expertise produit à un discours commercial clair.',
-    links: [{ href: '/expert-developpement-commercial-pme', label: 'Expert développement commercial PME' }],
-  },
-  {
-    name: 'Les Compagnons du Devoir',
-    title: 'Développer les compétences entrepreneuriales',
-    body: [
-      'Avec Les Compagnons du Devoir, l’enjeu est différent d’un accompagnement commercial classique.',
-      'Il ne s’agit pas seulement d’aider une équipe commerciale à mieux vendre. Il s’agit de transmettre des fondamentaux entrepreneuriaux à des jeunes déjà engagés dans un métier, avec une vraie exigence professionnelle, mais qui devront aussi comprendre leur marché, défendre leur valeur et structurer leur activité.',
-      'Finance, gestion, management et développement commercial deviennent alors des compétences de solidité. Pas des matières annexes. Un entrepreneur qui ne sait pas parler de son offre, écouter un client, mesurer un enjeu ou construire une relation commerciale risque de subir la vente au lieu de la piloter.',
-      'L’intérêt de ce cas tient à la transmission : rendre le développement commercial accessible, concret et utile à des profils qui ne se définissent pas d’abord comme commerciaux, mais qui devront vendre leur valeur.',
-    ],
-    illustrates:
-      'Formation entrepreneuriale, transmission, fondamentaux commerciaux, montée en compétences, pédagogie terrain.',
-    links: [{ href: '/formation-commerciale-pme', label: 'Formation commerciale PME' }],
-  },
-  {
-    name: 'Pierre Vincent',
-    title: 'Transformer un rendez-vous prématuré en engagement concret',
-    body: [
-      'Pierre Vincent évolue dans l\'industrie du recyclage, un secteur où les cycles de vente sont longs et où un premier rendez-vous peut sembler prématuré — le besoin n\'est pas encore exprimé, le projet pas encore cadré, la décision pas encore mûre.',
-      'Plutôt que de repousser ou de faire un rendez-vous découverte superficiel, l\'accompagnement a consisté à préparer le rendez-vous de manière beaucoup plus stratégique : lire les enjeux de l\'entreprise et de l\'interlocuteur avant même d\'entrer dans la discussion commerciale.',
-      'Le résultat : un rendez-vous qui aurait pu rester exploratoire s\'est transformé en lettre d\'engagement. Ce cas illustre que la préparation des enjeux est souvent le levier le plus sous-estimé de la vente B2B.',
-    ],
-    illustrates:
-      'Préparation stratégique des rendez-vous, industrie du recyclage, transformation d\'un contact trop précoce en engagement, vente complexe, lecture des enjeux avant la discussion commerciale.',
-    links: [
-      { href: '/formation-commerciale-pme', label: 'Formation commerciale PME' },
-      { href: '/diagnostic', label: 'Diagnostic commercial' },
-    ],
-    video: {
-      youtubeId: '0kWjp_4g2Pk',
-      title: 'Pierre Vincent — transformer un rendez-vous prématuré en engagement concret',
-      eyebrow: 'Témoignage vidéo Pierre Vincent',
-      summary:
-        'Pierre Vincent raconte comment un rendez-vous qu\'il jugeait trop tôt s\'est transformé en lettre d\'engagement grâce à une préparation beaucoup plus stratégique des enjeux et de la discussion.',
-    },
-  },
-  {
     name: 'Creavea',
     title: 'Structurer sa méthode commerciale pour gagner en confiance et en chiffre',
     body: [
@@ -155,6 +66,31 @@ const clientCases = [
       eyebrow: 'Témoignage vidéo Creavea',
       summary:
         'Kristina montre l\'impact d\'un accompagnement suivi dans le temps : meilleure organisation, plan de vente plus clair, entretiens mieux préparés et +39% de chiffre d\'affaires.',
+    },
+  },
+  {
+    name: 'Septeo',
+    title: 'Closing, objectifs ambitieux et entraînement terrain',
+    body: [
+      'Avec les équipes Septeo, l’enjeu n’était pas de faire une formation commerciale de plus.',
+      'Une équipe mature n’a pas besoin d’un discours motivant plaqué. Elle a besoin d’exigence, de repères communs, de situations rejouées, de gestes commerciaux plus précis et d’un entraînement qui colle au terrain.',
+      'Le travail a porté sur le closing, la préparation des entretiens, l’alignement des objectifs et la capacité à transformer l’ambition commerciale en actions concrètes. Sur la période fin 2025 / début 2026, Septeo Hospitality a atteint X10 sur les objectifs.',
+      'Ce chiffre doit être lu pour ce qu’il est : le résultat d’un contexte, d’une équipe, d’une ambition et d’un travail mené dans la durée. Pas une recette magique.',
+    ],
+    quote: 'Merci Laurent pour cet accompagnement top niveau toujours aligné sur nos enjeux business…',
+    quoteAuthor: 'Tony Grippon, Septeo',
+    illustrates:
+      'Closing B2B, équipe commerciale mature, objectifs ambitieux, entraînement terrain, progression sur plusieurs mois.',
+    links: [
+      { href: '/formation-commerciale-pme', label: 'Formation commerciale PME' },
+      { href: '/transformation-commerciale', label: 'Transformation commerciale' },
+    ],
+    video: {
+      youtubeId: 'ojopxkWzXy8',
+      title: 'Tony Grippon — le premier X10 de l’équipe Septeo Hospitality',
+      eyebrow: 'Témoignage vidéo Septeo',
+      summary:
+        'Tony Grippon revient sur le cap franchi par l’équipe : objectifs ambitieux, entraînement terrain et dynamique commerciale suivie dans la durée.',
     },
   },
   {
@@ -183,7 +119,70 @@ const clientCases = [
         'Dimitri de Cruz explique comment l’accompagnement a contribué à structurer une dynamique collective, avec un +15% observé sur le premier quadrimestre dans un contexte plus large de progression.',
     },
   },
-];
+  {
+    name: 'Pierre Vincent',
+    title: 'Transformer un rendez-vous prématuré en engagement concret',
+    body: [
+      'Pierre Vincent évolue dans l\'industrie du recyclage, un secteur où les cycles de vente sont longs et où un premier rendez-vous peut sembler prématuré — le besoin n\'est pas encore exprimé, le projet pas encore cadré, la décision pas encore mûre.',
+      'Plutôt que de repousser ou de faire un rendez-vous découverte superficiel, l\'accompagnement a consisté à préparer le rendez-vous de manière beaucoup plus stratégique : lire les enjeux de l\'entreprise et de l\'interlocuteur avant même d\'entrer dans la discussion commerciale.',
+      'Le résultat : un rendez-vous qui aurait pu rester exploratoire s\'est transformé en lettre d\'engagement. Ce cas illustre que la préparation des enjeux est souvent le levier le plus sous-estimé de la vente B2B.',
+    ],
+    illustrates:
+      'Préparation stratégique des rendez-vous, industrie du recyclage, transformation d\'un contact trop précoce en engagement, vente complexe, lecture des enjeux avant la discussion commerciale.',
+    links: [
+      { href: '/formation-commerciale-pme', label: 'Formation commerciale PME' },
+      { href: '/diagnostic', label: 'Diagnostic commercial' },
+    ],
+    video: {
+      youtubeId: '0kWjp_4g2Pk',
+      title: 'Pierre Vincent — transformer un rendez-vous prématuré en engagement concret',
+      eyebrow: 'Témoignage vidéo Pierre Vincent',
+      summary:
+        'Pierre Vincent raconte comment un rendez-vous qu\'il jugeait trop tôt s\'est transformé en lettre d\'engagement grâce à une préparation beaucoup plus stratégique des enjeux et de la discussion.',
+    },
+  },  {
+    name: 'OVEA',
+    title: 'Structurer l’effort commercial d’un acteur du cloud souverain',
+    body: [
+      'OVEA est un acteur du cloud souverain. Comme beaucoup d’entreprises techniques solides, sa valeur métier est forte. Mais une valeur technique ne suffit pas toujours à construire une dynamique commerciale lisible.',
+      'L’accompagnement a porté sur trois mois de bootcamp et de structuration vente intensive : clarifier les fondations, organiser l’effort de vente, renforcer la cohérence de l’équipe et rendre l’action commerciale plus humaine, plus lisible et plus performante.',
+      'Le travail ne consistait pas à ajouter une couche de discours commercial. Il s’agissait de transformer une expertise réelle en système de vente plus clair : qui cible-t-on, avec quel discours, sur quels enjeux, avec quelles étapes, et comment l’équipe garde le cap dans la durée.',
+    ],
+    quote: 'Merci Laurent Serre pour ton accompagnement et pour tout le travail réalisé ensemble 💪',
+    quoteAuthor: 'Benjamin Bernabeu, OVEA',
+    illustrates:
+      'Structuration commerciale B2B, vente de valeur, cloud souverain, équipe commerciale, passage de l’expertise métier à une méthode partagée.',
+    links: [
+      { href: '/transformation-commerciale', label: 'Transformation commerciale' },
+      { href: '/diagnostic', label: 'Diagnostic commercial' },
+    ],
+  },
+  {
+    name: 'IPO Technologie',
+    title: 'Transformer une expertise industrielle en discours commercial lisible',
+    body: [
+      'IPO Technologie illustre un cas fréquent dans les entreprises industrielles et techniques : la valeur est réelle, mais elle peut rester trop enfermée dans le produit, la technologie ou les caractéristiques métier.',
+      'IPO Technologie fabrique des PC durcis en France. Le sujet touche à la souveraineté industrielle, à la fiabilité, à la robustesse, à des usages exigeants. Commercialement, le risque est de rester trop technique et de ne pas rendre immédiatement visible ce que cette expertise change pour le client.',
+      'L’accompagnement a porté sur l’efficacité commerciale : prospection, discours, structuration de l’approche et capacité à transformer une expertise technique en arguments compréhensibles, utiles et actionnables pour les prospects.',
+      'Le travail commercial consiste souvent à sortir la tête du moteur. Non pas pour renier la technique, mais pour la traduire en enjeux clients : sécurité, continuité, fiabilité, souveraineté, coût de l’erreur, choix d’un partenaire industriel solide.',
+    ],
+    illustrates:
+      'Vente technique, industrie française, souveraineté, prospection, passage de l’expertise produit à un discours commercial clair.',
+    links: [{ href: '/expert-developpement-commercial-pme', label: 'Expert développement commercial PME' }],
+  },
+  {
+    name: 'Les Compagnons du Devoir',
+    title: 'Développer les compétences entrepreneuriales',
+    body: [
+      'Avec Les Compagnons du Devoir, l’enjeu est différent d’un accompagnement commercial classique.',
+      'Il ne s’agit pas seulement d’aider une équipe commerciale à mieux vendre. Il s’agit de transmettre des fondamentaux entrepreneuriaux à des jeunes déjà engagés dans un métier, avec une vraie exigence professionnelle, mais qui devront aussi comprendre leur marché, défendre leur valeur et structurer leur activité.',
+      'Finance, gestion, management et développement commercial deviennent alors des compétences de solidité. Pas des matières annexes. Un entrepreneur qui ne sait pas parler de son offre, écouter un client, mesurer un enjeu ou construire une relation commerciale risque de subir la vente au lieu de la piloter.',
+      'L’intérêt de ce cas tient à la transmission : rendre le développement commercial accessible, concret et utile à des profils qui ne se définissent pas d’abord comme commerciaux, mais qui devront vendre leur valeur.',
+    ],
+    illustrates:
+      'Formation entrepreneuriale, transmission, fondamentaux commerciaux, montée en compétences, pédagogie terrain.',
+    links: [{ href: '/formation-commerciale-pme', label: 'Formation commerciale PME' }],
+  },];
 
 const evidenceMetrics = [
   {
