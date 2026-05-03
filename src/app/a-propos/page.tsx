@@ -51,6 +51,16 @@ export default function AProposPage() {
                   Faire le diagnostic
                 </Button>
               </Link>
+              <Link href="/cas-clients">
+                <Button 
+                  variant="outline"
+                  size="lg"
+                  icon="🏆"
+                  className="w-full sm:w-auto"
+                >
+                  Voir les cas clients
+                </Button>
+              </Link>
               <Link href="/contact">
                 <Button 
                   variant="outline"

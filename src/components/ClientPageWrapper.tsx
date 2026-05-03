@@ -218,6 +218,19 @@ export default function ClientPageWrapper({
                   </Button>
                 </TrackedLink>
               </div>
+              <p className="mt-6 text-white/70 text-sm">
+                <TrackedLink
+                  href="/cas-clients"
+                  ctaId="hero-cas-clients"
+                  ctaText="Voir les résultats clients"
+                  ctaType="tertiary"
+                  section="hero"
+                  position={3}
+                  className="text-mint-green hover:underline"
+                >
+                  Voir les résultats obtenus avec nos clients →
+                </TrackedLink>
+              </p>
             </div>
           </div>
         </div>

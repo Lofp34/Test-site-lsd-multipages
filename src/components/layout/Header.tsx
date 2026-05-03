@@ -13,6 +13,7 @@ const NAV_ITEMS = [
     isHighlight: true
   },
   { label: "Services", href: "/services" },
+  { label: "Cas clients", href: "/cas-clients" },
   { label: "Diagnostic", href: "/diagnostic" },
   {
     label: "Ressources",
