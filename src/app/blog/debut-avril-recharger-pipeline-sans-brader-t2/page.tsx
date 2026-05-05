@@ -5,14 +5,14 @@ import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
   title: 'Recharger son pipeline en avril : 5 décisions T2 | Laurent Serre',
-  description: 'En début de T2, beaucoup de dirigeants compensent un pipeline fragile par plus d'activité et plus de remises. Voici 5 décisions plus intelligentes pour recharger le pipeline sans dégrader la marge.',
+  description: 'En début de T2, beaucoup de dirigeants compensent un pipeline fragile par plus d\'activité et plus de remises. Voici 5 décisions plus intelligentes pour recharger le pipeline sans dégrader la marge.',
   keywords: 'pipeline T2, recharger pipeline commercial, dirigeant PME B2B, forecast commercial, développement commercial avril, bootcamp commercial, diagnostic commercial',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog/debut-avril-recharger-pipeline-sans-brader-t2',
   },
   openGraph: {
     title: 'Début avril : 5 décisions pour recharger le pipeline sans brader le T2',
-    description: 'Le cadre dirigeant pour sécuriser le T2 sans tomber dans les remises panique ni l'activisme commercial.',
+    description: 'Le cadre dirigeant pour sécuriser le T2 sans tomber dans les remises panique ni l\'activisme commercial.',
     url: 'https://www.laurentserre.com/blog/debut-avril-recharger-pipeline-sans-brader-t2',
     type: 'article',
     locale: 'fr_FR',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Début avril : 5 décisions pour recharger le pipeline sans brader le T2',
-    description: 'Le bon réflexe n'est pas d'accélérer partout. C'est de décider où recharger, où protéger et où recadrer.',
+    description: 'Le bon réflexe n\'est pas d\'accélérer partout. C'est de décider où recharger, où protéger et où recadrer.',
     images: ['https://www.laurentserre.com/images/blog/2026-03-30-avril-recharger-pipeline-t2-hero.webp'],
   },
 };
