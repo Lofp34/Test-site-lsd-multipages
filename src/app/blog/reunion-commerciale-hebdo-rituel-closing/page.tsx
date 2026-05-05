@@ -35,24 +35,24 @@ export const metadata: Metadata = {
 
 export default function ReunionCommercialeHebdoPage() {
     const articleJsonLd = {
-    '@context': \'https://schema.org',
+    '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': \'BlogPosting',
-        '@id': \'https://www.laurentserre.com/blog/reunion-commerciale-hebdo-rituel-closing#posting',
-        headline: \'Réunion commerciale hebdo : le rituel de 45 minutes qui fait remonter le closing',
-        description: \'Le rituel hebdomadaire qu’utilisent les dirigeants et directeurs commerciaux pour assainir le pipeline, coacher sans micro-manager et faire remonter le taux de conversion.',
-        image: \'https://www.laurentserre.com/images/blog/2026-03-25-revue-pipeline-rituel.svg',
+        '@type': 'BlogPosting',
+        '@id': 'https://www.laurentserre.com/blog/reunion-commerciale-hebdo-rituel-closing#posting',
+        headline: 'Réunion commerciale hebdo : le rituel de 45 minutes qui fait remonter le closing',
+        description: 'Le rituel hebdomadaire qu’utilisent les dirigeants et directeurs commerciaux pour assainir le pipeline, coacher sans micro-manager et faire remonter le taux de conversion.',
+        image: 'https://www.laurentserre.com/images/blog/2026-03-25-revue-pipeline-rituel.svg',
         datePublished: '2026-03-25',
         dateModified: '2026-05-05',
         author: {
-          '@type': \'Person',
-          name: \'Laurent Serre',
-          url: \'https://www.laurentserre.com/a-propos',
-          sameAs: [\'https://www.linkedin.com/in/laurentserre34/', \'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/'],
+          '@type': 'Person',
+          name: 'Laurent Serre',
+          url: 'https://www.laurentserre.com/a-propos',
+          sameAs: ['https://www.linkedin.com/in/laurentserre34/', 'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/'],
         },
-        publisher: { '@type': \'Organization', name: \'Laurent Serre Développement', url: \'https://www.laurentserre.com' },
-        mainEntityOfPage: { '@type': \'WebPage', '@id': \'https://www.laurentserre.com/blog/reunion-commerciale-hebdo-rituel-closing' },
+        publisher: { '@type': 'Organization', name: 'Laurent Serre Développement', url: 'https://www.laurentserre.com' },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.laurentserre.com/blog/reunion-commerciale-hebdo-rituel-closing' },
         keywords: [
     "réunion commerciale",
     "revue pipeline",
@@ -64,18 +64,18 @@ export default function ReunionCommercialeHebdoPage() {
   ],
       },
       {
-        '@type': \'FAQPage',
-        '@id': \'https://www.laurentserre.com/blog/reunion-commerciale-hebdo-rituel-closing#faq',
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/reunion-commerciale-hebdo-rituel-closing#faq',
         mainEntity: [
           {
-            '@type': \'Question',
-            name: \'Comment protéger son pipeline et sa marge en début de trimestre ?',
-            acceptedAnswer: { '@type': \'Answer', text: \'En instaurant une réunion hebdomadaire de 30 minutes dédiée à trois actifs critiques : la qualité du pipeline, la marge et la lucidité managériale. Pas une réunion qui commente tout, mais un rituel qui décide.' }
+            '@type': 'Question',
+            name: 'Comment protéger son pipeline et sa marge en début de trimestre ?',
+            acceptedAnswer: { '@type': 'Answer', text: 'En instaurant une réunion hebdomadaire de 30 minutes dédiée à trois actifs critiques : la qualité du pipeline, la marge et la lucidité managériale. Pas une réunion qui commente tout, mais un rituel qui décide.' }
           },
           {
-            '@type': \'Question',
-            name: \'Pourquoi une réunion courte est-elle plus efficace qu\'une réunion longue en période de tension ?',
-            acceptedAnswer: { '@type': \'Answer', text: \'Une réunion de 30 minutes bien conçue oblige à trancher : qu\'est-ce qui est réel, qu\'est-ce qui est fragile, où faut-il intervenir, et où faut-il arrêter d\'investir du temps. C\'est le contraire d\'une réunion qui commente tout.' }
+            '@type': 'Question',
+            name: 'Pourquoi une réunion courte est-elle plus efficace qu\'une réunion longue en période de tension ?',
+            acceptedAnswer: { '@type': 'Answer', text: 'Une réunion de 30 minutes bien conçue oblige à trancher : qu\'est-ce qui est réel, qu\'est-ce qui est fragile, où faut-il intervenir, et où faut-il arrêter d\'investir du temps. C\'est le contraire d\'une réunion qui commente tout.' }
           },
         ]
       }
@@ -224,7 +224,7 @@ export default function ReunionCommercialeHebdoPage() {
               <p className="text-lg font-title font-bold text-blue-ink mb-4">📚 Pour aller plus loin sur le pilotage de pipeline</p>
               <ul className="space-y-3 text-sm">
                 <li><Link href="/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre" className="text-mint-green hover:underline font-medium">Construction d'un pipeline commercial PME fiable</Link> — Les fondamentaux pour bâtir un outil de pilotage solide.</li>
-                <li><Link href="/blog/pipeline-fantome-lundi-matin-test-9-minutes" className="text-mint-green hover:underline font-medium">Pipeline fantôme : test des 9 minutes</Link> — Identifier les faux deals avant qu\'ils ne faussent le forecast.</li>
+                <li><Link href="/blog/pipeline-fantome-lundi-matin-test-9-minutes" className="text-mint-green hover:underline font-medium">Pipeline fantôme : test des 9 minutes</Link> — Identifier les faux deals avant qu'ils ne faussent le forecast.</li>
               </ul>
               <p className="text-xs text-gray-400 mt-3">
                 Voir aussi les <a href="https://www.salesforce.com/sales/pipeline/management/" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">meilleures pratiques Salesforce</a>.
