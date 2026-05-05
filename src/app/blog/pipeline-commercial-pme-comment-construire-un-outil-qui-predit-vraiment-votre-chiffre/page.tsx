@@ -184,6 +184,20 @@ export default function PipelineCommercialPme() {
           </div>
         </section>
 
+        {/* Hero image */}
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
+          <div className="relative overflow-hidden rounded-2xl shadow-lg">
+            <Image
+              src="/images/blog/2026-05-05-pipeline-commercial-pme-hero.webp"
+              alt="Pipeline commercial PME — construire un outil qui prédit votre chiffre d'affaires"
+              width={1792}
+              height={1024}
+              className="w-full h-auto object-cover"
+              priority
+            />
+          </div>
+        </div>
+
         <nav className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Sommaire">
           <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 mb-8">
             <p className="text-lg font-title font-bold text-blue-ink mb-4">📋 Au sommaire</p>
