@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pipeline commercial PME : construire un outil qui prédit votre chiffre | Laurent Serre',
+  title: 'Pipeline commercial PME : construire un outil fiable qui prédit votre CA | Laurent Serre',
   description:
     'Comment construire un pipeline commercial fiable qui permet de vraiment anticiper votre chiffre d\'affaires. Les indicateurs à suivre, les erreurs à éviter, et le format de revue hebdomadaire qui fait la différence.',
   keywords:
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre',
   },
   openGraph: {
-    title: 'Pipeline commercial PME : comment construire un outil qui prédit vraiment votre chiffre',
+    title: 'Pipeline commercial PME : construire l\'outil qui prédit votre chiffre d\'affaires',
     description:
       'Un pipeline commercial mal construit donne une fausse confiance. Voici comment le structurer, les indicateurs à suivre, et comment rendre la revue hebdomadaire utile.',
     url: 'https://www.laurentserre.com/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre',
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Pipeline commercial PME : l\'outil qui prédit votre chiffre',
+    title: 'Pipeline commercial PME : construire un outil fiable | Laurent Serre',
     description:
       'Comment construire un pipeline commercial fiable, indicateurs à suivre, erreurs à éviter et revue de pipeline efficace.',
     images: ['https://www.laurentserre.com/images/blog/2026-05-05-pipeline-commercial-pme-hero.png'],
@@ -35,33 +35,119 @@ export default function PipelineCommercialPme() {
 
   const articleJsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: 'Pipeline commercial PME : comment construire un outil qui prédit vraiment votre chiffre',
-    description:
-      'Comment construire un pipeline commercial fiable qui permet de vraiment anticiper votre chiffre d\'affaires. Les indicateurs à suivre, les erreurs à éviter, et le format de revue hebdomadaire qui fait la différence.',
-    image: 'https://www.laurentserre.com/images/blog/2026-05-05-pipeline-commercial-pme-hero.png',
-    datePublished: '2026-05-05',
-    dateModified: '2026-05-05',
-    author: {
-      '@type': 'Person',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com/a-propos',
-      sameAs: [
-        'https://www.linkedin.com/in/laurentserre34/',
-        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
-      ],
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Laurent Serre Développement',
-      url: 'https://www.laurentserre.com',
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': articleUrl,
-    },
-    articleSection: 'Pilotage commercial / pipeline',
-    keywords: ['pipeline commercial', 'pilotage commercial PME', 'construction pipeline', 'indicateurs pipeline', 'revue de pipeline', 'gestion équipe commerciale'],
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        '@id': articleUrl + '#posting',
+        headline: 'Pipeline commercial PME : construire un outil fiable qui prédit votre chiffre d\'affaires',
+        description:
+          'Comment construire un pipeline commercial fiable qui permet de vraiment anticiper votre chiffre d\'affaires. Les indicateurs à suivre, les erreurs à éviter, et le format de revue hebdomadaire qui fait la différence.',
+        image: 'https://www.laurentserre.com/images/blog/2026-05-05-pipeline-commercial-pme-hero.png',
+        datePublished: '2026-05-05',
+        dateModified: '2026-05-05',
+        author: {
+          '@type': 'Person',
+          name: 'Laurent Serre',
+          url: 'https://www.laurentserre.com/a-propos',
+          sameAs: [
+            'https://www.linkedin.com/in/laurentserre34/',
+            'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+          ],
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Laurent Serre Développement',
+          url: 'https://www.laurentserre.com',
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': articleUrl,
+        },
+        articleSection: 'Pilotage commercial / pipeline',
+        keywords: ['pipeline commercial', 'pilotage commercial PME', 'construction pipeline', 'indicateurs pipeline', 'revue de pipeline', 'gestion équipe commerciale'],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': articleUrl + '#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Qu\'est-ce qu\'un pipeline commercial ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un pipeline commercial est un outil de projection qui permet de répondre à deux questions : combien de chiffre d\'affaires vais-je réaliser dans les 30, 60, 90 prochains jours, et que dois-je faire maintenant pour sécuriser les affaires en cours et en ouvrir de nouvelles. Pour être fiable, il doit être propre, structuré et vivant.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Quelles sont les étapes d\'un pipeline commercial bien structuré ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les étapes clés pour une PME B2B sont : 1) Prospect identifié, 2) Premier contact établi, 3) Découverte réalisée, 4) Proposition envoyée, 5) Négociation en cours, 6) Signature. Chaque étape doit avoir un critère d\'entrée clair pour garantir la fiabilité du pipeline.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Quels sont les indicateurs clés à suivre dans un pipeline commercial ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les 4 indicateurs essentiels sont : 1) Le volume total pondéré (probabilité de closing par étape), 2) L\'âge moyen des affaires par étape, 3) Le taux de transformation par étape, 4) La vélocité du pipeline (temps moyen entre premier contact et signature).'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Quelles sont les erreurs les plus fréquentes dans un pipeline ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les 5 erreurs principales : 1) Des affaires sans date de prochaine action, 2) Des montants fictifs non basés sur la découverte, 3) Des probabilités de closing au doigt mouillé, 4) Ne jamais sortir les affaires perdues, 5) Ne réviser le pipeline qu\'une fois par mois au lieu d\'une revue hebdomadaire.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment rendre une revue de pipeline hebdomadaire efficace ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Format efficace pour une équipe de 5 commerciaux en 45 minutes : 5 minutes de vision globale (volume total vs objectif), 30 minutes sur les affaires prioritaires (proches de la signature, bloquées, grandes opportunités), et 10 minutes d\'actions concrètes pour la semaine. Poser des questions, ne pas assener des verdicts, et toujours terminer par des décisions concrètes.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Quand et comment nettoyer son pipeline commercial ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'En continu par l\'équipe, avec une revue hebdomadaire structurée. Action immédiate : passer 1 heure dans le CRM pour clore toutes les affaires sans activité depuis plus de 60 jours, vérifier que chaque affaire a une date de prochaine action et un montant réaliste, et planifier la première revue de pipeline structurée.'
+            }
+          }
+        ]
+      },
+      {
+        '@type': 'HowTo',
+        '@id': articleUrl + '#howto',
+        name: '3 actions pour nettoyer votre pipeline commercial cette semaine',
+        description: 'Un pipeline propre donne une vision claire. Voici les trois actions concrètes à réaliser dès cette semaine pour fiabiliser votre outil de pilotage commercial.',
+        estimatedCost: { '@type': 'MonetaryAmount', name: 'Gratuit (temps interne uniquement)' },
+        step: [
+          {
+            '@type': 'HowToStep',
+            position: 1,
+            name: 'Passer 1 heure dans votre CRM à clore les affaires mortes',
+            text: 'Fermez et archivez toutes les affaires sans activité depuis plus de 60 jours. Un pipeline nettoyé des « cadavres » donne une vision réaliste de votre portefeuille et évite les fausses projections.'
+          },
+          {
+            '@type': 'HowToStep',
+            position: 2,
+            name: 'Vérifier chaque affaire ouverte',
+            text: 'Pour chaque affaire restante, confirmez qu\'elle a une date de prochaine action planifiée et un montant réaliste basé sur les informations de découverte. Corrigez les anomalies immédiatement.'
+          },
+          {
+            '@type': 'HowToStep',
+            position: 3,
+            name: 'Planifier la première revue de pipeline structurée',
+            text: 'Organisez une réunion de 45 minutes avec votre équipe en utilisant le format en 3 temps : vision globale (5 min), focus affaires prioritaires (30 min), actions de la semaine (10 min).'
+          }
+        ]
+      }
+    ]
   };
 
   return (
@@ -76,7 +162,7 @@ export default function PipelineCommercialPme() {
               </div>
 
               <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-                Pipeline commercial PME : comment construire un outil qui prédit vraiment votre chiffre
+                Pipeline commercial PME : construire un outil fiable qui prédit votre chiffre d&apos;affaires
               </h1>
 
               <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
