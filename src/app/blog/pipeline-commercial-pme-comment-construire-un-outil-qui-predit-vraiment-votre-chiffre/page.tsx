@@ -19,14 +19,14 @@ export const metadata: Metadata = {
     url: 'https://www.laurentserre.com/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre',
     type: 'article',
     locale: 'fr_FR',
-    images: ['https://www.laurentserre.com/images/blog/2026-05-05-pipeline-commercial-pme-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-05-05-pipeline-commercial-pme-hero.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Pipeline commercial PME : construire un outil fiable | Laurent Serre',
     description:
       'Comment construire un pipeline commercial fiable, indicateurs à suivre, erreurs à éviter et revue de pipeline efficace.',
-    images: ['https://www.laurentserre.com/images/blog/2026-05-05-pipeline-commercial-pme-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-05-05-pipeline-commercial-pme-hero.webp'],
   },
 };
 
@@ -42,7 +42,7 @@ export default function PipelineCommercialPme() {
         headline: 'Pipeline commercial PME : construire un outil fiable qui prédit votre chiffre d\'affaires',
         description:
           'Comment construire un pipeline commercial fiable qui permet de vraiment anticiper votre chiffre d\'affaires. Les indicateurs à suivre, les erreurs à éviter, et le format de revue hebdomadaire qui fait la différence.',
-        image: 'https://www.laurentserre.com/images/blog/2026-05-05-pipeline-commercial-pme-hero.png',
+        image: 'https://www.laurentserre.com/images/blog/2026-05-05-pipeline-commercial-pme-hero.webp',
         datePublished: '2026-05-05',
         dateModified: '2026-05-05',
         author: {
@@ -200,6 +200,17 @@ export default function PipelineCommercialPme() {
 
         <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
           <div className="prose prose-lg max-w-none">
+            <div className="bg-mint-green/10 border border-mint-green/30 rounded-2xl p-6 mb-10">
+              <p className="font-title font-bold text-blue-ink text-sm uppercase tracking-wider mb-3">🎯 Ce que vous allez retenir</p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li><strong>Un pipeline fiable repose sur trois qualités</strong> : il doit être propre, structuré et vivant — pas une liste statique dans un CRM.</li>
+                <li><strong>4 indicateurs clés</strong> pour piloter : volume pondéré, âge des affaires, taux de transformation par étape et vélocité.</li>
+                <li><strong>5 erreurs qui faussent tout</strong> : affaires sans date, montants fictifs, probabilités au doigt mouillé, absence de purge, revue trop espacée.</li>
+                <li><strong>Revue hebdomadaire en 3 temps</strong> : 5 min vision globale → 30 min affaires prioritaires → 10 min actions concrètes.</li>
+                <li><strong>3 actions immédiates</strong> : purger le CRM, vérifier chaque affaire, planifier la première revue structurée.</li>
+              </ul>
+            </div>
+
             <h2 id="definition" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Ce qu&apos;est vraiment un pipeline commercial</h2>
 
             <p className="mb-8">Un pipeline commercial, ce n&apos;est pas une liste d&apos;affaires dans un CRM. C&apos;est un outil de projection qui vous permet de répondre à deux questions précises :</p>
@@ -234,12 +245,42 @@ export default function PipelineCommercialPme() {
 
             <div className="bg-slate-50 rounded-xl p-6 mb-6">
               <p className="font-semibold mb-3">Les 4 indicateurs clés :</p>
-              <ul className="space-y-3">
-                <li><strong>Le volume total pondéré</strong> — Assignez une probabilité de closing à chaque étape (Découverte = 30%, Proposition = 60%, Négociation = 80%). Multipliez chaque montant par sa probabilité. Faites la somme. C&apos;est votre prévision réaliste.</li>
-                <li><strong>L&apos;âge moyen des affaires par étape</strong> — Une affaire en &laquo; Proposition envoyée &raquo; depuis 45 jours alors que votre cycle de vente moyen est de 30 jours : signal d&apos;alerte. Soit vous relancez, soit vous sortez l&apos;affaire.</li>
-                <li><strong>Le taux de transformation par étape</strong> — Sur 10 affaires en découverte, combien passent en proposition ? Ces ratios révèlent vos points de friction.</li>
-                <li><strong>La vélocité du pipeline</strong> — Temps moyen entre la première étape et la signature. Réduire ce délai de 20% peut avoir un impact massif sur votre CA annuel.</li>
-              </ul>
+              <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                  <thead>
+                    <tr className="bg-blue-ink/10">
+                      <th className="text-left px-4 py-3 font-title font-semibold text-blue-ink border border-blue-ink/20 w-[30%]">Indicateur</th>
+                      <th className="text-left px-4 py-3 font-title font-semibold text-blue-ink border border-blue-ink/20">Ce que ça mesure</th>
+                      <th className="text-left px-4 py-3 font-title font-semibold text-blue-ink border border-blue-ink/20 w-[25%]">Impact si négligé</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="bg-white">
+                      <td className="px-4 py-3 font-medium border border-blue-ink/20">Volume total pondéré</td>
+                      <td className="px-4 py-3 border border-blue-ink/20">Probabilité de closing par étape (Découverte = 30%, Proposition = 60%, Négociation = 80%). Multipliez chaque montant par sa probabilité.</td>
+                      <td className="px-4 py-3 border border-blue-ink/20 text-gray-600">Prévision surestimée, pilotage aux&nbsp;sentiments</td>
+                    </tr>
+                    <tr className="bg-slate-50">
+                      <td className="px-4 py-3 font-medium border border-blue-ink/20">Âge moyen des affaires par&nbsp;étape</td>
+                      <td className="px-4 py-3 border border-blue-ink/20">Une affaire en &laquo; Proposition envoyée &raquo; depuis 45 jours alors que le cycle moyen est de 30 jours.</td>
+                      <td className="px-4 py-3 border border-blue-ink/20 text-gray-600">Pipeline encombré, fausse confiance sur des deals&nbsp;morts</td>
+                    </tr>
+                    <tr className="bg-white">
+                      <td className="px-4 py-3 font-medium border border-blue-ink/20">Taux de transformation par&nbsp;étape</td>
+                      <td className="px-4 py-3 border border-blue-ink/20">Sur 10 affaires en découverte, combien passent en proposition ? Ces ratios révèlent vos points de friction.</td>
+                      <td className="px-4 py-3 border border-blue-ink/20 text-gray-600">Goulots d&apos;étranglement invisibles, perte de&nbsp;CA</td>
+                    </tr>
+                    <tr className="bg-slate-50">
+                      <td className="px-4 py-3 font-medium border border-blue-ink/20">Vélocité du pipeline</td>
+                      <td className="px-4 py-3 border border-blue-ink/20">Temps moyen entre le premier contact et la signature. Réduire ce délai de 20% peut avoir un impact massif sur le CA annuel.</td>
+                      <td className="px-4 py-3 border border-blue-ink/20 text-gray-600">Cycles longs, CA prévisible en&nbsp;berne</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-gray-400 mt-2">
+                Les standards de gestion de pipeline présentés ici sont alignés sur les meilleures pratiques du secteur. Voir aussi le <a href="https://www.salesforce.com/sales/pipeline/management/" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">guide complet Salesforce Sales Pipeline Management</a>.
+              </p>
             </div>
 
             <h2 id="erreurs" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les 5 erreurs qui polluent votre pipeline</h2>
@@ -304,6 +345,15 @@ export default function PipelineCommercialPme() {
               <li><strong>Vérifiez que chaque affaire ouverte</strong> a une date de prochaine action et un montant réaliste. Corrigez les anomalies.</li>
               <li><strong>Planifiez votre première revue de pipeline structurée</strong> avec votre équipe, en utilisant le format en 3 temps décrit plus haut. Si le passage du commercial au manager est un sujet, la page sur la <Link href="/transformation-commerciale" className="text-mint-green hover:underline">transformation commerciale</Link> détaille comment structurer cette transition.</li>
             </ol>
+
+            <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+              <p className="text-lg font-title font-bold text-blue-ink mb-4">📚 Pour aller plus loin sur le pilotage de pipeline</p>
+              <ul className="space-y-3 text-sm">
+                <li><Link href="/blog/pipeline-fantome-lundi-matin-test-9-minutes" className="text-mint-green hover:underline font-medium">Pipeline fantôme : le test des 9 minutes du lundi matin</Link> — Un test simple pour repérer les faux deals avant qu&apos;ils ne faussent votre forecast.</li>
+                <li><Link href="/blog/pipeline-commercial-q2-2026-5-decisions-dirigeant" className="text-mint-green hover:underline font-medium">Pipeline commercial Q2 2026 : 5 décisions de dirigeant pour sécuriser le CA</Link> — Les arbitrages concrets pour fiabiliser votre pipeline en période de clôture de trimestre.</li>
+                <li><Link href="/blog/debut-avril-recharger-pipeline-sans-brader-t2" className="text-mint-green hover:underline font-medium">Recharger son pipeline sans brader en T2</Link> — Comment reconstituer un portefeuille d&apos;opportunités sans casser les prix ni dégrader la marge.</li>
+              </ul>
+            </div>
 
             <div className="border-t border-gray-200 pt-8 mt-12">
               <p className="text-gray-600 italic mb-4">

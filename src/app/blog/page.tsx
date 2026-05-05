@@ -42,7 +42,7 @@ const blogPosts = [
     date: '2026-05-05',
     readTime: '8 min',
     category: 'Pilotage commercial / pipeline',
-    image: '/images/blog/2026-05-05-pipeline-commercial-pme-hero.png',
+    image: '/images/blog/2026-05-05-pipeline-commercial-pme-hero.webp',
     featured: true
   },
   {
