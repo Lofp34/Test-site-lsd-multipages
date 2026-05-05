@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Début avril : 5 décisions pour recharger le pipeline sans brader le T2',
-    description: 'Le bon réflexe n\'est pas d\'accélérer partout. C'est de décider où recharger, où protéger et où recadrer.',
+    description: 'Le bon réflexe n\'est pas d\'accélérer partout. C\'est de décider où recharger, où protéger et où recadrer.',
     images: ['https://www.laurentserre.com/images/blog/2026-03-30-avril-recharger-pipeline-t2-hero.webp'],
   },
 };
