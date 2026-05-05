@@ -1,0 +1,247 @@
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import Image from 'next/image';
+import HubSpotForm from '@/components/HubSpotForm';
+
+export const metadata: Metadata = {
+  title: 'Pipeline commercial PME : construire un outil qui prédit votre chiffre | Laurent Serre',
+  description:
+    'Comment construire un pipeline commercial fiable qui permet de vraiment anticiper votre chiffre d\'affaires. Les indicateurs à suivre, les erreurs à éviter, et le format de revue hebdomadaire qui fait la différence.',
+  keywords:
+    'pipeline commercial, pilotage commercial PME, construction pipeline, indicateurs pipeline, revue de pipeline, gestion équipe commerciale, Laurent Serre',
+  alternates: {
+    canonical: 'https://www.laurentserre.com/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre',
+  },
+  openGraph: {
+    title: 'Pipeline commercial PME : comment construire un outil qui prédit vraiment votre chiffre',
+    description:
+      'Un pipeline commercial mal construit donne une fausse confiance. Voici comment le structurer, les indicateurs à suivre, et comment rendre la revue hebdomadaire utile.',
+    url: 'https://www.laurentserre.com/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre',
+    type: 'article',
+    locale: 'fr_FR',
+    images: ['https://www.laurentserre.com/images/blog/2026-05-05-pipeline-commercial-pme-hero.png'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pipeline commercial PME : l\'outil qui prédit votre chiffre',
+    description:
+      'Comment construire un pipeline commercial fiable, indicateurs à suivre, erreurs à éviter et revue de pipeline efficace.',
+    images: ['https://www.laurentserre.com/images/blog/2026-05-05-pipeline-commercial-pme-hero.png'],
+  },
+};
+
+export default function PipelineCommercialPme() {
+  const articleUrl = 'https://www.laurentserre.com/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre';
+
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: 'Pipeline commercial PME : comment construire un outil qui prédit vraiment votre chiffre',
+    description:
+      'Comment construire un pipeline commercial fiable qui permet de vraiment anticiper votre chiffre d\'affaires. Les indicateurs à suivre, les erreurs à éviter, et le format de revue hebdomadaire qui fait la différence.',
+    image: 'https://www.laurentserre.com/images/blog/2026-05-05-pipeline-commercial-pme-hero.png',
+    datePublished: '2026-05-05',
+    dateModified: '2026-05-05',
+    author: {
+      '@type': 'Person',
+      name: 'Laurent Serre',
+      url: 'https://www.laurentserre.com/a-propos',
+      sameAs: [
+        'https://www.linkedin.com/in/laurentserre34/',
+        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+      ],
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Laurent Serre Développement',
+      url: 'https://www.laurentserre.com',
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': articleUrl,
+    },
+    articleSection: 'Pilotage commercial / pipeline',
+    keywords: ['pipeline commercial', 'pilotage commercial PME', 'construction pipeline', 'indicateurs pipeline', 'revue de pipeline', 'gestion équipe commerciale'],
+  };
+
+  return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <main className="bg-primary-bg text-gray-dark">
+        <section className="py-24 sm:py-32">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-4 py-2 rounded-full mb-6">
+                <span className="font-title font-semibold text-mint-green text-sm">Pilotage commercial / pipeline</span>
+              </div>
+
+              <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
+                Pipeline commercial PME : comment construire un outil qui prédit vraiment votre chiffre
+              </h1>
+
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+                Un pipeline commercial mal construit, c&apos;est pire que pas de pipeline.
+                Ça vous donne une fausse confiance. Voici comment le construire pas à pas.
+              </p>
+
+              <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
+                <div className="flex items-center gap-2">
+                  <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" loading="lazy" />
+                  <span>Laurent Serre</span>
+                </div>
+                <span>•</span>
+                <time dateTime="2026-05-05">5 mai 2026</time>
+                <span>•</span>
+                <span>8 min de lecture</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <nav className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Sommaire">
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 mb-8">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">📋 Au sommaire</p>
+            <ol className="space-y-2 text-sm">
+              <li><a href="#definition" className="text-blue-ink hover:text-mint-green transition-colors">Ce qu&apos;est vraiment un pipeline commercial</a></li>
+              <li><a href="#etapes" className="text-blue-ink hover:text-mint-green transition-colors">Les étapes d&apos;un pipeline bien structuré</a></li>
+              <li><a href="#indicateurs" className="text-blue-ink hover:text-mint-green transition-colors">Les indicateurs à suivre dans votre pipeline</a></li>
+              <li><a href="#erreurs" className="text-blue-ink hover:text-mint-green transition-colors">Les 5 erreurs qui polluent votre pipeline</a></li>
+              <li><a href="#revue" className="text-blue-ink hover:text-mint-green transition-colors">La revue de pipeline : comment la rendre utile</a></li>
+              <li><a href="#actions" className="text-blue-ink hover:text-mint-green transition-colors">3 actions pour nettoyer votre pipeline cette semaine</a></li>
+            </ol>
+          </div>
+        </nav>
+
+        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+          <div className="prose prose-lg max-w-none">
+            <h2 id="definition" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Ce qu&apos;est vraiment un pipeline commercial</h2>
+
+            <p className="mb-8">Un pipeline commercial, ce n&apos;est pas une liste d&apos;affaires dans un CRM. C&apos;est un outil de projection qui vous permet de répondre à deux questions précises :</p>
+
+            <ol className="mb-8 space-y-2 list-decimal ml-6">
+              <li>Combien de chiffre d&apos;affaires vais-je réaliser dans les 30, 60, 90 prochains jours ?</li>
+              <li>Que dois-je faire maintenant pour sécuriser les affaires en cours et en ouvrir de nouvelles ?</li>
+            </ol>
+
+            <p className="mb-8">Pour qu&apos;il réponde à ces questions, votre pipeline doit avoir trois qualités : il doit être propre, structuré et vivant.</p>
+
+            <h2 id="etapes" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les étapes d&apos;un pipeline bien structuré</h2>
+
+            <p className="mb-4">Chaque affaire dans votre pipeline doit être clairement positionnée dans une étape précise du cycle de vente. Ces étapes doivent refléter la réalité de votre processus commercial — pas un modèle générique copié depuis la doc de votre CRM.</p>
+
+            <p className="mb-4">Voici les étapes qui fonctionnent pour la plupart des PME B2B :</p>
+
+            <ol className="mb-8 space-y-3 list-decimal ml-6">
+              <li><strong>Prospect identifié</strong> : vous avez identifié une opportunité potentielle, premier contact à établir</li>
+              <li><strong>Premier contact établi</strong> : vous avez eu un échange, l&apos;intérêt est confirmé</li>
+              <li><strong>Découverte réalisée</strong> : vous avez compris les enjeux, les besoins, le budget et les décideurs</li>
+              <li><strong>Proposition envoyée</strong> : une offre formelle a été transmise</li>
+              <li><strong>Négociation en cours</strong> : des ajustements sont en discussion</li>
+              <li><strong>Signature</strong> : l&apos;affaire est conclue</li>
+            </ol>
+
+            <p className="mb-8">La clé : chaque étape doit avoir un critère d&apos;entrée clair. Une affaire ne passe en &laquo; Proposition envoyée &raquo; que si les critères de découverte sont remplis. Pas avant.</p>
+
+            <h2 id="indicateurs" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les indicateurs à suivre dans votre pipeline</h2>
+
+            <p className="mb-8">Un pipeline sans indicateurs, c&apos;est un tableau. Pour piloter, vous avez besoin de chiffres.</p>
+
+            <div className="bg-slate-50 rounded-xl p-6 mb-6">
+              <p className="font-semibold mb-3">Les 4 indicateurs clés :</p>
+              <ul className="space-y-3">
+                <li><strong>Le volume total pondéré</strong> — Assignez une probabilité de closing à chaque étape (Découverte = 30%, Proposition = 60%, Négociation = 80%). Multipliez chaque montant par sa probabilité. Faites la somme. C&apos;est votre prévision réaliste.</li>
+                <li><strong>L&apos;âge moyen des affaires par étape</strong> — Une affaire en &laquo; Proposition envoyée &raquo; depuis 45 jours alors que votre cycle de vente moyen est de 30 jours : signal d&apos;alerte. Soit vous relancez, soit vous sortez l&apos;affaire.</li>
+                <li><strong>Le taux de transformation par étape</strong> — Sur 10 affaires en découverte, combien passent en proposition ? Ces ratios révèlent vos points de friction.</li>
+                <li><strong>La vélocité du pipeline</strong> — Temps moyen entre la première étape et la signature. Réduire ce délai de 20% peut avoir un impact massif sur votre CA annuel.</li>
+              </ul>
+            </div>
+
+            <h2 id="erreurs" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les 5 erreurs qui polluent votre pipeline</h2>
+
+            <div className="space-y-6 mb-8">
+              <div className="bg-orange-50 border border-orange-200 rounded-xl p-5">
+                <p className="font-title font-bold text-blue-ink mb-2">Erreur 1 : Des affaires sans date de prochaine action</p>
+                <p className="text-sm text-gray-600">Si une affaire n&apos;a pas de date de prochain contact planifié, elle est morte — ou presque. Chaque affaire doit avoir une prochaine action datée.</p>
+              </div>
+              <div className="bg-orange-50 border border-orange-200 rounded-xl p-5">
+                <p className="font-title font-bold text-blue-ink mb-2">Erreur 2 : Des montants fictifs</p>
+                <p className="text-sm text-gray-600">&laquo; J&apos;ai mis 50 000€ mais ça pourrait être entre 10 000€ et 200 000€. &raquo; Ce n&apos;est pas un pipeline, c&apos;est un espoir. Travaillez à avoir des montants réalistes basés sur les informations de découverte.</p>
+              </div>
+              <div className="bg-orange-50 border border-orange-200 rounded-xl p-5">
+                <p className="font-title font-bold text-blue-ink mb-2">Erreur 3 : Des probabilités au doigt mouillé</p>
+                <p className="text-sm text-gray-600">&laquo; Je sens que ça va signer. &raquo; Intuition ≠ probabilité. Basez vos probabilités sur l&apos;étape du processus et des critères objectifs.</p>
+              </div>
+              <div className="bg-orange-50 border border-orange-200 rounded-xl p-5">
+                <p className="font-title font-bold text-blue-ink mb-2">Erreur 4 : Ne jamais sortir les affaires perdues</p>
+                <p className="text-sm text-gray-600">Les affaires perdues ou gelées doivent être fermées et archivées. Garder des cadavres dans votre pipeline fausse toutes vos projections.</p>
+              </div>
+              <div className="bg-orange-50 border border-orange-200 rounded-xl p-5">
+                <p className="font-title font-bold text-blue-ink mb-2">Erreur 5 : Ne réviser le pipeline qu&apos;une fois par mois</p>
+                <p className="text-sm text-gray-600">Un pipeline qui n&apos;est pas mis à jour en temps réel devient obsolète rapidement. Votre équipe doit le maintenir en continu, et vous devez le réviser en revue commerciale hebdomadaire.</p>
+              </div>
+            </div>
+
+            <h2 id="revue" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">La revue de pipeline : comment la rendre utile</h2>
+
+            <p className="mb-8">La revue de pipeline hebdomadaire est votre outil de pilotage principal. Mais mal conduite, elle devient une réunion de torture où les commerciaux récitent des chiffres et le manager s&apos;énerve.</p>
+
+            <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-xl p-6 mb-8">
+              <p className="font-semibold mb-3">Format efficace d&apos;une revue de pipeline (45 minutes, équipe de 5 commerciaux) :</p>
+              <ul className="space-y-2">
+                <li><strong>5 minutes</strong> : vision globale — volume total, pipeline par commercial vs objectif</li>
+                <li><strong>30 minutes</strong> : focus sur les affaires prioritaires (10 min sur les affaires proches de la signature, 10 min sur les affaires bloquées, 10 min sur les grandes opportunités récentes)</li>
+                <li><strong>10 minutes</strong> : actions de la semaine — qui fait quoi, pour quand</li>
+              </ul>
+            </div>
+
+            <p className="mb-8">Deux règles d&apos;or : posez des questions, n&apos;assenez pas des verdicts. Et terminez toujours par des décisions concrètes.</p>
+
+            <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
+              <p className="text-xl font-title font-bold mb-4">Vous sentez que votre pipeline manque de fiabilité ?</p>
+              <p className="mb-6 text-white/90">
+                Un diagnostic commercial permet d&apos;identifier les vrais blocages, de fiabiliser vos prévisions et de remettre de la méthode dans votre pilotage.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/diagnostic" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
+                  Demander un diagnostic commercial
+                </Link>
+                <Link href="/bootcamp" className="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-full text-white hover:bg-white/10 transition-colors">
+                  Découvrir le bootcamp
+                </Link>
+              </div>
+            </div>
+
+            <h2 id="actions" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">3 actions pour nettoyer votre pipeline cette semaine</h2>
+
+            <ol className="space-y-6 mb-8">
+              <li><strong>Passez 1 heure dans votre CRM</strong> à clore toutes les affaires sans activité depuis plus de 60 jours. Pipeline propre = vision claire. (Si le CRM est un problème en soi, <Link href="/blog/pourquoi-vos-commerciaux-remplissent-mal-le-crm-et-utilisent-mal-lia" className="text-mint-green hover:underline">l&apos;article sur le CRM et l&apos;IA</Link> peut vous aider à poser un diagnostic.)</li>
+              <li><strong>Vérifiez que chaque affaire ouverte</strong> a une date de prochaine action et un montant réaliste. Corrigez les anomalies.</li>
+              <li><strong>Planifiez votre première revue de pipeline structurée</strong> avec votre équipe, en utilisant le format en 3 temps décrit plus haut. Si le passage du commercial au manager est un sujet, la page sur la <Link href="/transformation-commerciale" className="text-mint-green hover:underline">transformation commerciale</Link> détaille comment structurer cette transition.</li>
+            </ol>
+
+            <div className="border-t border-gray-200 pt-8 mt-12">
+              <p className="text-gray-600 italic mb-4">
+                Un pipeline commercial fiable, c&apos;est votre boule de cristal commerciale. Mais comme toute boule de cristal, elle ne fonctionne que si vous la nettoyez régulièrement.
+              </p>
+              <p className="text-gray-600">
+                Pour un diagnostic complet de votre organisation commerciale, venez <Link href="/diagnostic" className="text-mint-green hover:underline">parler de votre situation</Link>.
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <section className="py-16 bg-white">
+          <div className="max-w-2xl mx-auto px-4 sm:px-6">
+            <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-4 text-center">
+              Besoin d&apos;en parler plus directement ?
+            </h2>
+            <p className="text-center text-gray-600 mb-8">
+              Si votre situation mérite un échange plus direct, vous pouvez aussi laisser un message ici.
+            </p>
+            <HubSpotForm />
+          </div>
+        </section>
+      </main>
+    </>
+  );
+}

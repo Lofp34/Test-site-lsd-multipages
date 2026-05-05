@@ -15,8 +15,8 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 28
-- **Publications blog publiées** : 28
+- **Total publications suivies** : 29
+- **Publications blog publiées** : 29
 - **Idées en backlog** : 0
 - **Articles avec kit LinkedIn prêt** : 10
 - **Articles avec email prêt/envoyé** : 7
@@ -24,7 +24,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 ### Répartition par pilier
 - Expertise développement commercial PME : 0
 - Formation / transformation commerciale : 5
-- Outils / méthodes / ressources : 2
+- Outils / méthodes / ressources : 3
 - IA / tendances / prospective : 3
 - Management / pilotage dirigeant : 4
 - Techniques de vente terrain : 7
@@ -34,7 +34,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 ### Répartition par angle
 - Erreur fréquente : 6
 - Diagnostic : 1
-- Méthode : 2
+- Méthode : 3
 - Point de vue : 8
 - Terrain : 4
 - Transformation : 1
@@ -60,6 +60,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-05-05 | publié | Pipeline commercial PME : comment construire un outil qui prédit vraiment votre chiffre | Construction d'un pipeline fiable, indicateurs à suivre, erreurs à éviter, format de revue de pipeline | Méthode | Outils / méthodes / ressources | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à fiabiliser le pipeline, sortir des probabilités au doigt mouillé, et rendre la revue hebdomadaire vraiment utile | Queue éditoriale / dataset 006 | Oui — article 006 du dataset planifié au 2026-05-05, V2 avec liens SEO internes validée par Laurent | https://www.laurentserre.com/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre | à préparer | non requis (validation directe) | Post LinkedIn d’opinion sur les pipelines fragiles, carrousel pipeline propre vs pipeline fantôme, email court sur les trois actions de la semaine | V2 avec liens SEO vers article CRM/IA et page transformation commerciale ; visuel hero généré en `gpt-image-2` ; publication depuis `.publish-ok.md` après validation directe Laurent
 | 2026-04-30 | publié | Le téléphone n’est pas mort, mais l’appel au hasard l’est | Prospection téléphonique B2B préparée vs appel au hasard | Terrain | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Aider les équipes à retrouver une prospection téléphonique utile, située et qualifiante au lieu d’une activité d’appels pauvre | Queue éditoriale / reprise au filtre Laurent | Oui — sujet planifié au 30 avril dans `input/article_queue_20260428_dataset_laurent_serre`, fortement réécrit avant publication | https://www.laurentserre.com/blog/le-telephone-nest-pas-mort-mais-lappel-au-hasard-lest | à préparer | non requis | Post LinkedIn d’opinion sur téléphone mort vs appel pauvre ; carrousel appel au hasard / appel légitime / qualification ; email court sur les premières phrases qui changent tout | Le candidat planifié était marqué `needs_editorial_gate`; publication faite après reprise éditoriale complète, visuel hero généré en `gpt-image-2`, page article, index blog et dashboard mis à jour |
 | 2026-04-29 | publié | Votre client n’est souvent pas conscient du problème que vous pouvez résoudre | Écart entre la demande exprimée par le client, son enjeu réel et les conséquences concrètes qui créent la priorité | Terrain | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Aider les équipes à améliorer la découverte commerciale, éviter les propositions trop rapides et faire émerger la vraie raison d’agir côté client | Input validé / correction Laurent | Oui — article validé dans `input/article_29042026` avec suffixe `.publish-ok.md`, publié directement le 29 avril | https://www.laurentserre.com/blog/votre-client-nest-souvent-pas-conscient-du-probleme-que-vous-pouvez-resoudre | à préparer | non requis (.publish-ok) | Post LinkedIn d’opinion sur demande exprimée vs enjeu réel ; carrousel besoin / enjeu / conséquence ; email court sur les rendez-vous où le client n’a pas encore compris ce que le problème lui coûte | Publication directe depuis le fichier validé `.publish-ok.md`, sans repasse éditoriale ; liens internes ajoutés vers solution trop tôt et intérêt vs décision ; illustration hero générée en `gpt-image-2`, index blog mis à jour et vérifications effectuées |
 | 2026-04-28 | publié | Le 28 du mois, il est trop tard pour sauver vos ventes | Fin de mois commerciale qui révèle des ventes fragiles plutôt qu’elle ne les sauve | Dirigeant / arbitrage | Management / pilotage dirigeant | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à fiabiliser la lecture du pipe, nettoyer les affaires faibles et éviter les sauvetages de fin de mois qui prolongent le flou | Input validé / calendrier mensuel | Oui — publication le 28, cohérente avec la tension réelle de fin de mois et validée par `.publish-ok.md` dans le dossier du jour | https://www.laurentserre.com/blog/le-28-du-mois-il-est-trop-tard-pour-sauver-vos-ventes | à préparer | non requis (.publish-ok) | Post LinkedIn d’opinion sur les fins de mois qui paient les illusions du pipe ; carrousel sauver le mois vs nettoyer le pipe ; email court sur les trois questions à poser le 28 | Publication directe depuis le fichier validé `.publish-ok.md`, sans repasse éditoriale ; illustration hero générée en `gpt-image-2`, index blog mis à jour et vérifications effectuées |

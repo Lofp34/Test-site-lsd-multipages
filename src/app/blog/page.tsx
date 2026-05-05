@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre',
+    title: 'Pipeline commercial PME : comment construire un outil qui prédit vraiment votre chiffre',
+    description: 'Un pipeline commercial mal construit donne une fausse confiance. Voici comment le structurer, les indicateurs à suivre, les erreurs à éviter, et le format de revue qui fait la différence.',
+    date: '2026-05-05',
+    readTime: '8 min',
+    category: 'Pilotage commercial / pipeline',
+    image: '/images/blog/2026-05-05-pipeline-commercial-pme-hero.png',
+    featured: true
+  },
+  {
     slug: 'methodes-vente-comparees-spin-bant-bebedc',
     title: 'Méthodes de vente comparées : SPIN, BANT, BEBEDC — laquelle choisir ?',
     description: 'SPIN, BANT, BEBEDC : comparatif complet des 3 méthodes de vente B2B les plus utilisées. Avantages, limites, tableau comparatif et guide de choix pour dirigeant de PME.',
