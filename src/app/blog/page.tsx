@@ -52,6 +52,7 @@ const blogPosts = [
     date: '2026-05-03',
     readTime: '8 min',
     category: 'Méthodes de vente',
+    image: '/images/blog/2026-05-03-methodes-vente-comparees-hero.jpg',
     featured: true
   },
   {
