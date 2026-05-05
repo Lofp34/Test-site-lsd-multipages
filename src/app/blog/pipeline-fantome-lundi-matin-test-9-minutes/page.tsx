@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pipeline fantôme : le test des 9 minutes du lundi matin | Laurent Serre',
+  title: 'Pipeline fantôme : test des 9 minutes du lundi matin | Laurent Serre',
   description: 'Le test du lundi matin que les dirigeants et directeurs commerciaux peuvent utiliser pour repérer le pipeline fantôme, requalifier les deals et protéger le trimestre.',
   keywords: 'pipeline fantôme, réunion pipeline, directeur commercial, dirigeant PME, forecast commercial, bootcamp commercial',
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-03-28-pipeline-fantome-lundi-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-03-28-pipeline-fantome-lundi-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Réunion de pipeline du lundi matin pour identifier le pipeline fantôme',
@@ -29,46 +29,108 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Pipeline fantôme : le test des 9 minutes du lundi matin',
     description: 'Le test terrain pour nettoyer un forecast avant qu’il ne contamine vos décisions.',
-    images: ['https://www.laurentserre.com/images/blog/2026-03-28-pipeline-fantome-lundi-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-03-28-pipeline-fantome-lundi-hero.webp'],
   },
 };
 
 export default function PipelineFantomeLundiMatinPage() {
   const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Pipeline fantôme : le test des 9 minutes du lundi matin",
-  "description": "Le test du lundi matin que les dirigeants et directeurs commerciaux peuvent utiliser pour repérer le pipeline fantôme, requalifier les deals et protéger le trimestre.",
-  "image": "https://www.laurentserre.com/images/blog/2026-03-28-pipeline-fantome-lundi-hero.jpg",
-  "datePublished": "2026-03-28",
-  "dateModified": "2026-03-28",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        '@id': 'https://www.laurentserre.com/blog/pipeline-fantome-lundi-matin-test-9-minutes#posting',
+        headline: 'Pipeline fantôme : le test des 9 minutes du lundi matin',
+        description: 'Le test du lundi matin que les dirigeants et directeurs commerciaux peuvent utiliser pour repérer le pipeline fantôme, requalifier les deals et protéger le trimestre.',
+        image: 'https://www.laurentserre.com/images/blog/2026-03-28-pipeline-fantome-lundi-hero.webp',
+        datePublished: '2026-03-28',
+        dateModified: '2026-05-05',
+        author: {
+          '@type': 'Person',
+          name: 'Laurent Serre',
+          url: 'https://www.laurentserre.com/a-propos',
+          sameAs: [
+            'https://www.linkedin.com/in/laurentserre34/',
+            'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+          ],
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Laurent Serre Développement',
+          url: 'https://www.laurentserre.com',
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': 'https://www.laurentserre.com/blog/pipeline-fantome-lundi-matin-test-9-minutes',
+        },
+        keywords: ['pipeline fantôme', 'réunion pipeline', 'directeur commercial', 'dirigeant PME', 'forecast commercial', 'bootcamp commercial'],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pipeline-fantome-lundi-matin-test-9-minutes#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Qu\'est-ce qu\'un pipeline fantôme ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le pipeline fantôme est l\'ensemble des opportunités qui occupent vos reportings mais ne peuvent pas encore soutenir une décision de dirigeant : sponsor trop faible, urgence mal établie, prochaine étape floue, ou simple espoir déguisé en probabilité. Ces affaires déforment vos arbitrages, vos remises et votre allocation de temps.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment repérer un pipeline fantôme en 9 minutes ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Prenez les 5 à 10 affaires les plus structurantes du pipeline. Pour chaque deal, posez trois questions (3 minutes chacune) : 1) Qui décide vraiment et qu\'est-ce qui est à risque pour lui maintenant ? 2) Quelle prochaine étape est datée, bilatérale et liée à une décision ? 3) Qu\'est-ce qui manque pour défendre cette affaire devant un CODIR aujourd\'hui ? Si votre commercial ne peut pas répondre précisément, vous n\'avez pas un deal avancé mais un récit de deal.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Quels sont les bénéfices du test des 9 minutes ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'En 30 jours : forecast défendable devant un CODIR, managers concentrés sur les vrais arbitrages, commerciaux comprenant ce qui fait réellement progresser une affaire, remises de panique en baisse, et trimestre suivant nourri par des décisions réelles.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Que faire quand un deal échoue deux fois au test des 9 minutes ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un deal qui échoue deux lundis de suite au test des 9 minutes ne reste pas dans la même catégorie de forecast. Soit il est requalifié, soit un plan de progression précis lui est assigné. Pas de zone grise durable.'
+            }
+          }
+        ]
+      },
+      {
+        '@type': 'HowTo',
+        '@id': 'https://www.laurentserre.com/blog/pipeline-fantome-lundi-matin-test-9-minutes#howto',
+        name: 'Le test des 9 minutes pour détecter le pipeline fantôme',
+        description: 'Un test simple et exigeant à faire chaque lundi matin avec votre équipe commerciale pour repérer les faux deals et fiabiliser votre forecast.',
+        step: [
+          {
+            '@type': 'HowToStep',
+            position: 1,
+            name: 'Question 1 : Qui décide vraiment ?',
+            text: 'Prenez les 5 à 10 deals les plus importants. Le sponsor a-t-il un intérêt personnel à faire avancer le dossier ? Le décideur final a-t-il été approché ou cartographié ? Le risque du statu quo est-il explicite chez le client ?'
+          },
+          {
+            '@type': 'HowToStep',
+            position: 2,
+            name: 'Question 2 : Quelle prochaine étape datée ?',
+            text: 'Vérifiez que chaque deal a une prochaine étape datée, bilatérale et orientée décision. Exemple : un atelier de validation avec le sponsor et le DG prévu jeudi à 14h. Sans ça, pas de mouvement de deal réel.'
+          },
+          {
+            '@type': 'HowToStep',
+            position: 3,
+            name: 'Question 3 : Pourrait-on défendre ce deal devant un CODIR ?',
+            text: 'Ce qui manque est souvent connu depuis des jours : business case incomplet, absence de calendrier, objection politique non traitée. Formuler ce manque permet au manager de coacher plutôt que d\'écouter un reporting.'
+          }
+        ]
+      }
     ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre Développement",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pipeline-fantome-lundi-matin-test-9-minutes"
-  },
-  "keywords": [
-    "pipeline fantôme",
-    "réunion pipeline",
-    "directeur commercial",
-    "dirigeant PME",
-    "forecast commercial",
-    "bootcamp commercial"
-  ]
-};
+  };
 
   return (
 <main className="bg-primary-bg text-gray-dark">
@@ -98,7 +160,7 @@ export default function PipelineFantomeLundiMatinPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-03-28-pipeline-fantome-lundi-hero.jpg"
+              src="/images/blog/2026-03-28-pipeline-fantome-lundi-hero.webp"
               alt="Réunion de pipeline du lundi matin pour identifier le pipeline fantôme"
               width={1536}
               height={1024}
@@ -128,6 +190,18 @@ export default function PipelineFantomeLundiMatinPage() {
           <p className="mb-8">
             Voici le <strong>test des 9 minutes</strong> que je recommande en ouverture de semaine pour faire tomber les faux deals avant qu&apos;ils ne contaminent le trimestre.
           </p>
+
+          <div className="bg-mint-green/10 border border-mint-green/30 rounded-2xl p-6 mb-10">
+              <p className="font-title font-bold text-blue-ink text-sm uppercase tracking-wider mb-3">🎯 Ce que vous allez retenir</p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li><strong>Le pipeline fantôme</strong> : des opportunités qui occupent vos reportings sans pouvoir soutenir une décision de dirigeant.</li>
+                <li><strong>Test des 9 minutes</strong> : 3 questions, 3 minutes chacune, sur vos 5 à 10 deals les plus structurants.</li>
+                <li><strong>Question 1</strong> : Qui décide vraiment et quel est son risque ? Élimine l&apos;illusion relationnelle.</li>
+                <li><strong>Question 2</strong> : Quelle prochaine étape datée, bilatérale, orientée décision ? Requalifie l&apos;intérêt en engagement.</li>
+                <li><strong>Question 3</strong> : Que manque-t-il pour défendre ce deal en CODIR ? Réinstalle le niveau dirigeant.</li>
+                <li><strong>Règle</strong> : un deal qui échoue deux lundis de suite est requalifié ou sort du forecast principal.</li>
+              </ul>
+            </div>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Le principe : 3 questions, 3 minutes chacune, zéro débat décoratif</h2>
           <p className="mb-4">
@@ -203,6 +277,9 @@ export default function PipelineFantomeLundiMatinPage() {
             <li>Les remises de panique diminuent, parce que la qualification remonte en amont</li>
             <li>Le trimestre suivant est nourri par des décisions réelles, pas par un CRM flatteur</li>
           </ul>
+          <p className="text-xs text-gray-400 mb-4">
+            Ces critères de fiabilité du forecast sont alignés sur les standards de gestion de pipeline. Voir le <a href="https://www.salesforce.com/sales/pipeline/management/" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">guide Salesforce Sales Pipeline Management</a>.
+          </p>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Le vrai bénéfice : moins de confort, plus de contrôle</h2>
           <p className="mb-8">
@@ -210,6 +287,15 @@ export default function PipelineFantomeLundiMatinPage() {
             Une direction commerciale mature ne cherche pas un pipeline qui rassure. Elle cherche un pipeline qui aide à décider. Et quand cette discipline devient hebdomadaire,
             vous protégez à la fois la conversion, la marge et la crédibilité managériale.
           </p>
+
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+              <p className="text-lg font-title font-bold text-blue-ink mb-4">📚 Pour aller plus loin sur le pilotage du pipeline</p>
+              <ul className="space-y-3 text-sm">
+                <li><Link href="/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre" className="text-mint-green hover:underline font-medium">Construire un pipeline commercial PME fiable</Link> — L&apos;article fondateur sur les étapes, indicateurs et bonnes pratiques de construction de pipeline.</li>
+                <li><Link href="/blog/pipeline-commercial-q2-2026-5-decisions-dirigeant" className="text-mint-green hover:underline font-medium">Pipeline Q2 2026 : 5 décisions de dirigeant pour sécuriser le CA</Link> — Les arbitrages pour fiabiliser votre pipeline en période de clôture.</li>
+                <li><Link href="/blog/revue-deal-avant-proposition-3-verifications" className="text-mint-green hover:underline font-medium">Revue de deal avant proposition : 3 vérifications</Link> — Ne pas envoyer une proposition sans ces vérifications préalables.</li>
+              </ul>
+            </div>
 
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <h3 className="text-2xl font-title font-bold mb-4">Vous voulez installer ce niveau d&apos;exigence sans rigidifier votre équipe ?</h3>

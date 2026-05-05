@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Fin de trimestre commercial : 7 arbitrages pour éviter un mois d’avril creux | Laurent Serre',
+  title: 'Fin trimestre commercial : 7 arbitrages éviter avril creux | Laurent Serre',
   description: 'Les 7 arbitrages de fin de trimestre qui permettent aux dirigeants et directeurs commerciaux de sécuriser avril sans pression inutile ni pipeline artificiel.',
   keywords: 'fin de trimestre commercial, pipeline commercial, directeur commercial, dirigeant PME, prévision commerciale, bootcamp vente',
   alternates: {
@@ -34,41 +34,52 @@ export const metadata: Metadata = {
 };
 
 export default function FinTrimestreCommercialPage() {
-  const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Fin de trimestre commercial : 7 arbitrages pour éviter un mois d&apos;avril creux",
-  "description": "Les 7 arbitrages de fin de trimestre qui permettent aux dirigeants et directeurs commerciaux de sécuriser avril sans pression inutile ni pipeline artificiel.",
-  "image": "https://www.laurentserre.com/images/blog/2026-03-26-fin-trimestre-arbitrages-hero.svg",
-  "datePublished": "2026-03-26",
-  "dateModified": "2026-03-26",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre Développement",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/fin-trimestre-commercial-7-arbitrages-eviter-avril-creux"
-  },
-  "keywords": [
+    const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        '@id': 'https://www.laurentserre.com/blog/fin-trimestre-commercial-7-arbitrages-eviter-avril-creux#posting',
+        headline: 'Fin de trimestre commercial : 7 arbitrages pour éviter un mois d'avril creux',
+        description: 'Les 7 arbitrages de fin de trimestre qui permettent aux dirigeants et directeurs commerciaux de sécuriser avril sans pression inutile ni pipeline artificiel.',
+        image: 'https://www.laurentserre.com/images/blog/2026-03-26-fin-trimestre-arbitrages-hero.svg',
+        datePublished: '2026-03-26',
+        dateModified: '2026-05-05',
+        author: {
+          '@type': 'Person',
+          name: 'Laurent Serre',
+          url: 'https://www.laurentserre.com/a-propos',
+          sameAs: ['https://www.linkedin.com/in/laurentserre34/', 'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/'],
+        },
+        publisher: { '@type': 'Organization', name: 'Laurent Serre Développement', url: 'https://www.laurentserre.com' },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.laurentserre.com/blog/fin-trimestre-commercial-7-arbitrages-eviter-avril-creux' },
+        keywords: [
     "fin de trimestre commercial",
     "pipeline commercial",
     "directeur commercial",
     "dirigeant PME",
     "prévision commerciale",
     "bootcamp vente"
-  ]
-};
+  ],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/fin-trimestre-commercial-7-arbitrages-eviter-avril-creux#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Comment protéger son pipeline et sa marge en début de trimestre ?',
+            acceptedAnswer: { '@type': 'Answer', text: 'En instaurant une réunion hebdomadaire de 30 minutes dédiée à trois actifs critiques : la qualité du pipeline, la marge et la lucidité managériale. Pas une réunion qui commente tout, mais un rituel qui décide.' }
+          },
+          {
+            '@type': 'Question',
+            name: 'Pourquoi une réunion courte est-elle plus efficace qu'une réunion longue en période de tension ?',
+            acceptedAnswer: { '@type': 'Answer', text: 'Une réunion de 30 minutes bien conçue oblige à trancher : qu'est-ce qui est réel, qu'est-ce qui est fragile, où faut-il intervenir, et où faut-il arrêter d'investir du temps. C'est le contraire d'une réunion qui commente tout.' }
+          },
+        ]
+      }
+    ]
+  };
 
   return (
 <main className="bg-primary-bg text-gray-dark">
@@ -125,6 +136,15 @@ export default function FinTrimestreCommercialPage() {
             Votre enjeu est de <strong>passer la bascule sans casser le mois suivant</strong>. Voici les <strong>7 arbitrages</strong> que je recommande
             quand il faut protéger le chiffre d&apos;affaires, la marge et la crédibilité du pipeline en même temps.
           </p>
+
+          <div className="bg-mint-green/10 border border-mint-green/30 rounded-2xl p-6 mb-10">
+              <p className="font-title font-bold text-blue-ink text-sm uppercase tracking-wider mb-3">🎯 Ce que vous allez retenir</p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li><strong>Réunion de 30 minutes</strong> pour protéger simultanément pipeline, marge et lucidité managériale.</li>
+                <li><strong>3 piliers</strong> : ce qui est réel / ce qui est fragile / où intervenir maintenant.</li>
+                <li><strong>Un rituel qui décide</strong> — pas une réunion qui commente, mais un format court qui oblige à trancher.</li>
+              </ul>
+            </div>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">1) Sortir du forecast tout ce que vous ne pourriez pas défendre devant votre CODIR</h2>
           <p className="mb-4">
@@ -227,6 +247,17 @@ export default function FinTrimestreCommercialPage() {
             La différence entre une équipe qui subit les fins de trimestre et une équipe qui les utilise bien, ce n&apos;est pas la pression.
             C&apos;est la qualité des arbitrages. Les entreprises qui gagnent durablement ne courent pas après le chiffre du dernier jour : elles organisent déjà le mois d&apos;après.
           </p>
+
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+              <p className="text-lg font-title font-bold text-blue-ink mb-4">📚 Pour aller plus loin sur le pilotage de pipeline</p>
+              <ul className="space-y-3 text-sm">
+                <li><Link href="/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre" className="text-mint-green hover:underline font-medium">Construction d'un pipeline commercial PME fiable</Link> — Les fondamentaux pour bâtir un outil de pilotage solide.</li>
+                <li><Link href="/blog/pipeline-fantome-lundi-matin-test-9-minutes" className="text-mint-green hover:underline font-medium">Pipeline fantôme : test des 9 minutes</Link> — Identifier les faux deals avant qu'ils ne faussent le forecast.</li>
+              </ul>
+              <p className="text-xs text-gray-400 mt-3">
+                Voir aussi les <a href="https://www.salesforce.com/sales/pipeline/management/" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">meilleures pratiques Salesforce</a>.
+              </p>
+            </div>
 
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <h3 className="text-2xl font-title font-bold mb-4">Vous voulez installer ce niveau de pilotage dans votre équipe ?</h3>

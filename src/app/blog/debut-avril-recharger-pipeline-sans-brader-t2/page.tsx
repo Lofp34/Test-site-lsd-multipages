@@ -4,21 +4,21 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Début avril : 5 décisions pour recharger le pipeline sans brader le T2 | Laurent Serre',
-  description: 'En début de T2, beaucoup de dirigeants compensent un pipeline fragile par plus d’activité et plus de remises. Voici 5 décisions plus intelligentes pour recharger le pipeline sans dégrader la marge.',
+  title: 'Recharger son pipeline en avril : 5 décisions T2 | Laurent Serre',
+  description: 'En début de T2, beaucoup de dirigeants compensent un pipeline fragile par plus d'activité et plus de remises. Voici 5 décisions plus intelligentes pour recharger le pipeline sans dégrader la marge.',
   keywords: 'pipeline T2, recharger pipeline commercial, dirigeant PME B2B, forecast commercial, développement commercial avril, bootcamp commercial, diagnostic commercial',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog/debut-avril-recharger-pipeline-sans-brader-t2',
   },
   openGraph: {
     title: 'Début avril : 5 décisions pour recharger le pipeline sans brader le T2',
-    description: 'Le cadre dirigeant pour sécuriser le T2 sans tomber dans les remises panique ni l’activisme commercial.',
+    description: 'Le cadre dirigeant pour sécuriser le T2 sans tomber dans les remises panique ni l'activisme commercial.',
     url: 'https://www.laurentserre.com/blog/debut-avril-recharger-pipeline-sans-brader-t2',
     type: 'article',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-03-30-avril-recharger-pipeline-t2-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-03-30-avril-recharger-pipeline-t2-hero.webp',
         width: 1536,
         height: 864,
         alt: 'Dirigeant et directeur commercial analysant un pipeline T2 fragile dans une salle de réunion premium',
@@ -28,49 +28,84 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Début avril : 5 décisions pour recharger le pipeline sans brader le T2',
-    description: 'Le bon réflexe n’est pas d’accélérer partout. C’est de décider où recharger, où protéger et où recadrer.',
-    images: ['https://www.laurentserre.com/images/blog/2026-03-30-avril-recharger-pipeline-t2-hero.jpg'],
+    description: 'Le bon réflexe n'est pas d'accélérer partout. C'est de décider où recharger, où protéger et où recadrer.',
+    images: ['https://www.laurentserre.com/images/blog/2026-03-30-avril-recharger-pipeline-t2-hero.webp'],
   },
 };
 
 export default function DebutAvrilRechargerPipelinePage() {
   const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Début avril : 5 décisions pour recharger le pipeline sans brader le T2",
-  "description": "En début de T2, beaucoup de dirigeants compensent un pipeline fragile par plus d’activité et plus de remises. Voici 5 décisions plus intelligentes pour recharger le pipeline sans dégrader la marge.",
-  "image": "https://www.laurentserre.com/images/blog/2026-03-30-avril-recharger-pipeline-t2-hero.jpg",
-  "datePublished": "2026-03-30",
-  "dateModified": "2026-03-30",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        '@id': 'https://www.laurentserre.com/blog/debut-avril-recharger-pipeline-sans-brader-t2#posting',
+        headline: 'Début avril : 5 décisions pour recharger le pipeline sans brader le T2',
+        description: 'En début de T2, beaucoup de dirigeants compensent un pipeline fragile par plus d\'activité et plus de remises. Voici 5 décisions plus intelligentes pour recharger le pipeline sans dégrader la marge.',
+        image: 'https://www.laurentserre.com/images/blog/2026-03-30-avril-recharger-pipeline-t2-hero.webp',
+        datePublished: '2026-03-30',
+        dateModified: '2026-05-05',
+        author: {
+          '@type': 'Person',
+          name: 'Laurent Serre',
+          url: 'https://www.laurentserre.com/a-propos',
+          sameAs: [
+            'https://www.linkedin.com/in/laurentserre34/',
+            'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+          ],
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Laurent Serre Développement',
+          url: 'https://www.laurentserre.com',
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': 'https://www.laurentserre.com/blog/debut-avril-recharger-pipeline-sans-brader-t2',
+        },
+        articleSection: 'Dirigeant / arbitrage',
+        keywords: ['pipeline T2', 'recharger pipeline commercial', 'dirigeant PME B2B', 'forecast commercial', 'développement commercial avril', 'bootcamp commercial', 'diagnostic commercial'],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/debut-avril-recharger-pipeline-sans-brader-t2#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Comment recharger son pipeline en début de T2 sans brader ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'En 5 décisions : 1) Retirer les faux raccourcis du trimestre, 2) Recharger d\'abord les comptes tièdes pas seulement le haut de funnel, 3) Interdire les propositions prématurées, 4) Concentrer le management sur 3 mouvements à effet rapide, 5) Protéger la marge en reformulant la valeur avant de parler prix.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Quels comptes recharger en priorité quand le pipeline est fragile ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le premier gisement n\'est pas les listes neuves mais les comptes déjà éveillés et mal repris : opportunités refroidies depuis 30 à 90 jours, anciens prospects bien reçus jamais recadrés, comptes stratégiques dormants avec un vrai enjeu business, et deals en attente d\'une relance managériale ou dirigeante.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Pourquoi faut-il éviter les propositions prématurées en période de tension ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Une proposition ne recharge pas un pipeline fragile si la décision n\'est pas mûre : elle transforme un deal incertain en document à poursuivre puis en négociation défensive. Mieux vaut une semaine de recadrage qu\'un mois de relances stériles.'
+            }
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment protéger la marge quand le pipeline est sous tension ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Au lieu de baisser le prix, reformulez le coût du statu quo pour le client, la vitesse de retour sur action, le risque que vous aidez à réduire, et l\'écart entre un accompagnement structuré et une simple activité commerciale supplémentaire.'
+            }
+          }
+        ]
+      }
     ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre Développement",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/debut-avril-recharger-pipeline-sans-brader-t2"
-  },
-  "articleSection": "Dirigeant / arbitrage",
-  "keywords": [
-    "pipeline T2",
-    "recharger pipeline commercial",
-    "dirigeant PME B2B",
-    "forecast commercial",
-    "développement commercial avril",
-    "bootcamp commercial",
-    "diagnostic commercial"
-  ]
-};
+  };
 
   return (
 <main className="bg-primary-bg text-gray-dark">
@@ -88,7 +123,7 @@ export default function DebutAvrilRechargerPipelinePage() {
 
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
               <div className="flex items-center gap-2">
-                <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" loading="lazy" />
+                <Image src="/laurent.webp" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" loading="lazy" />
                 <span>Laurent Serre</span>
               </div>
               <span>•</span>
@@ -100,7 +135,7 @@ export default function DebutAvrilRechargerPipelinePage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-03-30-avril-recharger-pipeline-t2-hero.jpg"
+              src="/images/blog/2026-03-30-avril-recharger-pipeline-t2-hero.webp"
               alt="Dirigeant et directeur commercial analysant un pipeline T2 fragile dans une salle de réunion premium"
               width={1536}
               height={864}
@@ -126,6 +161,18 @@ export default function DebutAvrilRechargerPipelinePage() {
           <p className="mb-8">
             Voici le cadre que je recommande aux dirigeants et directeurs commerciaux pour recharger vite, proprement et sans transformer avril en mois de panique élégamment habillée.
           </p>
+
+          <div className="bg-mint-green/10 border border-mint-green/30 rounded-2xl p-6 mb-10">
+              <p className="font-title font-bold text-blue-ink text-sm uppercase tracking-wider mb-3">🎯 Ce que vous allez retenir</p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li><strong>Décision 1</strong> — Retirer les faux raccourcis du trimestre avant de chercher de nouvelles opportunités.</li>
+                <li><strong>Décision 2</strong> — Recharger d&apos;abord les comptes tièdes, pas uniquement le haut du funnel.</li>
+                <li><strong>Décision 3</strong> — Interdire les propositions prématurées : une proposition ne recharge pas un pipeline fragile.</li>
+                <li><strong>Décision 4</strong> — Concentrer le management sur 3 mouvements à effet rapide plutôt que 20 micro-actions.</li>
+                <li><strong>Décision 5</strong> — Protéger la marge en reformulant la valeur avant de parler prix.</li>
+                <li><strong>Plan 15 jours</strong> : J1-3 nettoyage forecast, J3-5 réactivation comptes tièdes, Semaine 2 revues deal + interventions dirigeant.</li>
+              </ul>
+            </div>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Décision n°1 : retirer immédiatement les faux raccourcis du trimestre</h2>
           <p className="mb-4">
@@ -157,12 +204,12 @@ export default function DebutAvrilRechargerPipelinePage() {
             .
           </p>
 
-          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Décision n°3 : interdire les propositions prématurées “pour relancer la machine”</h2>
+          <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Décision n°3 : interdire les propositions prématurées "pour relancer la machine"</h2>
           <p className="mb-4">
             En période de tension, les équipes veulent produire des devis pour se rassurer. C&apos;est compréhensible. Mais une proposition ne recharge pas un pipeline fragile si la décision n&apos;est pas mûre. Elle transforme simplement un deal incertain en document à poursuivre, puis en négociation défensive.
           </p>
           <p className="mb-6">
-            La bonne question n&apos;est pas “peut-on envoyer ?”. La bonne question est : <strong>qu&apos;est-ce qui justifie qu&apos;une décision avance maintenant ?</strong> Si l&apos;enjeu, la mécanique de décision ou la valeur perçue restent flous, stoppez. Mieux vaut une semaine de recadrage qu&apos;un mois de relances stériles.
+            La bonne question n&apos;est pas "peut-on envoyer ?". La bonne question est : <strong>qu&apos;est-ce qui justifie qu&apos;une décision avance maintenant ?</strong> Si l&apos;enjeu, la mécanique de décision ou la valeur perçue restent flous, stoppez. Mieux vaut une semaine de recadrage qu&apos;un mois de relances stériles.
           </p>
 
           <div className="bg-blue-ink/10 border-l-4 border-blue-ink p-6 my-8">
@@ -198,7 +245,7 @@ export default function DebutAvrilRechargerPipelinePage() {
             <li>l&apos;écart entre un accompagnement structuré et une simple activité commerciale supplémentaire.</li>
           </ul>
           <p className="mb-8">
-            Les dirigeants qui tiennent mieux leur T2 ne sont pas ceux qui “poussent plus fort”. Ce sont ceux qui savent où remettre de la valeur, où exiger de la preuve de décision et où arrêter de poursuivre des opportunités qui ne veulent pas vraiment naître.
+            Les dirigeants qui tiennent mieux leur T2 ne sont pas ceux qui "poussent plus fort". Ce sont ceux qui savent où remettre de la valeur, où exiger de la preuve de décision et où arrêter de poursuivre des opportunités qui ne veulent pas vraiment naître.
           </p>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Le plan 15 jours que je recommande</h2>
@@ -212,6 +259,18 @@ export default function DebutAvrilRechargerPipelinePage() {
           <p className="mb-8">
             Si ce plan est bien exécuté, avril cesse d&apos;être un mois de compensation émotionnelle. Il redevient un mois de reprise en main. Et cette différence se voit très vite : pipeline plus crédible, discours plus propre, négociation moins défensive et management plus utile.
           </p>
+
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+              <p className="text-lg font-title font-bold text-blue-ink mb-4">📚 Pour aller plus loin sur le pilotage de pipeline</p>
+              <ul className="space-y-3 text-sm">
+                <li><Link href="/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre" className="text-mint-green hover:underline font-medium">Construire un pipeline commercial PME fiable</Link> — Les fondamentaux pour bâtir un outil de pilotage solide.</li>
+                <li><Link href="/blog/pipeline-commercial-q2-2026-5-decisions-dirigeant" className="text-mint-green hover:underline font-medium">Pipeline Q2 2026 : 5 décisions dirigeant</Link> — Les arbitrages complémentaires pour sécuriser le trimestre.</li>
+                <li><Link href="/blog/pipeline-fantome-lundi-matin-test-9-minutes" className="text-mint-green hover:underline font-medium">Pipeline fantôme : le test des 9 minutes</Link> — Identifier les faux deals avant qu&apos;ils ne faussent votre forecast.</li>
+              </ul>
+              <p className="text-xs text-gray-400 mt-3">
+                Les standards de pilotage présentés ici sont alignés sur les <a href="https://www.salesforce.com/sales/pipeline/management/" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">meilleures pratiques Salesforce de gestion de pipeline</a>.
+              </p>
+            </div>
 
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <h3 className="text-2xl font-title font-bold mb-4">Vous voulez recharger votre pipeline sans dégrader votre manière de vendre ?</h3>

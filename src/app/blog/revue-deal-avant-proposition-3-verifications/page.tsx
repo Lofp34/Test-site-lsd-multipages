@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Avant d’envoyer une proposition : la revue deal en 17 minutes | Laurent Serre',
+  title: 'Revue deal avant proposition : 3 vérifications en 17 min | Laurent Serre',
   description: 'La méthode de revue deal en 17 minutes pour éviter les propositions B2B trop tôt, protéger la marge et augmenter le taux de signature.',
   keywords: 'proposition commerciale B2B, revue deal, directeur commercial, taux de signature, bootcamp vente, pipeline commercial',
   alternates: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-03-28-revue-deal-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-03-28-revue-deal-hero.webp',
         width: 1376,
         height: 768,
         alt: 'Revue deal dirigeant et directeur commercial avant envoi de proposition',
@@ -29,46 +29,57 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Avant d’envoyer une proposition : la revue deal en 17 minutes',
     description: 'Le rituel simple qui évite les propositions trop tôt et améliore la qualité du closing.',
-    images: ['https://www.laurentserre.com/images/blog/2026-03-28-revue-deal-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-03-28-revue-deal-hero.webp'],
   },
 };
 
 export default function RevueDealAvantPropositionPage() {
-  const articleJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Avant d&apos;envoyer une proposition : la revue deal en 17 minutes",
-  "description": "La méthode de revue deal en 17 minutes pour éviter les propositions B2B trop tôt, protéger la marge et augmenter le taux de signature.",
-  "image": "https://www.laurentserre.com/images/blog/2026-03-28-revue-deal-hero.jpg",
-  "datePublished": "2026-03-28",
-  "dateModified": "2026-03-28",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre Développement",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/revue-deal-avant-proposition-3-verifications"
-  },
-  "keywords": [
+    const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        '@id': 'https://www.laurentserre.com/blog/revue-deal-avant-proposition-3-verifications#posting',
+        headline: 'Avant d'envoyer une proposition : la revue deal en 17 minutes',
+        description: 'La méthode de revue deal en 17 minutes pour éviter les propositions B2B trop tôt, protéger la marge et augmenter le taux de signature.',
+        image: 'https://www.laurentserre.com/images/blog/2026-03-28-revue-deal-hero.webp',
+        datePublished: '2026-03-28',
+        dateModified: '2026-05-05',
+        author: {
+          '@type': 'Person',
+          name: 'Laurent Serre',
+          url: 'https://www.laurentserre.com/a-propos',
+          sameAs: ['https://www.linkedin.com/in/laurentserre34/', 'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/'],
+        },
+        publisher: { '@type': 'Organization', name: 'Laurent Serre Développement', url: 'https://www.laurentserre.com' },
+        mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.laurentserre.com/blog/revue-deal-avant-proposition-3-verifications' },
+        keywords: [
     "proposition commerciale B2B",
     "revue deal",
     "directeur commercial",
     "taux de signature",
     "bootcamp vente",
     "pipeline commercial"
-  ]
-};
+  ],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/revue-deal-avant-proposition-3-verifications#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Comment protéger son pipeline et sa marge en début de trimestre ?',
+            acceptedAnswer: { '@type': 'Answer', text: 'En instaurant une réunion hebdomadaire de 30 minutes dédiée à trois actifs critiques : la qualité du pipeline, la marge et la lucidité managériale. Pas une réunion qui commente tout, mais un rituel qui décide.' }
+          },
+          {
+            '@type': 'Question',
+            name: 'Pourquoi une réunion courte est-elle plus efficace qu'une réunion longue en période de tension ?',
+            acceptedAnswer: { '@type': 'Answer', text: 'Une réunion de 30 minutes bien conçue oblige à trancher : qu'est-ce qui est réel, qu'est-ce qui est fragile, où faut-il intervenir, et où faut-il arrêter d'investir du temps. C'est le contraire d'une réunion qui commente tout.' }
+          },
+        ]
+      }
+    ]
+  };
 
   return (
 <main className="bg-primary-bg text-gray-dark">
@@ -86,7 +97,7 @@ export default function RevueDealAvantPropositionPage() {
 
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
               <div className="flex items-center gap-2">
-                <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" loading="lazy" />
+                <Image src="/laurent.webp" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" loading="lazy" />
                 <span>Laurent Serre</span>
               </div>
               <span>•</span>
@@ -98,7 +109,7 @@ export default function RevueDealAvantPropositionPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-03-28-revue-deal-hero.jpg"
+              src="/images/blog/2026-03-28-revue-deal-hero.webp"
               alt="Revue deal dirigeant et directeur commercial avant envoi de proposition"
               width={1376}
               height={768}
@@ -128,6 +139,15 @@ export default function RevueDealAvantPropositionPage() {
             C&apos;est pour cela que je recommande une <strong>revue deal en 17 minutes</strong> avant chaque proposition significative. Pas une réunion de plus. Un rituel court, exigeant,
             qui permet de décider si le deal mérite une proposition, s&apos;il faut encore cadrer, ou s&apos;il faut ralentir pour mieux sécuriser la signature.
           </p>
+
+          <div className="bg-mint-green/10 border border-mint-green/30 rounded-2xl p-6 mb-10">
+              <p className="font-title font-bold text-blue-ink text-sm uppercase tracking-wider mb-3">🎯 Ce que vous allez retenir</p>
+              <ul className="space-y-2 text-sm text-gray-700">
+                <li><strong>Réunion de 30 minutes</strong> pour protéger simultanément pipeline, marge et lucidité managériale.</li>
+                <li><strong>3 piliers</strong> : ce qui est réel / ce qui est fragile / où intervenir maintenant.</li>
+                <li><strong>Un rituel qui décide</strong> — pas une réunion qui commente, mais un format court qui oblige à trancher.</li>
+              </ul>
+            </div>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Pourquoi 17 minutes ? Parce qu&apos;au-delà, on recommence à raconter l&apos;histoire du deal</h2>
           <p className="mb-4">
@@ -215,6 +235,17 @@ export default function RevueDealAvantPropositionPage() {
           <p className="mb-8">
             Les équipes qui performent durablement n&apos;envoient pas plus de propositions. Elles envoient moins de propositions prématurées. Et ce détail change tout : conversion, marge, crédibilité et qualité de pilotage.
           </p>
+
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+              <p className="text-lg font-title font-bold text-blue-ink mb-4">📚 Pour aller plus loin sur le pilotage de pipeline</p>
+              <ul className="space-y-3 text-sm">
+                <li><Link href="/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre" className="text-mint-green hover:underline font-medium">Construction d'un pipeline commercial PME fiable</Link> — Les fondamentaux pour bâtir un outil de pilotage solide.</li>
+                <li><Link href="/blog/pipeline-fantome-lundi-matin-test-9-minutes" className="text-mint-green hover:underline font-medium">Pipeline fantôme : test des 9 minutes</Link> — Identifier les faux deals avant qu'ils ne faussent le forecast.</li>
+              </ul>
+              <p className="text-xs text-gray-400 mt-3">
+                Voir aussi les <a href="https://www.salesforce.com/sales/pipeline/management/" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">meilleures pratiques Salesforce</a>.
+              </p>
+            </div>
 
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <h3 className="text-2xl font-title font-bold mb-4">Vous voulez faire progresser le closing sans transformer votre équipe en usine à devis ?</h3>

@@ -46,6 +46,16 @@ const blogPosts = [
     featured: true
   },
   {
+    slug: 'recrutement-commercial-en-pme-arretez-de-recruter-a-l-instinct',
+    title: 'Recrutement commercial en PME : arrêtez de recruter à l\'instinct',
+    description: 'Un mauvais recrutement commercial coûte 50 000€ à 150 000€ à une PME. Voici comment recruter les bons profils, repérer les red flags et intégrer efficacement un nouveau commercial.',
+    date: '2026-05-06',
+    readTime: '8 min',
+    category: 'Recrutement / management',
+    image: '/images/blog/2026-05-06-recrutement-commercial-hero.png',
+    featured: false
+  },
+  {
     slug: 'methodes-vente-comparees-spin-bant-bebedc',
     title: 'Méthodes de vente comparées : SPIN, BANT, BEBEDC — laquelle choisir ?',
     description: 'SPIN, BANT, BEBEDC : comparatif complet des 3 méthodes de vente B2B les plus utilisées. Avantages, limites, tableau comparatif et guide de choix pour dirigeant de PME.',
@@ -361,7 +371,7 @@ const blogPosts = [
     date: '2026-03-31',
     readTime: '11 min',
     category: 'Pilotage commercial',
-    image: '/images/blog/2026-03-31-reunion-30-minutes-marge-pipeline-hero.jpg',
+    image: '/images/blog/2026-03-31-reunion-30-minutes-marge-pipeline-hero.webp',
     featured: true
   },
   {
@@ -371,7 +381,7 @@ const blogPosts = [
     date: '2026-03-30',
     readTime: '11 min',
     category: 'Dirigeant / arbitrage',
-    image: '/images/blog/2026-03-30-avril-recharger-pipeline-t2-hero.jpg',
+    image: '/images/blog/2026-03-30-avril-recharger-pipeline-t2-hero.webp',
     featured: true
   },
   {
@@ -391,7 +401,7 @@ const blogPosts = [
     date: '2026-03-28',
     readTime: '11 min',
     category: 'Closing B2B',
-    image: '/images/blog/2026-03-28-revue-deal-hero.jpg',
+    image: '/images/blog/2026-03-28-revue-deal-hero.webp',
     featured: true
   },
   {
@@ -401,7 +411,7 @@ const blogPosts = [
     date: '2026-03-28',
     readTime: '10 min',
     category: 'Pilotage commercial',
-    image: '/images/blog/2026-03-28-pipeline-fantome-lundi-hero.jpg',
+    image: '/images/blog/2026-03-28-pipeline-fantome-lundi-hero.webp',
     featured: true
   },
   {
@@ -451,7 +461,7 @@ const blogPosts = [
     date: '2026-03-23',
     readTime: '11 min',
     category: 'Stratégie commerciale',
-    image: '/images/blog/2026-03-23-pipeline-q2-hero.png',
+    image: '/images/blog/2026-03-23-pipeline-q2-hero.webp',
     featured: true
   },
   {
