@@ -566,9 +566,14 @@ const blogPosts = [
   },
 ];
 
+const sortPostsByDateDesc = (posts: typeof blogPosts) =>
+  [...posts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+
 export default function BlogPage() {
-  const featuredPosts = blogPosts.filter(post => post.featured);
-  const regularPosts = blogPosts.filter(post => !post.featured);
+  const featuredPosts = sortPostsByDateDesc(blogPosts.filter(post => post.featured));
+  const regularPosts = sortPostsByDateDesc(blogPosts.filter(post => !post.featured));
 
   return (
     <main className="bg-primary-bg text-gray-dark">
