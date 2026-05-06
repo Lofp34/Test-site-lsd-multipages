@@ -52,8 +52,8 @@ const blogPosts = [
     date: '2026-05-06',
     readTime: '8 min',
     category: 'Recrutement / management',
-    image: '/images/blog/2026-05-06-recrutement-commercial-hero.png',
-    featured: false
+    image: '/images/blog/2026-05-06-recrutement-commercial-pme-hero.png',
+    featured: true
   },
   {
     slug: 'methodes-vente-comparees-spin-bant-bebedc',

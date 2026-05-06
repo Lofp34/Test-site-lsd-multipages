@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-05-06-recrutement-commercial-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-05-06-recrutement-commercial-pme-hero.png',
         width: 1536,
         height: 1024,
         alt: 'Recrutement commercial en PME — arrêtez de recruter à l\'instinct',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Recrutement commercial en PME : arrêtez de recruter à l\'instinct | Laurent Serre',
     description:
       'Un mauvais recrutement commercial coûte 50 000€ à 150 000€. Guide terrain pour recruter les bons profils en PME.',
-    images: ['https://www.laurentserre.com/images/blog/2026-05-06-recrutement-commercial-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-05-06-recrutement-commercial-pme-hero.png'],
   },
 };
 
@@ -42,7 +42,7 @@ const article = {
   date: '2026-05-06',
   readTime: '8 min',
   category: 'Recrutement / management',
-  image: '/images/blog/2026-05-06-recrutement-commercial-hero.jpg',
+  image: '/images/blog/2026-05-06-recrutement-commercial-pme-hero.png',
 };
 
 export default function ArticlePage() {
