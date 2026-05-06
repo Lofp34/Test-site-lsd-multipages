@@ -46,8 +46,94 @@ const article = {
 };
 
 export default function ArticlePage() {
+  const articleUrl = 'https://www.laurentserre.com/blog/recrutement-commercial-en-pme-arretez-de-recruter-a-l-instinct';
+  const articleSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: 'Recrutement commercial en PME : arrêtez de recruter à l\'instinct',
+    description:
+      'Un mauvais recrutement commercial coûte 50 000€ à 150 000€ à une PME. Voici comment recruter les bons profils, repérer les red flags et intégrer efficacement un nouveau commercial.',
+    image: 'https://www.laurentserre.com/images/blog/2026-05-06-recrutement-commercial-pme-hero.png',
+    datePublished: '2026-05-06',
+    dateModified: '2026-05-06',
+    author: {
+      '@type': 'Person',
+      name: 'Laurent Serre',
+      url: 'https://www.laurentserre.com/a-propos',
+      sameAs: [
+        'https://www.linkedin.com/in/laurentserre34/',
+        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+      ],
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Laurent Serre Développement',
+      url: 'https://www.laurentserre.com',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.laurentserre.com/logo.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': articleUrl,
+    },
+    articleSection: 'Recrutement / management',
+    keywords: [
+      'recrutement commercial PME',
+      'recruter commercial B2B',
+      'processus recrutement vente',
+      'recrutement équipe commerciale',
+      'management équipe commerciale',
+    ],
+  };
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Combien coûte un mauvais recrutement commercial à une PME ?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Un mauvais recrutement commercial coûte entre 50 000€ et 150 000€ à une PME. Salaire, charges, formation, opportunités manquées pendant la montée en puissance, et finalement la réembauche.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Quels sont les critères qui prédisent vraiment la performance d\'un commercial ?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Les vrais prédicteurs de performance sont : l\'historique de résultats chiffrés et vérifiables, la capacité à apprendre et s\'adapter, la résilience face au refus, et la rigueur organisationnelle. La présentation soignée ou le beau CV ne sont pas des différenciateurs fiables.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Comment structurer un processus de recrutement commercial en PME ?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Un processus efficace en 4 étapes : 1) entretien téléphonique de qualification (20 min), 2) entretien comportemental basé sur des situations réelles (60-90 min), 3) mise en situation commerciale avec roleplay concret, 4) vérification systématique des références auprès des anciens managers.',
+        },
+      },
+    ],
+  };
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.laurentserre.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.laurentserre.com/blog' },
+      { '@type': 'ListItem', position: 3, name: 'Recrutement commercial en PME', item: articleUrl },
+    ],
+  };
+
   return (
     <main className="min-h-screen bg-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {/* Article Header */}
       <section className="relative pt-24 pb-12 md:pt-32 md:pb-16 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
         <div className="container mx-auto px-4 max-w-4xl relative z-10">
