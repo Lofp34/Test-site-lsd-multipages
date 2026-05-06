@@ -571,6 +571,8 @@ const sortPostsByDateDesc = (posts: typeof blogPosts) =>
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 
+// Source GSC: /Users/clawdia/.openclaw/workspace-site-maintainer/production/rapport-gsc-articles-blog-vedette-2026-05-06.json
+// Rule: 3 latest posts + 3 best Google Search Console performers, without duplicates.
 const googleTopFeaturedSlugs = [
   'vendeur-commercial-transformation-decisive',
   'techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader',
