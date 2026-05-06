@@ -572,8 +572,8 @@ const sortPostsByDateDesc = (posts: typeof blogPosts) =>
   );
 
 export default function BlogPage() {
-  const featuredPosts = sortPostsByDateDesc(blogPosts.filter(post => post.featured));
-  const regularPosts = sortPostsByDateDesc(blogPosts.filter(post => !post.featured));
+  const featuredPosts = sortPostsByDateDesc(blogPosts.filter(post => post.featured)).slice(0, 6);
+  const allPosts = sortPostsByDateDesc(blogPosts);
 
   return (
     <main className="bg-primary-bg text-gray-dark">
@@ -691,7 +691,7 @@ export default function BlogPage() {
           </h2>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {regularPosts.map((post) => (
+            {allPosts.map((post) => (
               <article key={post.slug} className="group">
                 <Link href={`/blog/${post.slug}`} className="block">
                   <div className="relative overflow-hidden rounded-xl">
