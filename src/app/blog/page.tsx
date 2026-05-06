@@ -571,8 +571,24 @@ const sortPostsByDateDesc = (posts: typeof blogPosts) =>
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 
+const googleTopFeaturedSlugs = [
+  'vendeur-commercial-transformation-decisive',
+  'techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader',
+  '7-etapes-transformer-non-en-oui-performant-2025',
+];
+
+const getFeaturedPosts = () => {
+  const latestPosts = sortPostsByDateDesc(blogPosts).slice(0, 3);
+  const latestSlugs = new Set(latestPosts.map(post => post.slug));
+  const googleTopPosts = googleTopFeaturedSlugs
+    .map(slug => blogPosts.find(post => post.slug === slug))
+    .filter((post): post is (typeof blogPosts)[number] => Boolean(post) && !latestSlugs.has(post.slug));
+
+  return [...latestPosts, ...googleTopPosts].slice(0, 6);
+};
+
 export default function BlogPage() {
-  const featuredPosts = sortPostsByDateDesc(blogPosts.filter(post => post.featured)).slice(0, 6);
+  const featuredPosts = getFeaturedPosts();
   const allPosts = sortPostsByDateDesc(blogPosts);
 
   return (
