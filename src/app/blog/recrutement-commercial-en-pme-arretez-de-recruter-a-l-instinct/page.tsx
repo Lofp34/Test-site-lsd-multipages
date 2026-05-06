@@ -246,7 +246,7 @@ export default function ArticlePage() {
               Voici comment structurer votre recrutement commercial pour faire les bons choix.
             </p>
 
-            <h2 id="definir-profil">Définir précisément le profil avant de chercher</h2>
+            <h2 id="definir-profil" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Définir précisément le profil avant de chercher</h2>
 
             <p>
               Le recrutement raté commence toujours par la même erreur : chercher &quot;un bon commercial&quot; sans avoir défini ce que ça signifie dans votre contexte précis.
@@ -258,7 +258,7 @@ export default function ArticlePage() {
 
             <p><strong>Questions à vous poser avant de publier votre annonce :</strong></p>
 
-            <ul>
+            <ul className="space-y-2 text-sm text-gray-700">
               <li>Cycle de vente court (&lt; 3 mois) ou long (&gt; 6 mois) ?</li>
               <li>Vente transactionnelle ou consultative ?</li>
               <li>Chasse (nouveaux clients) ou élevage (développement de portefeuille existant) ?</li>
@@ -271,17 +271,17 @@ export default function ArticlePage() {
               Répondez honnêtement à ces questions. Le profil idéal en découlera naturellement.
             </p>
 
-            <h2 id="criteres">Les critères qui comptent vraiment</h2>
+            <h2 id="criteres" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les critères qui comptent vraiment</h2>
 
-            <h3>Ce qui ne prédit pas la performance</h3>
+            <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">Ce qui ne prédit pas la performance</h3>
 
-            <ul>
+            <ul className="space-y-2 text-sm text-gray-700">
               <li>La présentation soignée et le discours fluide (c&apos;est le minimum, pas un différenciateur)</li>
               <li>Le beau CV avec des entreprises connues (le contexte change tout)</li>
               <li>Les soft skills déclarées : &quot;je suis persévérant, orienté résultats, bon communiquant&quot; (tout le monde le dit)</li>
             </ul>
 
-            <h3>Ce qui prédit réellement la performance</h3>
+            <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">Ce qui prédit réellement la performance</h3>
 
             <p><strong>1. L&apos;historique de résultats chiffrés et vérifiables</strong></p>
 
@@ -317,9 +317,9 @@ export default function ArticlePage() {
               </p>
             </div>
 
-            <h2 id="processus">Un processus de recrutement en 4 étapes</h2>
+            <h2 id="processus" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Un processus de recrutement en 4 étapes</h2>
 
-            <h3>Étape 1 : L&apos;entretien de qualification téléphonique (20 minutes)</h3>
+            <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">Étape 1 : L&apos;entretien de qualification téléphonique (20 minutes)</h3>
 
             <p>
               Avant d&apos;inviter quelqu&apos;un pour un entretien, faites un premier échange téléphonique. Vous gagnez du temps, et vous observez déjà comment la personne se comporte dans une situation de communication à distance.
@@ -327,13 +327,13 @@ export default function ArticlePage() {
 
             <p>Questions clés : parcours rapide, motivations pour le poste, disponibilité, prétentions.</p>
 
-            <h3>Étape 2 : L&apos;entretien comportemental (60-90 minutes)</h3>
+            <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">Étape 2 : L&apos;entretien comportemental (60-90 minutes)</h3>
 
             <p>
               Posez des questions basées sur des situations réelles passées.
             </p>
 
-            <ul>
+            <ul className="space-y-2 text-sm text-gray-700">
               <li><em>&quot;Racontez-moi votre plus belle vente. Quelle était la situation de départ ? Qu&apos;avez-vous fait ? Quel a été le résultat ?&quot;</em></li>
               <li><em>&quot;Décrivez-moi une affaire que vous avez perdue alors que vous pensiez la signer. Qu&apos;avez-vous appris ?&quot;</em></li>
               <li><em>&quot;Comment gérez-vous une semaine où rien ne fonctionne — les prospects ne répondent pas, les rendez-vous s&apos;annulent ?&quot;</em></li>
@@ -343,7 +343,7 @@ export default function ArticlePage() {
               Les réponses concrètes et détaillées signalent un profil authentique. Les réponses génériques et théoriques signalent quelqu&apos;un qui récite.
             </p>
 
-            <h3>Étape 3 : La mise en situation commerciale</h3>
+            <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">Étape 3 : La mise en situation commerciale</h3>
 
             <p>
               C&apos;est l&apos;étape que la plupart des PME sautent. Pourtant, c&apos;est la plus révélatrice.
@@ -359,12 +359,12 @@ export default function ArticlePage() {
 
             <p>Vous verrez la différence entre le &quot;bon discours en entretien&quot; et le &quot;bon commercial en action&quot;.</p>
 
-            <h3>Étape 4 : La vérification des références</h3>
+            <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">Étape 4 : La vérification des références</h3>
 
             <p>Obligatoire. Appelez les anciens managers directs — pas les collègues ou les personnes proposées par le candidat.</p>
 
             <p>Questions à poser :</p>
-            <ul>
+            <ul className="space-y-2 text-sm text-gray-700">
               <li>&quot;Sur une échelle de 1 à 10, comment évalueriez-vous sa performance commerciale ?&quot;</li>
               <li>&quot;Atteignait-il ses objectifs ? Régulièrement ?&quot;</li>
               <li>&quot;Quels étaient ses principaux points de développement ?&quot;</li>
@@ -373,10 +373,10 @@ export default function ArticlePage() {
 
             <p>Cette dernière question est souvent la plus révélatrice.</p>
 
-            <h2 id="signaux">Les signaux d&apos;alerte pendant le processus</h2>
+            <h2 id="signaux" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Les signaux d&apos;alerte pendant le processus</h2>
 
             <p><strong>Red flags à prendre au sérieux :</strong></p>
-            <ul>
+            <ul className="space-y-2 text-sm text-gray-700">
               <li>Ne peut pas citer de chiffres précis sur ses résultats passés</li>
               <li>Critique excessivement ses anciens employeurs</li>
               <li>Cherche à négocier une part fixe très élevée avec peu de variable (indice : peu confiant en sa capacité à performer)</li>
@@ -385,14 +385,14 @@ export default function ArticlePage() {
             </ul>
 
             <p><strong>Bons signaux :</strong></p>
-            <ul>
+            <ul className="space-y-2 text-sm text-gray-700">
               <li>Arrive avec des questions précises et pertinentes sur votre marché</li>
               <li>Sait exactement combien il a gagné, vendu, perdu et pourquoi</li>
               <li>Parle de ses clients avec respect et compréhension de leurs enjeux</li>
               <li>Est capable de décrire précisément comment il passerait ses premières semaines</li>
             </ul>
 
-            <h2 id="integration">Intégration : les 90 premiers jours qui font tout</h2>
+            <h2 id="integration" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Intégration : les 90 premiers jours qui font tout</h2>
 
             <p>
               Le recrutement ne s&apos;arrête pas à la signature du contrat. Les 90 premiers jours sont déterminants.
@@ -400,7 +400,7 @@ export default function ArticlePage() {
 
             <p>Un plan d&apos;intégration efficace pour un commercial en PME comprend :</p>
 
-            <ul>
+            <ul className="space-y-2 text-sm text-gray-700">
               <li><strong>Semaine 1</strong> : connaissance de l&apos;entreprise, des offres, des clients clés</li>
               <li><strong>Semaines 2-3</strong> : accompagnement terrain avec un commercial expérimenté ou vous-même</li>
               <li><strong>Semaines 4-8</strong> : premières prospections avec debriefing quotidien</li>
@@ -421,9 +421,9 @@ export default function ArticlePage() {
               Avant de recruter, un <Link href="/diagnostic" className="text-mint-green hover:underline">diagnostic commercial</Link> permet d&apos;identifier les vrais besoins : est-ce un recrutement, une réorganisation, ou un problème de méthode ? Beaucoup de PME recrutent pour résoudre un problème qui n&apos;est pas un problème d&apos;effectif.
             </p>
 
-            <h2 id="conclusion">Conclusion : 3 actions pour votre prochain recrutement</h2>
+            <h2 id="conclusion" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Conclusion : 3 actions pour votre prochain recrutement</h2>
 
-            <ol className="space-y-6 mb-8">
+            <ol className="mb-8 space-y-3 list-decimal ml-6">
               <li><strong>Définissez précisément votre profil idéal</strong> avant de publier quoi que ce soit. Cycle de vente, type de vente, secteur, autonomie requise.</li>
               <li><strong>Intégrez une mise en situation commerciale réelle</strong> dans votre processus. 20 minutes de roleplay vous apprendront plus que 2 heures d&apos;entretien classique.</li>
               <li><strong>Vérifiez systématiquement les références</strong> avec les 4 questions listées plus haut. C&apos;est la step la plus sautée et pourtant la plus précieuse.</li>
