@@ -402,6 +402,69 @@ export default function ArticlePage() {
           </div>
         </article>
 
+        {/* BD Bonus */}
+        <section className="py-16 border-t border-gray-200">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div className="inline-flex items-center gap-2 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-4 py-2 rounded-full mb-6">
+              <span className="font-title font-semibold text-mint-green text-sm">🎨 La BD qui résume tout</span>
+            </div>
+
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-4">Fixer des objectifs efficaces en BD</h2>
+
+            <p className="text-gray-600 max-w-xl mx-auto mb-8">
+              Cette BD de 11 planches illustre les points clés de l&apos;article. Idéale pour
+              partager avec votre équipe ou garder en mémoire les fondamentaux.
+            </p>
+
+            {/* Preview grid — first 3 planches */}
+            <div className="grid grid-cols-3 gap-4 max-w-lg mx-auto mb-8">
+              <div className="aspect-[9/16] relative overflow-hidden rounded-xl shadow-md">
+                <Image
+                  src="/images/bandes-dessinees/objectifs/planche-01.webp"
+                  alt="Planche 1 — Fixer des objectifs efficaces"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 33vw, 200px"
+                />
+              </div>
+              <div className="aspect-[9/16] relative overflow-hidden rounded-xl shadow-md">
+                <Image
+                  src="/images/bandes-dessinees/objectifs/planche-02.webp"
+                  alt="Planche 2 — Fixer des objectifs efficaces"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 33vw, 200px"
+                />
+              </div>
+              <div className="aspect-[9/16] relative overflow-hidden rounded-xl shadow-md">
+                <Image
+                  src="/images/bandes-dessinees/objectifs/planche-03.webp"
+                  alt="Planche 3 — Fixer des objectifs efficaces"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 33vw, 200px"
+                />
+              </div>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-4">
+              <Link
+                href="/ressources/bandes-dessinees"
+                className="inline-flex items-center gap-2 bg-blue-ink text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-ink/90 transition-colors"
+              >
+                🎨 Voir les 11 planches
+              </Link>
+              <a
+                href="/images/bandes-dessinees/objectifs/fixer-objectifs-efficaces-bd.pdf"
+                download
+                className="inline-flex items-center gap-2 border border-blue-ink text-blue-ink px-6 py-3 rounded-xl font-semibold hover:bg-blue-ink/5 transition-colors"
+              >
+                📥 Télécharger le PDF
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* CTA */}
         <section className="py-16 bg-white">
           <div className="max-w-2xl mx-auto px-4 sm:px-6">

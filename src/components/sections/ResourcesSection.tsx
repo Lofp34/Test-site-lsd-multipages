@@ -166,6 +166,15 @@ export default function ResourcesSection() {
         available: false,
         target: "SDR • Commerciaux",
             },
+    {
+        icon: <BookOpen className="w-10 h-10 text-orange-400" />,
+        title: "BD : Fixer des objectifs efficaces",
+        description: "Les fondamentaux de la vente en 11 planches illustrées — idéal pour partager avec votre équipe.",
+        link: "/ressources/bandes-dessinees",
+        status: "Voir la BD",
+        available: true,
+        target: "Tous",
+            },
     ];
 
     // Filtrer les ressources selon le filtre sélectionné
