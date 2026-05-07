@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'vente-consultative-b2b-comment-devenir-le-conseiller-que-vos-clients-ne-veulent-pas-perdre',
+    title: 'Vente consultative B2B : comment devenir le conseiller que vos clients ne veulent pas perdre',
+    description: 'Pas une technique de manipulation. Une posture : vous n\'êtes pas là pour vendre, vous êtes là pour aider le client à prendre la meilleure décision. Les 4 piliers de la posture consultative et la méthode terrain.',
+    date: '2026-05-07',
+    readTime: '7 min',
+    category: 'Vente B2B / posture consultative',
+    image: '/images/blog/2026-05-08-vente-consultative-b2b-hero.webp',
+    featured: true
+  },
+  {
     slug: 'pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre',
     title: 'Pipeline commercial PME : comment construire un outil qui prédit vraiment votre chiffre',
     description: 'Un pipeline commercial mal construit donne une fausse confiance. Voici comment le structurer, les indicateurs à suivre, les erreurs à éviter, et le format de revue qui fait la différence.',
