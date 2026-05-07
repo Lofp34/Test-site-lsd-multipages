@@ -62,7 +62,7 @@ const blogPosts = [
     date: '2026-05-07',
     readTime: '9 min',
     category: 'Pilotage commercial / gestion d\'équipe',
-    image: '/images/blog/2026-05-07-objectifs-commerciaux-equipe-hero.jpg',
+    image: '/images/blog/2026-05-07-objectifs-commerciaux-equipe-hero.webp',
     featured: true
   },
   {

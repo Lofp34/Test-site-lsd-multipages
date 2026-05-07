@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-05-07-objectifs-commerciaux-equipe-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-05-07-objectifs-commerciaux-equipe-hero.webp',
         width: 1536,
         height: 864,
         alt: 'Objectifs commerciaux — comment en fixer qui motivent vraiment vos équipes',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Objectifs commerciaux : comment en fixer qui motivent vraiment vos équipes | Laurent Serre',
     description:
       'Des objectifs mal construits sabotent votre équipe. La méthode terrain pour fixer des objectifs qui fonctionnent en PME.',
-    images: ['https://www.laurentserre.com/images/blog/2026-05-07-objectifs-commerciaux-equipe-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-05-07-objectifs-commerciaux-equipe-hero.webp'],
   },
 };
 
@@ -48,7 +48,7 @@ export default function ArticlePage() {
         headline: 'Objectifs commerciaux : comment en fixer qui motivent vraiment vos équipes',
         description:
           'Fixer des objectifs commerciaux sans méthode, c\'est saboter votre performance. Découvrez comment combiner objectifs de résultats et d\'activité, calibrer l\'ambition, et construire un variable qui motive.',
-        image: 'https://www.laurentserre.com/images/blog/2026-05-07-objectifs-commerciaux-equipe-hero.jpg',
+        image: 'https://www.laurentserre.com/images/blog/2026-05-07-objectifs-commerciaux-equipe-hero.webp',
         datePublished: '2026-05-07',
         dateModified: '2026-05-07',
         author: {
@@ -61,9 +61,69 @@ export default function ArticlePage() {
           ],
         },
         publisher: {
-          '@type': 'Person',
-          name: 'Laurent Serre',
+          '@type': 'Organization',
+          name: 'Laurent Serre Développement',
+          url: 'https://www.laurentserre.com',
+          logo: {
+            '@type': 'ImageObject',
+            url: 'https://www.laurentserre.com/logo.png',
+          },
         },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': articleUrl,
+        },
+      },
+      {
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Pourquoi combiner objectifs de résultats et objectifs d\'activité ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les objectifs de résultats (CA, marge) définissent la destination, mais seuls ils ne suffisent pas. Un commercial ne contrôle pas son CA directement — il contrôle ses actions quotidiennes. Les objectifs d\'activité (appels, rendez-vous, propositions) sont le levier sur les résultats. La bonne pratique : combinez les deux pour chaque commercial.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment calibrer le bon niveau d\'ambition pour un objectif commercial ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Trois règles : 1) L\'objectif doit être atteint par 60 à 70% de l\'équipe en conditions normales, 2) Basez-vous sur les données réelles des 3 dernières années, pas sur vos espoirs, 3) Différenciez les objectifs selon les profils (un commercial en 1ère année vs un en poste depuis 3 ans).',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Quand faut-il ajuster les objectifs commerciaux en cours d\'année ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Ajustez si le marché a radicalement changé, votre offre a évolué significativement, ou des événements imprévus ont affecté le commercial (maladie, perte d\'un client majeur hors de son contrôle). Ne cédez pas si le commercial n\'a pas fourni l\'effort attendu ou si l\'objectif était bien calibré mais non atteint par manque de méthode. Tout ajustement doit être documenté et expliqué par écrit.',
+            },
+          },
+        ],
+      },
+      {
+        '@type': 'HowTo',
+        name: 'Comment fixer des objectifs commerciaux qui motivent',
+        description: 'Une méthode en 3 étapes pour construire des objectifs commerciaux efficaces basés sur l\'analyse des données, l\'activité terrain et la co-construction avec les équipes.',
+        step: [
+          {
+            '@type': 'HowToStep',
+            name: 'Analyser les 3 dernières années de performance par commercial',
+            text: 'Avant de fixer vos objectifs annuels, analysez les tendances réelles de chaque commercial. Identifiez la progression naturelle et construisez sur des données, pas des ambitions.',
+          },
+          {
+            '@type': 'HowToStep',
+            name: 'Ajouter des objectifs d\'activité aux objectifs de résultats',
+            text: 'Pour chaque commercial, définissez 2 ou 3 indicateurs d\'activité hebdomadaires mesurables. Les objectifs de résultats donnent la destination, les objectifs d\'activité donnent le chemin.',
+          },
+          {
+            '@type': 'HowToStep',
+            name: 'Co-construire les objectifs avec chaque commercial',
+            text: 'Organisez une session d\'une heure avec chaque commercial avant de finaliser leurs objectifs. Ce qu\'ils s\'approprient, ils le défendent. Ce qu\'on leur impose, ils le subissent.',
+          },
+        ],
       },
       {
         '@type': 'BreadcrumbList',
@@ -115,7 +175,7 @@ export default function ArticlePage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
           <div className="relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/images/blog/2026-05-07-objectifs-commerciaux-equipe-hero.jpg"
+              src="/images/blog/2026-05-07-objectifs-commerciaux-equipe-hero.webp"
               alt="Objectifs commerciaux — comment en fixer qui motivent vraiment vos équipes"
               width={1536}
               height={864}
@@ -332,8 +392,11 @@ export default function ArticlePage() {
 
             {/* E-E-A-T note */}
             <div className="border-t border-gray-200 pt-8 mt-12">
-              <p className="text-gray-600 mb-4">
-                Les principes présentés ici sont issus de l&apos;accompagnement terrain de PME industrielles et de services B2B. Pour un diagnostic complet de votre système d&apos;objectifs, venez <Link href="/diagnostic" className="text-mint-green hover:underline">parler de votre situation</Link>.
+              <p className="text-gray-600 italic mb-4">
+                Les principes présentés ici s&apos;appuient sur 20 ans d&apos;accompagnement terrain de PME industrielles et de services B2B, et sont alignés sur les travaux de Locke &amp; Latham en fixation d&apos;objectifs. Voir aussi le <a href="https://hbr.org/2023/01/the-best-way-to-set-and-track-goals" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">guide Harvard Business Review sur la fixation d&apos;objectifs</a>.
+              </p>
+              <p className="text-gray-600">
+                Pour un diagnostic complet de votre système d&apos;objectifs, venez <Link href="/diagnostic" className="text-mint-green hover:underline">parler de votre situation</Link>.
               </p>
             </div>
           </div>
