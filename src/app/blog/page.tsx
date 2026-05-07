@@ -56,6 +56,16 @@ const blogPosts = [
     featured: true
   },
   {
+    slug: 'objectifs-commerciaux-comment-en-fixer-qui-motivent-vraiment-vos-equipes',
+    title: 'Objectifs commerciaux : comment en fixer qui motivent vraiment vos équipes',
+    description: 'Fixer des objectifs commerciaux sans méthode, c\'est saboter votre performance. La méthode terrain pour combiner objectifs de résultats et d\'activité, calibrer l\'ambition et construire un variable qui motive.',
+    date: '2026-05-07',
+    readTime: '9 min',
+    category: 'Pilotage commercial / gestion d\'équipe',
+    image: '/images/blog/2026-05-07-objectifs-commerciaux-equipe-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'methodes-vente-comparees-spin-bant-bebedc',
     title: 'Méthodes de vente comparées : SPIN, BANT, BEBEDC — laquelle choisir ?',
     description: 'SPIN, BANT, BEBEDC : comparatif complet des 3 méthodes de vente B2B les plus utilisées. Avantages, limites, tableau comparatif et guide de choix pour dirigeant de PME.',
