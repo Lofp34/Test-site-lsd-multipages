@@ -4,15 +4,15 @@ import Link from 'next/link';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: '7 Techniques de Closing B2B qui marchent vraiment (guide terrain)',
-  description: 'Les techniques de closing qui fonctionnent en B2B : objection prix, signaux d’achat, closing assumé. Un guide terrain pour conclure plus de ventes sans forcer.',
-  keywords: 'closing B2B, techniques de vente, objection prix, signaux d’achat, conclure une vente, closing commercial',
+  title: 'Closing : 7 Techniques Efficaces pour Conclure une Vente (Guide B2B)',
+  description: 'Qu\'est-ce que le closing ? Découvrez les techniques de closing commercial B2B qui marchent : closing assumé, alternatif, récapitulatif, gestion des objections. Guide terrain gratuit.',
+  keywords: "closing B2B, techniques de vente, objection prix, signaux d'achat, conclure une vente, closing commercial",
   alternates: {
     canonical: 'https://www.laurentserre.com/ressources/guide-closing',
   },
   openGraph: {
-    title: '7 Techniques de Closing B2B qui marchent vraiment',
-    description: 'Les techniques de closing B2B terrain : objection prix, signaux d’achat, closing assumé. Pour conclure plus de ventes sans forcer.',
+    title: 'Closing : 7 Techniques Efficaces pour Conclure une Vente (Guide B2B)',
+    description: 'Qu\'est-ce que le closing ? Découvrez les techniques de closing B2B terrain : closing assumé, alternatif, récapitulatif, gestion des objections. Guide gratuit.',
     url: 'https://www.laurentserre.com/ressources/guide-closing',
     type: 'article',
     locale: 'fr_FR',
@@ -29,7 +29,7 @@ export default function GuideClosingPage() {
             <ArrowLeft className="w-5 h-5 mr-2" />
             Retour aux ressources
           </Link>
-          
+
           <div className="text-center space-y-6">
             <div className="inline-flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-6 py-3 rounded-full">
               <Crown className="w-5 h-5 text-mint-green" />
@@ -37,12 +37,12 @@ export default function GuideClosingPage() {
                 Guide Exclusif • Techniques de Closing
               </span>
             </div>
-            
+
             <h1 className="text-4xl md:text-6xl font-title font-bold text-white leading-tight">
               Le Guide Ultime du
               <span className="block text-mint-green">Closing</span>
             </h1>
-            
+
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
               Transformez vos entretiens commerciaux en succès garantis grâce aux techniques de closing les plus efficaces.
             </p>
@@ -52,7 +52,7 @@ export default function GuideClosingPage() {
 
       {/* Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
-        
+
         {/* Introduction */}
         <section className="mb-16">
           <div className="bg-slate-50 rounded-2xl p-8 mb-12">
@@ -61,11 +61,11 @@ export default function GuideClosingPage() {
               Le Closing : L'Art de Conclure
             </h2>
             <p className="text-lg text-gray-anthracite mb-4">
-              Le closing n'est pas de la manipulation, c'est un service rendu au client. C'est l'art de l'accompagner 
+              Le closing n'est pas de la manipulation, c'est un service rendu au client. C'est l'art de l'accompagner
               vers la décision qui va résoudre son problème.
             </p>
             <p className="text-lg text-gray-anthracite mb-4">
-              Ce guide vous révèle les <strong className="text-mint-green">7 techniques de closing</strong> qui transformeront 
+              Ce guide vous révèle les <strong className="text-mint-green">7 techniques de closing</strong> qui transformeront
               vos entretiens commerciaux en succès mesurables.
             </p>
             <p className="text-lg text-gray-anthracite">
@@ -82,7 +82,7 @@ export default function GuideClosingPage() {
             <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">1</span>
             Le Mindset du Closer
           </h2>
-          
+
           <div className="space-y-6">
             <div className="bg-white rounded-xl p-6 border border-slate-200">
               <h3 className="text-xl font-title font-semibold text-blue-ink mb-4">
@@ -140,7 +140,7 @@ export default function GuideClosingPage() {
             <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">2</span>
             Les 7 Techniques de Closing Avancées
           </h2>
-          
+
           <div className="space-y-8">
             {/* Technique 1 */}
             <div className="bg-gradient-to-r from-mint-green/10 to-blue-ink/10 rounded-xl p-6">
@@ -153,7 +153,7 @@ export default function GuideClosingPage() {
               </p>
               <div className="bg-white rounded-lg p-4">
                 <p className="font-mono text-sm">
-                  <strong className="text-mint-green">Exemple :</strong> "Alors, pour la mise en route, vous préférez qu'on commence 
+                  <strong className="text-mint-green">Exemple :</strong> "Alors, pour la mise en route, vous préférez qu'on commence
                   lundi prochain ou la semaine suivante ?"
                 </p>
               </div>
@@ -170,7 +170,7 @@ export default function GuideClosingPage() {
               </p>
               <div className="bg-white rounded-lg p-4">
                 <p className="font-mono text-sm">
-                  <strong className="text-mint-green">Exemple :</strong> "Vous préférez la formule Premium avec tout inclus 
+                  <strong className="text-mint-green">Exemple :</strong> "Vous préférez la formule Premium avec tout inclus
                   ou la formule Standard que vous pourrez faire évoluer ?"
                 </p>
               </div>
@@ -187,7 +187,7 @@ export default function GuideClosingPage() {
               </p>
               <div className="bg-white rounded-lg p-4">
                 <p className="font-mono text-sm">
-                  <strong className="text-mint-green">Exemple :</strong> "On a 2 places disponibles pour le démarrage de janvier. 
+                  <strong className="text-mint-green">Exemple :</strong> "On a 2 places disponibles pour le démarrage de janvier.
                   Après, ce sera mars au minimum..."
                 </p>
               </div>
@@ -204,7 +204,7 @@ export default function GuideClosingPage() {
               </p>
               <div className="bg-white rounded-lg p-4">
                 <p className="font-mono text-sm">
-                  <strong className="text-mint-green">Exemple :</strong> "Vous m'avez dit que ne pas atteindre vos objectifs 
+                  <strong className="text-mint-green">Exemple :</strong> "Vous m'avez dit que ne pas atteindre vos objectifs
                   cette année remettrait en question votre poste. On est d'accord ?"
                 </p>
               </div>
@@ -221,7 +221,7 @@ export default function GuideClosingPage() {
               </p>
               <div className="bg-white rounded-lg p-4">
                 <p className="font-mono text-sm">
-                  <strong className="text-mint-green">Exemple :</strong> "Récapitulons : vous allez économiser 50K€/an, 
+                  <strong className="text-mint-green">Exemple :</strong> "Récapitulons : vous allez économiser 50K€/an,
                   gagner 15h/semaine et résoudre vos problèmes de stock. On démarre quand ?"
                 </p>
               </div>
@@ -238,7 +238,7 @@ export default function GuideClosingPage() {
               </p>
               <div className="bg-white rounded-lg p-4">
                 <p className="font-mono text-sm">
-                  <strong className="text-mint-green">Règle d'or :</strong> Celui qui parle en premier après la question 
+                  <strong className="text-mint-green">Règle d'or :</strong> Celui qui parle en premier après la question
                   de closing perd la négociation.
                 </p>
               </div>
@@ -255,7 +255,7 @@ export default function GuideClosingPage() {
               </p>
               <div className="bg-white rounded-lg p-4">
                 <p className="font-mono text-sm">
-                  <strong className="text-mint-green">Exemple :</strong> "Je sens que vous vous dites que c'est un investissement 
+                  <strong className="text-mint-green">Exemple :</strong> "Je sens que vous vous dites que c'est un investissement
                   important. C'est normal, et c'est justement pourquoi on propose un paiement en 3 fois."
                 </p>
               </div>
@@ -269,12 +269,12 @@ export default function GuideClosingPage() {
             <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">3</span>
             Gérer les Objections comme un Pro
           </h2>
-          
+
           <div className="bg-white rounded-xl p-6 border border-slate-200">
             <h3 className="text-xl font-title font-semibold text-blue-ink mb-6">
               🛡️ La Méthode AREA
             </h3>
-            
+
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <div className="bg-slate-50 p-4 rounded-lg">
@@ -314,7 +314,7 @@ export default function GuideClosingPage() {
             <span className="bg-mint-green text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 text-lg">4</span>
             Détecter les Signaux d'Achat
           </h2>
-          
+
           <div className="grid md:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl p-6 border border-slate-200">
               <h3 className="text-lg font-title font-semibold text-blue-ink mb-4">
@@ -328,7 +328,7 @@ export default function GuideClosingPage() {
                 <li>• "On pourrait..."</li>
               </ul>
             </div>
-            
+
             <div className="bg-white rounded-xl p-6 border border-slate-200">
               <h3 className="text-lg font-title font-semibold text-blue-ink mb-4">
                 👁️ Signaux Non-Verbaux
@@ -341,7 +341,7 @@ export default function GuideClosingPage() {
                 <li>• Sourit et acquiesce</li>
               </ul>
             </div>
-            
+
             <div className="bg-white rounded-xl p-6 border border-slate-200">
               <h3 className="text-lg font-title font-semibold text-blue-ink mb-4">
                 🎯 Signaux Comportementaux
@@ -363,7 +363,7 @@ export default function GuideClosingPage() {
             <h2 className="text-3xl font-title font-bold text-blue-ink mb-6 text-center">
               🎯 Votre Plan d'Entraînement Closing
             </h2>
-            
+
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white rounded-xl p-6">
                 <h3 className="text-lg font-title font-semibold text-mint-green mb-4">Semaine 1-2 : Bases</h3>
@@ -374,7 +374,7 @@ export default function GuideClosingPage() {
                   <li>• Filmer 3 entretiens pour analyse</li>
                 </ul>
               </div>
-              
+
               <div className="bg-white rounded-xl p-6">
                 <h3 className="text-lg font-title font-semibold text-mint-green mb-4">Semaine 3-4 : Perfectionnement</h3>
                 <ul className="space-y-2 text-sm text-gray-anthracite">
@@ -398,15 +398,15 @@ export default function GuideClosingPage() {
             },
             {
               question: "Comment closer sans paraître insistant ?",
-              answer: "Un closing efficace s’appuie sur le diagnostic, les signaux d’achat et la valeur déjà reconnue par le prospect. Si ces éléments ne sont pas clairs, il vaut mieux clarifier les objections avant de demander une décision."
+              answer: "Un closing efficace s'appuie sur le diagnostic, les signaux d'achat et la valeur déjà reconnue par le prospect. Si ces éléments ne sont pas clairs, il vaut mieux clarifier les objections avant de demander une décision."
             },
             {
               question: "Quand faut-il poser la question de closing ?",
-              answer: "Posez-la quand le prospect a reconnu son problème, validé l’impact business et compris la valeur de votre solution. Les questions sur le délai, le budget ou la mise en œuvre sont de bons signaux."
+              answer: "Posez-la quand le prospect a reconnu son problème, validé l'impact business et compris la valeur de votre solution. Les questions sur le délai, le budget ou la mise en œuvre sont de bons signaux."
             },
             {
               question: "Comment améliorer son taux de closing rapidement ?",
-              answer: "Travaillez trois leviers : meilleure qualification en amont, préparation des objections probables et entraînement aux questions de conclusion. Un diagnostic externe permet souvent d’identifier le blocage principal."
+              answer: "Travaillez trois leviers : meilleure qualification en amont, préparation des objections probables et entraînement aux questions de conclusion. Un diagnostic externe permet souvent d'identifier le blocage principal."
             }
           ]}
         />
@@ -418,11 +418,11 @@ export default function GuideClosingPage() {
               Prêt à devenir un Closer d'exception ?
             </h2>
             <p className="text-lg mb-6 text-white/90">
-              Le closing s'apprend, se perfectionne et se maîtrise. Avec un accompagnement personnalisé, 
+              Le closing s'apprend, se perfectionne et se maîtrise. Avec un accompagnement personnalisé,
               vous pouvez doubler votre taux de transformation en 60 jours.
             </p>
-            <Link 
-              href="/diagnostic" 
+            <Link
+              href="/diagnostic"
               className="inline-flex items-center bg-mint-green hover:bg-mint-green/90 text-white px-8 py-3 rounded-full font-semibold transition-colors"
             >
               Diagnostiquer mon closing
