@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
+import AuthorCard from '@/components/AuthorCard';
 
 export const metadata: Metadata = {
   title: 'Quinze ans à animer des réunions commerciales — et pourquoi j\'ai fini par tout changer | Laurent Serre',
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-05-09-reunion-commerciale-hebdo-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-05-09-reunion-commerciale-hebdo-hero.webp',
         width: 1536,
         height: 864,
         alt: 'Réunion commerciale — le format pare-brise, pas rétroviseur',
@@ -33,7 +34,7 @@ export const metadata: Metadata = {
     title: 'Quinze ans à animer des réunions commerciales — et pourquoi j\'ai tout changé | Laurent Serre',
     description:
       'Le meilleur format de réunion commerciale que j\'ai trouvé en 15 ans : 4 blocs, 60 minutes, 80% sur le futur.',
-    images: ['https://www.laurentserre.com/images/blog/2026-05-09-reunion-commerciale-hebdo-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-05-09-reunion-commerciale-hebdo-hero.webp'],
   },
 };
 
@@ -48,7 +49,7 @@ export default function ArticlePage() {
         headline: 'Quinze ans à animer des réunions commerciales — et pourquoi j\'ai fini par tout changer',
         description:
           'Des réunions qui tournent en rond, des équipes qui regardent leurs chaussures. Le meilleur format que j\'ai trouvé en 15 ans : 4 blocs, 60 minutes, 80% sur le futur.',
-        image: 'https://www.laurentserre.com/images/blog/2026-05-09-reunion-commerciale-hebdo-hero.png',
+        image: 'https://www.laurentserre.com/images/blog/2026-05-09-reunion-commerciale-hebdo-hero.webp',
         datePublished: '2026-05-09',
         dateModified: '2026-05-09',
         author: {
@@ -73,6 +74,44 @@ export default function ArticlePage() {
           '@type': 'WebPage',
           '@id': articleUrl,
         },
+      },
+      // HowTo schema — article 010 présente un process en 4 étapes claires
+      {
+        '@type': 'HowTo',
+        name: 'Animer une réunion commerciale hebdomadaire qui sert vraiment votre équipe',
+        description:
+          'Un format en quatre blocs, soixante minutes, pour passer d\'une réunion rétroviseur à une réunion pare-brise.',
+        step: [
+          {
+            '@type': 'HowToStep',
+            position: 1,
+            name: 'Le constat',
+            text: 'Dix minutes. Le manager présente les chiffres de la semaine (CA, rendez-vous, affaires engagées) sans commenter les personnes. Objectif : mettre tout le monde sur la même photo factuelle.',
+            url: articleUrl + '#constat',
+          },
+          {
+            '@type': 'HowToStep',
+            position: 2,
+            name: 'Le partage terrain',
+            text: 'Quinze minutes. Chaque commercial raconte une chose concrète de sa semaine : objection non gérée, argument qui a marché, info concurrentielle. Le manager pose des questions, ne critique pas.',
+            url: articleUrl + '#partage-terrain',
+          },
+          {
+            '@type': 'HowToStep',
+            position: 3,
+            name: 'Décortiquer deux ou trois affaires',
+            text: 'Quinze minutes. Le groupe analyse les dossiers qui méritent un regard collectif : grosse opportunité, deal qui stagne, client complexe. Le commercial repart avec des idées à tester.',
+            url: articleUrl + '#debrief-affaires',
+          },
+          {
+            '@type': 'HowToStep',
+            position: 4,
+            name: 'Les priorités de la semaine',
+            text: 'Quinze minutes. Chaque commercial annonce ses trois actions clés. Le manager les note et vérifie la semaine suivante. Crée une responsabilité simple et concrète.',
+            url: articleUrl + '#priorites-semaine',
+          },
+        ],
+        totalTime: 'PT60M',
       },
     ],
   };
@@ -106,21 +145,49 @@ export default function ArticlePage() {
             Quinze ans à animer des réunions commerciales — et pourquoi j&apos;ai fini par tout changer
           </h1>
 
-          <div className="flex items-center gap-3 text-sm text-gray-500">
-            <span>Par Laurent Serre</span>
-          </div>
+          <AuthorCard />
         </header>
 
         {/* Hero image */}
         <div className="relative w-full aspect-video rounded-2xl overflow-hidden mb-12">
           <Image
-            src="/images/blog/2026-05-09-reunion-commerciale-hebdo-hero.png"
+            src="/images/blog/2026-05-09-reunion-commerciale-hebdo-hero.webp"
             alt="Réunion commerciale — le format qui regarde vers l'avant"
             fill
             className="object-cover"
             priority
           />
         </div>
+
+        {/* TL;DR — Ce que vous allez retenir */}
+        <div className="mb-10 p-6 rounded-xl bg-mint-green/10 border border-mint-green/20">
+          <h2 className="text-lg font-title font-bold text-blue-ink mb-2">🎯 Ce que vous allez retenir</h2>
+          <ul className="space-y-2 text-sm text-gray-700">
+            <li>✅ <strong>80 % du temps de réunion</strong> doit porter sur le futur, pas sur le rétroviseur</li>
+            <li>✅ Un format en <strong>4 blocs</strong> (constat, partage terrain, débrief affaires, priorités) qui tient en 60 minutes</li>
+            <li>✅ Le partage terrain est le bloc le plus souvent absent — et le plus important</li>
+            <li>✅ Chaque commercial repart avec <strong>3 actions clés</strong> vérifiées la semaine suivante</li>
+          </ul>
+        </div>
+
+        {/* Sommaire avec ancres */}
+        <nav className="mb-10 p-6 rounded-xl bg-blue-ink/5 border border-blue-ink/10">
+          <h2 className="text-lg font-title font-bold text-blue-ink mb-3">📋 Sommaire</h2>
+          <ul className="space-y-1.5 text-sm">
+            <li>
+              <a href="#constat" className="text-mint-green hover:underline">1. Le premier bloc : le constat</a>
+            </li>
+            <li>
+              <a href="#partage-terrain" className="text-mint-green hover:underline">2. Le deuxième bloc : le partage terrain</a>
+            </li>
+            <li>
+              <a href="#debrief-affaires" className="text-mint-green hover:underline">3. Le troisième bloc : décortiquer les affaires</a>
+            </li>
+            <li>
+              <a href="#priorites-semaine" className="text-mint-green hover:underline">4. Le quatrième bloc : les priorités de la semaine</a>
+            </li>
+          </ul>
+        </nav>
 
         {/* Article content */}
         <div className="prose prose-lg max-w-none prose-headings:font-title prose-headings:text-blue-ink prose-a:text-mint-green prose-a:no-underline hover:prose-a:underline prose-strong:text-blue-ink prose-blockquote:border-mint-green prose-blockquote:text-gray-600">
@@ -152,22 +219,22 @@ export default function ArticlePage() {
             J&apos;ai testé pas mal de formats. Celui qui tient depuis le plus longtemps tient en quatre blocs — et il dure soixante minutes, pas plus.
           </p>
 
-          <h2>Le premier bloc, c&apos;est le constat</h2>
+          <h2 id="constat">Le premier bloc, c&apos;est le constat</h2>
           <p>
             Dix minutes. Les chiffres de la semaine : CA, rendez-vous, affaires engagées. Le manager présente, mais il ne commente pas les personnes. Si un commercial est en retard, on le voit en one-to-one, pas en public. Le but, c&apos;est de mettre tout le monde sur la même photo, factuelle, sans procès.
           </p>
 
-          <h2>Le deuxième bloc, le plus souvent absent : le partage terrain</h2>
+          <h2 id="partage-terrain">Le deuxième bloc, le plus souvent absent : le partage terrain</h2>
           <p>
             Quinze minutes. Chaque commercial raconte une chose concrète de sa semaine. Une objection qu&apos;il n&apos;a pas su gérer. Un argument qui a marché. Une info sur un concurrent. Le manager pose des questions, ne critique pas. Si quelqu&apos;un se fait recadrer parce qu&apos;il partage une difficulté, plus personne ne partagera rien.
           </p>
 
-          <h2>Le troisième bloc : deux ou trois affaires à décortiquer</h2>
+          <h2 id="debrief-affaires">Le troisième bloc : deux ou trois affaires à décortiquer</h2>
           <p>
             Pas tout le pipeline. Juste celles qui méritent un regard collectif : une grosse opportunité proche de signer, un deal qui stagne depuis trois mois, un client complexe. Quinze minutes. Le commercial décrit. Le groupe propose. Il repart avec une ou deux idées à tester dans la semaine.
           </p>
 
-          <h2>Le quatrième bloc, le plus sous-estimé : les priorités de la semaine</h2>
+          <h2 id="priorites-semaine">Le quatrième bloc, le plus sous-estimé : les priorités de la semaine</h2>
           <p>
             Chaque commercial annonce ses trois actions clés. Pas sa to-do list complète. Trois choses qui feront la différence. Le manager les note. La semaine suivante, il commence par vérifier si elles ont été faites. Ça crée une responsabilité simple et concrète.
           </p>
@@ -186,6 +253,34 @@ export default function ArticlePage() {
 
           <p>
             Et c&apos;est la seule question qui compte quand on manage des commerciaux.
+          </p>
+        </div>
+
+        {/* Pour aller plus loin */}
+        <div className="mt-12 p-6 rounded-xl bg-blue-ink/5 border border-blue-ink/10">
+          <h2 className="text-xl font-title font-bold text-blue-ink mb-4">📖 Pour aller plus loin</h2>
+          <ul className="space-y-3 text-sm text-gray-700">
+            <li>
+              <Link href="/blog/reunion-commerciale-hebdo-rituel-closing" className="text-mint-green hover:underline font-medium">
+                Le rituel de réunion hebdo qui transforme vos commerciaux en closing machines
+              </Link>
+              <span className="text-gray-500"> — Un autre angle sur le rituel hebdomadaire et son impact direct sur le closing.</span>
+            </li>
+            <li>
+              <Link href="/blog/reunion-30-minutes-proteger-marge-pipeline-avril" className="text-mint-green hover:underline font-medium">
+                Réunion 30 minutes : protéger sa marge et reprendre la main sur le pipeline en avril
+              </Link>
+              <span className="text-gray-500"> — Quand le temps est compté, un format ultra-court pour des décisions rapides.</span>
+            </li>
+            <li>
+              <Link href="/blog/objectifs-commerciaux-comment-en-fixer-qui-motivent-vraiment-vos-equipes" className="text-mint-green hover:underline font-medium">
+                Objectifs commerciaux : comment en fixer qui motivent vraiment vos équipes
+              </Link>
+              <span className="text-gray-500"> — Le prolongement naturel : des objectifs clairs pour donner du sens aux réunions.</span>
+            </li>
+          </ul>
+          <p className="mt-4 text-xs text-gray-400">
+            Source E-E-A-T : <a href="https://hbr.org/2016/07/how-to-run-a-meeting-that-doesnt-suck" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">How to Run a Meeting That Doesn&apos;t Suck — Harvard Business Review</a>
           </p>
         </div>
 
