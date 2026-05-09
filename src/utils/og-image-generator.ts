@@ -52,7 +52,7 @@ export class OGImageGenerator {
   private technique: NegotiationTechnique;
   private baseUrl: string;
 
-  constructor(technique: NegotiationTechnique, baseUrl: string = 'https://laurent-serre-developpement.fr') {
+  constructor(technique: NegotiationTechnique, baseUrl: string = 'https://www.laurentserre.com') {
     this.technique = technique;
     this.baseUrl = baseUrl;
   }
@@ -158,7 +158,7 @@ export class OGImageGenerator {
       'og:image:height': '630',
       'og:image:alt': `${title} - Laurent Serre Expert Négociation`,
       'og:image:type': 'image/jpeg',
-      'og:site_name': 'Laurent Serre Développement',
+      'og:site_name': 'Laurent Serre',
       'og:locale': 'fr_FR',
       'og:locale:alternate': 'en_US',
       'article:author': 'Laurent Serre',
@@ -193,7 +193,7 @@ export class OGImageGenerator {
       'twitter:image': imageUrl,
       'twitter:image:alt': `${title} - Expert Négociation`,
       'twitter:url': sectionUrl,
-      'twitter:domain': 'laurent-serre-developpement.fr',
+      'twitter:domain': 'www.laurentserre.com',
       'twitter:label1': 'Durée de lecture',
       'twitter:data1': `${this.estimateReadingTime(section)} min`,
       'twitter:label2': 'Catégorie',
@@ -298,11 +298,11 @@ export class OGImageGenerator {
       },
       "copyrightHolder": {
         "@type": "Organization",
-        "name": "Laurent Serre Développement"
+        "name": "Laurent Serre"
       },
       "license": `${this.baseUrl}/mentions-legales`,
       "acquireLicensePage": `${this.baseUrl}/contact`,
-      "creditText": "Laurent Serre Développement",
+      "creditText": "Laurent Serre",
       "creator": {
         "@type": "Person",
         "name": "Laurent Serre"
@@ -325,7 +325,7 @@ export class OGImageGenerator {
 export function generateCompleteMetadata(
   technique: NegotiationTechnique,
   section?: string,
-  baseUrl: string = 'https://laurent-serre-developpement.fr'
+  baseUrl: string = 'https://www.laurentserre.com'
 ): {
   openGraph: Record<string, string>;
   twitter: Record<string, string>;

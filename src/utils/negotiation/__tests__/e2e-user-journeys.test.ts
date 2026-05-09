@@ -8,7 +8,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 // Mock du DOM et des APIs navigateur
 const mockWindow = {
   location: {
-    href: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/effet-miroir',
+    href: 'https://www.laurentserre.com/ressources/techniques-de-negociation/effet-miroir',
     pathname: '/ressources/techniques-de-negociation/effet-miroir',
     search: '',
     hash: ''
@@ -117,8 +117,8 @@ describe('E2E User Journeys - Techniques de Négociation', () => {
   describe('Navigation Journey - Page Parent vers Technique', () => {
     it('should track complete navigation from parent page to technique', async () => {
       // Simuler la navigation depuis la page parent
-      const parentPageUrl = 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation';
-      const techniqueUrl = 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/effet-miroir';
+      const parentPageUrl = 'https://www.laurentserre.com/ressources/techniques-de-negociation';
+      const techniqueUrl = 'https://www.laurentserre.com/ressources/techniques-de-negociation/effet-miroir';
       
       // Mock du lien de navigation
       const techniqueLink = createMockElement('a', {
@@ -153,7 +153,7 @@ describe('E2E User Journeys - Techniques de Négociation', () => {
         createMockElement('meta', { name: 'description', content: 'Maîtrisez l\'effet miroir de Chris Voss' }),
         createMockElement('meta', { property: 'og:title', content: 'L\'effet miroir | Technique FBI Chris Voss' }),
         createMockElement('meta', { property: 'og:type', content: 'article' }),
-        createMockElement('link', { rel: 'canonical', href: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/effet-miroir' })
+        createMockElement('link', { rel: 'canonical', href: 'https://www.laurentserre.com/ressources/techniques-de-negociation/effet-miroir' })
       ];
       
       mockWindow.document.querySelectorAll = vi.fn((selector) => {
@@ -524,7 +524,7 @@ describe('E2E User Journeys - Techniques de Négociation', () => {
       // Mock des métriques de performance
       const performanceEntries = [
         {
-          name: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/effet-miroir',
+          name: 'https://www.laurentserre.com/ressources/techniques-de-negociation/effet-miroir',
           entryType: 'navigation',
           startTime: 0,
           duration: 1500,

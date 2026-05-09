@@ -51,7 +51,7 @@ export default function Reunion30MinutesMargePipelinePage() {
           url: 'https://www.laurentserre.com/a-propos',
           sameAs: ['https://www.linkedin.com/in/laurentserre34/', 'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/'],
         },
-        publisher: { '@type': 'Organization', name: 'Laurent Serre Développement', url: 'https://www.laurentserre.com' },
+        publisher: { '@type': 'Organization', name: 'Laurent Serre', url: 'https://www.laurentserre.com' },
         mainEntityOfPage: { '@type': 'WebPage', '@id': 'https://www.laurentserre.com/blog/reunion-30-minutes-proteger-marge-pipeline-avril' },
         keywords: [
     "pipeline commercial avril",

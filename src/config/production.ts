@@ -100,7 +100,7 @@ export const getProductionConfig = (): ProductionConfig => {
       enableCORS: true,
       trustedOrigins: [
         process.env.NEXT_PUBLIC_BASE_URL!,
-        'https://laurent-serre-developpement.fr',
+        'https://www.laurentserre.com',
         'https://www.laurentserre.com',
         ...(isDevelopment ? ['http://localhost:3000', 'http://localhost:3001'] : [])
       ],

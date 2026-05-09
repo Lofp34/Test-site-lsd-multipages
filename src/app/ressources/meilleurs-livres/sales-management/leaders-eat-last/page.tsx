@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: 'Leaders Eat Last : résumé complet | Sales Management & Leadership',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de Leaders Eat Last (Simon Sinek). Leadership bienveillant et cercle de sécurité.',
     type: 'article',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/leaders-eat-last',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/leaders-eat-last',
     locale: 'fr_FR',
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/leaders-eat-last',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/leaders-eat-last',
   },
   twitter: {
     card: 'summary_large_image',

@@ -18,26 +18,26 @@ export const metadata: Metadata = {
     title: 'AI Superpowers : résumé complet | Digital & AI Sales',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de AI Superpowers (Kai-Fu Lee). Anticiper l\'évolution des métiers commerciaux à l\'ère de l\'IA.',
     type: 'article',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/ai-superpowers',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/ai-superpowers',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-ai-superpowers.jpg',
+        url: 'https://www.laurentserre.com/images/og-ai-superpowers.jpg',
         width: 1200,
         height: 630,
         alt: 'AI Superpowers - Résumé par Laurent Serre',
       },
     ],
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/ai-superpowers',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/ai-superpowers',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'AI Superpowers : résumé complet | Digital & AI Sales',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de AI Superpowers (Kai-Fu Lee).',
-    images: ['https://laurent-serre-developpement.fr/images/og-ai-superpowers.jpg'],
+    images: ['https://www.laurentserre.com/images/og-ai-superpowers.jpg'],
   }
 };
 
@@ -86,6 +86,31 @@ const reviewStructuredData = {
   "reviewBody": "Un livre qui fait réfléchir sans tomber dans la panique ou l'utopie. Lee a une vision équilibrée : l'IA va transformer le métier, pas le supprimer."
 };
 
+const articleStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "AI Superpowers : résumé complet — Kai-Fu Lee",
+  "description": "Résumé détaillé, concepts clés, conseils terrain et avis de AI Superpowers (Kai-Fu Lee). Anticiper l'évolution des métiers commerciaux à l'ère de l'IA.",
+  "author": {
+    "@type": "Person",
+    "name": "Laurent Serre"
+  },
+  "datePublished": "2025-02-15",
+  "dateModified": "2026-05-09",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/ai-superpowers"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://www.laurentserre.com/images/og-ai-superpowers.jpg"
+  },
+  "publisher": {
+    "@type": "Person",
+    "name": "Laurent Serre"
+  }
+};
+
 export default function AISuperPowersPage() {
   return (
     <>
@@ -96,6 +121,10 @@ export default function AISuperPowersPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleStructuredData) }}
       />
       
       <main className="bg-gradient-to-br from-purple-600 via-red-500/20 to-primary-bg min-h-screen pt-24 pb-16">

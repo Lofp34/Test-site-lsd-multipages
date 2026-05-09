@@ -108,7 +108,7 @@ console.log('📋 Requirements Validation:');
 console.log('=' .repeat(60));
 
 let passedTests = 0;
-let totalTests = requirements.length;
+const totalTests = requirements.length;
 
 requirements.forEach(({ id, description, test }) => {
   const passed = test();

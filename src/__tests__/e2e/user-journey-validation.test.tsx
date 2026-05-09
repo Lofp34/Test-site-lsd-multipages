@@ -30,7 +30,7 @@ const mockLocation = {
   assign: vi.fn(),
   replace: vi.fn(),
   reload: vi.fn(),
-  origin: 'https://laurent-serre-developpement.fr',
+  origin: 'https://www.laurentserre.com',
   pathname: '/',
   search: '',
   hash: '',

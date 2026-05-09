@@ -239,7 +239,7 @@ const neJamaisCouperlaPoire: NegotiationTechnique = {
       'formation négociation',
       'closing commercial'
     ],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux'
+    canonicalUrl: 'https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux'
   },
   
   trackingEvents: [

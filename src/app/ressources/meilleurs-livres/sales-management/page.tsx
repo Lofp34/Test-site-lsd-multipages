@@ -15,7 +15,7 @@ const categoryStructuredData = {
   "@type": "CollectionPage",
   "name": "Sales Management & Leadership - Meilleurs Livres",
   "description": "Management et leadership commercial : les références pour diriger, motiver et développer des équipes commerciales performantes.",
-  "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management",
+  "url": "https://www.laurentserre.com/ressources/meilleurs-livres/sales-management",
   "mainEntity": {
     "@type": "ItemList",
     "name": "Meilleurs livres Sales Management & Leadership",
@@ -26,35 +26,35 @@ const categoryStructuredData = {
         "position": 1,
         "name": "Good to Great",
         "author": "Jim Collins",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/good-to-great"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/good-to-great"
       },
       {
         "@type": "Book", 
         "position": 2,
         "name": "High Output Management",
         "author": "Andy Grove",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/high-output-management"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/high-output-management"
       },
       {
         "@type": "Book",
         "position": 3, 
         "name": "Blue Ocean Strategy",
         "author": "W. Chan Kim & Renée Mauborgne",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/blue-ocean-strategy"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/blue-ocean-strategy"
       },
       {
         "@type": "Book",
         "position": 4,
         "name": "The Innovator's Dilemma", 
         "author": "Clayton Christensen",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/innovators-dilemma"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/innovators-dilemma"
       },
       {
         "@type": "Book",
         "position": 5,
         "name": "Leaders Eat Last",
         "author": "Simon Sinek", 
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/leaders-eat-last"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/leaders-eat-last"
       }
     ]
   },
@@ -65,19 +65,19 @@ const categoryStructuredData = {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://laurent-serre-developpement.fr"
+        "item": "https://www.laurentserre.com"
       },
       {
         "@type": "ListItem", 
         "position": 2,
         "name": "Ressources",
-        "item": "https://laurent-serre-developpement.fr/ressources"
+        "item": "https://www.laurentserre.com/ressources"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Meilleurs Livres",
-        "item": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres"
+        "item": "https://www.laurentserre.com/ressources/meilleurs-livres"
       },
       {
         "@type": "ListItem",
@@ -107,7 +107,7 @@ export const metadata: Metadata = {
     description: 'Les meilleurs livres de management et leadership commercial. Good to Great, High Output Management, Blue Ocean Strategy. Résumés détaillés et avis terrain.',
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management',
   },
   twitter: {
     card: 'summary_large_image',
@@ -115,7 +115,7 @@ export const metadata: Metadata = {
     description: 'Les meilleurs livres de management et leadership commercial. Good to Great, High Output Management, Blue Ocean Strategy.',
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management',
   },
   other: {
     'preload': '/ressources/meilleurs-livres/sales-management/good-to-great as document',

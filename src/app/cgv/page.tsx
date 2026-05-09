@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Conditions Générales de Vente – Laurent Serre Développement",
+  title: "Conditions Générales de Vente – Laurent Serre",
   description: "Consultez les conditions générales de vente pour les services de formation et consulting en développement commercial de Laurent Serre.",
   alternates: {
     canonical: "https://www.laurentserre.com/cgv"

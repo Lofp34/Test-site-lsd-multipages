@@ -231,7 +231,7 @@ export const effetMiroirData: NegotiationTechnique = {
       'découverte client',
       'écoute active'
     ],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/effet-miroir'
+    canonicalUrl: 'https://www.laurentserre.com/ressources/techniques-de-negociation/effet-miroir'
   },
   
   trackingEvents: [

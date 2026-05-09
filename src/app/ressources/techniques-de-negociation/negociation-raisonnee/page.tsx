@@ -5,17 +5,17 @@ import TechniquePage from '@/components/templates/TechniquePage';
 
 // Configuration SEO pour Laurent Serre
 const seoConfig = {
-  baseUrl: 'https://laurent-serre-developpement.fr',
+  baseUrl: 'https://www.laurentserre.com',
   authorInfo: {
     name: 'Laurent Serre',
-    url: 'https://laurent-serre-developpement.fr/a-propos',
-    image: 'https://laurent-serre-developpement.fr/images/laurent-serre.jpg',
+    url: 'https://www.laurentserre.com/a-propos',
+    image: 'https://www.laurentserre.com/images/laurent-serre.jpg',
     description: 'Expert en développement commercial PME avec 20 ans d\'expérience terrain. Formateur et coach spécialisé dans les techniques de négociation avancées.'
   },
   organizationInfo: {
-    name: 'Laurent Serre Développement',
-    url: 'https://laurent-serre-developpement.fr',
-    logo: 'https://laurent-serre-developpement.fr/images/logo-laurent-serre.png',
+    name: 'Laurent Serre',
+    url: 'https://www.laurentserre.com',
+    logo: 'https://www.laurentserre.com/images/logo-laurent-serre.png',
     description: 'Cabinet de conseil en développement commercial pour PME. Formation, coaching et transformation commerciale.'
   }
 };

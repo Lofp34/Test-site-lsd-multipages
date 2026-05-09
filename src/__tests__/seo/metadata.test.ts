@@ -3,13 +3,13 @@ import { describe, it, expect } from 'vitest'
 // Mock metadata from different pages
 const mockMetadata = {
   'mindset-performance': {
-    title: 'Meilleurs Livres Mindset & Performance | Laurent Serre Développement',
+    title: 'Meilleurs Livres Mindset & Performance | Laurent Serre',
     description: 'Découvrez les livres incontournables pour développer votre mindset commercial et améliorer vos performances. Sélection d\'expert par Laurent Serre.',
     keywords: ['mindset commercial', 'performance personnelle', 'développement personnel', 'habitudes performance'],
     openGraph: {
       title: 'Meilleurs Livres Mindset & Performance',
       description: 'Sélection des livres essentiels pour développer votre mindset commercial',
-      url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance',
+      url: 'https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance',
       type: 'website',
       images: ['/images/og-mindset-performance.jpg']
     },
@@ -19,7 +19,7 @@ const mockMetadata = {
       description: 'Sélection des livres essentiels pour développer votre mindset commercial'
     },
     alternates: {
-      canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance'
+      canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance'
     }
   },
   'sales-management': {
@@ -29,7 +29,7 @@ const mockMetadata = {
     openGraph: {
       title: 'Meilleurs Livres Sales Management & Leadership',
       description: 'Développez vos compétences de management commercial',
-      url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management',
+      url: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management',
       type: 'website',
       images: ['/images/og-sales-management.jpg']
     },
@@ -39,7 +39,7 @@ const mockMetadata = {
       description: 'Développez vos compétences de management commercial'
     },
     alternates: {
-      canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management'
+      canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management'
     }
   }
 }
@@ -109,7 +109,7 @@ describe('SEO Metadata Tests', () => {
         expect(og.images.length).toBeGreaterThan(0)
         
         // URL should be correct format
-        expect(og.url).toMatch(/^https:\/\/laurent-serre-developpement\.fr\//)
+        expect(og.url).toMatch(/^https:\/\/www.laurentserre.com\//)
         expect(og.url).toContain(category)
       })
     })
@@ -132,7 +132,7 @@ describe('SEO Metadata Tests', () => {
       it(`${category} should have correct canonical URL`, () => {
         const canonical = metadata.alternates.canonical
         expect(canonical).toBeTruthy()
-        expect(canonical).toMatch(/^https:\/\/laurent-serre-developpement\.fr\//)
+        expect(canonical).toMatch(/^https:\/\/www.laurentserre.com\//)
         expect(canonical).toContain(category)
         expect(canonical).not.toContain('www.')
       })
@@ -175,7 +175,7 @@ describe('SEO Metadata Tests', () => {
 
   describe('URL Structure', () => {
     it('should have consistent URL patterns', () => {
-      const expectedURLPattern = /^https:\/\/laurent-serre-developpement\.fr\/ressources\/meilleurs-livres\/[a-z-]+$/
+      const expectedURLPattern = /^https:\/\/www.laurentserre.com\/ressources\/meilleurs-livres\/[a-z-]+$/
       
       Object.values(mockMetadata).forEach(metadata => {
         expect(metadata.openGraph.url).toMatch(expectedURLPattern)

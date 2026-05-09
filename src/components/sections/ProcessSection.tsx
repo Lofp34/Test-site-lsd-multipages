@@ -81,7 +81,7 @@ const ProcessSection = () => {
             Notre processus unique
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-            Le Bootcamp Laurent Serre Développement : une méthodologie complète qui combine expertise humaine et IA pour structurer et booster votre performance commerciale.
+            Le Bootcamp Laurent Serre : une méthodologie complète qui combine expertise humaine et IA pour structurer et booster votre performance commerciale.
           </p>
         </motion.div>
 

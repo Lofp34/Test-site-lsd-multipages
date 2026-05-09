@@ -143,7 +143,7 @@ const mockTechnique: NegotiationTechnique = {
     title: 'L\'effet miroir | Technique FBI Chris Voss | Laurent Serre',
     description: 'Maîtrisez l\'effet miroir de Chris Voss pour vos négociations PME.',
     keywords: ['effet miroir', 'chris voss', 'négociation'],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/effet-miroir'
+    canonicalUrl: 'https://www.laurentserre.com/ressources/techniques-de-negociation/effet-miroir'
   },
   trackingEvents: [
     {
@@ -155,17 +155,17 @@ const mockTechnique: NegotiationTechnique = {
 };
 
 const mockSEOConfig = {
-  baseUrl: 'https://laurent-serre-developpement.fr',
+  baseUrl: 'https://www.laurentserre.com',
   authorInfo: {
     name: 'Laurent Serre',
-    url: 'https://laurent-serre-developpement.fr/a-propos',
-    image: 'https://laurent-serre-developpement.fr/images/laurent-serre.jpg',
+    url: 'https://www.laurentserre.com/a-propos',
+    image: 'https://www.laurentserre.com/images/laurent-serre.jpg',
     description: 'Expert en développement commercial PME'
   },
   organizationInfo: {
-    name: 'Laurent Serre Développement',
-    url: 'https://laurent-serre-developpement.fr',
-    logo: 'https://laurent-serre-developpement.fr/images/logo.png',
+    name: 'Laurent Serre',
+    url: 'https://www.laurentserre.com',
+    logo: 'https://www.laurentserre.com/images/logo.png',
     description: 'Formation et coaching commercial pour PME'
   }
 };

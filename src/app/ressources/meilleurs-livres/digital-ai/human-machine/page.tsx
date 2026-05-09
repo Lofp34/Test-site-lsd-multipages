@@ -17,26 +17,26 @@ export const metadata: Metadata = {
     title: 'Human + Machine : résumé complet | Digital & AI Sales',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de Human + Machine (Daugherty & Wilson). Collaboration homme-machine en vente.',
     type: 'article',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/human-machine',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/human-machine',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-human-machine.jpg',
+        url: 'https://www.laurentserre.com/images/og-human-machine.jpg',
         width: 1200,
         height: 630,
         alt: 'Human + Machine - Résumé par Laurent Serre',
       },
     ],
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/human-machine',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/human-machine',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Human + Machine : résumé complet | Digital & AI Sales',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de Human + Machine (Daugherty & Wilson).',
-    images: ['https://laurent-serre-developpement.fr/images/og-human-machine.jpg'],
+    images: ['https://www.laurentserre.com/images/og-human-machine.jpg'],
   }
 };
 

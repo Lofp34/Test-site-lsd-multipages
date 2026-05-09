@@ -23,26 +23,26 @@ export const metadata: Metadata = {
     title: 'The Second Machine Age : résumé complet | Digital & AI Sales',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de The Second Machine Age (Brynjolfsson & McAfee). L\'impact des technologies numériques sur la vente.',
     type: 'article',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/the-second-machine-age',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/the-second-machine-age',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-second-machine-age.jpg',
+        url: 'https://www.laurentserre.com/images/og-second-machine-age.jpg',
         width: 1200,
         height: 630,
         alt: 'The Second Machine Age - Résumé par Laurent Serre',
       },
     ],
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/the-second-machine-age',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/the-second-machine-age',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The Second Machine Age : résumé complet | Digital & AI Sales',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de The Second Machine Age (Brynjolfsson & McAfee).',
-    images: ['https://laurent-serre-developpement.fr/images/og-second-machine-age.jpg'],
+    images: ['https://www.laurentserre.com/images/og-second-machine-age.jpg'],
   }
 };
 

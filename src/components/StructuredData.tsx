@@ -28,7 +28,7 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
           },
           "worksFor": {
             "@type": "Organization",
-            "name": "Laurent Serre Développement"
+            "name": "Laurent Serre"
           },
           "knowsAbout": [
             "Développement commercial PME",
@@ -56,7 +56,7 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
         return {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Laurent Serre Développement",
+          "name": "Laurent Serre",
           "description": "Cabinet de conseil spécialisé en développement commercial pour PME. Formation, coaching et transformation commerciale.",
           "url": "https://www.laurentserre.com",
           "logo": "https://www.laurentserre.com/images/logo-laurent-serre.png",
@@ -131,7 +131,7 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
           "description": serviceDescription,
           "provider": {
             "@type": "Organization",
-            "name": "Laurent Serre Développement",
+            "name": "Laurent Serre",
             "url": "https://www.laurentserre.com"
           },
           "serviceType": "Conseil en développement commercial",
@@ -191,7 +191,7 @@ export default function StructuredData({ type, data, pagePath }: StructuredDataP
           "description": data?.description || "Formation spécialisée pour équipes commerciales PME",
           "provider": {
             "@type": "Organization",
-            "name": "Laurent Serre Développement",
+            "name": "Laurent Serre",
             "url": "https://www.laurentserre.com"
           },
           "instructor": {

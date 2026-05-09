@@ -20,7 +20,7 @@ const categoryStructuredData = {
   "@type": "CollectionPage",
   "name": "Prospection & SDR - Meilleurs Livres",
   "description": "Les meilleurs livres sur la prospection commerciale et le Sales Development. Fanatical Prospecting, Predictable Revenue, Sales Development Playbook. Résumés détaillés et conseils terrain de Laurent Serre.",
-  "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/prospection-sdr",
+  "url": "https://www.laurentserre.com/ressources/meilleurs-livres/prospection-sdr",
   "mainEntity": {
     "@type": "ItemList",
     "name": "Meilleurs livres Prospection & SDR",
@@ -31,35 +31,35 @@ const categoryStructuredData = {
         "position": 1,
         "name": "Fanatical Prospecting",
         "author": "Jeb Blount",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/prospection-sdr/fanatical-prospecting"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/prospection-sdr/fanatical-prospecting"
       },
       {
         "@type": "Book", 
         "position": 2,
         "name": "Predictable Revenue",
         "author": "Aaron Ross & Marylou Tyler",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/prospection-sdr/predictable-revenue"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/prospection-sdr/predictable-revenue"
       },
       {
         "@type": "Book",
         "position": 3, 
         "name": "The Sales Development Playbook",
         "author": "Trish Bertuzzi",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/prospection-sdr/sales-development-playbook"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/prospection-sdr/sales-development-playbook"
       },
       {
         "@type": "Book",
         "position": 4,
         "name": "New Sales. Simplified.", 
         "author": "Mike Weinberg",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/prospection-sdr/new-sales-simplified"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/prospection-sdr/new-sales-simplified"
       },
       {
         "@type": "Book",
         "position": 5,
         "name": "Sales Development: Cracking the Code",
         "author": "Cory Bray & Hilmon Sorey", 
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/prospection-sdr/sales-development-cracking-code"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/prospection-sdr/sales-development-cracking-code"
       }
     ]
   },
@@ -70,19 +70,19 @@ const categoryStructuredData = {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://laurent-serre-developpement.fr"
+        "item": "https://www.laurentserre.com"
       },
       {
         "@type": "ListItem", 
         "position": 2,
         "name": "Ressources",
-        "item": "https://laurent-serre-developpement.fr/ressources"
+        "item": "https://www.laurentserre.com/ressources"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Meilleurs Livres",
-        "item": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres"
+        "item": "https://www.laurentserre.com/ressources/meilleurs-livres"
       },
       {
         "@type": "ListItem",
@@ -112,25 +112,25 @@ export const metadata: Metadata = {
     description: 'Les meilleurs livres sur la prospection commerciale et le Sales Development. Fanatical Prospecting, Predictable Revenue, Sales Development Playbook. Résumés détaillés et conseils terrain.',
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/prospection-sdr',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/prospection-sdr',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-prospection-sdr.jpg',
+        url: 'https://www.laurentserre.com/images/og-prospection-sdr.jpg',
         width: 1200,
         height: 630,
         alt: 'Prospection & SDR - Meilleurs Livres par Laurent Serre',
       },
     ],
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Prospection & SDR | Meilleurs Livres | Laurent Serre',
     description: 'Les meilleurs livres sur la prospection commerciale et le Sales Development. Fanatical Prospecting, Predictable Revenue, Sales Development Playbook.',
-    images: ['https://laurent-serre-developpement.fr/images/og-prospection-sdr.jpg'],
+    images: ['https://www.laurentserre.com/images/og-prospection-sdr.jpg'],
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/prospection-sdr',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/prospection-sdr',
   },
   other: {
     'preload': '/ressources/meilleurs-livres/prospection-sdr/fanatical-prospecting as document',

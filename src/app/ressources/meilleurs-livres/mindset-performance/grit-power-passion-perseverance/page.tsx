@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     'performance commerciale'
   ],
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance/grit-power-passion-perseverance',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance/grit-power-passion-perseverance',
   },
 };
 

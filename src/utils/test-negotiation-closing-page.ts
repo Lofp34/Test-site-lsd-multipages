@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-require-imports, @typescript-eslint/no-unused-vars */
+
 // Test suite for Négociation & Closing page validation
 // This validates the implementation against the requirements
 

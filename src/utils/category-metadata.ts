@@ -9,7 +9,7 @@ export function generateCategoryMetadata(
   category: CategoryPageProps['category'],
   theme: CategoryTheme
 ): Metadata {
-  const baseUrl = 'https://laurent-serre-developpement.fr';
+  const baseUrl = 'https://www.laurentserre.com';
   const pageUrl = `${baseUrl}/ressources/meilleurs-livres/${category.slug}`;
   
   // Génère la liste des livres pour la description
@@ -42,7 +42,7 @@ export function generateCategoryMetadata(
           alt: `${theme.name} - Meilleurs Livres par Laurent Serre`,
         },
       ],
-      siteName: 'Laurent Serre Développement',
+      siteName: 'Laurent Serre',
     },
     twitter: {
       card: 'summary_large_image',
@@ -66,7 +66,7 @@ export function generateCategoryStructuredData(
   category: CategoryPageProps['category'],
   theme: CategoryTheme
 ) {
-  const baseUrl = 'https://laurent-serre-developpement.fr';
+  const baseUrl = 'https://www.laurentserre.com';
   const pageUrl = `${baseUrl}/ressources/meilleurs-livres/${category.slug}`;
   
   return {
@@ -130,12 +130,12 @@ export function generateCategoryStructuredData(
       "jobTitle": "Expert en développement commercial PME",
       "worksFor": {
         "@type": "Organization",
-        "name": "Laurent Serre Développement"
+        "name": "Laurent Serre"
       }
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Laurent Serre Développement",
+      "name": "Laurent Serre",
       "url": baseUrl
     }
   };
@@ -148,7 +148,7 @@ export function generateBookMetadata(
   book: Book,
   category: { slug: string; title: string; theme: CategoryTheme }
 ): Metadata {
-  const baseUrl = 'https://laurent-serre-developpement.fr';
+  const baseUrl = 'https://www.laurentserre.com';
   const pageUrl = `${baseUrl}/ressources/meilleurs-livres/${category.slug}/${book.slug}`;
   
   return {
@@ -177,7 +177,7 @@ export function generateBookMetadata(
           alt: `Couverture du livre ${book.title} par ${book.author}`,
         },
       ],
-      siteName: 'Laurent Serre Développement',
+      siteName: 'Laurent Serre',
     },
     twitter: {
       card: 'summary_large_image',
@@ -198,7 +198,7 @@ export function generateBookStructuredData(
   book: Book,
   category: { slug: string; title: string; theme: CategoryTheme }
 ) {
-  const baseUrl = 'https://laurent-serre-developpement.fr';
+  const baseUrl = 'https://www.laurentserre.com';
   const pageUrl = `${baseUrl}/ressources/meilleurs-livres/${category.slug}/${book.slug}`;
   const categoryUrl = `${baseUrl}/ressources/meilleurs-livres/${category.slug}`;
   

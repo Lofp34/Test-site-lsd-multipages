@@ -237,7 +237,7 @@ export const negociationRaisonneeData: NegotiationTechnique = {
       'intérêts positions',
       'accord collaboratif'
     ],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/negociation-raisonnee'
+    canonicalUrl: 'https://www.laurentserre.com/ressources/techniques-de-negociation/negociation-raisonnee'
   },
   
   trackingEvents: [

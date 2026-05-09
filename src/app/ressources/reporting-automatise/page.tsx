@@ -7,9 +7,9 @@ export const metadata: Metadata = {
   title: reportingData.seoConfig.title,
   description: reportingData.seoConfig.description,
   keywords: reportingData.seoConfig.keywords,
-  authors: [{ name: 'Laurent Serre', url: 'https://laurent-serre-developpement.fr' }],
+  authors: [{ name: 'Laurent Serre', url: 'https://www.laurentserre.com' }],
   creator: 'Laurent Serre',
-  publisher: 'Laurent Serre Développement',
+  publisher: 'Laurent Serre',
   robots: {
     index: true,
     follow: true,
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fr_FR',
     url: reportingData.seoConfig.canonicalUrl,
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
     images: [
       {
         url: reportingData.seoConfig.openGraph.image,
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         type: 'image/jpeg',
       },
       {
-        url: 'https://laurent-serre-developpement.fr/images/reporting-square.jpg',
+        url: 'https://www.laurentserre.com/images/reporting-square.jpg',
         width: 400,
         height: 400,
         alt: 'Pack Reporting - Aperçu',
@@ -86,11 +86,11 @@ export default function ReportingAutomatisePage() {
     "provider": {
       "@type": "Person",
       "name": "Laurent Serre",
-      "url": "https://laurent-serre-developpement.fr",
+      "url": "https://www.laurentserre.com",
       "jobTitle": "Expert en développement commercial PME",
       "worksFor": {
         "@type": "Organization",
-        "name": "Laurent Serre Développement"
+        "name": "Laurent Serre"
       }
     },
     "downloadUrl": reportingData.seoConfig.structuredData.downloadUrl,
@@ -120,19 +120,19 @@ export default function ReportingAutomatisePage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://laurent-serre-developpement.fr"
+        "item": "https://www.laurentserre.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Ressources",
-        "item": "https://laurent-serre-developpement.fr/ressources"
+        "item": "https://www.laurentserre.com/ressources"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Pack Reporting Automatisé",
-        "item": "https://laurent-serre-developpement.fr/ressources/reporting-automatise"
+        "item": "https://www.laurentserre.com/ressources/reporting-automatise"
       }
     ]
   };
@@ -140,9 +140,9 @@ export default function ReportingAutomatisePage() {
   const organizationStructuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Laurent Serre Développement",
-    "url": "https://laurent-serre-developpement.fr",
-    "logo": "https://laurent-serre-developpement.fr/images/logo.png",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com",
+    "logo": "https://www.laurentserre.com/images/logo.png",
     "founder": {
       "@type": "Person",
       "name": "Laurent Serre"

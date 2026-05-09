@@ -50,7 +50,7 @@ export default function Article7EtapesNonOui() {
             "dateModified": "2026-05-03",
             "image": "https://www.laurentserre.com/equipe_bureau.jpg",
             "url": "https://www.laurentserre.com/blog/7-etapes-transformer-non-en-oui-performant-2025",
-            "publisher": { "@type": "Organization", "name": "Laurent Serre Développement", "url": "https://www.laurentserre.com" }
+            "publisher": { "@type": "Organization", "name": "Laurent Serre", "url": "https://www.laurentserre.com" }
           })
         }}
       />

@@ -25,7 +25,7 @@ const categoryStructuredData = {
   "@type": "CollectionPage",
   "name": "Mindset & Performance - Meilleurs Livres",
   "description": "Développer un état d'esprit de croissance et optimiser ses performances personnelles. Découvrez les références essentielles pour cultiver l'état d'esprit gagnant et maximiser votre potentiel commercial.",
-  "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance",
+  "url": "https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance",
   "mainEntity": {
     "@type": "ItemList",
     "name": "Meilleurs livres Mindset & Performance",
@@ -36,35 +36,35 @@ const categoryStructuredData = {
         "position": 1,
         "name": "Atomic Habits",
         "author": "James Clear",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance/atomic-habits"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance/atomic-habits"
       },
       {
         "@type": "Book", 
         "position": 2,
         "name": "Les 7 habitudes des gens très efficaces",
         "author": "Stephen R. Covey",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance/7-habitudes-gens-efficaces"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance/7-habitudes-gens-efficaces"
       },
       {
         "@type": "Book",
         "position": 3, 
         "name": "Mindset: The New Psychology of Success",
         "author": "Carol Dweck",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance/mindset-new-psychology-success"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance/mindset-new-psychology-success"
       },
       {
         "@type": "Book",
         "position": 4,
         "name": "Grit: The Power of Passion and Perseverance", 
         "author": "Angela Duckworth",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance/grit-power-passion-perseverance"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance/grit-power-passion-perseverance"
       },
       {
         "@type": "Book",
         "position": 5,
         "name": "The Power of Now",
         "author": "Eckhart Tolle", 
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance/the-power-of-now"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance/the-power-of-now"
       }
     ]
   },
@@ -75,19 +75,19 @@ const categoryStructuredData = {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://laurent-serre-developpement.fr"
+        "item": "https://www.laurentserre.com"
       },
       {
         "@type": "ListItem", 
         "position": 2,
         "name": "Ressources",
-        "item": "https://laurent-serre-developpement.fr/ressources"
+        "item": "https://www.laurentserre.com/ressources"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Meilleurs Livres",
-        "item": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres"
+        "item": "https://www.laurentserre.com/ressources/meilleurs-livres"
       },
       {
         "@type": "ListItem",
@@ -118,25 +118,25 @@ export const metadata: Metadata = {
     description: 'Les meilleurs livres sur le mindset et la performance personnelle. Atomic Habits, Les 7 habitudes, Mindset de Carol Dweck, Grit. Résumés détaillés et conseils terrain.',
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-mindset-performance.jpg',
+        url: 'https://www.laurentserre.com/images/og-mindset-performance.jpg',
         width: 1200,
         height: 630,
         alt: 'Mindset & Performance - Meilleurs Livres par Laurent Serre',
       },
     ],
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Mindset & Performance | Meilleurs Livres | Laurent Serre',
     description: 'Les meilleurs livres sur le mindset et la performance personnelle. Atomic Habits, Les 7 habitudes, Mindset de Carol Dweck, Grit.',
-    images: ['https://laurent-serre-developpement.fr/images/og-mindset-performance.jpg'],
+    images: ['https://www.laurentserre.com/images/og-mindset-performance.jpg'],
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance',
   },
   other: {
     'preload': '/ressources/meilleurs-livres/mindset-performance/atomic-habits as document',

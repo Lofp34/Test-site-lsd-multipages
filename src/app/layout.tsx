@@ -42,13 +42,13 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Laurent Serre Développement — Accompagnement Commercial & Formation PME",
+  title: "Laurent Serre — Accompagnement Commercial & Formation PME",
   description: "Accompagnement commercial pour PME : structuration des équipes, formation à la vente, méthodes éprouvées. Diagnostic gratuit, bootcamp intensif, coaching terrain. 20 ans d'expérience + outils IA.",
   keywords: "formation commerciale, accompagnement vente, développement commercial PME, expert commercial, structuration équipe commerciale, Laurent Serre",
   authors: [{ name: "Laurent Serre" }],
   creator: "Laurent Serre",
   openGraph: {
-    title: "Laurent Serre Développement - Expert Commercial & Formation",
+    title: "Laurent Serre - Expert Commercial & Formation",
     description: "De l'effort commercial au levier stratégique. Accompagnement et formation pour équipes commerciales.",
     url: "https://www.laurentserre.com",
     type: "website",
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Laurent Serre Développement - Expert Commercial & Formation",
+    title: "Laurent Serre - Expert Commercial & Formation",
     description: "De l'effort commercial au levier stratégique. Accompagnement et formation pour équipes commerciales.",
     images: ["https://www.laurentserre.com/laurent.jpg"],
   },
@@ -93,7 +93,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
-              "name": "Laurent Serre Développement",
+              "name": "Laurent Serre",
               "url": "https://www.laurentserre.com",
               "logo": "https://www.laurentserre.com/laurent.jpg",
               "image": "https://www.laurentserre.com/laurent.jpg",
@@ -160,7 +160,7 @@ export default function RootLayout({
               "jobTitle": "Expert Commercial & Formateur",
               "worksFor": {
                 "@type": "Organization",
-                "name": "Laurent Serre Développement",
+                "name": "Laurent Serre",
                 "address": {
                   "@type": "PostalAddress",
                   "streetAddress": "259, rue de la lavande",

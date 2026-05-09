@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Politique de Confidentialité – Laurent Serre Développement",
-  description: "Découvrez comment Laurent Serre Développement collecte, utilise et protège vos données personnelles conformément au RGPD.",
+  title: "Politique de Confidentialité – Laurent Serre",
+  description: "Découvrez comment Laurent Serre collecte, utilise et protège vos données personnelles conformément au RGPD.",
   alternates: {
     canonical: "https://www.laurentserre.com/politique-de-confidentialite"
   },

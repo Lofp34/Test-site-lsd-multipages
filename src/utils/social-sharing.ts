@@ -149,7 +149,7 @@ export class SocialShareGenerator {
   private technique: NegotiationTechnique;
   private baseUrl: string;
 
-  constructor(technique: NegotiationTechnique, baseUrl: string = 'https://laurent-serre-developpement.fr') {
+  constructor(technique: NegotiationTechnique, baseUrl: string = 'https://www.laurentserre.com') {
     this.technique = technique;
     this.baseUrl = baseUrl;
   }
@@ -404,7 +404,7 @@ export class SocialShareGenerator {
       'og:image:width': '1200',
       'og:image:height': '630',
       'og:image:alt': `${sectionTitle} - Laurent Serre Expert Négociation`,
-      'og:site_name': 'Laurent Serre Développement',
+      'og:site_name': 'Laurent Serre',
       'og:locale': 'fr_FR',
       'article:author': 'Laurent Serre',
       'article:section': 'Techniques de Négociation',

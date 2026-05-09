@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   title: tableauBordData.seoConfig.title,
   description: tableauBordData.seoConfig.description,
   keywords: tableauBordData.seoConfig.keywords,
-  authors: [{ name: 'Laurent Serre', url: 'https://laurent-serre-developpement.fr' }],
+  authors: [{ name: 'Laurent Serre', url: 'https://www.laurentserre.com' }],
   creator: 'Laurent Serre',
-  publisher: 'Laurent Serre Développement',
+  publisher: 'Laurent Serre',
   robots: {
     index: true,
     follow: true,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fr_FR',
     url: tableauBordData.seoConfig.canonicalUrl,
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
     images: [
       {
         url: tableauBordData.seoConfig.openGraph.image,
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         type: 'image/jpeg',
       },
       {
-        url: 'https://laurent-serre-developpement.fr/images/tableau-bord-square.jpg',
+        url: 'https://www.laurentserre.com/images/tableau-bord-square.jpg',
         width: 400,
         height: 400,
         alt: 'Tableau de Bord Commercial - Aperçu',
@@ -100,12 +100,12 @@ const TableauBordPage: React.FC = () => {
     "author": {
       "@type": "Person",
       "name": "Laurent Serre",
-      "url": "https://laurent-serre-developpement.fr",
+      "url": "https://www.laurentserre.com",
       "jobTitle": "Expert en développement commercial PME",
       "worksFor": {
         "@type": "Organization",
-        "name": "Laurent Serre Développement",
-        "url": "https://laurent-serre-developpement.fr"
+        "name": "Laurent Serre",
+        "url": "https://www.laurentserre.com"
       }
     },
     "provider": {
@@ -137,19 +137,19 @@ const TableauBordPage: React.FC = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://laurent-serre-developpement.fr"
+        "item": "https://www.laurentserre.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Ressources",
-        "item": "https://laurent-serre-developpement.fr/ressources"
+        "item": "https://www.laurentserre.com/ressources"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Tableau de Bord Commercial",
-        "item": "https://laurent-serre-developpement.fr/ressources/outil-tableau-bord"
+        "item": "https://www.laurentserre.com/ressources/outil-tableau-bord"
       }
     ]
   };
@@ -157,9 +157,9 @@ const TableauBordPage: React.FC = () => {
   const organizationStructuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Laurent Serre Développement",
-    "url": "https://laurent-serre-developpement.fr",
-    "logo": "https://laurent-serre-developpement.fr/images/logo.png",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com",
+    "logo": "https://www.laurentserre.com/images/logo.png",
     "founder": {
       "@type": "Person",
       "name": "Laurent Serre"

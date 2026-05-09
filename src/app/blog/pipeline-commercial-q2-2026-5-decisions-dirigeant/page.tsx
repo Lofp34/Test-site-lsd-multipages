@@ -56,7 +56,7 @@ export default function PipelineCommercialQ22026Page() {
         },
         publisher: {
           '@type': 'Organization',
-          name: 'Laurent Serre Développement',
+          name: 'Laurent Serre',
           url: 'https://www.laurentserre.com',
         },
         mainEntityOfPage: {

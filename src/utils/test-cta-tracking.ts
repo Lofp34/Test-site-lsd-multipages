@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 /**
  * Test suite pour valider le tracking des CTAs amélioré
  * Task 7.1: Ajouter le tracking des clics sur les nouveaux CTAs

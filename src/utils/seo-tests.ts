@@ -149,7 +149,7 @@ export function testCanonicalUrls(): SEOTestResult {
     
     const checks = {
       hasCanonical: content.includes('canonical') || content.includes('alternates'),
-      hasCorrectUrl: content.includes('laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance'),
+      hasCorrectUrl: content.includes('www.laurentserre.com/ressources/meilleurs-livres/mindset-performance'),
       hasMetadataExport: content.includes('export const metadata'),
       hasAlternates: content.includes('alternates:')
     };

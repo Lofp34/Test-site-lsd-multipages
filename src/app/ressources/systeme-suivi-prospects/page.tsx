@@ -8,15 +8,15 @@ export const metadata: Metadata = {
   keywords: 'suivi prospects PME, CRM simple, tableau de bord commercial, métriques vente, pilotage commercial PME, pipeline management',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/systeme-suivi-prospects',
+    canonical: 'https://www.laurentserre.com/ressources/systeme-suivi-prospects',
   },
   openGraph: {
     title: 'Système de Suivi des Prospects PME | Laurent Serre',
     description: 'Système de suivi des prospects adapté aux PME. Templates et outils de pilotage commercial.',
-    url: 'https://laurent-serre-developpement.fr/ressources/systeme-suivi-prospects',
+    url: 'https://www.laurentserre.com/ressources/systeme-suivi-prospects',
     type: 'website',
     locale: 'fr_FR',
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
 };
 

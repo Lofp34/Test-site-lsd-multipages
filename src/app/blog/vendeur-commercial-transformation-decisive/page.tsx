@@ -45,7 +45,7 @@ export default function Article5() {
             "dateModified": "2026-05-03",
             "image": "https://www.laurentserre.com/equipedeface.jpg",
             "url": "https://www.laurentserre.com/blog/vendeur-commercial-transformation-decisive",
-            "publisher": { "@type": "Organization", "name": "Laurent Serre Développement", "url": "https://www.laurentserre.com" }
+            "publisher": { "@type": "Organization", "name": "Laurent Serre", "url": "https://www.laurentserre.com" }
           })
         }}
       />

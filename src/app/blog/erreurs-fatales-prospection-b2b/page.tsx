@@ -44,7 +44,7 @@ export default function Article3() {
             "dateModified": "2026-05-03",
             "image": "https://www.laurentserre.com/erreurs-fatales.png",
             "url": "https://www.laurentserre.com/blog/erreurs-fatales-prospection-b2b",
-            "publisher": { "@type": "Organization", "name": "Laurent Serre Développement", "url": "https://www.laurentserre.com" }
+            "publisher": { "@type": "Organization", "name": "Laurent Serre", "url": "https://www.laurentserre.com" }
           })
         }}
       />

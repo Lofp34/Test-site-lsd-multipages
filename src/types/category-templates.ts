@@ -278,7 +278,7 @@ export function generateCategoryMetadata(
   category: CategoryPageProps['category'],
   theme: CategoryTheme
 ): SEOMetadata {
-  const baseUrl = 'https://laurent-serre-developpement.fr';
+  const baseUrl = 'https://www.laurentserre.com';
   const pageUrl = `${baseUrl}/ressources/meilleurs-livres/${category.slug}`;
   
   return {

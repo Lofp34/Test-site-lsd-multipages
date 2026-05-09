@@ -133,18 +133,18 @@ export const tableauBordData: ResourceTool = {
       'suivi performance commerciale',
       'reporting commercial automatique'
     ],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/outil-tableau-bord',
+    canonicalUrl: 'https://www.laurentserre.com/ressources/outil-tableau-bord',
     openGraph: {
       title: 'Tableau de Bord Commercial Excel | Outil Gratuit PME',
       description: 'Pilotez votre activité commerciale avec notre tableau de bord Excel gratuit. KPIs essentiels, graphiques automatiques, spécialement conçu pour les PME.',
-      image: 'https://laurent-serre-developpement.fr/ressources/og/tableau-bord-og.jpg',
+      image: 'https://www.laurentserre.com/ressources/og/tableau-bord-og.jpg',
       type: 'website'
     },
     twitter: {
       card: 'summary_large_image',
       title: 'Tableau de Bord Commercial Excel | Outil Gratuit PME',
       description: 'Pilotez votre activité commerciale avec notre tableau de bord Excel gratuit. KPIs essentiels, graphiques automatiques.',
-      image: 'https://laurent-serre-developpement.fr/ressources/og/tableau-bord-og.jpg'
+      image: 'https://www.laurentserre.com/ressources/og/tableau-bord-og.jpg'
     },
     structuredData: {
       type: 'SoftwareApplication',
@@ -153,9 +153,9 @@ export const tableauBordData: ResourceTool = {
       provider: {
         '@type': 'Person',
         name: 'Laurent Serre',
-        url: 'https://laurent-serre-developpement.fr'
+        url: 'https://www.laurentserre.com'
       },
-      downloadUrl: 'https://laurent-serre-developpement.fr/ressources/outil-tableau-bord',
+      downloadUrl: 'https://www.laurentserre.com/ressources/outil-tableau-bord',
       fileFormat: 'application/vnd.ms-excel',
       datePublished: '2024-01-15',
       dateModified: '2024-12-01'

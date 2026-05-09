@@ -20,11 +20,11 @@ export const metadata: Metadata = {
     title: 'Good to Great : résumé complet | Sales Management & Leadership',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de Good to Great (Jim Collins). Les facteurs durables de la réussite organisationnelle.',
     type: 'article',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/good-to-great',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/good-to-great',
     locale: 'fr_FR',
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/good-to-great',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/good-to-great',
   },
   twitter: {
     card: 'summary_large_image',

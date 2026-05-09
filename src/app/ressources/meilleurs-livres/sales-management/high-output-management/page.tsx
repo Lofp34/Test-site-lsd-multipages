@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: 'High Output Management : résumé complet | Sales Management & Leadership',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de High Output Management (Andy Grove). La bible du manager opérationnel.',
     type: 'article',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/high-output-management',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/high-output-management',
     locale: 'fr_FR',
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/high-output-management',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/high-output-management',
   },
   twitter: {
     card: 'summary_large_image',

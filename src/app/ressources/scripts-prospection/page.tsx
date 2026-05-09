@@ -8,15 +8,15 @@ export const metadata: Metadata = {
   keywords: 'scripts prospection, IMPACT, AIDA+, appels à froid, emails prospection, scripts téléphoniques, prospection commerciale',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/scripts-prospection',
+    canonical: 'https://www.laurentserre.com/ressources/scripts-prospection',
   },
   openGraph: {
     title: 'Scripts de Prospection IMPACT et AIDA+ | Laurent Serre',
     description: 'Scripts de prospection éprouvés pour transformer vos appels à froid et emails de prospection.',
-    url: 'https://laurent-serre-developpement.fr/ressources/scripts-prospection',
+    url: 'https://www.laurentserre.com/ressources/scripts-prospection',
     type: 'website',
     locale: 'fr_FR',
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
 };
 

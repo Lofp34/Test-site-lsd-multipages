@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     'mindset commercial'
   ],
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance/mindset-new-psychology-success',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance/mindset-new-psychology-success',
   },
 };
 

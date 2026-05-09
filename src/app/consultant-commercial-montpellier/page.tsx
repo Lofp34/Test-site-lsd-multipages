@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     url: 'https://www.laurentserre.com/consultant-commercial-montpellier',
     type: 'website',
     locale: 'fr_FR',
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   robots: {
     index: true,
@@ -34,7 +34,7 @@ export default function ConsultantCommercialMontpellierPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Laurent Serre Développement — Consultant Commercial Montpellier",
+            "name": "Laurent Serre — Consultant Commercial Montpellier",
             "url": "https://www.laurentserre.com/consultant-commercial-montpellier",
             "image": "https://www.laurentserre.com/laurent.jpg",
             "description": "Consultant commercial Montpellier pour PME. Laurent Serre intervient en région Occitanie pour formations, accompagnement et transformation commerciale.",

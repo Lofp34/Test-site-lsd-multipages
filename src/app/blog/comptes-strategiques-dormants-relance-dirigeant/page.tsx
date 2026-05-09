@@ -53,7 +53,7 @@ export default function ComptesStrategiquesDormantsPage() {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Laurent Serre Développement",
+    "name": "Laurent Serre",
     "url": "https://www.laurentserre.com"
   },
   "mainEntityOfPage": {

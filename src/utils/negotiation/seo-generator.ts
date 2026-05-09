@@ -197,7 +197,7 @@ export class SEOGenerator {
       type: 'article',
       locale: 'fr_FR',
       url,
-      siteName: 'Laurent Serre Développement',
+      siteName: 'Laurent Serre',
       images: [
         {
           url: imageUrl,

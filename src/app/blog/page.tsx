@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'reunion-commerciale-hebdomadaire-format-performance',
+    title: 'Quinze ans à animer des réunions commerciales — et pourquoi j\'ai fini par tout changer',
+    description: 'Des réunions qui tournent en rond, des équipes qui regardent leurs chaussures. J\'ai testé des formats pendant 15 ans. Voici celui qui tient : 4 blocs, 60 minutes, 80% sur le futur.',
+    date: '2026-05-09',
+    readTime: '6 min',
+    category: 'Management commercial',
+    image: '/images/blog/2026-05-09-reunion-commerciale-hebdo-hero.png',
+    featured: true
+  },
+  {
     slug: 'vente-consultative-b2b-comment-devenir-le-conseiller-que-vos-clients-ne-veulent-pas-perdre',
     title: 'Vente consultative B2B : comment devenir le conseiller que vos clients ne veulent pas perdre',
     description: 'Pas une technique de manipulation. Une posture : vous n\'êtes pas là pour vendre, vous êtes là pour aider le client à prendre la meilleure décision. Les 4 piliers de la posture consultative et la méthode terrain.',

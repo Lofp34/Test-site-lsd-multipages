@@ -36,13 +36,13 @@ export const resourcesByCategory = {
 
 // Configuration SEO globale pour les ressources
 export const resourcesGlobalSEO = {
-  siteName: 'Laurent Serre Développement',
-  baseUrl: 'https://laurent-serre-developpement.fr',
-  defaultImage: 'https://laurent-serre-developpement.fr/images/og-resources-default.jpg',
+  siteName: 'Laurent Serre',
+  baseUrl: 'https://www.laurentserre.com',
+  defaultImage: 'https://www.laurentserre.com/images/og-resources-default.jpg',
   twitterHandle: '@laurentserre',
   author: {
     name: 'Laurent Serre',
-    url: 'https://laurent-serre-developpement.fr',
+    url: 'https://www.laurentserre.com',
     description: 'Expert en développement commercial PME depuis 20 ans'
   }
 };

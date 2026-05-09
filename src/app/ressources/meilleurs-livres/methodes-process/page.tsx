@@ -26,7 +26,7 @@ const categoryStructuredData = {
   "@type": "CollectionPage",
   "name": "Méthodes & Process - Meilleurs Livres",
   "description": "Les meilleures méthodes de vente structurées : SPIN Selling, Challenger Sale, Solution Selling, Gap Selling. Frameworks éprouvés pour transformer votre approche commerciale.",
-  "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/methodes-process",
+  "url": "https://www.laurentserre.com/ressources/meilleurs-livres/methodes-process",
   "mainEntity": {
     "@type": "ItemList",
     "name": "Meilleurs livres Méthodes & Process",
@@ -37,35 +37,35 @@ const categoryStructuredData = {
         "position": 1,
         "name": "SPIN Selling",
         "author": "Neil Rackham",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/methodes-process/spin-selling"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/methodes-process/spin-selling"
       },
       {
         "@type": "Book", 
         "position": 2,
         "name": "The Challenger Sale",
         "author": "Matthew Dixon & Brent Adamson",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/methodes-process/the-challenger-sale"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/methodes-process/the-challenger-sale"
       },
       {
         "@type": "Book",
         "position": 3, 
         "name": "Solution Selling",
         "author": "Michael Bosworth",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/methodes-process/solution-selling"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/methodes-process/solution-selling"
       },
       {
         "@type": "Book",
         "position": 4,
         "name": "Gap Selling", 
         "author": "Keenan",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/methodes-process/gap-selling"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/methodes-process/gap-selling"
       },
       {
         "@type": "Book",
         "position": 5,
         "name": "Strategic Selling",
         "author": "Robert Miller & Stephen Heiman", 
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/methodes-process/strategic-selling"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/methodes-process/strategic-selling"
       }
     ]
   },
@@ -76,19 +76,19 @@ const categoryStructuredData = {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://laurent-serre-developpement.fr"
+        "item": "https://www.laurentserre.com"
       },
       {
         "@type": "ListItem", 
         "position": 2,
         "name": "Ressources",
-        "item": "https://laurent-serre-developpement.fr/ressources"
+        "item": "https://www.laurentserre.com/ressources"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Meilleurs Livres",
-        "item": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres"
+        "item": "https://www.laurentserre.com/ressources/meilleurs-livres"
       },
       {
         "@type": "ListItem",
@@ -118,25 +118,25 @@ export const metadata: Metadata = {
     description: 'Les meilleures méthodes de vente structurées. SPIN Selling, Challenger Sale, Solution Selling, Gap Selling. Frameworks éprouvés et conseils terrain.',
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/methodes-process',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/methodes-process',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-methodes-process.jpg',
+        url: 'https://www.laurentserre.com/images/og-methodes-process.jpg',
         width: 1200,
         height: 630,
         alt: 'Méthodes & Process - Meilleurs Livres par Laurent Serre',
       },
     ],
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Méthodes & Process | Meilleurs Livres | Laurent Serre',
     description: 'Les meilleures méthodes de vente structurées. SPIN Selling, Challenger Sale, Solution Selling, Gap Selling.',
-    images: ['https://laurent-serre-developpement.fr/images/og-methodes-process.jpg'],
+    images: ['https://www.laurentserre.com/images/og-methodes-process.jpg'],
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/methodes-process',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/methodes-process',
   },
   other: {
     'preload': '/ressources/meilleurs-livres/methodes-process/spin-selling as document',

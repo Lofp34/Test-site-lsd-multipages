@@ -61,7 +61,7 @@ export default function LogoBanner() {
                 >
                   <Image
                     src={logo.src}
-                    alt={`Logo de ${logo.name}, client de Laurent Serre Développement`}
+                    alt={`Logo de ${logo.name}, client de Laurent Serre`}
                     width={96}
                     height={64}
                     className="object-contain"
@@ -80,7 +80,7 @@ export default function LogoBanner() {
                 >
                   <Image
                     src={logo.src}
-                    alt={`Logo de ${logo.name}, client de Laurent Serre Développement`}
+                    alt={`Logo de ${logo.name}, client de Laurent Serre`}
                     width={96}
                     height={64}
                     className="object-contain"

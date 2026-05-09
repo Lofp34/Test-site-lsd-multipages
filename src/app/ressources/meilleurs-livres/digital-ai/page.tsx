@@ -17,7 +17,7 @@ const categoryStructuredData = {
   "@type": "CollectionPage",
   "name": "Digital & AI Sales - Meilleurs Livres",
   "description": "La transformation numérique et l'intelligence artificielle révolutionnent le métier commercial. Découvrez les références essentielles pour maîtriser l'IA en vente.",
-  "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai",
+  "url": "https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai",
   "mainEntity": {
     "@type": "ItemList",
     "name": "Meilleurs livres Digital & AI Sales",
@@ -28,35 +28,35 @@ const categoryStructuredData = {
         "position": 1,
         "name": "The Second Machine Age",
         "author": "Erik Brynjolfsson & Andrew McAfee",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/the-second-machine-age"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/the-second-machine-age"
       },
       {
         "@type": "Book", 
         "position": 2,
         "name": "AI Superpowers",
         "author": "Kai-Fu Lee",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/ai-superpowers"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/ai-superpowers"
       },
       {
         "@type": "Book",
         "position": 3, 
         "name": "Life 3.0",
         "author": "Max Tegmark",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/life-3-0"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/life-3-0"
       },
       {
         "@type": "Book",
         "position": 4,
         "name": "Human + Machine", 
         "author": "Paul Daugherty & James Wilson",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/human-machine"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/human-machine"
       },
       {
         "@type": "Book",
         "position": 5,
         "name": "The Lean Startup",
         "author": "Eric Ries", 
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/lean-startup"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/lean-startup"
       }
     ]
   },
@@ -67,19 +67,19 @@ const categoryStructuredData = {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://laurent-serre-developpement.fr"
+        "item": "https://www.laurentserre.com"
       },
       {
         "@type": "ListItem", 
         "position": 2,
         "name": "Ressources",
-        "item": "https://laurent-serre-developpement.fr/ressources"
+        "item": "https://www.laurentserre.com/ressources"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Meilleurs Livres",
-        "item": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres"
+        "item": "https://www.laurentserre.com/ressources/meilleurs-livres"
       },
       {
         "@type": "ListItem",
@@ -109,25 +109,25 @@ export const metadata: Metadata = {
     description: 'Les meilleurs livres sur l\'IA et la transformation digitale en vente. The Second Machine Age, AI Superpowers, Human + Machine. Résumés détaillés et conseils terrain.',
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-digital-ai-sales.jpg',
+        url: 'https://www.laurentserre.com/images/og-digital-ai-sales.jpg',
         width: 1200,
         height: 630,
         alt: 'Digital & AI Sales - Meilleurs Livres par Laurent Serre',
       },
     ],
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Digital & AI Sales | Meilleurs Livres | Laurent Serre',
     description: 'Les meilleurs livres sur l\'IA et la transformation digitale en vente. The Second Machine Age, AI Superpowers, Human + Machine.',
-    images: ['https://laurent-serre-developpement.fr/images/og-digital-ai-sales.jpg'],
+    images: ['https://www.laurentserre.com/images/og-digital-ai-sales.jpg'],
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai',
   },
   other: {
     'preload': '/ressources/meilleurs-livres/digital-ai/the-second-machine-age as document',

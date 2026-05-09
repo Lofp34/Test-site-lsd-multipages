@@ -237,7 +237,7 @@ export const ouiProgressifData: NegotiationTechnique = {
       'closing commercial',
       'psychologie vente'
     ],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/oui-progressif'
+    canonicalUrl: 'https://www.laurentserre.com/ressources/techniques-de-negociation/oui-progressif'
   },
   
   trackingEvents: [

@@ -20,7 +20,7 @@ const categoryStructuredData = {
   "@type": "CollectionPage",
   "name": "Psychologie & Influence - Meilleurs Livres",
   "description": "Les meilleurs livres sur la psychologie de la vente et l'influence éthique. Influence de Cialdini, Comment se faire des amis, Thinking Fast and Slow. Résumés détaillés et conseils terrain de Laurent Serre.",
-  "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence",
+  "url": "https://www.laurentserre.com/ressources/meilleurs-livres/psychologie-influence",
   "mainEntity": {
     "@type": "ItemList",
     "name": "Meilleurs livres Psychologie & Influence",
@@ -31,35 +31,35 @@ const categoryStructuredData = {
         "position": 1,
         "name": "Influence: The Psychology of Persuasion",
         "author": "Robert Cialdini",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence/influence-psychology-persuasion"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/psychologie-influence/influence-psychology-persuasion"
       },
       {
         "@type": "Book", 
         "position": 2,
         "name": "Comment se faire des amis",
         "author": "Dale Carnegie",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence/comment-se-faire-des-amis"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/psychologie-influence/comment-se-faire-des-amis"
       },
       {
         "@type": "Book",
         "position": 3, 
         "name": "Thinking, Fast and Slow",
         "author": "Daniel Kahneman",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence/thinking-fast-slow"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/psychologie-influence/thinking-fast-slow"
       },
       {
         "@type": "Book",
         "position": 4,
         "name": "Predictably Irrational", 
         "author": "Dan Ariely",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence/predictably-irrational"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/psychologie-influence/predictably-irrational"
       },
       {
         "@type": "Book",
         "position": 5,
         "name": "Pré-Suasion",
         "author": "Robert Cialdini", 
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence/pre-suasion"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/psychologie-influence/pre-suasion"
       }
     ]
   },
@@ -70,19 +70,19 @@ const categoryStructuredData = {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://laurent-serre-developpement.fr"
+        "item": "https://www.laurentserre.com"
       },
       {
         "@type": "ListItem", 
         "position": 2,
         "name": "Ressources",
-        "item": "https://laurent-serre-developpement.fr/ressources"
+        "item": "https://www.laurentserre.com/ressources"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Meilleurs Livres",
-        "item": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres"
+        "item": "https://www.laurentserre.com/ressources/meilleurs-livres"
       },
       {
         "@type": "ListItem",
@@ -112,25 +112,25 @@ export const metadata: Metadata = {
     description: 'Les meilleurs livres sur la psychologie de la vente et l\'influence éthique. Influence de Cialdini, Comment se faire des amis, Thinking Fast and Slow. Résumés détaillés et conseils terrain.',
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/psychologie-influence',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-psychologie-influence.jpg',
+        url: 'https://www.laurentserre.com/images/og-psychologie-influence.jpg',
         width: 1200,
         height: 630,
         alt: 'Psychologie & Influence - Meilleurs Livres par Laurent Serre',
       },
     ],
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Psychologie & Influence | Meilleurs Livres | Laurent Serre',
     description: 'Les meilleurs livres sur la psychologie de la vente et l\'influence éthique. Influence de Cialdini, Comment se faire des amis, Thinking Fast and Slow.',
-    images: ['https://laurent-serre-developpement.fr/images/og-psychologie-influence.jpg'],
+    images: ['https://www.laurentserre.com/images/og-psychologie-influence.jpg'],
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/psychologie-influence',
   },
   other: {
     'preload': '/ressources/meilleurs-livres/psychologie-influence/influence-psychology-persuasion as document',

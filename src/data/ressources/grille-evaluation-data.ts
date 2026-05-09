@@ -134,18 +134,18 @@ export const grilleEvaluationData: ResourceTool = {
       'plan développement commercial',
       'management équipe commerciale'
     ],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/grille-evaluation',
+    canonicalUrl: 'https://www.laurentserre.com/ressources/grille-evaluation',
     openGraph: {
       title: 'Grille d\'Évaluation Commerciale | Outil Gratuit Manager',
       description: 'Évaluez objectivement vos commerciaux avec notre grille gratuite. 25 critères mesurables, plans de développement automatiques.',
-      image: 'https://laurent-serre-developpement.fr/ressources/og/grille-evaluation-og.jpg',
+      image: 'https://www.laurentserre.com/ressources/og/grille-evaluation-og.jpg',
       type: 'website'
     },
     twitter: {
       card: 'summary_large_image',
       title: 'Grille d\'Évaluation Commerciale | Outil Gratuit Manager',
       description: 'Évaluez objectivement vos commerciaux avec notre grille gratuite. 25 critères mesurables, plans de développement automatiques.',
-      image: 'https://laurent-serre-developpement.fr/ressources/og/grille-evaluation-og.jpg'
+      image: 'https://www.laurentserre.com/ressources/og/grille-evaluation-og.jpg'
     },
     structuredData: {
       type: 'DigitalDocument',
@@ -154,9 +154,9 @@ export const grilleEvaluationData: ResourceTool = {
       provider: {
         '@type': 'Person',
         name: 'Laurent Serre',
-        url: 'https://laurent-serre-developpement.fr'
+        url: 'https://www.laurentserre.com'
       },
-      downloadUrl: 'https://laurent-serre-developpement.fr/ressources/grille-evaluation',
+      downloadUrl: 'https://www.laurentserre.com/ressources/grille-evaluation',
       fileFormat: 'application/vnd.ms-excel',
       datePublished: '2024-02-01',
       dateModified: '2024-12-01'

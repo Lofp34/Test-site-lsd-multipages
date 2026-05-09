@@ -50,7 +50,7 @@ export default function ClosingB2BTechniques() {
             "dateModified": "2026-05-03",
             "image": "https://www.laurentserre.com/images/closing_post.png",
             "url": "https://www.laurentserre.com/blog/closing-b2b-7-techniques",
-            "publisher": { "@type": "Organization", "name": "Laurent Serre Développement", "url": "https://www.laurentserre.com" }
+            "publisher": { "@type": "Organization", "name": "Laurent Serre", "url": "https://www.laurentserre.com" }
           })
         }}
       />

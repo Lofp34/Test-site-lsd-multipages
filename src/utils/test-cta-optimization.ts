@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any, @typescript-eslint/no-unused-vars */
+
 /**
  * Test script for CTA optimization by domain
  * Validates that each page has the correct domain-specific CTAs

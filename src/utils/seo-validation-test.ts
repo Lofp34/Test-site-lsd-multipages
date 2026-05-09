@@ -30,7 +30,7 @@ const expectedSEOMetadata = {
     title: 'Digital & AI Sales | Meilleurs Livres | Laurent Serre',
     description: 'Les meilleurs livres sur l\'IA et la transformation digitale en vente. The Second Machine Age, AI Superpowers, Human + Machine. Résumés détaillés et conseils terrain de Laurent Serre.',
     keywords: ['IA vente', 'digital sales', 'intelligence artificielle commercial', 'transformation digitale', 'vente augmentée'],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai',
+    canonicalUrl: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai',
     ogTitle: 'Digital & AI Sales | Meilleurs Livres | Laurent Serre',
     ogDescription: 'Les meilleurs livres sur l\'IA et la transformation digitale en vente. The Second Machine Age, AI Superpowers, Human + Machine. Résumés détaillés et conseils terrain.',
     twitterCard: 'summary_large_image'
@@ -40,7 +40,7 @@ const expectedSEOMetadata = {
     title: 'Sales Management & Leadership | Meilleurs Livres | Laurent Serre',
     description: 'Les meilleurs livres de management et leadership commercial. Good to Great, High Output Management, Blue Ocean Strategy. Résumés détaillés et avis terrain de Laurent Serre.',
     keywords: ['management commercial', 'leadership vente', 'manager équipe commerciale', 'good to great', 'high output management'],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management',
+    canonicalUrl: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management',
     ogTitle: 'Sales Management & Leadership | Meilleurs Livres | Laurent Serre',
     ogDescription: 'Les meilleurs livres de management et leadership commercial. Good to Great, High Output Management, Blue Ocean Strategy. Résumés détaillés et avis terrain.',
     twitterCard: 'summary_large_image'
@@ -50,7 +50,7 @@ const expectedSEOMetadata = {
     title: 'Mindset & Performance | Meilleurs Livres | Laurent Serre',
     description: 'Les meilleurs livres sur le mindset et la performance personnelle. Atomic Habits, Les 7 habitudes, Mindset de Carol Dweck, Grit. Résumés détaillés et conseils terrain de Laurent Serre.',
     keywords: ['mindset commercial', 'performance personnelle', 'état d\'esprit gagnant', 'développement personnel commercial', 'habitudes performance'],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance',
+    canonicalUrl: 'https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance',
     ogTitle: 'Mindset & Performance | Meilleurs Livres | Laurent Serre',
     ogDescription: 'Les meilleurs livres sur le mindset et la performance personnelle. Atomic Habits, Les 7 habitudes, Mindset de Carol Dweck, Grit. Résumés détaillés et conseils terrain.',
     twitterCard: 'summary_large_image'
@@ -65,7 +65,7 @@ const expectedStructuredData = {
     '@type': 'CollectionPage',
     name: 'Digital & AI Sales - Meilleurs Livres',
     description: 'La transformation numérique et l\'intelligence artificielle révolutionnent le métier commercial. Découvrez les références essentielles pour maîtriser l\'IA en vente.',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai',
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: 5
@@ -79,7 +79,7 @@ const expectedStructuredData = {
     '@type': 'CollectionPage',
     name: 'Sales Management & Leadership - Meilleurs Livres',
     description: 'Management et leadership commercial : les références pour diriger, motiver et développer des équipes commerciales performantes.',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management',
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: 5
@@ -93,7 +93,7 @@ const expectedStructuredData = {
     '@type': 'CollectionPage',
     name: 'Mindset & Performance - Meilleurs Livres',
     description: 'Développer un état d\'esprit de croissance et optimiser ses performances personnelles. Découvrez les références essentielles pour cultiver l\'état d\'esprit gagnant et maximiser votre potentiel commercial.',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance',
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: 5

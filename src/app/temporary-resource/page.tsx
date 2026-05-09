@@ -26,11 +26,11 @@ export async function generateMetadata({ searchParams }: PageProps): Promise<Met
   const title = searchParams.title || 'Ressource en développement';
   
   return {
-    title: `${title} | Laurent Serre Développement`,
+    title: `${title} | Laurent Serre`,
     description: searchParams.description || 'Cette ressource est actuellement en cours de développement et sera disponible prochainement.',
     robots: 'noindex, nofollow', // Éviter l'indexation des pages temporaires
     openGraph: {
-      title: `${title} | Laurent Serre Développement`,
+      title: `${title} | Laurent Serre`,
       description: searchParams.description || 'Ressource en cours de développement',
       type: 'website',
       locale: 'fr_FR',

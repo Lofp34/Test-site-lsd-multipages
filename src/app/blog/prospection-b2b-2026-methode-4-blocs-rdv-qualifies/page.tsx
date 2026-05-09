@@ -47,7 +47,7 @@ export default function ProspectionB2B4BlocsPage() {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Laurent Serre Développement",
+    "name": "Laurent Serre",
     "url": "https://www.laurentserre.com"
   },
   "mainEntityOfPage": {

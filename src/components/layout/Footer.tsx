@@ -12,7 +12,7 @@ export default function Footer() {
           <div className="md:col-span-2 lg:col-span-2">
             <div className="mb-6">
               <h3 className="text-2xl font-title font-bold text-primary-bg mb-2">
-                Laurent Serre Développement
+                Laurent Serre
               </h3>
               <div className="w-16 h-1 bg-mint-green rounded-full mb-4"></div>
               <p className="font-body text-white leading-relaxed">
@@ -174,7 +174,7 @@ export default function Footer() {
         <div className="py-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
             <p className="font-body text-white text-sm">
-              © {currentYear} Laurent Serre Développement. Tous droits réservés.
+              © {currentYear} Laurent Serre. Tous droits réservés.
             </p>
           </div>
 

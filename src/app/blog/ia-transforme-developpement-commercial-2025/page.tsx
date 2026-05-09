@@ -44,7 +44,7 @@ export default function Article2() {
             "dateModified": "2026-05-03",
             "image": "https://www.laurentserre.com/tableau-de-bord.jpeg",
             "url": "https://www.laurentserre.com/blog/ia-transforme-developpement-commercial-2025",
-            "publisher": { "@type": "Organization", "name": "Laurent Serre Développement", "url": "https://www.laurentserre.com" }
+            "publisher": { "@type": "Organization", "name": "Laurent Serre", "url": "https://www.laurentserre.com" }
           })
         }}
       />

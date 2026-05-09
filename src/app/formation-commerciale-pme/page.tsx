@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     url: 'https://www.laurentserre.com/formation-commerciale-pme',
     type: 'website',
     locale: 'fr_FR',
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   robots: {
     index: true,
@@ -34,7 +34,7 @@ export default function FormationCommercialePMEPage() {
         data={{
           name: "Formation Commerciale PME — Prospection, Closing, Management",
           description: "Formation commerciale PME terrain : prospection, closing, management et pilotage de la performance. Bootcamp intensif et accompagnement mesurable adaptés aux PME.",
-          provider: { "@type": "ProfessionalService", "name": "Laurent Serre Développement" },
+          provider: { "@type": "ProfessionalService", "name": "Laurent Serre" },
           areaServed: { "@type": "Country", "name": "France" },
         }}
       />

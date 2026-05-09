@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     'développement personnel commercial'
   ],
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance/7-habitudes-gens-efficaces',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance/7-habitudes-gens-efficaces',
   },
 };
 

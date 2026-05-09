@@ -3,7 +3,7 @@ import { ArrowLeft, DraftingCompass, Target, TrendingUp, Users, BarChart, CheckC
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Outil Stratégie Commerciale sur 1 an | Laurent Serre Développement',
+  title: 'Outil Stratégie Commerciale sur 1 an | Laurent Serre',
   description: 'Construisez votre plan d\'action commercial sur 1 an avec notre outil interactif. Définissez objectifs, stratégies et tactiques pour réussir.',
   keywords: 'stratégie commerciale, plan action commercial, objectifs commerciaux, tactiques de vente, développement commercial PME',
   authors: [{ name: 'Laurent Serre' }],
@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/ressources/outil-strategie-commerciale',
   },
   openGraph: {
-    title: 'Outil Stratégie Commerciale sur 1 an | Laurent Serre Développement',
+    title: 'Outil Stratégie Commerciale sur 1 an | Laurent Serre',
     description: 'Construisez votre plan d\'action commercial sur 1 an avec notre outil interactif. Définissez objectifs, stratégies et tactiques pour réussir.',
     url: 'https://www.laurentserre.com/ressources/outil-strategie-commerciale',
     type: 'article',
     locale: 'fr_FR',
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
     images: [
       {
         url: 'https://www.laurentserre.com/laurent.jpg',

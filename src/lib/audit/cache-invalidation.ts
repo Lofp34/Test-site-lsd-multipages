@@ -50,7 +50,7 @@ export class CacheInvalidationManager {
     this.invalidationRules = [
       // Invalidate all caches for homepage changes
       {
-        pattern: /^https:\/\/laurent-serre-developpement\.fr\/?$/,
+        pattern: /^https:\/\/www.laurentserre.com\/?$/,
         cacheTypes: ['links', 'sitemap', 'reports'],
         reason: 'Homepage content change',
         priority: 'critical',

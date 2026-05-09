@@ -3,7 +3,7 @@ import { ArrowLeft, Target, Crown, Users, TrendingUp, Calendar, Star, Shield, Za
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Kit Gestion Grands Comptes | Laurent Serre Développement',
+  title: 'Kit Gestion Grands Comptes | Laurent Serre',
   description: 'Méthodes et outils pour développer vos comptes stratégiques. Kit complet pour Key Account Managers et commerciaux grands comptes.',
   keywords: 'gestion grands comptes, key account manager, comptes stratégiques, développement grands comptes, KAM, commercial grands comptes',
   authors: [{ name: 'Laurent Serre' }],
@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/ressources/kit-gestion-grands-comptes',
   },
   openGraph: {
-    title: 'Kit Gestion Grands Comptes | Laurent Serre Développement',
+    title: 'Kit Gestion Grands Comptes | Laurent Serre',
     description: 'Méthodes et outils pour développer vos comptes stratégiques. Kit complet pour Key Account Managers.',
     url: 'https://www.laurentserre.com/ressources/kit-gestion-grands-comptes',
     type: 'article',
     locale: 'fr_FR',
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
     images: [
       {
         url: 'https://www.laurentserre.com/laurent.jpg',

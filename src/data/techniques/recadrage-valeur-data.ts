@@ -237,7 +237,7 @@ export const recadrageValeurData: NegotiationTechnique = {
       'coût inaction',
       'closing commercial'
     ],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/recadrage-valeur'
+    canonicalUrl: 'https://www.laurentserre.com/ressources/techniques-de-negociation/recadrage-valeur'
   },
   
   trackingEvents: [

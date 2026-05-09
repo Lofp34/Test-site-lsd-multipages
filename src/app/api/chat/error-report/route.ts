@@ -168,8 +168,8 @@ function sanitizeUrl(url: string): string {
     
     // Vérifier que c'est une URL de notre domaine ou localhost
     const allowedHosts = [
-      'laurent-serre-developpement.fr',
-      'www.laurent-serre-developpement.fr',
+      'www.laurentserre.com',
+      'www.laurentserre.com',
       'localhost'
     ];
     

@@ -232,7 +232,7 @@ export const silenceStrategiqueData: NegotiationTechnique = {
       'pression négociation',
       'psychologie vente'
     ],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/silence-strategique'
+    canonicalUrl: 'https://www.laurentserre.com/ressources/techniques-de-negociation/silence-strategique'
   },
   
   trackingEvents: [

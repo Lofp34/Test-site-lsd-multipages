@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     title: 'Blue Ocean Strategy : résumé complet | Sales Management & Leadership',
     description: 'Résumé détaillé, matrice ERAC, innovation-valeur et avis terrain de Blue Ocean Strategy (Kim & Mauborgne). Créer de nouveaux espaces stratégiques.',
     type: 'article',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/blue-ocean-strategy',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/blue-ocean-strategy',
     locale: 'fr_FR',
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management/blue-ocean-strategy',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/blue-ocean-strategy',
   },
   twitter: {
     card: 'summary_large_image',

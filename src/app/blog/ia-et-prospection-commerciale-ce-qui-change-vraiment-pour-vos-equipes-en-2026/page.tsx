@@ -60,7 +60,7 @@ export default function IAProspectionCommerciale() {
     },
     publisher: {
       '@type': 'Organization',
-      name: 'Laurent Serre Développement',
+      name: 'Laurent Serre',
       url: 'https://www.laurentserre.com',
       logo: {
         '@type': 'ImageObject',

@@ -60,7 +60,7 @@ describe('Tests de charge et performance - Système optimisé Vercel', () => {
   // Génération de 498 liens de test
   const generateTestLinks = (count: number = 498): string[] => {
     const baseUrls = [
-      'https://laurent-serre-developpement.fr',
+      'https://www.laurentserre.com',
       'https://example.com',
       'https://httpbin.org',
       'https://jsonplaceholder.typicode.com'

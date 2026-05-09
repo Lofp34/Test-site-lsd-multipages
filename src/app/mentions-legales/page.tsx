@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Mentions Légales – Laurent Serre Développement",
-  description: "Informations légales sur Laurent Serre Développement : éditeur, hébergeur, propriété intellectuelle et données personnelles.",
+  title: "Mentions Légales – Laurent Serre",
+  description: "Informations légales sur Laurent Serre : éditeur, hébergeur, propriété intellectuelle et données personnelles.",
   alternates: {
     canonical: "https://www.laurentserre.com/mentions-legales"
   },
@@ -27,7 +27,7 @@ export default function MentionsLegales() {
           <div className="space-y-10 font-body text-lg leading-8 text-gray-700">
             <div className="p-8 border border-gray-200 rounded-2xl bg-white shadow-sm">
               <h2 className="text-2xl font-title font-bold text-blue-ink mb-4">1. Éditeur du site</h2>
-              <p>Laurent Serre Développement – SARL au capital de 300 000 €</p>
+              <p>Laurent Serre – SARL au capital de 300 000 €</p>
               <p>Siège social : 259, rue de la lavande, 34130 Mauguio</p>
               <p>Immatriculée au RCS de Montpellier sous le n° 435292941 – TVA : FR39435292941</p>
               <p>E-mail : ls@laurentserre.com – Tél. : +33 6 14 94 40 60</p>
@@ -50,7 +50,7 @@ export default function MentionsLegales() {
               <h2 className="text-2xl font-title font-bold text-blue-ink mb-4">4. Propriété intellectuelle</h2>
               <p>
                 L’ensemble des contenus (textes, images, logos, vidéos, icônes, mise en page) est la propriété exclusive
-                de Laurent Serre Développement, sauf mention contraire. Toute reproduction, représentation,
+                de Laurent Serre, sauf mention contraire. Toute reproduction, représentation,
                 modification, publication, adaptation, totale ou partielle, est interdite sans autorisation écrite préalable.
               </p>
             </div>
@@ -59,7 +59,7 @@ export default function MentionsLegales() {
               <h2 className="text-2xl font-title font-bold text-blue-ink mb-4">5. Données personnelles</h2>
               <p>
                 Les informations collectées via les formulaires (nom, e-mail, téléphone, société) sont traitées par
-                Laurent Serre Développement pour :
+                Laurent Serre pour :
               </p>
               <ul className="list-disc list-inside my-4 space-y-2">
                 <li>Répondre aux demandes de contact</li>

@@ -47,7 +47,7 @@ export default function Article4() {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Laurent Serre Développement",
+    "name": "Laurent Serre",
     "url": "https://www.laurentserre.com"
   },
   "mainEntityOfPage": {

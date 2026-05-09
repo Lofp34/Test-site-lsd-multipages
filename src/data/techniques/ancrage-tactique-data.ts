@@ -237,7 +237,7 @@ export const ancrageTactiqueData: NegotiationTechnique = {
       'psychologie vente',
       'techniques persuasion'
     ],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ancrage-tactique'
+    canonicalUrl: 'https://www.laurentserre.com/ressources/techniques-de-negociation/ancrage-tactique'
   },
   
   trackingEvents: [

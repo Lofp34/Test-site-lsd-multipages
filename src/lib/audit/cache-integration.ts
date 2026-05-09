@@ -425,15 +425,15 @@ export class CacheManager {
     try {
       // Warm up sitemap cache
       const sitemapProcessor = new CachedSitemapProcessor();
-      await sitemapProcessor.processSitemap('https://laurent-serre-developpement.fr/sitemap.xml');
+      await sitemapProcessor.processSitemap('https://www.laurentserre.com/sitemap.xml');
       
       // Warm up critical links cache
       const validator = new CachedLinkValidator();
       const criticalUrls = [
-        'https://laurent-serre-developpement.fr',
-        'https://laurent-serre-developpement.fr/contact',
-        'https://laurent-serre-developpement.fr/services',
-        'https://laurent-serre-developpement.fr/ressources',
+        'https://www.laurentserre.com',
+        'https://www.laurentserre.com/contact',
+        'https://www.laurentserre.com/services',
+        'https://www.laurentserre.com/ressources',
       ];
       
       await validator.validateBatch(criticalUrls);

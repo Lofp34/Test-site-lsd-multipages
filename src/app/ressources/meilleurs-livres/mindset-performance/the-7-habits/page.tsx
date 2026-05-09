@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     'gagnant-gagnant'
   ],
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance/the-7-habits',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance/the-7-habits',
   },
 };
 

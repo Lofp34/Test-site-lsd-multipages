@@ -8,9 +8,9 @@ export const metadata: Metadata = {
   title: grilleEvaluationData.seoConfig.title,
   description: grilleEvaluationData.seoConfig.description,
   keywords: grilleEvaluationData.seoConfig.keywords,
-  authors: [{ name: 'Laurent Serre', url: 'https://laurent-serre-developpement.fr' }],
+  authors: [{ name: 'Laurent Serre', url: 'https://www.laurentserre.com' }],
   creator: 'Laurent Serre',
-  publisher: 'Laurent Serre Développement',
+  publisher: 'Laurent Serre',
   robots: {
     index: true,
     follow: true,
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'fr_FR',
     url: grilleEvaluationData.seoConfig.canonicalUrl,
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
     images: [
       {
         url: grilleEvaluationData.seoConfig.openGraph.image,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         type: 'image/jpeg',
       },
       {
-        url: 'https://laurent-serre-developpement.fr/images/grille-evaluation-square.jpg',
+        url: 'https://www.laurentserre.com/images/grille-evaluation-square.jpg',
         width: 400,
         height: 400,
         alt: 'Grille d\'Évaluation - Aperçu',
@@ -93,12 +93,12 @@ const GrilleEvaluationPage: React.FC = () => {
     "author": {
       "@type": "Person",
       "name": "Laurent Serre",
-      "url": "https://laurent-serre-developpement.fr",
+      "url": "https://www.laurentserre.com",
       "jobTitle": "Expert en développement commercial PME",
       "worksFor": {
         "@type": "Organization",
-        "name": "Laurent Serre Développement",
-        "url": "https://laurent-serre-developpement.fr"
+        "name": "Laurent Serre",
+        "url": "https://www.laurentserre.com"
       }
     },
     "provider": {
@@ -130,19 +130,19 @@ const GrilleEvaluationPage: React.FC = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://laurent-serre-developpement.fr"
+        "item": "https://www.laurentserre.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Ressources",
-        "item": "https://laurent-serre-developpement.fr/ressources"
+        "item": "https://www.laurentserre.com/ressources"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Grille d'Évaluation Commerciale",
-        "item": "https://laurent-serre-developpement.fr/ressources/grille-evaluation"
+        "item": "https://www.laurentserre.com/ressources/grille-evaluation"
       }
     ]
   };
@@ -150,9 +150,9 @@ const GrilleEvaluationPage: React.FC = () => {
   const organizationStructuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Laurent Serre Développement",
-    "url": "https://laurent-serre-developpement.fr",
-    "logo": "https://laurent-serre-developpement.fr/images/logo.png",
+    "name": "Laurent Serre",
+    "url": "https://www.laurentserre.com",
+    "logo": "https://www.laurentserre.com/images/logo.png",
     "founder": {
       "@type": "Person",
       "name": "Laurent Serre"

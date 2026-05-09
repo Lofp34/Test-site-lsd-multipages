@@ -293,7 +293,7 @@ function DiagnosticPage() {
                 </button>
 
                 <p className="text-xs text-gray-500 text-center">
-                  En soumettant ce formulaire, vous acceptez d'être contacté par Laurent Serre Développement. 
+                  En soumettant ce formulaire, vous acceptez d'être contacté par Laurent Serre. 
                   Vos données sont confidentielles et ne seront jamais transmises à des tiers.
                 </p>
               </form>

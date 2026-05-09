@@ -64,7 +64,7 @@ const mockTechnique: NegotiationTechnique = {
     title: 'L\'effet miroir | Technique FBI Chris Voss | Laurent Serre',
     description: 'Maîtrisez l\'effet miroir de Chris Voss pour vos négociations PME.',
     keywords: ['effet miroir', 'chris voss', 'négociation'],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/effet-miroir'
+    canonicalUrl: 'https://www.laurentserre.com/ressources/techniques-de-negociation/effet-miroir'
   },
   trackingEvents: [
     {
@@ -77,17 +77,17 @@ const mockTechnique: NegotiationTechnique = {
 
 const mockSEOConfig = {
   technique: mockTechnique,
-  baseUrl: 'https://laurent-serre-developpement.fr',
+  baseUrl: 'https://www.laurentserre.com',
   authorInfo: {
     name: 'Laurent Serre',
-    url: 'https://laurent-serre-developpement.fr/a-propos',
-    image: 'https://laurent-serre-developpement.fr/images/laurent-serre.jpg',
+    url: 'https://www.laurentserre.com/a-propos',
+    image: 'https://www.laurentserre.com/images/laurent-serre.jpg',
     description: 'Expert en développement commercial PME'
   },
   organizationInfo: {
-    name: 'Laurent Serre Développement',
-    url: 'https://laurent-serre-developpement.fr',
-    logo: 'https://laurent-serre-developpement.fr/images/logo.png',
+    name: 'Laurent Serre',
+    url: 'https://www.laurentserre.com',
+    logo: 'https://www.laurentserre.com/images/logo.png',
     description: 'Formation et coaching commercial pour PME'
   }
 };
@@ -100,14 +100,14 @@ describe('SEO Generator', () => {
       expect(metadata.title).toBe('L\'effet miroir | Technique Chris Voss | Laurent Serre');
       expect(metadata.description).toContain('Maîtrisez L\'effet miroir de Chris Voss');
       expect(metadata.keywords).toContain('effet miroir');
-      expect(metadata.authors).toEqual([{ name: 'Laurent Serre', url: 'https://laurent-serre-developpement.fr/a-propos' }]);
+      expect(metadata.authors).toEqual([{ name: 'Laurent Serre', url: 'https://www.laurentserre.com/a-propos' }]);
     });
 
     it('should generate canonical URL', () => {
       const metadata = SEOGenerator.generateMetadata(mockSEOConfig);
       
       expect(metadata.alternates?.canonical).toBe(
-        'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/effet-miroir'
+        'https://www.laurentserre.com/ressources/techniques-de-negociation/effet-miroir'
       );
     });
 
@@ -200,7 +200,7 @@ describe('SEO Generator', () => {
       expect(metadata.openGraph!.type).toBe('article');
       expect(metadata.openGraph!.locale).toBe('fr_FR');
       expect(metadata.openGraph!.url).toBe(
-        'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/effet-miroir'
+        'https://www.laurentserre.com/ressources/techniques-de-negociation/effet-miroir'
       );
     });
 
@@ -209,7 +209,7 @@ describe('SEO Generator', () => {
       
       expect(metadata.openGraph!.images).toHaveLength(1);
       expect(metadata.openGraph!.images![0]).toMatchObject({
-        url: 'https://laurent-serre-developpement.fr/images/og-effet-miroir.jpg',
+        url: 'https://www.laurentserre.com/images/og-effet-miroir.jpg',
         width: 1200,
         height: 630,
         alt: 'L\'effet miroir - Guide complet par Laurent Serre'
@@ -295,11 +295,11 @@ describe('SEO Generator', () => {
     it('should generate sitemap entry', () => {
       const sitemapEntry = SEOGenerator.generateSitemapEntry(
         mockTechnique,
-        'https://laurent-serre-developpement.fr'
+        'https://www.laurentserre.com'
       );
       
       expect(sitemapEntry).toMatchObject({
-        url: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/effet-miroir',
+        url: 'https://www.laurentserre.com/ressources/techniques-de-negociation/effet-miroir',
         changeFrequency: 'monthly',
         priority: 0.8
       });

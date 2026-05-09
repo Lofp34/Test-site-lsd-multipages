@@ -25,7 +25,7 @@ const categoryStructuredData = {
   "@type": "CollectionPage",
   "name": "Négociation & Closing - Meilleurs Livres",
   "description": "Les meilleurs livres sur la négociation commerciale et les techniques de closing. Never Split the Difference, Getting to Yes, SPIN Selling. Résumés détaillés et conseils terrain de Laurent Serre.",
-  "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/negociation-closing",
+  "url": "https://www.laurentserre.com/ressources/meilleurs-livres/negociation-closing",
   "mainEntity": {
     "@type": "ItemList",
     "name": "Meilleurs livres Négociation & Closing",
@@ -36,35 +36,35 @@ const categoryStructuredData = {
         "position": 1,
         "name": "Never Split the Difference",
         "author": "Chris Voss",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/negociation-closing/never-split-the-difference"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/negociation-closing/never-split-the-difference"
       },
       {
         "@type": "Book", 
         "position": 2,
         "name": "Getting to Yes",
         "author": "Roger Fisher & William Ury",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/negociation-closing/getting-to-yes"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/negociation-closing/getting-to-yes"
       },
       {
         "@type": "Book",
         "position": 3, 
         "name": "SPIN Selling",
         "author": "Neil Rackham",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/negociation-closing/spin-selling"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/negociation-closing/spin-selling"
       },
       {
         "@type": "Book",
         "position": 4,
         "name": "The Challenger Sale", 
         "author": "Matthew Dixon & Brent Adamson",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/negociation-closing/the-challenger-sale"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/negociation-closing/the-challenger-sale"
       },
       {
         "@type": "Book",
         "position": 5,
         "name": "The Lost Art of Closing",
         "author": "Anthony Iannarino", 
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/negociation-closing/the-lost-art-of-closing"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/negociation-closing/the-lost-art-of-closing"
       }
     ]
   },
@@ -75,19 +75,19 @@ const categoryStructuredData = {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://laurent-serre-developpement.fr"
+        "item": "https://www.laurentserre.com"
       },
       {
         "@type": "ListItem", 
         "position": 2,
         "name": "Ressources",
-        "item": "https://laurent-serre-developpement.fr/ressources"
+        "item": "https://www.laurentserre.com/ressources"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Meilleurs Livres",
-        "item": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres"
+        "item": "https://www.laurentserre.com/ressources/meilleurs-livres"
       },
       {
         "@type": "ListItem",
@@ -117,25 +117,25 @@ export const metadata: Metadata = {
     description: 'Les meilleurs livres sur la négociation commerciale et les techniques de closing. Never Split the Difference, Getting to Yes, SPIN Selling. Résumés détaillés et conseils terrain.',
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/negociation-closing',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/negociation-closing',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-negociation-closing.jpg',
+        url: 'https://www.laurentserre.com/images/og-negociation-closing.jpg',
         width: 1200,
         height: 630,
         alt: 'Négociation & Closing - Meilleurs Livres par Laurent Serre',
       },
     ],
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Négociation & Closing | Meilleurs Livres | Laurent Serre',
     description: 'Les meilleurs livres sur la négociation commerciale et les techniques de closing. Never Split the Difference, Getting to Yes, SPIN Selling.',
-    images: ['https://laurent-serre-developpement.fr/images/og-negociation-closing.jpg'],
+    images: ['https://www.laurentserre.com/images/og-negociation-closing.jpg'],
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/negociation-closing',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/negociation-closing',
   },
   other: {
     'preload': '/ressources/meilleurs-livres/negociation-closing/never-split-the-difference as document',

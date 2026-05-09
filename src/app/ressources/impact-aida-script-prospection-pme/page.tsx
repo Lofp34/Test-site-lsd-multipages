@@ -3,18 +3,18 @@ import Link from 'next/link';
 import { Info, CheckCircle, User, BookOpen, ArrowRight, Building, Laptop, Heart, Briefcase, TrendingUp, MessageSquare, Phone, Mail, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Impact & AIDA : Modèle de Script de Prospection PME | Laurent Serre Développement",
+  title: "Impact & AIDA : Modèle de Script de Prospection PME | Laurent Serre",
   description: "Découvrez le modèle de script de prospection Impact & AIDA, conçu pour les PME. Structure étape par étape, conseils d'utilisation, téléchargement gratuit et exemples concrets.",
   alternates: {
     canonical: 'https://www.laurentserre.com/ressources/impact-aida-script-prospection-pme',
   },
   openGraph: {
-    title: "Impact & AIDA : Modèle de Script de Prospection PME | Laurent Serre Développement",
+    title: "Impact & AIDA : Modèle de Script de Prospection PME | Laurent Serre",
     description: "Script de prospection téléphonique et email pour PME. Structure AIDA, conseils pratiques, téléchargement gratuit.",
     url: 'https://www.laurentserre.com/ressources/impact-aida-script-prospection-pme',
     type: 'article',
     locale: 'fr_FR',
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   robots: {
     index: true,

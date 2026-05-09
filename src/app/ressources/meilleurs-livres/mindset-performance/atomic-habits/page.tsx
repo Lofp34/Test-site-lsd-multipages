@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     'système vs objectifs'
   ],
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance/atomic-habits',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance/atomic-habits',
   },
 };
 

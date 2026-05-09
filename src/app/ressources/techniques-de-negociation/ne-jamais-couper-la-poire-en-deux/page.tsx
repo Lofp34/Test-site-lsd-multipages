@@ -33,9 +33,9 @@ export const metadata: Metadata = {
     'alternatives créatives négociation',
     'empathie tactique'
   ],
-  authors: [{ name: 'Laurent Serre', url: 'https://laurent-serre-developpement.fr' }],
+  authors: [{ name: 'Laurent Serre', url: 'https://www.laurentserre.com' }],
   creator: 'Laurent Serre',
-  publisher: 'Laurent Serre Développement',
+  publisher: 'Laurent Serre',
   formatDetection: {
     email: false,
     address: false,
@@ -46,18 +46,18 @@ export const metadata: Metadata = {
     description: 'Maîtrisez la technique de négociation FBI "Ne jamais couper la poire en deux" avec les conseils terrain de Laurent Serre. 85% de préservation des marges, cas PME concrets.',
     type: 'article',
     locale: 'fr_FR',
-    url: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux',
-    siteName: 'Laurent Serre Développement',
+    url: 'https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux',
+    siteName: 'Laurent Serre',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-technique-ne-jamais-couper-poire.jpg',
+        url: 'https://www.laurentserre.com/images/og-technique-ne-jamais-couper-poire.jpg',
         width: 1200,
         height: 630,
         alt: 'Technique FBI Ne jamais couper la poire en deux - Laurent Serre Expert Négociation',
         type: 'image/jpeg',
       },
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-technique-ne-jamais-couper-poire-square.jpg',
+        url: 'https://www.laurentserre.com/images/og-technique-ne-jamais-couper-poire-square.jpg',
         width: 600,
         height: 600,
         alt: 'Technique FBI Ne jamais couper la poire en deux - Laurent Serre',
@@ -79,12 +79,12 @@ export const metadata: Metadata = {
     title: 'Ne jamais couper la poire en deux | Technique FBI | Laurent Serre',
     description: 'Maîtrisez la technique de négociation FBI avec 85% de préservation des marges. Guide complet avec cas PME.',
     images: {
-      url: 'https://laurent-serre-developpement.fr/images/og-technique-ne-jamais-couper-poire.jpg',
+      url: 'https://www.laurentserre.com/images/og-technique-ne-jamais-couper-poire.jpg',
       alt: 'Technique FBI Ne jamais couper la poire en deux - Laurent Serre',
     },
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux',
+    canonical: 'https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux',
   },
   robots: {
     index: true,
@@ -102,13 +102,13 @@ export const metadata: Metadata = {
   },
   other: {
     'article:author': 'Laurent Serre',
-    'article:publisher': 'https://laurent-serre-developpement.fr',
+    'article:publisher': 'https://www.laurentserre.com',
     'article:reading_time': '15',
     'article:word_count': '3500',
     'og:see_also': [
-      'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation',
-      'https://laurent-serre-developpement.fr/formation-commerciale-pme',
-      'https://laurent-serre-developpement.fr/expert-developpement-commercial-pme'
+      'https://www.laurentserre.com/ressources/techniques-de-negociation',
+      'https://www.laurentserre.com/formation-commerciale-pme',
+      'https://www.laurentserre.com/expert-developpement-commercial-pme'
     ],
     // Métadonnées pour featured snippets
     'og:type': 'article',
@@ -121,7 +121,7 @@ export const metadata: Metadata = {
     'schema:dateModified': '2025-01-27T10:00:00+01:00',
     'schema:headline': 'Ne jamais couper la poire en deux - Technique FBI de Chris Voss',
     'schema:description': 'Guide complet de la technique de négociation FBI adaptée aux PME françaises',
-    'schema:image': 'https://laurent-serre-developpement.fr/images/technique-ne-jamais-couper-poire.jpg',
+    'schema:image': 'https://www.laurentserre.com/images/technique-ne-jamais-couper-poire.jpg',
     // Métadonnées pour l'indexation mobile
     'mobile-web-app-capable': 'yes',
     'mobile-web-app-status-bar-style': 'default',
@@ -144,15 +144,15 @@ const techniqueStructuredData = {
   "@graph": [
     {
       "@type": "Article",
-      "@id": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#article",
+      "@id": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#article",
       "headline": "Ne jamais couper la poire en deux - Technique FBI de Chris Voss",
       "alternativeHeadline": "Technique de négociation FBI pour préserver ses marges sans compromettre la relation client",
       "description": "Guide complet de la technique de négociation de Chris Voss adaptée au contexte PME français par Laurent Serre. 85% de préservation des marges, scripts inclus.",
       "author": {
         "@type": "Person",
-        "@id": "https://laurent-serre-developpement.fr#laurent-serre",
+        "@id": "https://www.laurentserre.com#laurent-serre",
         "name": "Laurent Serre",
-        "url": "https://laurent-serre-developpement.fr",
+        "url": "https://www.laurentserre.com",
         "jobTitle": "Expert Développement Commercial PME",
         "description": "Expert en développement commercial PME avec 20 ans d'expérience terrain",
         "sameAs": [
@@ -161,7 +161,7 @@ const techniqueStructuredData = {
         ],
         "worksFor": {
           "@type": "Organization",
-          "name": "Laurent Serre Développement"
+          "name": "Laurent Serre"
         },
         "knowsAbout": [
           "Négociation commerciale",
@@ -172,12 +172,12 @@ const techniqueStructuredData = {
       },
       "publisher": {
         "@type": "Organization",
-        "@id": "https://laurent-serre-developpement.fr#organization",
-        "name": "Laurent Serre Développement",
-        "url": "https://laurent-serre-developpement.fr",
+        "@id": "https://www.laurentserre.com#organization",
+        "name": "Laurent Serre",
+        "url": "https://www.laurentserre.com",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://laurent-serre-developpement.fr/images/logo-laurent-serre.png",
+          "url": "https://www.laurentserre.com/images/logo-laurent-serre.png",
           "width": 400,
           "height": 400
         },
@@ -192,19 +192,19 @@ const techniqueStructuredData = {
       "dateModified": "2025-01-27T10:00:00+01:00",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux"
+        "@id": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux"
       },
       "image": [
         {
           "@type": "ImageObject",
-          "url": "https://laurent-serre-developpement.fr/images/technique-ne-jamais-couper-poire.jpg",
+          "url": "https://www.laurentserre.com/images/technique-ne-jamais-couper-poire.jpg",
           "width": 1200,
           "height": 630,
           "caption": "Technique FBI Ne jamais couper la poire en deux par Laurent Serre"
         },
         {
           "@type": "ImageObject",
-          "url": "https://laurent-serre-developpement.fr/images/chris-voss-fbi-technique.jpg",
+          "url": "https://www.laurentserre.com/images/chris-voss-fbi-technique.jpg",
           "width": 800,
           "height": 600,
           "caption": "Chris Voss, ancien négociateur FBI, créateur de la technique"
@@ -251,12 +251,12 @@ const techniqueStructuredData = {
     },
     {
       "@type": "HowTo",
-      "@id": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#howto",
+      "@id": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#howto",
       "name": "Comment appliquer la technique 'Ne jamais couper la poire en deux'",
       "description": "Guide étape par étape pour maîtriser la technique de négociation FBI de Chris Voss adaptée aux PME françaises. Préservez 85% de vos marges sans compromettre la relation client.",
       "image": {
         "@type": "ImageObject",
-        "url": "https://laurent-serre-developpement.fr/images/technique-ne-jamais-couper-poire.jpg",
+        "url": "https://www.laurentserre.com/images/technique-ne-jamais-couper-poire.jpg",
         "width": 1200,
         "height": 630
       },
@@ -309,10 +309,10 @@ const techniqueStructuredData = {
           "position": 1,
           "name": "Préparation mentale et ancrage de valeur",
           "text": "Ancrez votre valeur et préparez-vous mentalement à ne jamais céder sur l'essentiel. Calculez votre prix plancher ET vos alternatives avant la négociation. Préparez 3-5 alternatives créatives qui préservent votre marge.",
-          "url": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#preparation",
+          "url": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#preparation",
           "image": {
             "@type": "ImageObject",
-            "url": "https://laurent-serre-developpement.fr/images/step-preparation.jpg",
+            "url": "https://www.laurentserre.com/images/step-preparation.jpg",
             "width": 800,
             "height": 600
           }
@@ -322,10 +322,10 @@ const techniqueStructuredData = {
           "position": 2,
           "name": "Le refus empathique - Technique du 'Non' protecteur",
           "text": "Refusez avec empathie tactique pour préserver la relation. Commencez TOUJOURS par l'empathie : 'Je comprends que...' puis utilisez 'Cependant' pour la transition vers votre position ferme.",
-          "url": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#refus-empathique",
+          "url": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#refus-empathique",
           "image": {
             "@type": "ImageObject",
-            "url": "https://laurent-serre-developpement.fr/images/step-refus-empathique.jpg",
+            "url": "https://www.laurentserre.com/images/step-refus-empathique.jpg",
             "width": 800,
             "height": 600
           }
@@ -335,10 +335,10 @@ const techniqueStructuredData = {
           "position": 3,
           "name": "Alternatives créatives - La 'Magie' de Chris Voss",
           "text": "Au lieu de couper la poire en deux, créez de la valeur nouvelle. Proposez 3-5 alternatives qui préservent votre marge : paiement échelonné, version modulaire, services additionnels inclus.",
-          "url": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#alternatives",
+          "url": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#alternatives",
           "image": {
             "@type": "ImageObject",
-            "url": "https://laurent-serre-developpement.fr/images/step-alternatives.jpg",
+            "url": "https://www.laurentserre.com/images/step-alternatives.jpg",
             "width": 800,
             "height": 600
           }
@@ -348,10 +348,10 @@ const techniqueStructuredData = {
           "position": 4,
           "name": "Maintien ferme avec empathie tactique",
           "text": "Répétez calmement votre position avec empathie renouvelée. Utilisez la technique du 'disque rayé' : reformulez leur problème pour montrer votre compréhension, puis recentrez sur vos solutions.",
-          "url": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#maintien-ferme",
+          "url": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#maintien-ferme",
           "image": {
             "@type": "ImageObject",
-            "url": "https://laurent-serre-developpement.fr/images/step-maintien.jpg",
+            "url": "https://www.laurentserre.com/images/step-maintien.jpg",
             "width": 800,
             "height": 600
           }
@@ -361,10 +361,10 @@ const techniqueStructuredData = {
           "position": 5,
           "name": "Clôture et renforcement de la décision",
           "text": "Renforcez la décision pour éviter les regrets post-signature. Félicitez chaleureusement leur choix intelligent et projetez-les dans le succès futur.",
-          "url": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#cloture",
+          "url": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#cloture",
           "image": {
             "@type": "ImageObject",
-            "url": "https://laurent-serre-developpement.fr/images/step-cloture.jpg",
+            "url": "https://www.laurentserre.com/images/step-cloture.jpg",
             "width": 800,
             "height": 600
           }
@@ -374,15 +374,15 @@ const techniqueStructuredData = {
         "@type": "VideoObject",
         "name": "Technique Ne jamais couper la poire en deux - Démonstration Laurent Serre",
         "description": "Démonstration pratique de la technique de négociation FBI par Laurent Serre",
-        "thumbnailUrl": "https://laurent-serre-developpement.fr/images/video-technique-thumbnail.jpg",
+        "thumbnailUrl": "https://www.laurentserre.com/images/video-technique-thumbnail.jpg",
         "uploadDate": "2025-01-27T10:00:00+01:00",
         "duration": "PT8M30S",
-        "contentUrl": "https://laurent-serre-developpement.fr/videos/technique-ne-jamais-couper-poire.mp4"
+        "contentUrl": "https://www.laurentserre.com/videos/technique-ne-jamais-couper-poire.mp4"
       }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#faq",
+      "@id": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#faq",
       "mainEntity": [
         {
           "@type": "Question",
@@ -460,43 +460,43 @@ const techniqueStructuredData = {
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#breadcrumb",
+      "@id": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Accueil",
-          "item": "https://laurent-serre-developpement.fr"
+          "item": "https://www.laurentserre.com"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Ressources",
-          "item": "https://laurent-serre-developpement.fr/ressources"
+          "item": "https://www.laurentserre.com/ressources"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Techniques de Négociation",
-          "item": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation"
+          "item": "https://www.laurentserre.com/ressources/techniques-de-negociation"
         },
         {
           "@type": "ListItem",
           "position": 4,
           "name": "Ne jamais couper la poire en deux",
-          "item": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux"
+          "item": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux"
         }
       ]
     },
     {
       "@type": "Course",
-      "@id": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#course",
+      "@id": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#course",
       "name": "Maîtriser la technique 'Ne jamais couper la poire en deux'",
       "description": "Formation complète à la technique de négociation FBI de Chris Voss adaptée aux PME françaises",
       "provider": {
         "@type": "Organization",
-        "name": "Laurent Serre Développement",
-        "url": "https://laurent-serre-developpement.fr"
+        "name": "Laurent Serre",
+        "url": "https://www.laurentserre.com"
       },
       "instructor": {
         "@type": "Person",
@@ -525,20 +525,20 @@ const techniqueStructuredData = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#webpage",
-      "url": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux",
+      "@id": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#webpage",
+      "url": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux",
       "name": "Ne jamais couper la poire en deux | Technique FBI | Laurent Serre",
       "description": "Guide complet de la technique de négociation FBI de Chris Voss adaptée aux PME françaises. 85% de préservation des marges, scripts et cas concrets inclus.",
       "inLanguage": "fr-FR",
       "isPartOf": {
         "@type": "WebSite",
-        "@id": "https://laurent-serre-developpement.fr#website",
-        "name": "Laurent Serre Développement",
-        "url": "https://laurent-serre-developpement.fr"
+        "@id": "https://www.laurentserre.com#website",
+        "name": "Laurent Serre",
+        "url": "https://www.laurentserre.com"
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://laurent-serre-developpement.fr/images/technique-ne-jamais-couper-poire.jpg"
+        "url": "https://www.laurentserre.com/images/technique-ne-jamais-couper-poire.jpg"
       },
       "datePublished": "2025-01-27T10:00:00+01:00",
       "dateModified": "2025-01-27T10:00:00+01:00",
@@ -548,16 +548,16 @@ const techniqueStructuredData = {
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Laurent Serre Développement"
+        "name": "Laurent Serre"
       },
       "potentialAction": [
         {
           "@type": "ReadAction",
-          "target": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux"
+          "target": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux"
         },
         {
           "@type": "ShareAction",
-          "target": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux"
+          "target": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux"
         }
       ],
       "speakable": {
@@ -567,7 +567,7 @@ const techniqueStructuredData = {
     },
     {
       "@type": "ItemList",
-      "@id": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#related-techniques",
+      "@id": "https://www.laurentserre.com/ressources/techniques-de-negociation/ne-jamais-couper-la-poire-en-deux#related-techniques",
       "name": "Techniques de négociation complémentaires",
       "description": "Autres techniques de négociation recommandées par Laurent Serre",
       "numberOfItems": 3,
@@ -578,7 +578,7 @@ const techniqueStructuredData = {
           "item": {
             "@type": "Article",
             "name": "Audit d'accusation",
-            "url": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/audit-accusation"
+            "url": "https://www.laurentserre.com/ressources/techniques-de-negociation/audit-accusation"
           }
         },
         {
@@ -587,7 +587,7 @@ const techniqueStructuredData = {
           "item": {
             "@type": "Article",
             "name": "Questions calibrées",
-            "url": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/questions-calibrees"
+            "url": "https://www.laurentserre.com/ressources/techniques-de-negociation/questions-calibrees"
           }
         },
         {
@@ -596,7 +596,7 @@ const techniqueStructuredData = {
           "item": {
             "@type": "Article",
             "name": "Empathie tactique",
-            "url": "https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/empathie-tactique"
+            "url": "https://www.laurentserre.com/ressources/techniques-de-negociation/empathie-tactique"
           }
         }
       ]
@@ -608,10 +608,10 @@ const techniqueStructuredData = {
 const localBusinessData = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "@id": "https://laurent-serre-developpement.fr#business",
-  "name": "Laurent Serre Développement",
+  "@id": "https://www.laurentserre.com#business",
+  "name": "Laurent Serre",
   "description": "Expert en développement commercial PME - Formation et coaching en négociation commerciale",
-  "url": "https://laurent-serre-developpement.fr",
+  "url": "https://www.laurentserre.com",
   "telephone": "+33-4-67-00-00-00",
   "email": "contact@laurent-serre-developpement.fr",
   "address": {

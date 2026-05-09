@@ -8,15 +8,15 @@ export const metadata: Metadata = {
   keywords: 'recrutement commercial PME, grille évaluation commercial, entretien commercial, profil commercial, recrutement vendeur, sélection commerciaux',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/guide-recrutement-commercial',
+    canonical: 'https://www.laurentserre.com/ressources/guide-recrutement-commercial',
   },
   openGraph: {
     title: 'Guide Recrutement Commercial PME | Laurent Serre',
     description: 'Guide complet du recrutement commercial pour PME. Grilles d\'évaluation et templates d\'entretien.',
-    url: 'https://laurent-serre-developpement.fr/ressources/guide-recrutement-commercial',
+    url: 'https://www.laurentserre.com/ressources/guide-recrutement-commercial',
     type: 'website',
     locale: 'fr_FR',
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
 };
 

@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 /**
  * Test script for cross-category navigation functionality
  * Tests the bidirectional suggestions and CTA optimization

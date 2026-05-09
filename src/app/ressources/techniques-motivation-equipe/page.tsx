@@ -8,15 +8,15 @@ export const metadata: Metadata = {
   keywords: 'motivation équipe commerciale, coaching commercial PME, management commercial, techniques motivation, leadership commercial, performance équipe',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/techniques-motivation-equipe',
+    canonical: 'https://www.laurentserre.com/ressources/techniques-motivation-equipe',
   },
   openGraph: {
     title: 'Techniques de Motivation Équipe Commerciale PME | Laurent Serre',
     description: 'Guide complet des techniques de motivation et coaching commercial pour PME.',
-    url: 'https://laurent-serre-developpement.fr/ressources/techniques-motivation-equipe',
+    url: 'https://www.laurentserre.com/ressources/techniques-motivation-equipe',
     type: 'website',
     locale: 'fr_FR',
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
 };
 

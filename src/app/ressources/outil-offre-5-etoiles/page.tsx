@@ -99,7 +99,7 @@ Cette proposition est valable jusqu'au [DATE + 7 JOURS] uniquement.
 
 ---
 
-*Proposition établie par Laurent Serre Développement*
+*Proposition établie par Laurent Serre*
 *Contact : laurent@laurentserre.com*
     `;
 

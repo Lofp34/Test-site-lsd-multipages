@@ -236,7 +236,7 @@ ${alertData.reportUrl ? `Rapport complet: ${alertData.reportUrl}` : ''}`
       htmlContent,
       textContent: `Bonjour,
 
-Merci d'avoir manifesté votre intérêt pour une ressource sur notre site Laurent Serre Développement.
+Merci d'avoir manifesté votre intérêt pour une ressource sur notre site Laurent Serre.
 
 Ressource demandée: ${resourceUrl}
 
@@ -404,7 +404,7 @@ Expert en développement commercial PME`
           ` : ''}
           
           <div style="text-align: center; margin: 30px 0;">
-            <p style="color: #1B365D;">Système d'audit automatique - Laurent Serre Développement</p>
+            <p style="color: #1B365D;">Système d'audit automatique - Laurent Serre</p>
           </div>
         </div>
       `;

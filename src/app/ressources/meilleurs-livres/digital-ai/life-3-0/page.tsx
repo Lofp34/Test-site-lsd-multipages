@@ -17,26 +17,26 @@ export const metadata: Metadata = {
     title: 'Life 3.0 : résumé complet | Digital & AI Sales',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de Life 3.0 (Max Tegmark). Vision long terme de l\'IA en entreprise.',
     type: 'article',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/life-3-0',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/life-3-0',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-life-3-0.jpg',
+        url: 'https://www.laurentserre.com/images/og-life-3-0.jpg',
         width: 1200,
         height: 630,
         alt: 'Life 3.0 - Résumé par Laurent Serre',
       },
     ],
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/life-3-0',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/life-3-0',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Life 3.0 : résumé complet | Digital & AI Sales',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de Life 3.0 (Max Tegmark).',
-    images: ['https://laurent-serre-developpement.fr/images/og-life-3-0.jpg'],
+    images: ['https://www.laurentserre.com/images/og-life-3-0.jpg'],
   }
 };
 

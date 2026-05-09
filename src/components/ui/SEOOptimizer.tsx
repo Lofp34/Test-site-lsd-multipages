@@ -31,7 +31,7 @@ interface ArticleData {
 }
 
 export const SEOOptimizer: React.FC<SEOOptimizerProps> = ({
-  title = "Laurent Serre Développement - Expert Commercial PME",
+  title = "Laurent Serre - Expert Commercial PME",
   description = "Expert en développement commercial pour PME. Formation, coaching et accompagnement terrain avec 20 ans d'expérience. Structuration d'équipes commerciales performantes.",
   keywords = "expert développement commercial PME, formation commerciale, coaching commercial, accompagnement vente, structuration équipe commerciale, Laurent Serre",
   canonical,
@@ -45,7 +45,7 @@ export const SEOOptimizer: React.FC<SEOOptimizerProps> = ({
   const defaultStructuredData = useMemo(() => ({
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "name": "Laurent Serre Développement",
+    "name": "Laurent Serre",
     "url": "https://www.laurentserre.com",
     "logo": "https://www.laurentserre.com/laurent.jpg",
     "image": "https://www.laurentserre.com/laurent.jpg",
@@ -139,7 +139,7 @@ export const SEOOptimizer: React.FC<SEOOptimizerProps> = ({
     "description": articleData.description,
     "publisher": {
       "@type": "Organization",
-      "name": "Laurent Serre Développement",
+      "name": "Laurent Serre",
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.laurentserre.com/laurent.jpg"
@@ -206,7 +206,7 @@ export const SEOOptimizer: React.FC<SEOOptimizerProps> = ({
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="og:locale" content="fr_FR" />
-        <meta property="og:site_name" content="Laurent Serre Développement" />
+        <meta property="og:site_name" content="Laurent Serre" />
         
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />

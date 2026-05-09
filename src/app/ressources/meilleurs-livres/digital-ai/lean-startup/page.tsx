@@ -17,26 +17,26 @@ export const metadata: Metadata = {
     title: 'The Lean Startup : résumé complet | Digital & AI Sales',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de The Lean Startup (Eric Ries). Approche test & learn pour la transformation commerciale.',
     type: 'article',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/lean-startup',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/lean-startup',
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-lean-startup.jpg',
+        url: 'https://www.laurentserre.com/images/og-lean-startup.jpg',
         width: 1200,
         height: 630,
         alt: 'The Lean Startup - Résumé par Laurent Serre',
       },
     ],
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai/lean-startup',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai/lean-startup',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'The Lean Startup : résumé complet | Digital & AI Sales',
     description: 'Résumé détaillé, concepts clés, conseils terrain et avis de The Lean Startup (Eric Ries).',
-    images: ['https://laurent-serre-developpement.fr/images/og-lean-startup.jpg'],
+    images: ['https://www.laurentserre.com/images/og-lean-startup.jpg'],
   }
 };
 

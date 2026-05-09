@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Politique de Cookies – Laurent Serre Développement",
+  title: "Politique de Cookies – Laurent Serre",
   description: "Informations sur l'utilisation des cookies sur laurentserre.com : types de cookies, gestion des préférences et paramétrage.",
   alternates: {
     canonical: "https://www.laurentserre.com/cookies"

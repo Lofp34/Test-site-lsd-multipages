@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     url: 'https://www.laurentserre.com/expert-developpement-commercial-pme',
     type: 'website',
     locale: 'fr_FR',
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
     images: [
       {
         url: 'https://www.laurentserre.com/laurent.jpg',

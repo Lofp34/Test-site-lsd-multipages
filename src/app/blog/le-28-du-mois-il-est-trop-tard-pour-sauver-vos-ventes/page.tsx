@@ -57,7 +57,7 @@ export default function Le28DuMoisIlEstTropTardPourSauverVosVentesPage() {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Laurent Serre Développement",
+    "name": "Laurent Serre",
     "url": "https://www.laurentserre.com"
   },
   "mainEntityOfPage": {

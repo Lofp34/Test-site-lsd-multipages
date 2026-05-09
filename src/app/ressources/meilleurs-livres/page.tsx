@@ -25,7 +25,7 @@ const mainPageStructuredData = {
   "@type": "CollectionPage",
   "name": "Meilleurs Livres de Vente - Guide Complet Laurent Serre",
   "description": "La sélection complète des meilleurs livres de vente, négociation, prospection, management et développement commercial. Résumés détaillés et conseils terrain par Laurent Serre.",
-  "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres",
+  "url": "https://www.laurentserre.com/ressources/meilleurs-livres",
   "mainEntity": {
     "@type": "ItemList",
     "name": "Catégories de livres commerciaux",
@@ -35,55 +35,55 @@ const mainPageStructuredData = {
         "@type": "Thing",
         "position": 1,
         "name": "Prospection & SDR",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/prospection-sdr"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/prospection-sdr"
       },
       {
         "@type": "Thing",
         "position": 2,
         "name": "Négociation & Closing",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/negociation-closing"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/negociation-closing"
       },
       {
         "@type": "Thing",
         "position": 3,
         "name": "Psychologie & Influence",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/psychologie-influence"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/psychologie-influence"
       },
       {
         "@type": "Thing",
         "position": 4,
         "name": "Méthodes & Process",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/methodes-process"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/methodes-process"
       },
       {
         "@type": "Thing",
         "position": 5,
         "name": "Enterprise Account",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/enterprise-account"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/enterprise-account"
       },
       {
         "@type": "Thing",
         "position": 6,
         "name": "Sales Management",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/sales-management"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/sales-management"
       },
       {
         "@type": "Thing",
         "position": 7,
         "name": "Digital & AI Sales",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/digital-ai"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/digital-ai"
       },
       {
         "@type": "Thing",
         "position": 8,
         "name": "Mindset & Performance",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/mindset-performance"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/mindset-performance"
       },
       {
         "@type": "Thing",
         "position": 9,
         "name": "Management & Leadership",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/management-leadership"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/management-leadership"
       }
     ]
   },
@@ -94,13 +94,13 @@ const mainPageStructuredData = {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://laurent-serre-developpement.fr"
+        "item": "https://www.laurentserre.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Ressources",
-        "item": "https://laurent-serre-developpement.fr/ressources"
+        "item": "https://www.laurentserre.com/ressources"
       },
       {
         "@type": "ListItem",
@@ -129,25 +129,25 @@ export const metadata: Metadata = {
     description: 'La sélection complète des meilleurs livres de vente, négociation, prospection, management et développement commercial. Résumés détaillés et conseils terrain.',
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-meilleurs-livres.jpg',
+        url: 'https://www.laurentserre.com/images/og-meilleurs-livres.jpg',
         width: 1200,
         height: 630,
         alt: 'Meilleurs Livres de Vente - Guide Complet par Laurent Serre',
       },
     ],
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Meilleurs Livres de Vente | Guide Complet | Laurent Serre',
     description: 'La sélection complète des meilleurs livres de vente, négociation, prospection, management et développement commercial.',
-    images: ['https://laurent-serre-developpement.fr/images/og-meilleurs-livres.jpg'],
+    images: ['https://www.laurentserre.com/images/og-meilleurs-livres.jpg'],
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres',
   },
   other: {
     'preload': '/ressources/meilleurs-livres/digital-ai as document',

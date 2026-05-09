@@ -137,18 +137,18 @@ export const reportingData: ResourceTool = {
       'pilotage équipe commerciale',
       'reporting direction commercial'
     ],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/reporting-automatise',
+    canonicalUrl: 'https://www.laurentserre.com/ressources/reporting-automatise',
     openGraph: {
       title: 'Pack Reporting Commercial Automatisé | Templates Gratuits',
       description: 'Automatisez votre reporting commercial avec notre pack gratuit de 8 templates. Analyses CRM, pilotage équipe, présentations direction.',
-      image: 'https://laurent-serre-developpement.fr/ressources/og/reporting-pack-og.jpg',
+      image: 'https://www.laurentserre.com/ressources/og/reporting-pack-og.jpg',
       type: 'website'
     },
     twitter: {
       card: 'summary_large_image',
       title: 'Pack Reporting Commercial Automatisé | Templates Gratuits',
       description: 'Automatisez votre reporting commercial avec notre pack gratuit de 8 templates. Analyses CRM, pilotage équipe.',
-      image: 'https://laurent-serre-developpement.fr/ressources/og/reporting-pack-og.jpg'
+      image: 'https://www.laurentserre.com/ressources/og/reporting-pack-og.jpg'
     },
     structuredData: {
       type: 'Product',
@@ -157,9 +157,9 @@ export const reportingData: ResourceTool = {
       provider: {
         '@type': 'Person',
         name: 'Laurent Serre',
-        url: 'https://laurent-serre-developpement.fr'
+        url: 'https://www.laurentserre.com'
       },
-      downloadUrl: 'https://laurent-serre-developpement.fr/ressources/reporting-automatise',
+      downloadUrl: 'https://www.laurentserre.com/ressources/reporting-automatise',
       fileFormat: 'application/zip',
       contentSize: '15MB',
       datePublished: '2024-03-01',

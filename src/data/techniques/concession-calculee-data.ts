@@ -237,7 +237,7 @@ export const concessionCalculeeData: NegotiationTechnique = {
       'théorie jeux',
       'accord gagnant gagnant'
     ],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/concession-calculee'
+    canonicalUrl: 'https://www.laurentserre.com/ressources/techniques-de-negociation/concession-calculee'
   },
   
   trackingEvents: [

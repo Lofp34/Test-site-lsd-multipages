@@ -53,7 +53,7 @@ export default function Systeme90JoursPage() {
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Laurent Serre Développement",
+    "name": "Laurent Serre",
     "url": "https://www.laurentserre.com"
   },
   "mainEntityOfPage": {

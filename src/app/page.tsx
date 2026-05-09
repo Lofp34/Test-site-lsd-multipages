@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ClientPageWrapper from '@/components/ClientPageWrapper';
 
 export const metadata: Metadata = {
-  title: 'Laurent Serre Développement — Accompagnement Commercial & Formation PME',
+  title: 'Laurent Serre — Accompagnement Commercial & Formation PME',
   description: 'Accompagnement commercial pour PME : structuration des équipes, formation à la vente, méthodes éprouvées. Diagnostic gratuit, bootcamp intensif, coaching terrain. 20 ans d\'expérience + outils IA.',
   alternates: {
     canonical: 'https://www.laurentserre.com',

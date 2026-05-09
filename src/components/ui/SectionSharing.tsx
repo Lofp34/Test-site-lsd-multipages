@@ -22,7 +22,7 @@ export default function SectionSharing({
 }: SectionSharingProps) {
   const [isSharing, setIsSharing] = useState(false);
 
-  const baseUrl = 'https://laurent-serre-developpement.fr';
+  const baseUrl = 'https://www.laurentserre.com';
   const sectionUrl = `${baseUrl}/ressources/techniques-de-negociation/${technique.slug}#${sectionId}`;
   
   const shareText = keyQuote || `Découvrez "${sectionTitle}" dans la technique FBI "${technique.title}" par Laurent Serre`;

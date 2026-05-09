@@ -26,7 +26,7 @@ const categoryStructuredData = {
   "@type": "CollectionPage",
   "name": "Enterprise Account Management - Meilleurs Livres",
   "description": "Les meilleurs livres sur la gestion des comptes stratégiques et grands comptes. Strategic Selling, Key Account Management, The Challenger Customer. Résumés détaillés et conseils terrain.",
-  "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/enterprise-account",
+  "url": "https://www.laurentserre.com/ressources/meilleurs-livres/enterprise-account",
   "mainEntity": {
     "@type": "ItemList",
     "name": "Meilleurs livres Enterprise Account Management",
@@ -37,35 +37,35 @@ const categoryStructuredData = {
         "position": 1,
         "name": "The Challenger Customer",
         "author": "Brent Adamson et al.",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/enterprise-account/the-challenger-customer"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/enterprise-account/the-challenger-customer"
       },
       {
         "@type": "Book", 
         "position": 2,
         "name": "Mastering the Complex Sale",
         "author": "Jeff Thull",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/enterprise-account/mastering-the-complex-sale"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/enterprise-account/mastering-the-complex-sale"
       },
       {
         "@type": "Book",
         "position": 3, 
         "name": "Key Account Management: The Definitive Guide",
         "author": "Diana Woodburn & Malcolm McDonald",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/enterprise-account/key-account-management-definitive-guide"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/enterprise-account/key-account-management-definitive-guide"
       },
       {
         "@type": "Book",
         "position": 4,
         "name": "The New Successful Large Account Management (LAMP)", 
         "author": "Robert Miller, Stephen Heiman, Tad Tuleja",
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/enterprise-account/the-new-successful-large-account-management"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/enterprise-account/the-new-successful-large-account-management"
       },
       {
         "@type": "Book",
         "position": 5,
         "name": "Selling to Big Companies",
         "author": "Jill Konrath", 
-        "url": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres/enterprise-account/selling-to-big-companies"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/enterprise-account/selling-to-big-companies"
       }
     ]
   },
@@ -76,19 +76,19 @@ const categoryStructuredData = {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://laurent-serre-developpement.fr"
+        "item": "https://www.laurentserre.com"
       },
       {
         "@type": "ListItem", 
         "position": 2,
         "name": "Ressources",
-        "item": "https://laurent-serre-developpement.fr/ressources"
+        "item": "https://www.laurentserre.com/ressources"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Meilleurs Livres",
-        "item": "https://laurent-serre-developpement.fr/ressources/meilleurs-livres"
+        "item": "https://www.laurentserre.com/ressources/meilleurs-livres"
       },
       {
         "@type": "ListItem",
@@ -117,25 +117,25 @@ export const metadata: Metadata = {
     description: 'Les meilleurs livres sur la gestion des comptes stratégiques. Strategic Selling, Key Account Management, The Challenger Customer. Résumés détaillés et conseils terrain.',
     type: 'website',
     locale: 'fr_FR',
-    url: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/enterprise-account',
+    url: 'https://www.laurentserre.com/ressources/meilleurs-livres/enterprise-account',
     images: [
       {
-        url: 'https://laurent-serre-developpement.fr/images/og-enterprise-account.jpg',
+        url: 'https://www.laurentserre.com/images/og-enterprise-account.jpg',
         width: 1200,
         height: 630,
         alt: 'Gestion des Grands Comptes - Meilleurs Livres par Laurent Serre',
       },
     ],
-    siteName: 'Laurent Serre Développement',
+    siteName: 'Laurent Serre',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Gestion des Grands Comptes | Meilleurs Livres | Laurent Serre',
     description: 'Les meilleurs livres sur la gestion des comptes stratégiques. Strategic Selling, Key Account Management, The Challenger Customer.',
-    images: ['https://laurent-serre-developpement.fr/images/og-enterprise-account.jpg'],
+    images: ['https://www.laurentserre.com/images/og-enterprise-account.jpg'],
   },
   alternates: {
-    canonical: 'https://laurent-serre-developpement.fr/ressources/meilleurs-livres/enterprise-account',
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/enterprise-account',
   },
   other: {
     'preload': '/ressources/meilleurs-livres/enterprise-account/the-challenger-customer as document',

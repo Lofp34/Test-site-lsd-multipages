@@ -64,24 +64,24 @@ const mockTechnique: NegotiationTechnique = {
     title: 'L\'effet miroir | Technique FBI Chris Voss | Laurent Serre',
     description: 'Maîtrisez l\'effet miroir de Chris Voss pour vos négociations PME.',
     keywords: ['effet miroir', 'chris voss', 'négociation'],
-    canonicalUrl: 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/effet-miroir'
+    canonicalUrl: 'https://www.laurentserre.com/ressources/techniques-de-negociation/effet-miroir'
   },
   trackingEvents: []
 };
 
 const mockSEOConfig = {
   technique: mockTechnique,
-  baseUrl: 'https://laurent-serre-developpement.fr',
+  baseUrl: 'https://www.laurentserre.com',
   authorInfo: {
     name: 'Laurent Serre',
-    url: 'https://laurent-serre-developpement.fr/a-propos',
-    image: 'https://laurent-serre-developpement.fr/images/laurent-serre.jpg',
+    url: 'https://www.laurentserre.com/a-propos',
+    image: 'https://www.laurentserre.com/images/laurent-serre.jpg',
     description: 'Expert en développement commercial PME'
   },
   organizationInfo: {
-    name: 'Laurent Serre Développement',
-    url: 'https://laurent-serre-developpement.fr',
-    logo: 'https://laurent-serre-developpement.fr/images/logo.png',
+    name: 'Laurent Serre',
+    url: 'https://www.laurentserre.com',
+    logo: 'https://www.laurentserre.com/images/logo.png',
     description: 'Formation et coaching commercial pour PME'
   }
 };
@@ -115,14 +115,14 @@ describe('SEO Integration Tests', () => {
 
     it('should generate consistent URLs across metadata fields', () => {
       const metadata = SEOGenerator.generateMetadata(mockSEOConfig);
-      const expectedUrl = 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/effet-miroir';
+      const expectedUrl = 'https://www.laurentserre.com/ressources/techniques-de-negociation/effet-miroir';
       
       expect(metadata.alternates?.canonical).toBe(expectedUrl);
       expect(metadata.openGraph?.url).toBe(expectedUrl);
       
       // Vérifier que l'image OG utilise la même base URL
       const ogImage = metadata.openGraph?.images?.[0];
-      expect(ogImage?.url).toBe('https://laurent-serre-developpement.fr/images/og-effet-miroir.jpg');
+      expect(ogImage?.url).toBe('https://www.laurentserre.com/images/og-effet-miroir.jpg');
     });
 
     it('should include success metrics in description when available', () => {
@@ -172,7 +172,7 @@ describe('SEO Integration Tests', () => {
     it('should link schemas with consistent URLs', () => {
       const structuredData = SEOGenerator.generateStructuredData(mockSEOConfig);
       const graph = (structuredData as any)['@graph'];
-      const baseUrl = 'https://laurent-serre-developpement.fr/ressources/techniques-de-negociation/effet-miroir';
+      const baseUrl = 'https://www.laurentserre.com/ressources/techniques-de-negociation/effet-miroir';
       
       // Vérifier que tous les schémas utilisent des URLs cohérentes
       graph.forEach((schema: any) => {
@@ -208,7 +208,7 @@ describe('SEO Integration Tests', () => {
       
       expect(og?.type).toBe('article');
       expect(og?.locale).toBe('fr_FR');
-      expect(og?.siteName).toBe('Laurent Serre Développement');
+      expect(og?.siteName).toBe('Laurent Serre');
       expect(og?.images).toHaveLength(1);
       
       const image = og?.images?.[0];

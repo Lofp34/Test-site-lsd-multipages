@@ -2,7 +2,7 @@ import type React from 'react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Techniques de Négociation | Laurent Serre Développement',
+  title: 'Techniques de Négociation | Laurent Serre',
   alternates: {
     canonical: 'https://www.laurentserre.com/ressources/techniques-de-negociation',
   },

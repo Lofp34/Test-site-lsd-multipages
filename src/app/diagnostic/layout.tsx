@@ -2,7 +2,7 @@ import type React from 'react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Diagnostic Commercial Gratuit | Laurent Serre Développement',
+  title: 'Diagnostic Commercial Gratuit | Laurent Serre',
   alternates: {
     canonical: 'https://www.laurentserre.com/diagnostic',
   },
