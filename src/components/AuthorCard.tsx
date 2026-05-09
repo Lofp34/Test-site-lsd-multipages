@@ -1,35 +1,29 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
-export default function AuthorCard() {
+interface AuthorCardProps {
+  className?: string;
+}
+
+export default function AuthorCard({ className = '' }: AuthorCardProps) {
   return (
-    <div className="mt-16 pt-8 border-t border-gray-200">
-      <div className="flex items-start gap-4">
-        <div className="flex-shrink-0">
-          <Image
-            src="/images/laurent-serre.jpg"
-            alt="Laurent Serre"
-            width={64}
-            height={64}
-            className="rounded-full"
-          />
-        </div>
-        <div>
-          <p className="font-semibold text-gray-900">Laurent Serre</p>
-          <p className="text-sm text-gray-600 mt-1">
-            Dirigeant, formateur et stratège commercial. J&apos;aide les PME B2B à
-            transformer des pratiques commerciales encore instinctives en systèmes
-            de vente clairs, transmissibles et pilotables.
-          </p>
-          <p className="mt-2">
-            <Link
-              href="/"
-              className="text-sm text-[#FF6B35] hover:text-[#e55a2b] font-medium"
-            >
-              → En savoir plus sur mon accompagnement
-            </Link>
-          </p>
-        </div>
+    <div className={`flex items-center gap-4 ${className}`}>
+      <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-mint-green/20 shrink-0">
+        <Image
+          src="/laurent.jpg"
+          alt="Laurent Serre"
+          fill
+          className="object-cover"
+          sizes="48px"
+          priority
+        />
+      </div>
+      <div className="flex flex-col">
+        <span className="text-sm font-semibold text-blue-ink leading-tight">
+          Laurent Serre
+        </span>
+        <span className="text-xs text-gray-500 leading-tight">
+          Consultant commercial — 15 ans de terrain PME
+        </span>
       </div>
     </div>
   );
