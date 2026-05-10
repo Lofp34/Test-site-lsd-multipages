@@ -73,6 +73,10 @@ export default function GuideClosingPage() {
               <Link href="/diagnostic" className="text-mint-green hover:underline font-semibold"> diagnostic commercial gratuit</Link>
               ou intégrez-les dans un <Link href="/bootcamp" className="text-mint-green hover:underline font-semibold">bootcamp commercial intensif</Link>.
             </p>
+            <p className="text-lg text-gray-anthracite mt-4">
+              Si votre enjeu est de conclure sans mettre de pression inutile ni rogner votre marge, lisez aussi cette méthode pour
+              <Link href="/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader" className="text-mint-green hover:underline font-semibold"> signer une vente B2B sans forcer ni brader</Link>.
+            </p>
           </div>
         </section>
 

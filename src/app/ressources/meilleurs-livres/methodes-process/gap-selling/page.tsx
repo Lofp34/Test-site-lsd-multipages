@@ -34,6 +34,11 @@ export default function GapSellingPage() {
             <li>Alignement de la solution sur le gap réel</li>
           </ul>
           <p>L’approche est exigeante, mais promet des ventes plus solides et un véritable rôle de consultant auprès du client.</p>
+          <p>
+            Dans la pratique, cette méthode commence souvent avant même la proposition commerciale : il faut
+            <Link href="/blog/votre-client-nest-souvent-pas-conscient-du-probleme-que-vous-pouvez-resoudre" className="text-mint-green hover:underline font-semibold"> aider un client à prendre conscience du vrai problème</Link>,
+            plutôt que lui présenter trop vite une solution.
+          </p>
 
           <h3 className="mt-8 text-xl font-bold text-mint-green">À retenir / Conseils terrain</h3>
           <ul className="list-disc ml-6 mb-6">

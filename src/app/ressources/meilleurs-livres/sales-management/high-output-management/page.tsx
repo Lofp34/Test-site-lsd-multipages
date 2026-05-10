@@ -228,6 +228,10 @@ export default function HighOutputManagementPage() {
               <p className="text-lg leading-relaxed mb-6">
                 LE livre de management opérationnel. Grove a une approche d'ingénieur appliquée au management - du concret, du mesurable, de l'efficace. Parfait pour les managers commerciaux qui veulent des résultats.
               </p>
+              <p className="text-lg leading-relaxed mb-6">
+                Pour traduire cette logique dans le quotidien d'une équipe commerciale, le premier levier est souvent très simple :
+                <Link href="/blog/reunion-commerciale-hebdomadaire-format-performance" className="text-mint-green hover:underline font-semibold"> installer une réunion commerciale hebdomadaire vraiment orientée performance</Link>.
+              </p>
               
               <h3 className="text-xl font-bold text-mint-green mb-4">Ce qui transforme vraiment :</h3>
               <ul className="list-disc ml-6 mb-6 space-y-2">
