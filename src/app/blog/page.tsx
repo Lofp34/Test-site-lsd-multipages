@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'linkedin-prospection-b2b-50-messages-par-jour',
+    title: 'Je reçois 50 messages LinkedIn par jour — et j\'en lis à peine 3',
+    description: 'LinkedIn prospection B2B : 50 messages génériques reçus, 3 lus. La différence ? L\'attention réelle. Une règle simple avant d\'écrire à un prospect.',
+    date: '2026-05-11',
+    readTime: '5 min',
+    category: 'Prospection commerciale',
+    image: '/images/blog/2026-05-10-linkedin-prospection-b2b-hero.webp',
+    featured: true
+  },
+  {
     slug: 'reunion-commerciale-hebdomadaire-format-performance',
     title: 'Quinze ans à animer des réunions commerciales — et pourquoi j\'ai fini par tout changer',
     description: 'Des réunions qui tournent en rond, des équipes qui regardent leurs chaussures. J\'ai testé des formats pendant 15 ans. Voici celui qui tient : 4 blocs, 60 minutes, 80% sur le futur.',
