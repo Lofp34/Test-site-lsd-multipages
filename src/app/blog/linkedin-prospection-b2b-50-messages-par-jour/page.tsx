@@ -169,7 +169,7 @@ export default function ArticlePage() {
         </div>
 
         {/* Contenu */}
-        <div className="mt-10 prose prose-lg max-w-none prose-headings:font-title prose-headings:text-blue-ink prose-a:text-mint-green prose-a:no-underline hover:prose-a:underline prose-strong:text-blue-ink prose-li:marker:text-mint-green">
+        <div className="mt-10 prose prose-lg max-w-none prose-a:text-mint-green prose-a:no-underline hover:prose-a:underline prose-strong:text-blue-ink">
           <p>
             La semaine dernière, un commercial m'a envoyé un message sur LinkedIn. Il commençait par
             « J'ai vu votre profil très intéressant ». Il n'avait pas vu mon profil. Il avait copié-collé
@@ -191,7 +191,7 @@ export default function ArticlePage() {
             est construit.
           </p>
 
-          <h2 id="difference">
+          <h2 id="difference" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
             Ce qui fait la différence entre un message supprimé et un rendez-vous
           </h2>
 
@@ -220,7 +220,7 @@ export default function ArticlePage() {
             La différence, c'est l'attention réelle. Et ça se voit.
           </p>
 
-          <h2 id="piege-templates">Le piège des templates</h2>
+          <h2 id="piege-templates" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Le piège des templates</h2>
 
           <p>
             Quand on commence à prospecter sur LinkedIn, on cherche des modèles. C'est humain. On veut
@@ -240,7 +240,7 @@ export default function ArticlePage() {
 
           <p>Pas besoin d'être un expert LinkedIn. Juste d'être attentif.</p>
 
-          <h2 id="confusion">Ce que les gens confondent avec de la prospection</h2>
+          <h2 id="confusion" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Ce que les gens confondent avec de la prospection</h2>
 
           <p>
             Beaucoup de commerciaux confondent volume et visibilité. Envoyer 50 messages génériques par
@@ -267,7 +267,7 @@ export default function ArticlePage() {
             </p>
           </div>
 
-          <h2 id="regle">Une règle simple</h2>
+          <h2 id="regle" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Une règle simple</h2>
 
           <p>
             Avant d'écrire à quelqu'un sur LinkedIn, posez-vous une question : est-ce que je serais prêt
