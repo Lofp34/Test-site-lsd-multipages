@@ -299,22 +299,22 @@ export default function ArticlePage() {
           <p className="text-lg font-title font-bold text-blue-ink mb-4">📖 Pour aller plus loin</p>
           <ul className="space-y-3 text-sm text-gray-700">
             <li>
-              <Link href="/blog/cold-emailing-b2b-en-2026-la-methode-pour-ne-plus-finir-en-spam" className="text-mint-green hover:underline font-medium">
-                Cold emailing B2B en 2026 : la méthode pour ne plus finir en spam
+              <Link href="/blog/prospection-b2b-2026-methode-4-blocs-rdv-qualifies" className="text-mint-green hover:underline font-medium">
+                Prospection B2B 2026 : la méthode 4 blocs pour générer plus de RDV qualifiés
               </Link>
-              <span className="block text-gray-500 mt-0.5">Le complément canal à la prospection LinkedIn</span>
+              <span className="block text-gray-500 mt-0.5">Le complément méthode pour transformer l'attention réelle en rendez-vous qualifiés.</span>
             </li>
             <li>
-              <Link href="/blog/les-5-cles-pour-recharger-votre-pipeline-commercial-q2-sans-brader" className="text-mint-green hover:underline font-medium">
-                Recharger votre pipeline commercial sans brader
+              <Link href="/blog/pipeline-commercial-q2-2026-5-decisions-dirigeant" className="text-mint-green hover:underline font-medium">
+                Pipeline commercial Q2 2026 : 5 décisions de dirigeant pour sécuriser le chiffre d'affaires
               </Link>
-              <span className="block text-gray-500 mt-0.5">Une fois le contact établi, comment construire un pipeline solide</span>
+              <span className="block text-gray-500 mt-0.5">Une fois le contact établi, comment construire un pipeline solide et arbitrable.</span>
             </li>
             <li>
-              <Link href="/blog/vente-consultative-b2b-pourquoi-vos-clients-achetent-sans-que-vous-ne-vendiez" className="text-mint-green hover:underline font-medium">
-                Vente consultative B2B : la posture qui change tout
+              <Link href="/blog/vente-consultative-b2b-comment-devenir-le-conseiller-que-vos-clients-ne-veulent-pas-perdre" className="text-mint-green hover:underline font-medium">
+                Vente consultative B2B : devenir le conseiller que vos clients ne veulent pas perdre
               </Link>
-              <span className="block text-gray-500 mt-0.5">De la prospection à la vente : la posture qui transforme l'approche</span>
+              <span className="block text-gray-500 mt-0.5">De la prospection à la vente : la posture qui transforme l'approche.</span>
             </li>
           </ul>
           <p className="text-xs text-gray-400 mt-4">
