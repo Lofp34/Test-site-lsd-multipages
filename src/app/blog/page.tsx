@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'coaching-commercial-diagnostic-ecoute',
+    title: 'Ce n\'est pas un problème de motivation — c\'est un problème de diagnostic',
+    description: 'Le coaching commercial ne commence pas par un plan. Il commence par une conversation. Avant de préparer votre diagnostic, allez écouter votre commercial.',
+    date: '2026-05-12',
+    readTime: '5 min',
+    category: 'Management / coaching commercial',
+    image: '/images/blog/2026-05-12-coaching-commercial-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'linkedin-prospection-b2b-50-messages-par-jour',
     title: 'Je reçois 50 messages LinkedIn par jour — et j\'en lis à peine 3',
     description: 'LinkedIn prospection B2B : 50 messages génériques reçus, 3 lus. La différence ? L\'attention réelle. Une règle simple avant d\'écrire à un prospect.',
