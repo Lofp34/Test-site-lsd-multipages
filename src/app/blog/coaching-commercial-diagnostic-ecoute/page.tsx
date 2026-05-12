@@ -78,6 +78,29 @@ export default function ArticlePage() {
           '@id': articleUrl,
         },
       },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Accueil',
+            item: 'https://www.laurentserre.com',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Blog',
+            item: 'https://www.laurentserre.com/blog',
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: 'Coaching commercial — diagnostic',
+            item: articleUrl,
+          },
+        ],
+      },
     ],
   };
 
@@ -89,12 +112,16 @@ export default function ArticlePage() {
       />
       <article className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         {/* Fil d'Ariane */}
-        <nav className="mb-8 text-sm">
+        <nav className="mb-8 text-sm" aria-label="Fil d'Ariane">
+          <Link href="/" className="text-mint-green hover:text-mint-green/80 transition-colors">
+            Accueil
+          </Link>
+          <span className="mx-2 text-gray-400">/</span>
           <Link href="/blog" className="text-mint-green hover:text-mint-green/80 transition-colors">
             Blog
           </Link>
           <span className="mx-2 text-gray-400">/</span>
-          <span className="text-gray-500">Coaching commercial</span>
+          <span className="text-gray-500" aria-current="page">Coaching commercial</span>
         </nav>
 
         {/* Image hero */}
