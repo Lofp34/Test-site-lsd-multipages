@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-05-13-kpis-commerciaux-indicateurs-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-05-13-kpis-commerciaux-indicateurs-hero.webp',
         width: 1264,
         height: 848,
         alt: 'KPIs commerciaux PME — ne vous noyez pas dans les indicateurs',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: 'KPIs commerciaux PME : ce que vos 25 indicateurs vous cachent | Laurent Serre',
     description:
       'Un tableau de bord, ce n\'est pas un tableau d\'honneur. C\'est un outil de diagnostic. Et un bon diagnostic, ça se fait avec cinq ou six questions, pas vingt-cinq.',
-    images: ['https://www.laurentserre.com/images/blog/2026-05-13-kpis-commerciaux-indicateurs-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-05-13-kpis-commerciaux-indicateurs-hero.webp'],
   },
 };
 
@@ -52,7 +52,7 @@ export default function ArticlePage() {
         headline: 'KPIs commerciaux PME : ce que vos 25 indicateurs vous cachent',
         description:
           'Vingt-cinq indicateurs, des graphiques partout, des jolies couleurs. Mais au fond, lequel regardez-vous le lundi matin ?',
-        image: 'https://www.laurentserre.com/images/blog/2026-05-13-kpis-commerciaux-indicateurs-hero.jpg',
+        image: 'https://www.laurentserre.com/images/blog/2026-05-13-kpis-commerciaux-indicateurs-hero.webp',
         datePublished: '2026-05-13',
         dateModified: '2026-05-13',
         author: {
@@ -127,7 +127,7 @@ export default function ArticlePage() {
         {/* Image hero */}
         <div className="relative w-full aspect-video mb-10 rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/images/blog/2026-05-13-kpis-commerciaux-indicateurs-hero.jpg"
+            src="/images/blog/2026-05-13-kpis-commerciaux-indicateurs-hero.webp"
             alt="KPIs commerciaux PME — ne vous noyez pas dans les indicateurs"
             fill
             className="object-cover"
