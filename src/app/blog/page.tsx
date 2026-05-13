@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'kpis-commerciaux-pme-indicateurs-vous-cachent',
+    title: 'KPIs commerciaux PME : ce que vos 25 indicateurs vous cachent',
+    description: 'Vingt-cinq indicateurs, des graphiques partout, des jolies couleurs. Mais au fond, lequel regardez-vous le lundi matin ? Le problème des KPIs en PME n\'est pas le manque de données, c\'est l\'abondance.',
+    date: '2026-05-13',
+    readTime: '5 min',
+    category: 'Pilotage commercial / indicateurs',
+    image: '/images/blog/2026-05-13-kpis-commerciaux-indicateurs-hero.jpg',
+    featured: true
+  },
+  {
     slug: 'coaching-commercial-diagnostic-ecoute',
     title: 'Ce n\'est pas un problème de motivation — c\'est un problème de diagnostic',
     description: 'Le coaching commercial ne commence pas par un plan. Il commence par une conversation. Avant de préparer votre diagnostic, allez écouter votre commercial.',
