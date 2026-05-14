@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'strategie-commerciale-pme-cadre-une-page',
+    title: 'Vous n\'avez pas besoin d\'un plan stratégique. Vous avez besoin d\'un cadre qui tient dans une page.',
+    description: '47 slides, budget, SWOT, objectifs à 3 ans. Puis quatre questions qu\'il ne peut pas honorer. Le vrai problème des PME n\'est pas l\'absence de stratégie : c\'est l\'incapacité à choisir.',
+    date: '2026-05-14',
+    readTime: '5 min',
+    category: 'Stratégie commerciale',
+    image: '/images/blog/2026-05-14-strategie-commerciale-pme-cadre-hero.png',
+    featured: true
+  },
+  {
     slug: 'kpis-commerciaux-pme-indicateurs-vous-cachent',
     title: 'KPIs commerciaux PME : ce que vos 25 indicateurs vous cachent',
     description: 'Vingt-cinq indicateurs, des graphiques partout, des jolies couleurs. Mais au fond, lequel regardez-vous le lundi matin ? Le problème des KPIs en PME n\'est pas le manque de données, c\'est l\'abondance.',
