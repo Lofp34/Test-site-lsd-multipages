@@ -6,7 +6,7 @@ import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
   title: 'Vendeur vs Commercial : les 5 vraies différences qui changent vos résultats',
-  description: 'Vous avez des vendeurs ou des commerciaux ? Les 5 différences qui séparent une force de vente d\'une équipe commerciale performante. Auto-diagnostic inclus.',
+  description: 'Vendeur ou commercial ? Les 5 différences qui séparent une force de vente d\'une équipe commerciale performante. Auto-diagnostic inclus pour transformer votre équipe.',
   keywords: 'vendeur vs commercial, transformation commerciale, management équipe vente, développement commercial, PME',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog/vendeur-commercial-transformation-decisive',

@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Prospection B2B : stratégie 4 blocs pour des RDV qualifiés (guide 2026)',
-  description: 'Découvrez les techniques et stratégies avancées de prospection commerciale pour générer des leads qualifiés et développer votre chiffre d\'affaires.',
+  description: 'Générez plus de RDV qualifiés avec notre méthode de prospection B2B en 4 blocs. Techniques, scripts et outils terrain pour développer votre chiffre d\'affaires dès maintenant.',
   keywords: 'prospection commerciale, génération de leads, développement commercial, techniques de vente, stratégie commerciale',
   alternates: {
     canonical: 'https://www.laurentserre.com/ressources/guide-prospection',

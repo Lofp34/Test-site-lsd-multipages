@@ -2,8 +2,8 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'The Innovator\'s Dilemma — résumé et leçons pour commerciaux',
-  description: 'Le dilemme de l\'innovateur expliqué aux commerciaux et managers : disruption, sustaining innovation, et comment anticiper le changement sans tout casser.',
+  title: 'Le Dilemme de l\'Innovateur (The Innovator\'s Dilemma) | Résumé Clay Christensen',
+  description: 'Le dilemme de l\'innovateur de Clayton Christensen expliqué aux commerciaux et managers : innovation disruptive vs sustaining. Comment anticiper le changement sans détruire votre business. Résumé complet.',
   keywords: [
     'innovators dilemma',
     'clayton christensen',
@@ -14,8 +14,8 @@ export const metadata: Metadata = {
     'laurent serre'
   ],
   openGraph: {
-    title: 'The Innovator\'s Dilemma : résumé complet | Sales Management & Leadership',
-    description: 'Résumé détaillé, concepts clés, conseils terrain et avis de The Innovator\'s Dilemma (Clayton Christensen). Innovation disruptive vs sustaining.',
+    title: 'Le Dilemme de l\'Innovateur (The Innovator\'s Dilemma) — Résumé & Leçons',
+    description: 'Résumé détaillé du Dilemme de l\'Innovateur (Clayton Christensen) : innovation disruptive, sustaining, et leçons pour les commerciaux et managers.',
     type: 'article',
     url: 'https://www.laurentserre.com/ressources/meilleurs-livres/sales-management/innovators-dilemma',
     locale: 'fr_FR',
@@ -25,8 +25,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Innovator\'s Dilemma — résumé et leçons pour commerciaux',
-    description: 'Le dilemme de l\'innovateur expliqué aux commerciaux : disruption et anticipation du changement.',
+    title: 'Le Dilemme de l\'Innovateur (The Innovator\'s Dilemma) | Résumé & Leçons',
+    description: 'Le dilemme de l\'innovateur expliqué aux commerciaux : innovation disruptive, sustaining, et comment anticiper le changement.',
   }
 };
 

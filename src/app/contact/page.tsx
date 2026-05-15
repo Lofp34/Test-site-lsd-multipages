@@ -6,8 +6,8 @@ import Button from "@/components/ui/Button";
 const FinalCtaSection = dynamic(() => import('@/components/sections/FinalCtaSection'));
 
 export const metadata: Metadata = {
-  title: 'Contact – Laurent Serre',
-  description: 'Contactez Laurent Serre pour discuter de vos besoins en développement commercial. Prise de contact rapide et personnalisée.',
+  title: 'Contactez Laurent Serre | Développement Commercial PME',
+  description: 'Besoin d\'un diagnostic commercial gratuit ? Contactez Laurent Serre, expert en développement commercial PME depuis 20 ans. Réponse rapide et personnalisée.',
   alternates: {
     canonical: 'https://www.laurentserre.com/contact',
   },

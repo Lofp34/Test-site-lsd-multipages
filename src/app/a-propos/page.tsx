@@ -6,7 +6,7 @@ import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
   title: 'Laurent Serre — 20 ans d’expérience en développement commercial PME',
-  description: '20 ans sur le terrain commercial PME. Laurent Serre accompagne les entreprises sur la prospection, le closing, le management d’équipe et la transformation commerciale.',
+  description: '20 ans sur le terrain : Laurent Serre accompagne les PME sur la prospection, le closing et le management commercial. Découvrez son parcours, ses méthodes terrain et ses résultats concrets.',
   alternates: {
     canonical: 'https://www.laurentserre.com/a-propos',
   },

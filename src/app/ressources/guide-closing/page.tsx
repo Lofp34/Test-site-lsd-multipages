@@ -4,15 +4,15 @@ import Link from 'next/link';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Closing : 7 Techniques Efficaces pour Conclure une Vente (Guide B2B)',
-  description: 'Qu\'est-ce que le closing ? Découvrez les techniques de closing commercial B2B qui marchent : closing assumé, alternatif, récapitulatif, gestion des objections. Guide terrain gratuit.',
+  title: '7 Techniques de Closing B2B | Signez Plus de Ventes [Guide Gratuit]',
+  description: 'Maîtrisez les 7 techniques de closing B2B qui marchent vraiment : assumé, alternatif, récapitulatif. Gérez les objections prix et concluez plus de ventes sans forcer. Guide pratique gratuit.',
   keywords: "closing B2B, techniques de vente, objection prix, signaux d'achat, conclure une vente, closing commercial",
   alternates: {
     canonical: 'https://www.laurentserre.com/ressources/guide-closing',
   },
   openGraph: {
-    title: 'Closing : 7 Techniques Efficaces pour Conclure une Vente (Guide B2B)',
-    description: 'Qu\'est-ce que le closing ? Découvrez les techniques de closing B2B terrain : closing assumé, alternatif, récapitulatif, gestion des objections. Guide gratuit.',
+    title: '7 Techniques de Closing B2B | Signez Plus de Ventes [Guide Gratuit]',
+    description: 'Techniques de closing B2B terrain : assumé, alternatif, récapitulatif, gestion des objections. Un guide gratuit pour conclure plus de ventes sans forcer ni brader.',
     url: 'https://www.laurentserre.com/ressources/guide-closing',
     type: 'article',
     locale: 'fr_FR',
