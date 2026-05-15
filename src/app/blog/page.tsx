@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'negociation-commerciale-b2b-defendre-vos-prix-sans-jamais-casser-vos-marges',
+    title: 'J\'ai passé des années à apprendre à négocier. Puis j\'ai compris que je me trompais de combat.',
+    description: '« C\'est trop cher » n\'est presque jamais une objection de prix. C\'est une objection de clarté. La vraie compétence, ce n\'est pas de bien négocier. C\'est de rendre la négociation inutile.',
+    date: '2026-05-15',
+    readTime: '4 min',
+    category: 'Négociation commerciale',
+    image: '/images/blog/2026-05-15-negociation-commerciale-b2b-hero.png',
+    featured: true
+  },
+  {
     slug: 'strategie-commerciale-pme-cadre-une-page',
     title: 'Vous n\'avez pas besoin d\'un plan stratégique. Vous avez besoin d\'un cadre qui tient dans une page.',
     description: '47 slides, budget, SWOT, objectifs à 3 ans. Puis quatre questions qu\'il ne peut pas honorer. Le vrai problème des PME n\'est pas l\'absence de stratégie : c\'est l\'incapacité à choisir.',
