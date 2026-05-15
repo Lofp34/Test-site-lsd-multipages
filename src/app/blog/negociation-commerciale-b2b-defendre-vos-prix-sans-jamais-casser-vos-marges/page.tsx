@@ -260,7 +260,7 @@ export default function ArticlePage() {
               </li>
             </ul>
             <p className="text-xs text-gray-500 mt-4 border-t border-blue-ink/10 pt-3">
-              Source externe : <a href="https://hbr.org/topic/subject/negotiation" target="_blank" rel="noopener noreferrer" className="underline hover:text-mint-green">Négociation et Pricing — Harvard Business Review</a>
+              Source externe : <a href="https://hbr.org/topic/subject/pricing-strategy" target="_blank" rel="noopener noreferrer" className="underline hover:text-mint-green">Pricing Strategy — Harvard Business Review</a>
             </p>
           </div>
 
