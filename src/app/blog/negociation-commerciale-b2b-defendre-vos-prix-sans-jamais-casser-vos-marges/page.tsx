@@ -5,19 +5,20 @@ import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
 
 export const metadata: Metadata = {
-  title: 'Négociation commerciale B2B : défendre ses prix sans jamais casser ses marges | Laurent Serre',
+  title: 'Négociation B2B : défendre ses prix sans jamais casser ses marges',
   description:
-    'J\'ai passé des années à apprendre à négocier. Puis j\'ai compris que je me trompais de combat. « C\'est trop cher » n\'est presque jamais une objection de prix. C\'est une objection de clarté.',
+    '« C\'est trop cher » n\'est presque jamais une objection de prix. C\'est une objection de clarté. Découvrez pourquoi la vraie compétence est de rendre la négociation inutile.',
   keywords:
     'négociation commerciale B2B, défendre ses prix, objection prix, découverte commerciale, conviction avant prix, Laurent Serre',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog/negociation-commerciale-b2b-defendre-vos-prix-sans-jamais-casser-vos-marges',
   },
   other: {
+    'datePublished': '2026-05-15',
     'dateModified': '2026-05-15',
   },
   openGraph: {
-    title: 'Négociation commerciale B2B : défendre ses prix sans jamais casser ses marges',
+    title: 'Négociation B2B : défendre ses prix sans jamais casser ses marges',
     description:
       'La vraie compétence, ce n\'est pas de bien négocier. C\'est de rendre la négociation inutile.',
     url: 'https://www.laurentserre.com/blog/negociation-commerciale-b2b-defendre-vos-prix-sans-jamais-casser-vos-marges',
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-05-15-negociation-commerciale-b2b-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-05-15-negociation-commerciale-b2b-hero.webp',
         width: 1264,
         height: 848,
         alt: 'Négociation B2B — la vraie compétence est de rendre la négociation inutile',
@@ -34,10 +35,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Négociation commerciale B2B : défendre ses prix sans jamais casser ses marges | Laurent Serre',
+    title: 'Négociation B2B : défendre ses prix sans jamais casser ses marges',
     description:
       'La vraie compétence, ce n\'est pas de bien négocier. C\'est de rendre la négociation inutile.',
-    images: ['https://www.laurentserre.com/images/blog/2026-05-15-negociation-commerciale-b2b-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-05-15-negociation-commerciale-b2b-hero.webp'],
   },
 };
 
@@ -50,7 +51,7 @@ export default function ArticlePage() {
       {
         '@type': 'Article',
         '@id': `${articleUrl}#article`,
-        'headline': 'Négociation commerciale B2B : défendre ses prix sans jamais casser ses marges',
+        'headline': 'Négociation B2B : défendre ses prix sans jamais casser ses marges',
         'description':
           'La vraie compétence, ce n\'est pas de bien négocier. C\'est de rendre la négociation inutile.',
         'datePublished': '2026-05-15',
@@ -62,7 +63,7 @@ export default function ArticlePage() {
         },
         'image': {
           '@type': 'ImageObject',
-          'url': 'https://www.laurentserre.com/images/blog/2026-05-15-negociation-commerciale-b2b-hero.png',
+          'url': 'https://www.laurentserre.com/images/blog/2026-05-15-negociation-commerciale-b2b-hero.webp',
           'width': 1264,
           'height': 848,
         },
@@ -74,6 +75,35 @@ export default function ArticlePage() {
           '@type': 'WebPage',
           '@id': articleUrl,
         },
+      },
+      {
+        '@type': 'FAQPage',
+        'mainEntity': [
+          {
+            '@type': 'Question',
+            'name': 'Pourquoi « c\'est trop cher » n\'est-il pas une objection de prix ?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Parce que c\'est une objection de clarté. Le client ne voit pas assez la différence entre ce que vous apportez et ce qu\'il a aujourd\'hui. Il compare sur le seul critère visible : le montant. Le vrai travail est en amont, dans la découverte et la construction de la conviction.',
+            },
+          },
+          {
+            '@type': 'Question',
+            'name': 'Comment réduire le taux de remise sans former ses commerciaux à la négociation ?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'En travaillant la phase amont : poser le cadre dès le premier rendez-vous, faire toucher le problème du doigt, montrer ce que le client perd vraiment à attendre. Un client qui a compris ce que vous changez pour lui ne demande pas une remise, il demande comment on commence.',
+            },
+          },
+          {
+            '@type': 'Question',
+            'name': 'Quel est le vrai problème quand un commercial ne tient pas ses prix ?',
+            'acceptedAnswer': {
+              '@type': 'Answer',
+              'text': 'Le problème n\'est pas la technique de négociation mais le travail de découverte en amont. Un commercial qui ne sait pas faire exister la valeur de sa solution avant la discussion prix se retrouve à défendre un montant, pas un investissement.',
+            },
+          },
+        ],
       },
       {
         '@type': 'BreadcrumbList',
@@ -92,7 +122,7 @@ export default function ArticlePage() {
       <section className="relative min-h-[70vh] flex items-center pt-20">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/blog/2026-05-15-negociation-commerciale-b2b-hero.png"
+            src="/images/blog/2026-05-15-negociation-commerciale-b2b-hero.webp"
             alt="Négociation B2B — la vraie compétence est de rendre la négociation inutile"
             fill
             className="object-cover object-top brightness-[0.3]"
@@ -120,6 +150,31 @@ export default function ArticlePage() {
       {/* Article Content */}
       <article className="py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* TL;DR — Ce que vous allez retenir */}
+          <div className="bg-mint-green/10 border border-mint-green/20 rounded-2xl p-6 mb-12">
+            <p className="text-sm font-bold text-mint-green uppercase tracking-wider mb-2">
+              ⚡ Ce que vous allez retenir
+            </p>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li className="flex items-start gap-2">
+                <span className="text-mint-green mt-1 shrink-0">✓</span>
+                <span>« C&#39;est trop cher » n&#39;est presque jamais une objection de prix — c&#39;est une objection de clarté</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-mint-green mt-1 shrink-0">✓</span>
+                <span>Quand vous arrivez à la discussion prix, la partie est souvent déjà perdue depuis longtemps</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-mint-green mt-1 shrink-0">✓</span>
+                <span>La vraie compétence n&#39;est pas de bien négocier — c&#39;est de rendre la négociation inutile</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="text-mint-green mt-1 shrink-0">✓</span>
+                <span>Passer de 18 % à 8 % de taux de remise en travaillant la phase amont (résultat terrain)</span>
+              </li>
+            </ul>
+          </div>
+
           <div className="prose prose-lg max-w-none">
             <p>
               Je me souviens d&apos;un commercial que j&apos;accompagnais. Il préparait ses entretiens de négociation comme un examen. Prix plancher, arguments de valeur, contreparties possibles, objections anticipées. Il avait tout prévu.
@@ -133,6 +188,8 @@ export default function ArticlePage() {
               Ce commercial a fini par céder 15 %, comme la fois d&apos;avant.
             </p>
 
+            <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Le vrai problème n&#39;est pas la négociation</h2>
+
             <p>
               Le problème n&apos;était pas sa technique. Le problème, c&apos;est qu&apos;il avait commencé à négocier bien trop tard.
             </p>
@@ -142,6 +199,8 @@ export default function ArticlePage() {
                 <strong>Quand vous arrivez à la discussion prix, la partie est déjà perdue depuis longtemps.</strong> Pas parce que vous défendez mal votre tarif. Parce que vous n&apos;avez pas assez construit la conviction avant.
               </p>
             </blockquote>
+
+            <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">80 % d&#39;énergie sur la négociation, 20 % sur la découverte ? C&#39;est l&#39;inverse</h2>
 
             <p>
               Je vois des équipes qui passent 80 % de leur énergie à préparer la négociation et 20 % à préparer la découverte. C&apos;est l&apos;inverse qu&apos;il faudrait. Un client qui a vraiment compris ce que vous changez pour lui ne demande pas une remise. Il demande comment on commence.
@@ -156,6 +215,8 @@ export default function ArticlePage() {
                 <strong>La vraie compétence, ce n&apos;est pas de bien négocier. C&apos;est de rendre la négociation inutile.</strong>
               </p>
             </blockquote>
+
+            <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Un cas concret : de 18 % à 8 % de remise</h2>
 
             <p>
               Un dirigeant de PME me disait récemment : « Mes commerciaux ne savent pas tenir un prix. » Je lui ai répondu : « Vos commerciaux ne savent pas le faire exister avant. »
@@ -175,6 +236,31 @@ export default function ArticlePage() {
 
             <p>
               Et ça, aucun barème de concession ne le rattrapera.
+            </p>
+          </div>
+
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 mt-16">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">📖 Pour aller plus loin</p>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>
+                <Link href="/blog/la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif" className="text-blue-ink underline hover:text-mint-green transition-colors">
+                  La peur du prix : le vrai problème n&#39;est presque jamais le tarif
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix" className="text-blue-ink underline hover:text-mint-green transition-colors">
+                  Pourquoi des commerciaux expérimentés se font encore avoir sur l&#39;objection prix
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog/gestion-des-objections-commerciales-transformer-le-non-en-opportunite" className="text-blue-ink underline hover:text-mint-green transition-colors">
+                  Gestion des objections : transformer le non en opportunité
+                </Link>
+              </li>
+            </ul>
+            <p className="text-xs text-gray-500 mt-4 border-t border-blue-ink/10 pt-3">
+              Source externe : <a href="https://hbr.org/topic/subject/negotiation" target="_blank" rel="noopener noreferrer" className="underline hover:text-mint-green">Négociation et Pricing — Harvard Business Review</a>
             </p>
           </div>
 
