@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'plan-prospection-commerciale-machine-leads-annee',
+    title: 'Plan de prospection commerciale : construire la machine qui génère des leads toute l\'année',
+    description: 'La prospection ne se fait pas quand on a le temps. Elle se tient parce qu\'elle est organisée : ciblage, message, canaux, rythme et suivi réel.',
+    date: '2026-05-16',
+    readTime: '7 min',
+    category: 'Prospection commerciale',
+    image: '/images/blog/2026-05-16-plan-prospection-commerciale-hero.png',
+    featured: true
+  },
+  {
     slug: 'negociation-commerciale-b2b-defendre-vos-prix-sans-jamais-casser-vos-marges',
     title: 'J\'ai passé des années à apprendre à négocier. Puis j\'ai compris que je me trompais de combat.',
     description: '« C\'est trop cher » n\'est presque jamais une objection de prix. C\'est une objection de clarté. La vraie compétence, ce n\'est pas de bien négocier. C\'est de rendre la négociation inutile.',

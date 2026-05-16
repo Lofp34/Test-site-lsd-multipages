@@ -15,8 +15,8 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 ## 2. KPI éditoriaux
 
-- **Total publications suivies** : 30
-- **Publications blog publiées** : 30
+- **Total publications suivies** : 31
+- **Publications blog publiées** : 31
 - **Idées en backlog** : 0
 - **Articles avec kit LinkedIn prêt** : 10
 - **Articles avec post LinkedIn draft** : 27
@@ -25,7 +25,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 ### Répartition par pilier
 - Expertise développement commercial PME : 0
 - Formation / transformation commerciale : 6
-- Outils / méthodes / ressources : 3
+- Outils / méthodes / ressources : 4
 - IA / tendances / prospective : 3
 - Management / pilotage dirigeant : 4
 - Techniques de vente terrain : 7
@@ -35,7 +35,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 ### Répartition par angle
 - Erreur fréquente : 6
 - Diagnostic : 2
-- Méthode : 3
+- Méthode : 4
 - Point de vue : 8
 - Terrain : 4
 - Transformation : 1
@@ -61,6 +61,7 @@ Suivre les publications passées, équilibrer les thèmes et les angles, éviter
 
 | Date | Statut | Titre | Sujet principal | Angle principal | Pilier | ICP cible | Intention business | Source dominante | Déclencheur temporel | URL blog | Kit LinkedIn | Email | Réutilisation possible | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 2026-05-16 | publié | Plan de prospection commerciale : construire la machine qui génère des leads toute l'année | Plan de prospection commerciale annuel, ciblage, canaux, rythme et pilotage | Méthode | Outils / méthodes / ressources | Dirigeant PME B2B / directeur commercial / manager commercial | Aider les PME à rendre la prospection régulière au lieu de relancer en urgence quand le pipeline se vide | Queue éditoriale / validation Laurent conversation | Oui — article du jour 017, image héro V2 vivante validée par Laurent le 2026-05-16 | https://www.laurentserre.com/blog/plan-prospection-commerciale-machine-leads-annee | à préparer | non requis | Post LinkedIn sur la prospection qui disparaît quand le pipe est plein ; carrousel plan tenu vs sprint de panique ; email court sur les créneaux intouchables | Publication avec dernière image validée par Laurent ; visuel hero `gpt-image-2` riche/vivant ; page article, index blog et dashboard mis à jour |
 | 2026-05-12 | publié | Ce n'est pas un problème de motivation — c'est un problème de diagnostic | Coaching commercial : écouter avant de prescrire | Diagnostic | Formation / transformation commerciale | Dirigeant PME B2B / directeur commercial / manager commercial | Aider les managers à diagnostiquer la vraie cause de sous-performance avant de construire un plan d'action, et à remplacer la case « motivation » par une vraie conversation | Queue éditoriale / voix Laurent rewrite | Oui — article 013 du dataset, rewrite voix Laurent validé, scheduled au 12 mai 2026, cohérent avec la séquence management / coaching / diagnostic d'équipe | https://www.laurentserre.com/blog/coaching-commercial-diagnostic-ecoute | à préparer | non requis (.publish-ok) | Post LinkedIn sur le diagnostic qui précède le coaching, carrousel 4 causes de sous-performance, email court sur les questions à poser avant le plan | Publication directe depuis `.publish-ok.md` validé par Laurent le 2026-05-11 ; visuel hero généré en `gpt-image-2` ; slug : coaching-commercial-diagnostic-ecoute |
 | 2026-05-05 | publié | Pipeline commercial PME : comment construire un outil qui prédit vraiment votre chiffre | Construction d'un pipeline fiable, indicateurs à suivre, erreurs à éviter, format de revue de pipeline | Méthode | Outils / méthodes / ressources | Dirigeant PME B2B / directeur commercial / manager commercial | Aider à fiabiliser le pipeline, sortir des probabilités au doigt mouillé, et rendre la revue hebdomadaire vraiment utile | Queue éditoriale / dataset 006 | Oui — article 006 du dataset planifié au 2026-05-05, V2 avec liens SEO internes validée par Laurent | https://www.laurentserre.com/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre | à préparer | non requis (validation directe) | Post LinkedIn d’opinion sur les pipelines fragiles, carrousel pipeline propre vs pipeline fantôme, email court sur les trois actions de la semaine | V2 avec liens SEO vers article CRM/IA et page transformation commerciale ; visuel hero généré en `gpt-image-2` ; publication depuis `.publish-ok.md` après validation directe Laurent
 | 2026-04-30 | publié | Le téléphone n’est pas mort, mais l’appel au hasard l’est | Prospection téléphonique B2B préparée vs appel au hasard | Terrain | Techniques de vente terrain | Dirigeant PME B2B / directeur commercial / manager commercial | Aider les équipes à retrouver une prospection téléphonique utile, située et qualifiante au lieu d’une activité d’appels pauvre | Queue éditoriale / reprise au filtre Laurent | Oui — sujet planifié au 30 avril dans `input/article_queue_20260428_dataset_laurent_serre`, fortement réécrit avant publication | https://www.laurentserre.com/blog/le-telephone-nest-pas-mort-mais-lappel-au-hasard-lest | à préparer | non requis | Post LinkedIn d’opinion sur téléphone mort vs appel pauvre ; carrousel appel au hasard / appel légitime / qualification ; email court sur les premières phrases qui changent tout | Le candidat planifié était marqué `needs_editorial_gate`; publication faite après reprise éditoriale complète, visuel hero généré en `gpt-image-2`, page article, index blog et dashboard mis à jour |
