@@ -42,7 +42,7 @@ const blogPosts = [
     date: '2026-05-16',
     readTime: '7 min',
     category: 'Prospection commerciale',
-    image: '/images/blog/2026-05-16-plan-prospection-commerciale-hero.png',
+    image: '/images/blog/2026-05-16-plan-prospection-commerciale-hero.webp',
     featured: true
   },
   {

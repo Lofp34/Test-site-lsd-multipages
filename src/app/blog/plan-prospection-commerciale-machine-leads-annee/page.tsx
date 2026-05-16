@@ -101,6 +101,43 @@ export default function ArticlePage() {
           },
         ],
       },
+      {
+        '@type': 'FAQPage',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Qui est votre prospect idéal ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Pas « tout le monde ». Un profil précis : secteur, taille d\'entreprise, poste du décideur, contexte déclencheur. Sans ICP clair, vos commerciaux prospectent dans tous les sens et convertissent très peu.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment calculer ses objectifs de prospection ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le calcul en cascade transforme un objectif de chiffre d\'affaires en activité concrète. Exemple : pour 12 nouveaux clients avec un taux de closing à 25 %, il faut 48 propositions, environ 80 rendez-vous et 400 contacts initiaux, soit 33 contacts par mois par commercial.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Pourquoi ne faut-il pas prospecter seulement quand le pipeline est vide ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'C\'est le syndrome du flux tendu commercial. Quand l\'activité est forte on ne prospecte plus, et quand elle ralentit on relance en urgence. Mais une première conversation ne devient pas une opportunité sérieuse du jour au lendemain. La prospection doit être une activité permanente, pas une activité de crise.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Quels indicateurs de prospection suivre chaque semaine ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Six indicateurs simples : nombre de nouveaux contacts initiés, nombre de conversations réelles, nombre de rendez-vous de découverte, nombre de propositions envoyées, taux de réponse par canal et qualité des rendez-vous obtenus.',
+            },
+          },
+        ],
+      },
     ],
   };
 
@@ -125,7 +162,7 @@ export default function ArticlePage() {
 
         <div className="relative w-full aspect-video mb-10 rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/images/blog/2026-05-16-plan-prospection-commerciale-hero.png"
+            src="/images/blog/2026-05-16-plan-prospection-commerciale-hero.webp"
             alt="Réunion de prospection commerciale en PME autour d'un tableau blanc"
             fill
             className="object-cover"
@@ -161,6 +198,18 @@ export default function ArticlePage() {
           </p>
         </div>
 
+        <nav className="mt-8 mb-8 p-5 bg-blue-ink/5 rounded-xl border border-blue-ink/10" aria-label="Sommaire">
+          <p className="text-sm font-semibold text-blue-ink mb-3">📑 Sommaire</p>
+          <ul className="space-y-1.5 text-sm">
+            <li><a href="#fondations-plan-prospection" className="text-mint-green hover:underline">Les 5 fondations du plan de prospection</a></li>
+            <li><a href="#calendrier-annuel-prospection" className="text-mint-green hover:underline">Construire le calendrier annuel</a></li>
+            <li><a href="#outils-plan-prospection" className="text-mint-green hover:underline">Les outils du plan de prospection</a></li>
+            <li><a href="#suivi-plan-prospection" className="text-mint-green hover:underline">Suivre et piloter le plan en cours d'année</a></li>
+            <li><a href="#erreur-pipeline-vide" className="text-mint-green hover:underline">L'erreur fréquente : prospecter seulement quand le pipeline est vide</a></li>
+            <li><a href="#conclusion-plan-prospection" className="text-mint-green hover:underline">Conclusion : votre plan de prospection en 5 questions</a></li>
+          </ul>
+        </nav>
+
         <div className="mt-10 prose prose-lg max-w-none prose-a:text-mint-green prose-a:no-underline hover:prose-a:underline prose-strong:text-blue-ink">
           <p>
             Janvier. Tout le monde repart avec de bonnes résolutions. « Cette année, on prospecte vraiment. »
@@ -181,7 +230,7 @@ export default function ArticlePage() {
             Voici comment le construire.
           </p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
+          <h2 id="fondations-plan-prospection" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
             Les 5 fondations du plan de prospection
           </h2>
 
@@ -265,7 +314,7 @@ export default function ArticlePage() {
             ne l'est vraiment.
           </p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
+          <h2 id="calendrier-annuel-prospection" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
             Construire le calendrier annuel
           </h2>
 
@@ -306,7 +355,7 @@ export default function ArticlePage() {
             Cette structure crée un rythme régulier et évite les à-coups.
           </p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
+          <h2 id="outils-plan-prospection" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
             Les outils du plan de prospection
           </h2>
 
@@ -389,7 +438,7 @@ export default function ArticlePage() {
             Un bon playbook n'est pas figé. Il évolue chaque trimestre avec les retours de l'équipe.
           </p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
+          <h2 id="suivi-plan-prospection" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
             Suivre et piloter le plan en cours d'année
           </h2>
 
@@ -439,7 +488,7 @@ export default function ArticlePage() {
             Un plan de prospection n'est pas un document qu'on range. C'est un système qu'on ajuste.
           </p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
+          <h2 id="erreur-pipeline-vide" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
             L'erreur fréquente : prospecter seulement quand le pipeline est vide
           </h2>
 
@@ -478,7 +527,7 @@ export default function ArticlePage() {
             C'est la seule façon de garder un chiffre d'affaires régulier.
           </p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
+          <h2 id="conclusion-plan-prospection" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
             Conclusion : votre plan de prospection en 5 questions
           </h2>
 
@@ -545,6 +594,12 @@ export default function ArticlePage() {
               <span className="block text-gray-500 mt-0.5">Parce que prospecter régulièrement sert d'abord à éviter les trous d'air commerciaux.</span>
             </li>
           </ul>
+          <p className="mt-4 text-xs text-gray-400">
+            Source externe :{' '}
+            <a href="https://www.hubspot.com/sales/pipeline-management" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">
+              HubSpot — Pipeline Management Guide
+            </a>
+          </p>
         </div>
 
         <div className="mt-12 p-8 bg-gradient-to-br from-blue-ink/5 to-mint-green/5 rounded-2xl border border-mint-green/20">
