@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'psychologie-acheteur-b2b-decision-defendable',
+    title: 'Votre prospect ne compare pas seulement des offres. Il cherche une décision qu\'il pourra défendre.',
+    description: 'Un acheteur B2B ne compare pas seulement des offres. Il compare des risques. Pour une raison simple : il ne signe jamais seul dans sa tête.',
+    date: '2026-05-18',
+    readTime: '4 min',
+    category: 'Psychologie commerciale',
+    image: '/images/blog/2026-05-18-psychologie-acheteur-b2b-hero.png',
+    featured: true
+  },
+  {
     slug: 'plan-prospection-commerciale-machine-leads-annee',
     title: 'Plan de prospection commerciale : construire la machine qui génère des leads toute l\'année',
     description: 'La prospection ne se fait pas quand on a le temps. Elle se tient parce qu\'elle est organisée : ciblage, message, canaux, rythme et suivi réel.',
