@@ -40,9 +40,9 @@ const blogPosts = [
     title: 'Votre prospect ne compare pas seulement des offres. Il cherche une décision qu\'il pourra défendre.',
     description: 'Un acheteur B2B ne compare pas seulement des offres. Il compare des risques. Pour une raison simple : il ne signe jamais seul dans sa tête.',
     date: '2026-05-18',
-    readTime: '4 min',
+    readTime: '6 min',
     category: 'Psychologie commerciale',
-    image: '/images/blog/2026-05-18-psychologie-acheteur-b2b-hero.png',
+    image: '/images/blog/2026-05-18-psychologie-acheteur-b2b-hero.webp',
     featured: true
   },
   {
