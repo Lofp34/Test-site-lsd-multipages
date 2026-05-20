@@ -166,6 +166,46 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Clients — Ils nous font confiance */}
+        <div className="py-12 border-t border-primary-bg/20">
+          <div className="text-center mb-8">
+            <h4 className="font-title font-semibold text-primary-bg text-lg mb-2">Ils nous font confiance</h4>
+            <div className="w-12 h-0.5 bg-mint-green mx-auto rounded-full"></div>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
+            <a href="https://www.septeo.com" target="_blank" rel="noopener noreferrer" className="group" title="Septeo">
+              <img src="/images/septeo.png" alt="Septeo" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+            </a>
+            <a href="https://www.kpmg.com/fr" target="_blank" rel="noopener noreferrer" className="group" title="KPMG France">
+              <img src="/images/KPMGjpeg.jpeg" alt="KPMG" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+            </a>
+            <a href="https://www.bernafon.com/fr" target="_blank" rel="noopener noreferrer" className="group" title="Bernafon">
+              <img src="/images/Bernafon.png" alt="Bernafon" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+            </a>
+            <a href="https://www.moncoachbrico.com" target="_blank" rel="noopener noreferrer" className="group" title="Mon Coach Brico">
+              <img src="/images/moncoachbrico-favicon.png" alt="Mon Coach Brico" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+            </a>
+            <a href="https://www.creavea.com" target="_blank" rel="noopener noreferrer" className="group" title="Creavea">
+              <img src="/images/creavea-favicon.png" alt="Creavea" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+            </a>
+            <a href="https://www.ovea.com" target="_blank" rel="noopener noreferrer" className="group" title="OVEA">
+              <img src="/images/ovea-favicon.png" alt="OVEA" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+            </a>
+            <a href="https://www.bibal.com" target="_blank" rel="noopener noreferrer" className="group" title="Cafés Bibal">
+              <img src="/images/Bibal.png" alt="Bibal" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+            </a>
+            <a href="https://www.univ-perp.fr" target="_blank" rel="noopener noreferrer" className="group" title="Université de Perpignan">
+              <img src="/images/UPVD.png" alt="UPVD" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+            </a>
+            <a href="https://www.ipo-sa.com" target="_blank" rel="noopener noreferrer" className="group" title="IPO Technologie">
+              <img src="/images/ipo-sa-favicon.png" alt="IPO Technologie" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+            </a>
+            <a href="https://www.compagnons-du-devoir.com" target="_blank" rel="noopener noreferrer" className="group" title="Compagnons du Devoir">
+              <img src="/images/compagnons-favicon.png" alt="Compagnons du Devoir" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+            </a>
+          </div>
+        </div>
+
         {/* Ligne de séparation */}
         <div className="border-t border-primary-bg/20"></div>
 
