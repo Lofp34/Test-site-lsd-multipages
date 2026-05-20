@@ -5,7 +5,7 @@ import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
 
 const articleUrl = 'https://www.laurentserre.com/blog/playbook-commercial-guide-pratique-terrain';
-const heroImage = 'https://www.laurentserre.com/images/blog/2026-05-20-playbook-commercial-hero.webp';
+const heroImage = 'https://www.laurentserre.com/images/blog/2026-05-20-playbook-commercial-hero.png';
 
 export const metadata: Metadata = {
   title: 'Playbook commercial : comment créer un guide de terrain que vos commerciaux utilisent vraiment',
@@ -198,64 +198,42 @@ export default function PlaybookCommercialGuidePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
       />
 
-      <section className="py-24 sm:py-32 pb-14 sm:pb-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative min-h-[70vh] flex items-center pt-20">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/blog/2026-05-20-playbook-commercial-hero.png"
+            alt="Playbook commercial - construire un outil de terrain qui sert vraiment"
+            fill
+            className="object-cover object-top brightness-[0.3]"
+            priority
+          />
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-mint-green text-white">
+              Methode de vente / outils terrain
+            </span>
+            <span className="text-white/60 text-sm">• 20 mai 2026</span>
+            <span className="text-white/60 text-sm">• 7 min</span>
+          </div>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-title font-bold mb-6 leading-tight">
+            Playbook commercial : le guide pratique pour creer celui qui va vraiment etre utilise
+          </h1>
+          <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+            La plupart des playbooks ont le meme destin : crees avec enthousiasme, partages avec l'equipe, puis oublies dans un dossier que personne ne rouvrira jamais.
+          </p>
+        </div>
+      </section>
+
+      <article className="py-16 bg-white">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="mb-8 text-sm text-gray-500" aria-label="Fil d'Ariane">
             <Link href="/blog" className="hover:text-mint-green transition-colors">
               ← Retour au blog
             </Link>
           </nav>
 
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-4 py-2 rounded-full mb-6">
-              <span className="font-title font-semibold text-mint-green text-sm">Methode de vente / outils terrain</span>
-            </div>
-
-            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              Playbook commercial : le guide pratique pour creer celui qui va vraiment etre utilise
-            </h1>
-
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-              La plupart des playbooks ont le meme destin : crees avec enthousiasme, partages avec l'equipe, puis oublies dans un dossier que personne ne rouvrira jamais.
-            </p>
-
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
-              <div className="flex items-center gap-2">
-                <Image
-                  src="/laurent.jpg"
-                  alt="Laurent Serre"
-                  width={32}
-                  height={32}
-                  className="rounded-full"
-                  quality={60}
-                  sizes="32px"
-                  loading="lazy"
-                />
-                <span>Laurent Serre</span>
-              </div>
-              <span>•</span>
-              <time dateTime="2026-05-20">20 mai 2026</time>
-              <span>•</span>
-              <span>7 min de lecture</span>
-            </div>
-          </div>
-
-          <div className="relative overflow-hidden rounded-2xl shadow-lg">
-            <Image
-              src="/images/blog/2026-05-20-playbook-commercial-hero.webp"
-              alt="Playbook commercial - construire un outil de terrain qui sert vraiment"
-              width={1536}
-              height={1024}
-              className="w-full h-auto object-cover"
-              priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-            />
-          </div>
-        </div>
-      </section>
-
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="prose prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none">
           <div className="bg-mint-green/10 border border-mint-green/30 rounded-2xl p-6 mb-10">
             <p className="font-title font-bold text-blue-ink text-sm uppercase tracking-wider mb-3">Ce que vous allez retenir</p>
             <ul className="space-y-2 text-sm text-gray-700">
