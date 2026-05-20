@@ -30,9 +30,9 @@ export default function Footer() {
               <img src="/images/moncoachbrico-favicon.png" alt="Mon Coach Brico" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
               <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Mon Coach Brico</span>
             </a>
-            <a href="https://www.seguret-decoration.fr" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Séguré Décoration">
-              <img src="/images/Seguret decoration.png" alt="Séguré Décoration" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-              <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Séguré Décoration</span>
+            <a href="https://www.seguret-decoration.fr" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Séguret Décoration">
+              <img src="/images/Seguret decoration.png" alt="Séguret Décoration" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Séguret Décoration</span>
             </a>
             <a href="https://www.bibal.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Cafés Bibal">
               <img src="/images/Bibal.png" alt="Bibal" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
