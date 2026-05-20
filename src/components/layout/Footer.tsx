@@ -6,6 +6,57 @@ export default function Footer() {
   return (
     <footer className="bg-blue-ink text-primary-bg">
       <div className="max-w-6xl mx-auto px-6">
+
+        {/* Clients — Ils nous font confiance */}
+        <div className="py-12 border-b border-primary-bg/20">
+          <div className="text-center mb-8">
+            <h4 className="font-title font-semibold text-primary-bg text-lg mb-2">Ils nous font confiance</h4>
+            <div className="w-12 h-0.5 bg-mint-green mx-auto rounded-full"></div>
+          </div>
+          <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+            <a href="https://www.septeo.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Septeo">
+              <img src="/images/septeo.png" alt="Septeo" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Septeo</span>
+            </a>
+            <a href="https://www.kpmg.com/fr" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="KPMG France">
+              <img src="/images/KPMGjpeg.jpeg" alt="KPMG" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">KPMG</span>
+            </a>
+            <a href="https://www.bernafon.com/fr" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Bernafon">
+              <img src="/images/Bernafon.png" alt="Bernafon" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Bernafon</span>
+            </a>
+            <a href="https://www.moncoachbrico.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Mon Coach Brico">
+              <img src="/images/moncoachbrico-favicon.png" alt="Mon Coach Brico" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Mon Coach Brico</span>
+            </a>
+            <a href="https://www.seguredecoration.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Séguré Décoration">
+              <img src="/images/Seguret decoration.png" alt="Séguré Décoration" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Séguré Décoration</span>
+            </a>
+            <a href="https://www.bibal.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Cafés Bibal">
+              <img src="/images/Bibal.png" alt="Bibal" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Cafés Bibal</span>
+            </a>
+            <a href="https://www.ovea.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="OVEA">
+              <img src="/images/ovea-logo.svg" alt="OVEA" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">OVEA</span>
+            </a>
+            <a href="https://www.univ-perp.fr" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Université de Perpignan">
+              <img src="/images/UPVD.png" alt="UPVD" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">UPVD</span>
+            </a>
+            <a href="https://www.ipo-sa.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="IPO Technologie">
+              <img src="/images/ipo-sa-favicon.png" alt="IPO Technologie" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">IPO Technologie</span>
+            </a>
+            <a href="https://www.compagnons-du-devoir.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Compagnons du Devoir">
+              <img src="/images/compagnons-logo.png" alt="Compagnons du Devoir" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Compagnons du Devoir</span>
+            </a>
+          </div>
+        </div>
+
         {/* Section principale du footer */}
         <div className="py-16 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo et description */}
@@ -163,46 +214,6 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Clients — Ils nous font confiance */}
-        <div className="py-12 border-t border-primary-bg/20">
-          <div className="text-center mb-8">
-            <h4 className="font-title font-semibold text-primary-bg text-lg mb-2">Ils nous font confiance</h4>
-            <div className="w-12 h-0.5 bg-mint-green mx-auto rounded-full"></div>
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10">
-            <a href="https://www.septeo.com" target="_blank" rel="noopener noreferrer" className="group" title="Septeo">
-              <img src="/images/septeo.png" alt="Septeo" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-            </a>
-            <a href="https://www.kpmg.com/fr" target="_blank" rel="noopener noreferrer" className="group" title="KPMG France">
-              <img src="/images/KPMGjpeg.jpeg" alt="KPMG" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-            </a>
-            <a href="https://www.bernafon.com/fr" target="_blank" rel="noopener noreferrer" className="group" title="Bernafon">
-              <img src="/images/Bernafon.png" alt="Bernafon" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-            </a>
-            <a href="https://www.moncoachbrico.com" target="_blank" rel="noopener noreferrer" className="group" title="Mon Coach Brico">
-              <img src="/images/moncoachbrico-favicon.png" alt="Mon Coach Brico" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-            </a>
-            <a href="https://www.creavea.com" target="_blank" rel="noopener noreferrer" className="group" title="Creavea">
-              <img src="/images/creavea-favicon.png" alt="Creavea" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-            </a>
-            <a href="https://www.ovea.com" target="_blank" rel="noopener noreferrer" className="group" title="OVEA">
-              <img src="/images/ovea-favicon.png" alt="OVEA" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-            </a>
-            <a href="https://www.bibal.com" target="_blank" rel="noopener noreferrer" className="group" title="Cafés Bibal">
-              <img src="/images/Bibal.png" alt="Bibal" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-            </a>
-            <a href="https://www.univ-perp.fr" target="_blank" rel="noopener noreferrer" className="group" title="Université de Perpignan">
-              <img src="/images/UPVD.png" alt="UPVD" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-            </a>
-            <a href="https://www.ipo-sa.com" target="_blank" rel="noopener noreferrer" className="group" title="IPO Technologie">
-              <img src="/images/ipo-sa-favicon.png" alt="IPO Technologie" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-            </a>
-            <a href="https://www.compagnons-du-devoir.com" target="_blank" rel="noopener noreferrer" className="group" title="Compagnons du Devoir">
-              <img src="/images/compagnons-favicon.png" alt="Compagnons du Devoir" className="h-8 md:h-10 opacity-60 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-            </a>
           </div>
         </div>
 
