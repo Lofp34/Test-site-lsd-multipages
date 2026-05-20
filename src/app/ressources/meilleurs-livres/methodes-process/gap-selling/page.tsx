@@ -4,6 +4,9 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Gap Selling — méthode et résumé pour commerciaux B2B',
   description: 'La méthode Gap Selling de Keenan : identifier l’écart entre la situation actuelle et souhaitée du client pour vendre sans forcer. Résumé et applications terrain.',
+  alternates: {
+    canonical: 'https://www.laurentserre.com/ressources/meilleurs-livres/methodes-process/gap-selling',
+  },
 };
 
 export default function GapSellingPage() {
