@@ -5,12 +5,12 @@ import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
 
 const articleUrl = 'https://www.laurentserre.com/blog/playbook-commercial-guide-pratique-terrain';
-const heroImage = 'https://www.laurentserre.com/images/blog/2026-05-20-playbook-commercial-hero.png';
+const heroImage = 'https://www.laurentserre.com/images/blog/2026-05-20-playbook-commercial-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Playbook commercial : le guide pratique pour créer celui qui va vraiment être utilisé',
+  title: 'Playbook commercial : comment créer un guide de terrain que vos commerciaux utilisent vraiment',
   description:
-    'La plupart des playbooks finissent oublies dans un Google Drive. Voici comment construire un vrai guide de terrain que vos commerciaux consulteront.',
+    'La plupart des playbooks finissent oubliés dans un Drive. Voici comment construire un guide de terrain que votre équipe consultera en situation de vente.',
   keywords:
     'playbook commercial, guide pratique vente, methode de vente, sales playbook PME, processus de vente, playbook de vente, Laurent Serre',
   alternates: {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Playbook commercial : le guide pratique pour creer celui qui va vraiment etre utilise',
     description:
-      'Un playbook de vente ne doit pas etre un document de 80 pages. Un guide de terrain consultable en 3 clics.',
+      'Playbook de vente : 7 sections clés, 2 semaines suffisent pour une V1. Un guide terrain consultable en 3 clics.',
     images: [heroImage],
   },
 };
@@ -117,6 +117,50 @@ export default function PlaybookCommercialGuidePage() {
               '@type': 'Answer',
               text: 'Trois conditions : 1) il est construit avec l equipe, pas par un consultant isole 2) il est accessible en 3 clics depuis le terrain 3) il est reference en reunion et mis a jour trimestriellement avec l equipe.',
             },
+          },
+        ],
+      },
+      {
+        '@type': 'HowTo',
+        '@id': articleUrl + '#howto',
+        name: 'Comment créer un playbook commercial utilisable en 2 semaines',
+        description: 'Un sprint de 2 semaines pour construire un playbook de vente que votre équipe utilisera vraiment sur le terrain.',
+        step: [
+          {
+            '@type': 'HowToStep',
+            position: 1,
+            name: 'Définir votre ICP et votre processus de vente',
+            text: 'Jour 1-2 : documentez votre client idéal (secteur, taille, poste du décideur, signaux déclencheurs) et schématisez votre processus de vente étape par étape avec critères d\'entrée et de sortie.',
+          },
+          {
+            '@type': 'HowToStep',
+            position: 2,
+            name: 'Rassembler vos meilleurs scripts',
+            text: 'Jour 3-4 : collectez les 5 scripts qui fonctionnent déjà dans votre équipe : téléphone, email, LinkedIn, découverte, closing.',
+          },
+          {
+            '@type': 'HowToStep',
+            position: 3,
+            name: 'Lister les objections les plus fréquentes',
+            text: 'Jour 5 : identifiez les 10 objections les plus fréquentes. Pour chacune, rédigez une réponse en 4 étapes : accueillir, creuser, reformuler, répondre.',
+          },
+          {
+            '@type': 'HowToStep',
+            position: 4,
+            name: 'Finaliser la bibliothèque d\'objections avec l\'équipe',
+            text: 'Semaine 2, jour 1-2 : passez en revue les objections avec vos commerciaux. Validez les formulations et ajoutez les objections manquantes.',
+          },
+          {
+            '@type': 'HowToStep',
+            position: 5,
+            name: 'Ajouter les questions de découverte et la section concurrence',
+            text: 'Jour 3-4 : documentez 15 à 20 questions de découverte organisées par thème, puis vos arguments concurrentiels.',
+          },
+          {
+            '@type': 'HowToStep',
+            position: 6,
+            name: 'Review collective et déploiement',
+            text: 'Jour 5 : organisez une revue collective avec l\'équipe. Choisissez le format et planifiez une mise à jour trimestrielle.',
           },
         ],
       },
@@ -198,7 +242,7 @@ export default function PlaybookCommercialGuidePage() {
 
           <div className="relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/images/blog/2026-05-20-playbook-commercial-hero.png"
+              src="/images/blog/2026-05-20-playbook-commercial-hero.webp"
               alt="Playbook commercial - construire un outil de terrain qui sert vraiment"
               width={1536}
               height={1024}
@@ -429,7 +473,7 @@ export default function PlaybookCommercialGuidePage() {
           </p>
 
           <p className="text-xs text-gray-400 mb-8">
-            Cet article s appuie sur mon experience d accompagnement d equipes commerciales PME depuis 2016. Les references methodologiques incluent les travaux de Neil Rackham (SPIN Selling) et les retours de terrain de plusieurs centaines d entreprises accompagnees sur la structuration de leur force de vente.
+            Cet article s appuie sur mon experience d accompagnement d equipes commerciales PME depuis 2016. Les references methodologiques incluent les travaux de Neil Rackham (SPIN Selling) et les retours de terrain de plusieurs centaines d entreprises accompagnees sur la structuration de leur force de vente. Pour aller plus loin sur la demarche de structuration des equipes de vente, consulter les travaux de <a href="https://hbr.org/2012/07/sales-management-that-works" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">Harvard Business Review sur le management des forces de vente</a>.
           </p>
 
           <h2 id="faq" className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
