@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'playbook-commercial-guide-pratique-terrain',
+    title: 'Playbook commercial : le guide pratique pour creer celui qui va vraiment etre utilise',
+    description: 'Un playbook de 80 pages qui dort vaut zero. Voici comment construire un guide de terrain que vos commerciaux consulteront en situation.',
+    date: '2026-05-20',
+    readTime: '7 min',
+    category: 'Methode de vente / outils terrain',
+    image: '/images/blog/2026-05-20-playbook-commercial-hero.webp',
+    featured: true
+  },
+  {
     slug: 'psychologie-acheteur-b2b-decision-defendable',
     title: 'Votre prospect ne compare pas seulement des offres. Il cherche une décision qu\'il pourra défendre.',
     description: 'Un acheteur B2B ne compare pas seulement des offres. Il compare des risques. Pour une raison simple : il ne signe jamais seul dans sa tête.',
