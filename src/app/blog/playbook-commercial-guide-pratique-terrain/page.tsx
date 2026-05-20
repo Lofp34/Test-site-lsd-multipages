@@ -5,7 +5,7 @@ import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
 
 const articleUrl = 'https://www.laurentserre.com/blog/playbook-commercial-guide-pratique-terrain';
-const heroImage = 'https://www.laurentserre.com/images/blog/2026-05-20-playbook-commercial-hero.webp';
+const heroImage = 'https://www.laurentserre.com/images/blog/2026-05-20-playbook-commercial-hero.png';
 
 export const metadata: Metadata = {
   title: 'Playbook commercial : le guide pratique pour créer celui qui va vraiment être utilisé',
@@ -198,7 +198,7 @@ export default function PlaybookCommercialGuidePage() {
 
           <div className="relative overflow-hidden rounded-2xl shadow-lg">
             <Image
-              src="/images/blog/2026-05-20-playbook-commercial-hero.webp"
+              src="/images/blog/2026-05-20-playbook-commercial-hero.png"
               alt="Playbook commercial - construire un outil de terrain qui sert vraiment"
               width={1536}
               height={1024}

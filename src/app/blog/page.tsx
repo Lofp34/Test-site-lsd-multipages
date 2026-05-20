@@ -42,7 +42,7 @@ const blogPosts = [
     date: '2026-05-20',
     readTime: '7 min',
     category: 'Methode de vente / outils terrain',
-    image: '/images/blog/2026-05-20-playbook-commercial-hero.webp',
+    image: '/images/blog/2026-05-20-playbook-commercial-hero.png',
     featured: true
   },
   {
