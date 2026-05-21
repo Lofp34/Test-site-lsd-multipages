@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
+import BDCarousel from '@/components/BDCarousel';
 
 export const metadata: Metadata = {
   title: 'Négociation B2B : défendre ses prix sans jamais casser ses marges',
@@ -173,6 +174,42 @@ export default function ArticlePage() {
                 <span>Passer de 18 % à 8 % de taux de remise en travaillant la phase amont (résultat terrain)</span>
               </li>
             </ul>
+          </div>
+
+          {/* Carrousel BD — viewer interactif */}
+          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mb-10">
+            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+              🎬 Carrousel BD — Négociation B2B
+            </p>
+            <p className="text-sm text-amber-700 mb-5">
+              11 planches illustrées — cliquez sur une vignette pour feuilleter la BD dans le lecteur intégré.
+            </p>
+            <BDCarousel
+              images={[
+                { src: '/images/blog/carrousel-negociation-b2b/01-commercial-preparation.webp', alt: 'Le commercial prépare sa négociation comme un examen', index: 1 },
+                { src: '/images/blog/carrousel-negociation-b2b/02-objection-trop-cher.webp', alt: 'Objection « c\'est trop cher »', index: 2 },
+                { src: '/images/blog/carrousel-negociation-b2b/03-mur-ceder-15.webp', alt: 'Le mur — céder 15 %', index: 3 },
+                { src: '/images/blog/carrousel-negociation-b2b/04-declic-laurent.webp', alt: 'Le déclic avec Laurent', index: 4 },
+                { src: '/images/blog/carrousel-negociation-b2b/05-balance-mauvais-combat.webp', alt: 'La balance du mauvais combat', index: 5 },
+                { src: '/images/blog/carrousel-negociation-b2b/06-clarte-pas-prix.webp', alt: 'Clarté, pas prix', index: 6 },
+                { src: '/images/blog/carrousel-negociation-b2b/07-tableau-negociation-inutile.webp', alt: 'La négociation rendue inutile', index: 7 },
+                { src: '/images/blog/carrousel-negociation-b2b/08-vrai-travail-decouverte.webp', alt: 'Le vrai travail : la découverte', index: 8 },
+                { src: '/images/blog/carrousel-negociation-b2b/09-montrer-perte.webp', alt: 'Montrer ce que le client perd vraiment', index: 9 },
+                { src: '/images/blog/carrousel-negociation-b2b/10-resultat-remise.webp', alt: 'Le résultat : taux de remise divisé', index: 10 },
+                { src: '/images/blog/carrousel-negociation-b2b/11-CTA-diagnostic.webp', alt: 'CTA — demande de diagnostic', index: 11 },
+              ]}
+              title="Carrousel BD — Négociation B2B"
+            />
+            <div className="mt-4 text-center">
+              <a
+                href="/downloads/carrousel-negociation-b2b-016.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                Télécharger le PDF (11 planches)
+              </a>
+            </div>
           </div>
 
           <div className="prose prose-lg max-w-none">
