@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero-v2.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero.webp',
         width: 1600,
         height: 900,
         alt: 'Système commercial 90 jours anti yo-yo',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Système commercial 90 jours : anti yo-yo du CA',
     description: 'Le cadre opérationnel pour sécuriser les revenus sans surcharger les équipes.',
-    images: ['https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero-v2.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero.webp'],
   },
 };
 
@@ -40,7 +40,7 @@ export default function Systeme90JoursPage() {
   "@type": "BlogPosting",
   "headline": "Système commercial 90 jours : le plan anti yo-yo du chiffre d&apos;affaires",
   "description": "Le framework 90 jours pour dirigeants et directeurs commerciaux qui veulent stabiliser le CA, accélérer les cycles et convertir plus proprement.",
-  "image": "https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero-v2.png",
+  "image": "https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero.webp",
   "datePublished": "2026-03-24",
   "dateModified": "2026-03-24",
   "author": {
@@ -74,52 +74,35 @@ export default function Systeme90JoursPage() {
   return (
 <main className="bg-primary-bg text-gray-dark">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <section className="py-24 sm:py-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-3 bg-orange-soft/10 backdrop-blur-sm border border-orange-soft/30 px-4 py-2 rounded-full mb-6">
-              <span className="font-title font-semibold text-orange-soft text-sm">Exécution commerciale</span>
-            </div>
-
-            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              Système commercial 90 jours : le plan anti yo-yo du chiffre d&apos;affaires
-            </h1>
-
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
-              <div className="flex items-center gap-2">
-                <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" loading="lazy" />
-                <span>Laurent Serre</span>
-              </div>
-              <span>•</span>
-              <time dateTime="2026-03-24">24 mars 2026</time>
-              <span>•</span>
-              <span>10 min de lecture</span>
-            </div>
+      <section className="relative min-h-[70vh] flex items-center pt-20">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/blog/2026-03-24-systeme-90-jours-hero.webp"
+            alt="Système commercial 90 jours pour sécuriser le chiffre d'affaires"
+            fill
+            className="object-cover object-top brightness-[0.3]"
+            priority
+          />
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-mint-green text-white">
+              Exécution commerciale
+            </span>
+            <span className="text-white/60 text-sm">• 24 mars 2026</span>
+            <span className="text-white/60 text-sm">• 10 min</span>
           </div>
-
-          <div className="relative mb-12">
-            <Image
-              src="/images/blog/2026-03-24-systeme-90-jours-hero-v2.png"
-              alt="Système commercial 90 jours pour sécuriser le chiffre d'affaires"
-              width={1600}
-              height={900}
-              className="w-full h-80 object-cover object-center rounded-2xl shadow-lg"
-              quality={72}
-              priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-            />
-          </div>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-title font-bold mb-6 leading-tight">
+            Système commercial 90 jours : le plan anti yo-yo du chiffre d&apos;affaires
+          </h1>
+          <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+            Beaucoup d'entreprises ont un problème qu'elles n'osent pas nommer : un chiffre d'affaires en dents de scie. Ce n'est pas un problème de motivation. C'est un problème de système.
+          </p>
         </div>
       </section>
 
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16">
         <div className="prose prose-lg max-w-none">
-          <p className="text-xl text-gray-600 leading-relaxed mb-8">
-            Beaucoup d&apos;entreprises ont un problème qu&apos;elles n&apos;osent pas nommer : un chiffre d&apos;affaires en dents de scie.
-            Un mois très fort, un mois trop faible, puis une pression qui remonte partout. Ce n&apos;est pas un problème de motivation.
-            C&apos;est un problème de système.
-          </p>
-
           <p className="mb-8">
             Si vous êtes dirigeant, DG ou directeur commercial, votre priorité n&apos;est pas de “faire plus”.
             Votre priorité est de <strong>mettre votre machine commerciale sous contrôle</strong>.
