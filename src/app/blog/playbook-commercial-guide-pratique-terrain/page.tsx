@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
+import BDCarousel from '@/components/BDCarousel';
 
 const articleUrl = 'https://www.laurentserre.com/blog/playbook-commercial-guide-pratique-terrain';
 const heroImage = 'https://www.laurentserre.com/images/blog/2026-05-20-playbook-commercial-hero.webp';
@@ -237,44 +238,39 @@ export default function PlaybookCommercialGuidePage() {
             </ul>
           </div>
 
-          {/* Carrousel BD — présentation visuelle */}
-          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl overflow-hidden mb-10">
-            <div className="relative">
-              <Image
-                src="/images/blog/carrousel-playbook-commercial-cover.webp"
-                alt="Carrousel Playbook Commercial — la couverture de la BD"
-                width={1024}
-                height={1536}
-                className="w-full h-auto object-contain max-h-[500px]"
-                sizes="(max-width: 768px) 100vw, 768px"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-2">
-                <span className="w-2 h-2 rounded-full bg-white shadow-md"></span>
-                <span className="w-2 h-2 rounded-full bg-white/50 shadow-md"></span>
-                <span className="w-2 h-2 rounded-full bg-white/50 shadow-md"></span>
-                <span className="w-2 h-2 rounded-full bg-white/50 shadow-md"></span>
-              </div>
-            </div>
-            <div className="p-5 flex items-center justify-between gap-4">
-              <div>
-                <p className="font-title font-semibold text-gray-800 text-sm">
-                  🎬 Carrousel BD — Playbook Commercial
-                </p>
-                <p className="text-xs text-gray-500 mt-0.5">
-                  12 planches illustrées • situations clés du terrain
-                </p>
-              </div>
+          {/* Carrousel BD — viewer interactif */}
+          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mb-10">
+            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+              🎬 Carrousel BD — Playbook Commercial
+            </p>
+            <p className="text-sm text-amber-700 mb-5">
+              12 planches illustrées — cliquez sur une vignette pour feuilleter la BD dans le lecteur intégré.
+            </p>
+            <BDCarousel
+              images={[
+                { src: '/images/blog/carrousel-playbook-commercial/01-cover.webp', alt: 'Couverture — Playbook Commercial', index: 1 },
+                { src: '/images/blog/carrousel-playbook-commercial/02-dirigeant-use.webp', alt: 'Le dirigeant submergé', index: 2 },
+                { src: '/images/blog/carrousel-playbook-commercial/03-lundi-sans-methode.webp', alt: 'Lundi sans méthode', index: 3 },
+                { src: '/images/blog/carrousel-playbook-commercial/04-mauvaise-prospection.webp', alt: 'Mauvaise prospection', index: 4 },
+                { src: '/images/blog/carrousel-playbook-commercial/05-objection-prix.webp', alt: 'Objection prix', index: 5 },
+                { src: '/images/blog/carrousel-playbook-commercial/06-diagnostic-dirigeant.webp', alt: 'Diagnostic dirigeant', index: 6 },
+                { src: '/images/blog/carrousel-playbook-commercial/07-faux-playbook.webp', alt: 'Le faux playbook', index: 7 },
+                { src: '/images/blog/carrousel-playbook-commercial/08-laurent-terrain.webp', alt: 'Laurent sur le terrain', index: 8 },
+                { src: '/images/blog/carrousel-playbook-commercial/09-construction-playbook.webp', alt: 'Construction du playbook', index: 9 },
+                { src: '/images/blog/carrousel-playbook-commercial/10-accompagnement-terrain.webp', alt: 'Accompagnement terrain', index: 10 },
+                { src: '/images/blog/carrousel-playbook-commercial/11-playbook-utilise.webp', alt: 'Playbook utilisé', index: 11 },
+                { src: '/images/blog/carrousel-playbook-commercial/12-chute.webp', alt: 'Chute — la clé du succès', index: 12 },
+              ]}
+              title="Carrousel BD — Playbook Commercial"
+            />
+            <div className="mt-4 text-center">
               <a
                 href="/downloads/carrousel-playbook-commercial-terrain.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="shrink-0 inline-flex items-center gap-2 bg-mint-green text-white text-sm font-semibold px-5 py-2.5 rounded-xl hover:bg-mint-green/90 transition-colors shadow-sm"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
               >
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                </svg>
-                Voir le carrousel
+                Télécharger le PDF (12 planches)
               </a>
             </div>
           </div>
