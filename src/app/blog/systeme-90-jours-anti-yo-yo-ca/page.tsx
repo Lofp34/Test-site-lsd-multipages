@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero-v2.png',
         width: 1600,
         height: 900,
         alt: 'Système commercial 90 jours anti yo-yo',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Système commercial 90 jours : anti yo-yo du CA',
     description: 'Le cadre opérationnel pour sécuriser les revenus sans surcharger les équipes.',
-    images: ['https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero-v2.png'],
   },
 };
 
@@ -40,7 +40,7 @@ export default function Systeme90JoursPage() {
   "@type": "BlogPosting",
   "headline": "Système commercial 90 jours : le plan anti yo-yo du chiffre d&apos;affaires",
   "description": "Le framework 90 jours pour dirigeants et directeurs commerciaux qui veulent stabiliser le CA, accélérer les cycles et convertir plus proprement.",
-  "image": "https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero.png",
+  "image": "https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero-v2.png",
   "datePublished": "2026-03-24",
   "dateModified": "2026-03-24",
   "author": {
@@ -99,7 +99,7 @@ export default function Systeme90JoursPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-03-24-systeme-90-jours-hero.png"
+              src="/images/blog/2026-03-24-systeme-90-jours-hero-v2.png"
               alt="Système commercial 90 jours pour sécuriser le chiffre d'affaires"
               width={1600}
               height={900}
