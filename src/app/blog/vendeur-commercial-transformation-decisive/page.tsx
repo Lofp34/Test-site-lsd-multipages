@@ -22,9 +22,9 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/equipedeface.jpg',
-        width: 1200,
-        height: 630,
+        url: 'https://www.laurentserre.com/images/blog/2024-12-20-vendeur-commercial-hero.webp',
+        width: 1024,
+        height: 559,
         alt: 'Transformation vendeur commercial - équipe commerciale professionnelle',
       },
     ],
@@ -130,28 +130,30 @@ export default function Article5() {
           })
         }}
       />
-      <section className="py-24 sm:py-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-4 py-2 rounded-full mb-6">
-              <span className="font-title font-semibold text-mint-green text-sm">Management</span>
-            </div>
-
-            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              Différence entre vendeur et commercial : les 5 clés de la transformation
-            </h1>
-
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
-              <div className="flex items-center gap-2">
-                <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" loading="lazy" />
-                <span>Laurent Serre</span>
-              </div>
-              <span>•</span>
-              <time dateTime="2024-12-20">20 décembre 2024</time>
-              <span>•</span>
-              <span>11 min de lecture</span>
-            </div>
+      <section className="relative min-h-[70vh] flex items-center pt-20">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/blog/2024-12-20-vendeur-commercial-hero.webp"
+            alt="Différence entre vendeur et commercial - les 5 clés de la transformation"
+            fill
+            className="object-cover object-top brightness-[0.3]"
+            priority
+          />
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          <div className="flex items-center justify-center gap-3 mb-6">
+            <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-mint-green text-white">
+              Management
+            </span>
+            <span className="text-white/60 text-sm">• 20 décembre 2024</span>
+            <span className="text-white/60 text-sm">• 11 min</span>
           </div>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-title font-bold mb-6 leading-tight">
+            Différence entre vendeur et commercial : les 5 clés de la transformation
+          </h1>
+          <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
+            "Vendeur" et "commercial" ne sont pas synonymes. Comprendre la différence et opérer la transformation peut multiplier vos résultats par 3.
+          </p>
         </div>
       </section>
 
@@ -159,11 +161,6 @@ export default function Article5() {
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
             La différence entre un vendeur et un commercial est simple : le vendeur exécute des transactions immédiates, le commercial construit un pipeline de vente par la qualification, la découverte et l'accompagnement. L'un vend ce qu'on lui donne, l'autre construit ce qu'il vend. Le résultat ? Un commercial performant génère en moyenne 40% de chiffre d'affaires supplémentaire par rapport à un vendeur classique.
-          </p>
-          <p className="text-xl text-gray-600 leading-relaxed mb-8">
-            "Vendeur" et "commercial" ne sont pas synonymes. Cette confusion coûte cher aux entreprises. 
-            Comprendre cette différence et savoir opérer la transformation peut multiplier vos résultats par 3. 
-            Voici comment faire.
           </p>
 
           <div className="bg-mint-green/10 border-l-4 border-mint-green p-6 my-8">
