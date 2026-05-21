@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
+import BDCarousel from '@/components/BDCarousel';
 
 export const metadata: Metadata = {
   title: 'Système commercial 90 jours : le plan anti yo-yo du chiffre d\'affaires | Laurent Serre',
