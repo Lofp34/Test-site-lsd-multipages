@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
+import BDCarousel from '@/components/BDCarousel';
 
 export const metadata: Metadata = {
   title: 'Ce n\'est pas un problème de motivation — c\'est un problème de diagnostic | Laurent Serre',
@@ -166,6 +167,39 @@ export default function ArticlePage() {
             cette case. Avant de préparer un plan, prenez le temps de la conversation. Posez des
             questions ouvertes. Taisez-vous après les avoir posées.
           </p>
+        </div>
+
+        {/* Carrousel BD */}
+        <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-10">
+          <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+            🎬 Carrousel BD — Coaching Commercial
+          </p>
+          <p className="text-sm text-amber-700 mb-5">
+            8 planches illustrées — cliquez sur une vignette pour feuilleter la BD dans le lecteur intégré.
+          </p>
+          <BDCarousel
+            images={[
+              { src: '/images/blog/carrousel-coaching-commercial/article013_coaching_bd_slide01.webp', alt: 'Les 4 causes de sous-performance', index: 1 },
+              { src: '/images/blog/carrousel-coaching-commercial/article013_coaching_bd_slide02.webp', alt: 'Le diagnostic qui change tout', index: 2 },
+              { src: '/images/blog/carrousel-coaching-commercial/article013_coaching_bd_slide03.webp', alt: 'La conversation de coaching', index: 3 },
+              { src: '/images/blog/carrousel-coaching-commercial/article013_coaching_bd_slide04.webp', alt: 'Poser les bonnes questions', index: 4 },
+              { src: '/images/blog/carrousel-coaching-commercial/article013_coaching_bd_slide05.webp', alt: 'Écouter avant de décider', index: 5 },
+              { src: '/images/blog/carrousel-coaching-commercial/article013_coaching_bd_slide06.webp', alt: 'Les signaux du terrain', index: 6 },
+              { src: '/images/blog/carrousel-coaching-commercial/article013_coaching_bd_slide07.webp', alt: 'Le plan d\'action personnalisé', index: 7 },
+              { src: '/images/blog/carrousel-coaching-commercial/article013_coaching_bd_slide08.webp', alt: 'Résultats du coaching terrain', index: 8 },
+            ]}
+            title="Carrousel BD — Coaching Commercial"
+          />
+          <div className="mt-4 text-center">
+            <a
+              href="/downloads/carrousel-coaching-commercial-013.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+            >
+              Télécharger le PDF (8 planches)
+            </a>
+          </div>
         </div>
 
         {/* Sommaire */}
