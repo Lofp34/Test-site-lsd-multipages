@@ -157,7 +157,7 @@ export default function Article5() {
         </div>
       </section>
 
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-16">
         <div className="prose prose-lg max-w-none">
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
             La différence entre un vendeur et un commercial est simple : le vendeur exécute des transactions immédiates, le commercial construit un pipeline de vente par la qualification, la découverte et l'accompagnement. L'un vend ce qu'on lui donne, l'autre construit ce qu'il vend. Le résultat ? Un commercial performant génère en moyenne 40% de chiffre d'affaires supplémentaire par rapport à un vendeur classique.
