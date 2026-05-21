@@ -241,11 +241,11 @@ export default function PlaybookCommercialGuidePage() {
           <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl overflow-hidden mb-10">
             <div className="relative">
               <Image
-                src="/images/blog/2026-05-20-playbook-commercial-hero.webp"
-                alt="Carrousel Playbook Commercial — les situations clés illustrées"
-                width={1536}
-                height={1024}
-                className="w-full h-auto object-cover"
+                src="/images/blog/carrousel-playbook-commercial-cover.webp"
+                alt="Carrousel Playbook Commercial — la couverture de la BD"
+                width={1024}
+                height={1536}
+                className="w-full h-auto object-contain max-h-[500px]"
                 sizes="(max-width: 768px) 100vw, 768px"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
