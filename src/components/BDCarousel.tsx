@@ -52,7 +52,7 @@ export default function BDCarousel({ images, title, className = '' }: BDCarousel
     };
   }, [lightboxOpen, closeLightbox, goNext, goPrev]);
 
-  const previewCount = props.maxPreview ?? 4;
+  const previewCount = maxPreview ?? 4;
   const visibleImages = images.slice(0, previewCount);
   const hasMore = images.length > previewCount;
 
