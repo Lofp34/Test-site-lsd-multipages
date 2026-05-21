@@ -189,6 +189,7 @@ export default function ArticlePage() {
               { src: '/images/blog/carrousel-coaching-commercial/article013_coaching_bd_slide08.webp', alt: 'Résultats du coaching terrain', index: 8 },
             ]}
             title="Carrousel BD — Coaching Commercial"
+            maxPreview={2}
           />
           <div className="mt-4 text-center">
             <a

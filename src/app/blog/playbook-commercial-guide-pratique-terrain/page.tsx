@@ -262,6 +262,7 @@ export default function PlaybookCommercialGuidePage() {
                 { src: '/images/blog/carrousel-playbook-commercial/12-chute.webp', alt: 'Chute — la clé du succès', index: 12 },
               ]}
               title="Carrousel BD — Playbook Commercial"
+              maxPreview={2}
             />
             <div className="mt-4 text-center">
               <a
