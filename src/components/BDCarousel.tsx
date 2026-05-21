@@ -16,7 +16,7 @@ interface BDCarouselProps {
   className?: string;
 }
 
-export default function BDCarousel({ images, title, className = '' }: BDCarouselProps) {
+export default function BDCarousel({ images, title, maxPreview, className = '' }: BDCarouselProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
