@@ -12,6 +12,7 @@ interface BDImage {
 interface BDCarouselProps {
   images: BDImage[];
   title: string;
+  maxPreview?: number;
   className?: string;
 }
 
@@ -51,9 +52,9 @@ export default function BDCarousel({ images, title, className = '' }: BDCarousel
     };
   }, [lightboxOpen, closeLightbox, goNext, goPrev]);
 
-  // Show first 4 images in grid, rest indicator
-  const visibleImages = images.slice(0, 4);
-  const hasMore = images.length > 4;
+  const previewCount = props.maxPreview ?? 4;
+  const visibleImages = images.slice(0, previewCount);
+  const hasMore = images.length > previewCount;
 
   return (
     <>
@@ -74,9 +75,9 @@ export default function BDCarousel({ images, title, className = '' }: BDCarousel
                 sizes="(max-width: 640px) 50vw, 25vw"
               />
             </div>
-            {i === 3 && hasMore && (
+            {i === previewCount - 1 && hasMore && (
               <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-                <span className="text-white text-2xl font-bold font-title">+{images.length - 4}</span>
+                <span className="text-white text-2xl font-bold font-title">+{images.length - previewCount}</span>
               </div>
             )}
           </button>

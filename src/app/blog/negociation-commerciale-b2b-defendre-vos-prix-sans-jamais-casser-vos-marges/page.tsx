@@ -199,6 +199,7 @@ export default function ArticlePage() {
                 { src: '/images/blog/carrousel-negociation-b2b/11-CTA-diagnostic.webp', alt: 'CTA — demande de diagnostic', index: 11 },
               ]}
               title="Carrousel BD — Négociation B2B"
+              maxPreview={2}
             />
             <div className="mt-4 text-center">
               <a
