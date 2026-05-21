@@ -125,6 +125,58 @@ export default function Systeme90JoursPage() {
             Voici le cadre 90 jours que j&apos;utilise pour stabiliser la performance sans épuiser les équipes.
           </p>
 
+          {/* Carrousel BD */}
+          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mb-10">
+            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+              🎬 Carrousel BD — Onboarding 90 jours
+            </p>
+            <p className="text-sm text-amber-700 mb-5">
+              26 planches illustrées — cliquez sur une vignette pour feuilleter la BD dans le lecteur intégré.
+            </p>
+            <BDCarousel
+              images={[
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-01.webp', alt: 'Accueil du nouveau', index: 1 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-02.webp', alt: 'Semaine 1 — découverte', index: 2 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-03.webp', alt: 'Les premiers rendez-vous', index: 3 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-04.webp', alt: 'Le diagnostic terrain', index: 4 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-05.webp', alt: 'Structurer le pipeline', index: 5 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-06.webp', alt: 'Le coaching du manager', index: 6 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-07.webp', alt: 'Objectifs 30 jours', index: 7 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-08.webp', alt: 'Revue de mi-parcours', index: 8 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-09.webp', alt: 'Ajustements semaine 5', index: 9 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-10.webp', alt: 'Les outils CRM', index: 10 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-11.webp', alt: 'Les objections terrain', index: 11 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-12.webp', alt: 'Semaine 7 — accélération', index: 12 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-13.webp', alt: 'Les premiers deals', index: 13 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-14.webp', alt: 'La confiance s installe', index: 14 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-15.webp', alt: 'Palier 60 jours', index: 15 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-16.webp', alt: 'Revue de portefeuille', index: 16 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-17.webp', alt: 'Autonomie progressive', index: 17 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-18.webp', alt: 'Les indicateurs clés', index: 18 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-19.webp', alt: 'Semaine 9 — cap', index: 19 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-20.webp', alt: 'Les dernières semaines', index: 20 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-21.webp', alt: 'Objectif ligne d arrivée', index: 21 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-22.webp', alt: 'Revue finale 90 jours', index: 22 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-23.webp', alt: 'Bilan onboarding', index: 23 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-24.webp', alt: 'Prochaines étapes', index: 24 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-25.webp', alt: 'Les pièges à éviter', index: 25 },
+                { src: '/images/blog/carrousel-onboarding-90-jours/V5-26.webp', alt: 'Conclusion — embarquer l équipe', index: 26 },
+              ]}
+              title="Carrousel BD — Onboarding 90 jours"
+              maxPreview={2}
+            />
+            <div className="mt-4 text-center">
+              <a
+                href="/downloads/carrousel-onboarding-90-jours-018.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                Télécharger le PDF (26 planches)
+              </a>
+            </div>
+          </div>
+
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Sprint 1 (Jours 1 à 30) : assainir le pipeline pour retrouver la vérité</h2>
           <p className="mb-4">
             Tant que votre pipeline mélange opportunités solides et opportunités fantômes, vos décisions sont biaisées.

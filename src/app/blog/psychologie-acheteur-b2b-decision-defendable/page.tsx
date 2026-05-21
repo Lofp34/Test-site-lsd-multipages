@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
+import BDCarousel from '@/components/BDCarousel';
 
 const articleUrl = 'https://www.laurentserre.com/blog/psychologie-acheteur-b2b-decision-defendable';
 const heroImage = 'https://www.laurentserre.com/images/blog/2026-05-18-psychologie-acheteur-b2b-hero.webp';
@@ -221,6 +222,45 @@ export default function PsychologieAcheteurB2BPage() {
               <li><strong>Le rôle du commercial</strong> est d&apos;aider le prospect à clarifier sa décision, pas d&apos;empiler des arguments.</li>
               <li><strong>Les deals fragiles</strong> ne bloquent pas toujours sur le prix : ils bloquent souvent sur une décision encore impossible à porter.</li>
             </ul>
+          </div>
+
+          {/* Carrousel BD */}
+          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mb-10">
+            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+              🎬 Carrousel BD — Psychologie Acheteur B2B
+            </p>
+            <p className="text-sm text-amber-700 mb-5">
+              13 planches illustrées — cliquez sur une vignette pour feuilleter la BD dans le lecteur intégré.
+            </p>
+            <BDCarousel
+              images={[
+                { src: '/images/blog/carrousel-psychologie-acheteur/01-cover-psychologie-acheteur-b2b.webp', alt: 'Couverture — Psychologie acheteur B2B', index: 1 },
+                { src: '/images/blog/carrousel-psychologie-acheteur/02-marc-perdu-cafe.webp', alt: 'Marc perdu dans ses pensées au café', index: 2 },
+                { src: '/images/blog/carrousel-psychologie-acheteur/03-laurent-questionne.webp', alt: 'Laurent questionne la situation', index: 3 },
+                { src: '/images/blog/carrousel-psychologie-acheteur/04-sophie-bureau-pensive.webp', alt: 'Sophie pensive à son bureau', index: 4 },
+                { src: '/images/blog/carrousel-psychologie-acheteur/05-sophie-risques.webp', alt: 'Sophie évalue les risques', index: 5 },
+                { src: '/images/blog/carrousel-psychologie-acheteur/06-splitscreen-marc-sophie.webp', alt: 'Split-screen Marc et Sophie', index: 6 },
+                { src: '/images/blog/carrousel-psychologie-acheteur/07-laurent-carnet-schema.webp', alt: 'Laurent dessine un schéma', index: 7 },
+                { src: '/images/blog/carrousel-psychologie-acheteur/08-laurent-trois-regles.webp', alt: 'Les trois règles de Laurent', index: 8 },
+                { src: '/images/blog/carrousel-psychologie-acheteur/09-laurent-explique-80pct.webp', alt: 'Laurent explique le 80%', index: 9 },
+                { src: '/images/blog/carrousel-psychologie-acheteur/10-marc-note-questions.webp', alt: 'Marc note les questions clés', index: 10 },
+                { src: '/images/blog/carrousel-psychologie-acheteur/11-marc-retour-sophie.webp', alt: 'Marc retourne voir Sophie', index: 11 },
+                { src: '/images/blog/carrousel-psychologie-acheteur/12-chute-laurent-systeme-validation.webp', alt: 'Le système de validation', index: 12 },
+                { src: '/images/blog/carrousel-psychologie-acheteur/13-cta-final-aller-plus-loin.webp', alt: 'CTA — Aller plus loin', index: 13 },
+              ]}
+              title="Carrousel BD — Psychologie Acheteur B2B"
+              maxPreview={2}
+            />
+            <div className="mt-4 text-center">
+              <a
+                href="/downloads/carrousel-psychologie-acheteur-b2b-019.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                Télécharger le PDF (13 planches)
+              </a>
+            </div>
           </div>
 
           <nav className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 mb-10" aria-label="Sommaire">
