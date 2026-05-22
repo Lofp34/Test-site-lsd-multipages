@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 import FAQ from '@/components/FAQ';
+import BDCarousel from '@/components/BDCarousel';
+import AuthorCard from '@/components/AuthorCard';
 
 export const metadata: Metadata = {
   title: 'Vendeur vs Commercial : les 5 différences qui vous coûtent 40% de CA',
@@ -171,6 +173,55 @@ export default function Article5() {
               <Link href="/formation-commerciale-pme" className="text-mint-green hover:underline font-semibold"> formation commerciale PME</Link>
               ou le <Link href="/bootcamp" className="text-mint-green hover:underline font-semibold">bootcamp commercial</Link>.
             </p>
+          </div>
+
+          {/* TL;DR */}
+          <div className="mt-10 p-6 bg-blue-ink/5 rounded-xl border border-blue-ink/10">
+            <p className="text-sm font-semibold text-blue-ink mb-2">Ce que vous allez retenir</p>
+            <p className="text-gray-700 leading-relaxed">
+              La diff&eacute;rence entre un vendeur et un commercial n&rsquo;est pas une question de titre, mais de posture.
+              Le vendeur ex&eacute;cute des transactions&nbsp;; le commercial construit une relation qui g&eacute;n&egrave;re du chiffre
+              d&rsquo;affaires dans la dur&eacute;e. Une &eacute;quipe de vendeurs d&eacute;guis&eacute;s en commerciaux vous co&ucirc;te
+              jusqu&rsquo;&agrave; 40&nbsp;% de CA. Ce carrousel illustre les 5 diff&eacute;rences cl&eacute;s et le chemin de la
+              transformation.
+            </p>
+          </div>
+
+          {/* Carrousel BD — Vendeur vs Commercial */}
+          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-10">
+            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+              🎬 Carrousel BD — Vendeur vs Commercial
+            </p>
+            <p className="text-sm text-amber-700 mb-5">
+              11 planches illustr&eacute;es — cliquez sur une vignette pour feuilleter la BD dans le lecteur int&eacute;gr&eacute;.
+            </p>
+            <BDCarousel
+              images={[
+                { src: '/images/blog/carrousel-vendeur-commercial/01-cover.webp', alt: 'Cover — Vendeur vs Commercial : les 5 différences qui vous coûtent 40 % de CA', index: 1 },
+                { src: '/images/blog/carrousel-vendeur-commercial/02-vendeur.webp', alt: 'Le vendeur en rendez-vous : présentation catalogue', index: 2 },
+                { src: '/images/blog/carrousel-vendeur-commercial/03-commercial.webp', alt: 'Le commercial consultatif : diagnostic et écoute', index: 3 },
+                { src: '/images/blog/carrousel-vendeur-commercial/04-vendeurs-deguises.webp', alt: 'Vendeurs déguisés en commerciaux : le piège des équipes', index: 4 },
+                { src: '/images/blog/carrousel-vendeur-commercial/05-cout-reel.webp', alt: 'Le coût réel des vendeurs déguisés', index: 5 },
+                { src: '/images/blog/carrousel-vendeur-commercial/06-bascule.webp', alt: 'La bascule : 40 % de CA en plus par commercial', index: 6 },
+                { src: '/images/blog/carrousel-vendeur-commercial/07-diagnostic.webp', alt: 'La transformation commence par un diagnostic terrain', index: 7 },
+                { src: '/images/blog/carrousel-vendeur-commercial/08-transformation.webp', alt: 'Les 4 étapes concrètes de la transformation commerciale', index: 8 },
+                { src: '/images/blog/carrousel-vendeur-commercial/09-resultat.webp', alt: 'Résistances et résultats de la transformation', index: 9 },
+                { src: '/images/blog/carrousel-vendeur-commercial/10-cle-terrain.webp', alt: 'La clé : un coaching terrain personnalisé', index: 10 },
+                { src: '/images/blog/carrousel-vendeur-commercial/11-cta-final.webp', alt: 'CTA — Évaluez votre équipe avec un diagnostic gratuit', index: 11 },
+              ]}
+              title="Carrousel BD — Vendeur vs Commercial"
+              maxPreview={2}
+            />
+            <div className="mt-4 text-center">
+              <a
+                href="/downloads/carrousel-vendeur-commercial-11.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                T&eacute;l&eacute;charger le PDF (11 planches)
+              </a>
+            </div>
           </div>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
