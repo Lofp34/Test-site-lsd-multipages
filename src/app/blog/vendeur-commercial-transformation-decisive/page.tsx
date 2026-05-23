@@ -7,18 +7,18 @@ import BDCarousel from '@/components/BDCarousel';
 import AuthorCard from '@/components/AuthorCard';
 
 export const metadata: Metadata = {
-  title: 'Vendeur vs Commercial : les 5 différences qui vous coûtent 40% de CA',
-  description: 'Vendeur ou commercial ? Les 5 différences qui séparent une force de vente d\'une équipe commerciale performante. Auto-diagnostic inclus pour transformer votre équipe.',
-  keywords: 'vendeur vs commercial, transformation commerciale, management équipe vente, développement commercial, PME',
+  title: 'Différence entre vendeur et commercial : 5 écarts, +40% CA',
+  description: 'La différence entre vendeur et commercial expliquée avec 5 écarts concrets qui coûtent 40% de CA à votre PME. Auto-diagnostic et plan de transformation inclus.',
+  keywords: 'différence entre vendeur et commercial, vendeur vs commercial, transformation commerciale, management équipe vente, développement commercial, PME',
   other: {
-    dateModified: '2026-05-21',
+    dateModified: '2026-05-23',
   },
   alternates: {
     canonical: 'https://www.laurentserre.com/blog/vendeur-commercial-transformation-decisive',
   },
   openGraph: {
-    title: 'Vendeur vs Commercial : les 5 différences qui vous coûtent 40% de CA',
-    description: 'Les 5 différences clés entre un vendeur et un commercial, avec des actions terrain pour faire évoluer votre équipe vers la performance.',
+    title: 'Différence entre vendeur et commercial : 5 écarts, +40% CA',
+    description: 'La différence entre vendeur et commercial expliquée avec 5 écarts concrets qui coûtent 40% de CA à votre PME. Auto-diagnostic et plan de transformation inclus.',
     url: 'https://www.laurentserre.com/blog/vendeur-commercial-transformation-decisive',
     type: 'article',
     locale: 'fr_FR',
