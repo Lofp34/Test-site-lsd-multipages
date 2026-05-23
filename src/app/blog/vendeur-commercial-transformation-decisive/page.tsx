@@ -212,7 +212,13 @@ export default function Article5() {
               title="Carrousel BD — Vendeur vs Commercial"
               maxPreview={2}
             />
-            <div className="mt-4 text-center">
+            <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Link
+                href="/diagnostic"
+                className="inline-flex items-center justify-center px-6 py-3 bg-amber-600 text-white font-semibold text-sm rounded-full hover:bg-amber-700 transition-colors shadow-sm"
+              >
+                🔍 &Eacute;valuez votre &eacute;quipe — Diagnostic gratuit
+              </Link>
               <a
                 href="/downloads/carrousel-vendeur-commercial-11.pdf"
                 target="_blank"
@@ -384,6 +390,23 @@ export default function Article5() {
               <strong>Durée de transformation :</strong> Comptez 3 à 6 mois pour transformer
               un vendeur expérimenté en commercial efficace, avec un accompagnement structuré.
             </p>
+          </div>
+
+          {/* CTA mi-article */}
+          <div className="bg-gradient-to-r from-mint-green/20 to-teal-50 border border-mint-green/30 rounded-2xl p-6 my-10 text-center">
+            <p className="text-lg font-title font-bold text-blue-ink mb-2">
+              Vous avez reconnu votre &eacute;quipe dans ces 4 &eacute;tapes&nbsp;?
+            </p>
+            <p className="text-sm text-gray-600 mb-4">
+              La plupart des PME stagnent entre l&rsquo;&eacute;tape 1 et 2. Un diagnostic terrain de 2 jours
+              identifie exactement o&ugrave; se situent vos freins et ce qu&rsquo;il faut prioriser.
+            </p>
+            <Link
+              href="/diagnostic"
+              className="inline-flex items-center justify-center px-6 py-3 bg-blue-ink text-white font-semibold text-sm rounded-full hover:bg-blue-ink/90 transition-colors shadow-sm"
+            >
+              Obtenez votre diagnostic gratuit
+            </Link>
           </div>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
