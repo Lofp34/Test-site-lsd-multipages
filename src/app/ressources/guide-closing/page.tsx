@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { ArrowLeft, CheckCircle, Crown } from 'lucide-react';
 import Link from 'next/link';
+import BDCarousel from '@/components/BDCarousel';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
@@ -17,11 +18,99 @@ export const metadata: Metadata = {
     type: 'article',
     locale: 'fr_FR',
   },
+  other: {
+    dateModified: '2026-05-23',
+  },
 };
 
 export default function GuideClosingPage() {
+  const pageJsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'WebPage',
+        '@id': 'https://www.laurentserre.com/ressources/guide-closing#webpage',
+        url: 'https://www.laurentserre.com/ressources/guide-closing',
+        name: 'Closing B2B : 7 techniques qui marchent en 2026 [Guide gratuit]',
+        description:
+          'Techniques de closing B2B terrain : assumé, alternatif, récapitulatif. Comment gérer les objections prix et signer sans forcer. Guide pratique gratuit avec scripts inclus.',
+        publisher: {
+          '@type': 'Organization',
+          name: 'Laurent Serre',
+          url: 'https://www.laurentserre.com',
+        },
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/ressources/guide-closing#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Quelle est la meilleure technique de closing en B2B ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'La meilleure technique dépend du contexte, mais le closing récapitulatif est souvent le plus robuste en B2B : il reformule les enjeux, les bénéfices validés et la prochaine étape concrète sans pression artificielle.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment closer sans paraître insistant ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un closing efficace s\'appuie sur le diagnostic, les signaux d\'achat et la valeur déjà reconnue par le prospect. Si ces éléments ne sont pas clairs, il vaut mieux clarifier les objections avant de demander une décision.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Quand faut-il poser la question de closing ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Posez-la quand le prospect a reconnu son problème, validé l\'impact business et compris la valeur de votre solution. Les questions sur le délai, le budget ou la mise en œuvre sont de bons signaux.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment améliorer son taux de closing rapidement ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Travaillez trois leviers : meilleure qualification en amont, préparation des objections probables et entraînement aux questions de conclusion. Un diagnostic externe permet souvent d\'identifier le blocage principal.',
+            },
+          },
+        ],
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': 'https://www.laurentserre.com/ressources/guide-closing#breadcrumb',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Accueil',
+            item: 'https://www.laurentserre.com',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'Ressources',
+            item: 'https://www.laurentserre.com/ressources',
+          },
+          {
+            '@type': 'ListItem',
+            position: 3,
+            name: 'Guide Closing',
+            item: 'https://www.laurentserre.com/ressources/guide-closing',
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <main className="flex flex-col min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageJsonLd) }}
+      />
       {/* Header */}
       <div className="bg-gradient-to-br from-blue-ink to-mint-green/20 pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -77,6 +166,50 @@ export default function GuideClosingPage() {
               Si votre enjeu est de conclure sans mettre de pression inutile ni rogner votre marge, lisez aussi cette méthode pour
               <Link href="/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader" className="text-mint-green hover:underline font-semibold"> signer une vente B2B sans forcer ni brader</Link>.
             </p>
+          </div>
+        </section>
+
+        {/* Bande dessinée — La cuisine de ma mère */}
+        <section className="mb-16">
+          <div className="bg-gradient-to-br from-amber-50 via-amber-50 to-amber-100/50 rounded-2xl p-8 border border-amber-200">
+            <div className="flex items-center gap-3 mb-4">
+              <span className="text-2xl">📖</span>
+              <p className="text-lg font-title font-bold text-amber-800">
+                La Cuisine de Ma Mère — Histoire vraie
+              </p>
+            </div>
+            <p className="text-sm text-amber-700 mb-5">
+              13 planches illustrées — cliquez sur une vignette pour feuilleter la BD dans le lecteur intégré.
+            </p>
+            <BDCarousel
+              images={[
+                { src: '/images/blog/carrousel-cuisine-mere/01-cover.webp', alt: 'La cuisine de ma mère — Cover', index: 1 },
+                { src: '/images/blog/carrousel-cuisine-mere/02-galerie.webp', alt: 'La galère — le jeune en porte-à-porte', index: 2 },
+                { src: '/images/blog/carrousel-cuisine-mere/03-margoulin.webp', alt: 'Le margoulin — le patron louche', index: 3 },
+                { src: '/images/blog/carrousel-cuisine-mere/04-piege.webp', alt: 'Le piège — la mamie, le café, la honte', index: 4 },
+                { src: '/images/blog/carrousel-cuisine-mere/05-declic.webp', alt: 'Le déclic — les pièces comptées', index: 5 },
+                { src: '/images/blog/carrousel-cuisine-mere/06-cuisine.webp', alt: 'La cuisine — Laurent, la cafetière en l\'air', index: 6 },
+                { src: '/images/blog/carrousel-cuisine-mere/07-confrontation.webp', alt: 'La confrontation — « T\'es content de ce que tu vends ? »', index: 7 },
+                { src: '/images/blog/carrousel-cuisine-mere/08-le-fil.webp', alt: 'Le fil — la GED pour artisans', index: 8 },
+                { src: '/images/blog/carrousel-cuisine-mere/09-atelier.webp', alt: 'L\'atelier — l\'artisan écoute', index: 9 },
+                { src: '/images/blog/carrousel-cuisine-mere/10-closing-assume.webp', alt: 'Le closing assumé — « Installation le 18 »', index: 10 },
+                { src: '/images/blog/carrousel-cuisine-mere/11-poignee-main.webp', alt: 'La poignée de main — « Sacré closer »', index: 11 },
+                { src: '/images/blog/carrousel-cuisine-mere/12-bouclage.webp', alt: 'Bouclage — le jeune au volant', index: 12 },
+                { src: '/images/blog/carrousel-cuisine-mere/13-cta.webp', alt: 'Former des closeurs éthiques', index: 13 },
+              ]}
+              title="Bande dessinée — La Cuisine de Ma Mère"
+              maxPreview={2}
+            />
+            <div className="mt-4 text-center">
+              <a
+                href="/downloads/carrousel-cuisine-mere.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                Télécharger le PDF (13 planches)
+              </a>
+            </div>
           </div>
         </section>
 
