@@ -5,8 +5,8 @@ import AboutSection from '@/components/sections/AboutSection';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Laurent Serre — 20 ans à transformer des vendeurs en machines commerciales',
-  description: '20 ans sur le terrain : plus de 50 PME accompagnées sur la prospection, le closing et le management commercial. Découvrez une approche terrain qui transforme réellement vos équipes.',
+  title: 'Expert Commercial PME — Laurent Serre, 20 ans de terrain',
+  description: 'Expert en développement commercial PME à Montpellier. 20 ans de terrain au service de votre équipe commerciale : diagnostic, coaching, transformation. Contactez-moi.',
   alternates: {
     canonical: 'https://www.laurentserre.com/a-propos',
   },
