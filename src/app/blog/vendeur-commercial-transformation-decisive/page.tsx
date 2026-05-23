@@ -392,20 +392,21 @@ export default function Article5() {
             </p>
           </div>
 
-          {/* CTA mi-article */}
+          {/* CTA mi-article — bootcamp */}
           <div className="bg-gradient-to-r from-mint-green/20 to-teal-50 border border-mint-green/30 rounded-2xl p-6 my-10 text-center">
             <p className="text-lg font-title font-bold text-blue-ink mb-2">
               Vous avez reconnu votre &eacute;quipe dans ces 4 &eacute;tapes&nbsp;?
             </p>
             <p className="text-sm text-gray-600 mb-4">
-              La plupart des PME stagnent entre l&rsquo;&eacute;tape 1 et 2. Un diagnostic terrain de 2 jours
-              identifie exactement o&ugrave; se situent vos freins et ce qu&rsquo;il faut prioriser.
+              La plupart des PME stagnent entre l&rsquo;&eacute;tape 1 et 2. Le
+              bootcamp commercial acc&eacute;l&egrave;re cette transformation en
+              8 semaines avec un coaching terrain personnalis&eacute;.
             </p>
             <Link
-              href="/diagnostic"
+              href="/bootcamp"
               className="inline-flex items-center justify-center px-6 py-3 bg-blue-ink text-white font-semibold text-sm rounded-full hover:bg-blue-ink/90 transition-colors shadow-sm"
             >
-              Obtenez votre diagnostic gratuit
+              D&eacute;couvrir le bootcamp
             </Link>
           </div>
 
