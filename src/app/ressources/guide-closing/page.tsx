@@ -179,7 +179,9 @@ export default function GuideClosingPage() {
               </p>
             </div>
             <p className="text-sm text-amber-700 mb-5">
-              13 planches illustrées — cliquez sur une vignette pour feuilleter la BD dans le lecteur intégré.
+              Découvrez l'histoire vraie d'un jeune commercial qui a compris
+              la véritable nature du closing… dans la cuisine de sa mère.
+              13 planches illustrées à feuilleter.
             </p>
             <BDCarousel
               images={[
@@ -209,6 +211,19 @@ export default function GuideClosingPage() {
               >
                 Télécharger le PDF (13 planches)
               </a>
+            </div>
+
+            {/* CTA après la BD */}
+            <div className="mt-8 text-center">
+              <p className="text-sm text-amber-800 font-semibold mb-3">
+                Vous avez reconnu ces moments de vérité ?
+              </p>
+              <Link
+                href="/diagnostic"
+                className="inline-flex items-center justify-center px-6 py-3 bg-amber-600 text-white font-semibold text-sm rounded-full hover:bg-amber-700 transition-colors shadow-sm"
+              >
+                🔍 Obtenez votre diagnostic commercial gratuit
+              </Link>
             </div>
           </div>
         </section>
