@@ -251,7 +251,13 @@ export default function PsychologieAcheteurB2BPage() {
               title="Carrousel BD — Psychologie Acheteur B2B"
               maxPreview={2}
             />
-            <div className="mt-4 text-center">
+            <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Link
+                href="/diagnostic"
+                className="inline-flex items-center justify-center px-6 py-3 bg-amber-600 text-white font-semibold text-sm rounded-full hover:bg-amber-700 transition-colors shadow-sm"
+              >
+                🔍 Évaluez votre équipe — Diagnostic gratuit
+              </Link>
               <a
                 href="/downloads/carrousel-psychologie-acheteur-b2b-019.pdf"
                 target="_blank"
@@ -374,6 +380,24 @@ export default function PsychologieAcheteurB2BPage() {
             </Link>{' '}
             doit vérifier la décision interne, pas seulement le besoin exprimé.
           </p>
+
+          {/* CTA mi-article — bootcamp */}
+          <div className="bg-gradient-to-r from-mint-green/20 to-teal-50 border border-mint-green/30 rounded-2xl p-6 my-10 text-center">
+            <p className="text-lg font-title font-bold text-blue-ink mb-2">
+              Vous avez reconnu votre équipe dans ces 3 concepts&nbsp;?
+            </p>
+            <p className="text-sm text-gray-600 mb-4">
+              La plupart des PME stagnent entre l&rsquo;étape 1 et 2. Le
+              bootcamp commercial accélère cette transformation en
+              8 semaines avec un coaching terrain personnalisé.
+            </p>
+            <Link
+              href="/bootcamp"
+              className="inline-flex items-center justify-center px-6 py-3 bg-blue-ink text-white font-semibold text-sm rounded-full hover:bg-blue-ink/90 transition-colors shadow-sm"
+            >
+              Découvrir le bootcamp
+            </Link>
+          </div>
 
           <p className="text-xs text-gray-400 mb-8">
             Source E-E-A-T : ce sujet rejoint les travaux publiés par Harvard Business Review sur la vente complexe et la difficulté à mobiliser un consensus d&apos;achat, notamment{' '}

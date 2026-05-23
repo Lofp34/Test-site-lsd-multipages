@@ -264,7 +264,13 @@ export default function PlaybookCommercialGuidePage() {
               title="Carrousel BD — Playbook Commercial"
               maxPreview={2}
             />
-            <div className="mt-4 text-center">
+            <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Link
+                href="/diagnostic"
+                className="inline-flex items-center justify-center px-6 py-3 bg-amber-600 text-white font-semibold text-sm rounded-full hover:bg-amber-700 transition-colors shadow-sm"
+              >
+                🔍 Évaluez votre équipe — Diagnostic gratuit
+              </Link>
               <a
                 href="/downloads/carrousel-playbook-commercial-terrain.pdf"
                 target="_blank"
@@ -405,6 +411,24 @@ export default function PlaybookCommercialGuidePage() {
           <p className="mb-8">
             La liste des outils de l'équipe, des guides de prise en main rapide, des ressources de formation, des templates de propositions, des études de cas clients par secteur.
           </p>
+
+          {/* CTA mi-article — bootcamp */}
+          <div className="bg-gradient-to-r from-mint-green/20 to-teal-50 border border-mint-green/30 rounded-2xl p-6 my-10 text-center">
+            <p className="text-lg font-title font-bold text-blue-ink mb-2">
+              Vous avez reconnu votre &eacute;quipe dans ces 7 concepts&nbsp;?
+            </p>
+            <p className="text-sm text-gray-600 mb-4">
+              La plupart des PME stagnent entre l&rsquo;&eacute;tape 1 et 2. Le
+              bootcamp commercial acc&eacute;l&egrave;re cette transformation en
+              8 semaines avec un coaching terrain personnalis&eacute;.
+            </p>
+            <Link
+              href="/bootcamp"
+              className="inline-flex items-center justify-center px-6 py-3 bg-blue-ink text-white font-semibold text-sm rounded-full hover:bg-blue-ink/90 transition-colors shadow-sm"
+            >
+              D&eacute;couvrir le bootcamp
+            </Link>
+          </div>
 
           <h2 id="methode-de-construction" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
             Le sprint de construction en 2 semaines

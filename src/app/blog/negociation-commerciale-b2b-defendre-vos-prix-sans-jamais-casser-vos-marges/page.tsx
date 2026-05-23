@@ -201,7 +201,13 @@ export default function ArticlePage() {
               title="Carrousel BD — Négociation B2B"
               maxPreview={2}
             />
-            <div className="mt-4 text-center">
+            <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Link
+                href="/diagnostic"
+                className="inline-flex items-center justify-center px-6 py-3 bg-amber-600 text-white font-semibold text-sm rounded-full hover:bg-amber-700 transition-colors shadow-sm"
+              >
+                🔍 Évaluez votre équipe — Diagnostic gratuit
+              </Link>
               <a
                 href="/downloads/carrousel-negociation-b2b-016.pdf"
                 target="_blank"

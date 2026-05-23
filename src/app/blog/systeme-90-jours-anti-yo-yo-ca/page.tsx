@@ -149,7 +149,13 @@ export default function Systeme90JoursPage() {
               title="Carrousel BD — Onboarding 90 jours"
               maxPreview={2}
             />
-            <div className="mt-4 text-center">
+            <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
+              <Link
+                href="/diagnostic"
+                className="inline-flex items-center justify-center px-6 py-3 bg-amber-600 text-white font-semibold text-sm rounded-full hover:bg-amber-700 transition-colors shadow-sm"
+              >
+                🔍 Évaluez votre équipe — Diagnostic gratuit
+              </Link>
               <a
                 href="/downloads/carrousel-onboarding-90-jours-018.pdf"
                 target="_blank"
@@ -215,6 +221,24 @@ export default function Systeme90JoursPage() {
               <strong>Point clé dirigeant :</strong> quand vos managers tiennent un rythme simple, stable et lisible,
               la performance devient prévisible — et la pression diminue mécaniquement.
             </p>
+          </div>
+
+          {/* CTA mi-article — bootcamp */}
+          <div className="bg-gradient-to-r from-mint-green/20 to-teal-50 border border-mint-green/30 rounded-2xl p-6 my-10 text-center">
+            <p className="text-lg font-title font-bold text-blue-ink mb-2">
+              Vous avez reconnu votre &eacute;quipe dans ces 3 &eacute;tapes&nbsp;?
+            </p>
+            <p className="text-sm text-gray-600 mb-4">
+              La plupart des PME stagnent entre l&rsquo;&eacute;tape 1 et 2. Le
+              bootcamp commercial acc&eacute;l&egrave;re cette transformation en
+              8 semaines avec un coaching terrain personnalis&eacute;.
+            </p>
+            <Link
+              href="/bootcamp"
+              className="inline-flex items-center justify-center px-6 py-3 bg-blue-ink text-white font-semibold text-sm rounded-full hover:bg-blue-ink/90 transition-colors shadow-sm"
+            >
+              D&eacute;couvrir le bootcamp
+            </Link>
           </div>
 
           <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">Ce que vous devez viser à J+90</h2>

@@ -488,6 +488,24 @@ export default function ArticlePage() {
             Un plan de prospection n'est pas un document qu'on range. C'est un système qu'on ajuste.
           </p>
 
+          {/* CTA mi-article — bootcamp */}
+          <div className="bg-gradient-to-r from-mint-green/20 to-teal-50 border border-mint-green/30 rounded-2xl p-6 my-10 text-center">
+            <p className="text-lg font-title font-bold text-blue-ink mb-2">
+              Vous avez reconnu votre &eacute;quipe dans ces 6 concepts&nbsp;?
+            </p>
+            <p className="text-sm text-gray-600 mb-4">
+              La plupart des PME stagnent entre l&rsquo;&eacute;tape 1 et 2. Le
+              bootcamp commercial acc&eacute;l&egrave;re cette transformation en
+              8 semaines avec un coaching terrain personnalis&eacute;.
+            </p>
+            <Link
+              href="/bootcamp"
+              className="inline-flex items-center justify-center px-6 py-3 bg-blue-ink text-white font-semibold text-sm rounded-full hover:bg-blue-ink/90 transition-colors shadow-sm"
+            >
+              D&eacute;couvrir le bootcamp
+            </Link>
+          </div>
+
           <h2 id="erreur-pipeline-vide" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
             L'erreur fréquente : prospecter seulement quand le pipeline est vide
           </h2>
