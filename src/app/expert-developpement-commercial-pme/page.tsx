@@ -268,6 +268,10 @@ export default function ExpertDeveloppementCommercialPMEPage() {
                 </div>
                 <div className="flex items-center text-gray-600">
                   <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
+                  <Link href="/blog/developpement-commercial-pme-plan-action-5-etapes" className="hover:text-mint-green">Plan action 5 étapes</Link>
+                </div>
+                <div className="flex items-center text-gray-600">
+                  <CheckCircle className="w-4 h-4 text-mint-green mr-2" />
                   <Link href="/ressources/outil-strategie-commerciale" className="hover:text-mint-green">CRM intelligent</Link>
                 </div>
                 <div className="flex items-center text-gray-600">

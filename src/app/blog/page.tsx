@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'developpement-commercial-pme-plan-action-5-etapes',
+    title: 'Développement commercial PME : le plan d\'action en 5 étapes qui marche vraiment sur le terrain',
+    description: 'Diagnostic, stratégie, pipeline, compétences, pilotage : les 5 étapes concrètes pour développer votre commercial PME. Un cadre terrain testé par un expert avec 20 ans d\'expérience.',
+    date: '2026-05-24',
+    readTime: '15 min',
+    category: 'Stratégie commerciale',
+    image: '/images/blog/2026-05-24-developpement-commercial-pme-hero.webp',
+    featured: true
+  },
+  {
     slug: 'playbook-commercial-guide-pratique-terrain',
     title: 'Playbook commercial : le guide pratique pour creer celui qui va vraiment etre utilise',
     description: 'Un playbook de 80 pages qui dort vaut zero. Voici comment construire un guide de terrain que vos commerciaux consulteront en situation.',
