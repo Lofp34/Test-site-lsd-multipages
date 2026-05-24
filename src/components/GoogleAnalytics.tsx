@@ -71,11 +71,28 @@ export default function GoogleAnalytics() {
     };
 
     // Utiliser requestIdleCallback pour charger GA quand le navigateur est libre
+    // Détection d'IP pour exclure le trafic interne (Laurent)
+    const checkInternalIP = () => {
+      const internalIPs = ['150.228.19.70']; // IPs à exclure — ajouter d'autres si besoin
+      fetch('https://api.ipify.org?format=json', { cache: 'no-cache' })
+        .then(r => r.json())
+        .then(data => {
+          if (internalIPs.includes(data.ip)) {
+            // Marquer tous les événements comme trafic interne
+            window.gtag('set', { 'traffic_type': 'internal' });
+          }
+        })
+        .catch(() => {
+          // Échec silencieux — ne pas bloquer le tracking
+        });
+    };
+
     if ('requestIdleCallback' in window) {
       requestIdleCallback(loadGA, { timeout: 2000 });
+      requestIdleCallback(checkInternalIP, { timeout: 5000 });
     } else {
-      // Fallback pour les navigateurs qui ne supportent pas requestIdleCallback
       setTimeout(loadGA, 1000);
+      setTimeout(checkInternalIP, 3000);
     }
 
   }, []);
