@@ -39,6 +39,14 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'laurentserre.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.laurentserre.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'test-site-lsd-multipages-x4ol.vercel.app',
+      },
     ],
   },
   // Optimisations de performance

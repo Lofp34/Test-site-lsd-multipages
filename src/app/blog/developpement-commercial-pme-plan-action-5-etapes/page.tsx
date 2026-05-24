@@ -6,8 +6,9 @@ import AuthorCard from '@/components/AuthorCard';
 import BDCarousel from '@/components/BDCarousel';
 
 const articleUrl = 'https://www.laurentserre.com/blog/developpement-commercial-pme-plan-action-5-etapes';
-const heroImage = 'https://www.laurentserre.com/images/blog/2026-05-24-developpement-commercial-pme-hero.webp';
-const carouselPrefix = 'https://www.laurentserre.com/images/blog/carrousel-developpement-commercial';
+const heroImage = '/images/blog/2026-05-24-developpement-commercial-pme-hero.webp';
+const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/2026-05-24-developpement-commercial-pme-hero.webp';
+const carouselPrefix = '/images/blog/carrousel-developpement-commercial';
 
 export const metadata: Metadata = {
   title: 'Développement commercial PME : le plan d\'action en 5 étapes terrain (2026) | Laurent Serre',
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: heroImage,
+        url: heroImageAbsolute,
         width: 1536,
         height: 1024,
         alt: 'Plan de développement commercial PME en 5 étapes - feuille de route terrain',
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     title: 'Développement commercial PME : le plan d\'action en 5 étapes terrain | Laurent Serre',
     description:
       'Diagnostic, stratégie, pipeline, compétences, pilotage. Les 5 étapes concrètes pour développer votre commercial PME sans bullshit.',
-    images: [heroImage],
+    images: [heroImageAbsolute],
   },
 };
 
@@ -57,7 +58,7 @@ export default function DeveloppementCommercialPme() {
         headline: 'Développement commercial PME : le plan d\'action en 5 étapes qui marche vraiment sur le terrain',
         description:
           'Un cadre d\'action concret en 5 étapes pour développer votre commercial PME. Pas de théorie, des méthodes testées sur le terrain.',
-        image: heroImage,
+        image: heroImageAbsolute,
         datePublished: '2026-05-24',
         dateModified: '2026-05-24',
         author: {
@@ -182,6 +183,15 @@ export default function DeveloppementCommercialPme() {
           <span>~15 min de lecture</span>
         </div>
 
+        {/* AuthorCard */}
+        <AuthorCard
+          author={{
+            name: 'Laurent Serre',
+            role: 'Coach commercial — 15 ans de terrain PME',
+            image: '/images/blog/Laurent-Serre-avatar.jpg',
+          }}
+        />
+
         {/* Hero Image */}
         <div className="relative w-full aspect-[3/2] rounded-2xl overflow-hidden mb-10 shadow-lg">
           <Image
@@ -216,6 +226,49 @@ export default function DeveloppementCommercialPme() {
           <p className="text-lg leading-relaxed text-gray-700 mb-8">
             Voici le cadre que j'utilise sur le terrain avec les équipes que j'accompagne. 5 étapes. Testées. Qui marchent quand on les exécute dans l'ordre.
           </p>
+
+          {/* TL;DR — Ce que vous allez retenir */}
+          <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
+            <p className="text-sm font-semibold text-mint-green mb-2">✨ Ce que vous allez retenir</p>
+            <p className="text-gray-700 leading-relaxed">
+              Le développement commercial d'une PME ne se décrète pas. Il se construit en 5 étapes : diagnostiquer honnêtement où vous en êtes, choisir une priorité unique pour 90 jours, installer un pipeline fiable, coacher votre équipe sur le terrain, et piloter avec 3 indicateurs qui comptent. Pas de théorie. Des méthodes testées par 20 ans d'expérience terrain.
+            </p>
+          </div>
+
+          {/* Carrousel BD */}
+          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-10">
+            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+              🎬 Carrousel BD — Les 5 étapes du développement commercial
+            </p>
+            <p className="text-sm text-amber-700 mb-5">
+              5 planches illustrées — cliquez sur une vignette pour feuilleter la BD dans le lecteur intégré.
+            </p>
+            <BDCarousel
+              images={carouselImages}
+              title="Carrousel BD — Les 5 étapes du développement commercial PME"
+              maxPreview={2}
+            />
+            <div className="mt-4 text-center">
+              <Link
+                href="/images/blog/carrousel-developpement-commercial/carrousel-developpement-commercial-pme.pdf"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                Télécharger le PDF (5 planches)
+              </Link>
+            </div>
+          </div>
+
+          {/* Sommaire */}
+          <div className="mt-10 p-6 bg-blue-ink/5 rounded-xl border border-blue-ink/10">
+            <p className="text-sm font-semibold text-blue-ink mb-3">📑 Sommaire</p>
+            <ul className="space-y-2 text-sm text-gray-600">
+              <li><a href="#diagnostic" className="text-mint-green hover:underline">Étape 1 — Le diagnostic qui tue les illusions</a></li>
+              <li><a href="#strategie" className="text-mint-green hover:underline">Étape 2 — Arrêtez de courir après 15 priorités</a></li>
+              <li><a href="#pipeline" className="text-mint-green hover:underline">Étape 3 — Votre pipeline ne ment pas</a></li>
+              <li><a href="#competences" className="text-mint-green hover:underline">Étape 4 — Le vrai travail, c'est sur le terrain</a></li>
+              <li><a href="#pilotage" className="text-mint-green hover:underline">Étape 5 — Mesurez ce qui compte</a></li>
+            </ul>
+          </div>
 
           {/* ════════ ÉTAPE 1 ════════ */}
           <h2 id="diagnostic" className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mt-14 mb-6">
@@ -372,30 +425,7 @@ export default function DeveloppementCommercialPme() {
             La réunion hebdomadaire de 30 minutes que je décrivais à l'étape 3, c'est là que se joue le vrai pilotage. Pas dans le rapport mensuel qu'on envoie au comité.
           </p>
 
-          {/* ════════ CARROUSEL BD ════════ */}
-          <div className="my-14">
-            <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-6 text-center">
-              Les 5 étapes du développement commercial PME en BD
-            </h2>
-            <p className="text-center text-gray-600 mb-8">
-              Un carrousel visuel pour retenir l'essentiel. Cliquez sur chaque vignette pour l'agrandir.
-            </p>
-            <BDCarousel
-              images={carouselImages}
-              title="Les 5 étapes du développement commercial PME"
-              maxPreview={5}
-            />
-            <div className="text-center mt-6">
-              <Link
-                href="/images/blog/carrousel-developpement-commercial/carrousel-developpement-commercial-pme.pdf"
-                className="inline-flex items-center gap-2 bg-mint-green text-white font-medium px-6 py-3 rounded-full hover:bg-mint-green/90 transition-colors"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                📥 Télécharger le carrousel PDF
-              </Link>
-            </div>
-          </div>
+
 
           {/* ════════ CONCLUSION ════════ */}
           <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mt-14 mb-6">
