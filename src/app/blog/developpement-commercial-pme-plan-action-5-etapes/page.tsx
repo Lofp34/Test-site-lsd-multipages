@@ -161,16 +161,6 @@ export default function DeveloppementCommercialPme() {
           <span className="text-gray-700">Développement commercial PME : le plan d'action en 5 étapes</span>
         </nav>
 
-        {/* Badge CTA */}
-        <div className="mb-6">
-          <Link
-            href="/diagnostic"
-            className="inline-flex items-center gap-2 bg-mint-green/10 text-mint-green text-sm font-medium px-4 py-2 rounded-full hover:bg-mint-green/20 transition-colors"
-          >
-            🔍 Vous ne savez pas par où commencer ? Faites un diagnostic commercial gratuit →
-          </Link>
-        </div>
-
         {/* Title */}
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-title font-bold text-blue-ink leading-tight mb-6">
           Développement commercial PME : le plan d'action en 5 étapes qui marche vraiment sur le terrain
@@ -235,6 +225,16 @@ export default function DeveloppementCommercialPme() {
                 Télécharger le PDF (5 planches)
               </Link>
             </div>
+          </div>
+
+          {/* Badge CTA — sous le carrousel */}
+          <div className="mb-6 text-center">
+            <Link
+              href="/diagnostic"
+              className="inline-flex items-center gap-2 bg-mint-green/10 text-mint-green text-sm font-medium px-4 py-2 rounded-full hover:bg-mint-green/20 transition-colors"
+            >
+              🔍 Vous ne savez pas par où commencer ? Faites un diagnostic commercial gratuit →
+            </Link>
           </div>
 
           {/* Sommaire */}
@@ -366,6 +366,20 @@ export default function DeveloppementCommercialPme() {
           <p className="mb-6">
             Pour aller plus loin sur la construction d'un pipeline qui prédit vraiment votre chiffre, j'ai écrit un article dédié : <Link href="/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre" className="text-mint-green hover:underline font-medium">Pipeline commercial PME : comment construire un outil qui prédit vraiment votre chiffre</Link>.
           </p>
+
+          {/* ════════ CTA MI-ARTICLE ════════ */}
+          <div className="mt-10 p-6 bg-teal-50 border border-teal-200 rounded-2xl">
+            <p className="font-title font-bold text-teal-800 text-sm uppercase tracking-wider mb-3">🚀 Vous voulez aller plus loin ?</p>
+            <p className="text-gray-700 text-sm leading-relaxed mb-4">
+              Un pipeline fiable, des rituels de revue hebdo, une équipe qui qualifie avant d'ouvrir une affaire — c'est exactement ce qu'on travaille dans le <strong>bootcamp commercial intensif</strong>. Deux jours pour poser les bases, puis un suivi terrain pour ancrer les bonnes pratiques.
+            </p>
+            <Link
+              href="/bootcamp"
+              className="inline-flex items-center gap-2 bg-mint-green text-white font-medium px-5 py-2.5 rounded-full text-sm hover:bg-mint-green/90 transition-colors"
+            >
+              Découvrir le bootcamp →
+            </Link>
+          </div>
 
           {/* ════════ ÉTAPE 4 ════════ */}
           <h2 id="competences" className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mt-14 mb-6">
