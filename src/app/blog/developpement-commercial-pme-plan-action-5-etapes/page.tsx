@@ -206,27 +206,6 @@ export default function DeveloppementCommercialPme() {
 
         {/* Article body */}
         <div className="prose prose-gray max-w-none">
-          {/* ════════ INTRO ════════ */}
-          <p className="text-lg leading-relaxed text-gray-700 mb-6">
-            <strong>Le développement commercial d'une PME, c'est un mot qu'on entend partout.</strong> Dans les conférences, sur LinkedIn, dans les offres des consultants. Tout le monde dit qu'il faut « passer à l'étape supérieure », « structurer la force de vente », « professionnaliser la démarche commerciale ».
-          </p>
-
-          <p className="text-lg leading-relaxed text-gray-700 mb-6">
-            Mais personne ne dit concrètement quoi faire quand on est dirigeant d'une PME de 15 à 150 personnes, avec trois commerciaux, un CRM mal rempli, et zéro processus.
-          </p>
-
-          <p className="text-lg leading-relaxed text-gray-700 mb-6">
-            <strong>Développement commercial PME : c'est l'ensemble des actions structurées qui visent à accroître durablement le chiffre d'affaires d'une entreprise de taille moyenne ou petite, en agissant sur son ciblage, son processus de vente, les compétences de son équipe et ses outils de pilotage.</strong> Ce n'est pas un coup de boost ponctuel. C'est un cycle qui s'installe.
-          </p>
-
-          <p className="text-lg leading-relaxed text-gray-700 mb-8">
-            Je vois des dirigeants de PME faire la même erreur tous les jours : ils cherchent LA solution magique. Un nouveau CRM. Un commercial star. Une méthode miracle. Mais le développement commercial, ça ne marche pas comme ça. Pas dans une PME en tout cas.
-          </p>
-
-          <p className="text-lg leading-relaxed text-gray-700 mb-8">
-            Voici le cadre que j'utilise sur le terrain avec les équipes que j'accompagne. 5 étapes. Testées. Qui marchent quand on les exécute dans l'ordre.
-          </p>
-
           {/* TL;DR — Ce que vous allez retenir */}
           <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
             <p className="text-sm font-semibold text-mint-green mb-2">✨ Ce que vous allez retenir</p>
@@ -269,6 +248,27 @@ export default function DeveloppementCommercialPme() {
               <li><a href="#pilotage" className="text-mint-green hover:underline">Étape 5 — Mesurez ce qui compte</a></li>
             </ul>
           </div>
+
+          {/* ════════ INTRO DÉTAILLÉE ════════ */}
+          <p className="text-lg leading-relaxed text-gray-700 mb-6">
+            <strong>Le développement commercial d'une PME, c'est un mot qu'on entend partout.</strong> Dans les conférences, sur LinkedIn, dans les offres des consultants. Tout le monde dit qu'il faut « passer à l'étape supérieure », « structurer la force de vente », « professionnaliser la démarche commerciale ».
+          </p>
+
+          <p className="text-lg leading-relaxed text-gray-700 mb-6">
+            Mais personne ne dit concrètement quoi faire quand on est dirigeant d'une PME de 15 à 150 personnes, avec trois commerciaux, un CRM mal rempli, et zéro processus.
+          </p>
+
+          <p className="text-lg leading-relaxed text-gray-700 mb-6">
+            <strong>Développement commercial PME : c'est l'ensemble des actions structurées qui visent à accroître durablement le chiffre d'affaires d'une entreprise de taille moyenne ou petite, en agissant sur son ciblage, son processus de vente, les compétences de son équipe et ses outils de pilotage.</strong> Ce n'est pas un coup de boost ponctuel. C'est un cycle qui s'installe.
+          </p>
+
+          <p className="text-lg leading-relaxed text-gray-700 mb-8">
+            Je vois des dirigeants de PME faire la même erreur tous les jours : ils cherchent LA solution magique. Un nouveau CRM. Un commercial star. Une méthode miracle. Mais le développement commercial, ça ne marche pas comme ça. Pas dans une PME en tout cas.
+          </p>
+
+          <p className="text-lg leading-relaxed text-gray-700 mb-8">
+            Voici le cadre que j'utilise sur le terrain avec les équipes que j'accompagne. 5 étapes. Testées. Qui marchent quand on les exécute dans l'ordre.
+          </p>
 
           {/* ════════ ÉTAPE 1 ════════ */}
           <h2 id="diagnostic" className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mt-14 mb-6">
