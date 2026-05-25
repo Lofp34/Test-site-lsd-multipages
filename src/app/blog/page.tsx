@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'challenger-sales-methode-terrain-b2b',
+    title: 'Votre meilleur commercial n\'est pas le plus sympa. C\'est celui qui ose déranger.',
+    description: 'Les commerciaux les plus appréciés ne sont pas ceux qui vendent le plus. La méthode Challenger Sales appliquée au terrain B2B français — sans confondre tension constructive et agressivité.',
+    date: '2026-05-25',
+    readTime: '5 min',
+    category: 'Méthode de vente / posture commerciale',
+    image: '/images/blog/2026-05-25-challenger-sales-hero.webp',
+    featured: true
+  },
+  {
     slug: 'developpement-commercial-pme-plan-action-5-etapes',
     title: 'Développement commercial PME : le plan d\'action en 5 étapes qui marche vraiment sur le terrain',
     description: 'Diagnostic, stratégie, pipeline, compétences, pilotage : les 5 étapes concrètes pour développer votre commercial PME. Un cadre terrain testé par un expert avec 20 ans d\'expérience.',
