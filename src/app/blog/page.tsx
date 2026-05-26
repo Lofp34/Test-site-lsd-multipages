@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'coaching-commercial-terrain-5-leviers-transformation-equipe',
+    title: 'Coaching commercial terrain : les 5 leviers qui transforment durablement une équipe',
+    description: 'La formation masse ne change rien. Le coaching terrain, oui — à condition de suivre 5 leviers précis : observer avant d\'agir, structurer le retour en 3 temps, répéter délibérément, relier l\'individuel au collectif, et mesurer le progrès.',
+    date: '2026-05-26',
+    readTime: '7 min',
+    category: 'Coaching commercial / management d\'équipe',
+    image: '/images/blog/coaching-commercial-terrain-hero.webp',
+    featured: true
+  },
+  {
     slug: 'challenger-sales-methode-terrain-b2b',
     title: 'Votre meilleur commercial n\'est pas le plus sympa. C\'est celui qui ose déranger.',
     description: 'Les commerciaux les plus appréciés ne sont pas ceux qui vendent le plus. La méthode Challenger Sales appliquée au terrain B2B français — sans confondre tension constructive et agressivité.',
