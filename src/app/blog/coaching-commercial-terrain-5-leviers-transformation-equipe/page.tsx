@@ -10,7 +10,7 @@ const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/coaching-com
 export const metadata: Metadata = {
   title: 'Coaching commercial terrain : les 5 leviers qui transforment durablement une équipe | Laurent Serre',
   description:
-    'La formation masse ne change rien. Le coaching terrain, oui — à condition de suivre 5 leviers précis. Découvrez la méthode terrain qui transforme les équipes commerciales de PME.',
+    'La formation masse ne change rien. Le coaching terrain, oui , à condition de suivre 5 leviers précis. Découvrez la méthode terrain qui transforme les équipes commerciales de PME.',
   keywords:
     'coaching commercial terrain, coaching développement commercial, coach développement commercial, accompagnement commercial PME, transformation équipe commerciale, coaching terrain commercial, répétition délibérée vente',
   alternates: {
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Coaching commercial terrain : les 5 leviers qui transforment durablement une équipe',
     description:
-      'La formation masse ne change rien. Le coaching terrain, oui — à condition de suivre 5 leviers précis.',
+      'La formation masse ne change rien. Le coaching terrain, oui , à condition de suivre 5 leviers précis.',
     url: 'https://www.laurentserre.com/blog/coaching-commercial-terrain-5-leviers-transformation-equipe',
     type: 'article',
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Coaching commercial terrain : les 5 leviers qui transforment durablement une équipe',
     description:
-      'La formation masse ne change rien. Le coaching terrain, oui — à condition de suivre 5 leviers précis.',
+      'La formation masse ne change rien. Le coaching terrain, oui , à condition de suivre 5 leviers précis.',
     images: [heroImageAbsolute],
   },
 };
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 const carouselPrefix = '/images/blog/carrousel-coaching-terrain';
 
 const carouselImages = [
-  { src: `${carouselPrefix}/v2-01-cover.webp`, alt: 'Cover — Pourquoi vos commerciaux stagnent malgré la formation', index: 0 },
+  { src: `${carouselPrefix}/v2-01-cover.webp`, alt: 'Cover , Pourquoi vos commerciaux stagnent malgré la formation', index: 0 },
   { src: `${carouselPrefix}/v2-02-constat.webp`, alt: 'Le directeur devant les chiffres rouges', index: 1 },
   { src: `${carouselPrefix}/v2-03-fausse-solution.webp`, alt: 'La formation en masse qui ne marche pas', index: 2 },
   { src: `${carouselPrefix}/v2-04-diagnostic-cafe.webp`, alt: 'Laurent et le directeur au café', index: 3 },
@@ -61,7 +61,7 @@ export default function CoachingCommercialTerrainPage() {
     '@type': 'BlogPosting',
     headline: 'Coaching commercial terrain : les 5 leviers qui transforment durablement une équipe',
     description:
-      'La formation masse ne change rien. Le coaching terrain, oui — à condition de suivre 5 leviers précis : observer avant d\'agir, structurer le retour en 3 temps, répéter délibérément 1h par semaine, relier l\'individuel au collectif, et mesurer le progrès plutôt que la performance à chaud.',
+      'La formation masse ne change rien. Le coaching terrain, oui , à condition de suivre 5 leviers précis : observer avant d\'agir, structurer le retour en 3 temps, répéter délibérément 1h par semaine, relier l\'individuel au collectif, et mesurer le progrès plutôt que la performance à chaud.',
     image: heroImageAbsolute,
     datePublished: '2026-05-26',
     dateModified: '2026-05-26',
@@ -136,25 +136,25 @@ export default function CoachingCommercialTerrainPage() {
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
-          {/* TL;DR — Ce que vous allez retenir */}
+          {/* TL;DR , Ce que vous allez retenir */}
           <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
             <p className="text-sm font-semibold text-mint-green mb-2">✨ Ce que vous allez retenir</p>
             <p className="text-gray-700 leading-relaxed">
-              Un commercial qui sous-performe, ce n&apos;est pas un problème de volonté. C&apos;est une question de méthode d&apos;accompagnement. La formation masse ne change rien. Le coaching terrain, oui — à condition de suivre 5 leviers précis : observer avant d&apos;agir, structurer le retour en 3 temps, répéter délibérément 1h par semaine plutôt que 2 jours par semestre, relier l&apos;individuel au collectif, et mesurer le progrès plutôt que la performance à chaud.
+              Un commercial qui sous-performe n&apos;a pas un problème de volonté mais de méthode. La formation masse ne change rien. Le coaching terrain, oui, à condition de suivre 5 leviers précis. Cet article vous les détaille.
             </p>
           </div>
 
           {/* Carrousel BD */}
           <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-10">
             <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
-              🎬 Carrousel BD — Formation vs Coaching : la différence qui change tout
+              🎬 Carrousel BD , Formation vs Coaching : la différence qui change tout
             </p>
             <p className="text-sm text-amber-700 mb-5">
-              9 planches illustrées — pourquoi vos commerciaux stagnent malgré la formation, et comment le coaching terrain change la donne.
+              9 planches illustrées , pourquoi vos commerciaux stagnent malgré la formation, et comment le coaching terrain change la donne.
             </p>
             <BDCarousel
               images={carouselImages}
-              title="Carrousel BD — Formation vs Coaching terrain"
+              title="Carrousel BD , Formation vs Coaching terrain"
               maxPreview={2}
             />
             <div className="mt-4 text-center">
@@ -167,7 +167,7 @@ export default function CoachingCommercialTerrainPage() {
             </div>
           </div>
 
-          {/* Badge CTA — sous le carrousel */}
+          {/* Badge CTA , sous le carrousel */}
           <div className="mb-6 text-center">
             <Link
               href="/diagnostic"
@@ -181,11 +181,11 @@ export default function CoachingCommercialTerrainPage() {
           <div className="mt-10 p-6 bg-blue-ink/5 rounded-xl border border-blue-ink/10">
             <p className="text-sm font-semibold text-blue-ink mb-3">📑 Sommaire</p>
             <ul className="space-y-2 text-sm text-gray-700">
-              <li><a href="#levier1" className="text-mint-green hover:underline">Levier 1 — Diagnostic comportemental : observer en situation réelle</a></li>
-              <li><a href="#levier2" className="text-mint-green hover:underline">Levier 2 — Retour structuré en 3 temps : avant, pendant, après</a></li>
-              <li><a href="#levier3" className="text-mint-green hover:underline">Levier 3 — La répétition délibérée plutôt que la formation en masse</a></li>
-              <li><a href="#levier4" className="text-mint-green hover:underline">Levier 4 — Rituels de cohésion entre coaching individuel et collectif</a></li>
-              <li><a href="#levier5" className="text-mint-green hover:underline">Levier 5 — Indicateurs qui mesurent le progrès, pas la performance à chaud</a></li>
+              <li><a href="#levier1" className="text-mint-green hover:underline">Levier 1 , Diagnostic comportemental : observer en situation réelle</a></li>
+              <li><a href="#levier2" className="text-mint-green hover:underline">Levier 2 , Retour structuré en 3 temps : avant, pendant, après</a></li>
+              <li><a href="#levier3" className="text-mint-green hover:underline">Levier 3 , La répétition délibérée plutôt que la formation en masse</a></li>
+              <li><a href="#levier4" className="text-mint-green hover:underline">Levier 4 , Rituels de cohésion entre coaching individuel et collectif</a></li>
+              <li><a href="#levier5" className="text-mint-green hover:underline">Levier 5 , Indicateurs qui mesurent le progrès, pas la performance à chaud</a></li>
             </ul>
           </div>
 
@@ -198,7 +198,7 @@ export default function CoachingCommercialTerrainPage() {
           </p>
 
           <p className="mb-8">
-            Je regarde le dossier. Le commercial en question — appelons-le Thomas — a effectivement suivi deux jours de formation. Il a même un joli classeur. Mais personne n&apos;est allé voir ce qui se passait entre deux rendez-vous. Personne n&apos;a observé comment il répond aux objections, comment il lance son appel, comment il tient son échange avant de proposer un devis.
+            Je regarde le dossier. Le commercial en question , appelons-le Thomas , a effectivement suivi deux jours de formation. Il a même un joli classeur. Mais personne n&apos;est allé voir ce qui se passait entre deux rendez-vous. Personne n&apos;a observé comment il répond aux objections, comment il lance son appel, comment il tient son échange avant de proposer un devis.
           </p>
 
           <p className="mb-8">
@@ -209,7 +209,7 @@ export default function CoachingCommercialTerrainPage() {
             Voici les 5 leviers qui marchent vraiment. Pas de théorie. Juste ce que j&apos;ai vu fonctionner sur le terrain, dans des PME comme la vôtre.
           </p>
 
-          <h2 id="levier1" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Levier 1 : Diagnostic comportemental avant le plan d&apos;action — observer en situation réelle</h2>
+          <h2 id="levier1" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Levier 1 : Diagnostic comportemental avant le plan d&apos;action , observer en situation réelle</h2>
 
           <p className="mb-8">
             Avant de décider ce qu&apos;on va changer, il faut voir ce qui se passe vraiment. Pas dans un tableau Excel. Pas dans un débrief à chaud en open space. En situation.
@@ -220,7 +220,7 @@ export default function CoachingCommercialTerrainPage() {
           </p>
 
           <p className="mb-8">
-            Sauf qu&apos;en l&apos;observant un vrai rendez-vous, je vois autre chose. Thomas n&apos;a pas un problème de conclusion. Il a un problème de questionnement. Il pose ses questions comme un inventaire : « Quelle est votre situation ? », « Quel budget ? », « Qui décide ? » — trois questions, puis il passe à sa démo. Le client n&apos;a pas eu le temps de dire ce qui lui fait vraiment mal. Forcément, il n&apos;achète pas.
+            Sauf qu&apos;en l&apos;observant un vrai rendez-vous, je vois autre chose. Thomas n&apos;a pas un problème de conclusion. Il a un problème de questionnement. Il pose ses questions comme un inventaire : « Quelle est votre situation ? », « Quel budget ? », « Qui décide ? » , trois questions, puis il passe à sa démo. Le client n&apos;a pas eu le temps de dire ce qui lui fait vraiment mal. Forcément, il n&apos;achète pas.
           </p>
 
           <p className="mb-8">
@@ -234,10 +234,10 @@ export default function CoachingCommercialTerrainPage() {
           <ul className="space-y-2 text-sm text-gray-700 mb-8">
             <li><strong>S&apos;asseoir</strong> à côté du commercial pendant 3 à 5 appels ou rendez-vous (en physique ou en écoute)</li>
             <li><strong>Noter précisément</strong> : à quel moment la conversation se tend, ce que le commercial fait à ce moment-là, comment le client réagit</li>
-            <li><strong>Comparer</strong> ce qu&apos;on voit avec ce que le commercial croit faire — l&apos;écart est presque toujours instructif</li>
+            <li><strong>Comparer</strong> ce qu&apos;on voit avec ce que le commercial croit faire , l&apos;écart est presque toujours instructif</li>
           </ul>
 
-          <h2 id="levier2" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Levier 2 : Retour structuré en 3 temps — avant, pendant, après</h2>
+          <h2 id="levier2" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Levier 2 : Retour structuré en 3 temps , avant, pendant, après</h2>
 
           <p className="mb-8">
             Le retour, c&apos;est le cœur du coaching. Mais la plupart des managers le font dans le mauvais ordre : ils observent, puis ils donnent des conseils. Le problème, c&apos;est que le commercial repart avec une liste de choses à changer, et il est seul pour les appliquer.
@@ -301,7 +301,7 @@ export default function CoachingCommercialTerrainPage() {
           <div className="bg-teal-50 border border-teal-200/60 rounded-2xl p-6 my-10">
             <p className="font-title font-bold text-teal-800 text-sm uppercase tracking-wider mb-2">🎯 Vous avez déjà une idée du levier à travailler ?</p>
             <p className="text-sm text-teal-700 mb-3">
-              Le Bootcamp commercial intensif est conçu pour ancrer les réflexes en situation réelle — pas en amphithéâtre.
+              Le Bootcamp commercial intensif est conçu pour ancrer les réflexes en situation réelle , pas en amphithéâtre.
             </p>
             <Link
               href="/bootcamp"
@@ -331,7 +331,7 @@ export default function CoachingCommercialTerrainPage() {
 
           <ul className="space-y-2 text-sm text-gray-700 mb-8">
             <li>Chaque commercial partage une situation difficile qu&apos;il a rencontrée et comment il l&apos;a gérée</li>
-            <li>Pas de jugement, pas de hiérarchie — chacun raconte ce qui a marché ou non</li>
+            <li>Pas de jugement, pas de hiérarchie , chacun raconte ce qui a marché ou non</li>
             <li>Le coach facilite : « Qu&apos;est-ce qu&apos;on peut retenir pour tout le monde ? »</li>
           </ul>
 
@@ -433,7 +433,7 @@ export default function CoachingCommercialTerrainPage() {
 
           {/* FAQ */}
           <div className="mt-12 mb-10">
-            <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">FAQ — Coaching commercial terrain</h2>
+            <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">FAQ , Coaching commercial terrain</h2>
 
             <div className="space-y-4">
               <div className="p-4 bg-blue-ink/5 rounded-xl border border-blue-ink/10">
@@ -481,25 +481,25 @@ export default function CoachingCommercialTerrainPage() {
                 <Link href="/blog/coaching-commercial-diagnostic-ecoute" className="text-mint-green hover:underline font-medium">
                   Coaching commercial : ce n&apos;est pas un problème de motivation, c&apos;est un problème de diagnostic
                 </Link>
-                <span className="text-gray-500"> — L&apos;étape préalable : écouter avant d&apos;agir.</span>
+                <span className="text-gray-500"> , L&apos;étape préalable : écouter avant d&apos;agir.</span>
               </li>
               <li>
                 <Link href="/blog/kpis-commerciaux-pme-indicateurs-vous-cachent" className="text-mint-green hover:underline font-medium">
                   Les KPI commerciaux qui changent vraiment la donne en PME
                 </Link>
-                <span className="text-gray-500"> — Mesurer ce qui compte, pas ce qui est facile.</span>
+                <span className="text-gray-500"> , Mesurer ce qui compte, pas ce qui est facile.</span>
               </li>
               <li>
                 <Link href="/blog/pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe" className="text-mint-green hover:underline font-medium">
                   Management d&apos;équipe commerciale : les erreurs qui plombent vos résultats
                 </Link>
-                <span className="text-gray-500"> — Ne pas confondre coaching et management.</span>
+                <span className="text-gray-500"> , Ne pas confondre coaching et management.</span>
               </li>
             </ul>
             <div className="mt-4 text-xs text-gray-500 border-t border-blue-ink/10 pt-4">
               <strong>Source externe E-E-A-T :</strong>{' '}
               <a href="https://hbr.org/2019/11/the-leaders-guide-to-corporate-coaching" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">
-                The Leader&apos;s Guide to Corporate Coaching — Harvard Business Review
+                The Leader&apos;s Guide to Corporate Coaching , Harvard Business Review
               </a>
             </div>
           </div>
