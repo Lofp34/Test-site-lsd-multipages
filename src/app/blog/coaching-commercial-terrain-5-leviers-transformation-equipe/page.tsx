@@ -484,13 +484,13 @@ export default function CoachingCommercialTerrainPage() {
                 <span className="text-gray-500"> — L&apos;étape préalable : écouter avant d&apos;agir.</span>
               </li>
               <li>
-                <Link href="/blog/kpis-commerciaux-pme" className="text-mint-green hover:underline font-medium">
+                <Link href="/blog/kpis-commerciaux-pme-indicateurs-vous-cachent" className="text-mint-green hover:underline font-medium">
                   Les KPI commerciaux qui changent vraiment la donne en PME
                 </Link>
                 <span className="text-gray-500"> — Mesurer ce qui compte, pas ce qui est facile.</span>
               </li>
               <li>
-                <Link href="/blog/management-equipe-commerciale-erreurs" className="text-mint-green hover:underline font-medium">
+                <Link href="/blog/pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe" className="text-mint-green hover:underline font-medium">
                   Management d&apos;équipe commerciale : les erreurs qui plombent vos résultats
                 </Link>
                 <span className="text-gray-500"> — Ne pas confondre coaching et management.</span>
