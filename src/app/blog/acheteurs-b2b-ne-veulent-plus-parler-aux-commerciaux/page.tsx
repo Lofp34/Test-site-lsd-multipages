@@ -7,7 +7,7 @@ const heroImage = '/images/blog/acheteurs-b2b-70-hero.webp';
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/acheteurs-b2b-70-hero.webp';
 
 export const metadata: Metadata = {
-  title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux - et c\'est une bonne nouvelle | Laurent Serre',
+  title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux, et c\'est une bonne nouvelle | Laurent Serre',
   description:
     'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil — c\'est un rejet du mauvais commercial. Analyse des chiffres et leçons terrain.',
   keywords:
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/acheteurs-b2b-ne-veulent-plus-parler-aux-commerciaux',
   },
   openGraph: {
-    title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux - et c\'est une bonne nouvelle',
+    title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux, et c\'est une bonne nouvelle',
     description:
       'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Analyse des chiffres et leçons terrain.',
     url: 'https://www.laurentserre.com/blog/acheteurs-b2b-ne-veulent-plus-parler-aux-commerciaux',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux - et c\'est une bonne nouvelle',
+    title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux, et c\'est une bonne nouvelle',
     description:
       'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Analyse des chiffres et leçons terrain.',
     images: [heroImageAbsolute],
@@ -44,7 +44,7 @@ export default function AcheteursB2BPage() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: '70% des acheteurs B2B ne veulent plus parler aux commerciaux - et c\'est une bonne nouvelle',
+    headline: '70% des acheteurs B2B ne veulent plus parler aux commerciaux, et c\'est une bonne nouvelle',
     description:
       'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil — c\'est un rejet du mauvais commercial. 7 data points Gartner sourcés et analyse terrain.',
     image: heroImageAbsolute,
@@ -118,7 +118,7 @@ export default function AcheteursB2BPage() {
 
         {/* Titre */}
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-title font-bold text-blue-ink leading-tight mb-6">
-          70% des acheteurs B2B ne veulent plus parler aux commerciaux - et c&apos;est une bonne nouvelle
+          70% des acheteurs B2B ne veulent plus parler aux commerciaux, et c&apos;est une bonne nouvelle
         </h1>
 
         {/* Auteur inline */}

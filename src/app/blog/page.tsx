@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 const blogPosts = [
   {
     slug: 'acheteurs-b2b-ne-veulent-plus-parler-aux-commerciaux',
-    title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux — et c\'est une bonne nouvelle',
+    title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux, et c\'est une bonne nouvelle',
     description: 'Gartner : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil — c\'est un rejet du mauvais commercial. 7 data points Gartner sourcés.',
     date: '2026-05-26',
     readTime: '5 min',
