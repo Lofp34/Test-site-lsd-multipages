@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'acheteurs-b2b-ne-veulent-plus-parler-aux-commerciaux',
+    title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux — et c\'est une bonne nouvelle',
+    description: 'Gartner : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil — c\'est un rejet du mauvais commercial. 7 data points Gartner sourcés.',
+    date: '2026-05-26',
+    readTime: '5 min',
+    category: 'Comportement acheteur B2B / transformation commerciale',
+    image: '/images/blog/acheteurs-b2b-70-hero.webp',
+    featured: true
+  },
+  {
     slug: 'coaching-commercial-terrain-5-leviers-transformation-equipe',
     title: 'Coaching commercial terrain : les 5 leviers qui transforment durablement une équipe',
     description: 'La formation masse ne change rien. Le coaching terrain, oui — à condition de suivre 5 leviers précis : observer avant d\'agir, structurer le retour en 3 temps, répéter délibérément, relier l\'individuel au collectif, et mesurer le progrès.',
