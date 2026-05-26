@@ -9,7 +9,7 @@ const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/acheteurs-b2
 export const metadata: Metadata = {
   title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux, et c\'est une bonne nouvelle | Laurent Serre',
   description:
-    'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil — c\'est un rejet du mauvais commercial. Analyse des chiffres et leçons terrain.',
+    'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil , c\'est un rejet du mauvais commercial. Analyse des chiffres et leçons terrain.',
   keywords:
     'acheteurs B2B, comportement acheteur B2B, Gartner CSO, vente B2B, transformation commerciale, prospection B2B, autonomie acheteur, digital commerce',
   alternates: {
@@ -46,7 +46,7 @@ export default function AcheteursB2BPage() {
     '@type': 'BlogPosting',
     headline: '70% des acheteurs B2B ne veulent plus parler aux commerciaux, et c\'est une bonne nouvelle',
     description:
-      'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil — c\'est un rejet du mauvais commercial. 7 data points Gartner sourcés et analyse terrain.',
+      'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil , c\'est un rejet du mauvais commercial. 7 data points Gartner sourcés et analyse terrain.',
     image: heroImageAbsolute,
     datePublished: '2026-05-26',
     dateModified: '2026-05-26',
@@ -135,11 +135,11 @@ export default function AcheteursB2BPage() {
           <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
             <p className="text-sm font-semibold text-mint-green mb-2">✨ Ce que vous allez retenir</p>
             <p className="text-gray-700 leading-relaxed">
-              70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n&apos;est pas un rejet du conseil humain - c&apos;est un rejet de la prospection de masse et des messages non pertinents. Gartner confirme : les entreprises qui adaptent leur design commercial à cette nouvelle réalité ont 3,2 fois plus de chances de performer. Cet article décortique les chiffres et ce qu&apos;ils changent concrètement sur le terrain.apos;est pas un rejet du conseil humain - c70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n&apos;est pas un rejet du conseil humain - c&apos;est un rejet de la prospection de masse et des messages non pertinents. Gartner confirme : les entreprises qui adaptent leur design commercial à cette nouvelle réalité ont 3,2 fois plus de chances de performer. Cet article décortique les chiffres et ce qu&apos;ils changent concrètement sur le terrain.apos;est un rejet de la prospection de masse et des messages non pertinents. Gartner confirme : les entreprises qui adaptent leur design commercial à cette nouvelle réalité ont 3,2 fois plus de chances de performer. Cet article décortique les chiffres et ce qu70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n&apos;est pas un rejet du conseil humain - c&apos;est un rejet de la prospection de masse et des messages non pertinents. Gartner confirme : les entreprises qui adaptent leur design commercial à cette nouvelle réalité ont 3,2 fois plus de chances de performer. Cet article décortique les chiffres et ce qu&apos;ils changent concrètement sur le terrain.apos;ils changent concrètement sur le terrain.
+              70% des acheteurs B2B préfèrent le 100% digital. Mais ce n&apos;est pas un rejet des commerciaux. C&apos;est un rejet de la prospection de masse. Les entreprises qui adaptent leur approche performent 3,2 fois mieux.
             </p>
           </div>
 
-          {/* Badge CTA — sous le header */}
+          {/* Badge CTA , sous le header */}
           <div className="mt-8 mb-6 text-center">
             <Link
               href="/contact"
@@ -154,7 +154,7 @@ export default function AcheteursB2BPage() {
             <p className="text-sm font-semibold text-blue-ink mb-3">📑 Sommaire</p>
             <ul className="space-y-2 text-sm text-gray-700">
               <li><a href="#chiffres" className="text-mint-green hover:underline">Ce que les chiffres disent vraiment</a></li>
-              <li><a href="#pourquoi" className="text-mint-green hover:underline">Pourquoi les acheteurs fuient — et ce qu&apos;ils fuient vraiment</a></li>
+              <li><a href="#pourquoi" className="text-mint-green hover:underline">Pourquoi les acheteurs fuient , et ce qu&apos;ils fuient vraiment</a></li>
               <li><a href="#concret" className="text-mint-green hover:underline">Ce que ça change concrètement</a></li>
               <li><a href="#mondes" className="text-mint-green hover:underline">Les deux mondes qui se séparent</a></li>
               <li><a href="#terrain" className="text-mint-green hover:underline">Ce que je vois sur le terrain</a></li>
@@ -174,7 +174,7 @@ export default function AcheteursB2BPage() {
           </p>
 
           <p className="mb-8">
-            J&apos;ai passé du temps sur les données Gartner des deux derniers quarters, et je les confronte à ce que je vois chez mes clients. La réalité est plus nuancée — et plus intéressante pour ceux qui veulent gagner.
+            J&apos;ai passé du temps sur les données Gartner des deux derniers quarters, et je les confronte à ce que je vois chez mes clients. La réalité est plus nuancée , et plus intéressante pour ceux qui veulent gagner.
           </p>
 
           <h2 id="chiffres" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Ce que les chiffres disent vraiment</h2>
@@ -205,7 +205,7 @@ export default function AcheteursB2BPage() {
             </p>
           </div>
 
-          <h2 id="pourquoi" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Pourquoi les acheteurs fuient — et ce qu&apos;ils fuient vraiment</h2>
+          <h2 id="pourquoi" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Pourquoi les acheteurs fuient , et ce qu&apos;ils fuient vraiment</h2>
 
           <p className="mb-8">
             Quand je lis ces chiffres, je ne vois pas un rejet du conseil humain. Je vois le rejet d&apos;une mécanique commerciale épuisante.
@@ -228,7 +228,7 @@ export default function AcheteursB2BPage() {
           </p>
 
           <p className="mb-8">
-            Un acheteur B2B passe 70 % de son parcours à chercher des informations seul avant de contacter un fournisseur. Il lit, compare, élimine. Quand il vous contacte, il a déjà éliminé 80 % des options. Si vous l&apos;avez sollicité trop tôt ou trop souvent, vous êtes déjà dans les 80 % éliminés — pas dans les 20 % retenus.
+            Un acheteur B2B passe 70 % de son parcours à chercher des informations seul avant de contacter un fournisseur. Il lit, compare, élimine. Quand il vous contacte, il a déjà éliminé 80 % des options. Si vous l&apos;avez sollicité trop tôt ou trop souvent, vous êtes déjà dans les 80 % éliminés , pas dans les 20 % retenus.
           </p>
 
           <h2 id="concret" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Ce que ça change concrètement</h2>
@@ -246,11 +246,11 @@ export default function AcheteursB2BPage() {
           </p>
 
           <p className="mb-8">
-            <strong>Intervenir au bon moment.</strong> L&apos;acheteur B2B veut être autonome en phase de découverte. Ne le dérangez pas. Mais quand il commence à chercher une solution, à comparer des options, à douter — soyez là. Avec une lecture qu&apos;il ne peut pas trouver seul.
+            <strong>Intervenir au bon moment.</strong> L&apos;acheteur B2B veut être autonome en phase de découverte. Ne le dérangez pas. Mais quand il commence à chercher une solution, à comparer des options, à douter , soyez là. Avec une lecture qu&apos;il ne peut pas trouver seul.
           </p>
 
           <p className="mb-8">
-            <strong>Chaque interaction doit apporter quelque chose que l&apos;acheteur ne peut pas obtenir sans vous.</strong> Si votre message se résume à « je voulais prendre de vos nouvelles », vous êtes dans le bruit. Si vous lui apportez une donnée, une mise en garde, une question qu&apos;il ne s&apos;était pas posée — vous êtes dans la pertinence.
+            <strong>Chaque interaction doit apporter quelque chose que l&apos;acheteur ne peut pas obtenir sans vous.</strong> Si votre message se résume à « je voulais prendre de vos nouvelles », vous êtes dans le bruit. Si vous lui apportez une donnée, une mise en garde, une question qu&apos;il ne s&apos;était pas posée , vous êtes dans la pertinence.
           </p>
 
           {/* Mid-article CTA */}
@@ -282,7 +282,7 @@ export default function AcheteursB2BPage() {
           </p>
 
           <p className="mb-8">
-            Les équipes qui acceptent que l&apos;acheteur contrôle son parcours et qui adaptent leur intervention en conséquence — celles-là vont capter le marché.
+            Les équipes qui acceptent que l&apos;acheteur contrôle son parcours et qui adaptent leur intervention en conséquence , celles-là vont capter le marché.
           </p>
 
           <h2 id="terrain" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Ce que je vois sur le terrain</h2>
@@ -319,7 +319,7 @@ export default function AcheteursB2BPage() {
 
           {/* FAQ */}
           <div className="mt-12 mb-10">
-            <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">FAQ — Acheteurs B2B et comportement d&apos;achat</h2>
+            <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">FAQ , Acheteurs B2B et comportement d&apos;achat</h2>
 
             <div className="space-y-4">
               <div className="p-4 bg-blue-ink/5 rounded-xl border border-blue-ink/10">
@@ -357,30 +357,26 @@ export default function AcheteursB2BPage() {
                 <Link href="/blog/linkedin-prospection-b2b-50-messages-par-jour" className="text-mint-green hover:underline font-medium">
                   Pourquoi vos 50 messages LinkedIn par jour ne marchent plus
                 </Link>
-                <span className="text-gray-500"> — Le piège du volume et comment en sortir.</span>
+                <span className="text-gray-500"> , Le piège du volume et comment en sortir.</span>
               </li>
               <li>
                 <Link href="/blog/plan-prospection-commerciale-machine-leads-annee" className="text-mint-green hover:underline font-medium">
                   Plan de prospection commerciale : construire une machine à leads pour l&apos;année
                 </Link>
-                <span className="text-gray-500"> — Structurer une prospection qui attire plutôt qu&apos;elle ne force.</span>
+                <span className="text-gray-500"> , Structurer une prospection qui attire plutôt qu&apos;elle ne force.</span>
               </li>
               <li>
                 <Link href="/blog/ia-et-prospection-commerciale-ce-qui-change-vraiment-pour-vos-equipes-en-2026" className="text-mint-green hover:underline font-medium">
                   IA et prospection commerciale : ce qui change vraiment pour vos équipes
                 </Link>
-                <span className="text-gray-500"> — Comment l&apos;IA peut aider à qualifier avant de contacter.</span>
+                <span className="text-gray-500"> , Comment l&apos;IA peut aider à qualifier avant de contacter.</span>
               </li>
             </ul>
             <div className="mt-4 text-xs text-gray-500 border-t border-blue-ink/10 pt-4">
               <strong>Source Gartner :</strong>{' '}
-              <a href="https://www.gartner.com/en/sales/insights/cso-quarterly" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">
-                Gartner CSO Quarterly — Q1 & Q2 2026
-              </a>{' '}
+              Gartner CSO Quarterly, Q1 & Q2 2026{' '}
               |{' '}
-              <a href="https://www.gartner.com/en/sales/insights/b2b-buying" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">
-                Redefining Revenue Growth Guide
-              </a>
+              Redefining Revenue Growth Guide
             </div>
           </div>
 
@@ -388,7 +384,7 @@ export default function AcheteursB2BPage() {
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <h3 className="text-2xl font-title font-bold mb-4">Vous voulez analyser votre cycle de vente ?</h3>
             <p className="mb-6">
-              Je vous aide à repenser votre approche commerciale pour passer d&apos;une prospection de volume à des interactions à forte valeur ajoutée — là où vos prospects vous attendent vraiment.
+              Je vous aide à repenser votre approche commerciale pour passer d&apos;une prospection de volume à des interactions à forte valeur ajoutée , là où vos prospects vous attendent vraiment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/contact" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
