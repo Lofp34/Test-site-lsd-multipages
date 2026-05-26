@@ -7,7 +7,7 @@ const heroImage = '/images/blog/acheteurs-b2b-70-hero.webp';
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/acheteurs-b2b-70-hero.webp';
 
 export const metadata: Metadata = {
-  title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux — et c\'est une bonne nouvelle | Laurent Serre',
+  title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux - et c\'est une bonne nouvelle | Laurent Serre',
   description:
     'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil — c\'est un rejet du mauvais commercial. Analyse des chiffres et leçons terrain.',
   keywords:
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/acheteurs-b2b-ne-veulent-plus-parler-aux-commerciaux',
   },
   openGraph: {
-    title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux — et c\'est une bonne nouvelle',
+    title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux - et c\'est une bonne nouvelle',
     description:
       'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Analyse des chiffres et leçons terrain.',
     url: 'https://www.laurentserre.com/blog/acheteurs-b2b-ne-veulent-plus-parler-aux-commerciaux',
@@ -27,13 +27,13 @@ export const metadata: Metadata = {
         url: heroImageAbsolute,
         width: 1200,
         height: 630,
-        alt: '70% des acheteurs B2B ne veulent plus parler aux commerciaux — données Gartner',
+        alt: '70% des acheteurs B2B ne veulent plus parler aux commerciaux - données Gartner',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux — et c\'est une bonne nouvelle',
+    title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux - et c\'est une bonne nouvelle',
     description:
       'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Analyse des chiffres et leçons terrain.',
     images: [heroImageAbsolute],
@@ -44,7 +44,7 @@ export default function AcheteursB2BPage() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: '70% des acheteurs B2B ne veulent plus parler aux commerciaux — et c\'est une bonne nouvelle',
+    headline: '70% des acheteurs B2B ne veulent plus parler aux commerciaux - et c\'est une bonne nouvelle',
     description:
       'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil — c\'est un rejet du mauvais commercial. 7 data points Gartner sourcés et analyse terrain.',
     image: heroImageAbsolute,
@@ -83,51 +83,59 @@ export default function AcheteursB2BPage() {
   return (
     <main className="bg-primary-bg text-gray-dark">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <section className="py-24 sm:py-32">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-4 py-2 rounded-full mb-6">
-              <span className="font-title font-semibold text-mint-green text-sm">Comportement acheteur B2B / transformation commerciale</span>
-            </div>
+      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+        {/* Fil d'Ariane */}
+        <nav className="mb-8 text-sm" aria-label="Fil d'Ariane">
+          <Link href="/" className="text-mint-green hover:text-mint-green/80 transition-colors">
+            Accueil
+          </Link>
+          <span className="mx-2 text-gray-400">/</span>
+          <Link href="/blog" className="text-mint-green hover:text-mint-green/80 transition-colors">
+            Blog
+          </Link>
+          <span className="mx-2 text-gray-400">/</span>
+          <span className="text-gray-500" aria-current="page">Acheteurs B2B</span>
+        </nav>
 
-            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              70% des acheteurs B2B ne veulent plus parler aux commerciaux — et c&apos;est une bonne nouvelle
-            </h1>
-
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
-              <div className="flex items-center gap-2">
-                <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" loading="lazy" />
-                <span>Laurent Serre</span>
-              </div>
-              <span>•</span>
-              <time dateTime="2026-05-26">26 mai 2026</time>
-              <span>•</span>
-              <span>5 min de lecture</span>
-            </div>
-          </div>
-
-          <div className="relative mb-12">
-            <Image
-              src={heroImage}
-              alt="70% des acheteurs B2B ne veulent plus parler aux commerciaux — données Gartner"
-              width={1200}
-              height={630}
-              className="w-full h-80 object-cover object-center rounded-2xl shadow-lg"
-              quality={78}
-              priority
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-            />
-          </div>
+        {/* Image hero */}
+        <div className="relative w-full aspect-video mb-10 rounded-2xl overflow-hidden shadow-lg">
+          <Image
+            src={heroImage}
+            alt="70% des acheteurs B2B ne veulent plus parler aux commerciaux - données Gartner"
+            fill
+            className="object-cover"
+            priority
+            sizes="(max-width: 768px) 100vw, 768px"
+          />
         </div>
-      </section>
 
-      <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        {/* Meta */}
+        <div className="flex items-center gap-3 text-sm text-gray-500 mb-4">
+          <time dateTime="2026-05-26">26 mai 2026</time>
+          <span aria-hidden="true">·</span>
+          <span>Comportement acheteur B2B / transformation commerciale</span>
+        </div>
+
+        {/* Titre */}
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-title font-bold text-blue-ink leading-tight mb-6">
+          70% des acheteurs B2B ne veulent plus parler aux commerciaux - et c&apos;est une bonne nouvelle
+        </h1>
+
+        {/* Auteur inline */}
+        <div className="flex items-center gap-3 text-sm text-gray-500 mb-8">
+          <Image src="/laurent.jpg" alt="Laurent Serre" width={32} height={32} className="rounded-full" quality={60} sizes="32px" />
+          <span>Laurent Serre</span>
+          <span aria-hidden="true">·</span>
+          <span>5 min de lecture</span>
+        </div>
+
+      
         <div className="prose prose-lg max-w-none">
           {/* TL;DR */}
           <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
             <p className="text-sm font-semibold text-mint-green mb-2">✨ Ce que vous allez retenir</p>
             <p className="text-gray-700 leading-relaxed">
-              70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n&apos;est pas un rejet du conseil humain — c&apos;est un rejet de la prospection de masse et des messages non pertinents. Gartner confirme : les entreprises qui adaptent leur design commercial à cette nouvelle réalité ont 3,2 fois plus de chances de performer. Cet article décortique les chiffres et ce qu&apos;ils changent concrètement sur le terrain.
+              70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n&apos;est pas un rejet du conseil humain - c&apos;est un rejet de la prospection de masse et des messages non pertinents. Gartner confirme : les entreprises qui adaptent leur design commercial à cette nouvelle réalité ont 3,2 fois plus de chances de performer. Cet article décortique les chiffres et ce qu&apos;ils changent concrètement sur le terrain.apos;est pas un rejet du conseil humain - c70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n&apos;est pas un rejet du conseil humain - c&apos;est un rejet de la prospection de masse et des messages non pertinents. Gartner confirme : les entreprises qui adaptent leur design commercial à cette nouvelle réalité ont 3,2 fois plus de chances de performer. Cet article décortique les chiffres et ce qu&apos;ils changent concrètement sur le terrain.apos;est un rejet de la prospection de masse et des messages non pertinents. Gartner confirme : les entreprises qui adaptent leur design commercial à cette nouvelle réalité ont 3,2 fois plus de chances de performer. Cet article décortique les chiffres et ce qu70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n&apos;est pas un rejet du conseil humain - c&apos;est un rejet de la prospection de masse et des messages non pertinents. Gartner confirme : les entreprises qui adaptent leur design commercial à cette nouvelle réalité ont 3,2 fois plus de chances de performer. Cet article décortique les chiffres et ce qu&apos;ils changent concrètement sur le terrain.apos;ils changent concrètement sur le terrain.
             </p>
           </div>
 
