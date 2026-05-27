@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'gap-selling-methode-terrain-b2b',
+    title: 'Gap Selling appliqué au terrain : vendre en creusant le vrai problème',
+    description: '80% des cycles de vente échouent parce que le commercial parle de sa solution avant d\'avoir compris le vrai problème. La méthode Gap Selling, racontée par le terrain PME français — avec 10 planches BD et un cas client chiffré.',
+    date: '2026-05-27',
+    readTime: '7 min',
+    category: 'Méthode de vente / diagnostic commercial',
+    image: '/images/blog/2026-05-27-gap-selling-hero.webp',
+    featured: true
+  },
+  {
     slug: 'acheteurs-b2b-ne-veulent-plus-parler-aux-commerciaux',
     title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux, et c\'est une bonne nouvelle',
     description: 'Gartner : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil — c\'est un rejet du mauvais commercial. 7 data points Gartner sourcés.',
