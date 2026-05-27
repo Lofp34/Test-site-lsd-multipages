@@ -22,7 +22,7 @@ export default function AuthorCard({ className = '' }: AuthorCardProps) {
           Laurent Serre
         </span>
         <span className="text-xs text-gray-500 leading-tight">
-          Consultant commercial — 15 ans de terrain PME
+          Consultant commercial : 15 ans de terrain PME
         </span>
       </div>
     </div>
