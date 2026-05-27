@@ -42,13 +42,13 @@ export const metadata: Metadata = {
 const carouselPrefix = '/images/blog/carrousel-gap-selling-webp';
 
 const carouselImages = [
-  { src: `${carouselPrefix}/01-cover.webp`, alt: 'Cover — Gap Selling sur le terrain', index: 0 },
+  { src: `${carouselPrefix}/01-cover.webp`, alt: 'Cover : Gap Selling sur le terrain', index: 0 },
   { src: `${carouselPrefix}/02-piege-prix.webp`, alt: 'Le piège : baisser le prix', index: 1 },
   { src: `${carouselPrefix}/03-fosse.webp`, alt: 'Personne n\'achète un produit, on achète la réduction d\'un écart', index: 2 },
-  { src: `${carouselPrefix}/04-decouverte.webp`, alt: 'Étape 1 : Découverte — creuser le vrai problème', index: 3 },
-  { src: `${carouselPrefix}/05-quantification.webp`, alt: 'Étape 2 : Quantification — 140 000 €', index: 4 },
-  { src: `${carouselPrefix}/06-amplification.webp`, alt: 'Étape 3 : Amplification — les conséquences de l\'inaction', index: 5 },
-  { src: `${carouselPrefix}/07-alignement.webp`, alt: 'Étape 4 : Alignement — la poignée de main', index: 6 },
+  { src: `${carouselPrefix}/04-decouverte.webp`, alt: 'Étape 1 : Découverte : creuser le vrai problème', index: 3 },
+  { src: `${carouselPrefix}/05-quantification.webp`, alt: 'Étape 2 : Quantification : 140 000 €', index: 4 },
+  { src: `${carouselPrefix}/06-amplification.webp`, alt: 'Étape 3 : Amplification : les conséquences de l\'inaction', index: 5 },
+  { src: `${carouselPrefix}/07-alignement.webp`, alt: 'Étape 4 : Alignement : la poignée de main', index: 6 },
   { src: `${carouselPrefix}/08-erreur-pitcher-tot.webp`, alt: 'Erreur fatale : pitcher trop tôt', index: 7 },
   { src: `${carouselPrefix}/09-erreur-non-quantifier.webp`, alt: 'Erreur fatale : ne pas quantifier', index: 8 },
   { src: `${carouselPrefix}/10-closing.webp`, alt: 'Posez trois questions de plus', index: 9 },
@@ -163,7 +163,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
       {/* Article */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
-          {/* AuthorCard — top */}
+          {/* AuthorCard : top */}
           <div className="mb-8">
             <AuthorCard />
           </div>
@@ -176,21 +176,21 @@ export default function GapSellingMethodeTerrainB2bPage() {
             <p className="text-gray-700 leading-relaxed">
               Gap Selling repose sur une idée simple : le client n'achète pas une solution, il achète la
               réduction du fossé entre où il est et où il veut être. Cet article raconte comment appliquer
-              cette méthode sur le terrain PME français — sans jargon, sans résumé de livre.
+              cette méthode sur le terrain PME français : sans jargon, sans résumé de livre.
             </p>
           </div>
 
           {/* Carrousel BD */}
           <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-6">
             <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
-              🎬 Carrousel BD — Les 10 planches Gap Selling
+              🎬 Carrousel BD : Les 10 planches Gap Selling
             </p>
             <p className="text-sm text-amber-700 mb-5">
               10 planches illustrées : du piège du prix jusqu'à la conclusion, en passant par les 4 étapes terrain.
             </p>
             <BDCarousel
               images={carouselImages}
-              title="Carrousel BD — Gap Selling sur le terrain"
+              title="Carrousel BD : Gap Selling sur le terrain"
               maxPreview={2}
             />
             <div className="mt-4 text-center">
@@ -203,7 +203,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
             </div>
           </div>
 
-          {/* Badge CTA — sous le carrousel */}
+          {/* Badge CTA : sous le carrousel */}
           <div className="mb-8 text-center">
             <Link
               href="/diagnostic"
@@ -217,7 +217,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
           <div className="mt-10 p-6 bg-blue-ink/5 rounded-xl border border-blue-ink/10">
             <p className="text-sm font-semibold text-blue-ink mb-3">📑 Sommaire</p>
             <ul className="space-y-2 text-sm text-gray-700">
-              <li><a href="#principes" className="text-mint-green hover:underline">Gap Selling en trois principes — version terrain</a></li>
+              <li><a href="#principes" className="text-mint-green hover:underline">Gap Selling en trois principes : version terrain</a></li>
               <li><a href="#changement" className="text-mint-green hover:underline">Ce que Gap Selling change vraiment dans la pratique</a></li>
               <li><a href="#etapes" className="text-mint-green hover:underline">Les quatre étapes sur le terrain</a></li>
               <li><a href="#erreurs" className="text-mint-green hover:underline">Les erreurs qui tuent Gap Selling sur le terrain</a></li>
@@ -235,7 +235,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
 
           <p className="mb-8">
             Je vois cette scène tous les mois. Un commercial qui a bien préparé sa réunion, qui connaît son produit,
-            qui a fait de bonnes questions — et qui pourtant passe à côté de la vraie mécanique de décision. Parce
+            qui a fait de bonnes questions, et qui pourtant passe à côté de la vraie mécanique de décision. Parce
             qu'il présente sa solution avant d'avoir mesuré le fossé. Le gap.
           </p>
 
@@ -248,7 +248,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
 
           {/* ──────────────── Gap Selling en 3 principes ──────────────── */}
           <h2 id="principes" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
-            Gap Selling en trois principes — version terrain
+            Gap Selling en trois principes : version terrain
           </h2>
 
           <p className="mb-4">
@@ -257,7 +257,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
 
           <p className="mb-4">
             <strong>1. Le client n'a pas toujours conscience de son vrai problème.</strong> Il ressent un
-            symptôme — un chiffre qui baisse, une équipe qui fatigue, un processus qui bloque — mais il n'a
+            symptôme : un chiffre qui baisse, une équipe qui fatigue, un processus qui bloque, mais il n'a
             pas mis de mot sur la cause réelle. Votre travail n'est pas de confirmer ce qu'il croit savoir.
             C'est de creuser jusqu'à ce que le vrai problème apparaisse.
           </p>
@@ -301,7 +301,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
             Concrètement, dans mes ateliers avec des équipes PME, je vois la bascule arriver au bout de deux
             ou trois rendez-vous d'application. Le commercial qui passait ses réunions à parler de son offre
             se met à parler du problème du client, en profondeur, sans sortir son catalogue. Et il signe
-            plus — parce que le client a compris avant lui qu'il avait besoin d'agir.
+            plus : parce que le client a compris avant lui qu'il avait besoin d'agir.
           </p>
 
           <div className="bg-blue-ink/10 border-l-4 border-blue-ink p-6 my-8">
@@ -319,7 +319,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
           </h2>
 
           <h3 className="text-xl font-title font-bold text-blue-ink mt-8 mb-4">
-            1. Découverte — creuser le vrai problème
+            1. Découverte : creuser le vrai problème
           </h3>
 
           <p className="mb-8">
@@ -342,7 +342,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
           </p>
 
           <h3 className="text-xl font-title font-bold text-blue-ink mt-8 mb-4">
-            2. Quantification — mesurer l'écart avec des chiffres
+            2. Quantification : mesurer l'écart avec des chiffres
           </h3>
 
           <p className="mb-8">
@@ -364,7 +364,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
             se permettre d'attendre. »
           </p>
 
-          {/* Mid-article CTA — Quantification → Bootcamp */}
+          {/* Mid-article CTA : Quantification → Bootcamp */}
           <div className="bg-gradient-to-br from-teal-50 to-mint-green/20 border border-teal-200/40 rounded-2xl p-6 my-8">
             <p className="font-title font-bold text-teal-800 text-sm uppercase tracking-wider mb-2">
               🎯 Vous voulez que vos équipes maîtrisent la quantification du gap ?
@@ -382,7 +382,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
           </div>
 
           <h3 className="text-xl font-title font-bold text-blue-ink mt-8 mb-4">
-            3. Amplification — faire ressentir l'urgence
+            3. Amplification : faire ressentir l'urgence
           </h3>
 
           <p className="mb-8">
@@ -404,7 +404,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
           </p>
 
           <h3 className="text-xl font-title font-bold text-blue-ink mt-8 mb-4">
-            4. Alignement — montrer que votre solution comble le fossé
+            4. Alignement : montrer que votre solution comble le fossé
           </h3>
 
           <p className="mb-8">
@@ -433,7 +433,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
 
           <p className="mb-4">
             <strong>Erreur 1 : creuser pour faire joli, puis pitcher pareil.</strong>
-            Le commercial fait une belle phase de découverte, prend des notes, hoche la tête — puis sort
+            Le commercial fait une belle phase de découverte, prend des notes, hoche la tête : puis sort
             exactement la même proposition qu'il avait préparée avant le rendez-vous. Le client sent le
             décalage. La confiance est cassée.
           </p>
@@ -463,7 +463,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
           <p className="mb-8">
             <strong>Erreur 5 : ne pas vérifier le vrai décideur.</strong>
             Vous pouvez creuser le plus beau gap du monde avec un interlocuteur qui n'a pas le pouvoir de
-            décider. Vous formez quelqu'un qui devra convaincre quelqu'un d'autre. Ça peut marcher — mais
+            décider. Vous formez quelqu'un qui devra convaincre quelqu'un d'autre. Ça peut marcher, mais
             c'est beaucoup plus dur. Dès la phase de découverte, identifiez qui tranche vraiment.
           </p>
 
@@ -495,7 +495,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
           </p>
 
           <p className="mb-8">
-            L'alignement : ce qu'on a mis en place — un process de recrutement commercial structuré, des
+            L'alignement : ce qu'on a mis en place, un process de recrutement commercial structuré, des
             grilles d'évaluation, un onboarding cadré. Pas de formation à la prospection. Le vrai problème
             n'était pas là.
           </p>
@@ -508,7 +508,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
           {/* ──────────────── CTA ──────────────── */}
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <h3 className="text-2xl font-title font-bold mb-4">
-              Vous voulez savoir si vos équipes creusent vraiment le problème — ou si elles vendent dans le vide ?
+              Vous voulez savoir si vos équipes creusent vraiment le problème : ou si elles vendent dans le vide ?
             </h3>
             <p className="mb-6">
               Beaucoup de dirigeants pensent que leurs commerciaux doivent mieux connaître le produit ou être plus
@@ -568,7 +568,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
               </p>
               <p className="text-gray-700">
                 La compréhension prend une journée. L'application réelle prend trois à six mois, avec du
-                coaching terrain. Le plus dur n'est pas de comprendre la méthode — c'est de désapprendre
+                coaching terrain. Le plus dur n'est pas de comprendre la méthode : c'est de désapprendre
                 le réflexe de pitcher trop tôt.
               </p>
             </div>
@@ -613,10 +613,10 @@ export default function GapSellingMethodeTerrainB2bPage() {
                   href="/ressources/meilleurs-livres/methodes-process/gap-selling"
                   className="text-mint-green hover:underline font-medium"
                 >
-                  Gap Selling — la fiche livre complète
+                  Gap Selling : la fiche livre complète
                 </Link>
                 <span className="text-gray-500">
-                  {' '}— Pour creuser le concept et accéder à la bibliographie.
+                  {' '}: Pour creuser le concept et accéder à la bibliographie.
                 </span>
               </li>
               <li>
@@ -627,7 +627,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
                   Challenger Sales appliqué au terrain B2B
                 </Link>
                 <span className="text-gray-500">
-                  {' '}— La méthode complémentaire pour oser la tension constructive.
+                  {' '}: La méthode complémentaire pour oser la tension constructive.
                 </span>
               </li>
               <li>
@@ -638,7 +638,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
                   Vente consultative B2B : devenir le conseiller qu'on ne veut pas perdre
                 </Link>
                 <span className="text-gray-500">
-                  {' '}— Le socle de la posture de diagnosticien.
+                  {' '}: Le socle de la posture de diagnosticien.
                 </span>
               </li>
             </ul>
@@ -651,7 +651,7 @@ export default function GapSellingMethodeTerrainB2bPage() {
           </p>
         </div>
 
-        {/* AuthorCard — bottom */}
+        {/* AuthorCard : bottom */}
         <div className="mt-10 pt-6 border-t border-gray-200">
           <AuthorCard />
         </div>
