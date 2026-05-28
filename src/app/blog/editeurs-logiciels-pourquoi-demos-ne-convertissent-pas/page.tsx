@@ -151,19 +151,11 @@ export default function EditeursLogicielsDemosPage() {
           />
         </div>
 
-        {/* Badge CTA intégré dans la zone héro */}
-        <div className="bg-orange-50 border-l-4 border-orange-500 p-4 mb-8 rounded-r-lg">
-          <p className="text-sm sm:text-base text-orange-900">
-            <strong>Vous êtes éditeur de logiciels ?</strong> Je propose des diagnostics terrain d'une demi-journée pour analyser votre cycle de vente.{' '}
-            <Link href="/contact" className="text-blue-600 font-semibold underline hover:text-blue-800">
-              Me contacter
-            </Link>
-          </p>
-        </div>
-
         {/* TL;DR */}
-        <div className="bg-mint-green/10 border border-mint-green/20 rounded-xl p-6 my-8">
-          <p className="font-bold text-blue-ink mb-2">TL;DR</p>
+        <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
+          <p className="text-sm font-semibold text-mint-green mb-2">
+            ✨ Ce que vous allez retenir
+          </p>
           <ul className="list-disc list-inside text-gray-700 space-y-1">
             <li>Les éditeurs de logiciels SaaS montrent leur produit trop tôt, sans diagnostiquer le vrai problème</li>
             <li>11 décideurs en moyenne pour un achat &gt;10K€ — si vous ne parlez qu'au sponsor métier, vous vendez à la mauvaise personne</li>
@@ -174,7 +166,7 @@ export default function EditeursLogicielsDemosPage() {
 
         {/* Sommaire */}
         <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-xl p-6 my-8">
-          <p className="font-bold text-blue-ink mb-3">Sommaire</p>
+          <p className="text-sm font-semibold text-blue-ink mb-3">📑 Sommaire</p>
           <ul className="space-y-2">
             <li><a href="#piege-demo" className="text-blue-700 hover:text-blue-900 underline">Le piège numéro un : montrer le produit avant de comprendre le problème</a></li>
             <li><a href="#4-decideurs" className="text-blue-700 hover:text-blue-900 underline">Les 4 décideurs : celui qui valide la technique n'est pas celui qui signe le chèque</a></li>
@@ -183,6 +175,16 @@ export default function EditeursLogicielsDemosPage() {
             <li><a href="#discovery-avant-demo" className="text-blue-700 hover:text-blue-900 underline">Structurer le discovery avant la démo</a></li>
             <li><a href="#cas-concret" className="text-blue-700 hover:text-blue-900 underline">Ce que ça change concrètement</a></li>
           </ul>
+        </div>
+
+        {/* Badge CTA : sous le sommaire */}
+        <div className="mb-8 text-center">
+          <Link
+            href="/diagnostic"
+            className="inline-flex items-center gap-2 bg-mint-green/10 text-mint-green text-sm font-medium px-4 py-2 rounded-full hover:bg-mint-green/20 transition-colors"
+          >
+            🔍 Vous ne savez pas pourquoi vos démos ne convertissent pas ? Faites un diagnostic →
+          </Link>
         </div>
 
         <p className="mb-6">
@@ -355,16 +357,19 @@ export default function EditeursLogicielsDemosPage() {
         </p>
 
         {/* Mid-article CTA */}
-        <div className="bg-teal-50 border border-teal-200 rounded-xl p-6 my-10">
-          <p className="text-lg font-bold text-teal-900 mb-2">Vous voulez passer à l'action ?</p>
-          <p className="text-teal-800 mb-4">
-            Le bootcamp commercial Laurent Serre vous apprend à structurer votre discovery et à qualifier vos deals avant la démo. 3 jours de terrain.
+        {/* Mid-article CTA : structurer → Bootcamp */}
+        <div className="bg-gradient-to-br from-teal-50 to-mint-green/20 border border-teal-200/40 rounded-2xl p-6 my-8">
+          <p className="font-title font-bold text-teal-800 text-sm uppercase tracking-wider mb-2">
+            🎯 Vous voulez que vos équipes structurent leur discovery avant la démo ?
+          </p>
+          <p className="text-sm text-teal-700 mb-4">
+            Le Bootcamp commercial vous donne les outils pour passer de la démo systématique au diagnostic structuré, avec des grilles de questionnement et des exercices terrain.
           </p>
           <Link
             href="/bootcamp"
-            className="inline-flex items-center justify-center px-6 py-3 bg-teal-600 text-white font-semibold rounded-full hover:bg-teal-700 transition-colors"
+            className="inline-flex items-center gap-2 bg-teal-600 text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-teal-700 transition-colors"
           >
-            Découvrir le bootcamp
+            Découvrir le Bootcamp →
           </Link>
         </div>
 
@@ -515,24 +520,26 @@ export default function EditeursLogicielsDemosPage() {
           </ul>
         </div>
 
-        {/* CTA double */}
-        <div className="bg-gradient-to-r from-blue-600 to-blue-800 rounded-xl p-8 my-10 text-white">
-          <h3 className="text-2xl font-bold mb-3">Vous reconnaissez ces situations dans votre équipe ?</h3>
-          <p className="mb-6 text-blue-100">
-            Je propose des diagnostics terrain d'une demi-journée pour les éditeurs de logiciels. On observe vos démos, on cartographie vos décideurs, on structure votre discovery. Pas de méthode toute faite — du sur-mesure.
+        {/* CTA final gradient */}
+        <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
+          <h3 className="text-2xl font-title font-bold mb-4">
+            Vous voulez savoir pourquoi vos démos ne convertissent pas — et comment corriger le tir ?
+          </h3>
+          <p className="mb-6">
+            Beaucoup d'éditeurs de logiciels pensent que le problème est dans leur produit ou leur pricing. Le vrai frein est souvent ailleurs : les commerciaux montrent la solution avant d'avoir compris le problème. Un diagnostic permet de voir où ça coince vraiment dans votre cycle de vente.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
-              href="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 bg-white text-blue-800 font-semibold rounded-full hover:bg-blue-50 transition-colors"
+              href="/diagnostic"
+              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors"
             >
-              Me contacter
+              Demander un diagnostic commercial
             </Link>
             <Link
               href="/bootcamp"
-              className="inline-flex items-center justify-center px-6 py-3 border border-white text-white font-medium rounded-full hover:bg-white/10 transition-colors"
+              className="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-full text-white hover:bg-white/10 transition-colors"
             >
-              Découvrir le bootcamp commercial
+              Découvrir le Bootcamp commercial
             </Link>
           </div>
         </div>
