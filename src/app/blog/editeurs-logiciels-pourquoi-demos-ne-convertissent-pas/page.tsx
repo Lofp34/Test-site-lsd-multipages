@@ -103,7 +103,7 @@ export default function EditeursLogicielsDemosPage() {
   };
 
   return (
-    <main>
+    <main className="bg-primary-bg text-gray-dark">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
@@ -112,84 +112,115 @@ export default function EditeursLogicielsDemosPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
+
+      {/* Hero */}
+      <section className="py-24 sm:py-32">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Breadcrumb */}
+          <nav className="mb-8 text-sm text-gray-500" aria-label="Breadcrumb">
+            <ol className="flex items-center gap-2">
+              <li><Link href="/" className="hover:text-mint-green transition-colors">Accueil</Link></li>
+              <li aria-hidden="true">/</li>
+              <li><Link href="/blog" className="hover:text-mint-green transition-colors">Blog</Link></li>
+              <li aria-hidden="true">/</li>
+              <li className="text-blue-ink font-medium" aria-current="page">Éditeurs de logiciels</li>
+            </ol>
+          </nav>
+
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-4 py-2 rounded-full mb-6">
+              <span className="font-title font-semibold text-mint-green text-sm">
+                Vente SaaS / Éditeurs logiciels
+              </span>
+            </div>
+
+            <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
+              Éditeurs de logiciels : pourquoi vos démos ne convertissent pas
+            </h1>
+
+            <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
+              <div className="flex items-center gap-2">
+                <Image
+                  src="/laurent.jpg"
+                  alt="Laurent Serre"
+                  width={32}
+                  height={32}
+                  className="rounded-full"
+                  quality={60}
+                  sizes="32px"
+                  loading="lazy"
+                />
+                <span>Laurent Serre</span>
+              </div>
+              <span>•</span>
+              <time dateTime="2026-05-28">28 mai 2026</time>
+              <span>•</span>
+              <span>9 min de lecture</span>
+            </div>
+          </div>
+
+          <div className="relative mb-12">
+            <Image
+              src="/images/blog/2026-05-28-editeurs-logiciels-demos-hero.webp"
+              alt="Laurent Serre, expert en coaching commercial pour éditeurs de logiciels"
+              width={1536}
+              height={1024}
+              className="w-full h-80 object-cover object-center rounded-2xl shadow-lg"
+              quality={78}
+              priority
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Article */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="mt-8 mb-6 flex items-center gap-2 text-sm">
-          <Link href="/" className="text-blue-600 hover:text-blue-800">
-            Accueil
-          </Link>
-          <span className="text-gray-400">/</span>
-          <Link href="/blog" className="text-blue-600 hover:text-blue-800">
-            Blog
-          </Link>
-          <span className="text-gray-400">/</span>
-          <span className="text-gray-500">Éditeurs de logiciels</span>
-        </div>
+        <div className="prose prose-lg max-w-none">
+          {/* AuthorCard : top */}
+          <div className="mb-8">
+            <AuthorCard />
+          </div>
 
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-title font-bold text-blue-ink leading-tight mb-4">
-          Éditeurs de logiciels : pourquoi vos démos ne convertissent pas
-        </h1>
+          {/* TL;DR */}
+          <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
+            <p className="text-sm font-semibold text-mint-green mb-2">
+              ✨ Ce que vous allez retenir
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              Les éditeurs de logiciels SaaS montrent leur produit trop tôt, sans diagnostiquer le vrai problème du prospect. Résultat : des cycles de vente qui s'étirent, des POC interminables, et des deals qui disparaissent. 11 décideurs en moyenne pour un achat &gt;10K€ — si vous ne parlez qu'au sponsor métier, vous vendez à la mauvaise personne. La solution : structurer le discovery avant la démo avec 3 questions clés : problème réel, urgence, et cartographie des décideurs.
+            </p>
+          </div>
 
-        <p className="text-xl text-gray-600 leading-relaxed mb-8">
-          70% des démos SaaS n'aboutissent pas à une vente. Non pas parce que le produit est mauvais, mais parce que le commercial le montre trop tôt. Les 3 erreurs des éditeurs de logiciels — et comment les corriger.
-        </p>
+          {/* Pas de BD carrousel (brief) */}
 
-        <AuthorCard
-          name="Laurent Serre"
-          date="28 mai 2026"
-          readTime="9 min"
-          category="Vente SaaS / Éditeurs logiciels"
-          image="/images/blog/2026-05-28-editeurs-logiciels-demos-hero.webp"
-        />
+          {/* Badge CTA : sous le TL;DR */}
+          <div className="mb-8 text-center">
+            <Link
+              href="/diagnostic"
+              className="inline-flex items-center gap-2 bg-mint-green/10 text-mint-green text-sm font-medium px-4 py-2 rounded-full hover:bg-mint-green/20 transition-colors"
+            >
+              🔍 Vous ne savez pas pourquoi vos démos ne convertissent pas ? Faites un diagnostic →
+            </Link>
+          </div>
 
-        <div className="relative w-full aspect-[3/2] mb-12 rounded-xl overflow-hidden shadow-lg">
-          <Image
-            src="/images/blog/2026-05-28-editeurs-logiciels-demos-hero.webp"
-            alt="Laurent Serre, expert en coaching commercial pour éditeurs de logiciels"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
+          {/* Sommaire */}
+          <div className="mt-10 p-6 bg-blue-ink/5 rounded-xl border border-blue-ink/10">
+            <p className="text-sm font-semibold text-blue-ink mb-3">📑 Sommaire</p>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li><a href="#piege-demo" className="text-mint-green hover:underline">Le piège numéro un : montrer le produit avant de comprendre le problème</a></li>
+              <li><a href="#4-decideurs" className="text-mint-green hover:underline">Les 4 décideurs : celui qui valide la technique n'est pas celui qui signe le chèque</a></li>
+              <li><a href="#poc-interminable" className="text-mint-green hover:underline">Le POC qui n'en finit pas : quand le client teste mais n'achète pas</a></li>
+              <li><a href="#commercial-expert" className="text-mint-green hover:underline">Le syndrome du commercial-expert</a></li>
+              <li><a href="#discovery-avant-demo" className="text-mint-green hover:underline">Structurer le discovery avant la démo</a></li>
+              <li><a href="#cas-concret" className="text-mint-green hover:underline">Ce que ça change concrètement</a></li>
+            </ul>
+          </div>
 
-        {/* TL;DR */}
-        <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
-          <p className="text-sm font-semibold text-mint-green mb-2">
-            ✨ Ce que vous allez retenir
+          {/* Accroche */}
+          <p className="text-xl text-gray-600 leading-relaxed mb-8">
+            Je vais vous raconter une scène que j'ai vue au moins cinquante fois chez des éditeurs de logiciels.
           </p>
-          <ul className="list-disc list-inside text-gray-700 space-y-1">
-            <li>Les éditeurs de logiciels SaaS montrent leur produit trop tôt, sans diagnostiquer le vrai problème</li>
-            <li>11 décideurs en moyenne pour un achat &gt;10K€ — si vous ne parlez qu'au sponsor métier, vous vendez à la mauvaise personne</li>
-            <li>Un POC non cadré peut durer 6 semaines sans garantie de closing. Il faut une durée fixe, un critère de succès, et un point d'arrêt</li>
-            <li>La solution : structurer le discovery avant la démo avec 3 questions clés : problème réel, urgence, et cartographie des décideurs</li>
-          </ul>
-        </div>
-
-        {/* Sommaire */}
-        <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-xl p-6 my-8">
-          <p className="text-sm font-semibold text-blue-ink mb-3">📑 Sommaire</p>
-          <ul className="space-y-2">
-            <li><a href="#piege-demo" className="text-blue-700 hover:text-blue-900 underline">Le piège numéro un : montrer le produit avant de comprendre le problème</a></li>
-            <li><a href="#4-decideurs" className="text-blue-700 hover:text-blue-900 underline">Les 4 décideurs : celui qui valide la technique n'est pas celui qui signe le chèque</a></li>
-            <li><a href="#poc-interminable" className="text-blue-700 hover:text-blue-900 underline">Le POC qui n'en finit pas : quand le client teste mais n'achète pas</a></li>
-            <li><a href="#commercial-expert" className="text-blue-700 hover:text-blue-900 underline">Le syndrome du commercial-expert</a></li>
-            <li><a href="#discovery-avant-demo" className="text-blue-700 hover:text-blue-900 underline">Structurer le discovery avant la démo</a></li>
-            <li><a href="#cas-concret" className="text-blue-700 hover:text-blue-900 underline">Ce que ça change concrètement</a></li>
-          </ul>
-        </div>
-
-        {/* Badge CTA : sous le sommaire */}
-        <div className="mb-8 text-center">
-          <Link
-            href="/diagnostic"
-            className="inline-flex items-center gap-2 bg-mint-green/10 text-mint-green text-sm font-medium px-4 py-2 rounded-full hover:bg-mint-green/20 transition-colors"
-          >
-            🔍 Vous ne savez pas pourquoi vos démos ne convertissent pas ? Faites un diagnostic →
-          </Link>
-        </div>
-
-        <p className="mb-6">
-          Je vais vous raconter une scène que j'ai vue au moins cinquante fois chez des éditeurs de logiciels.
-        </p>
 
         <p className="mb-6">
           Le commercial ouvre la réunion. Trois slides sur l'entreprise. Puis il lance la démo. Il montre l'interface, les fonctionnalités, le dashboard. Tout est fluide, le produit est beau, le prospect semble intéressé. Le commercial sent que ça se passe bien.
@@ -499,68 +530,81 @@ export default function EditeursLogicielsDemosPage() {
         </div>
 
         {/* Pour aller plus loin */}
-        <div className="bg-blue-50 rounded-xl p-6 my-10">
-          <h3 className="text-xl font-bold text-blue-900 mb-4">Pour aller plus loin</h3>
-          <ul className="space-y-2">
-            <li>
-              <Link href="/blog/gap-selling-methode-terrain-b2b" className="text-blue-700 hover:text-blue-900 underline">
-                Gap Selling appliqué au terrain : vendre en creusant le vrai problème
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog/vente-consultative-b2b-comment-devenir-le-conseiller-que-vos-clients-ne-veulent-pas-perdre" className="text-blue-700 hover:text-blue-900 underline">
-                Vente consultative B2B : devenir le conseiller que vos clients ne veulent pas perdre
-              </Link>
-            </li>
-            <li>
-              <Link href="/expert-developpement-commercial-pme" className="text-blue-700 hover:text-blue-900 underline">
-                Expertise en développement commercial PME
-              </Link>
-            </li>
-          </ul>
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">
+              Pour aller plus loin
+            </p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li>
+                <Link
+                  href="/blog/gap-selling-methode-terrain-b2b"
+                  className="text-mint-green hover:underline font-medium"
+                >
+                  Gap Selling appliqué au terrain : vendre en creusant le vrai problème
+                </Link>
+                <span className="text-gray-500">
+                  {' '}: La méthode pour diagnostiquer le problème avant de montrer la solution.
+                </span>
+              </li>
+              <li>
+                <Link
+                  href="/blog/vente-consultative-b2b-comment-devenir-le-conseiller-que-vos-clients-ne-veulent-pas-perdre"
+                  className="text-mint-green hover:underline font-medium"
+                >
+                  Vente consultative B2B : devenir le conseiller que vos clients ne veulent pas perdre
+                </Link>
+                <span className="text-gray-500">
+                  {' '}: La posture conseil qui remplace la démo systématique.
+                </span>
+              </li>
+              <li>
+                <Link
+                  href="/expert-developpement-commercial-pme"
+                  className="text-mint-green hover:underline font-medium"
+                >
+                  Expertise en développement commercial PME
+                </Link>
+                <span className="text-gray-500">
+                  {' '}: L'approche globale de transformation commerciale.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Chute */}
+          <p className="text-xl text-gray-700 font-semibold border-t border-gray-200 pt-8 mt-10">
+            Le problème n'est pas votre produit. C'est le moment où vous le montrez. Un diagnostic honnête de votre cycle de vente est le premier pas vers des démos qui convertissent vraiment.
+          </p>
         </div>
 
-        {/* CTA final gradient */}
-        <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
-          <h3 className="text-2xl font-title font-bold mb-4">
-            Vous voulez savoir pourquoi vos démos ne convertissent pas — et comment corriger le tir ?
-          </h3>
-          <p className="mb-6">
-            Beaucoup d'éditeurs de logiciels pensent que le problème est dans leur produit ou leur pricing. Le vrai frein est souvent ailleurs : les commerciaux montrent la solution avant d'avoir compris le problème. Un diagnostic permet de voir où ça coince vraiment dans votre cycle de vente.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/diagnostic"
-              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors"
-            >
-              Demander un diagnostic commercial
-            </Link>
-            <Link
-              href="/bootcamp"
-              className="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-full text-white hover:bg-white/10 transition-colors"
-            >
-              Découvrir le Bootcamp commercial
-            </Link>
-          </div>
-        </div>
-        {/* AuthorCard bas */}
-        <div className="my-10">
-          <AuthorCard
-            name="Laurent Serre"
-            date="28 mai 2026"
-            readTime="9 min"
-            category="Vente SaaS / Éditeurs logiciels"
-            image="/images/blog/2026-05-28-editeurs-logiciels-demos-hero.webp"
-          />
+        {/* AuthorCard : bottom */}
+        <div className="mt-10 pt-6 border-t border-gray-200">
+          <AuthorCard />
         </div>
       </article>
 
+      {/* HubSpotForm */}
       <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
-          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-8 text-center">
-            Prendre contact avec Laurent Serre
+          <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-4 text-center">
+            Besoin d'en parler plus directement ?
           </h2>
+          <p className="text-center text-gray-600 mb-8">
+            Si votre situation mérite un échange direct, vous pouvez aussi laisser un message ici.
+          </p>
           <HubSpotForm />
+        </div>
+      </section>
+
+      {/* Lien retour blog */}
+      <section className="py-8 bg-primary-bg">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Link
+            href="/blog"
+            className="inline-flex items-center gap-2 text-mint-green hover:text-mint-green/80 transition-colors font-medium"
+          >
+            ← Tous les articles du blog
+          </Link>
         </div>
       </section>
     </main>
