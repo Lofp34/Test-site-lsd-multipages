@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'editeurs-logiciels-pourquoi-demos-ne-convertissent-pas',
+    title: 'Éditeurs de logiciels : pourquoi vos démos ne convertissent pas',
+    description: '70% des démos SaaS n\'aboutissent pas à une vente. Non pas parce que le produit est mauvais, mais parce que le commercial le montre trop tôt. Les 3 erreurs des éditeurs de logiciels — et comment les corriger.',
+    date: '2026-05-28',
+    readTime: '9 min',
+    category: 'Vente SaaS / Éditeurs logiciels',
+    image: '/images/blog/2026-05-28-editeurs-logiciels-demos-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'gap-selling-methode-terrain-b2b',
     title: 'Gap Selling appliqué au terrain : vendre en creusant le vrai problème',
     description: '80% des cycles de vente échouent parce que le commercial parle de sa solution avant d\'avoir compris le vrai problème. La méthode Gap Selling, racontée par le terrain PME français — avec 10 planches BD et un cas client chiffré.',
