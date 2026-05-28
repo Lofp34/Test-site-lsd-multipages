@@ -724,6 +724,16 @@ const blogPosts = [
     image: '/equipedeface.jpg',
     featured: false,
   },
+  {
+    slug: 'coaching-developpement-commercial-guide-complet-pme',
+    title: 'Coaching développement commercial : ce que personne ne vous dit avant d\'investir',
+    description: 'Coaching développement commercial : définition, méthodes, coûts réels, résultats concrets. Un guide terrain complet pour dirigeants de PME qui hésitent à investir.',
+    date: '2026-05-28',
+    readTime: '11 min',
+    category: 'Coaching commercial / Développement commercial',
+    image: '/images/blog/2026-05-28-coaching-developpement-commercial-hero.webp',
+    featured: true,
+  },
 ];
 
 const sortPostsByDateDesc = (posts: typeof blogPosts) =>
