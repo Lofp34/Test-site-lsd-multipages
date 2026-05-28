@@ -23,9 +23,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: 'https://www.laurentserre.com/images/blog/2026-05-28-editeurs-logiciels-demos-hero.webp',
-        width: 2048,
-        height: 1365,
-        alt: 'Laurent Serre, expert en coaching commercial pour éditeurs de logiciels',
+        width: 1536,
+        height: 1024,
+        alt: 'Composition graphique éditoriale avec Laurent Serre : Vos démos ne convertissent pas ? Ce n\'est pas votre produit le problème.',
       },
     ],
   },
