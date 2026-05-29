@@ -130,16 +130,26 @@ export default function HighOutputManagementArticle() {
               🎬 Carrousel BD : High Output Management — 5 leçons d'Andy Grove
             </p>
             <p className="text-sm text-amber-700 mb-5">
-              Un résumé visuel des 5 leçons du livre, en planches de BD. Idéal à partager avec votre équipe en réunion.
+              L'histoire de Stéphane, dirigeant de PME, racontée en 16 planches BD. De la réunion qui n'en finit pas au déclic grâce aux leçons d'Andy Grove. Idéal à partager avec votre équipe.
             </p>
             <BDCarousel
               images={[
-                { src: '/images/blog/hom-carrousel-slide1.webp', alt: 'Slide 1 : Le livre de management le plus utile date de 1983' },
-                { src: '/images/blog/hom-carrousel-slide2.webp', alt: 'Slide 2 : Breakfast meeting — 3 questions, 45 min, on décide' },
-                { src: '/images/blog/hom-carrousel-slide3.webp', alt: 'Slide 3 : Output indicators — activité ne veut pas dire résultat' },
-                { src: '/images/blog/hom-carrousel-slide4.webp', alt: 'Slide 4 : Objectifs — 3 max, pas 15' },
-                { src: '/images/blog/hom-carrousel-slide5.webp', alt: 'Slide 5 : Maturité liée à la tâche — manager différemment' },
-                { src: '/images/blog/hom-carrousel-slide6.webp', alt: 'Slide 6 : Prise de décision — je fixe le cadre, il décide' },
+                { src: '/images/blog/hom-carrousel-slide1.webp', alt: "Slide 1 : Aujourd'hui, l'histoire de Stéphane" },
+                { src: '/images/blog/hom-carrousel-slide2.webp', alt: 'Slide 2 : Stéphane dirige une PME de 12 personnes' },
+                { src: '/images/blog/hom-carrousel-slide3.webp', alt: 'Slide 3 : 1983, un ingénieur hongrois change tout' },
+                { src: '/images/blog/hom-carrousel-slide4.webp', alt: "Slide 4 : La réunion d'équipe qui ne sert à rien" },
+                { src: '/images/blog/hom-carrousel-slide5.webp', alt: "Slide 5 : Le breakfast meeting d'Andy Grove" },
+                { src: '/images/blog/hom-carrousel-slide6.webp', alt: 'Slide 6 : Les 3 questions qui changent tout' },
+                { src: '/images/blog/hom-carrousel-slide7.webp', alt: "Slide 7 : Activité ne veut pas dire résultat" },
+                { src: '/images/blog/hom-carrousel-slide8.webp', alt: "Slide 8 : L'output indicator qui a tout changé" },
+                { src: '/images/blog/hom-carrousel-slide9.webp', alt: 'Slide 9 : Les objectifs ne sont pas des listes de souhaits' },
+                { src: '/images/blog/hom-carrousel-slide10.webp', alt: 'Slide 10 : 3 objectifs max, avec 2 résultats clés' },
+                { src: '/images/blog/hom-carrousel-slide11.webp', alt: 'Slide 11 : Manager tout le monde pareil nivelle par le bas' },
+                { src: '/images/blog/hom-carrousel-slide12.webp', alt: 'Slide 12 : La maturité liée à la tâche' },
+                { src: '/images/blog/hom-carrousel-slide13.webp', alt: 'Slide 13 : Laissez les décisions à ceux qui savent' },
+                { src: '/images/blog/hom-carrousel-slide14.webp', alt: "Slide 14 : Le cadre stratégique c'est vous, la décision c'est lui" },
+                { src: '/images/blog/hom-carrousel-slide15.webp', alt: 'Slide 15 : Stéphane un mois plus tard' },
+                { src: '/images/blog/hom-carrousel-slide16.webp', alt: 'Slide 16 : Faites votre diagnostic sur LaurentSerre.com' },
               ]}
               title="High Output Management — 5 leçons d'Andy Grove"
               maxPreview={2}
@@ -150,7 +160,7 @@ export default function HighOutputManagementArticle() {
                 className="inline-flex items-center gap-2 text-amber-700 hover:text-amber-800 transition-colors text-sm font-medium"
                 target="_blank"
               >
-                📥 Télécharger le PDF (6 planches)
+                📥 Télécharger le PDF (16 planches)
               </Link>
             </div>
           </div>
