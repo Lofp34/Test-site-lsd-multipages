@@ -10,16 +10,6 @@ import Button from '@/components/ui/Button';
 import Link from 'next/link';
 import { validateMobileCTAOptimizations, generateMobileOptimizationRecommendations } from '@/utils/mobile-cta-validator';
 
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  robots: {
-    index: false,
-    follow: false,
-  },
-};
-
-
 export default function TestMobileCTAPage() {
   const [testResults, setTestResults] = useState<string>('');
   const [currentDevice, setCurrentDevice] = useState<string>('desktop');
