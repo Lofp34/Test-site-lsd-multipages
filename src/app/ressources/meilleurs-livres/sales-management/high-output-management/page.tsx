@@ -321,6 +321,24 @@ export default function HighOutputManagementPage() {
           </div>
         </section>
 
+        {/* Lien vers l'article blog */}
+        <section className="py-12 bg-primary-bg">
+          <div className="max-w-4xl mx-auto px-6 text-center">
+            <h3 className="text-2xl font-title font-bold text-blue-ink mb-4">
+              📖 Lire l'article dédié
+            </h3>
+            <p className="text-gray-700 mb-6 max-w-2xl mx-auto">
+              Découvrez les 5 leçons de High Output Management appliquées au pilotage d'équipe commerciale en PME, avec des cas concrets et des résultats chiffrés.
+            </p>
+            <Link
+              href="/blog/high-output-management-andy-grove-pme-equipe-commerciale"
+              className="inline-flex items-center gap-2 text-mint-green hover:text-mint-green/80 font-medium transition-colors"
+            >
+              Lire l'article →
+            </Link>
+          </div>
+        </section>
+
         {/* Navigation retour */}
         <div className="max-w-4xl mx-auto px-6 text-center">
           <Link 

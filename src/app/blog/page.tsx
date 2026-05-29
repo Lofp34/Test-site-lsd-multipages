@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'high-output-management-andy-grove-pme-equipe-commerciale',
+    title: 'High Output Management appliqué à la PME : 5 leçons d\'Andy Grove pour piloter votre équipe commerciale',
+    description: 'Le livre de management le plus utile jamais écrit date de 1983. 5 leçons d\'Andy Grove appliquées au pilotage d\'équipe commerciale en PME : réunion de 45 min, output indicators, objectifs, management différencié et délégation.',
+    date: '2026-05-29',
+    readTime: '10 min',
+    category: 'Management Commercial',
+    image: '/images/blog/high-output-management-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'editeurs-logiciels-pourquoi-demos-ne-convertissent-pas',
     title: 'Éditeurs de logiciels : pourquoi vos démos ne convertissent pas',
     description: '70% des démos SaaS n\'aboutissent pas à une vente. Non pas parce que le produit est mauvais, mais parce que le commercial le montre trop tôt. Les 3 erreurs des éditeurs de logiciels — et comment les corriger.',
