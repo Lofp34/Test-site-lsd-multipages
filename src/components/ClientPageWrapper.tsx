@@ -122,12 +122,14 @@ export default function ClientPageWrapper({
       <section className="min-h-screen relative overflow-hidden flex items-center justify-center pt-20">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/laurent.jpg"
+            src="/laurent.webp"
             alt="Photo de Laurent Serre, consultant et formateur en développement commercial"
             fill
             sizes="100vw"
             className="object-cover object-center"
             priority
+            fetchPriority="high"
+            quality={70}
           />
           <div className="absolute inset-0 bg-blue-ink/60"></div>
         </div>
