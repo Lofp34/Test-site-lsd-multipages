@@ -596,6 +596,63 @@ export default function CasClientsPage() {
           </div>
         </div>
       </section>
+
+      {/* VideoObject structured data for YouTube videos */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@graph': [
+              {
+                '@type': 'VideoObject',
+                name: "Benoît Arnaudin — relier méthode commerciale et chiffre d'affaires chez Bernafon",
+                description: "Benoît Arnaudin revient sur ce que l'accompagnement a changé concrètement chez Bernafon, avec un résultat contextualisé : +25% de chiffre d'affaires en 2025.",
+                thumbnailUrl: 'https://img.youtube.com/vi/XrijjFzFvlA/maxresdefault.jpg',
+                embedUrl: 'https://www.youtube-nocookie.com/embed/XrijjFzFvlA',
+                contentUrl: 'https://www.youtube.com/watch?v=XrijjFzFvlA',
+                uploadDate: '2026-01-15',
+              },
+              {
+                '@type': 'VideoObject',
+                name: "Kristina Creavea — mieux structurer ses entretiens pour gagner en confiance et en chiffre",
+                description: "Kristina dirige Creavea, une entreprise de distribution B2B en gros. +39% de chiffre d'affaires après la structuration de sa méthode commerciale.",
+                thumbnailUrl: 'https://img.youtube.com/vi/kkU2jPspfVk/maxresdefault.jpg',
+                embedUrl: 'https://www.youtube-nocookie.com/embed/kkU2jPspfVk',
+                contentUrl: 'https://www.youtube.com/watch?v=kkU2jPspfVk',
+                uploadDate: '2026-02-10',
+              },
+              {
+                '@type': 'VideoObject',
+                name: "Tony Grippon — le premier X10 de l'équipe Septeo Hospitality",
+                description: "Tony Grippon, Directeur Commercial chez Septeo Hospitality, parle de l'impact de l'accompagnement sur son équipe.",
+                thumbnailUrl: 'https://img.youtube.com/vi/ojopxkWzXy8/maxresdefault.jpg',
+                embedUrl: 'https://www.youtube-nocookie.com/embed/ojopxkWzXy8',
+                contentUrl: 'https://www.youtube.com/watch?v=ojopxkWzXy8',
+                uploadDate: '2026-03-05',
+              },
+              {
+                '@type': 'VideoObject',
+                name: "Dimitri de Cruz — faire monter toute l'équipe en compétence commerciale",
+                description: "Dimitri de Cruz, fondateur de Mon Coach Brico, témoigne de la montée en compétence de toute son équipe commerciale.",
+                thumbnailUrl: 'https://img.youtube.com/vi/jwY2-aKRBac/maxresdefault.jpg',
+                embedUrl: 'https://www.youtube-nocookie.com/embed/jwY2-aKRBac',
+                contentUrl: 'https://www.youtube.com/watch?v=jwY2-aKRBac',
+                uploadDate: '2026-04-01',
+              },
+              {
+                '@type': 'VideoObject',
+                name: "Pierre Vincent — transformer un rendez-vous prématuré en engagement concret",
+                description: "Pierre Vincent témoigne de la transformation de son approche commerciale : des rendez-vous prématurés transformés en engagements concrets.",
+                thumbnailUrl: 'https://img.youtube.com/vi/0kWjp_4g2Pk/maxresdefault.jpg',
+                embedUrl: 'https://www.youtube-nocookie.com/embed/0kWjp_4g2Pk',
+                contentUrl: 'https://www.youtube.com/watch?v=0kWjp_4g2Pk',
+                uploadDate: '2026-04-20',
+              },
+            ],
+          }),
+        }}
+      />
     </main>
   );
 }
