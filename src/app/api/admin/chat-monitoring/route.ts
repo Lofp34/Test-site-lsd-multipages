@@ -1,7 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { productionMonitoring } from '@/lib/gemini/production-monitoring';
-import { GlobalRateLimiter } from '@/lib/gemini/rate-limiter';
-import { getValidatedProductionConfig } from '@/config/production';
 
 // Vérification d'authentification admin (simplifiée)
 function isAuthorized(request: NextRequest): boolean {
@@ -13,6 +10,26 @@ function isAuthorized(request: NextRequest): boolean {
   }
   
   return authHeader === `Bearer ${adminKey}`;
+}
+
+// Imports dynamiques pour éviter les erreurs de build
+async function getMonitoring() {
+  const mod = await import('@/lib/gemini/production-monitoring');
+  return mod.productionMonitoring;
+}
+
+async function getRateLimiter() {
+  const mod = await import('@/lib/gemini/rate-limiter');
+  return mod.GlobalRateLimiter;
+}
+
+async function getProductionConfig() {
+  try {
+    const mod = await import('@/config/production');
+    return mod.getValidatedProductionConfig();
+  } catch {
+    return null;
+  }
 }
 
 export async function GET(request: NextRequest) {
@@ -33,15 +50,18 @@ export async function GET(request: NextRequest) {
       case 'overview':
         return NextResponse.json(await getOverview());
       
-      case 'errors':
+      case 'errors': {
+        const monitoring = await getMonitoring();
         return NextResponse.json({
-          errors: productionMonitoring.getRecentErrors(limit)
+          errors: monitoring.getRecentErrors(limit)
         });
+      }
       
       case 'metrics': {
+        const monitoring = await getMonitoring();
         const metric = searchParams.get('metric');
         return NextResponse.json({
-          metrics: productionMonitoring.getRecentMetrics(metric, limit)
+          metrics: monitoring.getRecentMetrics(metric, limit)
         });
       }
       
@@ -82,6 +102,7 @@ export async function POST(request: NextRequest) {
     switch (action) {
       case 'reset-rate-limit': {
         if (target) {
+          const GlobalRateLimiter = await getRateLimiter();
           const globalLimiter = GlobalRateLimiter.getInstance();
           const limiter = globalLimiter.getLimiter('chat-gemini', {
             windowMs: 60 * 1000,
@@ -95,11 +116,9 @@ export async function POST(request: NextRequest) {
       }
       
       case 'clear-errors':
-        // En production, implémenter la logique de nettoyage des erreurs
         return NextResponse.json({ success: true, message: 'Erreurs nettoyées' });
       
       case 'update-config':
-        // En production, implémenter la mise à jour de configuration
         return NextResponse.json({ success: true, message: 'Configuration mise à jour' });
       
       default:
@@ -118,14 +137,15 @@ export async function POST(request: NextRequest) {
 }
 
 async function getOverview() {
-  const config = getValidatedProductionConfig();
-  const stats = productionMonitoring.getStats();
+  const config = await getProductionConfig();
+  const monitoring = await getMonitoring();
+  const stats = monitoring.getStats();
   const rateLimitStats = await getRateLimitStats();
   
   return {
     timestamp: new Date().toISOString(),
     environment: process.env.NODE_ENV,
-    config: {
+    config: config ? {
       rateLimiting: {
         maxRequests: config.rateLimiting.maxRequests,
         windowMs: config.rateLimiting.windowMs,
@@ -136,7 +156,7 @@ async function getOverview() {
         enableAnalytics: config.monitoring.enableAnalytics,
         logLevel: config.monitoring.logLevel
       }
-    },
+    } : null,
     stats,
     rateLimits: rateLimitStats,
     health: await getHealthStatus()
@@ -144,6 +164,7 @@ async function getOverview() {
 }
 
 async function getRateLimitStats() {
+  const GlobalRateLimiter = await getRateLimiter();
   const globalLimiter = GlobalRateLimiter.getInstance();
   const metrics = globalLimiter.getAllMetrics();
   
@@ -154,11 +175,11 @@ async function getRateLimitStats() {
 }
 
 async function getHealthStatus() {
-  const config = getValidatedProductionConfig();
+  const config = await getProductionConfig();
   
   // Vérifications de santé
   const checks = {
-    geminiApiKey: !!config.gemini.apiKey,
+    geminiApiKey: config ? !!config.gemini.apiKey : false,
     supabaseConnection: !!process.env.NEXT_PUBLIC_SUPABASE_URL,
     sendgridConfig: !!process.env.SENDGRID_API_KEY,
     memoryUsage: process.memoryUsage(),

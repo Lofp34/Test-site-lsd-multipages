@@ -1,14 +1,26 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@supabase/supabase-js';
 import { ProductionAnalytics } from '@/lib/analytics/production-analytics';
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
+function getSupabaseClient() {
+  const { createClient } = require('@supabase/supabase-js');
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!url || !key) {
+    return null;
+  }
+  return createClient(url, key);
+}
 
 export async function GET(request: NextRequest) {
   try {
+    const supabase = getSupabaseClient();
+    if (!supabase) {
+      return NextResponse.json(
+        { error: 'Configuration Supabase non disponible' },
+        { status: 503 }
+      );
+    }
+
     const { searchParams } = new URL(request.url);
     const action = searchParams.get('action') || 'report';
 
@@ -42,6 +54,14 @@ export async function GET(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
+    const supabase = getSupabaseClient();
+    if (!supabase) {
+      return NextResponse.json(
+        { error: 'Configuration Supabase non disponible' },
+        { status: 503 }
+      );
+    }
+
     const { action, recommendations } = await request.json();
 
     if (action !== 'apply-optimizations') {
