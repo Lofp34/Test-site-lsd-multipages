@@ -2,6 +2,16 @@ import React from 'react';
 import ComparisonTable from '@/components/ui/ComparisonTable';
 import { enterpriseAccountCategory } from '@/data/books-enriched';
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
+
 export default function TestComparisonTablePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-mint-green/10 py-12">

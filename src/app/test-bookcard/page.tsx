@@ -3,6 +3,16 @@ import BookCard from '@/components/ui/BookCard';
 import { enterpriseAccountCategory, salesManagementCategory } from '@/data/books-enriched';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
+
 export default function TestBookCardPage() {
   return (
     <main className="bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16">

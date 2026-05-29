@@ -1,6 +1,16 @@
 import React from 'react';
 import Badge from '@/components/ui/Badge';
 
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
+
+
 export default function TestBadgePage() {
   return (
     <div className="min-h-screen bg-bg-main p-8">
