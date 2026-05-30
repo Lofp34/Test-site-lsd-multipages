@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'coaching-commercial-terrain-methode-equipe',
+    title: 'Coaching commercial terrain : la méthode qui transforme vraiment les pratiques de votre équipe',
+    description: 'Les formations en salle ne changent presque rien aux pratiques. Le coaching terrain, oui, à condition de suivre une méthode en 4 temps : observer sans intervenir, débriefer en questionnant, travailler une seule priorité à la fois, répéter chaque semaine.',
+    date: '2026-06-01',
+    readTime: '9 min',
+    category: 'Coaching commercial / Management d\'équipe',
+    image: '/images/blog/coaching-terrain-methode/coaching-terrain-methode-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'high-output-management-andy-grove-pme-equipe-commerciale',
     title: 'High Output Management appliqué à la PME : 5 leçons d\'Andy Grove pour piloter votre équipe commerciale',
     description: 'Le livre de management le plus utile jamais écrit date de 1983. 5 leçons d\'Andy Grove appliquées au pilotage d\'équipe commerciale en PME : réunion de 45 min, output indicators, objectifs, management différencié et délégation.',
