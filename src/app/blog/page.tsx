@@ -46,6 +46,16 @@ const blogPosts = [
     featured: true,
   },
   {
+    slug: 'performance-commerciale-pme-5-leviers-dirigeant',
+    title: 'Performance commerciale en PME : les 5 leviers que les dirigeants négligent',
+    description: 'La plupart des dirigeants regardent le CA et le nombre d\'appels. Les vrais leviers : structure de qualification, rythme de débrief, revue de deal, pilotage par activité, alignement rémunération/comportement.',
+    date: '2026-06-01',
+    readTime: '10 min',
+    category: 'Performance commerciale / Pilotage d\'équipe',
+    image: '/images/blog/performance-commerciale-5-leviers/performance-commerciale-5-leviers-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'high-output-management-andy-grove-pme-equipe-commerciale',
     title: 'High Output Management appliqué à la PME : 5 leçons d\'Andy Grove pour piloter votre équipe commerciale',
     description: 'Le livre de management le plus utile jamais écrit date de 1983. 5 leçons d\'Andy Grove appliquées au pilotage d\'équipe commerciale en PME : réunion de 45 min, output indicators, objectifs, management différencié et délégation.',
