@@ -632,6 +632,17 @@ export default function GapSellingMethodeTerrainB2bPage() {
               </li>
               <li>
                 <Link
+                  href="/blog/dilemme-innovateur-vente-b2b"
+                  className="text-mint-green hover:underline font-medium"
+                >
+                  Le dilemme de l&apos;innovateur en vente B2B
+                </Link>
+                <span className="text-gray-500">
+                  {' '}: Pourquoi le diagnostic commence par accepter que vos méthodes actuelles vous rendent vulnérable.
+                </span>
+              </li>
+              <li>
+                <Link
                   href="/blog/vente-consultative-b2b-comment-devenir-le-conseiller-que-vos-clients-ne-veulent-pas-perdre"
                   className="text-mint-green hover:underline font-medium"
                 >

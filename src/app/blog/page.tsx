@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'dilemme-innovateur-vente-b2b',
+    title: 'Ce qui fait gagner vos commerciaux tuera vos ventes demain',
+    description: 'Le dilemme de l\'innovateur de Christensen expliqué aux dirigeants de PME : trois pièges qui préparent l\'échec de demain et cinq décisions pour en sortir sans tout casser.',
+    date: '2026-06-01',
+    readTime: '7 min',
+    category: 'Vente B2B / Innovation commerciale',
+    image: '/images/blog/2026-06-01-dilemme-innovateur-vente-b2b-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'coaching-commercial-terrain-methode-equipe',
     title: 'Coaching commercial terrain : la méthode qui transforme vraiment les pratiques de votre équipe',
     description: 'Les formations en salle ne changent presque rien aux pratiques. Le coaching terrain, oui, à condition de suivre une méthode en 4 temps : observer sans intervenir, débriefer en questionnant, travailler une seule priorité à la fois, répéter chaque semaine.',

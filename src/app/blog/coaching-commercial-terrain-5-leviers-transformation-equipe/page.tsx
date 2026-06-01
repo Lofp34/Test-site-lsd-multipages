@@ -495,6 +495,12 @@ export default function CoachingCommercialTerrainPage() {
                 </Link>
                 <span className="text-gray-500"> , Ne pas confondre coaching et management.</span>
               </li>
+              <li>
+                <Link href="/blog/dilemme-innovateur-vente-b2b" className="text-mint-green hover:underline font-medium">
+                  Le dilemme de l&apos;innovateur en vente B2B
+                </Link>
+                <span className="text-gray-500"> , Pourquoi le piège du succès empêche la transformation des équipes.</span>
+              </li>
             </ul>
             <div className="mt-4 text-xs text-gray-500 border-t border-blue-ink/10 pt-4">
               <strong>Source externe E-E-A-T :</strong>{' '}

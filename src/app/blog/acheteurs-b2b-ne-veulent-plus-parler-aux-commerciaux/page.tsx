@@ -371,6 +371,12 @@ export default function AcheteursB2BPage() {
                 </Link>
                 <span className="text-gray-500"> , Comment l&apos;IA peut aider à qualifier avant de contacter.</span>
               </li>
+              <li>
+                <Link href="/blog/dilemme-innovateur-vente-b2b" className="text-mint-green hover:underline font-medium">
+                  Le dilemme de l&apos;innovateur en vente B2B
+                </Link>
+                <span className="text-gray-500"> , Pourquoi vos méthodes qui marchent aujourd&apos;hui préparent l&apos;échec de demain.</span>
+              </li>
             </ul>
             <div className="mt-4 text-xs text-gray-500 border-t border-blue-ink/10 pt-4">
               <strong>Source Gartner :</strong>{' '}
