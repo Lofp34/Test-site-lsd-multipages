@@ -78,7 +78,7 @@ const blogPosts = [
   {
     slug: 'editeurs-logiciels-pourquoi-demos-ne-convertissent-pas',
     title: 'Éditeurs de logiciels : pourquoi vos démos ne convertissent pas',
-    description: '70% des démos SaaS n\'aboutissent pas à une vente. Non pas parce que le produit est mauvais, mais parce que le commercial le montre trop tôt. Les 3 erreurs des éditeurs de logiciels — et comment les corriger.',
+    description: '70% des démos SaaS n\'aboutissent pas à une vente. Non pas parce que le produit est mauvais, mais parce que le commercial le montre trop tôt. Les 3 erreurs des éditeurs de logiciels et comment les corriger.',
     date: '2026-05-28',
     readTime: '9 min',
     category: 'Vente SaaS / Éditeurs logiciels',

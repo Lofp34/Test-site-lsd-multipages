@@ -5,16 +5,16 @@ import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
 
 export const metadata: Metadata = {
-  title: 'Éditeurs de logiciels : pourquoi vos démos ne convertissent pas | Laurent Serre',
+  title: 'Éditeurs logiciels : pourquoi vos démos SaaS échouent',
   description:
-    '70% des démos SaaS n\'aboutissent pas à une vente. Non pas parce que le produit est mauvais, mais parce que le commercial le montre trop tôt. Les 3 erreurs des éditeurs de logiciels — et comment les corriger.',
+    '70% des démos SaaS n\'aboutissent pas à une vente. Non pas parce que le produit est mauvais, mais parce que le commercial le montre trop tôt. Les 3 erreurs des éditeurs de logiciels et comment les corriger.',
   keywords:
-    'éditeur logiciel, SaaS, conversion démo, vente logiciel B2B, commercial SaaS, démo produit, gap selling, discovery commercial, cycle vente logiciel',
+    'éditeur logiciel, SaaS, conversion démo, vente logiciel B2B, commercial SaaS, démo produit, Gap Selling, découverte commerciale, cycle vente logiciel',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog/editeurs-logiciels-pourquoi-demos-ne-convertissent-pas',
   },
   openGraph: {
-    title: 'Éditeurs de logiciels : pourquoi vos démos ne convertissent pas',
+    title: 'Éditeurs logiciels : pourquoi vos démos SaaS échouent',
     description:
       '70% des démos SaaS n\'aboutissent pas à une vente. Non pas parce que le produit est mauvais, mais parce que le commercial le montre trop tôt.',
     url: 'https://www.laurentserre.com/blog/editeurs-logiciels-pourquoi-demos-ne-convertissent-pas',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Éditeurs de logiciels : pourquoi vos démos ne convertissent pas',
+    title: 'Éditeurs logiciels : pourquoi vos démos SaaS échouent',
     description:
       '70% des démos SaaS n\'aboutissent pas à une vente. Non pas parce que le produit est mauvais, mais parce que le commercial le montre trop tôt.',
     images: ['https://www.laurentserre.com/images/blog/2026-05-28-editeurs-logiciels-demos-hero.webp'],
@@ -43,16 +43,58 @@ export default function EditeursLogicielsDemosPage() {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline:
-      'Éditeurs de logiciels : pourquoi vos démos ne convertissent pas',
+      'Éditeurs logiciels : pourquoi vos démos SaaS échouent',
     description:
       '70% des démos SaaS n\'aboutissent pas à une vente. Non pas parce que le produit est mauvais, mais parce que le commercial le montre trop tôt. Analyse terrain par Laurent Serre.',
     author: {
       '@type': 'Person',
       name: 'Laurent Serre',
+      url: 'https://www.laurentserre.com',
+      sameAs: [
+        'https://www.linkedin.com/in/laurentserre34/',
+        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/'
+      ],
     },
     datePublished: '2026-05-28',
-    dateModified: '2026-05-28',
+    dateModified: '2026-06-02',
     image: 'https://www.laurentserre.com/images/blog/2026-05-28-editeurs-logiciels-demos-hero.webp',
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Accueil',
+        item: 'https://www.laurentserre.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Blog',
+        item: 'https://www.laurentserre.com/blog',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: 'Éditeurs de logiciels : pourquoi vos démos ne convertissent pas',
+        item: 'https://www.laurentserre.com/blog/editeurs-logiciels-pourquoi-demos-ne-convertissent-pas',
+      },
+    ],
+  };
+
+  const personJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: 'Laurent Serre',
+    url: 'https://www.laurentserre.com',
+    jobTitle: 'Consultant commercial B2B',
+    sameAs: [
+      'https://www.linkedin.com/in/laurentserre34/',
+      'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+    ],
   };
 
   const faqJsonLd = {
@@ -64,7 +106,7 @@ export default function EditeursLogicielsDemosPage() {
         name: 'Pourquoi les démos SaaS ne convertissent-elles pas ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Parce que le commercial montre le produit trop tôt, sans avoir diagnostiqué le vrai problème du prospect. Selon Gartner, 67% des acheteurs B2B préfèrent éviter les commerciaux. Quand la démo arrive sans discovery préalable, elle conforte ce choix.'
+          text: 'Parce que le commercial montre le produit trop tôt, sans avoir diagnostiqué le vrai problème du prospect. 67% des acheteurs B2B préfèrent éviter les commerciaux. Quand la démo arrive sans découverte préalable, elle conforte ce choix.'
         }
       },
       {
@@ -80,7 +122,7 @@ export default function EditeursLogicielsDemosPage() {
         name: 'Quelle est la durée d\'un cycle de vente SaaS B2B ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Le cycle médian est de 84 jours pour un deal SaaS B2B standard. Pour l\'enterprise (>100K ACV), le cycle peut aller de 9 à 18 mois. Un POC non cadré peut représenter la moitié de ce cycle sans garantie de conversion.'
+          text: 'Le cycle médian est de 84 jours pour une vente SaaS B2B standard. Pour les grands comptes, le cycle peut aller de 9 à 18 mois. Un POC non cadré peut représenter la moitié de ce cycle sans garantie de conversion.'
         }
       },
       {
@@ -93,10 +135,10 @@ export default function EditeursLogicielsDemosPage() {
       },
       {
         '@type': 'Question',
-        name: 'Quel est le taux de conversion démo vers closing dans le SaaS ?',
+        name: 'Quel est le taux de conversion démo vers signature dans le SaaS ?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Le taux de conversion démo → closing est en moyenne de 30% dans le SaaS, contre 25% toutes industries confondues. Mais le vrai indicateur est le taux visiteur → démo → close, qui tombe à 3,8%. Le problème n\'est pas la démo elle-même mais ce qui se passe avant.'
+          text: 'Le taux de conversion démo vers signature est en moyenne de 30% dans le SaaS, contre 25% toutes industries confondues. Mais le vrai indicateur est le taux visiteur vers démo vers signature, qui tombe à 3,8%. Le problème n\'est pas la démo elle-même mais ce qui se passe avant.'
         }
       }
     ]
@@ -111,6 +153,14 @@ export default function EditeursLogicielsDemosPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
       />
 
       {/* Hero */}
@@ -188,7 +238,7 @@ export default function EditeursLogicielsDemosPage() {
               ✨ Ce que vous allez retenir
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Les éditeurs de logiciels SaaS montrent leur produit trop tôt, sans diagnostiquer le vrai problème du prospect. Résultat : des cycles de vente qui s'étirent, des POC interminables, et des deals qui disparaissent. 11 décideurs en moyenne pour un achat &gt;10K€ — si vous ne parlez qu'au sponsor métier, vous vendez à la mauvaise personne. La solution : structurer le discovery avant la démo avec 3 questions clés : problème réel, urgence, et cartographie des décideurs.
+              Les éditeurs de logiciels SaaS montrent leur produit trop tôt, sans diagnostiquer le vrai problème du prospect. Résultat : des cycles de vente qui s'étirent, des POC interminables, et des dossiers qui disparaissent. 11 décideurs en moyenne pour un achat &gt;10K€ : si vous ne parlez qu'au sponsor métier, vous vendez à la mauvaise personne. La solution : structurer la découverte avant la démo avec 3 questions clés : problème réel, urgence, et cartographie des décideurs.
             </p>
           </div>
 
@@ -200,7 +250,7 @@ export default function EditeursLogicielsDemosPage() {
               href="/diagnostic"
               className="inline-flex items-center gap-2 bg-mint-green/10 text-mint-green text-sm font-medium px-4 py-2 rounded-full hover:bg-mint-green/20 transition-colors"
             >
-              🔍 Vous ne savez pas pourquoi vos démos ne convertissent pas ? Faites un diagnostic →
+              Vous ne savez pas pourquoi vos démos ne convertissent pas ? Faites un diagnostic
             </Link>
           </div>
 
@@ -212,7 +262,7 @@ export default function EditeursLogicielsDemosPage() {
               <li><a href="#4-decideurs" className="text-mint-green hover:underline">Les 4 décideurs : celui qui valide la technique n'est pas celui qui signe le chèque</a></li>
               <li><a href="#poc-interminable" className="text-mint-green hover:underline">Le POC qui n'en finit pas : quand le client teste mais n'achète pas</a></li>
               <li><a href="#commercial-expert" className="text-mint-green hover:underline">Le syndrome du commercial-expert</a></li>
-              <li><a href="#discovery-avant-demo" className="text-mint-green hover:underline">Structurer le discovery avant la démo</a></li>
+              <li><a href="#decouverte-avant-demo" className="text-mint-green hover:underline">Structurer la découverte avant la démo</a></li>
               <li><a href="#cas-concret" className="text-mint-green hover:underline">Ce que ça change concrètement</a></li>
             </ul>
           </div>
@@ -223,7 +273,7 @@ export default function EditeursLogicielsDemosPage() {
           </p>
 
         <p className="mb-6">
-          Le commercial ouvre la réunion. Trois slides sur l'entreprise. Puis il lance la démo. Il montre l'interface, les fonctionnalités, le dashboard. Tout est fluide, le produit est beau, le prospect semble intéressé. Le commercial sent que ça se passe bien.
+          Le commercial ouvre la réunion. Trois slides sur l'entreprise. Puis il lance la démo. Il montre l'interface, les fonctionnalités, le tableau de bord. Tout est fluide, le produit est beau, le prospect semble intéressé. Le commercial sent que ça se passe bien.
         </p>
 
         <p className="mb-6">
@@ -234,7 +284,7 @@ export default function EditeursLogicielsDemosPage() {
           Le problème n'est pas le produit. C'est le moment où on l'a montré. On a sauté le diagnostic. On a vendu une solution sans savoir quel était le vrai problème.
         </p>
 
-        <h2 id="piege-demo" className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
+        <h2 id="piege-demo" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
           Le piège numéro un : montrer le produit avant de comprendre le problème
         </h2>
 
@@ -243,7 +293,7 @@ export default function EditeursLogicielsDemosPage() {
         </p>
 
         <p className="mb-6">
-          Un commercial SaaS qui lance sa démo sans avoir fait un vrai discovery arrive en réunion avec une solution. Le problème, c'est qu'il ne sait pas encore quel est le problème. Il va présenter son produit comme la réponse à une question que le prospect ne s'est peut-être jamais posée.
+          Un commercial SaaS qui lance sa démo sans avoir fait une vraie découverte arrive en réunion avec une solution. Le problème, c'est qu'il ne sait pas encore quel est le problème. Il va présenter son produit comme la réponse à une question que le prospect ne s'est peut-être jamais posée.
         </p>
 
         <p className="mb-6">
@@ -255,11 +305,11 @@ export default function EditeursLogicielsDemosPage() {
         </p>
 
         <p className="mb-6">
-          De l'autre côté, le commercial interprète l'intérêt poli comme un engagement. Il note le deal à 60% dans le CRM. Mais il n'a pas validé une seule fois que le problème du prospect était suffisamment urgent pour justifier un achat.
+          De l'autre côté, le commercial interprète l'intérêt poli comme un engagement. Il note le dossier à 60% dans le CRM. Mais il n'a pas validé une seule fois que le problème du prospect était suffisamment urgent pour justifier un achat.
         </p>
 
         <p className="mb-6">
-          Le résultat : des cycles de vente qui s'allongent, des POC qui s'éternisent, des deals qui disparaissent sans qu'on sache pourquoi. Selon Gartner, 67% des acheteurs B2B préfèrent aujourd'hui ne pas passer par un commercial pour s'informer. Quand la démo arrive trop tôt, elle conforte ce choix — le prospect repart avec une image incomplète et le sentiment d'avoir perdu son temps.
+          Le résultat : des cycles de vente qui s'allongent, des POC qui s'éternisent, des dossiers qui disparaissent sans qu'on sache pourquoi. 67% des acheteurs B2B préfèrent aujourd'hui ne pas passer par un commercial pour s'informer. Quand la démo arrive trop tôt, elle conforte ce choix : le prospect repart avec une image incomplète et le sentiment d'avoir perdu son temps.
         </p>
 
         <p className="mb-6">
@@ -271,7 +321,7 @@ export default function EditeursLogicielsDemosPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
             <div className="bg-white p-4 rounded-lg border border-red-200">
               <p className="font-bold text-red-600 mb-2">Erreur fréquente</p>
-              <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <ul className="space-y-2 text-sm text-gray-700">
                 <li>Présenter l'entreprise dès l'ouverture</li>
                 <li>Lancer la démo au premier rendez-vous</li>
                 <li>Montrer toutes les fonctionnalités</li>
@@ -280,7 +330,7 @@ export default function EditeursLogicielsDemosPage() {
             </div>
             <div className="bg-white p-4 rounded-lg border border-green-200">
               <p className="font-bold text-green-600 mb-2">Bonne pratique</p>
-              <ul className="list-disc list-inside text-gray-700 space-y-1">
+              <ul className="space-y-2 text-sm text-gray-700">
                 <li>Diagnostiquer le problème avant toute démo</li>
                 <li>Cartographier les décideurs dès le premier échange</li>
                 <li>Ne montrer que ce qui résout le blocage identifié</li>
@@ -290,7 +340,7 @@ export default function EditeursLogicielsDemosPage() {
           </div>
         </div>
 
-        <h2 id="4-decideurs" className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
+        <h2 id="4-decideurs" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
           Les 4 décideurs : celui qui valide la technique n'est pas celui qui signe le chèque
         </h2>
 
@@ -302,18 +352,18 @@ export default function EditeursLogicielsDemosPage() {
           Dans un achat SaaS B2B de plus de 10 000 euros par an, il y a en moyenne 11 personnes impliquées dans la décision. Mais dans les faits, quatre rôles sont presque toujours présents :
         </p>
 
-        <ol className="list-decimal list-inside mb-6 space-y-3 text-gray-800">
+        <ol className="mb-8 space-y-3 list-decimal ml-6">
           <li>
-            <strong>Le sponsor métier</strong> — celui qui va utiliser le logiciel au quotidien. Il veut que ça marche, que ça lui simplifie la vie. C'est votre allié naturel, mais il ne décide pas seul.
+            <strong>Le sponsor métier</strong> : celui qui va utiliser le logiciel au quotidien. Il veut que ça marche, que ça lui simplifie la vie. C'est votre allié naturel, mais il ne décide pas seul.
           </li>
           <li>
-            <strong>Le CTO ou DSI</strong> — il valide la sécurité, l'intégration, la maintenabilité. Sans son aval technique, rien ne passe. Mais un oui technique n'est pas un oui budgétaire.
+            <strong>Le CTO ou DSI</strong> : il valide la sécurité, l'intégration, la maintenabilité. Sans son aval technique, rien ne passe. Mais un oui technique n'est pas un oui budgétaire.
           </li>
           <li>
-            <strong>Les achats</strong> — ils comparent les prix, négocient, vérifient que l'investissement est justifié. Ils arrivent souvent tard dans le processus et peuvent tout faire dérailler.
+            <strong>Les achats</strong> : ils comparent les prix, négocient, vérifient que l'investissement est justifié. Ils arrivent souvent tard dans le processus et peuvent tout faire dérailler.
           </li>
           <li>
-            <strong>Le DG ou COMEX</strong> — celui qui tranche sur les gros budgets. Il veut savoir quel problème stratégique vous résolvez et en combien de temps. Pas le détail des fonctionnalités.
+            <strong>Le DG ou COMEX</strong> : celui qui tranche sur les gros budgets. Il veut savoir quel problème stratégique vous résolvez et en combien de temps. Pas le détail des fonctionnalités.
           </li>
         </ol>
 
@@ -325,7 +375,7 @@ export default function EditeursLogicielsDemosPage() {
           La correction : cartographier les décideurs dès le premier rendez-vous. Identifier qui décide quoi. Et s'assurer que la démo parle le langage de chacun. La démo qui convertit n'est pas celle qui montre tout. C'est celle qui répond à la question que chaque interlocuteur se pose.
         </p>
 
-        <h2 id="poc-interminable" className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
+        <h2 id="poc-interminable" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
           Le POC qui n'en finit pas : quand le client teste mais n'achète pas
         </h2>
 
@@ -345,7 +395,7 @@ export default function EditeursLogicielsDemosPage() {
           Un POC doit avoir :
         </p>
 
-        <ul className="list-disc list-inside mb-6 space-y-2 text-gray-800">
+        <ul className="space-y-2 text-sm text-gray-700">
           <li>une durée fixe et courte (2 à 4 semaines maximum)</li>
           <li>un critère de succès mesurable défini à l'avance</li>
           <li>un engagement clair sur la prochaine étape après le POC</li>
@@ -353,10 +403,10 @@ export default function EditeursLogicielsDemosPage() {
         </ul>
 
         <p className="mb-6">
-          Sans ces quatre conditions, un POC est une façon polie pour un prospect de reporter sa décision. Et pour un commercial, de perdre son temps sur un deal qui n'aboutira pas.
+          Sans ces quatre conditions, un POC est une façon polie pour un prospect de reporter sa décision. Et pour un commercial, de perdre son temps sur un dossier qui n'aboutira pas.
         </p>
 
-        <h2 id="commercial-expert" className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
+        <h2 id="commercial-expert" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
           Le syndrome du commercial-expert
         </h2>
 
@@ -376,7 +426,7 @@ export default function EditeursLogicielsDemosPage() {
           Un commercial-expert typique :
         </p>
 
-        <ul className="list-disc list-inside mb-6 space-y-2 text-gray-800">
+        <ul className="space-y-2 text-sm text-gray-700">
           <li>répond à toutes les objections techniques</li>
           <li>personnalise la démo en direct</li>
           <li>mais n'a pas validé que le problème est prioritaire</li>
@@ -384,14 +434,13 @@ export default function EditeursLogicielsDemosPage() {
         </ul>
 
         <p className="mb-6">
-          La difficulté, c'est que ça marche sur les petits deals. Pour un abonnement à 200 euros par mois, la démo directe peut suffire. Mais dès qu'on monte en budget et en complexité, le défaut de diagnostic se paie cash. En cycles longs qui dépassent les 84 jours médians, en POC interminables, en pertes inexplicables.
+          La difficulté, c'est que ça marche sur les petites ventes. Pour un abonnement à 200 euros par mois, la démo directe peut suffire. Mais dès qu'on monte en budget et en complexité, le défaut de diagnostic se paie cash. En cycles longs qui dépassent les 84 jours médians, en POC interminables, en pertes inexplicables.
         </p>
 
         {/* Mid-article CTA */}
-        {/* Mid-article CTA : structurer → Bootcamp */}
         <div className="bg-gradient-to-br from-teal-50 to-mint-green/20 border border-teal-200/40 rounded-2xl p-6 my-8">
           <p className="font-title font-bold text-teal-800 text-sm uppercase tracking-wider mb-2">
-            🎯 Vous voulez que vos équipes structurent leur discovery avant la démo ?
+            Vous voulez que vos équipes structurent leur découverte avant la démo ?
           </p>
           <p className="text-sm text-teal-700 mb-4">
             Le Bootcamp commercial vous donne les outils pour passer de la démo systématique au diagnostic structuré, avec des grilles de questionnement et des exercices terrain.
@@ -404,8 +453,8 @@ export default function EditeursLogicielsDemosPage() {
           </Link>
         </div>
 
-        <h2 id="discovery-avant-demo" className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
-          Structurer le discovery avant la démo
+        <h2 id="decouverte-avant-demo" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
+          Structurer la découverte avant la démo
         </h2>
 
         <p className="mb-6">
@@ -418,14 +467,14 @@ export default function EditeursLogicielsDemosPage() {
 
         <div className="bg-gray-50 border-l-4 border-blue-500 p-5 my-6 rounded-r-lg">
           <p className="font-semibold text-blue-900 mb-3">Les 3 questions à valider avant toute démo</p>
-          <ol className="list-decimal list-inside space-y-3 text-gray-800">
+          <ol className="mb-8 space-y-3 list-decimal ml-6">
             <li>
               <strong>Quel est le vrai problème que vous résolvez pour ce prospect ?</strong>
               <p className="ml-6 mt-1 text-sm text-gray-600">Pas le problème général. Le problème spécifique, situé, incarné : « Votre équipe support perd 12 heures par semaine à ressaisir les données client entre votre CRM et votre outil de ticketing. »</p>
             </li>
             <li>
               <strong>Pourquoi maintenant ? Quelle est l'urgence ?</strong>
-              <p className="ml-6 mt-1 text-sm text-gray-600">Si rien ne presse, le deal n'arrivera jamais. Il faut un déclencheur : un audit qui arrive, une embauche qui change l'équipe, une perte de client qui alerte la direction.</p>
+              <p className="ml-6 mt-1 text-sm text-gray-600">Si rien ne presse, la signature n'arrivera jamais. Il faut un déclencheur : un audit qui arrive, une embauche qui change l'équipe, une perte de client qui alerte la direction.</p>
             </li>
             <li>
               <strong>Qui décide et sur quels critères ?</strong>
@@ -435,23 +484,23 @@ export default function EditeursLogicielsDemosPage() {
         </div>
 
         <p className="mb-6">
-          Si le commercial ne peut pas répondre à ces trois questions avec précision, la démo est prématurée. Il faut un rendez-vous de discovery avant.
+          Si le commercial ne peut pas répondre à ces trois questions avec précision, la démo est prématurée. Il faut un rendez-vous de découverte avant.
         </p>
 
         <p className="mb-6">
           Et quand la démo arrive enfin, elle ne doit pas être une visite guidée du produit. Elle doit être une réponse sur mesure aux problèmes identifiés. On ne montre pas tout. On montre ce qui résout le point de blocage numéro un. On s'arrête là. On valide. On passe à l'étape suivante.
         </p>
 
-        <h2 id="cas-concret" className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
+        <h2 id="cas-concret" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
           Ce que ça change concrètement
         </h2>
 
         <p className="mb-6">
-          J'accompagne un éditeur de logiciels RH qui faisait face à ce problème. L'équipe commerciale montrait la solution au premier rendez-vous. Le cycle moyen était de 120 jours. Les POC duraient en moyenne 6 semaines. Le taux de conversion démo vers closing était autour de 22%.
+          J'accompagne un éditeur de logiciels RH qui faisait face à ce problème. L'équipe commerciale montrait la solution au premier rendez-vous. Le cycle moyen était de 120 jours. Les POC duraient en moyenne 6 semaines. Le taux de conversion démo vers signature était autour de 22%.
         </p>
 
         <p className="mb-6">
-          En trois mois de travail sur la structuration du discovery :
+          En trois mois de travail sur la structuration de la découverte :
         </p>
 
         <div className="bg-gray-50 p-5 my-6 rounded-lg">
@@ -461,7 +510,7 @@ export default function EditeursLogicielsDemosPage() {
               <p className="text-2xl font-bold text-green-600">120j → 75j</p>
             </div>
             <div>
-              <p className="text-sm text-gray-500 mb-1">Conversion démo → close</p>
+              <p className="text-sm text-gray-500 mb-1">Conversion démo → signature</p>
               <p className="text-2xl font-bold text-green-600">22% → 34%</p>
             </div>
             <div>
@@ -479,7 +528,7 @@ export default function EditeursLogicielsDemosPage() {
           Ce n'est pas un résultat exceptionnel. C'est le résultat normal quand on arrête de montrer le produit trop tôt.
         </p>
 
-        <h2 className="text-3xl font-title font-bold text-blue-ink mt-12 mb-6">
+        <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
           Ce qu'il faut retenir
         </h2>
 
@@ -497,14 +546,14 @@ export default function EditeursLogicielsDemosPage() {
 
         {/* FAQ */}
         <div className="my-12">
-          <h2 className="text-3xl font-title font-bold text-blue-ink mb-8">
+          <h2 id="faq" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
             Questions fréquentes sur la conversion des démos SaaS
           </h2>
 
           <div className="space-y-4">
             <div className="border border-gray-200 rounded-lg p-4">
               <p className="font-bold text-blue-ink mb-2">Pourquoi les démos SaaS ne convertissent-elles pas ?</p>
-              <p className="text-gray-700">Parce que le commercial montre le produit trop tôt, sans avoir diagnostiqué le vrai problème du prospect. Selon Gartner, 67% des acheteurs B2B préfèrent éviter les commerciaux. Quand la démo arrive sans discovery préalable, elle conforte ce choix.</p>
+              <p className="text-gray-700">Parce que le commercial montre le produit trop tôt, sans avoir diagnostiqué le vrai problème du prospect. 67% des acheteurs B2B préfèrent éviter les commerciaux. Quand la démo arrive sans découverte préalable, elle conforte ce choix.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-4">
@@ -514,7 +563,7 @@ export default function EditeursLogicielsDemosPage() {
 
             <div className="border border-gray-200 rounded-lg p-4">
               <p className="font-bold text-blue-ink mb-2">Quelle est la durée d'un cycle de vente SaaS B2B ?</p>
-              <p className="text-gray-700">Le cycle médian est de 84 jours pour un deal SaaS B2B standard. Pour l'enterprise (&gt;100K ACV), le cycle peut aller de 9 à 18 mois. Un POC non cadré peut représenter la moitié de ce cycle sans garantie de conversion.</p>
+              <p className="text-gray-700">Le cycle médian est de 84 jours pour une vente SaaS B2B standard. Pour les grands comptes, le cycle peut aller de 9 à 18 mois. Un POC non cadré peut représenter la moitié de ce cycle sans garantie de conversion.</p>
             </div>
 
             <div className="border border-gray-200 rounded-lg p-4">
@@ -523,8 +572,8 @@ export default function EditeursLogicielsDemosPage() {
             </div>
 
             <div className="border border-gray-200 rounded-lg p-4">
-              <p className="font-bold text-blue-ink mb-2">Quel est le taux de conversion démo vers closing dans le SaaS ?</p>
-              <p className="text-gray-700">Le taux de conversion démo → closing est en moyenne de 30% dans le SaaS, contre 25% toutes industries confondues. Mais le vrai indicateur est le taux visiteur → démo → close, qui tombe à 3,8%. Le problème n'est pas la démo elle-même mais ce qui se passe avant.</p>
+              <p className="font-bold text-blue-ink mb-2">Quel est le taux de conversion démo vers signature dans le SaaS ?</p>
+              <p className="text-gray-700">Le taux de conversion démo vers signature est en moyenne de 30% dans le SaaS, contre 25% toutes industries confondues. Mais le vrai indicateur est le taux visiteur vers démo vers signature, qui tombe à 3,8%. Le problème n'est pas la démo elle-même mais ce qui se passe avant.</p>
             </div>
           </div>
         </div>
