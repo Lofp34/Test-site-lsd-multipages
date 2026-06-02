@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'sales-enablement-pme-structurer-performance-commerciale',
+    title: 'Sales enablement PME : structurer la performance commerciale sans se ruiner',
+    description: 'Le sales enablement n\'est pas un outil, un département ou un budget. C\'est une discipline de dirigeant de PME. Voici comment structurer concrètement la performance d\'une équipe de 5 à 50 commerciaux, sans logiciel coûteux ni usine à gaz.',
+    date: '2026-06-02',
+    readTime: '7 min',
+    category: 'Performance commerciale / Structuration équipe',
+    image: '/images/blog/sales-enablement-pme/sales-enablement-pme-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'dilemme-innovateur-vente-b2b',
     title: 'Ce qui fait gagner vos commerciaux tuera vos ventes demain',
     description: 'Le dilemme de l\'innovateur de Christensen expliqué aux dirigeants de PME : trois pièges qui préparent l\'échec de demain et cinq décisions pour en sortir sans tout casser.',
