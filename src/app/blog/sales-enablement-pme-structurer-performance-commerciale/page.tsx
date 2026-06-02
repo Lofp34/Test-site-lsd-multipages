@@ -9,7 +9,7 @@ const heroImage = '/images/blog/sales-enablement-pme/sales-enablement-pme-hero.w
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/sales-enablement-pme/sales-enablement-pme-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Sales enablement PME : structurer la performance commerciale sans se ruiner | Laurent Serre',
+  title: 'Sales enablement PME : structurer sans se ruiner',
   description:
     'Sales enablement pour PME : comment structurer concrètement la performance d\'une équipe de 5 à 50 commerciaux sans logiciel coûteux ni usine à gaz.',
   keywords:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/sales-enablement-pme-structurer-performance-commerciale',
   },
   openGraph: {
-    title: 'Sales enablement PME : structurer la performance commerciale sans se ruiner',
+    title: 'Sales enablement PME : structurer sans se ruiner',
     description:
       'Le sales enablement n\'est pas un outil, un département ou un budget. C\'est une discipline de dirigeant de PME.',
     url: 'https://www.laurentserre.com/blog/sales-enablement-pme-structurer-performance-commerciale',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sales enablement PME : structurer la performance commerciale sans se ruiner',
+    title: 'Sales enablement PME : structurer sans se ruiner',
     description:
       'Le sales enablement n\'est pas un outil, un département ou un budget. C\'est une discipline de dirigeant de PME.',
     images: [heroImageAbsolute],
@@ -63,7 +63,7 @@ export default function SalesEnablementPMEPage() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Sales enablement PME : structurer la performance commerciale sans se ruiner',
+    headline: 'Sales enablement PME : structurer sans se ruiner',
     description:
       'Le sales enablement n\'est pas un outil, un département ou un budget. C\'est une discipline de dirigeant de PME. Voici comment structurer concrètement la performance d\'une équipe de 5 à 50 commerciaux.',
     image: heroImageAbsolute,
@@ -185,7 +185,7 @@ export default function SalesEnablementPMEPage() {
             </div>
 
             <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              Sales enablement PME : structurer la performance commerciale sans se ruiner
+              Sales enablement PME : structurer sans se ruiner
             </h1>
 
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
