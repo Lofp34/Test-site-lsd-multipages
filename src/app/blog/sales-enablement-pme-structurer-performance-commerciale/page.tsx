@@ -239,15 +239,7 @@ export default function SalesEnablementPMEPage() {
             <AuthorCard />
           </div>
 
-          {/* TL;DR */}
-          <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
-            <p className="text-sm font-semibold text-mint-green mb-2">✨ Ce que vous allez retenir</p>
-            <p className="text-gray-700 leading-relaxed">
-              Le sales enablement n&apos;est pas un département de grand compte ou un logiciel à 50 000 euros. C&apos;est une discipline simple : clarifier le message, outiller les commerciaux, ritualiser les débriefs. Cet article vous montre comment faire, sans budget, avec des outils gratuits, et par où commencer dès demain.
-            </p>
-          </div>
-
-          {/* Carrousel BD */}
+          {/* Carrousel BD — accroche visuelle */}
           <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-6">
             <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
               🎬 Carrousel BD : Sales enablement PME en action
@@ -268,6 +260,14 @@ export default function SalesEnablementPMEPage() {
                 Télécharger le PDF (12 planches)
               </Link>
             </div>
+          </div>
+
+          {/* TL;DR */}
+          <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
+            <p className="text-sm font-semibold text-mint-green mb-2">✨ Ce que vous allez retenir</p>
+            <p className="text-gray-700 leading-relaxed">
+              Le sales enablement n&apos;est pas un département de grand compte ou un logiciel à 50 000 euros. C&apos;est une discipline simple : clarifier le message, outiller les commerciaux, ritualiser les débriefs. Cet article vous montre comment faire, sans budget, avec des outils gratuits, et par où commencer dès demain.
+            </p>
           </div>
 
           {/* Badge CTA diagnostic */}
