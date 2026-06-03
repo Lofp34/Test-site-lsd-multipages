@@ -201,24 +201,26 @@ export default function ProspectionB2BColdOutreachPage() {
               🎬 Carrousel BD : Le parcours du commercial en 2026
             </p>
             <p className="text-sm text-amber-700 mb-5">
-              Du cold call traditionnel à la prospection multicanal augmentée : suivez le parcours de Stéphane, commercial terrain, accompagné par Laurent et son jeune collègue Alex.
+              Du cold call au duo SDR/commercial : 16 planches qui racontent le vrai parcours de la prospection moderne, du piège de lIA au diagnostic terrain, en passant par la préparation et le mix multicanal.
             </p>
             <BDCarousel
               images={[
                 { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-01-cover.webp', alt: 'Cover - Prospection 2026', index: 0 },
                 { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-02-constat.webp', alt: 'Constat - Le cold call ne marche plus', index: 1 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-03-observer.webp', alt: 'Observer - Que faites-vous ?', index: 2 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-04-diagnostic.webp', alt: 'Diagnostic - Identifier les vrais problèmes', index: 3 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-05-ia-piege.webp', alt: 'Piège IA - Le volume ne remplace pas la pertinence', index: 4 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-06-limite-ia.webp', alt: 'Limite de lIA', index: 5 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-07-declic.webp', alt: 'Déclic - Lalchimie gagnante', index: 6 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-08-preparation.webp', alt: 'Préparation - La clé', index: 7 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-09-appel-qui-marche.webp', alt: 'Lappel qui marche', index: 8 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-10-mix-multicanal.webp', alt: 'Mix multicanal', index: 9 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-11-persistance-utile.webp', alt: 'Persistance utile', index: 10 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-12-resultat.webp', alt: 'Résultat', index: 11 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-13-lecon.webp', alt: 'Leçon', index: 12 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-14-cta.webp', alt: 'CTA - Commencez par un diagnostic', index: 13 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-03-piege-ia.webp', alt: 'Piège IA - Le volume ne remplace pas la pertinence', index: 2 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-04-limite-ia.webp', alt: 'Limite de lIA', index: 3 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-05-declic.webp', alt: 'Déclic - Lalchimie gagnante', index: 4 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-06-alex-spam.webp', alt: 'Alex ne répond plus - spam', index: 5 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-07-diagnostic.webp', alt: 'Diagnostic - Identifier les vrais problèmes', index: 6 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-08-reunion-cadre.webp', alt: 'Réunion cadre - Structurer léquipe', index: 7 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-09-preparation.webp', alt: 'Préparation - La clé', index: 8 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-10-appel-qui-marche.webp', alt: 'Lappel qui marche', index: 9 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-11-mix-multicanal.webp', alt: 'Mix multicanal', index: 10 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-12-persistance-utile.webp', alt: 'Persistance utile', index: 11 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-13-resultat.webp', alt: 'Résultat', index: 12 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-14-equipe-sdr.webp', alt: 'Duo SDR / Commercial', index: 13 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-15-lecon.webp', alt: 'Leçon - La prospection moderne', index: 14 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-16-cta.webp', alt: 'CTA - Commencez par un diagnostic', index: 15 },
               ]}
               title="Le parcours du commercial en 2026"
               maxPreview={2}
@@ -228,7 +230,7 @@ export default function ProspectionB2BColdOutreachPage() {
                 href="/downloads/carrousel-prospection-cold-outreach-2026.pdf"
                 className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
               >
-                Télécharger le PDF (14 planches)
+                Télécharger le PDF (16 planches)
               </Link>
             </div>
           </div>
