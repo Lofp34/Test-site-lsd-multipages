@@ -46,17 +46,17 @@ const carouselPrefix = '/images/blog/carrousel-sales-enablement-pme';
 
 const carouselImages = [
   { src: `${carouselPrefix}/01-cover.webp`, alt: 'Cover : Sales enablement PME', index: 0 },
-  { src: `${carouselPrefix}/02-scene.webp`, alt: 'Le dirigeant et son commercial analysent les performances', index: 1 },
-  { src: `${carouselPrefix}/03-declic.webp`, alt: 'Prise de conscience : désordre organisé dans l\'équipe', index: 2 },
-  { src: `${carouselPrefix}/04-supports-trop.webp`, alt: 'Trop de supports inutilisables', index: 3 },
-  { src: `${carouselPrefix}/05-supports-disperses.webp`, alt: 'Supports dispersés, message pas clair', index: 4 },
-  { src: `${carouselPrefix}/06-mauvais-support.webp`, alt: 'Mauvais support qui dessert le commercial', index: 5 },
-  { src: `${carouselPrefix}/07-debrief.webp`, alt: 'Débrief hebdomadaire structuré', index: 6 },
-  { src: `${carouselPrefix}/08-fiche-terrain.webp`, alt: 'Fiche terrain prête à l\'emploi', index: 7 },
-  { src: `${carouselPrefix}/09-avant-rdv.webp`, alt: 'Préparation de rendez-vous', index: 8 },
-  { src: `${carouselPrefix}/10-rdv-cadre.webp`, alt: 'Rendez-vous commercial cadré', index: 9 },
-  { src: `${carouselPrefix}/11-retour-rdv.webp`, alt: 'Retour sur le rendez-vous', index: 10 },
-  { src: `${carouselPrefix}/12-structuration.webp`, alt: 'Structuration de l\'approche commerciale', index: 11 },
+  { src: `${carouselPrefix}/02-constat.webp`, alt: 'Le constat : rien de structuré pour vendre', index: 1 },
+  { src: `${carouselPrefix}/03-desordre.webp`, alt: 'Désordre organisé : chacun vend à sa façon', index: 2 },
+  { src: `${carouselPrefix}/04-prise-conscience.webp`, alt: 'Prise de conscience : le problème c\'est le cadre', index: 3 },
+  { src: `${carouselPrefix}/05-clarification.webp`, alt: 'Clarifier le message commercial', index: 4 },
+  { src: `${carouselPrefix}/06-support.webp`, alt: 'Des supports qui servent vraiment', index: 5 },
+  { src: `${carouselPrefix}/07-avant-rdv.webp`, alt: 'Préparer le rendez-vous avec les bons outils', index: 6 },
+  { src: `${carouselPrefix}/08-rdv-cadre.webp`, alt: 'Le rendez-vous commercial cadré', index: 7 },
+  { src: `${carouselPrefix}/09-debrief.webp`, alt: 'Le débrief hebdomadaire qui tient', index: 8 },
+  { src: `${carouselPrefix}/10-piege.webp`, alt: 'Le piège de la formation sans cadre', index: 9 },
+  { src: `${carouselPrefix}/11-resultats.webp`, alt: 'Des résultats modestes mais réels', index: 10 },
+  { src: `${carouselPrefix}/12-cta.webp`, alt: 'CTA : diagnostic offert sur laurentserre.com', index: 11 },
 ];
 
 export default function SalesEnablementPMEPage() {
@@ -246,7 +246,7 @@ export default function SalesEnablementPMEPage() {
             />
             <div className="mt-4 text-center">
               <Link
-                href="/downloads/carrousel-sales-enablement-pme.pdf"
+                href="/downloads/carrousel-sales-enablement-pme-v2.pdf"
                 className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
               >
                 Télécharger le PDF (12 planches)
