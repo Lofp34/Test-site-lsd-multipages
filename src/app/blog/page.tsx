@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'prospection-b2b-cold-outreach-2026',
+    title: 'Prospection B2B en 2026 : faut-il abandonner le cold outreach ?',
+    description: 'Le cold outreach est-il vraiment mort ? Laurent Serre répond au débat qui agite les sales communities. Ni "oui le cold call est mort" ni "non il faut juste forcer plus". Une analyse lucide de ce qui marche encore, ce qui a changé, et ce qu\'il faut faire à la place.',
+    date: '2026-06-03',
+    readTime: '6 min',
+    category: 'Prospection / Acquisition B2B',
+    image: '/images/blog/prospection-b2b-cold-outreach-2026/prospection-b2b-cold-outreach-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'sales-enablement-pme-structurer-performance-commerciale',
     title: 'Sales enablement PME : structurer la performance commerciale sans se ruiner',
     description: 'Le sales enablement n\'est pas un outil, un département ou un budget. C\'est une discipline de dirigeant de PME. Voici comment structurer concrètement la performance d\'une équipe de 5 à 50 commerciaux, sans logiciel coûteux ni usine à gaz.',
