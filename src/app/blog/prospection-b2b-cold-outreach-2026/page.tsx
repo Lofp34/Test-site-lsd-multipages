@@ -195,6 +195,44 @@ export default function ProspectionB2BColdOutreachPage() {
             <AuthorCard />
           </div>
 
+          {/* BDCarousel — accroche visuelle */}
+          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-6">
+            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+              🎬 Carrousel BD : Le parcours du commercial en 2026
+            </p>
+            <p className="text-sm text-amber-700 mb-5">
+              Du cold call traditionnel à la prospection multicanal augmentée : suivez le parcours de Stéphane, commercial terrain, accompagné par Laurent et son jeune collègue Alex.
+            </p>
+            <BDCarousel
+              images={[
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-01-cover.webp', alt: 'Cover - Prospection 2026', index: 0 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-02-constat.webp', alt: 'Constat - Le cold call ne marche plus', index: 1 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-03-observer.webp', alt: 'Observer - Que faites-vous ?', index: 2 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-04-diagnostic.webp', alt: 'Diagnostic - Identifier les vrais problèmes', index: 3 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-05-ia-piege.webp', alt: 'Piège IA - Le volume ne remplace pas la pertinence', index: 4 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-06-limite-ia.webp', alt: 'Limite de lIA', index: 5 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-07-declic.webp', alt: 'Déclic - Lalchimie gagnante', index: 6 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-08-preparation.webp', alt: 'Préparation - La clé', index: 7 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-09-appel-qui-marche.webp', alt: 'Lappel qui marche', index: 8 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-10-mix-multicanal.webp', alt: 'Mix multicanal', index: 9 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-11-persistance-utile.webp', alt: 'Persistance utile', index: 10 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-12-resultat.webp', alt: 'Résultat', index: 11 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-13-lecon.webp', alt: 'Leçon', index: 12 },
+                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-14-cta.webp', alt: 'CTA - Commencez par un diagnostic', index: 13 },
+              ]}
+              title="Le parcours du commercial en 2026"
+              maxPreview={2}
+            />
+            <div className="mt-4 text-center">
+              <Link
+                href="/downloads/carrousel-prospection-cold-outreach-2026.pdf"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                Télécharger le PDF (14 planches)
+              </Link>
+            </div>
+          </div>
+
           {/* TL;DR */}
           <div className="bg-gradient-to-r from-amber-50 via-amber-50/80 to-transparent border-l-4 border-amber-400 p-6 rounded-r-xl mb-8">
             <p className="text-lg font-semibold text-amber-800 mb-2">✨ Ce que vous allez retenir</p>
@@ -327,36 +365,6 @@ export default function ProspectionB2BColdOutreachPage() {
             <p className="font-semibold">
               La différence n'a jamais été une question d'outil ou de canal. Elle a toujours été une question d'intention, de préparation et de pertinence.
             </p>
-          </div>
-
-          {/* BDCarousel */}
-          <div className="my-12">
-            <h2 id="carrousel" className="text-3xl font-title font-bold text-blue-ink mb-6">
-              La BD : Le parcours du commercial en 2026
-            </h2>
-            <p className="text-lg text-gray-600 mb-6">
-              Du cold call traditionnel à la prospection multicanal augmentée : suivez le parcours de Stéphane, commercial terrain, accompagné par Laurent et son jeune collègue Alex.
-            </p>
-            <BDCarousel
-              images={[
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-01-cover.webp', alt: 'Cover - Prospection 2026', index: 0 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-02-constat.webp', alt: 'Constat - Le cold call ne marche plus', index: 1 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-03-observer.webp', alt: 'Observer - Que faites-vous ?', index: 2 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-04-diagnostic.webp', alt: 'Diagnostic - Identifier les vrais problèmes', index: 3 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-05-ia-piege.webp', alt: 'Piège IA - Le volume ne remplace pas la pertinence', index: 4 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-06-limite-ia.webp', alt: 'Limite de lIA', index: 5 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-07-declic.webp', alt: 'Déclic - Lalchimie gagnante', index: 6 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-08-preparation.webp', alt: 'Préparation - La clé', index: 7 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-09-appel-qui-marche.webp', alt: 'Lappel qui marche', index: 8 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-10-mix-multicanal.webp', alt: 'Mix multicanal', index: 9 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-11-persistance-utile.webp', alt: 'Persistance utile', index: 10 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-12-resultat.webp', alt: 'Résultat', index: 11 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-13-lecon.webp', alt: 'Leçon', index: 12 },
-                { src: '/images/blog/prospection-b2b-cold-outreach-2026/bd-slide-14-cta.webp', alt: 'CTA - Commencez par un diagnostic', index: 13 },
-              ]}
-              title="Le parcours du commercial en 2026"
-              maxPreview={2}
-            />
           </div>
 
           {/* FAQ */}
