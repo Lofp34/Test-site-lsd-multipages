@@ -165,6 +165,22 @@ export default function SalesEnablementPMEPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
 
+      {/* BreadcrumbList JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.laurentserre.com/' },
+              { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.laurentserre.com/blog' },
+              { '@type': 'ListItem', position: 3, name: 'Sales enablement PME', item: 'https://www.laurentserre.com/blog/sales-enablement-pme-structurer-performance-commerciale' },
+            ],
+          }),
+        }}
+      />
+
       {/* Hero */}
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -357,19 +373,19 @@ export default function SalesEnablementPMEPage() {
             Pas besoin de Salesforce. Un simple tableau : qui utilise les supports, qui progresse, qui décroche.
           </p>
 
-          {/* Mid-article CTA Diagnostic */}
+          {/* Mid-article CTA Bootcamp */}
           <div className="bg-gradient-to-br from-teal-50 to-mint-green/20 border border-teal-200/40 rounded-2xl p-6 my-8">
             <p className="font-title font-bold text-teal-800 text-sm uppercase tracking-wider mb-2">
-              🎯 Vous voulez savoir si votre équipe est prête ?
+              🚀 Vous voulez transformer votre équipe commerciale ?
             </p>
             <p className="text-sm text-teal-700 mb-4">
-              Un diagnostic offert d&apos;une demi-journée permet d&apos;identifier les vrais freins. Pas de méthode toute faite, pas de promesses en l&apos;air.
+              Le Bootcamp commercial intensif de Laurent Serre : 5 semaines pour structurer votre équipe, clarifier le message et installer des rituels de performance qui tiennent dans la durée.
             </p>
             <Link
-              href="/diagnostic"
+              href="/bootcamp"
               className="inline-flex items-center gap-2 bg-teal-600 text-white text-sm font-medium px-5 py-2.5 rounded-full hover:bg-teal-700 transition-colors"
             >
-              Demander un diagnostic offert →
+              Découvrir le Bootcamp →
             </Link>
           </div>
 
@@ -414,37 +430,6 @@ export default function SalesEnablementPMEPage() {
             Le ROI du sales enablement en PME n&apos;est pas un calcul à quatre chiffres après la virgule. C&apos;est une équipe qui vend mieux avec les mêmes ressources.
           </p>
 
-          {/* Articles liés */}
-          <div className="mt-12 p-6 bg-blue-ink/5 rounded-xl border border-blue-ink/10">
-            <p className="text-sm font-semibold text-blue-ink mb-3">📖 Pour aller plus loin</p>
-            <ul className="space-y-3 text-sm text-gray-700">
-              <li>
-                <Link href="/blog/playbook-commercial-guide-pratique-terrain" className="text-mint-green hover:underline font-medium">
-                  Playbook commercial : le guide pratique pour créer celui qui va vraiment être utilisé
-                </Link>
-                <span className="block text-gray-500 mt-0.5">Comment construire des supports de vente que les commerciaux utiliseront.</span>
-              </li>
-              <li>
-                <Link href="/blog/kpis-commerciaux-pme-indicateurs-vous-cachent" className="text-mint-green hover:underline font-medium">
-                  Les KPIs commerciaux en PME : ce que vos indicateurs vous cachent
-                </Link>
-                <span className="block text-gray-500 mt-0.5">Mesurer ce qui compte vraiment dans la performance d&apos;une équipe.</span>
-              </li>
-              <li>
-                <Link href="/blog/performance-commerciale-pme-5-leviers-dirigeant" className="text-mint-green hover:underline font-medium">
-                  Performance commerciale en PME : les 5 leviers que les dirigeants négligent
-                </Link>
-                <span className="block text-gray-500 mt-0.5">Les vrais leviers de la performance commerciale.</span>
-              </li>
-              <li>
-                <Link href="/blog/coaching-commercial-terrain-methode-equipe" className="text-mint-green hover:underline font-medium">
-                  Coaching commercial terrain : la méthode qui transforme vraiment les pratiques de votre équipe
-                </Link>
-                <span className="block text-gray-500 mt-0.5">Le coaching terrain comme levier de structuration.</span>
-              </li>
-            </ul>
-          </div>
-
           {/* FAQ */}
           <h2 id="faq" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">FAQ Sales Enablement PME</h2>
 
@@ -477,6 +462,37 @@ export default function SalesEnablementPMEPage() {
               <p className="font-semibold text-blue-ink mb-1">Comment mesurer le ROI du sales enablement ?</p>
               <p className="text-gray-700">Regardez le ressenti des commerciaux, le temps de cycle, le taux de transformation, et la confiance de l&apos;équipe en rendez-vous. Le ROI est visible sur le chiffre, mais il passe d&apos;abord par des gestes qui changent.</p>
             </div>
+          </div>
+
+          {/* Pour aller plus loin */}
+          <div className="mt-12 p-6 bg-blue-ink/5 rounded-xl border border-blue-ink/10">
+            <p className="text-sm font-semibold text-blue-ink mb-3">📖 Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li>
+                <Link href="/blog/playbook-commercial-guide-pratique-terrain" className="text-mint-green hover:underline font-medium">
+                  Playbook commercial : le guide pratique pour créer celui qui va vraiment être utilisé
+                </Link>
+                <span className="block text-gray-500 mt-0.5">Comment construire des supports de vente que les commerciaux utiliseront.</span>
+              </li>
+              <li>
+                <Link href="/blog/kpis-commerciaux-pme-indicateurs-vous-cachent" className="text-mint-green hover:underline font-medium">
+                  Les KPIs commerciaux en PME : ce que vos indicateurs vous cachent
+                </Link>
+                <span className="block text-gray-500 mt-0.5">Mesurer ce qui compte vraiment dans la performance d&apos;une équipe.</span>
+              </li>
+              <li>
+                <Link href="/blog/performance-commerciale-pme-5-leviers-dirigeant" className="text-mint-green hover:underline font-medium">
+                  Performance commerciale en PME : les 5 leviers que les dirigeants négligent
+                </Link>
+                <span className="block text-gray-500 mt-0.5">Les vrais leviers de la performance commerciale.</span>
+              </li>
+              <li>
+                <Link href="/blog/coaching-commercial-terrain-methode-equipe" className="text-mint-green hover:underline font-medium">
+                  Coaching commercial terrain : la méthode qui transforme vraiment les pratiques de votre équipe
+                </Link>
+                <span className="block text-gray-500 mt-0.5">Le coaching terrain comme levier de structuration.</span>
+              </li>
+            </ul>
           </div>
 
           {/* CTA gradient final */}
