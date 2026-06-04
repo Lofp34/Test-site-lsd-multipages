@@ -197,6 +197,44 @@ export default function Commercial2026CompetencesPage() {
         </div>
       </section>
 
+      {/* Carrousel BD - accroche visuelle haut d'article */}
+      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6">
+          <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+            Carrousel BD : Le parcours du commercial qui devient architecte de confiance
+          </p>
+          <p className="text-sm text-amber-700 mb-5">
+            Du vendeur scripté à l'architecte de confiance : 12 planches qui racontent le quotidien d'un commercial qui passe du réflexe à la stratégie, de l'instinct à la préparation, du bruit à la pertinence.
+          </p>
+          <BDCarousel
+            images={[
+              { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-01-cover.webp', alt: 'Cover - Le commercial submerge en 2026', index: 0 },
+              { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-02-piege-volume.webp', alt: 'Piege IA - Le volume ne remplace pas la pertinence', index: 1 },
+              { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-03-revelation-ia.webp', alt: 'Revelation - LIA ne fait que le squelette', index: 2 },
+              { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-04-observer.webp', alt: 'Observer - Je me tais et jobserve', index: 3 },
+              { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-05-diagnostic.webp', alt: 'Diagnostic - Quest-ce que vous avez deja essaye', index: 4 },
+              { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-06-indecision.webp', alt: 'Indecision - Gerer lacheteur indecis', index: 5 },
+              { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-07-donnees.webp', alt: 'Donnees - Prioriser sans se noyer', index: 6 },
+              { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-08-bruit.webp', alt: 'Bruit - Resister aux distractions', index: 7 },
+              { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-09-training.webp', alt: 'Training - La nuance qui change tout', index: 8 },
+              { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-10-rendez-vous.webp', alt: 'Rendez-vous - Le commercial qui ecoute vraiment', index: 9 },
+              { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-11-resultat.webp', alt: 'Resultat - Vendre sans avoir a forcer', index: 10 },
+              { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-12-cta.webp', alt: 'CTA - Diagnostic offert', index: 11 },
+            ]}
+            title="Le parcours du commercial en 2026"
+            maxPreview={2}
+          />
+          <div className="mt-4 text-center">
+            <Link
+              href="/downloads/carrousel-commercial-2026.pdf"
+              className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+            >
+              Télécharger le PDF (12 planches)
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
           <div className="not-prose mb-8">
@@ -323,41 +361,7 @@ export default function Commercial2026CompetencesPage() {
             </p>
           </div>
 
-          {/* Carrousel BD */}
-          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-6">
-            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
-              Carrousel BD : Le parcours du commercial qui devient architecte de confiance
-            </p>
-            <p className="text-sm text-amber-700 mb-5">
-              Du vendeur scripté à l'architecte de confiance : 12 planches qui racontent le quotidien d'un commercial qui passe du réflexe à la stratégie, de l'instinct à la préparation, du bruit à la pertinence.
-            </p>
-            <BDCarousel
-              images={[
-                { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-01-cover.webp', alt: 'Cover - Le commercial submerge en 2026', index: 0 },
-                { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-02-piege-volume.webp', alt: 'Piege IA - Le volume ne remplace pas la pertinence', index: 1 },
-                { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-03-revelation-ia.webp', alt: 'Revelation - LIA ne fait que le squelette', index: 2 },
-                { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-04-observer.webp', alt: 'Observer - Je me tais et jobserve', index: 3 },
-                { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-05-diagnostic.webp', alt: 'Diagnostic - Quest-ce que vous avez deja essaye', index: 4 },
-                { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-06-indecision.webp', alt: 'Indecision - Gerer lacheteur indecis', index: 5 },
-                { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-07-donnees.webp', alt: 'Donnees - Prioriser sans se noyer', index: 6 },
-                { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-08-bruit.webp', alt: 'Bruit - Resister aux distractions', index: 7 },
-                { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-09-training.webp', alt: 'Training - La nuance qui change tout', index: 8 },
-                { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-10-rendez-vous.webp', alt: 'Rendez-vous - Le commercial qui ecoute vraiment', index: 9 },
-                { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-11-resultat.webp', alt: 'Resultat - Vendre sans avoir a forcer', index: 10 },
-                { src: '/images/blog/commercial-en-2026-competences-qui-feront-difference/bd-slide-12-cta.webp', alt: 'CTA - Diagnostic offert', index: 11 },
-              ]}
-              title="Le parcours du commercial en 2026"
-              maxPreview={2}
-            />
-            <div className="mt-4 text-center">
-              <Link
-                href="/downloads/carrousel-commercial-2026.pdf"
-                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
-              >
-                Télécharger le PDF (12 planches)
-              </Link>
-            </div>
-          </div>
+
 
           {/* FAQ */}
           <div className="bg-gradient-to-r from-blue-ink/5 to-blue-ink/10 border border-blue-ink/10 rounded-2xl p-8 my-12">
