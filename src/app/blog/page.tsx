@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'commercial-en-2026-competences-qui-feront-difference',
+    title: 'Être commercial en 2026 : les compétences qui feront la différence',
+    description: 'Les commerciaux qui cartonnent en 2026 ne sont pas ceux qui maîtrisent 50 techniques. Ce sont ceux qui savent préparer avec l\'IA, diagnostiquer avant de pitcher, gérer l\'indécision, prioriser avec les données et résister au bruit.',
+    date: '2026-06-04',
+    readTime: '8 min',
+    category: 'Performance commerciale / Compétences',
+    image: '/images/blog/commercial-en-2026-competences-qui-feront-difference/commercial-2026-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'prospection-b2b-cold-outreach-2026',
     title: 'Prospection B2B en 2026 : faut-il abandonner le cold outreach ?',
     description: 'Le cold outreach est-il vraiment mort ? Laurent Serre répond au débat qui agite les sales communities. Ni "oui le cold call est mort" ni "non il faut juste forcer plus". Une analyse lucide de ce qui marche encore, ce qui a changé, et ce qu\'il faut faire à la place.',
