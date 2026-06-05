@@ -5,11 +5,29 @@ import HubSpotForm from '@/components/HubSpotForm';
 import BDCarousel from '@/components/BDCarousel';
 import AuthorCard from '@/components/AuthorCard';
 
+const carouselPrefix = '/images/blog/blocages-dirigeant-performance-commerciale';
+
+const carouselImages = [
+  { src: `${carouselPrefix}/bd-slide-01-cover.webp`, alt: 'Cover : les blocages de dirigeant qui sabotent la performance commerciale', index: 0 },
+  { src: `${carouselPrefix}/bd-slide-02-constat.webp`, alt: 'Un dirigeant frustr\u00e9 : mes commerciaux ne performent pas', index: 1 },
+  { src: `${carouselPrefix}/bd-slide-03-micro-management.webp`, alt: 'Micro-management d\u00e9guis\u00e9 en accompagnement', index: 2 },
+  { src: `${carouselPrefix}/bd-slide-04-schizophrenie.webp`, alt: 'Schizophr\u00e9nie strat\u00e9gique : contradictions dirigeant', index: 3 },
+  { src: `${carouselPrefix}/bd-slide-05-feedbacks.webp`, alt: 'La peur des feedbacks difficiles', index: 4 },
+  { src: `${carouselPrefix}/bd-slide-06-systeme-prime.webp`, alt: 'R\u00e9compenser les mauvais comportements', index: 5 },
+  { src: `${carouselPrefix}/bd-slide-07-modele.webp`, alt: 'L\'absence de mod\u00e8le personnel', index: 6 },
+  { src: `${carouselPrefix}/bd-slide-08-confronation.webp`, alt: 'Confrontation : le diagnostic qui d\u00e9range', index: 7 },
+  { src: `${carouselPrefix}/bd-slide-09-declic.webp`, alt: 'Le d\u00e9clic : prendre conscience des blocages', index: 8 },
+  { src: `${carouselPrefix}/bd-slide-10-premiers-changements.webp`, alt: 'Les premiers changements de comportement', index: 9 },
+  { src: `${carouselPrefix}/bd-slide-11-feedback.webp`, alt: 'Apprendre \u00e0 donner du feedback', index: 10 },
+  { src: `${carouselPrefix}/bd-slide-12-resultats.webp`, alt: 'Les r\u00e9sultats suivent quand le dirigeant change', index: 11 },
+  { src: `${carouselPrefix}/bd-slide-13-cta.webp`, alt: 'CTA : pr\u00eat \u00e0 regarder vos propres blocages ?', index: 12 },
+];
+
 const heroImage = '/images/blog/blocages-dirigeant-performance-commerciale/blocages-dirigeant-hero.webp';
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/blocages-dirigeant-performance-commerciale/blocages-dirigeant-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Dirigeant, le vrai problème de votre performance commerciale, c est peut-être vous | Laurent Serre',
+  title: 'Performance commerciale : 5 blocages de dirigeant qui sabotent vos résultats | Laurent Serre',
   description:
     'Vous pensez que vos commerciaux sont le problème ? Et si le vrai blocage était dans votre propre comportement ? Laurent Serre décrypte les 5 blocages de dirigeant qui plombent la performance.',
   keywords:
@@ -18,9 +36,9 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/blocages-dirigeant-performance-commerciale',
   },
   openGraph: {
-    title: 'Dirigeant, le vrai problème de votre performance commerciale, c est peut-être vous',
+    title: 'Performance commerciale : 5 blocages de dirigeant qui sabotent vos résultats',
     description:
-      'Les 5 blocages comportementaux de dirigeant qui sabotent la performance commerciale sans que personne ose le dire.',
+      'Micro-management, contradictions, peur des feedbacks : les 5 comportements de dirigeant qui cassent la performance de votre équipe commerciale.',
     url: 'https://www.laurentserre.com/blog/blocages-dirigeant-performance-commerciale',
     type: 'article',
     locale: 'fr_FR',
@@ -28,9 +46,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Dirigeant, le vrai problème de votre performance commerciale, c est peut-être vous',
+    title: 'Performance commerciale : 5 blocages de dirigeant qui sabotent vos résultats',
     description:
-      'Les 5 blocages comportementaux de dirigeant qui sabotent la performance commerciale.',
+      'Micro-management, contradictions, peur des feedbacks : les 5 comportements de dirigeant qui cassent la performance de votre équipe commerciale.',
     images: [heroImageAbsolute],
   },
 };
@@ -39,7 +57,7 @@ export default function BlocagesDirigeantPage() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Dirigeant, le vrai problème de votre performance commerciale, c est peut-être vous',
+    headline: 'Performance commerciale : 5 blocages de dirigeant qui sabotent vos résultats',
     description:
       'Les 5 blocages comportementaux de dirigeant qui sabotent la performance commerciale sans que personne ose le dire. Laurent Serre partage son expérience terrain.',
     image: heroImageAbsolute,
@@ -63,13 +81,13 @@ export default function BlocagesDirigeantPage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Pourquoi la performance commerciale de mon entreprise stagne-t-elle malgre mes efforts ?',
+        name: 'Pourquoi la performance commerciale de mon entreprise stagne-t-elle malgr\u00e9 mes efforts ?',
         acceptedAnswer: { '@type': 'Answer', text: 'Parce que le premier blocage est souvent comportemental, pas structurel. Les process de vente ne peuvent pas compenser un dirigeant qui micro-manage, change de cap tous les mois, ou évite les feedbacks difficiles. Avant de chercher un nouveau commercial ou une nouvelle méthode, regardez vos propres comportements.' }
       },
       {
         '@type': 'Question',
-        name: 'Comment savoir si c est moi le probleme ?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Quelques signes : vous reprenez les rendez-vous de vos commerciaux, vous regardez le CA du mois sans suivre les indicateurs d activité, vous évitez les conversations inconfortables avec vos vendeurs, vous récompensez les gros vendeurs quelle que soit leur méthode, et personne dans votre équipe n ose vous dire la vérité.' }
+        name: 'Comment savoir si c\'est moi le probl\u00e8me ?',
+        acceptedAnswer: { '@type': 'Answer', text: 'Quelques signes : vous reprenez les rendez-vous de vos commerciaux, vous regardez le CA du mois sans suivre les indicateurs d\'activité, vous évitez les conversations inconfortables avec vos vendeurs, vous récompensez les gros vendeurs quelle que soit leur méthode, et personne dans votre équipe n\'ose vous dire la vérité.' }
       },
       {
         '@type': 'Question',
@@ -83,13 +101,13 @@ export default function BlocagesDirigeantPage() {
       },
       {
         '@type': 'Question',
-        name: 'Peut-on ameliorer sa performance commerciale sans changer d equipe ?',
+        name: 'Peut-on am\u00e9liorer sa performance commerciale sans changer d\'\u00e9quipe ?',
         acceptedAnswer: { '@type': 'Answer', text: 'Oui, dans la plupart des cas. Le problème est rarement l équipe en place. C est souvent le cadre dans lequel elle évolue : des objectifs contradictoires, aucun modèle, des feedbacks absents, une vision qui change tous les mois. Corrigez le cadre, et l équipe suit.' }
       },
       {
         '@type': 'Question',
         name: 'Quelle est la difference entre pilotage commercial et micro-management ?',
-        acceptedAnswer: { '@type': 'Answer', text: 'Le pilotage regarde des indicateurs d activité et ajuste le cadre. Le micro-management regarde chaque geste du commercial et le corrige. Le premier construit l autonomie, le second la détruit. Si vos commerciaux vous appellent avant chaque décision, vous êtes dans le micro-management.' }
+        acceptedAnswer: { '@type': 'Answer', text: 'Le pilotage regarde des indicateurs d\'activité et ajuste le cadre. Le micro-management regarde chaque geste du commercial et le corrige. Le premier construit l\'autonomie, le second la détruit. Si vos commerciaux vous appellent avant chaque décision, vous êtes dans le micro-management.' }
       },
     ]
   };
@@ -266,6 +284,14 @@ export default function BlocagesDirigeantPage() {
               Et ça, aucun commercial ne pourra le faire à votre place.
             </p>
           </div>
+
+          {/* BD Carrousel */}
+          <section className="my-12">
+            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">
+              La BD : l\u2019histoire d\u2019un dirigeant qui d\u00e9couvre que le probl\u00e8me, c\u2019est lui
+            </h2>
+            <BDCarousel images={carouselImages} />
+          </section>
 
           {/* Articles liés (maillage) */}
           <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-8 my-12">

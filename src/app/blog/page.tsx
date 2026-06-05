@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'blocages-dirigeant-performance-commerciale',
+    title: 'Performance commerciale : les 5 blocages de dirigeant qui sabotent vos résultats',
+    description: 'Vous pensez que vos commerciaux sont le probl\u00e8me ? Et si le vrai blocage \u00e9tait dans votre propre comportement ? Laurent Serre d\u00e9crypte les 5 angles morts qui plombent la performance de votre \u00e9quipe.',
+    date: '2026-06-05',
+    readTime: '7 min',
+    category: 'Performance commerciale / Management',
+    image: '/images/blog/blocages-dirigeant-performance-commerciale/blocages-dirigeant-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'closing-b2b-2026',
     title: 'Les techniques de closing ne marchent plus. Voici ce qui marche en 2026.',
     description: 'Le closing a changé. Les techniques manipulatrices ne fonctionnent plus face à des acheteurs hyper-informés. Laurent Serre partage son expérience terrain : ce qui fait vraiment signer en 2026.',
