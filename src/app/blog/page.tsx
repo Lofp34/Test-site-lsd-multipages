@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'closing-b2b-2026',
+    title: 'Les techniques de closing ne marchent plus. Voici ce qui marche en 2026.',
+    description: 'Le closing a changé. Les techniques manipulatrices ne fonctionnent plus face à des acheteurs hyper-informés. Laurent Serre partage son expérience terrain : ce qui fait vraiment signer en 2026.',
+    date: '2026-06-05',
+    readTime: '6 min',
+    category: 'Closing B2B / Techniques de vente',
+    image: '/images/blog/closing-b2b-2026/closing-b2b-2026-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'commercial-en-2026-competences-qui-feront-difference',
     title: 'Être commercial en 2026 : les compétences qui feront la différence',
     description: 'Les commerciaux qui cartonnent en 2026 ne sont pas ceux qui maîtrisent 50 techniques. Ce sont ceux qui savent préparer avec l\'IA, diagnostiquer avant de pitcher, gérer l\'indécision, prioriser avec les données et résister au bruit.',
