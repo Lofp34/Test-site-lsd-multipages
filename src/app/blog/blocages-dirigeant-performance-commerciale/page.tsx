@@ -160,6 +160,35 @@ export default function BlocagesDirigeantPage() {
             </p>
           </div>
 
+          {/* Carrousel BD */}
+          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 my-8">
+            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+              Carrousel BD : Les blocages du dirigeant
+            </p>
+            <p className="text-sm text-amber-700 mb-5">
+              13 planches pour découvrir l'histoire d'un dirigeant qui croyait que le problème était son équipe — avant de comprendre que le vrai blocage, c'était lui.
+            </p>
+            <BDCarousel images={carouselImages} />
+            <div className="mt-4 text-center">
+              <Link
+                href="/downloads/carrousel-blocages-dirigeant.pdf"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                Télécharger le PDF (13 planches)
+              </Link>
+            </div>
+          </div>
+
+          {/* Badge CTA diagnostic */}
+          <div className="mb-8 text-center">
+            <Link
+              href="/diagnostic"
+              className="inline-flex items-center gap-2 bg-mint-green/10 text-mint-green text-sm font-medium px-4 py-2 rounded-full hover:bg-mint-green/20 transition-colors"
+            >
+              Vous vous reconnaissez ? Faites un diagnostic offert →
+            </Link>
+          </div>
+
           <p className="text-xl text-gray-600 leading-relaxed mb-8">
             Je vais vous raconter une histoire qui revient dans presque tous mes accompagnements. Celle d'un dirigeant qui m'appelle, désabusé, pour me dire : « Laurent, mes commerciaux ne performent pas. Il faut que tu m'aides à les remettre dans le droit chemin. »
           </p>
