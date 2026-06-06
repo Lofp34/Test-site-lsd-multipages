@@ -285,13 +285,6 @@ export default function BlocagesDirigeantPage() {
             </p>
           </div>
 
-          {/* BD Carrousel */}
-          <section className="my-12">
-            <h2 className="text-3xl font-title font-bold text-blue-ink mb-6">
-              La BD : l\u2019histoire d\u2019un dirigeant qui d\u00e9couvre que le probl\u00e8me, c\u2019est lui
-            </h2>
-            <BDCarousel images={carouselImages} />
-          </section>
 
           {/* Articles liés (maillage) */}
           <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-8 my-12">

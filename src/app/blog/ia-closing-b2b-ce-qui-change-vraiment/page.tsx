@@ -210,7 +210,50 @@ export default function IAClosingB2BPage() {
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
-          <AuthorCard />
+          <div className="not-prose mb-8">
+            <AuthorCard />
+          </div>
+
+          {/* TL;DR */}
+          <div className="bg-gradient-to-r from-blue-ink/5 via-blue-ink/5 to-transparent border-l-4 border-orange-soft p-6 rounded-r-xl mb-8">
+            <p className="text-lg font-semibold text-blue-ink mb-2">✨ Ce que vous allez retenir</p>
+            <p className="text-gray-700 leading-relaxed">
+              L'IA ne remplace pas le closing, elle le rend plus efficace. Entre CRM augmenté, analyse de pipeline et suivi automatisé, les outils existent. Mais trois pièges guettent les équipes qui se précipitent : écrire par IA sans relire, perdre son instinct, et refroidir la relation. Voici ce que Laurent voit sur le terrain.
+            </p>
+          </div>
+
+          {/* Carrousel BD */}
+          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 my-8">
+            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+              Carrousel BD : L'IA au closing B2B
+            </p>
+            <p className="text-sm text-amber-700 mb-5">
+              12 planches pour découvrir l'histoire de Stéphane, commercial terrain, qui apprend à utiliser l'IA sans perdre le lien humain.
+            </p>
+            <BDCarousel
+              images={carouselImages}
+              title="Carrousel BD : L'IA au closing B2B"
+              maxPreview={2}
+            />
+            <div className="mt-4 text-center">
+              <Link
+                href="/pdf/carrousels/ia-closing-b2b-carrousel.pdf"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                Télécharger le PDF (12 planches)
+              </Link>
+            </div>
+          </div>
+
+          {/* Badge CTA diagnostic */}
+          <div className="mb-8 text-center">
+            <Link
+              href="/diagnostic"
+              className="inline-flex items-center gap-2 bg-mint-green/10 text-mint-green text-sm font-medium px-4 py-2 rounded-full hover:bg-mint-green/20 transition-colors"
+            >
+              Vous ne savez pas par où commencer avec l'IA ? Faites un diagnostic offert →
+            </Link>
+          </div>
 
           <p className="lead">
             La question revient dans tous mes débriefs avec des dirigeants : « Est-ce que l'IA peut vraiment 
@@ -367,95 +410,45 @@ export default function IAClosingB2BPage() {
               d'organisation et de discipline.
             </strong>
           </p>
-        </div>
-      </article>
 
-      {/* CTA Section */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="bg-gradient-to-br from-blue-ink to-blue-900 rounded-2xl p-8 sm:p-12 text-white">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl font-title font-bold mb-4">
-              Un diagnostic pour voir où vous en êtes
-            </h2>
-            <p className="text-white/80 mb-8 text-lg">
-              90 minutes sur le terrain avec moi pour analyser votre cycle de closing, 
-              identifier les vrais blocages et repartir avec un plan d'action concret.
-            </p>
-            <Link
-              href="/diagnostic"
-              className="inline-block bg-orange-soft hover:bg-orange-soft-hover text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
-            >
-              Je prends rendez-vous
-            </Link>
+          {/* FAQ */}
+          <div className="my-12">
+            <h2 id="faq" className="text-3xl font-title font-bold text-blue-ink mb-6">Questions fréquentes sur l'IA et le closing B2B</h2>
+            <div className="space-y-4">
+              <div className="bg-gray-50 rounded-xl p-6">
+                <h3 className="font-semibold text-blue-ink mb-2">L'IA peut-elle remplacer un commercial pour le closing ?</h3>
+                <p className="text-gray-600">Non. L'IA ne remplace pas le commercial dans le closing, elle l'outille. La décision d'achat reste une affaire humaine : relation, contexte, confiance. L'IA peut préparer, analyser, suggérer, mais elle ne peut pas incarner la relation commerciale.</p>
+              </div>
+              <div className="bg-gray-50 rounded-xl p-6">
+                <h3 className="font-semibold text-blue-ink mb-2">Quels outils IA pour améliorer son taux de closing ?</h3>
+                <p className="text-gray-600">Les plus efficaces sont les CRM augmentés par l'IA (score de maturité, signaux faibles), les analyseurs de sentiment, les générateurs de synthèse d'appels. Mais aucun outil ne décide à la place du commercial.</p>
+              </div>
+              <div className="bg-gray-50 rounded-xl p-6">
+                <h3 className="font-semibold text-blue-ink mb-2">Comment utiliser l'IA sans perdre la relation client ?</h3>
+                <p className="text-gray-600">La clé : utiliser l'IA pour la préparation et l'analyse, pas pour l'interaction directe. Ne jamais envoyer un message généré par IA sans relecture humaine. L'IA prépare, le commercial mène.</p>
+              </div>
+              <div className="bg-gray-50 rounded-xl p-6">
+                <h3 className="font-semibold text-blue-ink mb-2">L'IA améliore-t-elle vraiment les performances commerciales ?</h3>
+                <p className="text-gray-600">Oui, avec des conditions. Les équipes qui utilisent bien l'IA gagnent en efficacité sur la préparation, la qualification et le suivi. Mais le taux de conversion final dépend toujours de la compétence humaine.</p>
+              </div>
+              <div className="bg-gray-50 rounded-xl p-6">
+                <h3 className="font-semibold text-blue-ink mb-2">Quels sont les risques de l'IA dans la vente B2B ?</h3>
+                <p className="text-gray-600">Standardisation excessive, dépendance analyseuse, froideur relationnelle. Le pire scénario : un commercial remplacé non par l'IA, mais par un concurrent qui utilise l'IA sans perdre l'humain.</p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
 
-      {/* Mid-article CTA - Bootcamp */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="bg-white border border-gray-200 rounded-2xl p-8 sm:p-12">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-4">
-              Vous voulez aller plus loin sur le closing ?
-            </h2>
-            <p className="text-gray-600 mb-8 text-lg">
-              Le Bootcamp Closing B2B est un programme intensif de 2 jours pour vos équipes : 
-              mise en situation, analyse des pratiques, et plan d'action personnalisé.
-            </p>
-            <Link
-              href="/bootcamp"
-              className="inline-block bg-blue-ink hover:bg-blue-800 text-white font-semibold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl"
-            >
+          {/* CTA buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 my-12">
+            <Link href="/diagnostic" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors text-center">
+              Faire un diagnostic offert
+            </Link>
+            <Link href="/bootcamp" className="inline-flex items-center justify-center px-6 py-3 border border-blue-ink text-base font-medium rounded-full text-blue-ink hover:bg-blue-ink/10 transition-colors text-center">
               Découvrir le Bootcamp
             </Link>
           </div>
         </div>
-      </section>
-
-      {/* BD Carrousel */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="bg-gray-50 rounded-2xl p-8 sm:p-12">
-          <h2 className="text-2xl font-title font-bold text-blue-ink text-center mb-8">
-            La BD du closing augmenté par l'IA
-          </h2>
-          <BDCarousel
-            images={carouselImages}
-            title="Carrousel BD - L'IA au closing B2B"
-            maxPreview={4}
-          />
-        </div>
-      </section>
-
-      {/* FAQ Section */}
-      <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="border-t border-gray-200 pt-12">
-          <h2 className="text-2xl font-title font-bold text-blue-ink text-center mb-8">
-            Questions fréquentes sur l'IA et le closing B2B
-          </h2>
-          <div className="space-y-6">
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
-              <h3 className="font-semibold text-blue-ink mb-2">L'IA peut-elle remplacer un commercial pour le closing ?</h3>
-              <p className="text-gray-600">Non. L'IA ne remplace pas le commercial dans le closing, elle l'outille. La décision d'achat reste une affaire humaine : relation, contexte, confiance. L'IA peut préparer, analyser, suggérer, mais elle ne peut pas incarner la relation commerciale.</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
-              <h3 className="font-semibold text-blue-ink mb-2">Quels outils IA pour améliorer son taux de closing ?</h3>
-              <p className="text-gray-600">Les plus efficaces sont les CRM augmentés par l'IA (score de maturité, signaux faibles), les analyseurs de sentiment, les générateurs de synthèse d'appels. Mais aucun outil ne décide à la place du commercial.</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
-              <h3 className="font-semibold text-blue-ink mb-2">Comment utiliser l'IA sans perdre la relation client ?</h3>
-              <p className="text-gray-600">La clé : utiliser l'IA pour la préparation et l'analyse, pas pour l'interaction directe. Ne jamais envoyer un message généré par IA sans relecture humaine. L'IA prépare, le commercial mène.</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
-              <h3 className="font-semibold text-blue-ink mb-2">L'IA améliore-t-elle vraiment les performances commerciales ?</h3>
-              <p className="text-gray-600">Oui, avec des conditions. Les équipes qui utilisent bien l'IA gagnent en efficacité sur la préparation, la qualification et le suivi. Mais le taux de conversion final dépend toujours de la compétence humaine.</p>
-            </div>
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
-              <h3 className="font-semibold text-blue-ink mb-2">Quels sont les risques de l'IA dans la vente B2B ?</h3>
-              <p className="text-gray-600">Standardisation excessive, dépendance analyseuse, froideur relationnelle. Le pire scénario : un commercial remplacé non par l'IA, mais par un concurrent qui utilise l'IA sans perdre l'humain.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      </article>
 
       {/* Navigation */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
