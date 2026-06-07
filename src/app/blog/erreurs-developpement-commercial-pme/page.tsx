@@ -188,6 +188,16 @@ export default function ErreursDeveloppementCommercialPage() {
             </div>
           </div>
 
+          {/* CTA rapide après carrousel */}
+          <div className="bg-mint-green/5 border border-mint-green/20 rounded-2xl p-5 my-10 text-center">
+            <p className="text-gray-700 font-medium">
+              Vous vous reconnaissez dans une de ces erreurs ?{' '}
+              <Link href="/diagnostic" className="text-mint-green hover:text-mint-green/80 font-semibold underline underline-offset-2">
+                Découvrez par quelle erreur commencer →
+              </Link>
+            </p>
+          </div>
+
           {/* Sommaire */}
           <div className="mt-10 p-6 bg-blue-ink/5 rounded-xl border border-blue-ink/10">
             <p className="text-sm font-semibold text-blue-ink mb-3">📑 Sommaire</p>
@@ -288,6 +298,20 @@ export default function ErreursDeveloppementCommercialPage() {
           <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6 my-10">
             <p className="text-lg font-title font-bold text-amber-800 mb-2">Règle des 90 jours</p>
             <p className="text-amber-700">Un seul canal, une seule priorité, un seul indicateur. Le développement commercial d&apos;une PME se construit en concentrant les forces, pas en les dispersant. La dispersion est un confort psychologique : elle donne l&apos;impression d&apos;avancer partout. En réalité, on n&apos;avance nulle part.</p>
+          </div>
+
+          {/* CTA mi-article après erreur 3 */}
+          <div className="bg-gradient-to-r from-blue-ink/5 to-blue-ink/10 border border-blue-ink/15 rounded-2xl p-6 my-10">
+            <p className="text-sm font-semibold text-blue-ink mb-2">💡 Vous en êtes déjà à 3 erreurs identifiées ?</p>
+            <p className="text-gray-700 text-sm leading-relaxed mb-4">
+              C&apos;est le signe que votre développement commercial a besoin d&apos;une vraie remise à plat. Je propose un diagnostic gratuit de 45 minutes pour prioriser les actions qui auront le plus d&apos;impact sur votre équipe.
+            </p>
+            <Link
+              href="/diagnostic"
+              className="inline-flex items-center justify-center px-5 py-2.5 bg-mint-green text-white text-sm font-medium rounded-full hover:bg-mint-green/90 transition-colors"
+            >
+              Réserver mon diagnostic gratuit →
+            </Link>
           </div>
 
           {/* ════════ ERREUR 4 ════════ */}
