@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'erreurs-developpement-commercial-pme',
+    title: 'Développement commercial PME : les 6 erreurs qui coûtent cher (et comment les éviter)',
+    description: 'Recrutement d\'un commercial star avant l\'heure, CRM sans processus, dispersion multicanal : les 6 erreurs terrain qui sabotent le développement commercial des PME et les corrections immédiates.',
+    date: '2026-06-07',
+    readTime: '10 min',
+    category: 'Développement commercial / Performance',
+    image: '/images/blog/2026-06-07-erreurs-developpement-commercial-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'ia-closing-b2b-ce-qui-change-vraiment',
     title: "L'IA au closing B2B : ce qui change vraiment en 2026",
     description: "L'IA peut-elle vraiment aider à signer plus de ventes ? Laurent Serre partage ce qu'il voit sur le terrain : les outils qui marchent, les pièges à éviter, et ce que l'IA ne remplacera jamais dans le closing B2B.",
