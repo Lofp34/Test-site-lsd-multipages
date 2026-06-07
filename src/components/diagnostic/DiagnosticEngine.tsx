@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 import {
   questions, categories, personas, getComparisonText,
-  getCategoryMaxScore, getRecommendations,
+  getCategoryMaxScore, getMaxTotalScore, getRecommendations,
   type CategoryId, type CategoryResult, type DiagnosticResult,
 } from '@/data/diagnostic-commercial-data';
 
@@ -28,7 +28,7 @@ const categoryIcons: Record<CategoryId, React.ReactNode> = {
 // MAIN ENGINE
 // ============================================================
 export default function DiagnosticEngine() {
-  const [step, setStep] = useState<'home' | 'quiz' | 'results' | 'unlocked'>('home');
+  const [step, setStep] = useState<'home' | 'quiz' | 'calculating' | 'results' | 'unlocked'>('home');
   const [currentQIndex, setCurrentQIndex] = useState(0);
   const [score, setScore] = useState<Record<number, number>>({});
   const [answeredIds, setAnsweredIds] = useState<number[]>([]);
@@ -43,7 +43,6 @@ export default function DiagnosticEngine() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [captureDone, setCaptureDone] = useState(false);
 
-  const [visitorCount] = useState(() => Math.floor(Math.random() * 151) + 150);
   const topRef = useRef<HTMLDivElement>(null);
 
   const scrollTop = () => {
@@ -54,6 +53,8 @@ export default function DiagnosticEngine() {
   // HANDLE ANSWER
   // ============================================================
   function handleAnswer(points: number) {
+    if (isCalculating) return;
+
     const q = questions[currentQIndex];
     if (!q) return;
 
@@ -75,6 +76,7 @@ export default function DiagnosticEngine() {
   // ============================================================
   function calculateResults(answers: Record<number, number>) {
     setIsCalculating(true);
+    setStep('calculating');
     scrollTop();
 
     setTimeout(() => {
@@ -189,7 +191,7 @@ export default function DiagnosticEngine() {
               </button>
 
               <div className="text-white/30 text-xs mt-3">
-                {visitorCount} diagnostics réalisés cette semaine
+                Diagnostic structuré en 5 minutes
               </div>
 
               <div className="mt-16 grid grid-cols-2 sm:grid-cols-5 gap-6 max-w-2xl mx-auto">
