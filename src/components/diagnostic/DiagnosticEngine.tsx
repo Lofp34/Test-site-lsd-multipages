@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Target, GitBranch, Users, BarChart3, TrendingUp,
@@ -44,14 +44,7 @@ export default function DiagnosticEngine() {
   const [captureDone, setCaptureDone] = useState(false);
 
   const [visitorCount] = useState(() => Math.floor(Math.random() * 151) + 150);
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const topRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    return () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
-    };
-  }, []);
 
   const scrollTop = () => {
     if (topRef.current) topRef.current.scrollIntoView({ behavior: 'smooth' });
@@ -60,7 +53,7 @@ export default function DiagnosticEngine() {
   // ============================================================
   // HANDLE ANSWER
   // ============================================================
-  const handleAnswer = useCallback((points: number) => {
+  function handleAnswer(points: number) {
     const q = questions[currentQIndex];
     if (!q) return;
 
@@ -75,12 +68,12 @@ export default function DiagnosticEngine() {
     } else {
       calculateResults(newScore);
     }
-  }, [currentQIndex, score, answeredIds]);
+  }
 
   // ============================================================
   // CALCULATE RESULTS
   // ============================================================
-  const calculateResults = useCallback((answers: Record<number, number>) => {
+  function calculateResults(answers: Record<number, number>) {
     setIsCalculating(true);
     scrollTop();
 
@@ -112,7 +105,7 @@ export default function DiagnosticEngine() {
       setStep('results');
       scrollTop();
     }, 1800);
-  }, []);
+  }
 
   // ============================================================
   // SUBMIT LEAD TO HUBSPOT
