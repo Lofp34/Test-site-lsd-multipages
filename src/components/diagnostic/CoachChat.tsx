@@ -33,15 +33,11 @@ export default function CoachChat({ questionnaireContext, userEmail, userName, o
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'coach',
-      content: `Bonjour ${userName || 'dirigeant'}. J'ai analysé vos réponses au diagnostic. J'aimerais approfondir avec vous.`,
-      timestamp: Date.now(),
-    },
-    {
-      role: 'coach',
-      content: `Quel est selon vous le principal frein qui vous empêche d'atteindre vos objectifs commerciaux aujourd'hui ?`,
+      content: `Bonjour ${userName || 'dirigeant'}. J'ai analysé vos réponses au diagnostic 360°. Le Sales Coach est là pour creuser avec vous.`,
       timestamp: Date.now(),
     },
   ]);
+  const [hasStarted, setHasStarted] = useState(false);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -57,8 +53,60 @@ export default function CoachChat({ questionnaireContext, userEmail, userName, o
     inputRef.current?.focus();
   }, []);
 
+  const startCoaching = async () => {
+    if (!input.trim() || isLoading) return;
+    setHasStarted(true);
+
+    const userMsg: Message = {
+      role: 'user',
+      content: input.trim(),
+      timestamp: Date.now(),
+    };
+
+    setMessages(prev => [...prev, userMsg]);
+    setInput('');
+    setIsLoading(true);
+
+    try {
+      const res = await fetch('/api/diagnostic/coach', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          message: userMsg.content,
+          context: questionnaireContext,
+          email: userEmail,
+          name: userName,
+          history: [],
+        }),
+      });
+
+      if (!res.ok) throw new Error('API error');
+      const data = await res.json();
+
+      const coachMsg: Message = {
+        role: 'coach',
+        content: data.response || 'Je réfléchis...',
+        timestamp: Date.now(),
+      };
+
+      setMessages(prev => [...prev, coachMsg]);
+    } catch {
+      setMessages(prev => [...prev, {
+        role: 'coach',
+        content: 'Je n\'ai pas pu analyser votre message. Pouvez-vous reformuler ?',
+        timestamp: Date.now(),
+      }]);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const sendMessage = async () => {
     if (!input.trim() || isLoading) return;
+    if (!hasStarted) {
+      startCoaching();
+      return;
+    }
 
     const userMsg: Message = {
       role: 'user',

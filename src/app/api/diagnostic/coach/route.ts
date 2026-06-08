@@ -1,47 +1,48 @@
 // ============================================================
 // API Route: Sales Coach Chat
-// Agent conversationnel qui reçoit le contexte du questionnaire
-// et engage le prospect avec des questions d'approfondissement.
+// Connecte le chat du diagnostic au VRAI agent Sales Coach
+// (agent:sales-coach) via le CLI openclaw.
+// Fallback : prompt LLM avec la personnalité exacte du coach.
 // ============================================================
 
 import { NextResponse } from 'next/server';
+import { execSync } from 'child_process';
 
-const COACH_PROMPT = `Tu es un Sales Coach expert en diagnostic commercial B2B. Tu accompagnes des dirigeants de PME dans l'analyse de leur organisation commerciale.
+// Personnalité du Sales Coach (fallback si agent indisponible)
+const COACH_PROMPT = `Tu es un Sales Coach expert en diagnostic commercial B2B. Tu accompagnes des dirigeants de PME.
 
-CONTEXTE : Tu as reçu les résultats complets du questionnaire d'auto-diagnostic commercial 360° d'un dirigeant. Tu connais ses réponses sur ses 5 axes (prospection, processus, équipe, performance, stratégie) ainsi que le score global et les signaux faibles détectés.
-
-TON RÔLE :
-- Tu es un coach, pas un commercial : tu poses des questions, tu ne vends pas
-- Tu creuses pour comprendre le vrai problème derrière les symptômes
-- Tu reformules pour valider ta compréhension
-- Tu ne donnes pas de conseils prématurés sans avoir exploré le contexte
-- Tu restes bienveillant, jamais accusateur
-
-RÈGLES STRICTES :
-- Ne mentionne JAMAIS que tu es une IA ou un agent conversationnel — tu es un Sales Coach
-- Ne demande JAMAIS de coordonnées bancaires, mots de passe, ou infos personnelles
-- Ne fais JAMAIS de promesses de résultats financiers
-- Ne redirige pas vers "Laurent" ou un autre humain — tu es le coach
-- Si la conversation dérive trop, recentre sur le diagnostic commercial
-- Maximum 3-4 questions par échange avant de proposer une piste concrète
-- Au bout de 5-6 échanges, propose naturellement de prendre rendez-vous avec Laurent pour un débriefing complet
+PERSONNALITÉ (tirée de ton SOUL.md) :
+- **coach terrain** : tu parles de comportements observables et entraînables
+- **analyste comportemental** : tu détectes les moments où la conversation monte, casse, stagne ou se déséquilibre
+- **directeur commercial structuré** : tu relies l'échange à son objectif réel et au contexte de vente
+- **système d'entraînement progressif** : tu choisis une priorité de progression, pas quinze conseils
 
 TON STYLE :
 - Direct mais pas agressif
-- Question ouvertes ("Qu'est-ce qui vous fait dire ça ?", "Comment voyez-vous l'évolution ?")
+- Questions ouvertes : "Qu'est-ce qui vous fait dire ça ?", "Comment voyez-vous l'évolution ?"
 - Pas de jargon inutile
-- Utilise "vous" de politesse
+- Utilise "vous"
+- Tu ne donnes pas de conseils prématurés sans avoir exploré le contexte
+- Tu critiques un comportement observable, pas une personne
+- Concret, sourcé, immédiatement entraînable
+- Tu refuses la logique de surveillance — le prospect doit sentir qu'il reçoit un coaching privé
 
-CONTEXTE DU DIRIGEANT :
+RÈGLES STRICTES :
+- Ne mentionne JAMAIS que tu es une IA — tu es un Sales Coach
+- Pas de promesses de résultats financiers
+- Ne redirige pas vers Laurent — tu es le coach
+- Au bout de 5-6 échanges, propose naturellement de prendre rendez-vous avec Laurent
+
+CONTEXTE DU DIRIGEANT (réponses au questionnaire) :
 {context}
 
-HISTORIQUE DE LA CONVERSATION :
+HISTORIQUE :
 {history}
 
 MESSAGE DU DIRIGEANT :
 {message}
 
-Ne réponds que par ta réponse de coach (pas de méta-texte).`;
+Réponds uniquement par ta réponse de coach.`;
 
 // ============================================================
 // Route
@@ -59,9 +60,47 @@ export async function POST(request: Request) {
       );
     }
 
-    // Construire le prompt avec l'historique
+    // Construire le message pour l'agent
+    // Premier message → contexte complet
+    // Messages suivants → historique + nouveau message
+    const isFirstMessage = !history || history.length <= 1; // 2 messages initiaux du coach
+    const sessionKey = `diagnostic-${email || 'unknown'}`;
+
+    const agentMessage = isFirstMessage
+      ? `Tu reçois un dirigeant de PME qui vient de remplir son questionnaire diagnostic commercial.
+
+CONTEXTE COMPLET DE SES RÉPONSES (20 questions, 5 axes) :
+${context}
+
+Prénom du dirigeant : ${name || 'Dirigeant'}
+Email : ${email || 'non renseigné'}
+
+ACCUEILLE-LE comme un coach terrain. Tu as déjà analysé discrètement ses réponses. Pose-lui des questions ouvertes pour creuser, ne donne pas de diagnostic brut. Sois direct mais bienveillant. Maximum 3-4 questions dans ton premier message.`
+      : `${history.slice(-8).map((m: { role: string; content: string }) =>
+          m.role === 'coach' ? `[Coach] ${m.content}` : `[Dirigeant] ${m.content}`
+        ).join('\n')}
+
+[Dirigeant] ${message}
+
+Réponds en tant que Sales Coach, de façon concise et coach terrain.`;
+
+    // ========================================
+    // PRIORITÉ 1 : Appel du vrai agent Sales Coach via CLI
+    // ========================================
+    try {
+      const response = await callSalesCoachAgent(agentMessage, sessionKey);
+      if (response) {
+        return NextResponse.json({ response });
+      }
+    } catch {
+      console.warn('Sales Coach agent unavailable, using LLM fallback');
+    }
+
+    // ========================================
+    // PRIORITÉ 2 : Fallback LLM avec la personnalité du Sales Coach
+    // ========================================
     const historyStr = (history || [])
-      .slice(-10) // garder les 10 derniers messages max
+      .slice(-8)
       .map((m: { role: string; content: string }) =>
         m.role === 'coach' ? `Coach : ${m.content}` : `Dirigeant : ${m.content}`
       )
@@ -72,43 +111,73 @@ export async function POST(request: Request) {
       .replace('{history}', historyStr)
       .replace('{message}', message);
 
-    // Appel LLM
-    const response = await callCoachLLM(prompt);
+    const fallbackResponse = await callLLMFallback(prompt);
 
-    return NextResponse.json({ response });
+    return NextResponse.json({ response: fallbackResponse });
   } catch (error) {
     console.error('Coach chat error:', error);
     return NextResponse.json(
       { response: 'Je n\'ai pas pu traiter votre message. Pouvez-vous reformuler ?' },
-      { status: 200 } // 200 pour ne pas casser l'UX du chat
+      { status: 200 }
     );
   }
 }
 
-async function callCoachLLM(prompt: string): Promise<string> {
+// ============================================================
+// Appel du vrai agent Sales Coach via CLI
+// ============================================================
+
+async function callSalesCoachAgent(message: string, sessionKey: string): Promise<string | null> {
+  // Échappe le message pour le shell (JSON encoding)
+  const escapedMessage = message
+    .replace(/\\/g, '\\\\')
+    .replace(/"/g, '\\"')
+    .replace(/\n/g, '\\n')
+    .replace(/\t/g, '\\t');
+
+  const cmd = `openclaw agent --agent sales-coach --session-key "agent:sales-coach:${sessionKey}" --message "${escapedMessage}" --json --timeout 30 2>/dev/null`;
+
+  const output = execSync(cmd, {
+    encoding: 'utf-8',
+    timeout: 35000,
+    maxBuffer: 50 * 1024,
+  });
+
+  // Parser la sortie JSON
+  const lines = output.trim().split('\n');
+  const jsonLine = lines.find(l => l.startsWith('{'));
+
+  if (!jsonLine) return null;
+
+  const data = JSON.parse(jsonLine);
+  if (data.status !== 'ok') return null;
+
+  const payloads = data.result?.payloads;
+  if (!payloads || payloads.length === 0) return null;
+
+  return payloads[0]?.text || null;
+}
+
+// ============================================================
+// Fallback LLM
+// ============================================================
+
+async function callLLMFallback(prompt: string): Promise<string> {
   const deepseekKey = process.env.DEEPSEEK_API_KEY;
   const openaiKey = process.env.OPENAI_API_KEY;
 
-  const messages = [
-    { role: 'user', content: prompt },
-  ];
+  const messages = [{ role: 'user', content: prompt }];
 
-  // Priorité DeepSeek
   if (deepseekKey && deepseekKey.length > 5) {
     try {
       return await callDeepSeek(messages, deepseekKey);
-    } catch {
-      console.warn('DeepSeek fallback');
-    }
+    } catch { /* fall through */ }
   }
 
-  // Fallback OpenAI
   if (openaiKey && openaiKey.length > 5) {
     try {
       return await callOpenAI(messages, openaiKey);
-    } catch {
-      console.warn('OpenAI fallback');
-    }
+    } catch { /* fall through */ }
   }
 
   return 'Je suis temporairement indisponible. Reprenez le diagnostic quand vous voulez.';
@@ -117,18 +186,9 @@ async function callCoachLLM(prompt: string): Promise<string> {
 async function callDeepSeek(messages: { role: string; content: string }[], apiKey: string): Promise<string> {
   const res = await fetch('https://api.deepseek.com/v1/chat/completions', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({
-      model: 'deepseek-chat',
-      messages,
-      temperature: 0.4,
-      max_tokens: 800,
-    }),
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
+    body: JSON.stringify({ model: 'deepseek-chat', messages, temperature: 0.4, max_tokens: 800 }),
   });
-
   if (!res.ok) throw new Error(`DeepSeek error ${res.status}`);
   const data = await res.json();
   return data.choices[0]?.message?.content || '...';
@@ -137,18 +197,9 @@ async function callDeepSeek(messages: { role: string; content: string }[], apiKe
 async function callOpenAI(messages: { role: string; content: string }[], apiKey: string): Promise<string> {
   const res = await fetch('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${apiKey}`,
-    },
-    body: JSON.stringify({
-      model: 'gpt-4o-mini',
-      messages,
-      temperature: 0.4,
-      max_tokens: 800,
-    }),
+    headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${apiKey}` },
+    body: JSON.stringify({ model: 'gpt-4o-mini', messages, temperature: 0.4, max_tokens: 800 }),
   });
-
   if (!res.ok) throw new Error(`OpenAI error ${res.status}`);
   const data = await res.json();
   return data.choices[0]?.message?.content || '...';
