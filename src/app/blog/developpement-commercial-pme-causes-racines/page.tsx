@@ -136,7 +136,7 @@ export default function CausesRacinesPage() {
         <AuthorCard
           author={{
             name: 'Laurent Serre',
-            role: 'Coach commercial — 15 ans de terrain PME',
+            role: 'Coach commercial : 15 ans de terrain PME',
             image: '/images/blog/Laurent-Serre-avatar.jpg',
           }}
         />
@@ -166,14 +166,14 @@ export default function CausesRacinesPage() {
           {/* Carrousel BD */}
           <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-10">
             <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
-              🎬 Carrousel BD — Pourquoi ça patine dans votre équipe
+              🎬 Carrousel BD : pourquoi ça patine dans votre équipe
             </p>
             <p className="text-sm text-amber-700 mb-5">
-              12 planches illustrées — cliquez sur une vignette pour feuilleter la BD dans le lecteur intégré.
+              12 planches illustrées : cliquez sur une vignette pour feuilleter la BD dans le lecteur intégré.
             </p>
             <BDCarousel
               images={carouselImages}
-              title="Carrousel BD — Pourquoi le développement commercial des PME patine"
+              title="Carrousel BD : pourquoi le développement commercial des PME patine"
               maxPreview={3}
             />
             <div className="mt-4 text-center">
