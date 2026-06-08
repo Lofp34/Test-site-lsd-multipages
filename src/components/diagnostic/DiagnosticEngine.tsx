@@ -5,8 +5,9 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Target, GitBranch, Users, BarChart3, TrendingUp,
   ArrowRight, Calendar, CheckCircle, Mail, Building2, User,
-  Shield, Clock, Sparkles, MessageSquare, Lightbulb, AlertTriangle
+  Shield, Clock, Sparkles, MessageSquare, Lightbulb, AlertTriangle, Bot
 } from 'lucide-react';
+import CoachChat from './CoachChat';
 import {
   questions, categories, getCategoryMaxScore, getMaxTotalScore,
   type CategoryId, type DiagnosticAnalysis,
@@ -45,6 +46,8 @@ export default function DiagnosticEngine() {
   const [analysis, setAnalysis] = useState<DiagnosticAnalysis | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [showCoach, setShowCoach] = useState(false);
+  const [questionnaireSummary, setQuestionnaireSummary] = useState('');
 
   // Lead capture (required before analysis)
   const [email, setEmail] = useState('');
@@ -107,6 +110,13 @@ export default function DiagnosticEngine() {
 
     const total = catResults.reduce((s, cr) => s + cr.score, 0);
     const maxTotal = getMaxTotalScore();
+
+    // Build questionnaire summary for Sales Coach
+    const summaryLines = questions.map(q => {
+      const answer = q.answers.find(a => a.points === answers[q.id]);
+      return `- ${q.text}\n  Réponse : ${answer?.text || 'N/A'} (${answers[q.id] || 0}/${Math.max(...q.answers.map(a => a.points))} pts)`;
+    });
+    setQuestionnaireSummary(summaryLines.join('\n'));
 
     setCategoryResults(catResults);
     setTotalScore(total);
@@ -193,6 +203,8 @@ export default function DiagnosticEngine() {
     setCategoryResults([]);
     setTotalScore(0);
     setPercentage(0);
+    setShowCoach(false);
+    setQuestionnaireSummary('');
     scrollTop();
   };
 
@@ -606,6 +618,62 @@ export default function DiagnosticEngine() {
                       </motion.div>
                     );
                   })}
+                </motion.div>
+              )}
+
+              {/* Two CTAs: Laurent + Sales Coach */}
+              <motion.div
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.25 }}
+                className="mb-6"
+              >
+                <h3 className="font-semibold text-blue-ink text-lg mb-4">Donner de la profondeur à cette analyse</h3>
+                <div className="grid sm:grid-cols-2 gap-3">
+                  <a
+                    href="https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone"
+                    target="_blank" rel="noopener noreferrer"
+                    className="flex items-center gap-3 bg-blue-ink hover:bg-blue-ink/90 text-white font-semibold px-5 py-4 rounded-xl transition-all duration-200 shadow-sm group"
+                  >
+                    <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Calendar className="w-5 h-5" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-sm">Approfondir avec Laurent</div>
+                      <div className="text-xs text-white/50">RDV 30 min — débriefing personnalisé</div>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-white/40 group-hover:text-white/70 flex-shrink-0" />
+                  </a>
+
+                  <button
+                    onClick={() => setShowCoach(true)}
+                    className="flex items-center gap-3 bg-white border border-gray-200 hover:border-blue-ink/30 hover:bg-blue-ink/[0.02] text-blue-ink font-semibold px-5 py-4 rounded-xl transition-all duration-200 group text-left"
+                  >
+                    <div className="w-10 h-10 bg-mint-green/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Bot className="w-5 h-5 text-mint-green" />
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <div className="text-sm text-blue-ink">Approfondir avec le Sales Coach</div>
+                      <div className="text-xs text-gray-400">Chat interactif — questions personnalisées</div>
+                    </div>
+                    <MessageSquare className="w-4 h-4 text-gray-300 group-hover:text-blue-ink/50 flex-shrink-0" />
+                  </button>
+                </div>
+              </motion.div>
+
+              {/* Coach Chat Modal */}
+              {showCoach && (
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="mb-6"
+                >
+                  <CoachChat
+                    questionnaireContext={questionnaireSummary}
+                    userEmail={email}
+                    userName={firstName || lastName || ''}
+                    onClose={() => setShowCoach(false)}
+                  />
                 </motion.div>
               )}
 
