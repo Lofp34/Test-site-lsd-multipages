@@ -111,12 +111,19 @@ export default function DiagnosticEngine() {
     const total = catResults.reduce((s, cr) => s + cr.score, 0);
     const maxTotal = getMaxTotalScore();
 
-    // Build questionnaire summary for Sales Coach
-    const summaryLines = questions.map(q => {
-      const answer = q.answers.find(a => a.points === answers[q.id]);
-      return `- ${q.text}\n  Réponse : ${answer?.text || 'N/A'} (${answers[q.id] || 0}/${Math.max(...q.answers.map(a => a.points))} pts)`;
+    // Build questionnaire summary for Sales Coach (enrichi avec scores catégories)
+    const headerLines = catResults.map(cr => {
+      const cat = categories.find(c => c.id === cr.categoryId)!;
+      return `[${cat.label}] ${cr.score}/${cr.maxScore} (${cr.percentage}%)`;
     });
-    setQuestionnaireSummary(summaryLines.join('\n'));
+    const detailLines = questions.map(q => {
+      const answer = q.answers.find(a => a.points === answers[q.id]);
+      const cat = categories.find(c => c.id === q.category)!;
+      return `Q${q.id} (${cat.shortLabel}): ${q.text} → "${answer?.text || 'N/A'}" (${answers[q.id] || 0}/${Math.max(...q.answers.map(a => a.points))})`;
+    });
+    setQuestionnaireSummary(
+      `--- SCORES PAR AXE ---\n${headerLines.join('\n')}\n\n--- DÉTAIL DES 20 RÉPONSES ---\n${detailLines.join('\n')}`
+    );
 
     setCategoryResults(catResults);
     setTotalScore(total);

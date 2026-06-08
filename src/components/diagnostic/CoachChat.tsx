@@ -1,8 +1,115 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MessageSquare, Send, X, User, Bot, ArrowLeft } from 'lucide-react';
+
+// ============================================================
+// Markdown inline renderer (zéro dépendance)
+// ============================================================
+
+function renderMarkdown(text: string): React.ReactNode[] {
+  // Échapper le HTML
+  const escaped = text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+
+  // Split par lignes
+  const lines = escaped.split('\n');
+  const nodes: React.ReactNode[] = [];
+  let inList = false;
+  let listItems: React.ReactNode[] = [];
+
+  lines.forEach((line, li) => {
+    const trimmed = line.trim();
+
+    // Ligne vide → fermer la liste
+    if (!trimmed) {
+      if (inList) {
+        nodes.push(
+          <ul key={`list-${li}`} className="list-disc list-inside space-y-1 my-1">
+            {listItems}
+          </ul>
+        );
+        listItems = [];
+        inList = false;
+      }
+      return;
+    }
+
+    // Item de liste
+    if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+      inList = true;
+      const content = trimmed.slice(2);
+      listItems.push(
+        <li key={`li-${li}`} className="text-sm text-gray-700 leading-relaxed">
+          {renderInline(content)}
+        </li>
+      );
+      return;
+    }
+
+    // Ligne normale
+    if (inList) {
+      nodes.push(
+        <ul key={`list-${li}`} className="list-disc list-inside space-y-1 my-1">
+          {listItems}
+        </ul>
+      );
+      listItems = [];
+      inList = false;
+    }
+
+    nodes.push(
+      <p key={`p-${li}`} className="text-sm text-gray-700 leading-relaxed mb-1 last:mb-0">
+        {renderInline(trimmed)}
+      </p>
+    );
+  });
+
+  // Fermer la dernière liste
+  if (inList && listItems.length > 0) {
+    nodes.push(
+      <ul key="list-end" className="list-disc list-inside space-y-1 my-1">
+        {listItems}
+      </ul>
+    );
+  }
+
+  return nodes;
+}
+
+function renderInline(text: string): React.ReactNode[] {
+  // Patterns : **gras**, *italique*
+  const parts: React.ReactNode[] = [];
+  const regex = /(\*\*(.+?)\*\*|\*(.+?)\*)/g;
+  let lastIdx = 0;
+  let match: RegExpExecArray | null;
+  let key = 0;
+
+  while ((match = regex.exec(text)) !== null) {
+    // Texte avant le match
+    if (match.index > lastIdx) {
+      parts.push(<span key={key++}>{text.slice(lastIdx, match.index)}</span>);
+    }
+
+    if (match[2]) {
+      parts.push(<strong key={key++} className="font-semibold text-blue-ink">{match[2]}</strong>);
+    } else if (match[3]) {
+      parts.push(<em key={key++} className="italic text-gray-600">{match[3]}</em>);
+    }
+
+    lastIdx = match.index + match[0].length;
+  }
+
+  // Reste du texte
+  if (lastIdx < text.length) {
+    parts.push(<span key={key++}>{text.slice(lastIdx)}</span>);
+  }
+
+  return parts;
+}
 
 // ============================================================
 // TYPES
@@ -15,14 +122,42 @@ interface Message {
 }
 
 interface CoachChatProps {
-  /** Contexte du questionnaire (20 réponses) */
   questionnaireContext: string;
-  /** Email du prospect */
   userEmail: string;
-  /** Prénom du prospect */
   userName: string;
-  /** Fermeture du chat */
   onClose: () => void;
+}
+
+// ============================================================
+// Bubble de message
+// ============================================================
+
+function MessageBubble({ msg }: { msg: Message }) {
+  const isCoach = msg.role === 'coach';
+  const rendered = useMemo(() => isCoach ? renderMarkdown(msg.content) : msg.content, [msg.content, isCoach]);
+
+  return (
+    <div className={`flex items-start gap-3 ${isCoach ? '' : 'flex-row-reverse'}`}>
+      <div className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 ${
+        isCoach ? 'bg-blue-ink/5' : 'bg-mint-green/10'
+      }`}>
+        {isCoach ? (
+          <Bot className="w-3.5 h-3.5 text-blue-ink" />
+        ) : (
+          <User className="w-3.5 h-3.5 text-mint-green" />
+        )}
+      </div>
+      {isCoach ? (
+        <div className="max-w-[85%] px-4 py-2.5 rounded-xl bg-white text-gray-700 border border-gray-100 shadow-sm text-sm">
+          {rendered}
+        </div>
+      ) : (
+        <div className="max-w-[80%] px-4 py-2.5 rounded-xl bg-blue-ink text-white text-sm">
+          {msg.content}
+        </div>
+      )}
+    </div>
+  );
 }
 
 // ============================================================
@@ -33,7 +168,7 @@ export default function CoachChat({ questionnaireContext, userEmail, userName, o
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'coach',
-      content: `Bonjour ${userName || 'dirigeant'}. J'ai analysé vos réponses au diagnostic 360°. Le Sales Coach est là pour creuser avec vous.`,
+      content: `Parlez-moi de votre situation : qu'est-ce qui vous amène aujourd'hui ?`,
       timestamp: Date.now(),
     },
   ]);
@@ -43,12 +178,10 @@ export default function CoachChat({ questionnaireContext, userEmail, userName, o
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Scroll to bottom on new messages
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
-  // Focus input on mount
   useEffect(() => {
     inputRef.current?.focus();
   }, []);
@@ -57,12 +190,7 @@ export default function CoachChat({ questionnaireContext, userEmail, userName, o
     if (!input.trim() || isLoading) return;
     setHasStarted(true);
 
-    const userMsg: Message = {
-      role: 'user',
-      content: input.trim(),
-      timestamp: Date.now(),
-    };
-
+    const userMsg: Message = { role: 'user', content: input.trim(), timestamp: Date.now() };
     setMessages(prev => [...prev, userMsg]);
     setInput('');
     setIsLoading(true);
@@ -79,22 +207,14 @@ export default function CoachChat({ questionnaireContext, userEmail, userName, o
           history: [],
         }),
       });
-
       if (!res.ok) throw new Error('API error');
       const data = await res.json();
-
-      const coachMsg: Message = {
-        role: 'coach',
-        content: data.response || 'Je réfléchis...',
-        timestamp: Date.now(),
-      };
-
-      setMessages(prev => [...prev, coachMsg]);
+      setMessages(prev => [...prev, {
+        role: 'coach', content: data.response || 'Je réfléchis...', timestamp: Date.now(),
+      }]);
     } catch {
       setMessages(prev => [...prev, {
-        role: 'coach',
-        content: 'Je n\'ai pas pu analyser votre message. Pouvez-vous reformuler ?',
-        timestamp: Date.now(),
+        role: 'coach', content: 'Je n\'ai pas pu analyser votre message. Pouvez-vous reformuler ?', timestamp: Date.now(),
       }]);
     } finally {
       setIsLoading(false);
@@ -103,17 +223,9 @@ export default function CoachChat({ questionnaireContext, userEmail, userName, o
 
   const sendMessage = async () => {
     if (!input.trim() || isLoading) return;
-    if (!hasStarted) {
-      startCoaching();
-      return;
-    }
+    if (!hasStarted) { startCoaching(); return; }
 
-    const userMsg: Message = {
-      role: 'user',
-      content: input.trim(),
-      timestamp: Date.now(),
-    };
-
+    const userMsg: Message = { role: 'user', content: input.trim(), timestamp: Date.now() };
     setMessages(prev => [...prev, userMsg]);
     setInput('');
     setIsLoading(true);
@@ -127,43 +239,25 @@ export default function CoachChat({ questionnaireContext, userEmail, userName, o
           context: questionnaireContext,
           email: userEmail,
           name: userName,
-          history: [...messages, userMsg].map(m => ({
-            role: m.role,
-            content: m.content,
-          })),
+          history: [...messages, userMsg].map(m => ({ role: m.role, content: m.content })),
         }),
       });
-
       if (!res.ok) throw new Error('API error');
-
       const data = await res.json();
-
-      const coachMsg: Message = {
-        role: 'coach',
-        content: data.response || 'Je réfléchis...',
-        timestamp: Date.now(),
-      };
-
-      setMessages(prev => [...prev, coachMsg]);
+      setMessages(prev => [...prev, {
+        role: 'coach', content: data.response || 'Je réfléchis...', timestamp: Date.now(),
+      }]);
     } catch {
-      setMessages(prev => [
-        ...prev,
-        {
-          role: 'coach',
-          content: 'Je n\'ai pas pu traiter votre message. Pouvez-vous reformuler ?',
-          timestamp: Date.now(),
-        },
-      ]);
+      setMessages(prev => [...prev, {
+        role: 'coach', content: 'Je n\'ai pas pu traiter votre message. Pouvez-vous reformuler ?', timestamp: Date.now(),
+      }]);
     } finally {
       setIsLoading(false);
     }
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter' && !e.shiftKey) {
-      e.preventDefault();
-      sendMessage();
-    }
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
   };
 
   return (
@@ -193,7 +287,7 @@ export default function CoachChat({ questionnaireContext, userEmail, userName, o
       </div>
 
       {/* Messages */}
-      <div className="h-[400px] overflow-y-auto px-4 py-4 space-y-4 bg-gray-50/50">
+      <div className="h-[420px] overflow-y-auto px-4 py-4 space-y-4 bg-gray-50/50">
         <AnimatePresence>
           {messages.map((msg, i) => (
             <motion.div
@@ -201,29 +295,12 @@ export default function CoachChat({ questionnaireContext, userEmail, userName, o
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2 }}
-              className={`flex items-start gap-3 ${msg.role === 'user' ? 'flex-row-reverse' : ''}`}
             >
-              <div className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 ${
-                msg.role === 'coach' ? 'bg-blue-ink/5' : 'bg-mint-green/10'
-              }`}>
-                {msg.role === 'coach' ? (
-                  <Bot className="w-3.5 h-3.5 text-blue-ink" />
-                ) : (
-                  <User className="w-3.5 h-3.5 text-mint-green" />
-                )}
-              </div>
-              <div className={`max-w-[80%] px-4 py-2.5 rounded-xl text-sm leading-relaxed ${
-                msg.role === 'coach'
-                  ? 'bg-white text-gray-700 border border-gray-100 shadow-sm'
-                  : 'bg-blue-ink text-white'
-              }`}>
-                {msg.content}
-              </div>
+              <MessageBubble msg={msg} />
             </motion.div>
           ))}
         </AnimatePresence>
 
-        {/* Loading */}
         {isLoading && (
           <motion.div
             initial={{ opacity: 0 }}
