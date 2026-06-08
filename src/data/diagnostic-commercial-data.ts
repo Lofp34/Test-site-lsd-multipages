@@ -56,6 +56,38 @@ export interface DiagnosticResult {
 }
 
 // ============================================================
+// Diagnostic Analysis — retour de l'API LLM
+// ============================================================
+
+export interface CategoryAnalysis {
+  categoryId: CategoryId;
+  categoryLabel: string;
+  score: number;
+  maxScore: number;
+  percentage: number;
+  level: 'critique' | 'prioritaire' | 'amelioration' | 'consolidation' | 'excellent';
+  comment: string;
+}
+
+export interface DiagnosticAnalysis {
+  type: 'analysis';
+  persona: {
+    name: string;
+    emoji: string;
+    title: string;
+    description: string;
+  };
+  synthesis: string;
+  categories: CategoryAnalysis[];
+  signauxFaibles: string[];
+  risques: string[];
+  hypotheses: string[];
+  questionsApprofondissement: string[];
+  recommandations: string[];
+  prochaineEtape: string;
+}
+
+// ============================================================
 // CATÉGORIES
 // ============================================================
 export const categories: Category[] = [

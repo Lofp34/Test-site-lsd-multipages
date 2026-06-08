@@ -5,13 +5,23 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Target, GitBranch, Users, BarChart3, TrendingUp,
   ArrowRight, Calendar, CheckCircle, Mail, Building2, User,
-  Shield, Clock
+  Shield, Clock, Sparkles, MessageSquare, Lightbulb, AlertTriangle
 } from 'lucide-react';
 import {
-  questions, categories, personas, getComparisonText,
-  getCategoryMaxScore, getMaxTotalScore, getRecommendations,
-  type CategoryId, type CategoryResult, type DiagnosticResult,
+  questions, categories, getCategoryMaxScore, getMaxTotalScore,
+  type CategoryId, type DiagnosticAnalysis,
 } from '@/data/diagnostic-commercial-data';
+
+// ============================================================
+// TYPES
+// ============================================================
+
+interface CategoryScore {
+  categoryId: CategoryId;
+  score: number;
+  maxScore: number;
+  percentage: number;
+}
 
 // ============================================================
 // ICÔNES PAR CATÉGORIE
@@ -28,20 +38,25 @@ const categoryIcons: Record<CategoryId, React.ReactNode> = {
 // MAIN ENGINE
 // ============================================================
 export default function DiagnosticEngine() {
-  const [step, setStep] = useState<'home' | 'quiz' | 'calculating' | 'results' | 'unlocked'>('home');
+  const [step, setStep] = useState<'home' | 'quiz' | 'capture' | 'calculating' | 'results'>('home');
   const [currentQIndex, setCurrentQIndex] = useState(0);
   const [score, setScore] = useState<Record<number, number>>({});
   const [answeredIds, setAnsweredIds] = useState<number[]>([]);
-  const [result, setResult] = useState<DiagnosticResult | null>(null);
+  const [analysis, setAnalysis] = useState<DiagnosticAnalysis | null>(null);
   const [isCalculating, setIsCalculating] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  // Lead capture
+  // Lead capture (required before analysis)
   const [email, setEmail] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [company, setCompany] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [captureDone, setCaptureDone] = useState(false);
+
+  // Internal scores for passing to API
+  const [categoryResults, setCategoryResults] = useState<CategoryScore[]>([]);
+  const [totalScore, setTotalScore] = useState(0);
+  const [percentage, setPercentage] = useState(0);
 
   const topRef = useRef<HTMLDivElement>(null);
 
@@ -67,69 +82,97 @@ export default function DiagnosticEngine() {
     if (nextIndex < questions.length) {
       setCurrentQIndex(nextIndex);
     } else {
-      calculateResults(newScore);
+      // Quiz finished → show lead capture
+      computeScores(newScore);
+      setStep('capture');
+      scrollTop();
     }
   }
 
   // ============================================================
-  // CALCULATE RESULTS
+  // COMPUTE SCORES (for context, shown to LLM)
   // ============================================================
-  function calculateResults(answers: Record<number, number>) {
-    setIsCalculating(true);
-    setStep('calculating');
-    scrollTop();
+  function computeScores(answers: Record<number, number>) {
+    const catResults: CategoryScore[] = categories.map(cat => {
+      const catQs = questions.filter(q => q.category === cat.id);
+      const catScore = catQs.reduce((s, q) => s + (answers[q.id] || 0), 0);
+      const maxScore = getCategoryMaxScore(cat.id);
+      return {
+        categoryId: cat.id,
+        score: catScore,
+        maxScore,
+        percentage: Math.round((catScore / maxScore) * 100),
+      };
+    });
 
-    setTimeout(() => {
-      const categoryResults: CategoryResult[] = categories.map(cat => {
-        const catQs = questions.filter(q => q.category === cat.id);
-        const catScore = catQs.reduce((s, q) => s + (answers[q.id] || 0), 0);
-        const maxScore = getCategoryMaxScore(cat.id);
-        return {
-          categoryId: cat.id,
-          score: catScore,
-          maxScore,
-          percentage: Math.round((catScore / maxScore) * 100),
-        };
-      });
+    const total = catResults.reduce((s, cr) => s + cr.score, 0);
+    const maxTotal = getMaxTotalScore();
 
-      const totalScore = categoryResults.reduce((s, cr) => s + cr.score, 0);
-      const maxTotal = getMaxTotalScore();
-      const pct = Math.round((totalScore / maxTotal) * 100);
-      const persona = personas.find(p => pct >= p.minScore && pct <= p.maxScore) || personas[4];
-
-      setResult({
-        totalScore, maxScore: maxTotal, percentage: pct, persona,
-        categories: categoryResults,
-        comparisonText: getComparisonText(pct),
-        summary: `${persona.description} Score global : ${pct}/100.`,
-      });
-      setIsCalculating(false);
-      setStep('results');
-      scrollTop();
-    }, 1800);
+    setCategoryResults(catResults);
+    setTotalScore(total);
+    setPercentage(Math.round((total / maxTotal) * 100));
   }
 
   // ============================================================
-  // SUBMIT LEAD TO HUBSPOT
+  // SUBMIT & CALL LLM
   // ============================================================
-  const submitLead = async () => {
+  const submitAndAnalyze = async () => {
     if (!email || !firstName || !lastName || !company) return;
     setIsSubmitting(true);
+    setError(null);
+
+    // Build the answer data for the API
+    const answerData = questions.map(q => ({
+      questionId: q.id,
+      questionText: q.text,
+      category: q.category,
+      answerText: q.answers.find(a => a.points === score[q.id])?.text || '',
+      points: score[q.id] || 0,
+      maxPoints: Math.max(...q.answers.map(a => a.points)),
+    }));
+
     try {
-      await fetch('/api/hubspot/submit-form', {
+      // Optional: send lead to HubSpot silently
+      fetch('/api/hubspot/submit-form', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           firstName, lastName, email, company,
-          message: `Diagnostic 360° — Score ${result?.totalScore}/${result?.maxScore}`,
+          message: `Diagnostic 360° — Score ${totalScore}/${getMaxTotalScore()}`,
+        }),
+      }).catch(() => {});
+
+      // Show calculating state
+      setStep('calculating');
+      scrollTop();
+
+      // Call the LLM analysis API
+      const res = await fetch('/api/diagnostic/analyze', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          answers: answerData,
+          user: { firstName, lastName, email, company },
+          totalScore,
+          maxScore: getMaxTotalScore(),
+          percentage,
         }),
       });
-    } catch {
-      // Silent — unlock anyway
+
+      if (!res.ok) {
+        throw new Error(`API error: ${res.status}`);
+      }
+
+      const data = await res.json();
+      setAnalysis(data.analysis);
+      setStep('results');
+    } catch (err) {
+      console.error('Analysis failed:', err);
+      setError('L\'analyse n\'a pas pu être générée. Vous recevrez votre rapport par email.');
+      setStep('results');
     } finally {
-      setCaptureDone(true);
-      setStep('unlocked');
       setIsSubmitting(false);
+      scrollTop();
     }
   };
 
@@ -141,12 +184,15 @@ export default function DiagnosticEngine() {
     setCurrentQIndex(0);
     setScore({});
     setAnsweredIds([]);
-    setResult(null);
-    setCaptureDone(false);
+    setAnalysis(null);
+    setError(null);
     setEmail('');
     setFirstName('');
     setLastName('');
     setCompany('');
+    setCategoryResults([]);
+    setTotalScore(0);
+    setPercentage(0);
     scrollTop();
   };
 
@@ -179,7 +225,7 @@ export default function DiagnosticEngine() {
               <p className="text-lg text-white/70 max-w-xl mx-auto mb-10 leading-relaxed">
                 20 questions pour évaluer votre organisation commerciale.<br />
                 Prospection, processus, équipe, pilotage, stratégie.<br />
-                Un score. Un plan d'action.
+                Une analyse personnalisée par IA.
               </p>
 
               <button
@@ -191,7 +237,7 @@ export default function DiagnosticEngine() {
               </button>
 
               <div className="text-white/30 text-xs mt-3">
-                Diagnostic structuré en 5 minutes
+                Analyse générée par IA — 5 minutes chrono
               </div>
 
               <div className="mt-16 grid grid-cols-2 sm:grid-cols-5 gap-6 max-w-2xl mx-auto">
@@ -213,8 +259,8 @@ export default function DiagnosticEngine() {
           <div className="grid sm:grid-cols-3 gap-10">
             {[
               { title: '5 axes analysés', desc: 'Prospection, processus, équipe, performance, stratégie' },
-              { title: 'Score & profil', desc: 'Un score global /100 et un profil détaillé par catégorie' },
-              { title: 'Plan d\'action', desc: 'Recommandations personnalisées débloquées par email' },
+              { title: 'Analyse IA personnalisée', desc: 'Signaux faibles, risques, hypothèses de diagnostic' },
+              { title: 'Plan d\'action sur mesure', desc: 'Recommandations actionnables par catégorie' },
             ].map((item, i) => (
               <motion.div
                 key={item.title}
@@ -315,12 +361,98 @@ export default function DiagnosticEngine() {
   }
 
   // ============================================================
-  // CALCULATING
+  // LEAD CAPTURE (avant analyse LLM)
   // ============================================================
-  if (isCalculating) {
+  if (step === 'capture') {
+    return (
+      <div ref={topRef} className="min-h-screen bg-gray-50 flex items-center justify-center px-6 py-16">
+        <motion.div
+          initial={{ opacity: 0, y: 16 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="w-full max-w-lg"
+        >
+          <div className="bg-white rounded-2xl p-8 sm:p-10 shadow-sm border border-gray-100">
+            <div className="text-center mb-8">
+              <div className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-2">
+                Questionnaire terminé
+              </div>
+              <h2 className="text-2xl font-bold text-blue-ink mb-2">
+                Votre analyse personnalisée
+              </h2>
+              <p className="text-gray-500 text-sm">
+                Laissez-nous vos coordonnées pour générer votre rapport d'analyse IA
+              </p>
+            </div>
+
+            <form
+              onSubmit={e => { e.preventDefault(); submitAndAnalyze(); }}
+              className="space-y-3"
+            >
+              <div className="grid grid-cols-2 gap-3">
+                <div className="relative">
+                  <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-300" />
+                  <input
+                    type="text" required placeholder="Prénom"
+                    value={firstName} onChange={e => setFirstName(e.target.value)}
+                    className="w-full pl-9 pr-4 py-3 border border-gray-200 rounded-lg text-blue-ink placeholder-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-ink/20 focus:border-blue-ink"
+                  />
+                </div>
+                <div className="relative">
+                  <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-300" />
+                  <input
+                    type="text" required placeholder="Nom"
+                    value={lastName} onChange={e => setLastName(e.target.value)}
+                    className="w-full pl-9 pr-4 py-3 border border-gray-200 rounded-lg text-blue-ink placeholder-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-ink/20 focus:border-blue-ink"
+                  />
+                </div>
+              </div>
+              <div className="relative">
+                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-300" />
+                <input
+                  type="email" required placeholder="Email professionnel"
+                  value={email} onChange={e => setEmail(e.target.value)}
+                  className="w-full pl-9 pr-4 py-3 border border-gray-200 rounded-lg text-blue-ink placeholder-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-ink/20 focus:border-blue-ink"
+                />
+              </div>
+              <div className="relative">
+                <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-300" />
+                <input
+                  type="text" required placeholder="Entreprise"
+                  value={company} onChange={e => setCompany(e.target.value)}
+                  className="w-full pl-9 pr-4 py-3 border border-gray-200 rounded-lg text-blue-ink placeholder-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-ink/20 focus:border-blue-ink"
+                />
+              </div>
+              <button
+                type="submit" disabled={isSubmitting}
+                className="w-full bg-blue-ink hover:bg-blue-ink/90 disabled:bg-gray-300 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200"
+              >
+                {isSubmitting ? 'Génération en cours...' : 'Générer mon analyse'}
+              </button>
+            </form>
+
+            <div className="flex items-center justify-center gap-4 mt-4 text-gray-300 text-xs">
+              <span className="flex items-center gap-1"><Shield className="w-3 h-3" /> Données confidentielles</span>
+              <span className="flex items-center gap-1"><Sparkles className="w-3 h-3" /> Analyse par IA</span>
+            </div>
+          </div>
+
+          <div className="text-center mt-6">
+            <button onClick={restart} className="text-sm text-gray-400 hover:text-blue-ink transition-colors">
+              Refaire le diagnostic
+            </button>
+          </div>
+        </motion.div>
+      </div>
+    );
+  }
+
+  // ============================================================
+  // CALCULATING (analyse LLM en cours)
+  // ============================================================
+  if (isCalculating || step === 'calculating') {
     return (
       <div ref={topRef} className="min-h-screen bg-white flex items-center justify-center px-6">
-        <div className="text-center">
+        <div className="text-center max-w-md">
           <div className="relative w-16 h-16 mx-auto mb-6">
             <motion.div
               className="absolute inset-0 rounded-full border-2 border-gray-100"
@@ -328,186 +460,22 @@ export default function DiagnosticEngine() {
               animate={{ rotate: 360 }}
               transition={{ repeat: Infinity, duration: 1.2, ease: 'linear' }}
             />
+            <motion.div
+              className="absolute inset-2 rounded-full border-2 border-gray-100"
+              style={{ borderTopColor: '#FF6B35' }}
+              animate={{ rotate: -360 }}
+              transition={{ repeat: Infinity, duration: 1.8, ease: 'linear' }}
+            />
           </div>
           <p className="text-blue-ink font-medium">Analyse de vos réponses...</p>
-          <p className="text-gray-400 text-sm mt-2">Nous préparons votre rapport personnalisé</p>
-        </div>
-      </div>
-    );
-  }
-
-  // ============================================================
-  // RESULTS
-  // ============================================================
-  if (step === 'results' && result) {
-    return (
-      <div ref={topRef} className="min-h-screen bg-gray-50">
-        <div className="max-w-5xl mx-auto px-6 py-12 sm:py-16">
-          {/* Score & Persona */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="grid lg:grid-cols-5 gap-8 mb-8"
-          >
-            {/* Score card */}
-            <div className="lg:col-span-2 bg-white rounded-2xl p-8 shadow-sm border border-gray-100 flex flex-col items-center justify-center">
-              <div className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-4">Score global</div>
-              <div className="text-6xl sm:text-7xl font-bold text-blue-ink tracking-tight">
-                {result.percentage}
-                <span className="text-2xl text-gray-300 font-normal">/100</span>
-              </div>
-              <div className="mt-4 h-2 w-full max-w-xs bg-gray-100 rounded-full overflow-hidden">
-                <motion.div
-                  className="h-full bg-blue-ink rounded-full"
-                  initial={{ width: 0 }}
-                  animate={{ width: `${result.percentage}%` }}
-                  transition={{ duration: 1, ease: 'easeOut', delay: 0.3 }}
-                />
-              </div>
-            </div>
-
-            {/* Persona card */}
-            <div className="lg:col-span-3 bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 bg-blue-ink/5 rounded-xl flex items-center justify-center text-xl flex-shrink-0">
-                  {result.persona.emoji}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-1">Profil</div>
-                  <h2 className="text-2xl font-bold text-blue-ink mb-1">{result.persona.name}</h2>
-                  <p className="text-sm text-gray-500 leading-relaxed">{result.persona.description}</p>
-                  <div className="mt-4 flex items-center gap-2 text-sm">
-                    <span className="text-gray-400">{result.comparisonText}</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Category scores */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 mb-8"
-          >
-            {result.categories.map((cr, i) => {
-              const cat = categories.find(c => c.id === cr.categoryId)!;
-              const pctColors: Record<string, string> = {
-                '0-25': 'text-red-500 bg-red-50 border-red-100',
-                '25-50': 'text-orange-500 bg-orange-50 border-orange-100',
-                '50-75': 'text-blue-ink bg-blue-ink/5 border-blue-ink/10',
-                '75-100': 'text-mint-green bg-mint-green/5 border-mint-green/10',
-              };
-              const pctKey = cr.percentage < 25 ? '0-25' : cr.percentage < 50 ? '25-50' : cr.percentage < 75 ? '50-75' : '75-100';
-              const colors = pctColors[pctKey];
-              return (
-                <motion.div
-                  key={cr.categoryId}
-                  initial={{ opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 + i * 0.08 }}
-                  className={`bg-white rounded-xl p-4 border ${colors.split(' ').slice(-1)} shadow-sm`}
-                >
-                  <div className={`inline-flex items-center justify-center w-8 h-8 rounded-lg mb-3 ${colors.split(' ').slice(0, 2).join(' ')}`}>
-                    {categoryIcons[cr.categoryId]}
-                  </div>
-                  <div className="text-xs text-gray-400 mb-1">{cat.shortLabel}</div>
-                  <div className="flex items-baseline gap-1">
-                    <span className={`text-2xl font-bold ${colors.split(' ')[0]}`}>{cr.percentage}</span>
-                    <span className="text-xs text-gray-400">%</span>
-                  </div>
-                  <div className="mt-2 h-1.5 bg-gray-100 rounded-full overflow-hidden">
-                    <motion.div
-                      className={`h-full rounded-full ${
-                        cr.percentage < 25 ? 'bg-red-400' :
-                        cr.percentage < 50 ? 'bg-orange-400' :
-                        cr.percentage < 75 ? 'bg-blue-ink' : 'bg-mint-green'
-                      }`}
-                      initial={{ width: 0 }}
-                      animate={{ width: `${cr.percentage}%` }}
-                      transition={{ duration: 0.8, delay: 0.5 + i * 0.1, ease: 'easeOut' }}
-                    />
-                  </div>
-                  <div className="text-[10px] text-gray-400 mt-1">{cr.score}/{cr.maxScore}</div>
-                </motion.div>
-              );
-            })}
-          </motion.div>
-
-          {/* Lead capture CTA */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="bg-blue-ink rounded-2xl p-8 sm:p-10 shadow-lg"
-          >
-            <div className="max-w-lg mx-auto text-center">
-              <h3 className="text-xl font-bold text-white mb-2">
-                Débloquez votre plan d'action personnalisé
-              </h3>
-              <p className="text-white/60 text-sm mb-6">
-                Recevez vos recommandations détaillées, votre plan 30 jours et l'analyse comparative
-              </p>
-
-              <form
-                onSubmit={e => { e.preventDefault(); submitLead(); }}
-                className="space-y-3"
-              >
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="relative">
-                    <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/30" />
-                    <input
-                      type="text" required placeholder="Prénom"
-                      value={firstName} onChange={e => setFirstName(e.target.value)}
-                      className="w-full pl-9 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/30 text-sm focus:outline-none focus:ring-2 focus:ring-mint-green focus:border-transparent"
-                    />
-                  </div>
-                  <div className="relative">
-                    <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/30" />
-                    <input
-                      type="text" required placeholder="Nom"
-                      value={lastName} onChange={e => setLastName(e.target.value)}
-                      className="w-full pl-9 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/30 text-sm focus:outline-none focus:ring-2 focus:ring-mint-green focus:border-transparent"
-                    />
-                  </div>
-                </div>
-                <div className="relative">
-                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/30" />
-                  <input
-                    type="email" required placeholder="Email professionnel"
-                    value={email} onChange={e => setEmail(e.target.value)}
-                    className="w-full pl-9 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/30 text-sm focus:outline-none focus:ring-2 focus:ring-mint-green focus:border-transparent"
-                  />
-                </div>
-                <div className="relative">
-                  <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-white/30" />
-                  <input
-                    type="text" required placeholder="Entreprise"
-                    value={company} onChange={e => setCompany(e.target.value)}
-                    className="w-full pl-9 pr-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/30 text-sm focus:outline-none focus:ring-2 focus:ring-mint-green focus:border-transparent"
-                  />
-                </div>
-                <button
-                  type="submit" disabled={isSubmitting}
-                  className="w-full bg-mint-green hover:bg-mint-green/90 disabled:bg-gray-500 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200"
-                >
-                  {isSubmitting ? 'Déblocage en cours...' : 'Débloquer mon rapport'}
-                </button>
-              </form>
-
-              <div className="flex items-center justify-center gap-4 mt-4 text-white/30 text-xs">
-                <span className="flex items-center gap-1"><Shield className="w-3 h-3" /> Données confidentielles</span>
-                <span className="flex items-center gap-1"><Clock className="w-3 h-3" /> Rapport disponible 48h</span>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Restart */}
-          <div className="text-center mt-8">
-            <button onClick={restart} className="text-sm text-gray-400 hover:text-blue-ink transition-colors">
-              Refaire le diagnostic
-            </button>
+          <p className="text-gray-400 text-sm mt-2">
+            Notre IA génère une analyse personnalisée de votre organisation commerciale
+          </p>
+          <div className="mt-6 text-xs text-gray-300">
+            <span className="inline-flex items-center gap-1">
+              <Sparkles className="w-3 h-3" />
+              Analyse IA en cours
+            </span>
           </div>
         </div>
       </div>
@@ -515,151 +483,351 @@ export default function DiagnosticEngine() {
   }
 
   // ============================================================
-  // UNLOCKED REPORT
+  // RESULTS (analyse LLM)
   // ============================================================
-  if (step === 'unlocked' && result) {
-    const recommendations = getRecommendations(result.categories);
-
+  if (step === 'results') {
     return (
       <div ref={topRef} className="min-h-screen bg-gray-50">
         <div className="max-w-4xl mx-auto px-6 py-12 sm:py-16">
-          {/* Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-center mb-10"
-          >
-            <div className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-2">
-              Rapport personnalisé
-            </div>
-            <h1 className="text-3xl sm:text-4xl font-bold text-blue-ink mb-2">
-              {result.persona.name}
-            </h1>
-            <p className="text-gray-500 text-sm max-w-md mx-auto">
-              Score {result.totalScore}/{result.maxScore} — {result.percentage}/100
-            </p>
-          </motion.div>
-
-          {/* Urgency */}
-          <motion.div
-            initial={{ opacity: 0, y: 8 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="bg-amber-50 border border-amber-200 rounded-xl px-5 py-3 mb-8 flex items-center gap-3"
-          >
-            <Clock className="w-4 h-4 text-amber-600 flex-shrink-0" />
-            <p className="text-amber-800 text-sm">
-              Ce rapport est disponible pendant 48h. Téléchargez-le ou imprimez-le pour le consulter plus tard.
-            </p>
-          </motion.div>
-
-          {/* Challenge */}
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 mb-8"
-          >
-            <h3 className="font-semibold text-blue-ink mb-2 flex items-center gap-2">
-              <CheckCircle className="w-4 h-4 text-mint-green" />
-              Priorité identifiée
-            </h3>
-            <p className="text-gray-600 text-sm">{result.persona.challenge}</p>
-          </motion.div>
-
-          {/* Recommendations */}
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="mb-8"
-          >
-            <h3 className="font-semibold text-blue-ink mb-5 text-lg">Plan d'action par catégorie</h3>
-            <div className="space-y-4">
-              {recommendations.map((rec, i) => {
-                const cat = categories.find(c => c.id === rec.categoryId)!;
-                const levelStyles: Record<string, { border: string; bg: string; label: string; labelStyle: string }> = {
-                  critique: {
-                    border: 'border-red-200', bg: 'bg-red-50',
-                    label: 'Critique', labelStyle: 'bg-red-100 text-red-700',
-                  },
-                  prioritaire: {
-                    border: 'border-orange-200', bg: 'bg-orange-50',
-                    label: 'Prioritaire', labelStyle: 'bg-orange-100 text-orange-700',
-                  },
-                  amelioration: {
-                    border: 'border-yellow-200', bg: 'bg-yellow-50',
-                    label: 'À améliorer', labelStyle: 'bg-yellow-100 text-yellow-700',
-                  },
-                  consolidation: {
-                    border: 'border-blue-200', bg: 'bg-blue-50',
-                    label: 'À consolider', labelStyle: 'bg-blue-100 text-blue-700',
-                  },
-                  excellent: {
-                    border: 'border-mint-green/20', bg: 'bg-mint-green/5',
-                    label: 'Point fort', labelStyle: 'bg-mint-green/10 text-mint-green',
-                  },
-                };
-                const s = levelStyles[rec.level];
-
-                return (
-                  <motion.div
-                    key={rec.categoryId}
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.4 + i * 0.08 }}
-                    className={`rounded-xl border ${s.border} ${s.bg} p-5`}
+          {error && !analysis ? (
+            /* Error state */
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="text-center"
+            >
+              <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 max-w-lg mx-auto">
+                <AlertTriangle className="w-12 h-12 text-amber-500 mx-auto mb-4" />
+                <h2 className="text-xl font-bold text-blue-ink mb-2">Analyse temporairement indisponible</h2>
+                <p className="text-gray-500 text-sm mb-6">{error}</p>
+                <div className="flex flex-col items-center gap-3">
+                  <a
+                    href="https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone"
+                    target="_blank" rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-mint-green text-white font-semibold px-6 py-3 rounded-xl hover:bg-mint-green/90 transition-all"
                   >
-                    <div className="flex items-start justify-between mb-3">
-                      <div className="flex items-center gap-3">
-                        <span className="text-blue-ink">{categoryIcons[rec.categoryId]}</span>
-                        <div>
-                          <div className="font-semibold text-blue-ink text-sm">{cat.label}</div>
-                          <div className="text-xs text-gray-400">{rec.score}/{rec.maxScore} pts</div>
+                    <Calendar className="w-4 h-4" />
+                    Prendre rendez-vous
+                  </a>
+                  <button onClick={restart} className="text-sm text-gray-400 hover:text-blue-ink transition-colors mt-2">
+                    Refaire le diagnostic
+                  </button>
+                </div>
+              </div>
+            </motion.div>
+          ) : (
+            <>
+              {/* Header with score badge */}
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="text-center mb-8"
+              >
+                <div className="text-xs text-gray-400 uppercase tracking-wider font-medium mb-2">
+                  Analyse personnalisée
+                </div>
+                <div className="inline-flex items-center gap-2 text-4xl sm:text-5xl font-bold text-blue-ink mb-2">
+                  {analysis?.persona?.emoji || '📊'}
+                  <span>{percentage}<span className="text-xl text-gray-300 font-normal">/100</span></span>
+                </div>
+                <h1 className="text-2xl sm:text-3xl font-bold text-blue-ink">
+                  {analysis?.persona?.name || 'Analyse commerciale'}
+                </h1>
+                <p className="text-gray-500 text-sm mt-1 max-w-md mx-auto">
+                  {analysis?.persona?.description || 'Analyse générée par IA à partir de vos réponses'}
+                </p>
+              </motion.div>
+
+              {/* Synthèse */}
+              {analysis?.synthesis && (
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.1 }}
+                  className="bg-white rounded-2xl p-6 sm:p-8 shadow-sm border border-gray-100 mb-6"
+                >
+                  <h3 className="font-semibold text-blue-ink mb-3 flex items-center gap-2">
+                    <Lightbulb className="w-4 h-4 text-mint-green" />
+                    Synthèse
+                  </h3>
+                  <p className="text-gray-700 text-sm leading-relaxed whitespace-pre-line">
+                    {analysis.synthesis}
+                  </p>
+                </motion.div>
+              )}
+
+              {/* Category scores */}
+              {categoryResults.length > 0 && (
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.15 }}
+                  className="grid sm:grid-cols-2 lg:grid-cols-5 gap-3 mb-6"
+                >
+                  {categoryResults.map((cr, i) => {
+                    const cat = categories.find(c => c.id === cr.categoryId)!;
+                    const pctColors: Record<string, string> = {
+                      '0-25': 'text-red-500 bg-red-50 border-red-100',
+                      '25-50': 'text-orange-500 bg-orange-50 border-orange-100',
+                      '50-75': 'text-blue-ink bg-blue-ink/5 border-blue-ink/10',
+                      '75-100': 'text-mint-green bg-mint-green/5 border-mint-green/10',
+                    };
+                    const pctKey = cr.percentage < 25 ? '0-25' : cr.percentage < 50 ? '25-50' : cr.percentage < 75 ? '50-75' : '75-100';
+                    const colors = pctColors[pctKey];
+                    return (
+                      <motion.div
+                        key={cr.categoryId}
+                        initial={{ opacity: 0, y: 12 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2 + i * 0.06 }}
+                        className={`bg-white rounded-xl p-4 border ${colors.split(' ').slice(-1)} shadow-sm`}
+                      >
+                        <div className={`inline-flex items-center justify-center w-8 h-8 rounded-lg mb-3 ${colors.split(' ').slice(0, 2).join(' ')}`}>
+                          {categoryIcons[cr.categoryId]}
                         </div>
-                      </div>
-                      <span className={`text-[10px] font-semibold px-2 py-0.5 rounded ${s.labelStyle}`}>
-                        {s.label}
-                      </span>
-                    </div>
-                    <div className="text-sm font-medium text-blue-ink mb-2">{rec.title}</div>
-                    <ul className="space-y-1">
-                      {rec.actions.map((action, ai) => (
-                        <li key={ai} className="text-xs text-gray-600 flex items-start gap-2">
-                          <span className="text-blue-ink/30 mt-1">—</span>
-                          {action}
+                        <div className="text-xs text-gray-400 mb-1">{cat.shortLabel}</div>
+                        <div className="flex items-baseline gap-1">
+                          <span className={`text-2xl font-bold ${colors.split(' ')[0]}`}>{cr.percentage}</span>
+                          <span className="text-xs text-gray-400">%</span>
+                        </div>
+                        <div className="mt-2 h-1.5 bg-gray-100 rounded-full overflow-hidden">
+                          <motion.div
+                            className={`h-full rounded-full ${
+                              cr.percentage < 25 ? 'bg-red-400' :
+                              cr.percentage < 50 ? 'bg-orange-400' :
+                              cr.percentage < 75 ? 'bg-blue-ink' : 'bg-mint-green'
+                            }`}
+                            initial={{ width: 0 }}
+                            animate={{ width: `${cr.percentage}%` }}
+                            transition={{ duration: 0.8, delay: 0.3 + i * 0.08, ease: 'easeOut' }}
+                          />
+                        </div>
+                        <div className="text-[10px] text-gray-400 mt-1">{cr.score}/{cr.maxScore}</div>
+                      </motion.div>
+                    );
+                  })}
+                </motion.div>
+              )}
+
+              {/* Analyse par catégorie (LLM) */}
+              {analysis?.categories && analysis.categories.length > 0 && (
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.25 }}
+                  className="space-y-3 mb-6"
+                >
+                  <h3 className="font-semibold text-blue-ink text-lg mb-3">Analyse détaillée par axe</h3>
+                  {analysis.categories.map((cat, i) => {
+                    const catMeta = categories.find(c => c.id === cat.categoryId);
+                    if (!catMeta) return null;
+                    const levelColors: Record<string, string> = {
+                      critique: 'border-red-200 bg-red-50',
+                      prioritaire: 'border-orange-200 bg-orange-50',
+                      amelioration: 'border-yellow-200 bg-yellow-50',
+                      consolidation: 'border-blue-200 bg-blue-50',
+                      excellent: 'border-green-200 bg-green-50',
+                    };
+                    const levelLabels: Record<string, string> = {
+                      critique: 'Critique', prioritaire: 'Prioritaire',
+                      amelioration: 'À améliorer', consolidation: 'À consolider', excellent: 'Point fort',
+                    };
+                    const colors = levelColors[cat.level] || 'border-gray-200 bg-gray-50';
+                    return (
+                      <motion.div
+                        key={cat.categoryId}
+                        initial={{ opacity: 0, y: 8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3 + i * 0.06 }}
+                        className={`rounded-xl border ${colors} p-5`}
+                      >
+                        <div className="flex items-center gap-3 mb-2">
+                          <span className="text-blue-ink">{categoryIcons[cat.categoryId as CategoryId]}</span>
+                          <span className="font-semibold text-blue-ink text-sm">{catMeta.label}</span>
+                          <span className={`text-[10px] font-semibold px-2 py-0.5 rounded ml-auto ${
+                            cat.level === 'critique' ? 'bg-red-100 text-red-700' :
+                            cat.level === 'prioritaire' ? 'bg-orange-100 text-orange-700' :
+                            cat.level === 'amelioration' ? 'bg-yellow-100 text-yellow-700' :
+                            cat.level === 'consolidation' ? 'bg-blue-100 text-blue-700' :
+                            'bg-green-100 text-green-700'
+                          }`}>
+                            {levelLabels[cat.level] || cat.level}
+                          </span>
+                        </div>
+                        <p className="text-sm text-gray-600 leading-relaxed">{cat.comment}</p>
+                      </motion.div>
+                    );
+                  })}
+                </motion.div>
+              )}
+
+              {/* Signaux faibles & Risques */}
+              <div className="grid sm:grid-cols-2 gap-6 mb-6">
+                {analysis?.signauxFaibles && analysis.signauxFaibles.length > 0 && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.35 }}
+                    className="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
+                  >
+                    <h3 className="font-semibold text-blue-ink mb-3 flex items-center gap-2 text-sm">
+                      <CheckCircle className="w-4 h-4 text-amber-500" />
+                      Signaux faibles détectés
+                    </h3>
+                    <ul className="space-y-2">
+                      {analysis.signauxFaibles.map((s, i) => (
+                        <li key={i} className="text-sm text-gray-600 flex items-start gap-2">
+                          <span className="text-amber-400 mt-0.5">•</span>
+                          {s}
                         </li>
                       ))}
                     </ul>
                   </motion.div>
-                );
-              })}
-            </div>
-          </motion.div>
+                )}
 
-          {/* CTAs */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
-            className="text-center space-y-4"
-          >
-            <a
-              href="https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone"
-              target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-mint-green text-white font-semibold px-8 py-4 rounded-xl hover:bg-mint-green/90 transition-all shadow-lg shadow-mint-green/20"
-            >
-              <Calendar className="w-4 h-4" />
-              Discuter de mon diagnostic avec Laurent
-            </a>
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-400">
-              <button onClick={restart} className="hover:text-blue-ink transition-colors">Refaire le diagnostic</button>
-              <span className="text-gray-300">|</span>
-              <a href="/formation-commerciale-pme" className="hover:text-blue-ink transition-colors">Nos formations</a>
-              <span className="text-gray-300">|</span>
-              <a href="/bootcamp-commercial-intensif" className="hover:text-blue-ink transition-colors">Le bootcamp</a>
-            </div>
-          </motion.div>
+                {analysis?.risques && analysis.risques.length > 0 && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
+                    className="bg-white rounded-xl p-5 shadow-sm border border-gray-100"
+                  >
+                    <h3 className="font-semibold text-blue-ink mb-3 flex items-center gap-2 text-sm">
+                      <AlertTriangle className="w-4 h-4 text-orange-500" />
+                      Risques identifiés
+                    </h3>
+                    <ul className="space-y-2">
+                      {analysis.risques.map((r, i) => (
+                        <li key={i} className="text-sm text-gray-600 flex items-start gap-2">
+                          <span className="text-orange-400 mt-0.5">•</span>
+                          {r}
+                        </li>
+                      ))}
+                    </ul>
+                  </motion.div>
+                )}
+              </div>
+
+              {/* Hypothèses de diagnostic */}
+              {analysis?.hypotheses && analysis.hypotheses.length > 0 && (
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.45 }}
+                  className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 mb-6"
+                >
+                  <h3 className="font-semibold text-blue-ink mb-3 flex items-center gap-2 text-sm">
+                    <Lightbulb className="w-4 h-4 text-blue-500" />
+                    Hypothèses de diagnostic
+                  </h3>
+                  <p className="text-xs text-gray-400 mb-3">Pistes à explorer — pas des certitudes</p>
+                  <ul className="space-y-2">
+                    {analysis.hypotheses.map((h, i) => (
+                      <li key={i} className="text-sm text-gray-600 flex items-start gap-2">
+                        <span className="text-blue-ink/30 mt-0.5 font-mono">{i + 1}.</span>
+                        {h}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              )}
+
+              {/* Questions d'approfondissement */}
+              {analysis?.questionsApprofondissement && analysis.questionsApprofondissement.length > 0 && (
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                  className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 mb-6"
+                >
+                  <h3 className="font-semibold text-blue-ink mb-3 flex items-center gap-2 text-sm">
+                    <MessageSquare className="w-4 h-4 text-purple-500" />
+                    Pour aller plus loin
+                  </h3>
+                  <ul className="space-y-2">
+                    {analysis.questionsApprofondissement.map((q, i) => (
+                      <li key={i} className="text-sm text-gray-600 flex items-start gap-2">
+                        <span className="text-purple-400 mt-0.5">?</span>
+                        {q}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              )}
+
+              {/* Recommandations */}
+              {analysis?.recommandations && analysis.recommandations.length > 0 && (
+                <motion.div
+                  initial={{ opacity: 0, y: 12 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.55 }}
+                  className="bg-white rounded-xl p-5 shadow-sm border border-gray-100 mb-6"
+                >
+                  <h3 className="font-semibold text-blue-ink mb-3 flex items-center gap-2 text-sm">
+                    <CheckCircle className="w-4 h-4 text-mint-green" />
+                    Recommandations
+                  </h3>
+                  <ul className="space-y-2">
+                    {analysis.recommandations.map((r, i) => (
+                      <li key={i} className="text-sm text-gray-600 flex items-start gap-2">
+                        <span className="text-mint-green mt-0.5">✓</span>
+                        {r}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              )}
+
+              {/* Prochaine étape + CTAs */}
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6 }}
+                className="bg-blue-ink rounded-2xl p-8 sm:p-10 shadow-lg"
+              >
+                <div className="max-w-lg mx-auto text-center">
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    Donner de la profondeur à cette analyse
+                  </h3>
+                  <p className="text-white/60 text-sm mb-6">
+                    {analysis?.prochaineEtape || 'Échangeons 30 minutes pour creuser ces hypothèses ensemble.'}
+                  </p>
+
+                  <div className="space-y-3">
+                    <a
+                      href="https://meetings.hubspot.com/laurent34/rdv-laurent-45-mn-clone"
+                      target="_blank" rel="noopener noreferrer"
+                      className="block w-full bg-mint-green hover:bg-mint-green/90 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200"
+                    >
+                      <span className="inline-flex items-center gap-2">
+                        <Calendar className="w-4 h-4" />
+                       Échanger sur mon diagnostic
+                      </span>
+                    </a>
+                  </div>
+
+                  <div className="flex items-center justify-center gap-4 mt-4 text-white/30 text-xs">
+                    <span className="flex items-center gap-1"><Shield className="w-3 h-3" /> Analyse confidentielle</span>
+                    <span className="flex items-center gap-1"><Sparkles className="w-3 h-3" /> Généré par IA</span>
+                  </div>
+                </div>
+              </motion.div>
+
+              {/* Footer links */}
+              <div className="text-center mt-6 space-y-2">
+                <div className="flex items-center justify-center gap-4 text-sm text-gray-400">
+                  <button onClick={restart} className="hover:text-blue-ink transition-colors">Refaire le diagnostic</button>
+                  <span className="text-gray-300">|</span>
+                  <a href="/formation-commerciale-pme" className="hover:text-blue-ink transition-colors">Nos formations</a>
+                  <span className="text-gray-300">|</span>
+                  <a href="/bootcamp-commercial-intensif" className="hover:text-blue-ink transition-colors">Le bootcamp</a>
+                </div>
+                <p className="text-xs text-gray-300">
+                  Analyse envoyée à {email}
+                </p>
+              </div>
+            </>
+          )}
         </div>
       </div>
     );
