@@ -7,7 +7,7 @@ import BDCarousel from '@/components/BDCarousel';
 
 const articleUrl = 'https://www.laurentserre.com/blog/developpement-commercial-pme-causes-racines';
 const heroImage = '/images/blog/2026-06-08-causes-racines/2026-06-08-causes-racines-hero.webp';
-const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/2026-06-08-causes-racines/2026-06-08-causes-racines-hero.webp';
+const heroImageAbsolute = 'https://raw.githubusercontent.com/Lofp34/Test-site-lsd-multipages/main/public/images/blog/2026-06-08-causes-racines/2026-06-08-causes-racines-hero.webp';
 const carouselPrefix = '/images/blog/2026-06-08-causes-racines/carrousel';
 
 export const metadata: Metadata = {
