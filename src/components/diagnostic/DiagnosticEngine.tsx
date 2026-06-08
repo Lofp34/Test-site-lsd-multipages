@@ -218,8 +218,10 @@ export default function DiagnosticEngine() {
   // ============================================================
   // HOME
   // ============================================================
+  let content: React.ReactNode = null;
+
   if (step === 'home') {
-    return (
+    content = (
       <div ref={topRef} className="min-h-screen bg-white">
         <div className="relative bg-gradient-to-br from-blue-ink to-blue-ink/95 overflow-hidden">
           <div className="absolute inset-0 opacity-[0.03]">
@@ -309,7 +311,7 @@ export default function DiagnosticEngine() {
     const catTotal = questions.filter(qq => qq.category === q.category).length;
     const progress = ((currentQIndex) / questions.length) * 100;
 
-    return (
+    content = (
       <div ref={topRef} className="min-h-screen bg-white">
         {/* Header */}
         <div className="border-b border-gray-100 bg-white/90 backdrop-blur-sm sticky top-0 z-20">
@@ -383,7 +385,7 @@ export default function DiagnosticEngine() {
   // LEAD CAPTURE (avant analyse LLM)
   // ============================================================
   if (step === 'capture') {
-    return (
+    content = (
       <div ref={topRef} className="min-h-screen bg-gray-50 flex items-center justify-center px-6 py-16">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -469,7 +471,7 @@ export default function DiagnosticEngine() {
   // CALCULATING (analyse LLM en cours)
   // ============================================================
   if (isCalculating || step === 'calculating') {
-    return (
+    content = (
       <div ref={topRef} className="min-h-screen bg-white flex items-center justify-center px-6">
         <div className="text-center max-w-md">
           <div className="relative w-16 h-16 mx-auto mb-6">
@@ -505,7 +507,7 @@ export default function DiagnosticEngine() {
   // RESULTS (analyse LLM)
   // ============================================================
   if (step === 'results') {
-    return (
+    content = (
       <div ref={topRef} className="min-h-screen bg-gray-50">
         <div className="max-w-4xl mx-auto px-6 py-12 sm:py-16">
           {error && !analysis ? (
@@ -908,5 +910,43 @@ export default function DiagnosticEngine() {
     );
   }
 
-  return null;
+  return (
+    <>
+      {content}
+
+      {showCoach && (
+        <div className="fixed inset-0 z-50 flex items-end sm:items-end justify-end sm:p-6 pointer-events-none">
+          <div
+            className="absolute inset-0 bg-black/20 pointer-events-auto sm:bg-transparent"
+            onClick={() => setShowCoach(false)}
+          />
+          <motion.div
+            initial={{ opacity: 0, y: 40, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 40, scale: 0.95 }}
+            transition={{ duration: 0.2, ease: 'easeOut' }}
+            className="relative w-full sm:w-[420px] max-h-[85vh] pointer-events-auto"
+          >
+            <CoachChat
+              questionnaireContext={questionnaireSummary}
+              userEmail={email}
+              userName={firstName || lastName || ''}
+              onClose={() => setShowCoach(false)}
+            />
+          </motion.div>
+        </div>
+      )}
+
+      {!showCoach && step === 'results' && (
+        <button
+          onClick={() => setShowCoach(true)}
+          className="fixed bottom-6 right-6 z-40 flex items-center gap-2 bg-blue-ink hover:bg-blue-ink/90 text-white font-semibold px-5 py-3 rounded-full shadow-lg shadow-blue-ink/20 transition-all duration-200 hover:scale-105 active:scale-95"
+        >
+          <Bot className="w-5 h-5" />
+          <span className="text-sm">Sales Coach</span>
+          <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
+        </button>
+      )}
+    </>
+  );
 }
