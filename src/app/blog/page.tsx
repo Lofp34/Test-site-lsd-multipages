@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'developpement-commercial-pme-causes-racines',
+    title: "Pourquoi le développement commercial des PME patine (et ce qu'il faut regarder à la place)",
+    description: 'Alignement marketing/commercial, cycle de décision B2B ignoré, segmentation insuffisante : les trois causes racines qui plombent le développement commercial des PME même quand elles font tout bien.',
+    date: '2026-06-08',
+    readTime: '7 min',
+    category: 'Développement commercial / Stratégie',
+    image: '/images/blog/2026-06-08-causes-racines/2026-06-08-causes-racines-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'erreurs-developpement-commercial-pme',
     title: 'Développement commercial PME : les 6 erreurs qui coûtent cher (et comment les éviter)',
     description: 'Recrutement d\'un commercial star avant l\'heure, CRM sans processus, dispersion multicanal : les 6 erreurs terrain qui sabotent le développement commercial des PME et les corrections immédiates.',

@@ -85,7 +85,37 @@ ACCUEILLE-LE comme un coach terrain. Tu as déjà analysé discrètement ses ré
 Réponds en tant que Sales Coach, de façon concise et coach terrain.`;
 
     // ========================================
-    // PRIORITÉ 1 : Appel du vrai agent Sales Coach via CLI
+    // PRIORITÉ 1 : Appel du vrai agent Sales Coach via tunnel public
+    // ========================================
+    const tunnelUrl = process.env.SALES_COACH_TUNNEL_URL;
+    if (tunnelUrl) {
+      try {
+        const tunnelResponse = await fetch(`${tunnelUrl}/coach`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            message: body.message,
+            context: body.context,
+            email: body.email,
+            name: body.name,
+            history: body.history,
+          }),
+          signal: AbortSignal.timeout(35000),
+        });
+
+        if (tunnelResponse.ok) {
+          const data = await tunnelResponse.json();
+          if (data.response) {
+            return NextResponse.json({ response: data.response });
+          }
+        }
+      } catch {
+        console.warn('Tunnel unavailable, using fallback');
+      }
+    }
+
+    // ========================================
+    // PRIORITÉ 2 : Appel local via CLI (si on est sur la machine de Laurent)
     // ========================================
     try {
       const response = await callSalesCoachAgent(agentMessage, sessionKey);
@@ -93,7 +123,7 @@ Réponds en tant que Sales Coach, de façon concise et coach terrain.`;
         return NextResponse.json({ response });
       }
     } catch {
-      console.warn('Sales Coach agent unavailable, using LLM fallback');
+      console.warn('Sales Coach CLI unavailable, using LLM fallback');
     }
 
     // ========================================
