@@ -71,6 +71,14 @@ export default function HubSpotForm({
         },
         onFormSubmitted: () => {
           console.log('Formulaire envoyé avec succès vers HubSpot CRM');
+          // GA4 tracking
+          if (typeof window !== 'undefined' && (window as any).gtag) {
+            (window as any).gtag('event', 'contact_form_submitted', {
+              event_category: 'conversion',
+              event_label: formId,
+              page_path: window.location.pathname,
+            });
+          }
         }
       });
 

@@ -84,6 +84,44 @@ export default function ErreursDeveloppementCommercialPage() {
           '@id': articleUrl,
         },
       },
+      {
+        '@type': 'FAQPage',
+        '@id': articleUrl + '#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Quelle est la différence entre développement commercial et prospection ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le développement commercial est un système structuré qui agit sur le ciblage, les processus, les compétences de l\'équipe et les outils de pilotage pour accroître durablement le chiffre d\'affaires. La prospection n\'en est qu\'un levier, pas l\'ensemble. Confondre les deux est l\'erreur n°1 des dirigeants de PME. Une équipe qui prospecte sans cadre stratégique s\'épuise sur des cibles non qualifiées et signe des petits deals non rentables.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Quelles sont les erreurs de développement commercial les plus fréquentes en PME ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les 6 erreurs les plus fréquentes sont : 1) confondre développement commercial et prospection intensive, 2) recruter un commercial star comme sauveur, 3) se disperser sur tous les canaux en même temps, 4) investir dans un CRM avant d\'avoir un processus, 5) piloter au chiffre d\'affaires au lieu de piloter les leviers, 6) former en salle sans coacher sur le terrain.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment structurer le développement commercial d\'une PME ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Pour structurer son développement commercial, une PME doit : définir son processus de vente sur papier (étapes, critères de passage), choisir un canal unique pendant 90 jours, mettre en place une revue hebdomadaire de pipeline de 30 minutes, et prévoir un coaching terrain systématique après chaque formation.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Pourquoi le développement commercial des PME échoue-t-il ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le développement commercial des PME échoue pour six raisons récurrentes : absence de processus structuré, recrutement de profils stars sans intégration, dispersion multicanal, outillage sans méthode, pilotage au rétroviseur (CA au lieu des leviers), et formations sans application terrain. La clé est d\'identifier l\'erreur la plus urgente et de la corriger pendant 30 jours avant de passer à la suivante.',
+            },
+          },
+        ],
+      },
     ],
   };
 
