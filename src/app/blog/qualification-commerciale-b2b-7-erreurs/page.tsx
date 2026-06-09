@@ -356,7 +356,7 @@ export default function Qualification7ErreursPage() {
             <p className="text-sm font-semibold text-blue-ink mb-2">En compl&eacute;ment</p>
             <p className="text-gray-700 text-sm leading-relaxed">
               Vous voulez aller plus loin sur la m&eacute;thode de qualification ? J'ai compar&eacute; les frameworks BANT, MEDDIC et d'autres approches dans un
-              <Link href="/blog/methodes-vente-comparees" className="text-mint-green hover:underline">
+              <Link href="/blog/methodes-vente-comparees-spin-bant-bebedc" className="text-mint-green hover:underline">
                 {' '}article sur les m&eacute;thodes de vente compar&eacute;es{' '}
               </Link>
               . Les deux se compl&egrave;tent : les erreurs d'abord, le cadre ensuite.
