@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'qualification-commerciale-b2b-7-erreurs',
+    title: 'Qualification commerciale B2B : les 7 erreurs qui font fuir vos prospects',
+    description: 'Vous perdez des deals sans comprendre pourquoi ? Ce n\'est pas le prix ni le concurrent. Ce sont 7 erreurs de qualification qui tuent vos deals bien avant le closing. La checklist pour ne plus jamais les commettre.',
+    date: '2026-06-09',
+    readTime: '7 min',
+    category: 'Qualification commerciale / Vente B2B',
+    image: '/images/blog/qualification-commerciale-b2b-7-erreurs/qualification-7-erreurs-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'developpement-commercial-pme-causes-racines',
     title: "Pourquoi le développement commercial des PME patine (et ce qu'il faut regarder à la place)",
     description: 'Alignement marketing/commercial, cycle de décision B2B ignoré, segmentation insuffisante : les trois causes racines qui plombent le développement commercial des PME même quand elles font tout bien.',
