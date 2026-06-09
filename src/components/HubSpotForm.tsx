@@ -79,6 +79,10 @@ export default function HubSpotForm({
               page_path: window.location.pathname,
             });
           }
+          // Callback parent si défini (lead magnet page)
+          if (onFormSubmitted) {
+            onFormSubmitted();
+          }
         }
       });
 
