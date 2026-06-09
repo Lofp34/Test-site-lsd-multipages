@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'psychologie-decision-b2b-7-ressorts-guide',
+    title: 'Psychologie de décision B2B : guide gratuit des 7 ressorts qui font signer',
+    description: 'Un prospect ne compare pas des offres, il compare des risques. Découvrez les 7 ressorts psychologiques qui influencent toute décision d\'achat B2B — et téléchargez le guide complet.',
+    date: '2026-06-09',
+    readTime: '5 min',
+    category: 'Vente B2B / Psychologie d\'achat',
+    image: '/images/blog/psychologie-decision-b2b-guide/psychologie-decision-b2b-guide-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'qualification-commerciale-b2b-7-erreurs',
     title: 'Qualification commerciale B2B : les 7 erreurs qui font fuir vos prospects',
     description: 'Vous perdez des deals sans comprendre pourquoi ? Ce n\'est pas le prix ni le concurrent. Ce sont 7 erreurs de qualification qui tuent vos deals bien avant le closing. La checklist pour ne plus jamais les commettre.',
