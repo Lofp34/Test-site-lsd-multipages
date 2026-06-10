@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'septeo-swot-analyse-logiciel-cabinet',
+    title: 'Septeo : l\'analyse SWOT qu\'aucun commercial ne vous fera',
+    description: 'Septeo est-il fait pour votre cabinet ou direction juridique ? Analyse SWOT complete avec tableau des 4 quadrants, analyse terrain et verdict par Laurent Serre.',
+    date: '2026-06-10',
+    readTime: '8 min',
+    category: 'Logiciels métier / Analyse éditeur',
+    image: '/images/blog/septeo-swot/septeo-swot-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'psychologie-decision-b2b-7-ressorts-guide',
     title: 'Psychologie de décision B2B : guide gratuit des 7 ressorts qui font signer',
     description: 'Un prospect ne compare pas des offres, il compare des risques. Découvrez les 7 ressorts psychologiques qui influencent toute décision d\'achat B2B — et téléchargez le guide complet.',
