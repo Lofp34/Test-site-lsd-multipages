@@ -46,6 +46,16 @@ const blogPosts = [
     featured: true,
   },
   {
+    slug: 'vente-perdue-avant-non-b2b',
+    title: 'La vente se perd souvent avant que le client dise non',
+    description: 'Un deal ne se perd pas au moment du non. Il se perd en amont, par petites lachetes commerciales : pitcher trop tot, ne pas qualifier le vrai decideur, proposer sans rendez-vous.',
+    date: '2026-06-10',
+    readTime: '5 min',
+    category: 'Vente B2B / Process de vente',
+    image: '/images/blog/vente-perdue-avant-non/vente-perdue-avant-non-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'psychologie-decision-b2b-7-ressorts-guide',
     title: 'Psychologie de décision B2B : guide gratuit des 7 ressorts qui font signer',
     description: 'Un prospect ne compare pas des offres, il compare des risques. Découvrez les 7 ressorts psychologiques qui influencent toute décision d\'achat B2B — et téléchargez le guide complet.',
