@@ -154,11 +154,6 @@ export default function ClientPageWrapper({
               <span className="block">Transformez votre équipe</span>
               <span className="block text-mint-green">en machine commerciale</span>
             </h1>
-            <div className="mt-4 inline-block bg-white/10 backdrop-blur-sm border border-white/20 px-6 py-2 rounded-full">
-              <span className="text-sm sm:text-base text-white font-medium">
-                Nouveaux associés : Marwan &amp; Lionel — Référencement SEO 🧭
-              </span>
-            </div>
 
             <div className="max-w-5xl mx-auto space-y-4 sm:space-y-6">
               <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-body text-white/95 leading-relaxed drop-shadow-md px-2">
