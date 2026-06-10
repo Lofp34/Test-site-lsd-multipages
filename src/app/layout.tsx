@@ -4,6 +4,7 @@ import { Inter, Open_Sans, Nunito, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import LeadMagnetBanner from "@/components/LeadMagnetBanner";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
 import AnalyticsConsent from "@/components/AnalyticsConsent";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -206,6 +207,7 @@ export default function RootLayout({
         className={`${inter.variable} ${openSans.variable} ${nunito.variable} ${robotoSlab.variable} antialiased`}
       >
         <Header />
+        <LeadMagnetBanner />
         <main>
           {children}
         </main>

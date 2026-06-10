@@ -7,6 +7,7 @@ import ABTestButton from "@/components/ui/ABTestButton";
 import TrackedLink from "@/components/ui/TrackedLink";
 import Image from 'next/image';
 import ErrorBoundary from '@/components/ErrorBoundary';
+import LeadMagnetResources from '@/components/sections/LeadMagnetResources';
 
 // Lazy loading du chat widget pour optimiser le LCP
 const SimpleChatWidget = lazy(() => import('./chat/SimpleChatWidget'));
@@ -251,6 +252,8 @@ export default function ClientPageWrapper({
       <ErrorBoundary>
         <AccueilClient />
       </ErrorBoundary>
+      
+      <LeadMagnetResources />
       
       {/* Chat widget avec lazy loading et optimisations SEO */}
       {enableChat && shouldLoadChat && (
