@@ -138,6 +138,15 @@ export default function DiagnosticEngine() {
     setIsSubmitting(true);
     setError(null);
 
+    // GA4 — diagnostic form submitted
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'contact_form_submitted', {
+        event_category: 'conversion',
+        event_label: 'diagnostic_360',
+        page_path: '/diagnostic',
+      });
+    }
+
     // Build the answer data for the API
     const answerData = questions.map(q => ({
       questionId: q.id,
@@ -183,6 +192,15 @@ export default function DiagnosticEngine() {
       const data = await res.json();
       setAnalysis(data.analysis);
       setStep('results');
+
+      // GA4 — diagnostic completed
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'diagnostic_completed', {
+          event_category: 'conversion',
+          event_label: 'diagnostic_360',
+          score: String(percentage),
+        });
+      }
     } catch (err) {
       console.error('Analysis failed:', err);
       setError('L\'analyse n\'a pas pu être générée. Vous recevrez votre rapport par email.');
