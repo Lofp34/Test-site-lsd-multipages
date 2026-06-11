@@ -84,6 +84,44 @@ export default function Qualification7ErreursPage() {
           '@id': articleUrl,
         },
       },
+      {
+        '@type': 'FAQPage',
+        '@id': articleUrl + '#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Quelles sont les erreurs de qualification commerciale les plus fréquentes ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les 7 erreurs les plus fréquentes sont : 1) parler solution avant d\'avoir compris le besoin, 2) vendre à un seul contact sans vérifier qui décide vraiment, 3) qualifier le budget trop tôt, 4) pitcher le closing avant d\'avoir cartographié la décision, 5) ignorer le processus d\'achat du client, 6) ne pas vérifier l\'urgence réelle, 7) qualifier uniquement ce que le client dit sans creuser ce qu\'il ne dit pas.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment qualifier un prospect B2B efficacement ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'La qualification B2B repose sur 4 piliers : 1) le besoin réel (pas celui que le client annonce, mais celui que vous identifiez), 2) le budget (avec qui il est construit et quand), 3) le processus de décision (qui sont les parties prenantes et comment elles décident), 4) l\'urgence (ce qui se passe si le problème n\'est pas résolu). Un prospect est qualifié quand vous pouvez répondre aux 4 simultanément.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Quelle est la différence entre qualification commerciale et closing ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'La qualification intervient en amont de la vente : c\'est l\'étape qui vérifie que le prospect correspond à votre cible, que son problème est réel, qu\'il a le pouvoir et le budget de décider. Le closing est la dernière étape : la conclusion de la vente après avoir démontré la solution. L\'erreur la plus coûteuse est de clore avant d\'avoir qualifié : on signe des deals qui ne tiennent pas.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Les erreurs de qualification peuvent-elles faire perdre des deals ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Oui, et c\'est la cause n°1 de perte de deals en B2B. Un deal non qualifié est un deal que vous n\'auriez jamais dû ouvrir. Les signes avant-coureurs sont : des rendez-vous qui s\'enchaînent sans avancer, des prospects qui disparaissent après le devis, des négociations qui s\'éternisent sur le prix parce que la valeur n\'a pas été établie en amont.',
+            },
+          },
+        ],
+      },
     ],
   };
 

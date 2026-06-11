@@ -84,6 +84,44 @@ export default function CausesRacinesPage() {
           '@id': articleUrl,
         },
       },
+      {
+        '@type': 'FAQPage',
+        '@id': articleUrl + '#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Quelle est la différence entre développement commercial et prospection ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le développement commercial est un système structuré qui agit sur le ciblage, les processus, les compétences et les outils pour accroître durablement le chiffre d\'affaires. La prospection n\'en est qu\'un levier. Confondre les deux est l\'erreur principale des dirigeants de PME : une équipe qui prospecte sans cadre stratégique s\'épuise sur des cibles non qualifiées.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Pourquoi le développement commercial des PME patine-t-il souvent ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Parce que la plupart des PME confondent activité commerciale et développement commercial. Elles mesurent le volume d\'actions (appels, mails, rdv) sans regarder la structure : ciblage, processus, alignement marketing-vente et cartographie de la décision. Sans ces fondations, l\'équipe tourne à vide et les résultats stagnent.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Quels sont les trois déséquilibres qui plombent le développement commercial ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: '1) L\'alignement marketing/commercial est rompu : les contenus marketing attirent des profils que les commerciaux ne savent pas vendre. 2) Le cycle de décision B2B est ignoré : on vend à un contact comme s\'il décidait seul. 3) La segmentation est insuffisante : on traite tous les prospects de la même manière, sans adapter le discours au contexte de décision.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment aligner marketing et commercial en PME ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'En construisant un ICP (Ideal Customer Profile) partagé, en définissant ensemble les critères de qualification des leads, en organisant un comité commercial mensuel où marketing et commerce confrontent leurs données, et en partageant un objectif de chiffre d\'affaires commun plutôt que des indicateurs séparés.',
+            },
+          },
+        ],
+      },
     ],
   };
 

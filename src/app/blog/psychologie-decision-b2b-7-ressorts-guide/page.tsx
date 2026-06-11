@@ -81,6 +81,44 @@ export default function PsychologieDecisionGuidePage() {
           '@id': articleUrl,
         },
       },
+      {
+        '@type': 'FAQPage',
+        '@id': articleUrl + '#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Quels sont les 7 ressorts psychologiques de la décision d\'achat B2B ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les 7 ressorts sont : 1) l\'aversion au risque (perdre est plus fort que gagner), 2) le biais de confirmation (le client cherche des preuves de sa décision), 3) la preuve sociale (les pairs l\'ont fait), 4) l\'autorité (crédibilité du vendeur), 5) la cohérence (le client veut être aligné avec ses décisions passées), 6) la rareté (opportunité limitée dans le temps), 7) la réciprocité (donner avant de recevoir).',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment utiliser la psychologie de décision en vente B2B ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'En pratique, cela signifie : cartographier les risques perçus par le client avant de pitcher votre solution, utiliser des cas clients comme preuve sociale, démontrer votre crédibilité par des faits précis plutôt que des arguments génériques, créer une cohérence entre les décisions passées du client et votre proposition, et donner de la valeur en amont (contenu, diagnostic) pour activer la réciprocité.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Quelle est la différence entre une objection et un risque psychologique ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Une objection est ce que le client dit (prix, délai, concurrent). Un risque est ce qu\'il ressent : peur de se tromper, peur de perdre sa crédibilité en interne, peur de regretter après l\'achat. La plupart des objections de surface masquent un risque plus profond. Les traiter à la racine est plus efficace que d\'y répondre frontalement.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Pourquoi les décisions B2B prennent-elles plus de temps que les décisions B2C ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Parce qu\'une décision B2B engage la responsabilité de l\'acheteur devant plusieurs parties prenantes. Ce n\'est pas un achat personnel mais une décision collective. L\'acheteur doit être capable de défendre son choix en interne après l\'entretien. Si vous ne l\'aidez pas à construire cette défense, le processus de décision s\'allonge indéfiniment.',
+            },
+          },
+        ],
+      },
     ],
   };
 
