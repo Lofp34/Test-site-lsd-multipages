@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'generation-leads-b2b-pme-2026',
+    title: 'Génération de leads B2B 2026 : la fin du volume, le retour de la précision',
+    description: 'ICP ultra-précis, signaux d\'intention, stack sobre. Les 7 stratégies qui marchent vraiment pour générer des leads B2B en PME en 2026.',
+    date: '2026-06-11',
+    readTime: '8 min',
+    category: 'Prospection B2B / Lead Generation',
+    image: '/images/blog/2026-06-11-leadgen/2026-06-11-leadgen-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'septeo-swot-analyse-logiciel-cabinet',
     title: 'Septeo : l\'analyse SWOT qu\'aucun commercial ne vous fera',
     description: 'Septeo est-il fait pour votre cabinet ou direction juridique ? Analyse SWOT complete avec tableau des 4 quadrants, analyse terrain et verdict par Laurent Serre.',

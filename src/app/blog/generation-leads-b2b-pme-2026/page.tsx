@@ -11,7 +11,7 @@ const heroImageAbsolute = 'https://raw.githubusercontent.com/Lofp34/Test-site-ls
 const carouselPrefix = '/images/blog/2026-06-11-leadgen/carrousel';
 
 export const metadata: Metadata = {
-  title: "Génération de leads B2B 2026 : la fin du volume, le retour de la précision | Laurent Serre",
+  title: "Génération de leads B2B 2026 : ce qui marche | Laurent Serre",
   description:
     "En 2026, noyer le marché ne marche plus. ICP ultra-précis, signaux d'intention, stack sobre. Ce qui marche vraiment pour générer des leads B2B en PME. Par Laurent Serre.",
   keywords:
