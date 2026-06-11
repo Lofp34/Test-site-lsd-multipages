@@ -174,8 +174,28 @@ export default function ExitIntentPopup() {
           </Link>
 
           <p className="text-xs text-gray-400 mt-4">
-            Gratuit — téléchargement immédiat
+            Gratuit, téléchargement immédiat
           </p>
+
+          <div className="mt-5 pt-4 border-t border-gray-100">
+            <Link
+              href="/diagnostic"
+              onClick={() => {
+                if (typeof window !== 'undefined' && (window as any).gtag) {
+                  (window as any).gtag('event', 'guide_offer_click', {
+                    event_category: 'lead_magnet',
+                    event_label: 'diagnostic',
+                    guide_name: 'diagnostic',
+                    source: 'exit_intent_popup_alt',
+                  });
+                }
+                close();
+              }}
+              className="text-sm text-gray-500 hover:text-mint-green transition-colors underline underline-offset-2 decoration-gray-200 hover:decoration-mint-green"
+            >
+              Ou préférez un diagnostic personnalisé →
+            </Link>
+          </div>
         </div>
       </div>
     </div>

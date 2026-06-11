@@ -102,9 +102,10 @@ Fichier : `src/components/ExitIntentPopup.tsx`
 - Maximum 1 fois par session (`sessionStorage`)
 - Alterne entre les 2 guides (Acheteurs B2B / Psychologie décision)
 - Design : overlay `backdrop-blur-sm`, carte centrée avec icône, CTA gradient
+- Design : CTA principal guide + lien secondaire "Ou préférez un diagnostic personnalisé ?"
 - GA4 :
   - `exit_intent_trigger` : popup affichée (avec `guide_name`)
-  - `guide_offer_click` : clic sur le CTA (avec `source: 'exit_intent_popup'`)
+  - `guide_offer_click` : clic sur le CTA principal (source: `exit_intent_popup`) ou lien diagnostic alt (source: `exit_intent_popup_alt`)
 
 ### `NewsletterForm.tsx` — Formulaire newsletter footer
 Fichier : `src/components/NewsletterForm.tsx`
