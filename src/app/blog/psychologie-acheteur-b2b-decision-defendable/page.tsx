@@ -441,22 +441,28 @@ export default function PsychologieAcheteurB2BPage() {
             <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
             <ul className="space-y-3 text-sm text-gray-700">
               <li>
+                <Link href="/blog/psychologie-decision-b2b-7-ressorts-guide" className="text-mint-green hover:underline font-medium">
+                  Guide : les 7 ressorts psychologiques de la décision B2B
+                </Link>
+                <span className="text-gray-500">, l'article compagnon qui détaille chaque ressort avec des exemples terrain.</span>
+              </li>
+              <li>
                 <Link href="/blog/vente-consultative-b2b-comment-devenir-le-conseiller-que-vos-clients-ne-veulent-pas-perdre" className="text-mint-green hover:underline font-medium">
                   Vente consultative B2B : devenir le conseiller que vos clients gardent
                 </Link>
-                <span className="text-gray-500"> — Pour structurer la posture commerciale autour du diagnostic client.</span>
+                <span className="text-gray-500">, pour structurer la posture commerciale autour du diagnostic client.</span>
               </li>
               <li>
                 <Link href="/blog/methodes-vente-comparees-spin-bant-bebedc" className="text-mint-green hover:underline font-medium">
                   Méthodes de vente comparées : SPIN, BANT, BEBEDC
                 </Link>
-                <span className="text-gray-500"> — Pour choisir une grille de qualification adaptée à une décision complexe.</span>
+                <span className="text-gray-500">, pour choisir une grille de qualification adaptée à une décision complexe.</span>
               </li>
               <li>
                 <Link href="/blog/closing-b2b-7-techniques" className="text-mint-green hover:underline font-medium">
                   Closing B2B : 7 techniques pour conclure sans forcer
                 </Link>
-                <span className="text-gray-500"> — Pour conclure quand la décision a été clarifiée en amont.</span>
+                <span className="text-gray-500">, pour conclure quand la décision a été clarifiée en amont.</span>
               </li>
             </ul>
           </div>
