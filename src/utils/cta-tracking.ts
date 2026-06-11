@@ -93,6 +93,14 @@ export function setupCustomEvents() {
         link_url: href,
       });
     }
+
+    if (href === '/bootcamp' || href.startsWith('/ressources/')) {
+      window.gtag('event', 'resource_cta_clicked', {
+        event_category: 'engagement',
+        event_label: linkText || href,
+        link_url: href,
+      });
+    }
   });
 }
 

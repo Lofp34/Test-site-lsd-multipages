@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import { X } from 'lucide-react';
 
@@ -22,9 +22,26 @@ export default function LeadMagnetBanner() {
     }
   }, []);
 
+  const trackBannerClick = useCallback((guideName: string) => {
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'banner_click', {
+        event_category: 'lead_magnet',
+        event_label: guideName,
+        guide_name: guideName,
+        source: 'sitewide_banner',
+      });
+    }
+  }, []);
+
   const dismiss = () => {
     setVisible(false);
     localStorage.setItem(STORAGE_KEY, 'true');
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'banner_dismiss', {
+        event_category: 'lead_magnet',
+        event_label: 'dismiss',
+      });
+    }
   };
 
   if (!visible) return null;
@@ -38,6 +55,7 @@ export default function LeadMagnetBanner() {
           </span>
           <Link
             href="/guide-acheteurs-b2b"
+            onClick={() => trackBannerClick('guide-acheteurs-b2b')}
             className="whitespace-nowrap text-xs sm:text-sm font-medium text-mint-green hover:text-mint-green/80 transition-colors underline underline-offset-2 decoration-indigo-200 hover:decoration-mint-green"
           >
             12 questions à poser avant d&apos;acheter un coaching
@@ -45,6 +63,7 @@ export default function LeadMagnetBanner() {
           <span className="text-indigo-300 hidden sm:inline">·</span>
           <Link
             href="/guide-psychologie-decision-b2b"
+            onClick={() => trackBannerClick('guide-psychologie-decision-b2b')}
             className="hidden sm:inline whitespace-nowrap text-sm font-medium text-mint-green hover:text-mint-green/80 transition-colors underline underline-offset-2 decoration-indigo-200 hover:decoration-mint-green"
           >
             Psychologie de la décision B2B

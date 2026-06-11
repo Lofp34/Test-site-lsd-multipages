@@ -26,12 +26,14 @@ interface HubSpotFormProps {
   formId?: string;
   region?: string;
   portalId?: string;
+  onFormSubmitted?: () => void;
 }
 
 export default function HubSpotForm({ 
   formId = "884e2971-2d90-4ca1-86ee-eb824f43f074", 
   region = "na1",
-  portalId = "7401198"
+  portalId = "7401198",
+  onFormSubmitted
 }: HubSpotFormProps) {
   const formCreatedRef = useRef(false);
   const formTargetId = `hubspot-form-container-${useId().replace(/:/g, '')}`;
