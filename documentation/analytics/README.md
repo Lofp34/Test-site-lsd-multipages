@@ -21,10 +21,10 @@ Fichier : `src/components/HubSpotForm.tsx`
 ### `LeadMagnetBanner.tsx` — Bandeau sticky site-wide
 Fichier : `src/components/LeadMagnetBanner.tsx`
 - Sticky (`position: sticky; top: 0; z-index: 50`) — reste visible au scroll
-- Micro-animation : ombre portée + label "Guides gratuits" passe en mint-green au scroll
-- Flèche bounce apparaît au scroll pour attirer l'œil
+- Micro-animation : ombre portée + flèche bounce au scroll
 - Dismiss stocke timestamp dans localStorage → réaffiché après 24h
-- `banner_click` : clic sur un des liens vers les guides gratuits
+- 3 liens : "12 questions" (toujours visible), "Psychologie décision" (xl+), **"Diagnostic gratuit"** (pill mint-green, toujours visible)
+- `banner_click` : clic sur les liens guides ou le diagnostic (param `guide_name`)
 - `banner_dismiss` : fermeture du bandeau
 
 ### `cta-tracking.ts` — Écouteur générique

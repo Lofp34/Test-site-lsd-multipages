@@ -88,35 +88,41 @@ export default function LeadMagnetBanner() {
 
   return (
     <div className={`${stickyClasses} bg-gradient-to-r from-indigo-50 via-slate-50 to-indigo-50 border-b border-indigo-100 relative`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-1.5 text-sm text-blue-ink/80 flex-1 min-w-0">
-          <span className={`hidden sm:inline font-medium text-xs uppercase tracking-wider mr-1 transition-all duration-700 ${scrolled ? 'text-mint-green/90' : 'text-blue-ink/60'}`}>
-            Guides gratuits&nbsp;:
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex items-center justify-between gap-3">
+        <div className="flex items-center gap-2 text-sm text-blue-ink/80 flex-1 min-w-0">
+          <span className={`hidden xs:inline text-xs uppercase tracking-wider transition-all duration-700 whitespace-nowrap ${scrolled ? 'text-mint-green/80' : 'text-blue-ink/50'}`}>
+            🎯
           </span>
           <Link
             href="/guide-acheteurs-b2b"
             onClick={() => trackBannerClick('guide-acheteurs-b2b')}
-            className="whitespace-nowrap text-xs sm:text-sm font-medium text-mint-green hover:text-mint-green/80 transition-colors underline underline-offset-2 decoration-indigo-200 hover:decoration-mint-green"
+            className="truncate text-xs sm:text-sm font-medium text-mint-green hover:text-mint-green/80 transition-colors underline underline-offset-2 decoration-indigo-200 hover:decoration-mint-green"
           >
-            12 questions à poser avant d&apos;acheter un coaching
+            12 questions avant d&apos;acheter un coaching
           </Link>
-          <span className="text-indigo-300 hidden sm:inline">·</span>
+          <span className="text-indigo-300 hidden xl:inline">·</span>
           <Link
             href="/guide-psychologie-decision-b2b"
             onClick={() => trackBannerClick('guide-psychologie-decision-b2b')}
-            className="hidden sm:inline whitespace-nowrap text-sm font-medium text-mint-green hover:text-mint-green/80 transition-colors underline underline-offset-2 decoration-indigo-200 hover:decoration-mint-green"
+            className="hidden xl:inline whitespace-nowrap text-sm font-medium text-mint-green hover:text-mint-green/80 transition-colors underline underline-offset-2 decoration-indigo-200 hover:decoration-mint-green"
           >
             Psychologie de la décision B2B
           </Link>
+          <Link
+            href="/diagnostic"
+            onClick={() => trackBannerClick('diagnostic')}
+            className="shrink-0 text-xs font-semibold bg-mint-green text-blue-ink px-3 py-1 rounded-lg hover:bg-mint-green/90 transition-colors"
+          >
+            Diagnostic gratuit
+          </Link>
         </div>
-        <div className="flex items-center gap-2">
-          {/* Micro-indicateur visuel au scroll : petite flèche avec fondu */}
-          <span className={`text-xs text-indigo-300 transition-all duration-500 ${scrolled ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-2 pointer-events-none'}`}>
+        <div className="flex items-center gap-1.5">
+          <span className={`text-indigo-300 transition-all duration-500 ${scrolled ? 'opacity-100' : 'opacity-0'}`}>
             <ArrowDown className="w-3 h-3 animate-bounce" />
           </span>
           <button
             onClick={dismiss}
-            className="flex-shrink-0 p-1 rounded-full hover:bg-indigo-100 transition-colors text-indigo-400 hover:text-indigo-600"
+            className="shrink-0 p-1 rounded-full hover:bg-indigo-100 transition-colors text-indigo-400 hover:text-indigo-600"
             aria-label="Fermer — ne plus afficher pendant 24h"
           >
             <X className="w-4 h-4" />
