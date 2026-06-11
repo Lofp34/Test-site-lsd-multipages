@@ -206,8 +206,8 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${openSans.variable} ${nunito.variable} ${robotoSlab.variable} antialiased`}
       >
-        <Header />
         <LeadMagnetBanner />
+        <Header />
         <main>
           {children}
         </main>
