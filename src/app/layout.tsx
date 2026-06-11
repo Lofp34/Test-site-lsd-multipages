@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import LeadMagnetBanner from "@/components/LeadMagnetBanner";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
 import CookieConsentBanner from "@/components/CookieConsentBanner";
 import AnalyticsConsent from "@/components/AnalyticsConsent";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
@@ -213,6 +214,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <CookieConsentBanner />
+        <ExitIntentPopup />
         <AnalyticsConsent />
         <GoogleAnalytics />
         <PerformanceMonitor />

@@ -94,3 +94,14 @@ Le tracking est automatique sur toutes les pages via le layout partagé.
 - Le chargement est différé via `requestIdleCallback` (timeout 2s) pour ne pas impacter LCP
 - Les IPs internes peuvent être exclues via le check `ipify.org` dans GoogleAnalytics.tsx
 - Les événements formulaire sont envoyés après soumission, pas pendant la saisie
+
+### `ExitIntentPopup.tsx` — Popup intention de sortie
+Fichier : `src/components/ExitIntentPopup.tsx`
+- Déclenché sur `mouseleave` vers le haut (≥ 2s après chargement pour éviter faux positifs)
+- Visible uniquement sur les articles blog (`/blog/*`, pas la page index)
+- Maximum 1 fois par session (`sessionStorage`)
+- Alterne entre les 2 guides (Acheteurs B2B / Psychologie décision)
+- Design : overlay `backdrop-blur-sm`, carte centrée avec icône, CTA gradient
+- GA4 :
+  - `exit_intent_trigger` : popup affichée (avec `guide_name`)
+  - `guide_offer_click` : clic sur le CTA (avec `source: 'exit_intent_popup'`)
