@@ -105,3 +105,16 @@ Fichier : `src/components/ExitIntentPopup.tsx`
 - GA4 :
   - `exit_intent_trigger` : popup affichée (avec `guide_name`)
   - `guide_offer_click` : clic sur le CTA (avec `source: 'exit_intent_popup'`)
+
+### `NewsletterForm.tsx` — Formulaire newsletter footer
+Fichier : `src/components/NewsletterForm.tsx`
+- Affiché dans le footer, section dédiée entre les logos clients et la grille principale
+- Champ email + bouton "S'inscrire"
+- Validation email côté client + envoi via `/api/newsletter` → HubSpot form
+- État success/error géré
+- GA4 : `newsletter_signup` (catégorie `lead_generation`, label `footer_newsletter`)
+
+### `/api/newsletter/route.ts` — API newsletter
+- Proxy vers HubSpot Forms API (form ID `884e2971…`)
+- Accepte les doublons (CONFLICT → 200)
+- Validation email côté serveur

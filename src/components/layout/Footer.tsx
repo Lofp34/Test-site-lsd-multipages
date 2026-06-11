@@ -1,4 +1,5 @@
 import ManageCookiesButton from "@/components/ui/ManageCookiesButton";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -54,6 +55,13 @@ export default function Footer() {
               <img src="/images/compagnons-logo.png" alt="Compagnons du Devoir" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
               <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Compagnons du Devoir</span>
             </a>
+          </div>
+        </div>
+
+        {/* Section newsletter */}
+        <div className="py-12 border-b border-primary-bg/20">
+          <div className="max-w-3xl mx-auto text-center">
+            <NewsletterForm />
           </div>
         </div>
 
