@@ -203,6 +203,35 @@ export default function ExpansionPortefeuillePage() {
             </p>
           </div>
 
+<div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-10">
+            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+              🎬 Carrousel BD : Le prochain million dans votre portefeuille clients
+            </p>
+            <p className="text-sm text-amber-700 mb-5">
+              Découvrez l'histoire vraie d'un dirigeant de PME qui a arrêté de prospecter pour gagner son prochain million… en regardant dans son propre fichier clients.
+            </p>
+            <BDCarousel
+              images={carouselImages}
+              title="Carrousel BD : Le prochain million dans votre portefeuille clients"
+              maxPreview={2}
+            />
+            <div className="mt-4 text-center">
+              <Link
+                href="/images/blog/expansion-portefeuille-client/carrousel-expansion-portefeuille-client.pdf"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                Telecharger le PDF (14 planches)
+              </Link>
+            </div>
+          </div>
+
+          {/* CTA SOFT apres carrousel */}
+          <div className="text-center my-8">
+            <Link href="/diagnostic" className="text-mint-green hover:text-mint-green/80 font-medium underline underline-offset-2">
+              Découvrez par quel levier commencer selon votre profil client →
+            </Link>
+          </div>
+
           {/* ════════ LA SCENE ════════ */}
           <h2 id="scene" className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mt-14 mb-6">
             La scène qui m&apos;a fait changer de regard
@@ -326,6 +355,17 @@ export default function ExpansionPortefeuillePage() {
 
           {/* Levier 4 */}
           <h3 className="text-xl font-title font-bold text-blue-ink mt-10 mb-4">
+          {/* CTA MEDIUM entre leviers 3 et 4 */}
+          <div className="bg-orange-soft/10 border border-orange-soft/20 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-orange-soft mb-2">Vous avez identifié vos 3 premiers leviers ?</p>
+            <p className="text-sm text-gray-600 mb-4">
+              Je vous propose un diagnostic gratuit de 45 min pour passer en revue votre portefeuille client et prioriser les actions à fort impact.
+            </p>
+            <Link href="/diagnostic" className="inline-flex items-center justify-center px-6 py-3 bg-mint-green text-white font-medium rounded-full hover:bg-mint-green/90 transition-colors">
+              Je veux savoir par où commencer →
+            </Link>
+          </div>
+
             4. Proposer un service complementaire simple
           </h3>
 
@@ -372,7 +412,8 @@ export default function ExpansionPortefeuillePage() {
           </p>
 
           {/* Pour aller plus loin */}
-          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+          
+<div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
             <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
             <ul className="space-y-3 text-sm text-gray-700">
               <li><Link href="/blog/developpement-commercial-pme-plan-action-5-etapes" className="text-mint-green hover:underline font-medium">Plan d&apos;action developpement commercial</Link></li>
@@ -381,31 +422,7 @@ export default function ExpansionPortefeuillePage() {
             </ul>
           </div>
 
-          {/* Carrousel BD */}
-          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-10">
-            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
-              🎬 Carrousel BD : Le prochain million dans votre portefeuille clients
-            </p>
-            <p className="text-sm text-amber-700 mb-5">
-              14 planches illustrees : cliquez sur une vignette pour feuilleter la BD dans le lecteur integre.
-            </p>
-            <BDCarousel
-              images={carouselImages}
-              title="Carrousel BD : Le prochain million dans votre portefeuille clients"
-              maxPreview={2}
-            />
-            <div className="mt-4 text-center">
-              <Link
-                href="/images/blog/expansion-portefeuille-client/carrousel-expansion-portefeuille-client.pdf"
-                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
-              >
-                Telecharger le PDF (14 planches)
-              </Link>
-            </div>
-          </div>
-
-          {/* CTA FINAL */}
-          <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
+<div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <h2 className="text-2xl font-title font-bold mb-4">
               Vous voulez savoir quel levier activer en priorite dans votre portefeuille ?
             </h2>
