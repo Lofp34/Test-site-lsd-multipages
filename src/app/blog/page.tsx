@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'prochain-million-portefeuille-clients-expansion',
+    title: 'Votre prochain million est dans votre portefeuille clients',
+    description: 'Les dirigeants de PME consacrent 80% de leur energie aux prospects alors que 70% du CA potentiel dort chez leurs clients existants. 5 leviers concrets pour developper sans prospecter.',
+    date: '2026-06-12',
+    readTime: '7 min',
+    category: 'Expansion commerciale / Portefeuille client',
+    image: '/images/blog/expansion-portefeuille-client/expansion-portefeuille-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'generation-leads-b2b-pme-2026',
     title: 'Génération de leads B2B 2026 : la fin du volume, le retour de la précision',
     description: 'ICP ultra-précis, signaux d\'intention, stack sobre. Les 7 stratégies qui marchent vraiment pour générer des leads B2B en PME en 2026.',
