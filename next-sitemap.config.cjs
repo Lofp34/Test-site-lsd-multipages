@@ -5,7 +5,14 @@ module.exports = {
     exclude: [
       '/cas-clients',
       '/a-propos', 
-      '/contact'
+      '/contact',
+      '/test-badge',
+      '/test-bookcard',
+      '/test-comparison-table',
+      '/test-hubspot',
+      '/test-mobile-cta',
+      '/test-resource-request',
+      '/temporary-resource'
     ],
     robotsTxtOptions: {
       policies: [
