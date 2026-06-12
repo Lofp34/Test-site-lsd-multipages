@@ -45,40 +45,67 @@ export const metadata: Metadata = {
 
 export default function VentePerdueAvantNonPage() {
   const articleJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: 'La vente se perd souvent avant que le client dise non',
-    description:
-      'Un deal ne se perd pas au moment du non. Il se perd en amont, par petites lachetes commerciales.',
-    image: heroImageAbsolute,
-    datePublished: '2026-06-10',
-    dateModified: '2026-06-10',
-    author: {
-      '@type': 'Person',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com/a-propos',
-      sameAs: [
-        'https://www.linkedin.com/in/laurentserre34/',
-        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
-      ],
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      headline: 'La vente se perd souvent avant que le client dise non',
+          description:
+            'Un deal ne se perd pas au moment du non. Il se perd en amont, par petites lachetes commerciales.',
+          image: heroImageAbsolute,
+          datePublished: '2026-06-10',
+          dateModified: '2026-06-10',
+          author: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com/a-propos',
+            sameAs: [
+              'https://www.linkedin.com/in/laurentserre34/',
+              'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+            ],
+          },
+          publisher: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com',
+          },
+          mainEntityOfPage: {
+            '@id': 'https://www.laurentserre.com/blog/vente-perdue-avant-non-b2b',
+          },
+          articleSection: 'Vente B2B / Process de vente',
+          keywords: [
+            'vente B2B',
+            'deals perdus',
+            'qualification commerciale',
+            'process de vente',
+          ],
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com',
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/vente-perdue-avant-non-b2b"
     },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://www.laurentserre.com/blog/vente-perdue-avant-non-b2b',
-    },
-    articleSection: 'Vente B2B / Process de vente',
-    keywords: [
-      'vente B2B',
-      'deals perdus',
-      'qualification commerciale',
-      'process de vente',
-    ],
-  };
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/vente-perdue-avant-non-b2b#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Pour aller plus loin',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: '→ Kit gestion grands comptes → Les 7 erreurs de qualification qui font fuir vos prospects → Sales enablement PME : structurer la performance Faire un diagnostic offert Decouvrir le Bootcamp',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Prendre contact avec Laurent Serre',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: '← Retour au blog ); }',
+            },
+          }
+        ],
+      },
+  ],
+};
 
   return (
     <main className="bg-primary-bg text-gray-dark">

@@ -40,39 +40,98 @@ export const metadata: Metadata = {
 export default function CinqSignesCommercialMotiveVaQuandMemeEchouerPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Les cinq signes qu’un commercial motivé va quand même échouer",
-  "description": "La motivation ne compense pas un mauvais cadrage commercial. Voici les cinq signes concrets qui montrent qu’un commercial engagé risque quand même d’échouer dans une PME B2B.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-12-signes-commercial-motive-va-echouer-hero.jpg",
-  "datePublished": "2026-04-12",
-  "dateModified": "2026-04-12",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/cinq-signes-commercial-motive-va-quand-meme-echouer"
-  },
-  "articleSection": "Psychologie commerciale / diagnostic dirigeant",
-  "keywords": [
-    "commercial motivé",
-    "échec commercial",
-    "management commercial",
-    "diagnostic équipe commerciale",
-    "PME B2B",
-    "Laurent Serre"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Les cinq signes qu’un commercial motivé va quand même échouer",
+        "description": "La motivation ne compense pas un mauvais cadrage commercial. Voici les cinq signes concrets qui montrent qu’un commercial engagé risque quand même d’échouer dans une PME B2B.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-12-signes-commercial-motive-va-echouer-hero.jpg",
+        "datePublished": "2026-04-12",
+        "dateModified": "2026-04-12",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/cinq-signes-commercial-motive-va-quand-meme-echouer"
+        },
+        "articleSection": "Psychologie commerciale / diagnostic dirigeant",
+        "keywords": [
+          "commercial motivé",
+          "échec commercial",
+          "management commercial",
+          "diagnostic équipe commerciale",
+          "PME B2B",
+          "Laurent Serre"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/cinq-signes-commercial-motive-va-quand-meme-echouer"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/cinq-signes-commercial-motive-va-quand-meme-echouer#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Signe n°1, il travaille beaucoup mais n’apprend presque rien',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Son agenda est plein. Il appelle, relance, prend des rendez-vous, envoie des propositions. Vu de loin, ça rassure. Vu de près, on retrouve les mêmes erreurs d’une semaine à l’autre. Un commercial motivé accepte souvent d’en faire plus longtemps que les autres. C’est précisément pour ça qu’on peut passer à côté du problème. On confond endurance et progression. Si l’activité augmente mais que la qualité des conversations reste plate, vous ne formez pas un commercial, vous entretenez une fatigue.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Signe n°2, il compense le flou par de la suractivité',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Quand il ne sait pas exactement ce qui fait avancer une vente chez vous, il remplit le vide avec ce qu’il peut : plus de relances, plus de messages, plus de devis, plus de CRM, plus de mouvement. Le problème, c’est que cette suractivité donne l’illusion qu’il se bat bien. En réalité, il essaye surtout de survivre dans un cadre commercial où personne n’a suffisamment clarifié ce qu’est un bon rendez-vous, une vraie opportunité, un deal qui mérite une proposition, ou une relance qui a du sens.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Signe n°3, il parle avec conviction, mais lit mal la situation du client',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'C’est un profil qu’on aime bien au début. Il a de l’énergie, de la présence, de la bonne volonté. Mais dans les rendez-vous, il se rassure vite avec ce qu’il connaît déjà. Il présente trop tôt, il reformule peu, il explore mal le vrai problème, puis il repart avec une opportunité qui semble correcte sur le papier et fragile dans le réel. C’est exactement le prolongement du sujet que j’abordais ici : pourquoi vos commerciaux parlent trop tôt des solutions . Quand un commercial motivé se réfugie t',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Signe n°4, son manager suit ses chiffres mais corrige peu ses scènes de vente',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Beaucoup de commerciaux échouent en étant suivis de près. C’est ça le plus piégeux. Ils ont des points hebdo. Ils ont du reporting. Ils ont des objectifs rappelés régulièrement. Mais personne ne reprend vraiment leurs conversations, leurs formulations, leurs transitions, leurs moments de bascule. Tant qu’un manager reste dans le commentaire des résultats, il laisse le commercial seul au mauvais endroit. Là encore, le profil motivé tient un peu plus longtemps. Puis il se fatigue, doute de lui, ou',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Signe n°5, il finit par porter seul un système qui ne tient pas',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le dernier signe est le plus important. Dans une équipe mal structurée, le commercial motivé devient souvent celui qui absorbe les trous : process flou, ciblage bancal, passage de relais mal cadré, offres mal utilisées, management irrégulier. Il tient parce qu’il veut bien faire. Puis un jour, il n’en peut plus, ou il devient statistiquement indistinguable des autres. C’est là que certains dirigeants concluent trop vite : “Finalement, il n’était pas si bon.” C’est parfois faux. Il était peut-êtr',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce qu’un dirigeant doit regarder maintenant',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'est-ce que ce commercial progresse vraiment, ou est-ce qu’il reproduit avec plus d’énergie les mêmes erreurs ; est-ce que vos managers corrigent des scènes réelles de vente, ou seulement des indicateurs ; est-ce que votre définition d’une bonne opportunité est claire et tenue ; est-ce que vos devis partent après une vraie lecture du client, ou pour calmer l’anxiété commerciale ; est-ce que votre système aide les bons profils à devenir fiables, ou à s’user plus vite que les autres. Si vous voyez ',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

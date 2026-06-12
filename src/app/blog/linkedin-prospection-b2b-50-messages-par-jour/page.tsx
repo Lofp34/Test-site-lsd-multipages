@@ -78,7 +78,46 @@ export default function ArticlePage() {
           '@id': articleUrl,
         },
       },
-    ],
+    ,
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/linkedin-prospection-b2b-50-messages-par-jour#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Ce qui fait la différence entre un message supprimé et un rendez-vous',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'J\'accompagne des PME depuis quinze ans. Quand un commercial me dit « LinkedIn ne marche pas », je lui demande de me montrer ses messages sortants. Dans 9 cas sur 10, le problème saute aux yeux. Le message est générique. Il pourrait être envoyé à n\'importe qui. Le prospect le lit et ne se sent pas concerné. À l\'inverse, les rares messages qui obtiennent une réponse ont un point commun : ils montrent que l\'expéditeur a pris le temps de regarder qui est vraiment son interlocuteur. Pas « J\'ai vu vot',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le piège des templates',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Quand on commence à prospecter sur LinkedIn, on cherche des modèles. C\'est humain. On veut être efficace, gagner du temps. Mais un template sans personnalisation, c\'est comme un argumentaire de vente lu sans regarder le client. Ça se sent. Et ça repousse plus que ça n\'attire. Les cinq types de messages qui marchent vraiment sur LinkedIn sont ceux qu\'on ne peut pas copier-coller sans rien changer : un insight tiré de l\'activité réelle du prospect, une référence à un échange commun, un trigger lié',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que les gens confondent avec de la prospection',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Beaucoup de commerciaux confondent volume et visibilité. Envoyer 50 messages génériques par jour donne l\'impression d\'être actif. Mais l\'impact réel est proche de zéro. À l\'inverse, envoyer 5 messages ultra-personnalisés par semaine, c\'est peu gratifiant sur le moment. Mais sur trois mois, c\'est cinq fois plus efficace. LinkedIn n\'est pas un distributeur de rendez-vous. C\'est un amplificateur d\'attention réelle. Si vous n\'avez pas pris le temps de comprendre votre prospect avant d\'écrire, la pla',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Une règle simple',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Avant d\'écrire à quelqu\'un sur LinkedIn, posez-vous une question : est-ce que je serais prêt à lui dire la même chose en face, en le regardant dans les yeux ? Si la réponse est non, votre message ne mérite pas d\'être envoyé. Si elle est oui, alors LinkedIn est le canal le plus efficace pour transformer une attention réelle en rendez-vous commercial. La plateforme ne fait pas le travail à votre place. Mais elle vous donne un accès direct à des centaines de décideurs que vous n\'auriez jamais attei',
+            },
+          }
+        ],
+      },
+],
   };
 
   return (

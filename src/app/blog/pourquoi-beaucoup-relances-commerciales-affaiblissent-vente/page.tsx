@@ -40,42 +40,93 @@ export const metadata: Metadata = {
 export default function RelancesCommercialesAffaiblissentVentePage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Pourquoi beaucoup de relances commerciales affaiblissent la vente au lieu de la faire avancer",
-  "description": "Quand une relance commerciale devient un réflexe, elle dégrade souvent la valeur perçue, la posture du vendeur et la dynamique de décision. Le vrai sujet est rarement la fréquence seule.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.jpg",
-  "datePublished": "2026-04-03",
-  "dateModified": "2026-04-03",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-beaucoup-relances-commerciales-affaiblissent-vente"
-  },
-  "articleSection": "Techniques de vente terrain / relance commerciale",
-  "keywords": [
-    "relances commerciales",
-    "vente B2B",
-    "suivi commercial",
-    "posture commerciale",
-    "valeur perçue",
-    "closing B2B",
-    "Laurent Serre",
-    "bootcamp commercial",
-    "diagnostic commercial"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Pourquoi beaucoup de relances commerciales affaiblissent la vente au lieu de la faire avancer",
+        "description": "Quand une relance commerciale devient un réflexe, elle dégrade souvent la valeur perçue, la posture du vendeur et la dynamique de décision. Le vrai sujet est rarement la fréquence seule.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.jpg",
+        "datePublished": "2026-04-03",
+        "dateModified": "2026-04-03",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-beaucoup-relances-commerciales-affaiblissent-vente"
+        },
+        "articleSection": "Techniques de vente terrain / relance commerciale",
+        "keywords": [
+          "relances commerciales",
+          "vente B2B",
+          "suivi commercial",
+          "posture commerciale",
+          "valeur perçue",
+          "closing B2B",
+          "Laurent Serre",
+          "bootcamp commercial",
+          "diagnostic commercial"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-beaucoup-relances-commerciales-affaiblissent-vente"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-beaucoup-relances-commerciales-affaiblissent-vente#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Une relance faible donne surtout un signal faible',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Quand un commercial écrit “Je me permets de revenir vers vous” sans rien recadrer, sans rien éclairer et sans rien faire progresser, il n’ajoute pas de valeur à la conversation. Il rappelle simplement qu’il attend. Pour le prospect, le message implicite devient clair : le vendeur veut avancer plus que moi. Et dès que cet écart est visible, le rapport de force se dégrade. La relance ne crée pas de décision ; elle expose surtout l’absence de décision déjà sécurisée. Règle simple : une bonne relanc',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Pourquoi “relancer plus” dégrade aussi la posture commerciale',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un commercial qui relance trop devient souvent plus prudent, plus flou et plus dépendant. Il n’ose plus confronter. Il cherche surtout à ne pas perdre le lien. Résultat : ses messages deviennent plus mous, plus génériques et moins utiles. C’est le même mécanisme que dans les ventes qui se bloquent sur le prix : quand la valeur et la décision n’ont pas été suffisamment clarifiées, la conversation se dégrade ensuite dans les symptômes. Ici, le symptôme, c’est la relance. Là-bas, c’était le tarif. ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce qu’une relance utile doit vraiment faire',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Rappeler un cadre acté : une étape, un arbitrage, une date ou un engagement déjà posés. Apporter un élément utile : une clarification, un point de vigilance, une reformulation ou une aide à la décision. Maintenir une posture claire : pas de soumission commerciale, pas de formulation qui s’excuse d’exister. Tester la réalité du dossier : mieux vaut obtenir un non clair qu’entretenir un faux oui par habitude. Une bonne relance ne cherche donc pas seulement à “avoir une réponse”. Elle cherche à amé',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le bon moment pour réduire les relances… c’est avant d’avoir besoin d’en faire trop',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'La meilleure manière d’éviter les relances faibles, ce n’est pas d’écrire de meilleurs templates. C’est de mieux vendre en amont. Une découverte plus profonde, une vraie tension sur l’inaction, une prochaine étape bilatérale et un décideur mieux lu réduisent déjà massivement le besoin de poursuivre quelqu’un à froid. C’est aussi pour cela que beaucoup d’équipes envoient des propositions trop tôt puis s’épuisent en suivi. Le vrai sujet n’est pas leur persévérance. C’est leur manière de structurer',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que les dirigeants et managers doivent regarder maintenant',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si votre équipe relance beaucoup, ne demandez pas d’abord plus de discipline dans le suivi. Demandez-vous plutôt : combien d’opportunités avancent sans prochaine étape solide ? Combien de propositions partent avant qu’une décision réelle soit cadrée ? Combien de relances servent à compenser un flou qui aurait dû être traité plus tôt ? Tant que ces questions restent ouvertes, vous risquez de confondre activité et progression. Et vos commerciaux peuvent avoir l’impression de bien faire alors qu’il',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

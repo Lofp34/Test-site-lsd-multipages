@@ -40,38 +40,57 @@ export const metadata: Metadata = {
 export default function PourquoiLaMotivationNeReglePresqueJamaisLeProblemeCommercialPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Le vrai problème de votre équipe n’est presque jamais la motivation",
-  "description": "Quand une équipe commerciale cale, parler motivation permet souvent d’éviter le vrai sujet : des rendez-vous faibles, un management mou ou des ventes mal relues.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.png",
-  "datePublished": "2026-04-23",
-  "dateModified": "2026-04-23",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial"
-  },
-  "articleSection": "Psychologie commerciale / management",
-  "keywords": [
-    "motivation commerciale",
-    "management commercial",
-    "performance commerciale PME",
-    "coaching commercial",
-    "Laurent Serre"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Le vrai problème de votre équipe n’est presque jamais la motivation",
+        "description": "Quand une équipe commerciale cale, parler motivation permet souvent d’éviter le vrai sujet : des rendez-vous faibles, un management mou ou des ventes mal relues.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.png",
+        "datePublished": "2026-04-23",
+        "dateModified": "2026-04-23",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial"
+        },
+        "articleSection": "Psychologie commerciale / management",
+        "keywords": [
+          "motivation commerciale",
+          "management commercial",
+          "performance commerciale PME",
+          "coaching commercial",
+          "Laurent Serre"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Besoin d’en parler plus directement ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si votre cas mérite un échange plus direct, vous pouvez aussi laisser un message ici. ); }',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

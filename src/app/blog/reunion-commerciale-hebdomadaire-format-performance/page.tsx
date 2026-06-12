@@ -121,7 +121,46 @@ export default function ArticlePage() {
         ],
         totalTime: 'PT60M',
       },
-    ],
+    ,
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/reunion-commerciale-hebdomadaire-format-performance#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Le premier bloc, c&apos;est le constat',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Dix minutes. Les chiffres de la semaine : CA, rendez-vous, affaires engagées. Le manager présente, mais il ne commente pas les personnes. Si un commercial est en retard, on le voit en one-to-one, pas en public. Le but, c&apos;est de mettre tout le monde sur la même photo, factuelle, sans procès. Ce bloc est souvent celui qui prend le plus de temps dans les réunions ratées. On le verrouille à dix minutes maximum, et on passe à la suite. Si vous voulez creuser le sujet de la revue de pipeline, le ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le deuxième bloc, le plus souvent absent : le partage terrain',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Quinze minutes. Chaque commercial raconte une chose concrète de sa semaine. Une objection qu&apos;il n&apos;a pas su gérer. Un argument qui a marché. Une info sur un concurrent. Le manager pose des questions, ne critique pas. Si quelqu&apos;un se fait recadrer parce qu&apos;il partage une difficulté, plus personne ne partagera rien. Ce bloc est le plus important du format — et le plus souvent sacrifié quand la réunion déborde. Pourtant, c&apos;est lui qui transforme une réunion administrative en',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le troisième bloc : deux ou trois affaires à décortiquer',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Pas tout le pipeline. Juste celles qui méritent un regard collectif : une grosse opportunité proche de signer, un deal qui stagne depuis trois mois, un client complexe. Quinze minutes. Le commercial décrit. Le groupe propose. Il repart avec une ou deux idées à tester dans la semaine. Pour les deals qui stagnent, le format réunion de 30 minutes pour protéger sa marge propose une approche complémentaire quand le temps est compté.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le quatrième bloc, le plus sous-estimé : les priorités de la semaine',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Chaque commercial annonce ses trois actions clés. Pas sa to-do list complète. Trois choses qui feront la différence. Le manager les note. La semaine suivante, il commence par vérifier si elles ont été faites. Ça crée une responsabilité simple et concrète, exactement ce que recommande le rituel de réunion hebdo orienté closing qui structure une revue pipeline en 45 minutes. Soixante minutes. Vingt pour cent sur le passé, quatre-vingts sur le futur. La plupart des réunions commerciales sont des ré',
+            },
+          }
+        ],
+      },
+],
   };
 
   return (

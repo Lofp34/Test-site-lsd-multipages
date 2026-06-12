@@ -41,39 +41,58 @@ export const metadata: Metadata = {
 export default function PourquoiMemeDesCommerciauxExperimentesSeFontEncoreBananerSurLObjectionPrixPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Objection prix : même des commerciaux expérimentés se font encore bananer",
-  "description": "Quand une vente bloque sur le prix, le tarif n’est pas toujours le vrai sujet. Très souvent, l’objection prix masque un diagnostic commercial évité trop vite.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-24-objection-prix-bd-hero-selected.png",
-  "datePublished": "2026-04-24",
-  "dateModified": "2026-04-24",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix"
-  },
-  "articleSection": "Objection prix / vente terrain",
-  "keywords": [
-    "objection prix",
-    "prix trop cher",
-    "vente b2b",
-    "négociation commerciale",
-    "valeur perçue",
-    "Laurent Serre"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Objection prix : même des commerciaux expérimentés se font encore bananer",
+        "description": "Quand une vente bloque sur le prix, le tarif n’est pas toujours le vrai sujet. Très souvent, l’objection prix masque un diagnostic commercial évité trop vite.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-24-objection-prix-bd-hero-selected.png",
+        "datePublished": "2026-04-24",
+        "dateModified": "2026-04-24",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix"
+        },
+        "articleSection": "Objection prix / vente terrain",
+        "keywords": [
+          "objection prix",
+          "prix trop cher",
+          "vente b2b",
+          "négociation commerciale",
+          "valeur perçue",
+          "Laurent Serre"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Besoin d’en parler plus directement ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si votre cas mérite un échange plus direct, vous pouvez aussi laisser un message ici. ); }',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

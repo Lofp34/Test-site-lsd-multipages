@@ -41,39 +41,89 @@ export default function IAProspectionCommerciale() {
   const articleUrl = 'https://www.laurentserre.com/blog/ia-et-prospection-commerciale-ce-qui-change-vraiment-pour-vos-equipes-en-2026';
 
   const articleSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: 'IA et prospection commerciale : ce qui change vraiment pour vos équipes en 2026',
-    description:
-      'L\'IA ne remplace pas vos commerciaux. Elle amplifie leur capacité à être pertinents. Voici ce qui change concrètement sur le terrain pour les PME.',
-    image: 'https://www.laurentserre.com/images/blog/2026-05-04-ia-prospection-commerciale-hero.jpg',
-    datePublished: '2026-05-04',
-    dateModified: '2026-05-04',
-    author: {
-      '@type': 'Person',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com/a-propos',
-      sameAs: [
-        'https://www.linkedin.com/in/laurentserre34/',
-        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
-      ],
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      headline: 'IA et prospection commerciale : ce qui change vraiment pour vos équipes en 2026',
+          description:
+            'L\'IA ne remplace pas vos commerciaux. Elle amplifie leur capacité à être pertinents. Voici ce qui change concrètement sur le terrain pour les PME.',
+          image: 'https://www.laurentserre.com/images/blog/2026-05-04-ia-prospection-commerciale-hero.jpg',
+          datePublished: '2026-05-04',
+          dateModified: '2026-05-04',
+          author: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com/a-propos',
+            sameAs: [
+              'https://www.linkedin.com/in/laurentserre34/',
+              'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+            ],
+          },
+          publisher: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com',
+            logo: {
+              url: 'https://www.laurentserre.com/logo.png',
+            },
+          },
+          mainEntityOfPage: {
+            '@id': articleUrl,
+          },
+          articleSection: 'IA / prospection',
+          keywords: ['IA prospection commerciale', 'prospection B2B IA', 'outils prospection IA', 'intelligence artificielle vente', 'PME prospection 2026'],
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com',
-      logo: {
-        '@type': 'ImageObject',
-        url: 'https://www.laurentserre.com/logo.png',
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/ia-et-prospection-commerciale-ce-qui-change-vraiment-pour-vos-equipes-en-2026"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/ia-et-prospection-commerciale-ce-qui-change-vraiment-pour-vos-equipes-en-2026#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Ce que l\'IA fait vraiment mieux que vos commerciaux',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Soyons honnêtes. Il y a des tâches que l\'IA fait mieux, plus vite et sans fatigue.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que l\'IA ne peut pas (encore) faire',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Et c\'est là que vos commerciaux gardent toute leur valeur.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Les outils IA concrets pour la prospection commerciale',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Voici les catégories d\'outils qui transforment la prospection B2B en 2026. Outils de recherche et d\'enrichissement Clay : enrichir automatiquement des listes de prospects avec des dizaines de sources Apollo.io : base de données B2B avec séquences intégrées Kaspr : récupération d\'emails et numéros depuis LinkedIn Outils de séquences et de personnalisation Lemlist : séquences email multicanales avec personnalisation IA La Growth Machine : orchestration LinkedIn + email + téléphone Instantly : envo',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment intégrer l\'IA sans perturber votre équipe',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'J\'ai vu des dirigeants implémenter tous ces outils d\'un coup. Résultat : chaos, résistances, retour en arrière. L\'intégration se fait par étapes.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Un exemple terrain : PME de services B2B, 8 commerciaux',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'J\'ai accompagné une PME de services informatiques en Occitanie qui a intégré l\'IA dans sa prospection sur 6 mois. Avant : 40 minutes de préparation par prospect, 15 emails personnalisés par jour par commercial, taux de réponse de 4%. Après : 8 minutes de préparation (grâce à l\'enrichissement automatique), 60 emails personnalisés par jour, taux de réponse de 11%. Résultat : le nombre de rendez-vous qualifiés a augmenté de 175% avec la même équipe, sans recrutement supplémentaire. L\'IA n\'a pas rem',
+            },
+          }
+        ],
       },
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': articleUrl,
-    },
-    articleSection: 'IA / prospection',
-    keywords: ['IA prospection commerciale', 'prospection B2B IA', 'outils prospection IA', 'intelligence artificielle vente', 'PME prospection 2026'],
-  };
+  ],
+};
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',

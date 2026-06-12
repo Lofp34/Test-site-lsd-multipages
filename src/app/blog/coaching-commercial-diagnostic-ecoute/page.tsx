@@ -102,7 +102,38 @@ export default function ArticlePage() {
           },
         ],
       },
-    ],
+    ,
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/coaching-commercial-diagnostic-ecoute#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Les quatre causes de sous-performance commerciale',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Dans mon expérience, la sous-performance commerciale a quatre causes possibles. Et une seule d\'entre elles est vraiment fréquente dans ce qu\'on appelle un « problème de motivation ». La première, c\'est un manque de compétence : le commercial ne sait pas faire. Il faut le former. La deuxième, c\'est un manque de méthode : il sait faire mais n\'applique pas de façon systématique. Il faut structurer. La troisième, c\'est un problème de contexte : marché qui change, portefeuille qui se dégrade, situati',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Alors concrètement, ça donne quoi, un vrai coaching ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un point par semaine pendant six semaines. Pas un plan en douze actions. Pas un suivi quotidien. Un seul levier travaillé, choisi ensemble. Les deux premières semaines, vous n\'êtes même pas sur le terrain avec lui. Vous préparez le bon diagnostic. Les deux semaines suivantes, vous l\'accompagnez sur deux ou trois rendez-vous. Vous observez. Vous ne prenez pas le relais. Ensuite, vous debriefez avec une règle simple : une chose qui a bien fonctionné, une chose à améliorer, une action pour la proch',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que j\'ai appris en vingt ans de management commercial',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le coaching est un investissement incroyablement rentable — à condition de ne pas se tromper de diagnostic. Prenez le temps de la première conversation. Posez des questions ouvertes. Taisez-vous après les avoir posées. Et si vous avez un commercial qui stagne depuis trois mois, ne préparez pas son plan de coaching tout seul dans votre bureau. Allez le voir. Demandez-lui ce qui se passe. Vous serez surpris de ce que vous apprendrez. 📖 Pour aller plus loin Quinze ans à animer des réunions commerci',
+            },
+          }
+        ],
+      },
+],
   };
 
   return (

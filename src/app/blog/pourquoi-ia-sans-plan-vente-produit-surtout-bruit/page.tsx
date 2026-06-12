@@ -40,41 +40,84 @@ export const metadata: Metadata = {
 export default function IASansPlanVentePage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Pourquoi l’IA sans plan de vente produit surtout du bruit",
-  "description": "Beaucoup d’équipes commerciales ajoutent des outils IA avant d’avoir clarifié leur plan de vente. Elles accélèrent alors la confusion plus que la performance.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.jpg",
-  "datePublished": "2026-04-01",
-  "dateModified": "2026-04-01",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-ia-sans-plan-vente-produit-surtout-bruit"
-  },
-  "articleSection": "IA utile / structure commerciale",
-  "keywords": [
-    "IA commerciale",
-    "plan de vente",
-    "équipe commerciale B2B",
-    "sales enablement IA",
-    "transformation commerciale",
-    "Laurent Serre",
-    "bootcamp commercial",
-    "diagnostic commercial"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Pourquoi l’IA sans plan de vente produit surtout du bruit",
+        "description": "Beaucoup d’équipes commerciales ajoutent des outils IA avant d’avoir clarifié leur plan de vente. Elles accélèrent alors la confusion plus que la performance.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.jpg",
+        "datePublished": "2026-04-01",
+        "dateModified": "2026-04-01",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-ia-sans-plan-vente-produit-surtout-bruit"
+        },
+        "articleSection": "IA utile / structure commerciale",
+        "keywords": [
+          "IA commerciale",
+          "plan de vente",
+          "équipe commerciale B2B",
+          "sales enablement IA",
+          "transformation commerciale",
+          "Laurent Serre",
+          "bootcamp commercial",
+          "diagnostic commercial"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-ia-sans-plan-vente-produit-surtout-bruit"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-ia-sans-plan-vente-produit-surtout-bruit#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Le problème n’est pas l’IA. Le problème, c’est ce qu’elle amplifie.',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'L’IA est un multiplicateur. Elle aide une équipe claire à gagner du temps, à mieux préparer, à mieux structurer et à mieux exploiter l’information. Mais dans une équipe mal cadrée, elle fait exactement l’inverse de ce que l’on espère. Elle produit plus vite des relances faibles. Elle résume plus vite des rendez-vous mal conduits. Elle remplit plus vite un CRM qui ne reflète pas une vraie discipline commerciale. Elle génère plus vite des scripts que les commerciaux appliquent sans discernement. E',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce qu’un plan de vente doit clarifier avant d’ajouter des outils IA',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Avant de demander à l’IA de produire, il faut d’abord décider ce que l’équipe doit exécuter proprement. Un plan de vente utile ne se limite pas à un objectif de chiffre. Il cadre la mécanique commerciale. La cible prioritaire : quels comptes, quels profils, quelles situations valent vraiment le temps de l’équipe. Le diagnostic commercial attendu : quelles questions doivent être posées pour qualifier sérieusement une opportunité. Les étapes de progression : ce qui doit être obtenu avant de passer',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment utiliser l’IA sans dégrader votre système commercial',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'La bonne approche n’est pas “où peut-on mettre de l’IA partout ?”. La bonne question est : sur quelles tâches répétitives l’IA nous aide-t-elle sans brouiller le jugement commercial ? En pratique, les meilleurs usages arrivent souvent après un travail de clarification plus large : objectifs, ciblage, méthodes, rituels managériaux, discipline de deal. Autrement dit, après avoir construit un système. C’est la logique d’un vrai plan 90 jours, pas d’une série d’expérimentations dispersées comme on e',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que les dirigeants doivent regarder maintenant',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si vous déployez des usages IA dans votre équipe commerciale, ne regardez pas d’abord le nombre d’outils adoptés. Regardez si trois choses s’améliorent réellement : la qualité des conversations commerciales ; la clarté des prochaines étapes dans les deals ; la capacité des managers à coacher autre chose que du reporting. Si ces trois points ne montent pas, vous n’êtes probablement pas en train de moderniser la vente. Vous êtes surtout en train de moderniser le bruit autour d’elle.',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

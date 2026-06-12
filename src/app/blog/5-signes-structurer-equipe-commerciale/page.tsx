@@ -36,37 +36,96 @@ export const metadata: Metadata = {
 export default function Article1() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "5 signes qu'il est temps de structurer votre équipe commerciale",
-  "image": "https://www.laurentserre.com/equipe_bureau.jpg",
-  "datePublished": "2025-01-15",
-  "dateModified": "2025-01-15",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/5-signes-structurer-equipe-commerciale"
-  },
-  "articleSection": "Stratégie",
-  "keywords": [
-    "structurer équipe commerciale",
-    "organisation force de vente",
-    "management commercial",
-    "PME",
-    "développement commercial"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "5 signes qu'il est temps de structurer votre équipe commerciale",
+        "image": "https://www.laurentserre.com/equipe_bureau.jpg",
+        "datePublished": "2025-01-15",
+        "dateModified": "2025-01-15",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/5-signes-structurer-equipe-commerciale"
+        },
+        "articleSection": "Stratégie",
+        "keywords": [
+          "structurer équipe commerciale",
+          "organisation force de vente",
+          "management commercial",
+          "PME",
+          "développement commercial"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/5-signes-structurer-equipe-commerciale"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/5-signes-structurer-equipe-commerciale#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: '1. Les résultats deviennent imprévisibles',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le symptôme : Vos chiffres de vente ressemblent à des montagnes russes. Un mois exceptionnel, suivi de deux mois décevants, puis un rebond inattendu. Cette irrégularité devient la norme plutôt que l\'exception. Pourquoi cela arrive-t-il ? Sans structure claire, chaque commercial développe sa propre méthode, ses propres outils et son propre rythme. Certains excellent dans la prospection mais négligent le suivi, d\'autres sont doués pour conclure mais peinent à alimenter leur pipeline. Mon conseil :',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '2. La connaissance client se perd',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le symptôme : Quand un commercial part en congés ou quitte l\'entreprise, une partie de la relation client disparaît avec lui. Les informations cruciales sur les prospects et clients restent dans sa tête ou dans ses notes personnelles. Cette situation devient critique quand vous réalisez que personne d\'autre ne peut reprendre efficacement un dossier client complexe. Vos commerciaux deviennent indispensables... mais aussi irremplaçables. L\'impact : Perte de opportunités commerciales, détérioration',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '3. La formation devient un casse-tête',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le symptôme : Chaque nouveau commercial met 6 mois ou plus à devenir opérationnel. Pire, certains n\'y arrivent jamais vraiment car ils naviguent à vue sans méthode claire. Sans processus défini, impossible de former efficacement. Vos seniors transmettent leur expérience de manière informelle, chacun à sa façon. Résultat : une formation hétéroclite et des lacunes importantes. Chiffre clé : Dans une équipe structurée, le temps d\'intégration d\'un nouveau commercial passe de 6 mois à 2-3 mois maximu',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '4. Le manager commercial devient un pompier',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le symptôme : Votre manager commercial (ou vous-même) passe ses journées à éteindre les feux. Réclamations clients, dossiers bloqués, prévisions en retard... Il n\'a plus le temps de vendre ou de coacher. Cette situation révèle un manque de processus clairs et d\'outils adaptés. Sans structure, tout remonte au manager qui devient le goulot d\'étranglement de l\'équipe. Le coût caché : Votre meilleur commercial devient un administratif. Vous perdez sa capacité à générer du chiffre d\'affaires tout en ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '5. La motivation s\'effrite',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le symptôme : Vos commerciaux se plaignent du manque d\'équité dans la répartition des leads, des objectifs flous ou des outils défaillants. L\'ambiance se dégrade et le turnover augmente. Sans structure claire, impossible d\'établir des règles du jeu équitables. Certains commerciaux se sentent avantagés, d\'autres lésés. Cette perception d\'injustice tue la motivation d\'équipe. L\'escalade : La démotivation devient contagieuse. Même vos meilleurs éléments commencent à regarder ailleurs ou à baisser l',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Par où commencer la structuration ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si vous reconnaissez au moins 3 de ces 5 signaux, il est temps d\'agir. La structuration d\'une équipe commerciale ne se fait pas du jour au lendemain, mais elle suit une logique précise : Diagnostic complet : Analysez l\'existant sans complaisance Définition des processus : Créez des méthodes reproductibles Mise en place des outils : CRM, tableau de bord, scripts... Formation de l\'équipe : Alignez tout le monde sur les nouvelles méthodes Suivi et ajustement : Mesurez, analysez, corrigez',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

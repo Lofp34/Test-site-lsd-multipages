@@ -56,41 +56,92 @@ const carouselImages = [
 
 export default function GapSellingMethodeTerrainB2bPage() {
   const articleJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: 'Gap Selling appliqué au terrain : vendre en creusant le vrai problème',
-    description:
-      '80% des cycles de vente échouent parce que le commercial parle de sa solution avant d\'avoir compris le vrai problème. La méthode Gap Selling, racontée par le terrain PME français.',
-    image: 'https://www.laurentserre.com/images/blog/2026-05-27-gap-selling-hero.webp',
-    datePublished: '2026-05-27',
-    dateModified: '2026-05-27',
-    author: {
-      '@type': 'Person',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com/a-propos',
-      sameAs: [
-        'https://www.linkedin.com/in/laurentserre34/',
-        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
-      ],
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      headline: 'Gap Selling appliqué au terrain : vendre en creusant le vrai problème',
+          description:
+            '80% des cycles de vente échouent parce que le commercial parle de sa solution avant d\'avoir compris le vrai problème. La méthode Gap Selling, racontée par le terrain PME français.',
+          image: 'https://www.laurentserre.com/images/blog/2026-05-27-gap-selling-hero.webp',
+          datePublished: '2026-05-27',
+          dateModified: '2026-05-27',
+          author: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com/a-propos',
+            sameAs: [
+              'https://www.linkedin.com/in/laurentserre34/',
+              'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+            ],
+          },
+          publisher: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com',
+          },
+          mainEntityOfPage: {
+            '@id': 'https://www.laurentserre.com/blog/gap-selling-methode-terrain-b2b',
+          },
+          articleSection: 'Méthode de vente / diagnostic commercial',
+          keywords: [
+            'gap selling',
+            'méthode gap selling',
+            'diagnostic commercial',
+            'vente B2B',
+            'vente consultative',
+          ],
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com',
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/gap-selling-methode-terrain-b2b"
     },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://www.laurentserre.com/blog/gap-selling-methode-terrain-b2b',
-    },
-    articleSection: 'Méthode de vente / diagnostic commercial',
-    keywords: [
-      'gap selling',
-      'méthode gap selling',
-      'diagnostic commercial',
-      'vente B2B',
-      'vente consultative',
-    ],
-  };
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/gap-selling-methode-terrain-b2b#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Gap Selling en trois principes : version terrain',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Avant d\'aller dans le détail, voici les trois idées qui tiennent la méthode : 1. Le client n\'a pas toujours conscience de son vrai problème. Il ressent un symptôme : un chiffre qui baisse, une équipe qui fatigue, un processus qui bloque, mais il n\'a pas mis de mot sur la cause réelle. Votre travail n\'est pas de confirmer ce qu\'il croit savoir. C\'est de creuser jusqu\'à ce que le vrai problème apparaisse. 2. Ce n\'est pas le problème qui fait vendre, c\'est l\'écart. Un problème peut exister depuis d',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que Gap Selling change vraiment dans la pratique',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'La différence n\'est pas dans les questions que vous posez. La différence est dans ce que vous faites des réponses. Un commercial classique pose des questions pour savoir s\'il peut placer son produit. Il écoute, il prend des notes, et dès qu\'il entend un mot qui ressemble à son offre, il lance sa démo ou sa proposition. Un commercial qui applique Gap Selling pose des questions pour mesurer un écart. Il ne cherche pas une porte d\'entrée pour sa solution. Il cherche à comprendre où le client en est',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Les erreurs qui tuent Gap Selling sur le terrain',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'J\'ai vu des équipes adopter la méthode avec enthousiasme, puis revenir trois mois plus tard en disant « ça ne marche pas ». Dans neuf cas sur dix, ce n\'est pas la méthode le problème. Ce sont des erreurs d\'application. Erreur 1 : creuser pour faire joli, puis pitcher pareil. Le commercial fait une belle phase de découverte, prend des notes, hoche la tête : puis sort exactement la même proposition qu\'il avait préparée avant le rendez-vous. Le client sent le décalage. La confiance est cassée. Erre',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Un cas concret : la PME de services qui recrutait au hasard',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Une PME de services de 40 personnes en région. Le dirigeant me contacte parce que son équipe commerciale plafonne. Il pense qu\'il faut les former à la prospection. C\'est sa lecture. On creuse. Le problème n\'est pas la prospection. L\'équipe passe son temps à gérer des dossiers mal qualifiés. Les deux dernières recrues commerciales n\'étaient pas adaptées. Le turnover a coûté cher en temps de management et en clients perdus. On quantifie. Le coût des deux mauvais recrutements sur 18 mois : salaires',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Questions fréquentes',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Gap Selling, c\'est différent de SPIN Selling ? Oui et non. Les deux méthodes reposent sur une découverte profonde. SPIN structure les questions par type (Situation, Problème, Implication, Nécessité). Gap Selling met davantage l\'accent sur la quantification de l\'écart et l\'amplification des conséquences. Dans la pratique, elles se complètent bien. J\'utilise parfois SPIN pour la trame des questions et Gap Selling pour le cadrage global du cycle. Est-ce que Gap Selling marche pour tous les types de',
+            },
+          }
+        ],
+      },
+  ],
+};
 
   return (
     <main className="bg-primary-bg text-gray-dark">

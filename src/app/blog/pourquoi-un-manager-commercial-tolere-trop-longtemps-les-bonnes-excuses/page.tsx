@@ -40,39 +40,58 @@ export const metadata: Metadata = {
 export default function PourquoiUnManagerCommercialTolereTropLongtempsLesBonnesExcusesPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Manager commercial : tolérer les bonnes excuses vous coûte des ventes",
-  "description": "Quand un manager commercial laisse passer trop longtemps les bonnes excuses, il protège le confort de l’équipe mais il laisse aussi s’installer des ventes fragiles et des habitudes faibles.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.png",
-  "datePublished": "2026-04-22",
-  "dateModified": "2026-04-22",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-tolere-trop-longtemps-les-bonnes-excuses"
-  },
-  "articleSection": "Management / coaching commercial",
-  "keywords": [
-    "manager commercial",
-    "excuses commerciales",
-    "coaching commercial",
-    "debrief commercial",
-    "management vente",
-    "Laurent Serre"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Manager commercial : tolérer les bonnes excuses vous coûte des ventes",
+        "description": "Quand un manager commercial laisse passer trop longtemps les bonnes excuses, il protège le confort de l’équipe mais il laisse aussi s’installer des ventes fragiles et des habitudes faibles.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.png",
+        "datePublished": "2026-04-22",
+        "dateModified": "2026-04-22",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-tolere-trop-longtemps-les-bonnes-excuses"
+        },
+        "articleSection": "Management / coaching commercial",
+        "keywords": [
+          "manager commercial",
+          "excuses commerciales",
+          "coaching commercial",
+          "debrief commercial",
+          "management vente",
+          "Laurent Serre"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-tolere-trop-longtemps-les-bonnes-excuses"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-tolere-trop-longtemps-les-bonnes-excuses#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Besoin d’en parler plus directement ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si votre cas mérite un échange plus direct, vous pouvez aussi laisser un message ici. ); }',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

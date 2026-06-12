@@ -101,7 +101,30 @@ export default function ArticlePage() {
           },
         ],
       },
-    ],
+    ,
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/kpis-commerciaux-pme-indicateurs-vous-cachent#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Les seuls KPIs qui comptent',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Dans une PME B2B, il y a trois types d\'indicateurs. Et honnêtement, la plupart des équipes que j\'accompagne n\'ont besoin que de deux par catégorie. Ce qui se passe maintenant — les indicateurs d\'activité. Combien de nouveaux contacts cette semaine. Combien de rendez-vous de découverte. Pas en théorie, en réel. Si le nombre de rendez-vous baisse deux semaines de suite, vous avez un problème aujourd\'hui, pas dans trois mois. Ce qui transforme — les taux de conversion. Rendez-vous → proposition. Pr',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que je vois sur le terrain',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Dans les équipes qui performent, le directeur commercial regarde son tableau de bord trente minutes le vendredi après-midi. Pas trois heures le lundi matin. Il pose deux questions : « Qu\'est-ce qui est en rouge ? » et « Qu\'est-ce qu\'on fait pour le remettre en vert ? » Pas de réunion sur les tendances. Pas de benchmarking interne. Pas de dashboard qui compare Pierre et Paul. Un KPI, ça sert à décider. Pas à décorer. Si vous passez plus de temps à mettre à jour votre tableau de bord qu\'à agir sur',
+            },
+          }
+        ],
+      },
+],
   };
 
   return (

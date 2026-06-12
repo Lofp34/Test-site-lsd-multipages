@@ -42,43 +42,102 @@ export const metadata: Metadata = {
 
 export default function AcheteursB2BPage() {
   const articleJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: '70% des acheteurs B2B ne veulent plus parler aux commerciaux, et c\'est une bonne nouvelle',
-    description:
-      'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil , c\'est un rejet du mauvais commercial. 7 data points Gartner sourcés et analyse terrain.',
-    image: heroImageAbsolute,
-    datePublished: '2026-05-26',
-    dateModified: '2026-05-26',
-    author: {
-      '@type': 'Person',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com/a-propos',
-      sameAs: [
-        'https://www.linkedin.com/in/laurentserre34/',
-        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
-      ],
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      headline: '70% des acheteurs B2B ne veulent plus parler aux commerciaux, et c\'est une bonne nouvelle',
+          description:
+            'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil , c\'est un rejet du mauvais commercial. 7 data points Gartner sourcés et analyse terrain.',
+          image: heroImageAbsolute,
+          datePublished: '2026-05-26',
+          dateModified: '2026-05-26',
+          author: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com/a-propos',
+            sameAs: [
+              'https://www.linkedin.com/in/laurentserre34/',
+              'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+            ],
+          },
+          publisher: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com',
+          },
+          mainEntityOfPage: {
+            '@id': 'https://www.laurentserre.com/blog/acheteurs-b2b-ne-veulent-plus-parler-aux-commerciaux',
+          },
+          articleSection: 'Comportement acheteur B2B / transformation commerciale',
+          keywords: [
+            'acheteurs B2B',
+            'comportement acheteur B2B',
+            'Gartner CSO',
+            'vente B2B',
+            'prospection B2B',
+            'autonomie acheteur',
+            'digital commerce',
+          ],
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com',
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/acheteurs-b2b-ne-veulent-plus-parler-aux-commerciaux"
     },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://www.laurentserre.com/blog/acheteurs-b2b-ne-veulent-plus-parler-aux-commerciaux',
-    },
-    articleSection: 'Comportement acheteur B2B / transformation commerciale',
-    keywords: [
-      'acheteurs B2B',
-      'comportement acheteur B2B',
-      'Gartner CSO',
-      'vente B2B',
-      'prospection B2B',
-      'autonomie acheteur',
-      'digital commerce',
-    ],
-  };
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/acheteurs-b2b-ne-veulent-plus-parler-aux-commerciaux#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Ce que les chiffres disent vraiment',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Gartner a interrogé les acheteurs B2B sur leur comportement réel. Pas sur ce qu&apos;ils disent faire, sur ce qu&apos;ils font. Première découverte : 61 % des acheteurs veulent une phase de découverte sans aucun contact commercial. Pas de démo, pas d&apos;appel discovery, pas de « laissez-moi vous présenter notre solution ». Rien. Ils veulent explorer seuls, à leur rythme. Deuxième : 60 % fuient activement les fournisseurs qui envoient trop de messages. Et 76 % évitent ceux dont les messages ne ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Pourquoi les acheteurs fuient , et ce qu&apos;ils fuient vraiment',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Quand je lis ces chiffres, je ne vois pas un rejet du conseil humain. Je vois le rejet d&apos;une mécanique commerciale épuisante. Le prospect reçoit en moyenne combien de messages de commerciaux chaque jour ? Huit ? Dix ? Des relances automatiques, des demandes de rendez-vous génériques, des « je passais justement dans le coin » qui sentent le script à plein nez. Il finit par tout ignorer. Et franchement, il a raison. Ce que les acheteurs disent, à travers ces chiffres, c&apos;est : « Arrêtez d',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que ça change concrètement',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le commercial qui passe ses journées à envoyer des messages en masse et à relancer des prospects qui ne l&apos;ont pas appelé est en train de tuer son propre pipeline. Les chiffres Gartner le disent : chaque message non pertinent est une raison supplémentaire pour le prospect de vous fuir. La bascule à faire est simple à énoncer, difficile à exécuter : Passer du volume à la valeur. Envoyer 50 messages par jour, c&apos;est du bruit. Envoyer 5 messages extrêmement pertinents, c&apos;est du signal.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Les deux mondes qui se séparent',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les chiffres Gartner montrent aussi que les entreprises où le marketing et les ventes collaborent sur le digital commerce ont 2,1 fois plus de croissance. C&apos;est logique : le marketing prépare le terrain avec du contenu que l&apos;acheteur consomme seul. Les ventes interviennent après, quand l&apos;acheteur a besoin d&apos;un regard humain sur ce qu&apos;il a trouvé. La jointure entre les deux fait la différence. Les équipes qui gardent une approche de prospection de masse, sans qualificatio',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que je vois sur le terrain',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Chez mes clients qui réussissent cette transition, je vois trois choses. D&apos;abord, ils ont arrêté de compter les appels. Ils comptent les interactions utiles. Pas les relances. Pas les mails de prise de contact. Les échanges où le prospect a appris quelque chose. Ensuite, ils ont investi dans la qualification avant la prospection. Leurs commerciaux passent plus de temps à comprendre le contexte d&apos;un prospect qu&apos;à le contacter. Le ratio s&apos;est inversé. Enfin, ils ont accepté que',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'FAQ , Acheteurs B2B et comportement d&apos;achat',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: '70% des acheteurs B2B préfèrent le digital : est-ce que ça signifie la fin du commercial ? Non. Les chiffres Gartner montrent que les acheteurs rejettent la prospection de masse non pertinente, pas le conseil humain. Les équipes qui adaptent leur approche (pertinence, timing, qualification) performent 3,2 fois mieux. Comment savoir si mes messages sont « pertinents » ou « du bruit » ? Un message est pertinent quand l&apos;acheteur ne peut pas trouver l&apos;information sans vous : une donnée exc',
+            },
+          }
+        ],
+      },
+  ],
+};
 
   return (
     <main className="bg-primary-bg text-gray-dark">

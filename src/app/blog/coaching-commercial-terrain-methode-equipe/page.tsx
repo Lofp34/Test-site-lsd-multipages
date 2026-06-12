@@ -58,41 +58,100 @@ const carouselImages = [
 
 export default function CoachingCommercialTerrainMethodePage() {
   const articleJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: 'Coaching commercial terrain : la méthode qui transforme vraiment les pratiques de votre équipe',
-    description:
-      'Les formations en salle ne changent presque rien aux pratiques. Le coaching terrain, oui, à condition de suivre une méthode en 4 temps : observer sans intervenir, débriefer en questionnant, travailler une priorité à la fois, répéter chaque semaine.',
-    image: heroImageAbsolute,
-    datePublished: '2026-06-01',
-    dateModified: '2026-06-01',
-    author: {
-      '@type': 'Person',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com/a-propos',
-      sameAs: [
-        'https://www.linkedin.com/in/laurentserre34/',
-        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
-      ],
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      headline: 'Coaching commercial terrain : la méthode qui transforme vraiment les pratiques de votre équipe',
+          description:
+            'Les formations en salle ne changent presque rien aux pratiques. Le coaching terrain, oui, à condition de suivre une méthode en 4 temps : observer sans intervenir, débriefer en questionnant, travailler une priorité à la fois, répéter chaque semaine.',
+          image: heroImageAbsolute,
+          datePublished: '2026-06-01',
+          dateModified: '2026-06-01',
+          author: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com/a-propos',
+            sameAs: [
+              'https://www.linkedin.com/in/laurentserre34/',
+              'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+            ],
+          },
+          publisher: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com',
+          },
+          mainEntityOfPage: {
+            '@id': 'https://www.laurentserre.com/blog/coaching-commercial-terrain-methode-equipe',
+          },
+          articleSection: 'Coaching commercial / Management d\'équipe',
+          keywords: [
+            'coaching commercial terrain',
+            'méthode coaching terrain',
+            'accompagnement terrain commercial',
+            'transformation équipe commerciale',
+            'protocole coaching terrain',
+          ],
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com',
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/coaching-commercial-terrain-methode-equipe"
     },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://www.laurentserre.com/blog/coaching-commercial-terrain-methode-equipe',
-    },
-    articleSection: 'Coaching commercial / Management d\'équipe',
-    keywords: [
-      'coaching commercial terrain',
-      'méthode coaching terrain',
-      'accompagnement terrain commercial',
-      'transformation équipe commerciale',
-      'protocole coaching terrain',
-    ],
-  };
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/coaching-commercial-terrain-methode-equipe#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Temps 1 : Observer sans intervenir',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Première règle du coaching terrain : on ne corrige pas pendant l&apos;action. Quand vous êtes assis à côté d&apos;un commercial pendant un rendez-vous client, votre instinct vous dit d&apos;intervenir. Il va droit dans le mur. Il rate l&apos;objection. Il vend trop tôt. Vous voulez rattraper. Ne faites rien. Votre rôle, à ce moment-là, n&apos;est pas de sauver le rendez-vous. C&apos;est de regarder ce qui se passe vraiment. Pas ce que le commercial croit faire. Pas ce qu&apos;il vous a dit qu&ap',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Temps 2 : Débriefer en questionnant, pas en listant',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le débrief, c&apos;est le moment où la plupart des managers tuent leur coaching. Ils sortent leur liste : « Tu n&apos;as pas fait ça, tu aurais dû faire ça, la prochaine fois tu feras ça. » Le commercial écoute, hoche la tête, et oublie tout dans la demi-heure. Pourquoi ? Parce qu&apos;il n&apos;a rien construit. On lui a donné des réponses à des questions qu&apos;il ne s&apos;est pas posées. Le bon débrief, c&apos;est l&apos;inverse. Le commercial trouve lui-même ce qu&apos;il doit améliorer. V',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Temps 3 : Une seule priorité par session',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'C&apos;est l&apos;erreur la plus répandue. Le manager identifie trois, quatre, cinq points d&apos;amélioration. Il les donne tous en même temps. Le commercial repart avec une liste. Il n&apos;en applique aucun. Pourquoi ? Parce que changer un geste commercial demande de la répétition. Pas de la bonne intention. Si vous voulez qu&apos;un commercial pose des questions ouvertes, vous ne pouvez pas en même temps lui demander de mieux négocier, de mieux conclure et de mieux prospecter. C&apos;est tro',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Temps 4 : Répéter à fréquence régulière',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le coaching terrain ne se fait pas en stage d&apos;une semaine. Il se fait à un rythme régulier, maintenu dans le temps. Le format que j&apos;ai vu fonctionner partout : une heure par semaine, par commercial. Pas plus. Pas d&apos;excuse de planning. Une heure, c&apos;est assez pour faire le point, travailler une mise en situation et définir l&apos;objectif de la semaine. Pas moins non plus. Trente minutes, c&apos;est trop court pour s&apos;installer dans le travail. À chaque séance : 5 minutes :',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Cas concret : la transformation d&apos;une équipe en huit semaines',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'J&apos;accompagnais une PME de trente personnes, six commerciaux, un marché concurrentiel, des marges qui fondaient. Le directeur commercial avait tout essayé : formations, challenges, primes. Rien ne tenait. On a mis en place le protocole des 4 temps. Une heure par commercial, par semaine. Un seul levier à la fois, choisi ensemble. Premier constat : quatre des six commerciaux avaient le même défaut. Ils répondaient trop vite aux objections. Client disait « c&apos;est cher », ils sortaient une r',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Les trois erreurs qui tuent le coaching terrain',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Je les vois chez presque tous mes clients. Si vous voulez que votre coaching marche, évitez-les. 1. Coacher comme un inspecteur Vous arrivez avec une grille d&apos;évaluation, vous notez chaque écart, vous donnez une note. Le commercial se sent jugé, pas accompagné. Il se ferme. Le coaching n&apos;est pas un contrôle. C&apos;est un entraînement. L&apos;inspecteur regarde ce qui ne va pas. L&apos;entraîneur regarde ce qu&apos;on peut améliorer. La différence est dans l&apos;intention, et le comme',
+            },
+          }
+        ],
+      },
+  ],
+};
 
   return (
     <main className="bg-primary-bg text-gray-dark">

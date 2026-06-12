@@ -45,41 +45,92 @@ export const metadata: Metadata = {
 
 export default function SepteoSwotPage() {
   const articleJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: 'Septeo : analyse SWOT de l\'editeur legaltech francais',
-    description:
-      'Analyse SWOT complete de Septeo avec tableau 4 quadrants. Forces, faiblesses, opportunites, menaces. Verdict : Septeo est-il fait pour vous ?',
-    image: heroImageAbsolute,
-    datePublished: '2026-06-10',
-    dateModified: '2026-06-10',
-    author: {
-      '@type': 'Person',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com/a-propos',
-      sameAs: [
-        'https://www.linkedin.com/in/laurentserre34/',
-        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
-      ],
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      headline: 'Septeo : analyse SWOT de l\'editeur legaltech francais',
+          description:
+            'Analyse SWOT complete de Septeo avec tableau 4 quadrants. Forces, faiblesses, opportunites, menaces. Verdict : Septeo est-il fait pour vous ?',
+          image: heroImageAbsolute,
+          datePublished: '2026-06-10',
+          dateModified: '2026-06-10',
+          author: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com/a-propos',
+            sameAs: [
+              'https://www.linkedin.com/in/laurentserre34/',
+              'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+            ],
+          },
+          publisher: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com',
+          },
+          mainEntityOfPage: {
+            '@id': 'https://www.laurentserre.com/blog/septeo-swot-analyse-logiciel-cabinet',
+          },
+          articleSection: 'Logiciels métier / Analyse éditeur',
+          keywords: [
+            'Septeo',
+            'SWOT',
+            'logiciel cabinet juridique',
+            'legaltech',
+            'analyse éditeur',
+          ],
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com',
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/septeo-swot-analyse-logiciel-cabinet"
     },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://www.laurentserre.com/blog/septeo-swot-analyse-logiciel-cabinet',
-    },
-    articleSection: 'Logiciels métier / Analyse éditeur',
-    keywords: [
-      'Septeo',
-      'SWOT',
-      'logiciel cabinet juridique',
-      'legaltech',
-      'analyse éditeur',
-    ],
-  };
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/septeo-swot-analyse-logiciel-cabinet#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Le tableau SWOT en un coup d&rsquo;oeil',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Forces (Strengths) Faiblesses (Weaknesses) Leader francais et europeen de la legaltech Suite logicielle integree (gestion dossiers, facturation, CRM, IA) IA native embarquee (Septeo Brain, automatisation documentaire) Presence forte dans les professions reglementees (notaires, avocats) Classements independants favorables (ELM Vendor Matrix 2024 n°1) Support client note (NPS ~48) Coût eleve, surtout pour les petits cabinets Courbe d&rsquo;apprentissage significative Integration post-acquisitions ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Forces : ce que Septeo fait vraiment bien',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'La premiere chose qui frappe quand on regarde Septeo, c&rsquo;est la coherence de la pile. Peu d&rsquo;editeurs en France proposent une suite aussi integree : gestion des dossiers, facturation, CRM, portail client, et maintenant IA. Quand tout marche ensemble, le gain de temps est reel. J&rsquo;ai vu un cabinet de 40 avocats passer de six outils separes a une seule plateforme. Leur temps administratif est passe de 30% a 12% du temps facturable. C&rsquo;est concret. L&rsquo;IA native est un vrai ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Faiblesses : ce qu&rsquo;on ne vous dit pas en demo',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le prix d&rsquo;abord. Septeo n&rsquo;est pas l&rsquo;outil le plus cher du marche, mais l&rsquo;ecart avec des solutions plus legeres est significatif et les couts de migration initiaux sont rarement mentionnes dans le premier entretien. La courbe d&rsquo;apprentissage, ensuite. J&rsquo;ai accompagne un cabinet ou la mise en oeuvre a dure six mois au lieu des trois prevus, parce que la formation avait ete sous-estimee par le commercial. Ce n&rsquo;est pas un probleme de produit, c&rsquo;est un ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Opportunites : le marche bouge en leur faveur',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le marche de la legaltech francaise croit d&rsquo;environ 15% par an. La digitalisation des cabinets n&rsquo;en est qu&rsquo;a 40% de penetration. Il y a de la place pour tout le monde. L&rsquo;IA generative est l&rsquo;opportunite la plus nette pour Septeo. Les editeurs qui ont deja l&rsquo;IA en production, pas en powerpoint, partent avec un train d&rsquo;avance. Septeo en fait partie. L&rsquo;internationalisation via stp.one est une bonne carte. Le marche DACH (Allemagne, Autriche, Suisse) es',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Menaces : ce qui pourrait les rattraper',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'La premiere menace, c&rsquo;est la consolidation elle-meme. Chaque acquisition ajoute une couche de complexite technique et humaine. Les clients stp.one vont devoir migrer. Les clients Septeo vont voir leur feuille de route perturbee. C&rsquo;est le moment ou des concurrents plus agiles peuvent grignoter des parts. La deuxieme, ce sont les alternatives plus legeres et moins cheres. Des editeurs comme Clio commencent a s&rsquo;implanter serieusement en Europe. Et du cote open-source, des solution',
+            },
+          }
+        ],
+      },
+  ],
+};
 
   return (
     <main className="bg-primary-bg text-gray-dark">

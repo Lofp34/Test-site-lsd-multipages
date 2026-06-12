@@ -35,17 +35,88 @@ export default function Article3() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Les erreurs fatales dans la prospection B2B (et comment les éviter)",
-            "description": "Après 20 ans d'expérience terrain, découvrez les 7 erreurs qui sabotent vos efforts de prospection B2B et les solutions concrètes pour les éviter.",
-            "author": { "@type": "Person", "name": "Laurent Serre", "url": "https://www.laurentserre.com/a-propos" },
-            "datePublished": "2025-01-05",
-            "dateModified": "2026-05-03",
-            "image": "https://www.laurentserre.com/erreurs-fatales.png",
-            "url": "https://www.laurentserre.com/blog/erreurs-fatales-prospection-b2b",
-            "publisher": { "@type": "Organization", "name": "Laurent Serre", "url": "https://www.laurentserre.com" }
-          })
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Les erreurs fatales dans la prospection B2B (et comment les éviter)",
+      "description": "Après 20 ans d'expérience terrain, découvrez les 7 erreurs qui sabotent vos efforts de prospection B2B et les solutions concrètes pour les éviter.",
+      "author": {
+        "@type": "Person",
+        "name": "Laurent Serre",
+        "url": "https://www.laurentserre.com/a-propos"
+      },
+      "datePublished": "2025-01-05",
+      "dateModified": "2026-05-03",
+      "image": "https://www.laurentserre.com/erreurs-fatales.png",
+      "url": "https://www.laurentserre.com/blog/erreurs-fatales-prospection-b2b",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Laurent Serre",
+        "url": "https://www.laurentserre.com"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/erreurs-fatales-prospection-b2b"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.laurentserre.com/blog/erreurs-fatales-prospection-b2b#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Erreur #1 : Prospecter sans persona défini",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Le symptôme : Vos commerciaux contactent \"toutes les entreprises de plus de 50 salariés\" sans stratégie précise. Résultat : un taux de réponse catastrophique et une démotivation d'équipe. Solution : Définissez 2-3 personas ultra-précis avec douleurs spécifiques, budget estimé et processus de décision. Ciblez 100 prospects qualifiés plutôt que 1000 aléatoires."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Erreur #2 : L'approche produit plutôt que problème",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "\"Bonjour, nous vendons des logiciels de gestion...\" STOP ! Personne ne se lève le matin en se disant \"j'ai besoin d'un logiciel\". Les gens ont des problèmes à résoudre. Reformulez : \"Bonjour, nous aidons les dirigeants de PME à récupérer 2h par jour en automatisant leur gestion administrative.\" Voyez la différence ?"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Erreur #3 : Négliger la recherche préalable",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Appeler un prospect sans connaître son actualité, ses défis ou son contexte, c'est comme arriver à un rendez-vous les mains vides. L'impression est désastreuse. Avant chaque appel : 5 minutes sur LinkedIn, Google Actualités et le site de l'entreprise. Cette préparation multiplie vos chances par 5. Template gagnant : \"J'ai vu que vous venez de lever 2M€. Félicitations ! Cette croissance va sûrement créer de nouveaux défis en [domaine]. C'est justement notre spécialité...\""
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Erreur #4 : Le pitch trop long dès le premier contact",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Objectif du premier contact : obtenir un rendez-vous, pas vendre. Gardez vos arguments pour le face-à-face. Sinon, vous donnez au prospect toutes les raisons de vous dire non immédiatement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Erreur #5 : Abandonner après 2-3 tentatives",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Statistique révélatrice : 80% des commerciaux abandonnent après 3 relances, alors que 80% des ventes se font après le 5ème contact. Cherchez l'erreur ! Stratégie de relance : Variez les canaux (email, téléphone, LinkedIn, courrier) et apportez de la valeur à chaque contact (article pertinent, étude de cas, invitation événement)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Erreur #6 : Ignorer les signaux d'achat digitaux",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vos prospects laissent des indices partout : téléchargement de livre blanc, visite répétée de votre site, consultation de vos tarifs... Ces signaux chauds doivent déclencher une prospection prioritaire."
+          }
+        }
+      ]
+    }
+  ]
+})
         }}
       />
       <section className="py-24 sm:py-32">

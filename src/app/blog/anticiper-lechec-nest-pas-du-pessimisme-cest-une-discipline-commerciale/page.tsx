@@ -40,39 +40,66 @@ export const metadata: Metadata = {
 export default function AnticiperLechecNestPasDuPessimismeCestUneDisciplineCommercialePage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Anticiper l’échec n’est pas du pessimisme, c’est une discipline commerciale",
-  "description": "Les meilleurs commerciaux ne se préparent pas seulement à convaincre. Ils se préparent à ce qui peut bloquer, déraper ou rester flou. Cette lucidité change la vente.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.jpg",
-  "datePublished": "2026-04-15",
-  "dateModified": "2026-04-15",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/anticiper-lechec-nest-pas-du-pessimisme-cest-une-discipline-commerciale"
-  },
-  "articleSection": "Psychologie commerciale / lucidité terrain",
-  "keywords": [
-    "anticiper echec vente",
-    "lucidité commerciale",
-    "objections commerciales",
-    "discipline commerciale",
-    "preparation rendez-vous client",
-    "Laurent Serre"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Anticiper l’échec n’est pas du pessimisme, c’est une discipline commerciale",
+        "description": "Les meilleurs commerciaux ne se préparent pas seulement à convaincre. Ils se préparent à ce qui peut bloquer, déraper ou rester flou. Cette lucidité change la vente.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.jpg",
+        "datePublished": "2026-04-15",
+        "dateModified": "2026-04-15",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/anticiper-lechec-nest-pas-du-pessimisme-cest-une-discipline-commerciale"
+        },
+        "articleSection": "Psychologie commerciale / lucidité terrain",
+        "keywords": [
+          "anticiper echec vente",
+          "lucidité commerciale",
+          "objections commerciales",
+          "discipline commerciale",
+          "preparation rendez-vous client",
+          "Laurent Serre"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/anticiper-lechec-nest-pas-du-pessimisme-cest-une-discipline-commerciale"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/anticiper-lechec-nest-pas-du-pessimisme-cest-une-discipline-commerciale#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Le vrai danger n’est pas le doute',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le plus grand danger, en vente, n’est pas le doute. Le plus grand danger, c’est l’aveuglement confiant. C’est ce moment où l’on croit qu’un dossier est solide parce que le premier échange s’est bien passé. C’est ce moment où l’on pense qu’un client est chaud alors qu’aucune prochaine étape sérieuse n’a été sécurisée. C’est ce moment où l’on préfère protéger son enthousiasme, son ego ou ses illusions plutôt que tester la réalité de l’opportunité. À ce stade, le commercial ne manque pas de confian',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Vous voulez des commerciaux plus lucides, pas juste plus rassurés ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Je vous aide à muscler la lecture commerciale, la préparation des rendez-vous et la qualité réelle des prochaines étapes. ); }',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

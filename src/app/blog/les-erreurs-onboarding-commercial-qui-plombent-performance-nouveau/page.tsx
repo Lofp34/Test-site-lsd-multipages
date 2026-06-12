@@ -40,41 +40,76 @@ export const metadata: Metadata = {
 export default function ErreursOnboardingCommercialPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Les erreurs d’onboarding commercial qui vont plomber la performance du nouveau",
-  "description": "Un recrutement commercial peut échouer dès les premières semaines. Les erreurs d’onboarding coûtent cher : pipeline fragile, posture hésitante et conversion affaiblie.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.jpg",
-  "datePublished": "2026-04-04",
-  "dateModified": "2026-04-04",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/les-erreurs-onboarding-commercial-qui-plombent-performance-nouveau"
-  },
-  "articleSection": "Management / transformation commerciale",
-  "keywords": [
-    "onboarding commercial",
-    "intégration commercial B2B",
-    "manager commercial",
-    "performance commerciale",
-    "recrutement commercial",
-    "Laurent Serre",
-    "bootcamp commercial",
-    "diagnostic commercial"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Les erreurs d’onboarding commercial qui vont plomber la performance du nouveau",
+        "description": "Un recrutement commercial peut échouer dès les premières semaines. Les erreurs d’onboarding coûtent cher : pipeline fragile, posture hésitante et conversion affaiblie.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.jpg",
+        "datePublished": "2026-04-04",
+        "dateModified": "2026-04-04",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/les-erreurs-onboarding-commercial-qui-plombent-performance-nouveau"
+        },
+        "articleSection": "Management / transformation commerciale",
+        "keywords": [
+          "onboarding commercial",
+          "intégration commercial B2B",
+          "manager commercial",
+          "performance commerciale",
+          "recrutement commercial",
+          "Laurent Serre",
+          "bootcamp commercial",
+          "diagnostic commercial"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/les-erreurs-onboarding-commercial-qui-plombent-performance-nouveau"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/les-erreurs-onboarding-commercial-qui-plombent-performance-nouveau#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Pourquoi l’onboarding commercial est un sujet de performance — pas d’accueil',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un onboarding n’est pas une visite guidée du CRM, une présentation de l’offre et trois rendez-vous en doublon. C’est une séquence de transformation. Elle doit amener un nouveau commercial d’un statut “informé” à un statut “opérationnel, lisible et coachable”. Sans cette logique, vous obtenez des signaux trompeurs : beaucoup d’efforts visibles, peu de résultats solides. Le commercial “fait des choses”, mais ne sait pas encore qualifier correctement, tenir une découverte exigeante, sécuriser la pr',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que doit contenir un onboarding commercial vraiment utile',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un plan 30-60-90 explicite : objectifs de progression, pas seulement objectifs de volume. Des standards observables : qualité de découverte, lecture du décideur, sécurisation des prochaines étapes. Un coaching hebdomadaire structuré : débriefs d’entretiens, feedback précis, plan de correction court. Des critères de réussite partagés : le manager et le commercial savent ce qui valide une vraie montée en niveau. Une logique d’équipe : l’onboarding sert aussi à renforcer la cohérence commerciale co',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que les dirigeants doivent arbitrer maintenant',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si vous recrutez en 2026, l’enjeu n’est plus seulement d’attirer des commerciaux. L’enjeu est de fiabiliser leur montée en performance. Sinon, vous allez recruter pour compenser des sorties, puis rerrecruter pour compenser les intégrations ratées. Posez-vous une question brutale mais utile : votre dernier onboarding commercial était-il un vrai système de progression, ou une succession de bonnes intentions ? La réponse explique souvent pourquoi vos nouveaux mettent six mois à produire ce qu’ils a',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

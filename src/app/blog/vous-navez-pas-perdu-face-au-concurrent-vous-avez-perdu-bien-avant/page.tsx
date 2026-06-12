@@ -40,39 +40,58 @@ export const metadata: Metadata = {
 export default function VousNAvezPasPerduFaceAuConcurrentVousAvezPerduBienAvantPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Vous n’avez pas perdu face au concurrent, vous avez perdu bien avant",
-  "description": "Quand une équipe dit qu’elle a perdu face au concurrent, elle évite souvent une vérité moins confortable. La vente s’est généralement fragilisée bien plus tôt.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-20-concurrent-verite-confortable-hero.png",
-  "datePublished": "2026-04-20",
-  "dateModified": "2026-04-20",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/vous-navez-pas-perdu-face-au-concurrent-vous-avez-perdu-bien-avant"
-  },
-  "articleSection": "Point de vue / lecture commerciale",
-  "keywords": [
-    "concurrent vente b2b",
-    "perte commerciale",
-    "qualification commerciale",
-    "décision client",
-    "Laurent Serre",
-    "PME"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Vous n’avez pas perdu face au concurrent, vous avez perdu bien avant",
+        "description": "Quand une équipe dit qu’elle a perdu face au concurrent, elle évite souvent une vérité moins confortable. La vente s’est généralement fragilisée bien plus tôt.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-20-concurrent-verite-confortable-hero.png",
+        "datePublished": "2026-04-20",
+        "dateModified": "2026-04-20",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/vous-navez-pas-perdu-face-au-concurrent-vous-avez-perdu-bien-avant"
+        },
+        "articleSection": "Point de vue / lecture commerciale",
+        "keywords": [
+          "concurrent vente b2b",
+          "perte commerciale",
+          "qualification commerciale",
+          "décision client",
+          "Laurent Serre",
+          "PME"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/vous-navez-pas-perdu-face-au-concurrent-vous-avez-perdu-bien-avant"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/vous-navez-pas-perdu-face-au-concurrent-vous-avez-perdu-bien-avant#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Besoin d’en parler plus directement ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si votre cas mérite un échange plus direct, vous pouvez aussi laisser un message ici. ); }',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

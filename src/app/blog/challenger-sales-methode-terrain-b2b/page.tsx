@@ -51,38 +51,89 @@ const carouselImages = [
 export default function ChallengerSalesMethodeTerrainB2bPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Votre meilleur commercial n'est pas le plus sympa. C'est celui qui ose déranger.",
-  "description": "Les commerciaux les plus appréciés ne sont pas ceux qui vendent le plus. La méthode Challenger Sales appliquée au terrain B2B français , sans confondre tension constructive et agressivité.",
-  "image": "https://www.laurentserre.com/images/blog/2026-05-25-challenger-sales-hero.webp",
-  "datePublished": "2026-05-25",
-  "dateModified": "2026-05-25",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/challenger-sales-methode-terrain-b2b"
-  },
-  "articleSection": "Méthode de vente / posture commerciale",
-  "keywords": [
-    "challenger sales",
-    "méthode challenger sale",
-    "profil challenger",
-    "vente B2B",
-    "tension constructive"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Votre meilleur commercial n'est pas le plus sympa. C'est celui qui ose déranger.",
+        "description": "Les commerciaux les plus appréciés ne sont pas ceux qui vendent le plus. La méthode Challenger Sales appliquée au terrain B2B français , sans confondre tension constructive et agressivité.",
+        "image": "https://www.laurentserre.com/images/blog/2026-05-25-challenger-sales-hero.webp",
+        "datePublished": "2026-05-25",
+        "dateModified": "2026-05-25",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/challenger-sales-methode-terrain-b2b"
+        },
+        "articleSection": "Méthode de vente / posture commerciale",
+        "keywords": [
+          "challenger sales",
+          "méthode challenger sale",
+          "profil challenger",
+          "vente B2B",
+          "tension constructive"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/challenger-sales-methode-terrain-b2b"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/challenger-sales-methode-terrain-b2b#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Pilier 1 , Teach : apporter quelque chose qui dérange',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le client vous reçoit parce qu\'il pense avoir un problème. Votre travail n\'est pas de confirmer ce qu\'il croit savoir. C\'est de lui montrer que la situation est différente , et souvent plus urgente , qu\'il ne le pense. Je vois des commerciaux qui passent un rendez-vous entier à reformuler ce que le client leur a dit au téléphone. Ils pensent prouver leur écoute. En réalité, ils ne déplacent rien. Un bon insight, c\'est une information que le client n\'a pas, ou qu\'il refuse de regarder en face.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Pilier 2 , Tailor : chaque interlocuteur a sa porte d\'entrée',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le même dossier, trois décideurs. L\'un achète sur la performance opérationnelle. L\'autre sur la sécurité. Le troisième sur l\'image politique interne. Si vous racontez exactement la même histoire aux trois, vous perdez au moins deux de ces décideurs. Personnaliser, ce n\'est pas changer la couleur du Powerpoint. C\'est montrer à chaque personne présente autour de la table pourquoi le sujet la concerne personnellement, dans ses objectifs, dans ses craintes, dans ce qu\'elle risque de perdre si elle n',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Pilier 3 , Take Control : la tension constructive',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le mot « contrôle » fait peur aux commerciaux français. Ils l\'associent à la pression, au forcing, au closing agressif. Ce n\'est pas de ça qu\'il s\'agit. Prendre le contrôle, c\'est refuser de laisser le client définir seul le rythme, les critères et le calendrier. C\'est accepter qu\'une tension s\'installe, pas pour dominer l\'autre, mais pour que la conversation aille là où elle doit aller. Concrètement : quand un client dit « on va réfléchir », vous ne dites pas « parfait, je vous relance dans qui',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Trois erreurs qui coûtent cher',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: '1. Confondre challenger et agressif. Un challenger pose des questions inconfortables. Un agressif impose des réponses. La différence est dans l\'intention : l\'un cherche à faire réfléchir, l\'autre à faire plier. 2. Challenger trop tôt. Si vous ne connaissez pas le contexte et les vrais enjeux, votre insight sonne comme une leçon. La tension constructive se mérite : on ne dérange utilement que quand on a compris le terrain. 3. Challenger sans proposition. Déranger pour déranger, ça ne sert à rien.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Besoin d\'en parler plus directement ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si votre cas mérite un échange plus direct, vous pouvez aussi laisser un message ici. ); }',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

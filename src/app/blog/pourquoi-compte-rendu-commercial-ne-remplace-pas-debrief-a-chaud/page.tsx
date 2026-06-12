@@ -40,40 +40,99 @@ export const metadata: Metadata = {
 export default function PourquoiCompteRenduCommercialNeRemplacePasDebriefAChaudPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Pourquoi le compte rendu commercial ne remplace jamais le débrief à chaud",
-  "description": "Beaucoup d’équipes commentent les rendez-vous commerciaux après coup sans vraiment les travailler. Le compte rendu rassure. Le débrief à chaud, lui, fait progresser.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.jpg",
-  "datePublished": "2026-04-13",
-  "dateModified": "2026-04-13",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud"
-  },
-  "articleSection": "Méthode / management commercial terrain",
-  "keywords": [
-    "débrief commercial",
-    "compte rendu commercial",
-    "manager commercial",
-    "coaching commercial",
-    "rendez-vous commercial",
-    "PME B2B",
-    "Laurent Serre"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Pourquoi le compte rendu commercial ne remplace jamais le débrief à chaud",
+        "description": "Beaucoup d’équipes commentent les rendez-vous commerciaux après coup sans vraiment les travailler. Le compte rendu rassure. Le débrief à chaud, lui, fait progresser.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.jpg",
+        "datePublished": "2026-04-13",
+        "dateModified": "2026-04-13",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud"
+        },
+        "articleSection": "Méthode / management commercial terrain",
+        "keywords": [
+          "débrief commercial",
+          "compte rendu commercial",
+          "manager commercial",
+          "coaching commercial",
+          "rendez-vous commercial",
+          "PME B2B",
+          "Laurent Serre"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Pourquoi le compte rendu rassure autant',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Parce qu’il donne une trace. Il montre que le rendez-vous a existé. Il permet au manager de lire quelque chose. Il nourrit le CRM. Il donne même parfois une impression de sérieux. Le souci, c’est qu’il reformule presque toujours le rendez-vous au niveau le plus inoffensif. “Client intéressé.” “Sujet pertinent.” “À relancer.” Ce vocabulaire ne dit rien de la qualité réelle de la vente. Est-ce que le client a formulé un problème précis ? Est-ce qu’un coût de l’inaction est apparu ? Est-ce que le c',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le bon moment pour corriger, c’est quand la scène est encore vivante',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Quand on débriefe à chaud, on a encore accès aux détails qui comptent. Le moment où le prospect a hésité. La question qui a été évitée. La phrase qui a rouvert la discussion. Le passage où le commercial a accéléré trop vite parce qu’un blanc le gênait. Deux heures plus tard, c’est déjà plus flou. Le lendemain, c’est souvent réécrit. Et au comité de fin de semaine, il ne reste plus qu’une version lissée, acceptable, parfois même flatteuse. Autrement dit, exactement la matière qu’il faut le moins ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce qu’un vrai débrief à chaud doit regarder',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Pas quinze sujets. Trois ou quatre points suffisent. Qu’est-ce que le client a dit de concret ? Où le rendez-vous a-t-il vraiment basculé ? Qu’est-ce que le commercial a bien lu, ou mal lu ? Quelle prochaine étape a été obtenue, avec qui et pour quoi faire ? Si le manager veut être utile, il doit revenir sur des moments précis. “Quand le dirigeant t’a dit que chacun prospectait à sa façon, pourquoi tu es reparti sur ton offre au lieu de creuser ?” Ça, c’est un débrief. “Bon rendez-vous, pense à ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Pourquoi beaucoup de managers restent au niveau du compte rendu',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Parce que c’est plus simple. Un compte rendu se lit vite. Un débrief demande de l’attention, du discernement, et parfois de reprendre une scène mot par mot. Il oblige aussi le manager à savoir ce qu’il veut corriger exactement dans la vente. Beaucoup suivent l’activité. Moins nombreux sont ceux qui savent travailler l’exécution. C’est le prolongement direct d’un problème que je vois souvent : le manager commercial qui suit sans coacher . Tant que le manager demande surtout un commentaire CRM, le',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le signal le plus simple à observer',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Regardez ce que vos commerciaux écrivent après un rendez-vous. Si tout le monde produit des formulations propres mais interchangeables, vous n’avez pas un problème de rédaction. Vous avez un problème de lecture commerciale. L’équipe ne sait plus distinguer une information banale d’un vrai signal de décision. Et c’est exactement comme ça qu’on se retrouve ensuite avec des relances faibles, des propositions trop tôt, puis des pipelines qui ont l’air occupés mais qui avancent mal.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'La règle simple que je recommande',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Après un rendez-vous important, commencez par six minutes de débrief oral avant tout compte rendu écrit. Six minutes suffisent pour fixer l’essentiel tant que c’est encore frais. Ensuite seulement, on écrit. un fait concret entendu chez le client ; un moment de bascule dans la conversation ; une erreur ou une bonne lecture du commercial ; une prochaine étape datée, bilatérale, liée à une décision. Si vous faites déjà ça proprement, vos comptes rendus vont devenir meilleurs presque tout seuls. Pa',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

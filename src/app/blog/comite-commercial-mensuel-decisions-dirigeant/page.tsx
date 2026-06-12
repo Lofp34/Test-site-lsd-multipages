@@ -36,40 +36,99 @@ export const metadata: Metadata = {
 export default function ComiteCommercialMensuelPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Comité commercial mensuel : les 6 décisions qu&apos;un dirigeant doit exiger",
-  "description": "Le comité commercial mensuel ne doit pas être un théâtre CRM. Voici les 6 décisions qu’un dirigeant ou directeur commercial doit obtenir pour sécuriser le trimestre et convertir plus proprement.",
-  "image": "https://www.laurentserre.com/images/blog/2026-03-29-comite-commercial-mensuel-hero.jpg",
-  "datePublished": "2026-03-29",
-  "dateModified": "2026-03-29",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/comite-commercial-mensuel-decisions-dirigeant"
-  },
-  "articleSection": "Pilotage commercial",
-  "keywords": [
-    "comité commercial mensuel",
-    "pilotage commercial",
-    "dirigeant PME B2B",
-    "directeur commercial",
-    "forecast",
-    "bootcamp vente",
-    "diagnostic commercial"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Comité commercial mensuel : les 6 décisions qu&apos;un dirigeant doit exiger",
+        "description": "Le comité commercial mensuel ne doit pas être un théâtre CRM. Voici les 6 décisions qu’un dirigeant ou directeur commercial doit obtenir pour sécuriser le trimestre et convertir plus proprement.",
+        "image": "https://www.laurentserre.com/images/blog/2026-03-29-comite-commercial-mensuel-hero.jpg",
+        "datePublished": "2026-03-29",
+        "dateModified": "2026-03-29",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/comite-commercial-mensuel-decisions-dirigeant"
+        },
+        "articleSection": "Pilotage commercial",
+        "keywords": [
+          "comité commercial mensuel",
+          "pilotage commercial",
+          "dirigeant PME B2B",
+          "directeur commercial",
+          "forecast",
+          "bootcamp vente",
+          "diagnostic commercial"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/comite-commercial-mensuel-decisions-dirigeant"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/comite-commercial-mensuel-decisions-dirigeant#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Décision n°1 : quels deals sortent du forecast engagé ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le premier sujet n&apos;est pas “qu&apos;est-ce qui peut signer ?”, mais qu&apos;est-ce qui n&apos;a plus sa place dans l&apos;engagé. Les entreprises qui ratent leurs objectifs ne souffrent pas seulement d&apos;un manque d&apos;opportunités. Elles souffrent d&apos;un excès de confiance mal placée. Commencez donc par retirer. Quels deals n&apos;ont pas de prochaine étape bilatérale ? Quels dossiers dépendent encore d&apos;un décideur invisible ? Quels montants gonflent artificiellement le trimes',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Décision n°2 : où le management doit-il intervenir personnellement ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un comité commercial utile identifie les deals qui ne progresseront pas grâce à une relance supplémentaire du commercial, mais grâce à une intervention managériale ciblée : recadrage stratégique, présence du dirigeant, arbitrage de périmètre, sécurisation politique. Quels dossiers justifient une présence dirigeant ou directeur commercial à la prochaine étape ? Sur quels comptes la crédibilité se joue au niveau de la gouvernance plutôt qu&apos;au niveau du discours commercial ? Où une escalade bi',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Décision n°3 : quelles propositions ne doivent pas partir ce mois-ci ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un comité commercial mature protège l&apos;équipe de la tentation d&apos;envoyer des propositions trop tôt pour “faire avancer”. Une proposition prématurée rassure le CRM, mais fragilise souvent la marge et transforme le suivi en course de relances. Avant de valider l&apos;envoi d&apos;un document, exigez une revue rapide : enjeu client, mécanique de décision, position de valeur. Si l&apos;un des trois est flou, la priorité n&apos;est pas la proposition. La priorité est la clarification. C&apos;',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Décision n°4 : quels comptes stratégiques exigent un plan de reconquête ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les comptes dormants ou les prospects “tièdes depuis longtemps” sont souvent traités comme du bruit de fond commercial. Pourtant, une revue mensuelle sérieuse doit isoler les comptes à fort enjeu relationnel ou économique et décider une stratégie spécifique : message de dirigeant à dirigeant, angle de reprise, preuve sociale, offre de recadrage ou séquence de réactivation. Ce travail évite deux travers : abandonner trop tôt un actif stratégique, ou le relancer mécaniquement sans raison forte. Le',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Décision n°5 : quelle faiblesse système menace le prochain trimestre ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le comité mensuel ne doit pas rester au niveau opportunité par opportunité. Il doit remonter un cran et faire apparaître les fragilités récurrentes du système commercial. Manque de matière en haut de funnel ? Deals qui stagnent entre découverte et proposition ? Managers qui commentent mais coachent peu ? Forecast optimiste sans critères homogènes ? Tant que ces sujets restent dilués dans le flux hebdomadaire, rien ne change. Le comité mensuel sert à décider un correctif structurel, pas seulement',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Décision n°6 : quelle action de transformation commerciale démarre maintenant ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Une réunion de pilotage sans action de transformation finit toujours par devenir un rituel de commentaire. Chaque comité devrait donc se conclure par une décision exécutable dans les 30 jours : nouveau rituel de revue de deals, standard commun de qualification, séquence de relance pour comptes stratégiques, coaching manager, refonte d&apos;une étape du cycle. Cette dernière décision change la nature même du comité : on ne se contente plus de surveiller le business, on améliore la machine commerc',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

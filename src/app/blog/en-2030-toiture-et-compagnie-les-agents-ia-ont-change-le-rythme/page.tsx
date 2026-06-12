@@ -40,39 +40,58 @@ export const metadata: Metadata = {
 export default function En2030ToitureEtCompagnieLesAgentsIaOntChangeLeRythmePage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme",
-  "description": "À partir d’une base bien réelle, voilà à quoi pourrait ressembler en 2030 la transformation d’une PME de couverture comme Toiture et COMPAGNIE grâce à des agents IA vraiment utiles.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.jpg",
-  "datePublished": "2026-04-16",
-  "dateModified": "2026-04-16",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/en-2030-toiture-et-compagnie-les-agents-ia-ont-change-le-rythme"
-  },
-  "articleSection": "IA utile / transformation PME terrain",
-  "keywords": [
-    "agents IA PME",
-    "Toiture et COMPAGNIE",
-    "transformation PME 2030",
-    "couverture toiture",
-    "IA commerce operations",
-    "Laurent Serre"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme",
+        "description": "À partir d’une base bien réelle, voilà à quoi pourrait ressembler en 2030 la transformation d’une PME de couverture comme Toiture et COMPAGNIE grâce à des agents IA vraiment utiles.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.jpg",
+        "datePublished": "2026-04-16",
+        "dateModified": "2026-04-16",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/en-2030-toiture-et-compagnie-les-agents-ia-ont-change-le-rythme"
+        },
+        "articleSection": "IA utile / transformation PME terrain",
+        "keywords": [
+          "agents IA PME",
+          "Toiture et COMPAGNIE",
+          "transformation PME 2030",
+          "couverture toiture",
+          "IA commerce operations",
+          "Laurent Serre"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/en-2030-toiture-et-compagnie-les-agents-ia-ont-change-le-rythme"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/en-2030-toiture-et-compagnie-les-agents-ia-ont-change-le-rythme#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Vous voulez voir où des agents IA peuvent vraiment faire gagner du temps et de la marge dans votre PME ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Je vous aide à identifier les bons points d’appui, côté direction, commerce, opérations et pilotage, sans storytelling technologique inutile. ); }',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

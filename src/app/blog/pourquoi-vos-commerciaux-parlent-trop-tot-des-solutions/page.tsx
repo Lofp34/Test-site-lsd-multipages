@@ -40,40 +40,99 @@ export const metadata: Metadata = {
 export default function CommerciauxParlentTropTotSolutionsPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Pourquoi vos commerciaux parlent trop tôt de leur solution, et ce que ça vous coûte",
-  "description": "Le problème n’est pas qu’un commercial parle de son produit. Le problème, c’est qu’il le fait pour éviter les vraies questions. Et ça se paie ensuite en rendez-vous mous, en devis envoyés trop tôt et en silence côté client.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.png",
-  "datePublished": "2026-04-11",
-  "dateModified": "2026-04-11",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-parlent-trop-tot-des-solutions"
-  },
-  "keywords": [
-    "découverte commerciale",
-    "vente B2B",
-    "commercial parle trop tôt du produit",
-    "rendez-vous commercial",
-    "devis trop tôt",
-    "Laurent Serre",
-    "bootcamp commercial",
-    "diagnostic commercial"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Pourquoi vos commerciaux parlent trop tôt de leur solution, et ce que ça vous coûte",
+        "description": "Le problème n’est pas qu’un commercial parle de son produit. Le problème, c’est qu’il le fait pour éviter les vraies questions. Et ça se paie ensuite en rendez-vous mous, en devis envoyés trop tôt et en silence côté client.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.png",
+        "datePublished": "2026-04-11",
+        "dateModified": "2026-04-11",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-parlent-trop-tot-des-solutions"
+        },
+        "keywords": [
+          "découverte commerciale",
+          "vente B2B",
+          "commercial parle trop tôt du produit",
+          "rendez-vous commercial",
+          "devis trop tôt",
+          "Laurent Serre",
+          "bootcamp commercial",
+          "diagnostic commercial"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-parlent-trop-tot-des-solutions"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-parlent-trop-tot-des-solutions#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Parler trop tôt de son produit évite souvent le moment le plus utile du rendez-vous',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le moment le plus utile d’un rendez-vous commercial n’est pas celui où vous expliquez votre méthode. C’est celui où l’autre commence à dire ce qu’il ne dit pas d’habitude. Le dossier qui traîne depuis six mois. Le commercial senior qu’il n’arrive plus à cadrer. Le devis sorti trop vite. Le directeur général qui demande du chiffre mais ne veut pas entendre qu’il faut reprendre l’équipe. C’est là qu’un rendez-vous devient sérieux. Pas quand le vendeur montre qu’il connaît bien son offre. Ce qui fa',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que ça coûte, très concrètement',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'D’abord, vous repartez avec une compréhension superficielle. Vous savez ce que l’entreprise veut à peu près. Vous ne savez pas ce qui bloque vraiment. C’est la différence entre entendre “on veut structurer la prospection” et entendre “on a trois commerciaux, chacun fait à sa sauce, et au bout de deux semaines les leads tièdes sont déjà perdus”. Ensuite, vous envoyez un devis trop tôt. Le document part proprement. Il est bien présenté. Mais il arrive avant que le client ait senti le coût réel de ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le commercial ne fait pas ça par bêtise. Il le fait pour se rassurer.',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Poser les bonnes questions, c’est plus difficile que présenter son offre. Parce que les bonnes questions peuvent créer un blanc. Elles peuvent obliger le client à reconnaître qu’il n’a pas de réponse claire. Elles peuvent faire monter un malaise utile. Beaucoup de vendeurs n’aiment pas ça. Alors ils reviennent vite sur un terrain plus confortable : leur produit, leur méthode, leur solution. C’est humain. Mais ça coûte cher.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Chez un dirigeant de PME, ça se voit tout de suite',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un dirigeant de PME n’a pas besoin d’un vendeur qui lui fasse visiter son catalogue. Il a besoin qu’on l’aide à mettre le doigt sur ce qu’il ne regarde plus en face. À Béziers, Valence ou Rennes, le problème n’est jamais “on manque d’une belle offre PowerPoint”. Le problème, c’est plus souvent : on a des commerciaux actifs mais irréguliers, des rendez-vous qui n’aboutissent pas, des remises qui tombent trop vite, et des managers qui commentent les chiffres sans corriger les habitudes. Si, dans c',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Les signaux qui montrent que vos commerciaux parlent trop tôt de leur solution',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'le rendez-vous bascule sur une présentation avant que le client ait raconté une situation précise ; le commercial parle plus que le prospect sur la première moitié de l’échange ; le devis part rapidement, mais derrière on n’a plus de nouvelles ; le manager demande surtout “combien tu as de dossiers en cours ?” au lieu de demander “qu’est-ce que le client t’a dit exactement ?” ; les relances s’accumulent parce que personne n’a cadré ce qui devait se passer ensuite. Quand tu retrouves trois de ces',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce qu’un bon commercial fait à la place',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Il ralentit au début. Il ne se précipite pas sur son produit. Il cherche la scène exacte. Pas le thème général. Il veut savoir ce qui se passe lundi matin quand l’équipe commerciale démarre la semaine. Qui relance qui. Qui laisse traîner. Qui décide. Qui bloque. Où l’argent se perd vraiment. Tant qu’il n’a pas cette scène, il ne présente rien. Et quand il finit par parler de sa solution, ce n’est plus une présentation standard. C’est une réponse à quelque chose qui a été vu, dit, reconnu. Là, le',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

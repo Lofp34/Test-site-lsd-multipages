@@ -37,38 +37,81 @@ export const metadata: Metadata = {
 export default function Systeme90JoursPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Système commercial 90 jours : le plan anti yo-yo du chiffre d&apos;affaires",
-  "description": "Le framework 90 jours pour dirigeants et directeurs commerciaux qui veulent stabiliser le CA, accélérer les cycles et convertir plus proprement.",
-  "image": "https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero.webp",
-  "datePublished": "2026-03-24",
-  "dateModified": "2026-03-24",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/systeme-90-jours-anti-yo-yo-ca"
-  },
-  "keywords": [
-    "système commercial",
-    "plan 90 jours",
-    "directeur commercial",
-    "dirigeant PME",
-    "conversion B2B",
-    "bootcamp vente"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Système commercial 90 jours : le plan anti yo-yo du chiffre d&apos;affaires",
+        "description": "Le framework 90 jours pour dirigeants et directeurs commerciaux qui veulent stabiliser le CA, accélérer les cycles et convertir plus proprement.",
+        "image": "https://www.laurentserre.com/images/blog/2026-03-24-systeme-90-jours-hero.webp",
+        "datePublished": "2026-03-24",
+        "dateModified": "2026-03-24",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/systeme-90-jours-anti-yo-yo-ca"
+        },
+        "keywords": [
+          "système commercial",
+          "plan 90 jours",
+          "directeur commercial",
+          "dirigeant PME",
+          "conversion B2B",
+          "bootcamp vente"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/systeme-90-jours-anti-yo-yo-ca"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/systeme-90-jours-anti-yo-yo-ca#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Sprint 1 (Jours 1 à 30) : assainir le pipeline pour retrouver la vérité',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Tant que votre pipeline mélange opportunités solides et opportunités fantômes, vos décisions sont biaisées. Le premier sprint consiste à reconstruire un forecast défendable. Sortir les deals sans étape datée ni sponsor identifié Noter chaque opportunité sur 3 risques : délai, politique, concurrence Définir un “committed forecast” réellement soutenable Pour compléter cette étape, je vous conseille aussi de lire l&apos;article sur les 5 décisions de pilotage pipeline .',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Sprint 2 (Jours 31 à 60) : augmenter le taux de conversion sans pression toxique',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le deuxième sprint vise un seul objectif : transformer mieux, pas juste vendre plus fort. On standardise les moments clés de découverte, proposition et décision. Qualification renforcée (enjeu, impact, sponsor, timing) Propositions orientées décision business, pas catalogue Rituels de coaching sur les deals critiques Si votre sujet principal est le closing, cet approfondissement est utile : 7 techniques de closing B2B qui fonctionnent vraiment .',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Sprint 3 (Jours 61 à 90) : installer un rythme de management durable',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'C&apos;est là que se joue la différence entre un “coup de fouet” et une transformation durable. Vous installez une cadence de pilotage qui sécurise le trimestre suivant. Revue hebdo orientée arbitrage (pas reporting passif) 3 KPI cœur : qualification, conversion proposition, délai de cycle Plan de couverture du pipeline à 90 jours Point clé dirigeant : quand vos managers tiennent un rythme simple, stable et lisible, la performance devient prévisible — et la pression diminue mécaniquement. Vous a',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que vous devez viser à J+90',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un pipeline crédible que vous pouvez défendre en CODIR Des conversions plus régulières sur les deals stratégiques Une équipe qui exécute avec méthode, pas au talent individuel Un plan clair pour nourrir le trimestre suivant',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

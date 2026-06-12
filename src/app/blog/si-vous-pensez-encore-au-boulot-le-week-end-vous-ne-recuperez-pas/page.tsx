@@ -40,39 +40,58 @@ export const metadata: Metadata = {
 export default function SiVousPensezEncoreAuBoulotLeWeekEndVousNeRecuperezPasPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Si vous pensez encore au boulot le week-end, vous ne récupérez pas",
-  "description": "Un dirigeant qui ne décroche jamais le week-end ne revient pas vraiment reposé le lundi. La récupération commence par une vraie clôture de semaine.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-27-recuperation-week-end-hero.png",
-  "datePublished": "2026-04-27",
-  "dateModified": "2026-04-27",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/si-vous-pensez-encore-au-boulot-le-week-end-vous-ne-recuperez-pas"
-  },
-  "articleSection": "Dirigeant / récupération",
-  "keywords": [
-    "dirigeant PME",
-    "récupération entrepreneur",
-    "déconnexion week-end",
-    "management commercial",
-    "fatigue dirigeant",
-    "Laurent Serre"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Si vous pensez encore au boulot le week-end, vous ne récupérez pas",
+        "description": "Un dirigeant qui ne décroche jamais le week-end ne revient pas vraiment reposé le lundi. La récupération commence par une vraie clôture de semaine.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-27-recuperation-week-end-hero.png",
+        "datePublished": "2026-04-27",
+        "dateModified": "2026-04-27",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/si-vous-pensez-encore-au-boulot-le-week-end-vous-ne-recuperez-pas"
+        },
+        "articleSection": "Dirigeant / récupération",
+        "keywords": [
+          "dirigeant PME",
+          "récupération entrepreneur",
+          "déconnexion week-end",
+          "management commercial",
+          "fatigue dirigeant",
+          "Laurent Serre"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/si-vous-pensez-encore-au-boulot-le-week-end-vous-ne-recuperez-pas"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/si-vous-pensez-encore-au-boulot-le-week-end-vous-ne-recuperez-pas#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Besoin d’en parler plus directement ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si votre cas mérite un échange plus direct, vous pouvez aussi laisser un message ici. ); }',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

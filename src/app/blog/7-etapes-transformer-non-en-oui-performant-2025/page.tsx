@@ -41,17 +41,88 @@ export default function Article7EtapesNonOui() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "7 étapes pour transformer un « non » frustrant en « oui » performant en 2025",
-            "description": "Découvrez une méthode en 7 étapes pour transformer chaque refus client frustrant en opportunité commerciale durable et efficace.",
-            "author": { "@type": "Person", "name": "Laurent Serre", "url": "https://www.laurentserre.com/a-propos" },
-            "datePublished": "2025-07-01",
-            "dateModified": "2026-05-03",
-            "image": "https://www.laurentserre.com/equipe_bureau.jpg",
-            "url": "https://www.laurentserre.com/blog/7-etapes-transformer-non-en-oui-performant-2025",
-            "publisher": { "@type": "Organization", "name": "Laurent Serre", "url": "https://www.laurentserre.com" }
-          })
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "7 étapes pour transformer un « non » frustrant en « oui » performant en 2025",
+      "description": "Découvrez une méthode en 7 étapes pour transformer chaque refus client frustrant en opportunité commerciale durable et efficace.",
+      "author": {
+        "@type": "Person",
+        "name": "Laurent Serre",
+        "url": "https://www.laurentserre.com/a-propos"
+      },
+      "datePublished": "2025-07-01",
+      "dateModified": "2026-05-03",
+      "image": "https://www.laurentserre.com/equipe_bureau.jpg",
+      "url": "https://www.laurentserre.com/blog/7-etapes-transformer-non-en-oui-performant-2025",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Laurent Serre",
+        "url": "https://www.laurentserre.com"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/7-etapes-transformer-non-en-oui-performant-2025"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.laurentserre.com/blog/7-etapes-transformer-non-en-oui-performant-2025#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "1. Réaliser un audit express du refus",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ne considérez jamais un refus comme définitif sans en comprendre la cause profonde. Interrogez votre client avec tact pour clarifier l’obstacle réel. Question clé à poser : « Je comprends. Qu’est-ce qui vous empêche, précisément, de dire oui aujourd’hui ? » Bénéfice : Vous transformez un rejet vague en une objection claire et exploitable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "2. Reformuler avec empathie",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Montrez à votre interlocuteur que vous avez entendu son refus et compris ses raisons. La reformulation désamorce la tension et ouvre la voie à un dialogue constructif. Exemple : « Si je vous comprends bien, ce n’est pas le produit qui vous gêne, mais le timing ? »"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "3. Libérer les raisons sous-jacentes",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Parfois, le client lui-même ne sait pas exactement pourquoi il refuse. Votre rôle : l’aider à clarifier ses véritables freins. Technique à utiliser : la maïeutique commerciale (questions ouvertes, écoute active). Exemple : « Qu’est-ce qui ferait basculer votre décision dans l’autre sens ? » Bénéfice : Vous devenez partenaire de réflexion, plus seulement vendeur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "4. Repositionner votre solution sur mesure",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Une fois les objections réelles identifiées, recentrez votre discours sur les besoins spécifiques du client. Proposez une adaptation personnalisée de votre offre. Astuce IA : Utilisez des outils de personnalisation intelligente (analyse sémantique) pour adapter votre discours à chaque profil client."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "5. Tester une petite action concrète",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Si la vente reste bloquée, proposez une action intermédiaire simple et sans risque pour engager le client. Exemple : « Et si nous organisions un atelier test gratuit de 2 heures ? » Bénéfice : Vous transformez le refus en première étape d’engagement."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "6. Renforcer la relation par un mini-geste humain",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Même en cas de refus persistant, restez présent dans l’esprit de votre interlocuteur par une attention humaine. Idée à tester : Envoyez un article utile, une ressource gratuite, ou un message personnel bienveillant. Erreur à éviter : Ne pas donner suite après un refus, laissant un goût amer et définitif."
+          }
+        }
+      ]
+    }
+  ]
+})
         }}
       />
       {/* Hero Section */}

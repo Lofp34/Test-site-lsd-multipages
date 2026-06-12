@@ -40,41 +40,92 @@ export const metadata: Metadata = {
 export default function PeurDuPrixPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "La peur du prix : le vrai problème n’est presque jamais le tarif",
-  "description": "Quand une vente bloque sur le prix, le tarif n’est souvent que la surface du problème. Valeur perçue, découverte, décision et courage commercial pèsent bien plus lourd.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-02-peur-prix-vrai-probleme-pas-tarif-hero.jpg",
-  "datePublished": "2026-04-02",
-  "dateModified": "2026-04-02",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif"
-  },
-  "articleSection": "Psychologie commerciale / valeur perçue",
-  "keywords": [
-    "peur du prix",
-    "objection prix",
-    "valeur perçue",
-    "vente B2B",
-    "négociation commerciale",
-    "Laurent Serre",
-    "bootcamp commercial",
-    "diagnostic commercial"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "La peur du prix : le vrai problème n’est presque jamais le tarif",
+        "description": "Quand une vente bloque sur le prix, le tarif n’est souvent que la surface du problème. Valeur perçue, découverte, décision et courage commercial pèsent bien plus lourd.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-02-peur-prix-vrai-probleme-pas-tarif-hero.jpg",
+        "datePublished": "2026-04-02",
+        "dateModified": "2026-04-02",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif"
+        },
+        "articleSection": "Psychologie commerciale / valeur perçue",
+        "keywords": [
+          "peur du prix",
+          "objection prix",
+          "valeur perçue",
+          "vente B2B",
+          "négociation commerciale",
+          "Laurent Serre",
+          "bootcamp commercial",
+          "diagnostic commercial"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Le prix apparaît à la fin. Le problème, lui, commence bien avant.',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un client accepte rarement de payer plus cher juste parce qu’on défend mieux son prix. Il accepte plus facilement quand la valeur est devenue évidente, quand le coût de l’inaction est clair et quand la décision paraît plus risquée à repousser qu’à prendre. Autrement dit : si la conversation commerciale n’a pas suffisamment travaillé le problème, les conséquences, la priorité et la différence de votre approche, le prix récupère tout le poids de l’hésitation. Il devient le dernier mot d’un doute p',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Pourquoi baisser le prix règle rarement le vrai problème',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Quand une vente bloque, réduire le prix donne l’illusion d’avancer. Parfois cela débloque un dossier. Mais très souvent, cela ne corrige rien de durable. Cela affaiblit la marge, abîme le positionnement et entretient une lecture dangereuse : “pour vendre, il faut surtout céder”. Le pire, c’est que l’équipe apprend alors la mauvaise leçon. Elle croit avoir un problème tarifaire récurrent, alors qu’elle a surtout un problème de découverte, de posture ou de lecture de décision. C’est le même piège ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce qu’un commercial doit sécuriser avant de parler prix',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le problème prioritaire : ce qui fait réellement mal aujourd’hui chez le client. Le coût du statu quo : ce que l’inaction continue de coûter en temps, en marge, en charge ou en opportunités perdues. Le niveau de décision : qui arbitre vraiment, selon quels critères, dans quel timing. La valeur de votre approche : pourquoi votre intervention change le résultat, pas seulement le process. La prochaine étape : ce qui permet d’avancer sans laisser la discussion retomber dans une comparaison stérile. ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le vrai travail des managers sur le sujet prix',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un manager commercial utile ne coachera pas son équipe avec une simple liste de réponses aux objections. Il remontera plus haut. Il regardera comment la découverte a été menée, comment la valeur a été formulée, où la tension a disparu et comment le commercial a tenu — ou non — le moment de vérité. C’est d’ailleurs là que beaucoup de managers se trompent : ils veulent aider à “mieux défendre le prix”, alors qu’il faut surtout aider à mieux construire la vente. Sur ce point, la logique rejoint cel',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que les dirigeants doivent retenir',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si votre équipe invoque le prix en boucle, ne corrigez pas trop vite l’offre ou la grille tarifaire. Demandez-vous plutôt : la valeur est-elle vraiment comprise ? Le problème client a-t-il été suffisamment creusé ? L’urgence est-elle réelle ? Le commercial assume-t-il son prix avec calme ? Tant que ces questions restent floues, le tarif servira de bouc émissaire commode. Et vous risquez d’abîmer votre marge pour réparer un problème qui n’était pas tarifaire au départ.',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

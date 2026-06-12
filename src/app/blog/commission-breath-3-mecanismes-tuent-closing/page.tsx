@@ -36,42 +36,101 @@ export const metadata: Metadata = {
 export default function CommissionBreathArticle() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Commission Breath : les 3 mécanismes invisibles qui tuent votre closing",
-  "description": "Découvrez pourquoi vos leads ne sont pas mauvais et comment la biologie, l\\",
-  "image": "https://www.laurentserre.com/images/closing_post.png",
-  "datePublished": "2025-01-15",
-  "dateModified": "2025-01-15",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/commission-breath-3-mecanismes-tuent-closing"
-  },
-  "articleSection": "Psychologie de vente",
-  "keywords": [
-    "commission breath",
-    "closing",
-    "neurones miroirs",
-    "détachement radical",
-    "psychologie vente",
-    "closing B2B",
-    "taux de conversion",
-    "cadre diagnostic",
-    "techniques closing"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Commission Breath : les 3 mécanismes invisibles qui tuent votre closing",
+        "description": "Découvrez pourquoi vos leads ne sont pas mauvais et comment la biologie, l\\",
+        "image": "https://www.laurentserre.com/images/closing_post.png",
+        "datePublished": "2025-01-15",
+        "dateModified": "2025-01-15",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/commission-breath-3-mecanismes-tuent-closing"
+        },
+        "articleSection": "Psychologie de vente",
+        "keywords": [
+          "commission breath",
+          "closing",
+          "neurones miroirs",
+          "détachement radical",
+          "psychologie vente",
+          "closing B2B",
+          "taux de conversion",
+          "cadre diagnostic",
+          "techniques closing"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/commission-breath-3-mecanismes-tuent-closing"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/commission-breath-3-mecanismes-tuent-closing#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Le radar millénaire du cerveau humain',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le cerveau humain possède un radar millénaire. Il détecte la pression. Dès que vous avez envie de closer, vous émettez des micro-signaux d&apos;anxiété que votre interlocuteur capte inconsciemment. En 2025, les prospects sont sur-sollicités. Ils ont développé une immunité totale aux scripts bateaux. Le paradoxe est brutal : plus vous avez besoin de cet argent, moins vous avez de chances de l&apos;obtenir. Voici les trois mécanismes invisibles qui tuent votre closing — et comment les hacker.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '1. La biologie : vos neurones miroirs vous trahissent',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Vous avez des neurones miroirs. Si je baille, vous baillez. Si je stresse, vous stressez. C&apos;est un mécanisme neurologique automatique et inconscient. Le transfert d&apos;anxiété Quand vous entrez en appel avec la peur de perdre la vente, vos neurones miroirs transfèrent cette anxiété au prospect. Lui ne se dit pas &quot;le vendeur est stressé&quot;. Il se dit &quot;ce produit est risqué&quot;. Il ressent un danger, mais il ne sait pas pourquoi.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '2. L&apos;identité : la dissonance énergétique',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'C&apos;est l&apos;erreur fatale que je vois chez 90 % des closers intermédiaires : vous essayez de vendre quelque chose que vous n&apos;avez pas acheté vous-même. Pas le produit. Le concept. Comment voulez-vous qu&apos;un prospect investisse 5 000 € en lui-même si vous tremblez à l&apos;idée de dépenser 500 € en formation ? C&apos;est une dissonance énergétique. La vente = un transfert de certitude La vente, c&apos;est un transfert de certitude. Du plus certain au moins certain. Si votre certitu',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '3. Le cadre : diagnostiquer, pas convaincre',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un vendeur essaie de convaincre. Un expert essaie de diagnostiquer. Quand vous cherchez à convaincre → vous créez de la résistance Quand vous cherchez à comprendre → vous créez de l&apos;attraction',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'La guerre des cadres',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le closing n&apos;est pas une guerre de mots. C&apos;est une guerre de cadres. Celui qui a le cadre le plus fort gagne. Le cadre le plus fort Le cadre le plus fort, c&apos;est toujours celui qui est prêt à partir sans le deal.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Récapitulatif : les 3 leviers à activer',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Mécanisme Problème Solution 1. Biologie Neurones miroirs transfèrent l&apos;anxiété Détachement radical — accepter le NON avant l&apos;appel 2. Identité Dissonance entre ce que vous vendez et ce que vous croyez Audit de croyance — votre conviction doit être à 11/10 3. Cadre Posture de vendeur qui crée la résistance Cadre diagnostic — disqualifier plutôt que convaincre',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

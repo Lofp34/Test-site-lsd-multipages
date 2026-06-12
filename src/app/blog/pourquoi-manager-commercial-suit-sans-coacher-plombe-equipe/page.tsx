@@ -40,40 +40,91 @@ export const metadata: Metadata = {
 export default function ManagerCommercialSuitSansCoacherPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Pourquoi un manager commercial qui suit sans coacher plombe son équipe",
-  "description": "Beaucoup de managers commerciaux suivent l’activité, commentent le CRM et demandent des comptes. Mais sans coaching réel, ils fabriquent une équipe occupée, pas une équipe qui progresse.",
-  "image": "https://www.laurentserre.com/images/blog/2026-03-31-manager-suivre-sans-coacher-hero.jpg",
-  "datePublished": "2026-03-31",
-  "dateModified": "2026-03-31",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe"
-  },
-  "articleSection": "Management / transformation",
-  "keywords": [
-    "manager commercial coaching",
-    "management commercial",
-    "coaching commercial B2B",
-    "performance équipe commerciale",
-    "Laurent Serre",
-    "bootcamp commercial",
-    "diagnostic commercial"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Pourquoi un manager commercial qui suit sans coacher plombe son équipe",
+        "description": "Beaucoup de managers commerciaux suivent l’activité, commentent le CRM et demandent des comptes. Mais sans coaching réel, ils fabriquent une équipe occupée, pas une équipe qui progresse.",
+        "image": "https://www.laurentserre.com/images/blog/2026-03-31-manager-suivre-sans-coacher-hero.jpg",
+        "datePublished": "2026-03-31",
+        "dateModified": "2026-03-31",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe"
+        },
+        "articleSection": "Management / transformation",
+        "keywords": [
+          "manager commercial coaching",
+          "management commercial",
+          "coaching commercial B2B",
+          "performance équipe commerciale",
+          "Laurent Serre",
+          "bootcamp commercial",
+          "diagnostic commercial"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Le suivi rassure le manager. Le coaching fait grandir l&apos;équipe.',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le suivi répond à une question simple : où en est-on ? Le coaching répond à une autre : qu&apos;est-ce qui doit changer pour mieux vendre la prochaine fois ? Beaucoup d&apos;équipes restent bloquées parce que le manager reste prisonnier de la première question. Il demande des dates, des prochaines étapes, des montants, des probabilités. Tout cela a une utilité. Mais si la conversation s&apos;arrête là, l&apos;équipe ne progresse pas. Elle apprend juste à mieux raconter ce qu&apos;elle a déjà fai',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Pourquoi cela plombe l&apos;équipe, même quand les gens sont motivés',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Beaucoup de dirigeants se trompent ici : ils voient des commerciaux engagés, donc ils pensent que le management fait le job. Mais la motivation compense très mal un défaut de coaching. Un commercial motivé peut fournir beaucoup d&apos;effort avec une méthode moyenne. Le résultat, c&apos;est souvent plus de fatigue, plus d&apos;activisme et plus d&apos;irrégularité. C&apos;est aussi pour cela que certains profils prometteurs ne franchissent jamais un cap. Ils restent “bons” tant que les condition',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce qu&apos;un manager commercial doit coacher en priorité',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'La découverte : qualité des questions, profondeur du besoin, coût du statu quo, compréhension du décideur. La conduite d&apos;entretien : rythme, reformulation, tenue de la tension, capacité à recadrer sans agresser. La progression du deal : prochaine étape bilatérale, engagement obtenu, preuve de décision réelle. La posture commerciale : courage de confronter, capacité à clarifier, discipline dans la création de valeur. Tant que ces éléments ne sont pas coachés de manière régulière, le manager ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le bon format : moins de commentaires CRM, plus de débriefs utiles',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un bon manager commercial n&apos;abandonne pas le suivi. Il le remet simplement à sa place. Le CRM sert à voir. Le coaching sert à transformer. Concrètement, cela suppose des rituels différents : des débriefs courts juste après des rendez-vous clés ; des revues deal centrées sur les mécanismes de vente, pas seulement sur les statuts ; des feedbacks précis sur une compétence à renforcer ; des attentes managériales qui mesurent aussi la progression, pas uniquement l&apos;activité. C&apos;est d&apo',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le vrai rôle du manager commercial',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le rôle du manager n&apos;est pas seulement de faire remonter l&apos;information. Son rôle est de rendre l&apos;équipe plus lucide, plus exigeante et plus fiable dans sa manière de vendre. Autrement dit : un bon manager ne prouve pas sa valeur parce qu&apos;il sait tout sur tous les deals. Il la prouve parce que son équipe devient meilleure sans avoir besoin qu&apos;il porte chaque dossier à bout de bras.',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

@@ -128,7 +128,46 @@ export default function ArticlePage() {
           },
         ],
       },
-    ],
+    ,
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/strategie-commerciale-pme-cadre-une-page#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: '1. À qui tu vends ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Pas "aux PME du BTP." Les trois secteurs précis où tu gagnes le plus, la taille d\'entreprise où tu es rentable, le problème déclencheur qui fait qu\'ils t\'appellent. Si tu n\'as pas ça en tête, tu passes la moitié de ton temps à qualifier des prospects qui ne valent pas le coup.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '2. Qu\'est-ce que tu leur apportes de vraiment différent ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'La réponse n\'est pas "on est réactifs." C\'est la réponse que personne d\'autre ne peut donner parce qu\'elle est ancrée dans une vraie spécificité de ton entreprise. Pour la trouver, pose la question à tes trois meilleurs clients : "Pourquoi vous restez ?"',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '3. Par quel canal tu les cherches ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un seul nouveau canal ce trimestre. Pas trois. Un seul, que tu maîtrises avant d\'en ajouter un second. La dispersion tue les PME plus sûrement que la concurrence.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '4. Combien tu dois en convaincre par mois ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'C\'est le calcul le plus utile que tu puisses faire avec ton équipe : combien de rdv pour une proposition, combien de propositions pour un client, combien de clients pour ton objectif de CA. Si tu ne peux pas faire ce calcul en 30 secondes, tu n\'as pas un plan — tu as un espoir. 3 heures. Le temps qu\'un dirigeant a mis à répondre aux deux premières questions. Pas parce qu\'il ne sait pas — parce qu\'il n\'a jamais pris le temps de choisir. 📖 Pour aller plus loin KPIs commerciaux PME : ce que vos 25 ',
+            },
+          }
+        ],
+      },
+],
   };
 
   return (

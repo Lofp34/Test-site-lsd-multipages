@@ -40,39 +40,90 @@ export const metadata: Metadata = {
 export default function PourquoiMeilleursCommerciauxDircoEntrepreneursSeCassentLaFigurePage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Passer de commercial à dirco, puis de dirco à entrepreneur : trois métiers, trois pièges",
-  "description": "Passer de commercial à directeur commercial, puis de dirco à entrepreneur, ce ne sont pas des promotions. Ce sont trois métiers différents. Voici pourquoi les meilleurs se plantent en changeant d’étage, et ce qu’il faut vraiment installer pour tenir.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.png",
-  "datePublished": "2026-04-17",
-  "dateModified": "2026-04-17",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-meilleurs-commerciaux-dirco-entrepreneurs-se-cassent-la-figure"
-  },
-  "articleSection": "Management / transformation commerciale",
-  "keywords": [
-    "directeur commercial",
-    "entrepreneur",
-    "management commercial",
-    "transformation commerciale",
-    "promotion commerciale",
-    "Laurent Serre"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Passer de commercial à dirco, puis de dirco à entrepreneur : trois métiers, trois pièges",
+        "description": "Passer de commercial à directeur commercial, puis de dirco à entrepreneur, ce ne sont pas des promotions. Ce sont trois métiers différents. Voici pourquoi les meilleurs se plantent en changeant d’étage, et ce qu’il faut vraiment installer pour tenir.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.png",
+        "datePublished": "2026-04-17",
+        "dateModified": "2026-04-17",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-meilleurs-commerciaux-dirco-entrepreneurs-se-cassent-la-figure"
+        },
+        "articleSection": "Management / transformation commerciale",
+        "keywords": [
+          "directeur commercial",
+          "entrepreneur",
+          "management commercial",
+          "transformation commerciale",
+          "promotion commerciale",
+          "Laurent Serre"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-meilleurs-commerciaux-dirco-entrepreneurs-se-cassent-la-figure"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-meilleurs-commerciaux-dirco-entrepreneurs-se-cassent-la-figure#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Trois métiers, pas trois niveaux',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un commercial est payé pour vendre. Concrètement : tenir un rendez-vous, lire un client, poser un cadre, qualifier, faire avancer un deal, closer. Un directeur commercial est payé pour faire vendre les autres. Ce qui est radicalement différent. Il ne gagne plus au mètre, il gagne à travers un système, une équipe, des rituels, un forecast tenu. Un entrepreneur est payé pour arbitrer. Où va l’argent, où va le temps, où va l’attention. Il n’est pas là pour vendre ni pour faire vendre. Il est là pou',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Pourquoi les meilleurs dircos se cassent la figure en devenant entrepreneurs',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le saut suivant est encore plus brutal. Parce que là, il n’y a plus personne pour poser le cadre.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le point commun des deux sauts',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Dans les deux cas, la cause profonde est la même : on change de métier sans s’autoriser à changer de pratiques. Le commercial devenu dirco continue à vendre parce que c’est ce qui le rassure. Le dirco devenu entrepreneur continue à piloter une fonction commerciale parce que c’est là qu’il performe. Aucun des deux ne se met vraiment dans la peau du nouveau rôle. Et c’est ça, au fond, qui les fait tomber. Ce n’est pas un problème d’intelligence, d’énergie ou de compétence. C’est un problème de luc',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce qu’un dirigeant doit vraiment installer au moment du changement d’étage',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si vous êtes dirigeant et que vous promouvez un bon commercial au poste de dirco, ou si vous êtes vous-même dirco en train de sauter vers l’entrepreneuriat, voici les quatre choses que j’installe systématiquement en accompagnement : Un cadre écrit et partagé : critères de qualification, standards de progression d’un deal, définition claire d’une proposition prête à partir. Sans ça, le nouveau dirco pilote à l’œil et le nouvel entrepreneur subit ses journées. Des rituels de pilotage courts et ten',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que je vois en vingt ans de terrain',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les meilleurs commerciaux qui réussissent leur poste de dirco sont ceux qui acceptent, les six premiers mois, de vendre beaucoup moins et d’installer beaucoup plus. Les meilleurs dircos qui réussissent leur bascule entrepreneur sont ceux qui, très tôt, se donnent un cadre plus strict que celui qu’ils avaient en entreprise, pas l’inverse. On ne réussit pas le niveau suivant en faisant mieux le niveau précédent. On le réussit en acceptant que le métier a changé. C’est souvent la phrase que personn',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

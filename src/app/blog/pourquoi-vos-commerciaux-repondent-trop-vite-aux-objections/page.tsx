@@ -41,39 +41,58 @@ export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage
   // Live refresh marker 2026-04-18 CTA pass 2 to force redeploy after Laurent validation.
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Objections commerciales : répondre trop vite vous fait perdre la main",
-  "description": "Quand un commercial répond trop vite à une objection, il saute sur sa réponse avant d’avoir compris ce que le client essayait vraiment de dire.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero-v2.png",
-  "datePublished": "2026-04-18",
-  "dateModified": "2026-04-18",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections"
-  },
-  "articleSection": "Erreur fréquente / vente terrain",
-  "keywords": [
-    "objections commerciales",
-    "objection prix",
-    "vente B2B",
-    "découverte commerciale",
-    "Laurent Serre",
-    "PME"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Objections commerciales : répondre trop vite vous fait perdre la main",
+        "description": "Quand un commercial répond trop vite à une objection, il saute sur sa réponse avant d’avoir compris ce que le client essayait vraiment de dire.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero-v2.png",
+        "datePublished": "2026-04-18",
+        "dateModified": "2026-04-18",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections"
+        },
+        "articleSection": "Erreur fréquente / vente terrain",
+        "keywords": [
+          "objections commerciales",
+          "objection prix",
+          "vente B2B",
+          "découverte commerciale",
+          "Laurent Serre",
+          "PME"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-repondent-trop-vite-aux-objections#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Besoin d’en parler plus directement ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si votre cas mérite un échange plus direct, vous pouvez aussi laisser un message ici. ); }',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

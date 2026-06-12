@@ -40,38 +40,57 @@ export const metadata: Metadata = {
 export default function PourquoiUnForecastRassurantFaitSouventPerdreDuTempsEtDesVentesPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Prévisions commerciales : les chiffres qui rassurent font souvent perdre des ventes",
-  "description": "Des prévisions commerciales rassurantes ne prouvent pas que les ventes avancent. Souvent, elles masquent surtout des affaires déjà fragiles.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-21-previsions-rassurantes-pas-fiables-hero.jpg",
-  "datePublished": "2026-04-21",
-  "dateModified": "2026-04-21",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-un-forecast-rassurant-fait-souvent-perdre-du-temps-et-des-ventes"
-  },
-  "articleSection": "Erreur fréquente / pilotage commercial",
-  "keywords": [
-    "prévisions commerciales",
-    "pilotage commercial PME",
-    "affaires en cours",
-    "direction commerciale",
-    "Laurent Serre"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Prévisions commerciales : les chiffres qui rassurent font souvent perdre des ventes",
+        "description": "Des prévisions commerciales rassurantes ne prouvent pas que les ventes avancent. Souvent, elles masquent surtout des affaires déjà fragiles.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-21-previsions-rassurantes-pas-fiables-hero.jpg",
+        "datePublished": "2026-04-21",
+        "dateModified": "2026-04-21",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-un-forecast-rassurant-fait-souvent-perdre-du-temps-et-des-ventes"
+        },
+        "articleSection": "Erreur fréquente / pilotage commercial",
+        "keywords": [
+          "prévisions commerciales",
+          "pilotage commercial PME",
+          "affaires en cours",
+          "direction commerciale",
+          "Laurent Serre"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-un-forecast-rassurant-fait-souvent-perdre-du-temps-et-des-ventes"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-un-forecast-rassurant-fait-souvent-perdre-du-temps-et-des-ventes#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Besoin d’en parler plus directement ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si votre cas mérite un échange plus direct, vous pouvez aussi laisser un message ici. ); }',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

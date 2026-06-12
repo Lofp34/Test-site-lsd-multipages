@@ -40,39 +40,58 @@ export const metadata: Metadata = {
 export default function LargentNestPasLeProblemeCestLaMesureObjectiveDeLaValeurPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "L’argent n’est pas le problème, c’est la mesure objective de la valeur",
-  "description": "Quand un prospect dit qu’il n’a pas le budget, le vrai sujet est souvent ailleurs. L’argent mesure surtout la valeur perçue, la priorité et la confiance accordée à la décision.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-16-argent-mesure-valeur-hero.png",
-  "datePublished": "2026-04-16",
-  "dateModified": "2026-04-16",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/largent-nest-pas-le-probleme-cest-la-mesure-objective-de-la-valeur"
-  },
-  "articleSection": "Psychologie commerciale / valeur perçue",
-  "keywords": [
-    "budget client vente",
-    "valeur perçue vente",
-    "objection prix b2b",
-    "arbitrage budget prospect",
-    "priorite commerciale",
-    "Laurent Serre"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "L’argent n’est pas le problème, c’est la mesure objective de la valeur",
+        "description": "Quand un prospect dit qu’il n’a pas le budget, le vrai sujet est souvent ailleurs. L’argent mesure surtout la valeur perçue, la priorité et la confiance accordée à la décision.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-16-argent-mesure-valeur-hero.png",
+        "datePublished": "2026-04-16",
+        "dateModified": "2026-04-16",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/largent-nest-pas-le-probleme-cest-la-mesure-objective-de-la-valeur"
+        },
+        "articleSection": "Psychologie commerciale / valeur perçue",
+        "keywords": [
+          "budget client vente",
+          "valeur perçue vente",
+          "objection prix b2b",
+          "arbitrage budget prospect",
+          "priorite commerciale",
+          "Laurent Serre"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/largent-nest-pas-le-probleme-cest-la-mesure-objective-de-la-valeur"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/largent-nest-pas-le-probleme-cest-la-mesure-objective-de-la-valeur#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Vous voulez aider vos commerciaux à mieux faire sortir les vraies priorités ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Je vous aide à muscler la découverte, la valeur perçue et les échanges qui préparent une vraie décision, pas juste une discussion intéressante. ); }',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

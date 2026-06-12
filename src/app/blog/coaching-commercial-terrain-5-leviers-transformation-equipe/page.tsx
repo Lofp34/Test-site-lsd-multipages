@@ -57,41 +57,100 @@ const carouselImages = [
 
 export default function CoachingCommercialTerrainPage() {
   const articleJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: 'Coaching commercial terrain : les 5 leviers qui transforment durablement une équipe',
-    description:
-      'La formation masse ne change rien. Le coaching terrain, oui , à condition de suivre 5 leviers précis : observer avant d\'agir, structurer le retour en 3 temps, répéter délibérément 1h par semaine, relier l\'individuel au collectif, et mesurer le progrès plutôt que la performance à chaud.',
-    image: heroImageAbsolute,
-    datePublished: '2026-05-26',
-    dateModified: '2026-05-26',
-    author: {
-      '@type': 'Person',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com/a-propos',
-      sameAs: [
-        'https://www.linkedin.com/in/laurentserre34/',
-        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
-      ],
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      headline: 'Coaching commercial terrain : les 5 leviers qui transforment durablement une équipe',
+          description:
+            'La formation masse ne change rien. Le coaching terrain, oui , à condition de suivre 5 leviers précis : observer avant d\'agir, structurer le retour en 3 temps, répéter délibérément 1h par semaine, relier l\'individuel au collectif, et mesurer le progrès plutôt que la performance à chaud.',
+          image: heroImageAbsolute,
+          datePublished: '2026-05-26',
+          dateModified: '2026-05-26',
+          author: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com/a-propos',
+            sameAs: [
+              'https://www.linkedin.com/in/laurentserre34/',
+              'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+            ],
+          },
+          publisher: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com',
+          },
+          mainEntityOfPage: {
+            '@id': 'https://www.laurentserre.com/blog/coaching-commercial-terrain-5-leviers-transformation-equipe',
+          },
+          articleSection: 'Coaching commercial / management d\'équipe',
+          keywords: [
+            'coaching commercial terrain',
+            'coaching développement commercial',
+            'accompagnement commercial PME',
+            'transformation équipe commerciale',
+            'répétition délibérée vente',
+          ],
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com',
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/coaching-commercial-terrain-5-leviers-transformation-equipe"
     },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://www.laurentserre.com/blog/coaching-commercial-terrain-5-leviers-transformation-equipe',
-    },
-    articleSection: 'Coaching commercial / management d\'équipe',
-    keywords: [
-      'coaching commercial terrain',
-      'coaching développement commercial',
-      'accompagnement commercial PME',
-      'transformation équipe commerciale',
-      'répétition délibérée vente',
-    ],
-  };
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/coaching-commercial-terrain-5-leviers-transformation-equipe#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Levier 1 : Diagnostic comportemental avant le plan d&apos;action , observer en situation réelle',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Avant de décider ce qu&apos;on va changer, il faut voir ce qui se passe vraiment. Pas dans un tableau Excel. Pas dans un débrief à chaud en open space. En situation. Quand j&apos;arrive chez un client pour un coaching, on me dit souvent : « Thomas, il a du mal à conclure. Il faut lui apprendre à conclure. » Sauf qu&apos;en l&apos;observant un vrai rendez-vous, je vois autre chose. Thomas n&apos;a pas un problème de conclusion. Il a un problème de questionnement. Il pose ses questions comme un in',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Levier 2 : Retour structuré en 3 temps , avant, pendant, après',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le retour, c&apos;est le cœur du coaching. Mais la plupart des managers le font dans le mauvais ordre : ils observent, puis ils donnent des conseils. Le problème, c&apos;est que le commercial repart avec une liste de choses à changer, et il est seul pour les appliquer. Avant : le briefing d&apos;intention. Cinq minutes avant le rendez-vous. « Qu&apos;est-ce que tu veux vérifier dans cet échange ? Qu&apos;est-ce que tu veux faire passer ? Où est le point sensible que tu dois aborder ? » Cette pha',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Levier 3 : La répétition délibérée plutôt que la formation en masse',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le plus grand mensonge de la formation commerciale, c&apos;est la croyance qu&apos;on apprend en deux jours. On ne devient pas meilleur pour conclure parce qu&apos;on a suivi un stage. On devient meilleur parce qu&apos;on a répété trente fois le même geste, avec correction entre chaque essai, jusqu&apos;à ce que le nouveau réflexe remplace l&apos;ancien. Le format qui fonctionne : Une séance par semaine, une heure. Pas un exposé. Une mise en situation : un scénario réel, un client qui résiste, u',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Levier 4 : Rituels de cohésion entre coaching individuel et collectif',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le coaching individuel, c&apos;est indispensable. Mais un commercial qui progresse tout seul dans son coin, sans relier sa progression à celle de l&apos;équipe, finit par plafonner. Pourquoi ? Parce que la performance commerciale est aussi un sport d&apos;équipe. Vos commerciaux partagent les mêmes clients indirects, les mêmes marchés, les mêmes obstacles. Si chacun garde ses apprentissages pour soi, l&apos;équipe entière réapprend les mêmes leçons en silo. Le debrief collectif hebdomadaire (30 ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Levier 5 : Indicateurs qui mesurent le progrès, pas la performance à chaud',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'C&apos;est le levier le plus négligé. Et probablement le plus important pour la durabilité du changement. Les managers mesurent la performance : combien de ventes, combien de rendez-vous, quel taux de transformation. C&apos;est normal, c&apos;est le résultat final. Mais si on ne mesure que la performance, on juge le commercial sur ce qu&apos;il produit, pas sur ce qu&apos;il construit. Le taux d&apos;écoute active en rendez-vous : plutôt que de compter les devis signés, évaluer si le commercial ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Les pièges à éviter dans le coaching terrain',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Avant de conclure, un mot sur les erreurs les plus fréquentes. Je les vois presque chez chaque client : Le coaching transformé en inspection. Quand le manager arrive avec sa grille, note chaque écart, et repart. Le commercial se sent jugé, pas soutenu. Il se ferme. Les corrections trop nombreuses. « Tu dois mieux poser tes questions, mieux conclure, mieux préparer tes appels... » Le commercial repart avec six points d&apos;amélioration. Il n&apos;en appliquera aucun. La force du coaching, c&apos',
+            },
+          }
+        ],
+      },
+  ],
+};
 
   return (
     <main className="bg-primary-bg text-gray-dark">

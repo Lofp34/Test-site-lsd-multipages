@@ -41,17 +41,80 @@ export default function ClosingB2BTechniques() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Article",
-            "headline": "Closing B2B : 7 techniques qui marchent (+ scripts à copier)",
-            "description": "Augmentez votre taux de closing en 90 jours sans forcer : MAP, trial close, résumé décisionnel, A/B close, business case, POC cadré, déclosing propre. Bonus : 5 scripts prêts à copier.",
-            "author": { "@type": "Person", "name": "Laurent Serre", "url": "https://www.laurentserre.com/a-propos" },
-            "datePublished": "2025-10-13",
-            "dateModified": "2026-05-03",
-            "image": "https://www.laurentserre.com/images/closing_post.png",
-            "url": "https://www.laurentserre.com/blog/closing-b2b-7-techniques",
-            "publisher": { "@type": "Organization", "name": "Laurent Serre", "url": "https://www.laurentserre.com" }
-          })
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Closing B2B : 7 techniques qui marchent (+ scripts à copier)",
+      "description": "Augmentez votre taux de closing en 90 jours sans forcer : MAP, trial close, résumé décisionnel, A/B close, business case, POC cadré, déclosing propre. Bonus : 5 scripts prêts à copier.",
+      "author": {
+        "@type": "Person",
+        "name": "Laurent Serre",
+        "url": "https://www.laurentserre.com/a-propos"
+      },
+      "datePublished": "2025-10-13",
+      "dateModified": "2026-05-03",
+      "image": "https://www.laurentserre.com/images/closing_post.png",
+      "url": "https://www.laurentserre.com/blog/closing-b2b-7-techniques",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Laurent Serre",
+        "url": "https://www.laurentserre.com"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/closing-b2b-7-techniques"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.laurentserre.com/blog/closing-b2b-7-techniques#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Les fondamentaux",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cadre Go/No-Go : définir des critères clairs, interlocuteurs clés et une prochaine étape datée. Mutual Action Plan (MAP) : plan mutuel daté, avec responsables. Sans MAP, pas de décision, juste de l'espoir. Déclosing : savoir sortir proprement quand timing/budget/fit ne sont pas réunis pour protéger votre crédibilité. Cibles de pilotage ≥ 85 % des opportunités avec next-step datée No-show &lt; 8 % Time-to-close -15 % en 3 mois"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Les 7 techniques (fiches actionnables)",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Format par technique : Quand l'utiliser • Script 30s • Variante soft/direct • Erreur fréquente → Correctif • KPI • Pour DirCo / Pour Commercial"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Scripts prêts à l'emploi (5 extraits)",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Astuce : copiez-collez, adaptez 2-3 variables (nom, date, KPI) et bloquez une date. 1) Relance post-démo (email) Objet - Suite à notre démo : next step mardi 10:00 ? Bonjour [Prénom], Comme convenu, je vous partage le petit résumé décisionnel : • Objectif : -12 % coûts SAV (PIC S4) • Risque : charge saisonnière • Interlocuteurs : vous + DAF (A. Martin) • Décision cible : 28/10 Ok pour valider les critères du MAP mardi 10:00 en visio (30 min) ? Je vous envoie l'invite. Laurent 2) Objection prix ("
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mesurer & piloter",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Next-step : ≥ 85 % des opportunités avec prochaine étape datée. No-show : &lt; 8 % (rappel J-1 + SMS J-0). Time-to-close : -15 % (MAP + trial closes). POC → Prod : &gt; 60 % si critères cadrés. A/B scripts : testez 2 versions « prix » sur 30 jours."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mini-cas (anonymisé)",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Contexte : PME industrielle (pipeline 1,2 M€), cycles longs, relances irrégulières. Actions : MAP obligatoire + résumés décisionnels partagés + POC 4 semaines cadrés. Résultats (90 jours) : taux de closing +16 pts, time-to-close -18 %, no-show 6,5 %."
+          }
+        }
+      ]
+    }
+  ]
+})
         }}
       />
       <section className="py-24 sm:py-32">

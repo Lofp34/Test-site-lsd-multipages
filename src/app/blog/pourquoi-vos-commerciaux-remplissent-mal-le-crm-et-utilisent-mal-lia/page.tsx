@@ -40,40 +40,91 @@ export const metadata: Metadata = {
 export default function PourquoiVosCommerciauxRemplissentMalLeCrmEtUtilisentMalLiaPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Pourquoi vos commerciaux remplissent mal le CRM… et utilisent mal l’IA",
-  "description": "Quand le CRM est vide ou flou, l’IA ne rend pas l’équipe plus pertinente. Elle industrialise surtout le flou commercial et le transforme en prose plus propre.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-14-crm-ia-hero.png",
-  "datePublished": "2026-04-14",
-  "dateModified": "2026-04-14",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-remplissent-mal-le-crm-et-utilisent-mal-lia"
-  },
-  "articleSection": "IA utile / exécution commerciale",
-  "keywords": [
-    "CRM commercial",
-    "IA commerciale",
-    "commerciaux PME",
-    "notes CRM",
-    "intelligence artificielle vente",
-    "management commercial",
-    "Laurent Serre"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Pourquoi vos commerciaux remplissent mal le CRM… et utilisent mal l’IA",
+        "description": "Quand le CRM est vide ou flou, l’IA ne rend pas l’équipe plus pertinente. Elle industrialise surtout le flou commercial et le transforme en prose plus propre.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-14-crm-ia-hero.png",
+        "datePublished": "2026-04-14",
+        "dateModified": "2026-04-14",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-remplissent-mal-le-crm-et-utilisent-mal-lia"
+        },
+        "articleSection": "IA utile / exécution commerciale",
+        "keywords": [
+          "CRM commercial",
+          "IA commerciale",
+          "commerciaux PME",
+          "notes CRM",
+          "intelligence artificielle vente",
+          "management commercial",
+          "Laurent Serre"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-remplissent-mal-le-crm-et-utilisent-mal-lia"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-remplissent-mal-le-crm-et-utilisent-mal-lia#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Le problème n’est pas toujours la fainéantise',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Soyons clairs. Quand un commercial ne remplit pas son CRM, il peut y avoir un sujet de rigueur, de discipline ou de savoir-faire. Et quand c’est le cas, il faut le corriger. Mais très souvent, ce n’est pas le vrai problème. Le vrai problème, c’est que beaucoup de commerciaux pensent, à raison ou à tort, que le CRM ne leur sert à rien. C’est souvent le symptôme d’un problème plus large de système, comme je l’explique dans Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système .',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'L’IA ne sauve pas une pensée commerciale vide',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Aujourd’hui, beaucoup d’équipes commerciales utilisent l’IA de manière superficielle. Elles lui demandent d’écrire un mail. De reformuler un compte rendu. De faire une proposition. De rendre le tout “plus pro”. Le résultat, on le voit partout : un texte plus lisse, plus long, plus poli… mais pas forcément plus pertinent. Si la matière CRM est floue, l’IA ne crée pas de l’intelligence commerciale. Elle industrialise le flou, le rend plus présentable, puis le diffuse plus vite. C’est ce que j’appe',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le sujet n’est pas d’abord de former à écrire avec l’IA',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le premier réflexe de beaucoup de dirigeants, c’est de dire : “Il faut former mes commerciaux à ChatGPT.” Je pense souvent que ce n’est pas le bon point de départ. Avant de former une équipe à mieux rédiger avec l’IA, il faut l’aider à mieux capturer, mieux lire et mieux structurer la réalité de ses rendez-vous. C’est exactement ce qui manque aussi quand les commerciaux parlent trop tôt de leur solution au lieu d’aller chercher le vrai problème. Sinon, on forme juste des gens à produire plus vit',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'À quoi ressemble un bon usage de l’IA commerciale',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un bon usage de l’IA commerciale, ce n’est pas de demander : “Rédige-moi un joli mail de relance.” Un bon usage, c’est de lui donner une matière précise et exploitable, puis de lui demander quelque chose d’utile. Par exemple : rédiger un mail de suivi court, centré sur les priorités réelles du client ; transformer un entretien en proposition claire et impactante en quelques lignes ; structurer une note CRM qui servira vraiment au prochain rendez-vous ; faire ressortir les objections, les signaux',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce que je recommande concrètement',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Dans une équipe commerciale, je préfère voir trois choses simples en place plutôt qu’un grand discours sur l’IA. Après chaque rendez-vous important, il faut pouvoir retrouver rapidement : ce que le client veut vraiment ; ce qui bloque réellement ; quelle est la prochaine étape datée et bilatérale. Quand cette matière existe, l’IA devient un levier formidable. Quand elle n’existe pas, l’IA devient surtout une machine à produire du texte supplémentaire. Et franchement, ce n’est pas ce dont les com',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

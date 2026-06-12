@@ -36,39 +36,98 @@ export const metadata: Metadata = {
 export default function ComptesStrategiquesDormantsPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Comptes stratégiques dormants : la relance que les dirigeants oublient trop souvent",
-  "description": "Comment réactiver des comptes stratégiques dormants sans abîmer la relation, recréer de la valeur business et générer des opportunités plus crédibles que de la prospection froide.",
-  "image": "https://www.laurentserre.com/images/blog/2026-03-27-comptes-strategiques-dormants-hero.png",
-  "datePublished": "2026-03-27",
-  "dateModified": "2026-03-27",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/comptes-strategiques-dormants-relance-dirigeant"
-  },
-  "articleSection": "Développement de comptes",
-  "keywords": [
-    "comptes stratégiques dormants",
-    "relance commerciale",
-    "directeur commercial",
-    "dirigeant PME",
-    "account management B2B",
-    "bootcamp commercial"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Comptes stratégiques dormants : la relance que les dirigeants oublient trop souvent",
+        "description": "Comment réactiver des comptes stratégiques dormants sans abîmer la relation, recréer de la valeur business et générer des opportunités plus crédibles que de la prospection froide.",
+        "image": "https://www.laurentserre.com/images/blog/2026-03-27-comptes-strategiques-dormants-hero.png",
+        "datePublished": "2026-03-27",
+        "dateModified": "2026-03-27",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/comptes-strategiques-dormants-relance-dirigeant"
+        },
+        "articleSection": "Développement de comptes",
+        "keywords": [
+          "comptes stratégiques dormants",
+          "relance commerciale",
+          "directeur commercial",
+          "dirigeant PME",
+          "account management B2B",
+          "bootcamp commercial"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/comptes-strategiques-dormants-relance-dirigeant"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/comptes-strategiques-dormants-relance-dirigeant#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: '1) Séparer les comptes dormants utiles des comptes seulement rassurants',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Toutes les anciennes relations ne se valent pas. Beaucoup de portefeuilles contiennent des comptes “historiques” qui occupent de la place mentale, mais n&apos;ont plus ni sponsor, ni enjeu actif, ni fenêtre réaliste. Les garder dans les priorités, c&apos;est fabriquer de l&apos;illusion de traction. Gardez uniquement les comptes avec un enjeu business identifiable aujourd&apos;hui Écartez ceux dont l&apos;organisation a trop changé sans point d&apos;entrée relançable Différenciez clairement anci',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '2) Revenir avec un angle neuf, jamais avec un simple “je reprends contact”',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le message qui échoue le plus souvent est aussi le plus paresseux : “Je me permets de revenir vers vous…” Il ne crée aucune raison de répondre. Un compte dormant repart seulement si vous apportez un motif crédible de reconsidération : évolution de marché, changement de priorité, risque visible, opportunité manquée ou nouvelle manière de traiter un problème ancien. Autrement dit : on ne relance pas un nom dans un CRM. On réouvre une conversation à partir d&apos;une hypothèse business.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '3) Préparer une micro-thèse par compte, pas une séquence standardisée',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les comptes à fort potentiel ne se réveillent pas avec une campagne générique. Pour chacun, votre équipe doit être capable d&apos;écrire en trois lignes : ce qui a changé, ce qui fait mal, et pourquoi agir maintenant serait rationnel. Micro-thèse utile : “Depuis notre dernier échange, votre organisation a grandi mais votre process de qualification semble rester artisanal. Le risque n&apos;est plus seulement la perte d&apos;opportunités : c&apos;est la saturation managériale. Voilà pourquoi un di',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '4) Réserver la relance des comptes dormants aux meilleurs conversations openers',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Une mauvaise habitude consiste à confier les comptes dormants à ceux qui ont “un peu de temps”. C&apos;est l&apos;inverse qu&apos;il faut faire. Les comptes stratégiques dormants exigent les commerciaux ou managers capables de tenir un échange adulte : sans insistance, sans précipitation, avec une lecture fine du contexte client. La réactivation n&apos;est pas une tâche de rattrapage. C&apos;est une conversation à haute valeur où la qualité du cadrage vaut plus que le volume.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '5) Remettre une étape de diagnostic avant toute proposition',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Lorsqu&apos;une relation existe déjà, certaines équipes veulent aller trop vite : “On se connaît, on peut avancer directement.” Mauvais réflexe. Ce qui s&apos;est figé hier ne se débloque pas par un devis plus vite envoyé. Il faut réinstaller une étape de diagnostic pour comprendre ce qui a changé, ce qui a bloqué, et quel niveau d&apos;urgence existe réellement. Requalifiez le contexte politique et le sponsor Vérifiez si la douleur est toujours là, déplacée ou aggravée Cherchez une décision à p',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '6) Mesurer la relance au taux de conversations utiles, pas au nombre de réponses',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Beaucoup d&apos;équipes pilotent ce sujet avec de mauvais indicateurs : taux d&apos;ouverture, nombre de retours, volume d&apos;emails envoyés. Ce sont des métriques de surface. Ce qu&apos;un dirigeant doit regarder, c&apos;est le nombre de conversations requalifiées, le nombre de rendez-vous de diagnostic obtenus, puis la vitesse de passage vers une opportunité sérieuse. Si vous ne mesurez pas cela, vos comptes dormants deviendront juste une activité occupante de plus.',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

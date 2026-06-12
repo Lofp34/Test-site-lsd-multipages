@@ -40,41 +40,76 @@ export const metadata: Metadata = {
 export default function BonsCommerciauxMauvaisSystemePage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système",
-  "description": "Quand un bon commercial devient irrégulier, le problème n’est pas toujours la personne. Un système commercial flou dégrade la lecture, la posture et la performance de toute l’équipe.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.jpg",
-  "datePublished": "2026-04-05",
-  "dateModified": "2026-04-05",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme"
-  },
-  "articleSection": "Structure / système commercial",
-  "keywords": [
-    "système commercial",
-    "performance commerciale",
-    "management commercial",
-    "structuration commerciale",
-    "équipe de vente B2B",
-    "Laurent Serre",
-    "bootcamp commercial",
-    "diagnostic commercial"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système",
+        "description": "Quand un bon commercial devient irrégulier, le problème n’est pas toujours la personne. Un système commercial flou dégrade la lecture, la posture et la performance de toute l’équipe.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.jpg",
+        "datePublished": "2026-04-05",
+        "dateModified": "2026-04-05",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme"
+        },
+        "articleSection": "Structure / système commercial",
+        "keywords": [
+          "système commercial",
+          "performance commerciale",
+          "management commercial",
+          "structuration commerciale",
+          "équipe de vente B2B",
+          "Laurent Serre",
+          "bootcamp commercial",
+          "diagnostic commercial"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Un bon commercial n’est pas autonome contre un système flou',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Beaucoup de dirigeants surestiment la capacité d’un bon profil à compenser seul les défauts de l’organisation. Ils pensent qu’un commercial expérimenté saura “se débrouiller”. En réalité, même un bon vendeur finit par se dérégler si le système envoie des signaux contradictoires. Priorités qui changent chaque semaine, critères de qualification flous, coaching irrégulier, CRM vécu comme une police et non comme un outil de lecture, propositions envoyées trop tôt, arbitrages managériaux instables : ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment reconnaître qu’un problème de performance est en réalité un problème de système',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les écarts de performance deviennent incohérents : les mêmes personnes alternent bonnes semaines et semaines molles sans raison claire. Le manager passe son temps à corriger en aval : relances, propositions, CRM, forecast, au lieu de travailler l’amont de la vente. Les bons profils deviennent plus défensifs : ils justifient, protègent leurs dossiers et confrontent moins. Le recrutement paraît être la solution réflexe : on cherche un meilleur talent pour compenser un système qui dégrade déjà les ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Ce qu’un dirigeant doit remettre en ordre maintenant',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si vous avez de bons commerciaux qui se dégradent, ne commencez pas par leur demander plus d’énergie. Reprenez d’abord quatre choses : vos critères de qualification, vos standards de progression d’un deal, la qualité du coaching managérial et vos règles d’arbitrage commercial. Un bon système ne remplace pas les bons profils. Il les rend lisibles, coachables et reproductibles. Un mauvais système fait exactement l’inverse : il transforme même les meilleurs en producteurs d’incertitude. Et c’est là',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

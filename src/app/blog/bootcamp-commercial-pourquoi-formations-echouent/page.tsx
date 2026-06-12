@@ -30,37 +30,96 @@ export const metadata: Metadata = {
 export default function Article4() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Bootcamp commercial : pourquoi 80% des formations échouent",
-  "description": "Analyse des raisons pour lesquelles la plupart des formations commerciales n\\",
-  "image": "https://www.laurentserre.com/photo-formation.png",
-  "datePublished": "2024-12-28",
-  "dateModified": "2024-12-28",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/bootcamp-commercial-pourquoi-formations-echouent"
-  },
-  "keywords": [
-    "formation commerciale",
-    "bootcamp commercial",
-    "échec formation",
-    "formation équipe vente",
-    "PME"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Bootcamp commercial : pourquoi 80% des formations échouent",
+        "description": "Analyse des raisons pour lesquelles la plupart des formations commerciales n\\",
+        "image": "https://www.laurentserre.com/photo-formation.png",
+        "datePublished": "2024-12-28",
+        "dateModified": "2024-12-28",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/bootcamp-commercial-pourquoi-formations-echouent"
+        },
+        "keywords": [
+          "formation commerciale",
+          "bootcamp commercial",
+          "échec formation",
+          "formation équipe vente",
+          "PME"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/bootcamp-commercial-pourquoi-formations-echouent"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/bootcamp-commercial-pourquoi-formations-echouent#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Raison #1 : Le syndrome de la formation "one-shot"',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le problème : Une journée de formation intensive, puis plus rien. On bombarde les commerciaux d\'informations sans suivi ni accompagnement. Résultat : 90% des acquis sont oubliés en 30 jours. Notre approche : Formation étalée sur 3 mois avec sessions hebdomadaires, mise en pratique immédiate et coaching individuel. La mémorisation et l\'ancrage sont garantis.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Raison #2 : Formation générique vs réalité terrain',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les formations standards ignorent votre contexte spécifique : votre marché, vos clients, vos concurrents, vos objections récurrentes. Vos commerciaux repartent avec de beaux concepts... inapplicables. Solution : Formation 100% personnalisée basée sur vos vrais cas clients, vos vraies objections, votre vraie concurrence. Chaque module est adapté à votre réalité.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Raison #3 : Pas de mesure, pas d\'amélioration',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Comment mesurer l\'efficacité d\'une formation ? Par la satisfaction des participants ? C\'est insuffisant. Il faut mesurer l\'impact business : plus de rendez-vous, meilleur taux de conversion, augmentation du panier moyen. KPI à suivre : Taux de transformation prospect → client, durée moyenne du cycle de vente, valeur moyenne des deals, taux de rétention client.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Raison #4 : Le manager n\'est pas impliqué',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Formation des commerciaux ≠ Formation des managers. Si le manager continue avec ses anciennes méthodes, impossible d\'ancrer les nouvelles pratiques dans l\'équipe. Notre méthode : Formation simultanée des managers sur le coaching commercial, l\'animation d\'équipe et le suivi des KPI. Manager et équipe avancent ensemble.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Raison #5 : Formation sans outils opérationnels',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Apprendre de nouvelles techniques sans avoir les outils pour les appliquer, c\'est comme apprendre à conduire sans voiture. Il faut des scripts, des grilles, des processus, un CRM adapté...',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Notre approche "bootcamp terrain"',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: '1. Diagnostic préalable : On analyse votre existant avant de former 2. Formation séquencée : 12 semaines d\'accompagnement progressif 3. Mise en pratique immédiate : Chaque semaine, application directe sur vos vrais prospects 4. Coaching individuel : Suivi personnalisé de chaque commercial 5. Mesure d\'impact : KPI suivis en temps réel, ajustements continus',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

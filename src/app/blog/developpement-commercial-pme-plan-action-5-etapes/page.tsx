@@ -132,7 +132,62 @@ export default function DeveloppementCommercialPme() {
           },
         ],
       },
-    ],
+    ,
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/developpement-commercial-pme-plan-action-5-etapes#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Étape 1 — Le diagnostic qui tue les illusions',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Avant de décider ce qu\'il faut améliorer, il faut savoir où on en est vraiment. Et c\'est déjà plus difficile qu\'il n\'y paraît. Je pose toujours les mêmes cinq questions à un dirigeant lors d\'un premier diagnostic : 1. Ciblage : Est-ce que toute l\'équipe sait exactement quel client démarcher, sans ambiguïté ? Ou chacun prospecte dans son coin ce qui lui tombe sous la main ? 2. Pipeline : Est-ce que votre pipeline reflète la réalité — ou il est rempli d\'affaires qui traînent depuis huit mois et qu',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Étape 2 — Arrêtez de courir après 15 priorités',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'La plus grande erreur des PME en développement commercial, c\'est la dispersion. On attaque trois segments. On lance quatre actions. On change tout en même temps. Et trois mois plus tard, rien n\'a avancé. Le cadre que j\'utilise avec les équipes que j\'accompagne, c\'est la stratégie en une page. Un document A4 qui tient sur un bureau. Pas un PowerPoint de 40 slides. Pas un plan annuel qu\'on range dans un tiroir. Voici ce qu\'elle contient : Un seul objectif prioritaire pour les 90 jours. Pas cinq. U',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Étape 3 — Votre pipeline ne ment pas',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Le pipeline commercial est l\'outil le plus mal utilisé des PME. On y met des affaires au hasard, on met des probabilités au doigt mouillé, et on regarde le montant total en se disant que le mois sera bon. Et le 28 du mois, on découvre que 80% des deals étaient des illusions. Un pipeline utile, ça ressemble à ça : Des étapes claires et objectives. Pas « en négociation » ou « intéressé ». Mais « découverte faite », « démo réalisée », « proposition envoyée », « devis signé ». Chaque étape correspon',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Étape 4 — Le vrai travail, c\'est sur le terrain',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Beaucoup de PME confondent formation et développement des compétences. On envoie les commerciaux en stage deux jours, on leur distribue des fiches, et on pense que le problème est réglé. Mais les vrais progrès ne se font pas en salle de formation. Ils se font dans la voiture, sur le parking, au débrief du rendez-vous. Le coaching terrain, c\'est le levier le plus sous-estimé du développement commercial PME. Pourquoi ? Parce qu\'il travaille sur la situation réelle, pas sur un cas idéal. Le commerc',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Étape 5 — Mesurez ce qui compte (et arrêtez de regarder le reste)',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les PME que je vois sont noyées sous les indicateurs. Taux d\'activité, nombre d\'appels, emails envoyés, réunions réalisées, propositions en cours, panier moyen, marge par affaire, taux de rétention… La liste est longue. Et la plupart de ces chiffres ne servent à rien. Les 3 indicateurs qui comptent vraiment pour le développement commercial d\'une PME : 1. Le taux de conversion par étape. Combien de vos propositions aboutissent à une signature ? Combien de vos découvertes aboutissent à une proposi',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Le développement commercial, ce n\'est pas un projet — c\'est un cycle',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Beaucoup de dirigeants abordent le développement commercial comme un projet ponctuel. On embauche un commercial. On achète un CRM. On fait une formation. Et on espère que ça va marcher. Mais le développement commercial d\'une PME, ça se pilote comme un cycle : on diagnostique, on stratégise, on exécute, on mesure, on ajuste. Puis on recommence. Chaque trimestre. Les équipes qui progressent vraiment ne sont pas celles qui ont la meilleure méthode ou le plus gros budget. Ce sont celles qui ont le r',
+            },
+          }
+        ],
+      },
+],
   };
 
   const carouselImages = [

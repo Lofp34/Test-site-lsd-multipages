@@ -36,38 +36,89 @@ export const metadata: Metadata = {
 export default function ArticleAccompagnement() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Accompagnement des équipes commerciales : 6 leviers d’expert pour booster vos ventes en 2025",
-  "description": "Méthode concrète pour structurer l’accompagnement commercial et faire monter vos équipes en compétences : modèles, leviers humains et technos, et guide pratique d’externalisation.",
-  "image": "https://www.laurentserre.com/accompagnement_commercial.png",
-  "datePublished": "2025-09-30",
-  "dateModified": "2025-09-30",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/accompagnement-equipes-commerciales-6-leviers-2025"
-  },
-  "keywords": [
-    "accompagnement commercial",
-    "direction commerciale externalisée",
-    "coaching commercial",
-    "sales enablement",
-    "management commercial",
-    "IA marketing"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Accompagnement des équipes commerciales : 6 leviers d’expert pour booster vos ventes en 2025",
+        "description": "Méthode concrète pour structurer l’accompagnement commercial et faire monter vos équipes en compétences : modèles, leviers humains et technos, et guide pratique d’externalisation.",
+        "image": "https://www.laurentserre.com/accompagnement_commercial.png",
+        "datePublished": "2025-09-30",
+        "dateModified": "2025-09-30",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/accompagnement-equipes-commerciales-6-leviers-2025"
+        },
+        "keywords": [
+          "accompagnement commercial",
+          "direction commerciale externalisée",
+          "coaching commercial",
+          "sales enablement",
+          "management commercial",
+          "IA marketing"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/accompagnement-equipes-commerciales-6-leviers-2025"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/accompagnement-equipes-commerciales-6-leviers-2025#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: '1. Comprendre ce qu’est réellement l’accompagnement commercial',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'L’accompagnement commercial ne se limite pas à du suivi ou à quelques formations. C’est un processus structuré conçu pour insuffler une dynamique cohérente et durable aux actions de vente d’une entreprise, en s’adaptant à ses marchés, cycles, contraintes et ambitions. Sur le terrain, ce travail peut prendre plusieurs formes : Coaching individuel ou collectif : travail en profondeur sur les postures et techniques commerciales, en réunion ou sur le terrain. Montée en compétence ciblée : formations',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '3. Internaliser ou externaliser ? Choisir le bon modèle',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Accompagnement interne (managers, équipe dédiée, RH) : renforce les synergies et facilite l’intégration dans le quotidien opérationnel. Accompagnement externe (consultant/coach) : apporte un regard neuf, une expérience transverse et aide à structurer/accélérer un plan d’action. Pour les PME, externaliser la direction commerciale offre souvent des avantages : gain de temps, expertise pointue, flexibilité et objectivité. Cas pertinents : dépendance excessive au dirigeant, croissance rapide, struct',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '4. Leviers technologiques et humains d’un accompagnement réussi',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Sales enablement : centraliser les contenus stratégiques et renforcer l’impact des échanges. Formation et coaching digitalisé : apprentissage continu, modulaire et individualisé. Coaching assisté par l’IA : analyse d’appels, détection d’axes d’amélioration, recommandations personnalisées. Intégration téléphonie &amp; CRM : mémoire commerciale consolidée, process fluides (HubSpot, Pipedrive, Zoho…). Prospection multicanale : orchestrer des campagnes à grande échelle sans perdre en pertinence.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '5. Adapter contenu et marketing à l’ère de l’IA',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Contenu original et utile : pensé pour les humains, non pour les algorithmes. E‑E‑A‑T visible : expérience vécue, expertise terrain, bios d’auteurs, preuves externes crédibles. Intention plutôt que mot‑clé : réponses spécifiques et approfondies qui traitent des questions concrètes. Données structurées : schémas Organisation, Person, FAQ/WebPage ; transparence et fiabilité. Formats diversifiés : articles, guides, vidéos, FAQ ; surveiller les apparitions dans les aperçus IA.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: '6. Structurer un accompagnement externalisé : guide pratique',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Définir objectifs et indicateurs (opportunités, conversions, cycles, fidélisation, compétences). Sécuriser l’intégration et la communication (rituels de pilotage, attentes partagées, process formalisés). Prévenir la dépendance au consultant (implication des managers, documentation, montée en maturité). Challenger les méthodes proposées (adapter aux contraintes, ajuster si les résultats ne suivent pas). Formaliser les process et diversifier l’approche (mix canaux, outillage CRM/reporting/argument',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

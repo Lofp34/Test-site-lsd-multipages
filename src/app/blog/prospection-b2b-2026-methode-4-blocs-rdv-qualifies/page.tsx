@@ -30,37 +30,96 @@ export const metadata: Metadata = {
 export default function ProspectionB2B4BlocsPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Prospection B2B 2026 : la méthode 4 blocs pour générer plus de RDV qualifiés",
-  "description": "Une méthode terrain en 4 blocs pour générer plus de RDV qualifiés en prospection B2B : ciblage, message, séquence, pilotage.",
-  "image": "https://www.laurentserre.com/equipe_bureau.jpg",
-  "datePublished": "2026-03-22",
-  "dateModified": "2026-03-22",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/prospection-b2b-2026-methode-4-blocs-rdv-qualifies"
-  },
-  "keywords": [
-    "prospection B2B",
-    "RDV qualifiés",
-    "pipeline commercial",
-    "séquence de prospection",
-    "méthode commerciale PME"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Prospection B2B 2026 : la méthode 4 blocs pour générer plus de RDV qualifiés",
+        "description": "Une méthode terrain en 4 blocs pour générer plus de RDV qualifiés en prospection B2B : ciblage, message, séquence, pilotage.",
+        "image": "https://www.laurentserre.com/equipe_bureau.jpg",
+        "datePublished": "2026-03-22",
+        "dateModified": "2026-03-22",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/prospection-b2b-2026-methode-4-blocs-rdv-qualifies"
+        },
+        "keywords": [
+          "prospection B2B",
+          "RDV qualifiés",
+          "pipeline commercial",
+          "séquence de prospection",
+          "méthode commerciale PME"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/prospection-b2b-2026-methode-4-blocs-rdv-qualifies"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/prospection-b2b-2026-methode-4-blocs-rdv-qualifies#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Bloc 1 — Ciblage : arrêter de parler à tout le monde',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Premier levier : définir un ICP concret, pas un persona “marketing”. Vous devez savoir qui décide, qui influence, quelle douleur coûte réellement de l&apos;argent, et quel niveau de maturité est compatible avec votre offre. Secteur + taille + contexte de croissance Problème business mesurable Fenêtre de décision probable (3 à 6 mois)',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Bloc 2 — Message : parler résultat, pas brochure',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un bon message de prospection ne présente pas votre offre. Il ouvre une conversation utile sur un risque, une perte de performance ou un objectif business. Votre prospect doit se dire : “c&apos;est mon sujet”. Exemple : “J&apos;observe souvent une chute de conversion entre devis envoyé et relance. En général, ça coûte 8 à 15% de CA non capté. Vous avez ce sujet en ce moment ?”',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Bloc 3 — Séquence : cadence courte, valeur continue',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Une séquence efficace n&apos;est pas une répétition. C&apos;est une progression : chaque contact ajoute de la valeur. Sur 21 jours, combinez email, téléphone et LinkedIn avec un angle différent à chaque fois. J1 : message d&apos;accroche sur un enjeu business J4 : preuve terrain (mini-cas) J8 : question de qualification J14 : proposition de créneau court J21 : relance finale claire',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Bloc 4 — Pilotage : mesurer ce qui fait progresser',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Les KPI de volume ne suffisent pas. Il faut suivre des indicateurs de qualité : taux de réponse qualifiée, taux de RDV tenus, et taux de transformation RDV → opportunité. Sans pilotage qualité, l&apos;équipe se fatigue et le pipeline gonfle artificiellement.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Mini-cas terrain',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Contexte : PME B2B, 6 commerciaux, pipeline instable. Action : mise en place des 4 blocs pendant 6 semaines. Résultat : +28% de RDV qualifiés et cycle commercial mieux maîtrisé.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Checklist de démarrage (30 minutes)',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Définir 1 ICP prioritaire pour les 30 prochains jours Écrire 1 message d&apos;accroche orienté douleur business Construire une séquence 5 touches sur 21 jours Fixer 3 KPI qualité hebdomadaires Faire une revue d&apos;équipe chaque vendredi',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (

@@ -56,41 +56,100 @@ const carouselImages = [
 
 export default function CoachingDeveloppementCommercialPage() {
   const articleJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: 'Coaching développement commercial : ce que personne ne vous dit avant d\'investir',
-    description:
-      'Qu\'est-ce que le coaching développement commercial ? Méthodes, coûts réels, résultats concrets. Guide terrain pour dirigeants de PME par Laurent Serre, 20 ans d\'expertise.',
-    image: 'https://www.laurentserre.com/images/blog/2026-05-28-coaching-developpement-commercial-hero.webp',
-    datePublished: '2026-05-28',
-    dateModified: '2026-05-28',
-    author: {
-      '@type': 'Person',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com/a-propos',
-      sameAs: [
-        'https://www.linkedin.com/in/laurentserre34/',
-        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
-      ],
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      headline: 'Coaching développement commercial : ce que personne ne vous dit avant d\'investir',
+          description:
+            'Qu\'est-ce que le coaching développement commercial ? Méthodes, coûts réels, résultats concrets. Guide terrain pour dirigeants de PME par Laurent Serre, 20 ans d\'expertise.',
+          image: 'https://www.laurentserre.com/images/blog/2026-05-28-coaching-developpement-commercial-hero.webp',
+          datePublished: '2026-05-28',
+          dateModified: '2026-05-28',
+          author: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com/a-propos',
+            sameAs: [
+              'https://www.linkedin.com/in/laurentserre34/',
+              'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+            ],
+          },
+          publisher: {
+            name: 'Laurent Serre',
+            url: 'https://www.laurentserre.com',
+          },
+          mainEntityOfPage: {
+            '@id': 'https://www.laurentserre.com/blog/coaching-developpement-commercial-guide-complet-pme',
+          },
+          articleSection: 'Coaching commercial / Développement commercial',
+          keywords: [
+            'coaching développement commercial',
+            'coaching commercial',
+            'coaching équipe commerciale',
+            'développement commercial PME',
+            'accompagner équipe commerciale',
+          ],
     },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com',
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/coaching-developpement-commercial-guide-complet-pme"
     },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://www.laurentserre.com/blog/coaching-developpement-commercial-guide-complet-pme',
-    },
-    articleSection: 'Coaching commercial / Développement commercial',
-    keywords: [
-      'coaching développement commercial',
-      'coaching commercial',
-      'coaching équipe commerciale',
-      'développement commercial PME',
-      'accompagner équipe commerciale',
-    ],
-  };
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/coaching-developpement-commercial-guide-complet-pme#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'C\'est quoi le coaching développement commercial, vraiment ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Commençons par enlever ce qui encombre. Le coaching développement commercial n\'est pas une thérapie de l\'âme commerciale. On ne vient pas y « libérer son potentiel caché » ou « travailler son mindset » dans une salle aux bougies. Si c\'est ça que vous cherchez, vous n\'êtes pas au bon endroit. Ce que c\'est, concrètement : un accompagnement structuré, régulier, qui vise à améliorer les résultats commerciaux d\'une équipe ou d\'un dirigeant par le changement des pratiques de terrain. Un coach commerci',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Coaching vs Formation vs Conseil : arrêtons la confusion',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Un des plus gros problèmes que je vois sur le terrain, c\'est qu\'on confond ces trois métiers. Et qu\'on achète l\'un en espérant obtenir l\'autre. La formation : Elle apporte un savoir, une méthode, un cadre. C\'est vertical : quelqu\'un qui sait transmet à quelqu\'un qui ne sait pas. C\'est utile, c\'est nécessaire, mais ça ne change pas les habitudes toutes seules. Une formation sans suivi, c\'est un cours qu\'on oublie en rentrant au bureau. Le conseil : Il produit des livrables : un plan stratégique, ',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Les 5 signaux qui ne trompent pas',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Quand est-ce qu\'il faut envisager un vrai coaching développement commercial ? Voici ce que je vois chez les dirigeants qui viennent me voir. 1. Vous avez l\'impression de répéter les mêmes réunions tous les trimestres Les chiffres sont les mêmes, les problèmes sont les mêmes, les plans d\'action se ressemblent. Vous avez l\'impression de refaire toujours la même réunion en changeant la date. C\'est le signe le plus clair que quelque chose ne bouge pas dans les pratiques. 2. Vous avez des commerciaux',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Comment se déroule un vrai coaching ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Je vais vous décrire comment je fonctionne, parce que c\'est le plus concret. Les méthodes varient d\'un coach à l\'autre, mais la trame est assez stable. Un coaching commercial complet dure entre 3 et 9 mois. Ce n\'est pas un stage d\'une semaine : c\'est une transformation progressive. Phase 1 — Le diagnostic (semaines 1-2) Je passe du temps sur le terrain avec vos équipes. J\'observe des rendez-vous, je débriefe avec les commerciaux, je regarde votre pipeline, j\'analyse vos documents de vente, je pa',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Combien ça coûte ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Question légitime. Personne n\'investit sans savoir. Les prix du coaching développement commercial varient énormément. Pour vous donner des repères réels : Un coaching court (3 mois, sessions collectives) : 5 000 à 8 000 € Un coaching complet (6-9 mois, mix collectif + individuel + terrain) : 10 000 à 25 000 € Un coaching dirigeant sur-mesure : 15 000 à 40 000 € Ces chiffres peuvent paraître élevés comparés à une formation de deux jours à 3 000 €. Mais posez-vous la question dans l\'autre sens : C',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'Résultats attendus : ce que le coaching peut faire — et ne pas faire',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Soyons clairs. Le coaching commercial n\'est pas une baguette magique. Ce qu\'il peut apporter, quand les conditions sont réunies : Une équipe qui parle le même langage commercial. Des commerciaux qui osent creuser, confronter, demander. Un pipeline qui reflète la réalité, pas les espoirs. Un taux de transformation qui progresse. Un dirigeant qui passe moins de temps sur l\'opérationnel et plus sur la stratégie. Des réunions commerciales qui deviennent des vrais moments de pilotage. Ce qu\'il ne peu',
+            },
+          }
+        ],
+      },
+  ],
+};
 
   return (
     <main className="bg-primary-bg text-gray-dark">

@@ -40,39 +40,58 @@ export const metadata: Metadata = {
 export default function PourquoiVosCommerciauxConfondentInteretEtDecisionPage() {
   const articleJsonLd = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "Un prospect intéressé n’est pas encore une décision",
-  "description": "Un prospect intéressé n’est pas encore une vente qui avance. Beaucoup d’équipes confondent un bon échange avec une vraie progression de décision.",
-  "image": "https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v3.png",
-  "datePublished": "2026-04-19",
-  "dateModified": "2026-04-19",
-  "author": {
-    "@type": "Person",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com/a-propos",
-    "sameAs": [
-      "https://www.linkedin.com/in/laurentserre34/",
-      "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
-    ]
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Laurent Serre",
-    "url": "https://www.laurentserre.com"
-  },
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-confondent-interet-et-decision"
-  },
-  "articleSection": "Terrain / qualification commerciale",
-  "keywords": [
-    "intérêt prospect",
-    "décision commerciale",
-    "vente B2B",
-    "qualification commerciale",
-    "Laurent Serre",
-    "PME"
-  ]
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "headline": "Un prospect intéressé n’est pas encore une décision",
+        "description": "Un prospect intéressé n’est pas encore une vente qui avance. Beaucoup d’équipes confondent un bon échange avec une vraie progression de décision.",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v3.png",
+        "datePublished": "2026-04-19",
+        "dateModified": "2026-04-19",
+        "author": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com/a-propos",
+          "sameAs": [
+            "https://www.linkedin.com/in/laurentserre34/",
+            "https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/"
+          ]
+        },
+        "publisher": {
+          "name": "Laurent Serre",
+          "url": "https://www.laurentserre.com"
+        },
+        "mainEntityOfPage": {
+          "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-confondent-interet-et-decision"
+        },
+        "articleSection": "Terrain / qualification commerciale",
+        "keywords": [
+          "intérêt prospect",
+          "décision commerciale",
+          "vente B2B",
+          "qualification commerciale",
+          "Laurent Serre",
+          "PME"
+        ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-confondent-interet-et-decision"
+    },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-confondent-interet-et-decision#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Besoin d’en parler plus directement ?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'Si votre cas mérite un échange plus direct, vous pouvez aussi laisser un message ici. ); }',
+            },
+          }
+        ],
+      },
+  ],
 };
 
   return (
