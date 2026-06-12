@@ -79,7 +79,16 @@ export default function Reunion30MinutesMargePipelinePage() {
           },
         ]
       }
-    ]
+    ,
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'La réunion de 30 minutes qui protège votre marge…', 'item': 'https://www.laurentserre.com/blog/reunion-30-minutes-proteger-marge-pipeline-avril' },
+        ],
+      }
+]
   };
 
   return (

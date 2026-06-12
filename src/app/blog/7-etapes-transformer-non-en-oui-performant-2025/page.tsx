@@ -121,7 +121,16 @@ export default function Article7EtapesNonOui() {
         }
       ]
     }
-  ]
+  ,
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': '7 étapes pour transformer un « non » frustrant en…', 'item': 'https://www.laurentserre.com/blog/7-etapes-transformer-non-en-oui-performant-2025' },
+        ],
+      }
+]
 })
         }}
       />

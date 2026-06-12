@@ -104,7 +104,16 @@ export default function VentePerdueAvantNonPage() {
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'La vente se perd souvent avant que le client dise…', 'item': 'https://www.laurentserre.com/blog/vente-perdue-avant-non-b2b' },
+        ],
+      }
+],
 };
 
   return (

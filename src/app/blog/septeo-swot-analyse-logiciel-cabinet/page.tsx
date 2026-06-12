@@ -129,7 +129,16 @@ export default function SepteoSwotPage() {
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Septeo : l&rsquo;analyse SWOT qu&rsquo', 'item': 'https://www.laurentserre.com/blog/septeo-swot-analyse-logiciel-cabinet' },
+        ],
+      }
+],
 };
 
   return (

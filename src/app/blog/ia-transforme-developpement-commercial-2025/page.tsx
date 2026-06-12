@@ -115,7 +115,16 @@ export default function Article2() {
         }
       ]
     }
-  ]
+  ,
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Comment l\'IA transforme le développement…', 'item': 'https://www.laurentserre.com/blog/ia-transforme-developpement-commercial-2025' },
+        ],
+      }
+]
 })
         }}
       />

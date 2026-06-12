@@ -113,7 +113,16 @@ export default function ClosingB2BTechniques() {
         }
       ]
     }
-  ]
+  ,
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Closing B2B : 7 techniques qui marchent (+…', 'item': 'https://www.laurentserre.com/blog/closing-b2b-7-techniques' },
+        ],
+      }
+]
 })
         }}
       />

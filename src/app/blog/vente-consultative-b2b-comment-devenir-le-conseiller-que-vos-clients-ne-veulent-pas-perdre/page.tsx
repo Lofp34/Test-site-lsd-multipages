@@ -115,7 +115,16 @@ export default function ArticlePage() {
           },
         ],
       },
-    ],
+    
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Vente consultative B2B', 'item': 'https://www.laurentserre.com/blog/vente-consultative-b2b-comment-devenir-le-conseiller-que-vos-clients-ne-veulent-pas-perdre' },
+        ],
+      }
+],
   };
 
   return (

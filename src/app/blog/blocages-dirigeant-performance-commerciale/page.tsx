@@ -111,11 +111,23 @@ export default function BlocagesDirigeantPage() {
       },
     ]
   };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
+      { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+      { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+      { '@type': 'ListItem', 'position': 3, 'name': 'Dirigeant, le vrai problème de votre performance…', 'item': 'https://www.laurentserre.com/blog/blocages-dirigeant-performance-commerciale' },
+    ],
+  };
+
 
   return (
     <main className="bg-primary-bg text-gray-dark">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
 
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

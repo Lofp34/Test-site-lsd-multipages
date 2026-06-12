@@ -132,7 +132,16 @@ export default function CommerciauxParlentTropTotSolutionsPage() {
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Pourquoi vos commerciaux parlent trop tôt de leur…', 'item': 'https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-parlent-trop-tot-des-solutions' },
+        ],
+      }
+],
 };
 
   return (

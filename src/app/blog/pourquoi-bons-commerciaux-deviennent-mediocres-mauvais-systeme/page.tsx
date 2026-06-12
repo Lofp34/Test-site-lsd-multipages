@@ -109,7 +109,16 @@ export default function BonsCommerciauxMauvaisSystemePage() {
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Pourquoi de bons commerciaux deviennent médiocres…', 'item': 'https://www.laurentserre.com/blog/pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme' },
+        ],
+      }
+],
 };
 
   return (

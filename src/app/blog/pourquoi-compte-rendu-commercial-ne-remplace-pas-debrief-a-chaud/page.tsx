@@ -132,7 +132,16 @@ export default function PourquoiCompteRenduCommercialNeRemplacePasDebriefAChaudP
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Pourquoi le compte rendu commercial ne remplace…', 'item': 'https://www.laurentserre.com/blog/pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud' },
+        ],
+      }
+],
 };
 
   return (

@@ -91,7 +91,16 @@ export default function Le28DuMoisIlEstTropTardPourSauverVosVentesPage() {
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Le 28 du mois, il est trop tard pour sauver vos…', 'item': 'https://www.laurentserre.com/blog/le-28-du-mois-il-est-trop-tard-pour-sauver-vos-ventes' },
+        ],
+      }
+],
 };
 
   return (

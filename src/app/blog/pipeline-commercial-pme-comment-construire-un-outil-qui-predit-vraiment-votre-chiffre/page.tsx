@@ -147,7 +147,16 @@ export default function PipelineCommercialPme() {
           }
         ]
       }
-    ]
+    ,
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Pipeline commercial PME', 'item': 'https://www.laurentserre.com/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre' },
+        ],
+      }
+]
   };
 
   return (

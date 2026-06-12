@@ -126,7 +126,16 @@ export default function RelancesCommercialesAffaiblissentVentePage() {
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Pourquoi beaucoup de relances commerciales…', 'item': 'https://www.laurentserre.com/blog/pourquoi-beaucoup-relances-commerciales-affaiblissent-vente' },
+        ],
+      }
+],
 };
 
   return (

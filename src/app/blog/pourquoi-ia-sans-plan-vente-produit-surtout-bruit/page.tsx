@@ -117,7 +117,16 @@ export default function IASansPlanVentePage() {
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Pourquoi l’IA sans plan de vente produit surtout…', 'item': 'https://www.laurentserre.com/blog/pourquoi-ia-sans-plan-vente-produit-surtout-bruit' },
+        ],
+      }
+],
 };
 
   return (

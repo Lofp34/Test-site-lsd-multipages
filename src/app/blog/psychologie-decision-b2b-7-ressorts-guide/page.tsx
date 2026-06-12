@@ -119,7 +119,16 @@ export default function PsychologieDecisionGuidePage() {
           },
         ],
       },
-    ],
+    
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Ce qui se passe vraiment dans la tête d\'un…', 'item': 'https://www.laurentserre.com/blog/psychologie-decision-b2b-7-ressorts-guide' },
+        ],
+      }
+],
   };
 
   return (

@@ -160,6 +160,15 @@ export default function ArticlePage() {
           }
         ],
       },
+
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Quinze ans à animer des réunions commerciales —…', 'item': 'https://www.laurentserre.com/blog/reunion-commerciale-hebdomadaire-format-performance' },
+        ],
+      }
 ],
   };
 

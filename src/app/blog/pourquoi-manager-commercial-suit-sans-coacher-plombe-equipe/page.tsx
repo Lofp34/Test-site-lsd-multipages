@@ -124,7 +124,16 @@ export default function ManagerCommercialSuitSansCoacherPage() {
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Pourquoi un manager commercial qui suit sans…', 'item': 'https://www.laurentserre.com/blog/pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe' },
+        ],
+      }
+],
 };
 
   return (

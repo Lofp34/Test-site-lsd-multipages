@@ -125,7 +125,16 @@ export default function PeurDuPrixPage() {
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'La peur du prix', 'item': 'https://www.laurentserre.com/blog/la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif' },
+        ],
+      }
+],
 };
 
   return (

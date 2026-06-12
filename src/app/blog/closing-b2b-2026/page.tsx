@@ -134,6 +134,16 @@ export default function ClosingB2B2026Page() {
       }
     ]
   };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
+      { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+      { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+      { '@type': 'ListItem', 'position': 3, 'name': 'Les techniques de closing ne marchent plus', 'item': 'https://www.laurentserre.com/blog/closing-b2b-2026' },
+    ],
+  };
+
 
   return (
     <main className="bg-primary-bg text-gray-dark">
@@ -145,6 +155,8 @@ export default function ClosingB2B2026Page() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
 
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

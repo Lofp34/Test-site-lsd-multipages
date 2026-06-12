@@ -127,6 +127,16 @@ export default function ProspectionB2BColdOutreachPage() {
       }
     ]
   };
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
+      { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+      { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+      { '@type': 'ListItem', 'position': 3, 'name': 'Prospection B2B en 2026', 'item': 'https://www.laurentserre.com/blog/prospection-b2b-cold-outreach-2026' },
+    ],
+  };
+
 
   return (
     <main className="bg-primary-bg text-gray-dark">
@@ -138,6 +148,8 @@ export default function ProspectionB2BColdOutreachPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
 
       <section className="py-24 sm:py-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

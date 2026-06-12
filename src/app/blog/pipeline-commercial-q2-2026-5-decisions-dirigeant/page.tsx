@@ -103,7 +103,16 @@ export default function PipelineCommercialQ22026Page() {
           }
         ]
       }
-    ]
+    ,
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Pipeline commercial Q2 2026', 'item': 'https://www.laurentserre.com/blog/pipeline-commercial-q2-2026-5-decisions-dirigeant' },
+        ],
+      }
+]
   };
 
   return (

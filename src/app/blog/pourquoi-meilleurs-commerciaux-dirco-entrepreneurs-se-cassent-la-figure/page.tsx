@@ -123,7 +123,16 @@ export default function PourquoiMeilleursCommerciauxDircoEntrepreneursSeCassentL
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Passer de commercial à dirco, puis de dirco à…', 'item': 'https://www.laurentserre.com/blog/pourquoi-meilleurs-commerciaux-dirco-entrepreneurs-se-cassent-la-figure' },
+        ],
+      }
+],
 };
 
   return (

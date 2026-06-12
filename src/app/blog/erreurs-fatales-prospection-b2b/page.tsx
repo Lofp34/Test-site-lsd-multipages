@@ -115,7 +115,16 @@ export default function Article3() {
         }
       ]
     }
-  ]
+  ,
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Les erreurs fatales dans la prospection B2B (et…', 'item': 'https://www.laurentserre.com/blog/erreurs-fatales-prospection-b2b' },
+        ],
+      }
+]
 })
         }}
       />

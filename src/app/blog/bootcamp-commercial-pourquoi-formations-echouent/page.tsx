@@ -119,7 +119,16 @@ export default function Article4() {
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Bootcamp commercial', 'item': 'https://www.laurentserre.com/blog/bootcamp-commercial-pourquoi-formations-echouent' },
+        ],
+      }
+],
 };
 
   return (

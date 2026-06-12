@@ -78,7 +78,16 @@ export default function FinTrimestreCommercialPage() {
           },
         ]
       }
-    ]
+    ,
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Fin de trimestre commercial', 'item': 'https://www.laurentserre.com/blog/fin-trimestre-commercial-7-arbitrages-eviter-avril-creux' },
+        ],
+      }
+]
   };
 
   return (

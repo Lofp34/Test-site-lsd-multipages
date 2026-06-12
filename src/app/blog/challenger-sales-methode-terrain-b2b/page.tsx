@@ -133,7 +133,16 @@ export default function ChallengerSalesMethodeTerrainB2bPage() {
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Votre meilleur commercial n\'est pas le plus sympa', 'item': 'https://www.laurentserre.com/blog/challenger-sales-methode-terrain-b2b' },
+        ],
+      }
+],
 };
 
   return (

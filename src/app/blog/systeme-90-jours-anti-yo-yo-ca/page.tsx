@@ -111,7 +111,16 @@ export default function Systeme90JoursPage() {
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Système commercial 90 jours', 'item': 'https://www.laurentserre.com/blog/systeme-90-jours-anti-yo-yo-ca' },
+        ],
+      }
+],
 };
 
   return (

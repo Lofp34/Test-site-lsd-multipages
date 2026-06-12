@@ -91,7 +91,16 @@ export default function SiVousPensezEncoreAuBoulotLeWeekEndVousNeRecuperezPasPag
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Si vous pensez encore au boulot le week-end, vous…', 'item': 'https://www.laurentserre.com/blog/si-vous-pensez-encore-au-boulot-le-week-end-vous-ne-recuperez-pas' },
+        ],
+      }
+],
 };
 
   return (

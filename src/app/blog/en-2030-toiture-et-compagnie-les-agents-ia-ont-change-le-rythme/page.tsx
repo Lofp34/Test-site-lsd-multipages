@@ -91,7 +91,16 @@ export default function En2030ToitureEtCompagnieLesAgentsIaOntChangeLeRythmePage
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'En 2030, chez Toiture et COMPAGNIE, les agents IA…', 'item': 'https://www.laurentserre.com/blog/en-2030-toiture-et-compagnie-les-agents-ia-ont-change-le-rythme' },
+        ],
+      }
+],
 };
 
   return (

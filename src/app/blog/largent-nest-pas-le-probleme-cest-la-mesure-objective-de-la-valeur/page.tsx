@@ -91,7 +91,16 @@ export default function LargentNestPasLeProblemeCestLaMesureObjectiveDeLaValeurP
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'L’argent n’est pas le problème, c’est la mesure…', 'item': 'https://www.laurentserre.com/blog/largent-nest-pas-le-probleme-cest-la-mesure-objective-de-la-valeur' },
+        ],
+      }
+],
 };
 
   return (

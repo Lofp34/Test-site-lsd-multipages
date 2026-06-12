@@ -91,7 +91,16 @@ export default function PourquoiUnManagerCommercialTolereTropLongtempsLesBonnesE
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Manager commercial', 'item': 'https://www.laurentserre.com/blog/pourquoi-un-manager-commercial-tolere-trop-longtemps-les-bonnes-excuses' },
+        ],
+      }
+],
 };
 
   return (

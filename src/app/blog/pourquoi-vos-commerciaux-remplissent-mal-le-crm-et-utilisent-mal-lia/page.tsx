@@ -124,7 +124,16 @@ export default function PourquoiVosCommerciauxRemplissentMalLeCrmEtUtilisentMalL
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Pourquoi vos commerciaux remplissent mal le CRM……', 'item': 'https://www.laurentserre.com/blog/pourquoi-vos-commerciaux-remplissent-mal-le-crm-et-utilisent-mal-lia' },
+        ],
+      }
+],
 };
 
   return (

@@ -118,7 +118,16 @@ export default function ArticleAccompagnement() {
           }
         ],
       },
-  ],
+  
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Accompagnement des équipes commerciales', 'item': 'https://www.laurentserre.com/blog/accompagnement-equipes-commerciales-6-leviers-2025' },
+        ],
+      }
+],
 };
 
   return (
