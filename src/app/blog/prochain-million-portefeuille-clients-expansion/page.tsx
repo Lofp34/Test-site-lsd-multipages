@@ -197,7 +197,7 @@ export default function ExpansionPortefeuillePage() {
         <div className="prose prose-gray max-w-none">
           {/* TL;DR */}
           <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
-            <p className="text-sm font-semibold text-mint-green mb-2"> Ce que vous allez retenir</p>
+            <p className="text-sm font-semibold text-mint-green mb-2">TL;DR</p>
             <p className="text-gray-700 leading-relaxed">
               Les dirigeants de PME consacrent 80% de leur energie a chercher de nouveaux prospects. Pourtant, 70% du chiffre d&apos;affaires potentiel dort dans leur portefeuille existant. Voici 5 leviers concrets pour developper votre CA sans prospecter un seul nouveau client. Avec des resultats terrain.
             </p>
