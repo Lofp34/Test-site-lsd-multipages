@@ -103,6 +103,16 @@ export default function TechniquesDeClosingB2B() {
     ]
   };
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
+      { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+      { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+      { '@type': 'ListItem', 'position': 3, 'name': 'Techniques de closing B2B', 'item': 'https://www.laurentserre.com/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader' },
+    ],
+  };
+
   const videoJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
@@ -120,6 +130,7 @@ export default function TechniquesDeClosingB2B() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(videoJsonLd) }} />
       <main className="bg-primary-bg text-gray-dark">
       <section className="py-24 sm:py-32">

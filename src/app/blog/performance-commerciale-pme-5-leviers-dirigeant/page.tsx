@@ -58,40 +58,57 @@ const carouselImages = [
 export default function PerformanceCommercialePMEPage() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
-    '@type': 'BlogPosting',
-    headline: 'Performance commerciale en PME : les 5 leviers que les dirigeants négligent',
-    description:
-      'La plupart des dirigeants regardent le CA et le nombre d\'appels — mauvais indicateurs. Les vrais leviers : structure de qualification, rythme de débrief, revue de deal, pilotage par activité, alignement rémunération/comportement.',
-    image: heroImageAbsolute,
-    datePublished: '2026-06-01',
-    dateModified: '2026-06-01',
-    author: {
-      '@type': 'Person',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com/a-propos',
-      sameAs: [
-        'https://www.linkedin.com/in/laurentserre34/',
-        'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
-      ],
-    },
-    publisher: {
-      '@type': 'Organization',
-      name: 'Laurent Serre',
-      url: 'https://www.laurentserre.com',
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': 'https://www.laurentserre.com/blog/performance-commerciale-pme-5-leviers-dirigeant',
-    },
-    articleSection: 'Performance commerciale / Pilotage d\'équipe',
-    keywords: [
-      'performance commerciale',
-      'pilotage commercial PME',
-      'leviers performance commerciale',
-      'management équipe commerciale',
-      'revue de deal',
-      'qualification commerciale',
-      'débrief commercial',
+    '@graph': [
+      {
+        '@type': 'BlogPosting',
+        '@context': 'https://schema.org',
+        headline: 'Performance commerciale en PME : les 5 leviers que les dirigeants négligent',
+        description:
+          'La plupart des dirigeants regardent le CA et le nombre d\'appels — mauvais indicateurs. Les vrais leviers : structure de qualification, rythme de débrief, revue de deal, pilotage par activité, alignement rémunération/comportement.',
+        image: heroImageAbsolute,
+        datePublished: '2026-06-01',
+        dateModified: '2026-06-01',
+        author: {
+          '@type': 'Person',
+          name: 'Laurent Serre',
+          url: 'https://www.laurentserre.com/a-propos',
+          sameAs: [
+            'https://www.linkedin.com/in/laurentserre34/',
+            'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/',
+          ],
+        },
+        publisher: {
+          '@type': 'Organization',
+          name: 'Laurent Serre',
+          url: 'https://www.laurentserre.com',
+        },
+        mainEntityOfPage: {
+          '@type': 'WebPage',
+          '@id': 'https://www.laurentserre.com/blog/performance-commerciale-pme-5-leviers-dirigeant',
+        },
+        articleSection: 'Performance commerciale / Pilotage d\'équipe',
+        keywords: [
+          'performance commerciale',
+          'pilotage commercial PME',
+          'leviers performance commerciale',
+          'management équipe commerciale',
+          'revue de deal',
+          'qualification commerciale',
+          'débrief commercial',
+        ],
+      },
+      {
+        '@type': 'WebPage',
+        '@id': 'https://www.laurentserre.com/blog/performance-commerciale-pme-5-leviers-dirigeant',
+      },
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+          { '@type': 'ListItem', 'position': 3, 'name': 'Les 5 leviers de performance commerciale', 'item': 'https://www.laurentserre.com/blog/performance-commerciale-pme-5-leviers-dirigeant' },
+        ],
+      },
     ],
   };
 

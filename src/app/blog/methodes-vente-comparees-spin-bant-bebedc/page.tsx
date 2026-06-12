@@ -62,6 +62,16 @@ export default function MethodesVenteComparees() {
     keywords: ['méthodes de vente', 'SPIN selling', 'BANT', 'BEBEDC', 'comparatif méthodes vente', 'techniques vente B2B'],
   };
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
+      { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+      { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+      { '@type': 'ListItem', 'position': 3, 'name': 'Méthodes de vente comparées', 'item': 'https://www.laurentserre.com/blog/methodes-vente-comparees-spin-bant-bebedc' },
+    ],
+  };
+
   const faqJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -97,6 +107,8 @@ export default function MethodesVenteComparees() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      
       <main className="bg-primary-bg text-gray-dark">
         <section className="py-24 sm:py-32">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

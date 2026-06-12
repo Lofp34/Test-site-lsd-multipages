@@ -425,6 +425,22 @@ export default function HighOutputManagementArticle() {
             }}
           />
 
+          {/* BreadcrumbList JSON-LD */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'BreadcrumbList',
+                'itemListElement': [
+                  { '@type': 'ListItem', 'position': 1, 'name': 'Accueil', 'item': 'https://www.laurentserre.com' },
+                  { '@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': 'https://www.laurentserre.com/blog' },
+                  { '@type': 'ListItem', 'position': 3, 'name': "High Output Management appliqué à la PME", 'item': 'https://www.laurentserre.com/blog/high-output-management-andy-grove-pme-equipe-commerciale' },
+                ],
+              }),
+            }}
+          />
+
           {/* Pour aller plus loin */}
           <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
             <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
