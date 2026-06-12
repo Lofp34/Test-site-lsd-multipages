@@ -241,6 +241,16 @@ export default function SiVousPensezEncoreAuBoulotLeWeekEndVousNeRecuperezPasPag
           <HubSpotForm />
         </div>
       </section>
+
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/anticiper-lechec-nest-pas-du-pessimisme-cest-une-discipline-commerciale" className="text-mint-green hover:underline font-medium">Anticiper l'échec : une discipline</Link></li>
+              <li><Link href="/blog/pourquoi-la-motivation-ne-regle-presque-jamais-le-probleme-commercial" className="text-mint-green hover:underline font-medium">Pourquoi la motivation ne suffit pas</Link></li>
+              <li><Link href="/blog/fin-trimestre-commercial-7-arbitrages-eviter-avril-creux" className="text-mint-green hover:underline font-medium">Fin de trimestre : 7 arbitrages</Link></li>
+            </ul>
+          </div>
     </main>
   );
 }

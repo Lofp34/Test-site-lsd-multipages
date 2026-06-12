@@ -231,6 +231,16 @@ export default function LargentNestPasLeProblemeCestLaMesureObjectiveDeLaValeurP
           </div>
         </div>
       </section>
+
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/negociation-commerciale-b2b-defendre-vos-prix-sans-jamais-casser-vos-marges" className="text-mint-green hover:underline font-medium">Négociation commerciale B2B</Link></li>
+              <li><Link href="/blog/la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif" className="text-mint-green hover:underline font-medium">La peur du prix</Link></li>
+              <li><Link href="/blog/pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix" className="text-mint-green hover:underline font-medium">Pourquoi les pros se font avoir sur le prix</Link></li>
+            </ul>
+          </div>
     </main>
   );
 }

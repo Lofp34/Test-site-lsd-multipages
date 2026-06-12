@@ -205,7 +205,17 @@ export default function SepteoSwotPage() {
           </div>
 
           {/* BDCarousel */}
-          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-6">
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/editeurs-logiciels-pourquoi-demos-ne-convertissent-pas" className="text-mint-green hover:underline font-medium">Pourquoi les démos ne convertissent pas</Link></li>
+              <li><Link href="/blog/generation-leads-b2b-pme-2026" className="text-mint-green hover:underline font-medium">Génération de leads B2B</Link></li>
+              <li><Link href="/blog/erreurs-fatales-prospection-b2b" className="text-mint-green hover:underline font-medium">Erreurs fatales de prospection B2B</Link></li>
+            </ul>
+          </div>
+
+                    <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-6">
             <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
               Carrousel BD : le piège du leader legaltech
             </p>

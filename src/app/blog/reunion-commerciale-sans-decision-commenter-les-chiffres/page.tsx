@@ -241,6 +241,16 @@ export default function ReunionCommercialeSansDecisionCommenterLesChiffresPage()
           <HubSpotForm />
         </div>
       </section>
+
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/reunion-commerciale-hebdo-rituel-closing" className="text-mint-green hover:underline font-medium">Réunion commerciale hebdo : le rituel closing</Link></li>
+              <li><Link href="/blog/reunion-commerciale-hebdomadaire-format-performance" className="text-mint-green hover:underline font-medium">Réunion commerciale : format performance</Link></li>
+              <li><Link href="/blog/comite-commercial-mensuel-decisions-dirigeant" className="text-mint-green hover:underline font-medium">Comité commercial mensuel</Link></li>
+            </ul>
+          </div>
     </main>
   );
 }
