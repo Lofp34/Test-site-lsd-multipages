@@ -173,7 +173,17 @@ export default function BlocagesDirigeantPage() {
           </div>
 
           {/* Carrousel BD */}
-          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 my-8">
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/performance-commerciale-pme-5-leviers-dirigeant" className="text-mint-green hover:underline font-medium">Les 5 leviers de performance commerciale</Link></li>
+              <li><Link href="/blog/comite-commercial-mensuel-decisions-dirigeant" className="text-mint-green hover:underline font-medium">Comité commercial mensuel : le rituel du dirigeant</Link></li>
+              <li><Link href="/blog/pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe" className="text-mint-green hover:underline font-medium">Manager qui suit sans coacher plombe l'équipe</Link></li>
+            </ul>
+          </div>
+
+                    <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 my-8">
             <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
               Carrousel BD : Les blocages du dirigeant
             </p>

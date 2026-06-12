@@ -215,7 +215,17 @@ export default function ClosingB2B2026Page() {
           </div>
 
           {/* BDCarousel */}
-          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-6">
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader" className="text-mint-green hover:underline font-medium">Techniques de closing B2B</Link></li>
+              <li><Link href="/blog/ia-closing-b2b-ce-qui-change-vraiment" className="text-mint-green hover:underline font-medium">IA et closing B2B : ce qui change</Link></li>
+              <li><Link href="/blog/commission-breath-3-mecanismes-tuent-closing" className="text-mint-green hover:underline font-medium">Les 3 mécanismes qui tuent le closing</Link></li>
+            </ul>
+          </div>
+
+                    <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-6">
             <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
               🎬 Carrousel BD : Stéphane face au closing 2026
             </p>

@@ -211,7 +211,17 @@ export default function CausesRacinesPage() {
           </div>
 
           {/* Carrousel BD */}
-          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-10">
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/strategie-commerciale-pme-cadre-une-page" className="text-mint-green hover:underline font-medium">Stratégie commerciale PME : le cadre en une page</Link></li>
+              <li><Link href="/blog/erreurs-developpement-commercial-pme" className="text-mint-green hover:underline font-medium">Les erreurs du développement commercial PME</Link></li>
+              <li><Link href="/blog/coaching-developpement-commercial-guide-complet-pme" className="text-mint-green hover:underline font-medium">Guide complet du développement commercial</Link></li>
+            </ul>
+          </div>
+
+                    <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-10">
             <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
               🎬 Carrousel BD : pourquoi ça patine dans votre équipe
             </p>

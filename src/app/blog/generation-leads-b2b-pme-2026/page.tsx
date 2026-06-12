@@ -607,6 +607,16 @@ export default function LeadGenPage() {
           </Link>
         </div>
       </section>
+
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/prospection-b2b-2026-methode-4-blocs-rdv-qualifies" className="text-mint-green hover:underline font-medium">Méthode de prospection B2B 2026</Link></li>
+              <li><Link href="/blog/erreurs-fatales-prospection-b2b" className="text-mint-green hover:underline font-medium">Erreurs fatales de prospection B2B</Link></li>
+              <li><Link href="/blog/plan-prospection-commerciale-machine-leads-annee" className="text-mint-green hover:underline font-medium">Plan de prospection : la machine à leads</Link></li>
+            </ul>
+          </div>
     </main>
   );
 }

@@ -180,7 +180,17 @@ export default function VentePerdueAvantNonPage() {
           </div>
 
           {/* BDCarousel */}
-          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-6">
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/dilemme-innovateur-vente-b2b" className="text-mint-green hover:underline font-medium">Le dilemme de l'innovateur en vente B2B</Link></li>
+              <li><Link href="/blog/pourquoi-beaucoup-relances-commerciales-affaiblissent-vente" className="text-mint-green hover:underline font-medium">Pourquoi les relances affaiblissent la vente</Link></li>
+              <li><Link href="/blog/le-28-du-mois-il-est-trop-tard-pour-sauver-vos-ventes" className="text-mint-green hover:underline font-medium">Le 28 du mois, il est trop tard</Link></li>
+            </ul>
+          </div>
+
+                    <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-6">
             <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
               Carrousel BD : le non arrive toujours trop tard
             </p>

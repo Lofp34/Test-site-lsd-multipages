@@ -325,7 +325,17 @@ export default function ArticlePage() {
           </p>
 
           {/* Bloc chiffre clé */}
-          <div className="not-prose my-10 p-8 bg-gradient-to-br from-blue-ink/5 to-mint-green/5 rounded-2xl border border-mint-green/20 text-center">
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/developpement-commercial-pme-plan-action-5-etapes" className="text-mint-green hover:underline font-medium">Plan d'action développement commercial en 5 étapes</Link></li>
+              <li><Link href="/blog/coaching-developpement-commercial-guide-complet-pme" className="text-mint-green hover:underline font-medium">Guide complet du développement commercial PME</Link></li>
+              <li><Link href="/blog/erreurs-developpement-commercial-pme" className="text-mint-green hover:underline font-medium">Les 6 erreurs du développement commercial PME</Link></li>
+            </ul>
+          </div>
+
+                    <div className="not-prose my-10 p-8 bg-gradient-to-br from-blue-ink/5 to-mint-green/5 rounded-2xl border border-mint-green/20 text-center">
             <p className="text-4xl font-bold text-blue-ink mb-2">3 heures.</p>
             <p className="text-gray-600 text-sm max-w-md mx-auto">
               Le temps qu'un dirigeant a mis à répondre aux deux premières questions. Pas parce qu'il ne sait pas — parce qu'il n'a jamais pris le temps de choisir.
