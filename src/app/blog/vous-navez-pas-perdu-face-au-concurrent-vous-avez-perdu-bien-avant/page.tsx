@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-20-concurrent-verite-confortable-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-20-concurrent-verite-confortable-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Deux responsables commerciaux relisent une affaire perdue et questionnent la vraie cause de la perte',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Vous n’avez pas perdu face au concurrent, vous avez perdu bien avant',
     description:
       'Le concurrent sert souvent d’explication confortable alors que la vente s’est fragilisée bien avant sa vraie apparition.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-20-concurrent-verite-confortable-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-20-concurrent-verite-confortable-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function VousNAvezPasPerduFaceAuConcurrentVousAvezPerduBienAvantP
       "@type": "BlogPosting",
       "headline": "Vous n’avez pas perdu face au concurrent, vous avez perdu bien avant",
         "description": "Quand une équipe dit qu’elle a perdu face au concurrent, elle évite souvent une vérité moins confortable. La vente s’est généralement fragilisée bien plus tôt.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-20-concurrent-verite-confortable-hero.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-20-concurrent-verite-confortable-hero.webp",
         "datePublished": "2026-04-20",
         "dateModified": "2026-04-20",
         "author": {
@@ -131,7 +131,7 @@ export default function VousNAvezPasPerduFaceAuConcurrentVousAvezPerduBienAvantP
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-20-concurrent-verite-confortable-hero.png"
+              src="/images/blog/2026-04-20-concurrent-verite-confortable-hero.webp"
               alt="Deux responsables commerciaux relisent une affaire perdue et questionnent la vraie cause de la perte"
               width={1536}
               height={1024}

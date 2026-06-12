@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-30-prospection-telephone-b2b-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-30-prospection-telephone-b2b-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Laurent Serre prépare un appel de prospection téléphonique B2B avec des notes et une liste de prospects qualifiés',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     title: 'Le téléphone n’est pas mort, mais l’appel au hasard l’est',
     description:
       'La prospection téléphonique fonctionne encore quand elle est préparée, située et utile. L’appel lancé au hasard, lui, abîme la vente.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-30-prospection-telephone-b2b-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-30-prospection-telephone-b2b-hero.webp'],
   },
 };
 
@@ -44,7 +44,7 @@ export default function TelephoneNestPasMortMaisAppelAuHasardPage() {
     headline: 'Le téléphone n’est pas mort, mais l’appel au hasard l’est',
     description:
       'La prospection téléphonique fonctionne encore quand elle sert un vrai échange préparé. Ce qui ne marche plus, c’est l’appel lancé au hasard pour réciter un argumentaire.',
-    image: 'https://www.laurentserre.com/images/blog/2026-04-30-prospection-telephone-b2b-hero.png',
+    image: 'https://www.laurentserre.com/images/blog/2026-04-30-prospection-telephone-b2b-hero.webp',
     datePublished: '2026-04-30',
     dateModified: '2026-04-30',
     author: {
@@ -144,7 +144,7 @@ export default function TelephoneNestPasMortMaisAppelAuHasardPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-30-prospection-telephone-b2b-hero.png"
+              src="/images/blog/2026-04-30-prospection-telephone-b2b-hero.webp"
               alt="Laurent Serre prépare un appel de prospection téléphonique B2B avec des notes et une liste de prospects qualifiés"
               width={1536}
               height={1024}

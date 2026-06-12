@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.webp',
         width: 1600,
         height: 900,
         alt: 'Laurent Serre dans un environnement business premium pour illustrer un article sur les bons commerciaux dégradés par un mauvais système',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système',
     description:
       'Un système commercial flou use les bons profils, dégrade leur posture et finit par faire croire à un problème de talent.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function BonsCommerciauxMauvaisSystemePage() {
       "@type": "BlogPosting",
       "headline": "Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système",
         "description": "Quand un bon commercial devient irrégulier, le problème n’est pas toujours la personne. Un système commercial flou dégrade la lecture, la posture et la performance de toute l’équipe.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.jpg",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.webp",
         "datePublished": "2026-04-05",
         "dateModified": "2026-04-05",
         "author": {
@@ -149,7 +149,7 @@ export default function BonsCommerciauxMauvaisSystemePage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.jpg"
+              src="/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.webp"
               alt="Laurent Serre dans un environnement business premium pour illustrer un article sur les bons commerciaux dégradés par un mauvais système"
               width={1600}
               height={900}

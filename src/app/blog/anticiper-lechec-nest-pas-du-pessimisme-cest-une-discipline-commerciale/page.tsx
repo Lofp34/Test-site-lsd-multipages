@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.webp',
         width: 2528,
         height: 1696,
         alt: 'Commercial expérimenté préparant un rendez-vous en anticipant objections et zones de rupture',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Anticiper l’échec n’est pas du pessimisme, c’est une discipline commerciale',
     description:
       'Le doute n’est pas le danger principal en vente. Le vrai danger, c’est l’aveuglement confiant.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function AnticiperLechecNestPasDuPessimismeCestUneDisciplineComme
       "@type": "BlogPosting",
       "headline": "Anticiper l’échec n’est pas du pessimisme, c’est une discipline commerciale",
         "description": "Les meilleurs commerciaux ne se préparent pas seulement à convaincre. Ils se préparent à ce qui peut bloquer, déraper ou rester flou. Cette lucidité change la vente.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.jpg",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.webp",
         "datePublished": "2026-04-15",
         "dateModified": "2026-04-15",
         "author": {
@@ -139,7 +139,7 @@ export default function AnticiperLechecNestPasDuPessimismeCestUneDisciplineComme
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.jpg"
+              src="/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.webp"
               alt="Commercial expérimenté préparant un rendez-vous en anticipant objections et zones de rupture"
               width={2528}
               height={1696}

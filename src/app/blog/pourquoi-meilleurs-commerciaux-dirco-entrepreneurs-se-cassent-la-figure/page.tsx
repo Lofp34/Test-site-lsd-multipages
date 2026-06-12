@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.webp',
         width: 1536,
         height: 1024,
         alt: 'Illustration éditoriale sur le passage de commercial à dirco puis entrepreneur',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Passer de commercial à dirco, puis de dirco à entrepreneur : trois métiers, trois pièges',
     description:
       'Trois métiers différents, pas trois niveaux. Pourquoi les meilleurs se plantent en changeant d’étage.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function PourquoiMeilleursCommerciauxDircoEntrepreneursSeCassentL
       "@type": "BlogPosting",
       "headline": "Passer de commercial à dirco, puis de dirco à entrepreneur : trois métiers, trois pièges",
         "description": "Passer de commercial à directeur commercial, puis de dirco à entrepreneur, ce ne sont pas des promotions. Ce sont trois métiers différents. Voici pourquoi les meilleurs se plantent en changeant d’étage, et ce qu’il faut vraiment installer pour tenir.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.webp",
         "datePublished": "2026-04-17",
         "dateModified": "2026-04-17",
         "author": {
@@ -163,7 +163,7 @@ export default function PourquoiMeilleursCommerciauxDircoEntrepreneursSeCassentL
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.png"
+              src="/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.webp"
               alt="Illustration éditoriale sur le passage de commercial à dirco puis entrepreneur"
               width={1536}
               height={1024}

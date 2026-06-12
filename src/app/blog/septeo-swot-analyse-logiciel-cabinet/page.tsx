@@ -7,7 +7,7 @@ import AuthorCard from '@/components/AuthorCard';
 
 const heroImage = '/images/blog/septeo-swot/septeo-swot-hero.webp';
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/septeo-swot/septeo-swot-hero.webp';
-const ogImageAbsolute = 'https://www.laurentserre.com/images/blog/septeo-swot/septeo-swot-og.jpg';
+const ogImageAbsolute = 'https://www.laurentserre.com/images/blog/septeo-swot/septeo-swot-og.webp';
 
 export const metadata: Metadata = {
   title: 'Septeo analyse SWOT 2026 : forces, faiblesses, verdict',

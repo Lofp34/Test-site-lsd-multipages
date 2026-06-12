@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-05-04-ia-prospection-commerciale-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-05-04-ia-prospection-commerciale-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Dirigeant de PME avec écrans de données de prospection et graphique de croissance',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'IA et prospection commerciale : ce qui change vraiment pour vos équipes en 2026',
     description:
       'L\'IA transforme la prospection — pour les PME qui l\'intègrent avec méthode.',
-    images: ['https://www.laurentserre.com/images/blog/2026-05-04-ia-prospection-commerciale-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-05-04-ia-prospection-commerciale-hero.webp'],
   },
 };
 
@@ -48,7 +48,7 @@ export default function IAProspectionCommerciale() {
       headline: 'IA et prospection commerciale : ce qui change vraiment pour vos équipes en 2026',
           description:
             'L\'IA ne remplace pas vos commerciaux. Elle amplifie leur capacité à être pertinents. Voici ce qui change concrètement sur le terrain pour les PME.',
-          image: 'https://www.laurentserre.com/images/blog/2026-05-04-ia-prospection-commerciale-hero.jpg',
+          image: 'https://www.laurentserre.com/images/blog/2026-05-04-ia-prospection-commerciale-hero.webp',
           datePublished: '2026-05-04',
           dateModified: '2026-05-04',
           author: {
@@ -164,7 +164,7 @@ export default function IAProspectionCommerciale() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-05-04-ia-prospection-commerciale-hero.jpg"
+              src="/images/blog/2026-05-04-ia-prospection-commerciale-hero.webp"
               alt="Dirigeant de PME avec écrans de données de prospection"
               width={1536}
               height={1024}

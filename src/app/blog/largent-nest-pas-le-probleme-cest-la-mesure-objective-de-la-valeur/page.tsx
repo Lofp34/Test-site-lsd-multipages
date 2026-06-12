@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-16-argent-mesure-valeur-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-16-argent-mesure-valeur-hero.webp',
         width: 2048,
         height: 2048,
         alt: 'Portrait éditorial avec symbole euro et balance pour illustrer la valeur perçue en vente',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'L’argent n’est pas le problème, c’est la mesure objective de la valeur',
     description:
       'Quand le budget ne sort pas, le vrai sujet est souvent la valeur perçue, la priorité et la confiance.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-16-argent-mesure-valeur-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-16-argent-mesure-valeur-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function LargentNestPasLeProblemeCestLaMesureObjectiveDeLaValeurP
       "@type": "BlogPosting",
       "headline": "L’argent n’est pas le problème, c’est la mesure objective de la valeur",
         "description": "Quand un prospect dit qu’il n’a pas le budget, le vrai sujet est souvent ailleurs. L’argent mesure surtout la valeur perçue, la priorité et la confiance accordée à la décision.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-16-argent-mesure-valeur-hero.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-16-argent-mesure-valeur-hero.webp",
         "datePublished": "2026-04-16",
         "dateModified": "2026-04-16",
         "author": {
@@ -131,7 +131,7 @@ export default function LargentNestPasLeProblemeCestLaMesureObjectiveDeLaValeurP
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-16-argent-mesure-valeur-hero.png"
+              src="/images/blog/2026-04-16-argent-mesure-valeur-hero.webp"
               alt="Portrait éditorial avec symbole euro et balance pour illustrer la valeur perçue en vente"
               width={2048}
               height={2048}

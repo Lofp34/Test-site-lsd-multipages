@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.webp',
         width: 2528,
         height: 1696,
         alt: 'Illustration éditoriale stylisée de Laurent Serre et Alexandre sur un toit avec des tableaux de bord d’agents IA',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme',
     description:
       'Une projection terrain, crédible et très PME, de ce que des agents IA peuvent changer dans une entreprise de couverture.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function En2030ToitureEtCompagnieLesAgentsIaOntChangeLeRythmePage
       "@type": "BlogPosting",
       "headline": "En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme",
         "description": "À partir d’une base bien réelle, voilà à quoi pourrait ressembler en 2030 la transformation d’une PME de couverture comme Toiture et COMPAGNIE grâce à des agents IA vraiment utiles.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.jpg",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.webp",
         "datePublished": "2026-04-16",
         "dateModified": "2026-04-16",
         "author": {
@@ -131,7 +131,7 @@ export default function En2030ToitureEtCompagnieLesAgentsIaOntChangeLeRythmePage
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.jpg"
+              src="/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.webp"
               alt="Illustration éditoriale stylisée de Laurent Serre et Alexandre sur un toit avec des tableaux de bord d’agents IA"
               width={2528}
               height={1696}

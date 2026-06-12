@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-14-crm-ia-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-14-crm-ia-hero.webp',
         width: 1149,
         height: 928,
         alt: 'Commercial devant une illustration opposant un CRM superficiel à une lecture utile du rendez-vous client',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Pourquoi vos commerciaux remplissent mal le CRM… et utilisent mal l’IA',
     description:
       'Un CRM vide n’est pas qu’un problème de discipline. C’est souvent le symptôme d’une lecture commerciale trop pauvre pour nourrir une IA utile.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-14-crm-ia-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-14-crm-ia-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function PourquoiVosCommerciauxRemplissentMalLeCrmEtUtilisentMalL
       "@type": "BlogPosting",
       "headline": "Pourquoi vos commerciaux remplissent mal le CRM… et utilisent mal l’IA",
         "description": "Quand le CRM est vide ou flou, l’IA ne rend pas l’équipe plus pertinente. Elle industrialise surtout le flou commercial et le transforme en prose plus propre.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-14-crm-ia-hero.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-14-crm-ia-hero.webp",
         "datePublished": "2026-04-14",
         "dateModified": "2026-04-14",
         "author": {
@@ -164,7 +164,7 @@ export default function PourquoiVosCommerciauxRemplissentMalLeCrmEtUtilisentMalL
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-14-crm-ia-hero.png"
+              src="/images/blog/2026-04-14-crm-ia-hero.webp"
               alt="Commercial devant une illustration opposant un CRM superficiel à une lecture utile du rendez-vous client"
               width={1149}
               height={928}

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-05-03-gestion-objections-commerciales-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-05-03-gestion-objections-commerciales-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Client en réunion commerciale exposant une objection, coach à l\'écoute',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Gestion des objections commerciales : transformer le non en opportunité',
     description:
       'L\'objection n\'est pas la fin de la vente. C\'est le début de la vraie conversation.',
-    images: ['https://www.laurentserre.com/images/blog/2026-05-03-gestion-objections-commerciales-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-05-03-gestion-objections-commerciales-hero.webp'],
   },
 };
 
@@ -46,7 +46,7 @@ export default function GestionObjectionsCommerciales() {
     headline: 'Gestion des objections commerciales : transformer le non en opportunité',
     description:
       'Les objections ne sont pas des obstacles, ce sont des portes. Découvrez la méthode en 4 étapes pour traiter n\'importe quelle objection B2B sans forcer.',
-    image: 'https://www.laurentserre.com/images/blog/2026-05-03-gestion-objections-commerciales-hero.jpg',
+    image: 'https://www.laurentserre.com/images/blog/2026-05-03-gestion-objections-commerciales-hero.webp',
     datePublished: '2026-05-03',
     dateModified: '2026-05-03',
     author: {
@@ -162,7 +162,7 @@ export default function GestionObjectionsCommerciales() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-05-03-gestion-objections-commerciales-hero.jpg"
+              src="/images/blog/2026-05-03-gestion-objections-commerciales-hero.webp"
               alt="Client en réunion commerciale exposant une objection"
               width={1536}
               height={1024}

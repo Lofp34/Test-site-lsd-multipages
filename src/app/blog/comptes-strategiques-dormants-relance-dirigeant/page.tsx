@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-03-27-comptes-strategiques-dormants-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-03-27-comptes-strategiques-dormants-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Relance premium de comptes stratégiques dormants en B2B',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Comptes stratégiques dormants : la relance que les dirigeants oublient',
     description: 'Le plan concret pour réactiver un portefeuille dormant avec plus de valeur et moins de friction.',
-    images: ['https://www.laurentserre.com/images/blog/2026-03-27-comptes-strategiques-dormants-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-03-27-comptes-strategiques-dormants-hero.webp'],
   },
 };
 
@@ -41,7 +41,7 @@ export default function ComptesStrategiquesDormantsPage() {
       "@type": "BlogPosting",
       "headline": "Comptes stratégiques dormants : la relance que les dirigeants oublient trop souvent",
         "description": "Comment réactiver des comptes stratégiques dormants sans abîmer la relation, recréer de la valeur business et générer des opportunités plus crédibles que de la prospection froide.",
-        "image": "https://www.laurentserre.com/images/blog/2026-03-27-comptes-strategiques-dormants-hero.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-03-27-comptes-strategiques-dormants-hero.webp",
         "datePublished": "2026-03-27",
         "dateModified": "2026-03-27",
         "author": {
@@ -167,7 +167,7 @@ export default function ComptesStrategiquesDormantsPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-03-27-comptes-strategiques-dormants-hero.png"
+              src="/images/blog/2026-03-27-comptes-strategiques-dormants-hero.webp"
               alt="Relance premium de comptes stratégiques dormants en B2B"
               width={1536}
               height={1024}

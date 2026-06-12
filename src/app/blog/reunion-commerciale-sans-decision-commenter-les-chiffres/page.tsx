@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-26-reunion-commerciale-sans-decision-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-26-reunion-commerciale-sans-decision-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Réunion commerciale dans une PME française, avec chiffres projetés et hésitation visible autour des décisions',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Une réunion commerciale sans décision apprend surtout à commenter les chiffres',
     description:
       'Quand personne ne tranche vraiment en réunion commerciale, l’équipe apprend surtout à mieux raconter les ventes fragiles.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-26-reunion-commerciale-sans-decision-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-26-reunion-commerciale-sans-decision-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function ReunionCommercialeSansDecisionCommenterLesChiffresPage()
       "@type": "BlogPosting",
       "headline": "Une réunion commerciale sans décision apprend surtout à commenter les chiffres",
         "description": "Quand une réunion commerciale se contente de commenter les chiffres sans trancher, elle donne une impression de sérieux mais ne fait presque jamais avancer les ventes.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-26-reunion-commerciale-sans-decision-hero.jpg",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-26-reunion-commerciale-sans-decision-hero.webp",
         "datePublished": "2026-04-26",
         "dateModified": "2026-04-26",
         "author": {
@@ -132,7 +132,7 @@ export default function ReunionCommercialeSansDecisionCommenterLesChiffresPage()
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-26-reunion-commerciale-sans-decision-hero.jpg"
+              src="/images/blog/2026-04-26-reunion-commerciale-sans-decision-hero.webp"
               alt="Réunion commerciale dans une PME française, avec chiffres projetés et hésitation visible autour des décisions"
               width={1536}
               height={1024}

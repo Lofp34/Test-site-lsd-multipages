@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.webp',
         width: 1536,
         height: 864,
         alt: 'Consultant commercial dans une salle de réunion premium face à un laptop et des indicateurs numériques confus',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Pourquoi l’IA sans plan de vente produit surtout du bruit',
     description:
       'Une équipe commerciale sans plan clair ne devient pas plus performante avec l’IA. Elle devient souvent plus rapide dans son désordre.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function IASansPlanVentePage() {
       "@type": "BlogPosting",
       "headline": "Pourquoi l’IA sans plan de vente produit surtout du bruit",
         "description": "Beaucoup d’équipes commerciales ajoutent des outils IA avant d’avoir clarifié leur plan de vente. Elles accélèrent alors la confusion plus que la performance.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.jpg",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.webp",
         "datePublished": "2026-04-01",
         "dateModified": "2026-04-01",
         "author": {
@@ -157,7 +157,7 @@ export default function IASansPlanVentePage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.jpg"
+              src="/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.webp"
               alt="Consultant commercial dans une salle de réunion premium face à un laptop et des indicateurs numériques confus"
               width={1536}
               height={864}

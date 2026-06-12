@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v3.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v3.webp',
         width: 1536,
         height: 1024,
         alt: 'Un rendez-vous commercial agréable qui masque une décision pas encore engagée',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Un prospect intéressé n’est pas encore une décision',
     description:
       'Un prospect intéressé n’est pas encore une décision qui avance, et c’est là que beaucoup d’équipes se trompent trop tôt.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v3.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v3.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function PourquoiVosCommerciauxConfondentInteretEtDecisionPage() 
       "@type": "BlogPosting",
       "headline": "Un prospect intéressé n’est pas encore une décision",
         "description": "Un prospect intéressé n’est pas encore une vente qui avance. Beaucoup d’équipes confondent un bon échange avec une vraie progression de décision.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v3.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-19-interet-vs-decision-hero-v3.webp",
         "datePublished": "2026-04-19",
         "dateModified": "2026-04-19",
         "author": {
@@ -131,7 +131,7 @@ export default function PourquoiVosCommerciauxConfondentInteretEtDecisionPage() 
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-19-interet-vs-decision-hero-v3.png"
+              src="/images/blog/2026-04-19-interet-vs-decision-hero-v3.webp"
               alt="Un rendez-vous commercial agréable qui masque une décision pas encore engagée"
               width={1536}
               height={1024}

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-21-previsions-rassurantes-pas-fiables-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-21-previsions-rassurantes-pas-fiables-hero.webp',
         width: 1200,
         height: 675,
         alt: 'Laurent Serre devant un visuel de prévisions de ventes annoté avec le message Rassurant. Pas fiable.',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Prévisions commerciales : les chiffres qui rassurent font souvent perdre des ventes',
     description:
       'Des prévisions trop rassurantes cachent souvent des affaires suspendues et une lecture des ventes trop indulgente.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-21-previsions-rassurantes-pas-fiables-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-21-previsions-rassurantes-pas-fiables-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function PourquoiUnForecastRassurantFaitSouventPerdreDuTempsEtDes
       "@type": "BlogPosting",
       "headline": "Prévisions commerciales : les chiffres qui rassurent font souvent perdre des ventes",
         "description": "Des prévisions commerciales rassurantes ne prouvent pas que les ventes avancent. Souvent, elles masquent surtout des affaires déjà fragiles.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-21-previsions-rassurantes-pas-fiables-hero.jpg",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-21-previsions-rassurantes-pas-fiables-hero.webp",
         "datePublished": "2026-04-21",
         "dateModified": "2026-04-21",
         "author": {
@@ -130,7 +130,7 @@ export default function PourquoiUnForecastRassurantFaitSouventPerdreDuTempsEtDes
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-21-previsions-rassurantes-pas-fiables-hero.jpg"
+              src="/images/blog/2026-04-21-previsions-rassurantes-pas-fiables-hero.webp"
               alt="Laurent Serre devant un visuel de prévisions de ventes annoté avec le message Rassurant. Pas fiable."
               width={1200}
               height={675}

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero-v2.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero-v2.webp',
         width: 1536,
         height: 1024,
         alt: 'Un échange commercial tendu mais maîtrisé autour d’une objection client',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Objections commerciales : répondre trop vite vous fait perdre la main',
     description:
       'Le problème n’est pas l’objection. Le problème, c’est la précipitation à répondre avant d’avoir compris ce qu’elle cache.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero-v2.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero-v2.webp'],
   },
 };
 
@@ -46,7 +46,7 @@ export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage
       "@type": "BlogPosting",
       "headline": "Objections commerciales : répondre trop vite vous fait perdre la main",
         "description": "Quand un commercial répond trop vite à une objection, il saute sur sa réponse avant d’avoir compris ce que le client essayait vraiment de dire.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero-v2.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-18-objections-trop-tot-hero-v2.webp",
         "datePublished": "2026-04-18",
         "dateModified": "2026-04-18",
         "author": {
@@ -132,7 +132,7 @@ export default function PourquoiVosCommerciauxRepondentTropViteAuxObjectionsPage
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-18-objections-trop-tot-hero-v2.png"
+              src="/images/blog/2026-04-18-objections-trop-tot-hero-v2.webp"
               alt="Un échange commercial tendu mais maîtrisé autour d’une objection client"
               width={1536}
               height={1024}

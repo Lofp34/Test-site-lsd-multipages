@@ -37,7 +37,7 @@ export default function MethodesVenteComparees() {
     headline: 'Méthodes de vente comparées : SPIN, BANT, BEBEDC — laquelle choisir pour votre PME ?',
     description:
       'Comparatif complet des 3 méthodes de vente B2B les plus utilisées. Avantages, limites, cas d\'usage et guide de choix pour dirigeant de PME.',
-    image: 'https://www.laurentserre.com/images/blog/2026-05-03-methodes-vente-comparees-hero.jpg',
+    image: 'https://www.laurentserre.com/images/blog/2026-05-03-methodes-vente-comparees-hero.webp',
     datePublished: '2026-05-03',
     dateModified: '2026-05-03',
     author: {

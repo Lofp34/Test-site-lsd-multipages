@@ -219,7 +219,7 @@ export default function ArticlePage() {
           author={{
             name: 'Laurent Serre',
             role: 'Coach commercial',
-            image: '/images/blog/Laurent-Serre-avatar.jpg',
+            image: '/images/blog/Laurent-Serre-avatar.webp',
           }}
         />
 

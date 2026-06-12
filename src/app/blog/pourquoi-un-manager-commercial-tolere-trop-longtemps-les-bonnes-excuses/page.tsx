@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Débrief commercial exigeant entre un manager et un commercial dans une PME',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Manager commercial : tolérer les bonnes excuses vous coûte des ventes',
     description:
       'À force d’accepter les explications confortables, un manager commercial affaiblit la lucidité de l’équipe et laisse les mêmes erreurs se répéter.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function PourquoiUnManagerCommercialTolereTropLongtempsLesBonnesE
       "@type": "BlogPosting",
       "headline": "Manager commercial : tolérer les bonnes excuses vous coûte des ventes",
         "description": "Quand un manager commercial laisse passer trop longtemps les bonnes excuses, il protège le confort de l’équipe mais il laisse aussi s’installer des ventes fragiles et des habitudes faibles.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.webp",
         "datePublished": "2026-04-22",
         "dateModified": "2026-04-22",
         "author": {
@@ -131,7 +131,7 @@ export default function PourquoiUnManagerCommercialTolereTropLongtempsLesBonnesE
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.png"
+              src="/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.webp"
               alt="Débrief commercial exigeant entre un manager et un commercial dans une PME"
               width={1536}
               height={1024}

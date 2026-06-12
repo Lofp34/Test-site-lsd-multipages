@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.webp',
         width: 2528,
         height: 1696,
         alt: 'Laurent Serre dans un environnement business premium illustrant une relance commerciale maîtrisée',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Pourquoi beaucoup de relances commerciales affaiblissent la vente au lieu de la faire avancer',
     description:
       'Une relance mal pensée ajoute souvent de la pression, pas de la progression. Le problème commence bien avant le mail de suivi.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function RelancesCommercialesAffaiblissentVentePage() {
       "@type": "BlogPosting",
       "headline": "Pourquoi beaucoup de relances commerciales affaiblissent la vente au lieu de la faire avancer",
         "description": "Quand une relance commerciale devient un réflexe, elle dégrade souvent la valeur perçue, la posture du vendeur et la dynamique de décision. Le vrai sujet est rarement la fréquence seule.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.jpg",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.webp",
         "datePublished": "2026-04-03",
         "dateModified": "2026-04-03",
         "author": {
@@ -166,7 +166,7 @@ export default function RelancesCommercialesAffaiblissentVentePage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.jpg"
+              src="/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.webp"
               alt="Laurent Serre dans un environnement business premium illustrant une relance commerciale maîtrisée"
               width={2528}
               height={1696}

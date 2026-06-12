@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-03-31-manager-suivre-sans-coacher-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-03-31-manager-suivre-sans-coacher-hero.webp',
         width: 1536,
         height: 864,
         alt: 'Coach commercial accompagnant un manager commercial dans une salle de réunion premium',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Pourquoi un manager commercial qui suit sans coacher plombe son équipe',
     description:
       'Un manager peut suivre toute la semaine et pourtant affaiblir son équipe. Dès qu’il remplace le coaching par le reporting, la progression se bloque.',
-    images: ['https://www.laurentserre.com/images/blog/2026-03-31-manager-suivre-sans-coacher-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-03-31-manager-suivre-sans-coacher-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function ManagerCommercialSuitSansCoacherPage() {
       "@type": "BlogPosting",
       "headline": "Pourquoi un manager commercial qui suit sans coacher plombe son équipe",
         "description": "Beaucoup de managers commerciaux suivent l’activité, commentent le CRM et demandent des comptes. Mais sans coaching réel, ils fabriquent une équipe occupée, pas une équipe qui progresse.",
-        "image": "https://www.laurentserre.com/images/blog/2026-03-31-manager-suivre-sans-coacher-hero.jpg",
+        "image": "https://www.laurentserre.com/images/blog/2026-03-31-manager-suivre-sans-coacher-hero.webp",
         "datePublished": "2026-03-31",
         "dateModified": "2026-03-31",
         "author": {
@@ -164,7 +164,7 @@ export default function ManagerCommercialSuitSansCoacherPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-03-31-manager-suivre-sans-coacher-hero.jpg"
+              src="/images/blog/2026-03-31-manager-suivre-sans-coacher-hero.webp"
               alt="Coach commercial accompagnant un manager commercial dans une salle de réunion premium"
               width={1536}
               height={864}

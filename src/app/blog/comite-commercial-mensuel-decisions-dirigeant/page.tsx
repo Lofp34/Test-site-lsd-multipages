@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-03-29-comite-commercial-mensuel-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-03-29-comite-commercial-mensuel-hero.webp',
         width: 1376,
         height: 768,
         alt: 'Comité commercial mensuel premium entre dirigeant et directeur commercial',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Comité commercial mensuel : les 6 décisions qu’un dirigeant doit exiger',
     description: 'Arrêtez les réunions commerciales qui commentent le pipeline. Exigez 6 décisions qui sécurisent le trimestre.',
-    images: ['https://www.laurentserre.com/images/blog/2026-03-29-comite-commercial-mensuel-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-03-29-comite-commercial-mensuel-hero.webp'],
   },
 };
 
@@ -41,7 +41,7 @@ export default function ComiteCommercialMensuelPage() {
       "@type": "BlogPosting",
       "headline": "Comité commercial mensuel : les 6 décisions qu&apos;un dirigeant doit exiger",
         "description": "Le comité commercial mensuel ne doit pas être un théâtre CRM. Voici les 6 décisions qu’un dirigeant ou directeur commercial doit obtenir pour sécuriser le trimestre et convertir plus proprement.",
-        "image": "https://www.laurentserre.com/images/blog/2026-03-29-comite-commercial-mensuel-hero.jpg",
+        "image": "https://www.laurentserre.com/images/blog/2026-03-29-comite-commercial-mensuel-hero.webp",
         "datePublished": "2026-03-29",
         "dateModified": "2026-03-29",
         "author": {
@@ -168,7 +168,7 @@ export default function ComiteCommercialMensuelPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-03-29-comite-commercial-mensuel-hero.jpg"
+              src="/images/blog/2026-03-29-comite-commercial-mensuel-hero.webp"
               alt="Comité commercial mensuel premium entre dirigeant et directeur commercial"
               width={1376}
               height={768}

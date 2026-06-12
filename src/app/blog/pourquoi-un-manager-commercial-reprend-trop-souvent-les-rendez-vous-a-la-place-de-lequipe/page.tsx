@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-25-manager-reprend-rendez-vous-equipe-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-25-manager-reprend-rendez-vous-equipe-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Un manager commercial reprend la main pendant un rendez-vous client sous le regard de son commercial',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: 'Manager commercial : à force de sauver les rendez-vous, vous affaiblissez l’équipe',
     description:
       'Sauver un rendez-vous peut rassurer. Le faire trop souvent affaiblit l’équipe et concentre toute la crédibilité sur le manager.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-25-manager-reprend-rendez-vous-equipe-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-25-manager-reprend-rendez-vous-equipe-hero.webp'],
   },
 };
 
@@ -46,7 +46,7 @@ export default function PourquoiUnManagerCommercialReprendTropSouventLesRendezVo
       "@type": "BlogPosting",
       "headline": "Manager commercial : à force de sauver les rendez-vous, vous affaiblissez l’équipe",
         "description": "Quand un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe, il rassure sur le moment mais il apprend surtout aux commerciaux à attendre qu’on les sauve.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-25-manager-reprend-rendez-vous-equipe-hero.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-25-manager-reprend-rendez-vous-equipe-hero.webp",
         "datePublished": "2026-04-25",
         "dateModified": "2026-04-25",
         "author": {
@@ -133,7 +133,7 @@ export default function PourquoiUnManagerCommercialReprendTropSouventLesRendezVo
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-25-manager-reprend-rendez-vous-equipe-hero.png"
+              src="/images/blog/2026-04-25-manager-reprend-rendez-vous-equipe-hero.webp"
               alt="Un manager commercial reprend la main pendant un rendez-vous client sous le regard de son commercial"
               width={1536}
               height={1024}

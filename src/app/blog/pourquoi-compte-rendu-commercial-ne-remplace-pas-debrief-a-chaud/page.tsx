@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Manager et commercial en débrief juste après un rendez-vous client',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Pourquoi le compte rendu commercial ne remplace jamais le débrief à chaud',
     description:
       'Ce qui fait progresser un commercial après un rendez-vous, ce n’est pas un commentaire CRM. C’est un débrief court, précis et encore vivant.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function PourquoiCompteRenduCommercialNeRemplacePasDebriefAChaudP
       "@type": "BlogPosting",
       "headline": "Pourquoi le compte rendu commercial ne remplace jamais le débrief à chaud",
         "description": "Beaucoup d’équipes commentent les rendez-vous commerciaux après coup sans vraiment les travailler. Le compte rendu rassure. Le débrief à chaud, lui, fait progresser.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.jpg",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.webp",
         "datePublished": "2026-04-13",
         "dateModified": "2026-04-13",
         "author": {
@@ -172,7 +172,7 @@ export default function PourquoiCompteRenduCommercialNeRemplacePasDebriefAChaudP
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.jpg"
+              src="/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.webp"
               alt="Manager et commercial en débrief juste après un rendez-vous client"
               width={1536}
               height={1024}

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Débrief commercial lucide entre un manager et un commercial dans une PME française',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Le vrai problème de votre équipe n’est presque jamais la motivation',
     description:
       'Le mot motivation rassure. Il évite souvent de regarder le vrai problème : des scènes mal tenues, un management faible ou des ventes mal construites.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function PourquoiLaMotivationNeReglePresqueJamaisLeProblemeCommer
       "@type": "BlogPosting",
       "headline": "Le vrai problème de votre équipe n’est presque jamais la motivation",
         "description": "Quand une équipe commerciale cale, parler motivation permet souvent d’éviter le vrai sujet : des rendez-vous faibles, un management mou ou des ventes mal relues.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.webp",
         "datePublished": "2026-04-23",
         "dateModified": "2026-04-23",
         "author": {
@@ -130,7 +130,7 @@ export default function PourquoiLaMotivationNeReglePresqueJamaisLeProblemeCommer
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.png"
+              src="/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.webp"
               alt="Débrief commercial lucide entre un manager et un commercial dans une PME française"
               width={1536}
               height={1024}

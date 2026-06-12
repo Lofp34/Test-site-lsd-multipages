@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-05-16-plan-prospection-commerciale-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-05-16-plan-prospection-commerciale-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Réunion de prospection commerciale en PME autour d\'un tableau blanc',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: 'Plan de prospection commerciale : générer des leads toute l\'année | Laurent Serre',
     description:
       'Un plan de prospection utile dit clairement qui prospecte, qui on cherche à toucher, avec quel message, à quel rythme, et comment on voit si ça avance.',
-    images: ['https://www.laurentserre.com/images/blog/2026-05-16-plan-prospection-commerciale-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-05-16-plan-prospection-commerciale-hero.webp'],
   },
 };
 
@@ -52,7 +52,7 @@ export default function ArticlePage() {
         headline: 'Plan de prospection commerciale : construire la machine qui génère des leads toute l\'année',
         description:
           'La prospection ne se fait pas quand on a le temps. Elle se fait parce qu\'on a décidé qu\'elle faisait partie du système commercial.',
-        image: 'https://www.laurentserre.com/images/blog/2026-05-16-plan-prospection-commerciale-hero.png',
+        image: 'https://www.laurentserre.com/images/blog/2026-05-16-plan-prospection-commerciale-hero.webp',
         datePublished: '2026-05-16',
         dateModified: '2026-05-16',
         author: {
@@ -185,7 +185,7 @@ export default function ArticlePage() {
           author={{
             name: 'Laurent Serre',
             role: 'Coach commercial',
-            image: '/images/blog/Laurent-Serre-avatar.jpg',
+            image: '/images/blog/Laurent-Serre-avatar.webp',
           }}
         />
 

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-05-12-coaching-commercial-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-05-12-coaching-commercial-hero.webp',
         width: 2048,
         height: 1152,
         alt: 'Coaching commercial — l\'écoute avant le diagnostic',
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: 'Ce n\'est pas un problème de motivation — c\'est un problème de diagnostic | Laurent Serre',
     description:
       'Un manager qui veut « réparer » avant d\'écouter. Un diagnostic posé sur un tableau Excel, pas sur une conversation. Le coaching commercial, c\'est d\'abord un exercice d\'écoute.',
-    images: ['https://www.laurentserre.com/images/blog/2026-05-12-coaching-commercial-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-05-12-coaching-commercial-hero.webp'],
   },
 };
 
@@ -53,7 +53,7 @@ export default function ArticlePage() {
         headline: 'Ce n\'est pas un problème de motivation — c\'est un problème de diagnostic',
         description:
           'Le coaching commercial ne commence pas par un plan. Il commence par une conversation. Avant de préparer votre diagnostic, allez écouter votre commercial.',
-        image: 'https://www.laurentserre.com/images/blog/2026-05-12-coaching-commercial-hero.jpg',
+        image: 'https://www.laurentserre.com/images/blog/2026-05-12-coaching-commercial-hero.webp',
         datePublished: '2026-05-12',
         dateModified: '2026-05-12',
         author: {
@@ -159,7 +159,7 @@ export default function ArticlePage() {
         {/* Image hero */}
         <div className="relative w-full aspect-video mb-10 rounded-2xl overflow-hidden shadow-lg">
           <Image
-            src="/images/blog/2026-05-12-coaching-commercial-hero.jpg"
+            src="/images/blog/2026-05-12-coaching-commercial-hero.webp"
             alt="Coaching commercial — l'écoute avant le diagnostic"
             fill
             className="object-cover"
@@ -185,7 +185,7 @@ export default function ArticlePage() {
           author={{
             name: 'Laurent Serre',
             role: 'Coach commercial',
-            image: '/images/blog/Laurent-Serre-avatar.jpg',
+            image: '/images/blog/Laurent-Serre-avatar.webp',
           }}
         />
 

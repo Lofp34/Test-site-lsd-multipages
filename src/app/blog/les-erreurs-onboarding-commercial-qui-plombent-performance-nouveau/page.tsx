@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.webp',
         width: 1600,
         height: 900,
         alt: 'Manager commercial accompagnant un nouveau commercial lors de son onboarding dans un environnement premium',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Les erreurs d’onboarding commercial qui vont plomber la performance du nouveau',
     description:
       'Un onboarding commercial mal structuré coûte des mois de performance. Le nouveau n’échoue pas seul, il hérite souvent d’un système flou.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function ErreursOnboardingCommercialPage() {
       "@type": "BlogPosting",
       "headline": "Les erreurs d’onboarding commercial qui vont plomber la performance du nouveau",
         "description": "Un recrutement commercial peut échouer dès les premières semaines. Les erreurs d’onboarding coûtent cher : pipeline fragile, posture hésitante et conversion affaiblie.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.jpg",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.webp",
         "datePublished": "2026-04-04",
         "dateModified": "2026-04-04",
         "author": {
@@ -149,7 +149,7 @@ export default function ErreursOnboardingCommercialPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.jpg"
+              src="/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.webp"
               alt="Manager commercial accompagnant un nouveau commercial lors de son onboarding dans un environnement premium"
               width={1600}
               height={900}

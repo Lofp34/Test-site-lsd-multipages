@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-29-besoin-reel-enjeu-client-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-29-besoin-reel-enjeu-client-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Laurent Serre en rendez-vous commercial aide un dirigeant de PME à clarifier le vrai problème derrière une demande client',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Besoin client : révéler l’enjeu réel en découverte commerciale',
     description:
       'Une demande exprimée donne le point de départ. L’enjeu réel et les conséquences concrètes donnent la priorité.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-29-besoin-reel-enjeu-client-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-29-besoin-reel-enjeu-client-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function VotreClientNestSouventPasConscientDuProblemePage() {
     headline: 'Votre client n’est souvent pas conscient du problème que vous pouvez résoudre',
     description:
       'En découverte commerciale, le besoin exprimé cache souvent l’enjeu réel. Méthode terrain pour aider le client à mesurer le coût de son problème.',
-    image: 'https://www.laurentserre.com/images/blog/2026-04-29-besoin-reel-enjeu-client-hero.png',
+    image: 'https://www.laurentserre.com/images/blog/2026-04-29-besoin-reel-enjeu-client-hero.webp',
     datePublished: '2026-04-29',
     dateModified: '2026-04-29',
     author: {
@@ -145,7 +145,7 @@ export default function VotreClientNestSouventPasConscientDuProblemePage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-29-besoin-reel-enjeu-client-hero.png"
+              src="/images/blog/2026-04-29-besoin-reel-enjeu-client-hero.webp"
               alt="Laurent Serre en rendez-vous commercial aide un dirigeant de PME à clarifier le vrai problème derrière une demande client"
               width={1536}
               height={1024}

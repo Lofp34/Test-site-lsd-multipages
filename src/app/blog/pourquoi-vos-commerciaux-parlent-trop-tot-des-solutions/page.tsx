@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.webp',
         width: 1024,
         height: 1024,
         alt: 'Réunion commerciale premium dans un bureau élégant',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Pourquoi vos commerciaux parlent trop tôt de leur solution, et ce que ça vous coûte',
     description:
       'Le commercial se sent utile parce qu’il présente son offre. Le client, lui, n’a pas encore dit ce qui le bloque vraiment.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function CommerciauxParlentTropTotSolutionsPage() {
       "@type": "BlogPosting",
       "headline": "Pourquoi vos commerciaux parlent trop tôt de leur solution, et ce que ça vous coûte",
         "description": "Le problème n’est pas qu’un commercial parle de son produit. Le problème, c’est qu’il le fait pour éviter les vraies questions. Et ça se paie ensuite en rendez-vous mous, en devis envoyés trop tôt et en silence côté client.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.webp",
         "datePublished": "2026-04-11",
         "dateModified": "2026-04-11",
         "author": {
@@ -172,7 +172,7 @@ export default function CommerciauxParlentTropTotSolutionsPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.png"
+              src="/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.webp"
               alt="Réunion commerciale premium dans un bureau élégant"
               width={1024}
               height={1024}

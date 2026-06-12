@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-28-fin-de-mois-sauver-ventes-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-28-fin-de-mois-sauver-ventes-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Laurent Serre en réunion commerciale de fin de mois devant des indicateurs de ventes à clarifier',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Le 28 du mois, il est trop tard pour sauver vos ventes',
     description:
       'Une fin de mois tendue révèle souvent les ventes fragiles que l’équipe n’a pas voulu regarder plus tôt.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-28-fin-de-mois-sauver-ventes-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-28-fin-de-mois-sauver-ventes-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function Le28DuMoisIlEstTropTardPourSauverVosVentesPage() {
       "@type": "BlogPosting",
       "headline": "Le 28 du mois, il est trop tard pour sauver vos ventes",
         "description": "Quand la fin de mois ressemble à une opération de sauvetage, le problème n’est presque jamais le dernier appel. Il est dans ce qui n’a pas été regardé plus tôt.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-28-fin-de-mois-sauver-ventes-hero.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-28-fin-de-mois-sauver-ventes-hero.webp",
         "datePublished": "2026-04-28",
         "dateModified": "2026-04-28",
         "author": {
@@ -131,7 +131,7 @@ export default function Le28DuMoisIlEstTropTardPourSauverVosVentesPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-28-fin-de-mois-sauver-ventes-hero.png"
+              src="/images/blog/2026-04-28-fin-de-mois-sauver-ventes-hero.webp"
               alt="Laurent Serre en réunion commerciale de fin de mois devant des indicateurs de ventes à clarifier"
               width={1536}
               height={1024}

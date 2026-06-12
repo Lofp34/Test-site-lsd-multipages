@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-02-peur-prix-vrai-probleme-pas-tarif-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-02-peur-prix-vrai-probleme-pas-tarif-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Discussion commerciale premium entre un dirigeant et un prospect autour d’une décision de prix',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'La peur du prix : le vrai problème n’est presque jamais le tarif',
     description:
       'Quand le prix devient le sujet central, la vente a souvent été affaiblie bien avant le moment de parler tarif.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-02-peur-prix-vrai-probleme-pas-tarif-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-02-peur-prix-vrai-probleme-pas-tarif-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function PeurDuPrixPage() {
       "@type": "BlogPosting",
       "headline": "La peur du prix : le vrai problème n’est presque jamais le tarif",
         "description": "Quand une vente bloque sur le prix, le tarif n’est souvent que la surface du problème. Valeur perçue, découverte, décision et courage commercial pèsent bien plus lourd.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-02-peur-prix-vrai-probleme-pas-tarif-hero.jpg",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-02-peur-prix-vrai-probleme-pas-tarif-hero.webp",
         "datePublished": "2026-04-02",
         "dateModified": "2026-04-02",
         "author": {
@@ -165,7 +165,7 @@ export default function PeurDuPrixPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-02-peur-prix-vrai-probleme-pas-tarif-hero.jpg"
+              src="/images/blog/2026-04-02-peur-prix-vrai-probleme-pas-tarif-hero.webp"
               alt="Discussion commerciale premium entre un dirigeant et un prospect autour d’une décision de prix"
               width={1536}
               height={1024}

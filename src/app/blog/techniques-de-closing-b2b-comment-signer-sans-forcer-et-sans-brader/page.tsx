@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Deux hommes d\'affaires se serrant la main autour d\'une table de réunion, document de signature visible',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: 'Techniques de closing B2B : signer sans forcer ni brader',
     description:
       '5 techniques de closing B2B pour conclure une vente sans manipulation. Ce qui marche vraiment en PME.',
-    images: ['https://www.laurentserre.com/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.webp'],
   },
   alternates: {
     canonical: 'https://www.laurentserre.com/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader',
@@ -45,7 +45,7 @@ export default function TechniquesDeClosingB2B() {
     'author': { '@type': 'Person', 'name': 'Laurent Serre', 'url': 'https://www.laurentserre.com/a-propos' },
     'datePublished': '2026-05-02',
     'dateModified': '2026-05-02',
-    'image': 'https://www.laurentserre.com/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.jpg',
+    'image': 'https://www.laurentserre.com/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.webp',
     'description': '5 techniques de closing B2B pour conclure une vente sans manipulation et sans brader vos marges. Ce qui fonctionne vraiment en PME, avec exemples concrets.',
     'mainEntityOfPage': {
       '@type': 'WebPage',
@@ -158,7 +158,7 @@ export default function TechniquesDeClosingB2B() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.jpg"
+              src="/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.webp"
               alt="Deux hommes d'affaires se serrant la main autour d'une table de réunion"
               width={1536}
               height={1024}

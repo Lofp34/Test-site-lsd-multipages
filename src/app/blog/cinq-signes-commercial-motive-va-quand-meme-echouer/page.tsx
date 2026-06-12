@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-12-signes-commercial-motive-va-echouer-hero.jpg',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-12-signes-commercial-motive-va-echouer-hero.webp',
         width: 1024,
         height: 1024,
         alt: 'Dirigeant et commercial dans un bureau de PME avec pilotage flou',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Les cinq signes qu’un commercial motivé va quand même échouer',
     description:
       'Le problème n’est pas toujours la motivation du commercial. Souvent, on laisse un bon profil se fatiguer dans un cadre mal tenu.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-12-signes-commercial-motive-va-echouer-hero.jpg'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-12-signes-commercial-motive-va-echouer-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function CinqSignesCommercialMotiveVaQuandMemeEchouerPage() {
       "@type": "BlogPosting",
       "headline": "Les cinq signes qu’un commercial motivé va quand même échouer",
         "description": "La motivation ne compense pas un mauvais cadrage commercial. Voici les cinq signes concrets qui montrent qu’un commercial engagé risque quand même d’échouer dans une PME B2B.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-12-signes-commercial-motive-va-echouer-hero.jpg",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-12-signes-commercial-motive-va-echouer-hero.webp",
         "datePublished": "2026-04-12",
         "dateModified": "2026-04-12",
         "author": {
@@ -171,7 +171,7 @@ export default function CinqSignesCommercialMotiveVaQuandMemeEchouerPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-12-signes-commercial-motive-va-echouer-hero.jpg"
+              src="/images/blog/2026-04-12-signes-commercial-motive-va-echouer-hero.webp"
               alt="Dirigeant et commercial dans un bureau de PME avec pilotage flou"
               width={1024}
               height={1024}

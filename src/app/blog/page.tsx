@@ -272,7 +272,7 @@ const blogPosts = [
     date: '2026-05-20',
     readTime: '7 min',
     category: 'Methode de vente / outils terrain',
-    image: '/images/blog/2026-05-20-playbook-commercial-hero.png',
+    image: '/images/blog/2026-05-20-playbook-commercial-hero.webp',
     featured: true
   },
   {
@@ -302,7 +302,7 @@ const blogPosts = [
     date: '2026-05-15',
     readTime: '4 min',
     category: 'Négociation commerciale',
-    image: '/images/blog/2026-05-15-negociation-commerciale-b2b-hero.png',
+    image: '/images/blog/2026-05-15-negociation-commerciale-b2b-hero.webp',
     featured: true
   },
   {
@@ -312,7 +312,7 @@ const blogPosts = [
     date: '2026-05-14',
     readTime: '5 min',
     category: 'Stratégie commerciale',
-    image: '/images/blog/2026-05-14-strategie-commerciale-pme-cadre-hero.png',
+    image: '/images/blog/2026-05-14-strategie-commerciale-pme-cadre-hero.webp',
     featured: true
   },
   {
@@ -322,7 +322,7 @@ const blogPosts = [
     date: '2026-05-13',
     readTime: '5 min',
     category: 'Pilotage commercial / indicateurs',
-    image: '/images/blog/2026-05-13-kpis-commerciaux-indicateurs-hero.jpg',
+    image: '/images/blog/2026-05-13-kpis-commerciaux-indicateurs-hero.webp',
     featured: true
   },
   {
@@ -332,7 +332,7 @@ const blogPosts = [
     date: '2026-05-12',
     readTime: '5 min',
     category: 'Management / coaching commercial',
-    image: '/images/blog/2026-05-12-coaching-commercial-hero.jpg',
+    image: '/images/blog/2026-05-12-coaching-commercial-hero.webp',
     featured: true
   },
   {
@@ -352,7 +352,7 @@ const blogPosts = [
     date: '2026-05-09',
     readTime: '6 min',
     category: 'Management commercial',
-    image: '/images/blog/2026-05-09-reunion-commerciale-hebdo-hero.png',
+    image: '/images/blog/2026-05-09-reunion-commerciale-hebdo-hero.webp',
     featured: true
   },
   {
@@ -402,7 +402,7 @@ const blogPosts = [
     date: '2026-05-03',
     readTime: '8 min',
     category: 'Méthodes de vente',
-    image: '/images/blog/2026-05-03-methodes-vente-comparees-hero.jpg',
+    image: '/images/blog/2026-05-03-methodes-vente-comparees-hero.webp',
     featured: true
   },
   {
@@ -412,7 +412,7 @@ const blogPosts = [
     date: '2026-05-04',
     readTime: '9 min',
     category: 'IA / prospection',
-    image: '/images/blog/2026-05-04-ia-prospection-commerciale-hero.jpg',
+    image: '/images/blog/2026-05-04-ia-prospection-commerciale-hero.webp',
     featured: true
   },  {
     slug: 'gestion-des-objections-commerciales-transformer-le-non-en-opportunite',
@@ -421,7 +421,7 @@ const blogPosts = [
     date: '2026-05-03',
     readTime: '7 min',
     category: 'Vente B2B / objections',
-    image: '/images/blog/2026-05-03-gestion-objections-commerciales-hero.jpg',
+    image: '/images/blog/2026-05-03-gestion-objections-commerciales-hero.webp',
     featured: true
   },
   {
@@ -431,7 +431,7 @@ const blogPosts = [
     date: '2026-05-02',
     readTime: '7 min',
     category: 'Closing / vente B2B',
-    image: '/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.jpg',
+    image: '/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.webp',
     featured: true
   },
   {
@@ -441,7 +441,7 @@ const blogPosts = [
     date: '2026-04-30',
     readTime: '5 min',
     category: 'Prospection commerciale / vente terrain',
-    image: '/images/blog/2026-04-30-prospection-telephone-b2b-hero.png',
+    image: '/images/blog/2026-04-30-prospection-telephone-b2b-hero.webp',
     featured: true
   },
   {
@@ -451,7 +451,7 @@ const blogPosts = [
     date: '2026-04-29',
     readTime: '6 min',
     category: 'Découverte commerciale / besoin client',
-    image: '/images/blog/2026-04-29-besoin-reel-enjeu-client-hero.png',
+    image: '/images/blog/2026-04-29-besoin-reel-enjeu-client-hero.webp',
     featured: true
   },
   {
@@ -461,7 +461,7 @@ const blogPosts = [
     date: '2026-04-28',
     readTime: '5 min',
     category: 'Pilotage commercial / fin de mois',
-    image: '/images/blog/2026-04-28-fin-de-mois-sauver-ventes-hero.png',
+    image: '/images/blog/2026-04-28-fin-de-mois-sauver-ventes-hero.webp',
     featured: true
   },
   {
@@ -471,7 +471,7 @@ const blogPosts = [
     date: '2026-04-27',
     readTime: '5 min de lecture',
     category: 'Dirigeant / récupération',
-    image: '/images/blog/2026-04-27-recuperation-week-end-hero.png',
+    image: '/images/blog/2026-04-27-recuperation-week-end-hero.webp',
     featured: true
   },
   {
@@ -481,7 +481,7 @@ const blogPosts = [
     date: '2026-04-26',
     readTime: '6 min de lecture',
     category: 'Méthode / pilotage commercial',
-    image: '/images/blog/2026-04-26-reunion-commerciale-sans-decision-hero.jpg',
+    image: '/images/blog/2026-04-26-reunion-commerciale-sans-decision-hero.webp',
     featured: true
   },
   {
@@ -491,7 +491,7 @@ const blogPosts = [
     date: '2026-04-25',
     readTime: '6 min de lecture',
     category: 'Management / coaching commercial',
-    image: '/images/blog/2026-04-25-manager-reprend-rendez-vous-equipe-hero.png',
+    image: '/images/blog/2026-04-25-manager-reprend-rendez-vous-equipe-hero.webp',
     featured: true
   },
   {
@@ -501,7 +501,7 @@ const blogPosts = [
     date: '2026-04-24',
     readTime: '6 min de lecture',
     category: 'Objection prix / vente terrain',
-    image: '/images/blog/2026-04-24-objection-prix-bd-hero-selected.png',
+    image: '/images/blog/2026-04-24-objection-prix-bd-hero-selected.webp',
     featured: true
   },
   {
@@ -511,7 +511,7 @@ const blogPosts = [
     date: '2026-04-23',
     readTime: '6 min de lecture',
     category: 'Psychologie commerciale / management',
-    image: '/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.png',
+    image: '/images/blog/2026-04-23-motivation-ne-regle-pas-probleme-commercial-hero.webp',
     featured: true
   },
   {
@@ -521,7 +521,7 @@ const blogPosts = [
     date: '2026-04-22',
     readTime: '6 min de lecture',
     category: 'Management / coaching commercial',
-    image: '/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.png',
+    image: '/images/blog/2026-04-22-manager-tolere-bonnes-excuses-hero.webp',
     featured: true
   },
   {
@@ -531,7 +531,7 @@ const blogPosts = [
     date: '2026-04-21',
     readTime: '6 min de lecture',
     category: 'Erreur fréquente / pilotage commercial',
-    image: '/images/blog/2026-04-21-previsions-rassurantes-pas-fiables-hero.jpg',
+    image: '/images/blog/2026-04-21-previsions-rassurantes-pas-fiables-hero.webp',
     featured: true
   },
   {
@@ -541,7 +541,7 @@ const blogPosts = [
     date: '2026-04-20',
     readTime: '6 min de lecture',
     category: 'Point de vue / lecture commerciale',
-    image: '/images/blog/2026-04-20-concurrent-verite-confortable-hero.png',
+    image: '/images/blog/2026-04-20-concurrent-verite-confortable-hero.webp',
     featured: true
   },
   {
@@ -551,7 +551,7 @@ const blogPosts = [
     date: '2026-04-19',
     readTime: '7 min de lecture',
     category: 'Terrain / qualification commerciale',
-    image: '/images/blog/2026-04-19-interet-vs-decision-hero-v3.png',
+    image: '/images/blog/2026-04-19-interet-vs-decision-hero-v3.webp',
     featured: true
   },
   {
@@ -561,7 +561,7 @@ const blogPosts = [
     date: '2026-04-18',
     readTime: '7 min de lecture',
     category: 'Erreur fréquente / vente terrain',
-    image: '/images/blog/2026-04-18-objections-trop-tot-hero-v2.png',
+    image: '/images/blog/2026-04-18-objections-trop-tot-hero-v2.webp',
     featured: true
   },
   {
@@ -571,7 +571,7 @@ const blogPosts = [
     date: '2026-04-17',
     readTime: '11 min de lecture',
     category: 'Management / transformation commerciale',
-    image: '/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.png',
+    image: '/images/blog/2026-04-17-commerciaux-dirco-entrepreneurs-hero-v2.webp',
     featured: true
   },
   {
@@ -581,7 +581,7 @@ const blogPosts = [
     date: '2026-04-16',
     readTime: '7 min',
     category: 'IA utile / transformation PME',
-    image: '/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.jpg',
+    image: '/images/blog/2026-04-16-toiture-et-compagnie-agents-ia-hero.webp',
     featured: true
   },
   {
@@ -591,7 +591,7 @@ const blogPosts = [
     date: '2026-04-16',
     readTime: '5 min',
     category: 'Psychologie commerciale',
-    image: '/images/blog/2026-04-16-argent-mesure-valeur-hero.png',
+    image: '/images/blog/2026-04-16-argent-mesure-valeur-hero.webp',
     featured: true
   },
   {
@@ -601,7 +601,7 @@ const blogPosts = [
     date: '2026-04-15',
     readTime: '6 min',
     category: 'Psychologie commerciale',
-    image: '/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.jpg',
+    image: '/images/blog/2026-04-15-anticiper-echec-discipline-commerciale-hero.webp',
     featured: true
   },
   {
@@ -611,7 +611,7 @@ const blogPosts = [
     date: '2026-04-14',
     readTime: '8 min',
     category: 'IA utile',
-    image: '/images/blog/2026-04-14-crm-ia-hero.png',
+    image: '/images/blog/2026-04-14-crm-ia-hero.webp',
     featured: true
   },
   {
@@ -621,7 +621,7 @@ const blogPosts = [
     date: '2026-04-13',
     readTime: '9 min',
     category: 'Méthode / management commercial',
-    image: '/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.jpg',
+    image: '/images/blog/2026-04-13-compte-rendu-vs-debrief-a-chaud-hero.webp',
     featured: true
   },
   {
@@ -631,7 +631,7 @@ const blogPosts = [
     date: '2026-04-12',
     readTime: '9 min',
     category: 'Psychologie commerciale',
-    image: '/images/blog/2026-04-12-signes-commercial-motive-va-echouer-hero.jpg',
+    image: '/images/blog/2026-04-12-signes-commercial-motive-va-echouer-hero.webp',
     featured: true
   },
   {
@@ -641,7 +641,7 @@ const blogPosts = [
     date: '2026-04-11',
     readTime: '10 min',
     category: 'Techniques de vente terrain',
-    image: '/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.png',
+    image: '/images/blog/2026-04-11-commerciaux-parlent-trop-tot-solutions-hero.webp',
     featured: true
   },
   {
@@ -651,7 +651,7 @@ const blogPosts = [
     date: '2026-04-05',
     readTime: '10 min',
     category: 'Structure / système commercial',
-    image: '/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.jpg',
+    image: '/images/blog/2026-04-05-bons-commerciaux-mediocres-mauvais-systeme-hero.webp',
     featured: true
   },
   {
@@ -661,7 +661,7 @@ const blogPosts = [
     date: '2026-04-04',
     readTime: '10 min',
     category: 'Management / transformation',
-    image: '/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.jpg',
+    image: '/images/blog/2026-04-04-onboarding-commercial-performance-nouveau-hero.webp',
     featured: true
   },
   {
@@ -671,7 +671,7 @@ const blogPosts = [
     date: '2026-04-03',
     readTime: '10 min',
     category: 'Techniques de vente terrain',
-    image: '/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.jpg',
+    image: '/images/blog/2026-04-03-relances-commerciales-affaiblissent-vente-hero.webp',
     featured: true
   },
   {
@@ -681,7 +681,7 @@ const blogPosts = [
     date: '2026-04-02',
     readTime: '9 min',
     category: 'Psychologie commerciale',
-    image: '/images/blog/2026-04-02-peur-prix-vrai-probleme-pas-tarif-hero.jpg',
+    image: '/images/blog/2026-04-02-peur-prix-vrai-probleme-pas-tarif-hero.webp',
     featured: true
   },
   {
@@ -691,7 +691,7 @@ const blogPosts = [
     date: '2026-04-01',
     readTime: '9 min',
     category: 'IA utile',
-    image: '/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.jpg',
+    image: '/images/blog/2026-04-01-ia-sans-plan-vente-bruit-hero.webp',
     featured: true
   },
   {
@@ -701,7 +701,7 @@ const blogPosts = [
     date: '2026-03-31',
     readTime: '10 min',
     category: 'Management / transformation',
-    image: '/images/blog/2026-03-31-manager-suivre-sans-coacher-hero.jpg',
+    image: '/images/blog/2026-03-31-manager-suivre-sans-coacher-hero.webp',
     featured: true
   },
   {
@@ -731,7 +731,7 @@ const blogPosts = [
     date: '2026-03-29',
     readTime: '12 min',
     category: 'Pilotage commercial',
-    image: '/images/blog/2026-03-29-comite-commercial-mensuel-hero.jpg',
+    image: '/images/blog/2026-03-29-comite-commercial-mensuel-hero.webp',
     featured: true
   },
   {
@@ -761,7 +761,7 @@ const blogPosts = [
     date: '2026-03-27',
     readTime: '11 min',
     category: 'Développement de comptes',
-    image: '/images/blog/2026-03-27-comptes-strategiques-dormants-hero.png',
+    image: '/images/blog/2026-03-27-comptes-strategiques-dormants-hero.webp',
     featured: true
   },
   {
@@ -791,7 +791,7 @@ const blogPosts = [
     date: '2026-03-24',
     readTime: '10 min',
     category: 'Exécution commerciale',
-    image: '/images/blog/2026-03-24-systeme-90-jours-hero.png',
+    image: '/images/blog/2026-03-24-systeme-90-jours-hero.webp',
     featured: true
   },
   {

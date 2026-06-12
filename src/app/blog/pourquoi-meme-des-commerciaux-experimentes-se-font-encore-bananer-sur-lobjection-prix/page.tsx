@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-24-objection-prix-bd-hero-selected.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-24-objection-prix-bd-hero-selected.webp',
         width: 1536,
         height: 1024,
         alt: 'Deux commerciaux en discussion tendue autour d’une objection prix en PME',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     title: 'Objection prix : même des commerciaux expérimentés se font encore bananer',
     description:
       'Quand un client dit que c’est trop cher, le vrai blocage est souvent ailleurs et il est apparu bien avant le prix.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-24-objection-prix-bd-hero-selected.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-24-objection-prix-bd-hero-selected.webp'],
   },
 };
 
@@ -46,7 +46,7 @@ export default function PourquoiMemeDesCommerciauxExperimentesSeFontEncoreBanane
       "@type": "BlogPosting",
       "headline": "Objection prix : même des commerciaux expérimentés se font encore bananer",
         "description": "Quand une vente bloque sur le prix, le tarif n’est pas toujours le vrai sujet. Très souvent, l’objection prix masque un diagnostic commercial évité trop vite.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-24-objection-prix-bd-hero-selected.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-24-objection-prix-bd-hero-selected.webp",
         "datePublished": "2026-04-24",
         "dateModified": "2026-04-24",
         "author": {
@@ -132,7 +132,7 @@ export default function PourquoiMemeDesCommerciauxExperimentesSeFontEncoreBanane
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-24-objection-prix-bd-hero-selected.png"
+              src="/images/blog/2026-04-24-objection-prix-bd-hero-selected.webp"
               alt="Deux commerciaux en discussion tendue autour d’une objection prix en PME"
               width={1536}
               height={1024}

@@ -186,7 +186,7 @@ export default function ErreursDeveloppementCommercialPage() {
           author={{
             name: 'Laurent Serre',
             role: 'Coach commercial  :  15 ans de terrain PME',
-            image: '/images/blog/Laurent-Serre-avatar.jpg',
+            image: '/images/blog/Laurent-Serre-avatar.webp',
           }}
         />
 

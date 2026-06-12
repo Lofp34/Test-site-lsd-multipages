@@ -7,7 +7,7 @@ import AuthorCard from '@/components/AuthorCard';
 
 const heroImage = '/images/blog/vente-perdue-avant-non/vente-perdue-avant-non-hero.webp';
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/vente-perdue-avant-non/vente-perdue-avant-non-hero.webp';
-const ogImageAbsolute = 'https://www.laurentserre.com/images/blog/vente-perdue-avant-non/vente-perdue-avant-non-og.jpg';
+const ogImageAbsolute = 'https://www.laurentserre.com/images/blog/vente-perdue-avant-non/vente-perdue-avant-non-og.webp';
 
 export const metadata: Metadata = {
   title: 'La vente se perd souvent avant que le client dise non | Laurent Serre',

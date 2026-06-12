@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'fr_FR',
     images: [
       {
-        url: 'https://www.laurentserre.com/images/blog/2026-04-27-recuperation-week-end-hero.png',
+        url: 'https://www.laurentserre.com/images/blog/2026-04-27-recuperation-week-end-hero.webp',
         width: 1536,
         height: 1024,
         alt: 'Dirigeant de PME un lundi matin, téléphone posé, après un week-end où il n’a pas vraiment décroché',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: 'Si vous pensez encore au boulot le week-end, vous ne récupérez pas',
     description:
       'Un week-end où le travail continue en bruit de fond n’est pas un vrai week-end.',
-    images: ['https://www.laurentserre.com/images/blog/2026-04-27-recuperation-week-end-hero.png'],
+    images: ['https://www.laurentserre.com/images/blog/2026-04-27-recuperation-week-end-hero.webp'],
   },
 };
 
@@ -45,7 +45,7 @@ export default function SiVousPensezEncoreAuBoulotLeWeekEndVousNeRecuperezPasPag
       "@type": "BlogPosting",
       "headline": "Si vous pensez encore au boulot le week-end, vous ne récupérez pas",
         "description": "Un dirigeant qui ne décroche jamais le week-end ne revient pas vraiment reposé le lundi. La récupération commence par une vraie clôture de semaine.",
-        "image": "https://www.laurentserre.com/images/blog/2026-04-27-recuperation-week-end-hero.png",
+        "image": "https://www.laurentserre.com/images/blog/2026-04-27-recuperation-week-end-hero.webp",
         "datePublished": "2026-04-27",
         "dateModified": "2026-04-27",
         "author": {
@@ -131,7 +131,7 @@ export default function SiVousPensezEncoreAuBoulotLeWeekEndVousNeRecuperezPasPag
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/2026-04-27-recuperation-week-end-hero.png"
+              src="/images/blog/2026-04-27-recuperation-week-end-hero.webp"
               alt="Dirigeant de PME un lundi matin, téléphone posé, après un week-end où il n’a pas vraiment décroché"
               width={1536}
               height={1024}
