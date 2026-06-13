@@ -11,7 +11,7 @@ const heroImage = 'https://www.laurentserre.com/images/blog/2026-06-13-gap-selli
 export const metadata: Metadata = {
   title: 'Gap Selling : la méthode B2B qui a changé ma façon de vendre | Laurent Serre',
   description:
-    'Qu’est-ce que le Gap Selling ? Une méthode de vente B2B qui aide le client à mesurer l’écart entre sa situation actuelle et le résultat qu’il veut atteindre.',
+    'Qu'est-ce que le Gap Selling ? Une méthode de vente B2B qui aide le client à mesurer l'écart entre sa situation actuelle et le résultat qu'il veut atteindre.',
   keywords:
     'gap selling, méthode gap selling, gap selling Keenan, challenger sale, challenger sales France, vente B2B méthode',
   alternates: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Gap Selling : la méthode B2B qui a changé ma façon de vendre',
     description:
-      'Une méthode de vente B2B racontée depuis le terrain : peur de bousculer le client, difficulté à creuser le vrai problème, quantification de l’inaction.',
+      'Une méthode de vente B2B racontée depuis le terrain : peur de bousculer le client, difficulté à creuser le vrai problème, quantification de l'inaction.',
     url: articleUrl,
     type: 'article',
     locale: 'fr_FR',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: heroImage,
         width: 1536,
         height: 1024,
-        alt: 'Laurent Serre accompagne un commercial B2B devant un tableau qui montre l’écart entre la situation actuelle du client et le résultat visé',
+        alt: 'Laurent Serre accompagne un commercial B2B devant un tableau qui montre l'écart entre la situation actuelle du client et le résultat visé',
       },
     ],
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Gap Selling : la méthode B2B qui a changé ma façon de vendre',
     description:
-      'Le client n’achète pas une solution. Il achète la réduction d’un écart qu’il a enfin compris et mesuré.',
+      'Le client n'achète pas une solution. Il achète la réduction d'un écart qu'il a enfin compris et mesuré.',
     images: [heroImage],
   },
 };
@@ -47,9 +47,9 @@ const carouselPrefix = '/images/blog/carrousel-gap-selling-webp';
 const carouselImages = [
   { src: `${carouselPrefix}/01-cover.webp`, alt: 'Cover : Gap Selling sur le terrain', index: 0 },
   { src: `${carouselPrefix}/02-piege-prix.webp`, alt: 'Le piège : baisser le prix trop tôt', index: 1 },
-  { src: `${carouselPrefix}/03-fosse.webp`, alt: 'Le client achète la réduction d’un écart', index: 2 },
+  { src: `${carouselPrefix}/03-fosse.webp`, alt: 'Le client achète la réduction d'un écart', index: 2 },
   { src: `${carouselPrefix}/04-decouverte.webp`, alt: 'Découverte : creuser le vrai problème', index: 3 },
-  { src: `${carouselPrefix}/05-quantification.webp`, alt: 'Quantification : mesurer le coût de l’inaction', index: 4 },
+  { src: `${carouselPrefix}/05-quantification.webp`, alt: 'Quantification : mesurer le coût de l'inaction', index: 4 },
   { src: `${carouselPrefix}/06-amplification.webp`, alt: 'Amplification : faire apparaître les conséquences', index: 5 },
   { src: `${carouselPrefix}/07-alignement.webp`, alt: 'Alignement : relier la solution au problème mesuré', index: 6 },
   { src: `${carouselPrefix}/08-erreur-pitcher-tot.webp`, alt: 'Erreur : présenter la solution trop tôt', index: 7 },
@@ -59,29 +59,29 @@ const carouselImages = [
 
 const faqItems = [
   {
-    question: 'Qu’est-ce que le Gap Selling ?',
+    question: 'Qu'est-ce que le Gap Selling ?',
     answer:
-      'Le Gap Selling est une méthode de vente B2B popularisée par Keenan. Elle consiste à aider le client à mesurer l’écart entre sa situation actuelle, souvent inconfortable mais supportée depuis longtemps, et la situation future qu’il veut vraiment atteindre. La vente avance quand cet écart devient concret, chiffré et prioritaire pour le client.',
+      'Le Gap Selling est une méthode de vente B2B popularisée par Keenan. Elle consiste à aider le client à mesurer l'écart entre sa situation actuelle, souvent inconfortable mais supportée depuis longtemps, et la situation future qu'il veut vraiment atteindre. La vente avance quand cet écart devient concret, chiffré et prioritaire pour le client.',
   },
   {
     question: 'Quelle est la différence entre Gap Selling et Challenger Sale ?',
     answer:
-      'Gap Selling part du problème du client et cherche à mesurer le fossé entre aujourd’hui et le résultat attendu. Challenger Sale met davantage l’accent sur la capacité du commercial à apporter une lecture nouvelle, à bousculer positivement son interlocuteur et à créer une tension utile. Les deux approches peuvent se compléter : Gap Selling structure le diagnostic, Challenger Sale aide à faire bouger une conviction trop installée.',
+      'Gap Selling part du problème du client et cherche à mesurer le fossé entre aujourd'hui et le résultat attendu. Challenger Sale met davantage l'accent sur la capacité du commercial à apporter une lecture nouvelle, à bousculer positivement son interlocuteur et à créer une tension utile. Les deux approches peuvent se compléter : Gap Selling structure le diagnostic, Challenger Sale aide à faire bouger une conviction trop installée.',
   },
   {
     question: 'Comment appliquer Gap Selling en entretien commercial ?',
     answer:
-      'En entretien, il faut ralentir avant de proposer. Commencez par comprendre la situation actuelle, puis creusez les conséquences concrètes : pertes de chiffre, temps perdu, décisions reportées, tension dans l’équipe, clients qui partent. Ensuite seulement, faites préciser la situation souhaitée et mesurez l’écart. La proposition doit arriver après ce travail, pas avant.',
+      'En entretien, il faut ralentir avant de proposer. Commencez par comprendre la situation actuelle, puis creusez les conséquences concrètes : pertes de chiffre, temps perdu, décisions reportées, tension dans l'équipe, clients qui partent. Ensuite seulement, faites préciser la situation souhaitée et mesurez l'écart. La proposition doit arriver après ce travail, pas avant.',
   },
   {
-    question: 'Qu’est-ce que la méthode Challenger en vente B2B ?',
+    question: 'Qu'est-ce que la méthode Challenger en vente B2B ?',
     answer:
-      'La méthode Challenger en vente B2B repose sur une idée simple : le commercial ne se contente pas de répondre à une demande, il aide le client à regarder son problème autrement. Il apporte un point de vue, crée une tension constructive et garde la main sans forcer. Dans une PME, cela demande du tact : bousculer l’analyse, pas la personne.',
+      'La méthode Challenger en vente B2B repose sur une idée simple : le commercial ne se contente pas de répondre à une demande, il aide le client à regarder son problème autrement. Il apporte un point de vue, crée une tension constructive et garde la main sans forcer. Dans une PME, cela demande du tact : bousculer l'analyse, pas la personne.',
   },
   {
     question: 'Gap Selling ou SPIN Selling : quelle méthode choisir ?',
     answer:
-      'SPIN Selling est très utile pour structurer les questions : situation, problème, implication, besoin de solution. Gap Selling est plus fort pour faire mesurer l’écart et le coût de l’inaction. Dans la pratique, je ne les oppose pas. SPIN aide à conduire l’entretien, Gap Selling aide à transformer les réponses en décision commerciale.',
+      'SPIN Selling est très utile pour structurer les questions : situation, problème, implication, besoin de solution. Gap Selling est plus fort pour faire mesurer l'écart et le coût de l'inaction. Dans la pratique, je ne les oppose pas. SPIN aide à conduire l'entretien, Gap Selling aide à transformer les réponses en décision commerciale.',
   },
 ];
 
@@ -93,7 +93,7 @@ export default function GapSellingMethodeB2bPage() {
         '@type': 'BlogPosting',
         headline: 'Gap Selling : la méthode B2B qui a changé ma façon de vendre',
         description:
-          'Une méthode de vente B2B racontée depuis le terrain : peur de bousculer le client, difficulté à creuser le vrai problème, quantification de l’inaction.',
+          'Une méthode de vente B2B racontée depuis le terrain : peur de bousculer le client, difficulté à creuser le vrai problème, quantification de l'inaction.',
         image: heroImage,
         datePublished: '2026-06-13',
         dateModified: '2026-06-13',
@@ -192,7 +192,7 @@ export default function GapSellingMethodeB2bPage() {
           <div className="relative mb-12">
             <Image
               src="/images/blog/2026-06-13-gap-selling-hero.webp"
-              alt="Laurent Serre accompagne un commercial B2B devant un tableau qui montre l’écart entre la situation actuelle du client et le résultat visé"
+              alt="Laurent Serre accompagne un commercial B2B devant un tableau qui montre l'écart entre la situation actuelle du client et le résultat visé"
               width={1536}
               height={1024}
               className="w-full h-80 object-cover object-center rounded-2xl shadow-lg"
@@ -212,10 +212,10 @@ export default function GapSellingMethodeB2bPage() {
 
           <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
             <p className="text-sm font-semibold text-mint-green mb-2">
-              Ce qu’il faut retenir
+              Ce qu'il faut retenir
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Le Gap Selling est une méthode de vente B2B qui consiste à aider le client à mesurer l’écart entre sa situation actuelle et le résultat qu’il veut atteindre. Le commercial ne vend pas son produit trop tôt : il creuse le problème, chiffre l’inaction, puis montre seulement ensuite comment sa solution réduit ce fossé.
+              Le Gap Selling aide le client à mesurer l'écart entre sa situation actuelle et le résultat visé. Le commercial creuse d'abord le problème, chiffre l'inaction, puis propose seulement sa solution.
             </p>
           </div>
 
@@ -224,7 +224,7 @@ export default function GapSellingMethodeB2bPage() {
               Carrousel BD : Les 10 planches Gap Selling
             </p>
             <p className="text-sm text-amber-700 mb-5">
-              L’histoire d’un commercial qui croit devoir baisser son prix, puis découvre que le vrai sujet n’était pas le prix.
+              L'histoire d'un commercial qui croit devoir baisser son prix, puis découvre que le vrai sujet n'était pas le prix.
             </p>
             <BDCarousel
               images={carouselImages}
@@ -253,8 +253,8 @@ export default function GapSellingMethodeB2bPage() {
           <div className="mt-10 p-6 bg-blue-ink/5 rounded-xl border border-blue-ink/10">
             <p className="text-sm font-semibold text-blue-ink mb-3">Sommaire</p>
             <ul className="space-y-2 text-sm text-gray-700">
-              <li><a href="#definition" className="text-mint-green hover:underline">Qu’est-ce que le Gap Selling ?</a></li>
-              <li><a href="#scene" className="text-mint-green hover:underline">La scène qui m’a fait changer ma façon de vendre</a></li>
+              <li><a href="#definition" className="text-mint-green hover:underline">Qu'est-ce que le Gap Selling ?</a></li>
+              <li><a href="#scene" className="text-mint-green hover:underline">La scène qui m'a fait changer ma façon de vendre</a></li>
               <li><a href="#entretien" className="text-mint-green hover:underline">Comment appliquer Gap Selling en entretien commercial</a></li>
               <li><a href="#erreurs" className="text-mint-green hover:underline">Les erreurs qui font échouer la méthode</a></li>
               <li><a href="#methodes" className="text-mint-green hover:underline">Gap Selling, Challenger Sale ou SPIN Selling ?</a></li>
@@ -263,19 +263,19 @@ export default function GapSellingMethodeB2bPage() {
           </div>
 
           <h2 id="definition" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
-            Qu’est-ce que le Gap Selling ?
+            Qu'est-ce que le Gap Selling ?
           </h2>
 
           <p className="mb-8 text-xl text-gray-600 leading-relaxed">
-            Le Gap Selling est une méthode de vente B2B popularisée par Keenan. Elle consiste à aider le client à mesurer l’écart entre sa situation actuelle, celle qu’il supporte parfois depuis trop longtemps, et la situation future qu’il veut vraiment atteindre. La vente avance quand cet écart devient concret, chiffré et prioritaire.
+            Le Gap Selling est une méthode de vente B2B popularisée par Keenan. Elle consiste à aider le client à mesurer l'écart entre sa situation actuelle, celle qu'il supporte parfois depuis trop longtemps, et la situation future qu'il veut vraiment atteindre. La vente avance quand cet écart devient concret, chiffré et prioritaire.
           </p>
 
           <p className="mb-8">
-            Dit plus simplement : le client n’achète pas votre solution. Il achète la réduction d’un fossé. Tant que ce fossé reste flou, votre proposition ressemble à une dépense. Quand le fossé devient visible, votre proposition devient une décision logique.
+            Dit plus simplement : le client n'achète pas votre solution. Il achète la réduction d'un fossé. Tant que ce fossé reste flou, votre proposition ressemble à une dépense. Quand le fossé devient visible, votre proposition devient une décision logique.
           </p>
 
           <h2 id="scene" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
-            La scène qui m’a fait changer ma façon de vendre
+            La scène qui m'a fait changer ma façon de vendre
           </h2>
 
           <p className="mb-8">
@@ -283,21 +283,21 @@ export default function GapSellingMethodeB2bPage() {
           </p>
 
           <p className="mb-8">
-            Le client lui a dit trois phrases que j’entends souvent : « C’est intéressant », « il faut que je regarde avec mon associé », « vous pouvez nous refaire une proposition un peu plus serrée ? » Stéphane traduit tout de suite : problème de prix. Il veut baisser un peu, ajouter deux options, rendre la proposition plus acceptable.
+            Le client lui a dit trois phrases que j'entends souvent : « C'est intéressant », « il faut que je regarde avec mon associé », « vous pouvez nous refaire une proposition un peu plus serrée ? » Stéphane traduit tout de suite : problème de prix. Il veut baisser un peu, ajouter deux options, rendre la proposition plus acceptable.
           </p>
 
           <p className="mb-8">
-            Je lui demande simplement : « Qu’est-ce que le client perd vraiment s’il ne fait rien ? » Silence. Puis il me répond : « Il perd du temps. » Je lui demande combien. Nouveau silence. Il n’avait pas creusé. Il avait entendu un besoin, mais il n’avait pas mesuré le coût du problème.
+            Je lui demande simplement : « Qu'est-ce que le client perd vraiment s'il ne fait rien ? » Silence. Puis il me répond : « Il perd du temps. » Je lui demande combien. Nouveau silence. Il n'avait pas creusé. Il avait entendu un besoin, mais il n'avait pas mesuré le coût du problème.
           </p>
 
           <p className="mb-8">
-            C’est là que Gap Selling devient utile. Pas comme une méthode américaine à réciter. Comme un rappel assez brutal : si le client ne voit pas clairement ce qu’il perd aujourd’hui et ce qu’il peut gagner demain, il négocie votre prix parce que c’est la seule chose concrète sur la table.
+            C'est là que Gap Selling devient utile. Pas comme une méthode américaine à réciter. Comme un rappel assez brutal : si le client ne voit pas clairement ce qu'il perd aujourd'hui et ce qu'il peut gagner demain, il négocie votre prix parce que c'est la seule chose concrète sur la table.
           </p>
 
           <div className="bg-blue-ink/10 border-l-4 border-blue-ink p-6 my-8">
             <p className="text-base">
               <strong>
-                Beaucoup de ventes ne sont pas perdues à cause du prix. Elles sont perdues parce que le problème n’a pas été assez bien creusé.
+                Beaucoup de ventes ne sont pas perdues à cause du prix. Elles sont perdues parce que le problème n'a pas été assez bien creusé.
               </strong>
             </p>
           </div>
@@ -307,7 +307,7 @@ export default function GapSellingMethodeB2bPage() {
           </h2>
 
           <p className="mb-8">
-            La première discipline, c’est de ralentir. Le réflexe naturel d’un commercial est de reconnaître un besoin, puis de présenter l’offre qui correspond. C’est humain : on veut montrer qu’on a compris. Mais dans beaucoup de ventes B2B, c’est trop tôt.
+            La première discipline, c'est de ralentir. Le réflexe naturel d'un commercial est de reconnaître un besoin, puis de présenter l'offre qui correspond. C'est humain : on veut montrer qu'on a compris. Mais dans beaucoup de ventes B2B, c'est trop tôt.
           </p>
 
           <h3 className="text-xl font-title font-bold text-blue-ink mt-8 mb-4">
@@ -319,19 +319,19 @@ export default function GapSellingMethodeB2bPage() {
           </p>
 
           <p className="mb-8">
-            Dans une PME industrielle, un dirigeant m’a dit qu’il voulait améliorer sa performance commerciale. Formule propre, mais trop large. En creusant, le vrai sujet était ailleurs : son meilleur commercial partait dans six mois, personne ne pouvait reprendre ses comptes, et deux clients importants risquaient de partir avec lui. Ce n’était pas un sujet de motivation. C’était un risque de chiffre d’affaires.
+            Dans une PME industrielle, un dirigeant m'a dit qu'il voulait améliorer sa performance commerciale. Formule propre, mais trop large. En creusant, le vrai sujet était ailleurs : son meilleur commercial partait dans six mois, personne ne pouvait reprendre ses comptes, et deux clients importants risquaient de partir avec lui. Ce n'était pas un sujet de motivation. C'était un risque de chiffre d'affaires.
           </p>
 
           <h3 className="text-xl font-title font-bold text-blue-ink mt-8 mb-4">
-            2. Chiffrer ce que coûte l’inaction
+            2. Chiffrer ce que coûte l'inaction
           </h3>
 
           <p className="mb-8">
-            Sans chiffre, le problème reste une impression. Avec un chiffre, il devient difficile à ignorer. Combien d’heures perdues par semaine ? Combien de devis qui n’avancent pas ? Combien de clients qui reportent leur décision ? Combien de marge sacrifiée pour sauver des ventes mal construites ?
+            Sans chiffre, le problème reste une impression. Avec un chiffre, il devient difficile à ignorer. Combien d'heures perdues par semaine ? Combien de devis qui n'avancent pas ? Combien de clients qui reportent leur décision ? Combien de marge sacrifiée pour sauver des ventes mal construites ?
           </p>
 
           <p className="mb-8">
-            Dans le dossier de Stéphane, le problème n’était pas une remise de 5 %. Le client perdait environ douze heures par semaine à ressaisir des commandes et à corriger des erreurs internes. Sur un an, avec les retards, les avoirs et le temps manager, on dépassait largement le montant qu’il voulait négocier.
+            Dans le dossier de Stéphane, le problème n'était pas une remise de 5 %. Le client perdait environ douze heures par semaine à ressaisir des commandes et à corriger des erreurs internes. Sur un an, avec les retards, les avoirs et le temps manager, on dépassait largement le montant qu'il voulait négocier.
           </p>
 
           <h3 className="text-xl font-title font-bold text-blue-ink mt-8 mb-4">
@@ -343,7 +343,7 @@ export default function GapSellingMethodeB2bPage() {
           </p>
 
           <p className="mb-8">
-            Quand le client décrit lui-même ce futur plus clairement, la vente change de nature. Vous ne poussez plus une offre. Vous vérifiez avec lui si ce que vous proposez réduit vraiment l’écart qu’il vient de formuler.
+            Quand le client décrit lui-même ce futur plus clairement, la vente change de nature. Vous ne poussez plus une offre. Vous vérifiez avec lui si ce que vous proposez réduit vraiment l'écart qu'il vient de formuler.
           </p>
 
           <h3 className="text-xl font-title font-bold text-blue-ink mt-8 mb-4">
@@ -351,11 +351,11 @@ export default function GapSellingMethodeB2bPage() {
           </h3>
 
           <p className="mb-8">
-            C’est seulement à ce moment-là que la proposition doit arriver. Pas avec toute la plaquette. Pas avec les dix fonctionnalités. Avec un lien clair entre le problème mesuré et ce que votre solution change concrètement.
+            C'est seulement à ce moment-là que la proposition doit arriver. Pas avec toute la plaquette. Pas avec les dix fonctionnalités. Avec un lien clair entre le problème mesuré et ce que votre solution change concrètement.
           </p>
 
           <p className="mb-8">
-            La question n’est plus : « Est-ce que vous aimez notre solution ? » La question devient : « Est-ce que cette solution réduit assez fortement l’écart que vous venez de mesurer ? » Ce n’est pas la même conversation.
+            La question n'est plus : « Est-ce que vous aimez notre solution ? » La question devient : « Est-ce que cette solution réduit assez fortement l'écart que vous venez de mesurer ? » Ce n'est pas la même conversation.
           </p>
 
           <div className="bg-gradient-to-br from-teal-50 to-mint-green/20 border border-teal-200/40 rounded-2xl p-6 my-8">
@@ -363,7 +363,7 @@ export default function GapSellingMethodeB2bPage() {
               Pour travailler cette discipline avec vos équipes
             </p>
             <p className="text-sm text-teal-700 mb-4">
-              Le Bootcamp Méthodes de vente travaille précisément cette bascule : passer d’une découverte polie à un diagnostic commercial qui aide le client à décider.
+              Le Bootcamp Méthodes de vente travaille précisément cette bascule : passer d'une découverte polie à un diagnostic commercial qui aide le client à décider.
             </p>
             <Link
               href="/bootcamp"
@@ -378,11 +378,11 @@ export default function GapSellingMethodeB2bPage() {
           </h2>
 
           <p className="mb-8">
-            J’ai vu des équipes adopter Gap Selling avec enthousiasme, puis revenir trois mois plus tard avec une phrase classique : « ça ne marche pas chez nous ». En général, la méthode n’est pas le sujet. C’est l’application qui dérape.
+            J'ai vu des équipes adopter Gap Selling avec enthousiasme, puis revenir trois mois plus tard avec une phrase classique : « ça ne marche pas chez nous ». En général, la méthode n'est pas le sujet. C'est l'application qui dérape.
           </p>
 
           <p className="mb-4">
-            <strong>Première erreur : faire semblant de creuser.</strong> Le commercial pose trois questions, prend des notes, puis sort la même proposition qu’avant. Le client sent très vite que la découverte n’a servi qu’à habiller un discours déjà prêt.
+            <strong>Première erreur : faire semblant de creuser.</strong> Le commercial pose trois questions, prend des notes, puis sort la même proposition qu'avant. Le client sent très vite que la découverte n'a servi qu'à habiller un discours déjà prêt.
           </p>
 
           <p className="mb-4">
@@ -394,11 +394,11 @@ export default function GapSellingMethodeB2bPage() {
           </p>
 
           <p className="mb-4">
-            <strong>Quatrième erreur : oublier qui décide vraiment.</strong> Vous pouvez mesurer un fossé très clair avec une personne qui n’a pas la main sur la décision. C’est utile, mais incomplet. À un moment, il faut que celui qui tranche entende le problème, le chiffre et le risque.
+            <strong>Quatrième erreur : oublier qui décide vraiment.</strong> Vous pouvez mesurer un fossé très clair avec une personne qui n'a pas la main sur la décision. C'est utile, mais incomplet. À un moment, il faut que celui qui tranche entende le problème, le chiffre et le risque.
           </p>
 
           <p className="mb-8">
-            <strong>Cinquième erreur : présenter la solution trop tôt.</strong> C’est la plus fréquente. Le commercial a peur du silence, peur de pousser trop loin, peur de perdre la sympathie du client. Alors il revient à ce qu’il maîtrise : son offre. Et la vente redevient fragile.
+            <strong>Cinquième erreur : présenter la solution trop tôt.</strong> C'est la plus fréquente. Le commercial a peur du silence, peur de pousser trop loin, peur de perdre la sympathie du client. Alors il revient à ce qu'il maîtrise : son offre. Et la vente redevient fragile.
           </p>
 
           <h2 id="methodes" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
@@ -406,19 +406,19 @@ export default function GapSellingMethodeB2bPage() {
           </h2>
 
           <p className="mb-8">
-            Je ne suis pas attaché aux méthodes pour elles-mêmes. Ce qui m’intéresse, c’est ce qu’elles changent dans un vrai rendez-vous. Gap Selling m’a surtout appris à ne plus confondre besoin exprimé et problème mesuré.
+            Je ne suis pas attaché aux méthodes pour elles-mêmes. Ce qui m'intéresse, c'est ce qu'elles changent dans un vrai rendez-vous. Gap Selling m'a surtout appris à ne plus confondre besoin exprimé et problème mesuré.
           </p>
 
           <p className="mb-8">
-            SPIN Selling est très utile pour structurer les questions. Situation, problème, implication, besoin de solution : la trame aide un commercial à ne pas rester en surface. Mais elle ne suffit pas toujours à faire sentir l’écart économique et humain.
+            SPIN Selling est très utile pour structurer les questions. Situation, problème, implication, besoin de solution : la trame aide un commercial à ne pas rester en surface. Mais elle ne suffit pas toujours à faire sentir l'écart économique et humain.
           </p>
 
           <p className="mb-8">
-            Challenger Sale apporte autre chose : la capacité à apporter une lecture qui dérange un peu, mais qui aide le client. Dans une PME française, je préfère parler de bousculer positivement son interlocuteur. C’est plus juste. On ne cherche pas la confrontation. On cherche le déclic.
+            Challenger Sale apporte autre chose : la capacité à apporter une lecture qui dérange un peu, mais qui aide le client. Dans une PME française, je préfère parler de bousculer positivement son interlocuteur. C'est plus juste. On ne cherche pas la confrontation. On cherche le déclic.
           </p>
 
           <p className="mb-8">
-            Dans la pratique, les trois peuvent se combiner. SPIN pour tenir l’entretien. Gap Selling pour mesurer le fossé. Challenger Sale pour oser nommer ce que le client n’a pas encore envie de regarder. La méthode n’a de valeur que si elle rend la conversation plus vraie.
+            Dans la pratique, les trois peuvent se combiner. SPIN pour tenir l'entretien. Gap Selling pour mesurer le fossé. Challenger Sale pour oser nommer ce que le client n'a pas encore envie de regarder. La méthode n'a de valeur que si elle rend la conversation plus vraie.
           </p>
 
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
@@ -426,7 +426,7 @@ export default function GapSellingMethodeB2bPage() {
               Vos commerciaux vendent-ils une solution ou un fossé clairement mesuré ?
             </h3>
             <p className="mb-6">
-              Dans beaucoup d’équipes, le vrai frein n’est pas la connaissance produit. C’est la qualité du diagnostic : problème trop vite accepté, conséquences pas assez chiffrées, décideur mal identifié, proposition partie trop tôt. Un diagnostic commercial permet de voir où la vente se fragilise vraiment.
+              Dans beaucoup d'équipes, le vrai frein n'est pas la connaissance produit. C'est la qualité du diagnostic : problème trop vite accepté, conséquences pas assez chiffrées, décideur mal identifié, proposition partie trop tôt. Un diagnostic commercial permet de voir où la vente se fragilise vraiment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -504,7 +504,7 @@ export default function GapSellingMethodeB2bPage() {
                   href="/blog/vente-consultative-b2b-comment-devenir-le-conseiller-que-vos-clients-ne-veulent-pas-perdre"
                   className="text-mint-green hover:underline font-medium"
                 >
-                  Vente consultative B2B : devenir le conseiller qu’on ne veut pas perdre
+                  Vente consultative B2B : devenir le conseiller qu'on ne veut pas perdre
                 </Link>
                 <span className="text-gray-500">
                   {' '}: Pour renforcer la posture de diagnosticien.
@@ -526,7 +526,7 @@ export default function GapSellingMethodeB2bPage() {
       <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6">
           <h2 className="text-2xl sm:text-3xl font-title font-bold text-blue-ink mb-4 text-center">
-            Besoin d’en parler plus directement ?
+            Besoin d'en parler plus directement ?
           </h2>
           <p className="text-center text-gray-600 mb-8">
             Si votre cas mérite un échange plus direct, vous pouvez aussi laisser un message ici.
