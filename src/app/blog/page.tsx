@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'gap-selling-methode-b2b',
+    title: 'Gap Selling : la méthode B2B qui a changé ma façon de vendre',
+    description: 'Qu’est-ce que le Gap Selling ? Une méthode de vente B2B pour creuser le vrai problème du client, chiffrer l’inaction et vendre sur un fossé mesuré plutôt que sur une promesse vague.',
+    date: '2026-06-13',
+    readTime: '10 min',
+    category: 'Méthode de vente B2B',
+    image: '/images/blog/2026-06-13-gap-selling-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'prochain-million-portefeuille-clients-expansion',
     title: 'Votre prochain million est dans votre portefeuille clients',
     description: 'Les dirigeants de PME consacrent 80% de leur energie aux prospects alors que 70% du CA potentiel dort chez leurs clients existants. 5 leviers concrets pour developper sans prospecter.',
@@ -224,16 +234,6 @@ const blogPosts = [
     category: 'Vente SaaS / Éditeurs logiciels',
     image: '/images/blog/2026-05-28-editeurs-logiciels-demos-hero.webp',
     featured: true,
-  },
-  {
-    slug: 'gap-selling-methode-terrain-b2b',
-    title: 'Gap Selling appliqué au terrain : vendre en creusant le vrai problème',
-    description: '80% des cycles de vente échouent parce que le commercial parle de sa solution avant d\'avoir compris le vrai problème. La méthode Gap Selling, racontée par le terrain PME français — avec 10 planches BD et un cas client chiffré.',
-    date: '2026-05-27',
-    readTime: '7 min',
-    category: 'Méthode de vente / diagnostic commercial',
-    image: '/images/blog/2026-05-27-gap-selling-hero.webp',
-    featured: true
   },
   {
     slug: 'acheteurs-b2b-ne-veulent-plus-parler-aux-commerciaux',

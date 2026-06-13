@@ -698,10 +698,10 @@ export default function DilemmeInnovateurVenteB2BPage() {
               </li>
               <li>
                 <Link
-                  href="/blog/gap-selling-methode-terrain-b2b"
+                  href="/blog/gap-selling-methode-b2b"
                   className="text-mint-green hover:underline font-medium"
                 >
-                  Gap Selling : la méthode terrain pour vendre en B2B
+                  Gap Selling : la méthode B2B qui a changé ma façon de vendre
                 </Link>
                 <span className="text-gray-500">
                   {' '}: Une approche qui privilégie le diagnostic à la démonstration produit.

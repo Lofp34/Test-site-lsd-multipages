@@ -586,10 +586,10 @@ export default function EditeursLogicielsDemosPage() {
             <ul className="space-y-3 text-sm text-gray-700">
               <li>
                 <Link
-                  href="/blog/gap-selling-methode-terrain-b2b"
+                  href="/blog/gap-selling-methode-b2b"
                   className="text-mint-green hover:underline font-medium"
                 >
-                  Gap Selling appliqué au terrain : vendre en creusant le vrai problème
+                  Gap Selling : la méthode B2B qui a changé ma façon de vendre
                 </Link>
                 <span className="text-gray-500">
                   {' '}: La méthode pour diagnostiquer le problème avant de montrer la solution.
