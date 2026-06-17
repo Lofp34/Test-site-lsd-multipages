@@ -11,7 +11,7 @@ const heroImage = 'https://www.laurentserre.com/images/blog/2026-06-13-gap-selli
 export const metadata: Metadata = {
   title: 'Gap Selling : la méthode B2B qui a changé ma façon de vendre | Laurent Serre',
   description:
-    'Qu'est-ce que le Gap Selling ? Une méthode de vente B2B qui aide le client à mesurer l'écart entre sa situation actuelle et le résultat qu'il veut atteindre.',
+    ’Qu’est-ce que le Gap Selling ? Une méthode de vente B2B qui aide le client à mesurer l’écart entre sa situation actuelle et le résultat qu’il veut atteindre.',
   keywords:
     'gap selling, méthode gap selling, gap selling Keenan, challenger sale, challenger sales France, vente B2B méthode',
   alternates: {
@@ -59,7 +59,7 @@ const carouselImages = [
 
 const faqItems = [
   {
-    question: 'Qu'est-ce que le Gap Selling ?',
+    question: ’Qu’est-ce que le Gap Selling ?',
     answer:
       'Le Gap Selling est une méthode de vente B2B popularisée par Keenan. Elle consiste à aider le client à mesurer l'écart entre sa situation actuelle, souvent inconfortable mais supportée depuis longtemps, et la situation future qu'il veut vraiment atteindre. La vente avance quand cet écart devient concret, chiffré et prioritaire pour le client.',
   },
@@ -74,7 +74,7 @@ const faqItems = [
       'En entretien, il faut ralentir avant de proposer. Commencez par comprendre la situation actuelle, puis creusez les conséquences concrètes : pertes de chiffre, temps perdu, décisions reportées, tension dans l'équipe, clients qui partent. Ensuite seulement, faites préciser la situation souhaitée et mesurez l'écart. La proposition doit arriver après ce travail, pas avant.',
   },
   {
-    question: 'Qu'est-ce que la méthode Challenger en vente B2B ?',
+    question: ’Qu’est-ce que la méthode Challenger en vente B2B ?',
     answer:
       'La méthode Challenger en vente B2B repose sur une idée simple : le commercial ne se contente pas de répondre à une demande, il aide le client à regarder son problème autrement. Il apporte un point de vue, crée une tension constructive et garde la main sans forcer. Dans une PME, cela demande du tact : bousculer l'analyse, pas la personne.',
   },
