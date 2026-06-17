@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'remuneration-variable-commerciale-pme-5-erreurs',
+    title: 'Votre plan de commission démotive vos commerciaux (et vous ne le savez pas)',
+    description: '5 erreurs qui détruisent la motivation des commerciaux et le cadre en 4 paramètres pour bâtir un plan de commission adapté à une PME B2B.',
+    date: '2026-06-17',
+    readTime: '7 min',
+    category: 'Management commercial / RH',
+    image: '/images/blog/remuneration-variable/remuneration-variable-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'gap-selling-methode-b2b',
     title: 'Gap Selling : la méthode B2B qui a changé ma façon de vendre',
     description: 'Qu’est-ce que le Gap Selling ? Une méthode de vente B2B pour creuser le vrai problème du client, chiffrer l’inaction et vendre sur un fossé mesuré plutôt que sur une promesse vague.',
