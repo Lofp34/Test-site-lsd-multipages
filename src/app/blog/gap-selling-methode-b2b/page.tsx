@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Gap Selling : la méthode B2B qui a changé ma façon de vendre',
     description:
-      'Une méthode de vente B2B racontée depuis le terrain : peur de bousculer le client, difficulté à creuser le vrai problème, quantification de l'inaction.',
+      `Une méthode de vente B2B racontée depuis le terrain : peur de bousculer le client, difficulté à creuser le vrai problème, quantification de l'inaction.`,
     url: articleUrl,
     type: 'article',
     locale: 'fr_FR',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
         url: heroImage,
         width: 1536,
         height: 1024,
-        alt: 'Laurent Serre accompagne un commercial B2B devant un tableau qui montre l'écart entre la situation actuelle du client et le résultat visé',
+        alt: `Laurent Serre accompagne un commercial B2B devant un tableau qui montre l'écart entre la situation actuelle du client et le résultat visé`,
       },
     ],
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Gap Selling : la méthode B2B qui a changé ma façon de vendre',
     description:
-      'Le client n'achète pas une solution. Il achète la réduction d'un écart qu'il a enfin compris et mesuré.',
+      `Le client n'achète pas une solution. Il achète la réduction d'un écart qu'il a enfin compris et mesuré.`,
     images: [heroImage],
   },
 };
@@ -47,9 +47,9 @@ const carouselPrefix = '/images/blog/carrousel-gap-selling-webp';
 const carouselImages = [
   { src: `${carouselPrefix}/01-cover.webp`, alt: 'Cover : Gap Selling sur le terrain', index: 0 },
   { src: `${carouselPrefix}/02-piege-prix.webp`, alt: 'Le piège : baisser le prix trop tôt', index: 1 },
-  { src: `${carouselPrefix}/03-fosse.webp`, alt: 'Le client achète la réduction d'un écart', index: 2 },
+  { src: `${carouselPrefix}/03-fosse.webp`, alt: `Le client achète la réduction d'un écart`, index: 2 },
   { src: `${carouselPrefix}/04-decouverte.webp`, alt: 'Découverte : creuser le vrai problème', index: 3 },
-  { src: `${carouselPrefix}/05-quantification.webp`, alt: 'Quantification : mesurer le coût de l'inaction', index: 4 },
+  { src: `${carouselPrefix}/05-quantification.webp`, alt: `Quantification : mesurer le coût de l'inaction`, index: 4 },
   { src: `${carouselPrefix}/06-amplification.webp`, alt: 'Amplification : faire apparaître les conséquences', index: 5 },
   { src: `${carouselPrefix}/07-alignement.webp`, alt: 'Alignement : relier la solution au problème mesuré', index: 6 },
   { src: `${carouselPrefix}/08-erreur-pitcher-tot.webp`, alt: 'Erreur : présenter la solution trop tôt', index: 7 },
@@ -61,27 +61,27 @@ const faqItems = [
   {
     question: `Qu'est-ce que le Gap Selling ?`,
     answer:
-      'Le Gap Selling est une méthode de vente B2B popularisée par Keenan. Elle consiste à aider le client à mesurer l'écart entre sa situation actuelle, souvent inconfortable mais supportée depuis longtemps, et la situation future qu'il veut vraiment atteindre. La vente avance quand cet écart devient concret, chiffré et prioritaire pour le client.',
+      `Le Gap Selling est une méthode de vente B2B popularisée par Keenan. Elle consiste à aider le client à mesurer l'écart entre sa situation actuelle, souvent inconfortable mais supportée depuis longtemps, et la situation future qu'il veut vraiment atteindre. La vente avance quand cet écart devient concret, chiffré et prioritaire pour le client.`,
   },
   {
     question: 'Quelle est la différence entre Gap Selling et Challenger Sale ?',
     answer:
-      'Gap Selling part du problème du client et cherche à mesurer le fossé entre aujourd'hui et le résultat attendu. Challenger Sale met davantage l'accent sur la capacité du commercial à apporter une lecture nouvelle, à bousculer positivement son interlocuteur et à créer une tension utile. Les deux approches peuvent se compléter : Gap Selling structure le diagnostic, Challenger Sale aide à faire bouger une conviction trop installée.',
+      `Gap Selling part du problème du client et cherche à mesurer le fossé entre aujourd'hui et le résultat attendu. Challenger Sale met davantage l'accent sur la capacité du commercial à apporter une lecture nouvelle, à bousculer positivement son interlocuteur et à créer une tension utile. Les deux approches peuvent se compléter : Gap Selling structure le diagnostic, Challenger Sale aide à faire bouger une conviction trop installée.`,
   },
   {
     question: 'Comment appliquer Gap Selling en entretien commercial ?',
     answer:
-      'En entretien, il faut ralentir avant de proposer. Commencez par comprendre la situation actuelle, puis creusez les conséquences concrètes : pertes de chiffre, temps perdu, décisions reportées, tension dans l'équipe, clients qui partent. Ensuite seulement, faites préciser la situation souhaitée et mesurez l'écart. La proposition doit arriver après ce travail, pas avant.',
+      `En entretien, il faut ralentir avant de proposer. Commencez par comprendre la situation actuelle, puis creusez les conséquences concrètes : pertes de chiffre, temps perdu, décisions reportées, tension dans l'équipe, clients qui partent. Ensuite seulement, faites préciser la situation souhaitée et mesurez l'écart. La proposition doit arriver après ce travail, pas avant.`,
   },
   {
     question: `Qu'est-ce que la méthode Challenger en vente B2B ?`,
     answer:
-      'La méthode Challenger en vente B2B repose sur une idée simple : le commercial ne se contente pas de répondre à une demande, il aide le client à regarder son problème autrement. Il apporte un point de vue, crée une tension constructive et garde la main sans forcer. Dans une PME, cela demande du tact : bousculer l'analyse, pas la personne.',
+      `La méthode Challenger en vente B2B repose sur une idée simple : le commercial ne se contente pas de répondre à une demande, il aide le client à regarder son problème autrement. Il apporte un point de vue, crée une tension constructive et garde la main sans forcer. Dans une PME, cela demande du tact : bousculer l'analyse, pas la personne.`,
   },
   {
     question: 'Gap Selling ou SPIN Selling : quelle méthode choisir ?',
     answer:
-      'SPIN Selling est très utile pour structurer les questions : situation, problème, implication, besoin de solution. Gap Selling est plus fort pour faire mesurer l'écart et le coût de l'inaction. Dans la pratique, je ne les oppose pas. SPIN aide à conduire l'entretien, Gap Selling aide à transformer les réponses en décision commerciale.',
+      `SPIN Selling est très utile pour structurer les questions : situation, problème, implication, besoin de solution. Gap Selling est plus fort pour faire mesurer l'écart et le coût de l'inaction. Dans la pratique, je ne les oppose pas. SPIN aide à conduire l'entretien, Gap Selling aide à transformer les réponses en décision commerciale.`,
   },
 ];
 
@@ -93,7 +93,7 @@ export default function GapSellingMethodeB2bPage() {
         '@type': 'BlogPosting',
         headline: 'Gap Selling : la méthode B2B qui a changé ma façon de vendre',
         description:
-          'Une méthode de vente B2B racontée depuis le terrain : peur de bousculer le client, difficulté à creuser le vrai problème, quantification de l'inaction.',
+          `Une méthode de vente B2B racontée depuis le terrain : peur de bousculer le client, difficulté à creuser le vrai problème, quantification de l'inaction.`,
         image: heroImage,
         datePublished: '2026-06-13',
         dateModified: '2026-06-13',
