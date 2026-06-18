@@ -66,7 +66,7 @@ export default function BDCarousel({ images, title, maxPreview, className = '' }
             onClick={() => openLightbox(i)}
             className="relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow focus:outline-none focus:ring-2 focus:ring-mint-green group"
           >
-            <div className="aspect-[9/16] relative">
+            <div className="aspect-[2/3] relative">
               <Image
                 src={img.src}
                 alt={img.alt}
@@ -118,7 +118,7 @@ export default function BDCarousel({ images, title, maxPreview, className = '' }
             className="relative max-w-[90vw] max-h-[85vh] w-full h-full flex items-center justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative w-auto h-full max-h-[85vh] aspect-[9/16]">
+            <div className="relative w-auto h-full max-h-[85vh] aspect-[2/3]">
               <Image
                 src={images[currentIndex].src}
                 alt={images[currentIndex].alt}
