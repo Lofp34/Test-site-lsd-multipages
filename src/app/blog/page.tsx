@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'book-de-vente-tactile-commerciaux-pme',
+    title: 'Book de vente tactile : vos commerciaux improvisent chaque rendez-vous (et ça vous coûte cher)',
+    description: "Un book de vente tactile est un outil digital interactif qui centralise tous les supports de vente sur tablette. Guide complet pour créer le vôtre sans dépenser 10 000 euros en logiciels.",
+    date: '2026-06-18',
+    readTime: '9 min',
+    category: 'Performance commerciale / Sales enablement',
+    image: '/images/blog/book-de-vente-tactile-commerciaux-pme/book-de-vente-tactile-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'remuneration-variable-commerciale-pme-5-erreurs',
     title: 'Votre plan de commission démotive vos commerciaux (et vous ne le savez pas)',
     description: '5 erreurs qui détruisent la motivation des commerciaux et le cadre en 4 paramètres pour bâtir un plan de commission adapté à une PME B2B.',
