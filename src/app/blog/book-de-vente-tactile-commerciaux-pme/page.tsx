@@ -42,21 +42,20 @@ export const metadata: Metadata = {
   },
 };
 
-const carouselPrefix = '/images/blog/carrousel-book-de-vente-tactile';
+// TEMP TEST: using remuneration-variable images (768x1376) to test if component renders them correctly
+const carouselPrefix = '/images/blog/remuneration-variable';
 
 const carouselImages = [
-  { src: `${carouselPrefix}/01-cover.webp`, alt: 'Cover : Book de vente tactile', index: 0 },
-  { src: `${carouselPrefix}/02-constat.webp`, alt: 'Le constat : un commercial improvise en rendez-vous', index: 1 },
-  { src: `${carouselPrefix}/03-fouille.webp`, alt: 'Le commercial fouille dans ses mails pendant le rdv', index: 2 },
-  { src: `${carouselPrefix}/04-cliente-perdue.webp`, alt: 'La cliente perd le fil face à un commercial désorganisé', index: 3 },
-  { src: `${carouselPrefix}/05-debrief-rate.webp`, alt: 'Débrief : la vente était bonne sur le fond mais pas sur la forme', index: 4 },
-  { src: `${carouselPrefix}/06-laurent-propose.webp`, alt: 'Laurent propose le book de vente tactile', index: 5 },
-  { src: `${carouselPrefix}/07-book-presentation.webp`, alt: 'Le book de vente tactile : tout est centralisé sur tablette', index: 6 },
-  { src: `${carouselPrefix}/08-avant-apres.webp`, alt: 'Avant/Après : sans book puis avec book en rendez-vous', index: 7 },
-  { src: `${carouselPrefix}/09-rdv-reussi.webp`, alt: 'Rendez-vous réussi : le commercial présente avec aisance', index: 8 },
-  { src: `${carouselPrefix}/10-3-approches.webp`, alt: 'Les 3 approches pour créer son book sans se ruiner', index: 9 },
-  { src: `${carouselPrefix}/11-adoption-equipe.webp`, alt: 'L\'adoption par l\'équipe : la clé du succès', index: 10 },
-  { src: `${carouselPrefix}/12-cta.webp`, alt: 'CTA : Commencez par un diagnostic offert sur laurentserre.com', index: 11 },
+  { src: `${carouselPrefix}/remuneration-variable-slide-cover.webp`, alt: 'TEST', index: 0 },
+  { src: `${carouselPrefix}/remuneration-variable-slide-01-plafond.webp`, alt: 'TEST', index: 1 },
+  { src: `${carouselPrefix}/remuneration-variable-slide-02-regles.webp`, alt: 'TEST', index: 2 },
+  { src: `${carouselPrefix}/remuneration-variable-slide-03-ca.webp`, alt: 'TEST', index: 3 },
+  { src: `${carouselPrefix}/remuneration-variable-slide-04-copie.webp`, alt: 'TEST', index: 4 },
+  { src: `${carouselPrefix}/remuneration-variable-slide-05-chasseur.webp`, alt: 'TEST', index: 5 },
+  { src: `${carouselPrefix}/remuneration-variable-slide-06-cadre.webp`, alt: 'TEST', index: 6 },
+  { src: `${carouselPrefix}/remuneration-variable-slide-07-accelerateur.webp`, alt: 'TEST', index: 7 },
+  { src: `${carouselPrefix}/remuneration-variable-slide-08-synthese.webp`, alt: 'TEST', index: 8 },
+  { src: `${carouselPrefix}/remuneration-variable-slide-09-cta.webp`, alt: 'TEST', index: 9 },
 ];
 
 export default function BookDeVenteTactilePage() {
