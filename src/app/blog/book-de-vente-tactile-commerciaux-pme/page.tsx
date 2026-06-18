@@ -9,7 +9,7 @@ const heroImage = '/images/blog/book-de-vente-tactile-commerciaux-pme/book-de-ve
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/book-de-vente-tactile-commerciaux-pme/book-de-vente-tactile-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Book de vente tactile pour commerciaux : le guide complet sans logiciel à 10K€',
+  title: 'Book de vente tactile : le guide complet pour vos commerciaux',
   description:
     'Un book de vente tactile est un outil digital interactif qui centralise tous les supports de vente sur tablette, permettant aux commerciaux de présenter, personnaliser et argumenter sans jamais perdre le fil. Guide complet pour PME.',
   keywords:
@@ -63,7 +63,7 @@ export default function BookDeVenteTactilePage() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Book de vente tactile pour commerciaux : le guide complet sans logiciel à 10K€',
+    headline: 'Book de vente tactile : le guide complet pour vos commerciaux',
     description:
       'Un book de vente tactile est un outil digital interactif qui centralise tous les supports de vente sur tablette, permettant aux commerciaux de présenter, personnaliser et argumenter sans jamais perdre le fil.',
     image: heroImageAbsolute,
@@ -224,6 +224,14 @@ export default function BookDeVenteTactilePage() {
             <AuthorCard />
           </div>
 
+          {/* TL;DR */}
+          <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
+            <p className="text-sm font-semibold text-mint-green mb-2">Ce que vous allez retenir</p>
+            <p className="text-gray-700 leading-relaxed">
+              Vos commerciaux improvisent chaque rendez-vous parce qu&apos;ils n&apos;ont pas d&apos;outil qui centralise leur discours, leurs arguments, leurs preuves. Le book de vente tactile change ça : tout tient sur une tablette, se personnalise en un clic, et donne aux commerciaux une structure qui ne les enferme pas. Ce guide vous montre comment en créer un sans dépenser 10 000 euros en logiciels.
+            </p>
+          </div>
+
           {/* Carrousel BD — accroche visuelle */}
           <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-6">
             <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
@@ -245,14 +253,6 @@ export default function BookDeVenteTactilePage() {
                 Télécharger le PDF (12 planches)
               </Link>
             </div>
-          </div>
-
-          {/* TL;DR */}
-          <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
-            <p className="text-sm font-semibold text-mint-green mb-2">Ce que vous allez retenir</p>
-            <p className="text-gray-700 leading-relaxed">
-              Vos commerciaux improvisent chaque rendez-vous parce qu&apos;ils n&apos;ont pas d&apos;outil qui centralise leur discours, leurs arguments, leurs preuves. Le book de vente tactile change ça : tout tient sur une tablette, se personnalise en un clic, et donne aux commerciaux une structure qui ne les enferme pas. Ce guide vous montre comment en créer un sans dépenser 10 000 euros en logiciels.
-            </p>
           </div>
 
           {/* Badge CTA diagnostic */}
