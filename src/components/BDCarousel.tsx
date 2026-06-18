@@ -1,7 +1,6 @@
 'use client';
 
 import { useState, useCallback, useEffect } from 'react';
-import Image from 'next/image';
 
 interface BDImage {
   src: string;
@@ -66,15 +65,15 @@ export default function BDCarousel({ images, title, maxPreview, className = '' }
             onClick={() => openLightbox(i)}
             className="relative overflow-hidden rounded-xl shadow-md hover:shadow-lg transition-shadow focus:outline-none focus:ring-2 focus:ring-mint-green group"
           >
-            <div className="relative aspect-[2/3]">
-              <Image
-                src={img.src}
-                alt={img.alt}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
-                sizes="(max-width: 640px) 50vw, 25vw"
-              />
-            </div>
+            {/* Native img: no Next.js image optimization interference */}
+            <img
+              src={img.src}
+              alt={img.alt}
+              width={1024}
+              height={1536}
+              className="block w-full h-auto group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
             {i === previewCount - 1 && hasMore && (
               <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
                 <span className="text-white text-2xl font-bold font-title">+{images.length - previewCount}</span>
@@ -113,21 +112,16 @@ export default function BDCarousel({ images, title, maxPreview, className = '' }
             ‹
           </button>
 
-          {/* Image */}
+          {/* Image — native img, no forced container ratio */}
           <div
-            className="relative max-w-[90vw] max-h-[85vh] w-full h-full flex items-center justify-center"
+            className="relative w-full h-full flex items-center justify-center p-4"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative w-full h-full flex items-center justify-center">
-              <Image
-                src={images[currentIndex].src}
-                alt={images[currentIndex].alt}
-                width={1024}
-                height={1536}
-                className="max-w-full max-h-[85vh] w-auto h-auto object-contain rounded-lg"
-                priority
-              />
-            </div>
+            <img
+              src={images[currentIndex].src}
+              alt={images[currentIndex].alt}
+              className="max-w-full max-h-[85vh] w-auto h-auto rounded-lg"
+            />
           </div>
 
           {/* Next */}
