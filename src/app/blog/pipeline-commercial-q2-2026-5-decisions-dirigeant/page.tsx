@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pipeline commercial Q2 2026 : 5 décisions dirigeant sécuriser CA | Laurent Serre',
+  title: 'Pipeline Q2 2026 : 5 décisions dirigeant',
   description: 'Dirigeants et directeurs commerciaux : 5 décisions concrètes pour fiabiliser le pipeline au T2 2026, accélérer les cycles et convertir sans pression inutile.',
   keywords: 'pipeline commercial, directeur commercial, dirigeant PME, conversion B2B, prévision commerciale, bootcamp vente',
   alternates: {

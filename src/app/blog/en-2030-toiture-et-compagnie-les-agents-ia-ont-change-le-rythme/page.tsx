@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'En 2030, chez Toiture et COMPAGNIE, les agents IA ont changé le rythme | Laurent Serre',
+  title: '2030 : les agents IA chez Toiture & COMPAGNIE',
   description:
     'À partir d’une base bien réelle, voilà à quoi pourrait ressembler en 2030 la transformation d’une PME de couverture comme Toiture et COMPAGNIE grâce à des agents IA vraiment utiles.',
   keywords:

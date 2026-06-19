@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi vos commerciaux remplissent mal le CRM… et utilisent mal l’IA | Laurent Serre',
+  title: 'Commerciaux : CRM mal rempli, IA mal utilisée',
   description:
     'Quand le CRM est vide ou flou, l’IA ne rend pas l’équipe plus pertinente. Elle industrialise surtout le flou commercial et le transforme en prose plus propre.',
   keywords:

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Prospection B2B 2026 : méthode 4 blocs pour plus de RDV qualifiés | Laurent Serre',
+  title: 'Prospection B2B 2026 : méthode en 4 blocs',
   description: 'Une méthode terrain en 4 blocs pour générer plus de RDV qualifiés en prospection B2B : ciblage, message, séquence, pilotage.',
   keywords: 'prospection B2B, RDV qualifiés, pipeline commercial, séquence de prospection, méthode commerciale PME',
   alternates: {

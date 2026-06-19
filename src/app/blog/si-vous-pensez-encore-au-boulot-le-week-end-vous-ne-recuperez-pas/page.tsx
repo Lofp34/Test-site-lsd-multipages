@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Si vous pensez encore au boulot le week-end, vous ne récupérez pas | Laurent Serre',
+  title: 'Penser au boulot le week-end = zéro récupération',
   description:
     'Un dirigeant qui ne décroche jamais le week-end ne revient pas vraiment reposé le lundi. La récupération commence par une vraie clôture de semaine.',
   keywords:

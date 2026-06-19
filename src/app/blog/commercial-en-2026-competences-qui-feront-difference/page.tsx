@@ -9,7 +9,7 @@ const heroImage = '/images/blog/commercial-en-2026-competences-qui-feront-differ
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/commercial-en-2026-competences-qui-feront-difference/commercial-2026-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Être commercial en 2026 : les compétences qui feront la différence | Laurent Serre',
+  title: 'Commercial en 2026 : les compétences clés',
   description:
     'Les commerciaux qui cartonnent en 2026 ne sont pas ceux qui maîtrisent 50 techniques. Ce sont ceux qui savent préparer avec l\'IA, diagnostiquer avant de pitcher, gérer l\'indécision, prioriser avec les données et résister au bruit.',
   keywords:

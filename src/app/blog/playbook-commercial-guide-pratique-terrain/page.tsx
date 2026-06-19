@@ -9,7 +9,7 @@ const articleUrl = 'https://www.laurentserre.com/blog/playbook-commercial-guide-
 const heroImage = 'https://www.laurentserre.com/images/blog/2026-05-20-playbook-commercial-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Playbook commercial : le guide pratique pour créer celui qui va vraiment être utilisé',
+  title: 'Playbook commercial : le guide pratique terrain',
   description:
     'La plupart des playbooks finissent oubliés dans un Drive. Voici comment construire un guide de terrain que votre équipe consultera en situation de vente.',
   keywords:

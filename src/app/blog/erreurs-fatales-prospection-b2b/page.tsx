@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Les erreurs fatales dans la prospection B2B (et comment les éviter) | Laurent Serre',
+  title: 'Prospection B2B : les erreurs fatales',
   description: 'Découvrez les 7 erreurs qui sabotent vos efforts de prospection B2B et les solutions concrètes pour les éviter. Guide expert pour PME.',
   keywords: 'erreurs prospection B2B, démarchage commercial, techniques prospection, PME, vente B2B',
   alternates: {

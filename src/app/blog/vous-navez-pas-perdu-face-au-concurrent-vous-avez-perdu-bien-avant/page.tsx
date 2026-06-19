@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Vous n’avez pas perdu face au concurrent, vous avez perdu bien avant | Laurent Serre',
+  title: 'La vente se perd bien avant le non du client',
   description:
     'Quand une équipe dit qu’elle a perdu face au concurrent, elle évite souvent une vérité moins confortable. La vente s’est généralement fragilisée bien plus tôt.',
   keywords:

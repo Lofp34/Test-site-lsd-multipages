@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi un manager commercial qui suit sans coacher plombe son équipe | Laurent Serre',
+  title: 'Manager commercial : suivre sans coacher plombe l’équipe',
   description:
     'Beaucoup de managers commerciaux suivent l’activité, commentent le CRM et demandent des comptes. Mais sans coaching réel, ils fabriquent une équipe occupée, pas une équipe qui progresse.',
   keywords:

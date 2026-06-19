@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'L’argent n’est pas le problème, c’est la mesure objective de la valeur | Laurent Serre',
+  title: 'L’argent n’est pas le problème, c’est la valeur',
   description:
     'Quand un prospect dit qu’il n’a pas le budget, le vrai sujet est souvent ailleurs. L’argent mesure surtout la valeur perçue, la priorité et la confiance accordée à la décision.',
   keywords:
