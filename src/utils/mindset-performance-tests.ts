@@ -31,7 +31,7 @@ const MINDSET_PERFORMANCE_PAGES = [
     filePath: 'src/app/ressources/meilleurs-livres/mindset-performance/atomic-habits/page.tsx'
   },
   {
-    url: '/ressources/meilleurs-livres/mindset-performance/the-7-habits',
+    url: '/ressources/meilleurs-livres/mindset-performance/7-habitudes-gens-efficaces',
     filePath: 'src/app/ressources/meilleurs-livres/mindset-performance/7-habitudes-gens-efficaces/page.tsx'
   },
   {

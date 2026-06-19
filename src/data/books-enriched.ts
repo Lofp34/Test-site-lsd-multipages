@@ -1062,10 +1062,10 @@ export const mindsetPerformanceCategory: BookCategory = {
       terrainAdvice: "LE livre que je recommande à tous mes clients commerciaux. Clear a réussi à rendre la science des habitudes accessible et applicable. \n\nCe qui marche vraiment en commercial :\n- La règle des 2 minutes : commencer petit (2 appels par jour plutôt que 20)\n- L'empilement d'habitudes : après mon café, je fais ma prospection\n- Le suivi visuel : cocher ses appels sur un calendrier\n\nErreur à éviter : vouloir tout changer d'un coup. Choisissez UNE habitude commerciale et maîtrisez-la avant d'en ajouter une autre. La constance bat l'intensité.",
       rating: 4.8,
       category: "mindset-performance",
-      complementaryBooks: ["the-7-habits", "mindset", "deep-work"]
+      complementaryBooks: ["7-habitudes-gens-efficaces", "mindset-new-psychology-success", "deep-work"]
     },
     {
-      slug: "the-7-habits",
+      slug: "7-habitudes-gens-efficaces",
       title: "Les 7 habitudes des gens très efficaces",
       author: "Stephen R. Covey",
       year: 1989,
@@ -1098,7 +1098,7 @@ export const mindsetPerformanceCategory: BookCategory = {
       complementaryBooks: ["atomic-habits", "leaders-eat-last", "good-to-great"]
     },
     {
-      slug: "mindset",
+      slug: "mindset-new-psychology-success",
       title: "Mindset: The New Psychology of Success",
       author: "Carol Dweck",
       year: 2006,
@@ -1127,7 +1127,7 @@ export const mindsetPerformanceCategory: BookCategory = {
       terrainAdvice: "Un livre qui change la donne pour tous les commerciaux qui se découragent face aux refus. Dweck explique pourquoi certains rebondissent et d'autres abandonnent.\n\nCe qui transforme vraiment :\n- Remplacer 'Je suis nul en prospection' par 'Je ne maîtrise pas encore la prospection'\n- Voir chaque objection comme un puzzle à résoudre, pas comme un rejet personnel\n- Célébrer les progrès : 'Cette semaine j'ai eu 3 RDV vs 1 la semaine dernière'\n\nPour les managers : arrêtez de dire 'Tu es doué' et commencez par 'Tu as bien travaillé ta préparation'. Ça change tout.",
       rating: 4.5,
       category: "mindset-performance",
-      complementaryBooks: ["atomic-habits", "grit", "the-7-habits"]
+      complementaryBooks: ["atomic-habits", "grit", "7-habitudes-gens-efficaces"]
     },
     {
       slug: "grit-power-passion-perseverance",
@@ -1159,7 +1159,7 @@ export const mindsetPerformanceCategory: BookCategory = {
       terrainAdvice: "Un livre essentiel pour tous les commerciaux qui baissent les bras trop vite. Duckworth explique scientifiquement pourquoi certains tiennent bon et d'autres abandonnent.\n\nCe qui transforme en prospection :\n- Voir les 100 'non' comme le chemin vers les 10 'oui'\n- Développer une passion pour résoudre les problèmes clients (pas juste vendre)\n- Créer des défis progressifs : cette semaine 5 appels, la prochaine 7\n- Célébrer les progrès, même petits : 'J'ai eu 2 RDV cette semaine vs 0 la précédente'\n\nPour les managers : arrêtez de recruter que sur le talent. Cherchez le grit. Un commercial moyen avec du grit battra toujours un talent sans persévérance.",
       rating: 4.7,
       category: "mindset-performance",
-      complementaryBooks: ["mindset", "atomic-habits", "cant-hurt-me"]
+      complementaryBooks: ["mindset-new-psychology-success", "atomic-habits", "cant-hurt-me"]
     },
     {
       slug: "the-power-of-now",
@@ -1191,7 +1191,7 @@ export const mindsetPerformanceCategory: BookCategory = {
       terrainAdvice: "Un livre qui divise : soit ça vous parle, soit vous trouvez ça trop 'spirituel'. Mais pour ceux qui accrochent, c'est transformateur.\n\nCe qui marche en commercial :\n- La présence totale en RDV client (ils le sentent immédiatement)\n- L'acceptation des refus sans résistance mentale (moins de stress)\n- L'écoute sans préparer sa réponse (découverte client plus profonde)\n\nAttention : ne devenez pas trop zen au point de perdre votre drive commercial ! L'idée c'est d'être présent ET performant, pas passif. À doser selon votre personnalité.",
       rating: 4.1,
       category: "mindset-performance",
-      complementaryBooks: ["deep-work", "the-7-habits", "leaders-eat-last"]
+      complementaryBooks: ["deep-work", "7-habitudes-gens-efficaces", "leaders-eat-last"]
     },
     {
       slug: "cant-hurt-me",
@@ -1223,7 +1223,7 @@ export const mindsetPerformanceCategory: BookCategory = {
       terrainAdvice: "Attention : c'est du lourd ! Goggins ne fait pas dans la dentelle. Si vous cherchez du développement personnel 'cocooning', passez votre chemin.\n\nCe qui marche en commercial :\n- La règle des 40% : quand vous pensez avoir épuisé vos prospects, vous n'êtes qu'au début\n- L'Accountability Mirror : 'Pourquoi je n'ai pas atteint mes objectifs ? Quelles sont mes vraies excuses ?'\n- Le cookie jar : se rappeler ses plus belles ventes quand ça va mal\n\nRisque : tomber dans l'extrême et se griller. L'idée c'est d'être plus résilient, pas de se détruire. Adaptez à votre contexte !",
       rating: 4.3,
       category: "mindset-performance",
-      complementaryBooks: ["grit", "mindset", "atomic-habits"]
+      complementaryBooks: ["grit", "mindset-new-psychology-success", "atomic-habits"]
     },
     {
       slug: "peak-performance",
@@ -1255,7 +1255,7 @@ export const mindsetPerformanceCategory: BookCategory = {
       terrainAdvice: "Enfin un livre sur la performance qui ne prône pas le 'toujours plus' ! Stulberg et Magness ont compris que l'excellence vient de l'alternance intelligente effort/récupération.\n\nCe qui change tout en commercial :\n- Planifier ses périodes de prospection intensive ET ses moments de récupération\n- Développer une routine pré-RDV (comme les sportifs de haut niveau)\n- Accepter que les périodes difficiles font partie du processus\n\nErreur classique : croire qu'on peut être à fond 24h/24. Résultat : burn-out garanti. La vraie performance, c'est savoir quand pousser et quand récupérer.",
       rating: 4.4,
       category: "mindset-performance",
-      complementaryBooks: ["atomic-habits", "deep-work", "the-7-habits"]
+      complementaryBooks: ["atomic-habits", "deep-work", "7-habitudes-gens-efficaces"]
     }
   ]
 };

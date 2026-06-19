@@ -10,7 +10,7 @@ import { categoryBreadcrumbSuggestions } from '@/utils/cross-category-suggestion
 import React from 'react';
 
 // Trouver le livre dans les données de façon sécurisée
-const book = mindsetPerformanceCategory.books.find(b => b.slug === 'mindset');
+const book = mindsetPerformanceCategory.books.find(b => b.slug === 'mindset-new-psychology-success');
 
 if (!book) {
   throw new Error('Livre Mindset non trouvé dans les données');

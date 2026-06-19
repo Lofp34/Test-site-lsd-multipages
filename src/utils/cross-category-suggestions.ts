@@ -218,7 +218,7 @@ const crossCategorySuggestionRules: Record<string, Record<string, string[]>> = {
     ],
     'mindset-performance': [
       'atomic-habits', // Habitudes pour l'adoption des outils digitaux
-      'mindset' // Mindset de croissance pour s'adapter aux nouvelles technologies
+      'mindset-new-psychology-success' // Mindset de croissance pour s'adapter aux nouvelles technologies
     ]
   },
   'sales-management': {
@@ -228,7 +228,7 @@ const crossCategorySuggestionRules: Record<string, Record<string, string[]>> = {
       'lean-startup' // Agilité et innovation managériale
     ],
     'mindset-performance': [
-      'the-7-habits', // Leadership personnel pour manager efficacement
+      '7-habitudes-gens-efficaces', // Leadership personnel pour manager efficacement
       'atomic-habits' // Construire des habitudes de management performantes
     ]
   },
@@ -356,13 +356,13 @@ const suggestionReasons: Record<string, Record<string, string>> = {
     'high-output-management': 'Pour optimiser la productivité de votre équipe dans un environnement digital.',
     'blue-ocean-strategy': 'Pour créer de nouveaux espaces de marché grâce aux technologies digitales.',
     'atomic-habits': 'Pour développer les habitudes nécessaires à l\'adoption efficace des outils digitaux.',
-    'mindset': 'Pour cultiver le mindset de croissance nécessaire à l\'adaptation aux nouvelles technologies.'
+    'mindset-new-psychology-success': 'Pour cultiver le mindset de croissance nécessaire à l\'adaptation aux nouvelles technologies.'
   },
   'sales-management': {
     'human-machine': 'Pour comprendre comment l\'IA peut augmenter les capacités de management de votre équipe.',
     'the-second-machine-age': 'Pour anticiper l\'impact des technologies numériques sur votre organisation commerciale.',
     'lean-startup': 'Pour adopter une approche agile et innovante dans le management de vos équipes.',
-    'the-7-habits': 'Pour développer un leadership personnel solide, base de tout management efficace.',
+    '7-habitudes-gens-efficaces': 'Pour développer un leadership personnel solide, base de tout management efficace.',
     'atomic-habits': 'Pour construire des habitudes de management qui transforment durablement vos équipes.'
   },
   'mindset-performance': {
@@ -930,7 +930,7 @@ export function generateIntelligentRecommendations(
       {
         targetCategory: 'mindset-performance',
         targetCategoryTitle: 'Mindset & Performance',
-        bookSlugs: ['atomic-habits', 'mindset'],
+        bookSlugs: ['atomic-habits', 'mindset-new-psychology-success'],
         complementarityReason: 'L\'adoption des outils digitaux nécessite un changement de mindset',
         businessValue: 'Accélérez votre transformation digitale en développant les bonnes habitudes'
       }
