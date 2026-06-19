@@ -119,6 +119,11 @@ export const linkRedirects: RedirectRule[] = [
     source: "/ressources/meilleurs-livres/mindset-performance/the-7-habits",
     destination: "/ressources/meilleurs-livres/mindset-performance/7-habitudes-gens-efficaces",
     permanent: true
+  },
+  {
+    source: "/ressources/meilleurs-livres/methodes-processus",
+    destination: "/ressources/meilleurs-livres/methodes-process",
+    permanent: true
   }
 ];
 
