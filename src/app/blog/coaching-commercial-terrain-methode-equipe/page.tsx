@@ -9,7 +9,7 @@ const heroImage = '/images/blog/coaching-terrain-methode/coaching-terrain-method
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/coaching-terrain-methode/coaching-terrain-methode-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Coaching commercial terrain : la méthode qui transforme vraiment les pratiques de votre équipe | Laurent Serre',
+  title: 'Coaching commercial terrain : la méthode qui transforme',
   description:
     'Les formations en salle ne changent presque rien aux pratiques. Le coaching terrain, oui, à condition de suivre une méthode précise en 4 temps. Découvrez le protocole qui transforme durablement une équipe commerciale.',
   keywords:

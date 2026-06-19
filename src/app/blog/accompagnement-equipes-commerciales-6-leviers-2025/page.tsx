@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: "Accompagnement des équipes commerciales : 6 leviers d’expert pour booster vos ventes en 2025 | Laurent Serre",
+  title: "Accompagnement équipes commerciales : 6 leviers terrain",
   description: "Méthode concrète pour structurer l’accompagnement commercial et faire monter vos équipes en compétences : modèles, leviers humains et technos, et guide pratique d’externalisation.",
   keywords: 'accompagnement commercial, direction commerciale externalisée, coaching commercial, sales enablement, management commercial, IA marketing',
   alternates: {

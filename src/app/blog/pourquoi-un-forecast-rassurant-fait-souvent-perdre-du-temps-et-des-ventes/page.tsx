@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Prévisions commerciales : les chiffres qui rassurent font souvent perdre des ventes | Laurent Serre',
+  title: 'Prévisions commerciales : quand les chiffres rassurent mal',
   description:
     'Des prévisions commerciales rassurantes ne prouvent pas que les ventes avancent. Souvent, elles masquent surtout des affaires déjà fragiles.',
   keywords:

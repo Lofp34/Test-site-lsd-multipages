@@ -9,7 +9,7 @@ const slug = 'high-output-management-andy-grove-pme-equipe-commerciale';
 const baseUrl = 'https://www.laurentserre.com';
 
 export const metadata: Metadata = {
-  title: 'High Output Management appliqué à la PME : 5 leçons d\'Andy Grove pour piloter votre équipe commerciale | Laurent Serre',
+  title: 'High Output Management : 5 leçons d'Andy Grove pour la PME',
   description:
     'Les 5 leçons du livre High Output Management d\'Andy Grove appliquées à la gestion d\'une équipe commerciale en PME : réunion, indicateurs, objectifs, management différencié, délégation — par Laurent Serre, 20 ans de terrain.',
   keywords:

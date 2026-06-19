@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi beaucoup de relances commerciales affaiblissent la vente au lieu de la faire avancer | Laurent Serre',
+  title: 'Relances commerciales : quand elles affaiblissent la vente',
   description:
     'Quand une relance commerciale devient un réflexe, elle dégrade souvent la valeur perçue, la posture du vendeur et la dynamique de décision. Le vrai sujet est rarement la fréquence seule.',
   keywords:

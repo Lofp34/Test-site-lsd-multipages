@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'IA et prospection commerciale : ce qui change vraiment pour vos équipes en 2026 | Laurent Serre',
+  title: 'IA et prospection B2B : ce qui change en 2026',
   description:
     'L\'IA ne remplace pas vos commerciaux. Elle amplifie leur capacité à être pertinents. Voici ce qui change concrètement sur le terrain pour les PME.',
   keywords:

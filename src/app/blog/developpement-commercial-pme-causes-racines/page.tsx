@@ -11,7 +11,7 @@ const heroImageAbsolute = 'https://raw.githubusercontent.com/Lofp34/Test-site-ls
 const carouselPrefix = '/images/blog/2026-06-08-causes-racines/carrousel';
 
 export const metadata: Metadata = {
-  title: "Pourquoi le développement commercial des PME patine (et ce qu'il faut regarder à la place) | Laurent Serre",
+  title: "Développement commercial PME : pourquoi ça patine",
   description:
     "Segmenter, aligner marketing et commercial, cartographier la décision. Trois déséquilibres qui plombent le développement des PME même quand elles font tout bien. Par Laurent Serre.",
   keywords:

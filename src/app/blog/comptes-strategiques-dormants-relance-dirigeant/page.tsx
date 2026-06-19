@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Comptes stratégiques dormants : la relance que les dirigeants oublient trop souvent | Laurent Serre',
+  title: 'Comptes stratégiques dormants : la relance oubliée',
   description: 'Comment réactiver des comptes stratégiques dormants sans abîmer la relation, recréer de la valeur business et générer des opportunités plus crédibles que de la prospection froide.',
   keywords: 'comptes stratégiques dormants, relance commerciale, directeur commercial, dirigeant PME, account management B2B, bootcamp commercial',
   alternates: {

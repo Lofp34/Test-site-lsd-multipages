@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Passer de commercial à dirco, puis de dirco à entrepreneur : trois métiers, trois pièges | Laurent Serre',
+  title: 'Commercial → dirco → entrepreneur : trois métiers, trois pièges',
   description:
     'Passer de commercial à directeur commercial, puis de dirco à entrepreneur, ce ne sont pas des promotions. Ce sont trois métiers différents. Voici pourquoi les meilleurs se plantent en changeant d’étage, et ce qu’il faut vraiment installer pour tenir.',
   keywords:

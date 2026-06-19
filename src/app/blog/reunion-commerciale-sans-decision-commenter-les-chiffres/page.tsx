@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Une réunion commerciale sans décision apprend surtout à commenter les chiffres | Laurent Serre',
+  title: 'Réunion commerciale sans décision : le piège des chiffres',
   description:
     'Quand une réunion commerciale se contente de commenter les chiffres sans trancher, elle donne une impression de sérieux mais ne fait presque jamais avancer les ventes.',
   keywords:

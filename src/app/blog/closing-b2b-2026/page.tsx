@@ -9,7 +9,7 @@ const heroImage = '/images/blog/closing-b2b-2026/closing-b2b-2026-hero.webp';
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/closing-b2b-2026/closing-b2b-2026-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Closing B2B en 2026 : les techniques ne marchent plus. Voici ce qui marche. | Laurent Serre',
+  title: 'Closing B2B 2026 : pourquoi les techniques ne marchent plus',
   description:
     'Le closing a changé. Les techniques manipulatrices (alternative close, urgence factice) ne fonctionnent plus face à des acheteurs hyper-informés. Laurent Serre partage son expérience terrain : ce qui fait vraiment signer en 2026.',
   keywords:

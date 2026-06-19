@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Manager commercial : à force de sauver les rendez-vous, vous affaiblissez l’équipe | Laurent Serre',
+  title: 'Manager commercial : sauver les rendez-vous affaiblit l’équipe',
   description:
     'Quand un manager commercial reprend trop souvent les rendez-vous à la place de l’équipe, il rassure sur le moment mais il apprend surtout aux commerciaux à attendre qu’on les sauve.',
   keywords:

@@ -11,7 +11,7 @@ const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/2026-06-07-e
 const carouselPrefix = '/images/blog/carrousel-erreurs-developpement-commercial';
 
 export const metadata: Metadata = {
-  title: 'Développement commercial PME : les 6 erreurs qui coûtent cher (et comment les éviter) | Laurent Serre',
+  title: 'Développement commercial PME : 6 erreurs qui coûtent cher',
   description:
     'Recrutement d\'un commercial star, CRM avant le processus, dispersion sur tous les canaux : les 6 erreurs terrain qui sabotent le développement commercial des PME et les corrections immédiates.',
   keywords:

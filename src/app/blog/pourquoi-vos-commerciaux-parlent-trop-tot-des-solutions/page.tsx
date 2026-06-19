@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi vos commerciaux parlent trop tôt de leur solution, et ce que ça vous coûte | Laurent Serre',
+  title: 'Commerciaux : pourquoi parler trop tôt des solutions tue la vente',
   description:
     'Le problème n’est pas qu’un commercial parle de son produit. Le problème, c’est qu’il le fait pour éviter les vraies questions. Et ça se paie ensuite en rendez-vous mous, en devis envoyés trop tôt et en silence côté client.',
   keywords:

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Les erreurs d’onboarding commercial qui vont plomber la performance du nouveau | Laurent Serre',
+  title: 'Onboarding commercial : les erreurs qui plombent la performance',
   description:
     'Un recrutement commercial peut échouer dès les premières semaines. Les erreurs d’onboarding coûtent cher : pipeline fragile, posture hésitante et conversion affaiblie.',
   keywords:

@@ -5,7 +5,7 @@ import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
 
 export const metadata: Metadata = {
-  title: "Vous n'avez pas besoin d'un plan stratégique. Vous avez besoin d'un cadre qui tient dans une page. | Laurent Serre",
+  title: "Stratégie commerciale PME : un cadre qui tient sur une page",
   description:
     '47 slides, budget, SWOT, objectifs à 3 ans. Puis quatre questions qu\'il ne peut pas honorer. Le vrai problème des PME n\'est pas l\'absence de stratégie : c\'est l\'incapacité à choisir.',
   keywords:
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Vous n'avez pas besoin d'un plan stratégique. Vous avez besoin d'un cadre qui tient dans une page. | Laurent Serre",
+    title: "Stratégie commerciale PME : un cadre qui tient sur une page",
     description:
       'Un cadre qui tient sur une page vaut mieux que 47 slides que personne ne relit. Quatre questions, dans l\'ordre, pour choisir ce qui compte vraiment.',
     images: ['https://www.laurentserre.com/images/blog/2026-05-14-strategie-commerciale-pme-cadre-hero.webp'],

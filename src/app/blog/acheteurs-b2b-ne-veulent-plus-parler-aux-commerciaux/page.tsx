@@ -7,7 +7,7 @@ const heroImage = '/images/blog/acheteurs-b2b-70-hero.webp';
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/acheteurs-b2b-70-hero.webp';
 
 export const metadata: Metadata = {
-  title: '70% des acheteurs B2B ne veulent plus parler aux commerciaux, et c\'est une bonne nouvelle | Laurent Serre',
+  title: 'Acheteurs B2B : 70% ne veulent plus de commerciaux',
   description:
     'Gartner confirme : 70% des acheteurs B2B préfèrent une expérience 100% digitale sans commercial. Mais ce n\'est pas un rejet du conseil , c\'est un rejet du mauvais commercial. Analyse des chiffres et leçons terrain.',
   keywords:

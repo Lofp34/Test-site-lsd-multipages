@@ -27,7 +27,7 @@ const heroImage = '/images/blog/blocages-dirigeant-performance-commerciale/bloca
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/blocages-dirigeant-performance-commerciale/blocages-dirigeant-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Performance commerciale : 5 blocages de dirigeant qui sabotent vos résultats | Laurent Serre',
+  title: 'Performance commerciale : 5 blocages du dirigeant',
   description:
     'Vous pensez que vos commerciaux sont le problème ? Et si le vrai blocage était dans votre propre comportement ? Laurent Serre décrypte les 5 blocages de dirigeant qui plombent la performance.',
   keywords:
