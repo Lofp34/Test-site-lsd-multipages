@@ -83,7 +83,7 @@ const faqItems = [
       'La fatigue mentale du commercial terrain se gère avec des micro-rituels de décompression entre chaque rendez-vous : 10 minutes de pause sans écran, noter à froid ce qui s\'est vraiment passé dans l\'entretien (pas dans le CRM), fermer les yeux ou marcher 5 minutes. Le piège est d\'enchaîner : un commercial qui sort d\'un rendez-vous et attaque immédiatement le suivant transporte la charge émotionnelle du précédent. Ces 10 minutes ne sont pas du temps perdu, ce sont des minutes de récupération qui préservent l\'acuité commerciale.',
   },
   {
-    'question': 'Quels sont les signes annonciateurs du burn-out commercial ?',
+    question: 'Quels sont les signes annonciateurs du burn-out commercial ?',
     answer:
       'Le premier signe prédictif d\'épuisement chez un commercial terrain n\'est pas la baisse de résultats mais la perte de plaisir à préparer un rendez-vous. Un commercial qui « bâcle » sa préparation, qui arrive en retard, qui répète les mêmes arguments sans les adapter, est déjà en zone de fatigue. Le second signe est l\'évitement : le commercial trouve des excuses pour ne pas prendre la route, il préfère un appel plutôt qu\'un déplacement, il « oublie » de relancer. Ces signes précèdent de 3 à 4 semaines la baisse de chiffre.',
   },
@@ -221,17 +221,13 @@ export default function FatigueCommercialTerrainPage() {
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
-          <div className="mb-8">
-            <AuthorCard />
-          </div>
-
           {/* TL;DR */}
           <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
             <p className="text-sm font-semibold text-mint-green mb-2">
               Ce qu&apos;il faut retenir
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Un commercial terrain ne tient pas sur son énergie, il tient sur son rythme. Enchaîner les rendez-vous sans préparation ni récupération, c&apos;est le meilleur chemin vers l&apos;épuisement. Voici 4 piliers concrets, testés sur le terrain avec des équipes commerciales, pour durer sans s&apos;user.
+              Un commercial terrain ne tient pas sur son énergie, il tient sur son rythme. 4 piliers testés sur le terrain pour durer sans s&apos;user : ratio rendez-vous/préparation, 3 types de journées, protocole de décompression, indicateur prédictif d&apos;épuisement.
             </p>
           </div>
 
@@ -263,6 +259,16 @@ export default function FatigueCommercialTerrainPage() {
             </div>
           </div>
 
+          {/* CTA SOFT — après carrousel */}
+          <div className="mb-6 text-center">
+            <Link
+              href="/diagnostic"
+              className="inline-flex items-center gap-2 bg-mint-green/10 text-mint-green text-sm font-medium px-4 py-2 rounded-full hover:bg-mint-green/20 transition-colors"
+            >
+              🔍 Vos commerciaux fatiguent sans que les chiffres ne le montrent encore ? Faites un diagnostic →
+            </Link>
+          </div>
+
           <p className="lead text-xl text-gray-700 leading-relaxed mb-8">
             Le yoga et la méditation ne sauveront pas votre équipe commerciale. Voici ce qui marche vraiment sur le terrain.
           </p>
@@ -279,7 +285,7 @@ export default function FatigueCommercialTerrainPage() {
             J&apos;ai accompagné des équipes commerciales entières sur ce sujet. Pas avec des exercices de respiration. Avec des changements de rythme concrets, qui s&apos;appliquent dans l&apos;agenda du lundi matin. Voilà ce qui tient.
           </p>
 
-          <h2>Pilier 1 : le bon ratio rendez-vous / préparation</h2>
+          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Pilier 1 : le bon ratio rendez-vous / préparation</h2>
 
           <p>
             Le piège numéro un du commercial terrain, c&apos;est de croire que &laquo; plus de rendez-vous = plus de ventes &raquo;. C&apos;est faux. Au-delà de 4 rendez-vous par jour, la qualité de l&apos;écoute chute, la préparation devient inexistante, et le débrief se limite à trois lignes dans le CRM.
@@ -293,7 +299,7 @@ export default function FatigueCommercialTerrainPage() {
             Un commercial qui prépare 30 minutes un rendez-vous identifie l&apos;enjeu, le vrai décideur attendu, le point de blocage probable. Un commercial qui enchaîne arrive avec ses arguments génériques et repart sans avoir avancé. La différence, c&apos;est 30 minutes.
           </p>
 
-          <h2>Pilier 2 : la méthode des 3 types de journées</h2>
+          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Pilier 2 : la méthode des 3 types de journées</h2>
 
           <p>
             Le problème des commerciaux terrain, c&apos;est que toutes leurs journées se ressemblent : départ tôt, rendez-vous, route, rendez-vous, appel, route, retour. Même intensité, même pression, tous les jours.
@@ -303,7 +309,7 @@ export default function FatigueCommercialTerrainPage() {
             Une équipe que j&apos;ai coachée a testé la segmentation en 3 profils de journée :
           </p>
 
-          <ul>
+          <ul className="space-y-2 text-sm text-gray-700">
             <li><strong>Journée offensive</strong> : rendez-vous clients, prospection terrain. Pas plus de 2 par semaine.</li>
             <li><strong>Journée build</strong> : préparation de rendez-vous, formation, CRM, veille concurrentielle. 1 à 2 par semaine.</li>
             <li><strong>Journée récupération</strong> : administratif allégé, débriefs, point avec le manager. 1 par semaine.</li>
@@ -317,7 +323,7 @@ export default function FatigueCommercialTerrainPage() {
             La règle : <strong>ne jamais enchaîner plus de 2 journées offensives sans une journée build ou récupération</strong>.
           </p>
 
-          <h2>Pilier 3 : le protocole de décompression entre deux rendez-vous</h2>
+          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Pilier 3 : le protocole de décompression entre deux rendez-vous</h2>
 
           <p>
             Le geste qui use le plus un commercial terrain, ce n&apos;est pas la route ni le rendez-vous difficile. C&apos;est l&apos;enchaînement. Le cerveau n&apos;a pas le temps de &laquo; déposer &raquo; l&apos;entretien précédent qu&apos;il est déjà dans le suivant.
@@ -327,7 +333,7 @@ export default function FatigueCommercialTerrainPage() {
             Mon protocole est simple et prend 10 minutes :
           </p>
 
-          <ul>
+          <ul className="space-y-2 text-sm text-gray-700">
             <li>sortir de la voiture et marcher 3 minutes sans téléphone</li>
             <li>noter à froid 3 choses : ce qui s&apos;est vraiment passé, ce qui a coincé, ce qu&apos;il faut retenir pour le prochain échange</li>
             <li>respirer 10 secondes avant d&apos;entrer chez le client suivant</li>
@@ -337,7 +343,23 @@ export default function FatigueCommercialTerrainPage() {
             Ces 10 minutes ne sont pas du temps perdu. Ce sont des minutes de récupération qui préservent l&apos;acuité commerciale. Un commercial qui arrive à son 4e rendez-vous de la journée avec la même fraîcheur qu&apos;au premier, c&apos;est ça qui fait la différence.
           </p>
 
-          <h2>Pilier 4 : l&apos;indicateur prédictif d&apos;épuisement</h2>
+          {/* CTA MEDIUM — entre piliers 3 et 4 */}
+          <div className="bg-gradient-to-r from-mint-green/10 to-blue-ink/5 border border-mint-green/20 rounded-2xl p-6 my-10 text-center">
+            <p className="text-lg font-title font-bold text-blue-ink mb-3">
+              Vous voulez savoir si le rythme de votre équipe est tenable ?
+            </p>
+            <p className="text-gray-600 mb-5 max-w-xl mx-auto">
+              Un diagnostic terrain de 2 heures suffit pour identifier les ajustements qui redonneront de l&apos;air sans perdre en performance.
+            </p>
+            <Link
+              href="/diagnostic"
+              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-blue-ink hover:bg-blue-ink/90 transition-colors"
+            >
+              Demander un diagnostic offert
+            </Link>
+          </div>
+
+          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Pilier 4 : l&apos;indicateur prédictif d&apos;épuisement</h2>
 
           <p>
             Les managers attendent souvent la baisse de chiffre pour réagir. Trop tard. Le vrai signal arrive 3 à 4 semaines avant, et il est simple à repérer : <strong>la perte de plaisir à préparer un rendez-vous</strong>.
@@ -351,7 +373,7 @@ export default function FatigueCommercialTerrainPage() {
             Le second signe, c&apos;est l&apos;évitement : le commercial trouve une raison pour ne pas prendre la route, propose un appel plutôt qu&apos;un déplacement, &laquo; oublie &raquo; de relancer. Ce n&apos;est pas de la démotivation. C&apos;est du carburant qui n&apos;a pas été renouvelé.
           </p>
 
-          <h2>Ce que le manager peut faire (et ne doit pas faire)</h2>
+          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Ce que le manager peut faire (et ne doit pas faire)</h2>
 
           <p>
             Ce que le manager ne doit pas faire : mettre de la pression supplémentaire, multiplier les réunions internes, confondre fatigue passagère et baisse de motivation, ou pire : lancer un challenge commercial quand son meilleur élément est en zone rouge.
@@ -361,7 +383,7 @@ export default function FatigueCommercialTerrainPage() {
             Ce que le manager peut faire :
           </p>
 
-          <ul>
+          <ul className="space-y-2 text-sm text-gray-700">
             <li>ajuster les objectifs à la réalité du terrain</li>
             <li>instaurer un check-in de 10 minutes chaque matin : &laquo; Comment tu te sens aujourd&apos;hui ? &raquo; pas &laquo; Combien de rendez-vous aujourd&apos;hui ? &raquo;</li>
             <li>protéger les journées build et récupération dans l&apos;agenda</li>
@@ -376,20 +398,45 @@ export default function FatigueCommercialTerrainPage() {
             La question que je pose à chaque manager avec qui je travaille : <strong>&laquo; À quand remonte la dernière fois où vous avez demandé à votre meilleur commercial comment il va, vraiment, sans parler de chiffre ? &raquo;</strong>
           </p>
 
-          {/* CTA Principal */}
-          <div className="mt-12 bg-gradient-to-br from-mint-green/10 to-blue-ink/5 border border-mint-green/20 rounded-2xl p-8">
-            <h3 className="text-xl font-title font-bold text-blue-ink mb-3">
-              Vous sentez que vos commerciaux fatiguent ?
-            </h3>
-            <p className="text-gray-600 mb-6">
-              Un diagnostic terrain de 2 heures pour analyser le rythme de votre équipe et identifier les ajustements qui redonneront de l&apos;air sans perdre en performance.
+          {/* ════════ POUR ALLER PLUS LOIN ════════ */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li>
+                <Link href="/blog/coaching-commercial-terrain-5-leviers-transformation-equipe" className="text-mint-green hover:underline font-medium">
+                  Coaching commercial terrain : 5 leviers de transformation d&apos;équipe
+                </Link>
+                <span className="text-gray-500"> — Les leviers concrets pour transformer une équipe essoufflée en équipe performante.</span>
+              </li>
+              <li>
+                <Link href="/blog/coaching-commercial-terrain-methode-equipe" className="text-mint-green hover:underline font-medium">
+                  Coaching commercial terrain : la méthode pour structurer votre équipe
+                </Link>
+                <span className="text-gray-500"> — Comment structurer durablement une équipe commerciale terrain.</span>
+              </li>
+              <li>
+                <Link href="/blog/blocages-dirigeant-performance-commerciale" className="text-mint-green hover:underline font-medium">
+                  Blocages du dirigeant et performance commerciale
+                </Link>
+                <span className="text-gray-500"> — Identifier les blocages du dirigeant qui freinent la performance de l&apos;équipe.</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* CTA FORT — bloc gradient, 2 boutons */}
+          <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
+            <h3 className="text-2xl font-title font-bold mb-4">Vous sentez que vos commerciaux fatiguent ?</h3>
+            <p className="mb-6">
+              Beaucoup de dirigeants découvrent l&apos;épuisement de leurs équipes quand les chiffres chutent. Un diagnostic permet de voir où le rythme coince, avant que la performance ne s&apos;effondre.
             </p>
-            <HubSpotForm
-              formId="bfcb27ea-9a97-48a2-9ee2-46b32b27ed69"
-              title="Diagnostic rythme commercial"
-              subtitle="Recevez une analyse personnalisée sous 48h"
-              buttonText="Demander un diagnostic offert"
-            />
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/diagnostic" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
+                Demander un diagnostic commercial
+              </Link>
+              <Link href="/bootcamp" className="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-full text-white hover:bg-white/10 transition-colors">
+                Découvrir le Bootcamp Méthodes de vente
+              </Link>
+            </div>
           </div>
 
           {/* FAQ Section */}
@@ -397,24 +444,26 @@ export default function FatigueCommercialTerrainPage() {
             <h2 className="text-2xl font-title font-bold text-blue-ink mb-8">
               Questions fréquentes sur la fatigue du commercial terrain
             </h2>
-            <div className="space-y-8" itemScope itemType="https://schema.org/FAQPage">
+            <div className="space-y-8">
               {faqItems.map((item, idx) => (
-                <div key={idx} itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
-                  <h3 className="text-lg font-semibold text-blue-ink mb-2" itemProp="name">
+                <div key={idx}>
+                  <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">
                     {item.question}
                   </h3>
-                  <div itemScope itemType="https://schema.org/Answer" itemProp="acceptedAnswer">
-                    <p className="text-gray-600 leading-relaxed" itemProp="text">
-                      {item.answer}
-                    </p>
-                  </div>
+                  <p className="text-gray-600 leading-relaxed">
+                    {item.answer}
+                  </p>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* CTA Secondaire */}
-          <div className="mt-12 p-6 bg-gray-50 rounded-xl border border-gray-200 text-center">
+          {/* AuthorCard + CTA secondaire */}
+          <div className="mt-12">
+            <AuthorCard />
+          </div>
+
+          <div className="mt-8 p-6 bg-gray-50 rounded-xl border border-gray-200 text-center">
             <p className="text-sm text-gray-500">
               Coach commercial terrain depuis 15 ans. J&apos;accompagne les équipes commerciales de PME B2B à tenir la distance et à performer sans s&apos;épuiser.{' '}
               <Link href="/contact" className="text-mint-green hover:text-mint-green/80 font-medium transition-colors">
