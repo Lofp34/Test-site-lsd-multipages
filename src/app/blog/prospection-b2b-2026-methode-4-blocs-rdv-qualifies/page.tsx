@@ -244,6 +244,17 @@ export default function ProspectionB2B4BlocsPage() {
             <li>Faire une revue d&apos;équipe chaque vendredi</li>
           </ul>
 
+          
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/erreurs-fatales-prospection-b2b" className="text-mint-green hover:underline font-medium">Erreurs fatales de prospection B2B</Link></li>
+              <li><Link href="/blog/qualification-commerciale-b2b-7-erreurs" className="text-mint-green hover:underline font-medium">Qualification B2B : 7 erreurs</Link></li>
+              <li><Link href="/blog/le-telephone-nest-pas-mort-mais-lappel-au-hasard-lest" className="text-mint-green hover:underline font-medium">Le téléphone n'est pas mort, l'appel au hasard si</Link></li>
+            </ul>
+          </div>
+
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <h3 className="text-2xl font-title font-bold mb-4">Passer de l&apos;activité au pipeline qui convertit</h3>
             <p className="mb-6">

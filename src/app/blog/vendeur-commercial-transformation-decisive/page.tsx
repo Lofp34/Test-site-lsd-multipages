@@ -432,6 +432,17 @@ export default function Article5() {
             pas des preneurs de commande.
           </p>
 
+          
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/commercial-en-2026-competences-qui-feront-difference" className="text-mint-green hover:underline font-medium">Le commercial en 2026</Link></li>
+              <li><Link href="/blog/recrutement-commercial-en-pme-arretez-de-recruter-a-l-instinct" className="text-mint-green hover:underline font-medium">Recrutement commercial en PME</Link></li>
+              <li><Link href="/blog/coaching-developpement-commercial-guide-complet-pme" className="text-mint-green hover:underline font-medium">Coaching et développement commercial : guide complet</Link></li>
+            </ul>
+          </div>
+
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <h3 className="text-2xl font-title font-bold mb-4">
               Prêt à transformer votre équipe ?

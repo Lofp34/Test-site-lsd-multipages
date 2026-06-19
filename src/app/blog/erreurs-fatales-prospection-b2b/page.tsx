@@ -267,6 +267,17 @@ export default function Article3() {
             Sans mesure, impossible d'améliorer. Les meilleurs commerciaux sont obsédés par leurs KPI.
           </p>
 
+          
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/prospection-b2b-2026-methode-4-blocs-rdv-qualifies" className="text-mint-green hover:underline font-medium">Prospection B2B 2026 : la méthode en 4 blocs</Link></li>
+              <li><Link href="/blog/linkedin-prospection-b2b-50-messages-par-jour" className="text-mint-green hover:underline font-medium">LinkedIn : 50 messages par jour</Link></li>
+              <li><Link href="/blog/plan-prospection-commerciale-machine-leads-annee" className="text-mint-green hover:underline font-medium">Plan de prospection : la machine à leads</Link></li>
+            </ul>
+          </div>
+
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <h3 className="text-2xl font-title font-bold mb-4">
               Transformez votre prospection

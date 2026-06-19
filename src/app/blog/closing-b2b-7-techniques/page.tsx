@@ -339,6 +339,17 @@ Laurent
           <p className="mb-2"><strong>3) Comment traiter l'objection prix sans brader ?</strong> Business case (coût d'inaction, payback), POC cadré, packs A/B clairs.</p>
           <p className="mb-6"><strong>4) Relance post-devis : quel rythme ?</strong> 21 jours : J+1 (résumé), J+3 (essentiels), J+7 (preuve/étude de cas), J+14 (objection), J+21 (déclosing ou date ferme).</p>
 
+          
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader" className="text-mint-green hover:underline font-medium">Techniques de closing B2B complètes</Link></li>
+              <li><Link href="/blog/commission-breath-3-mecanismes-tuent-closing" className="text-mint-green hover:underline font-medium">Commission breath : 3 mécanismes qui tuent le closing</Link></li>
+              <li><Link href="/blog/ia-closing-b2b-ce-qui-change-vraiment" className="text-mint-green hover:underline font-medium">IA et closing B2B : ce qui change vraiment</Link></li>
+            </ul>
+          </div>
+
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <h3 className="text-2xl font-title font-bold mb-3">Appel à l'action</h3>
             <div className="grid gap-3">

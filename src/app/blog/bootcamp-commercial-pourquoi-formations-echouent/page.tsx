@@ -279,6 +279,17 @@ export default function Article4() {
             <strong>5. Mesure d'impact</strong> : KPI suivis en temps réel, ajustements continus
           </p>
 
+          
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/coaching-commercial-terrain-methode-equipe" className="text-mint-green hover:underline font-medium">Coaching commercial terrain : la méthode</Link></li>
+              <li><Link href="/blog/sales-enablement-pme-structurer-performance-commerciale" className="text-mint-green hover:underline font-medium">Sales enablement PME : structurer la performance</Link></li>
+              <li><Link href="/blog/pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme" className="text-mint-green hover:underline font-medium">Pourquoi les bons commerciaux deviennent médiocres</Link></li>
+            </ul>
+          </div>
+
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <h3 className="text-2xl font-title font-bold mb-4">
               Prêt pour une formation qui marche vraiment ?

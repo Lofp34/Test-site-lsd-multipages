@@ -334,6 +334,17 @@ export default function TechniquesDeClosingB2B() {
 
           <p className="mb-8">Votre travail : rendre cette décision aussi claire et facile que possible.</p>
 
+          
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-10">
+            <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/closing-b2b-7-techniques" className="text-mint-green hover:underline font-medium">Closing B2B : 7 techniques</Link></li>
+              <li><Link href="/blog/negociation-commerciale-b2b-defendre-vos-prix-sans-jamais-casser-vos-marges" className="text-mint-green hover:underline font-medium">Négociation B2B : défendre ses prix</Link></li>
+              <li><Link href="/blog/gestion-des-objections-commerciales-transformer-le-non-en-opportunite" className="text-mint-green hover:underline font-medium">Gestion des objections commerciales</Link></li>
+            </ul>
+          </div>
+
           <div className="bg-gradient-to-r from-blue-ink to-blue-ink/90 text-white p-8 rounded-2xl my-12">
             <p className="mb-6">
               Si vos équipes peinent à conclure ou laissent trop d’affaires en « je réfléchis », on peut travailler ensemble dans le cadre d’une{' '}
