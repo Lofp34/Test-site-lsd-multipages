@@ -420,6 +420,12 @@ export default function FatigueCommercialTerrainPage() {
                 </Link>
                 <span className="text-gray-500"> — Identifier les blocages du dirigeant qui freinent la performance de l&apos;équipe.</span>
               </li>
+              <li>
+                <Link href="/blog/si-vous-pensez-encore-au-boulot-le-week-end-vous-ne-recuperez-pas" className="text-mint-green hover:underline font-medium">
+                  Si vous pensez encore au boulot le week-end, vous ne récupérez pas
+                </Link>
+                <span className="text-gray-500"> — La récupération du dirigeant comme condition de la performance durable.</span>
+              </li>
             </ul>
           </div>
 

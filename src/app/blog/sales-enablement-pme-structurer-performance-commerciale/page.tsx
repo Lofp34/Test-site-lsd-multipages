@@ -492,6 +492,12 @@ export default function SalesEnablementPMEPage() {
                 </Link>
                 <span className="block text-gray-500 mt-0.5">Le coaching terrain comme levier de structuration.</span>
               </li>
+              <li>
+                <Link href="/blog/high-output-management-andy-grove-pme-equipe-commerciale" className="text-mint-green hover:underline font-medium">
+                  High Output Management appliqué à la PME
+                </Link>
+                <span className="block text-gray-500 mt-0.5">Les 5 leçons d'Andy Grove pour piloter votre équipe commerciale.</span>
+              </li>
             </ul>
           </div>
 

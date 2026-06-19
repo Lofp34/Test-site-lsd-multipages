@@ -401,6 +401,12 @@ export default function ArticlePage() {
                 </Link>
                 <span className="text-gray-500"> — Pour éviter d&apos;envoyer une offre avant d&apos;avoir vraiment qualifié la décision.</span>
               </li>
+              <li>
+                <Link href="/blog/prochain-million-portefeuille-clients-expansion" className="text-mint-green hover:underline font-medium">
+                  Votre prochain million est dans votre portefeuille clients
+                </Link>
+                <span className="text-gray-500"> — Expansion de compte : la croissance la plus rentable est déjà dans votre base.</span>
+              </li>
             </ul>
           </div>
 

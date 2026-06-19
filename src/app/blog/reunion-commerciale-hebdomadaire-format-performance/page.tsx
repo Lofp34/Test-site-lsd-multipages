@@ -372,6 +372,12 @@ export default function ArticlePage() {
                 </Link>
                 <span className="text-gray-500"> — Le prolongement naturel : des objectifs clairs pour donner du sens aux réunions.</span>
               </li>
+              <li>
+                <Link href="/blog/reunion-commerciale-sans-decision-commenter-les-chiffres" className="text-mint-green hover:underline font-medium">
+                  Réunion commerciale sans décision
+                </Link>
+                <span className="text-gray-500"> — Quand la réunion devient un commentaire des chiffres sans action concrète.</span>
+              </li>
             </ul>
             <p className="mt-4 text-xs text-gray-400">
               Source E-E-A-T :{' '}

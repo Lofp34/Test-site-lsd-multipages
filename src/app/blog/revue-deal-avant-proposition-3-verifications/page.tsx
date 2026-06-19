@@ -250,6 +250,7 @@ export default function RevueDealAvantPropositionPage() {
               <ul className="space-y-3 text-sm">
                 <li><Link href="/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre" className="text-mint-green hover:underline font-medium">Construction d'un pipeline commercial PME fiable</Link> — Les fondamentaux pour bâtir un outil de pilotage solide.</li>
                 <li><Link href="/blog/pipeline-fantome-lundi-matin-test-9-minutes" className="text-mint-green hover:underline font-medium">Pipeline fantôme : test des 9 minutes</Link> — Identifier les faux deals avant qu'ils ne faussent le forecast.</li>
+                <li><Link href="/blog/vente-perdue-avant-non-b2b" className="text-mint-green hover:underline font-medium">La vente se perd avant le non</Link> — Les signaux de perte d'un deal bien avant la réponse finale.</li>
               </ul>
               <p className="text-xs text-gray-400 mt-3">
                 Voir aussi les <a href="https://www.salesforce.com/sales/pipeline/management/" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">meilleures pratiques Salesforce</a>.

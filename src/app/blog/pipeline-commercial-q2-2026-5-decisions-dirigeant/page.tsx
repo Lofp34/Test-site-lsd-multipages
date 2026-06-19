@@ -263,6 +263,7 @@ export default function PipelineCommercialQ22026Page() {
                 <li><Link href="/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre" className="text-mint-green hover:underline font-medium">Construire un pipeline commercial PME fiable</Link> — L&apos;article fondateur sur les étapes, indicateurs et bonnes pratiques.</li>
                 <li><Link href="/blog/pipeline-fantome-lundi-matin-test-9-minutes" className="text-mint-green hover:underline font-medium">Pipeline fantôme : le test des 9 minutes du lundi matin</Link> — Repérer les faux deals avant qu&apos;ils ne faussent votre forecast.</li>
                 <li><Link href="/blog/debut-avril-recharger-pipeline-sans-brader-t2" className="text-mint-green hover:underline font-medium">Recharger son pipeline T2 sans brader</Link> — Reconstituer un portefeuille d&apos;opportunités sans casser les prix.</li>
+                <li><Link href="/blog/pipeline-commercial-h2-2026-5-decisions-dirigeant" className="text-mint-green hover:underline font-medium">Pipeline H2 2026 : 5 décisions dirigeant</Link> — Préparer le second semestre avant la trêve estivale.</li>
               </ul>
               <p className="text-xs text-gray-400 mt-3">
                 Les standards de pilotage présentés ici sont alignés sur les <a href="https://www.salesforce.com/sales/pipeline/management/" target="_blank" rel="noopener noreferrer" className="text-mint-green hover:underline">meilleures pratiques Salesforce de gestion de pipeline</a>.

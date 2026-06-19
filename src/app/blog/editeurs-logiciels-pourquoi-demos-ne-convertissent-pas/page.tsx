@@ -617,6 +617,17 @@ export default function EditeursLogicielsDemosPage() {
                   {' '}: L'approche globale de transformation commerciale.
                 </span>
               </li>
+              <li>
+                <Link
+                  href="/blog/septeo-swot-analyse-logiciel-cabinet"
+                  className="text-mint-green hover:underline font-medium"
+                >
+                  Analyse SWOT de Septeo : forces, faiblesses, verdict
+                </Link>
+                <span className="text-gray-500">
+                  {' '}: Étude de cas d'un éditeur logiciel pour cabinets.
+                </span>
+              </li>
             </ul>
           </div>
 

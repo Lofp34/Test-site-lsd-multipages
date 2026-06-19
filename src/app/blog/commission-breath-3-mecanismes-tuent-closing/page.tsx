@@ -425,6 +425,7 @@ je te redirigerai vers quelque chose de mieux pour toi.&quot;
               <li><Link href="/blog/closing-b2b-2026" className="text-mint-green hover:underline font-medium">Closing B2B en 2026</Link></li>
               <li><Link href="/blog/ia-closing-b2b-ce-qui-change-vraiment" className="text-mint-green hover:underline font-medium">IA et closing B2B</Link></li>
               <li><Link href="/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader" className="text-mint-green hover:underline font-medium">Techniques de closing B2B</Link></li>
+              <li><Link href="/blog/remuneration-variable-commerciale-pme-5-erreurs" className="text-mint-green hover:underline font-medium">Plan de commission : 5 erreurs qui démotivent</Link></li>
             </ul>
           </div>
     </main>

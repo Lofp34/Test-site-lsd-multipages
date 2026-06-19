@@ -184,6 +184,7 @@ export default function ArticlePage() {
               <li><Link href="/blog/la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif" className="text-mint-green hover:underline font-medium">La peur du prix : le vrai problème</Link></li>
               <li><Link href="/blog/gestion-des-objections-commerciales-transformer-le-non-en-opportunite" className="text-mint-green hover:underline font-medium">Gestion des objections commerciales</Link></li>
               <li><Link href="/blog/pourquoi-meme-des-commerciaux-experimentes-se-font-encore-bananer-sur-lobjection-prix" className="text-mint-green hover:underline font-medium">Pourquoi les pros se font avoir sur le prix</Link></li>
+              <li><Link href="/blog/largent-nest-pas-le-probleme-cest-la-mesure-objective-de-la-valeur" className="text-mint-green hover:underline font-medium">L'argent n'est pas le problème, c'est la mesure de la valeur</Link></li>
             </ul>
           </div>
 
