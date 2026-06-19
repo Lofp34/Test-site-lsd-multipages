@@ -142,6 +142,16 @@ export default function MotiverEngagerPage() {
             </div>
           </div>
         </section>
+
+        {/* Articles liés */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">📖 Pour aller plus loin</h2>
+          <ul className="space-y-3 text-sm text-gray-700">
+            <li><Link href="/blog/remuneration-variable-commerciale-pme-5-erreurs" className="text-mint-green hover:underline font-medium">Rémunération variable : 5 erreurs qui démotive</Link></li>
+            <li><Link href="/blog/objectifs-commerciaux-comment-en-fixer-qui-motivent-vraiment-vos-equipes" className="text-mint-green hover:underline font-medium">Objectifs commerciaux qui motivent vraiment</Link></li>
+            <li><Link href="/blog/fatigue-commercial-terrain-rythme-performance" className="text-mint-green hover:underline font-medium">Fatigue du commercial terrain</Link></li>
+          </ul>
+        </section>
       </div>
     </main>
   );

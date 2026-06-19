@@ -472,6 +472,18 @@ export default function FormationCommercialePMEPage() {
           </div>
         </div>
       </section>
+
+      {/* Articles liés */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">📖 Pour aller plus loin</h2>
+          <ul className="space-y-3 text-sm text-gray-700">
+            <li><Link href="/blog/bootcamp-commercial-pourquoi-formations-echouent" className="text-mint-green hover:underline font-medium">Pourquoi les formations commerciales échouent</Link></li>
+            <li><Link href="/blog/coaching-commercial-terrain-5-leviers-transformation-equipe" className="text-mint-green hover:underline font-medium">Coaching commercial terrain : 5 leviers</Link></li>
+            <li><Link href="/blog/commercial-en-2026-competences-qui-feront-difference" className="text-mint-green hover:underline font-medium">Le commercial en 2026 : les compétences qui font la différence</Link></li>
+          </ul>
+        </div>
+      </section>
     </main>
     </>
   );

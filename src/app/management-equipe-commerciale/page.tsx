@@ -130,6 +130,19 @@ export default function ManagementEquipeCommercialePage() {
             </div>
           </div>
         </section>
+
+        {/* Articles liés */}
+        <section className="mb-16">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">📖 Pour aller plus loin</h2>
+            <ul className="space-y-3 text-sm text-gray-700">
+              <li><Link href="/blog/5-signes-structurer-equipe-commerciale" className="text-mint-green hover:underline font-medium">5 signes pour structurer son équipe commerciale</Link></li>
+              <li><Link href="/blog/pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe" className="text-mint-green hover:underline font-medium">Le manager qui suit sans coacher plombe l'équipe</Link></li>
+              <li><Link href="/blog/sales-enablement-pme-structurer-performance-commerciale" className="text-mint-green hover:underline font-medium">Sales enablement PME : structurer la performance</Link></li>
+              <li><Link href="/blog/coaching-commercial-terrain-methode-equipe" className="text-mint-green hover:underline font-medium">Coaching commercial terrain : la méthode</Link></li>
+            </ul>
+          </div>
+        </section>
       </div>
     </main>
   );

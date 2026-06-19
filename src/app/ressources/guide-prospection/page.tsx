@@ -365,6 +365,16 @@ export default function GuideProspectionPage() {
             </Link>
           </div>
         </section>
+
+        {/* Articles liés */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">📖 Pour aller plus loin</h2>
+          <ul className="space-y-3 text-sm text-gray-700">
+            <li><Link href="/blog/prospection-b2b-2026-methode-4-blocs-rdv-qualifies" className="text-mint-green hover:underline font-medium">Prospection B2B 2026 : la méthode en 4 blocs</Link></li>
+            <li><Link href="/blog/plan-prospection-commerciale-machine-leads-annee" className="text-mint-green hover:underline font-medium">Plan de prospection : la machine à leads</Link></li>
+            <li><Link href="/blog/linkedin-prospection-b2b-50-messages-par-jour" className="text-mint-green hover:underline font-medium">LinkedIn : 50 messages par jour qui convertissent</Link></li>
+          </ul>
+        </section>
       </div>
     </main>
   );

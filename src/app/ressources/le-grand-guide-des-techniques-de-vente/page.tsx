@@ -46,6 +46,18 @@ export default function GrandGuideTechniquesVente() {
           </div>
         </div>
       </section>
+
+      {/* Articles liés */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">📖 Pour aller plus loin</h2>
+          <ul className="space-y-3 text-sm text-gray-700">
+            <li><Link href="/blog/closing-b2b-7-techniques" className="text-mint-green hover:underline font-medium">Closing B2B : 7 techniques</Link></li>
+            <li><Link href="/blog/gap-selling-methode-b2b" className="text-mint-green hover:underline font-medium">Gap Selling : la méthode B2B</Link></li>
+            <li><Link href="/blog/challenger-sales-methode-terrain-b2b" className="text-mint-green hover:underline font-medium">Challenger Sale : la méthode terrain</Link></li>
+          </ul>
+        </div>
+      </section>
     </main>
   );
 } 

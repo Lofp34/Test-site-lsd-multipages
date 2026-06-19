@@ -137,6 +137,16 @@ export default function FormerCoacherPage() {
             </div>
           </div>
         </section>
+
+        {/* Articles liés */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">📖 Pour aller plus loin</h2>
+          <ul className="space-y-3 text-sm text-gray-700">
+            <li><Link href="/blog/coaching-commercial-terrain-5-leviers-transformation-equipe" className="text-mint-green hover:underline font-medium">Coaching commercial terrain : 5 leviers de transformation</Link></li>
+            <li><Link href="/blog/pourquoi-manager-commercial-suit-sans-coacher-plombe-equipe" className="text-mint-green hover:underline font-medium">Pourquoi le manager qui suit sans coacher plombe l'équipe</Link></li>
+            <li><Link href="/blog/pourquoi-compte-rendu-commercial-ne-remplace-pas-debrief-a-chaud" className="text-mint-green hover:underline font-medium">Le compte-rendu ne remplace pas le débrief à chaud</Link></li>
+          </ul>
+        </section>
       </div>
     </main>
   );

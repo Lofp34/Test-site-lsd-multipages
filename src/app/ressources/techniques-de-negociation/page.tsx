@@ -295,6 +295,17 @@ export default function TechniquesNegociation() {
           </div>
         </div>
       </section>
+
+      {/* Articles liés */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">📖 Pour aller plus loin</h2>
+          <ul className="space-y-3 text-sm text-gray-700">
+            <li><Link href="/blog/negociation-commerciale-b2b-defendre-vos-prix-sans-jamais-casser-vos-marges" className="text-mint-green hover:underline font-medium">Négociation B2B : défendre ses prix sans casser ses marges</Link></li>
+            <li><Link href="/blog/gestion-des-objections-commerciales-transformer-le-non-en-opportunite" className="text-mint-green hover:underline font-medium">Gestion des objections commerciales</Link></li>
+          </ul>
+        </div>
+      </section>
     </main>
   );
 }

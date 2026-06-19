@@ -126,6 +126,17 @@ export default function PiloterPerformancePage() {
           </div>
         </section>
 
+        {/* Articles liés */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">📖 Pour aller plus loin</h2>
+          <ul className="space-y-3 text-sm text-gray-700">
+            <li><Link href="/blog/kpis-commerciaux-pme-indicateurs-vous-cachent" className="text-mint-green hover:underline font-medium">Les KPIs commerciaux en PME : ce que vos indicateurs vous cachent</Link></li>
+            <li><Link href="/blog/pipeline-commercial-pme-comment-construire-un-outil-qui-predit-vraiment-votre-chiffre" className="text-mint-green hover:underline font-medium">Construire un pipeline commercial PME fiable</Link></li>
+            <li><Link href="/blog/systeme-90-jours-anti-yo-yo-ca" className="text-mint-green hover:underline font-medium">Le système 90 jours anti-yo-yo du CA</Link></li>
+            <li><Link href="/blog/reunion-commerciale-hebdo-rituel-closing" className="text-mint-green hover:underline font-medium">Le rituel de réunion hebdo qui transforme vos commerciaux</Link></li>
+          </ul>
+        </section>
+
         {/* CTA */}
         <section className="mt-24">
           <div className="bg-gradient-to-br from-blue-ink to-blue-ink/95 rounded-2xl p-10 text-center">

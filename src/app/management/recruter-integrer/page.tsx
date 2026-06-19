@@ -162,6 +162,16 @@ export default function RecruterIntegrerPage() {
             </div>
           </div>
         </section>
+
+        {/* Articles liés */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">📖 Pour aller plus loin</h2>
+          <ul className="space-y-3 text-sm text-gray-700">
+            <li><Link href="/blog/recrutement-commercial-en-pme-arretez-de-recruter-a-l-instinct" className="text-mint-green hover:underline font-medium">Recrutement commercial en PME : arrêtez de recruter à l'instinct</Link></li>
+            <li><Link href="/blog/les-erreurs-onboarding-commercial-qui-plombent-performance-nouveau" className="text-mint-green hover:underline font-medium">Les erreurs d'onboarding qui plombent la performance</Link></li>
+            <li><Link href="/blog/pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme" className="text-mint-green hover:underline font-medium">Pourquoi les bons commerciaux deviennent médiocres</Link></li>
+          </ul>
+        </section>
       </div>
     </main>
   );

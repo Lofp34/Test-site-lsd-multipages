@@ -129,6 +129,16 @@ export default function StructurerOrganiserPage() {
             </div>
           </div>
         </section>
+
+        {/* Articles liés */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">📖 Pour aller plus loin</h2>
+          <ul className="space-y-3 text-sm text-gray-700">
+            <li><Link href="/blog/strategie-commerciale-pme-cadre-une-page" className="text-mint-green hover:underline font-medium">Stratégie commerciale PME sur une page</Link></li>
+            <li><Link href="/blog/playbook-commercial-guide-pratique-terrain" className="text-mint-green hover:underline font-medium">Playbook commercial : le guide pratique terrain</Link></li>
+            <li><Link href="/blog/5-signes-structurer-equipe-commerciale" className="text-mint-green hover:underline font-medium">5 signes pour structurer son équipe commerciale</Link></li>
+          </ul>
+        </section>
       </div>
     </main>
   );

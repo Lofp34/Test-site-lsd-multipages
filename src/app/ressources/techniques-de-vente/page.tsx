@@ -35,6 +35,18 @@ export default function TechniquesVente() {
           </div>
         </div>
       </section>
+
+      {/* Articles liés */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">📖 Pour aller plus loin</h2>
+          <ul className="space-y-3 text-sm text-gray-700">
+            <li><Link href="/blog/methodes-vente-comparees-spin-bant-bebedc" className="text-mint-green hover:underline font-medium">Méthodes de vente comparées : SPIN, BANT, BEBEDC</Link></li>
+            <li><Link href="/blog/gestion-des-objections-commerciales-transformer-le-non-en-opportunite" className="text-mint-green hover:underline font-medium">Gestion des objections commerciales</Link></li>
+            <li><Link href="/blog/vente-consultative-b2b-comment-devenir-le-conseiller-que-vos-clients-ne-veulent-pas-perdre" className="text-mint-green hover:underline font-medium">Vente consultative B2B</Link></li>
+          </ul>
+        </div>
+      </section>
     </main>
   );
 } 
