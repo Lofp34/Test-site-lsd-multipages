@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Comité commercial mensuel : les 6 décisions qu’un dirigeant doit exiger | Laurent Serre',
+  title: 'Comité commercial : 6 décisions du dirigeant',
   description: 'Le comité commercial mensuel ne doit pas être un théâtre CRM. Voici les 6 décisions qu’un dirigeant ou directeur commercial doit obtenir pour sécuriser le trimestre et convertir plus proprement.',
   keywords: 'comité commercial mensuel, pilotage commercial, dirigeant PME B2B, directeur commercial, forecast, bootcamp vente, diagnostic commercial',
   alternates: {

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Objectifs commerciaux : comment en fixer qui motivent vraiment vos équipes | Laurent Serre',
+  title: 'Objectifs commerciaux qui motivent vraiment',
   description:
     'Fixer des objectifs commerciaux sans méthode, c\'est saboter votre performance. Découvrez comment combiner objectifs de résultats et d\'activité, calibrer l\'ambition, et construire un variable qui motive.',
   keywords:

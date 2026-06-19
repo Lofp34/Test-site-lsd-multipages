@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système | Laurent Serre',
+  title: 'Bons commerciaux, mauvais système : l’effet médiocre',
   description:
     'Quand un bon commercial devient irrégulier, le problème n’est pas toujours la personne. Un système commercial flou dégrade la lecture, la posture et la performance de toute l’équipe.',
   keywords:

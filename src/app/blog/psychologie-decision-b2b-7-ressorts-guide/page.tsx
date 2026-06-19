@@ -8,7 +8,7 @@ const articleUrl = 'https://www.laurentserre.com/blog/psychologie-decision-b2b-7
 const heroImage = '/images/blog/psychologie-decision-b2b-guide/psychologie-decision-b2b-guide-hero.webp';
 
 export const metadata: Metadata = {
-  title: "Psychologie de décision B2B : guide gratuit des 7 ressorts qui font signer | Laurent Serre",
+  title: "Psychologie de décision B2B : 7 ressorts",
   description:
     "Un prospect ne compare pas des offres, il compare des risques. Découvrez les 7 ressorts psychologiques qui influencent toute décision d'achat B2B — et téléchargez le guide complet.",
   keywords:

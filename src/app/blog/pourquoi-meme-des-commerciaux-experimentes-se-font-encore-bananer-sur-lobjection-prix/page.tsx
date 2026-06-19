@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Objection prix : même des commerciaux expérimentés se font encore bananer | Laurent Serre',
+  title: 'Objection prix : même les pros se font avoir',
   description:
     'Quand une vente bloque sur le prix, le tarif n’est pas toujours le vrai sujet. Très souvent, l’objection prix masque un diagnostic commercial évité trop vite.',
   keywords:

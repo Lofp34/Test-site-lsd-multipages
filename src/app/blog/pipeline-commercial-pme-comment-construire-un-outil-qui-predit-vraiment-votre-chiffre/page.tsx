@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pipeline commercial PME : construire un outil fiable qui prédit votre CA | Laurent Serre',
+  title: 'Pipeline commercial PME : un outil qui prédit le CA',
   description:
     'Comment construire un pipeline commercial fiable qui permet de vraiment anticiper votre chiffre d\'affaires. Les indicateurs à suivre, les erreurs à éviter, et le format de revue hebdomadaire qui fait la différence.',
   keywords:

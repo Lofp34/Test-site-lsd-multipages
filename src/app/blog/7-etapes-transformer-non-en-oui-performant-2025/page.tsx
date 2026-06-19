@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: '7 étapes pour transformer un « non » frustrant en « oui » performant en 2025 | Laurent Serre',
+  title: '7 étapes : transformer un non en oui performant',
   description: 'Découvrez une méthode en 7 étapes pour transformer chaque refus client frustrant en opportunité commerciale durable et efficace. Conseils pratiques, techniques d’écoute et outils IA pour performer en 2025.',
   keywords: 'refus client, objection commerciale, transformation vente, techniques de vente, développement commercial, IA commerciale',
   alternates: {

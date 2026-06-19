@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Anticiper l’échec n’est pas du pessimisme, c’est une discipline commerciale | Laurent Serre',
+  title: 'Anticiper l’échec : une discipline commerciale',
   description:
     'Les meilleurs commerciaux ne se préparent pas seulement à convaincre. Ils se préparent à ce qui peut bloquer, déraper ou rester flou. Cette lucidité change la vente.',
   keywords:

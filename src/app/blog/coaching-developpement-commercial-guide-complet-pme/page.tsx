@@ -6,7 +6,7 @@ import BDCarousel from '@/components/BDCarousel';
 import AuthorCard from '@/components/AuthorCard';
 
 export const metadata: Metadata = {
-  title: 'Coaching développement commercial : le guide complet pour dirigeants PME | Laurent Serre',
+  title: 'Coaching développement commercial : guide PME',
   description:
     'Coaching développement commercial : définition, méthodes, coûts réels, résultats concrets. Un guide terrain pour dirigeants de PME qui hésitent à investir — par Laurent Serre, 20 ans d\'expertise.',
   keywords:

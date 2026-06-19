@@ -11,7 +11,7 @@ const heroImageAbsolute = 'https://raw.githubusercontent.com/Lofp34/Test-site-ls
 const carouselPrefix = '/images/blog/qualification-commerciale-b2b-7-erreurs/carrousel';
 
 export const metadata: Metadata = {
-  title: "Qualification commerciale B2B : les 7 erreurs qui font fuir vos prospects | Laurent Serre",
+  title: "Qualification B2B : 7 erreurs qui font fuir",
   description:
     "Vous perdez des deals sans comprendre pourquoi ? Ces 7 erreurs de qualification commerciale B2B sont la raison. Découvrez la checklist pour ne plus jamais les commettre.",
   keywords:

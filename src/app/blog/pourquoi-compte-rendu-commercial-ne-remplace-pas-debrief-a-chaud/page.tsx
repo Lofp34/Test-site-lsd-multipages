@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi le compte rendu commercial ne remplace jamais le débrief à chaud | Laurent Serre',
+  title: 'Compte-rendu vs débrief à chaud',
   description:
     'Beaucoup d’équipes commentent les rendez-vous commerciaux après coup sans vraiment les travailler. Le compte rendu rassure. Le débrief à chaud, lui, fait progresser.',
   keywords:

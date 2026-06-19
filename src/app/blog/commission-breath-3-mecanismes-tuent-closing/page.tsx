@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Commission Breath : les 3 mécanismes invisibles qui tuent votre closing | Laurent Serre',
+  title: 'Commission Breath : 3 mécanismes qui tuent le closing',
   description: 'Découvrez pourquoi vos leads ne sont pas mauvais et comment la biologie, l\'identité et le cadre sabotent vos ventes. Méthode du détachement radical pour closer sans pression.',
   keywords: 'commission breath, closing, neurones miroirs, détachement radical, psychologie vente, closing B2B, taux de conversion, cadre diagnostic, techniques closing',
   alternates: {

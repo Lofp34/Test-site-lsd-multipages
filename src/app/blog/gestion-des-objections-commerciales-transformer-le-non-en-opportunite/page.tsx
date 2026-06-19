@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Gestion des objections commerciales : transformer le non en opportunité | Laurent Serre',
+  title: 'Objections commerciales : transformer le non',
   description:
     'Les objections ne sont pas des obstacles, ce sont des portes. Découvrez la méthode en 4 étapes pour traiter n\'importe quelle objection B2B sans forcer.',
   keywords:
