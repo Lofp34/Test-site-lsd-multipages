@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'fatigue-commercial-terrain-rythme-performance',
+    title: 'Fatigue du commercial terrain : comment tenir la distance sans s\'épuiser',
+    description: 'Comment éviter l\'épuisement quand on est commercial terrain ? 4 piliers pour tenir la distance : le bon ratio rendez-vous/préparation, les 3 types de journées (offensive, build, récupération), le protocole de décompression et l\'indicateur prédictif d\'épuisement.',
+    date: '2026-06-19',
+    readTime: '8 min',
+    category: 'Performance commerciale / Management terrain',
+    image: '/images/blog/fatigue-commercial-terrain/fatigue-commercial-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'book-de-vente-tactile-commerciaux-pme',
     title: 'Book de vente tactile : vos commerciaux improvisent chaque rendez-vous (et ça vous coûte cher)',
     description: "Un book de vente tactile est un outil digital interactif qui centralise tous les supports de vente sur tablette. Guide complet pour créer le vôtre sans dépenser 10 000 euros en logiciels.",

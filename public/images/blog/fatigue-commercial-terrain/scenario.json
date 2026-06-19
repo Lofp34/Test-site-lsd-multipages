@@ -1,0 +1,173 @@
+{
+  "title": "Fatigue du commercial terrain — retrouver son rythme",
+  "basename": "fatigue-commercial-terrain",
+  "model": "openai/gpt-image-2",
+  "reference_image": "/Users/clawdia/.openclaw/media/inbound/laurent-serre-reference.jpg",
+  "slides_with_reference": [7, 11],
+  "characters": {
+    "julien": {
+      "name": "Julien (commercial terrain, 34 ans)",
+      "description": "Homme 34 ans, silhouette moyenne légèrement affaissée, visage ovale allongé, front dégagé, sourcils bruns fins légèrement tombants, yeux marron avec cernes visibles, regard parfois dans le vide, nez droit, bouche fine souvent pincée de fatigue, menton moyen, mâchoire détendue, oreilles moyennes, cheveux bruns mi-courts coiffés simplement avec quelques mèches rebelles, barbe brune de deux jours soignée mais pas entretenue. Chemise bleu clair col ouvert sans cravate, veste grise légèrement froissée, pantalon sombre. Posture affaissée en voiture, épaules tombantes, dos voûté en réunion. Gestuelle ralentie, moins d'assurance que d'habitude."
+    },
+    "agnes": {
+      "name": "Agnès (directrice commerciale, 44 ans)",
+      "description": "Femme 44 ans, silhouette droite et élancée, visage aux traits fins, front lisse, sourcils châtains bien dessinés, yeux verts au regard direct et exigeant, nez fin, bouche aux lèvres minces souvent en ligne droite, menton volontaire, mâchoire carrée, cheveux châtains mi-longs attachés en queue de cheval basse, peu de maquillage. Tailleur bleu marine, chemisier blanc, petit collier en argent fin. Posture droite et autoritaire dans son fauteuil de bureau. Carnet ouvert à la main, stylo prêt. Ambiance entretien professionnel tendu mais pas agressif."
+    },
+    "laurent": {
+      "name": "Laurent (coach commercial, 52 ans)",
+      "description": "Homme 52 ans, silhouette moyenne solide, visage aux traits marqués, front large, barbe courte grisonnante, calvitie naissante, sourcils fournis, yeux foncés au regard calme et observateur, nez fort, bouche détendue au sourire rare mais franc, menton carré. Chemise blanche ou bleu clair, veste bleu marine, pantalon beige. Posture droite et stable, gestes mesurés. Carnet Moleskine noir à la main."
+    },
+    "jeanlou": {
+      "name": "Jean-Lou (commercial senior, 58 ans)",
+      "description": "Homme 58 ans, silhouette trapue légèrement forte, visage rond barré d'une moustache grise fournie, front dégagé, crâne dégarni, petits yeux bruns plissés au sourire, nez épaté, bouche large, oreilles décollées. Veste de costume marron clair usée aux coudes, chemise à carreaux discrets, cravate jamais. Air bonhomme et un brin ironique, ton posé."
+    }
+  },
+  "slides": [
+    {
+      "id": 1,
+      "title": "Couverture",
+      "slug": "bd-slide-01-cover",
+      "characters": ["julien"],
+      "scene": "Julien est seul dans sa voiture garée sur le bas-côté d'une route départementale, fin de journée. Le soleil déclinant éclaire son visage fatigué à travers le pare-brise. Ses mains sont sur le volant mais il ne démarre pas. La veste grise est sur le siège passager. Tableau de bord avec cafetière vide et barre de céréales entamée.",
+      "bubbles": {
+        "Julien": "Encore un rendez-vous où je n'ai rien fait avancer. Le quatrième aujourd'hui. Je ne vais pas tenir comme ça."
+      }
+    },
+    {
+      "id": 2,
+      "title": "Le constat des rendez-vous qui s'enchaînent",
+      "slug": "bd-slide-02-epuisement",
+      "characters": ["julien"],
+      "scene": "Intérieur d'un café de zone commerciale, table en Formica. Julien est affalé sur la table, les yeux mi-clos, devant une tasse de café refroidi. Son téléphone est posé à côté avec l'écran allumé montrant un agenda saturé. Son regard est vide, direction la fenêtre où on voit des voitures passer.",
+      "bubbles": {
+        "Julien": "Lundi : 5 rendez-vous. Mardi : 6. Mercredi : 4. Jeudi : 5 + réunion équipe. Vendredi : 4. Samedi : relancer les comptes rendus."
+      }
+    },
+    {
+      "id": 3,
+      "title": "La réunion commerciale qui tourne en rond",
+      "slug": "bd-slide-03-reunion",
+      "characters": ["julien", "agnes"],
+      "scene": "Salle de réunion PME, table blanche entourée de chaises, tableau blanc effacé derrière. Agnès est debout en bout de table, carnet ouvert, regardant Julien d'un air exigeant mais pas méchant. Julien est affalé sur sa chaise, les coudes sur la table, la tête penchée. Ses notes sont éparpillées. Lumière blanche de néon au plafond.",
+      "bubbles": {
+        "Agnès": "Julien, tu es à -20% sur le mois. Il faut augmenter le nombre de rendez-vous.",
+        "Julien": "Je suis déjà à 5 par jour, Agnès. Je ne peux pas m'arrêter de dormir pour vendre."
+      }
+    },
+    {
+      "id": 4,
+      "title": "Les questions qui dérangent",
+      "slug": "bd-slide-04-questions",
+      "characters": ["julien", "agnes"],
+      "scene": "Même salle de réunion. Agnès s'est rassise en face de Julien, les bras croisés sur la table, le regard adouci mais franc. Julien a les mains à plat sur la table, les yeux baissés. Une tasse de café entre eux. Ambiance plus calme.",
+      "bubbles": {
+        "Agnès": "Tu tiens le coup, Julien ?",
+        "Julien": "Je ne sais pas. Je crois que je fatigue. Mais je ne veux pas ralentir, j'ai peur de perdre des ventes."
+      }
+    },
+    {
+      "id": 5,
+      "title": "L'arrivée de Laurent, l'observateur",
+      "slug": "bd-slide-05-bon-ratio",
+      "characters": ["julien", "laurent"],
+      "scene": "Intérieur d'un bureau simple, fenêtre donnant sur un parking. Laurent est assis en face de Julien, calepin ouvert, crayon à la main, regard posé. Julien est en vis-à-vis, une main sur une pile de fiches prospects, l'autre dans les cheveux. Lumière naturelle.",
+      "bubbles": {
+        "Laurent": "Tu prépares combien de temps chaque rendez-vous ?",
+        "Julien": "15 minutes la veille. Le matin, je vérifie juste l'adresse.",
+        "Laurent": "Et tu débriefs combien de temps ?",
+        "Julien": "Je note le compte rendu dans le CRM le soir. Si j'ai le temps."
+      }
+    },
+    {
+      "id": 6,
+      "title": "Le diagnostic : le problème c'est le rythme, pas la motivation",
+      "slug": "bd-slide-06-methode-3-journees",
+      "characters": ["julien", "laurent"],
+      "scene": "Même bureau. Laurent a retourné son carnet et dessine un schéma simple : trois cercles (offensif, build, récup). Julien s'est penché en avant, intéressé pour la première fois, les coudes sur les genoux. Une cafetière et deux tasses vides sur la table.",
+      "bubbles": {
+        "Laurent": "Tu n'as pas un problème de motivation. Tu as un problème de rythme. Tu cours les mêmes journées tous les jours. Ton cerveau n'a jamais le temps de récupérer."
+      }
+    },
+    {
+      "id": 7,
+      "title": "Les 3 types de journées : Offensif",
+      "slug": "bd-slide-07-journee-offensive",
+      "characters": ["julien"],
+      "scene": "Julien entre dans un immeuble de bureaux moderne, attaché-case à la main, le regard déterminé. Il est bien habillé, chemise blanche repassée, veste bleu marine. Sa posture est droite, confiante. Une porte vitrée avec la plaque d'une entreprise est devant lui. Soleil du matin.",
+      "bubbles": {
+        "Julien": "Journée offensive : 3 rendez-vous. Pas 5. Trois. Avec 30 minutes de préparation chacun. Et 15 minutes de débrief entre chaque."
+      }
+    },
+    {
+      "id": 8,
+      "title": "Journée Build",
+      "slug": "bd-slide-08-journee-build",
+      "characters": ["julien"],
+      "scene": "Julien est assis dans un espace de coworking lumineux, ordinateur ouvert devant lui, fiches clients étalées, marqueurs et post-its. Il regarde un tableau de bord CRM. Sa posture est détendue, concentrée mais pas tendue. Une tasse de thé vert à côté. Fenêtre avec vue sur des arbres.",
+      "bubbles": {
+        "Julien": "Journée build : je prépare mes rendez-vous de la semaine, j'analyse mes comptes, je forme mon nez sur les nouveaux produits. Je ne prospecte pas, je construis."
+      }
+    },
+    {
+      "id": 9,
+      "title": "Journée Récupération",
+      "slug": "bd-slide-09-journee-recuperation",
+      "characters": ["julien"],
+      "scene": "Le bureau de Julien dans l'open space de la PME. Il est à son poste, classeur ouvert, en train de ranger ses notes et mettre à jour son CRM tranquillement. Sa veste est sur le dossier de la chaise. Il sourit un peu en regardant le planning de la semaine. Ambiance calme, fin de matinée.",
+      "bubbles": {
+        "Julien": "Journée récupération : factures, comptes rendus, point équipe. Je termine à 17h. Je repars avec de l'énergie pour la semaine prochaine."
+      }
+    },
+    {
+      "id": 10,
+      "title": "Le protocole de décompression",
+      "slug": "bd-slide-10-decompression",
+      "characters": ["julien"],
+      "scene": "Julien est assis sur un banc dans un petit square, à côté d'un immeuble de bureaux. Il a un petit carnet ouvert sur les genoux et écrit quelque chose. Une fontaine coule en arrière-plan. Ses épaules sont détendues, son visage est calme. Ses clés de voiture sont posées à côté de lui sur le banc.",
+      "bubbles": {
+        "Julien": "10 minutes entre chaque rendez-vous. Je marche un peu. Je note ce qui s'est vraiment passé. Ce n'est pas du temps perdu. Je récupère. Je vais plus frais au rendez-vous suivant."
+      }
+    },
+    {
+      "id": 11,
+      "title": "L'indicateur prédictif",
+      "slug": "bd-slide-11-indicateur",
+      "characters": ["laurent", "julien"],
+      "scene": "Même bureau que slide 5. Laurent est debout, un doigt pointé vers un schéma simple (courbe descendante) dessiné sur une feuille. Julien est assis, le regardant avec attention, une main sous le menton. La lumière entre par la fenêtre.",
+      "bubbles": {
+        "Laurent": "Le premier signe d'épuisement, ce n'est pas la baisse de chiffre. C'est la perte de plaisir à préparer un rendez-vous. Quand tu commences à bâcler ta préparation, tu es déjà en zone rouge."
+      }
+    },
+    {
+      "id": 12,
+      "title": "Le rituel qui change tout",
+      "slug": "bd-slide-12-rituel",
+      "characters": ["julien", "agnes"],
+      "scene": "Bureau d'Agnès. Agnès est assise à son bureau, carnet ouvert, regardant Julien avec un sourire discret. Julien est debout devant elle, tenant un planning imprimé, visiblement plus en forme. L'ambiance est décontractée. Une plante verte sur le coin du bureau.",
+      "bubbles": {
+        "Julien": "Depuis que j'alterne les journées, j'ai repris pied. Et mes résultats remontent.",
+        "Agnès": "Je t'ai vu arriver stressé pendant des mois. Je n'avais pas compris que le problème c'était le rythme, pas les rendez-vous."
+      }
+    },
+    {
+      "id": 13,
+      "title": "Le résultat visible",
+      "slug": "bd-slide-13-resultat",
+      "characters": ["julien"],
+      "scene": "Julien est dans sa voiture, garé devant un client, le matin. Il a l'air reposé, chemise fraîche, regard clair avant d'entrer en rendez-vous. Une bouteille d'eau sur le siège passager. Le soleil éclaire l'intérieur de la voiture. Un post-it sur le tableau de bord : 'Préparé = serein'.",
+      "bubbles": {
+        "Julien": "Je ne cours plus après le nombre de rendez-vous. Je construis des ventes avec le bon rythme. Et je dors huit heures par nuit."
+      }
+    },
+    {
+      "id": 14,
+      "title": "CTA final",
+      "slug": "bd-slide-14-cta",
+      "characters": ["laurent"],
+      "scene": "Laurent dans un bureau lumineux, assis calmement derrière un bureau en bois, carnet ouvert devant lui. Il regarde vers le lecteur avec un regard confiant mais pas vendeur. Une bibliothèque avec des livres de management commercial derrière lui.",
+      "bubbles": {
+        "Laurent": "Vos commerciaux tiennent-ils vraiment le rythme ou commencent-ils à fatiguer ? Un diagnostic terrain de 2 heures pour analyser leur rythme et ajuster sans perdre en performance. Commencez par un diagnostic offert sur laurentserre.com"
+      }
+    }
+  ]
+}
