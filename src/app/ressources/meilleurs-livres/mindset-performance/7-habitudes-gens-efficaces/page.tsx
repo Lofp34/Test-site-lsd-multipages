@@ -10,7 +10,7 @@ import { categoryBreadcrumbSuggestions } from '@/utils/cross-category-suggestion
 import React from 'react';
 
 // Trouver le livre dans les données de façon sécurisée
-const book = mindsetPerformanceCategory.books.find(b => b.slug === 'the-7-habits');
+const book = mindsetPerformanceCategory.books.find(b => b.slug === '7-habitudes-gens-efficaces');
 
 if (!book) {
   throw new Error('Livre Les 7 habitudes des gens très efficaces non trouvé dans les données');

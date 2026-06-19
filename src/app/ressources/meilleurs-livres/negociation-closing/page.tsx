@@ -50,14 +50,14 @@ const categoryStructuredData = {
         "position": 3, 
         "name": "SPIN Selling",
         "author": "Neil Rackham",
-        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/negociation-closing/spin-selling"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/methodes-process/spin-selling"
       },
       {
         "@type": "Book",
         "position": 4,
         "name": "The Challenger Sale", 
         "author": "Matthew Dixon & Brent Adamson",
-        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/negociation-closing/the-challenger-sale"
+        "url": "https://www.laurentserre.com/ressources/meilleurs-livres/methodes-process/the-challenger-sale"
       },
       {
         "@type": "Book",

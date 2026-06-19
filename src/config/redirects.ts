@@ -93,6 +93,32 @@ export const linkRedirects: RedirectRule[] = [
     source: "/ressources/recrutement",
     destination: "/ressources/guide-recrutement-commercial",
     permanent: true
+  },
+  // Audit 2026-06-19 : résolution des doublons de fiches livres
+  {
+    source: "/ressources/meilleurs-livres/enterprise-account/strategic-selling",
+    destination: "/ressources/meilleurs-livres/methodes-process/strategic-selling",
+    permanent: true
+  },
+  {
+    source: "/ressources/meilleurs-livres/negociation-closing/the-challenger-sale",
+    destination: "/ressources/meilleurs-livres/methodes-process/the-challenger-sale",
+    permanent: true
+  },
+  {
+    source: "/ressources/meilleurs-livres/negociation-closing/spin-selling",
+    destination: "/ressources/meilleurs-livres/methodes-process/spin-selling",
+    permanent: true
+  },
+  {
+    source: "/ressources/meilleurs-livres/mindset-performance/mindset",
+    destination: "/ressources/meilleurs-livres/mindset-performance/mindset-new-psychology-success",
+    permanent: true
+  },
+  {
+    source: "/ressources/meilleurs-livres/mindset-performance/the-7-habits",
+    destination: "/ressources/meilleurs-livres/mindset-performance/7-habitudes-gens-efficaces",
+    permanent: true
   }
 ];
 
