@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Revue deal avant proposition : 3 vérifications en 17 min | Laurent Serre',
+  title: 'Revue de deal : 3 vérifications en 17 min',
   description: 'La méthode de revue deal en 17 minutes pour éviter les propositions B2B trop tôt, protéger la marge et augmenter le taux de signature.',
   keywords: 'proposition commerciale B2B, revue deal, directeur commercial, taux de signature, bootcamp vente, pipeline commercial',
   alternates: {

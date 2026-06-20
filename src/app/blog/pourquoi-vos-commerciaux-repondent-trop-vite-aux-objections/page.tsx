@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Objections commerciales : répondre trop vite vous fait perdre la main | Laurent Serre',
+  title: 'Objections : répondre trop vite vous fait perdre',
   description:
     'Quand un commercial répond trop vite à une objection, il saute sur sa réponse avant d’avoir compris ce que le client essayait vraiment de dire.',
   keywords:

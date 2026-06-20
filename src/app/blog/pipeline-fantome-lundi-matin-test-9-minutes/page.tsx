@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pipeline fantôme : test des 9 minutes du lundi matin | Laurent Serre',
+  title: 'Pipeline fantôme : le test des 9 minutes',
   description: 'Le test du lundi matin que les dirigeants et directeurs commerciaux peuvent utiliser pour repérer le pipeline fantôme, requalifier les deals et protéger le trimestre.',
   keywords: 'pipeline fantôme, réunion pipeline, directeur commercial, dirigeant PME, forecast commercial, bootcamp commercial',
   alternates: {

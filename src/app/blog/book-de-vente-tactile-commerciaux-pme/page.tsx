@@ -9,7 +9,7 @@ const heroImage = '/images/blog/book-de-vente-tactile-commerciaux-pme/book-de-ve
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/book-de-vente-tactile-commerciaux-pme/book-de-vente-tactile-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Book de vente tactile : le guide complet pour vos commerciaux',
+  title: 'Book de vente tactile : le guide complet',
   description:
     'Un book de vente tactile est un outil digital interactif qui centralise tous les supports de vente sur tablette, permettant aux commerciaux de présenter, personnaliser et argumenter sans jamais perdre le fil. Guide complet pour PME.',
   keywords:

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Bootcamp commercial : pourquoi 80% des formations échouent | Laurent Serre',
+  title: 'Bootcamp commercial : 80% des formations échouent',
   description: 'Analyse des raisons pour lesquelles la plupart des formations commerciales n\'atteignent pas leurs objectifs et notre approche différente qui fonctionne.',
   keywords: 'formation commerciale, bootcamp commercial, échec formation, formation équipe vente, PME',
   alternates: {

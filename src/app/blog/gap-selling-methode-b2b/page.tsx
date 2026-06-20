@@ -9,7 +9,7 @@ const articleUrl = 'https://www.laurentserre.com/blog/gap-selling-methode-b2b';
 const heroImage = 'https://www.laurentserre.com/images/blog/2026-06-13-gap-selling-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Gap Selling : la méthode B2B qui a changé ma façon de vendre | Laurent Serre',
+  title: 'Gap Selling : la méthode B2B qui marche',
   description:
     `Qu'est-ce que le Gap Selling ? Une méthode de vente B2B qui aide le client à mesurer l'écart entre sa situation actuelle et le résultat qu'il veut atteindre.`,
   keywords:

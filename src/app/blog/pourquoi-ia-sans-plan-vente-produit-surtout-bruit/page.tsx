@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pourquoi l’IA sans plan de vente produit surtout du bruit | Laurent Serre',
+  title: 'IA sans plan de vente : surtout du bruit',
   description:
     'Beaucoup d’équipes commerciales ajoutent des outils IA avant d’avoir clarifié leur plan de vente. Elles accélèrent alors la confusion plus que la performance.',
   keywords:

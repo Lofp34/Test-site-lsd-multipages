@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Pipeline H2 2026 : 5 décisions dirigeant PME avant juillet | Laurent Serre',
+  title: 'Pipeline H2 2026 : 5 décisions dirigeant',
   description: 'Dirigeants de PME : 5 décisions commerciales structurelles à prendre avant le 30 juin pour préparer le second semestre et éviter le creux d\'été.',
   keywords: 'pipeline commercial H2 2026, préparer pipeline commercial été pme, pipeline commercial juillet août dirigeant, décisions commerciales mi-année pme, prospection été b2b',
   alternates: {

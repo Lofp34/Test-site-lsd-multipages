@@ -6,7 +6,7 @@ import AuthorCard from '@/components/AuthorCard';
 import BDCarousel from '@/components/BDCarousel';
 
 export const metadata: Metadata = {
-  title: 'Négociation B2B : défendre ses prix sans jamais casser ses marges',
+  title: 'Négociation B2B : défendre ses prix sans brader',
   description:
     '« C\'est trop cher » n\'est presque jamais une objection de prix. C\'est une objection de clarté. Découvrez pourquoi la vraie compétence est de rendre la négociation inutile.',
   keywords:

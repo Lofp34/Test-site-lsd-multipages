@@ -5,7 +5,7 @@ import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
 
 export const metadata: Metadata = {
-  title: 'KPIs commerciaux PME : ce que vos 25 indicateurs vous cachent | Laurent Serre',
+  title: 'KPIs commerciaux PME : ce qu’on vous cache',
   description:
     'Vingt-cinq indicateurs, des graphiques partout, des jolies couleurs. Mais au fond, lequel regardez-vous le lundi matin ? Le problème des KPIs en PME n\'est pas le manque de données, c\'est l\'abondance.',
   keywords:

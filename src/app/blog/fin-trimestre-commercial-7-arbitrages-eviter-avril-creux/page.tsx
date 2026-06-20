@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Fin trimestre commercial : 7 arbitrages éviter avril creux | Laurent Serre',
+  title: 'Fin de trimestre : 7 arbitrages éviter',
   description: 'Les 7 arbitrages de fin de trimestre qui permettent aux dirigeants et directeurs commerciaux de sécuriser avril sans pression inutile ni pipeline artificiel.',
   keywords: 'fin de trimestre commercial, pipeline commercial, directeur commercial, dirigeant PME, prévision commerciale, bootcamp vente',
   alternates: {

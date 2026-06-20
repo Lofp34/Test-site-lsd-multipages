@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Prospection téléphonique B2B : l’appel au hasard est mort | Laurent Serre',
+  title: 'Prospection B2B : l’appel au hasard est mort',
   description:
     'La prospection téléphonique fonctionne encore quand elle sert un vrai échange préparé. Ce qui ne marche plus, c’est l’appel lancé au hasard pour réciter un argumentaire.',
   keywords:

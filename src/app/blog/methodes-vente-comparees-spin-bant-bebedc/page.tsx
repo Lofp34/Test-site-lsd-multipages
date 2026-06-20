@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Méthodes de vente comparées : SPIN, BANT, BEBEDC | Laurent Serre',
+  title: 'Méthodes de vente : SPIN, BANT, BEBEDC',
   description:
     'SPIN, BANT, BEBEDC : quelle méthode de vente choisir pour votre PME ? Comparatif complet, avantages, limites et guide de choix par contexte commercial.',
   keywords:

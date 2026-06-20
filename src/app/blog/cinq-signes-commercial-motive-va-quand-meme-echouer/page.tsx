@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Les cinq signes qu’un commercial motivé va quand même échouer | Laurent Serre',
+  title: '5 signes qu’un commercial motivé va échouer',
   description:
     'La motivation ne compense pas un mauvais cadrage commercial. Voici les cinq signes concrets qui montrent qu’un commercial engagé risque quand même d’échouer dans une PME B2B.',
   keywords:

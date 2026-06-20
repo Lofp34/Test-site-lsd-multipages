@@ -10,7 +10,7 @@ const heroImage = '/images/blog/fatigue-commercial-terrain/fatigue-commercial-he
 const ogImage = 'https://www.laurentserre.com/images/blog/fatigue-commercial-terrain/fatigue-commercial-og.jpg';
 
 export const metadata: Metadata = {
-  title: 'Fatigue du commercial terrain : comment tenir la distance sans s\'épuiser | Laurent Serre',
+  title: 'Fatigue du commercial : tenir sans s\'épuiser',
   description:
     'Comment éviter l\'épuisement quand on est commercial terrain ? 4 piliers pour tenir la distance : le bon ratio rendez-vous/préparation, les 3 types de journées, le protocole de décompression et l\'indicateur prédictif d\'épuisement.',
   keywords:

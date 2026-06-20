@@ -9,7 +9,7 @@ const heroImage = '/images/blog/performance-commerciale-5-leviers/performance-co
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/performance-commerciale-5-leviers/performance-commerciale-5-leviers-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Performance commerciale en PME : les 5 leviers que les dirigeants négligent | Laurent Serre',
+  title: 'Performance commerciale PME : 5 leviers négligés',
   description:
     'La plupart des dirigeants regardent le CA et le nombre d\'appels — mauvais indicateurs. Les vrais leviers : structure de qualification, rythme de débrief, revue de deal, pilotage par activité, alignement rémunération/comportement.',
   keywords:

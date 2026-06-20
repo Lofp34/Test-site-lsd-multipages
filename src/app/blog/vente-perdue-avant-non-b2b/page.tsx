@@ -10,7 +10,7 @@ const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/vente-perdue
 const ogImageAbsolute = 'https://www.laurentserre.com/images/blog/vente-perdue-avant-non/vente-perdue-avant-non-og.webp';
 
 export const metadata: Metadata = {
-  title: 'La vente se perd souvent avant que le client dise non | Laurent Serre',
+  title: 'La vente se perd avant que le client dise non',
   description:
     'Un deal ne se perd pas au moment du non. Il se perd en amont, par petites lachetes commerciales : pitcher trop tot, ne pas qualifier le vrai decideur, proposer sans rendez-vous.',
   keywords:

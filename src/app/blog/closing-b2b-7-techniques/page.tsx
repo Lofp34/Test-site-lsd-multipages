@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Closing B2B : 7 techniques qui marchent (+ scripts) | Laurent Serre',
+  title: 'Closing B2B : 7 techniques qui marchent',
   description: 'Augmentez votre taux de closing en 90 jours sans forcer : MAP, trial close, résumé décisionnel, A/B close, business case, POC cadré, déclosing propre. Bonus : 5 scripts prêts à copier.',
   keywords: 'closing B2B, techniques de closing, MAP, trial close, business case, POC, déclosing, scripts closing, vente B2B',
   alternates: {

@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Manager commercial : tolérer les bonnes excuses vous coûte des ventes | Laurent Serre',
+  title: 'Manager : tolérer les excuses coûte des ventes',
   description:
     'Quand un manager commercial laisse passer trop longtemps les bonnes excuses, il protège le confort de l’équipe mais il laisse aussi s’installer des ventes fragiles et des habitudes faibles.',
   keywords:

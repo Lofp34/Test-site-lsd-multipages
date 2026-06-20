@@ -5,7 +5,7 @@ import HubSpotForm from '@/components/HubSpotForm';
 import BDCarousel from '@/components/BDCarousel';
 
 export const metadata: Metadata = {
-  title: 'Système commercial 90 jours : le plan anti yo-yo du chiffre d\'affaires | Laurent Serre',
+  title: 'Système 90 jours anti yo-yo du CA',
   description: 'Le framework 90 jours pour dirigeants et directeurs commerciaux qui veulent stabiliser le CA, accélérer les cycles et convertir plus proprement.',
   keywords: 'système commercial, plan 90 jours, directeur commercial, dirigeant PME, conversion B2B, bootcamp vente',
   alternates: {

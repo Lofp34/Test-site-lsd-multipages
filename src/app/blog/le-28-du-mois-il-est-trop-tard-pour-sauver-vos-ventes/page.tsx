@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Le 28 du mois, il est trop tard pour sauver vos ventes | Laurent Serre',
+  title: 'Le 28 du mois : trop tard pour sauver vos ventes',
   description:
     'Quand la fin de mois ressemble à une opération de sauvetage, le problème n’est presque jamais le dernier appel. Il est dans ce qui n’a pas été regardé plus tôt.',
   keywords:

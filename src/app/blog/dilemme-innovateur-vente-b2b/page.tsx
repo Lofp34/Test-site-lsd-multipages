@@ -6,7 +6,7 @@ import BDCarousel from '@/components/BDCarousel';
 import AuthorCard from '@/components/AuthorCard';
 
 export const metadata: Metadata = {
-  title: 'Ce qui fait gagner vos commerciaux tuera vos ventes demain | Laurent Serre',
+  title: 'Ce qui fait gagner vos commerciaux les tuera',
   description:
     'Le dilemme de l\'innovateur de Christensen expliqué aux dirigeants de PME : pourquoi vos méthodes commerciales qui marchent aujourd\'hui préparent l\'échec de demain.',
   keywords:

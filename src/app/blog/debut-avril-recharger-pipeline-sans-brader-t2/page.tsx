@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Recharger son pipeline en avril : 5 décisions T2 | Laurent Serre',
+  title: 'Recharger son pipeline : 5 décisions T2',
   description: 'En début de T2, beaucoup de dirigeants compensent un pipeline fragile par plus d\'activité et plus de remises. Voici 5 décisions plus intelligentes pour recharger le pipeline sans dégrader la marge.',
   keywords: 'pipeline T2, recharger pipeline commercial, dirigeant PME B2B, forecast commercial, développement commercial avril, bootcamp commercial, diagnostic commercial',
   alternates: {

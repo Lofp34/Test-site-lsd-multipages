@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Réunion commerciale hebdo : rituel 45 min pour le closing | Laurent Serre',
+  title: 'Réunion hebdo : rituel 45 min pour le closing',
   description: 'Le rituel hebdomadaire qu’utilisent les dirigeants et directeurs commerciaux pour assainir le pipeline, coacher sans micro-manager et faire remonter le taux de conversion.',
   keywords: 'réunion commerciale, revue pipeline, closing B2B, directeur commercial, management commercial, rituel commercial, bootcamp commercial',
   alternates: {

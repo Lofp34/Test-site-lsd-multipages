@@ -11,7 +11,7 @@ const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/expansion-po
 const carouselPrefix = '/images/blog/expansion-portefeuille-client';
 
 export const metadata: Metadata = {
-  title: 'Votre prochain million est dans votre portefeuille clients | Laurent Serre',
+  title: 'Votre prochain million est dans vos clients',
   description:
     '5 leviers concrets pour developper votre chiffre d affaires sans prospecter un seul nouveau client. Exploitez le gisement de votre portefeuille existant. Retour d experience terrain.',
   keywords:
