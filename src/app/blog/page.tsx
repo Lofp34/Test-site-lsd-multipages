@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'retention-client-b2b-pme',
+    title: 'Vos meilleurs clients partent en silence',
+    description: 'Pourquoi vos meilleurs clients B2B partent-ils en silence ? La rétention n\'est pas un sujet post-vente, c\'est un design commercial. Méthode terrain : revue trimestrielle, health score, responsabilité post-signature.',
+    date: '2026-06-20',
+    readTime: '7 min',
+    category: 'Rétention client / Développement commercial',
+    image: '/images/blog/retention-client-b2b-pme/retention-client-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'fatigue-commercial-terrain-rythme-performance',
     title: 'Fatigue du commercial terrain : comment tenir la distance sans s\'épuiser',
     description: 'Comment éviter l\'épuisement quand on est commercial terrain ? 4 piliers pour tenir la distance : le bon ratio rendez-vous/préparation, les 3 types de journées (offensive, build, récupération), le protocole de décompression et l\'indicateur prédictif d\'épuisement.',
