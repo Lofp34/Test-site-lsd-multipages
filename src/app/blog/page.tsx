@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'closing-b2b-budget-gele-pme',
+    title: 'Quand un client dit « budget gelé », il ne parle pas d\'argent',
+    description: 'Le budget gelé n\'est pas une objection de prix, c\'est une objection de priorité. La méthode terrain pour diagnostiquer le vrai blocage, construire un dossier bancable et signer avec des solutions sans risque.',
+    date: '2026-06-21',
+    readTime: '9 min',
+    category: 'Closing / Négociation',
+    image: '/images/blog/closing-budget-gele/closing-budget-gele-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'retention-client-b2b-pme',
     title: 'Vos meilleurs clients partent en silence',
     description: 'Pourquoi vos meilleurs clients B2B partent-ils en silence ? La rétention n\'est pas un sujet post-vente, c\'est un design commercial. Méthode terrain : revue trimestrielle, health score, responsabilité post-signature.',
