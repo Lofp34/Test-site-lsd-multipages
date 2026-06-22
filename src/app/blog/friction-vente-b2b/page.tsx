@@ -54,22 +54,22 @@ export const metadata: Metadata = {
 const carouselPrefix = '/images/blog/friction-vente-b2b';
 
 const carouselImages = [
-  { src: `${carouselPrefix}/bd-slide-01-cover.webp`, alt: 'Couverture : Friction processus de vente B2B, un deal perdu sur la ligne d\'arrivée', index: 0 },
-  { src: `${carouselPrefix}/bd-slide-02-constat.webp`, alt: 'Le constat : un dirigeant de PME perd un deal après 3 mois de travail', index: 1 },
-  { src: `${carouselPrefix}/bd-slide-03-retard.webp`, alt: 'Première friction : les retards entre étapes du cycle de vente', index: 2 },
-  { src: `${carouselPrefix}/bd-slide-04-prospect-fatigue.webp`, alt: 'Le prospect perd de l\'énergie à chaque délai sans justification', index: 3 },
-  { src: `${carouselPrefix}/bd-slide-05-laurent-entre.webp`, alt: 'Laurent Serre intervient pour diagnostiquer le processus de vente', index: 4 },
-  { src: `${carouselPrefix}/bd-slide-06-laurent-observe.webp`, alt: 'Observation du processus : chaque étape analysed comme un point de friction', index: 5 },
-  { src: `${carouselPrefix}/bd-slide-07-visibilite.webp`, alt: 'Deuxième friction : le prospect ne sait pas ce qui vient après le devis', index: 6 },
-  { src: `${carouselPrefix}/bd-slide-08-documents-disperses.webp`, alt: 'Troisième friction : documents dispersés entre emails, PDF et présentations', index: 7 },
-  { src: `${carouselPrefix}/bd-slide-09-pas-deal-room.webp`, alt: 'Quatrième friction : absence de Deal Room, tout passe par email', index: 8 },
-  { src: `${carouselPrefix}/bd-slide-10-onboarding-flou.webp`, alt: 'Cinquième friction : onboarding flou après signature, cause n°1 de churn', index: 9 },
-  { src: `${carouselPrefix}/bd-slide-11-diagnostic.webp`, alt: 'Le diagnostic : 5 frictions identified dans le processus de vente', index: 10 },
-  { src: `${carouselPrefix}/bd-slide-12-5-frictions.webp`, alt: 'Synthèse visuelle des 5 frictions qui tuent les deals B2B', index: 11 },
-  { src: `${carouselPrefix}/bd-slide-13-tracer-mesurer.webp`, alt: 'Solution 1 : tracer les 5 étapes et mesurer le temps réel entre chacune', index: 12 },
-  { src: `${carouselPrefix}/bd-slide-14-deal-room.webp`, alt: 'Solution 2 : mettre en place une Deal Room unique par deal', index: 13 },
-  { src: `${carouselPrefix}/bd-slide-15-resultats.webp`, alt: 'Résultats : 30% de temps gagné par vente et des deals qui ne s\'égarent plus', index: 14 },
-  { src: `${carouselPrefix}/bd-slide-16-cta.webp`, alt: 'Appel à l\'action : diagnostiquez votre processus de vente', index: 15 },
+  { src: `${carouselPrefix}/bd-slide-01-cover.webp?v=20260622`, alt: 'Couverture : Friction processus de vente B2B, un deal perdu sur la ligne d\'arrivée', index: 0 },
+  { src: `${carouselPrefix}/bd-slide-02-constat.webp?v=20260622`, alt: 'Le constat : un dirigeant de PME perd un deal après 3 mois de travail', index: 1 },
+  { src: `${carouselPrefix}/bd-slide-03-retard.webp?v=20260622`, alt: 'Première friction : les retards entre étapes du cycle de vente', index: 2 },
+  { src: `${carouselPrefix}/bd-slide-04-prospect-fatigue.webp?v=20260622`, alt: 'Le prospect perd de l\'énergie à chaque délai sans justification', index: 3 },
+  { src: `${carouselPrefix}/bd-slide-05-laurent-entre.webp?v=20260622`, alt: 'Laurent Serre intervient pour diagnostiquer le processus de vente', index: 4 },
+  { src: `${carouselPrefix}/bd-slide-06-laurent-observe.webp?v=20260622`, alt: 'Observation du processus : chaque étape analysed comme un point de friction', index: 5 },
+  { src: `${carouselPrefix}/bd-slide-07-visibilite.webp?v=20260622`, alt: 'Deuxième friction : le prospect ne sait pas ce qui vient après le devis', index: 6 },
+  { src: `${carouselPrefix}/bd-slide-08-documents-disperses.webp?v=20260622`, alt: 'Troisième friction : documents dispersés entre emails, PDF et présentations', index: 7 },
+  { src: `${carouselPrefix}/bd-slide-09-pas-deal-room.webp?v=20260622`, alt: 'Quatrième friction : absence de Deal Room, tout passe par email', index: 8 },
+  { src: `${carouselPrefix}/bd-slide-10-onboarding-flou.webp?v=20260622`, alt: 'Cinquième friction : onboarding flou après signature, cause n°1 de churn', index: 9 },
+  { src: `${carouselPrefix}/bd-slide-11-diagnostic.webp?v=20260622`, alt: 'Le diagnostic : 5 frictions identified dans le processus de vente', index: 10 },
+  { src: `${carouselPrefix}/bd-slide-12-5-frictions.webp?v=20260622`, alt: 'Synthèse visuelle des 5 frictions qui tuent les deals B2B', index: 11 },
+  { src: `${carouselPrefix}/bd-slide-13-tracer-mesurer.webp?v=20260622`, alt: 'Solution 1 : tracer les 5 étapes et mesurer le temps réel entre chacune', index: 12 },
+  { src: `${carouselPrefix}/bd-slide-14-deal-room.webp?v=20260622`, alt: 'Solution 2 : mettre en place une Deal Room unique par deal', index: 13 },
+  { src: `${carouselPrefix}/bd-slide-15-resultats.webp?v=20260622`, alt: 'Résultats : 30% de temps gagné par vente et des deals qui ne s\'égarent plus', index: 14 },
+  { src: `${carouselPrefix}/bd-slide-16-cta.webp?v=20260622`, alt: 'Appel à l\'action : diagnostiquez votre processus de vente', index: 15 },
 ];
 
 const faqItems = [
