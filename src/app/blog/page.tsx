@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'friction-vente-b2b',
+    title: 'Friction dans le processus de vente B2B : pourquoi vos deals stagnent',
+    description: 'Le problème n\'est ni votre offre, ni votre prix, ni vos commerciaux. C\'est la friction invisible à chaque étape du cycle. Déconstruction des 5 points de friction qui tuent les deals B2B en 2026.',
+    date: '2026-06-22',
+    readTime: '7 min',
+    category: 'Processus de vente / Sales ops',
+    image: '/images/blog/friction-vente-b2b/hero.png',
+    featured: true,
+  },
+  {
     slug: 'closing-b2b-budget-gele-pme',
     title: 'Quand un client dit « budget gelé », il ne parle pas d\'argent',
     description: 'Le budget gelé n\'est pas une objection de prix, c\'est une objection de priorité. La méthode terrain pour diagnostiquer le vrai blocage, construire un dossier bancable et signer avec des solutions sans risque.',
