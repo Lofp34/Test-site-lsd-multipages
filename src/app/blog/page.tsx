@@ -42,7 +42,7 @@ const blogPosts = [
     date: '2026-06-22',
     readTime: '7 min',
     category: 'Processus de vente / Sales ops',
-    image: '/images/blog/friction-vente-b2b/hero.png',
+    image: '/images/blog/friction-vente-b2b-hero.webp',
     featured: true,
   },
   {
