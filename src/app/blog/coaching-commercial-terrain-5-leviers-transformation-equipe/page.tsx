@@ -8,7 +8,7 @@ const heroImage = '/images/blog/coaching-commercial-terrain-hero.webp';
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/coaching-commercial-terrain-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Coaching commercial terrain : 5 leviers de transformation',
+  title: 'Coaching commercial terrain : 5 leviers pour transformer',
   description:
     'La formation masse ne change rien. Le coaching terrain, oui , à condition de suivre 5 leviers précis. Découvrez la méthode terrain qui transforme les équipes commerciales de PME.',
   keywords:

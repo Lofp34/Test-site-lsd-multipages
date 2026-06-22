@@ -5,15 +5,15 @@ import Button from '@/components/ui/Button';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Blog Développement Commercial - Conseils d\'Expert | Laurent Serre',
-  description: 'Découvrez nos articles d\'expert sur le développement commercial, la formation des équipes de vente et les stratégies B2B. Conseils pratiques pour PME.',
+  title: 'Vente B2B, closing, management commercial : articles terrain',
+  description: 'Conglomerat d'articles écrits par Laurent Serre, consultant commercial terrain PME. Closing, prospectie, management d'équipe, négociatie B2B. Méthodes testées en mission.',
   keywords: 'blog développement commercial, formation commerciale, stratégies vente B2B, conseils PME, expert commercial',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog',
   },
   openGraph: {
-    title: 'Blog Développement Commercial - Conseils d\'Expert',
-    description: 'Découvrez nos articles d\'expert sur le développement commercial, la formation des équipes de vente et les stratégies B2B.',
+    title: 'Vente B2B, closing, management commercial : articles terrain',
+    description: 'Articles de Laurent Serre, consultant commercial terrain PME. Closing, prospection, management, négociation B2B.',
     url: 'https://www.laurentserre.com/blog',
     type: 'website',
     locale: 'fr_FR',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Blog Développement Commercial - Conseils d\'Expert',
-    description: 'Découvrez nos articles d\'expert sur le développement commercial, la formation des équipes de vente et les stratégies B2B.',
+    title: 'Vente B2B, closing, management commercial : articles terrain',
+    description: 'Articles de Laurent Serre, consultant commercial terrain PME. Closing, prospection, management, négociation B2B.',
     images: ['https://www.laurentserre.com/erreurs-fatales.png'],
   },
 };

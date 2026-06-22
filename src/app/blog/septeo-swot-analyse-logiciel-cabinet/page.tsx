@@ -10,18 +10,18 @@ const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/septeo-swot/
 const ogImageAbsolute = 'https://www.laurentserre.com/images/blog/septeo-swot/septeo-swot-og.webp';
 
 export const metadata: Metadata = {
-  title: 'Septeo analyse SWOT 2026 : forces, faiblesses, verdict',
+  title: 'Septeo SWOT : verdict honnête sur le logiciel legaltech',
   description:
-    'Une analyse SWOT Septeo vue par un commercial terrain, pas par leur marketing. Forces réelles, faiblesses franches, opportunités, menaces et verdict par Laurent Serre.',
+    'Analyse SWOT Septeo par un consultant terrain, pas par leur marketing. Forces réelles, faiblesses franches, menaces concrètes. Verdict final sur le logiciel legaltech.',
   keywords:
     'Septeo analyse SWOT, Septeo forces faiblesses, Septeo avis, Septeo STP One acquisition, analyse SWOT logiciel cabinet, Septeo concurrents, editeur legaltech français',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog/septeo-swot-analyse-logiciel-cabinet',
   },
   openGraph: {
-    title: 'Septeo : analyse SWOT de l\'éditeur legaltech français',
+    title: 'Septeo SWOT : verdict honnête sur le logiciel legaltech',
     description:
-      'Vous êtes dirigeant de PME, on vous parle de Septeo. Voici l\'analyse qu\'aucun commercial Septeo ne vous fera : forces, faiblesses, opportunités, menaces.',
+      'Vous êtes dirigeant de PME, on vous parle de Septeo. Analyse SWOT par un consultant terrain : forces, faiblesses, menaces et verdict final.',
     url: 'https://www.laurentserre.com/blog/septeo-swot-analyse-logiciel-cabinet',
     type: 'article',
     locale: 'fr_FR',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Septeo : analyse SWOT de l\'éditeur legaltech français',
+    title: 'Septeo SWOT : verdict honnête sur le logiciel legaltech',
     description:
       'Analyse SWOT complète de Septeo : tableau 4 quadrants, analyse terrain, verdict pour votre cabinet ou direction juridique.',
     images: [ogImageAbsolute],

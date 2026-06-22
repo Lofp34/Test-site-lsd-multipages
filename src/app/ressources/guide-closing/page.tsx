@@ -5,14 +5,14 @@ import BDCarousel from '@/components/BDCarousel';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Closing B2B : 7 techniques qui marchent en 2026 [Guide gratuit]',
+  title: 'Guide closing B2B : 7 techniques pour signer en 2026',
   description: 'Techniques de closing B2B terrain : assumé, alternatif, récapitulatif. Comment gérer les objections prix et signer sans forcer. Guide pratique gratuit avec scripts inclus.',
   keywords: "closing B2B, techniques de vente, objection prix, signaux d'achat, conclure une vente, closing commercial",
   alternates: {
     canonical: 'https://www.laurentserre.com/ressources/guide-closing',
   },
   openGraph: {
-    title: 'Closing B2B : 7 techniques qui marchent en 2026 [Guide gratuit]',
+    title: 'Guide closing B2B : 7 techniques pour signer en 2026',
     description: 'Techniques de closing B2B terrain : assumé, alternatif, récapitulatif, gestion des objections. Un guide gratuit pour conclure plus de ventes sans forcer ni brader.',
     url: 'https://www.laurentserre.com/ressources/guide-closing',
     type: 'article',

@@ -6,7 +6,7 @@ import StructuredData from '@/components/StructuredData';
 import FAQ from '@/components/FAQ';
 
 export const metadata: Metadata = {
-  title: 'Expert Développement Commercial PME — diagnostic, formation, accompagnement terrain',
+  title: 'Expert développement commercial PME : diagnostic, formation',
   description: 'Expert en développement commercial PME depuis 20 ans. Diagnostic gratuit, formation terrain et structuration d’équipe pour générer plus de clients qualifiés.',
   keywords: 'expert développement commercial PME, consultant commercial PME, formation commerciale PME, accompagnement commercial PME, structuration équipe commerciale, Laurent Serre expert commercial',
   authors: [{ name: 'Laurent Serre' }],
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/expert-developpement-commercial-pme',
   },
   openGraph: {
-    title: 'Expert Développement Commercial PME — diagnostic, formation, accompagnement terrain',
+    title: 'Expert développement commercial PME : diagnostic, formation',
     description: 'Expert en développement commercial PME : diagnostic, formation et structuration d’équipe pour générer plus de clients qualifiés.',
     url: 'https://www.laurentserre.com/expert-developpement-commercial-pme',
     type: 'website',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Expert Développement Commercial PME — diagnostic, formation terrain',
+    title: 'Expert développement commercial PME : diagnostic, formation',
     description: 'Expert en développement commercial PME : diagnostic, formation terrain et structuration d’équipe pour plus de clients qualifiés.',
     images: ['https://www.laurentserre.com/laurent.jpg'],
     creator: '@laurentserre',
