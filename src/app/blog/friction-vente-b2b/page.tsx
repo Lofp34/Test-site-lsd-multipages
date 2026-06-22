@@ -6,7 +6,7 @@ import AuthorCard from '@/components/AuthorCard';
 import BDCarousel from '@/components/BDCarousel';
 
 const articleUrl = 'https://www.laurentserre.com/blog/friction-vente-b2b';
-const heroImage = 'https://www.laurentserre.com/images/blog/friction-vente-b2b/hero.webp';
+const heroImage = 'https://www.laurentserre.com/images/blog/friction-vente-b2b/friction-vente-b2b-hero.webp';
 
 export const metadata: Metadata = {
   title: 'Friction processus de vente B2B : 5 points qui tuent vos deals',
@@ -212,7 +212,7 @@ export default function FrictionVenteB2BPage() {
 
           <div className="relative mb-12">
             <Image
-              src="/images/blog/friction-vente-b2b/hero.webp"
+              src="/images/blog/friction-vente-b2b/friction-vente-b2b-hero.webp"
               alt="Friction processus de vente B2B"
               width={1536}
               height={1024}
