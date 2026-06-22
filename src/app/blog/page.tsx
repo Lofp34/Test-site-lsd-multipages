@@ -6,7 +6,7 @@ import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
   title: 'Vente B2B, closing, management commercial : articles terrain',
-  description: 'Conglomerat d'articles écrits par Laurent Serre, consultant commercial terrain PME. Closing, prospectie, management d'équipe, négociatie B2B. Méthodes testées en mission.',
+  description: "Articles de Laurent Serre, consultant commercial terrain PME. Closing, prospection, management d'équipe, négociation B2B. Méthodes testées en mission.",
   keywords: 'blog développement commercial, formation commerciale, stratégies vente B2B, conseils PME, expert commercial',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog',
