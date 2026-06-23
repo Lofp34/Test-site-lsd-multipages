@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'reactif-anticipatif-plan-commercial-pme-2026',
+    title: 'Réactif vs Anticipatif — Comment arrêter de gérer votre développement commercial en mode pompier',
+    description: 'La plupart des dirigeants PME gèrent leur développement commercial en réaction. Un plan commercial à 3 horizons change la donne : pipeline, marge, équipe. Indicateurs et rituels de pilotage inclus.',
+    date: '2026-06-23',
+    readTime: '8 min',
+    category: 'Performance commerciale / Gestion du développement commercial',
+    image: '/images/blog/reactif-anticipatif-plan-commercial-pme-2026/reactif-anticipatif-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'friction-vente-b2b',
     title: 'Friction dans le processus de vente B2B : pourquoi vos deals stagnent',
     description: 'Le problème n\'est ni votre offre, ni votre prix, ni vos commerciaux. C\'est la friction invisible à chaque étape du cycle. Déconstruction des 5 points de friction qui tuent les deals B2B en 2026.',
