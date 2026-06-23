@@ -3,15 +3,15 @@ import { ArrowLeft, Target, Crown, Users, TrendingUp, Calendar, Star, Shield, Za
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Kit Gestion Grands Comptes | Laurent Serre',
-  description: 'Méthodes et outils pour développer vos comptes stratégiques. Kit complet pour Key Account Managers et commerciaux grands comptes.',
+  title: 'Gestion grands comptes B2B : méthodes et outils pour KAM',
+  description: 'Kit complet pour Key Account Managers : méthodes de pilotage, templates de suivi et outils pour développer vos comptes stratégiques B2B.',
   keywords: 'gestion grands comptes, key account manager, comptes stratégiques, développement grands comptes, KAM, commercial grands comptes',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
     canonical: 'https://www.laurentserre.com/ressources/kit-gestion-grands-comptes',
   },
   openGraph: {
-    title: 'Kit Gestion Grands Comptes | Laurent Serre',
+    title: 'Gestion grands comptes B2B : méthodes et outils pour KAM',
     description: 'Méthodes et outils pour développer vos comptes stratégiques. Kit complet pour Key Account Managers.',
     url: 'https://www.laurentserre.com/ressources/kit-gestion-grands-comptes',
     type: 'article',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Kit Gestion Grands Comptes | Laurent Serre',
+    title: 'Gestion grands comptes B2B : méthodes et outils pour KAM',
     description: 'Méthodes et outils pour développer vos comptes stratégiques.',
     images: ['https://www.laurentserre.com/laurent.jpg'],
     creator: '@laurentserre',

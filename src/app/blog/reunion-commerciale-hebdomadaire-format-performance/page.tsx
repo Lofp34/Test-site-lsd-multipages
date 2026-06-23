@@ -4,16 +4,16 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Réunion commerciale : le format 4 blocs | Laurent Serre',
+  title: 'Réunion commerciale : exemple de contenu qui fait avancer',
   description:
-    'Des réunions commerciales qui tournent en rond, des équipes qui regardent leurs chaussures. J\'ai testé des formats pendant 15 ans. Voici celui qui tient : 4 blocs, 60 minutes, 80% sur le futur.',
+    'Des réunions commerciales qui tournent en rond. Un format testé sur le terrain : 4 blocs, 60 minutes, orienté 80% sur le futur. Exemple de contenu inclus.',
   keywords:
     'réunion commerciale hebdomadaire, animer réunion commerciale, format réunion commerciale, management équipe commerciale, pilotage commercial, rituel équipe commerciale, Laurent Serre',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog/reunion-commerciale-hebdomadaire-format-performance',
   },
   openGraph: {
-    title: 'Réunion commerciale : le format 4 blocs, 60 minutes, 80 % futur',
+    title: 'Réunion commerciale : exemple de contenu qui fait avancer',
     description:
       'Des réunions commerciales qui tournent en rond. Le meilleur format que j\'ai trouvé en 15 ans : 4 blocs, 60 minutes, et une seule question qui compte en sortie.',
     url: 'https://www.laurentserre.com/blog/reunion-commerciale-hebdomadaire-format-performance',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Réunion commerciale : le format 4 blocs, 60 minutes, 80 % futur',
+    title: 'Réunion commerciale : exemple de contenu qui fait avancer',
     description:
       'Le meilleur format de réunion commerciale que j\'ai trouvé en 15 ans : 4 blocs, 60 minutes, 80% sur le futur.',
     images: ['https://www.laurentserre.com/images/blog/2026-05-09-reunion-commerciale-hebdo-hero.webp'],
