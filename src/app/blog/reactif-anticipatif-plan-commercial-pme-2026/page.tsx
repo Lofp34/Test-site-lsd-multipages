@@ -202,6 +202,10 @@ export default function ReactifAnticipatifPage() {
             </div>
           </div>
 
+          <div className="mb-8">
+            <AuthorCard />
+          </div>
+
           <div className="relative mb-12">
             <Image
               src={heroImage}
@@ -220,11 +224,6 @@ export default function ReactifAnticipatifPage() {
       {/* Article */}
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
-          {/* AuthorCard top */}
-          <div className="mb-8">
-            <AuthorCard />
-          </div>
-
           {/* TL;DR */}
           <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
             <p className="text-sm font-semibold text-mint-green mb-2">Ce que vous allez retenir</p>
