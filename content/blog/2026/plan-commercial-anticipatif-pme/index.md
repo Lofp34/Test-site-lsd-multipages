@@ -1,0 +1,185 @@
+# Plan commercial anticipatif : arrêter la panique et avancer
+
+En janvier, le téléphone sonne. En février, le pipeline est vide. En mars, on brade. En avril, on manque de main-d'œuvre pour encaisser. En mai, on rate des deals.
+
+Vous connaissez cette danse.
+
+La plupart des dirigeants PME gèrent leur développement commercial en réaction. Ils avancent de mois en mois, à coups d'alertes, de rattrapages et de décisions prises sous tension.
+
+Ce n'est pas une question de talent. C'est une question de méthode.
+
+---
+
+## Pourquoi 90 % des dirigeants PME restent en mode réactif
+
+Je vois deux causes principales.
+
+La première : l'urgence permanente. Vous courez après le mois, après le trimestre, après l'objectif. Chaque matin, la question qui structure votre journée est la même : qu'est-ce qui rentre ?
+
+Quand votre attention est captée par l'immédiat, vous n'avez plus la bande passante pour regarder plus loin. Or, dans le développement commercial, l'immédiat est souvent un mauvais guide. Ce qui se passe aujourd'hui est souvent la conséquence d'une décision prise six mois plus tôt, ou l'absence de décision prise six mois plus tôt.
+
+La deuxième cause : le confort fictif du tableau Excel. Beaucoup de dirigeants me montrent leur prévision. Ils remplissent des colonnes, calculent des probabilités, additionnent les montants. Ils ont l'impression de piloter.
+
+Mais leur prévision ne prévoit rien. Elle se contente de photographier l'état du pipeline à l'instant T. Or, un pipeline, ce n'est pas une photo, c'est une séquence. Un dossier avance ou recule, s'accélère ou ralentit, se transforme ou s'éteint. Si vous ne regardez que le montant, vous ne voyez rien.
+
+---
+
+## Horizon 1 : le pipeline court terme (30 jours)
+
+L'horizon 1, c'est le trimestre en cours. Vous ne pouvez pas tout changer, mais vous pouvez tout de même redevenir lucide.
+
+Voici les trois indicateurs d'alerte qui méritent votre attention chaque semaine.
+
+### 1. Les dossiers qui traînent
+
+Un dossier qui traîne depuis plus de trois mois est rarement un deal. C'est souvent une excuse, une consolation, une source de procrastination pour l'équipe. Il a servi à remplir le pipe, à rassurer sur l'objectif, à donner l'impression que ça avance.
+
+Mais ça n'avance pas. Le vrai test : quelles actions concrètes ont été prises dans les trente derniers jours ? Si la réponse est « pas grand-chose », sortez-le du pipe. C'est douloureux, mais c'est nécessaire pour redevenir lucide.
+
+### 2. La longueur de votre pipe
+
+Plus votre pipe est long, plus il y a de dossiers que vous ne gérez pas vraiment.
+
+Je vois souvent des pipes avec deux cents, trois cents dossiers. Personne ne peut piloter ça. L'équipe passe son temps à mettre à jour des colonnes, à changer des probabilités, à additionner des montants qui ne signifient plus grand-chose.
+
+La règle de terrain : un commercial ne peut pas vraiment piloter plus de quinze à vingt dossiers simultanés. Au-delà, c'est du remplissage. Si votre pipe est plus long, c'est que vous accumulez des dossiers qui ne devraient pas y être.
+
+### 3. Les dossiers sans prochaine étape claire
+
+Un bon dossier, c'est un dossier qui a une prochaine étape identifiée et datée : un nouveau rendez-vous, une démo, une validation technique, une décision de budget, un contrat à relancer.
+
+Si la prochaine étape est « je le relance la semaine prochaine », ce n'est pas une étape. C'est de l'espoir. Sortez-le du pipe.
+
+---
+
+## Horizon 2 : la marge moyen terme (6-12 mois)
+
+L'horizon 2, c'est la santé de votre portefeuille clients sur l'année à venir. Beaucoup de dirigeants négligent cette dimension : ils regardent le CA, mais ils ne regardent pas la marge.
+
+Pourtant, tous vos clients ne se valent pas.
+
+### Segmenter vos clients par rentabilité
+
+Prenez votre base clients. Regardez la marge réelle par client, pas seulement le CA. Vous découvrirez souvent que 20 % de vos clients génèrent 80 % de votre marge, tandis que 20 % de vos clients vous coûtent de l'argent.
+
+C'est le client qui appelle à toute heure, qui demande des adaptations, qui renégocie à chaque renouvellement, qui paie en retard. Vous le croyez important parce qu'il occupe beaucoup de votre temps et de celui de vos équipes. Mais en réalité, il vous fait perdre de l'argent.
+
+### Prendre des décisions difficiles
+
+Une fois que vous avez visualisé cette segmentation, vous avez des décisions à prendre.
+
+- Sur vos clients très rentables : comment les protéger ? Comment augmenter la fréquence, le panier moyen, la fidélité ? Ils méritent votre attention.
+- Sur vos clients à marge faible : soit vous augmentez vos prix, soit vous réduisez les coûts de service, soit vous les laissez partir.
+- Sur vos clients déficitaires : c'est simple. Soit vous augmentez drastiquement vos prix pour devenir rentable, soit vous arrêtez de travailler avec eux.
+
+Beaucoup de dirigeants n'osent pas prendre ces décisions. Elles sont difficiles. Elles créent des tensions. Mais c'est la seule façon de retrouver une marge saine et de pouvoir investir dans l'avenir.
+
+---
+
+## Horizon 3 : l'équipe long terme (18+ mois)
+
+L'horizon 3, c'est la constitution de votre équipe commerciale. C'est souvent l'horizon que les dirigeants PME traitent en dernier, quand il est trop tard.
+
+Un commercial qui commence à être performant met en moyenne six à douze mois pour monter en puissance. Si vous commencez à recruter quand vous sentez que vous êtes à court, vous avez déjà perdu six à douze mois.
+
+### Recruter en avance, pas en urgence
+
+La règle est simple : vous devriez toujours avoir un commercial en formation pendant qu'un commercial senior est en pleine performance. C'est ce qui permet de lisser la courbe et de ne pas subir les départs.
+
+Concrètement, cela veut dire que vous devez anticiper. Si vous prévoyez une croissance de 20 % de votre CA dans les deux ans à venir, commencez dès maintenant à structurer votre recrutement. Ne laissez pas l'opportunité dicter le tempo.
+
+### Construire une équipe stable
+
+Un autre piège classique : le turnover élevé. Recruter, former, perdre, recommencer. À chaque cycle, vous perdez du savoir-faire, de la confiance client, du temps.
+
+La stabilité de l'équipe est un actif. Beaucoup de dirigeants PME ont l'impression que le turnover est une fatalité dans la vente. C'est faux. Le turnover élevé cache souvent trois problèmes :
+- un recrutement mal fait
+- une intégration trop légère
+- une rémunération qui ne récompense pas la performance réelle
+
+Corrigez ces trois problèmes, et vous construisez une équipe qui tient.
+
+---
+
+## Les 7 rituels de pilotage : hebdo (30 minutes) + mensuel (1 heure)
+
+Passer du réactif à l'anticipatif ne se fait pas avec des tableaux de bord plus complexes. Cela se fait avec des rituels simples, réguliers, qui ramènent votre attention sur ce qui compte vraiment.
+
+### Rituel hebdomadaire (30 minutes) — le vendredi matin
+
+1. **Nettoyer le pipe.** Sortez tous les dossiers qui n'ont pas bougé dans les quinze derniers jours. C'est douloureux, mais c'est indispensable pour redevenir lucide.
+2. **Identifier les trois dossiers critiques.** Quels sont les trois deals qui, s'ils se signent ce trimestre, changent vraiment votre résultat ? Concentrez-vous sur eux.
+3. **Vérifier les prochaines étapes.** Pour ces trois dossiers, quelles sont les actions concrètes de la semaine prochaine ? Qui fait quoi, quand, avec quel résultat attendu ?
+4. **Regarder l'équipe.** Chaque commercial a-t-il un pipeline suffisant pour atteindre son objectif trimestriel ? Si non, que peut-on faire dès maintenant pour l'aider ?
+
+### Rituel mensuel (1 heure) — le premier lundi du mois
+
+1. **Analyser le mois passé.** Qu'est-ce qui s'est signifié ? Pourquoi ? Qu'est-ce qui s'est perdu ? Pourquoi ? Quels patterns se dessinent ?
+2. **Revoir la segmentation client.** Quels clients ont été particulièrement rentables ? Quels clients ont coûté du temps et de l'argent sans rapport ?
+3. **Ajuster les priorités.** Y a-t-il des clients qu'il faut laisser partir ? Des types de dossiers qu'il faut arrêter de poursuivre ? Des segments qu'il faut renforcer ?
+4. **Vérifier l'équipe.** Qui monte en puissance ? Qui stagne ? Qui a besoin de soutien ? Y a-t-il des recrutements à lancer maintenant pour dans six mois ?
+5. **Fixer l'agenda du mois à venir.** Quels sont les trois enjeux commerciaux du mois ? Quelles actions vont engager l'équipe ?
+
+---
+
+## Comment déployer ce plan en 4 semaines sans perturber votre activité
+
+Vous n'avez pas besoin de tout changer d'un coup. Voici une méthode progressive.
+
+**Semaine 1 : Lucidité.**
+Commencez par nettoyer votre pipe. Sortez tous les dossiers qui n'ont pas bougé depuis quinze jours. C'est le rituel hebdomadaire minimal.
+
+**Semaine 2 : Priorité.**
+Identifiez vos trois dossiers critiques. Concentrez l'équipe sur eux. C'est la seule façon d'avoir un impact réel sur le trimestre.
+
+**Semaine 3 : Marge.**
+Regardez votre base clients. Identifiez vos clients très rentables, vos clients à marge faible et vos clients déficitaires. Prenez une première décision sur au moins un client déficitaire.
+
+**Semaine 4 : Équipe.**
+Regardez l'équipe. Qui monte ? Qui stagne ? Qui a besoin de soutien ? Commencez à réfléchir à vos besoins de recrutement pour les six prochains mois.
+
+À la fin de ces quatre semaines, vous n'avez pas encore tout transformé. Mais vous avez repris la main. Vous avez un pipe plus propre. Vous avez des priorités plus claires. Vous avez commencé à regarder votre marge. Vous avez une première vision de votre équipe.
+
+À partir de là, la transition continue. Les rituels hebdomadaire et mensuel deviennent des habitudes. Les trois horizons deviennent une façon de penser, pas un tableau de bord de plus.
+
+Ce n'est plus de la réaction. C'est de l'anticipation.
+
+Et ça change tout.
+
+---
+
+## TL;DR
+
+La gestion réactive de votre développement commercial vous coûte des marges et de l'énergie.
+
+Pour passer à l'anticipatif :
+1. **Horizon 1 (30 jours)** : nettoyez votre pipe, regardez les dossiers qui traînent, limitez sa longueur, exigez une prochaine étape claire.
+2. **Horizon 2 (6-12 mois)** : segmentez vos clients par rentabilité, prenez des décisions difficiles sur les clients déficitaires.
+3. **Horizon 3 (18+ mois)** : recrutez en avance, construisez une équipe stable, réduisez le turnover.
+4. **Rituels** : 30 minutes hebdo (nettoyage pipe, priorités, équipe) + 1 heure mensuel (analyse du mois passé, segmentation client, ajustements, équipe, agenda du mois).
+
+Commencez par le nettoyage de votre pipe. Revenez ensuite sur les clients et l'équipe. Quatre semaines suffisent pour reprendre la main.
+
+---
+
+## Vous voulez un diagnostic de votre pipeline commercial ?
+
+Je vous propose un diagnostic offert d'une demi-journée pour regarder votre pipe, votre segmentation client et votre équipe. Ensemble, nous identifions les ajustements à faire pour passer du réactif à l'anticipatif.
+
+[Commencez par un diagnostic offert sur laurentserre.com](https://www.laurentserre.com/diagnostic)
+
+---
+
+## Vous voulez aller plus loin ?
+
+Le **Bootcamp Commercial** est un programme de 8 semaines pour transformer vos commerciaux en terrain. Nous travaillons la méthode, les rituels, les scènes difficiles, les objections. L'objectif : des commerciaux qui signent plus souvent, avec plus de marge.
+
+[En savoir plus sur le Bootcamp Commercial](https://www.laurentserre.com/bootcamp-commercial)
+
+---
+
+## Articles à lire sur le même sujet
+
+- [Le 28 du mois, il est trop tard pour sauver vos ventes](/blog/le-28-du-mois-il-est-trop-tard-pour-sauver-vos-ventes)
+- [KPIs commerciaux PME : les 5 indicateurs qui comptent vraiment](/blog/kpis-commerciaux-pme)
+- [Coaching commercial : l'écoute qui change tout](/blog/coaching-commercial-diagnostic-ecoute)
