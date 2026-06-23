@@ -5,7 +5,7 @@ import Badge from '@/components/ui/Badge';
 
 // Métadonnées SEO optimisées
 export const metadata: Metadata = {
-  title: 'Selling to Big Companies par Jill Konrath | Résumé et Avis | Laurent Serre',
+  title: 'Selling to Big Companies : résumé et méthode Jill Konrath',
   description: 'Découvrez notre résumé détaillé de "Selling to Big Companies" par Jill Konrath. Points clés, avis terrain et conseils pour prospecter les grands comptes. Le guide concret pour obtenir des rendez-vous avec les décideurs.',
   keywords: [
     'selling to big companies',

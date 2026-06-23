@@ -5,7 +5,7 @@ import ContextualCTAs from '@/components/ui/ContextualCTAs';
 import { generateCrossCategorySuggestions, generateContextualCTAs } from '@/utils/cross-category-suggestions';
 
 export const metadata: Metadata = {
-  title: 'Good to Great : résumé complet | Sales Management & Leadership | Laurent Serre',
+  title: 'Good to Great : résumé et leçons de leadership',
   description: 'Résumé détaillé, concepts clés, conseils terrain et avis de Good to Great (Jim Collins). Les facteurs durables de la réussite organisationnelle et du leadership de niveau 5.',
   keywords: [
     'good to great',

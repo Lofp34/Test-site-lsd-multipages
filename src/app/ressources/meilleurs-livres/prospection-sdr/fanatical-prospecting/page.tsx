@@ -10,7 +10,7 @@ export default function FanaticalProspectingPage() {
   return (
     <>
       <Head>
-        <title>{book.title} : résumé complet | Meilleurs livres | LSD</title>
+        <title>Fanatical Prospecting : résumé et méthode de prospection B2B</title>
         <meta name="description" content={`Résumé détaillé, points clés et avis sur ${book.title} de ${book.author}. Découvrez les meilleures techniques de prospection moderne.`} />
       </Head>
       <main className="bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16">

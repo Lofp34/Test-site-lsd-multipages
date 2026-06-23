@@ -3,7 +3,7 @@ import { MapPin, Phone, Target, Users, Award, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Consultant Commercial Montpellier | Laurent Serre - Expert Local PME',
+  title: 'Consultant commercial Montpellier : expert PME Laurent Serre',
   description: 'Consultant commercial Montpellier pour PME. Laurent Serre intervient en région Occitanie pour formations, accompagnement et transformation commerciale.',
   keywords: 'consultant commercial Montpellier, conseil commercial Montpellier, expert commercial Occitanie, formation commerciale Montpellier, développement commercial Hérault',
   authors: [{ name: 'Laurent Serre' }],
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/consultant-commercial-montpellier',
   },
   openGraph: {
-    title: 'Consultant Commercial Montpellier | Laurent Serre - Expert Local PME',
+    title: 'Consultant commercial Montpellier : expert PME Laurent Serre',
     description: 'Consultant commercial Montpellier pour PME. Expert local en développement commercial région Occitanie.',
     url: 'https://www.laurentserre.com/consultant-commercial-montpellier',
     type: 'website',

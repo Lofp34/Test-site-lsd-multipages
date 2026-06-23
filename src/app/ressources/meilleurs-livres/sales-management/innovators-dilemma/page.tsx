@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Le Dilemme de l\'Innovateur (The Innovator\'s Dilemma) | Résumé Clay Christensen',
+  title: 'Innovator\'s Dilemma : résumé et leçons pour la vente B2B',
   description: 'Le dilemme de l\'innovateur de Clayton Christensen expliqué aux commerciaux et managers : innovation disruptive vs sustaining. Comment anticiper le changement sans détruire votre business. Résumé complet.',
   keywords: [
     'innovators dilemma',

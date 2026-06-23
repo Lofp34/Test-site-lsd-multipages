@@ -8,7 +8,7 @@ import AIInsight from '@/components/ui/AIInsight';
 import { generateCrossCategorySuggestions, generateContextualCTAs } from '@/utils/cross-category-suggestions';
 
 export const metadata: Metadata = {
-  title: 'The Second Machine Age : résumé complet | Digital & AI Sales | Laurent Serre',
+  title: 'Second Machine Age : résumé et impact sur la vente',
   description: 'Résumé détaillé, concepts clés, conseils terrain et avis de The Second Machine Age (Brynjolfsson & McAfee). Comprendre l\'impact économique des technologies numériques sur la vente.',
   keywords: [
     'the second machine age',

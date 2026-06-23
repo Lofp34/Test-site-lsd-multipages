@@ -112,7 +112,7 @@ const mainPageStructuredData = {
 };
 
 export const metadata: Metadata = {
-  title: 'Meilleurs Livres de Vente | Guide Complet | Laurent Serre',
+  title: 'Meilleurs livres vente B2B : 20 titres pour commerciaux',
   description: 'La sélection complète des meilleurs livres de vente, négociation, prospection, management et développement commercial. Résumés détaillés et conseils terrain par Laurent Serre.',
   keywords: [
     'meilleurs livres vente',
@@ -125,7 +125,7 @@ export const metadata: Metadata = {
     'développement commercial PME'
   ],
   openGraph: {
-    title: 'Meilleurs Livres de Vente | Guide Complet | Laurent Serre',
+    title: 'Meilleurs livres vente B2B : 20 titres pour commerciaux',
     description: 'La sélection complète des meilleurs livres de vente, négociation, prospection, management et développement commercial. Résumés détaillés et conseils terrain.',
     type: 'website',
     locale: 'fr_FR',
@@ -142,7 +142,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Meilleurs Livres de Vente | Guide Complet | Laurent Serre',
+    title: 'Meilleurs livres vente B2B : 20 titres pour commerciaux',
     description: 'La sélection complète des meilleurs livres de vente, négociation, prospection, management et développement commercial.',
     images: ['https://www.laurentserre.com/images/og-meilleurs-livres.jpg'],
   },

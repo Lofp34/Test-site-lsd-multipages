@@ -29,7 +29,7 @@ const bookData = {
 };
 
 export const metadata: Metadata = {
-  title: `${bookData.title} | ${bookData.author} | Résumé et Conseils | Laurent Serre`,
+  title: `Grit : résumé et leçons de persévérance pour commerciaux`,
   description: `${bookData.title} de ${bookData.author} (${bookData.year}) : ${bookData.tagline} Résumé détaillé, points clés et conseils terrain de Laurent Serre pour développer la persévérance en prospection commerciale.`,
   keywords: [
     'grit angela duckworth',

@@ -5,7 +5,7 @@ export default function ChallengerSalePage() {
   return (
     <>
       <Head>
-        <title>The Challenger Sale : résumé complet | Méthodes & Processus de vente | LSD</title>
+        <title>Challenger Sale : résumé et méthode pour vendre en B2B</title>
         <meta name="description" content="Résumé détaillé, concepts clés, conseils terrain et citation de The Challenger Sale (Dixon & Adamson). Le livre de référence pour la vente complexe et la négociation B2B." />
       </Head>
       <main className="bg-gradient-to-br from-blue-ink via-mint-green/10 to-primary-bg min-h-screen pt-24 pb-16">
