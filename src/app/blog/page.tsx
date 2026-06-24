@@ -36,12 +36,22 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'minute-verite-60-secondes-avant-call-commercial',
+    title: '60 secondes avant un appel : une minute qui change tout',
+    description: 'Les 60 secondes avant un call commercial ne sont pas une perte de temps. Decouvrez le rituel en 3 questions qui transforme un rendez-vous banal en opportunite de closing.',
+    date: '2026-06-24',
+    readTime: '5 min',
+    category: 'Closing / Mindset commercial',
+    image: '/images/blog/minute-verite-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'reactif-anticipatif-plan-commercial-pme-2026',
-    title: 'Réactif vs Anticipatif — Comment arrêter de gérer votre développement commercial en mode pompier',
-    description: 'La plupart des dirigeants PME gèrent leur développement commercial en réaction. Un plan commercial à 3 horizons change la donne : pipeline, marge, équipe. Indicateurs et rituels de pilotage inclus.',
+    title: 'Reactif vs Anticipatif — Comment arrêter de gerer votre developpement commercial en mode pompier',
+    description: 'La plupart des dirigeants PME gerent leur developpement commercial en reaction. Un plan commercial a 3 horizons change la donne : pipeline, marge, equipe. Indicateurs et rituels de pilotage inclus.',
     date: '2026-06-23',
     readTime: '8 min',
-    category: 'Performance commerciale / Gestion du développement commercial',
+    category: 'Performance commerciale / Gestion du developpement commercial',
     image: '/images/blog/reactif-anticipatif-plan-commercial-pme-2026/reactif-anticipatif-hero.webp',
     featured: true,
   },
