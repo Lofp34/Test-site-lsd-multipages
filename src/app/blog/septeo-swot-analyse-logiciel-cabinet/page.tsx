@@ -10,7 +10,7 @@ const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/septeo-swot/
 const ogImageAbsolute = 'https://www.laurentserre.com/images/blog/septeo-swot/septeo-swot-og.webp';
 
 export const metadata: Metadata = {
-  title: 'Septeo SWOT : verdict honnête sur le logiciel legaltech',
+  title: 'Septeo : analyse SWOT du leader legaltech français',
   description:
     'Analyse SWOT Septeo par un consultant terrain, pas par leur marketing. Forces réelles, faiblesses franches, menaces concrètes. Verdict final sur le logiciel legaltech.',
   keywords:
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/septeo-swot-analyse-logiciel-cabinet',
   },
   openGraph: {
-    title: 'Septeo SWOT : verdict honnête sur le logiciel legaltech',
+    title: 'Septeo : analyse SWOT du leader legaltech français',
     description:
       'Vous êtes dirigeant de PME, on vous parle de Septeo. Analyse SWOT par un consultant terrain : forces, faiblesses, menaces et verdict final.',
     url: 'https://www.laurentserre.com/blog/septeo-swot-analyse-logiciel-cabinet',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Septeo SWOT : verdict honnête sur le logiciel legaltech',
+    title: 'Septeo : analyse SWOT du leader legaltech français',
     description:
       'Analyse SWOT complète de Septeo : tableau 4 quadrants, analyse terrain, verdict pour votre cabinet ou direction juridique.',
     images: [ogImageAbsolute],
