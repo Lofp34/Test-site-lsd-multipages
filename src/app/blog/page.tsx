@@ -37,8 +37,8 @@ export const metadata: Metadata = {
 const blogPosts = [
   {
     slug: 'audit-commercial-pme-7-zones-faille',
-    title: 'Audit commercial PME : les 7 zones de faille que vous ne verifiez jamais',
-    description: "Un audit commercial en PME ne consiste pas \u00e0 remplir un questionnaire. C'est une investigation en 7 zones qui revele ou votre chiffre d'affaires fuit vraiment. Tests pratiques de 10 minutes par zone.",
+    title: 'Audit commercial PME : les 7 zones de faille que vous ne vérifiez jamais',
+    description: "Un audit commercial en PME ne consiste pas \u00e0 remplir un questionnaire. C'est une investigation en 7 zones qui révèle où votre chiffre d'affaires fuit vraiment. Tests pratiques de 10 minutes par zone.",
     date: '2026-06-25',
     readTime: '10 min',
     category: 'Performance commerciale / Diagnostic',

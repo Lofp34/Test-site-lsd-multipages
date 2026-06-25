@@ -433,6 +433,50 @@ export default function AuditCommercialPage() {
             <strong>Le test :</strong> à votre prochaine réunion commerciale, comptez le nombre de décisions prises. Pas les sujets abordés, pas les chiffres commentés. Des décisions. Si vous arrivez à moins de trois décisions concrètes en une heure, vous n&apos;avez pas piloté votre semaine commerciale. Vous avez assisté à un journal télévisé.
           </p>
 
+          {/* Conclusion */}
+          <h2 id="conclusion" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
+            L&apos;audit n&apos;est pas un rapport. C&apos;est une décision.
+          </h2>
+          <p className="mb-8">
+            La plupart des dirigeants que je rencontre attendent d&apos;avoir un diagnostic parfait avant d&apos;agir. Ils veulent le rapport complet, les recommandations classées par priorité, le planning détaillé. Et pendant qu&apos;ils attendent, le CA continue de stagner.
+          </p>
+          <p className="mb-8">
+            La vérité, c&apos;est qu&apos;un seul test de 10 minutes par zone suffit pour savoir où regarder. Vous n&apos;avez pas besoin d&apos;un cabinet de conseil pour compter les deals sans date dans votre CRM. Ce n&apos;est pas compliqué. C&apos;est juste inconfortable parce que ça oblige à voir ce qu&apos;on préfère ignorer.
+          </p>
+          <p className="mb-8">
+            Le dirigeant de l&apos;histoire du début n&apos;avait pas un problème de KPI. Il avait un problème de lucidité. Ses indicateurs étaient beaux parce qu&apos;ils mesuraient ce qui était facile à mesurer. Pas ce qui était utile à regarder.
+          </p>
+          <p className="mb-8 text-lg font-semibold text-blue-ink">
+            Sept zones. Dix minutes chacune. Et si c&apos;est trop long, commencez par la zone 1. Le test le plus court est souvent le plus révélateur.
+          </p>
+
+          {/* Pour aller plus loin */}
+          <div className="bg-blue-ink/5 border border-blue-ink/10 rounded-2xl p-6 my-12">
+            <p className="font-title font-bold text-blue-ink text-sm uppercase tracking-wider mb-4">
+              Pour aller plus loin
+            </p>
+            <ul className="space-y-3 list-disc pl-6 text-sm text-gray-700">
+              <li>
+                <Link href="/blog/kpis-commerciaux-pme-indicateurs-vous-cachent" className="text-mint-green hover:underline">
+                  KPIs commerciaux PME : ce que vos 25 indicateurs vous cachent
+                </Link>
+                <p className="text-gray-500 mt-1">Pourquoi des KPIs au vert peuvent masquer un vrai problème de performance.</p>
+              </li>
+              <li>
+                <Link href="/blog/pipeline-fantome-lundi-matin-test-9-minutes" className="text-mint-green hover:underline">
+                  Pipeline fantôme : le test des 9 minutes du lundi matin
+                </Link>
+                <p className="text-gray-500 mt-1">Le test simple pour repérer les faux deals dans votre pipeline.</p>
+              </li>
+              <li>
+                <Link href="/blog/pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme" className="text-mint-green hover:underline">
+                  Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système
+                </Link>
+                <p className="text-gray-500 mt-1">Quand le vrai problème n&apos;est pas l&apos;équipe mais le cadre dans lequel elle travaille.</p>
+              </li>
+            </ul>
+          </div>
+
           {/* CTA FORT */}
           <div className="bg-gradient-to-br from-blue-ink to-blue-700 text-white rounded-2xl p-8 my-12">
             <h3 className="text-2xl font-title font-bold mb-4">
@@ -455,50 +499,6 @@ export default function AuditCommercialPage() {
                 Découvrir le Bootcamp
               </Link>
             </div>
-          </div>
-
-          {/* Conclusion */}
-          <h2 id="conclusion" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
-            L&apos;audit n&apos;est pas un rapport. C&apos;est une décision.
-          </h2>
-          <p className="mb-8">
-            La plupart des dirigeants que je rencontre attendent d&apos;avoir un diagnostic parfait avant d&apos;agir. Ils veulent le rapport complet, les recommandations classées par priorité, le planning détaillé. Et pendant qu&apos;ils attendent, le CA continue de stagner.
-          </p>
-          <p className="mb-8">
-            La vérité, c&apos;est qu&apos;un seul test de 10 minutes par zone suffit pour savoir où regarder. Vous n&apos;avez pas besoin d&apos;un cabinet de conseil pour compter les deals sans date dans votre CRM. Ce n&apos;est pas compliqué. C&apos;est juste inconfortable parce que ça oblige à voir ce qu&apos;on préfère ignorer.
-          </p>
-          <p className="mb-8">
-            Le dirigeant de l&apos;histoire du début n&apos;avait pas un problème de KPI. Il avait un problème de lucidité. Ses indicateurs étaient beaux parce qu&apos;ils mesuraient ce qui était facile à mesurer. Pas ce qui était utile à regarder.
-          </p>
-          <p className="mb-8 text-lg font-semibold text-blue-ink">
-            Sept zones. Dix minutes chacune. Et si c&apos;est trop long, commencez par la zone 1. Le test le plus court est souvent le plus révélateur.
-          </p>
-
-          {/* Pour aller plus loin */}
-          <div className="mt-16 pt-8 border-t border-gray-200">
-            <h2 className="text-2xl font-title font-bold text-blue-ink mb-6">
-              Pour aller plus loin
-            </h2>
-            <ul className="space-y-4 list-disc pl-6">
-              <li>
-                <Link href="/blog/kpis-commerciaux-pme-indicateurs-vous-cachent" className="text-mint-green hover:underline">
-                  KPIs commerciaux PME : ce que vos 25 indicateurs vous cachent
-                </Link>
-                <p className="text-sm text-gray-600 mt-1">Pourquoi des KPIs au vert peuvent masquer un vrai problème de performance.</p>
-              </li>
-              <li>
-                <Link href="/blog/pipeline-fantome-lundi-matin-test-9-minutes" className="text-mint-green hover:underline">
-                  Pipeline fantôme : le test des 9 minutes du lundi matin
-                </Link>
-                <p className="text-sm text-gray-600 mt-1">Le test simple pour repérer les faux deals dans votre pipeline.</p>
-              </li>
-              <li>
-                <Link href="/blog/pourquoi-bons-commerciaux-deviennent-mediocres-mauvais-systeme" className="text-mint-green hover:underline">
-                  Pourquoi de bons commerciaux deviennent médiocres dans un mauvais système
-                </Link>
-                <p className="text-sm text-gray-600 mt-1">Quand le vrai problème n&apos;est pas l&apos;équipe mais le cadre dans lequel elle travaille.</p>
-              </li>
-            </ul>
           </div>
 
           {/* FAQ */}
