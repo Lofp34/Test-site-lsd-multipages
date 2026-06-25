@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'audit-commercial-pme-7-zones-faille',
+    title: 'Audit commercial PME : les 7 zones de faille que vous ne verifiez jamais',
+    description: "Un audit commercial en PME ne consiste pas \u00e0 remplir un questionnaire. C'est une investigation en 7 zones qui revele ou votre chiffre d'affaires fuit vraiment. Tests pratiques de 10 minutes par zone.",
+    date: '2026-06-25',
+    readTime: '10 min',
+    category: 'Performance commerciale / Diagnostic',
+    image: '/images/blog/audit-commercial-7-zones/audit-commercial-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'minute-verite-60-secondes-avant-call-commercial',
     title: '60 secondes avant un appel : une minute qui change tout',
     description: 'Les 60 secondes avant un call commercial ne sont pas une perte de temps. Decouvrez le rituel en 3 questions qui transforme un rendez-vous banal en opportunite de closing.',
