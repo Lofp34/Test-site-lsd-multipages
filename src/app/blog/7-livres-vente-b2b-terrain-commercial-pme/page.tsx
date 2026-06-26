@@ -51,17 +51,16 @@ const carouselPrefix = '/images/blog/7-livres-vente-b2b';
 
 const carouselImages = [
   { src: `${carouselPrefix}/bd-slide-01-cover.webp`, alt: 'Couverture : 7 livres de vente qui changent la pratique', index: 0 },
-  { src: `${carouselPrefix}/bd-slide-02-constat.webp`, alt: 'Commercial perdu face à une bibliothèque', index: 1 },
-  { src: `${carouselPrefix}/bd-slide-03-laurent-question.webp`, alt: 'Laurent demande : quels livres avez-vous vraiment lus ?', index: 2 },
-  { src: `${carouselPrefix}/bd-slide-04-the-challenger-sale.webp`, alt: 'Denis et la relation pour la relation', index: 3 },
-  { src: `${carouselPrefix}/bd-slide-05-gap-selling.webp`, alt: 'Marc et le pitching sans diagnostic', index: 4 },
-  { src: `${carouselPrefix}/bd-slide-06-high-output-management.webp`, alt: 'Sophie confond activité et résultat', index: 5 },
-  { src: `${carouselPrefix}/bd-slide-07-spin-selling.webp`, alt: 'Thomas et les questions fermées', index: 6 },
-  { src: `${carouselPrefix}/bd-slide-08-innovators-dilemma.webp`, alt: 'Karim vend ce qu\'on lui demande', index: 7 },
-  { src: `${carouselPrefix}/bd-slide-09-never-split.webp`, alt: 'Julien cède sur le prix pour signer', index: 8 },
-  { src: `${carouselPrefix}/bd-slide-10-new-sales.webp`, alt: 'Camille attend les leads au lieu de prospecter', index: 9 },
-  { src: `${carouselPrefix}/bd-slide-11-retour-table.webp`, alt: 'Retour à la table : Laurent et l\'équipe', index: 10 },
-  { src: `${carouselPrefix}/bd-slide-12-cta.webp`, alt: 'CTA : diagnostic offert sur laurentserre.com', index: 11 },
+  { src: `${carouselPrefix}/bd-slide-02-pas-livres-vente.webp`, alt: 'Commercial perdu face à une pile de livres de vente théoriques', index: 1 },
+  { src: `${carouselPrefix}/bd-slide-03-declic.webp`, alt: 'Mentor et commercial : distinguer motivation commerciale et vraie méthode de vente', index: 2 },
+  { src: `${carouselPrefix}/bd-slide-04-spin-selling.webp`, alt: 'SPIN Selling : poser de meilleures questions plutôt que parler davantage', index: 3 },
+  { src: `${carouselPrefix}/bd-slide-05-challenger-sale.webp`, alt: 'The Challenger Sale : créer une tension constructive avec le prospect', index: 4 },
+  { src: `${carouselPrefix}/bd-slide-06-cialdini.webp`, alt: 'Influence : comprendre la psychologie et les émotions dans la décision B2B', index: 5 },
+  { src: `${carouselPrefix}/bd-slide-07-gap-selling.webp`, alt: 'Gap Selling : vendre l\'écart entre situation actuelle insatisfaisante et situation désirée', index: 6 },
+  { src: `${carouselPrefix}/bd-slide-08-methode.webp`, alt: 'Méthode d\'apprentissage : un livre par mois, un concept appliqué', index: 7 },
+  { src: `${carouselPrefix}/bd-slide-09-resultat.webp`, alt: 'Intégrer plusieurs logiques de vente plutôt qu\'accumuler des techniques', index: 8 },
+  { src: `${carouselPrefix}/bd-slide-10-bibliotheque.webp`, alt: 'Construire une bibliothèque de savoirs commerciaux progressivement', index: 9 },
+  { src: `${carouselPrefix}/bd-slide-11-cta.webp`, alt: 'Diagnostic offert sur laurentserre.com pour démarrer votre progression commerciale', index: 10 },
 ];
 
 const faqItems = [
@@ -233,7 +232,7 @@ export default function SeptLivresVenteB2BPage() {
             <div className="mt-4 text-center">
               <Link href="/downloads/carrousel-7-livres-vente-b2b.pdf"
                 className="inline-flex items-center gap-2 text-amber-700 hover:text-amber-800 transition-colors text-sm font-medium">
-                📥 Télécharger le PDF (12 planches)
+                📥 Télécharger le PDF (11 planches)
               </Link>
             </div>
           </div>
