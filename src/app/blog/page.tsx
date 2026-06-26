@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: '7-livres-vente-b2b-terrain-commercial-pme',
+    title: '7 livres de vente qui changent vraiment la pratique d\u0027un commercial B2B',
+    description: 'Selection de 7 livres de vente B2B qui corrigent les erreurs terrain des commerciaux. Pas une biblioth\u00e8que id\u00e9ale \u2014 chaque livre est choisi pour l\u2019erreur concr\u00e8te qu\u2019il corrige.',
+    date: '2026-06-26',
+    readTime: '9 min',
+    category: 'D\u00e9veloppement commercial / Culture vente',
+    image: '/images/blog/7-livres-vente-b2b/livres-vente-hero.webp',
+    featured: true,
+  },
+  {
     slug: 'audit-commercial-pme-7-zones-faille',
     title: 'Audit commercial PME : les 7 zones de faille que vous ne vérifiez jamais',
     description: "Un audit commercial en PME ne consiste pas \u00e0 remplir un questionnaire. C'est une investigation en 7 zones qui révèle où votre chiffre d'affaires fuit vraiment. Tests pratiques de 10 minutes par zone.",
