@@ -1,0 +1,148 @@
+{
+  "title": "Le dirigeant qui refusait de choisir — Good to Great équipe commerciale PME",
+  "basename": "good-to-great-equipe-commerciale-pme",
+  "model": "openai/gpt-image-2",
+  "reference_image": "/Users/clawdia/.openclaw/workspace-copywriter-publisher/production/images/Laurent Serre.jpg",
+  "slides_with_reference": [5, 6, 7, 8, 10, 12],
+  "characters": {
+    "laurent": {
+      "name": "Laurent (coach commercial, 45-48 ans)",
+      "description": "Homme 45-48 ans, silhouette droite et calme, visage expressif au regard franc et direct. Front dégagé, sourcils naturels bien dessinés, yeux marron avec un regard à la fois bienveillant et exigeant, nez droit, bouche aux lèvres fines souvent en léger sourire pensif, menton marqué. Cheveux bruns grisonnants sur les tempes, coiffés simplement, sans apprêt. Porte une chemise bleu clair col ouvert, parfois une veste légère bleu marine, jamais de cravate. Posture ouverte, calme, penché légèrement en avant quand il écoute. Gestes mesurés, pas de démonstration."
+    },
+    "dirigeant": {
+      "name": "Marc (dirigeant PME, 52 ans)",
+      "description": "Homme 52 ans, silhouette solide, carrure moyenne, visage large et franc. Front moyen avec quelques rides horizontales, sourcils grisonnants assez fournis, yeux marron clair, regard parfois soucieux. Nez légèrement busqué, bouche large, menton carré, mâchoire marquée. Cheveux gris courts, dégarnis sur le devant. Porte une chemise blanche ou bleu clair, manches souvent retroussées, parfois des bretelles de costume. Posture de dirigeant fatigué, épaules un peu tombantes. Gestes d'impuissance quand il parle de ses commerciaux, doigts qui tambourinent sur la table quand il réfléchit."
+    },
+    "commercial": {
+      "name": "Julien (commercial, 33 ans)",
+      "description": "Homme 33 ans, silhouette mince et dynamique, visage ovale. Sourcils fins et clairs, yeux bleus vifs, nez fin, bouche souriante. Cheveux bruns courts, coiffés avec du produit. Porte une chemise bleu ciel rentrée, chino beige, baskets blanches. Posture commerciale énergique, téléphone à la main, ordinateur sous le bras."
+    }
+  },
+  "slides": [
+    {
+      "id": 1,
+      "title": "Couverture",
+      "slug": "bd-slide-01-cover",
+      "characters": ["dirigeant", "commercial"],
+      "scene": "Un dirigeant et son commercial sont dans un bureau lumineux. Le dirigeant est assis à son bureau, la tête dans les mains, fatigué mais pas abattu. Le commercial est debout devant lui, les mains dans les poches, l'air perplexe. Au mur : un tableau blanc avec beaucoup de flèches qui partent dans tous les sens. Au premier plan sur le bureau : un exemplaire de Good to Great. L'ambiance est tendue mais pas dramatique.",
+      "bubbles": {
+        "Marc": "Mon équipe est bonne. Mais on n'arrive pas à passer le cap.",
+        "Julien": "On court dans tous les sens. Personne ne sait ce qui compte vraiment."
+      }
+    },
+    {
+      "id": 2,
+      "title": "Le constat : tout et son contraire",
+      "slug": "bd-slide-02-constat",
+      "characters": ["dirigeant"],
+      "scene": "Marc est seul dans son bureau. Devant lui, un tableau de bord papier avec des chiffres. Il regarde plusieurs listing imprimés : marchés, segments clients, offres. Il a un Post-it collé sur son écran : 'prospection TPE, grands comptes, SAV, formation'. Il se frotte le front, l'air dépassé par l'éparpillement.",
+      "bubbles": {
+        "Marc": "TPE, PME, grands comptes, formation... Je veux tout couvrir. Je refuse de choisir."
+      }
+    },
+    {
+      "id": 3,
+      "title": "La dispersion visible",
+      "slug": "bd-slide-03-dispersion",
+      "characters": ["commercial", "dirigeant"],
+      "scene": "Julien court dans un open space, téléphone collé à l'oreille, portable à la main. Dans une autre zone de l'image (split ou arrière-plan), on voit Marc qui consulte trois documents différents en même temps. Des flèches rouges partent dans toutes les directions autour d'eux. Ambiance de dispersion, d'agitation stérile.",
+      "bubbles": {
+        "Julien": "Ce matin je prospecte les TPE. Cet aprem je fais une demo grands comptes. Demain... je sais pas.",
+        "Marc": "Je veux pas fermer de portes. On peut gagner sur tous les tableaux."
+      }
+    },
+    {
+      "id": 4,
+      "title": "L'arrivée de Laurent",
+      "slug": "bd-slide-04-laurent-arrive",
+      "characters": ["laurent", "dirigeant"],
+      "scene": "Laurent entre dans le bureau, une tasse de café à la main, sourire calme et observateur. Il regarde les tableaux et les Post-it. Marc l'accueille, un peu sur la défensive, bras croisés. Bureau en désordre. Sur la table : le livre Good to Great traîne au milieu des papiers. Lumière naturelle de fin de matinée.",
+      "bubbles": {
+        "Laurent": "Tu veux tout faire. C'est pour ça que rien n'avance vraiment.",
+        "Marc": "Je croyais que c'était ça, être un bon dirigeant : ne rien laisser tomber."
+      }
+    },
+    {
+      "id": 5,
+      "title": "Leadership niveau 5",
+      "slug": "bd-slide-05-leadership-niveau5",
+      "characters": ["laurent", "dirigeant"],
+      "scene": "Marc et Laurent sont assis face à face dans le bureau, penchés vers l'avant, conversation sérieuse mais pas tendue. Laurent parle calmement, les mains ouvertes. Marc écoute, une main sur le menton, l'air de commencer à comprendre. Au mur derrière, le tableau a été nettoyé, il n'y a plus qu'un schéma simple : un bus avec des gens dedans.",
+      "bubbles": {
+        "Laurent": "Le leadership niveau 5, c'est l'humilité qui fait gagner. Tu n'as pas besoin d'être partout. Tu as besoin de mettre les bonnes personnes en position de gagner."
+      }
+    },
+    {
+      "id": 6,
+      "title": "D'abord qui, ensuite quoi",
+      "slug": "bd-slide-06-dabord-qui",
+      "characters": ["laurent", "dirigeant"],
+      "scene": "Devant un paperboard, Laurent a dessiné un bus. À l'intérieur : des silhouettes. Marc est à côté, regarde attentivement le dessin. Le paperboard montre d'autres silhouettes en dehors du bus, avec une porte marquée 'peut-être plus tard'. Lumière naturelle. Ambiance de réflexion, pas de tension.",
+      "bubbles": {
+        "Laurent": "D'abord qui, ensuite quoi. Les bonnes personnes dans le bus. Ensuite on décide où aller."
+      }
+    },
+    {
+      "id": 7,
+      "title": "Le concept du hérisson",
+      "slug": "bd-slide-07-herisson",
+      "characters": ["laurent", "dirigeant"],
+      "scene": "Laurent montre sur le paperboard trois cercles qui se chevauchent : 'ce qu'on fait de mieux', 'ce qui rapporte le mieux', 'ce que nos clients veulent vraiment'. Marc est debout, les bras croisés, regard concentré. Il commence à comprendre. La lumière chaude de l'après-midi éclaire la scène.",
+      "bubbles": {
+        "Laurent": "Le concept du hérisson : une seule chose dans laquelle vous êtes le meilleur. Pas cinq. Une."
+      }
+    },
+    {
+      "id": 8,
+      "title": "Dire non",
+      "slug": "bd-slide-08-dire-non",
+      "characters": ["laurent", "dirigeant"],
+      "scene": "Marc a une main levée, paume ouverte, dans un geste de refus. Laurent le regarde avec un sourire approbateur. Derrière Marc, on voit en arrière-plan une porte avec des panneaux : 'TPE', 'formation', 'grands comptes' — barrés d'une croix. Marc semble prendre une décision, un moment de bascule.",
+      "bubbles": {
+        "Marc": "Alors je dis non aux TPE. Non à la formation. Non aux projets qui me font perdre mon temps.",
+        "Laurent": "Exactement. La discipline de la pensée, c'est savoir dire non à ce qui ne fait pas partie de votre cœur."
+      }
+    },
+    {
+      "id": 9,
+      "title": "Le volant d'inertie",
+      "slug": "bd-slide-09-volant-inertie",
+      "characters": ["laurent", "dirigeant"],
+      "scene": "Marc et Laurent sont debout devant un paperboard où Laurent dessine une grande roue (volant). Marc fait le geste de pousser la roue. L'ambiance est plus légère, plus confiante. On sent que Marc a compris la mécanique.",
+      "bubbles": {
+        "Laurent": "Chaque effort dans la même direction. Au début, ça semble ne rien donner. Et un jour, le volant tourne tout seul. C'est la puissance du volant d'inertie."
+      }
+    },
+    {
+      "id": 10,
+      "title": "La transformation silencieuse",
+      "slug": "bd-slide-10-transformation",
+      "characters": ["dirigeant", "commercial"],
+      "scene": "Quelques semaines plus tard. Marc et Julien sont autour d'une table, souriants. Un tableau clair avec un pipeline bien structuré. Julien est détendu, téléphone posé. Marc a l'air reposé, concentré. L'ambiance : une équipe qui a trouvé son cap. Lumière plus claire, facteur d'ambiance positif.",
+      "bubbles": {
+        "Julien": "On sait ce qu'on fait, on sait pourquoi. C'est la première fois que j'ai l'impression d'avancer vraiment.",
+        "Marc": "On fait moins de choses. Mais on les fait mieux. Beaucoup mieux."
+      }
+    },
+    {
+      "id": 11,
+      "title": "Résultats",
+      "slug": "bd-slide-11-resultats",
+      "characters": ["dirigeant"],
+      "scene": "Marc est à son bureau, souriant, regardant un simple graphique sur son ordinateur : une ligne qui monte régulièrement. Pas de victoire triomphale, pas de champagne. Juste un dirigeant qui a l'air d'avoir trouvé ce qu'il cherchait. Bureau rangé, une seule plante sur le rebord de la fenêtre. Lumière naturelle calme.",
+      "bubbles": {
+        "Marc": "Pipeline clair, équipe recentrée, marge préservée. Bonne n'est plus un plafond. C'est un point de départ."
+      }
+    },
+    {
+      "id": 12,
+      "title": "CTA final",
+      "slug": "bd-slide-12-cta",
+      "characters": ["laurent"],
+      "scene": "Laurent est seul face au lecteur, souriant légèrement, posture ouverte, regard direct. Il porte une chemise bleu clair, veste légère bleu marine. Fond sobre et lumineux. Son regard est franc et confiant.",
+      "bubbles": {
+        "Laurent": "Votre équipe est bonne. Mais est-elle excellente ? Commencez par un diagnostic offert sur laurentserre.com."
+      }
+    }
+  ]
+}

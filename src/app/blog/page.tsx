@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'good-to-great-equipe-commerciale-pme',
+    title: 'Good to Great appliqué à l\'équipe commerciale : 5 concepts de Jim Collins pour transformer une équipe PME',
+    description: 'Leadership niveau 5, concept du hérisson, volant d\'inertie — les 5 concepts de Jim Collins appliqués au terrain commercial pour passer de bon à excellent en équipe PME.',
+    date: '2026-06-27',
+    readTime: '8 min',
+    category: 'Management / Leadership',
+    image: '/images/blog/good-to-great-equipe-commerciale-pme/hero.webp',
+    featured: true,
+  },
+  {
     slug: '7-livres-vente-b2b-terrain-commercial-pme',
     title: '7 livres de vente qui changent vraiment la pratique d\u0027un commercial B2B',
     description: 'Selection de 7 livres de vente B2B qui corrigent les erreurs terrain des commerciaux. Pas une biblioth\u00e8que id\u00e9ale \u2014 chaque livre est choisi pour l\u2019erreur concr\u00e8te qu\u2019il corrige.',
