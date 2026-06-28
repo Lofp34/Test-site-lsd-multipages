@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pipeline-trop-plein-tue-performance-commerciale',
+    title: 'Pipeline trop plein : pourquoi vos 62 deals ouverts tuent votre performance',
+    description: 'Un pipeline commercial trop plein fait plus de mal qu\'un pipeline vide. La méthode pour qualifier out sans culpabilité et retrouver un pipeline sain de 15-20 deals.',
+    date: '2026-06-28',
+    readTime: '8 min',
+    category: 'Pilotage commercial / Pipeline',
+    image: '/images/blog/pipeline-trop-plein-tue-performance-commerciale/hero.webp',
+    featured: true,
+  },
+  {
     slug: 'good-to-great-equipe-commerciale-pme',
     title: 'Good to Great appliqué à l\'équipe commerciale : 5 concepts de Jim Collins pour transformer une équipe PME',
     description: 'Leadership niveau 5, concept du hérisson, volant d\'inertie — les 5 concepts de Jim Collins appliqués au terrain commercial pour passer de bon à excellent en équipe PME.',
