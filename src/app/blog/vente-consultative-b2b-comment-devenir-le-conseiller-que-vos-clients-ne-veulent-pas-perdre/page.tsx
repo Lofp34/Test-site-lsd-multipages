@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Vente consultative B2B : les 4 piliers | Laurent Serre',
+  title: 'Vente Consultative B2B : les 4 Piliers (2026)',
   description:
     'La vente consultative B2B transforme le commercial en conseiller de confiance : 4 piliers, découverte, proposition et obstacles à traiter.',
   keywords:
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vente consultative B2B : les 4 piliers | Laurent Serre',
+    title: 'Vente Consultative B2B : les 4 Piliers (2026)',
     description:
       'La posture commerciale qui transforme un vendeur B2B en conseiller de confiance.',
     images: ['https://www.laurentserre.com/images/blog/2026-05-08-vente-consultative-b2b-hero.webp'],

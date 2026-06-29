@@ -1,0 +1,35 @@
+{
+  "title": "Recruter un commercial senior en PME — 7 signaux d'alerte",
+  "basename": "bd-slide",
+  "model": "openai/gpt-image-2",
+  "reference_image": "/Users/clawdia/.openclaw/media/inbound/Laurent Serre.jpg",
+  "slides_with_reference": [2, 8, 10],
+  "characters": {
+    "dirigeant": {
+      "name": "Dirigeant PME (52 ans)",
+      "description": "Homme 52 ans, silhouette trapue, visage carré, cheveux gris courts, petites lunettes rondes, barbe quelques jours grisonnante, yeux marron, expression préoccupée puis perplexe. Costume bleu foncé, cravate défaite, manches retroussées."
+    },
+    "laurent": {
+      "name": "Laurent Serre (coach, 52 ans)",
+      "description": "Homme 52 ans, carrure solide, visage marqué, barbe grisonnante courte et dense, cheveux bruns poivre-et-sel coiffés en arrière, yeux bleu-gris calmes et directs, front large. Veste bleu marine, chemise blanche col ouvert."
+    },
+    "candidat": {
+      "name": "Candidat (45 ans)",
+      "description": "Homme 45 ans, visage lisse, sourire professionnel, costume chic bleu nuit bien coupé, cravate ajustée, cheveux soignés. Expression confiante mais légèrement figée. Attitude corporate."
+    }
+  },
+  "slides": [
+    {"id":1,"title":"Cover","slug":"bd-slide-01-cover","characters":["laurent"],"reference":false,"scene":"Laurent assis à son bureau, regard calme vers le lecteur. Fond sobre tons chauds.","bubbles":{"Narration":"Recruter un commercial senior en PME. 150 000 euros si vous vous trompez. Et vous recrutez souvent à l'instinct."}},
+    {"id":2,"title":"Le dilemme","slug":"bd-slide-02-dilemme","characters":["dirigeant","laurent"],"reference":true,"scene":"Bureau PME. Dirigeant accoudé à son bureau, air fatigué. Laurent en face, une tasse de café à la main, regard attentif.","bubbles":{"Dirigeant":"J'ai un CV parfait. 20 ans d'expérience, gros réseaux, belles références.","Laurent":"Et pourquoi il est libre ?","Dirigeant":"… Bonne question."}},
+    {"id":3,"title":"CV parfait","slug":"bd-slide-03-cv-parfait","characters":["candidat","dirigeant"],"reference":false,"scene":"Salle de réunion moderne. Candidat souriant, geste large, présente son CV. Dirigeant assis en face, écoute, paraît impressionné.","bubbles":{"Candidat":"Chez mon dernier client, j'ai multiplié le portefeuille par trois en deux ans.","Dirigeant":"Et pourquoi êtes-vous parti ?","Candidat":"J'avais fait le tour."}},
+    {"id":4,"title":"Évaporation","slug":"bd-slide-04-evaporation","characters":["laurent","dirigeant"],"reference":false,"scene":"Bureau. Laurent montre trois doigts en comptant, dirigeant l'écoute, l'air pensif.","bubbles":{"Laurent":"Premier signal : l'évaporation des résultats. Demande-lui de décrire son plus gros échec.","Dirigeant":"Il m'a dit qu'il n'avait pas d'échec.","Laurent":"Dans vingt ans de carrière ? Ça n'existe pas."}},
+    {"id":5,"title":"Pas d'échec","slug":"bd-slide-05-pas-echec","characters":["laurent"],"reference":false,"scene":"Plan serré sur Laurent, un doigt levé, expression sérieuse. Fond sobre.","bubbles":{"Narration":"Un commercial senior qui n'a pas d'échec n'a pas appris. Il a masqué."}},
+    {"id":6,"title":"Questions","slug":"bd-slide-06-questions","characters":["laurent","dirigeant"],"reference":false,"scene":"Même bureau. Dirigeant prend des notes. Laurent compte sur ses doigts, trois doigts levés.","bubbles":{"Laurent":"Trois questions pour le tester. Première : décris ta pire année, jour par jour.","Dirigeant":"J'ai posé la deuxième : comment tu qualifies un prospect ? Il m'a dit par le chiffre d'affaires.","Laurent":"Ça veut dire qu'il n'a pas de méthode de qualification."}},
+    {"id":7,"title":"11 mois","slug":"bd-slide-07-onze-mois","characters":["laurent","dirigeant"],"reference":false,"scene":"Même décor. Dirigeant penché en avant, Laurent calme mais direct.","bubbles":{"Laurent":"Troisième question : qu'as-tu fait les six premiers mois de ton dernier poste ?","Dirigeant":"Il a répondu : j'ai pris mes marques. Pendant six mois.","Laurent":"Un senior ne prend pas six mois. Il rapporte en trois."}},
+    {"id":8,"title":"Intégration","slug":"bd-slide-08-integration","characters":["laurent","dirigeant"],"reference":true,"scene":"Laurent debout devant un paperboard. Dirigeant assis, écoute. Paperboard avec trois cases écrites : Premier mois, Deuxième mois, Troisième mois.","bubbles":{"Laurent":"Les 90 premiers jours sont la seule vraie période de test. Planifie-les avant de signer.","Dirigeant":"Et s'il tient pas le rythme ?","Laurent":"Tu le sais en un mois. Pas en un an."}},
+    {"id":9,"title":"Les 7 signaux","slug":"bd-slide-09-sept-signaux","characters":["laurent"],"reference":false,"scene":"Plan large. Laurent debout près d'une fenêtre, bras croisés, regard calme. Fond de paysage urbain flou.","bubbles":{"Narration":"Sept signaux : résultats qui s'évaporent, aucune perte racontable, qualification par CA, parcours sans progression, six mois d'adaptation, références qui ne rappellent pas, salaire seul critère."}},
+    {"id":10,"title":"Le bon profil","slug":"bd-slide-10-bon-profil","characters":["laurent","dirigeant"],"reference":true,"scene":"Rue piétonne, lumière dorée du soir. Laurent et le dirigeant marchent côte à côte, détendus.","bubbles":{"Dirigeant":"Finalement, j'ai repoussé la décision. On a refait le process avec tes questions. Et j'ai trouvé le bon.","Laurent":"Celui qui t'a parlé de ses échecs avant ses succès ?","Dirigeant":"Exactement."}},
+    {"id":11,"title":"Leçon","slug":"bd-slide-11-lecon","characters":["laurent"],"reference":false,"scene":"Laurent face au lecteur, cadre sobre, lumière naturelle douce.","bubbles":{"Narration":"Un mauvais recrutement senior coûte 150 000 euros. Sept signaux d'alerte et trois questions. Et ça s'apprend."}},
+    {"id":12,"title":"CTA","slug":"bd-slide-12-cta","characters":["laurent"],"reference":false,"scene":"Laurent assis à son bureau, regard direct, calme. Fond sobre professionnel.","bubbles":{"Laurent":"Vous recrutez un senior ? Testez votre process avant de signer. Diagnostic offert sur laurentserre.com"}}
+  ]
+}

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Analyse SWOT Septeo : forces, faiblesses et verdict (2026)',
     description:
-      'Analyse SWOT complète de Septeo : tableau 4 quadrants, analyse terrain, verdict pour votre cabinet ou PME.'
+      'Analyse SWOT complète de Septeo : tableau 4 quadrants, analyse terrain, verdict pour votre cabinet ou PME.',
     images: [ogImageAbsolute],
   },
 };
