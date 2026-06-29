@@ -1,0 +1,34 @@
+{
+  "title": "Le pacte commercial — Trois promesses, une seule vérité",
+  "basename": "bd-slide",
+  "model": "openai/gpt-image-2",
+  "reference_image": "/Users/clawdia/.openclaw/media/inbound/Laurent Serre.jpg",
+  "slides_with_reference": [2, 4, 8],
+  "characters": {
+    "julien": {
+      "name": "Julien (commercial, 33-35 ans)",
+      "description": "Homme 33-35 ans, silhouette élancée, visage ovale, front dégagé, sourcils bruns fins, yeux marron expressifs, nez droit, barbe 2-3 jours, cheveux bruns mi-courts coiffés sur le côté. Chemise bleu clair manches retroussées, pantalon chino beige."
+    },
+    "laurent": {
+      "name": "Laurent Serre (coach, 52 ans)",
+      "description": "Homme 52 ans, carrure solide, visage marqué, barbe grisonnante courte et dense, cheveux bruns poivre-et-sel coiffés en arrière, yeux bleu-gris calmes et directs, front large. Veste bleu marine, chemise blanche col ouvert."
+    },
+    "dirigeant": {
+      "name": "Dirigeant PME (50 ans)",
+      "description": "Homme 50 ans, silhouette trapue, visage carré, cheveux gris courts, petites lunettes rondes, barbe quelques jours, yeux marron, expression préoccupée. Costume bleu foncé, cravate défaite, manches retroussées."
+    }
+  },
+  "slides": [
+    {"id":1,"title":"Cover","slug":"bd-slide-01-cover","characters":["laurent"],"reference":false,"scene":"Laurent assis à son bureau, tasse de café à la main. Regard calme vers l'objectif, fond sobre tons chauds. Ambiance de confidence.","bubbles":{"Narration":"Le pacte commercial. Trois promesses qui tournent en rond dans la même PME. Et personne ne le dit."}},
+    {"id":2,"title":"Client parti","slug":"bd-slide-02-client-parti","characters":["dirigeant","laurent"],"reference":true,"scene":"Bureau PME, meubles bois foncé. Dirigeant assis derrière son bureau, tête entre les mains, accablé. Laurent assis en face, calme, mains croisées sur les genoux.","bubbles":{"Dirigeant":"Ils sont partis six mois après. Pas mécontents. Juste partis.","Laurent":"Qu'est-ce que tu leur avais promis au premier rendez-vous ?"}},
+    {"id":3,"title":"Trois versions","slug":"bd-slide-03-trois-versions","characters":["dirigeant","laurent"],"reference":false,"scene":"Plan serré sur le carnet de Laurent. Trois phrases écrites en colonnes : 'Dirigeant' 'Commercial' 'Client'. Textes différents. Laurent montre le carnet du doigt.","bubbles":{"Laurent":"Ton commercial a promis un délai que tu ne peux pas tenir. Le client a entendu autre chose. Et personne n'a comparé.","Dirigeant":"Mais personne n'a menti.","Laurent":"C'est ça le problème. Le pacte s'est brisé en silence."}},
+    {"id":4,"title":"Chacun sa lecture","slug":"bd-slide-04-chacun-sa-lecture","characters":["julien","laurent"],"reference":true,"scene":"Café lumineux. Julien penaud, mains autour de sa tasse. Laurent compte sur ses doigts.","bubbles":{"Julien":"J'ai dit ce que le client voulait entendre.","Laurent":"Et qu'est-ce que le dirigeant avait promis avant toi ?","Julien":"Je ne sais pas. On n'a pas vérifié."}},
+    {"id":5,"title":"3 promesses","slug":"bd-slide-05-trois-promesses","characters":["laurent"],"reference":false,"scene":"Plan sur un tableau blanc. Trois colonnes : 'CE QUE LE DIRIGEANT VEND', 'CE QUE LE COMMERCIAL DIT', 'CE QUE LE CLIENT REÇOIT'. Schéma simple et lisible.","bubbles":{"Laurent":"Le pacte commercial, c'est l'alignement de ces trois promesses. Pas un contrat. Un accord implicite."}},
+    {"id":6,"title":"Méthode","slug":"bd-slide-06-methode","characters":["laurent","julien"],"reference":false,"scene":"Julien écrit dans son carnet. Laurent compte sur ses doigts, trois doigts levés. Lumière naturelle.","bubbles":{"Laurent":"Pour chaque deal au-dessus de 10K, écris trois phrases : dirigeant, toi, client. Et compare.","Julien":"Et si ça ne colle pas ?","Laurent":"Tu ajustes AVANT de signer."}},
+    {"id":7,"title":"Point de vérité","slug":"bd-slide-07-point-verite","characters":["dirigeant","julien"],"reference":false,"scene":"Salle de réunion moderne. Dirigeant et Julien lisent une feuille A4 posée entre eux, trois paragraphes écrits. Stylo à la main, ambiance constructive.","bubbles":{"Dirigeant":"Je ne savais pas que tu promettais ça.","Julien":"Moi non plus je ne savais pas ce que tu avais promis.","Dirigeant":"Bon. On aligne les trois."}},
+    {"id":8,"title":"Résultat","slug":"bd-slide-08-resultat","characters":["julien","laurent"],"reference":true,"scene":"Rue piétonne, fin de journée, lumière dorée. Laurent mains dans les poches. Julien lui parle, soulagé.","bubbles":{"Julien":"Un deal perdu sur trois. Mais les deux autres tiennent, et le client parti nous a recommandé.","Laurent":"Parce que vous avez arrêté de promettre dans le vide."}},
+    {"id":9,"title":"Leçon","slug":"bd-slide-09-lecon","characters":["laurent"],"reference":false,"scene":"Laurent face au lecteur, cadre sobre, une main posée sur une table, regard direct.","bubbles":{"Narration":"Le pacte commercial ne se signe pas. Il se construit à chaque deal."}},
+    {"id":10,"title":"Conclusion","slug":"bd-slide-10-conclusion","characters":["laurent"],"reference":false,"scene":"Plan large, Laurent dos à une grande fenêtre, silhouette en contre-jour. Tons chauds, calme.","bubbles":{"Narration":"Trois promesses, un seul client. L'une d'elles ment sans le savoir."}},
+    {"id":11,"title":"CTA","slug":"bd-slide-11-cta","characters":["laurent"],"reference":false,"scene":"Laurent assis à son bureau, regard direct, calme, fond sobre.","bubbles":{"Laurent":"Vos promesses commerciales tiennent la route ? Commencez par un diagnostic offert sur laurentserre.com"}}
+  ]
+}
