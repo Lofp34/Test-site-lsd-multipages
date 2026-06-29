@@ -106,7 +106,7 @@ export default function PostVenteAmbassadeurPage() {
             <p className="text-sm text-amber-700 mb-5">L'histoire d'un dirigeant qui depensait 50 000 euros par an en prospection sans jamais demander a ses meilleurs clients de recommander.</p>
             <BDCarousel images={carouselImages} title="Carrousel BD : Ambassadeur client" maxPreview={2} />
             <div className="mt-4 text-center">
-              <Link href="/downloads/carrousel-ambassadeur.pdf" className="inline-flex items-center gap-2 text-amber-700 text-xs underline underline-offset-2 hover:text-amber-900">Telecharger le PDF (9 planches)</Link>
+              <Link href="/downloads/carrousel-experience-client-ambassadeur.pdf" className="inline-flex items-center gap-2 text-amber-700 text-xs underline underline-offset-2 hover:text-amber-900">Telecharger le PDF (9 planches)</Link>
             </div>
           </div>
 

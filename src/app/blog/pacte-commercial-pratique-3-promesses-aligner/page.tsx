@@ -90,15 +90,38 @@ export default function PactePratiquePage() {
             <Link href="/diagnostic" className="inline-flex items-center gap-2 bg-mint-green/10 text-mint-green text-sm font-medium px-4 py-2 rounded-full hover:bg-mint-green/20">Faire un point de verite offert</Link>
           </div>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Promesse 1 — Ce que le dirigeant vend</h2>
+          {/* BD Carrousel */}
+          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-6">
+            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+              Carrousel BD : Le pacte commercial en pratique
+            </p>
+            <p className="text-sm text-amber-700 mb-5">
+              La methode du point de verite en BD. Trois promesses, une reunion, vingt minutes par deal. Le rituel qui change tout.
+            </p>
+            <BDCarousel
+              images={carouselImages}
+              title="Carrousel BD : Le pacte commercial en pratique"
+              maxPreview={2}
+            />
+            <div className="mt-4 text-center">
+              <Link
+                href="/downloads/carrousel-pacte-commercial-pratique.pdf"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                Telecharger le PDF (8 planches)
+              </Link>
+            </div>
+          </div>
+
+          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Promesse 1 : Ce que le dirigeant vend</h2>
           <p className="mb-8">Prenez une feuille. Ecrivez l'offre de votre entreprise en une phrase. Pas la phrase marketing. La phrase vraie. Celle que vous diriez a un client autour d'un cafe. « Nous livrons des solutions fiables sous 48 heures. » C'est votre promesse. Celle que vous avez construite avec votre equipe, votre histoire, vos contraintes.</p>
           <p className="mb-8">Maintenant, demandez a votre commercial d'ecrire la meme chose. Souvent, les deux phrases ne correspondent pas. Pas parce que le commercial ment. Parce qu'il n'a jamais entendu la promesse exacte formulatee ainsi.</p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Promesse 2 — Ce que le commercial dit</h2>
+          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Promesse 2 : Ce que le commercial dit</h2>
           <p className="mb-8">Prenez trois deals en cours. Pour chacun, demandez a votre commercial : « Qu'as-tu promis exactement a ce client ? » Pas ce que l'offre contient. Ce que le commercial a dit, avec ses mots, dans le feu de l'echange. « Je vous livre en 24 heures. » C'est different de « Nous livrons en 48 heures. »</p>
           <p className="mb-8">Le commercial a promis plus court parce qu'il voulait gagner le deal. Pas par malhonnetete. Par reflexe de survie. Mais cette promesse supplementaire est une bombe a retardement si l'entreprise ne peut pas la tenir.</p>
 
-          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Promesse 3 — Ce que le client recoit</h2>
+          <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">Promesse 3 : Ce que le client recoit</h2>
           <p className="mb-8">C'est la promesse la plus importante et la plus souvent ignoree. Appelez le client. Demandez-lui : « Qu'avez-vous compris de notre offre ? Qu'attendez-vous exactement de nous ? »</p>
           <p className="mb-8">La reponse est souvent une surprise. Le dirigeant promet de la fiabilite, le commercial promet de la rapidite, et le client comprend... de la securite. Trois promesses differentes pour le meme deal. Et personne ne s'en rend compte avant que le client ne dise « ce n'est pas ce que j'avais compris ».</p>
 

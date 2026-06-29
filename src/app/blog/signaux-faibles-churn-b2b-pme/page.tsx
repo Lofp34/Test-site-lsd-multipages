@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         url: heroImageAbsolute,
         width: 1200,
         height: 630,
-        alt: 'Signaux faibles churn B2B : les 7 alertes avant qu\'un client parte — Laurent Serre',
+        alt: 'Signaux faibles churn B2B : les 7 alertes avant qu\'un client parte  :  Laurent Serre',
       },
     ],
     siteName: 'Laurent Serre',
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 const carouselPrefix = '/images/blog/signaux-faibles-churn-b2b-pme';
 
 const carouselImages = [
-  { src: `${carouselPrefix}/bd-slide-01-cover.webp`, alt: 'Cover — Les 7 signaux faibles churn B2B', index: 0 },
+  { src: `${carouselPrefix}/bd-slide-01-cover.webp`, alt: 'Cover  :  Les 7 signaux faibles churn B2B', index: 0 },
   { src: `${carouselPrefix}/bd-slide-02-client-heureux.webp`, alt: 'Un client satisfait qui cache ses vrais doutes', index: 1 },
   { src: `${carouselPrefix}/bd-slide-03-interlocuteur.webp`, alt: 'L interlocuteur change sans raison apparente', index: 2 },
   { src: `${carouselPrefix}/bd-slide-04-delais.webp`, alt: 'Les delais s allongent sans explication', index: 3 },
@@ -67,7 +67,7 @@ const carouselImages = [
   { src: `${carouselPrefix}/bd-slide-08-nouveau-fournisseur.webp`, alt: 'Un nouveau fournisseur apparaît dans le paysage', index: 7 },
   { src: `${carouselPrefix}/bd-slide-09-protocole.webp`, alt: 'Le protocole de revue anti-churn : 4 questions par trimestre', index: 8 },
   { src: `${carouselPrefix}/bd-slide-10-lecon.webp`, alt: 'Lecon : un client ne part pas sans avoir envoye 7 signaux avant', index: 9 },
-  { src: `${carouselPrefix}/bd-slide-11-cta.webp`, alt: 'CTA — Diagnostic offert sur laurentserre.com', index: 10 },
+  { src: `${carouselPrefix}/bd-slide-11-cta.webp`, alt: 'CTA  :  Diagnostic offert sur laurentserre.com', index: 10 },
 ];
 
 const faqItems = [
