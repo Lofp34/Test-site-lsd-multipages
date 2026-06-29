@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'pacte-commercial-aligner-dirigeant-commercial-client-pme',
+    title: 'Le pacte commercial : aligner dirigeant, commercial et client sur les mêmes promesses',
+    description: 'Ce que le dirigeant promet, ce que le commercial dit sur le terrain, et ce que le client reçoit sont trois choses différentes. La méthode pour aligner les trois promesses.',
+    date: '2026-06-29',
+    readTime: '7 min',
+    category: 'Management / Stratégie',
+    image: '/images/blog/pacte-commercial/hero.webp',
+    featured: true,
+  },
+  {
     slug: 'vendre-comite-achat-multi-decideurs-pme',
     title: 'Vendre à un comité d\'achat multi-décideurs en PME : cartographier, orchestrer, conclure',
     description: 'Un champion unique ne suffit plus. 6 à 11 décideurs par deal B2B, cycles +30%, 79% d\'implication CFO. La méthode terrain pour cartographier, orchestrer et conclure.',
