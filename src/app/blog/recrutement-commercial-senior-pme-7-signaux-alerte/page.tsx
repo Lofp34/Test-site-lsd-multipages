@@ -247,16 +247,6 @@ export default function RecrutementCommercialSeniorPage() {
             </p>
           </div>
 
-          {/* CTA SOFT */}
-          <div className="mb-8 text-center">
-            <Link
-              href="/diagnostic"
-              className="inline-flex items-center gap-2 bg-mint-green/10 text-mint-green text-sm font-medium px-4 py-2 rounded-full hover:bg-mint-green/20 transition-colors"
-            >
-              Vous recrutez un commercial senior ? Testez votre process avant de signer
-            </Link>
-          </div>
-
           {/* BD Carrousel */}
           <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-6">
             <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
@@ -278,6 +268,16 @@ export default function RecrutementCommercialSeniorPage() {
                 Télécharger le PDF (12 planches)
               </Link>
             </div>
+          </div>
+
+          {/* CTA SOFT */}
+          <div className="mb-8 text-center">
+            <Link
+              href="/diagnostic"
+              className="inline-flex items-center gap-2 bg-mint-green/10 text-mint-green text-sm font-medium px-4 py-2 rounded-full hover:bg-mint-green/20 transition-colors"
+            >
+              Vous recrutez un commercial senior ? Testez votre process avant de signer
+            </Link>
           </div>
 
           <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">

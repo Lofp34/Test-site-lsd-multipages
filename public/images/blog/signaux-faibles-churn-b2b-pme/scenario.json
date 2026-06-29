@@ -1,0 +1,28 @@
+{
+  "title": "Signaux faibles churn B2B — 7 alertes avant qu'un client parte",
+  "basename": "bd-slide",
+  "model": "openai/gpt-image-2",
+  "reference_image": "/Users/clawdia/.openclaw/media/inbound/Laurent Serre.jpg",
+  "slides_with_reference": [2, 7],
+  "characters": {
+    "laurent": {
+      "name": "Laurent Serre (coach, 52 ans)",
+      "description": "Homme 52 ans, carrure solide, visage marqué, barbe grisonnante courte et dense, cheveux bruns poivre-et-sel coiffés en arrière, yeux bleu-gris calmes et directs, front large. Veste bleu marine, chemise blanche col ouvert."
+    },
+    "dirigeant": {
+      "name": "Dirigeant PME (50 ans)",
+      "description": "Homme 50 ans, silhouette trapue, visage carré, cheveux gris courts, petites lunettes rondes, barbe quelques jours, yeux marron, expression préoccupée. Costume bleu foncé, cravate défaite."
+    }
+  },
+  "slides": [
+    {"id":1,"title":"Cover","slug":"bd-slide-01-cover","characters":["laurent"],"reference":false,"scene":"Laurent assis à son bureau, regard calme vers le lecteur. Fond sobre tons chauds.","bubbles":{"Narration":"Le client ne prévient pas avant de partir. Il envoie des signaux. Mais personne ne les lit."}},
+    {"id":2,"title":"Surprise","slug":"bd-slide-02-surprise","characters":["dirigeant","laurent"],"reference":true,"scene":"Bureau PME. Dirigeant effondré, tête dans les mains. Laurent en face, calme, un dossier ouvert sur la table.","bubbles":{"Dirigeant":"Il est parti. Sans rien dire. C'était mon plus gros client depuis cinq ans.","Laurent":"Regardons les douze derniers mois. Les signaux étaient là."}},
+    {"id":3,"title":"Signal 1","slug":"bd-slide-03-signal1","characters":["laurent"],"reference":false,"scene":"Laurent montre un doigt, expression sérieuse. Fond sobre.","bubbles":{"Narration":"Signal 1 : le client ne pose plus de questions. Il ne demande plus de fonctionnalités, plus de tarifs, plus de roadmap. Il attend."}},
+    {"id":4,"title":"Signal 2","slug":"bd-slide-04-signal2","characters":["laurent"],"reference":false,"scene":"Laurent montre deux doigts. Lumière douce. Ambiance de confidence.","bubbles":{"Narration":"Signal 2 : les mails restent sans réponse. De courts. De plus en plus espacés. Le silence n'est pas de l'indifférence. C'est de la distance."}},
+    {"id":5,"title":"Signaux 3-4","slug":"bd-slide-05-signaux34","characters":["laurent"],"reference":false,"scene":"Laurent montre trois doigts puis quatre, debout près de son bureau.","bubbles":{"Narration":"Signal 3 : il ne vous recommande plus. Signal 4 : il conteste les factures pour la première fois. Deux signaux qui précèdent toujours un départ."}},
+    {"id":6,"title":"Signaux 5-6-7","slug":"bd-slide-06-signaux567","characters":["laurent"],"reference":false,"scene":"Plan large. Laurent debout près d'une fenêtre, cinq doigts levés. Fond de paysage urbain flou.","bubbles":{"Narration":"Signal 5 : il réduit son périmètre. Signal 6 : il négocie un rabais commercial. Signal 7 : il invite un concurrent en rdv. Vous avez 30 jours."}},
+    {"id":7,"title":"Revue","slug":"bd-slide-07-revue","characters":["dirigeant","laurent"],"reference":true,"scene":"Salle de réunion. Dirigeant et Laurent assis autour d'une table. Paperboard avec 'Revue trimestrielle' écrit.","bubbles":{"Dirigeant":"On peut rattraper ceux qui montrent des signaux ?","Laurent":"La plupart, oui. Si tu agis dans les 30 jours. La revue trimestrielle est le seul vrai filet de sécurité."}},
+    {"id":8,"title":"Leçon","slug":"bd-slide-08-lecon","characters":["laurent"],"reference":false,"scene":"Laurent face au lecteur, cadre sobre, regard direct.","bubbles":{"Narration":"Le churn ne prévient pas. Mais il signale. À vous d'apprendre à lire."}},
+    {"id":9,"title":"CTA","slug":"bd-slide-09-cta","characters":["laurent"],"reference":false,"scene":"Laurent assis à son bureau, regard direct, calme. Fond sobre professionnel.","bubbles":{"Laurent":"Vous perdez des clients sans comprendre pourquoi ? Diagnostic offert sur laurentserre.com"}}
+  ]
+}
