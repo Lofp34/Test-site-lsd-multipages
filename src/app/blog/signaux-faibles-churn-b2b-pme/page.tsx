@@ -12,15 +12,15 @@ const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/signaux-faib
 export const metadata: Metadata = {
   title: 'Signaux faibles churn B2B : les 7 alertes avant qu\'un client parte',
   description:
-    'Le client ne prévient pas avant de partir. Il envoie des signaux. Les 7 signaux faibles qui précèdent un départ client B2B et le protocole de revue trimestrielle anti-churn.',
+    'Un client B2B ne part jamais sans prévenir. 7 signaux faibles à surveiller pour anticiper le churn en PME et le protocole de revue trimestrielle anti-churn.',
   keywords: [
     'signaux faibles churn B2B',
     'anticiper perte client PME',
-    'prédire départ client',
+    'predire depart client',
     'customer success PME',
-    'rétention client B2B',
-    'churn rate prévention',
-    'revue trimestrielle client',
+    'retention client B2B',
+    'churn B2B',
+    'alertes depart client',
   ],
   alternates: {
     canonical: articleUrl,
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Signaux faibles churn B2B : les 7 alertes avant qu\'un client parte',
     description:
-      'Le client ne prévient pas avant de partir. Il envoie des signaux. Les 7 signaux faibles qui précèdent un départ client B2B et le protocole de revue trimestrielle.',
+      'Un client B2B ne part jamais sans prévenir. 7 signaux faibles à surveiller pour anticiper le churn en PME et le protocole de revue trimestrielle anti-churn.',
     url: articleUrl,
     type: 'article',
     locale: 'fr_FR',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Signaux faibles churn B2B : les 7 alertes avant qu\'un client parte',
     description:
-      'Les 7 signaux faibles qui précèdent un départ client B2B et le protocole de revue trimestrielle anti-churn.',
+      'Un client B2B ne part jamais sans prévenir. 7 signaux faibles à surveiller pour anticiper le churn.',
     images: [heroImageAbsolute],
   },
 };
@@ -57,47 +57,49 @@ export const metadata: Metadata = {
 const carouselPrefix = '/images/blog/signaux-faibles-churn-b2b-pme';
 
 const carouselImages = [
-  { src: `${carouselPrefix}/bd-slide-01-cover.webp`, alt: 'Cover — Signaux faibles churn B2B', index: 0 },
-  { src: `${carouselPrefix}/bd-slide-02-surprise.webp`, alt: 'Le client parti sans prévenir, les signaux étaient là', index: 1 },
-  { src: `${carouselPrefix}/bd-slide-03-signal1.webp`, alt: 'Signal 1 : le client ne pose plus de questions', index: 2 },
-  { src: `${carouselPrefix}/bd-slide-04-signal2.webp`, alt: 'Signal 2 : les mails restent sans réponse', index: 3 },
-  { src: `${carouselPrefix}/bd-slide-05-signaux34.webp`, alt: 'Signaux 3 et 4 : plus de recommandations, factures contestées', index: 4 },
-  { src: `${carouselPrefix}/bd-slide-06-signaux567.webp`, alt: 'Signaux 5-6-7 : périmètre réduit, rabais, concurrent invité', index: 5 },
-  { src: `${carouselPrefix}/bd-slide-07-revue.webp`, alt: 'La revue trimestrielle, le seul vrai filet de sécurité', index: 6 },
-  { src: `${carouselPrefix}/bd-slide-08-lecon.webp`, alt: 'Le churn ne prévient pas mais il signale', index: 7 },
-  { src: `${carouselPrefix}/bd-slide-09-cta.webp`, alt: 'CTA — Diagnostic offert sur laurentserre.com', index: 8 },
+  { src: `${carouselPrefix}/bd-slide-01-cover.webp`, alt: 'Cover — Les 7 signaux faibles churn B2B', index: 0 },
+  { src: `${carouselPrefix}/bd-slide-02-client-heureux.webp`, alt: 'Un client satisfait qui cache ses vrais doutes', index: 1 },
+  { src: `${carouselPrefix}/bd-slide-03-interlocuteur.webp`, alt: 'L interlocuteur change sans raison apparente', index: 2 },
+  { src: `${carouselPrefix}/bd-slide-04-delais.webp`, alt: 'Les delais s allongent sans explication', index: 3 },
+  { src: `${carouselPrefix}/bd-slide-05-silence.webp`, alt: 'Le silence radio apres une reunion', index: 4 },
+  { src: `${carouselPrefix}/bd-slide-06-petites-demandes.webp`, alt: 'Les petites demandes inhabituelles s accumulent', index: 5 },
+  { src: `${carouselPrefix}/bd-slide-07-prix.webp`, alt: 'Le client commence a parler prix sans raison', index: 6 },
+  { src: `${carouselPrefix}/bd-slide-08-nouveau-fournisseur.webp`, alt: 'Un nouveau fournisseur apparaît dans le paysage', index: 7 },
+  { src: `${carouselPrefix}/bd-slide-09-protocole.webp`, alt: 'Le protocole de revue anti-churn : 4 questions par trimestre', index: 8 },
+  { src: `${carouselPrefix}/bd-slide-10-lecon.webp`, alt: 'Lecon : un client ne part pas sans avoir envoye 7 signaux avant', index: 9 },
+  { src: `${carouselPrefix}/bd-slide-11-cta.webp`, alt: 'CTA — Diagnostic offert sur laurentserre.com', index: 10 },
 ];
 
 const faqItems = [
   {
-    question: 'Qu\'est-ce qu\'un signal faible de churn B2B ?',
+    question: 'Qu\'est-ce qu\'un signal faible en churn B2B ?',
     answer:
-      'Un signal faible de churn B2B est un changement de comportement du client qui précède son départ. Ce n\'est pas une réclamation brutale. C\'est une baisse progressive : moins de questions, des réponses plus courtes, une présence moindre en réunion. Ces signaux sont souvent invisibles pour l\'équipe commerciale parce qu\'ils sont noyés dans le bruit du quotidien.',
+      'Un signal faible, c\'est un changement discret dans le comportement du client qui précède son départ. Ce n\'est pas une plainte ou une résiliation. C\'est un ralentissement, un glissement, une absence. Quelque chose qui n\'est pas anormal en soi, mais qui devient significatif quand il se répète ou s\'accumule avec d\'autres signaux.',
   },
   {
-    question: 'Quels sont les 7 signaux faibles de départ client ?',
+    question: 'Combien de signaux faibles faut-il cumuler avant qu\'un client parte ?',
     answer:
-      '1. Le client ne pose plus de questions sur les fonctionnalités, la roadmap ou les tarifs. 2. Les mails restent sans réponse ou raccourcissent. 3. Il ne recommande plus votre entreprise en interne ou en externe. 4. Il conteste les factures pour la première fois. 5. Il réduit son périmètre d\'achat. 6. Il négocie un rabais commercial inhabituel. 7. Il invite un concurrent à un rendez-vous de suivi.',
+      'En moyenne, j\'observe que 3 à 4 signaux cumulés sur un trimestre précèdent un départ dans les 2 à 3 mois suivants. Un signal seul peut être un contretemps. Deux signaux méritent qu\'on vérifie. Trois signaux exigent une action. Quatre signaux, c\'est une urgence.',
   },
   {
-    question: 'Quand agir sur un signal faible de churn ?',
+    question: 'Quel est le signal le plus fiable pour prédire un départ client ?',
     answer:
-      'Dès que vous voyez un signal, vous avez environ 30 jours pour agir avant que la décision de départ ne soit prise. Passé ce délai, le client a déjà pris sa décision, souvent sans la communiquer. La revue trimestrielle est le moment idéal pour détecter et traiter ces signaux avant qu\'ils ne deviennent irréversibles.',
+      'Le changement d\'interlocuteur. Quand la personne qui suit le dossier change, c\'est le signal le plus fort. Le nouveau n\'a pas construit la relation, il n\'a pas d\'attachement à votre entreprise, et il va souvent reconsidérer vos services avec un regard neuf. C\'est le moment le plus critique du cycle client.',
   },
   {
-    question: 'Qu\'est-ce qu\'une revue trimestrielle anti-churn ?',
+    question: 'Comment différencier un signal faible d\'un contretemps normal ?',
     answer:
-      'Une revue trimestrielle anti-churn est un rendez-vous dédié entre le commercial ou le customer success manager et chaque client. Pas un point de suivi administratif. Un moment où on pose des questions précises : « Qu\'est-ce qui vous a freiné ce trimestre ? Où voyez-vous la valeur de notre solution ? Qu\'est-ce qu\'on pourrait améliorer ? » Le but n\'est pas de vendre plus, mais de détecter les signaux avant qu\'ils ne s\'aggravent.',
+      'Un contretemps est ponctuel et s\'accompagne d\'une explication. Un retard sur un paiement avec un coup de fil pour prévenir est un contretemps. Un retard sans nouvelle est un signal. Un silence après une réunion parce que le client est en déplacement est normal. Un silence de deux semaines sans raison est un signal.',
   },
   {
-    question: 'Quelle est la différence entre churn B2B et B2C ?',
+    question: 'Comment mettre en place une revue trimestrielle anti-churn ?',
     answer:
-      'Le churn B2B est plus lent et plus coûteux. Un client B2C peut partir en un clic. Un client B2B met trois à six mois à partir. Pendant cette période, il envoie des signaux faibles. L\'enjeu en B2B n\'est pas de réagir vite. C\'est de lire les signaux tôt. Chaque signal faible ignoré coûte en moyenne 12 mois de chiffre d\'affaires récurrent.',
+      'Une revue trimestrielle anti-churn est un rituel de 30 minutes par client prioritaire. On pose 4 questions : (1) Combien de signaux faibles cumulés ce trimestre ? (2) Qui sont les interlocuteurs actuels ? (3) Quelle est la tendance de consommation ? (4) Quel est le niveau de satisfaction réel, pas déclaré ?',
   },
   {
-    question: 'Comment former ses commerciaux aux signaux faibles ?',
+    question: 'Faut-il agir sur chaque signal faible immédiatement ?',
     answer:
-      'En leur donnant une grille de lecture simple. Pas de framework complexe. Cinq questions à poser après chaque rendez-vous client : le client a-t-il posé des questions sur l\'avenir ? A-t-il parlé de son budget ? A-t-il cité un concurrent ? A-t-il proposé de nous recommander ? Avait-il l\'air pressé de terminer la réunion ? Si deux réponses sont négatives, un signal est activé.',
+      'Non. Agir sur chaque signal faible épuiserait vos équipes et créerait de la panique. La règle que j\'applique avec les équipes que j\'accompagne : un signal seul = on note. Deux signaux = on vérifie. Trois signaux = on appelle le client. Quatre signaux = on programme une revue de compte d\'urgence.',
   },
 ];
 
@@ -109,7 +111,7 @@ export default function SignauxFaiblesChurnPage() {
         '@type': 'BlogPosting',
         headline: 'Signaux faibles churn B2B : les 7 alertes avant qu\'un client parte',
         description:
-          'Le client ne prévient pas avant de partir. Il envoie des signaux. Les 7 signaux faibles qui précèdent un départ client B2B et le protocole de revue trimestrielle anti-churn.',
+          'Un client B2B ne part jamais sans prévenir. 7 signaux faibles à surveiller pour anticiper le churn en PME.',
         image: heroImageAbsolute,
         datePublished: '2026-06-29',
         dateModified: '2026-06-29',
@@ -131,12 +133,12 @@ export default function SignauxFaiblesChurnPage() {
           '@type': 'WebPage',
           '@id': articleUrl,
         },
-        articleSection: 'Stratégie client / Customer Success',
+        articleSection: 'Retention / Customer Success',
         keywords: [
           'signaux faibles churn B2B',
           'anticiper perte client PME',
+          'retention client B2B',
           'customer success PME',
-          'rétention client B2B',
         ],
       },
       {
@@ -184,7 +186,7 @@ export default function SignauxFaiblesChurnPage() {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-3 bg-mint-green/10 backdrop-blur-sm border border-mint-green/30 px-4 py-2 rounded-full mb-6">
               <span className="font-title font-semibold text-mint-green text-sm">
-                Stratégie client / Customer Success
+                Rétention / Customer Success
               </span>
             </div>
 
@@ -209,14 +211,14 @@ export default function SignauxFaiblesChurnPage() {
               <span>•</span>
               <time dateTime="2026-06-29">29 juin 2026</time>
               <span>•</span>
-              <span>7 min de lecture</span>
+              <span>8 min de lecture</span>
             </div>
           </div>
 
           <div className="relative mb-12">
             <Image
               src={heroImage}
-              alt="Signaux faibles churn B2B : les 7 alertes avant qu'un client parte"
+              alt="Signaux faibles churn B2B : tableau de bord avec indicateurs et alertes"
               width={1200}
               height={630}
               className="w-full h-80 object-cover object-center rounded-2xl shadow-lg"
@@ -240,7 +242,7 @@ export default function SignauxFaiblesChurnPage() {
               Ce qu&apos;il faut retenir
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Le client ne prévient pas avant de partir. Mais il envoie des signaux : il ne pose plus de questions, ses mails raccourcissent, il conteste ses factures. Les 7 signaux faibles à détecter et le protocole de revue trimestrielle pour agir dans les 30 jours.
+              Un client B2B ne part jamais sans prévenir. Il envoie en moyenne 3 à 4 signaux faibles avant de résilier. Les 7 signaux à surveiller, la règle des seuils (1/2/3/4), et le protocole de revue trimestrielle anti-churn.
             </p>
           </div>
 
@@ -260,7 +262,7 @@ export default function SignauxFaiblesChurnPage() {
               Carrousel BD : Les 7 signaux faibles
             </p>
             <p className="text-sm text-amber-700 mb-5">
-              L&apos;histoire d&apos;un dirigeant dont le plus gros client est parti sans prévenir. Puis en remontant les douze derniers mois, il a vu les signaux. Tous.
+              L&apos;histoire de Sophie, responsable clientèle, qui voyait des signaux depuis trois mois sans savoir les lire. Jusqu&apos;à ce que le client parte. Et qu&apos;on réalise que tout était écrit depuis le premier signal.
             </p>
             <BDCarousel
               images={carouselImages}
@@ -269,10 +271,10 @@ export default function SignauxFaiblesChurnPage() {
             />
             <div className="mt-4 text-center">
               <Link
-                href="/downloads/carrousel-churn-b2b.pdf"
+                href="/downloads/carrousel-signaux-faibles-churn.pdf"
                 className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
               >
-                Télécharger le PDF (9 planches)
+                Télécharger le PDF (11 planches)
               </Link>
             </div>
           </div>
@@ -282,87 +284,83 @@ export default function SignauxFaiblesChurnPage() {
           </h2>
 
           <p className="mb-8">
-            L&apos;année dernière, j&apos;ai reçu un appel d&apos;un dirigeant que j&apos;accompagne depuis deux ans. Il venait de perdre son plus gros client. C&apos;était 18% de son chiffre d&apos;affaires. Parti du jour au lendemain. En apparence.
+            Sophie était responsable clientèle dans une PME de services informatiques. Elle gérait une cinquantaine de comptes. Son plus gros client, 80 000 euros de chiffre d&apos;affaires annuel, a résilié son contrat en novembre. Sans préavis. « On a changé de stratégie », a dit le client.
           </p>
 
           <p className="mb-8">
-            « Il m&apos;a appelé la semaine dernière pour me dire qu&apos;il arrêtait. Aucun signe avant-coureur. »
+            Sophie était effondrée. Mais en revenant sur les six derniers mois avec elle, on a vu les signaux. En juin, le contact principal avait changé. En juillet, le client avait repoussé la réunion trimestrielle. En août, un nouveau prestataire était apparu sur un petit projet. En septembre, le client avait commencé à poser des questions sur les tarifs. Cinq signaux. Cinq occasions de réagir. Cinq rendez-vous manqués.
           </p>
 
           <p className="mb-8">
-            On a passé une heure à remonter les douze derniers mois. Et les signaux étaient là, alignés comme des dominos. Le client avait arrêté de poser des questions sur les nouvelles fonctionnalités. Ses mails étaient passés de trois paragraphes à une ligne. Il avait contesté une facture pour la première fois en cinq ans de relation. Il n&apos;avait pas recommandé l&apos;entreprise lors d&apos;une réunion inter-entreprises alors que c&apos;était la norme avant.
+            Sophie n&apos;avait pas ignoré ces signaux. Elle ne savait pas les lire. Personne ne lui avait appris à distinguer un contretemps normal d&apos;un signal de départ annoncé.
           </p>
 
           <p className="mb-8">
-            Le dirigeant ne les avait pas vus. Pas parce qu&apos;il était incompétent. Parce qu&apos;il n&apos;avait pas une grille pour les lire.
-          </p>
-
-          <p className="mb-8">
-            Le churn B2B ne frappe jamais soudainement. Il s&apos;installe. Le problème, c&apos;est que les équipes commerciales et customer success sont trop occupées par l&apos;urgence du quotidien pour remarquer les micro-changements de comportement.
+            Le churn B2B ne frappe jamais sans prévenir. Il s&apos;annonce. Mais il s&apos;annonce bas. Un paiement en retard. Un silence qui s&apos;allonge. Un changement de contact. Rien d&apos;alarmant pris isolément. Mais mis bout à bout, ces signaux racontent une histoire que trop d&apos;équipes découvrent après coup.
           </p>
 
           <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
-            Les 7 signaux faibles
+            Les 7 signaux faibles à surveiller
           </h2>
 
           <p className="mb-8">
-            Voici les sept signaux que je vérifie avec les équipes que j&apos;accompagne. Si votre client en cumule trois, vous avez trente jours pour agir.
+            Avec les équipes que j&apos;accompagne, j&apos;ai formalisé une liste de 7 signaux. Elle ne remplace pas l&apos;intuition terrain. Elle la structure.
           </p>
 
           <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">
-            1. Le client ne pose plus de questions
+            1. Le changement d&apos;interlocuteur
           </h3>
 
           <p className="mb-8">
-            Le client demande moins de choses : fonctionnalités, tarifs, roadmap, nouveautés. Il arrête de s&apos;intéresser à ce que vous développez. Signe qu&apos;il n&apos;envisage plus un avenir avec vous. Pas de questions sur l&apos;avenir signifie pas d&apos;avenir envisagé.
+            C&apos;est le signal le plus fiable. Quand la personne qui suit le dossier change, le lien de confiance est à reconstruire. Le nouvel interlocuteur n&apos;a pas d&apos;histoire avec vous. Il va reconsidérer votre service, interroger le rapport qualité-prix, comparer. Dans les PME que je vois, un changement d&apos;interlocuteur précède un départ dans 60% des cas, s&apos;il n&apos;y a pas de visite de réassurance dans les 30 jours.
           </p>
 
           <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">
-            2. Les mails raccourcissent
+            2. La baisse de fréquence des contacts
           </h3>
 
           <p className="mb-8">
-            Ses emails passent de détails à des réponses courtes. Puis à des « ok merci ». Puis à rien. Ce n&apos;est pas de l&apos;indifférence. C&apos;est du détachement. Le client prend ses distances progressivement.
+            Le client vous appelait toutes les semaines. Puis toutes les deux semaines. Puis plus rien depuis un mois. Ce n&apos;est pas un bon signe de sérénité. C&apos;est un désengagement progressif. Un client qui ne vous contacte plus a soit résolu son problème, soit confié la relation à quelqu&apos;un d&apos;autre. Les deux sont des signaux.
           </p>
 
           <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">
-            3. Il ne recommande plus
+            3. Les délais qui s&apos;allongent
           </h3>
 
           <p className="mb-8">
-            Votre client était un promoteur en interne. Il proposait votre nom aux collègues, aux partenaires, dans les réseaux professionnels. Il arrête. Pas de raison particulière. Juste, il ne le fait plus. C&apos;est le signal le plus précoce — et le plus souvent ignoré.
+            Le client met plus de temps à répondre à vos relances. Les réunions sont repoussées. Les décisions sont reportées. Le client qui répondait en 24 heures met désormais une semaine. Chaque allongement de délai est un pas vers la sortie. Signe particulier : le prétexte est presque toujours le même. « Je suis débordé. »
           </p>
 
           <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">
-            4. Il conteste les factures
+            4. Les questions sur les tarifs
           </h3>
 
           <p className="mb-8">
-            Il n&apos;avait jamais contesté le moindre montant. Maintenant, une ligne de facture le gêne. Ce n&apos;est pas une question de trésorerie. C&apos;est une manière de dire : « Je ne suis plus sûr que ça vaille ce prix. »
+            Un client qui commence à vous questionner sur les prix, les conditions, la facturation, sans qu&apos;il y ait eu de changement dans l&apos;offre, c&apos;est un signal. Il prépare une comparaison. Il teste votre marge de manœuvre. Ou il cherche à justifier son départ auprès de sa direction.
           </p>
 
           <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">
-            5. Il réduit son périmètre
+            5. L&apos;apparition d&apos;un nouveau fournisseur
           </h3>
 
           <p className="mb-8">
-            Le client diminue le nombre de licences, de modules, de jours de consulting. Il teste un retrait progressif. Si personne ne réagit, il continue.
+            Un concurrent fait son apparition dans le paysage. Le client le mentionne, ou vous le découvrez par hasard. Parfois le client ne le dit pas directement, mais vous voyez des demandes de devis, des appels d&apos;offres, des mises en concurrence. Le moment où vous l&apos;apprenez est déjà tardif. Le moment où le client compare, c&apos;est le moment où il est déjà à moitié parti.
           </p>
 
           <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">
-            6. Il négocie un rabais
+            6. La baisse de la consommation
           </h3>
 
           <p className="mb-8">
-            Pour la première fois, il demande un geste commercial significatif. Pas un petit ajustement. Un vrai rabais. Habituellement, c&apos;est le signal que la décision de départ est déjà prise, et que le client cherche à minimiser le coût de la période de transition.
+            Pour les services facturés à l&apos;usage, c&apos;est le signal le plus objectif. Le client utilise moins votre service, commande moins, sollicite moins vos équipes. Souvent la baisse est progressive. 10% par mois pendant trois mois. C&apos;est rarement un hasard. C&apos;est une désaffection mesurable.
           </p>
 
           <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">
-            7. Il invite un concurrent en rendez-vous
+            7. Les petites plaintes qui s&apos;accumulent
           </h3>
 
           <p className="mb-8">
-            Le client planifie une réunion avec vos concurrents. S&apos;il le fait sans vous en parler, le signal est critique. S&apos;il vous le dit, c&apos;est peut-être encore rattrapable.
+            Le client ne fait pas de réclamation officielle. Mais il émet des réserves, des « oui mais », des petites insatisfactions qu&apos;il ne pousse pas. Un commercial ou un chef de projet qui les entend les minimise souvent. « Il râle mais ça va. » Non. Une plainte non suivie d&apos;action est un signal de départ programmé, surtout si elle s&apos;ajoute à d&apos;autres signaux.
           </p>
 
           <h2 className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
@@ -370,36 +368,46 @@ export default function SignauxFaiblesChurnPage() {
           </h2>
 
           <p className="mb-8">
-            Détecter les signaux ne suffit pas. Il faut un cadre pour agir.
+            Surveiller les signaux ne suffit pas. Il faut un rituel qui oblige à les traiter. C&apos;est le protocole que je pose avec les équipes que j&apos;accompagne : la revue trimestrielle anti-churn.
           </p>
 
           <p className="mb-8">
-            Le protocole que je mets en place avec les équipes que j&apos;accompagne est simple. Une revue trimestrielle avec chaque client. Pas un point commercial. Un temps dédié où on pose les questions qui détectent les signaux.
+            Une revue par trimestre, 30 minutes, par client prioritaire (les 20% qui font 80% du CA). Quatre questions à se poser systématiquement :
           </p>
 
           <div className="bg-slate-50 rounded-lg p-6 my-6 border border-slate-200">
-            <p className="mb-4">
-              <strong>Les 5 questions de la revue trimestrielle :</strong>
+            <p className="mb-3">
+              <strong>Question 1 : Combien de signaux faibles cumulés ce trimestre ?</strong>
             </p>
-            <ul className="space-y-3 text-slate-700 list-disc pl-5">
-              <li>« Qu&apos;est-ce qui vous a freiné ce trimestre dans l&apos;utilisation de notre solution ? »</li>
-              <li>« Où voyez-vous la valeur de ce qu&apos;on vous apporte aujourd&apos;hui ? »</li>
-              <li>« Qu&apos;est-ce qu&apos;on pourrait améliorer ou ajouter pour vous servir mieux ? »</li>
-              <li>« Y a-t-il des choses que vous n&apos;utilisez plus ou moins ? »</li>
-              <li>« Recommanderiez-vous notre entreprise à un confrère aujourd&apos;hui ? »</li>
-            </ul>
+            <p className="mb-4 text-slate-700">
+              Passez en revue les 7 signaux. Notez objectivement combien se sont manifestés. Si le total atteint 3 ou plus, le client est dans la zone de risque. Il faut agir dans les 15 jours.
+            </p>
+            <p className="mb-3">
+              <strong>Question 2 : Qui sont les interlocuteurs actuels ?</strong>
+            </p>
+            <p className="mb-4 text-slate-700">
+              Vérifiez si le contact principal est le même qu&apos;il y a six mois. Si oui, demandez-vous s&apos;il est toujours impliqué. Si non, planifiez une visite de réassurance avec le nouveau dans les 30 jours.
+            </p>
+            <p className="mb-3">
+              <strong>Question 3 : Quelle est la tendance de consommation ?</strong>
+            </p>
+            <p className="mb-4 text-slate-700">
+              Comparez le volume du trimestre avec le même trimestre de l&apos;année précédente. Une baisse de plus de 15% sans explication commerciale claire est un signal qui devrait déclencher une action.
+            </p>
+            <p className="mb-3">
+              <strong>Question 4 : Quel est le vrai niveau de satisfaction ?</strong>
+            </p>
+            <p className="text-slate-700">
+              Pas celui déclaré en réunion. Le vrai. Celui qui se mesure aux actes : le client recommande-t-il votre service à d&apos;autres ? Participe-t-il à vos événements ? Répond-il aux sondages ? Un client qui ne s&apos;engage plus est un client qui s&apos;éloigne.
+            </p>
           </div>
 
           <p className="mb-8">
-            La dernière question est la plus importante. Si la réponse est hésitante, vous avez un signal actif. Si la réponse est « non », le client est déjà en train de partir.
+            La règle est simple : un signal seul = on note. Deux signaux = on vérifie. Trois signaux = on appelle le client, on programme un point physique. Quatre signaux ou plus = on fait une revue de compte d&apos;urgence avec le dirigeant ou le commercial.
           </p>
 
           <p className="mb-8">
-            Chaque trimestre, les réponses sont notées. Si un signal se répète ou si trois signaux différents apparaissent sur la même période, une action est déclenchée : appel du dirigeant, visite terrain, ajustement de l&apos;offre, ou recadrage de la relation.
-          </p>
-
-          <p className="mb-8">
-            Ce protocole ne rattrape pas tous les départs. Mais il permet de réagir dans les 30 jours, ce qui est la seule fenêtre utile. Passé ce délai, le client a déjà pris sa décision — qu&apos;il vous l&apos;ait dit ou non.
+            Et la règle la plus importante : on agit dans les 15 jours. Pas dans le mois. Pas au prochain trimestre. Un signal faible a une date de péremption. Passé quinze jours, il devient juste une mémoire de départ.
           </p>
 
           {/* CTA MEDIUM */}
@@ -408,7 +416,7 @@ export default function SignauxFaiblesChurnPage() {
               Approfondir la rétention client
             </p>
             <p className="text-sm text-teal-700 mb-4">
-              Le Bootcamp Méthodes de vente intègre un module rétention B2B : détection des signaux faibles, revue trimestrielle anti-churn, plan de reconquête.
+              Le Bootcamp Méthodes de vente intègre un module rétention client : signaux faibles, protocole de revue trimestrielle, plan de réassurance.
             </p>
             <Link
               href="/bootcamp"
@@ -424,7 +432,7 @@ export default function SignauxFaiblesChurnPage() {
               Vous perdez des clients sans comprendre pourquoi ?
             </h3>
             <p className="text-blue-100 mb-6 leading-relaxed">
-              Le diagnostic commercial identifie les signaux faibles que vous pourriez manquer. 5 minutes pour savoir si vos clients vous envoient des alertes que personne ne lit.
+              Le diagnostic commercial identifie les signaux faibles que votre équipe ne voit pas. 5 minutes pour savoir si vos clients vous envoient des alertes que vous ne lisez pas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -450,17 +458,17 @@ export default function SignauxFaiblesChurnPage() {
             <ul className="space-y-3 text-gray-700">
               <li>
                 <Link href="/blog/retention-client-b2b-pme" className="text-mint-green hover:underline">
-                  → Rétention client B2B en PME : 5 leviers pour arrêter de perdre vos clients
+                  → Rétention client B2B en PME : pourquoi vos clients partent sans vous le dire
                 </Link>
               </li>
               <li>
                 <Link href="/blog/prochain-million-portefeuille-clients-expansion" className="text-mint-green hover:underline">
-                  → Où trouver votre prochain million dans votre portefeuille clients existant
+                  → Décrocher le prochain million : développez votre portefeuille clients existants
                 </Link>
               </li>
               <li>
                 <Link href="/blog/coaching-commercial-diagnostic-ecoute" className="text-mint-green hover:underline">
-                  → Coaching commercial : les 3 diagnostics qui changent la donne
+                  → Coaching commercial : le diagnostic qui change tout
                 </Link>
               </li>
             </ul>

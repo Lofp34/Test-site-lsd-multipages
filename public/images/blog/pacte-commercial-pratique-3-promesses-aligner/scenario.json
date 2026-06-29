@@ -1,0 +1,27 @@
+{
+  "title": "Pacte commercial en pratique — les 3 promesses a aligner",
+  "basename": "bd-slide",
+  "model": "openai/gpt-image-2",
+  "reference_image": "/Users/clawdia/.openclaw/media/inbound/Laurent Serre.jpg",
+  "slides_with_reference": [2, 7],
+  "characters": {
+    "laurent": {
+      "name": "Laurent Serre (coach, 52 ans)",
+      "description": "Homme 52 ans, carrure solide, visage marque, barbe grisonnante courte et dense, cheveux bruns poivre-et-sel coiffes en arriere, yeux bleu-gris calmes, front large. Veste bleu marine, chemise blanche col ouvert."
+    },
+    "dirigeant": {
+      "name": "Dirigeant PME (50 ans)",
+      "description": "Homme 50 ans, silhouette trapue, visage carre, cheveux gris courts, petites lunettes rondes, barbe quelques jours, yeux marron. Costume bleu fonce."
+    }
+  },
+  "slides": [
+    {"id":1,"title":"Cover","slug":"bd-slide-01-cover","characters":["laurent"],"reference":false,"scene":"Laurent a son bureau, regard calme, fond sobre tons chauds.","bubbles":{"Narration":"Le pacte commercial en pratique. Trois promesses. Une seule verite. La methode pour les aligner en une reunion."}},
+    {"id":2,"title":"Promesse 1","slug":"bd-slide-02-promesse1","characters":["laurent","dirigeant"],"reference":true,"scene":"Bureau. Laurent devant un paperboard ecrivant 'Vision dirigeant'. Dirigeant ecoute, reflechit.","bubbles":{"Laurent":"Promesse 1 : ce que le dirigeant vend. Ecris l'offre en une phrase. Pas la vision marketing. Ce que TU promets vraiment a tes clients.","Dirigeant":"On livre des solutions fiables en 48h. Mais mon commercial promet 24h."}},
+    {"id":3,"title":"Promesse 2","slug":"bd-slide-03-promesse2","characters":["laurent","dirigeant"],"reference":false,"scene":"Meme decor. Laurent ajoute une deuxieme colonne sur le paperboard. Dirigeant prend des notes.","bubbles":{"Laurent":"Promesse 2 : ce que le commercial dit sur le terrain. Prends trois deals en cours. Ecris ce que ton commercial a promis a chaque client.","Dirigeant":"Je ne sais pas exactement. C'est le probleme."}},
+    {"id":4,"title":"Promesse 3","slug":"bd-slide-04-promesse3","characters":["laurent"],"reference":false,"scene":"Laurent ajoute une troisieme colonne sur le paperboard. Plan serre sur les trois colonnes visibles.","bubbles":{"Narration":"Promesse 3 : ce que le client a compris. Appelle-le. Demande-lui ce qu'il croit acheter. La reponse est souvent differente de ce que vous pensiez vendre."}},
+    {"id":5,"title":"Le decalage","slug":"bd-slide-05-decalage","characters":["dirigeant","laurent"],"reference":false,"scene":"Bureau. Dirigeant regarde le paperboard, expression de revelation. Laurent a cote, calme.","bubbles":{"Dirigeant":"Les trois colonnes ne correspondent pas du tout. Je promets de la fiabilite, mon commercial promet de la rapidite, le client achete de la securite.","Laurent":"Maintenant tu sais pourquoi certains deals stagnent."}},
+    {"id":6,"title":"La methode","slug":"bd-slide-06-methode","characters":["laurent","dirigeant"],"reference":false,"scene":"Salle de reunion. Paperboard avec 'Point de verite' ecrit. Laurent montre les trois colonnes. Dirigeant, stylo a la main, pret a agir.","bubbles":{"Laurent":"Le point de verite : en une reunion d'equipe, chaque commercial ecrit les trois promesses pour ses trois deals les plus importants. On compare. On ajuste.","Dirigeant":"Ca prend combien de temps ?","Laurent":"Vingt minutes par deal. Et ca evite trois mois de perdu."}},
+    {"id":7,"title":"Resultat","slug":"bd-slide-07-resultat","characters":["laurent","dirigeant"],"reference":true,"scene":"Rue pietonne, lumiere doree. Laurent et dirigeant marchent. Dirigeant souriant, soulage.","bubbles":{"Dirigeant":"On a fait le point de verite avec l'equipe. Deux deals realignes, un perdu mais compris. Et l'equipe sait maintenant ce qu'elle promet.","Laurent":"Le pacte ne se signe pas en debut d'annee. Il se construit a chaque deal."}},
+    {"id":8,"title":"CTA","slug":"bd-slide-08-cta","characters":["laurent"],"reference":false,"scene":"Laurent a son bureau, regard direct, calme.","bubbles":{"Laurent":"Vos promesses commerciales tiennent la route ? Point de verite offert sur laurentserre.com"}}
+  ]
+}

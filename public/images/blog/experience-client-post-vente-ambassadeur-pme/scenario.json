@@ -1,0 +1,28 @@
+{
+  "title": "Experience client post-vente — 5 actions pour créer des ambassadeurs",
+  "basename": "bd-slide",
+  "model": "openai/gpt-image-2",
+  "reference_image": "/Users/clawdia/.openclaw/media/inbound/Laurent Serre.jpg",
+  "slides_with_reference": [2, 8],
+  "characters": {
+    "laurent": {
+      "name": "Laurent Serre (coach, 52 ans)",
+      "description": "Homme 52 ans, carrure solide, visage marqué, barbe grisonnante courte et dense, cheveux bruns poivre-et-sel coiffés en arrière, yeux bleu-gris calmes et directs, front large. Veste bleu marine, chemise blanche col ouvert."
+    },
+    "dirigeant": {
+      "name": "Dirigeant PME (50 ans)",
+      "description": "Homme 50 ans, silhouette trapue, visage carré, cheveux gris courts, petites lunettes rondes, barbe quelques jours, yeux marron. Costume bleu foncé."
+    }
+  },
+  "slides": [
+    {"id":1,"title":"Cover","slug":"bd-slide-01-cover","characters":["laurent"],"reference":false,"scene":"Laurent assis a son bureau, regard calme, fond sobre tons chauds.","bubbles":{"Narration":"Vos clients satisfaits sont votre meilleur canal d'acquisition. Mais vous les laissez partir sans leur demander de parler de vous."}},
+    {"id":2,"title":"Le paradoxe","slug":"bd-slide-02-paradoxe","characters":["dirigeant","laurent"],"reference":true,"scene":"Bureau PME. Dirigeant, air frustre. Laurent ecoute, calme.","bubbles":{"Dirigeant":"Je depense 50 000 euros par an en prospection. Mais mes meilleurs clients partent et je ne leur demande jamais de recommander.","Laurent":"Tu investis a l'acquisition et tu negliges la retention. C'est levier le plus accessible."}},
+    {"id":3,"title":"Action 1","slug":"bd-slide-03-action1","characters":["laurent"],"reference":false,"scene":"Laurent leve un doigt. Fond sobre.","bubbles":{"Narration":"Action 1 : le debrief J+30. Trente jours apres la signature, un appel dedie. Pas pour vendre. Pour ecouter ce qui s'est bien et mal passe."}},
+    {"id":4,"title":"Action 2","slug":"bd-slide-04-action2","characters":["laurent"],"reference":false,"scene":"Laurent leve deux doigts.","bubbles":{"Narration":"Action 2 : la revue de valeur trimestrielle. Un rendez-vous ou le client dit ce que la solution lui apporte vraiment. Pas ce que vous voulez entendre."}},
+    {"id":5,"title":"Action 3","slug":"bd-slide-05-action3","characters":["laurent"],"reference":false,"scene":"Laurent leve trois doigts. Lumiere douce.","bubbles":{"Narration":"Action 3 : le cas client ecrit avec lui. Pas par votre equipe marketing. Ensemble. Le client raconte son histoire avec ses mots."}},
+    {"id":6,"title":"Actions 4-5","slug":"bd-slide-06-actions45","characters":["laurent"],"reference":false,"scene":"Laurent, quatre puis cinq doigts leves.","bubbles":{"Narration":"Action 4 : la recommandation guidee. Donnez-lui les mots. Action 5 : le reseau d'ambassadeurs. Invitez vos clients a parler a vos prospects."}},
+    {"id":7,"title":"Programme","slug":"bd-slide-07-programme","characters":["laurent","dirigeant"],"reference":false,"scene":"Salle de reunion. Laurent montre un paperboard avec 'Programme Ambassadeur' ecrit. Dirigeant ecoute, prenant des notes.","bubbles":{"Laurent":"Un programme ambassadeur en PME : 5 clients references, un appel trimestriel, un tarif preferentiel, un acces anticipé aux nouveautes.","Dirigeant":"Et ils acceptent ?","Laurent":"Ceux qui sont fiers de travailler avec toi, oui."}},
+    {"id":8,"title":"Lecon","slug":"bd-slide-08-lecon","characters":["dirigeant","laurent"],"reference":true,"scene":"Rue pietonne, lumiere doree. Laurent et dirigeant marchent cote a cote, detendus.","bubbles":{"Dirigeant":"J'ai rappele mon plus vieux client. Il a accepte de temoigner en un appel.","Laurent":"Il attendait peut-etre qu'on lui demande."}},
+    {"id":9,"title":"CTA","slug":"bd-slide-09-cta","characters":["laurent"],"reference":false,"scene":"Laurent a son bureau, regard direct, calme.","bubbles":{"Laurent":"Vos clients peuvent etre vos meilleurs commerciaux. Diagnostic offert sur laurentserre.com"}}
+  ]
+}
