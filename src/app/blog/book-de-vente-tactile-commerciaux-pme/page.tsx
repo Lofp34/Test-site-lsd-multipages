@@ -9,7 +9,7 @@ const heroImage = '/images/blog/book-de-vente-tactile-commerciaux-pme/book-de-ve
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/book-de-vente-tactile-commerciaux-pme/book-de-vente-tactile-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Book de vente tactile : le guide complet',
+  title: 'Book de Vente Tactile PME : Guide Complet (2026)',
   description:
     'Un book de vente tactile est un outil digital interactif qui centralise tous les supports de vente sur tablette, permettant aux commerciaux de présenter, personnaliser et argumenter sans jamais perdre le fil. Guide complet pour PME.',
   keywords:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/book-de-vente-tactile-commerciaux-pme',
   },
   openGraph: {
-    title: 'Book de vente tactile : le guide complet pour vos commerciaux',
+    title: 'Book de Vente Tactile PME : Guide Complet (2026)',
     description:
       'Un book de vente tactile est un outil digital interactif qui centralise tous les supports de vente sur tablette. Créez le vôtre sans dépenser 10K€ en logiciels.',
     url: 'https://www.laurentserre.com/blog/book-de-vente-tactile-commerciaux-pme',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Book de vente tactile : le guide complet pour vos commerciaux',
+    title: 'Book de Vente Tactile PME : Guide Complet (2026)',
     description:
       'Un book de vente tactile est un outil digital interactif qui centralise tous les supports de vente sur tablette. Créez le vôtre sans dépenser 10K€ en logiciels.',
     images: [heroImageAbsolute],

@@ -3,16 +3,16 @@ import { ArrowLeft, Target, Crown, Users, TrendingUp, Calendar, Star, Shield, Za
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Gestion grands comptes B2B : méthodes et outils pour KAM',
-  description: 'Kit complet pour Key Account Managers : méthodes de pilotage, templates de suivi et outils pour développer vos comptes stratégiques B2B.',
+  title: 'Gestion Grands Comptes B2B : Kit Complet KAM (2026)',
+  description: 'Kit complet pour Key Account Managers : méthodes de pilotage, templates de suivi et outils pour développer vos comptes stratégiques B2B. Templates gratuits inclus.',
   keywords: 'gestion grands comptes, key account manager, comptes stratégiques, développement grands comptes, KAM, commercial grands comptes',
   authors: [{ name: 'Laurent Serre' }],
   alternates: {
     canonical: 'https://www.laurentserre.com/ressources/kit-gestion-grands-comptes',
   },
   openGraph: {
-    title: 'Gestion grands comptes B2B : méthodes et outils pour KAM',
-    description: 'Méthodes et outils pour développer vos comptes stratégiques. Kit complet pour Key Account Managers.',
+    title: 'Gestion Grands Comptes B2B : Kit Complet KAM (2026)',
+    description: 'Méthodes et outils pour développer vos comptes stratégiques. Kit complet pour Key Account Managers. Templates gratuits inclus.',
     url: 'https://www.laurentserre.com/ressources/kit-gestion-grands-comptes',
     type: 'article',
     locale: 'fr_FR',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Gestion grands comptes B2B : méthodes et outils pour KAM',
-    description: 'Méthodes et outils pour développer vos comptes stratégiques.',
+    title: 'Gestion Grands Comptes B2B : Kit Complet KAM (2026)',
+    description: 'Méthodes, outils et templates pour développer vos comptes stratégiques.',
     images: ['https://www.laurentserre.com/laurent.jpg'],
     creator: '@laurentserre',
   },
