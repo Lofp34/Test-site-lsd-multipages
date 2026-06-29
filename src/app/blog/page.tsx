@@ -5,15 +5,15 @@ import Button from '@/components/ui/Button';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Vente B2B, closing, management commercial : articles terrain',
-  description: "Articles de Laurent Serre, consultant commercial terrain PME. Closing, prospection, management d'équipe, négociation B2B. Méthodes testées en mission.",
+  title: 'Blog Développement Commercial PME | Laurent Serre',
+  description: '105 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management, négociation B2B. Méthodes testées en mission.'
   keywords: 'blog développement commercial, formation commerciale, stratégies vente B2B, conseils PME, expert commercial',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog',
   },
   openGraph: {
-    title: 'Vente B2B, closing, management commercial : articles terrain',
-    description: 'Articles de Laurent Serre, consultant commercial terrain PME. Closing, prospection, management, négociation B2B.',
+    title: 'Blog Développement Commercial PME | Laurent Serre',
+    description: '105 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
     url: 'https://www.laurentserre.com/blog',
     type: 'website',
     locale: 'fr_FR',
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vente B2B, closing, management commercial : articles terrain',
-    description: 'Articles de Laurent Serre, consultant commercial terrain PME. Closing, prospection, management, négociation B2B.',
+    title: 'Blog Développement Commercial PME | Laurent Serre',
+    description: '105 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
     images: ['https://www.laurentserre.com/erreurs-fatales.png'],
   },
 };
