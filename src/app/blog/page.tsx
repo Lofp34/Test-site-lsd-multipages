@@ -36,6 +36,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: 'vendre-comite-achat-multi-decideurs-pme',
+    title: 'Vendre à un comité d\'achat multi-décideurs en PME : cartographier, orchestrer, conclure',
+    description: 'Un champion unique ne suffit plus. 6 à 11 décideurs par deal B2B, cycles +30%, 79% d\'implication CFO. La méthode terrain pour cartographier, orchestrer et conclure.',
+    date: '2026-06-29',
+    readTime: '10 min',
+    category: 'Vente B2B / Comité d\'achat',
+    image: '/images/blog/vendre-comite-achat-multi-decideurs-pme/hero.webp',
+    featured: true,
+  },
+  {
     slug: 'pipeline-trop-plein-tue-performance-commerciale',
     title: 'Pipeline trop plein : pourquoi vos 62 deals ouverts tuent votre performance',
     description: 'Un pipeline commercial trop plein fait plus de mal qu\'un pipeline vide. La méthode pour qualifier out sans culpabilité et retrouver un pipeline sain de 15-20 deals.',

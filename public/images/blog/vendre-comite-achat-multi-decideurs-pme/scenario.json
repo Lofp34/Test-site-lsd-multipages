@@ -1,0 +1,149 @@
+{
+  "title": "Vendre à un comité d'achat multi-décideurs - Le piège du champion unique",
+  "basename": "bd-slide",
+  "model": "openai/gpt-image-2",
+  "reference_image": "/Users/clawdia/.openclaw/media/inbound/Laurent Serre.jpg",
+  "slides_with_reference": [3, 6, 11],
+  "characters": {
+    "julien": {
+      "name": "Julien (commercial terrain, 33-35 ans)",
+      "description": "Homme 33-35 ans, silhouette élancée, visage ovale, front dégagé, sourcils bruns fins et mobiles, yeux marron expressifs, nez droit, bouche moyenne, menton légèrement fuyant, mâchoire douce, oreilles discrètes, cheveux bruns mi-courts coiffés sur le côté, barbe de 2-3 jours bien taillée. Chemise bleu clair col classique, manches retroussées aux avant-bras, pantalon chino beige, ceinture cuir marron, montre connectée au poignet. Posture ouverte, gestes mesurés, souvent les mains jointes quand il écoute. Expression sérieuse mais pas tendue."
+    },
+    "laurent": {
+      "name": "Laurent Serre (coach, 52 ans)",
+      "description": "Homme 52 ans, carrure solide sans être massive, visage bien marqué, barbe grisonnante courte et dense, cheveux bruns poivre-et-sel coiffés en arrière, yeux bleu-gris au regard calme et direct, front large, nez fort, expression posée qui inspire confiance. Veste bleu marine sur chemise blanche col ouvert (pas de cravate), pantalon foncé. Posture stable, légèrement en avant quand il écoute. Présence rassurante."
+    },
+    "marc": {
+      "name": "Marc (responsable production, 45 ans)",
+      "description": "Homme 45 ans, silhouette corpulente, visage rond, cheveux bruns clairsemés coiffés en arrière, lunettes à monture épaisse noire, petites lunettes rondes, légère barbe grisonnante de quelques jours, yeux marron chaleureux, double menton naissant, bouche souriante. Chemise blanche mal repassée, veste de costume marron foncé, cravate desserrée. Gestes amples, parle avec les mains, enthousiaste."
+    },
+    "cfo": {
+      "name": "Directeur financier (55 ans)",
+      "description": "Homme 55 ans, silhouette mince et rigide, visage anguleux, cheveux gris courts et précis, lunettes fines métalliques, yeux perçants gris-bleu, nez fin, bouche serrée, menton volontaire, barbe rasée de près. Costume gris foncé, cravate sobre, boutons de manchette. Posture droite, mains croisées sur la table. Expression concentrée, légèrement sceptique. Il ne laisse rien passer."
+    }
+  },
+  "slides": [
+    {
+      "id": 1,
+      "title": "Cover",
+      "slug": "bd-slide-01-cover",
+      "characters": ["julien"],
+      "scene": "Julien est au téléphone, debout devant une grande fenêtre de bureau. Derrière lui, à travers la vitre, on voit les silhouettes floues de plusieurs personnes autour d'une table de réunion. Il a une main dans la poche, l'autre tient son téléphone. Son expression est concentrée, un peu perplexe.",
+      "bubbles": {
+        "Narration": "Il avait un champion enthousiaste. Le deal a stagné 8 semaines. Pourquoi ?"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Le champion enthousiaste",
+      "slug": "bd-slide-02-constat",
+      "characters": ["julien", "marc"],
+      "scene": "Dans un open space lumineux. Julien et Marc sont assis à une petite table, un café posé entre eux. Marc parle avec enthousiasme, gestes amples, penché en avant. Julien écoute, sourit, prend des notes dans un carnet. Ambiance positive, premier rendez-vous prometteur.",
+      "bubbles": {
+        "Julien": "Donc le process actuel vous freine au quotidien ?",
+        "Marc": "Carrément. Ta solution, c'est exactement ce qu'on cherche. Je vais défendre ton dossier en comité."
+      }
+    },
+    {
+      "id": 3,
+      "title": "8 semaines plus tard",
+      "slug": "bd-slide-03-piege",
+      "characters": ["julien", "laurent"],
+      "scene": "Dans un café de quartier sobre et lumineux. Julien est assis face à Laurent, une tasse devant lui. Laurent écoute, calme, les bras croisés légèrement. Julien a l'air préoccupé, les épaules un peu tombantes. Lumière naturelle par la fenêtre.",
+      "bubbles": {
+        "Julien": "Je ne comprends pas. Marc adore. Mais ça ne signe pas.",
+        "Laurent": "Tu sais combien de personnes décident vraiment dans cette boîte ?"
+      }
+    },
+    {
+      "id": 4,
+      "title": "La carte du comité",
+      "slug": "bd-slide-04-carte",
+      "characters": ["julien", "laurent"],
+      "scene": "Même café. Laurent a sorti un carnet et dessine une carte au crayon. On voit les branches : Marc, le dirigeant, le CFO, l'IT, les utilisateurs. Julien regarde la carte, commence à comprendre. Son expression passe de la perplexité à la prise de conscience.",
+      "bubbles": {
+        "Laurent": "Marc c'est ton champion. Mais le vrai comité, c'est 6 personnes. Tu en as rencontré une.",
+        "Julien": "Je pensais qu'il gérait tout...",
+        "Laurent": "C'est le piège. Tu t'es arrêté au premier enthousiaste."
+      }
+    },
+    {
+      "id": 5,
+      "title": "Les 4 questions",
+      "slug": "bd-slide-05-multithread",
+      "characters": ["julien", "laurent"],
+      "scene": "Plan plus serré sur le carnet. On voit les 4 questions écrites à la main : 'Qui utilise ? Qui change ses habitudes ? Qui valide le budget ? Qui peut bloquer ?' Julien pointe la dernière question du doigt, Laurent hoche la tête.",
+      "bubbles": {
+        "Julien": "Qui peut bloquer... je n'ai jamais posé cette question.",
+        "Laurent": "Pose-la au prochain rendez-vous. Tu verras des noms apparaître."
+      }
+    },
+    {
+      "id": 6,
+      "title": "Les hidden buyers",
+      "slug": "bd-slide-06-hidden",
+      "characters": ["julien", "laurent"],
+      "scene": "Même café, les deux hommes finissent leurs cafés. Laurent compte sur ses doigts. Julien prend des notes rapidement dans son carnet.",
+      "bubbles": {
+        "Laurent": "Ensuite tu ouvres trois fils. Le CFO sur le business case. L'IT sur la technique. Le dirigeant sur la stratégie.",
+        "Julien": "Et Marc ?",
+        "Laurent": "Marc reste ton allié. Mais tu ne dépends plus de lui seul."
+      }
+    },
+    {
+      "id": 7,
+      "title": "Le rendez-vous CFO",
+      "slug": "bd-slide-08-cfo",
+      "characters": ["julien", "cfo"],
+      "scene": "Bureau sobre et rangé, boiseries claires. Julien est assis face au directeur financier. Le CFO a un tableur imprimé devant lui, des chiffres partout. Julien pointe un chiffre du doigt. Le CFO lit, impassible, prenant des notes. Ambiance professionnelle et sérieuse.",
+      "bubbles": {
+        "Julien": "Investissement 15K, économies annuelles 40K, retour sur 5 mois.",
+        "CFO": "Et le risque si on ne fait rien ?",
+        "Julien": "Vous perdez 30K par an en productivité. Ce tableau le montre."
+      }
+    },
+    {
+      "id": 8,
+      "title": "Le consensus",
+      "slug": "bd-slide-07-consensus",
+      "characters": ["julien", "marc", "cfo"],
+      "scene": "Salle de réunion vitrée. Autour d'une table ovale : Marc (enthousiaste), le CFO (réservé, lit ses notes), Julien (debout devant un paperboard). Troisième personne (le dirigeant) vu de dos, silhouette. Ambiance de réunion d'alignement.",
+      "bubbles": {
+        "Julien": "Chacun a ses critères. Je vous propose qu'on les aligne.",
+        "Marc": "Pour moi c'est le gain de temps quotidien.",
+        "CFO": "Moi c'est le retour sur investissement."
+      }
+    },
+    {
+      "id": 9,
+      "title": "La leçon",
+      "slug": "bd-slide-09-lecon",
+      "characters": ["julien", "laurent"],
+      "scene": "Les deux hommes marchent dans une rue calme, trottoir bordé d'arbres. Laurent a les mains dans les poches de sa veste, Julien marche à côté, carnet à la main. Discussion décontractée, ambiance de fin de rendez-vous.",
+      "bubbles": {
+        "Julien": "Au final j'ai rencontré 5 personnes. Le deal a signé en 3 semaines.",
+        "Laurent": "Tu vois. Le champion ne suffit pas. C'est le comité qu'il faut convaincre."
+      }
+    },
+    {
+      "id": 10,
+      "title": "Conclusion",
+      "slug": "bd-slide-10-conclusion",
+      "characters": ["julien"],
+      "scene": "Julien seul, assis dans son bureau, regardant par la fenêtre. Il a un sourire calme et confiant. Sur son bureau, la carte du comité d'achat est posée à côté de son ordinateur.",
+      "bubbles": {
+        "Narration": "6 à 11 personnes décident. Une seule ne suffit jamais."
+      }
+    },
+    {
+      "id": 11,
+      "title": "CTA",
+      "slug": "bd-slide-11-cta",
+      "characters": ["laurent"],
+      "scene": "Laurent debout, face au lecteur, dans un bureau lumineux. Il a une main posée sur une table, l'autre légèrement ouverte comme une invitation. Fond sobre, tons chauds. Regard direct et bienveillant.",
+      "bubbles": {
+        "Laurent": "Vos commerciaux tombent encore dans le piège du champion unique ? Commencez par un diagnostic offert sur laurentserre.com"
+      }
+    }
+  ]
+}
