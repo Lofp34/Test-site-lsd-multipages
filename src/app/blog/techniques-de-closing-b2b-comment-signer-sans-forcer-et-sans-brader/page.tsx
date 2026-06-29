@@ -4,13 +4,13 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Techniques de closing B2B : signer sans forcer ni brader',
+  title: 'Techniques de Closing B2B : Signer sans Forcer (2026)',
   description:
     '5 techniques de closing B2B pour conclure une vente sans manipulation et sans brader vos marges. Ce qui fonctionne vraiment en PME, avec exemples concrets.',
   keywords:
     'closing B2B, techniques de closing, conclure une vente, taux de closing, objections commerciales, closing commercial PME, vente B2B, Laurent Serre',
   openGraph: {
-    title: 'Techniques de closing B2B : signer sans forcer ni brader',
+    title: 'Techniques de Closing B2B : Signer sans Forcer (2026)',
     description:
       '5 techniques de closing B2B pour conclure une vente sans manipulation et sans brader vos marges. Ce qui fonctionne vraiment en PME.',
     url: 'https://www.laurentserre.com/blog/techniques-de-closing-b2b-comment-signer-sans-forcer-et-sans-brader',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Techniques de closing B2B : signer sans forcer ni brader',
+    title: 'Techniques de Closing B2B : Signer sans Forcer (2026)',
     description:
       '5 techniques de closing B2B pour conclure une vente sans manipulation. Ce qui marche vraiment en PME.',
     images: ['https://www.laurentserre.com/images/blog/2026-05-02-closing-b2b-signer-sans-brader-hero.webp'],
@@ -56,7 +56,7 @@ export default function TechniquesDeClosingB2B() {
   const howToJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
-    'name': 'Techniques de closing B2B : signer sans forcer ni brader',
+    'name': 'Techniques de Closing B2B : Signer sans Forcer (2026)',
     'description': '5 techniques de closing B2B pour conclure une vente sans manipulation en PME.',
     'author': { '@type': 'Person', 'name': 'Laurent Serre', 'url': 'https://www.laurentserre.com/a-propos' },
     'step': [

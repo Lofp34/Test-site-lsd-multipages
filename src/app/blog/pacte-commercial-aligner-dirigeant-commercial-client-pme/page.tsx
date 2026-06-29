@@ -289,7 +289,7 @@ export default function PacteCommercialPage() {
           </p>
 
           <p className="mb-8">
-            On a passé une heure à dérouler ses trois derniers dossiers perdus. Et on a vu le motif. Philippe avait une vision claire de son offre — des machines robustes, un service après-vente réactif, des contrats de maintenance longs. Son commercial, Julien, promettait sur le terrain des délais d&apos;intervention que la maintenance ne pouvait pas tenir, des fonctionnalités qui n&apos;étaient pas encore au catalogue, et des conditions commerciales que Philippe n&apos;avait jamais validées.
+            On a passé une heure à dérouler ses trois derniers dossiers perdus. Et on a vu le motif. Philippe avait une vision claire de son offre : des machines robustes, un service après-vente réactif, des contrats de maintenance longs. Son commercial, Julien, promettait sur le terrain des délais d&apos;intervention que la maintenance ne pouvait pas tenir, des fonctionnalités qui n&apos;étaient pas encore au catalogue, et des conditions commerciales que Philippe n&apos;avait jamais validées.
           </p>
 
           <p className="mb-8">
@@ -309,7 +309,7 @@ export default function PacteCommercialPage() {
           </p>
 
           <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">
-            Promesse 1 — Ce que le dirigeant vend
+            Promesse 1 : Ce que le dirigeant vend
           </h3>
 
           <p className="mb-8">
@@ -317,7 +317,7 @@ export default function PacteCommercialPage() {
           </p>
 
           <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">
-            Promesse 2 — Ce que le commercial dit
+            Promesse 2 : Ce que le commercial dit
           </h3>
 
           <p className="mb-8">
@@ -325,7 +325,7 @@ export default function PacteCommercialPage() {
           </p>
 
           <h3 className="text-xl font-title font-semibold text-blue-ink mt-8 mb-4">
-            Promesse 3 — Ce que le client reçoit
+            Promesse 3 : Ce que le client reçoit
           </h3>
 
           <p className="mb-8">
@@ -345,7 +345,7 @@ export default function PacteCommercialPage() {
           </p>
 
           <p className="mb-8">
-            Un point de vérité par deal. Pas de revue commerciale générale. Pas de réunion d&apos;équipe abstraite. Un moment dédié où le dirigeant, le commercial — et parfois le client — mettent leurs promesses sur la table.
+            Un point de vérité par deal. Pas de revue commerciale générale. Pas de réunion d&apos;équipe abstraite. Un moment dédié où le dirigeant, le commercial (et parfois le client) mettent leurs promesses sur la table.
           </p>
 
           <p className="mb-8">

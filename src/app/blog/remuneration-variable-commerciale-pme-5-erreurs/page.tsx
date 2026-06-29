@@ -10,7 +10,7 @@ const heroImage = 'https://www.laurentserre.com/images/blog/remuneration-variabl
 const ogImage = 'https://www.laurentserre.com/images/blog/remuneration-variable/remuneration-variable-og.jpg';
 
 export const metadata: Metadata = {
-  title: 'Plan de commission : 5 erreurs qui démotivent',
+  title: 'Plan de Commission PME : 5 Erreurs qui Démotivent (2026)',
   description:
     '5 erreurs qui détruisent la motivation des commerciaux et le cadre en 4 paramètres pour bâtir un plan de commission adapté à une PME B2B. De la grille salariale au taux de commission.',
   keywords:

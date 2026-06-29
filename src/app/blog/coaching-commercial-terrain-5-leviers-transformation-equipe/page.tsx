@@ -8,7 +8,7 @@ const heroImage = '/images/blog/coaching-commercial-terrain-hero.webp';
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/coaching-commercial-terrain-hero.webp';
 
 export const metadata: Metadata = {
-  title: 'Coaching commercial terrain : 5 leviers qui transforment une équipe',
+  title: 'Coaching Commercial Terrain : 5 Leviers (2026)',
   description:
     'Le coaching terrain change vraiment une équipe commerciale : 5 leviers concrets pour transformer vos commerciaux, avec des méthodes testées en PME.',
   keywords:
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/coaching-commercial-terrain-5-leviers-transformation-equipe',
   },
   openGraph: {
-    title: 'Coaching commercial terrain : 5 leviers qui transforment une équipe',
+    title: 'Coaching Commercial Terrain : 5 Leviers (2026)',
     description:
       'La formation masse ne change rien. Le coaching terrain, oui , à condition de suivre 5 leviers précis.',
     url: 'https://www.laurentserre.com/blog/coaching-commercial-terrain-5-leviers-transformation-equipe',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Coaching commercial terrain : 5 leviers qui transforment une équipe',
+    title: 'Coaching Commercial Terrain : 5 Leviers (2026)',
     description:
       'La formation masse ne change rien. Le coaching terrain, oui , à condition de suivre 5 leviers précis.',
     images: [heroImageAbsolute],

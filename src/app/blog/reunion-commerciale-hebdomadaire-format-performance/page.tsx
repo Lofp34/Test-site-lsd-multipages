@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Réunion commerciale : exemple de contenu qui fait avancer',
+  title: 'Réunion Commerciale Hebdo : Format qui Fait Avancer (2026)',
   description:
     'Des réunions commerciales qui tournent en rond. Un format testé sur le terrain : 4 blocs, 60 minutes, orienté 80% sur le futur. Exemple de contenu inclus.',
   keywords:
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.laurentserre.com/blog/reunion-commerciale-hebdomadaire-format-performance',
   },
   openGraph: {
-    title: 'Réunion commerciale : exemple de contenu qui fait avancer',
+    title: 'Réunion Commerciale Hebdo : Format qui Fait Avancer (2026)',
     description:
       'Des réunions commerciales qui tournent en rond. Le meilleur format que j\'ai trouvé en 15 ans : 4 blocs, 60 minutes, et une seule question qui compte en sortie.',
     url: 'https://www.laurentserre.com/blog/reunion-commerciale-hebdomadaire-format-performance',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Réunion commerciale : exemple de contenu qui fait avancer',
+    title: 'Réunion Commerciale Hebdo : Format qui Fait Avancer (2026)',
     description:
       'Le meilleur format de réunion commerciale que j\'ai trouvé en 15 ans : 4 blocs, 60 minutes, 80% sur le futur.',
     images: ['https://www.laurentserre.com/images/blog/2026-05-09-reunion-commerciale-hebdo-hero.webp'],

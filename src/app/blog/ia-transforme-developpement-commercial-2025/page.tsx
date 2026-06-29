@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Comment l\'IA transforme le développement commercial en 2025 | Laurent Serre',
+  title: 'Comment l\'IA Transforme le Développement Commercial (2026)',
   description: 'Découvrez comment l\'intelligence artificielle révolutionne la prospection, le scoring et le suivi client. Guide complet pour intégrer l\'IA efficacement.',
   keywords: 'IA développement commercial, intelligence artificielle vente, prospection IA, automation commerciale, CRM IA',
   alternates: {
@@ -40,7 +40,7 @@ export default function Article2() {
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Comment l'IA transforme le développement commercial en 2025",
+      "headline": "Comment l'IA Transforme le Développement Commercial (2026)",
       "description": "Découvrez comment l'intelligence artificielle révolutionne la prospection, le scoring et le suivi client. Guide complet pour intégrer l'IA efficacement.",
       "author": {
         "@type": "Person",
@@ -139,7 +139,7 @@ export default function Article2() {
             </div>
             
             <h1 className="text-4xl font-title font-bold tracking-tight text-blue-ink sm:text-5xl mb-6">
-              Comment l'IA transforme le développement commercial en 2025
+              Comment l'IA Transforme le Développement Commercial (2026)
             </h1>
             
             <div className="flex items-center justify-center gap-4 text-sm text-gray-500 mb-8">
