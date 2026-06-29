@@ -4,7 +4,7 @@ import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
-  title: 'Peur du prix : le problème n’est jamais le tarif',
+  title: 'Peur du Prix PME : le Vrai Problème n\'est pas le Tarif',
   description:
     'Quand une vente bloque sur le prix, le tarif n’est souvent que la surface du problème. Valeur perçue, découverte, décision et courage commercial pèsent bien plus lourd.',
   keywords:
