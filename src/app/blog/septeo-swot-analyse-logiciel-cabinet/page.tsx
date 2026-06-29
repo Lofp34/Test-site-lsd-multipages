@@ -10,9 +10,9 @@ const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/septeo-swot/
 const ogImageAbsolute = 'https://www.laurentserre.com/images/blog/septeo-swot/septeo-swot-og.webp';
 
 export const metadata: Metadata = {
-  title: 'Septeo : analyse SWOT du leader legaltech français',
+  title: 'Analyse SWOT Septeo : forces, faiblesses et verdict (2026)',
   description:
-    'Analyse SWOT Septeo par un consultant terrain, pas par leur marketing. Forces réelles, faiblesses franches, menaces concrètes. Verdict final sur le logiciel legaltech.',
+    'Analyse SWOT Septeo par un consultant terrain : forces réelles, faiblesses franches, menaces concrètes. Tableau 4 quadrants et verdict final pour votre PME.',
   keywords:
     'Septeo analyse SWOT, Septeo forces faiblesses, Septeo avis, Septeo STP One acquisition, analyse SWOT logiciel cabinet, Septeo concurrents, editeur legaltech français',
   alternates: {
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Septeo : analyse SWOT du leader legaltech français',
+    title: 'Analyse SWOT Septeo : forces, faiblesses et verdict (2026)',
     description:
-      'Analyse SWOT complète de Septeo : tableau 4 quadrants, analyse terrain, verdict pour votre cabinet ou direction juridique.',
+      'Analyse SWOT complète de Septeo : tableau 4 quadrants, analyse terrain, verdict pour votre cabinet ou PME.'
     images: [ogImageAbsolute],
   },
 };
@@ -54,7 +54,7 @@ export default function SepteoSwotPage() {
             'Analyse SWOT complete de Septeo avec tableau 4 quadrants. Forces, faiblesses, opportunites, menaces. Verdict : Septeo est-il fait pour vous ?',
           image: heroImageAbsolute,
           datePublished: '2026-06-10',
-          dateModified: '2026-06-10',
+          dateModified: '2026-06-29',
           author: {
             name: 'Laurent Serre',
             url: 'https://www.laurentserre.com/a-propos',
