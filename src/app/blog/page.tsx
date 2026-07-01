@@ -6,14 +6,14 @@ import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
   title: 'Blog Développement Commercial PME | Laurent Serre',
-  description: '105 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management, négociation B2B. Méthodes testées en mission.',
+  description: '106 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management, négociation B2B. Méthodes testées en mission.',
   keywords: 'blog développement commercial, formation commerciale, stratégies vente B2B, conseils PME, expert commercial',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog',
   },
   openGraph: {
     title: 'Blog Développement Commercial PME | Laurent Serre',
-    description: '105 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
+    description: '106 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
     url: 'https://www.laurentserre.com/blog',
     type: 'website',
     locale: 'fr_FR',
@@ -29,12 +29,22 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Blog Développement Commercial PME | Laurent Serre',
-    description: '105 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
+    description: '106 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
     images: ['https://www.laurentserre.com/erreurs-fatales.png'],
   },
 };
 
 const blogPosts = [
+  {
+    slug: 'acheteurs-b2b-2026-client-deja-informe',
+    title: 'Le client n\'arrive plus en rendez-vous pour découvrir votre offre',
+    description: 'En 2026, un acheteur B2B réalise 70 à 80 % de sa recherche avant tout contact commercial. Le rendez-vous ne sert plus à découvrir l\'offre : il sert à vérifier, clarifier et décider.',
+    date: '2026-07-01',
+    readTime: '6 min',
+    category: 'Vente B2B / Comportement acheteur',
+    image: '/images/blog/acheteurs-b2b-2026-client-deja-informe/hero.webp',
+    featured: true,
+  },
   {
     slug: 'pacte-commercial-aligner-dirigeant-commercial-client-pme',
     title: 'Le pacte commercial : aligner dirigeant, commercial et client sur les mêmes promesses',
