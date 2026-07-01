@@ -194,6 +194,10 @@ export default function AcheteursB2b2026ClientDejaInformePage() {
             </div>
           </div>
 
+          <div className="mb-8">
+            <AuthorCard />
+          </div>
+
           <div className="relative mb-12">
             <Image
               src={heroImage}
@@ -211,9 +215,6 @@ export default function AcheteursB2b2026ClientDejaInformePage() {
 
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
-          <div className="mb-8">
-            <AuthorCard />
-          </div>
 
           {/* TL;DR */}
           <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
@@ -482,8 +483,12 @@ export default function AcheteursB2b2026ClientDejaInformePage() {
             </div>
           </div>
 
-          {/* HubSpot Form */}
           <div className="mt-16">
+            <AuthorCard />
+          </div>
+
+          {/* HubSpot Form */}
+          <div className="mt-8">
             <HubSpotForm />
           </div>
 
