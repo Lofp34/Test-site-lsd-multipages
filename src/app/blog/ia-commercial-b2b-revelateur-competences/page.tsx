@@ -8,20 +8,20 @@ import BDCarousel from '@/components/BDCarousel';
 const carouselPrefix = '/images/blog/ia-commercial-b2b-revelateur-competences';
 
 const carouselImages = [
-  { src: `${carouselPrefix}/bd-slide-01-cover.webp`, alt: 'Cover : L\'IA ne fera pas le travail du commercial, elle révèle qui sait vendre', index: 0 },
-  { src: `${carouselPrefix}/bd-slide-02-excuse.webp`, alt: 'L\'IA retire les excuses du commercial en automatisant la préparation', index: 1 },
-  { src: `${carouselPrefix}/bd-slide-03-realite.webp`, alt: 'La réalité du terrain : sans l\'IA, le commercial moyen passe des heures sur des tâches automatisables', index: 2 },
-  { src: `${carouselPrefix}/bd-slide-04-question.webp`, alt: 'La question n\'est pas de savoir si l\'IA remplacera le commercial mais ce qu\'elle révélera', index: 3 },
-  { src: `${carouselPrefix}/bd-slide-05-info-jugement.webp`, alt: 'Quand l\'information est partout, le jugement devient la vraie compétence commerciale', index: 4 },
-  { src: `${carouselPrefix}/bd-slide-06-signal.webp`, alt: 'Le signal faible que personne ne repère : le commercial qui résiste à l\'IA', index: 5 },
-  { src: `${carouselPrefix}/bd-slide-07-lecture.webp`, alt: 'La lecture du client : l\'IA donne les données mais pas l\'interprétation', index: 6 },
-  { src: `${carouselPrefix}/bd-slide-08-revelation.webp`, alt: 'La révélation : l\'IA expose le vrai niveau de préparation de chaque commercial', index: 7 },
-  { src: `${carouselPrefix}/bd-slide-09-illusion.webp`, alt: 'L\'illusion de la productivité : faire plus vite sans faire mieux', index: 8 },
-  { src: `${carouselPrefix}/bd-slide-10-formation.webp`, alt: 'La formation commerciale doit pivoter vers le jugement et la stratégie', index: 9 },
-  { src: `${carouselPrefix}/bd-slide-11-competence.webp`, alt: 'La compétence qui compte : poser les bonnes questions, pas avoir les bonnes réponses', index: 10 },
-  { src: `${carouselPrefix}/bd-slide-12-test.webp`, alt: 'Le test : comment évaluer si votre équipe est prête pour l\'ère de l\'IA', index: 11 },
-  { src: `${carouselPrefix}/bd-slide-13-evidence.webp`, alt: 'L\'évidence : les meilleurs commerciaux welcoming l\'IA, les autres la craignent', index: 12 },
-  { src: `${carouselPrefix}/bd-slide-14-cta.webp`, alt: 'Call to action : évaluez la maturité IA de votre équipe commerciale', index: 13 },
+  { src: `${carouselPrefix}/bd-slide-01-cover.webp`, alt: 'Cover : L\'IA ne fera pas le travail du commercial, elle montre qui sait vraiment vendre', index: 0 },
+  { src: `${carouselPrefix}/bd-slide-02-compte-rendu.webp`, alt: 'Un compte-rendu impeccable masque une vente qui n\'avance pas', index: 1 },
+  { src: `${carouselPrefix}/bd-slide-03-question-tue.webp`, alt: 'La question qui tue : qu\'as-tu compris de tout ça ?', index: 2 },
+  { src: `${carouselPrefix}/bd-slide-04-laurent.webp`, alt: 'Laurent Serre explique pourquoi l\'IA révèle le vrai niveau commercial', index: 3 },
+  { src: `${carouselPrefix}/bd-slide-05-rendez-vous.webp`, alt: 'En rendez-vous, l\'IA prépare le dossier mais ne lit pas les silences', index: 4 },
+  { src: `${carouselPrefix}/bd-slide-06-debrief.webp`, alt: 'Le débrief à chaud que l\'IA ne peut pas remplacer', index: 5 },
+  { src: `${carouselPrefix}/bd-slide-07-signal.webp`, alt: 'Le signal que seul un commercial expérimenté repère', index: 6 },
+  { src: `${carouselPrefix}/bd-slide-08-niveau.webp`, alt: 'Sans les excuses, le vrai niveau de chacun devient visible', index: 7 },
+  { src: `${carouselPrefix}/bd-slide-09-illusion.webp`, alt: 'L\'illusion de la productivité : multiplier les actions sans augmenter l\'impact', index: 8 },
+  { src: `${carouselPrefix}/bd-slide-10-pas-fait.webp`, alt: 'Ce que l\'IA ne fait pas : juger, cadrer, décider', index: 9 },
+  { src: `${carouselPrefix}/bd-slide-11-formation.webp`, alt: 'Former les commerciaux sur ce que l\'IA ne règle pas', index: 10 },
+  { src: `${carouselPrefix}/bd-slide-12-declic.webp`, alt: 'Le déclic : quand le commercial comprend que l\'IA est un allié, pas une menace', index: 11 },
+  { src: `${carouselPrefix}/bd-slide-13-resultat.webp`, alt: 'Le résultat : une équipe qui vend mieux parce qu\'elle pense mieux', index: 12 },
+  { src: `${carouselPrefix}/bd-slide-14-cta.webp`, alt: 'Diagnostic flash offert : évaluez la maturité IA de votre équipe commerciale', index: 13 },
 ];
 
 const articleUrl = 'https://www.laurentserre.com/blog/ia-commercial-b2b-revelateur-competences';
