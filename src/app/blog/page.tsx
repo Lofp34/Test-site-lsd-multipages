@@ -34,7 +34,18 @@ export const metadata: Metadata = {
   },
 };
 
+// Blog listing — last updated 2026-07-02
 const blogPosts = [
+  {
+    slug: 'ia-commercial-b2b-revelateur-competences',
+    title: 'L\'IA ne fera pas le travail du commercial. Elle montrera s\'il sait vendre.',
+    description: 'L\'IA retire les excuses du commercial. Sans la pr\u00e9paration automatique, le vrai jugement devient visible. Les meilleurs vendeurs B2B survivront, les autres r\u00e9v\u00e9leront leur vrai niveau.',
+    date: '2026-07-02',
+    readTime: '5 min',
+    category: 'Vente B2B / IA',
+    image: '/images/blog/ia-commercial-b2b-revelateur-competences/hero.webp',
+    featured: true,
+  },
   {
     slug: 'acheteurs-b2b-2026-client-deja-informe',
     title: 'Le client n\'arrive plus en rendez-vous pour découvrir votre offre',
