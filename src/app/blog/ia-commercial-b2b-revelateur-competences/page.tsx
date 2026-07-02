@@ -3,6 +3,26 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
+import BDCarousel from '@/components/BDCarousel';
+
+const carouselPrefix = '/images/blog/ia-commercial-b2b-revelateur-competences';
+
+const carouselImages = [
+  { src: `${carouselPrefix}/bd-slide-01-cover.webp`, alt: 'Cover : L\'IA ne fera pas le travail du commercial, elle révèle qui sait vendre', index: 0 },
+  { src: `${carouselPrefix}/bd-slide-02-excuse.webp`, alt: 'L\'IA retire les excuses du commercial en automatisant la préparation', index: 1 },
+  { src: `${carouselPrefix}/bd-slide-03-realite.webp`, alt: 'La réalité du terrain : sans l\'IA, le commercial moyen passe des heures sur des tâches automatisables', index: 2 },
+  { src: `${carouselPrefix}/bd-slide-04-question.webp`, alt: 'La question n\'est pas de savoir si l\'IA remplacera le commercial mais ce qu\'elle révélera', index: 3 },
+  { src: `${carouselPrefix}/bd-slide-05-info-jugement.webp`, alt: 'Quand l\'information est partout, le jugement devient la vraie compétence commerciale', index: 4 },
+  { src: `${carouselPrefix}/bd-slide-06-signal.webp`, alt: 'Le signal faible que personne ne repère : le commercial qui résiste à l\'IA', index: 5 },
+  { src: `${carouselPrefix}/bd-slide-07-lecture.webp`, alt: 'La lecture du client : l\'IA donne les données mais pas l\'interprétation', index: 6 },
+  { src: `${carouselPrefix}/bd-slide-08-revelation.webp`, alt: 'La révélation : l\'IA expose le vrai niveau de préparation de chaque commercial', index: 7 },
+  { src: `${carouselPrefix}/bd-slide-09-illusion.webp`, alt: 'L\'illusion de la productivité : faire plus vite sans faire mieux', index: 8 },
+  { src: `${carouselPrefix}/bd-slide-10-formation.webp`, alt: 'La formation commerciale doit pivoter vers le jugement et la stratégie', index: 9 },
+  { src: `${carouselPrefix}/bd-slide-11-competence.webp`, alt: 'La compétence qui compte : poser les bonnes questions, pas avoir les bonnes réponses', index: 10 },
+  { src: `${carouselPrefix}/bd-slide-12-test.webp`, alt: 'Le test : comment évaluer si votre équipe est prête pour l\'ère de l\'IA', index: 11 },
+  { src: `${carouselPrefix}/bd-slide-13-evidence.webp`, alt: 'L\'évidence : les meilleurs commerciaux welcoming l\'IA, les autres la craignent', index: 12 },
+  { src: `${carouselPrefix}/bd-slide-14-cta.webp`, alt: 'Call to action : évaluez la maturité IA de votre équipe commerciale', index: 13 },
+];
 
 const articleUrl = 'https://www.laurentserre.com/blog/ia-commercial-b2b-revelateur-competences';
 const heroImage = '/images/blog/ia-commercial-b2b-revelateur-competences/hero.webp';
@@ -230,6 +250,23 @@ export default function IaCommercialB2bRevelateurCompetencesPage() {
             >
               Vos commerciaux sont-ils prêts pour l&apos;ère de l&apos;IA ? Diagnostic flash offert
             </Link>
+          </div>
+
+          {/* Carrousel BD */}
+          <div className="mb-12">
+            <BDCarousel
+              images={carouselImages}
+              title="Carrousel BD : L'IA, révélateur de compétences commerciales"
+              maxPreview={2}
+            />
+            <div className="mt-4 text-center">
+              <Link
+                href="/downloads/carrousel-ia-revelateur-competences.pdf"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                📥 Télécharger le carrousel PDF
+              </Link>
+            </div>
           </div>
 
           <p className="mb-8">
