@@ -1,0 +1,12 @@
+# Modern browsers only - eliminates unnecessary polyfills (Array.prototype.at, flat, flatMap, etc.)
+# Targets browsers that support Baseline features natively
+> 0.5%
+last 2 versions
+not dead
+not op_mini all
+chrome > 90
+firefox > 88
+safari > 14
+edge > 90
+ios > 14
+android > 90

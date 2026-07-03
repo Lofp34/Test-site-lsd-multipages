@@ -31,9 +31,10 @@ const config: Config = {
       },
       fontFamily: {
         'inter': ['var(--font-inter)', 'sans-serif'],
-        'open-sans': ['var(--font-open-sans)', 'sans-serif'],
-        'nunito': ['var(--font-nunito)', 'sans-serif'],
-        'roboto-slab': ['var(--font-roboto-slab)', 'serif'],
+        'sans': ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        'body': ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        'title': ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        'heading': ['var(--font-inter)', 'system-ui', 'sans-serif'],
       },
       animation: {
         'fade-in': 'fadeIn 0.5s ease-in-out',

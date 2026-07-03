@@ -24,11 +24,11 @@ export default function Footer() {
               <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">KPMG</span>
             </a>
             <a href="https://www.bernafon.com/fr" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Bernafon">
-              <img src="/images/Bernafon.png" alt="Bernafon" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src="/images/logos/bernafon.webp" alt="Bernafon" width={96} height={48} className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
               <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Bernafon</span>
             </a>
             <a href="https://www.moncoachbrico.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Mon Coach Brico">
-              <img src="/images/moncoachbrico-favicon.png" alt="Mon Coach Brico" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src="/images/moncoachbrico-favicon.png" alt="Mon Coach Brico" width={96} height={48} className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
               <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Mon Coach Brico</span>
             </a>
             <a href="https://www.seguret-decoration.fr" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Séguret Décoration">
@@ -40,7 +40,7 @@ export default function Footer() {
               <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Cafés Bibal</span>
             </a>
             <a href="https://www.ovea.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="OVEA">
-              <img src="/images/ovea-logo.svg" alt="OVEA" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src="/images/ovea-logo.svg" alt="OVEA" width={96} height={48} className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
               <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">OVEA</span>
             </a>
             <a href="https://www.univ-perp.fr" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Université de Perpignan">
@@ -48,11 +48,11 @@ export default function Footer() {
               <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">UPVD</span>
             </a>
             <a href="https://www.ipo-sa.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="IPO Technologie">
-              <img src="/images/ipo-sa-favicon.png" alt="IPO Technologie" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src="/images/ipo-sa-favicon.png" alt="IPO Technologie" width={96} height={48} className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
               <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">IPO Technologie</span>
             </a>
             <a href="https://www.compagnons-du-devoir.com" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center gap-1" title="Compagnons du Devoir">
-              <img src="/images/compagnons-logo.png" alt="Compagnons du Devoir" className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+              <img src="/images/compagnons-logo.png" alt="Compagnons du Devoir" width={96} height={48} className="h-10 md:h-12 opacity-70 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
               <span className="text-xs text-white/50 group-hover:text-mint-green transition-colors">Compagnons du Devoir</span>
             </a>
           </div>

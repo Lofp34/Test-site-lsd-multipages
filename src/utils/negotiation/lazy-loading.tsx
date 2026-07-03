@@ -258,10 +258,7 @@ export function preloadFonts(): void {
   if (typeof window === 'undefined') return;
 
   const fonts = [
-    'Inter',
-    'Roboto Slab',
-    'Open Sans',
-    'Nunito'
+    'Inter'
   ];
 
   fonts.forEach(font => {
