@@ -105,12 +105,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.85,
     },
-    {
-      url: `${baseUrl}/formateur-vente-pme`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
+    // formateur-vente-pme → redirige vers /formation-commerciale-pme (supprimé du sitemap)
     {
       url: `${baseUrl}/faq-formation-commerciale-pme`,
       lastModified: currentDate,
@@ -197,12 +192,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.9,
     },
-    {
-      url: `${baseUrl}/bootcamp-commercial-intensif`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
+    // bootcamp-commercial-intensif → redirige vers /bootcamp (supprimé du sitemap)
 
     // === BLOG — INDEX + TOUS LES ARTICLES ===
     {
@@ -334,7 +324,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/ressources/scripts-prospection`,
+      url: `${baseUrl}/ressources/impact-aida-script-prospection-pme`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
       priority: 0.7,
@@ -473,12 +463,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/ressources/meilleurs-livres/methodes-processus`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
+    // methodes-processus → redirige vers /ressources/meilleurs-livres/methodes-process (supprimé du sitemap)
     {
       url: `${baseUrl}/ressources/meilleurs-livres/enterprise-account`,
       lastModified: currentDate,

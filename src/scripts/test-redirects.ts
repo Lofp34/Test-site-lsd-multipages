@@ -86,7 +86,7 @@ function testRedirectAnalytics(): void {
   // Simulate some redirects
   redirectAnalytics.logRedirect({
     source: '/ressources/scripts-impact',
-    destination: '/ressources/scripts-prospection',
+    destination: '/ressources/impact-aida-script-prospection-pme',
     userAgent: 'Test Agent'
   });
 
@@ -98,7 +98,7 @@ function testRedirectAnalytics(): void {
 
   redirectAnalytics.logRedirect({
     source: '/ressources/scripts-impact',
-    destination: '/ressources/scripts-prospection',
+    destination: '/ressources/impact-aida-script-prospection-pme',
     userAgent: 'Another Test Agent'
   });
 

@@ -451,7 +451,7 @@ const ConversionCTAs: React.FC<ConversionCTAsProps> = ({ technique }) => {
       variant: "secondary" as const,
       urgency: "Places limitées",
       socialProof: "4.9/5 - 156 avis clients",
-      href: "/bootcamp-commercial-intensif", // ✅ PAGE EXISTANTE
+      href: "/bootcamp", // ✅ PAGE EXISTANTE
       onClick: () => {
         if (typeof window !== 'undefined' && window.gtag) {
           window.gtag('event', 'bootcamp_cta_click', {
@@ -460,7 +460,7 @@ const ConversionCTAs: React.FC<ConversionCTAsProps> = ({ technique }) => {
             technique_id: technique.id
           });
         }
-        window.location.href = "/bootcamp-commercial-intensif";
+        window.location.href = "/bootcamp";
       }
     },
     {

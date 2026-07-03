@@ -66,7 +66,7 @@ export function middleware(request: NextRequest) {
 function isKnownResourcePage(pathname: string): boolean {
   const knownPages = [
     '/ressources',
-    '/ressources/scripts-prospection',
+    '/ressources/impact-aida-script-prospection-pme',
     '/ressources/linkedin-prospection',
     '/ressources/systeme-suivi-prospects',
     '/ressources/techniques-motivation-equipe',

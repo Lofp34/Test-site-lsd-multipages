@@ -495,7 +495,7 @@ export default function ProspectionSDRPage() {
                 adaptées à la réalité PME française. Automatisation, social selling et qualification prédictive.
               </p>
               <Link 
-                href="/bootcamp-commercial-intensif"
+                href="/bootcamp"
                 className="inline-block bg-blue-500 text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-blue-600 transition-all duration-300"
               >
                 Découvrir le Bootcamp

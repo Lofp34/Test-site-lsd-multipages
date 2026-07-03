@@ -464,7 +464,7 @@ export default function EnterpriseAccountPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link 
-                    href="/bootcamp-commercial-intensif" 
+                    href="/bootcamp" 
                     className="inline-block bg-white text-emerald-600 font-semibold px-6 py-3 rounded-full hover:bg-emerald-50 transition text-center"
                   >
                     Découvrir le programme

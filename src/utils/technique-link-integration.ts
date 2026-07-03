@@ -186,7 +186,7 @@ export const getTechniqueSuggestions = (content: string, maxSuggestions: number 
 export const pageToTechniqueMapping: Record<string, string[]> = {
   // Pages de formation
   '/formation-commerciale-pme': ['effet-miroir', 'negociation-raisonnee', 'silence-strategique'],
-  '/bootcamp-commercial-intensif': ['ne-jamais-couper-la-poire-en-deux', 'ancrage-tactique', 'oui-progressif'],
+  '/bootcamp': ['ne-jamais-couper-la-poire-en-deux', 'ancrage-tactique', 'oui-progressif'],
   '/coach-commercial-entreprise': ['recadrage-valeur', 'concession-calculee', 'effet-miroir'],
   
   // Pages de services

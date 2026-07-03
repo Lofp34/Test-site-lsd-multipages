@@ -190,7 +190,7 @@ export const defaultResourceCTAs: ResourceCTA[] = [
     title: 'Formation Équipe',
     description: 'Formez votre équipe à l\'utilisation optimale des outils commerciaux',
     buttonText: 'Découvrir le bootcamp',
-    href: '/bootcamp-commercial-intensif',
+    href: '/bootcamp',
     icon: '👥',
     trackingEvent: 'resource_cta_bootcamp_click'
   },

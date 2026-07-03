@@ -191,7 +191,7 @@ export const reportingData: ResourceTool = {
   ],
   
   relatedResources: ['tableau-bord-commercial', 'grille-evaluation-commerciale'],
-  relatedServices: ['coach-commercial-entreprise', 'bootcamp-commercial-intensif'],
+  relatedServices: ['coach-commercial-entreprise', 'bootcamp'],
   
   theme: {
     primaryColor: '#3B82F6',

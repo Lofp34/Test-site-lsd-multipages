@@ -56,7 +56,7 @@ const GrilleEvaluationPageClient: React.FC = () => {
       title: "Formation Management",
       description: "Formez vos managers aux techniques d'évaluation objective et au développement des compétences commerciales.",
       buttonText: "Découvrir le bootcamp",
-      href: "/bootcamp-commercial-intensif",
+      href: "/bootcamp",
       icon: <Users size={24} />,
       variant: "secondary" as const,
       onClick: () => handleCTAClick('formation', 'Découvrir le bootcamp')

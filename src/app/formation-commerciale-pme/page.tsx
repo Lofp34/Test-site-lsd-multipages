@@ -453,7 +453,7 @@ export default function FormationCommercialePMEPage() {
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             <Link href="/expert-developpement-commercial-pme" className="text-mint-green hover:underline">Laurent Serre, expert développement commercial PME</Link>, 
-            intervient comme <Link href="/formateur-vente-pme" className="text-mint-green hover:underline">formateur vente spécialisé PME</Link> depuis 20 ans.
+            intervient comme <Link href="/formation-commerciale-pme" className="text-mint-green hover:underline">formateur vente spécialisé PME</Link> depuis 20 ans.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

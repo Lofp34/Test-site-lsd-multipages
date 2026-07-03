@@ -327,7 +327,7 @@ export default function LeadersEatLastPage() {
               Appliquez les principes du leadership bienveillant à votre équipe commerciale. Formation intensive pour créer un cercle de sécurité et booster la performance collective.
             </p>
             <Link 
-              href="/bootcamp-commercial-intensif" 
+              href="/bootcamp" 
               className="inline-block bg-mint-green text-blue-ink font-bold px-8 py-4 rounded-full shadow-lg hover:bg-mint-green/90 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1"
             >
               Voir le Bootcamp

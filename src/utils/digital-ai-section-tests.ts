@@ -45,7 +45,7 @@ export function testInternalLinks(): TestResult[] {
     
     // CTA links
     { path: '/diagnostic', description: 'Diagnostic page link' },
-    { path: '/bootcamp-commercial-intensif', description: 'Bootcamp page link' },
+    { path: '/bootcamp', description: 'Bootcamp page link' },
     { path: '/contact', description: 'Contact page link' },
   ];
   
@@ -138,7 +138,7 @@ export function testCTAFunctionality(): TestResult[] {
     },
     { 
       type: 'bootcamp', 
-      target: '/bootcamp-commercial-intensif',
+      target: '/bootcamp',
       description: 'Bootcamp IA CTA'
     },
     { 

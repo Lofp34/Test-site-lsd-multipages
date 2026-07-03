@@ -33,7 +33,7 @@ export const linkRedirects: RedirectRule[] = [
     permanent: true
   },
   {
-    source: "/ressources/scripts-prospection-telephonique",
+    source: "/ressources/impact-aida-script-prospection-pme-telephonique",
     destination: "/ressources/impact-aida-script-prospection-pme",
     permanent: true
   },
@@ -58,7 +58,7 @@ export const linkRedirects: RedirectRule[] = [
     permanent: true
   },
   {
-    source: "/ressources/scripts-prospection",
+    source: "/ressources/impact-aida-script-prospection-pme",
     destination: "/ressources/impact-aida-script-prospection-pme",
     permanent: true
   },
@@ -66,12 +66,12 @@ export const linkRedirects: RedirectRule[] = [
 
   {
     source: "/ressources/scripts-impact",
-    destination: "/ressources/scripts-prospection",
+    destination: "/ressources/impact-aida-script-prospection-pme",
     permanent: true
   },
   {
     source: "/ressources/aida-scripts",
-    destination: "/ressources/scripts-prospection",
+    destination: "/ressources/impact-aida-script-prospection-pme",
     permanent: true
   },
   {
@@ -121,7 +121,7 @@ export const linkRedirects: RedirectRule[] = [
     permanent: true
   },
   {
-    source: "/ressources/meilleurs-livres/methodes-processus",
+    source: "/ressources/meilleurs-livres/methodes-process",
     destination: "/ressources/meilleurs-livres/methodes-process",
     permanent: true
   }

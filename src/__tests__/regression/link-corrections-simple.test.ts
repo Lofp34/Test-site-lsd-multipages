@@ -41,7 +41,7 @@ describe('Tests de régression - Liens corrigés', () => {
       // URLs des pages existantes vers lesquelles les liens doivent rediriger
       const expectedUrls = {
         coaching: '/coach-commercial-entreprise',
-        bootcamp: '/bootcamp-commercial-intensif',
+        bootcamp: '/bootcamp',
         diagnostic: '/diagnostic',
         formation: '/formation-commerciale-pme',
         expertise: '/expert-developpement-commercial-pme'
@@ -49,7 +49,7 @@ describe('Tests de régression - Liens corrigés', () => {
 
       // Vérifier que les URLs sont bien définies
       expect(expectedUrls.coaching).toBe('/coach-commercial-entreprise');
-      expect(expectedUrls.bootcamp).toBe('/bootcamp-commercial-intensif');
+      expect(expectedUrls.bootcamp).toBe('/bootcamp');
       expect(expectedUrls.diagnostic).toBe('/diagnostic');
       expect(expectedUrls.formation).toBe('/formation-commerciale-pme');
       expect(expectedUrls.expertise).toBe('/expert-developpement-commercial-pme');
@@ -84,11 +84,11 @@ describe('Tests de régression - Liens corrigés', () => {
 
     it('devrait rediriger correctement vers la page bootcamp', () => {
       const redirectToBootcamp = () => {
-        mockLocation.href = '/bootcamp-commercial-intensif';
+        mockLocation.href = '/bootcamp';
       };
 
       redirectToBootcamp();
-      expect(mockLocation.href).toBe('/bootcamp-commercial-intensif');
+      expect(mockLocation.href).toBe('/bootcamp');
     });
 
     it('devrait rediriger correctement vers la page diagnostic', () => {

@@ -493,7 +493,7 @@ export default function NegociationClosingPage() {
                   Négociation collaborative, closing consultatif, gestion des objections.
                 </p>
                 <Link 
-                  href="/bootcamp-commercial-intensif" 
+                  href="/bootcamp" 
                   className="inline-block bg-red-500 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-red-600 transition-colors duration-300"
                 >
                   Découvrir le Bootcamp

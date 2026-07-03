@@ -430,7 +430,7 @@ const CaseStudies: React.FC<CaseStudiesProps> = ({
                 Diagnostic gratuit
               </a>
               <a
-                href="/bootcamp-commercial-intensif"
+                href="/bootcamp"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white/20 backdrop-blur-sm text-red-600 font-semibold rounded-xl border-2 border-red-500/30 hover:bg-red-50/50 hover:border-red-500/50 transition-all duration-300"
               >
                 <span className="mr-2">🚀</span>

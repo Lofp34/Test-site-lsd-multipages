@@ -61,7 +61,7 @@ export default function ServicesPage() {
     {
       title: "Formateur Vente PME",
       description: "Expertise en formation commerciale spécifiquement conçue pour les PME avec méthodes éprouvées et outils adaptés.",
-      href: "/formateur-vente-pme",
+      href: "/formation-commerciale-pme",
       icon: Star,
       color: "from-mint-green to-orange-soft",
       features: ["Expertise PME", "Méthodes éprouvées", "Formations certifiantes", "Accompagnement long terme"]

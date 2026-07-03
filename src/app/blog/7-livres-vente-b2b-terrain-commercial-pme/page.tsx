@@ -475,7 +475,7 @@ export default function SeptLivresVenteB2BPage() {
                 <span className="text-gray-500">{' '}: l&apos;article qui détaille comment appliquer le challenger sur le terrain, pas en théorie.</span>
               </li>
               <li>
-                <Link href="/blog/gap-selling-methode-terrain-b2b" className="text-mint-green hover:underline font-medium">
+                <Link href="/blog/gap-selling-methode-b2b" className="text-mint-green hover:underline font-medium">
                   Gap Selling : mode d&apos;emploi terrain
                 </Link>
                 <span className="text-gray-500">{' '}: les cas concrets d&apos;application de la méthode Keenan en PME.</span>

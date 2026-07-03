@@ -12,7 +12,7 @@ const BASE_URL = 'http://localhost:3000';
 // Liste des liens à tester depuis la page formation-commerciale-pme
 const LINKS_TO_TEST = [
   // Liens dans la section Formation Prospection Avancée
-  '/ressources/scripts-prospection',
+  '/ressources/impact-aida-script-prospection-pme',
   '/ressources/linkedin-prospection', 
   '/ressources/systeme-suivi-prospects',
   
@@ -27,7 +27,7 @@ const LINKS_TO_TEST = [
   '/bootcamp',
   '/diagnostic',
   '/expert-developpement-commercial-pme',
-  '/formateur-vente-pme',
+  '/formation-commerciale-pme',
   '/management-equipe-commerciale',
   '/suivi-performance'
 ];
@@ -125,7 +125,7 @@ async function testLinksInHTML(): Promise<void> {
     
     // Vérifier la présence des liens spécifiques
     const linksToCheck = [
-      { href: '/ressources/scripts-prospection', text: 'Scripts IMPACT et AIDA+' },
+      { href: '/ressources/impact-aida-script-prospection-pme', text: 'Scripts IMPACT et AIDA+' },
       { href: '/ressources/linkedin-prospection', text: 'LinkedIn et réseaux sociaux' },
       { href: '/ressources/systeme-suivi-prospects', text: 'Système de suivi efficace' },
       { href: '/ressources/techniques-motivation-equipe', text: 'Motivation et coaching' },

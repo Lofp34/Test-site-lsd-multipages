@@ -44,7 +44,7 @@ export default function AccueilClient() {
     },
     {
       title: "Gap Selling : la méthode terrain qui change tout en B2B",
-      href: "/blog/gap-selling-methode-terrain-b2b",
+      href: "/blog/gap-selling-methode-b2b",
       cat: "Méthode"
     }
   ];

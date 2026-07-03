@@ -315,7 +315,7 @@ const FormationLinks: React.FC<FormationLinksProps> = ({ currentCategory }) => {
         return {
           title: 'Bootcamp Commercial Intensif',
           description: 'Techniques de conclusion et négociation avancées',
-          url: '/bootcamp-commercial-intensif' // ✅ PAGE EXISTANTE
+          url: '/bootcamp' // ✅ PAGE EXISTANTE
         };
       case 'preparation':
         return {

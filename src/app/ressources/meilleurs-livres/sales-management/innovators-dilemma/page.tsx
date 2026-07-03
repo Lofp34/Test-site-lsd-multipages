@@ -408,7 +408,7 @@ export default function InnovatorsDilemmaPage() {
               Apprenez à identifier les signaux faibles, créer des stratégies d'innovation et transformer votre approche commerciale avant que la concurrence ne vous disrupts.
             </p>
             <Link 
-              href="/bootcamp-commercial-intensif" 
+              href="/bootcamp" 
               className="inline-block bg-mint-green text-blue-ink font-bold px-8 py-4 rounded-full shadow-lg hover:bg-mint-green/90 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1"
             >
               Voir le Bootcamp

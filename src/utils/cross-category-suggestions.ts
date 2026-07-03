@@ -525,7 +525,7 @@ export function generateContextualCTAs(currentBook: Book, currentCategory: strin
         title: 'Formation IA & Vente',
         description: 'Maîtrisez les outils d\'IA commerciale et transformez votre approche de la vente. Formation pratique avec cas d\'usage concrets.',
         buttonText: 'Découvrir la formation',
-        buttonLink: '/bootcamp-commercial-intensif',
+        buttonLink: '/bootcamp',
         icon: '🤖',
         variant: 'accent' as const,
         category: 'Formation'
@@ -537,7 +537,7 @@ export function generateContextualCTAs(currentBook: Book, currentCategory: strin
         title: 'Bootcamp Commercial Intensif',
         description: 'Formez-vous avec les meilleures méthodes de management commercial issues de ces livres de référence, adaptées aux enjeux des PME françaises.',
         buttonText: 'Voir le Bootcamp',
-        buttonLink: '/bootcamp-commercial-intensif',
+        buttonLink: '/bootcamp',
         icon: '🎯',
         variant: 'secondary' as const,
         category: 'Formation'
@@ -569,7 +569,7 @@ export function generateContextualCTAs(currentBook: Book, currentCategory: strin
         title: 'Formation Mindset Commercial',
         description: 'Transformez votre état d\'esprit et développez la résilience nécessaire à l\'excellence commerciale.',
         buttonText: 'Voir la formation',
-        buttonLink: '/bootcamp-commercial-intensif',
+        buttonLink: '/bootcamp',
         icon: '💪',
         variant: 'accent' as const,
         category: 'Formation'
@@ -591,7 +591,7 @@ export function generateContextualCTAs(currentBook: Book, currentCategory: strin
         title: 'Formation Account Management',
         description: 'Maîtrisez les techniques de gestion des grands comptes et développez vos comptes stratégiques.',
         buttonText: 'Voir la formation',
-        buttonLink: '/bootcamp-commercial-intensif',
+        buttonLink: '/bootcamp',
         icon: '📈',
         variant: 'accent' as const,
         category: 'Formation'
@@ -613,7 +613,7 @@ export function generateContextualCTAs(currentBook: Book, currentCategory: strin
         title: 'Formation Méthodes de Vente',
         description: 'Maîtrisez les frameworks de vente les plus efficaces : SPIN, Challenger, Solution Selling.',
         buttonText: 'Voir la formation',
-        buttonLink: '/bootcamp-commercial-intensif',
+        buttonLink: '/bootcamp',
         icon: '⚙️',
         variant: 'accent' as const,
         category: 'Formation'
@@ -635,7 +635,7 @@ export function generateContextualCTAs(currentBook: Book, currentCategory: strin
         title: 'Formation Psychologie de la Vente',
         description: 'Apprenez à utiliser les biais cognitifs et les principes d\'influence pour améliorer vos résultats.',
         buttonText: 'Voir la formation',
-        buttonLink: '/bootcamp-commercial-intensif',
+        buttonLink: '/bootcamp',
         icon: '🎯',
         variant: 'accent' as const,
         category: 'Formation'
@@ -657,7 +657,7 @@ export function generateContextualCTAs(currentBook: Book, currentCategory: strin
         title: 'Formation Prospection & SDR',
         description: 'Maîtrisez les techniques modernes de prospection : automatisation, social selling, qualification prédictive.',
         buttonText: 'Voir la formation',
-        buttonLink: '/bootcamp-commercial-intensif',
+        buttonLink: '/bootcamp',
         icon: '📞',
         variant: 'accent' as const,
         category: 'Formation'
@@ -679,7 +679,7 @@ export function generateContextualCTAs(currentBook: Book, currentCategory: strin
         title: 'Formation Négociation & Closing',
         description: 'Transformez vos prospects en clients avec les meilleures techniques de négociation et de closing.',
         buttonText: 'Voir la formation',
-        buttonLink: '/bootcamp-commercial-intensif',
+        buttonLink: '/bootcamp',
         icon: '💼',
         variant: 'accent' as const,
         category: 'Formation'
@@ -972,7 +972,7 @@ export function generateContextualLinks(
     },
     {
       title: 'Bootcamp Commercial Intensif',
-      href: '/bootcamp-commercial-intensif',
+      href: '/bootcamp',
       description: 'Formation complète basée sur ces livres de référence',
       icon: '🎯',
       category: 'Formation'
@@ -1009,7 +1009,7 @@ export function generateContextualLinks(
     'prospection-sdr': [
       {
         title: 'Formation Prospection',
-        href: '/bootcamp-commercial-intensif',
+        href: '/bootcamp',
         description: 'Module spécialisé en techniques de prospection',
         icon: '🎯',
         category: 'Formation'

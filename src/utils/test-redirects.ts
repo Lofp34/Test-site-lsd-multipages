@@ -102,8 +102,8 @@ export class RedirectTester {
    */
   private getExpectedDestination(source: string): string {
     const mapping: Record<string, string> = {
-      '/ressources/scripts-impact': '/ressources/scripts-prospection',
-      '/ressources/aida-scripts': '/ressources/scripts-prospection',
+      '/ressources/scripts-impact': '/ressources/impact-aida-script-prospection-pme',
+      '/ressources/aida-scripts': '/ressources/impact-aida-script-prospection-pme',
       '/ressources/linkedin-guide': '/ressources/linkedin-prospection',
       '/ressources/suivi-prospects': '/ressources/systeme-suivi-prospects',
       '/ressources/motivation-coaching': '/ressources/techniques-motivation-equipe',
@@ -165,7 +165,7 @@ export class RedirectTester {
     // Simulate some redirects
     redirectAnalytics.logRedirect({
       source: '/ressources/scripts-impact',
-      destination: '/ressources/scripts-prospection',
+      destination: '/ressources/impact-aida-script-prospection-pme',
       userAgent: 'Test Agent'
     });
 

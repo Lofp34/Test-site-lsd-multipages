@@ -60,7 +60,7 @@ export class HomepageNavigationTester {
       '/contact',
       
       // Liens spécifiques des ressources
-      '/ressources/scripts-prospection',
+      '/ressources/impact-aida-script-prospection-pme',
       '/ressources/linkedin-prospection',
       '/ressources/systeme-suivi-prospects',
       '/ressources/techniques-motivation-equipe',
@@ -121,7 +121,7 @@ export class HomepageNavigationTester {
     const redirectionTests = [
       {
         original: '/ressources/scripts-impact',
-        expected: '/ressources/scripts-prospection',
+        expected: '/ressources/impact-aida-script-prospection-pme',
         reason: 'Redirection scripts IMPACT vers page créée'
       },
       {
@@ -251,7 +251,7 @@ export class HomepageNavigationTester {
       {
         name: 'Parcours Ressources Spécifiques',
         steps: [
-          { section: 'resources-grid', ctaId: 'resource-scripts-prospection', destination: '/ressources/scripts-prospection', expectedStatus: 200 },
+          { section: 'resources-grid', ctaId: 'resource-scripts-prospection', destination: '/ressources/impact-aida-script-prospection-pme', expectedStatus: 200 },
           { section: 'resources-grid', ctaId: 'resource-linkedin-prospection', destination: '/ressources/linkedin-prospection', expectedStatus: 200 },
           { section: 'resources-grid', ctaId: 'resource-systeme-suivi-prospects', destination: '/ressources/systeme-suivi-prospects', expectedStatus: 200 },
           { section: 'resources-grid', ctaId: 'resource-techniques-motivation-equipe', destination: '/ressources/techniques-motivation-equipe', expectedStatus: 200 },

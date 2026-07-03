@@ -286,7 +286,7 @@ export default function TechniquesNegociation() {
                 Diagnostic gratuit
               </Link>
               <Link 
-                href="/bootcamp-commercial-intensif" 
+                href="/bootcamp" 
                 className="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-ink transition-colors"
               >
                 Formation intensive

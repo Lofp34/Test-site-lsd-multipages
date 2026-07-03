@@ -126,7 +126,7 @@ export default function FormerCoacherPage() {
               Investir dans vos compétences de coach est le meilleur moyen d'obtenir une performance durable et une équipe autonome.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/bootcamp-commercial-intensif" className="inline-flex items-center bg-emerald-500 hover:bg-emerald-500/90 text-white px-8 py-4 rounded-full font-semibold transition-colors">
+              <Link href="/bootcamp" className="inline-flex items-center bg-emerald-500 hover:bg-emerald-500/90 text-white px-8 py-4 rounded-full font-semibold transition-colors">
                 <TrendingUp className="w-5 h-5 mr-2" />
                 Découvrir le programme du Bootcamp
               </Link>

@@ -678,7 +678,7 @@ const InteractiveTools: React.FC<InteractiveToolsProps> = ({ technique }) => {
                       });
                     }
                     // Redirect to bootcamp page
-                    window.location.href = '/bootcamp-commercial-intensif';
+                    window.location.href = '/bootcamp';
                   }}
                   icon={<span>👥</span>}
                 >

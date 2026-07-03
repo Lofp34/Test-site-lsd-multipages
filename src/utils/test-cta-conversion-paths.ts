@@ -29,7 +29,7 @@ export class CTAConversionTester {
     'enterprise-account': {
       primary: {
         title: 'Bootcamp Grands Comptes',
-        link: '/bootcamp-commercial-intensif',
+        link: '/bootcamp',
         description: 'Formation spécialisée grands comptes'
       },
       secondary: {
@@ -41,7 +41,7 @@ export class CTAConversionTester {
     'methodes-process': {
       primary: {
         title: 'Bootcamp Méthodes de Vente',
-        link: '/bootcamp-commercial-intensif',
+        link: '/bootcamp',
         description: 'Formation spécialisée méthodes'
       },
       secondary: {
@@ -53,7 +53,7 @@ export class CTAConversionTester {
     'psychologie-influence': {
       primary: {
         title: 'Bootcamp Influence',
-        link: '/bootcamp-commercial-intensif',
+        link: '/bootcamp',
         description: 'Formation influence éthique'
       },
       secondary: {
@@ -65,7 +65,7 @@ export class CTAConversionTester {
     'negociation-closing': {
       primary: {
         title: 'Bootcamp Négociation',
-        link: '/bootcamp-commercial-intensif',
+        link: '/bootcamp',
         description: 'Formation négociation collaborative'
       },
       secondary: {

@@ -52,7 +52,7 @@ export default function ArtDuClosingPage() {
           <div className="inline-block bg-mint-green/20 text-mint-green font-semibold rounded-full px-4 py-1 text-sm mb-2 shadow-md backdrop-blur">Passez du livre au terrain</div>
           <h4 className="text-2xl font-bold text-blue-ink mb-2">Découvrez le Bootcamp Négociation by LSD</h4>
           <p className="text-lg text-gray-700 mb-4">Formez-vous avec les meilleures méthodes issues de ce livre, adaptées à la réalité du terrain B2B.</p>
-          <Link href="/bootcamp-commercial-intensif" className="inline-block bg-mint-green text-blue-ink font-semibold px-6 py-3 rounded-full shadow hover:bg-mint-green/80 transition">Voir le Bootcamp</Link>
+          <Link href="/bootcamp" className="inline-block bg-mint-green text-blue-ink font-semibold px-6 py-3 rounded-full shadow hover:bg-mint-green/80 transition">Voir le Bootcamp</Link>
         </div>
 
         {/* Navigation retour */}

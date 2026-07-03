@@ -108,7 +108,7 @@ export default function CorrectionsMonitoringDashboard() {
         statusCode: 200
       },
       {
-        url: '/bootcamp-commercial-intensif',
+        url: '/bootcamp',
         status: 'working',
         lastChecked: new Date().toISOString(),
         responseTime: 189,

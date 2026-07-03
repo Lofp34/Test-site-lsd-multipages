@@ -249,7 +249,7 @@ export default function RelatedTechniques({
                     → Livres de psychologie et influence commerciale
                   </Link>
                   <Link 
-                    href="/bootcamp-commercial-intensif"
+                    href="/bootcamp"
                     className="block text-primary-secondary hover:text-red-600 transition-colors duration-300 text-sm"
                   >
                     → Formation intensive en négociation commerciale

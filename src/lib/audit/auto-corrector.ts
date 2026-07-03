@@ -183,11 +183,11 @@ export class AutoCorrector {
       { from: '/formations/', to: '/formation-commerciale-pme/' },
       { from: '/coaching/', to: '/coach-commercial-entreprise/' },
       { from: '/consultant/', to: '/consultant-commercial-montpellier/' },
-      { from: '/bootcamp/', to: '/bootcamp-commercial-intensif/' },
+      { from: '/bootcamp/', to: '/bootcamp/' },
       { from: '/management/', to: '/management-equipe-commerciale/' },
       { from: '/transformation/', to: '/transformation-commerciale/' },
       { from: '/expert/', to: '/expert-developpement-commercial-pme/' },
-      { from: '/formateur/', to: '/formateur-vente-pme/' },
+      { from: '/formateur/', to: '/formation-commerciale-pme/' },
     ];
 
     for (const move of commonMoves) {

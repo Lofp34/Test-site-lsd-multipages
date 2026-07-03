@@ -111,7 +111,7 @@ export function validateCTAAndNavigation(): ValidationResult[] {
   const ctaChecks = [
     {
       name: 'Bootcamp CTA',
-      expectedUrls: ['/bootcamp-commercial-intensif', '/bootcamp'],
+      expectedUrls: ['/bootcamp', '/bootcamp'],
       description: 'Links to bootcamp training'
     },
     {

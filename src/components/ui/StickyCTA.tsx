@@ -116,7 +116,7 @@ const StickyCTA: React.FC<StickyCTAProps> = ({
                 </TrackedButton>
               </Link>
               
-              <Link href="/bootcamp-commercial-intensif" className="block">
+              <Link href="/bootcamp" className="block">
                 <TrackedButton
                   variant="secondary"
                   size="sm"
@@ -124,7 +124,7 @@ const StickyCTA: React.FC<StickyCTAProps> = ({
                   ctaText="Bootcamp commercial"
                   ctaType="primary"
                   section="sticky_navigation"
-                  destination="/bootcamp-commercial-intensif"
+                  destination="/bootcamp"
                   position={2}
                   className="w-full text-xs bg-white text-red-600 hover:bg-gray-100"
                 >
@@ -172,7 +172,7 @@ const StickyCTA: React.FC<StickyCTAProps> = ({
                   </TrackedButton>
                 </Link>
                 
-                <Link href="/bootcamp-commercial-intensif">
+                <Link href="/bootcamp">
                   <TrackedButton
                     variant="secondary"
                     size="md"
@@ -180,7 +180,7 @@ const StickyCTA: React.FC<StickyCTAProps> = ({
                     ctaText="Bootcamp commercial"
                     ctaType="primary"
                     section="sticky_navigation"
-                    destination="/bootcamp-commercial-intensif"
+                    destination="/bootcamp"
                     position={2}
                     className="bg-white text-red-600 hover:bg-gray-100"
                   >

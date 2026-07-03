@@ -113,7 +113,7 @@ describe('Tests de régression - Correction des liens cassés', () => {
       });
     });
 
-    it('devrait rediriger correctement le lien "Formation équipe" vers /bootcamp-commercial-intensif', async () => {
+    it('devrait rediriger correctement le lien "Formation équipe" vers /bootcamp', async () => {
       const { default: ConversionCTAs } = await import('@/components/sections/negotiation/ConversionCTAs');
       
       const mockTechnique = {
@@ -150,7 +150,7 @@ describe('Tests de régression - Correction des liens cassés', () => {
 
       // Vérifier la redirection
       await waitFor(() => {
-        expect(mockLocation.href).toBe('/bootcamp-commercial-intensif');
+        expect(mockLocation.href).toBe('/bootcamp');
       });
 
       // Vérifier le tracking analytics

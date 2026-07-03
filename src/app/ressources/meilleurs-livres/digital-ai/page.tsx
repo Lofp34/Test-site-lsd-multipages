@@ -883,7 +883,7 @@ export default function DigitalAISalesPage() {
                   Maîtrisez les outils d'IA commerciale et transformez votre approche de la vente
                 </p>
                 <Link 
-                  href="/bootcamp-commercial-intensif" 
+                  href="/bootcamp" 
                   className="inline-block bg-orange-soft text-white font-bold px-8 py-4 rounded-full shadow-lg hover:bg-orange-soft/90 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1"
                 >
                   Découvrir la formation

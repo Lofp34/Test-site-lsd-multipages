@@ -408,7 +408,7 @@ export default function ExpertDeveloppementCommercialPMEPage() {
               </div>
             </Link>
 
-            <Link href="/formateur-vente-pme" className="group cursor-pointer">
+            <Link href="/formation-commerciale-pme" className="group cursor-pointer">
               <div className="bg-white rounded-xl p-6 hover:shadow-xl hover:bg-mint-green/5 border-2 border-transparent hover:border-mint-green/20 transition-all duration-300 group-hover:-translate-y-2 group-hover:scale-[1.02]">
                 <div className="flex items-center mb-4">
                   <Users className="w-6 h-6 text-mint-green mr-3 group-hover:scale-110 transition-transform" />

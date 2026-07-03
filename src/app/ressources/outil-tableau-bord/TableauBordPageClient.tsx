@@ -51,7 +51,7 @@ const TableauBordPageClient: React.FC = () => {
       title: "Formation Équipe",
       description: "Formez votre équipe commerciale à l'utilisation efficace des tableaux de bord et au pilotage par les données.",
       buttonText: "Découvrir le bootcamp",
-      href: "/bootcamp-commercial-intensif",
+      href: "/bootcamp",
       icon: <Users size={24} />,
       variant: "secondary" as const,
       onClick: () => handleCTAClick('formation', 'Découvrir le bootcamp')

@@ -643,7 +643,7 @@ export default function PsychologieInfluencePage() {
                   adaptée aux enjeux PME. Influence éthique, persuasion authentique, psychologie de la décision.
                 </p>
                 <Link 
-                  href="/bootcamp-commercial-intensif" 
+                  href="/bootcamp" 
                   className="inline-block bg-purple-500 text-white font-semibold px-6 py-3 rounded-full shadow hover:bg-purple-600 transition-colors duration-300"
                 >
                   Découvrir le Bootcamp

@@ -186,7 +186,7 @@ export const tableauBordData: ResourceTool = {
   ],
   
   relatedResources: ['grille-evaluation', 'reporting-automatise'],
-  relatedServices: ['coach-commercial-entreprise', 'bootcamp-commercial-intensif'],
+  relatedServices: ['coach-commercial-entreprise', 'bootcamp'],
   
   theme: {
     primaryColor: '#00BDA4',

@@ -418,7 +418,7 @@ export default function MeilleursLivresPage() {
                   dans une formation intensive adaptée aux PME.
                 </p>
                 <Link 
-                  href="/bootcamp-commercial-intensif" 
+                  href="/bootcamp" 
                   className="inline-block bg-mint-green text-blue-ink font-semibold px-6 py-3 rounded-full shadow hover:bg-mint-green/80 transition-colors duration-300"
                 >
                   Découvrir le Bootcamp

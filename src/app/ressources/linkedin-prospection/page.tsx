@@ -493,7 +493,7 @@ export default function LinkedinProspectionPage() {
       {/* Maillage interne */}
       <section className="max-w-4xl mx-auto px-4 py-8">
         <div className="flex flex-wrap gap-4 items-center mb-4">
-          <Link href="/ressources/scripts-prospection" className="inline-flex items-center text-mint-green hover:underline font-semibold">
+          <Link href="/ressources/impact-aida-script-prospection-pme" className="inline-flex items-center text-mint-green hover:underline font-semibold">
             <ArrowRight className="w-4 h-4 mr-1" /> Scripts de prospection
           </Link>
           <Link href="/diagnostic" className="inline-flex items-center text-blue-ink hover:underline font-semibold">

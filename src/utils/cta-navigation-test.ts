@@ -42,7 +42,7 @@ const expectedNavigationLinks = {
     { text: 'Mindset & Performance', url: '/ressources/meilleurs-livres/mindset-performance', type: 'cross-category' as const },
     
     // CTAs
-    { text: 'Bootcamp Commercial Intensif', url: '/bootcamp-commercial-intensif', type: 'cta' as const },
+    { text: 'Bootcamp Commercial Intensif', url: '/bootcamp', type: 'cta' as const },
     { text: 'Contact', url: '/contact', type: 'cta' as const }
   ],
   
@@ -63,7 +63,7 @@ const expectedNavigationLinks = {
     { text: 'Digital & AI Sales', url: '/ressources/meilleurs-livres/digital-ai', type: 'cross-category' as const },
     
     // CTAs
-    { text: 'Voir le Bootcamp', url: '/bootcamp-commercial-intensif', type: 'cta' as const },
+    { text: 'Voir le Bootcamp', url: '/bootcamp', type: 'cta' as const },
     { text: 'Découvrir le coaching', url: '/coach-commercial-entreprise', type: 'cta' as const }
   ],
   

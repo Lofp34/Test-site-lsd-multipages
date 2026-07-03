@@ -127,7 +127,7 @@ export class LinkValidationService {
    */
   private createDefaultRedirectMapping(): RedirectMapping {
     return {
-      '/ressources/scripts-prospection': {
+      '/ressources/impact-aida-script-prospection-pme': {
         redirectTo: '/ressources/guide-recrutement-commercial',
         reason: 'Page créée avec contenu scripts IMPACT et AIDA+',
         statusCode: 301
@@ -154,12 +154,12 @@ export class LinkValidationService {
       },
       // Fallback patterns
       '/ressources/scripts-impact': {
-        redirectTo: '/ressources/scripts-prospection',
+        redirectTo: '/ressources/impact-aida-script-prospection-pme',
         reason: 'Redirection vers page scripts de prospection',
         statusCode: 301
       },
       '/ressources/aida-scripts': {
-        redirectTo: '/ressources/scripts-prospection',
+        redirectTo: '/ressources/impact-aida-script-prospection-pme',
         reason: 'Redirection vers page scripts de prospection',
         statusCode: 301
       },
@@ -200,7 +200,7 @@ export class LinkValidationService {
     
     if (urlLower.includes('script') || urlLower.includes('impact') || urlLower.includes('aida')) {
       return {
-        redirectTo: '/ressources/scripts-prospection',
+        redirectTo: '/ressources/impact-aida-script-prospection-pme',
         reason: 'Contenu lié aux scripts de prospection',
         statusCode: 301
       };

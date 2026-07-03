@@ -432,7 +432,7 @@ export default function MethodesProcessPage() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <Link 
-                    href="/bootcamp-commercial-intensif" 
+                    href="/bootcamp" 
                     className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full hover:bg-blue-50 transition text-center"
                   >
                     Voir le programme

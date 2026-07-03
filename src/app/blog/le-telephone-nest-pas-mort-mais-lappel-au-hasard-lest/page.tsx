@@ -230,7 +230,7 @@ export default function TelephoneNestPasMortMaisAppelAuHasardPage() {
               <Link href="/diagnostic" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-blue-ink bg-mint-green hover:bg-mint-green/90 transition-colors">
                 Demander un diagnostic commercial
               </Link>
-              <Link href="/bootcamp-commercial-intensif" className="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-full text-white hover:bg-white/10 transition-colors">
+              <Link href="/bootcamp" className="inline-flex items-center justify-center px-6 py-3 border border-white text-base font-medium rounded-full text-white hover:bg-white/10 transition-colors">
                 Structurer la prospection avec le Bootcamp
               </Link>
             </div>

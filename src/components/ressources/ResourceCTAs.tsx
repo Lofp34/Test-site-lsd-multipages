@@ -209,7 +209,7 @@ export const defaultResourceCTAs: CTAConfig[] = [
     title: "Formation Équipe",
     description: "Bootcamp commercial intensif pour transformer les performances de votre équipe de vente.",
     buttonText: "Découvrir le programme",
-    href: "/bootcamp-commercial-intensif",
+    href: "/bootcamp",
     icon: <Users size={24} />,
     variant: "secondary"
   },

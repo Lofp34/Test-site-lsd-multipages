@@ -23,25 +23,25 @@ const testCategories = [
     category: 'enterprise-account',
     expectedBootcamp: 'Bootcamp Grands Comptes',
     expectedKeywords: ['grands comptes', 'account management', 'comptes stratégiques'],
-    expectedLink: '/bootcamp-commercial-intensif'
+    expectedLink: '/bootcamp'
   },
   {
     category: 'methodes-process', 
     expectedBootcamp: 'Bootcamp Méthodes de Vente',
     expectedKeywords: ['méthodes de vente', 'frameworks', 'processus'],
-    expectedLink: '/bootcamp-commercial-intensif'
+    expectedLink: '/bootcamp'
   },
   {
     category: 'psychologie-influence',
     expectedBootcamp: 'Bootcamp Influence',
     expectedKeywords: ['influence', 'psychologie', 'persuasion'],
-    expectedLink: '/bootcamp-commercial-intensif'
+    expectedLink: '/bootcamp'
   },
   {
     category: 'negociation-closing',
     expectedBootcamp: 'Bootcamp Négociation',
     expectedKeywords: ['négociation', 'closing', 'techniques'],
-    expectedLink: '/bootcamp-commercial-intensif'
+    expectedLink: '/bootcamp'
   }
 ];
 
@@ -114,22 +114,22 @@ console.log('=' .repeat(50));
 const conversionPaths = [
   {
     domain: 'Enterprise Account',
-    path: 'Page → Bootcamp Grands Comptes → /bootcamp-commercial-intensif',
+    path: 'Page → Bootcamp Grands Comptes → /bootcamp',
     description: 'Visitors interested in account management get directed to specialized bootcamp'
   },
   {
     domain: 'Méthodes & Process', 
-    path: 'Page → Bootcamp Méthodes de Vente → /bootcamp-commercial-intensif',
+    path: 'Page → Bootcamp Méthodes de Vente → /bootcamp',
     description: 'Visitors interested in sales frameworks get directed to methods training'
   },
   {
     domain: 'Psychologie & Influence',
-    path: 'Page → Bootcamp Influence → /bootcamp-commercial-intensif', 
+    path: 'Page → Bootcamp Influence → /bootcamp', 
     description: 'Visitors interested in psychology get directed to influence training'
   },
   {
     domain: 'Négociation & Closing',
-    path: 'Page → Bootcamp Négociation → /bootcamp-commercial-intensif',
+    path: 'Page → Bootcamp Négociation → /bootcamp',
     description: 'Visitors interested in negotiation get directed to closing training'
   }
 ];

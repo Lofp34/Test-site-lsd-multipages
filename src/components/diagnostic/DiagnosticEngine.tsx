@@ -915,7 +915,7 @@ export default function DiagnosticEngine() {
                   <span className="text-gray-300">|</span>
                   <a href="/formation-commerciale-pme" className="hover:text-blue-ink transition-colors">Nos formations</a>
                   <span className="text-gray-300">|</span>
-                  <a href="/bootcamp-commercial-intensif" className="hover:text-blue-ink transition-colors">Le bootcamp</a>
+                  <a href="/bootcamp" className="hover:text-blue-ink transition-colors">Le bootcamp</a>
                 </div>
                 <p className="text-xs text-gray-300">
                   Analyse envoyée à {email}
