@@ -37,6 +37,16 @@ export const metadata: Metadata = {
 // Blog listing — last updated 2026-07-02
 const blogPosts = [
   {
+    slug: 'ia-generative-commercial-b2b-demander-mieux',
+    title: 'L\'IA aide surtout les commerciaux qui savent quoi lui demander',
+    description: 'L\'IA générative ne donne pas du jugement commercial. Elle le révèle. Pourquoi les commerciaux qui clarifient leur raisonnement en tirent 10x plus.',
+    date: '2026-07-03',
+    readTime: '5 min',
+    category: 'Vente B2B / IA',
+    image: '/images/blog/ia-generative-commercial-b2b-demander-mieux/hero.webp',
+    featured: true,
+  },
+  {
     slug: 'ia-commercial-b2b-revelateur-competences',
     title: 'L\'IA ne fera pas le travail du commercial. Elle montrera s\'il sait vendre.',
     description: 'L\'IA retire les excuses du commercial. Sans la pr\u00e9paration automatique, le vrai jugement devient visible. Les meilleurs vendeurs B2B survivront, les autres r\u00e9v\u00e9leront leur vrai niveau.',
