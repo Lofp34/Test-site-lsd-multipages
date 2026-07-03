@@ -5,21 +5,21 @@ import Image from 'next/image';
 export default function LogoBanner() {
   // Liste des logos clients (sélection des plus beaux/lisibles)
   const clientLogos = [
-    { name: "Audexcom", src: "/images/Audexcom.png" },
-    { name: "Bibal", src: "/images/Bibal.png" },
-    { name: "CBS", src: "/images/CBS.png" },
-    { name: "KPMG", src: "/images/KPMGjpeg.jpeg" },
-    { name: "Mutualité Française", src: "/images/1200px-Mutualite-française.png" },
-    { name: "Myriagone", src: "/images/Myriagone.png" },
-    { name: "Progressium", src: "/images/progressium.png" },
-    { name: "Qualisphere", src: "/images/Qualisphere.png" },
-    { name: "Rational Consulting", src: "/images/rational consulting.png" },
-    { name: "Roadcom", src: "/images/Roadcom.png" },
-    { name: "Septeo", src: "/images/septeo.png" },
-    { name: "SVP", src: "/images/SVP.png" },
-    { name: "Synia", src: "/images/synia.png" },
-    { name: "Teufelberger", src: "/images/Teufelberger.png" },
-    { name: "UPVD", src: "/images/UPVD.png" }
+    { name: "Audexcom", src: "/images/logos/audexcom.webp" },
+    { name: "Bibal", src: "/images/logos/bibal.webp" },
+    { name: "CBS", src: "/images/logos/cbs.webp" },
+    { name: "KPMG", src: "/images/logos/kpmg.webp" },
+    { name: "Mutualité Française", src: "/images/logos/mutualite-francaise.webp" },
+    { name: "Myriagone", src: "/images/logos/myriagone.webp" },
+    { name: "Progressium", src: "/images/logos/progressium.webp" },
+    { name: "Qualisphere", src: "/images/logos/qualisphere.webp" },
+    { name: "Rational Consulting", src: "/images/logos/rational-consulting.webp" },
+    { name: "Roadcom", src: "/images/logos/roadcom.webp" },
+    { name: "Septeo", src: "/images/logos/septeo.webp" },
+    { name: "SVP", src: "/images/logos/svp.webp" },
+    { name: "Synia", src: "/images/logos/synia.webp" },
+    { name: "Teufelberger", src: "/images/logos/teufelberger.webp" },
+    { name: "UPVD", src: "/images/logos/upvd.webp" }
   ];
 
   return (
