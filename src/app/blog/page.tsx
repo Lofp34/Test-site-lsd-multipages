@@ -168,7 +168,7 @@ const blogPosts = [
   },
   {
     slug: '7-livres-vente-b2b-terrain-commercial-pme',
-    title: '7 livres de vente qui changent vraiment la pratique d'un commercial B2B',
+    title: '7 livres de vente qui changent vraiment la pratique d\'un commercial B2B',
     description: 'Selection de 7 livres de vente B2B qui corrigent les erreurs terrain des commerciaux. Pas une bibliothèque idéale — chaque livre est choisi pour l’erreur concrète qu’il corrige.',
     date: '2026-06-26',
     readTime: '9 min',
