@@ -10,11 +10,26 @@ const heroImage = '/images/blog/vente-b2b-2030-commercial-excuses/hero.webp';
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/vente-b2b-2030-commercial-excuses/hero.webp';
 const carouselPrefix = '/images/blog/vente-b2b-2030-commercial-excuses/carrousel';
 
+const altTexts = [
+  'Le constat : un commercial qui passe ses journées en tâches mécaniques',
+  'L\'illusion de l\'activité : remplir le CRM donne une sensation de travail',
+  'L\'IA qui automatise recherche, relances et comptes-rendus en quelques minutes',
+  'Le commercial privé de ses excuses : le vrai niveau devient visible',
+  'Ce qui reste quand la machine fait la mécanique : écouter, qualifier, comprendre',
+  'La conversation commerciale redevient centrale, pas de raccourci pour cela',
+  'Le commercial qui sait poser les bonnes questions sort du lot',
+  'Celui qui confond activité et impact est exposé',
+  'Le dirigeant face à la question : que reste-t-il sans les tâches de confort ?',
+  'Les cinq questions à froid pour évaluer son équipe',
+  'Le bon commercial amplifié par l\'IA, le faible révélé',
+  'La vente 2030 : moins indulgente, mais pas moins humaine',
+];
+
 const carouselImages = Array.from({ length: 12 }, (_, i) => {
   const num = String(i + 1).padStart(2, '0');
   return {
     src: `${carouselPrefix}/bd-slide-${num}.webp`,
-    alt: `Carrousel BD slide ${i + 1}`,
+    alt: altTexts[i] || `Carrousel BD slide ${i + 1}`,
     index: i,
   };
 });
@@ -241,14 +256,14 @@ export default function VenteB2b2030CommercialExcusesPage() {
           {/* Carrousel BD */}
           <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-10">
             <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
-              🎬 Carrousel BD  :  En 2030, le commercial moyen n'aura plus beaucoup d'excuses
+              🎬 Carrousel BD : En 2030, le commercial moyen n'aura plus beaucoup d'excuses
             </p>
             <p className="text-sm text-amber-700 mb-5">
-              12 planches illustrées  :  cliquez sur une vignette pour feuilleter la BD dans le lecteur intégré.
+              Quand l'IA fait en 5 minutes ce qui prenait une semaine, que reste-t-il du talent commercial ? 12 planches pour voir ce qui change vraiment.
             </p>
             <BDCarousel
               images={carouselImages}
-              title="Carrousel BD  :  En 2030, le commercial moyen n'aura plus beaucoup d'excuses"
+              title="Carrousel BD : En 2030, le commercial moyen n'aura plus beaucoup d'excuses"
               maxPreview={2}
             />
             <div className="mt-4 text-center">
