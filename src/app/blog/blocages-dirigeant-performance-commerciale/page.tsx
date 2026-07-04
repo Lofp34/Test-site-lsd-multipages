@@ -9,18 +9,18 @@ const carouselPrefix = '/images/blog/blocages-dirigeant-performance-commerciale'
 
 const carouselImages = [
   { src: `${carouselPrefix}/bd-slide-01-cover.webp`, alt: 'Cover : les blocages de dirigeant qui sabotent la performance commerciale', index: 0 },
-  { src: `${carouselPrefix}/bd-slide-02-constat.webp`, alt: 'Un dirigeant frustr\u00e9 : mes commerciaux ne performent pas', index: 1 },
-  { src: `${carouselPrefix}/bd-slide-03-micro-management.webp`, alt: 'Micro-management d\u00e9guis\u00e9 en accompagnement', index: 2 },
-  { src: `${carouselPrefix}/bd-slide-04-schizophrenie.webp`, alt: 'Schizophr\u00e9nie strat\u00e9gique : contradictions dirigeant', index: 3 },
+  { src: `${carouselPrefix}/bd-slide-02-constat.webp`, alt: 'Un dirigeant frustré : mes commerciaux ne performent pas', index: 1 },
+  { src: `${carouselPrefix}/bd-slide-03-micro-management.webp`, alt: 'Micro-management déguisé en accompagnement', index: 2 },
+  { src: `${carouselPrefix}/bd-slide-04-schizophrenie.webp`, alt: 'Schizophrénie stratégique : contradictions dirigeant', index: 3 },
   { src: `${carouselPrefix}/bd-slide-05-feedbacks.webp`, alt: 'La peur des feedbacks difficiles', index: 4 },
-  { src: `${carouselPrefix}/bd-slide-06-systeme-prime.webp`, alt: 'R\u00e9compenser les mauvais comportements', index: 5 },
-  { src: `${carouselPrefix}/bd-slide-07-modele.webp`, alt: 'L\'absence de mod\u00e8le personnel', index: 6 },
-  { src: `${carouselPrefix}/bd-slide-08-confronation.webp`, alt: 'Confrontation : le diagnostic qui d\u00e9range', index: 7 },
-  { src: `${carouselPrefix}/bd-slide-09-declic.webp`, alt: 'Le d\u00e9clic : prendre conscience des blocages', index: 8 },
+  { src: `${carouselPrefix}/bd-slide-06-systeme-prime.webp`, alt: 'Récompenser les mauvais comportements', index: 5 },
+  { src: `${carouselPrefix}/bd-slide-07-modele.webp`, alt: 'L\'absence de modèle personnel', index: 6 },
+  { src: `${carouselPrefix}/bd-slide-08-confronation.webp`, alt: 'Confrontation : le diagnostic qui dérange', index: 7 },
+  { src: `${carouselPrefix}/bd-slide-09-declic.webp`, alt: 'Le déclic : prendre conscience des blocages', index: 8 },
   { src: `${carouselPrefix}/bd-slide-10-premiers-changements.webp`, alt: 'Les premiers changements de comportement', index: 9 },
-  { src: `${carouselPrefix}/bd-slide-11-feedback.webp`, alt: 'Apprendre \u00e0 donner du feedback', index: 10 },
-  { src: `${carouselPrefix}/bd-slide-12-resultats.webp`, alt: 'Les r\u00e9sultats suivent quand le dirigeant change', index: 11 },
-  { src: `${carouselPrefix}/bd-slide-13-cta.webp`, alt: 'CTA : pr\u00eat \u00e0 regarder vos propres blocages ?', index: 12 },
+  { src: `${carouselPrefix}/bd-slide-11-feedback.webp`, alt: 'Apprendre à donner du feedback', index: 10 },
+  { src: `${carouselPrefix}/bd-slide-12-resultats.webp`, alt: 'Les résultats suivent quand le dirigeant change', index: 11 },
+  { src: `${carouselPrefix}/bd-slide-13-cta.webp`, alt: 'CTA : prêt à regarder vos propres blocages ?', index: 12 },
 ];
 
 const heroImage = '/images/blog/blocages-dirigeant-performance-commerciale/blocages-dirigeant-hero.webp';
@@ -81,12 +81,12 @@ export default function BlocagesDirigeantPage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Pourquoi la performance commerciale de mon entreprise stagne-t-elle malgr\u00e9 mes efforts ?',
+        name: 'Pourquoi la performance commerciale de mon entreprise stagne-t-elle malgré mes efforts ?',
         acceptedAnswer: { '@type': 'Answer', text: 'Parce que le premier blocage est souvent comportemental, pas structurel. Les process de vente ne peuvent pas compenser un dirigeant qui micro-manage, change de cap tous les mois, ou évite les feedbacks difficiles. Avant de chercher un nouveau commercial ou une nouvelle méthode, regardez vos propres comportements.' }
       },
       {
         '@type': 'Question',
-        name: 'Comment savoir si c\'est moi le probl\u00e8me ?',
+        name: 'Comment savoir si c\'est moi le problème ?',
         acceptedAnswer: { '@type': 'Answer', text: 'Quelques signes : vous reprenez les rendez-vous de vos commerciaux, vous regardez le CA du mois sans suivre les indicateurs d\'activité, vous évitez les conversations inconfortables avec vos vendeurs, vous récompensez les gros vendeurs quelle que soit leur méthode, et personne dans votre équipe n\'ose vous dire la vérité.' }
       },
       {
@@ -101,7 +101,7 @@ export default function BlocagesDirigeantPage() {
       },
       {
         '@type': 'Question',
-        name: 'Peut-on am\u00e9liorer sa performance commerciale sans changer d\'\u00e9quipe ?',
+        name: 'Peut-on améliorer sa performance commerciale sans changer d\'équipe ?',
         acceptedAnswer: { '@type': 'Answer', text: 'Oui, dans la plupart des cas. Le problème est rarement l équipe en place. C est souvent le cadre dans lequel elle évolue : des objectifs contradictoires, aucun modèle, des feedbacks absents, une vision qui change tous les mois. Corrigez le cadre, et l équipe suit.' }
       },
       {
