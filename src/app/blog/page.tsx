@@ -34,8 +34,18 @@ export const metadata: Metadata = {
   },
 };
 
-// Blog listing — last updated 2026-07-02
+// Blog listing — last updated 2026-07-04
 const blogPosts = [
+  {
+    slug: 'vente-b2b-2030-commercial-excuses',
+    title: 'En 2030, le commercial moyen n\'aura plus beaucoup d\'excuses',
+    description: 'L\'IA ne va pas remplacer les commerciaux. Elle va révéler ceux qui confondent activité et impact. La question pour un dirigeant de PME : si j\'enlève les tâches de confort, que reste-t-il comme vraie compétence commerciale ?',
+    date: '2026-07-04',
+    readTime: '7 min',
+    category: 'Vente B2B / IA',
+    image: '/images/blog/vente-b2b-2030-commercial-excuses/hero.webp',
+    featured: true,
+  },
   {
     slug: 'ia-generative-commercial-b2b-demander-mieux',
     title: 'L\'IA aide surtout les commerciaux qui savent quoi lui demander',
