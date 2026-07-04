@@ -3,10 +3,21 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
+import BDCarousel from '@/components/BDCarousel';
 
 const articleUrl = 'https://www.laurentserre.com/blog/vente-b2b-2030-commercial-excuses';
 const heroImage = '/images/blog/vente-b2b-2030-commercial-excuses/hero.webp';
 const heroImageAbsolute = 'https://www.laurentserre.com/images/blog/vente-b2b-2030-commercial-excuses/hero.webp';
+const carouselPrefix = '/images/blog/vente-b2b-2030-commercial-excuses/carrousel';
+
+const carouselImages = Array.from({ length: 12 }, (_, i) => {
+  const num = String(i + 1).padStart(2, '0');
+  return {
+    src: `${carouselPrefix}/bd-slide-${num}.webp`,
+    alt: `Carrousel BD slide ${i + 1}`,
+    index: i,
+  };
+});
 
 export const metadata: Metadata = {
   title: 'En 2030, le commercial moyen n&rsquo;aura plus beaucoup d&rsquo;excuses | Laurent Serre',
@@ -225,6 +236,29 @@ export default function VenteB2b2030CommercialExcusesPage() {
               L’IA ne va pas remplacer les commerciaux. Elle va enlever leurs excuses et révéler ceux qui confondent activité et impact.
               La question pour un dirigeant de PME n’est pas « Faut-il mettre de l’IA dans la vente ? » mais « Si j’enlève toutes les tâches de confort, que reste-t-il comme vraie compétence commerciale ? ».
             </p>
+          </div>
+
+          {/* Carrousel BD */}
+          <div className="bg-gradient-to-br from-amber-50 to-amber-100/50 border border-amber-200/60 rounded-2xl p-6 mt-10 mb-10">
+            <p className="font-title font-bold text-amber-800 text-sm uppercase tracking-wider mb-4">
+              🎬 Carrousel BD  :  En 2030, le commercial moyen n'aura plus beaucoup d'excuses
+            </p>
+            <p className="text-sm text-amber-700 mb-5">
+              12 planches illustrées  :  cliquez sur une vignette pour feuilleter la BD dans le lecteur intégré.
+            </p>
+            <BDCarousel
+              images={carouselImages}
+              title="Carrousel BD  :  En 2030, le commercial moyen n'aura plus beaucoup d'excuses"
+              maxPreview={2}
+            />
+            <div className="mt-4 text-center">
+              <Link
+                href="/images/blog/vente-b2b-2030-commercial-excuses/carrousel/carrousel-vente-b2b-2030-excuses.pdf"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                Télécharger le PDF (12 planches)
+              </Link>
+            </div>
           </div>
 
           {/* CTA SOFT */}
