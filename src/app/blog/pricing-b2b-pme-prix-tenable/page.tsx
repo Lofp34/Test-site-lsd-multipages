@@ -216,9 +216,9 @@ export default function PricingB2bPmePrixTenablePage() {
               ✨ Ce que vous allez retenir
             </p>
             <p className="text-gray-700 leading-relaxed">
-              Un prix ne se defend pas au moment ou le client le conteste. Il se prepare pendant toute la
-              vente. Si vos commerciaux perdent des affaires sur le prix, ce n&rsquo;est pas un probleme
-              de tarif : c&rsquo;est un probleme de diagnostic commercial. Ce guide vous montre pourquoi
+              Un prix ne se défend pas au moment où le client le conteste. Il se prépare pendant toute la
+              vente. Si vos commerciaux perdent des affaires sur le prix, ce n&rsquo;est pas un problème
+              de tarif : c&rsquo;est un problème de diagnostic commercial. Ce guide vous montre pourquoi
               et comment construire la valeur avant d&rsquo;annoncer le montant.
             </p>
           </div>
@@ -237,21 +237,21 @@ export default function PricingB2bPmePrixTenablePage() {
           <div className="mt-10 p-6 bg-blue-ink/5 rounded-xl border border-blue-ink/10">
             <p className="text-sm font-semibold text-blue-ink mb-3">📑 Sommaire</p>
             <ul className="space-y-2 text-sm text-gray-700">
-              <li><a href="#constat" className="text-mint-green hover:underline">Le constat qui derange</a></li>
+              <li><a href="#constat" className="text-mint-green hover:underline">Le constat qui dérange</a></li>
               <li><a href="#diagnostic" className="text-mint-green hover:underline">Pourquoi le prix arrive mal</a></li>
-              <li><a href="#erreur" className="text-mint-green hover:underline">L&rsquo;erreur typique : reparer au lieu de construire</a></li>
-              <li><a href="#vrai-sujet" className="text-mint-green hover:underline">Le prix reflete un diagnostic, pas un tarif</a></li>
-              <li><a href="#proposition" className="text-mint-green hover:underline">La proposition comme revelateur</a></li>
-              <li><a href="#tenir" className="text-mint-green hover:underline">Tenir son prix : ce que ca veut vraiment dire</a></li>
+              <li><a href="#erreur" className="text-mint-green hover:underline">L&rsquo;erreur typique : réparer au lieu de construire</a></li>
+              <li><a href="#vrai-sujet" className="text-mint-green hover:underline">Le prix reflète un diagnostic, pas un tarif</a></li>
+              <li><a href="#proposition" className="text-mint-green hover:underline">La proposition comme révélateur</a></li>
+              <li><a href="#tenir" className="text-mint-green hover:underline">Tenir son prix : ce que ça veut vraiment dire</a></li>
               <li><a href="#perdre" className="text-mint-green hover:underline">Perdre une affaire a cause du prix</a></li>
               <li><a href="#question" className="text-mint-green hover:underline">La question qui change tout</a></li>
-              <li><a href="#faq" className="text-mint-green hover:underline">Questions frequentes</a></li>
+              <li><a href="#faq" className="text-mint-green hover:underline">Questions fréquentes</a></li>
             </ul>
           </div>
 
           {/* ──────────────── 1. Le constat ──────────────── */}
           <h2 id="constat" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
-            Le constat qui derange
+            Le constat qui dérange
           </h2>
 
           <p className="mb-8">
@@ -259,8 +259,8 @@ export default function PricingB2bPmePrixTenablePage() {
           </p>
 
           <p className="mb-4">
-            Le rendez-vous s&rsquo;est bien passe. Le prospect a compris l&rsquo;offre. Il dit que le
-            sujet est interessant. Il demande une proposition.
+            Le rendez-vous s&rsquo;est bien passé. Le prospect a compris l&rsquo;offre. Il dit que le
+            sujet est intéressant. Il demande une proposition.
           </p>
 
           <p className="mb-4">
@@ -268,16 +268,16 @@ export default function PricingB2bPmePrixTenablePage() {
           </p>
 
           <p className="mb-4">
-            Et la, tout se tend.
+            Et là, tout se tend.
           </p>
 
           <p className="mb-4">
-            Le prospect repond : &laquo; C&rsquo;est quand meme un budget. &raquo; Ou : &laquo; On a vu
+            Le prospect répond : &laquo; C&rsquo;est quand même un budget. &raquo; Ou : &laquo; On a vu
             moins cher ailleurs. &raquo; Ou simplement : &laquo; Il faut que je regarde. &raquo;
           </p>
 
           <p className="mb-8">
-            Cette scene, vous la connaissez. Elle se joue tous les jours dans les PME francaises. Et
+            Cette scène, vous la connaissez. Elle se joue tous les jours dans les PME françaises. Et
             presque toujours, on se trompe sur le diagnostic.
           </p>
 
@@ -288,7 +288,7 @@ export default function PricingB2bPmePrixTenablePage() {
 
           <p className="mb-4">
             Quand un commercial entend un client dire que c&rsquo;est trop cher, il croit avoir un
-            probleme de tarif. Dans neuf cas sur dix, c&rsquo;est autre chose.
+            problème de tarif. Dans neuf cas sur dix, c&rsquo;est autre chose.
           </p>
 
           <p className="mb-4">
@@ -297,64 +297,64 @@ export default function PricingB2bPmePrixTenablePage() {
           </p>
 
           <p className="mb-4 mt-6">
-            <strong>1. Le client n&rsquo;a pas mesure ce que son probleme lui coute</strong>
+            <strong>1. Le client n&rsquo;a pas mesuré ce que son problème lui coûte</strong>
           </p>
 
           <p className="mb-4">
-            Si le dirigeant n&rsquo;a pas mis de chiffres sur ce que son probleme lui coute en temps,
-            en marge perdue, en energie gaspillee, en opportunites ratees, alors votre prix arrive
-            comme une depense. Il n&rsquo;a pas de referentiel pour le comparer a autre chose qu&rsquo;a
-            d&rsquo;autres prix.
+            Si le dirigeant n&rsquo;a pas mis de chiffres sur ce que son problème lui coûte en temps,
+            en marge perdue, en énergie gaspillée, en opportunités ratées, alors votre prix arrive
+            comme une dépense. Il n&rsquo;a pas de référentiel pour le comparer à autre chose qu&rsquo;a
+            d&rsquo;autrès prix.
           </p>
 
           <p className="mb-4 mt-6">
-            <strong>2. Le client n&rsquo;a pas compris ce qui changera apres votre intervention</strong>
+            <strong>2. Le client n&rsquo;a pas compris ce qui changera après votre intervention</strong>
           </p>
 
           <p className="mb-4">
-            Il ne voit pas a quoi ressemblera son quotidien apres. Il n&rsquo;imagine pas les consequences
-            concretes de votre travail. Votre prix ressemble a une ligne de budget qu&rsquo;on coche ou
-            qu&rsquo;on decoche.
+            Il ne voit pas à quoi ressemblera son quotidien après. Il n&rsquo;imagine pas les conséquences
+            concrètes de votre travail. Votre prix ressemble à une ligne de budget qu&rsquo;on coche ou
+            qu&rsquo;on décoche.
           </p>
 
           <p className="mb-4 mt-6">
-            <strong>3. Le vrai decideur n&rsquo;a pas relie le sujet a une priorite forte</strong>
+            <strong>3. Le vrai décideur n&rsquo;a pas relié le sujet à une priorité forte</strong>
           </p>
 
           <p className="mb-8">
-            La personne qui decide n&rsquo;a pas fait le lien entre ce projet et un enjeu strategique.
-            Du coup, votre prix devient reportable. On remet a plus tard. On regarde autre chose.
+            La personne qui décide n&rsquo;a pas fait le lien entre ce projet et un enjeu stratégique.
+            Du coup, votre prix devient reportable. On remet à plus tard. On regarde autre chose.
             C&rsquo;est facile de dire non quand rien de crucial n&rsquo;est en jeu.
           </p>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-gray-600 my-8">
-            Un prix ne se defend pas seulement au moment ou le client le conteste. Il se prepare pendant
+            Un prix ne se défend pas seulement au moment où le client le conteste. Il se prépare pendant
             toute la vente.
           </blockquote>
 
           {/* ──────────────── 3. L'erreur typique ──────────────── */}
           <h2 id="erreur" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
-            L&rsquo;erreur typique : reparer au lieu de construire
+            L&rsquo;erreur typique : réparer au lieu de construire
           </h2>
 
           <p className="mb-4">
-            Le commercial sent que l&rsquo;affaire peut lui echapper. Alors il explique. Il detaille
-            les livrables. Il rappelle le temps passe. Il propose une remise. Il enleve un morceau.
+            Le commercial sent que l&rsquo;affaire peut lui échapper. Alors il explique. Il détaille
+            les livrables. Il rappelle le temps passé. Il propose une remise. Il enlève un morceau.
             Il promet de faire un effort.
           </p>
 
           <p className="mb-4">
-            En apparence, il negocie.
+            En apparence, il négocie.
           </p>
 
           <p className="mb-8">
-            En realite, il est en train de reparer un prix qui n&rsquo;a pas ete assez construit avant.
+            En réalité, il est en train de réparer un prix qui n&rsquo;a pas été assez construit avant.
           </p>
 
           <p className="mb-4">
-            C&rsquo;est la que beaucoup de PME se bradent. Pas parce que leurs offres ne valent rien.
+            C&rsquo;est là que beaucoup de PME se bradent. Pas parce que leurs offres ne valent rien.
             Mais parce qu&rsquo;elles annoncent un prix avant d&rsquo;avoir fait exister la valeur dans
-            la tete du client.
+            la tête du client.
           </p>
 
           <p className="mb-8">
@@ -362,7 +362,7 @@ export default function PricingB2bPmePrixTenablePage() {
           </p>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-gray-600 my-8">
-            On croit alors avoir un probleme de tarif. En fait, on a souvent un probleme de diagnostic
+            On croit alors avoir un problème de tarif. En fait, on a souvent un problème de diagnostic
             commercial.
           </blockquote>
 
@@ -373,27 +373,27 @@ export default function PricingB2bPmePrixTenablePage() {
             </p>
             <p className="text-sm text-gray-600 mb-4">
               Le Bootcamp Commercial est un programme de 8 semaines pour transformer vos commerciaux en
-              terrain. Construction de valeur, tenue de prix, diagnostic commercial : les reflexe qui
-              font la difference.
+              terrain. Construction de valeur, tenue de prix, diagnostic commercial : les réflexes qui
+              font là différence.
             </p>
             <div className="text-center">
               <Link
                 href="/bootcamp"
                 className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-ink text-white text-sm font-medium rounded-full hover:bg-blue-ink/90 transition-colors"
               >
-                Decouvrir le Bootcamp Commercial &rarr;
+                Découvrir le Bootcamp Commercial &rarr;
               </Link>
             </div>
           </div>
 
           {/* ──────────────── 4. Le vrai sujet ──────────────── */}
           <h2 id="vrai-sujet" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
-            Le prix reflete un diagnostic, pas un tarif
+            Le prix reflète un diagnostic, pas un tarif
           </h2>
 
           <p className="mb-4">
-            Le prospect compare le montant, parce qu&rsquo;il ne compare pas encore le risque evite,
-            le temps gagne, les erreurs supprimees, la decision rendue plus simple, ou le resultat
+            Le prospect compare le montant, parce qu&rsquo;il ne compare pas encore le risque évité,
+            le temps gagné, les erreurs supprimées, la décision rendue plus simple, ou le résultat
             rendu plus probable.
           </p>
 
@@ -403,32 +403,32 @@ export default function PricingB2bPmePrixTenablePage() {
           </p>
 
           <p className="mb-4">
-            C&rsquo;est toute la difference entre une discussion de tarif et une discussion
-            d&rsquo;investissement. Pour passer de l&rsquo;une a l&rsquo;autre, il faut que le client
-            ait repondu a une question simple : qu&rsquo;est-ce que cela me coute de ne rien faire ?
+            C&rsquo;est toute la différence entre une discussion de tarif et une discussion
+            d&rsquo;investissement. Pour passer de l&rsquo;une à l&rsquo;autre, il faut que le client
+            ait répondu à une question simple : qu&rsquo;est-ce que cela me coûte de ne rien faire ?
           </p>
 
           <p className="mb-4">
-            Si cette question n&rsquo;a pas ete travaillee serieusement, le prix tombe dans le vide.
-            Le client n&rsquo;a aucun ancrage pour evaluer le montant. Il le compare a son budget,
-            a d&rsquo;autres devis, a son intuition. Mais pas a l&rsquo;impact reel.
+            Si cette question n&rsquo;a pas été travaillee sérieusement, le prix tombe dans le vide.
+            Le client n&rsquo;a aucun ancrage pour évaluer le montant. Il le compare a son budget,
+            à d&rsquo;autrès devis, a son intuition. Mais pas à l&rsquo;impact réel.
           </p>
 
           <p className="mb-8">
-            Vous pouvez avoir le meilleur produit, la meilleure equipe, les meilleurs resultats :
-            si le client n&rsquo;a pas mesure l&rsquo;ecart entre sa situation actuelle et sa situation
-            desiree, votre prix sera toujours trop eleve. Je l&rsquo;explique d&rsquo;ailleurs plus en
-            detail dans un article sur la methode Gap Selling, qui precise justement comment mesurer
-            cet ecart.
+            Vous pouvez avoir le meilleur produit, la meilleure équipe, les meilleurs résultats :
+            si le client n&rsquo;a pas mesuré l&rsquo;écart entre sa situation actuelle et sa situation
+            désirée, votre prix sera toujours trop élevé. Je l&rsquo;explique d&rsquo;ailleurs plus en
+            détail dans un article sur la méthode Gap Selling, qui précise justement comment mesurer
+            cet écart.
           </p>
 
           {/* ──────────────── 5. La proposition commerciale ──────────────── */}
           <h2 id="proposition" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
-            La proposition commerciale comme revelateur
+            La proposition commerciale comme révélateur
           </h2>
 
           <p className="mb-4">
-            C&rsquo;est tres visible dans les propositions commerciales.
+            C&rsquo;est très visible dans les propositions commerciales.
           </p>
 
           <p className="mb-4">
@@ -437,60 +437,60 @@ export default function PricingB2bPmePrixTenablePage() {
           </p>
 
           <p className="mb-4">
-            Tout cela peut etre utile. Mais si le client lit seulement une liste de moyens, il cherchera
-            naturellement a discuter les moyens. Peut-on faire moins de jours ? Peut-on enlever un
+            Tout cela peut être utile. Mais si le client lit seulement une liste de moyens, il cherchera
+            naturellement à discuter les moyens. Peut-on faire moins de jours ? Peut-on enlever un
             atelier ? Peut-on simplifier le suivi ?
           </p>
 
           <p className="mb-4">
-            La discussion descend vite sur le cout.
+            La discussion descend vite sur le coût.
           </p>
 
           <p className="mb-8">
-            Un prix tenable part d&rsquo;ailleurs. Il part du probleme tel qu&rsquo;il existe vraiment
+            Un prix tenable part d&rsquo;ailleurs. Il part du problème tel qu&rsquo;il existe vraiment
             chez le client. Qu&rsquo;est-ce qui se passe aujourd&rsquo;hui ? Qu&rsquo;est-ce que cela
-            abime ? Qu&rsquo;est-ce que cela coute en temps, en energie, en marge, en ventes perdues,
-            en tension manageriale ? Qu&rsquo;est-ce qui se passera si rien ne change dans six mois ?
+            abîme ? Qu&rsquo;est-ce que cela coûte en temps, en énergie, en marge, en ventes perdues,
+            en tension managériale ? Qu&rsquo;est-ce qui se passera si rien ne change dans six mois ?
           </p>
 
           <p className="mb-8">
-            Quand ces questions ont ete travaillees serieusement, le prix n&rsquo;est plus pose dans
-            le vide. Il devient une decision a prendre face a une situation reelle. J&rsquo;ai deja
-            aborde ce sujet dans un article sur la peur du prix : le vrai probleme n&rsquo;est presque
+            Quand ces questions ont été travaillees sérieusement, le prix n&rsquo;est plus posé dans
+            le vide. Il devient une décision à prendre face à une situation réelle. J&rsquo;ai déjà
+            abordé ce sujet dans un article sur la peur du prix : le vrai problème n&rsquo;est presque
             jamais le tarif.
           </p>
 
           {/* ──────────────── 6. Tenir son prix ──────────────── */}
           <h2 id="tenir" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
-            Tenir son prix : ce que ca veut vraiment dire
+            Tenir son prix : ce que ça veut vraiment dire
           </h2>
 
           <p className="mb-4">
-            Tenir son prix ne consiste pas a reciter une phrase ferme en fin de vente.
+            Tenir son prix ne consiste pas à réciter une phrase ferme en fin de vente.
           </p>
 
           <p className="mb-8">
             C&rsquo;est une discipline beaucoup plus simple, mais beaucoup plus exigeante : ne pas
-            annoncer un montant tant que la valeur, la priorite et le cout du statu quo n&rsquo;ont
-            pas ete regardes en face.
+            annoncer un montant tant que la valeur, la priorité et le coût du statu quo n&rsquo;ont
+            pas été regardés en face.
           </p>
 
           <p className="mb-4">
-            Quand le budget est gele, le prix devient un pretexte pour repousser une decision qui
-            n&rsquo;a pas ete construite. J&rsquo;ai ecrit un article sur le closing B2B budget gele
-            qui developpe precisement ce mecanisme : un prix ne se defend pas au moment ou le client
-            dit que le budget n&rsquo;est pas la. Il se construit avant.
+            Quand le budget est gelé, le prix devient un prétexte pour repousser une décision qui
+            n&rsquo;a pas été construite. J&rsquo;ai écrit un article sur le closing B2B budget gelé
+            qui développe précisement ce mécanisme : un prix ne se défend pas au moment où le client
+            dit que le budget n&rsquo;est pas là. Il se construit avant.
           </p>
 
           <p className="mb-8">
-            Dans une equipe commerciale, cela demande une discipline collective. Le commercial ne
-            doit pas etre mis en situation de devoir annoncer un prix alors que ces conditions ne
-            sont pas reunies. Et le manager doit etre capable de lire les dossiers pour verifier que
+            Dans une équipe commerciale, celà demande une discipline collective. Le commercial ne
+            doit pas être mis en situation de devoir annoncer un prix alors que ces conditions ne
+            sont pas réunies. Et le manager doit être capable de lire les dossiers pour vérifier que
             la construction de valeur est suffisante avant de laisser envoyer une proposition.
           </p>
 
           <blockquote className="border-l-4 border-mint-green pl-4 italic text-gray-600 my-8">
-            Le vrai danger, pour une PME, n&rsquo;est pas de perdre quelques affaires a cause du prix.
+            Le vrai danger, pour une PME, n&rsquo;est pas de perdre quelques affaires à cause du prix.
             Le vrai danger, c&rsquo;est de signer trop souvent avec un prix qu&rsquo;elle n&rsquo;assume
             pas vraiment.
           </blockquote>
@@ -509,27 +509,27 @@ export default function PricingB2bPmePrixTenablePage() {
           </p>
 
           <p className="mb-4">
-            Un prix juste doit parfois faire perdre des affaires qui n&rsquo;etaient pas les bonnes.
-            Des prospects qui veulent surtout acheter moins cher. Des dossiers ou le probleme
-            n&rsquo;est pas assez prioritaire. Des entreprises qui demandent une solution serieuse
-            mais ne veulent pas payer le niveau d&rsquo;engagement necessaire.
+            Un prix juste doit parfois faire perdre des affaires qui n&rsquo;étaient pas les bonnes.
+            Des prospects qui veulent surtout acheter moins cher. Des dossiers où le problème
+            n&rsquo;est pas assez prioritaire. Des entreprises qui demandent une solution sérieuse
+            mais ne veulent pas payer le niveau d&rsquo;engagement nécessaire.
           </p>
 
           <p className="mb-4">
-            Ce n&rsquo;est pas forcement une mauvaise nouvelle.
+            Ce n&rsquo;est pas forcément une mauvaise nouvelle.
           </p>
 
           <p className="mb-8">
-            Parce qu&rsquo;ensuite, tout se paie. La marge baisse. Les equipes livrent sous tension.
-            Le client demande le meme niveau d&rsquo;exigence pour un budget reduit. Le commercial
-            apprend qu&rsquo;une remise est la meilleure facon de sauver une affaire. Et petit a
-            petit, l&rsquo;entreprise habitue son marche a ne pas payer le vrai prix de son travail.
+            Parce qu&rsquo;ensuite, tout se paie. La marge baisse. Les équipes livrent sous tension.
+            Le client demande le même niveau d&rsquo;exigence pour un budget réduit. Le commercial
+            apprend qu&rsquo;une remise est la meilleure façon de sauver une affaire. Et petit a
+            petit, l&rsquo;entreprise habitue son marché à ne pas payer le vrai prix de son travail.
           </p>
 
           <p className="mb-4">
-            Un pricing tenable s&rsquo;inscrit dans une strategie commerciale claire. J&rsquo;ai
-            ecrit un article sur la strategie commerciale PME qui montre comment aligner le prix
-            sur la valeur apportee, plutot que de le definir comme un simplecout de revient.
+            Un pricing tenable s&rsquo;inscrit dans une stratégie commerciale claire. J&rsquo;ai
+            écrit un article sur la stratégie commerciale PME qui montre comment aligner le prix
+            sur la valeur apportée, plutôt que de le définir comme un simple coût de revient.
           </p>
 
           {/* ──────────────── 8. La question qui change tout ──────────────── */}
@@ -542,23 +542,23 @@ export default function PricingB2bPmePrixTenablePage() {
           </p>
 
           <p className="mb-8">
-            La vraie question est : &laquo; Avons-nous aide le client a comprendre pourquoi ce
-            probleme merite ce niveau de decision ? &raquo;
+            La vraie question est : &laquo; Avons-nous aidé le client à comprendre pourquoi ce
+            problème merite ce niveau de décision ? &raquo;
           </p>
 
           <p className="mb-4">
-            Si la reponse est non, ce n&rsquo;est pas le prix qu&rsquo;il faut reparer. C&rsquo;est
+            Si la réponse est non, ce n&rsquo;est pas le prix qu&rsquo;il faut reparer. C&rsquo;est
             le diagnostic commercial.
           </p>
 
           <p className="mb-8">
-            Et si la reponse est oui, alors le prix n&rsquo;est plus un probleme. Il devient une
-            decision logique que le client prend en connaissance de cause.
+            Et si la réponse est oui, alors le prix n&rsquo;est plus un problème. Il devient une
+            décision logique que le client prend en connaissance de cause.
           </p>
 
           {/* ──────────────── FAQ ──────────────── */}
           <h2 id="faq" className="text-2xl font-title font-bold text-blue-ink mt-12 mb-6">
-            Questions frequentes sur le pricing B2B PME
+            Questions fréquentes sur le pricing B2B PME
           </h2>
 
           <div className="space-y-6">
@@ -575,28 +575,28 @@ export default function PricingB2bPmePrixTenablePage() {
             <p className="text-lg font-title font-bold text-blue-ink mb-4">Pour aller plus loin</p>
             <ul className="space-y-3 text-sm text-gray-700">
               <li>
-                <Link href="/blog/la-peur-du-prix-le-vrai-probleme-nest-presque-jamais-le-tarif" className="text-mint-green hover:underline font-medium">
-                  La peur du prix : le vrai probleme n&rsquo;est presque jamais le tarif
+                <Link href="/blog/la-peur-du-prix-le-vrai-problème-nest-presque-jamais-le-tarif" className="text-mint-green hover:underline font-medium">
+                  La peur du prix : le vrai problème n&rsquo;est presque jamais le tarif
                 </Link>
-                <span className="text-gray-500">&nbsp;: j&rsquo;ai deja aborde ce sujet. La peur du prix cache presque toujours un autre probleme.</span>
+                <span className="text-gray-500">&nbsp;: j&rsquo;ai déjà abordé ce sujet. La peur du prix cache presque toujours un autre problème.</span>
               </li>
               <li>
-                <Link href="/blog/closing-b2b-budget-gele-pme" className="text-mint-green hover:underline font-medium">
-                  Closing B2B : quand le budget est gele, le prix devient un pretexte
+                <Link href="/blog/closing-b2b-budget-gelé-pme" className="text-mint-green hover:underline font-medium">
+                  Closing B2B : quand le budget est gelé, le prix devient un prétexte
                 </Link>
-                <span className="text-gray-500">&nbsp;: comment un budget gele masque souvent un diagnostic qui n&rsquo;a pas ete fait.</span>
+                <span className="text-gray-500">&nbsp;: comment un budget gelé masque souvent un diagnostic qui n&rsquo;a pas été fait.</span>
               </li>
               <li>
-                <Link href="/blog/gap-selling-methode-b2b" className="text-mint-green hover:underline font-medium">
-                  La methode Gap Selling : mesurer l&rsquo;ecart entre situation actuelle et desiree
+                <Link href="/blog/gap-selling-méthode-b2b" className="text-mint-green hover:underline font-medium">
+                  La méthode Gap Selling : mesurer l&rsquo;écart entre situation actuelle et désirée
                 </Link>
-                <span className="text-gray-500">&nbsp;: la methode precise pour construire la valeur avant d&rsquo;annoncer le prix.</span>
+                <span className="text-gray-500">&nbsp;: la méthode précise pour construire la valeur avant d&rsquo;annoncer le prix.</span>
               </li>
               <li>
-                <Link href="/blog/strategie-commerciale-pme-cadre-une-page" className="text-mint-green hover:underline font-medium">
+                <Link href="/blog/stratégie-commerciale-pme-cadre-une-page" className="text-mint-green hover:underline font-medium">
                   Strategie commerciale PME : le cadre qui tient sur une page
                 </Link>
-                <span className="text-gray-500">&nbsp;: un pricing tenable s&rsquo;inscrit dans une strategie commerciale claire.</span>
+                <span className="text-gray-500">&nbsp;: un pricing tenable s&rsquo;inscrit dans une stratégie commerciale claire.</span>
               </li>
             </ul>
           </div>
@@ -607,9 +607,9 @@ export default function PricingB2bPmePrixTenablePage() {
               Vous perdez des affaires sur le prix sans comprendre pourquoi ?
             </h3>
             <p className="mb-6">
-              Je propose un diagnostic commercial qui regarde votre cycle de vente, la facon dont
+              Je propose un diagnostic commercial qui regarde votre cycle de vente, la façon dont
               vos commerciaux construisent la valeur, et les vrais motifs de refus. Sans fausses
-              promesses de resultats miracles.
+              promesses de résultats miracles.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
@@ -629,7 +629,7 @@ export default function PricingB2bPmePrixTenablePage() {
 
           {/* Chute */}
           <p className="text-xl text-gray-700 font-semibold border-t border-gray-200 pt-8 mt-10">
-            Le probleme de vos commerciaux, ce n&rsquo;est pas le prix. C&rsquo;est la valeur qu&rsquo;ils
+            Le problème de vos commerciaux, ce n&rsquo;est pas le prix. C&rsquo;est la valeur qu&rsquo;ils
             n&rsquo;arrivent pas a construire avant.
           </p>
         </div>
