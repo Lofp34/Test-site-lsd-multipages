@@ -39,7 +39,7 @@ const blogPosts = [
   {
     slug: 'pricing-b2b-pme-prix-tenable',
     title: 'Vous ne perdez pas vos ventes parce que vous êtes trop cher',
-    description: 'Vous ne perdez pas vos ventes parce que vous êtes trop cher. Vous les perdez parce que la valeur n'a pas été construite avant le prix. Le guide pour un pricing tenable en B2B.',
+    description: 'Vous ne perdez pas vos ventes parce que vous êtes trop cher. Vous les perdez parce que la valeur n\'a pas été construite avant le prix. Le guide pour un pricing tenable en B2B.',
     date: '2026-07-05',
     readTime: '8 min',
     category: 'Stratégie & Croissance / Pricing B2B',
