@@ -6,14 +6,14 @@ import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
   title: 'Blog Développement Commercial PME | Laurent Serre',
-  description: '106 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management, négociation B2B. Méthodes testées en mission.',
+  description: '107 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management, négociation B2B. Méthodes testées en mission.',
   keywords: 'blog développement commercial, formation commerciale, stratégies vente B2B, conseils PME, expert commercial',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog',
   },
   openGraph: {
     title: 'Blog Développement Commercial PME | Laurent Serre',
-    description: '106 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
+    description: '107 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
     url: 'https://www.laurentserre.com/blog',
     type: 'website',
     locale: 'fr_FR',
@@ -29,13 +29,23 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Blog Développement Commercial PME | Laurent Serre',
-    description: '106 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
+    description: '107 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
     images: ['https://www.laurentserre.com/erreurs-fatales.png'],
   },
 };
 
-// Blog listing — last updated 2026-07-04
+// Blog listing — last updated 2026-07-05
 const blogPosts = [
+  {
+    slug: 'pricing-b2b-pme-prix-tenable',
+    title: 'Vous ne perdez pas vos ventes parce que vous êtes trop cher',
+    description: 'Vous ne perdez pas vos ventes parce que vous êtes trop cher. Vous les perdez parce que la valeur n'a pas été construite avant le prix. Le guide pour un pricing tenable en B2B.',
+    date: '2026-07-05',
+    readTime: '8 min',
+    category: 'Stratégie & Croissance / Pricing B2B',
+    image: '/images/blog/pricing-b2b-pme-prix-tenable/hero.webp',
+    featured: true,
+  },
   {
     slug: 'vente-b2b-2030-commercial-excuses',
     title: 'En 2030, le commercial moyen n\'aura plus beaucoup d\'excuses',
