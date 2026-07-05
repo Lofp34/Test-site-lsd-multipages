@@ -374,6 +374,37 @@ export default function HighOutputManagementArticle() {
             </div>
           </div>
 
+          {/* BlogPosting JSON-LD */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'BlogPosting',
+                headline: 'High Output Management : 5 leçons d\'Andy Grove pour la PME',
+                description: 'Les 5 leçons du livre High Output Management d\'Andy Grove appliquées à la gestion d\'une équipe commerciale en PME.',
+                image: `${baseUrl}/images/blog/${slug}/hero.webp`,
+                author: {
+                  '@type': 'Person',
+                  name: 'Laurent Serre',
+                  url: baseUrl,
+                  sameAs: [
+                    'https://www.linkedin.com/in/laurentserre34/',
+                    'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/'
+                  ]
+                },
+                publisher: {
+                  '@type': 'Organization',
+                  name: 'Laurent Serre',
+                  url: baseUrl
+                },
+                datePublished: '2026-05-29',
+                dateModified: '2026-05-29',
+                mainEntityOfPage: `${baseUrl}/blog/${slug}`
+              })
+            }}
+          />
+
           {/* FAQPage JSON-LD */}
           <script
             type="application/ld+json"
@@ -497,6 +528,9 @@ export default function HighOutputManagementArticle() {
         {/* AuthorCard (bas) */}
         <div className="mt-10 pt-6 border-t border-gray-200 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <AuthorCard />
+          <p className="text-xs text-gray-400 mt-4">
+            Ce article s\'appuie sur <em>High Output Management</em> d\'Andrew S. Grove, ancien CEO d\'Intel. Le livre est disponible chez {' '}<a href="https://www.goodreads.com/book/show/584292.High_Output_Management" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Goodreads</a>{' '}et reste une référence en management d\'équipe.
+          </p>
         </div>
       </article>
 

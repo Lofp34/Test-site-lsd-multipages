@@ -43,7 +43,7 @@ const faqItems = [
 export default function PactePratiquePage() {
   const jsonLd = {
     '@context': 'https://schema.org', '@graph': [
-      { '@type': 'BlogPosting', headline: 'Le pacte commercial en pratique : les 3 promesses a aligner', description: '3 promesses a aligner en une reunion. Modele point de verite.', image: heroImageAbsolute, datePublished: '2026-06-29', dateModified: '2026-06-29', author: { '@type': 'Person', name: 'Laurent Serre' }, publisher: { '@type': 'Organization', name: 'Laurent Serre' }, mainEntityOfPage: { '@type': 'WebPage', '@id': articleUrl }, articleSection: 'Vente B2B / Methode' },
+      { '@type': 'BlogPosting', headline: 'Le pacte commercial en pratique : les 3 promesses a aligner', description: '3 promesses a aligner en une reunion. Modele point de verite.', image: heroImageAbsolute, datePublished: '2026-06-29', dateModified: '2026-06-29', author: { '@type': 'Person', name: 'Laurent Serre', sameAs: ['https://www.linkedin.com/in/laurentserre34/', 'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/'] }, publisher: { '@type': 'Organization', name: 'Laurent Serre' }, mainEntityOfPage: { '@type': 'WebPage', '@id': articleUrl }, articleSection: 'Vente B2B / Methode' },
       { '@type': 'FAQPage', '@id': `${articleUrl}#faq`, mainEntity: faqItems.map(i => ({ '@type': 'Question', name: i.question, acceptedAnswer: { '@type': 'Answer', text: i.answer } })) },
       { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.laurentserre.com' }, { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.laurentserre.com/blog' }, { '@type': 'ListItem', position: 3, name: 'Pacte commercial pratique', item: articleUrl }] },
     ],
@@ -81,7 +81,11 @@ export default function PactePratiquePage() {
       </section>
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
-          <div className="mb-8"><AuthorCard /></div>
+          <div className="mb-8"><AuthorCard />
+            <p className="text-xs text-gray-400 mt-4">
+              Le concept d\'alignement dirigeant-commercial-client s\'inspire des travaux de {' '}<a href="https://hbr.org/2006/07/ending-the-war-between-sales-and-marketing" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">recherche sur l\'alignement commercial</a>{' '}publiés par Harvard Business Review.
+            </p>
+          </div>
           <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
             <p className="text-sm font-semibold text-mint-green mb-2">Ce qu'il faut retenir</p>
             <p className="text-gray-700">La methode operationnelle du pacte commercial. Chaque commercial ecrit les trois promesses pour ses deals : ce que le dirigeant vend, ce qu'il promet, ce que le client comprend. On compare. On ajuste. En vingt minutes par deal.</p>

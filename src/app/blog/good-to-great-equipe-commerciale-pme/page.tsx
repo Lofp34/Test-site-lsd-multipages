@@ -116,6 +116,9 @@ export default function ArticlePage() {
           <span itemProp="dateModified">2026-06-27</span>
           <span itemProp="author" itemScope itemType="https://schema.org/Person">
             <span itemProp="name">Laurent Serre</span>
+            <span itemProp="url" content="https://www.laurentserre.com" />
+            <meta itemProp="sameAs" content="https://www.linkedin.com/in/laurentserre34/" />
+            <meta itemProp="sameAs" content="https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/" />
           </span>
         </div>
 
@@ -320,6 +323,9 @@ export default function ArticlePage() {
           {/* Author Card */}
           <div className="my-12">
             <AuthorCard />
+            <p className="text-xs text-gray-400 mt-4">
+              Ce article s\'appuie sur <em>Good to Great</em> de Jim Collins, recherche menée sur 1 435 entreprises publiées aux Etats-Unis. {' '}<a href="https://www.jimcollins.com/books.html" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">Site officiel de Jim Collins</a>.
+            </p>
           </div>
 
           {/* FAQ */}

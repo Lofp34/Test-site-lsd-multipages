@@ -50,7 +50,7 @@ const faqItems = [
 export default function PostVenteAmbassadeurPage() {
   const jsonLd = {
     '@context': 'https://schema.org', '@graph': [
-      { '@type': 'BlogPosting', headline: 'Experience client post-vente : ambassadeur', description: '5 actions pour transformer vos clients en ambassadeurs dans les 90 jours apres la signature.', image: heroImageAbsolute, datePublished: '2026-06-29', dateModified: '2026-06-29', author: { '@type': 'Person', name: 'Laurent Serre' }, publisher: { '@type': 'Organization', name: 'Laurent Serre' }, mainEntityOfPage: { '@type': 'WebPage', '@id': articleUrl }, articleSection: 'Customer Success / Retention' },
+      { '@type': 'BlogPosting', headline: 'Experience client post-vente : ambassadeur', description: '5 actions pour transformer vos clients en ambassadeurs dans les 90 jours apres la signature.', image: heroImageAbsolute, datePublished: '2026-06-29', dateModified: '2026-06-29', author: { '@type': 'Person', name: 'Laurent Serre', sameAs: ['https://www.linkedin.com/in/laurentserre34/', 'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/'] }, publisher: { '@type': 'Organization', name: 'Laurent Serre' }, mainEntityOfPage: { '@type': 'WebPage', '@id': articleUrl }, articleSection: 'Customer Success / Retention' },
       { '@type': 'FAQPage', '@id': `${articleUrl}#faq`, mainEntity: faqItems.map(i => ({ '@type': 'Question', name: i.question, acceptedAnswer: { '@type': 'Answer', text: i.answer } })) },
       { '@type': 'BreadcrumbList', itemListElement: [{ '@type': 'ListItem', position: 1, name: 'Accueil', item: 'https://www.laurentserre.com' }, { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.laurentserre.com/blog' }, { '@type': 'ListItem', position: 3, name: 'Experience client post-vente', item: articleUrl }] },
     ],
@@ -93,7 +93,11 @@ export default function PostVenteAmbassadeurPage() {
       </section>
       <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <div className="prose prose-lg max-w-none">
-          <div className="mb-8"><AuthorCard /></div>
+          <div className="mb-8"><AuthorCard />
+            <p className="text-xs text-gray-400 mt-4">
+              Selon une {' '}<a href="https://hbr.org/2014/10/the-value-of-keeping-the-right-customers" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-600">étude Harvard Business Review</a>{' '}, acquerir un nouveau client coûte 5 à 25 fois plus cher que de en retenir un existant. Cet article détaille les pratiques post-vente qui maximisent la rétention.
+            </p>
+          </div>
           <div className="mt-8 p-6 bg-mint-green/10 rounded-xl border border-mint-green/20">
             <p className="text-sm font-semibold text-mint-green mb-2">Ce qu'il faut retenir</p>
             <p className="text-gray-700 leading-relaxed">Vos clients satisfaits sont votre meilleur canal d'acquisition. 5 actions concretes dans les 90 jours post-signature pour les transformer en ambassadeurs : debrief J+30, revue de valeur trimestrielle, cas client ecrit avec lui, recommandation guidee, reseau d'ambassadeurs.</p>
