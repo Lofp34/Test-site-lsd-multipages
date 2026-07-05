@@ -3,6 +3,20 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
+import BDCarousel from '@/components/BDCarousel';
+
+const carouselImages = [
+  { src: '/images/blog/pricing-b2b-pme-prix-tenable/carrousel/bd-slide-01.webp', alt: 'Rémi, DirCo de PME, constate que trois deals ont été perdus sur le prix ce mois-ci', index: 1 },
+  { src: '/images/blog/pricing-b2b-pme-prix-tenable/carrousel/bd-slide-02.webp', alt: 'Rémi montre une proposition commerciale à Laurent et lui explique que le client est parti après une demande de remise', index: 2 },
+  { src: '/images/blog/pricing-b2b-pme-prix-tenable/carrousel/bd-slide-03.webp', alt: 'Rémi affirme que les clients sont partis à cause du prix, Laurent lui demande s\'ils connaissaient le coût de leur problème', index: 3 },
+  { src: '/images/blog/pricing-b2b-pme-prix-tenable/carrousel/bd-slide-04.webp', alt: 'Rémi réfléchit et admet qu\'il n\'a jamais travaillé la question du coût du statu quo avec ses prospects', index: 4 },
+  { src: '/images/blog/pricing-b2b-pme-prix-tenable/carrousel/bd-slide-05.webp', alt: 'Rémi devant le paperboard réalise qu\'il annonce le prix avant d\'avoir construit la valeur', index: 5 },
+  { src: '/images/blog/pricing-b2b-pme-prix-tenable/carrousel/bd-slide-06.webp', alt: 'Laurent explique à Rémi que le client dit trop cher quand il n\'a pas mesuré ce que son problème lui coûte', index: 6 },
+  { src: '/images/blog/pricing-b2b-pme-prix-tenable/carrousel/bd-slide-07.webp', alt: 'Rémi regarde par la fenêtre et réalise qu\'aucune de ses propositions n\'a travaillé le coût du statu quo', index: 7 },
+  { src: '/images/blog/pricing-b2b-pme-prix-tenable/carrousel/bd-slide-08.webp', alt: 'Rémi décidé montre à Laurent sa prochaine proposition qui commencera par le problème avant le prix', index: 8 },
+  { src: '/images/blog/pricing-b2b-pme-prix-tenable/carrousel/bd-slide-09.webp', alt: 'Rémi et Laurent devant le paperboard : le vrai problème n\'est pas le prix mais ce qu\'on a fait avant', index: 9 },
+  { src: '/images/blog/pricing-b2b-pme-prix-tenable/carrousel/bd-slide-10.webp', alt: 'Laurent face caméra : le problème de vos commerciaux ce n\'est pas le prix, c\'est la valeur qu\'ils ne construisent pas avant', index: 10 },
+];
 
 const articleUrl = 'https://www.laurentserre.com/blog/pricing-b2b-pme-prix-tenable';
 const heroImage = '/images/blog/pricing-b2b-pme-prix-tenable/hero.webp';
@@ -220,6 +234,29 @@ export default function PricingB2bPmePrixTenablePage() {
               vente. Si vos commerciaux perdent des affaires sur le prix, ce n&rsquo;est pas un problème
               de tarif : c&rsquo;est un problème de diagnostic commercial. Ce guide vous montre pourquoi
               et comment construire la valeur avant d&rsquo;annoncer le montant.
+            </p>
+          </div>
+
+          {/* BD Carrousel */}
+          <div className="mt-10 mb-8">
+            <p className="text-sm font-semibold text-blue-ink mb-4">
+              🎬 Le carrousel BD du jour
+            </p>
+            <BDCarousel
+              images={carouselImages}
+              title="Carrousel BD : Le prix n\'est pas le problème"
+              maxPreview={4}
+            />
+            <div className="mt-4 text-center">
+              <Link
+                href="/images/blog/pricing-b2b-pme-prix-tenable/carrousel/carrousel-pricing-b2b-pme-prix-tenable.pdf"
+                className="inline-flex items-center gap-2 text-amber-700 text-xs hover:text-amber-900 transition-colors underline underline-offset-2"
+              >
+                📥 Télécharger le carrousel PDF (10 planches)
+              </Link>
+            </div>
+            <p className="mt-3 text-sm text-gray-500 italic">
+              Rémi dirige les ventes d\'une PME industrielle. Il perd des affaires sur le prix. Ou du moins, c\'est ce qu\'il croit.
             </p>
           </div>
 
