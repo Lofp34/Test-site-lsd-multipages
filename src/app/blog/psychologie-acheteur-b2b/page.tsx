@@ -3,6 +3,8 @@ import BDCarousel from '@/components/BDCarousel';
 import AuthorCard from '@/components/AuthorCard';
 
 const articleUrl = 'https://www.laurentserre.com/blog/psychologie-acheteur-b2b';
+const datePublished = '2026-07-05';
+const dateModified = '2026-07-05';
 const heroImage = 'https://www.laurentserre.com/images/blog/psychologie-acheteur-b2b/hero.webp';
 const ogImage = 'https://www.laurentserre.com/images/blog/psychologie-acheteur-b2b/hero.webp';
 
@@ -37,6 +39,37 @@ export const metadata = {
 export default function PsychologieAcheteurB2B() {
   return (
     <article className="max-w-3xl mx-auto px-4 py-8 sm:py-12">
+      {/* JSON-LD BlogPosting */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BlogPosting',
+            headline: 'Psychologie de l\'acheteur B2B : ce qui se passe vraiment dans la tête de votre prospect',
+            description: 'Vos commerciaux perdent des ventes qu\'ils auraient dû gagner. Pas à cause du prix. À cause de la peur réelle de l\'acheteur B2B.',
+            image: heroImage,
+            author: {
+              '@type': 'Person',
+              name: 'Laurent Serre',
+              url: 'https://www.laurentserre.com',
+              sameAs: [
+                'https://www.linkedin.com/in/laurentserre34/',
+                'https://www.youtube.com/channel/UCeYXC96USUJDsZrBPoHCN1A/'
+              ]
+            },
+            publisher: {
+              '@type': 'Organization',
+              name: 'Laurent Serre',
+              url: 'https://www.laurentserre.com'
+            },
+            datePublished,
+            dateModified,
+            mainEntityOfPage: articleUrl
+          })
+        }}
+      />
+
       {/* Header */}
       <header className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-title font-bold text-blue-ink mb-4 leading-tight">
@@ -45,6 +78,7 @@ export default function PsychologieAcheteurB2B() {
         <p className="text-lg text-gray-600 font-body">
           Vos commerciaux perdent des ventes qu\'ils auraient dû gagner. Pas à cause du prix. À cause de ce qu\'ils ne voient pas.
         </p>
+        <p className="text-xs text-gray-400 mt-2">Publié le 5 juillet 2026</p>
       </header>
 
       {/* Hero */}

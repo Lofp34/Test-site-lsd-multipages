@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 interface AuthorCardProps {
   className?: string;
@@ -24,6 +25,14 @@ export default function AuthorCard({ className = '' }: AuthorCardProps) {
         <span className="text-xs text-gray-500 leading-tight">
           Consultant commercial : 15 ans de terrain PME
         </span>
+        <Link
+          href="https://www.linkedin.com/in/laurentserre34/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs text-blue-600 hover:text-blue-800 underline underline-offset-2 leading-tight mt-0.5"
+        >
+          Voir le profil LinkedIn →
+        </Link>
       </div>
     </div>
   );
