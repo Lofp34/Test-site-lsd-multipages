@@ -237,11 +237,9 @@ export default function AccountBasedMarketingPMEPage() {
               ✨ Ce que vous allez retenir
             </p>
             <p className="text-gray-700 leading-relaxed">
-              L'Account-Based Marketing pour une PME n'a rien à voir avec une machine marketing sophistiquée.
-              C'est une discipline commerciale simple : identifier les comptes qui comptent vraiment, arrêter
-              de les traiter comme des prospects ordinaires, et accepter de ralentir pour construire une vraie
-              approche. Ce guide vous donne le cadre pour commencer avec trois comptes, sans outil coûteux,
-              et vérifier que votre équipe est prête à faire le travail.
+              L'ABM pour une PME, ce n'est pas une machine marketing. C'est la discipline de traiter
+              quelques comptes stratégiques autrement que des prospects de plus. Trois comptes,
+              pas cinquante. Voici comment commencer.
             </p>
           </div>
 

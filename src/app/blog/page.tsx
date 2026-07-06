@@ -6,14 +6,14 @@ import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
   title: 'Blog Développement Commercial PME | Laurent Serre',
-  description: '107 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management, négociation B2B. Méthodes testées en mission.',
+  description: '108 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management, négociation B2B. Méthodes testées en mission.',
   keywords: 'blog développement commercial, formation commerciale, stratégies vente B2B, conseils PME, expert commercial',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog',
   },
   openGraph: {
     title: 'Blog Développement Commercial PME | Laurent Serre',
-    description: '107 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
+    description: '108 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
     url: 'https://www.laurentserre.com/blog',
     type: 'website',
     locale: 'fr_FR',
@@ -29,13 +29,23 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Blog Développement Commercial PME | Laurent Serre',
-    description: '107 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
+    description: '108 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
     images: ['https://www.laurentserre.com/erreurs-fatales.png'],
   },
 };
 
-// Blog listing — last updated 2026-07-05
+// Blog listing — last updated 2026-07-06
 const blogPosts = [
+  {
+    slug: 'account-based-marketing-pme-comptes-strategiques',
+    title: 'Account-Based Marketing PME : 3 comptes avant 50, la discipline qui change tout',
+    description: "L'ABM pour une PME n'est pas une machine marketing. C'est la discipline de traiter quelques comptes stratégiques autrement que des prospects de plus. Le guide pragmatique pour commencer avec trois comptes.",
+    date: '2026-07-06',
+    readTime: '7 min',
+    category: 'Stratégie & Croissance / ABM',
+    image: '/images/blog/account-based-marketing-pme-comptes-strategiques/hero.webp',
+    featured: true,
+  },
   {
     slug: 'pricing-b2b-pme-prix-tenable',
     title: 'Vous ne perdez pas vos ventes parce que vous êtes trop cher',
