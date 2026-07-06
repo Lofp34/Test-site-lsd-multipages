@@ -3,6 +3,24 @@ import Link from 'next/link';
 import Image from 'next/image';
 import HubSpotForm from '@/components/HubSpotForm';
 import AuthorCard from '@/components/AuthorCard';
+import BDCarousel from '@/components/BDCarousel';
+
+const carouselPrefix = '/images/blog/account-based-marketing-pme-comptes-strategiques/carrousel';
+
+const carouselImages = [
+  { src: `${carouselPrefix}/bd-slide-01.webp`, alt: 'Marc devant un tableau blanc avec 10 logos d\'entreprises, marqueur à la main', index: 0 },
+  { src: `${carouselPrefix}/bd-slide-02.webp`, alt: 'Marc montrant son CRM avec 20 comptes à son équipe commerciale', index: 1 },
+  { src: `${carouselPrefix}/bd-slide-03.webp`, alt: 'Marc pointant l\'écran : un message LinkedIn de temps en temps, une relance', index: 2 },
+  { src: `${carouselPrefix}/bd-slide-04.webp`, alt: 'Marc seul devant son écran, relances sans réponse, visage dubitatif', index: 3 },
+  { src: `${carouselPrefix}/bd-slide-05.webp`, alt: 'Marc regardant son téléphone vide, constatant que la liste ne suffit pas', index: 4 },
+  { src: `${carouselPrefix}/bd-slide-06.webp`, alt: 'Marc et Laurent face à face, Marc questionne son approche du ciblage', index: 5 },
+  { src: `${carouselPrefix}/bd-slide-07.webp`, alt: 'Laurent pose la question : et si on arrêtait de les traiter comme tout le monde ?', index: 6 },
+  { src: `${carouselPrefix}/bd-slide-08.webp`, alt: 'Marc pensif, réalisant que travailler un compte ne se résume pas à relancer', index: 7 },
+  { src: `${carouselPrefix}/bd-slide-09.webp`, alt: 'Marc écrit au tableau : comprendre, cartographier, angle légitime', index: 8 },
+  { src: `${carouselPrefix}/bd-slide-10.webp`, alt: 'Marc efface 7 logos du tableau, n\'en garde que 3 pour commencer petit', index: 9 },
+  { src: `${carouselPrefix}/bd-slide-11.webp`, alt: 'Marc devant les 3 comptes retenus, remplit une fiche de travail détaillée', index: 10 },
+  { src: `${carouselPrefix}/bd-slide-12.webp`, alt: 'Laurent face caméra : quels comptes méritent vraiment un traitement différencié ?', index: 11 },
+];
 
 export const metadata: Metadata = {
   title: 'Account-Based Marketing PME : 3 comptes avant 50, la discipline qui change tout | Laurent Serre',
@@ -243,14 +261,37 @@ export default function AccountBasedMarketingPMEPage() {
             </p>
           </div>
 
-          {/* Badge CTA */}
-          <div className="mb-8 text-center mt-8">
-            <Link
-              href="/diagnostic"
-              className="inline-flex items-center gap-2 bg-mint-green/10 text-mint-green text-sm font-medium px-4 py-2 rounded-full hover:bg-mint-green/20 transition-colors"
-            >
-              🔍 Vous ne savez pas quels comptes méritent une approche ABM ? Faites un diagnostic →
-            </Link>
+          {/* 🎬 Carrousel BD */}
+          <div className="bg-gradient-to-br from-blue-ink/5 to-mint-green/10 border border-blue-ink/10 rounded-2xl p-6 mt-10 mb-8">
+            <p className="font-title font-bold text-blue-ink text-sm uppercase tracking-wider mb-4">
+              🎬 Carrousel BD : L'ABM pour une PME, c'est pas ce que vous croyez
+            </p>
+            <p className="text-sm text-gray-600 mb-5">
+              Marc est DirCo dans une PME. Il a 20 comptes dans son CRM. Il pense les travailler. Sauf qu'une liste, ce n'est pas un travail de compte. Suivez son déclic en 12 planches.
+            </p>
+            <BDCarousel
+              images={carouselImages}
+              title="Carrousel BD : L'ABM pour une PME, c'est pas ce que vous croyez"
+              maxPreview={2}
+            />
+            <div className="mt-4 text-center">
+              <Link
+                href={`${carouselPrefix}/carrousel-052-abm-pme.pdf`}
+                className="inline-flex items-center gap-2 text-blue-ink text-xs hover:text-mint-green transition-colors underline underline-offset-2"
+              >
+                Télécharger le PDF (12 planches)
+              </Link>
+            </div>
+          </div>
+
+          {/* CTA soft après carrousel */}
+          <div className="bg-mint-green/5 border border-mint-green/20 rounded-2xl p-5 my-8 text-center">
+            <p className="text-gray-700 font-medium">
+              Vous vous reconnaissez dans la situation de Marc ?{' '}
+              <Link href="/diagnostic" className="text-mint-green hover:text-mint-green/80 font-semibold underline underline-offset-2">
+                Découvrez par quel compte commencer →
+              </Link>
+            </p>
           </div>
 
           {/* Sommaire */}
