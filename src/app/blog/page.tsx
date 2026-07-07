@@ -6,14 +6,14 @@ import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
   title: 'Blog Développement Commercial PME | Laurent Serre',
-  description: '108 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management, négociation B2B. Méthodes testées en mission.',
+  description: '109 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management, négociation B2B. Méthodes testées en mission.',
   keywords: 'blog développement commercial, formation commerciale, stratégies vente B2B, conseils PME, expert commercial',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog',
   },
   openGraph: {
     title: 'Blog Développement Commercial PME | Laurent Serre',
-    description: '108 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
+    description: '109 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
     url: 'https://www.laurentserre.com/blog',
     type: 'website',
     locale: 'fr_FR',
@@ -29,13 +29,23 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Blog Développement Commercial PME | Laurent Serre',
-    description: '108 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
+    description: '109 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
     images: ['https://www.laurentserre.com/erreurs-fatales.png'],
   },
 };
 
-// Blog listing — last updated 2026-07-06
+// Blog listing — last updated 2026-07-07
 const blogPosts = [
+  {
+    slug: 'grands-comptes-pme-relation-vivante',
+    title: 'Gestion grands comptes PME : la présence ne suffit pas',
+    description: "Un grand compte n'est jamais acquis. Le piège des PME : confondre présence et sécurité. Apprenez à piloter vos clients stratégiques avec une lecture vivante de la relation.",
+    date: '2026-07-07',
+    readTime: '6 min',
+    category: 'Vente complexe / Grands comptes',
+    image: '/images/blog/grands-comptes-pme-relation-vivante/hero.webp',
+    featured: true,
+  },
   {
     slug: 'account-based-marketing-pme-comptes-strategiques',
     title: 'Account-Based Marketing PME : 3 comptes avant 50, la discipline qui change tout',
