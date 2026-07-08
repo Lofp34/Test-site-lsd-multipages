@@ -34,8 +34,18 @@ export const metadata: Metadata = {
   },
 };
 
-// Blog listing — last updated 2026-07-07
+// Blog listing — last updated 2026-07-08
 const blogPosts = [
+  {
+    slug: 'script-prospection-telephonique-b2b-2026',
+    title: 'Ce que votre script de prospection telephonique devrait vraiment dire',
+    description: 'Comment structurer un script de prospection telephonique B2B en 2026. Preparation, ouverture, decouverte, gestion d objections. Methode terrain pour transformer les appels en rendez-vous qualifies.',
+    date: '2026-07-08',
+    readTime: '8 min',
+    category: 'Prospection / Telephone',
+    image: '/images/blog/script-prospection-telephonique-b2b-2026/hero.webp',
+    featured: true,
+  },
   {
     slug: 'grands-comptes-pme-relation-vivante',
     title: 'Gestion grands comptes PME : la présence ne suffit pas',
