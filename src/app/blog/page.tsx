@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Blog Développement Commercial PME | Laurent Serre',
-    description: '109 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
+    description: '110 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
     images: ['https://www.laurentserre.com/erreurs-fatales.png'],
   },
 };
