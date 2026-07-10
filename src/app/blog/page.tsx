@@ -6,14 +6,14 @@ import HubSpotForm from '@/components/HubSpotForm';
 
 export const metadata: Metadata = {
   title: 'Blog Développement Commercial PME | Laurent Serre',
-  description: '109 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management, négociation B2B. Méthodes testées en mission.',
+  description: '110 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management, négociation B2B. Méthodes testées en mission.',
   keywords: 'blog développement commercial, formation commerciale, stratégies vente B2B, conseils PME, expert commercial',
   alternates: {
     canonical: 'https://www.laurentserre.com/blog',
   },
   openGraph: {
     title: 'Blog Développement Commercial PME | Laurent Serre',
-    description: '109 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
+    description: '110 articles terrain sur le développement commercial en PME : closing, prospection, pipeline, management B2B.',
     url: 'https://www.laurentserre.com/blog',
     type: 'website',
     locale: 'fr_FR',
@@ -34,8 +34,28 @@ export const metadata: Metadata = {
   },
 };
 
-// Blog listing — last updated 2026-07-08
+// Blog listing — last updated 2026-07-10
 const blogPosts = [
+  {
+    slug: 'gestion-temps-commercial-b2b-priorites',
+    title: "Gestion du temps commercial B2B : votre équipe n'a pas un problème d'agenda",
+    description: "Tout le monde est occupé, mais les bonnes affaires n'avancent pas. Le vrai sujet n'est pas de remplir mieux l'agenda, c'est de décider ce qu'on accepte encore d'y laisser entrer.",
+    date: '2026-07-10',
+    readTime: '7 min',
+    category: 'Management commercial',
+    image: '/images/blog/gestion-temps-commercial-b2b-priorites/hero.webp',
+    featured: true,
+  },
+  {
+    slug: 'crm-b2b-pme-prochaine-action',
+    title: 'Le CRM ne sert pas à montrer que l\'équipe travaille. Il sert à savoir quoi faire ensuite.',
+    description: "Votre CRM est rempli mais ne dit pas quoi faire demain ? Le probleme n'est pas le logiciel. C'est la question que vous posez au CRM. Guide terrain pour PME B2B.",
+    date: '2026-07-09',
+    readTime: '6 min',
+    category: 'CRM & Pilotage commercial',
+    image: '/images/blog/crm-b2b-pme-prochaine-action/hero.webp',
+    featured: true,
+  },
   {
     slug: 'script-prospection-telephonique-b2b-2026',
     title: 'Ce que votre script de prospection telephonique devrait vraiment dire',
